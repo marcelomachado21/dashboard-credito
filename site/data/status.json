@@ -1,18 +1,18 @@
 {
- "verificado_em": "2026-10-28T13:45:14+00:00",
+ "verificado_em": "2026-10-28T13:59:02+00:00",
  "forcado": true,
- "segundos": 660,
+ "segundos": 728,
  "bases": {
   "safra": {
-   "segundos": 198,
+   "segundos": 197,
    "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "atualizado",
    "ref": "2026-09-30"
   },
   "risco": {
-   "segundos": 222,
+   "segundos": 307,
    "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 629}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": {
     "scr": "2026-08",
     "cosif": "2026-06",
@@ -22,17 +22,17 @@
   "posicao": {
    "segundos": 172,
    "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 868, \"kb\": 1375}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 22,
+   "segundos": 16,
    "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 832, \"kb\": 713}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 44,
+   "segundos": 36,
    "saida": "{\"carteira\": {\"sgs\": \"2026-08\", \"cosif\": \"2026-06\"}, \"instituicoes\": 847, \"erros\": [], \"kb\": 387}",
    "situacao": "atualizado",
    "ref": {
