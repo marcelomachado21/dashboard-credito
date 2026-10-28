@@ -201,7 +201,7 @@ for am in LISTA:
 LISTA = [m for m in LISTA if m in M]
 ult = LISTA[-1]; ant = f"{int(ult[:4]) - 1}{ult[4:]}"
 
-r = lambda x, d=2: round(x, d)
+r = lambda x, d=2: round(x, d) + 0.0   # + 0.0 evita "-0.0" no JSON
 def comp(v):
     tot = v.get("tot", 0); rur = v.get("rur", 0)
     o = {"tot": r(tot / 1e9, 3), "rur": r(rur / 1e9, 3)}

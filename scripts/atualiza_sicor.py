@@ -291,7 +291,7 @@ FINS = ["c", "i", "m", "n"]
 mes = por_escopo(["geo", "safra", "m", "fin"])
 mes_q = ops_por_escopo(["geo", "safra", "m"])
 serie = collections.defaultdict(lambda: collections.defaultdict(dict))
-for esc in ids_validos:
+for esc in sorted(ids_validos):
     for geo in ("BR", "MG"):
         for s in SAFRAS:
             rows = []
@@ -311,7 +311,7 @@ for s in SHOW:
     ytd = por_escopo(["geo", "ytd", "fin"])
     ytd_q = ops_por_escopo(["geo", "ytd"])
     cs = collections.defaultdict(dict)
-    for esc in ids_validos:
+    for esc in sorted(ids_validos):
         for geo in ("BR", "MG"):
             cs[esc][geo] = {k: [r1(ytd.get((esc, geo, k, f), 0)) for f in FINS] + [int(ytd_q.get((esc, geo, k), 0))] for k in ("a", "p")}
     comp[str(s)] = cs
