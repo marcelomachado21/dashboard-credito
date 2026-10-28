@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Teste de acesso · Dashboard de Crédito</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap">
+<style>
+  body { margin: 0; background: #fff; color: #2B2F33; font: 16px/1.5 system-ui, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 32px 16px; }
+  h1 { font-size: 1.3rem; margin: 0 0 8px; }
+  li { margin: 6px 0; }
+  .ok { color: #2E8F5A; font-weight: 600; } .nok { color: #C2562C; font-weight: 600; }
+  small { color: #6b7177; }
+</style>
+</head>
+<body><main>
+<h1>Dashboard de Crédito · teste de acesso</h1>
+<p>Se você está lendo isto, a página abriu na sua rede.</p>
+<ul>
+  <li>Página: <span class="ok">ok</span></li>
+  <li>Leitura de dados (data/teste.json): <span id="dados">verificando…</span></li>
+  <li>Fonte do Google: <span id="fonte">verificando…</span></li>
+</ul>
+<p><small>Página temporária. O painel completo substituirá esta página após a migração.</small></p>
+</main>
+<script>
+fetch("./data/teste.json", { cache: "no-cache" }).then(r => r.json())
+  .then(d => { dados.className = "ok"; dados.textContent = "ok (" + d.msg + ")"; })
+  .catch(() => { dados.className = "nok"; dados.textContent = "bloqueada"; });
+document.fonts.load("16px 'IBM Plex Sans'").then(f => {
+  fonte.className = f.length ? "ok" : "nok"; fonte.textContent = f.length ? "ok" : "bloqueada (o painel usa a fonte do sistema)"; });
+</script>
+</body></html>
