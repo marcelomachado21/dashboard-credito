@@ -1,0 +1,45 @@
+{
+ "verificado_em": "2026-10-28T13:45:14+00:00",
+ "forcado": true,
+ "segundos": 660,
+ "bases": {
+  "safra": {
+   "segundos": 198,
+   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "situacao": "atualizado",
+   "ref": "2026-09-30"
+  },
+  "risco": {
+   "segundos": 222,
+   "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 629}",
+   "situacao": "atualizado",
+   "ref": {
+    "scr": "2026-08",
+    "cosif": "2026-06",
+    "ifd": "2026-06"
+   }
+  },
+  "posicao": {
+   "segundos": 172,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 868, \"kb\": 1375}",
+   "situacao": "atualizado",
+   "ref": "2026-06"
+  },
+  "resultados": {
+   "segundos": 22,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 832, \"kb\": 713}",
+   "situacao": "atualizado",
+   "ref": "2026-06"
+  },
+  "carteira": {
+   "segundos": 44,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-08\", \"cosif\": \"2026-06\"}, \"instituicoes\": 847, \"erros\": [], \"kb\": 387}",
+   "situacao": "atualizado",
+   "ref": {
+    "sgs": "2026-08",
+    "cosif": "2026-06"
+   }
+  }
+ },
+ "ultima_atualizacao": "2026-10-28"
+}
