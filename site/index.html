@@ -983,6 +983,7 @@ function renderPos() {
 function semEstagios(d) {
   d.metricas = d.metricas.filter(m => m.id !== "e2" && m.id !== "e3");
   const ap = d.metricas.find(m => m.id === "ap"); if (ap) ap.nome = "Ativos problemáticos (estágio 3)";
+  const pv = d.metricas.find(m => m.id === "prov"); if (pv) pv.melhor = "baixo";   // IPROV: mais provisão, carteira de maior risco
   return d;
 }
 let carregandoP = false;
@@ -1890,7 +1891,7 @@ const QNOME = Object.fromEntries(QGR.flatMap(([, l]) => l));
 // id, título, unidade (val = R$ e variação %; pct = % e variação em p.p.), melhor (alto/baixo/neutro), fonte
 const QCOL = [["at", "Ativo total", "val", "alto", "IF.data"], ["cart", "Carteira de crédito", "val", "alto", "IF.data"], ["capt", "Captações", "val", "alto", "IF.data"], ["pl", "Patrimônio líquido", "val", "alto", "IF.data"],
   ["rural", "Rural na carteira", "pct", "neutro", "Cosif"], ["inad", "Inad. > 90 dias", "pct", "baixo", "IF.data"], ["ap", "Ativos probl. (estágio 3)", "pct", "baixo", "IF.data"],
-  ["prov", "IPROV", "pct", "neutro", "IF.data"], ["cob", "Cobertura", "pct", "alto", "IF.data"], ["basil", "Basileia", "pct", "alto", "IF.data"],
+  ["prov", "IPROV", "pct", "baixo", "IF.data"], ["cob", "Cobertura", "pct", "alto", "IF.data"], ["basil", "Basileia", "pct", "alto", "IF.data"],
   ["lucro", "Lucro ou sobras", "val", "alto", "IF.data"], ["roe", "ROE", "pct", "alto", "IF.data"], ["roa", "ROA", "pct", "alto", "IF.data"], ["efic", "Eficiência", "pct", "baixo", "IF.data"]];
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-qdgrp],[data-qdord],#qdmore,#qdcsv"); if (!b) return;
@@ -1954,6 +1955,7 @@ function renderQuadro() {
 // Quantas instituições do grupo estão piores que a base de comparação, indicador a indicador
 const DSQ = [["Risco", [["inad", "Inadimplência > 90 dias", "acima da referência", "Saldo das operações com atraso acima de 90 dias sobre a carteira."],
     ["ap", "Ativos problemáticos (estágio 3)", "acima da referência", "Operações em atraso acima de 90 dias, reestruturadas ou com sinal de que não serão honradas sem uso de garantias."],
+    ["prov", "IPROV", "acima da referência", "Perda esperada (provisão) sobre o valor bruto das operações de crédito. Mais provisão indica carteira de maior risco."],
     ["cob", "Cobertura", "abaixo da referência", "Perda esperada das operações de crédito sobre os ativos problemáticos."]]],
   ["Resultado", [["roe", "ROE", "abaixo da referência", "Lucro ou sobras do período, anualizado, sobre o patrimônio líquido."],
     ["roa", "ROA", "abaixo da referência", "Lucro ou sobras do período, anualizado, sobre o ativo total."],
@@ -1981,12 +1983,12 @@ function blocoDesenq(list, t, B, bk) {
   const totAp = comAp.reduce((x, y) => x + y.v, 0); let ac = 0; const conc = [];
   for (const x of comAp) { if (ac >= totAp * 0.5) break; conc.push(x.i); ac += x.v; }
   const cs = new Set(conc.map(i => i.id)), noConc = todos.filter(i => cs.has(i.id));
-  const res = `<div class="dsq-res"><span class="big">${todos.length} ${todos.length === 1 ? "instituição pior" : "instituições piores"} que ${esc(QNOME[bk])} nos três indicadores de risco.</span>
+  const res = `<div class="dsq-res"><span class="big">${todos.length} ${todos.length === 1 ? "instituição pior" : "instituições piores"} que ${esc(QNOME[bk])} nos ${RISCO.length} indicadores de risco.</span>
     <p class="lede" style="margin:4px 0 0">${todos.length ? `${nomes(todos)}. ` : ""}${conc.length ? `${conc.length} ${conc.length === 1 ? "instituição concentra" : "instituições concentram"} ${nf(ac / totAp * 100, 0)}% dos ativos problemáticos do grupo em reais${todos.length ? `; ${noConc.length} ${noConc.length === 1 ? "delas está" : "delas estão"} nessa lista` : ""}.` : ""}</p>
     ${conc.length ? `<details style="font-size:0.8rem;margin-top:4px"><summary>Ver as ${conc.length} que concentram os ativos problemáticos</summary>${nomes(conc)}</details>` : ""}</div>`;
   return block(`Quantas estão piores que ${esc(QNOME[bk])}`, `${esc(QNOME[qd.grp])} · ${list.length} instituições · ${ym(t)} · % das instituições com dado`,
     lin + res,
-    `Referência: indicador combinado de ${esc(QNOME[bk])} (soma dos numeradores sobre soma dos denominadores), escolhido em "Comparar com". Não é média simples nem limite normativo. Ativos problemáticos em reais = percentual × carteira. Basileia, IPROV e rural ficam fora, porque estar abaixo ou acima do agregado não indica, por si, posição pior. IF.data ${ym(t)}.`);
+    `Referência: indicador combinado de ${esc(QNOME[bk])} (soma dos numeradores sobre soma dos denominadores), escolhido em "Comparar com". Não é média simples nem limite normativo. Ativos problemáticos em reais = percentual × carteira. Basileia e rural ficam fora, porque estar abaixo ou acima do agregado não indica, por si, posição pior. IF.data ${ym(t)}.`);
 }
 function renderQuadroTab() {
   const el = $("#qdview"); if (!el) return;
@@ -2000,7 +2002,7 @@ function renderQuadroTab() {
     const nomeI = (i) => `<div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}<small>${esc((i.nome || "").slice(0, 40))}${i.uf ? " · " + i.uf : ""}</small></span></div>`;
     const ativo = document.activeElement?.id === "qdbusca";
     el.innerHTML = `<div><div class="eyebrow">IF.data ${ym(t)} · Cosif ${ym(t)}${t12 ? ` · variação contra ${ym(t12)}` : ""}${tagNovo(P.meta.novo_desde)}</div><h2>Quadro de indicadores por instituição · ${esc(QNOME[qd.grp])}</h2>
-      <p class="lede">Uma linha por instituição, com o grupo combinado no topo. <b>Cor de fundo:</b> posição contra a base escolhida em "Comparar com" (verde, melhor; vermelho, pior). Nos valores em reais, compara o crescimento em 12 meses. <b>Seta:</b> variação contra o mesmo trimestre do ano anterior, verde quando favorável e vermelha quando desfavorável. IPROV e rural não têm lado bom ou ruim e ficam sem cor. Clique no título de uma coluna para ordenar e no nome para abrir a ficha.</p></div>
+      <p class="lede">Uma linha por instituição, com o grupo combinado no topo. <b>Cor de fundo:</b> posição contra a base escolhida em "Comparar com" (verde, melhor; vermelho, pior). Nos valores em reais, compara o crescimento em 12 meses. <b>Seta:</b> variação contra o mesmo trimestre do ano anterior, verde quando favorável e vermelha quando desfavorável. IPROV acima da base aparece como pior. Rural não tem lado bom ou ruim e fica sem cor. Clique no título de uma coluna para ordenar e no nome para abrir a ficha.</p></div>
       <div class="rank-tools"><label class="fgroup qbase-sel"><span class="flabel">Comparar com</span><select id="qdbase" class="sel">${opts}</select></label>
         <span class="qlegenda"><i class="cmpG"></i>melhor que ${esc(QNOME[bk])} <i class="cmpR"></i>pior <span class="flat">▲▼ variação em 12 meses</span></span></div>
       <div class="rank-tools"><input id="qdbusca" type="search" placeholder="Buscar por nome, número ou CNPJ" value="${esc(qd.busca)}" aria-label="Buscar instituição"><button type="button" class="linkbtn" id="qdcsv">Baixar CSV (Excel)</button></div>

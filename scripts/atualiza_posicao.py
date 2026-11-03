@@ -120,7 +120,7 @@ METRICAS = [
     ("cresc", "Crescimento da carteira em 12 meses", "%", "alto", "Variação da carteira sobre o mesmo trimestre do ano anterior; só a partir de mar/26, para não misturar critérios de antes da Res. 4.966."),
     ("inad", "Inadimplência > 90 dias", "%", "baixo", "Inadimplência sobre a carteira (IF.data, rel. 16)."),
     ("ap", "Ativos problemáticos (estágio 3)", "%", "baixo", "Ativos problemáticos sobre a carteira (IF.data, rel. 16); medida do estágio 3 do crédito. Os estágios do Cosif não separam o crédito dos demais ativos financeiros e ficam fora do painel."),
-    ("prov", "Provisão sobre a carteira", "%", "neutro", "Perda esperada sobre o valor bruto das operações de crédito (IF.data, rel. 2)."),
+    ("prov", "Provisão sobre a carteira", "%", "baixo", "Perda esperada sobre o valor bruto das operações de crédito (IF.data, rel. 2)."),
     ("cob", "Cobertura dos ativos problemáticos", "%", "alto", "Perda esperada das operações de crédito sobre ativos problemáticos."),
     ("basil", "Índice de Basileia", "%", "alto", "Patrimônio de referência sobre ativos ponderados pelo risco (IF.data, rel. 5)."),
     ("roe", "ROE anualizado", "%", "alto", "Lucro ou sobras do período anualizado sobre o patrimônio líquido do fim do período."),
