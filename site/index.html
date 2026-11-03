@@ -60,14 +60,35 @@ nav.tabs .wrap { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: no
 .trow, .tsolo { display: flex; gap: 6px; }
 .tsolo { flex: none; padding-top: 25px; }
 nav.tabs .wrap::-webkit-scrollbar { display: none; }
-nav.tabs span, nav.tabs a { flex: none; padding: 7px 13px; font-size: 0.82rem; font-weight: 600; color: #4a5258; background: #eef0f1; border-radius: 8px; white-space: nowrap; text-decoration: none; }
+.trow > span, nav.tabs a { flex: none; padding: 7px 13px; font-size: 0.82rem; font-weight: 600; color: #4a5258; background: #eef0f1; border-radius: 8px; white-space: nowrap; text-decoration: none; }
 .filters:has(#filters:empty) { display: none; }
 .secao { margin-top: 32px; padding-top: 18px; border-top: 2px solid var(--grafite); }
 .secao h2 { margin: 2px 0 4px; }
 nav.tabs a:hover { background: #e2e6e8; color: var(--ink); }
 nav.tabs a[aria-current="page"] { color: #fff; background: #00786c; }
-@media (max-width: 900px) { nav.tabs::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 36px; background: linear-gradient(to right, rgba(255,255,255,0), var(--bg)); pointer-events: none; } }
-nav.tabs span[title] { cursor: default; }
+.tscroll { position: relative; min-width: 0; }
+.tarr, .tdica { display: none; }
+@media (max-width: 900px) {
+  nav.tabs .wrap { flex-direction: column; align-items: stretch; overflow: visible; gap: 8px; }
+  .tgrp { min-width: 0; grid-template-columns: minmax(0, 1fr); }
+  .tcap { white-space: normal; position: static; }
+  .tdica { white-space: nowrap; }
+  .tgrp:first-child .trow { display: grid; grid-template-columns: 1fr 1fr; }
+  .tgrp:first-child .trow a { text-align: center; white-space: normal; }
+  .tscroll .trow { overflow-x: auto; scrollbar-width: none; scroll-behavior: smooth; }
+  .tscroll .trow::-webkit-scrollbar { display: none; }
+  .tdica { display: inline; color: var(--accent-ink); font-weight: 600; }
+  .tarr { position: absolute; top: 0; bottom: 0; width: 46px; border: 0; padding: 0; cursor: pointer; z-index: 2; align-items: center; }
+  .tarr span { display: inline-flex; width: 28px; height: 28px; border-radius: 50%; background: #00786c; color: #fff; font-size: 1.1rem; font-weight: 700; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.18); }
+  .tarr.r { right: -2px; justify-content: flex-end; background: linear-gradient(to right, rgba(255,255,255,0), var(--bg) 55%); }
+  .tarr.l { left: -2px; justify-content: flex-start; background: linear-gradient(to left, rgba(255,255,255,0), var(--bg) 55%); }
+  .tscroll.dir .tarr.r, .tscroll.esq .tarr.l { display: flex; }
+  .tsolo { padding-top: 0; justify-content: flex-end; }
+  .tsolo a { background: none !important; color: var(--accent-ink) !important; padding: 2px 4px !important; font-size: 0.8rem !important; }
+  .tsolo a::after { content: " ›"; }
+  .tsolo a[aria-current="page"] { text-decoration: underline; }
+}
+.trow > span[title] { cursor: default; }
 .filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--bg); border-bottom: 1px solid var(--line); }
 .filters .wrap { padding-block: 10px; display: grid; gap: 8px; }
 .frow { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
@@ -1863,11 +1884,14 @@ function blocoStatus(st) {
 const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "rankings", 8: "posicao", 9: "ficha", 10: "fontes" };
 const GRUPOS_ABAS = [[[0, 1], "Grandes números do SFN", "sem filtro de instituição"], [[2, 3, 4, 5, 6, 7, 8, 9], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[10], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
+document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
   const tab = (i) => `<a href="#${ABA_ID[i]}"${aba() === ABA_ID[i] ? ' aria-current="page"' : ""}>${ABAS[i]}</a>`;
-  $("#tabs").innerHTML = GRUPOS_ABAS.map(([ids, t, sub]) => t ? `<div class="tgrp" role="group" aria-label="${esc(t)}"><div class="tcap"><b>${esc(t)}</b> · ${esc(sub)}</div><div class="trow">${ids.map(tab).join("")}</div></div>` : `<div class="tsolo">${ids.map(tab).join("")}</div>`).join("");
-  const at = $("#tabs a[aria-current]"), tw = $("#tabs");   // deixa a aba atual à vista na faixa rolável
-  if (at && tw.scrollWidth > tw.clientWidth) tw.scrollLeft = Math.max(0, at.offsetLeft - tw.offsetLeft - (tw.clientWidth - at.offsetWidth) / 2);
+  $("#tabs").innerHTML = GRUPOS_ABAS.map(([ids, t, sub]) => t ? `<div class="tgrp" role="group" aria-label="${esc(t)}"><div class="tcap"><b>${esc(t)}</b> · ${esc(sub)}${ids.length > 2 ? `<span class="tdica"> · ${ids.length} abas, deslize →</span>` : ""}</div><div class="tscroll"><button class="tarr l" type="button" data-tarr="-1" aria-label="Ver abas anteriores"><span>‹</span></button><div class="trow">${ids.map(tab).join("")}</div><button class="tarr r" type="button" data-tarr="1" aria-label="Ver mais abas"><span>›</span></button></div></div>` : `<div class="tsolo">${ids.map(tab).join("")}</div>`).join("");
+  document.querySelectorAll("#tabs .tscroll").forEach(sc => { const row = sc.querySelector(".trow"), at = row.querySelector("a[aria-current]");
+    const upd = () => { sc.classList.toggle("esq", row.scrollLeft > 4); sc.classList.toggle("dir", row.scrollLeft + row.clientWidth < row.scrollWidth - 4); };
+    if (at && row.scrollWidth > row.clientWidth) { row.style.scrollBehavior = "auto"; row.scrollLeft = Math.max(0, at.offsetLeft - row.offsetLeft - 40); row.style.scrollBehavior = ""; }
+    row.addEventListener("scroll", upd, { passive: true }); upd(); });
   ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes })[aba()]();
 }
 addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
