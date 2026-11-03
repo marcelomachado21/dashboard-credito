@@ -1038,7 +1038,8 @@ function qCalc(m, idx) {
   const rec = cred + Math.max(tes, 0) + serv + Math.max(out_r, 0);
   const out_d = rec - capt - prov - pess - adm - depr - trib - lucro - (tes < 0 ? -tes : 0) - (out_r < 0 ? -out_r : 0);
   const pc = (v) => rec ? Math.round(v / rec * 1000) / 10 : null, margem = cred + tes - capt + serv + out_r;
-  return { lucro: Math.round(lucro * 10) / 10, rec: Math.round(rec * 10) / 10, n,
+  return { lucro: Math.round(lucro * 10) / 10, rec: Math.round(rec * 10) / 10, n, pl, at,
+    v: { cred, tes, serv, out_r, capt, prov, pess, adm, depr, trib, out_d, lucro, rec },
     roe: pl > 0 ? Math.round(lucro * f / pl * 1000) / 10 : null, roa: at ? Math.round(lucro * f / at * 10000) / 100 : null,
     efic: margem > 0 ? Math.round((pess + adm + depr) / margem * 1000) / 10 : null,
     r_cred: pc(cred), r_tes: pc(tes), r_serv: pc(serv), r_out: pc(out_r), d_capt: pc(capt), d_prov: pc(prov), d_pess: pc(pess), d_adm: pc(adm), d_depr: pc(depr), d_trib: pc(trib), d_out: pc(out_d), d_lucro: pc(lucro) };
@@ -1049,6 +1050,20 @@ const qPerTxt = () => { const per = qPerOk(); if (per === "r12") return `12 mese
   if (per === "ytd") { const ms = qMeses().filter(d => d.startsWith(qAno())); return `acumulado de ${qAno()}${ms.length < 12 ? ` (${ym(ms[0])} a ${ym(ms[ms.length - 1])})` : ""}`; }
   return `mês de ${ym(qMes())}`; };
 const qAnual = () => qPerOk() === "r12" ? "" : ", anualizado";
+function tabelaDRE(x, xa, xg, nome, nomeG) {   // valores do período (R$ mi), % da receita, mesmo período do ano anterior e grupo
+  if (!x || !x.v) return "";
+  const L = [["rec", "Receita total", "tot"], ["cred", "Crédito", "+"], ["tes", "Tesouraria líquida", "+"], ["serv", "Serviços e tarifas", "+"], ["out_r", "Outras receitas", "+"],
+    ["capt", "Captação", "−"], ["prov", "Provisão", "−"], ["pess", "Pessoal", "−"], ["adm", "Administrativas", "−"], ["depr", "Depreciação", "−"], ["trib", "Tributos", "−"], ["out_d", "Outras despesas", "−"], ["lucro", "Lucro ou sobras", "tot"]];
+  const pc = (o, k) => o?.v && o.v.rec ? o.v[k] / o.v.rec * 100 : null;
+  const var_ = (k) => { const a = x.v[k], b = xa?.v?.[k]; return b > 0 && xa.v.rec && b >= xa.v.rec * 0.01 ? pct(a, b) : null; };   // base irrisória: variação sem sentido
+  const bom = (k, d) => d == null ? "flat" : ["capt", "prov", "pess", "adm", "depr", "trib", "out_d"].includes(k) ? cls(-d) : cls(d);
+  const rows = L.map(([k, n, t]) => `<tr${t === "tot" ? ' class="tot"' : ""}><td>${t === "tot" ? `<b>${n}</b>` : `<span class="flat">${t}</span> ${n}`}</td><td class="num">${t === "tot" ? "<b>" : ""}${brlMi(x.v[k])}${t === "tot" ? "</b>" : ""}</td><td class="num">${k === "rec" ? "100%" : nf(pc(x, k), 1) + "%"}</td>
+    <td class="num">${xa?.v ? brlMi(xa.v[k]) : "—"}</td><td class="num"><span class="${bom(k, var_(k))}">${sgn(var_(k))}</span></td><td class="num">${xg?.v ? (k === "rec" ? "100%" : nf(pc(xg, k), 1) + "%") : "—"}</td></tr>`).join("");
+  const ind = [["roe", "ROE", 1, "alto"], ["roa", "ROA", 2, "alto"], ["efic", "Eficiência", 1, "baixo"]].map(([k, n, d, m]) => { const dv = x[k] != null && xa?.[k] != null ? x[k] - xa[k] : null;
+    return `<tr><td>${n}${qAnual() && k !== "efic" ? " <small>anualizado</small>" : ""}</td><td class="num"><b>${x[k] == null ? "—" : nf(x[k], d) + "%"}</b></td><td></td><td class="num">${xa?.[k] == null ? "—" : nf(xa[k], d) + "%"}</td><td class="num"><span class="${dv == null ? "flat" : m === "alto" ? cls(dv) : cls(-dv)}">${sgn(dv, d, " p.p.")}</span></td><td class="num">${xg?.[k] == null ? "—" : nf(xg[k], d) + "%"}</td></tr>`; }).join("");
+  return block(`Resultado em valores · ${esc(nome)}`, `${esc(qPerTxt())} · R$ e % da receita total`, `<div class="tbl-wrap"><table><thead><tr><th>Linha</th><th class="num">Valor</th><th class="num">% da receita</th><th class="num">Mesmo período do ano anterior</th><th class="num">Variação</th><th class="num">${esc(nomeG)}, % da receita</th></tr></thead><tbody>${rows}${ind}</tbody></table></div>`,
+    `Tesouraria líquida das despesas correspondentes; quando negativa, entra como despesa em "outras despesas". Variação só quando o valor do ano anterior foi positivo e de ao menos 1% da receita. ${xa ? "" : "Sem o mesmo período do ano anterior na base (balancetes desde jan/25). "}Balancetes Cosif.`);
+}
 function qPerCtrl() {                       // mesmo seletor de período da aba Resultados, para usar dentro de outras abas
   const per = qPerOk(); if (!Q.agg.coop.m) return "";
   const sel = per === "r12" ? `<select id="qate" class="sel" aria-label="12 meses até">${Q.agg.coop.r12.map(x => x.d).reverse().map(d => `<option value="${d}"${d === qAte() ? " selected" : ""}>até ${ym(d)}</option>`).join("")}</select>`
@@ -1295,7 +1310,7 @@ function renderFicha() {
         sem.forEach((x, k) => { const x0 = L + k * bw + bw * 0.28, w = bw * 0.44, y0 = Y(Math.max(0, x.lucro)), y1 = Y(Math.min(0, x.lucro));
           g += `<rect x="${x0}" y="${y0}" width="${w}" height="${Math.max(1, y1 - y0)}" fill="${x.lucro >= 0 ? cI : "var(--down)"}" rx="3"/><text x="${x0 + w / 2}" y="${y0 - 5}" text-anchor="middle" class="lbl-strong">${brlMi(x.lucro)}</text><text x="${x0 + w / 2}" y="${H - 6}" text-anchor="middle">${x.s.replace("S", "º sem/")}</text>`; });
         return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Lucro por semestre">${g}</svg>`; })();
-      resB = `${qPerCtrl()}<div class="grid2">${block(`Da receita ao resultado`, `% da receita total · ${esc(PT)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} no período. Balancetes Cosif.`)}
+      resB = `${qPerCtrl()}${tabelaDRE(r12, res.m ? qCalc(res.m, qJanela(-12)) : null, qg, i.curto, peerNome)}<div class="grid2">${block(`Da receita ao resultado`, `% da receita total · ${esc(PT)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} no período. Balancetes Cosif.`)}
         ${block("Receita e despesa contra o grupo", `% da receita total · ${esc(peerNome)} = agregado`, stack100([{ name: i.curto, v: r12, sel: true }].concat(qg ? [{ name: peerNome, v: qg }] : []), REC, { label: "Receita" }) + stack100([{ name: i.curto, v: r12, sel: true }].concat(qg ? [{ name: peerNome, v: qg }] : []), DESP, { label: "Despesa" }) + `<h3 style="margin-top:8px">Lucro ou sobras por semestre</h3>` + sb,
           `ROE (${esc(PT)}${qAnual()}) sobre o PL médio ${nf(r12.roe, 1)}% (grupo ${nf(qg?.roe, 1)}%); difere do ROE do semestre anualizado do IF.data, no topo, porque cobre outro período · ROA ${nf(r12.roa, 2)}% · eficiência ${nf(r12.efic, 1)}% (grupo ${nf(qg?.efic, 1)}%). Balancetes Cosif.`)}</div>`;
     }
@@ -1438,7 +1453,7 @@ function renderFichaGrupo() {
     if (qa) {
       const r12 = qR12(g), rb = qb ? qR12(peer) : null, PT = qPerTxt();
       if (!r12) resB = block("Resultados", "Cosif", `<p class="empty">Sem atualização: não há resultado de ${esc(PT)} para ${esc(gn)}.</p>`); else
-      resB = `${qPerCtrl()}<div class="grid2">${block("Da receita ao resultado", `% da receita total · ${esc(PT)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} no período, somada entre as ${qa.n} instituições. Balancetes Cosif.`)}
+      resB = `${qPerCtrl()}${tabelaDRE(r12, qa.m ? qCalc(qa.m, qJanela(-12)) : null, rb, gn, pn)}<div class="grid2">${block("Da receita ao resultado", `% da receita total · ${esc(PT)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} no período, somada entre as ${qa.n} instituições. Balancetes Cosif.`)}
         ${block("Receita e despesa contra a comparação", `% da receita total · ${esc(PT)}`, stack100([{ name: gn, v: r12, sel: true }].concat(rb ? [{ name: pn, v: rb }] : []), REC, { label: "Receita" }) + stack100([{ name: gn, v: r12, sel: true }].concat(rb ? [{ name: pn, v: rb }] : []), DESP, { label: "Despesa" }) + `<h3 style="margin-top:8px">Lucro ou sobras por semestre</h3>` + barSem(qa.sem, cG),
           `ROE (${esc(PT)}${qAnual()}) sobre o PL médio ${nf(r12.roe, 1)}% (${esc(pn)} ${nf(rb?.roe, 1)}%) · ROA ${nf(r12.roa, 2)}% · eficiência ${nf(r12.efic, 1)}% (${esc(pn)} ${nf(rb?.efic, 1)}%). Balancetes Cosif.`)}</div>`;
     } else resB = block("Resultados", "Cosif", `<p class="empty">Sem atualização: o agregado de resultados dos balancetes não é calculado para ${esc(gn)}.</p>`);
