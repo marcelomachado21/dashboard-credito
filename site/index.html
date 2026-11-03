@@ -175,7 +175,7 @@ async function carregar(nome) {
 }
 
 (() => {
-const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / SICOR","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia"];
+const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia"];
 const MES = ["jul","ago","set","out","nov","dez","jan","fev","mar","abr","mai","jun"];
 const MESF = ["julho","agosto","setembro","outubro","novembro","dezembro","janeiro","fevereiro","março","abril","maio","junho"];
 const FIN = [["all","Todas"],["c","Custeio"],["i","Investimento"],["m","Comercialização"],["n","Industrialização"]];
@@ -1501,10 +1501,10 @@ document.addEventListener("click", (ev) => {
 const FINR = [["custeio", "Custeio"], ["investimento", "Investimento"], ["comercializacao", "Comercialização"], ["industrializacao", "Industrialização"]];
 const FONTES = [["f_livres", "Recursos livres", "#7A9CB0"], ["f_avista", "Exigibilidade à vista", "#2B6F8A"], ["f_poup", "Poupança rural", "#4E8A3E"], ["f_lca", "LCA", "#C08A2E"], ["f_pub", "Fontes públicas", "#8C4A3A"]];
 function renderRural() {
-  if (!precisa(["carteira", "safra"])) { esperando(Cerr ? `Os dados não carregaram (${esc(Cerr)}). Recarregue a página.` : "Carregando a carteira rural…"); return; }
+  if (!precisa(["carteira"])) { esperando(Cerr ? `Os dados não carregaram (${esc(Cerr)}). Recarregue a página.` : "Carregando a carteira rural…"); return; }
   cid = 0;
   $("#filters").innerHTML = `<div class="frow">${chipsEsc(C.escopos, "uesc", rus.esc)}</div>`;
-  $("#stamp").textContent = `Cosif até ${ym(C.meta.refs.cosif)} · SICOR até ${dmy(D.meta.ref)}`;
+  $("#stamp").textContent = `Cosif até ${ym(C.meta.refs.cosif)}`;
   try {
     const co = C.cosif, e = C.escopos.find(x => x.id === rus.esc), A = co[rus.esc] || [], S = co.sfn || [], l = lastP(A), ls = lastP(S), sfn = rus.esc === "sfn";
     if (!l) { $("#view").innerHTML = `<p class="empty">Sem atualização: os balancetes não trazem carteira rural para ${esc(e.nome)}.</p>`; return; }
@@ -1512,36 +1512,31 @@ function renderRural() {
     const base = sfn ? co.coop : A, lb = lastP(base), lb12 = at12(base, lb.d), ls12 = at12(S, ls.d);
     const part = lb.rur / ls.rur * 100, part12 = lb12 && ls12 ? lb12.rur / ls12.rur * 100 : null;
     const fz = FONTES.map(([k, n]) => [n, l[k]]).filter(x => x[1] != null).sort((a, b) => b[1] - a[1])[0];
-    const sf = safraEsc(rus.esc), sfS = safraEsc("sfn");
     const kp = `<div class="kpis">
       ${kpiBox("Carteira rural", biCart(l.rur), "", `${arrow(gr)}${sgn(gr)} em 12 meses`, cls(gr), `${ref(sgn(grs))}${ym(l.d)} · Cosif${tagNovo(C.meta.novo_desde.cosif)}`)}
       ${kpiBox(sfn ? "Cooperativas no rural do SFN" : "Participação no rural do SFN", nf(part, 2), "%", part12 == null ? "" : `${sgn(part - part12, 2, " p.p.")} em 12 meses`, part12 == null ? "flat" : cls(part - part12), `${ym(l.d)} · Cosif`)}
       ${kpiBox("Rural na carteira", nf(l.p_rur, 1), "%", `carteira total ${biCart(l.tot)}`, "flat", `${ref(nf(ls.p_rur, 1) + "%")}${ym(l.d)} · Cosif`)}
       ${kpiBox("Principal fonte de recursos", fz ? nf(fz[1], 0) : "—", "%", fz ? fz[0] : "", "flat", `% da carteira rural · ${ym(l.d)} · Cosif`)}
-      ${kpiBox(`Safra ${safraLbl(D.meta.safra_atual)} contratada`, sf ? brl(sf.a, 1).replace("R$ ", "") : "sem dado", "", sf ? `${arrow(sf.v)}${sgn(sf.v)} contra o mesmo ponto` : "recorte fora do SICOR", sf ? cls(sf.v) : "flat", `${sf && !sfn ? `SFN: ${sgn(sfS?.v)} · ` : ""}até ${dmy(D.meta.ref)} · SICOR${tagNovo(D.meta.novo_desde)}`)}
-      ${kpiBox("Operações na safra", sf ? nf(sf.q, 0) : "sem dado", "", sf && sf.q ? `ticket médio R$ ${nf(sf.a / sf.q * 1000, 0)} mil` : "", "flat", `até ${dmy(D.meta.ref)} · SICOR`)}
+      ${kpiBox("Recursos livres", nf(l.f_livres, 1), "%", "da carteira rural", "flat", `${ref(nf(ls.f_livres, 1) + "%")}${ym(l.d)} · Cosif`)}
+      ${kpiBox("Fontes públicas e repasses", nf(l.f_pub, 1), "%", "da carteira rural", "flat", `${ref(nf(ls.f_pub, 1) + "%")}${ym(l.d)} · Cosif`)}
     </div>`;
     const pai = paiDe(rus.esc), idsL = ["sfn", pai, rus.esc].filter((v, i, a) => v && a.indexOf(v) === i);
     const evL = idsL.map(id => { const x = C.escopos.find(z => z.id === id); return { name: x.nome, pts: indexa(co[id], "rur"), c: cor(x.cor), w: id === rus.esc ? 3 : 1.6 }; });
     const ids = CMP2.filter(id => co[id]?.length).concat(CMP2.includes(rus.esc) ? [] : [rus.esc]);
     const rowsF = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: lastP(co[id]), sel: id === rus.esc }));
     const shareB = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: crescSerie(co[id], "rur"), c: cor(C.escopos.find(x => x.id === id).cor), sel: id === rus.esc }));
-    const fins = ["Custeio", "Investimento", "Comercialização", "Industrialização"];
-    const finTab = sf ? `<div class="tbl-wrap"><table><thead><tr><th>Finalidade</th><th class="num">${esc(e.nome)}</th><th class="num">% do total</th><th class="num">Contra o mesmo ponto</th>${sfn ? "" : `<th class="num">SFN, % do total</th>`}</tr></thead><tbody>${fins.map((f, k) => { const v = pct(sf.fin[k], sf.finP[k]);
-      return `<tr><td>${f}</td><td class="num">${brl(sf.fin[k], 1)}</td><td class="num">${sf.a ? nf(sf.fin[k] / sf.a * 100, 1) + "%" : "—"}</td><td class="num"><span class="${cls(v)}">${sgn(v)}</span></td>${sfn ? "" : `<td class="num">${sfS?.a ? nf(sfS.fin[k] / sfS.a * 100, 1) + "%" : "—"}</td>`}</tr>`; }).join("")}</tbody></table></div>` : `<p class="empty">Sem atualização: o recorte ${esc(e.nome)} não existe na base do SICOR.</p>`;
     let inst = C.inst.filter(i => sfn || i.escopos.includes(rus.esc)).filter(i => i.rur > 0);
     inst.sort((a, b) => ((b[rus.ord] ?? -1e9) - (a[rus.ord] ?? -1e9)));
     const ord = (k, n) => `<button type="button" data-uord="${k}" aria-pressed="${rus.ord === k}">${n}</button>`;
     const instRows = inst.slice(0, 30).map((i, k) => `<tr><td class="num">${k + 1}</td><td><div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small>${esc(i.nome.slice(0, 44))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
       <td class="num">${biCart(i.rur)}</td><td class="num ${cls(i.cresc_rur)}">${sgn(i.cresc_rur)}</td><td class="num">${nf(i.p_rur, 1)}%</td>${FONTES.map(([k2]) => `<td class="num">${i[k2] == null ? "—" : nf(i[k2], 0) + "%"}</td>`).join("")}</tr>`).join("");
     const lC = `<a href="${esc(C.meta.url_cosif)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>`;
-    $("#view").innerHTML = `<div><div class="eyebrow">Cosif ${ym(C.meta.refs.cosif)} · SICOR até ${dmy(D.meta.ref)}</div><h2>Crédito rural: carteira · ${esc(e.nome)}</h2>
-      <p class="lede">Estoque da carteira rural de ${esc(e.nome)}: saldo, crescimento e fonte de recursos, com o SFN como referência. Inadimplência rural e carteira por finalidade do sistema estão na aba <a href="#ruralsfn">Crédito rural no SFN</a>; a contratação detalhada, na aba Safra de crédito rural / SICOR.</p></div>
+    $("#view").innerHTML = `<div><div class="eyebrow">Cosif ${ym(C.meta.refs.cosif)}</div><h2>Carteira rural: estoque · ${esc(e.nome)}</h2>
+      <p class="lede">Estoque da carteira rural de ${esc(e.nome)}: saldo, crescimento e fonte de recursos, com o SFN como referência. Tudo aqui é estoque, dos balancetes Cosif. O que foi contratado na safra está na aba <a href="#safra">Safra de crédito rural / contratações</a>; inadimplência rural e carteira por finalidade do sistema, na aba <a href="#ruralsfn">Crédito rural no SFN</a>.</p></div>
       ${kp}
       <div class="grid2">${block("Evolução da carteira rural", `Índice, ${ym(S[0]?.d || l.d)} = 100 · mensal`, tsChart(evL, { fmt: v => nf(v, 0), label: "Carteira rural indexada" }), `Conta 1630 (financiamentos rurais) dos balancetes · ${lC}`)}
         ${block("Crescimento da carteira rural em 12 meses", `${ym(C.meta.refs.cosif)} contra ${ym(C.meta.ant)}`, divergingBars(shareB, { label: "Crescimento rural" }), `Conta 1630 dos balancetes. ${lC}`)}</div>
-      <div class="grid2">${block("Carteira rural por fonte de recursos", `% da carteira rural · ${ym(C.meta.refs.cosif)}`, stack100(rowsF, FONTES, { label: "Fonte de recursos" }), `Contas 1630500003 (livres), 1631500002 (exigibilidade à vista), 1632500001 (poupança rural), 1633500000 (LCA) e 1634500009 (fontes públicas, inclui repasses oficiais). ${lC}`)}
-        ${block(`Contratação na safra ${safraLbl(D.meta.safra_atual)} por finalidade`, `${esc(e.nome)} · até ${dmy(D.meta.ref)} · Brasil`, finTab, `Matriz de Dados do Crédito Rural (SICOR). Mesmo ponto: safra anterior até a mesma data. <a href="#safra">Ver aba Safra</a>.`)}</div>
+      ${block("Carteira rural por fonte de recursos", `% da carteira rural · ${ym(C.meta.refs.cosif)}`, stack100(rowsF, FONTES, { label: "Fonte de recursos" }), `Contas 1630500003 (livres), 1631500002 (exigibilidade à vista), 1632500001 (poupança rural), 1633500000 (LCA) e 1634500009 (fontes públicas, inclui repasses oficiais). ${lC}`)}
       <section class="block"><header><div class="eyebrow">${esc(e.nome)} · ${inst.length} instituições com carteira rural · ${ym(C.meta.refs.cosif)}</div><h3>Instituições por carteira rural</h3></header>
         <div class="rank-tools"><div class="fgroup"><span class="flabel">Ordenar por</span><div class="seg">${ord("rur", "Carteira rural")}${ord("cresc_rur", "Crescimento")}${ord("p_rur", "% rural")}${ord("f_lca", "% LCA")}${ord("f_poup", "% poupança")}</div></div></div>
         <div class="tbl-wrap"><table><thead><tr><th class="num">#</th><th>Instituição</th><th class="num">Rural</th><th class="num">12 meses</th><th class="num">% da carteira</th>${FONTES.map(([, n]) => `<th class="num">${n}</th>`).join("")}</tr></thead><tbody>${instRows}</tbody></table></div>
@@ -1711,7 +1706,7 @@ function renderVisao() {
       ["Rural na carteira", k => { const c = lastP(C.cosif[k]); return c ? nf(c.p_rur, 1) + "%" : "—"; }, "Cosif"], [`Safra ${safraLbl(S0)}, var.`, k => sgn(sfV(k)), "SICOR"]];
     const tabela = `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th>${COLS.map(([k, n]) => `<th class="num">${n}</th>`).join("")}<th>Base</th></tr></thead><tbody>${LIN.map(([n, f, b]) => `<tr><td>${n}</td>${COLS.map(([k]) => `<td class="num">${f(k)}</td>`).join("")}<td><small>${b}</small></td></tr>`).join("")}</tbody></table></div>`;
     const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"], ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos, estágios, provisão e Basileia por escopo"],
-      ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Carteira rural", "Carteira rural e fonte de recursos por escopo"], ["#safra", "Safra de crédito rural / SICOR", "Contratação por safra, finalidade, programa, fonte e instituição"],
+      ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Carteira rural / estoque", "Saldo rural e fonte de recursos por escopo"], ["#safra", "Safra de crédito rural / contratações", "Contratação por safra, finalidade, programa, fonte e instituição"],
       ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"], ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"], ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
     $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Visão geral do Sistema Financeiro Nacional</h2>
       <p class="lede">Os grandes números do crédito no SFN: saldo, concessões, inadimplência e atraso. Aqui ficam as séries que só existem para o sistema ou por segmento (bancos e cooperativas); o crédito rural do sistema tem aba própria. Para ver um sistema, uma central ou uma instituição, use as abas do segundo grupo. Data de referência de cada base:</p></div>${strip}
@@ -1796,7 +1791,7 @@ function renderRuralSFN() {
     const sgsL = [["21148", "PF total", cor("#2B2F33"), 2.5], ["21146", "PF taxa de mercado", "#C2562C", 1.6], ["21147", "PF taxa regulada", "#C08A2E", 1.6], ["21136", "PJ total", "#5A6B8C", 1.6]].map(([c2, n, co2, w]) => ({ name: n, pts: (sg[c2]?.p || []).slice(-36).map(x => ({ d: x.d, v: x.v })), c: co2, w }));
     const lS = `<a href="${esc(C.meta.url_sgs)}" target="_blank" rel="noopener">SGS, Banco Central</a>`;
     $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Crédito rural no Sistema Financeiro Nacional</h2>
-      <p class="lede">Estoque, inadimplência, atraso e concessões do crédito rural no SFN, por segmento (bancos e cooperativas) e por UF do tomador. A contratação por instituição está na aba <a href="#safra">Safra de crédito rural / SICOR</a>; a carteira rural de cada sistema, central ou cooperativa, na aba <a href="#rural">Carteira rural</a>.</p></div>
+      <p class="lede">Estoque, inadimplência, atraso e concessões do crédito rural no SFN, por segmento (bancos e cooperativas) e por UF do tomador. A contratação por instituição está na aba <a href="#safra">Safra de crédito rural / contratações</a>; o estoque de cada sistema, central ou cooperativa, na aba <a href="#rural">Carteira rural / estoque</a>.</p></div>
       ${ctrl}
       ${kp}
       <div class="grid2">${block(`Inadimplência acima de 90 dias · ${cN}`, `${gN} · mensal`, tsChart(mk("inad"), { unit: "%", fmt: v => nf(v, 1), label: "Inadimplência rural" }), `% da carteira rural · ${linkR("scr")}`)}
@@ -1814,10 +1809,10 @@ function renderFontes() {
   if (!precisa(["safra", "risco", "posicao", "resultados", "carteira"])) { esperando("Carregando as datas de referência das bases…"); return; }
   cid = 0; $("#filters").innerHTML = ""; $("#stamp").textContent = "Fontes e metodologia";
   const B = [
-    ["SICOR — Matriz de Dados do Crédito Rural", "Safra de crédito rural; Carteira rural; Perfil da carteira; Crédito rural no SFN; Ficha; Rankings", "Microdados de operações de crédito rural por instituição, UF, programa, fonte e empreendimento", "Mensal (mês fechado), com revisão dos meses anteriores", "~25 dias", dmy(D.meta.ref), D.meta.url],
+    ["SICOR — Matriz de Dados do Crédito Rural", "Safra de crédito rural / contratações; Perfil da carteira; Crédito rural no SFN; Ficha; Rankings", "Microdados de operações de crédito rural por instituição, UF, programa, fonte e empreendimento", "Mensal (mês fechado), com revisão dos meses anteriores", "~25 dias", dmy(D.meta.ref), D.meta.url],
     ["SCR.data", "Visão geral do SFN; Crédito rural no SFN", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente e modalidade", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
     ["SGS — séries temporais", "Visão geral do SFN; Crédito rural no SFN", "Saldo e concessões do SFN, por PF/PJ e modalidade; inadimplência rural", "Mensal", "~30 dias", ym(C.meta.refs.sgs), "https://www3.bcb.gov.br/sgspub/"],
-    ["Balancetes Cosif", "Perfil da carteira; Carteira rural; Resultados; Qualidade e risco (estágios); Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
+    ["Balancetes Cosif", "Perfil da carteira; Carteira rural / estoque; Resultados; Qualidade e risco (estágios); Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
     ["IF.data", "Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
     ["Relação de instituições em funcionamento", "Todas", "Cadastro de cooperativas e bancos, filiação a centrais", "Diária", "—", "consulta a cada rodada", "https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento"],
     ["Lista de cooperativas do Sicoob", "Nomes e números", "Número, nome e CNPJ das cooperativas e centrais do Sicoob", "Eventual", "—", "out/26", "https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf"],
