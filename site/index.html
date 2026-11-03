@@ -1953,11 +1953,19 @@ function renderVisao() {
       ["ROE 12 meses", k => q(k)?.roe == null ? "—" : nf(q(k).roe, 1) + "%", "Cosif"], ["Eficiência", k => q(k)?.efic == null ? "—" : nf(q(k).efic, 1) + "%", "Cosif"],
       ["Rural na carteira", k => { const c = lastP(C.cosif[k]); return c ? nf(c.p_rur, 1) + "%" : "—"; }, "Cosif"], [`Safra ${safraLbl(S0)}, var.`, k => sgn(sfV(k)), "SICOR"]];
     const tabela = `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th>${COLS.map(([k, n]) => `<th class="num">${n}</th>`).join("")}<th>Base</th></tr></thead><tbody>${LIN.map(([n, f, b]) => `<tr><td>${n}</td>${COLS.map(([k]) => `<td class="num">${f(k)}</td>`).join("")}<td><small>${b}</small></td></tr>`).join("")}</tbody></table></div>`;
-    const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"], ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos (estágio 3), provisão e Basileia por escopo"],
-      ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Carteira rural / estoque", "Saldo rural e fonte de recursos por escopo"], ["#safra", "Safra de crédito rural / contratações", "Contratação por safra, finalidade, programa, fonte e instituição"],
-      ["#consignado", "Consignado", "Crédito do Trabalhador, INSS e setor público: concessões, saldo, inadimplência e ativo problemático"], ["#expectativas", "Expectativas de mercado", "Focus: Selic, IPCA, PIB e câmbio esperados"],
+    const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"],
+      ["#consignado", "Consignado", "Crédito do Trabalhador, INSS e setor público: concessões, saldo, inadimplência e ativo problemático"],
+      ["#expectativas", "Expectativas de mercado", "Focus: Selic, IPCA, PIB e câmbio esperados"],
+      ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"],
+      ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos (estágio 3), provisão e Basileia por escopo"],
+      ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"],
+      ["#safra", "Safra de crédito rural / contratações", "Contratação por safra, finalidade, programa, fonte e instituição"],
+      ["#rural", "Carteira rural / estoque", "Saldo rural e fonte de recursos por escopo"],
       ["#territorio", "Crédito rural por território", "Custeio e investimento em MG por município e região, todo o SFN"],
-      ["#quadro", "Quadro de indicadores por instituição", "Todos os indicadores de cada instituição do grupo, com a variação em 12 meses"], ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"], ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"], ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
+      ["#quadro", "Quadro de indicadores por instituição", "Todos os indicadores de cada instituição do grupo, com a variação em 12 meses"],
+      ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"],
+      ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"],
+      ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
     $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Visão geral do Sistema Financeiro Nacional</h2>
       <p class="lede">Os grandes números do crédito no SFN: saldo, concessões, inadimplência e atraso. Aqui ficam as séries que só existem para o sistema ou por segmento (bancos e cooperativas); o crédito rural do sistema tem aba própria. Para ver um sistema, uma central ou uma instituição, use as abas do segundo grupo. Data de referência de cada base:</p></div>${strip}
       ${kp}
@@ -2442,7 +2450,7 @@ function blocoStatus(st) {
 }
 /* ===================== Roteador ===================== */
 const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio" };
-const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[2, 3, 4, 5, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const GRUPOS_ABAS = [[[0, 1, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 14, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
