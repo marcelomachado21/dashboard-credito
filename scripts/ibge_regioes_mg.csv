@@ -1,0 +1,854 @@
+cod_ibge;municipio;microrregiao;mesorregiao;regiao_imediata;regiao_intermediaria
+3100104;Abadia dos Dourados;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Monte Carmelo;Uberlândia
+3100203;Abaeté;Três Marias;Central Mineira;Abaeté;Divinópolis
+3100302;Abre Campo;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3100401;Acaiaca;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3100500;Açucena;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3100609;Água Boa;Peçanha;Vale do Rio Doce;Capelinha;Teófilo Otoni
+3100708;Água Comprida;Uberaba;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3100807;Aguanil;Campo Belo;Oeste de Minas;Campo Belo;Varginha
+3100906;Águas Formosas;Nanuque;Vale do Mucuri;Águas Formosas;Teófilo Otoni
+3101003;Águas Vermelhas;Salinas;Norte de Minas;Pedra Azul;Teófilo Otoni
+3101102;Aimorés;Aimorés;Vale do Rio Doce;Aimorés - Resplendor;Governador Valadares
+3101201;Aiuruoca;Andrelândia;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3101300;Alagoa;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3101409;Albertina;Poços de Caldas;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3101508;Além Paraíba;Cataguases;Zona da Mata;Além Paraíba;Juiz de Fora
+3101607;Alfenas;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3101631;Alfredo Vasconcelos;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3101706;Almenara;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3101805;Alpercata;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3101904;Alpinópolis;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3102001;Alterosa;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3102050;Alto Caparaó;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3102100;Alto Rio Doce;Viçosa;Zona da Mata;Barbacena;Barbacena
+3102209;Alvarenga;Aimorés;Vale do Rio Doce;Caratinga;Ipatinga
+3102308;Alvinópolis;Itabira;Metropolitana de Belo Horizonte;Ponte Nova;Juiz de Fora
+3102407;Alvorada de Minas;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Diamantina;Teófilo Otoni
+3102506;Amparo do Serra;Viçosa;Zona da Mata;Ponte Nova;Juiz de Fora
+3102605;Andradas;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3102704;Cachoeira de Pajeú;Pedra Azul;Jequitinhonha;Pedra Azul;Teófilo Otoni
+3102803;Andrelândia;Andrelândia;Sul/Sudoeste de Minas;Juiz de Fora;Juiz de Fora
+3102852;Angelândia;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3102902;Antônio Carlos;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3103009;Antônio Dias;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3103108;Antônio Prado de Minas;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3103207;Araçaí;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3103306;Aracitaba;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3103405;Araçuaí;Araçuaí;Jequitinhonha;Araçuaí;Teófilo Otoni
+3103504;Araguari;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3103603;Arantina;Andrelândia;Sul/Sudoeste de Minas;Juiz de Fora;Juiz de Fora
+3103702;Araponga;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3103751;Araporã;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3103801;Arapuá;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3103900;Araújos;Bom Despacho;Central Mineira;Divinópolis;Divinópolis
+3104007;Araxá;Araxá;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3104106;Arceburgo;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3104205;Arcos;Formiga;Oeste de Minas;Formiga;Divinópolis
+3104304;Areado;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3104403;Argirita;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3104452;Aricanduva;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3104502;Arinos;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3104601;Astolfo Dutra;Ubá;Zona da Mata;Cataguases;Juiz de Fora
+3104700;Ataléia;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3104809;Augusto de Lima;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3104908;Baependi;São Lourenço;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3105004;Baldim;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3105103;Bambuí;Piuí;Oeste de Minas;Formiga;Divinópolis
+3105202;Bandeira;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3105301;Bandeira do Sul;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3105400;Barão de Cocais;Itabira;Metropolitana de Belo Horizonte;Santa Bárbara - Ouro Preto;Belo Horizonte
+3105509;Barão do Monte Alto;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3105608;Barbacena;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3105707;Barra Longa;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3105905;Barroso;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3106002;Bela Vista de Minas;Itabira;Metropolitana de Belo Horizonte;João Monlevade;Ipatinga
+3106101;Belmiro Braga;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3106200;Belo Horizonte;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3106309;Belo Oriente;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3106408;Belo Vale;Itaguara;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3106507;Berilo;Capelinha;Jequitinhonha;Araçuaí;Teófilo Otoni
+3106606;Bertópolis;Nanuque;Vale do Mucuri;Águas Formosas;Teófilo Otoni
+3106655;Berizal;Salinas;Norte de Minas;Salinas;Montes Claros
+3106705;Betim;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3106804;Bias Fortes;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3106903;Bicas;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3107000;Biquinhas;Três Marias;Central Mineira;Abaeté;Divinópolis
+3107109;Boa Esperança;Varginha;Sul/Sudoeste de Minas;Três Pontas - Boa Esperança;Varginha
+3107208;Bocaina de Minas;Andrelândia;Sul/Sudoeste de Minas;Juiz de Fora;Juiz de Fora
+3107307;Bocaiúva;Bocaiúva;Norte de Minas;Montes Claros;Montes Claros
+3107406;Bom Despacho;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3107505;Bom Jardim de Minas;Andrelândia;Sul/Sudoeste de Minas;Juiz de Fora;Juiz de Fora
+3107604;Bom Jesus da Penha;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3107703;Bom Jesus do Amparo;Itabira;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3107802;Bom Jesus do Galho;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3107901;Bom Repouso;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3108008;Bom Sucesso;Oliveira;Oeste de Minas;Lavras;Varginha
+3108107;Bonfim;Itaguara;Metropolitana de Belo Horizonte;Oliveira;Divinópolis
+3108206;Bonfinópolis de Minas;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3108255;Bonito de Minas;Januária;Norte de Minas;Januária;Montes Claros
+3108305;Borda da Mata;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3108404;Botelhos;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3108503;Botumirim;Grão Mogol;Norte de Minas;Montes Claros;Montes Claros
+3108552;Brasilândia de Minas;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3108602;Brasília de Minas;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3108701;Brás Pires;Viçosa;Zona da Mata;Ubá;Juiz de Fora
+3108800;Braúnas;Guanhães;Vale do Rio Doce;Ipatinga;Ipatinga
+3108909;Brazópolis;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3109006;Brumadinho;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3109105;Bueno Brandão;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3109204;Buenópolis;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3109253;Bugre;Caratinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3109303;Buritis;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3109402;Buritizeiro;Pirapora;Norte de Minas;Pirapora;Montes Claros
+3109451;Cabeceira Grande;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3109501;Cabo Verde;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3109600;Cachoeira da Prata;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3109709;Cachoeira de Minas;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3109808;Cachoeira Dourada;Ituiutaba;Triângulo Mineiro/Alto Paranaíba;Ituiutaba;Uberlândia
+3109907;Caetanópolis;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3110004;Caeté;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3110103;Caiana;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3110202;Cajuri;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3110301;Caldas;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3110400;Camacho;Formiga;Oeste de Minas;Divinópolis;Divinópolis
+3110509;Camanducaia;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3110608;Cambuí;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3110707;Cambuquira;São Lourenço;Sul/Sudoeste de Minas;Três Corações;Varginha
+3110806;Campanário;Governador Valadares;Vale do Rio Doce;Teófilo Otoni;Teófilo Otoni
+3110905;Campanha;Varginha;Sul/Sudoeste de Minas;Três Corações;Varginha
+3111002;Campestre;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3111101;Campina Verde;Frutal;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3111150;Campo Azul;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3111200;Campo Belo;Campo Belo;Oeste de Minas;Campo Belo;Varginha
+3111309;Campo do Meio;Varginha;Sul/Sudoeste de Minas;Alfenas;Varginha
+3111408;Campo Florido;Uberaba;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3111507;Campos Altos;Araxá;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3111606;Campos Gerais;Varginha;Sul/Sudoeste de Minas;Alfenas;Varginha
+3111705;Canaã;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3111804;Canápolis;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3111903;Cana Verde;Campo Belo;Oeste de Minas;Lavras;Varginha
+3112000;Candeias;Campo Belo;Oeste de Minas;Campo Belo;Varginha
+3112059;Cantagalo;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3112109;Caparaó;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3112208;Capela Nova;Barbacena;Campo das Vertentes;Conselheiro Lafaiete;Barbacena
+3112307;Capelinha;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3112406;Capetinga;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3112505;Capim Branco;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3112604;Capinópolis;Ituiutaba;Triângulo Mineiro/Alto Paranaíba;Ituiutaba;Uberlândia
+3112653;Capitão Andrade;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3112703;Capitão Enéas;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3112802;Capitólio;Passos;Sul/Sudoeste de Minas;Piumhi;Varginha
+3112901;Caputira;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3113008;Caraí;Araçuaí;Jequitinhonha;Teófilo Otoni;Teófilo Otoni
+3113107;Caranaíba;Barbacena;Campo das Vertentes;Conselheiro Lafaiete;Barbacena
+3113206;Carandaí;Barbacena;Campo das Vertentes;Conselheiro Lafaiete;Barbacena
+3113305;Carangola;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3113404;Caratinga;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3113503;Carbonita;Capelinha;Jequitinhonha;Diamantina;Teófilo Otoni
+3113602;Careaçu;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3113701;Carlos Chagas;Nanuque;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3113800;Carmésia;Guanhães;Vale do Rio Doce;Itabira;Belo Horizonte
+3113909;Carmo da Cachoeira;Varginha;Sul/Sudoeste de Minas;Três Corações;Varginha
+3114006;Carmo da Mata;Oliveira;Oeste de Minas;Divinópolis;Divinópolis
+3114105;Carmo de Minas;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3114204;Carmo do Cajuru;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3114303;Carmo do Paranaíba;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3114402;Carmo do Rio Claro;Alfenas;Sul/Sudoeste de Minas;Passos;Varginha
+3114501;Carmópolis de Minas;Oliveira;Oeste de Minas;Oliveira;Divinópolis
+3114550;Carneirinho;Frutal;Triângulo Mineiro/Alto Paranaíba;Iturama;Uberaba
+3114600;Carrancas;Lavras;Campo das Vertentes;Lavras;Varginha
+3114709;Carvalhópolis;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3114808;Carvalhos;Andrelândia;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3114907;Casa Grande;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3115003;Cascalho Rico;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3115102;Cássia;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3115201;Conceição da Barra de Minas;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3115300;Cataguases;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3115359;Catas Altas;Itabira;Metropolitana de Belo Horizonte;Santa Bárbara - Ouro Preto;Belo Horizonte
+3115409;Catas Altas da Noruega;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3115458;Catuji;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3115474;Catuti;Janaúba;Norte de Minas;Espinosa;Montes Claros
+3115508;Caxambu;São Lourenço;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3115607;Cedro do Abaeté;Três Marias;Central Mineira;Abaeté;Divinópolis
+3115706;Central de Minas;Mantena;Vale do Rio Doce;Mantena;Governador Valadares
+3115805;Centralina;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3115904;Chácara;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3116001;Chalé;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3116100;Chapada do Norte;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3116159;Chapada Gaúcha;Januária;Norte de Minas;São Francisco;Montes Claros
+3116209;Chiador;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3116308;Cipotânea;Viçosa;Zona da Mata;Barbacena;Barbacena
+3116407;Claraval;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3116506;Claro dos Poções;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3116605;Cláudio;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3116704;Coimbra;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3116803;Coluna;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3116902;Comendador Gomes;Frutal;Triângulo Mineiro/Alto Paranaíba;Frutal;Uberaba
+3117009;Comercinho;Pedra Azul;Jequitinhonha;Pedra Azul;Teófilo Otoni
+3117108;Conceição da Aparecida;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3117207;Conceição das Pedras;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3117306;Conceição das Alagoas;Uberaba;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3117405;Conceição de Ipanema;Aimorés;Vale do Rio Doce;Manhuaçu;Juiz de Fora
+3117504;Conceição do Mato Dentro;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3117603;Conceição do Pará;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3117702;Conceição do Rio Verde;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3117801;Conceição dos Ouros;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3117836;Cônego Marinho;Januária;Norte de Minas;Januária;Montes Claros
+3117876;Confins;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3117900;Congonhal;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3118007;Congonhas;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3118106;Congonhas do Norte;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3118205;Conquista;Uberaba;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3118304;Conselheiro Lafaiete;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3118403;Conselheiro Pena;Aimorés;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3118502;Consolação;Itajubá;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3118601;Contagem;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3118700;Coqueiral;Varginha;Sul/Sudoeste de Minas;Três Pontas - Boa Esperança;Varginha
+3118809;Coração de Jesus;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3118908;Cordisburgo;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3119005;Cordislândia;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Varginha;Varginha
+3119104;Corinto;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3119203;Coroaci;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3119302;Coromandel;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Patrocínio;Patos de Minas
+3119401;Coronel Fabriciano;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3119500;Coronel Murta;Araçuaí;Jequitinhonha;Araçuaí;Teófilo Otoni
+3119609;Coronel Pacheco;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3119708;Coronel Xavier Chaves;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3119807;Córrego Danta;Piuí;Oeste de Minas;Formiga;Divinópolis
+3119906;Córrego do Bom Jesus;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3119955;Córrego Fundo;Formiga;Oeste de Minas;Formiga;Divinópolis
+3120003;Córrego Novo;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3120102;Couto de Magalhães de Minas;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3120151;Crisólita;Nanuque;Vale do Mucuri;Águas Formosas;Teófilo Otoni
+3120201;Cristais;Campo Belo;Oeste de Minas;Campo Belo;Varginha
+3120300;Cristália;Grão Mogol;Norte de Minas;Montes Claros;Montes Claros
+3120409;Cristiano Otoni;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3120508;Cristina;Itajubá;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3120607;Crucilândia;Itaguara;Metropolitana de Belo Horizonte;Oliveira;Divinópolis
+3120706;Cruzeiro da Fortaleza;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Patrocínio;Patos de Minas
+3120805;Cruzília;Andrelândia;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3120839;Cuparaque;Aimorés;Vale do Rio Doce;Aimorés - Resplendor;Governador Valadares
+3120870;Curral de Dentro;Salinas;Norte de Minas;Salinas;Montes Claros
+3120904;Curvelo;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3121001;Datas;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3121100;Delfim Moreira;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3121209;Delfinópolis;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3121258;Delta;Uberaba;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3121308;Descoberto;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3121407;Desterro de Entre Rios;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3121506;Desterro do Melo;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3121605;Diamantina;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3121704;Diogo de Vasconcelos;Ouro Preto;Metropolitana de Belo Horizonte;Ponte Nova;Juiz de Fora
+3121803;Dionísio;Itabira;Metropolitana de Belo Horizonte;Ipatinga;Ipatinga
+3121902;Divinésia;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3122009;Divino;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3122108;Divino das Laranjeiras;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3122207;Divinolândia de Minas;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3122306;Divinópolis;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3122355;Divisa Alegre;Salinas;Norte de Minas;Pedra Azul;Teófilo Otoni
+3122405;Divisa Nova;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3122454;Divisópolis;Almenara;Jequitinhonha;Pedra Azul;Teófilo Otoni
+3122470;Dom Bosco;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3122504;Dom Cavati;Caratinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3122603;Dom Joaquim;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Guanhães;Governador Valadares
+3122702;Dom Silvério;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3122801;Dom Viçoso;Itajubá;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3122900;Dona Euzébia;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3123007;Dores de Campos;São João Del Rei;Campo das Vertentes;Barbacena;Barbacena
+3123106;Dores de Guanhães;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3123205;Dores do Indaiá;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3123304;Dores do Turvo;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3123403;Doresópolis;Piuí;Oeste de Minas;Piumhi;Varginha
+3123502;Douradoquara;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Monte Carmelo;Uberlândia
+3123528;Durandé;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3123601;Elói Mendes;Varginha;Sul/Sudoeste de Minas;Varginha;Varginha
+3123700;Engenheiro Caldas;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3123809;Engenheiro Navarro;Bocaiúva;Norte de Minas;Montes Claros;Montes Claros
+3123858;Entre Folhas;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3123908;Entre Rios de Minas;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3124005;Ervália;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3124104;Esmeraldas;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3124203;Espera Feliz;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3124302;Espinosa;Janaúba;Norte de Minas;Espinosa;Montes Claros
+3124401;Espírito Santo do Dourado;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3124500;Estiva;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3124609;Estrela Dalva;Cataguases;Zona da Mata;Além Paraíba;Juiz de Fora
+3124708;Estrela do Indaiá;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3124807;Estrela do Sul;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Monte Carmelo;Uberlândia
+3124906;Eugenópolis;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3125002;Ewbank da Câmara;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3125101;Extrema;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3125200;Fama;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3125309;Faria Lemos;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3125408;Felício dos Santos;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3125507;São Gonçalo do Rio Preto;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3125606;Felisburgo;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3125705;Felixlândia;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3125804;Fernandes Tourinho;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3125903;Ferros;Itabira;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3125952;Fervedouro;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3126000;Florestal;Pará de Minas;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3126109;Formiga;Formiga;Oeste de Minas;Formiga;Divinópolis
+3126208;Formoso;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3126307;Fortaleza de Minas;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3126406;Fortuna de Minas;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3126505;Francisco Badaró;Capelinha;Jequitinhonha;Araçuaí;Teófilo Otoni
+3126604;Francisco Dumont;Bocaiúva;Norte de Minas;Montes Claros;Montes Claros
+3126703;Francisco Sá;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3126752;Franciscópolis;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3126802;Frei Gaspar;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3126901;Frei Inocêncio;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3126950;Frei Lagonegro;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3127008;Fronteira;Frutal;Triângulo Mineiro/Alto Paranaíba;Frutal;Uberaba
+3127057;Fronteira dos Vales;Nanuque;Vale do Mucuri;Águas Formosas;Teófilo Otoni
+3127073;Fruta de Leite;Salinas;Norte de Minas;Salinas;Montes Claros
+3127107;Frutal;Frutal;Triângulo Mineiro/Alto Paranaíba;Frutal;Uberaba
+3127206;Funilândia;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3127305;Galiléia;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3127339;Gameleiras;Janaúba;Norte de Minas;Espinosa;Montes Claros
+3127354;Glaucilândia;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3127370;Goiabeira;Aimorés;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3127388;Goianá;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3127404;Gonçalves;Pouso Alegre;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3127503;Gonzaga;Guanhães;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3127602;Gouveia;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3127701;Governador Valadares;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3127800;Grão Mogol;Grão Mogol;Norte de Minas;Montes Claros;Montes Claros
+3127909;Grupiara;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Monte Carmelo;Uberlândia
+3128006;Guanhães;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3128105;Guapé;Varginha;Sul/Sudoeste de Minas;Passos;Varginha
+3128204;Guaraciaba;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3128253;Guaraciama;Bocaiúva;Norte de Minas;Montes Claros;Montes Claros
+3128303;Guaranésia;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3128402;Guarani;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3128501;Guarará;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3128600;Guarda-Mor;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3128709;Guaxupé;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3128808;Guidoval;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3128907;Guimarânia;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patrocínio;Patos de Minas
+3129004;Guiricema;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3129103;Gurinhatã;Ituiutaba;Triângulo Mineiro/Alto Paranaíba;Ituiutaba;Uberlândia
+3129202;Heliodora;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3129301;Iapu;Caratinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3129400;Ibertioga;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3129509;Ibiá;Araxá;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3129608;Ibiaí;Pirapora;Norte de Minas;Pirapora;Montes Claros
+3129657;Ibiracatu;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3129707;Ibiraci;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3129806;Ibirité;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3129905;Ibitiúra de Minas;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3130002;Ibituruna;Oliveira;Oeste de Minas;Lavras;Varginha
+3130051;Icaraí de Minas;Januária;Norte de Minas;São Francisco;Montes Claros
+3130101;Igarapé;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3130200;Igaratinga;Divinópolis;Oeste de Minas;Pará de Minas;Divinópolis
+3130309;Iguatama;Piuí;Oeste de Minas;Formiga;Divinópolis
+3130408;Ijaci;Lavras;Campo das Vertentes;Lavras;Varginha
+3130507;Ilicínea;Varginha;Sul/Sudoeste de Minas;Três Pontas - Boa Esperança;Varginha
+3130556;Imbé de Minas;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3130606;Inconfidentes;Poços de Caldas;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3130655;Indaiabira;Salinas;Norte de Minas;Salinas;Montes Claros
+3130705;Indianópolis;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3130804;Ingaí;Lavras;Campo das Vertentes;Lavras;Varginha
+3130903;Inhapim;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3131000;Inhaúma;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3131109;Inimutaba;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3131158;Ipaba;Caratinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3131208;Ipanema;Aimorés;Vale do Rio Doce;Manhuaçu;Juiz de Fora
+3131307;Ipatinga;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3131406;Ipiaçu;Ituiutaba;Triângulo Mineiro/Alto Paranaíba;Ituiutaba;Uberlândia
+3131505;Ipuiúna;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3131604;Iraí de Minas;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Monte Carmelo;Uberlândia
+3131703;Itabira;Itabira;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3131802;Itabirinha;Mantena;Vale do Rio Doce;Mantena;Governador Valadares
+3131901;Itabirito;Ouro Preto;Metropolitana de Belo Horizonte;Santa Bárbara - Ouro Preto;Belo Horizonte
+3132008;Itacambira;Grão Mogol;Norte de Minas;Montes Claros;Montes Claros
+3132107;Itacarambi;Januária;Norte de Minas;Januária;Montes Claros
+3132206;Itaguara;Itaguara;Metropolitana de Belo Horizonte;Oliveira;Divinópolis
+3132305;Itaipé;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3132404;Itajubá;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3132503;Itamarandiba;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3132602;Itamarati de Minas;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3132701;Itambacuri;Governador Valadares;Vale do Rio Doce;Teófilo Otoni;Teófilo Otoni
+3132800;Itambé do Mato Dentro;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3132909;Itamogi;São Sebastião do Paraíso;Sul/Sudoeste de Minas;São Sebastião do Paraíso;Varginha
+3133006;Itamonte;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3133105;Itanhandu;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3133204;Itanhomi;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3133303;Itaobim;Pedra Azul;Jequitinhonha;Teófilo Otoni;Teófilo Otoni
+3133402;Itapagipe;Frutal;Triângulo Mineiro/Alto Paranaíba;Frutal;Uberaba
+3133501;Itapecerica;Formiga;Oeste de Minas;Divinópolis;Divinópolis
+3133600;Itapeva;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3133709;Itatiaiuçu;Itaguara;Metropolitana de Belo Horizonte;Divinópolis;Divinópolis
+3133758;Itaú de Minas;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3133808;Itaúna;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3133907;Itaverava;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3134004;Itinga;Araçuaí;Jequitinhonha;Araçuaí;Teófilo Otoni
+3134103;Itueta;Aimorés;Vale do Rio Doce;Aimorés - Resplendor;Governador Valadares
+3134202;Ituiutaba;Ituiutaba;Triângulo Mineiro/Alto Paranaíba;Ituiutaba;Uberlândia
+3134301;Itumirim;Lavras;Campo das Vertentes;Lavras;Varginha
+3134400;Iturama;Frutal;Triângulo Mineiro/Alto Paranaíba;Iturama;Uberaba
+3134509;Itutinga;Lavras;Campo das Vertentes;Lavras;Varginha
+3134608;Jaboticatubas;Sete Lagoas;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3134707;Jacinto;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3134806;Jacuí;São Sebastião do Paraíso;Sul/Sudoeste de Minas;São Sebastião do Paraíso;Varginha
+3134905;Jacutinga;Poços de Caldas;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3135001;Jaguaraçu;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3135050;Jaíba;Janaúba;Norte de Minas;Janaúba;Montes Claros
+3135076;Jampruca;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3135100;Janaúba;Janaúba;Norte de Minas;Janaúba;Montes Claros
+3135209;Januária;Januária;Norte de Minas;Januária;Montes Claros
+3135308;Japaraíba;Bom Despacho;Central Mineira;Divinópolis;Divinópolis
+3135357;Japonvar;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3135407;Jeceaba;Itaguara;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3135456;Jenipapo de Minas;Capelinha;Jequitinhonha;Araçuaí;Teófilo Otoni
+3135506;Jequeri;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3135605;Jequitaí;Pirapora;Norte de Minas;Montes Claros;Montes Claros
+3135704;Jequitibá;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3135803;Jequitinhonha;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3135902;Jesuânia;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3136009;Joaíma;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3136108;Joanésia;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3136207;João Monlevade;Itabira;Metropolitana de Belo Horizonte;João Monlevade;Ipatinga
+3136306;João Pinheiro;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3136405;Joaquim Felício;Curvelo;Central Mineira;Montes Claros;Montes Claros
+3136504;Jordânia;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3136520;José Gonçalves de Minas;Capelinha;Jequitinhonha;Araçuaí;Teófilo Otoni
+3136553;José Raydan;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3136579;Josenópolis;Grão Mogol;Norte de Minas;Montes Claros;Montes Claros
+3136603;Nova União;Itabira;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3136652;Juatuba;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3136702;Juiz de Fora;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3136801;Juramento;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3136900;Juruaia;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3136959;Juvenília;Januária;Norte de Minas;Januária;Montes Claros
+3137007;Ladainha;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3137106;Lagamar;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3137205;Lagoa da Prata;Bom Despacho;Central Mineira;Divinópolis;Divinópolis
+3137304;Lagoa dos Patos;Pirapora;Norte de Minas;Montes Claros;Montes Claros
+3137403;Lagoa Dourada;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3137502;Lagoa Formosa;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3137536;Lagoa Grande;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3137601;Lagoa Santa;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3137700;Lajinha;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3137809;Lambari;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3137908;Lamim;Viçosa;Zona da Mata;Conselheiro Lafaiete;Barbacena
+3138005;Laranjal;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3138104;Lassance;Pirapora;Norte de Minas;Pirapora;Montes Claros
+3138203;Lavras;Lavras;Campo das Vertentes;Lavras;Varginha
+3138302;Leandro Ferreira;Bom Despacho;Central Mineira;Divinópolis;Divinópolis
+3138351;Leme do Prado;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3138401;Leopoldina;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3138500;Liberdade;Andrelândia;Sul/Sudoeste de Minas;Juiz de Fora;Juiz de Fora
+3138609;Lima Duarte;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3138625;Limeira do Oeste;Frutal;Triângulo Mineiro/Alto Paranaíba;Iturama;Uberaba
+3138658;Lontra;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3138674;Luisburgo;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3138682;Luislândia;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3138708;Luminárias;Lavras;Campo das Vertentes;Lavras;Varginha
+3138807;Luz;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3138906;Machacalis;Nanuque;Vale do Mucuri;Águas Formosas;Teófilo Otoni
+3139003;Machado;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3139102;Madre de Deus de Minas;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3139201;Malacacheta;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3139250;Mamonas;Janaúba;Norte de Minas;Espinosa;Montes Claros
+3139300;Manga;Januária;Norte de Minas;Janaúba;Montes Claros
+3139409;Manhuaçu;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3139508;Manhumirim;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3139607;Mantena;Mantena;Vale do Rio Doce;Mantena;Governador Valadares
+3139706;Maravilhas;Sete Lagoas;Metropolitana de Belo Horizonte;Pará de Minas;Divinópolis
+3139805;Mar de Espanha;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3139904;Maria da Fé;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3140001;Mariana;Ouro Preto;Metropolitana de Belo Horizonte;Santa Bárbara - Ouro Preto;Belo Horizonte
+3140100;Marilac;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3140159;Mário Campos;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3140209;Maripá de Minas;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3140308;Marliéria;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3140407;Marmelópolis;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3140506;Martinho Campos;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3140530;Martins Soares;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3140555;Mata Verde;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3140605;Materlândia;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3140704;Mateus Leme;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3140803;Matias Barbosa;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3140852;Matias Cardoso;Januária;Norte de Minas;Janaúba;Montes Claros
+3140902;Matipó;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3141009;Mato Verde;Janaúba;Norte de Minas;Espinosa;Montes Claros
+3141108;Matozinhos;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3141207;Matutina;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3141306;Medeiros;Piuí;Oeste de Minas;Formiga;Divinópolis
+3141405;Medina;Pedra Azul;Jequitinhonha;Pedra Azul;Teófilo Otoni
+3141504;Mendes Pimentel;Mantena;Vale do Rio Doce;Mantena;Governador Valadares
+3141603;Mercês;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3141702;Mesquita;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3141801;Minas Novas;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3141900;Minduri;Andrelândia;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3142007;Mirabela;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3142106;Miradouro;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3142205;Miraí;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3142254;Miravânia;Januária;Norte de Minas;Janaúba;Montes Claros
+3142304;Moeda;Itaguara;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3142403;Moema;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3142502;Monjolos;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3142601;Monsenhor Paulo;Varginha;Sul/Sudoeste de Minas;Varginha;Varginha
+3142700;Montalvânia;Januária;Norte de Minas;Januária;Montes Claros
+3142809;Monte Alegre de Minas;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3142908;Monte Azul;Janaúba;Norte de Minas;Espinosa;Montes Claros
+3143005;Monte Belo;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3143104;Monte Carmelo;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Monte Carmelo;Uberlândia
+3143153;Monte Formoso;Almenara;Jequitinhonha;Teófilo Otoni;Teófilo Otoni
+3143203;Monte Santo de Minas;São Sebastião do Paraíso;Sul/Sudoeste de Minas;São Sebastião do Paraíso;Varginha
+3143302;Montes Claros;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3143401;Monte Sião;Poços de Caldas;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3143450;Montezuma;Salinas;Norte de Minas;Espinosa;Montes Claros
+3143500;Morada Nova de Minas;Três Marias;Central Mineira;Abaeté;Divinópolis
+3143609;Morro da Garça;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3143708;Morro do Pilar;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3143807;Munhoz;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3143906;Muriaé;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3144003;Mutum;Aimorés;Vale do Rio Doce;Manhuaçu;Juiz de Fora
+3144102;Muzambinho;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3144201;Nacip Raydan;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3144300;Nanuque;Nanuque;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3144359;Naque;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3144375;Natalândia;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3144409;Natércia;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3144508;Nazareno;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3144607;Nepomuceno;Lavras;Campo das Vertentes;Lavras;Varginha
+3144656;Ninheira;Salinas;Norte de Minas;Salinas;Montes Claros
+3144672;Nova Belém;Mantena;Vale do Rio Doce;Mantena;Governador Valadares
+3144706;Nova Era;Itabira;Metropolitana de Belo Horizonte;João Monlevade;Ipatinga
+3144805;Nova Lima;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3144904;Nova Módica;Governador Valadares;Vale do Rio Doce;Teófilo Otoni;Teófilo Otoni
+3145000;Nova Ponte;Araxá;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3145059;Nova Porteirinha;Janaúba;Norte de Minas;Janaúba;Montes Claros
+3145109;Nova Resende;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3145208;Nova Serrana;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3145307;Novo Cruzeiro;Araçuaí;Jequitinhonha;Teófilo Otoni;Teófilo Otoni
+3145356;Novo Oriente de Minas;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3145372;Novorizonte;Salinas;Norte de Minas;Salinas;Montes Claros
+3145406;Olaria;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3145455;Olhos-d'Água;Bocaiúva;Norte de Minas;Montes Claros;Montes Claros
+3145505;Olímpio Noronha;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3145604;Oliveira;Oliveira;Oeste de Minas;Oliveira;Divinópolis
+3145703;Oliveira Fortes;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3145802;Onça de Pitangui;Pará de Minas;Metropolitana de Belo Horizonte;Pará de Minas;Divinópolis
+3145851;Oratórios;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3145877;Orizânia;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3145901;Ouro Branco;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3146008;Ouro Fino;Poços de Caldas;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3146107;Ouro Preto;Ouro Preto;Metropolitana de Belo Horizonte;Santa Bárbara - Ouro Preto;Belo Horizonte
+3146206;Ouro Verde de Minas;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3146255;Padre Carvalho;Grão Mogol;Norte de Minas;Salinas;Montes Claros
+3146305;Padre Paraíso;Araçuaí;Jequitinhonha;Teófilo Otoni;Teófilo Otoni
+3146404;Paineiras;Três Marias;Central Mineira;Abaeté;Divinópolis
+3146503;Pains;Formiga;Oeste de Minas;Formiga;Divinópolis
+3146552;Pai Pedro;Janaúba;Norte de Minas;Janaúba;Montes Claros
+3146602;Paiva;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3146701;Palma;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3146750;Palmópolis;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3146909;Papagaios;Sete Lagoas;Metropolitana de Belo Horizonte;Pará de Minas;Divinópolis
+3147006;Paracatu;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3147105;Pará de Minas;Pará de Minas;Metropolitana de Belo Horizonte;Pará de Minas;Divinópolis
+3147204;Paraguaçu;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3147303;Paraisópolis;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3147402;Paraopeba;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3147501;Passabém;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3147600;Passa Quatro;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3147709;Passa Tempo;Oliveira;Oeste de Minas;Oliveira;Divinópolis
+3147808;Passa Vinte;Andrelândia;Sul/Sudoeste de Minas;Juiz de Fora;Juiz de Fora
+3147907;Passos;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3147956;Patis;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3148004;Patos de Minas;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3148103;Patrocínio;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Patrocínio;Patos de Minas
+3148202;Patrocínio do Muriaé;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3148301;Paula Cândido;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3148400;Paulistas;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3148509;Pavão;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3148608;Peçanha;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3148707;Pedra Azul;Pedra Azul;Jequitinhonha;Pedra Azul;Teófilo Otoni
+3148756;Pedra Bonita;Manhuaçu;Zona da Mata;Carangola;Juiz de Fora
+3148806;Pedra do Anta;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3148905;Pedra do Indaiá;Formiga;Oeste de Minas;Divinópolis;Divinópolis
+3149002;Pedra Dourada;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3149101;Pedralva;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3149150;Pedras de Maria da Cruz;Januária;Norte de Minas;Januária;Montes Claros
+3149200;Pedrinópolis;Araxá;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3149309;Pedro Leopoldo;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3149408;Pedro Teixeira;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3149507;Pequeri;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3149606;Pequi;Sete Lagoas;Metropolitana de Belo Horizonte;Pará de Minas;Divinópolis
+3149705;Perdigão;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3149804;Perdizes;Araxá;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3149903;Perdões;Campo Belo;Oeste de Minas;Lavras;Varginha
+3149952;Periquito;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3150000;Pescador;Governador Valadares;Vale do Rio Doce;Teófilo Otoni;Teófilo Otoni
+3150109;Piau;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3150158;Piedade de Caratinga;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3150208;Piedade de Ponte Nova;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3150307;Piedade do Rio Grande;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3150406;Piedade dos Gerais;Itaguara;Metropolitana de Belo Horizonte;Oliveira;Divinópolis
+3150505;Pimenta;Formiga;Oeste de Minas;Formiga;Divinópolis
+3150539;Pingo-d'Água;Caratinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3150570;Pintópolis;Januária;Norte de Minas;São Francisco;Montes Claros
+3150604;Piracema;Oliveira;Oeste de Minas;Oliveira;Divinópolis
+3150703;Pirajuba;Frutal;Triângulo Mineiro/Alto Paranaíba;Frutal;Uberaba
+3150802;Piranga;Viçosa;Zona da Mata;Conselheiro Lafaiete;Barbacena
+3150901;Piranguçu;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3151008;Piranguinho;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3151107;Pirapetinga;Cataguases;Zona da Mata;Além Paraíba;Juiz de Fora
+3151206;Pirapora;Pirapora;Norte de Minas;Pirapora;Montes Claros
+3151305;Piraúba;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3151404;Pitangui;Pará de Minas;Metropolitana de Belo Horizonte;Divinópolis;Divinópolis
+3151503;Piumhi;Piuí;Oeste de Minas;Piumhi;Varginha
+3151602;Planura;Frutal;Triângulo Mineiro/Alto Paranaíba;Frutal;Uberaba
+3151701;Poço Fundo;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3151800;Poços de Caldas;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3151909;Pocrane;Aimorés;Vale do Rio Doce;Manhuaçu;Juiz de Fora
+3152006;Pompéu;Três Marias;Central Mineira;Dores do Indaiá;Divinópolis
+3152105;Ponte Nova;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3152131;Ponto Chique;Montes Claros;Norte de Minas;Pirapora;Montes Claros
+3152170;Ponto dos Volantes;Araçuaí;Jequitinhonha;Teófilo Otoni;Teófilo Otoni
+3152204;Porteirinha;Janaúba;Norte de Minas;Janaúba;Montes Claros
+3152303;Porto Firme;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3152402;Poté;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3152501;Pouso Alegre;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3152600;Pouso Alto;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3152709;Prados;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3152808;Prata;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3152907;Pratápolis;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3153004;Pratinha;Araxá;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3153103;Presidente Bernardes;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3153202;Presidente Juscelino;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3153301;Presidente Kubitschek;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3153400;Presidente Olegário;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3153509;Alto Jequitibá;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3153608;Prudente de Morais;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3153707;Quartel Geral;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3153806;Queluzito;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3153905;Raposos;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3154002;Raul Soares;Ponte Nova;Zona da Mata;Caratinga;Ipatinga
+3154101;Recreio;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3154150;Reduto;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3154200;Resende Costa;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3154309;Resplendor;Aimorés;Vale do Rio Doce;Aimorés - Resplendor;Governador Valadares
+3154408;Ressaquinha;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3154457;Riachinho;Pirapora;Norte de Minas;Unaí;Patos de Minas
+3154507;Riacho dos Machados;Janaúba;Norte de Minas;Janaúba;Montes Claros
+3154606;Ribeirão das Neves;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3154705;Ribeirão Vermelho;Lavras;Campo das Vertentes;Lavras;Varginha
+3154804;Rio Acima;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3154903;Rio Casca;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3155009;Rio Doce;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3155108;Rio do Prado;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3155207;Rio Espera;Viçosa;Zona da Mata;Conselheiro Lafaiete;Barbacena
+3155306;Rio Manso;Itaguara;Metropolitana de Belo Horizonte;Oliveira;Divinópolis
+3155405;Rio Novo;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3155504;Rio Paranaíba;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3155603;Rio Pardo de Minas;Salinas;Norte de Minas;Salinas;Montes Claros
+3155702;Rio Piracicaba;Itabira;Metropolitana de Belo Horizonte;João Monlevade;Ipatinga
+3155801;Rio Pomba;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3155900;Rio Preto;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3156007;Rio Vermelho;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Guanhães;Governador Valadares
+3156106;Ritápolis;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3156205;Rochedo de Minas;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3156304;Rodeiro;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3156403;Romaria;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Monte Carmelo;Uberlândia
+3156452;Rosário da Limeira;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3156502;Rubelita;Salinas;Norte de Minas;Salinas;Montes Claros
+3156601;Rubim;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3156700;Sabará;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3156809;Sabinópolis;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3156908;Sacramento;Araxá;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3157005;Salinas;Salinas;Norte de Minas;Salinas;Montes Claros
+3157104;Salto da Divisa;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3157203;Santa Bárbara;Itabira;Metropolitana de Belo Horizonte;Santa Bárbara - Ouro Preto;Belo Horizonte
+3157252;Santa Bárbara do Leste;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3157278;Santa Bárbara do Monte Verde;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3157302;Santa Bárbara do Tugúrio;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3157336;Santa Cruz de Minas;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3157377;Santa Cruz de Salinas;Salinas;Norte de Minas;Salinas;Montes Claros
+3157401;Santa Cruz do Escalvado;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3157500;Santa Efigênia de Minas;Guanhães;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3157609;Santa Fé de Minas;Pirapora;Norte de Minas;Pirapora;Montes Claros
+3157658;Santa Helena de Minas;Nanuque;Vale do Mucuri;Águas Formosas;Teófilo Otoni
+3157708;Santa Juliana;Araxá;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3157807;Santa Luzia;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3157906;Santa Margarida;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3158003;Santa Maria de Itabira;Itabira;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3158102;Santa Maria do Salto;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3158201;Santa Maria do Suaçuí;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3158300;Santana da Vargem;Varginha;Sul/Sudoeste de Minas;Três Pontas - Boa Esperança;Varginha
+3158409;Santana de Cataguases;Cataguases;Zona da Mata;Cataguases;Juiz de Fora
+3158508;Santana de Pirapama;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3158607;Santana do Deserto;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3158706;Santana do Garambéu;São João Del Rei;Campo das Vertentes;Barbacena;Barbacena
+3158805;Santana do Jacaré;Campo Belo;Oeste de Minas;Campo Belo;Varginha
+3158904;Santana do Manhuaçu;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3158953;Santana do Paraíso;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3159001;Santana do Riacho;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3159100;Santana dos Montes;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3159209;Santa Rita de Caldas;Poços de Caldas;Sul/Sudoeste de Minas;Poços de Caldas;Pouso Alegre
+3159308;Santa Rita de Jacutinga;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3159357;Santa Rita de Minas;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3159407;Santa Rita de Ibitipoca;Juiz de Fora;Zona da Mata;Barbacena;Barbacena
+3159506;Santa Rita do Itueto;Aimorés;Vale do Rio Doce;Aimorés - Resplendor;Governador Valadares
+3159605;Santa Rita do Sapucaí;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3159704;Santa Rosa da Serra;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3159803;Santa Vitória;Ituiutaba;Triângulo Mineiro/Alto Paranaíba;Ituiutaba;Uberlândia
+3159902;Santo Antônio do Amparo;Oliveira;Oeste de Minas;Lavras;Varginha
+3160009;Santo Antônio do Aventureiro;Cataguases;Zona da Mata;Além Paraíba;Juiz de Fora
+3160108;Santo Antônio do Grama;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3160207;Santo Antônio do Itambé;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Diamantina;Teófilo Otoni
+3160306;Santo Antônio do Jacinto;Almenara;Jequitinhonha;Almenara;Teófilo Otoni
+3160405;Santo Antônio do Monte;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3160454;Santo Antônio do Retiro;Salinas;Norte de Minas;Espinosa;Montes Claros
+3160504;Santo Antônio do Rio Abaixo;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3160603;Santo Hipólito;Curvelo;Central Mineira;Curvelo;Belo Horizonte
+3160702;Santos Dumont;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3160801;São Bento Abade;Varginha;Sul/Sudoeste de Minas;Três Corações;Varginha
+3160900;São Brás do Suaçuí;Conselheiro Lafaiete;Metropolitana de Belo Horizonte;Conselheiro Lafaiete;Barbacena
+3160959;São Domingos das Dores;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3161007;São Domingos do Prata;Itabira;Metropolitana de Belo Horizonte;João Monlevade;Ipatinga
+3161056;São Félix de Minas;Mantena;Vale do Rio Doce;Mantena;Governador Valadares
+3161106;São Francisco;Januária;Norte de Minas;São Francisco;Montes Claros
+3161205;São Francisco de Paula;Oliveira;Oeste de Minas;Oliveira;Divinópolis
+3161304;São Francisco de Sales;Frutal;Triângulo Mineiro/Alto Paranaíba;Iturama;Uberaba
+3161403;São Francisco do Glória;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3161502;São Geraldo;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3161601;São Geraldo da Piedade;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3161650;São Geraldo do Baixio;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3161700;São Gonçalo do Abaeté;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3161809;São Gonçalo do Pará;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3161908;São Gonçalo do Rio Abaixo;Itabira;Metropolitana de Belo Horizonte;João Monlevade;Ipatinga
+3162005;São Gonçalo do Sapucaí;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Varginha;Varginha
+3162104;São Gotardo;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3162203;São João Batista do Glória;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3162252;São João da Lagoa;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3162302;São João da Mata;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3162401;São João da Ponte;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3162450;São João das Missões;Januária;Norte de Minas;Januária;Montes Claros
+3162500;São João del Rei;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3162559;São João do Manhuaçu;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3162575;São João do Manteninha;Mantena;Vale do Rio Doce;Mantena;Governador Valadares
+3162609;São João do Oriente;Caratinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3162658;São João do Pacuí;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3162708;São João do Paraíso;Salinas;Norte de Minas;Salinas;Montes Claros
+3162807;São João Evangelista;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3162906;São João Nepomuceno;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3162922;São Joaquim de Bicas;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3162948;São José da Barra;Passos;Sul/Sudoeste de Minas;Passos;Varginha
+3162955;São José da Lapa;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3163003;São José da Safira;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3163102;São José da Varginha;Pará de Minas;Metropolitana de Belo Horizonte;Pará de Minas;Divinópolis
+3163201;São José do Alegre;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3163300;São José do Divino;Governador Valadares;Vale do Rio Doce;Teófilo Otoni;Teófilo Otoni
+3163409;São José do Goiabal;Itabira;Metropolitana de Belo Horizonte;Ipatinga;Ipatinga
+3163508;São José do Jacuri;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3163607;São José do Mantimento;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3163706;São Lourenço;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3163805;São Miguel do Anta;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3163904;São Pedro da União;São Sebastião do Paraíso;Sul/Sudoeste de Minas;Guaxupé;Varginha
+3164001;São Pedro dos Ferros;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3164100;São Pedro do Suaçuí;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3164209;São Romão;Pirapora;Norte de Minas;São Francisco;Montes Claros
+3164308;São Roque de Minas;Piuí;Oeste de Minas;Piumhi;Varginha
+3164407;São Sebastião da Bela Vista;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3164431;São Sebastião da Vargem Alegre;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3164472;São Sebastião do Anta;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3164506;São Sebastião do Maranhão;Peçanha;Vale do Rio Doce;Guanhães;Governador Valadares
+3164605;São Sebastião do Oeste;Divinópolis;Oeste de Minas;Divinópolis;Divinópolis
+3164704;São Sebastião do Paraíso;São Sebastião do Paraíso;Sul/Sudoeste de Minas;São Sebastião do Paraíso;Varginha
+3164803;São Sebastião do Rio Preto;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Itabira;Belo Horizonte
+3164902;São Sebastião do Rio Verde;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3165008;São Tiago;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3165107;São Tomás de Aquino;São Sebastião do Paraíso;Sul/Sudoeste de Minas;São Sebastião do Paraíso;Varginha
+3165206;São Tomé das Letras;Varginha;Sul/Sudoeste de Minas;Três Corações;Varginha
+3165305;São Vicente de Minas;Andrelândia;Sul/Sudoeste de Minas;São João del Rei;Barbacena
+3165404;Sapucaí-Mirim;Pouso Alegre;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
+3165503;Sardoá;Guanhães;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3165537;Sarzedo;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3165552;Setubinha;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3165560;Sem-Peixe;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3165578;Senador Amaral;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3165602;Senador Cortes;Juiz de Fora;Zona da Mata;São João Nepomuceno - Bicas;Juiz de Fora
+3165701;Senador Firmino;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3165800;Senador José Bento;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3165909;Senador Modestino Gonçalves;Diamantina;Jequitinhonha;Diamantina;Teófilo Otoni
+3166006;Senhora de Oliveira;Viçosa;Zona da Mata;Conselheiro Lafaiete;Barbacena
+3166105;Senhora do Porto;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3166204;Senhora dos Remédios;Barbacena;Campo das Vertentes;Barbacena;Barbacena
+3166303;Sericita;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3166402;Seritinga;Andrelândia;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3166501;Serra Azul de Minas;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Diamantina;Teófilo Otoni
+3166600;Serra da Saudade;Bom Despacho;Central Mineira;Dores do Indaiá;Divinópolis
+3166709;Serra dos Aimorés;Nanuque;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3166808;Serra do Salitre;Patrocínio;Triângulo Mineiro/Alto Paranaíba;Patrocínio;Patos de Minas
+3166907;Serrania;Alfenas;Sul/Sudoeste de Minas;Alfenas;Varginha
+3166956;Serranópolis de Minas;Janaúba;Norte de Minas;Janaúba;Montes Claros
+3167004;Serranos;Andrelândia;Sul/Sudoeste de Minas;Caxambu - Baependi;Pouso Alegre
+3167103;Serro;Conceição do Mato Dentro;Metropolitana de Belo Horizonte;Diamantina;Teófilo Otoni
+3167202;Sete Lagoas;Sete Lagoas;Metropolitana de Belo Horizonte;Sete Lagoas;Belo Horizonte
+3167301;Silveirânia;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3167400;Silvianópolis;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3167509;Simão Pereira;Juiz de Fora;Zona da Mata;Juiz de Fora;Juiz de Fora
+3167608;Simonésia;Manhuaçu;Zona da Mata;Manhuaçu;Juiz de Fora
+3167707;Sobrália;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3167806;Soledade de Minas;São Lourenço;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3167905;Tabuleiro;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3168002;Taiobeiras;Salinas;Norte de Minas;Salinas;Montes Claros
+3168051;Taparuba;Aimorés;Vale do Rio Doce;Manhuaçu;Juiz de Fora
+3168101;Tapira;Araxá;Triângulo Mineiro/Alto Paranaíba;Araxá;Uberaba
+3168200;Tapiraí;Piuí;Oeste de Minas;Formiga;Divinópolis
+3168309;Taquaraçu de Minas;Itabira;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3168408;Tarumirim;Caratinga;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3168507;Teixeiras;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3168606;Teófilo Otoni;Teófilo Otoni;Vale do Mucuri;Teófilo Otoni;Teófilo Otoni
+3168705;Timóteo;Ipatinga;Vale do Rio Doce;Ipatinga;Ipatinga
+3168804;Tiradentes;São João Del Rei;Campo das Vertentes;São João del Rei;Barbacena
+3168903;Tiros;Patos de Minas;Triângulo Mineiro/Alto Paranaíba;Patos de Minas;Patos de Minas
+3169000;Tocantins;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3169059;Tocos do Moji;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3169109;Toledo;Pouso Alegre;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3169208;Tombos;Muriaé;Zona da Mata;Carangola;Juiz de Fora
+3169307;Três Corações;Varginha;Sul/Sudoeste de Minas;Três Corações;Varginha
+3169356;Três Marias;Três Marias;Central Mineira;Curvelo;Belo Horizonte
+3169406;Três Pontas;Varginha;Sul/Sudoeste de Minas;Três Pontas - Boa Esperança;Varginha
+3169505;Tumiritinga;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3169604;Tupaciguara;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3169703;Turmalina;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3169802;Turvolândia;Santa Rita do Sapucaí;Sul/Sudoeste de Minas;Pouso Alegre;Pouso Alegre
+3169901;Ubá;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3170008;Ubaí;Montes Claros;Norte de Minas;São Francisco;Montes Claros
+3170057;Ubaporanga;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3170107;Uberaba;Uberaba;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3170206;Uberlândia;Uberlândia;Triângulo Mineiro/Alto Paranaíba;Uberlândia;Uberlândia
+3170305;Umburatiba;Nanuque;Vale do Mucuri;Águas Formosas;Teófilo Otoni
+3170404;Unaí;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3170438;União de Minas;Frutal;Triângulo Mineiro/Alto Paranaíba;Iturama;Uberaba
+3170479;Uruana de Minas;Unaí;Noroeste de Minas;Unaí;Patos de Minas
+3170503;Urucânia;Ponte Nova;Zona da Mata;Ponte Nova;Juiz de Fora
+3170529;Urucuia;Januária;Norte de Minas;Unaí;Patos de Minas
+3170578;Vargem Alegre;Caratinga;Vale do Rio Doce;Caratinga;Ipatinga
+3170602;Vargem Bonita;Piuí;Oeste de Minas;Piumhi;Varginha
+3170651;Vargem Grande do Rio Pardo;Salinas;Norte de Minas;Salinas;Montes Claros
+3170701;Varginha;Varginha;Sul/Sudoeste de Minas;Varginha;Varginha
+3170750;Varjão de Minas;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3170800;Várzea da Palma;Pirapora;Norte de Minas;Pirapora;Montes Claros
+3170909;Varzelândia;Montes Claros;Norte de Minas;Montes Claros;Montes Claros
+3171006;Vazante;Paracatu;Noroeste de Minas;Patos de Minas;Patos de Minas
+3171030;Verdelândia;Montes Claros;Norte de Minas;Janaúba;Montes Claros
+3171071;Veredinha;Capelinha;Jequitinhonha;Capelinha;Teófilo Otoni
+3171105;Veríssimo;Uberaba;Triângulo Mineiro/Alto Paranaíba;Uberaba;Uberaba
+3171154;Vermelho Novo;Ponte Nova;Zona da Mata;Caratinga;Ipatinga
+3171204;Vespasiano;Belo Horizonte;Metropolitana de Belo Horizonte;Belo Horizonte;Belo Horizonte
+3171303;Viçosa;Viçosa;Zona da Mata;Viçosa;Juiz de Fora
+3171402;Vieiras;Muriaé;Zona da Mata;Muriaé;Juiz de Fora
+3171501;Mathias Lobato;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3171600;Virgem da Lapa;Araçuaí;Jequitinhonha;Araçuaí;Teófilo Otoni
+3171709;Virgínia;Itajubá;Sul/Sudoeste de Minas;São Lourenço;Pouso Alegre
+3171808;Virginópolis;Guanhães;Vale do Rio Doce;Guanhães;Governador Valadares
+3171907;Virgolândia;Governador Valadares;Vale do Rio Doce;Governador Valadares;Governador Valadares
+3172004;Visconde do Rio Branco;Ubá;Zona da Mata;Ubá;Juiz de Fora
+3172103;Volta Grande;Cataguases;Zona da Mata;Além Paraíba;Juiz de Fora
+3172202;Wenceslau Braz;Itajubá;Sul/Sudoeste de Minas;Itajubá;Pouso Alegre
