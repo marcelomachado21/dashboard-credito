@@ -1049,6 +1049,13 @@ const qPerTxt = () => { const per = qPerOk(); if (per === "r12") return `12 mese
   if (per === "ytd") { const ms = qMeses().filter(d => d.startsWith(qAno())); return `acumulado de ${qAno()}${ms.length < 12 ? ` (${ym(ms[0])} a ${ym(ms[ms.length - 1])})` : ""}`; }
   return `mês de ${ym(qMes())}`; };
 const qAnual = () => qPerOk() === "r12" ? "" : ", anualizado";
+function qPerCtrl() {                       // mesmo seletor de período da aba Resultados, para usar dentro de outras abas
+  const per = qPerOk(); if (!Q.agg.coop.m) return "";
+  const sel = per === "r12" ? `<select id="qate" class="sel" aria-label="12 meses até">${Q.agg.coop.r12.map(x => x.d).reverse().map(d => `<option value="${d}"${d === qAte() ? " selected" : ""}>até ${ym(d)}</option>`).join("")}</select>`
+    : per === "ytd" ? `<select id="qano" class="sel" aria-label="Exercício">${qAnos().map(a => { const ms = qMeses().filter(d => d.startsWith(a)); return `<option value="${a}"${a === qAno() ? " selected" : ""}>${a}${ms.length < 12 ? ` (até ${ym(ms[ms.length - 1])})` : ""}</option>`; }).join("")}</select>`
+    : `<select id="qmes" class="sel" aria-label="Mês">${qMeses().slice().reverse().map(d => `<option value="${d}"${d === qMes() ? " selected" : ""}>${ym(d)}</option>`).join("")}</select>`;
+  return `<div class="rank-tools"><div class="fgroup"><span class="flabel">Resultado · período</span><div class="seg">${[["r12", "12 meses"], ["ytd", "Acumulado no exercício"], ["mes", "Mensal"]].map(([k, n]) => `<button type="button" data-qper="${k}" aria-pressed="${per === k}">${n}</button>`).join("")}</div></div>${sel}</div>`;
+}
 const brlMi = (v) => v == null ? "—" : Math.abs(v) >= 1000 ? `R$ ${nf(v / 1000, 1)} bi` : `R$ ${nf(v, 1)} mi`;
 function filtrosRes() {
   const chips = GR_Q.map(([g, nm]) => `<div class="fgroup"><span class="flabel">${nm}</span>${Q.escopos.filter(e => e.grupo === g).map(e =>
@@ -1250,7 +1257,7 @@ function renderFicha() {
     const kv = (lbl, id, fmtv, sub) => { const m = pm(id), arr = uni.map(u => u.s[t]?.[id]), v = s[id], pc = m && m.melhor !== "neutro" ? pctl(arr, v, m.melhor) : null;
       const col = pc == null ? "flat" : pc >= 66 ? "up" : pc <= 33 ? "down" : "flat";
       return `<div class="kpi"><div class="lbl">${lbl}</div><div class="val">${fmtv ?? pFmt(id, v).replace("%", "")}<small>${id === "cart" || fmtv ? "" : "%"}</small></div><div class="chg ${col}">${pc == null ? (sub || "") : `percentil ${nf(pc, 0)} · mediana ${pFmt(id, median(arr))}`}</div><div class="src">${ym(t)} · ${id === "e2" || id === "e3" || id === "rural" ? "Cosif" : "IF.data"}</div></div>`; };
-    const r12 = res?.r12;
+    const r12 = res ? qInstPer(res) : null;
     const kp = `<div class="kpis">
       ${kv("Carteira de crédito", "cart", pFmt("cart", s.cart), s.cresc == null ? "" : `${sgn(s.cresc)} em 12 meses`)}
       ${kv("Crescimento 12 meses", "cresc")}
@@ -1280,7 +1287,7 @@ function renderFicha() {
     // resultados
     let resB = "";
     if (r12) {
-      const qg = Q.agg[peer]?.r12.find(x => x.d === Q.meta.ref);
+      const qg = qR12(peer), PT = qPerTxt();
       const sem = res.sem;
       const sb = (() => { const W = 640, H = 170, L = 52, R2 = 10, T = 18, B = 24, v = sem.map(x => x.lucro), tk = ticks(Math.min(0, ...v), Math.max(0, ...v)), mn = tk[0], mx = tk[tk.length - 1];
         const Y = (z) => T + (H - T - B) * (1 - (z - mn) / (mx - mn || 1)), bw = (W - L - R2) / sem.length;
@@ -1288,9 +1295,9 @@ function renderFicha() {
         sem.forEach((x, k) => { const x0 = L + k * bw + bw * 0.28, w = bw * 0.44, y0 = Y(Math.max(0, x.lucro)), y1 = Y(Math.min(0, x.lucro));
           g += `<rect x="${x0}" y="${y0}" width="${w}" height="${Math.max(1, y1 - y0)}" fill="${x.lucro >= 0 ? cI : "var(--down)"}" rx="3"/><text x="${x0 + w / 2}" y="${y0 - 5}" text-anchor="middle" class="lbl-strong">${brlMi(x.lucro)}</text><text x="${x0 + w / 2}" y="${H - 6}" text-anchor="middle">${x.s.replace("S", "º sem/")}</text>`; });
         return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Lucro por semestre">${g}</svg>`; })();
-      resB = `<div class="grid2">${block(`Da receita ao resultado`, `% da receita total · 12 meses até ${ym(Q.meta.ref)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} em 12 meses. Balancetes Cosif.`)}
+      resB = `${qPerCtrl()}<div class="grid2">${block(`Da receita ao resultado`, `% da receita total · ${esc(PT)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} no período. Balancetes Cosif.`)}
         ${block("Receita e despesa contra o grupo", `% da receita total · ${esc(peerNome)} = agregado`, stack100([{ name: i.curto, v: r12, sel: true }].concat(qg ? [{ name: peerNome, v: qg }] : []), REC, { label: "Receita" }) + stack100([{ name: i.curto, v: r12, sel: true }].concat(qg ? [{ name: peerNome, v: qg }] : []), DESP, { label: "Despesa" }) + `<h3 style="margin-top:8px">Lucro ou sobras por semestre</h3>` + sb,
-          `ROE de 12 meses sobre o PL médio ${nf(r12.roe, 1)}% (grupo ${nf(qg?.roe, 1)}%); difere do ROE do semestre anualizado do IF.data, no topo, porque cobre outro período · ROA ${nf(r12.roa, 2)}% · eficiência ${nf(r12.efic, 1)}% (grupo ${nf(qg?.efic, 1)}%). Balancetes Cosif.`)}</div>`;
+          `ROE (${esc(PT)}${qAnual()}) sobre o PL médio ${nf(r12.roe, 1)}% (grupo ${nf(qg?.roe, 1)}%); difere do ROE do semestre anualizado do IF.data, no topo, porque cobre outro período · ROA ${nf(r12.roa, 2)}% · eficiência ${nf(r12.efic, 1)}% (grupo ${nf(qg?.efic, 1)}%). Balancetes Cosif.`)}</div>`;
     }
     // risco: estágios
     let riscoB = "";
@@ -1429,10 +1436,11 @@ function renderFichaGrupo() {
     let resB = "";
     const qa = Q.agg[g], qb = Q.agg[peer];
     if (qa) {
-      const r12 = lastP(qa.r12), rb = qb ? qb.r12.find(x => x.d === r12.d) : null;
-      resB = `<div class="grid2">${block("Da receita ao resultado", `% da receita total · 12 meses até ${ym(r12.d)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} em 12 meses, somada entre as ${qa.n} instituições. Balancetes Cosif.`)}
-        ${block("Receita e despesa contra a comparação", `% da receita total · 12 meses`, stack100([{ name: gn, v: r12, sel: true }].concat(rb ? [{ name: pn, v: rb }] : []), REC, { label: "Receita" }) + stack100([{ name: gn, v: r12, sel: true }].concat(rb ? [{ name: pn, v: rb }] : []), DESP, { label: "Despesa" }) + `<h3 style="margin-top:8px">Lucro ou sobras por semestre</h3>` + barSem(qa.sem, cG),
-          `ROE de 12 meses sobre o PL médio ${nf(r12.roe, 1)}% (${esc(pn)} ${nf(rb?.roe, 1)}%) · ROA ${nf(r12.roa, 2)}% · eficiência ${nf(r12.efic, 1)}% (${esc(pn)} ${nf(rb?.efic, 1)}%). Balancetes Cosif.`)}</div>`;
+      const r12 = qR12(g), rb = qb ? qR12(peer) : null, PT = qPerTxt();
+      if (!r12) resB = block("Resultados", "Cosif", `<p class="empty">Sem atualização: não há resultado de ${esc(PT)} para ${esc(gn)}.</p>`); else
+      resB = `${qPerCtrl()}<div class="grid2">${block("Da receita ao resultado", `% da receita total · ${esc(PT)} · lucro ${brlMi(r12.lucro)}`, waterfall(r12), `Receita total de ${brlMi(r12.rec)} no período, somada entre as ${qa.n} instituições. Balancetes Cosif.`)}
+        ${block("Receita e despesa contra a comparação", `% da receita total · ${esc(PT)}`, stack100([{ name: gn, v: r12, sel: true }].concat(rb ? [{ name: pn, v: rb }] : []), REC, { label: "Receita" }) + stack100([{ name: gn, v: r12, sel: true }].concat(rb ? [{ name: pn, v: rb }] : []), DESP, { label: "Despesa" }) + `<h3 style="margin-top:8px">Lucro ou sobras por semestre</h3>` + barSem(qa.sem, cG),
+          `ROE (${esc(PT)}${qAnual()}) sobre o PL médio ${nf(r12.roe, 1)}% (${esc(pn)} ${nf(rb?.roe, 1)}%) · ROA ${nf(r12.roa, 2)}% · eficiência ${nf(r12.efic, 1)}% (${esc(pn)} ${nf(rb?.efic, 1)}%). Balancetes Cosif.`)}</div>`;
     } else resB = block("Resultados", "Cosif", `<p class="empty">Sem atualização: o agregado de resultados dos balancetes não é calculado para ${esc(gn)}.</p>`);
     // ---------- safra
     let safraB = "";
