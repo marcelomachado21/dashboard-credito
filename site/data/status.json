@@ -1,16 +1,16 @@
 {
- "verificado_em": "2026-11-03T19:15:35+00:00",
+ "verificado_em": "2026-11-03T19:29:44+00:00",
  "forcado": true,
- "segundos": 955,
+ "segundos": 761,
  "bases": {
   "safra": {
-   "segundos": 192,
+   "segundos": 212,
    "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "sem mudança",
    "ref": "2026-09-30"
   },
   "risco": {
-   "segundos": 317,
+   "segundos": 288,
    "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 827}",
    "situacao": "sem mudança",
    "ref": {
@@ -20,19 +20,19 @@
    }
   },
   "posicao": {
-   "segundos": 165,
+   "segundos": 170,
    "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 868, \"kb\": 1497}",
    "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 19,
+   "segundos": 22,
    "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 834, \"kb\": 2781}",
    "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 117,
+   "segundos": 49,
    "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 414}",
    "situacao": "sem mudança",
    "ref": {
@@ -41,13 +41,13 @@
    }
   },
   "focus": {
-   "segundos": 12,
+   "segundos": 6,
    "saida": "{\"focus\": \"2026-10-30\", \"kb\": 24}",
-   "situacao": "sem mudança",
+   "situacao": "atualizado",
    "ref": "2026-10-30"
   },
   "territorio": {
-   "segundos": 135,
+   "segundos": 14,
    "saida": "{\"territorio\": \"2026-09\", \"municipios\": 840, \"linhas\": 183458, \"kb\": 303}",
    "situacao": "atualizado",
    "ref": "2026-09"
