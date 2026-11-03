@@ -1,18 +1,18 @@
 {
- "verificado_em": "2026-11-02T08:43:02+00:00",
- "forcado": false,
- "segundos": 640,
+ "verificado_em": "2026-11-03T10:32:42+00:00",
+ "forcado": true,
+ "segundos": 4061,
  "bases": {
   "safra": {
-   "segundos": 183,
-   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "segundos": 189,
+   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 348, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "atualizado",
    "ref": "2026-09-30"
   },
   "risco": {
-   "segundos": 267,
-   "saida": "{\"risco\": \"sem mudan\\u00e7a\", \"refs\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}}",
-   "situacao": "sem mudança",
+   "segundos": 2518,
+   "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 629}",
+   "situacao": "atualizado",
    "ref": {
     "scr": "2026-08",
     "cosif": "2026-06",
@@ -20,20 +20,20 @@
    }
   },
   "posicao": {
-   "segundos": 153,
-   "saida": "{\"posicao\": \"sem mudan\\u00e7a\", \"ref\": \"2026-06\"}",
-   "situacao": "sem mudança",
+   "segundos": 1278,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 3, \"instituicoes\": 857, \"kb\": 837}",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 4,
-   "saida": "{\"resultados\": \"sem mudan\\u00e7a\", \"ref\": \"2026-06\"}",
-   "situacao": "sem mudança",
+   "segundos": 20,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 832, \"kb\": 713}",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 32,
-   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 847, \"erros\": [\"SGS 20671: string indices must be integers, not 'str'\"], \"kb\": 381}",
+   "segundos": 44,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 847, \"erros\": [], \"kb\": 386}",
    "situacao": "atualizado",
    "ref": {
     "sgs": "2026-09",
@@ -41,5 +41,5 @@
    }
   }
  },
- "ultima_atualizacao": "2026-11-02"
+ "ultima_atualizacao": "2026-11-03"
 }
