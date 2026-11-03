@@ -2068,7 +2068,7 @@ function tAgg(d) {          // agrega as células municipais no nível escolhido
   return o;
 }
 function renderTerr() {
-  if (!precisa(["territorio"]) || !MAPA) { esperando(Terr ? `Os dados de território não carregaram (${esc(Terr)}). Recarregue a página.` : "Carregando o crédito rural por município…"); return; }
+  if (!precisa(["territorio"]) || !MAPA) { esperando(Terr ? "Aba em validação: o arquivo do SICOR com o município de cada operação cobre só parte das operações (entre 15% e 99%, conforme a instituição). Os números ainda não são publicados para não mostrar um retrato distorcido." : "Carregando o crédito rural por município…"); return; }
   cid = 0;
   const instL = Object.entries(T.inst).map(([id, i]) => ({ id, ...i, tot: Object.values(i.d).reduce((a, v) => a + v[0] + v[1] + v[2] + v[3], 0) })).filter(i => i.tot > 0).sort((a, b) => b.tot - a.tot);
   if (ts.inst && !T.inst[ts.inst]) ts.inst = "";
