@@ -54,7 +54,11 @@ for a in anos:
     inv += baixa("InvestMunicipioProduto", a)
 if not cus: raise RuntimeError("API do SICOR sem custeio para MG")
 mes = lambda x: f"{x['AnoEmissao']}-{x['MesEmissao']}"
-ref = max(max(mes(x) for x in cus), max(mes(x) for x in inv) if inv else "")
+# o mês corrente e o recém-encerrado ainda recebem registros: só entra mês encerrado há pelo menos 20 dias
+d_lim = HOJE - datetime.timedelta(days=20)
+ult_ok = (d_lim.replace(day=1) - datetime.timedelta(days=1)).strftime("%Y-%m")
+ref = min(ult_ok, max(max(mes(x) for x in cus), max(mes(x) for x in inv) if inv else ""))
+cus = [x for x in cus if mes(x) <= ref]; inv = [x for x in inv if mes(x) <= ref]
 if SE_MUDOU and ANT and ANT["meta"].get("ref") == ref:
     print(json.dumps({"territorio": "sem mudança", "ref": ref})); sys.exit(0)
 # safra corrente até o mês de referência e o mesmo ponto da anterior
@@ -92,6 +96,7 @@ r3 = lambda v: round(v / 1e6, 3)
 mun = {k: [r3(x) for x in v] for k, v in M.items() if any(v)}
 prod = {k: [[n.capitalize() if n.isupper() else n, r3(v)] for n, v in c.most_common(6)] for k, c in PR.items()}
 prog = {k: [r3(x) for x in v] for k, v in PG.items()}
+mensal = {str(s_): [r3(sum(float(x.get(vl) or 0) for lst, vl in ((cus, "VlCusteio"), (inv, "VlInvest")) for x in lst if safra(x) == s_ and pos(x) == m)) for m in range(12)] for s_ in (S - 1, S)}
 reg, reg_fonte = {}, ""
 try:
     with urllib.request.urlopen(urllib.request.Request("https://servicodados.ibge.gov.br/api/v1/localidades/estados/31/municipios", headers=H), timeout=120) as r:
@@ -110,7 +115,7 @@ out = {"meta": {"ref": ref, "safra": S, "mes_limite": lim, "atualizado": HOJE.is
                 "campos": ["custeio_a", "invest_a", "custeio_p", "invest_p", "custeio_t", "invest_t"],
                 "fonte": "Banco Central — Matriz de Dados do Crédito Rural (SICOR), custeio e investimento por município",
                 "url": "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/aplicacao#!/recursos"},
-       "mun_reg": reg, "mun": mun, "prod": prod, "prog": prog}
+       "mun_reg": reg, "mun": mun, "prod": prod, "prog": prog, "mensal": mensal}
 tmp = OUTFILE + ".tmp"
 json.dump(out, open(tmp, "w"), ensure_ascii=False, separators=(",", ":"))
 os.replace(tmp, OUTFILE)
