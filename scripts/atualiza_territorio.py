@@ -29,13 +29,21 @@ def get(url, tries=8):
             time.sleep(min(30 * (i + 1), 180))
 
 
-def baixa(ep, ano, top=1000):
-    out, skip = [], 0
-    f = urllib.parse.quote(f"cdEstado eq '{UF_MG}' and AnoEmissao eq '{ano}'")
-    while True:
-        v = get(f"{B}{ep}?$format=json&$top={top}&$skip={skip}&$filter={f}")
-        out += v; skip += len(v)
-        if len(v) < top: return out
+def baixa(ep, ano, top=200000):
+    """A API falha com $skip; consulta UF e ano de uma vez e, se falhar, mês a mês."""
+    q = lambda f: f"{B}{ep}?$format=json&$top={top}&$filter=" + urllib.parse.quote(f)
+    try:
+        v = get(q(f"cdEstado eq '{UF_MG}' and AnoEmissao eq '{ano}'"), tries=4)
+        if len(v) >= top: raise RuntimeError("resposta truncada")
+        return v
+    except Exception:
+        out = []
+        for m in range(1, 13):
+            if ano == HOJE.year and m > HOJE.month: break
+            v = get(q(f"cdEstado eq '{UF_MG}' and AnoEmissao eq '{ano}' and MesEmissao eq '{m:02d}'"))
+            if len(v) >= top: raise RuntimeError("resposta truncada")
+            out += v
+        return out
 
 
 S = HOJE.year + 1 if HOJE.month >= 7 else HOJE.year              # safra pelo ano final (jul a jun)
