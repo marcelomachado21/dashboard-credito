@@ -50,16 +50,33 @@ header.top .wrap { padding-block: 18px 6px; display: flex; flex-wrap: wrap; just
 h1 { font-family: var(--f-display); font-stretch: 78%; font-weight: 800; font-size: 1.55rem; margin: 0; letter-spacing: -0.01em; }
 h1 span { color: var(--muted); font-weight: 600; }
 .stamp { font-family: var(--f-data); font-size: 0.76rem; color: var(--muted); }
-nav.tabs { border-bottom: 1px solid var(--line); }
-nav.tabs .wrap { display: flex; gap: 2px; overflow-x: auto; scrollbar-width: none; }
-nav.tabs span, nav.tabs a { flex: none; padding: 9px 10px 8px; font-size: 0.8rem; font-weight: 600; color: var(--faint); white-space: nowrap; border-bottom: 2px solid transparent; text-decoration: none; }
-nav.tabs a[aria-current="page"] { color: var(--ink); border-bottom-color: var(--accent); }
+nav.tabs { background: var(--panel); border-block: 1px solid var(--line); margin-top: 8px; }
+nav.tabs .wrap { padding-block: 10px; }
+#tabs { display: flex; flex-wrap: wrap; gap: 6px; }
+#tabs span, #tabs a { flex: none; padding: 7px 12px; font-size: 0.84rem; font-weight: 600; color: var(--muted); white-space: nowrap; text-decoration: none; background: var(--bg); border: 1px solid var(--line); border-radius: 8px; }
+nav.tabs a:hover { color: var(--ink); border-color: var(--grafite-2); }
+nav.tabs a[aria-current="page"] { color: #fff; background: #003641; border-color: #003641; }
+.tabbtn { display: none; }
+.dica { background: #eef8f6; border: 1px solid #cfe9e4; color: #134e48; border-radius: 10px; padding: 10px 40px 10px 14px; margin-top: 12px; font-size: 0.86rem; position: relative; }
+.dica button { position: absolute; right: 8px; top: 6px; font: inherit; font-size: 1.1rem; background: none; border: 0; color: #134e48; cursor: pointer; padding: 2px 6px; }
+.fpanel { border: 1px solid var(--line); border-radius: 12px; background: var(--panel); }
+.fbar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; padding: 10px 14px; }
+.fbar .ft { font-size: 0.8rem; font-weight: 700; color: var(--ink); }
+.fsum { flex: 1 1 260px; font-size: 0.86rem; color: var(--muted); min-width: 0; }
+.fsum b { color: var(--ink); font-weight: 600; }
+.ftoggle { font: inherit; font-size: 0.84rem; font-weight: 600; color: #fff; background: var(--accent-ink); border: 0; border-radius: 8px; padding: 7px 14px; cursor: pointer; white-space: nowrap; }
+.ftoggle:hover { background: #005e55; }
+.fbody { border-top: 1px solid var(--line); padding: 12px 14px 14px; display: grid; gap: 10px; }
+.fbody[hidden] { display: none; }
+.fbody .chip:not([aria-pressed="true"]), .fbody .seg { background: var(--bg); }
 nav.tabs span[title] { cursor: default; }
-.filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--bg); border-bottom: 1px solid var(--line); }
-.filters .wrap { padding-block: 10px; display: grid; gap: 8px; }
+.filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--bg); }
+.filters.aberto { position: static; }
+.filters.vazio { display: none; }
+.filters .wrap { padding-block: 12px 4px; }
 .frow { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; }
 .fgroup { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
-.flabel { font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--faint); font-weight: 600; margin-right: 2px; }
+.flabel { font-size: 0.76rem; color: var(--muted); font-weight: 600; margin-right: 4px; }
 .chip { font: inherit; font-size: 0.8rem; font-weight: 500; color: var(--ink); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
 .chip:hover { border-color: var(--grafite-2); }
 .chip[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
@@ -138,7 +155,13 @@ ol.hl { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 0.9re
 .methods a { color: var(--accent-ink); }
 .methods b { color: var(--ink); font-weight: 600; }
 footer .wrap { padding-block: 0 32px; font-size: 0.74rem; color: var(--faint); }
-@media (max-width: 700px) { .filters { position: static; } .flabel { width: 100%; } }
+@media (max-width: 700px) { .filters { position: static; } .flabel { width: 100%; }
+  .tabbtn { display: flex; width: 100%; align-items: center; gap: 8px; font: inherit; font-size: 0.9rem; font-weight: 600; color: #fff; background: #003641; border: 0; border-radius: 8px; padding: 10px 14px; cursor: pointer; text-align: left; }
+  .tabbtn small { font-weight: 500; opacity: 0.75; margin-left: auto; }
+  #tabs { display: none; }
+  nav.tabs.aberto #tabs { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; margin-top: 8px; }
+  nav.tabs.aberto #tabs a { white-space: normal; text-align: center; }
+  .fsum { flex-basis: 100%; order: 2; } .ftoggle { margin-left: auto; } }
 @media (max-width: 520px) { .kpi + .kpi { border-left: 0; padding-left: 0; } .kpis { grid-template-columns: 1fr 1fr; } .kpi:nth-child(even) { padding-left: 12px; border-left: 1px solid var(--line); } .kpi .val { font-size: 1.6rem; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
 </style>
@@ -147,8 +170,9 @@ footer .wrap { padding-block: 0 32px; font-size: 0.74rem; color: var(--faint); }
   <h1>Dashboard de Crédito <span>· SFN, SNCC e Agro</span></h1>
   <div class="stamp" id="stamp">Carregando dados…</div>
 </div></header>
-<nav class="tabs" aria-label="Abas do painel"><div class="wrap" id="tabs"></div></nav>
-<div class="filters"><div class="wrap" id="filters"></div></div>
+<nav class="tabs" aria-label="Abas do painel"><div class="wrap"><button class="tabbtn" id="tabbtn" type="button" aria-expanded="false" aria-controls="tabs"></button><div id="tabs"></div></div></nav>
+<div class="wrap" id="dicawrap"></div>
+<div class="filters"><div class="wrap" id="fwrap"><div class="fpanel"><div class="fbar"><span class="ft">Filtros</span><span class="fsum" id="fsum"></span><button class="ftoggle" id="ftoggle" type="button" aria-expanded="false" aria-controls="filters">Alterar filtros ▾</button></div><div class="fbody" id="filters" hidden></div></div></div></div>
 <main><div class="wrap" id="view"><p class="empty">Carregando a Matriz de Dados do Crédito Rural…</p></div></main>
 <footer><div class="wrap">Dados públicos do Banco Central. Painel em validação (estágio 1).</div></footer>
 
@@ -1752,11 +1776,46 @@ function blocoStatus(st) {
 /* ===================== Roteador ===================== */
 const ABA_ID = { 0: "visao", 1: "carteira", 2: "risco", 3: "resultados", 4: "rural", 5: "safra", 6: "rankings", 7: "posicao", 8: "ficha", 9: "fontes" };
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
+let tabsAbertas = false, filtrosAbertos = false;
+try { filtrosAbertos = localStorage.getItem("filtros-abertos") === "1"; } catch (e) {}
+function navAbas() {
+  const k = Object.values(ABA_ID).indexOf(aba());
+  $("#tabbtn").innerHTML = `<span>☰ Abas · ${esc(ABAS[k])}</span><small>${k + 1} de ${ABAS.length} ${tabsAbertas ? "▴" : "▾"}</small>`;
+  $("#tabbtn").setAttribute("aria-expanded", tabsAbertas);
+  document.querySelector("nav.tabs").classList.toggle("aberto", tabsAbertas);
+}
+function painelFiltros() {           // resumo do recorte atual + abrir/fechar, sobre o que cada aba desenhou em #filters
+  const f = $("#filters"), box = document.querySelector(".filters"), vazio = !f.innerHTML.trim();
+  box.classList.toggle("vazio", vazio); if (vazio) return;
+  const vals = [];
+  f.querySelectorAll(".fgroup").forEach(g => {
+    g.querySelectorAll('[aria-pressed="true"]').forEach(b => vals.push(b.textContent.trim()));
+    g.querySelectorAll("select").forEach(x => { const o = x.options[x.selectedIndex]; if (o) vals.push(o.textContent.trim()); });
+    g.querySelectorAll("input:not([type=checkbox])").forEach(x => { if (x.value.trim()) vals.push(x.value.trim()); });
+  });
+  $("#fsum").innerHTML = vals.length ? `Você está vendo: ${vals.map((v, i) => i === 0 ? `<b>${esc(v)}</b>` : esc(v)).join(" · ")}` : "Escolha o recorte desta aba";
+  f.hidden = !filtrosAbertos; box.classList.toggle("aberto", filtrosAbertos);
+  $("#ftoggle").textContent = filtrosAbertos ? "Fechar filtros ▴" : "Alterar filtros ▾";
+  $("#ftoggle").setAttribute("aria-expanded", filtrosAbertos);
+}
+function dica() {
+  let off = false; try { off = localStorage.getItem("dica-vista") === "1"; } catch (e) {}
+  $("#dicawrap").innerHTML = off ? "" : `<div class="dica" role="note"><b>Como usar:</b> escolha um assunto nas abas acima. Em cada aba, o botão <b>Alterar filtros</b> troca o recorte (sistema, cooperativa, região, período). Toque nos nomes das instituições para abrir a ficha.<button type="button" id="dicaok" aria-label="Fechar dica">×</button></div>`;
+}
+document.addEventListener("click", (ev) => {
+  if (ev.target.closest("#tabbtn")) { tabsAbertas = !tabsAbertas; navAbas(); return; }
+  if (ev.target.closest("#ftoggle")) { filtrosAbertos = !filtrosAbertos; try { localStorage.setItem("filtros-abertos", filtrosAbertos ? "1" : "0"); } catch (e) {} painelFiltros(); return; }
+  if (ev.target.closest("#dicaok")) { try { localStorage.setItem("dica-vista", "1"); } catch (e) {} $("#dicawrap").innerHTML = ""; }
+});
+new MutationObserver(painelFiltros).observe($("#filters"), { childList: true, subtree: true, attributes: true, attributeFilter: ["aria-pressed", "value"] });
+document.addEventListener("change", (ev) => { if (ev.target.closest("#filters")) setTimeout(painelFiltros, 0); });
 function render() {
   $("#tabs").innerHTML = ABAS.map((a, i) => `<a href="#${ABA_ID[i]}"${aba() === ABA_ID[i] ? ' aria-current="page"' : ""}>${a}</a>`).join("");
+  navAbas();
   ({ visao: renderVisao, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes })[aba()]();
+  painelFiltros();
 }
-addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
+addEventListener("hashchange", () => { tabsAbertas = false; render(); window.scrollTo(0, 0); });
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", render);
 new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 try { Object.assign(st, JSON.parse(localStorage.getItem("safra-filtros") || "{}")); } catch (e) {}
@@ -1767,6 +1826,7 @@ try { Object.assign(fsel, JSON.parse(localStorage.getItem("ficha") || "{}")); } 
 try { Object.assign(cs, JSON.parse(localStorage.getItem("cart-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rus, JSON.parse(localStorage.getItem("rural-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rks, JSON.parse(localStorage.getItem("rank-filtros") || "{}")); } catch (e) {}
+dica();
 render();
 carregar("safra").then(d => {
   D = d;
