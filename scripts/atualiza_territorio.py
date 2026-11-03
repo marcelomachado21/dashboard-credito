@@ -97,18 +97,12 @@ mun = {k: [r3(x) for x in v] for k, v in M.items() if any(v)}
 prod = {k: [[n.capitalize() if n.isupper() else n, r3(v)] for n, v in c.most_common(6)] for k, c in PR.items()}
 prog = {k: [r3(x) for x in v] for k, v in PG.items()}
 mensal = {str(s_): [r3(sum(float(x.get(vl) or 0) for lst, vl in ((cus, "VlCusteio"), (inv, "VlInvest")) for x in lst if safra(x) == s_ and pos(x) == m)) for m in range(12)] for s_ in (S - 1, S)}
-reg, reg_fonte = {}, ""
-try:
-    with urllib.request.urlopen(urllib.request.Request("https://servicodados.ibge.gov.br/api/v1/localidades/estados/31/municipios", headers=H), timeout=120) as r:
-        for x in json.loads(r.read()):
-            mi = x.get("microrregiao") or {}; ri = x.get("regiao-imediata") or {}
-            reg[str(x["id"])] = {"n": x["nome"], "mi": mi.get("nome", ""), "me": (mi.get("mesorregiao") or {}).get("nome", ""),
-                                 "ri": ri.get("nome", ""), "rt": (ri.get("regiao-intermediaria") or {}).get("nome", "")}
-    reg_fonte = "IBGE, API de localidades"
-except Exception as e:
-    reg = (ANT or {}).get("mun_reg", {}); reg_fonte = ((ANT or {}).get("meta", {}).get("regioes_fonte") or "") + (" (cópia anterior)" if reg else "")
-    if not reg: reg = {k: {"n": n.title()} for k, n in nome_de.items()}; reg_fonte = "sem regiões: API do IBGE indisponível"
-    print(f"aviso: regiões do IBGE indisponíveis ({e})", file=sys.stderr)
+# regiões: tabela fixa do IBGE no repositório (a API do IBGE não responde aos servidores do GitHub)
+import csv
+reg, reg_fonte = {}, "IBGE (divisão regional), tabela fixa no repositório"
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "ibge_regioes_mg.csv"), encoding="utf-8") as f_:
+    for x in csv.DictReader(f_, delimiter=";"):
+        reg[x["cod_ibge"]] = {"n": x["municipio"], "mi": x["microrregiao"], "me": x["mesorregiao"], "ri": x["regiao_imediata"], "rt": x["regiao_intermediaria"]}
 novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("meta", {}).get("ref") == ref else HOJE.isoformat()
 out = {"meta": {"ref": ref, "safra": S, "mes_limite": lim, "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
                 "sem_municipio_pct": round(tot_sem / (tot_ok + tot_sem) * 100, 2) if tot_ok + tot_sem else None, "regioes_fonte": reg_fonte,
