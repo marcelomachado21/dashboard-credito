@@ -1890,9 +1890,9 @@ const QGR = [["Minas", [["crediminas", "Central Crediminas"], ["cecremge", "Cent
 const QNOME = Object.fromEntries(QGR.flatMap(([, l]) => l));
 // id, título, unidade (val = R$ e variação %; pct = % e variação em p.p.), melhor (alto/baixo/neutro), fonte
 const QCOL = [["at", "Ativo total", "val", "alto", "IF.data"], ["cart", "Carteira de crédito", "val", "alto", "IF.data"], ["capt", "Captações", "val", "alto", "IF.data"], ["pl", "Patrimônio líquido", "val", "alto", "IF.data"],
-  ["rural", "Rural na carteira", "pct", "neutro", "Cosif"], ["inad", "Inad. > 90 dias", "pct", "baixo", "IF.data"], ["ap", "Ativos probl. (estágio 3)", "pct", "baixo", "IF.data"],
+  ["res", "Resultado do período", "res", "alto", "Cosif"], ["rural", "Rural na carteira", "pct", "neutro", "Cosif"], ["inad", "Inad. > 90 dias", "pct", "baixo", "IF.data"], ["ap", "Ativos probl. (estágio 3)", "pct", "baixo", "IF.data"],
   ["prov", "IPROV", "pct", "baixo", "IF.data"], ["cob", "Cobertura", "pct", "alto", "IF.data"], ["basil", "Basileia", "pct", "alto", "IF.data"],
-  ["lucro", "Lucro ou sobras", "val", "alto", "IF.data"], ["roe", "ROE", "pct", "alto", "IF.data"], ["roa", "ROA", "pct", "alto", "IF.data"], ["efic", "Eficiência", "pct", "baixo", "IF.data"]];
+  ["roe", "ROE", "pct", "alto", "IF.data"], ["roa", "ROA", "pct", "alto", "IF.data"], ["efic", "Eficiência", "pct", "baixo", "IF.data"]];
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-qdgrp],[data-qdord],#qdmore,#qdcsv"); if (!b) return;
   if (b.dataset.qdgrp) { qd.grp = b.dataset.qdgrp; qd.all = false; }
@@ -1905,14 +1905,25 @@ document.addEventListener("click", (ev) => {
 document.addEventListener("input", (ev) => { if (ev.target.id === "qdbusca") { qd.busca = ev.target.value; renderQuadroTab(); } });
 document.addEventListener("change", (ev) => { if (ev.target.id === "qdbase") { qd.base = ev.target.value; try { localStorage.setItem("quadro-filtros", JSON.stringify({ grp: qd.grp, base: qd.base, ord: qd.ord, dir: qd.dir })); } catch (e) {} renderQuadroTab(); } });
 const qBase = () => qd.base && QNOME[qd.base] ? qd.base : qd.grp;
-const QC = () => QCOL.filter(([id]) => P.agg.sfn?.[P.meta.ref]?.[id] != null);   // só colunas com dado publicado
+const QC = () => QCOL.filter(([id]) => id === "res" ? !!Q : P.agg.sfn?.[P.meta.ref]?.[id] != null);   // só colunas com dado publicado
+// resultado (lucro, prejuízo ou sobras) do período escolhido, dos balancetes, e o mesmo período do ano anterior, em R$ mi
+let QRES = null, QRES_K = "";
+function qRes() {
+  const k = JSON.stringify([qPerOk(), qAte(), qAno(), qMes()]); if (QRES && QRES_K === k) return QRES;
+  const J = qJanela(), Ja = qJanela(-12), M = new Map();
+  Q.inst.forEach(i => { if (!i.m) return; const a = qCalc(i.m, J), b = qCalc(i.m, Ja); M.set(i.id, { v: a ? a.lucro : null, p: b ? b.lucro : null }); });
+  Object.keys(Q.agg).forEach(g => { const a = qCalc(Q.agg[g].m, J), b = qCalc(Q.agg[g].m, Ja); M.set("agg:" + g, { v: a ? a.lucro : null, p: b ? b.lucro : null }); });
+  QRES_K = k; return (QRES = M);
+}
+const qComRes = (o, id) => { const r = qRes().get(id); return [o ? { ...o, res: r?.v ?? null } : null, { res: r?.p ?? null }]; };
 const qT12 = () => { const t = P.meta.ref; return P.meta.trimestres.includes(backM(t, 12)) ? backM(t, 12) : null; };
-function qDelta(id, unid, a, b) { const v = a?.[id], w = b?.[id]; if (v == null || w == null) return null; return unid === "val" ? (w > 0 ? (v / w - 1) * 100 : null) : v - w; }
-function qFmtV(id, unid, v) { if (v == null) return "—"; if (id === "lucro") return brlMi(v); if (unid === "val") return biCart(v); return nf(v, Math.abs(v) >= 100 ? 0 : id === "roa" ? 2 : 1) + "%"; }
+function qDelta(id, unid, a, b) { const v = a?.[id], w = b?.[id]; if (v == null || w == null) return null; return unid === "val" || unid === "res" ? (w > 0 ? (v / w - 1) * 100 : null) : v - w; }
+function qFmtV(id, unid, v) { if (v == null) return "—"; if (id === "lucro" || unid === "res") return brlMi(v); if (unid === "val") return biCart(v); return nf(v, Math.abs(v) >= 100 ? 0 : id === "roa" ? 2 : 1) + "%"; }
 function qCell(id, unid, melhor, a, b, B, B12) {
   const v = a?.[id], d = qDelta(id, unid, a, b);
   let cmp = "";
-  if (B && melhor !== "neutro") {           // valores em reais: compara o crescimento em 12 meses; indicadores: o próprio nível
+  if (unid === "res") cmp = v == null ? "" : v < 0 ? " cmpR" : v > 0 ? " cmpG" : "";   // resultado: negativo em vermelho, sem comparar com a base
+  else if (B && melhor !== "neutro") {           // valores em reais: compara o crescimento em 12 meses; indicadores: o próprio nível
     const x = unid === "val" ? d : v, y = unid === "val" ? qDelta(id, unid, B, B12) : B[id];
     if (x != null && y != null && isFinite(x) && isFinite(y) && x !== y) cmp = (x > y) === (melhor === "alto") ? " cmpG" : " cmpR";
   }
@@ -1920,8 +1931,8 @@ function qCell(id, unid, melhor, a, b, B, B12) {
   if (d != null && isFinite(d)) {
     const lim = unid === "val" ? 0.5 : 0.05, up = d > lim, dn = d < -lim;
     const c = !up && !dn ? "flat" : melhor === "neutro" ? "flat" : (up === (melhor === "alto")) ? "up" : "down";
-    seta = `<small class="${c}">${up ? "▲" : dn ? "▼" : "="} ${unid === "val" ? sgn(d, 1) : sgn(d, 2, " p.p.")}</small>`;
-  }
+    seta = `<small class="${c}">${up ? "▲" : dn ? "▼" : "="} ${unid === "val" || unid === "res" ? sgn(d, 1) : sgn(d, 2, " p.p.")}</small>`;
+  } else if (unid === "res" && v != null && b?.[id] != null && b[id] <= 0) seta = `<small class="flat">ano ant. ${brlMi(b[id])}</small>`;
   return `<td class="num${cmp}">${qFmtV(id, unid, v)}${seta}</td>`;
 }
 function quadroLinhas() {
@@ -1929,26 +1940,27 @@ function quadroLinhas() {
   let list = P.inst.filter(i => (qd.grp === "sfn" || i.escopos.includes(qd.grp)) && i.s[t]);
   const q = qd.busca.trim().toLowerCase();
   if (q) list = list.filter(i => (i.curto + " " + i.nome + " " + i.id + " " + (i.numero || "")).toLowerCase().includes(q));
-  const k = qd.ord, sg = qd.dir === "asc" ? 1 : -1;
-  list.sort((a, b) => { const x = a.s[t][k], y = b.s[t][k]; if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1; return (x - y) * sg; });
+  const k = qd.ord, sg = qd.dir === "asc" ? 1 : -1, RS = qRes(), gv = (i) => k === "res" ? RS.get(i.id)?.v ?? null : i.s[t][k];
+  list.sort((a, b) => { const x = gv(a), y = gv(b); if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1; return (x - y) * sg; });
   return { t, t12, list };
 }
 function baixaQuadro() {
   const { t, t12, list } = quadroLinhas(), A = P.agg[qd.grp]?.[t], A12 = t12 ? P.agg[qd.grp]?.[t12] : null;
-  const cab = ["Instituição", "CNPJ ou código", ...QC().flatMap(([, n, u]) => [`${n}${u === "val" ? (n === "Lucro ou sobras" ? " (R$ mi, semestre)" : " (R$ bi)") : " (%)"}`, `${n}: variação 12m${u === "val" ? " (%)" : " (p.p.)"}`])];
+  const cab = ["Instituição", "CNPJ ou código", ...QC().flatMap(([, n, u]) => [`${n}${u === "res" ? ` (R$ mi, ${qPerTxt()})` : u === "val" ? " (R$ bi)" : " (%)"}`, `${n}: variação 12m${u === "val" || u === "res" ? " (%)" : " (p.p.)"}`])];
   const num = (v) => v == null || !isFinite(v) ? "" : String(Math.round(v * 1000) / 1000).replace(".", ",");
   const lin = (nome, id, a, b) => [nome, id, ...QC().flatMap(([c, , u]) => [num(a?.[c]), num(qDelta(c, u, a, b))])];
-  const rows = [cab, lin(`${QNOME[qd.grp]} (combinado)`, "", A, A12), ...list.map(i => lin(i.curto, i.id, i.s[t], t12 ? i.s[t12] : null))];
+  const ag = (o, o12) => { const [x, y] = qComRes(o, "agg:" + qd.grp); return [x, o12 ? { ...o12, res: y.res } : y]; };
+  const rows = [cab, lin(`${QNOME[qd.grp]} (combinado)`, "", ...ag(A, A12)), ...list.map(i => { const [x, y] = qComRes(i.s[t], i.id); return lin(i.curto, i.id, x, t12 ? { ...i.s[t12], res: y.res } : y); })];
   const csv = "﻿" + rows.map(r => r.map(x => `"${String(x).replace(/"/g, '""')}"`).join(";")).join("\r\n");
   const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
   a.download = `quadro-indicadores-${qd.grp}-${t}.csv`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
 }
 function renderQuadro() {
-  if (!precisa(["posicao"])) { esperando(Perr ? `Os dados não carregaram (${esc(Perr)}). Recarregue a página.` : "Carregando os indicadores do IF.data…"); return; }
+  if (!precisa(["posicao", "resultados"])) { esperando(Perr || Qerr ? `Os dados não carregaram. Recarregue a página.` : "Carregando os indicadores do IF.data e os balancetes…"); return; }
   cid = 0;
   if (!QNOME[qd.grp]) qd.grp = "crediminas";
   $("#filters").innerHTML = `<div class="frow">${QGR.map(([nm, l]) => `<div class="fgroup"><span class="flabel">${nm}</span>${l.map(([k, n]) => `<button class="chip" type="button" data-qdgrp="${k}" aria-pressed="${qd.grp === k}">${esc(n)}</button>`).join("")}</div>`).join("")}</div>`;
-  $("#stamp").textContent = `IF.data e Cosif até ${ym(P.meta.ref)}`;
+  $("#stamp").textContent = `IF.data até ${ym(P.meta.ref)} · balancetes até ${ym(Q.meta.ref)}`;
   $("#view").innerHTML = `<div id="qdview"></div>`;
   renderQuadroTab();
 }
@@ -1967,11 +1979,14 @@ function donut(pc, txt) {
     <circle cx="46" cy="46" r="${r}" fill="none" stroke="${c}" stroke-width="9" stroke-linecap="round" stroke-dasharray="${(C * f).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 46 46)"/>
     <text x="46" y="52" text-anchor="middle" style="font-size:19px;font-weight:650;fill:var(--ink)">${pc == null ? "—" : nf(pc, 0) + "%"}</text></svg>`;
 }
-function blocoDesenq(list, t, B, bk) {
+function blocoDesenq(list, t, B, bk, RS) {
   if (!B || !list.length) return "";
   const pior = (id, v) => { const m = QCOL.find(c => c[0] === id)[3], y = B[id]; return v != null && y != null && (m === "baixo" ? v > y : v < y); };
   const nomes = (l) => l.map(i => linkFicha(i.id, esc(i.curto))).join(", ");
-  const lin = DSQ.map(([g, its]) => `<div class="dsq-sub">${g}</div><div class="dsq">${its.map(([id, n, lado, desc]) => {
+  const cR = list.filter(i => RS.get(i.id)?.v != null), neg = cR.filter(i => RS.get(i.id).v < 0).sort((a, b) => RS.get(a.id).v - RS.get(b.id).v);
+  const itNeg = `<div class="dsq-it">${donut(cR.length ? neg.length / cR.length * 100 : null, "Resultado negativo")}<div><h4>Resultado negativo</h4><p><b>${neg.length} de ${cR.length}</b> com prejuízo ou sobras negativas · ${esc(qPerTxt())}.</p><p>Não compara com a referência: conta quem fechou o período no negativo. Soma dos negativos: ${brlMi(neg.reduce((x, i) => x + RS.get(i.id).v, 0))}.</p>
+      ${neg.length ? `<details><summary>Ver instituições</summary>${neg.map(i => `${linkFicha(i.id, esc(i.curto))} (${brlMi(RS.get(i.id).v)})`).join(", ")}</details>` : ""}</div></div>`;
+  const lin = DSQ.map(([g, its]) => `<div class="dsq-sub">${g}</div><div class="dsq">${g === "Resultado" ? itNeg : ""}${its.map(([id, n, lado, desc]) => {
     const com = list.filter(i => i.s[t][id] != null), pi = com.filter(i => pior(id, i.s[t][id])).sort((a, b) => (b.s[t].cart || 0) - (a.s[t].cart || 0));
     const pc = com.length ? pi.length / com.length * 100 : null;
     return `<div class="dsq-it">${donut(pc, n)}<div><h4>${esc(n)}</h4><p><b>${pi.length} de ${com.length}</b> ${lado} (${pFmt(id, B[id])}).</p><p>${esc(desc)}</p>
@@ -1988,13 +2003,15 @@ function blocoDesenq(list, t, B, bk) {
     ${conc.length ? `<details style="font-size:0.8rem;margin-top:4px"><summary>Ver as ${conc.length} que concentram os ativos problemáticos</summary>${nomes(conc)}</details>` : ""}</div>`;
   return block(`Quantas estão piores que ${esc(QNOME[bk])}`, `${esc(QNOME[qd.grp])} · ${list.length} instituições · ${ym(t)} · % das instituições com dado`,
     lin + res,
-    `Referência: indicador combinado de ${esc(QNOME[bk])} (soma dos numeradores sobre soma dos denominadores), escolhido em "Comparar com". Não é média simples nem limite normativo. Ativos problemáticos em reais = percentual × carteira. Basileia e rural ficam fora, porque estar abaixo ou acima do agregado não indica, por si, posição pior. IF.data ${ym(t)}.`);
+    `Referência: indicador combinado de ${esc(QNOME[bk])} (soma dos numeradores sobre soma dos denominadores), escolhido em "Comparar com". Não é média simples nem limite normativo. Resultado negativo: balancetes Cosif, no período escolhido acima do quadro. ROE e ROA: IF.data. Ativos problemáticos em reais = percentual × carteira. Basileia e rural ficam fora, porque estar abaixo ou acima do agregado não indica, por si, posição pior. IF.data ${ym(t)}.`);
 }
 function renderQuadroTab() {
   const el = $("#qdview"); if (!el) return;
   try {
-    const { t, t12, list } = quadroLinhas(), A = P.agg[qd.grp]?.[t], A12 = t12 ? P.agg[qd.grp]?.[t12] : null;
-    const bk = qBase(), B = P.agg[bk]?.[t], B12 = t12 ? P.agg[bk]?.[t12] : null, baseIgual = bk === qd.grp;
+    const { t, t12, list } = quadroLinhas(), RS = qRes();
+    const comR = (o, o12, id) => { const r = RS.get(id); return [o ? { ...o, res: r?.v ?? null } : null, { ...(o12 || {}), res: r?.p ?? null }]; };
+    const [A, A12] = comR(P.agg[qd.grp]?.[t], t12 ? P.agg[qd.grp]?.[t12] : null, "agg:" + qd.grp);
+    const bk = qBase(), [B, B12] = comR(P.agg[bk]?.[t], t12 ? P.agg[bk]?.[t12] : null, "agg:" + bk), baseIgual = bk === qd.grp;
     const shown = qd.all || qd.busca ? list : list.slice(0, 50);
     const th = QC().map(([id, n, u, m, f]) => `<th class="num"><button type="button" class="qsort" data-qdord="${id}" aria-pressed="${qd.ord === id}" title="${esc(f)} · clique para ordenar">${esc(n)}${qd.ord === id ? (qd.dir === "desc" ? " ↓" : " ↑") : ""}</button></th>`).join("");
     const linha = (nome, a, b, cls = "", num = "", cmp = true) => `<tr class="${cls}"><td class="num qn">${num}</td><td class="qinst">${nome}</td>${QC().map(([id, , u, m]) => qCell(id, u, m, a, b, cmp ? B : null, B12)).join("")}</tr>`;
@@ -2002,19 +2019,20 @@ function renderQuadroTab() {
     const nomeI = (i) => `<div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}<small>${esc((i.nome || "").slice(0, 40))}${i.uf ? " · " + i.uf : ""}</small></span></div>`;
     const ativo = document.activeElement?.id === "qdbusca";
     el.innerHTML = `<div><div class="eyebrow">IF.data ${ym(t)} · Cosif ${ym(t)}${t12 ? ` · variação contra ${ym(t12)}` : ""}${tagNovo(P.meta.novo_desde)}</div><h2>Quadro de indicadores por instituição · ${esc(QNOME[qd.grp])}</h2>
-      <p class="lede">Uma linha por instituição, com o grupo combinado no topo. <b>Cor de fundo:</b> posição contra a base escolhida em "Comparar com" (verde, melhor; vermelho, pior). Nos valores em reais, compara o crescimento em 12 meses. <b>Seta:</b> variação contra o mesmo trimestre do ano anterior, verde quando favorável e vermelha quando desfavorável. IPROV acima da base aparece como pior. Rural não tem lado bom ou ruim e fica sem cor. Clique no título de uma coluna para ordenar e no nome para abrir a ficha.</p></div>
+      <p class="lede">Uma linha por instituição, com o grupo combinado no topo. <b>Cor de fundo:</b> posição contra a base escolhida em "Comparar com" (verde, melhor; vermelho, pior). Nos valores em reais, compara o crescimento em 12 meses. <b>Seta:</b> variação contra o mesmo trimestre do ano anterior, verde quando favorável e vermelha quando desfavorável. IPROV acima da base aparece como pior. Rural não tem lado bom ou ruim e fica sem cor. <b>Resultado do período:</b> lucro, prejuízo ou sobras no período escolhido em "Resultado · período", em vermelho quando negativo, sem comparar com a base. Clique no título de uma coluna para ordenar e no nome para abrir a ficha.</p></div>
+      ${qPerCtrl()}
       <div class="rank-tools"><label class="fgroup qbase-sel"><span class="flabel">Comparar com</span><select id="qdbase" class="sel">${opts}</select></label>
         <span class="qlegenda"><i class="cmpG"></i>melhor que ${esc(QNOME[bk])} <i class="cmpR"></i>pior <span class="flat">▲▼ variação em 12 meses</span></span></div>
       <div class="rank-tools"><input id="qdbusca" type="search" placeholder="Buscar por nome, número ou CNPJ" value="${esc(qd.busca)}" aria-label="Buscar instituição"><button type="button" class="linkbtn" id="qdcsv">Baixar CSV (Excel)</button></div>
       <div class="tbl-wrap qtab"><table><thead><tr><th class="num">#</th><th class="qinst">Instituição</th>${th}</tr></thead><tbody>
         ${!baseIgual && B ? linha(`<b>${esc(QNOME[bk])}</b><small>base de comparação</small>`, B, B12, "qbase", "", false) : ""}
         ${A ? linha(`<b>${esc(QNOME[qd.grp])}</b><small>combinado · ${list.length} instituições${baseIgual ? " · base de comparação" : ""}</small>`, A, A12, "qagg", "", !baseIgual) : ""}
-        ${shown.map((i, k) => linha(nomeI(i), i.s[t], t12 ? i.s[t12] : null, "", k + 1)).join("") || `<tr><td colspan="${QC().length + 2}" class="empty">Nenhuma instituição encontrada.</td></tr>`}
+        ${shown.map((i, k) => { const [x, y] = comR(i.s[t], t12 ? i.s[t12] : null, i.id); return linha(nomeI(i), x, y, "", k + 1); }).join("") || `<tr><td colspan="${QC().length + 2}" class="empty">Nenhuma instituição encontrada.</td></tr>`}
       </tbody></table></div>
       ${list.length > 50 && !qd.busca ? `<button class="linkbtn" id="qdmore" type="button">${qd.all ? "Mostrar só as 50 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
-      ${qd.busca ? "" : blocoDesenq(list, t, B, bk)}
+      ${qd.busca ? "" : blocoDesenq(list, t, B, bk, RS)}
       <section class="block"><header><div class="eyebrow">Fontes e método</div><h3>Como ler o quadro</h3></header><div class="methods">
-        <p><b>Bases.</b> IF.data (trimestral, ${ym(t)}): ativo total, carteira, captações, patrimônio líquido, inadimplência, ativos problemáticos, IPROV (perda esperada sobre a carteira bruta), cobertura, Basileia, lucro do período, ROE e ROA anualizados e eficiência. Balancetes Cosif (${ym(t)}): rural na carteira. Ativos problemáticos são a medida do estágio 3; os estágios do Cosif não separam o crédito dos demais ativos financeiros e ficaram fora. Valores em R$ bi, exceto lucro em R$ mi. Lucro de junho e dezembro é do semestre; de março e setembro, do trimestre.</p>
+        <p><b>Bases.</b> IF.data (trimestral, ${ym(t)}): ativo total, carteira, captações, patrimônio líquido, inadimplência, ativos problemáticos, IPROV (perda esperada sobre a carteira bruta), cobertura, Basileia, lucro do período, ROE e ROA anualizados e eficiência. Balancetes Cosif (${ym(t)}): rural na carteira. Balancetes Cosif mensais (até ${ym(Q.meta.ref)}): resultado do período, com variação contra o mesmo período do ano anterior quando aquele resultado foi positivo. Ativos problemáticos são a medida do estágio 3; os estágios do Cosif não separam o crédito dos demais ativos financeiros e ficaram fora. Valores em R$ bi, exceto lucro em R$ mi. ROE e ROA do IF.data: período do trimestre ou semestre, anualizado.</p>
         <p><b>Variação.</b> Valores em reais: variação percentual contra ${t12 ? ym(t12) : "o mesmo trimestre do ano anterior"}. Indicadores em %: diferença em pontos percentuais. Mudanças menores que 0,5% ou 0,05 p.p. aparecem como "=".</p>
         <p><b>Atraso de 15 a 90 dias.</b> Não há dado público por instituição. O IF.data traz a carteira "vencida a partir de 15 dias", mas ela soma só as parcelas vencidas, enquanto a inadimplência acima de 90 dias considera o saldo inteiro da operação em atraso. As bases são diferentes, e a diferença entre as duas não mede o atraso de 15 a 90 dias. O indicador por segmento está nas abas Visão geral do SFN e Crédito rural no SFN.</p>
         <p><b>Grupo combinado.</b> Soma dos saldos das instituições do grupo, com os indicadores recalculados sobre os totais. Centrais ficam fora das somas. <a href="${esc(P.meta.url_ifd)}" target="_blank" rel="noopener">IF.data</a> · <a href="${esc(P.meta.url_cosif)}" target="_blank" rel="noopener">Cosif</a>, Banco Central.</p></div></section>`;
@@ -2107,7 +2125,7 @@ try { Object.assign(rus, JSON.parse(localStorage.getItem("rural-filtros") || "{}
 try { Object.assign(rks, JSON.parse(localStorage.getItem("rank-filtros") || "{}")); } catch (e) {}
 // filtros salvos antes da retirada dos estágios do Cosif
 { const E = ["e2", "e3"]; if (E.includes(rs.ord)) rs.ord = "ap"; if (E.includes(ps.x)) ps.x = "cresc"; if (E.includes(ps.y)) ps.y = "ap";
-  if (E.includes(rks.ind)) { rks.ind = "ap"; rks.dir = "asc"; } if (E.includes(qd.ord)) qd.ord = "ap"; if (fsel.gord === "e3") fsel.gord = "ap"; }
+  if (E.includes(rks.ind)) { rks.ind = "ap"; rks.dir = "asc"; } if (E.includes(qd.ord)) qd.ord = "ap"; if (qd.ord === "lucro") qd.ord = "res"; if (fsel.gord === "e3") fsel.gord = "ap"; }
 render();
 carregar("safra").then(d => {
   D = d;
