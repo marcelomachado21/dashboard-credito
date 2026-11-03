@@ -11,7 +11,7 @@ Gera <pasta_saida>/carteira.json com:
          mesmo mês do ano anterior), dos balancetes Cosif (cooperativas, doc. 4010; conglomerados prudenciais, doc. 4060).
 O rural por finalidade (SCR.data) fica em risco.json (bloco scr.rural_fin), gerado por atualiza_risco.py.
 """
-import json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
+import time, json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
 import pandas as pd
 
 RAW, OUT = sys.argv[1], sys.argv[2]
@@ -77,10 +77,25 @@ SGS = {
     "20642": ("PJ livres — capital de giro", "conc_pj"), "20656": ("PJ livres — cartão de crédito", "conc_pj"),
     "21148": ("Inadimplência rural PF total", "inad_rural"), "21146": ("Inadimplência rural PF — taxas de mercado", "inad_rural"),
     "21147": ("Inadimplência rural PF — taxas reguladas", "inad_rural"), "21136": ("Inadimplência rural PJ total", "inad_rural"),
+    # famílias e crédito/PIB (REF, seção 1.2.2); títulos conferidos no portal de dados abertos do BC
+    "29034": ("Comprometimento de renda das famílias com o serviço da dívida com o SFN", "familias"),
+    "29037": ("Endividamento das famílias com o SFN em relação à renda acumulada dos últimos 12 meses", "familias"),
+    "29038": ("Endividamento das famílias com o SFN, exceto crédito habitacional, em relação à renda de 12 meses", "familias"),
+    "20622": ("Saldo da carteira de crédito em relação ao PIB", "pib"), "20623": ("Saldo da carteira de crédito a PJ em relação ao PIB", "pib"),
+    "20624": ("Saldo da carteira de crédito a PF em relação ao PIB", "pib"), "28203": ("Saldo de crédito ampliado concedido a empresas e famílias — total", "ampliado"),
+    # consignado (REF, tema 2.1)
+    "20576": ("Saldo — consignado para trabalhadores do setor privado", "consig"), "20579": ("Saldo — consignado total", "consig"),
+    "20668": ("Concessões — consignado para trabalhadores do setor privado", "conc_consig"), "20670": ("Concessões — consignado para aposentados e pensionistas do INSS", "conc_consig"),
+    "21116": ("Inadimplência — consignado para trabalhadores do setor privado", "consig"), "21119": ("Inadimplência — consignado total", "consig"),
+    "20744": ("Taxa média de juros — consignado para trabalhadores do setor privado (% a.a.)", "consig"),
 }
 def sgs(cod):
     ini = (HOJE - datetime.timedelta(days=365 * 5)).strftime("%d/%m/%Y")
-    d = getjson(f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{cod}/dados?formato=json&dataInicial={ini}&dataFinal=31/12/2099")
+    for i in range(4):                     # a API às vezes devolve um objeto de erro em vez da lista
+        d = getjson(f"https://api.bcb.gov.br/dados/serie/bcdata.sgs.{cod}/dados?formato=json&dataInicial={ini}&dataFinal=31/12/2099")
+        if isinstance(d, list): break
+        time.sleep(20 * (i + 1))
+    else: raise RuntimeError(f"resposta inesperada: {str(d)[:120]}")
     return [(f"{x['data'][6:10]}-{x['data'][3:5]}", float(x["valor"])) for x in d]
 
 series, erros = {}, []
@@ -96,6 +111,8 @@ def deriva(a, b, nome, grp, cod):
         SGS[cod] = (nome, grp)
 deriva("20632", "20686", "PJ livres — total (PJ total − PJ direcionados)", "conc_pj", "pj_livres")
 deriva("20672", "20671", "PF livres — crédito pessoal não consignado (pessoal total − consignado)", "conc_pf", "pf_nao_consig")
+deriva("20579", "20576", "Saldo — demais consignados (total − setor privado)", "consig", "consig_demais")
+deriva("20671", "20668", "Concessões — demais consignados (total − setor privado)", "conc_consig", "conc_consig_demais")
 
 sg = {}
 for cod, pts in series.items():

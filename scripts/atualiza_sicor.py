@@ -22,7 +22,7 @@ Convenções:
 - Safras selecionáveis: as três mais recentes. Na corrente, compara até a data de referência;
   nas anteriores, safra fechada contra a safra fechada anterior.
 """
-import json, os, sys, re, datetime, urllib.request, collections
+import json, os, sys, re, time, datetime, urllib.request, collections
 import pandas as pd
 
 RAW, OUT = sys.argv[1], sys.argv[2]
@@ -374,3 +374,97 @@ json.dump(out, open(tmp, "w"), ensure_ascii=False, separators=(",", ":"))
 os.replace(tmp, OUTFILE)
 print(json.dumps({"safra": REF.isoformat(), "instituicoes": len(inst), "kb": os.path.getsize(OUTFILE) // 1024,
                   "digitais": digitais_achados, "sem_empreendimento": int(sem_emp)}, ensure_ascii=False))
+
+# ---------- 5. território (MG por município) -> data/territorio.json ----------
+# SICOR_COMPLEMENTO_OPERACAO_BASICA traz o código IBGE do município de cada operação (ligação pela REF_BACEN).
+# Regiões (micro, meso, imediata, intermediária) vêm da API de localidades do IBGE; se ela falhar, reaproveita o último arquivo.
+TERRFILE = os.path.join(OUT, "territorio.json")
+try:
+    t0 = time.time()
+    ops = both[(both.geo == "MG") & both.safra.isin([S, S - 1])][["REF", "CNPJ_IF", "VL", "dt", "safra", "fin", "prod"]].copy()
+    comp_p = f"{RAW}/SICOR_COMPLEMENTO_OPERACAO_BASICA.gz"
+    url_c = f"{SICOR}/DadosBrutos/SICOR_COMPLEMENTO_OPERACAO_BASICA.gz"
+    lm_c = req(url_c, "HEAD", 60).headers.get("Last-Modified", "")
+    if not os.path.exists(comp_p) or os.path.getmtime(comp_p) < time.time() - 5 * 86400:
+        baixar(url_c, comp_p)
+    alvo = set(ops.REF.astype(str)); mun_de = {}
+    for ch in pd.read_csv(comp_p, sep=";", usecols=["#REF_BACEN", "CD_IBGE_MUNICIPIO"], dtype=str, encoding="latin1", chunksize=2_000_000):
+        ch = ch[ch["#REF_BACEN"].isin(alvo)]
+        for r_, m_ in zip(ch["#REF_BACEN"], ch["CD_IBGE_MUNICIPIO"]):
+            if r_ not in mun_de and isinstance(m_, str) and m_.startswith("31"): mun_de[r_] = m_[:7]
+    ops["mun"] = ops.REF.astype(str).map(mun_de)
+    cob = float(ops.loc[ops.mun.notna(), "VL"].sum() / ops.VL.sum() * 100) if ops.VL.sum() else 0.0
+    ops = ops[ops.mun.notna()]
+    ops["k"] = ""
+    ops.loc[(ops.safra == S) & (ops.dt <= ref_ts), "k"] = "a"
+    ops.loc[(ops.safra == S - 1) & (ops.dt <= refp_ts), "k"] = "p"
+    ops["t"] = ops.safra == S - 1
+    r3 = lambda v: round(float(v) / 1e6, 3)
+    def cel(g):      # [custeio, investimento, comercialização, industrialização (safra atual até a data), mesmo ponto anterior, safra anterior inteira, contratos]
+        a = g[g.k == "a"]
+        return [r3(a.loc[a.fin == f, "VL"].sum()) for f in FINS] + [r3(g.loc[g.k == "p", "VL"].sum()), r3(g.loc[g.t, "VL"].sum()), int(a.REF.nunique())]
+    base = ops.groupby(["CNPJ_IF", "mun", "k", "fin"]).VL.sum().reset_index()
+    tt = ops[ops.t].groupby(["CNPJ_IF", "mun"]).VL.sum()
+    qq = ops[ops.k == "a"].groupby(["CNPJ_IF", "mun"]).REF.nunique()
+    def tabela(df_):  # df_ com CNPJ_IF -> agrega por município
+        out_ = {}
+        b = df_.groupby(["mun", "k", "fin"]).VL.sum()
+        t_ = df_.groupby("mun").VL.sum() if False else None
+        for mun in sorted(set(df_.mun)):
+            a = [r3(b.get((mun, "a", f), 0)) for f in FINS]
+            p = r3(sum(b.get((mun, "p", f), 0) for f in FINS))
+            out_[mun] = a + [p]
+        return out_
+    esc_d = {}
+    bm = base.merge(MAP, on="CNPJ_IF")
+    tm = tt.reset_index().merge(MAP, on="CNPJ_IF").groupby(["esc", "mun"]).VL.sum()
+    qm = qq.reset_index().merge(MAP, on="CNPJ_IF").groupby(["esc", "mun"]).REF.sum()
+    for esc, g in bm.groupby("esc"):
+        if esc not in ids_validos: continue
+        d_ = tabela(g)
+        for mun, v in d_.items():
+            v += [r3(tm.get((esc, mun), 0)), int(qm.get((esc, mun), 0))]
+        esc_d[esc] = {m: v for m, v in d_.items() if any(v[:6])}
+    inst_d = {}
+    for c, g in base.groupby("CNPJ_IF"):
+        d_ = tabela(g)
+        for mun, v in d_.items():
+            v += [r3(tt.get((c, mun), 0)), int(qq.get((c, mun), 0))]
+        d_ = {m: v for m, v in d_.items() if any(v[:6])}
+        if not d_: continue
+        r = INST.get(c, {})
+        o = {k: r[k] for k in ("curto", "tipo", "uf") if r.get(k)}
+        o.update({k: r[k] for k in ("sistema", "central", "numero") if r.get(k)})
+        o["d"] = d_
+        inst_d[c] = o
+    pr = ops[ops.k == "a"].groupby(["mun", "prod"]).VL.sum()
+    prod_d = {}
+    for mun in sorted(set(ops.mun)):
+        if mun not in pr.index.get_level_values(0): continue
+        s_ = pr.loc[mun].sort_values(ascending=False)
+        prod_d[mun] = [[k, r3(v)] for k, v in s_.head(5).items()]
+    # regiões do IBGE
+    reg, reg_fonte = {}, ""
+    try:
+        with req("https://servicodados.ibge.gov.br/api/v1/localidades/estados/31/municipios", timeout=120) as rr:
+            for x in json.loads(rr.read()):
+                mi = x.get("microrregiao") or {}; ri = x.get("regiao-imediata") or {}
+                reg[str(x["id"])] = {"n": x["nome"], "mi": mi.get("nome", ""), "me": (mi.get("mesorregiao") or {}).get("nome", ""),
+                                     "ri": ri.get("nome", ""), "rt": (ri.get("regiao-intermediaria") or {}).get("nome", "")}
+        reg_fonte = "IBGE, API de localidades"
+    except Exception as e:
+        antT = json.load(open(TERRFILE)) if os.path.exists(TERRFILE) else {}
+        reg = antT.get("mun", {}); reg_fonte = (antT.get("meta", {}).get("regioes_fonte") or "") + (" (cópia anterior)" if reg else "")
+        print(f"aviso: regiões do IBGE indisponíveis ({e})", file=sys.stderr)
+    antT = json.load(open(TERRFILE)) if os.path.exists(TERRFILE) else None
+    nd = antT["meta"].get("novo_desde") if antT and antT.get("meta", {}).get("ref") == REF.isoformat() else HOJE.isoformat()
+    outT = {"meta": {"ref": REF.isoformat(), "ref_anterior": REF_P.isoformat(), "safra": S, "atualizado": HOJE.isoformat(), "novo_desde": nd,
+                     "cobertura": round(cob, 1), "regioes_fonte": reg_fonte, "campos": ["custeio", "investimento", "comercializacao", "industrializacao", "mesmo_ponto", "safra_anterior", "contratos"],
+                     "fonte": "Banco Central — SICOR (operações e complemento com o município da operação)", "url": url_c, "complemento_last_modified": lm_c},
+            "mun": reg, "esc": esc_d, "inst": inst_d, "prod": prod_d}
+    json.dump(outT, open(TERRFILE + ".tmp", "w"), ensure_ascii=False, separators=(",", ":"))
+    os.replace(TERRFILE + ".tmp", TERRFILE)
+    print(json.dumps({"territorio": REF.isoformat(), "cobertura": round(cob, 1), "municipios": len(prod_d), "instituicoes": len(inst_d),
+                      "kb": os.path.getsize(TERRFILE) // 1024, "s": round(time.time() - t0)}, ensure_ascii=False))
+except Exception as e:
+    print(f"aviso: território não gerado ({type(e).__name__}: {e})", file=sys.stderr)

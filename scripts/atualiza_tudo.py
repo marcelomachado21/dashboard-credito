@@ -24,7 +24,9 @@ BASES = [  # (arquivo, script, pasta de brutos)
     ("posicao", "atualiza_posicao.py", os.path.join(RAW, "bcb")),
     ("resultados", "atualiza_resultados.py", os.path.join(RAW, "bcb")),
     ("carteira", "atualiza_carteira.py", os.path.join(RAW, "bcb")),
+    ("focus", "atualiza_focus.py", os.path.join(RAW, "bcb")),
 ]
+EXTRA = {"safra": ["territorio"]}     # arquivos gerados pelo mesmo script, validados e trocados à parte
 
 
 def ler(p):
@@ -108,7 +110,21 @@ def chk_carteira(n, a):
     if "top5" not in n["cosif"]: raise AssertionError("recorte top5 ausente na carteira")
 
 
-CHK = {"safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
+def chk_focus(n, a):
+    nao_recua(n["meta"]["ref"], (a or {}).get("meta", {}).get("ref"), "data do Focus")
+    for k in ("ipca", "pib", "cambio", "selic"):
+        if not n["atual"].get(k): raise AssertionError(f"Focus sem {k}")
+    faixa(n["atual"]["selic"][n["meta"]["anos"][0]]["v"], 2, 30, "Selic esperada")
+
+
+def chk_territorio(n, a):
+    nao_recua(n["meta"]["ref"], (a or {}).get("meta", {}).get("ref"), "referência do território")
+    faixa(n["meta"]["cobertura"], 90, 100.01, "cobertura do município nas operações de MG (%)")
+    if len(n["esc"].get("sfn", {})) < 600: raise AssertionError(f"só {len(n['esc'].get('sfn', {}))} municípios com operação")
+    if len(n.get("mun", {})) < 800: raise AssertionError("tabela de regiões do IBGE incompleta")
+
+
+CHK = {"focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
 
 
 def ref_de(nome, d):
@@ -151,6 +167,22 @@ def main():
                     b.update(situacao="reprovado", motivo=f"{type(e).__name__}: {e}"[:300])
         b["ref"] = ref_de(nome, ler(p_pub))
         bases[nome] = b
+        for ex in EXTRA.get(nome, []):       # saídas extras do mesmo script
+            pe_pub, pe_tmp = os.path.join(DATA, ex + ".json"), os.path.join(tmp, ex + ".json")
+            be = {"segundos": 0, "saida": f"gerado por {script}"}
+            nv, vl = ler(pe_tmp), ler(pe_pub)
+            if not ok_run or nv is None:
+                be.update(situacao="falhou" if not ok_run else "sem mudança", motivo=b.get("motivo") if not ok_run else None)
+                if nv is None and ok_run: be["situacao"] = "falhou"; be["motivo"] = "arquivo não gerado (ver aviso no log)"
+            elif vl is not None and nv == vl:
+                be["situacao"] = "sem mudança"
+            else:
+                try:
+                    CHK[ex](nv, vl); shutil.copy2(pe_tmp, pe_pub); be["situacao"] = "atualizado"
+                except Exception as e:
+                    be.update(situacao="reprovado", motivo=f"{type(e).__name__}: {e}"[:300])
+            be["ref"] = ref_de(ex, ler(pe_pub)); bases[ex] = {k: v for k, v in be.items() if v is not None}
+            print(f"{ex}: {be['situacao']} · {be['ref']}" + (f" · {be.get('motivo')}" if be.get("motivo") else ""), flush=True)
         print(f"{nome}: {b['situacao']} · {b['ref']} · {b['segundos']} s" + (f" · {b.get('motivo')}" if b.get("motivo") else ""), flush=True)
     shutil.rmtree(tmp, ignore_errors=True)
     st = {"verificado_em": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),

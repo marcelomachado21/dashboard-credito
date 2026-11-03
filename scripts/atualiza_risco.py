@@ -143,11 +143,11 @@ def scr():
             dados[d] = (p, name)
     ult = sorted(dados)[-25:]
     num = ["carteira_ativa", "vencido_de_15_ate_90_dias", "carteira_inadimplencia", "ativo_problematico"]
-    linhas, modal, rural_fin = [], [], []
+    linhas, modal, rural_fin, portes, consig = [], [], [], [], []
     for d in ult:
         p, name = dados[d]
         with zipfile.ZipFile(p).open(name) as f:
-            df = pd.read_csv(f, sep=";", usecols=["uf", "segmento", "cliente", "modalidade", "submodalidade"] + num, dtype=str, encoding="utf-8-sig")
+            df = pd.read_csv(f, sep=";", usecols=["uf", "segmento", "cliente", "modalidade", "submodalidade", "porte", "cnae_ocupacao"] + num, dtype=str, encoding="utf-8-sig")
         for c in num:
             df[c] = pd.to_numeric(df[c].str.replace(".", "", regex=False).str.replace(",", ".", regex=False), errors="coerce").fillna(0)
         df["seg"] = df.segmento.map({"Cooperativa": "coop", "Banco": "bancos"}).fillna("outros")
@@ -163,6 +163,15 @@ def scr():
                 for corte, ss in (("total", s_), ("PF", s_[s_.cliente == "PF"]), ("PJ", s_[s_.cliente == "PJ"]),
                                   ("rural", s_[s_.rural]), ("rural_PF", s_[s_.rural & (s_.cliente == "PF")])):
                     linhas.append((mes, geo, seg, corte) + tuple(float(ss[c].sum()) for c in num))
+            cons = g[(g.cliente == "PF") & sm.loc[g.index].str.contains("com consigna", case=False)]
+            for seg in ("sfn", "bancos", "coop"):
+                s_ = g if seg == "sfn" else g[g.seg == seg]
+                for (cli, pt), ss in s_.groupby(["cliente", "porte"]):   # porte da empresa (PJ) ou faixa de renda (PF)
+                    portes.append((mes, geo, seg, cli + "|" + pt) + tuple(float(ss[c].sum()) for c in num))
+                c_ = cons if seg == "sfn" else cons[cons.seg == seg]
+                for oc, ss in c_.groupby("cnae_ocupacao"):                 # consignado por ocupação do tomador
+                    consig.append((mes, geo, seg, oc) + tuple(float(ss[c].sum()) for c in num))
+                consig.append((mes, geo, seg, "Total") + tuple(float(c_[c].sum()) for c in num))
             for seg in ("sfn", "bancos", "coop"):
                 s_ = g[g.rural] if seg == "sfn" else g[g.rural & (g.seg == seg)]
                 for fin, ss in s_.groupby("fin"):
@@ -188,7 +197,14 @@ def scr():
     for mes, geo, seg, fin, cart, v1590, inad, ap in rural_fin:
         rf[geo][seg][fin].append({"d": mes, "cart": round(cart / 1e9, 2), "inad": round(inad / cart * 100, 2) if cart else None,
                                   "a15": round(v1590 / cart * 100, 2) if cart else None, "ap": round(ap / cart * 100, 2) if cart else None})
-    return {"ref": ult[-1][:4] + "-" + ult[-1][4:], "serie": ser, "modal": md, "rural_fin": rf,
+    def grade(lst):
+        o = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(list)))
+        for mes, geo, seg, k, cart, v1590, inad, ap in lst:
+            if cart < 1e8: continue
+            o[geo][seg][k].append({"d": mes, "cart": round(cart / 1e9, 2), "inad": round(inad / cart * 100, 2),
+                                   "a15": round(v1590 / cart * 100, 2), "ap": round(ap / cart * 100, 2)})
+        return o
+    return {"ref": ult[-1][:4] + "-" + ult[-1][4:], "serie": ser, "modal": md, "rural_fin": rf, "porte": grade(portes), "consig": grade(consig),
             "fonte": "Banco Central — SCR.data (carteira ativa, vencido de 15 a 90 dias, inadimplência acima de 90 dias e ativo problemático, por segmento e UF do tomador)",
             "url": "https://dadosabertos.bcb.gov.br/dataset/scr_data"}
 
