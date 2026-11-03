@@ -10,7 +10,7 @@ conglomerados prudenciais) e por escopo, a partir de jun/2025 menos 3 trimestres
 - Cosif (balancete do mês do trimestre): estágios 2 e 3 e participação do crédito rural na carteira.
 Cooperativas incorporadas são somadas na incorporadora em todos os trimestres.
 """
-import json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
+import time, json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
 import pandas as pd
 
 RAW, OUT = sys.argv[1], sys.argv[2]
@@ -46,13 +46,14 @@ def baixar(url, path, tries=4):
     print("falha", url, err); return False
 
 
-def olinda(path, tries=4):
+def olinda(path, tries=6):
     for i in range(tries):
         try:
             with req(f"{OLINDA}/{path}", timeout=300) as r:
                 return json.loads(r.read())["value"]
         except Exception as e:
             err = e
+            time.sleep(15 * (i + 1))           # o Olinda devolve 500 intermitente; espera crescente
     raise RuntimeError(f"{path}: {err}")
 
 
@@ -223,7 +224,8 @@ def met(am, v, vant, cs):
            "rural": r2(cs.get("cos_rural", 0) / cs["cos_cart"] * 100, 1) if cs and cs.get("cos_cart") else None,
            "cresc": r2((cart / vant["cart"] - 1) * 100, 1) if vant and vant["cart"] > 0 and cart > 0 else None,
            "capt_cresc": r2((v["capt"] / vant["capt"] - 1) * 100, 1) if vant and vant["capt"] > 0 else None,
-           "lucro": r2(v["lucro"] / 1e6, 1), "pl": r2(v["pl"] / 1e9, 3)}
+           "lucro": r2(v["lucro"] / 1e6, 1), "pl": r2(v["pl"] / 1e9, 3),
+           "at": r2(v["ativo"] / 1e9, 3), "capt": r2(v["capt"] / 1e9, 3)}       # ativo total e captações, R$ bi (quadro de indicadores)
     return out
 
 inst = []

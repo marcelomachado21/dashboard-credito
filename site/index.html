@@ -62,6 +62,26 @@ nav.tabs .wrap { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: no
 nav.tabs .wrap::-webkit-scrollbar { display: none; }
 .trow > span, nav.tabs a { flex: none; padding: 7px 13px; font-size: 0.82rem; font-weight: 600; color: #4a5258; background: #eef0f1; border-radius: 8px; white-space: nowrap; text-decoration: none; }
 .filters:has(#filters:empty) { display: none; }
+#qdview { min-width: 0; max-width: 100%; display: grid; gap: 14px; }
+#qdview > * { min-width: 0; }
+.qtab { max-height: 72vh; overflow: auto; max-width: 100%; }
+.qtab table { font-size: 0.8rem; }
+.qtab thead th { position: sticky; top: 0; background: var(--bg); z-index: 2; }
+.qtab .qinst { position: sticky; left: 0; background: var(--bg); z-index: 1; min-width: 190px; max-width: 230px; }
+.qtab thead .qinst { z-index: 3; }
+.qtab td.qn, .qtab th:first-child { color: var(--faint); }
+.qtab td.num small { display: block; white-space: nowrap; font-size: 0.72rem; }
+@media (max-width: 700px) { .qtab .qinst { min-width: 120px; max-width: 140px; } .qtab .qinst .inst-name small { display: none; } }
+.qtab tr td.cmpG, .qlegenda i.cmpG { background: rgba(27, 122, 62, 0.11); }
+.qtab tr td.cmpR, .qlegenda i.cmpR { background: rgba(180, 35, 24, 0.10); }
+.qlegenda { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 0.78rem; color: var(--muted); }
+.qlegenda i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: -2px; margin-right: 4px; }
+.qtab tr.qbase td:not(.cmpG):not(.cmpR), .qtab tr.qbase .qinst { background: #eef0f1; font-weight: 600; }
+.qtab tr.qbase td { font-weight: 600; }
+.qtab tr.qagg td:not(.cmpG):not(.cmpR) { background: var(--panel); font-weight: 600; }
+.qtab tr.qagg .qinst { background: var(--panel); }
+.qsort { font: inherit; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); background: none; border: 0; padding: 0; cursor: pointer; text-align: right; white-space: normal; }
+.qsort[aria-pressed="true"] { color: var(--accent-ink); }
 .secao { margin-top: 32px; padding-top: 18px; border-top: 2px solid var(--grafite); }
 .secao h2 { margin: 2px 0 4px; }
 nav.tabs a:hover { background: #e2e6e8; color: var(--ink); }
@@ -196,7 +216,7 @@ async function carregar(nome) {
 }
 
 (() => {
-const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia"];
+const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia"];
 const MES = ["jul","ago","set","out","nov","dez","jan","fev","mar","abr","mai","jun"];
 const MESF = ["julho","agosto","setembro","outubro","novembro","dezembro","janeiro","fevereiro","março","abril","maio","junho"];
 const FIN = [["all","Todas"],["c","Custeio"],["i","Investimento"],["m","Comercialização"],["n","Industrialização"]];
@@ -1728,7 +1748,7 @@ function renderVisao() {
     const tabela = `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th>${COLS.map(([k, n]) => `<th class="num">${n}</th>`).join("")}<th>Base</th></tr></thead><tbody>${LIN.map(([n, f, b]) => `<tr><td>${n}</td>${COLS.map(([k]) => `<td class="num">${f(k)}</td>`).join("")}<td><small>${b}</small></td></tr>`).join("")}</tbody></table></div>`;
     const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"], ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos, estágios, provisão e Basileia por escopo"],
       ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Carteira rural / estoque", "Saldo rural e fonte de recursos por escopo"], ["#safra", "Safra de crédito rural / contratações", "Contratação por safra, finalidade, programa, fonte e instituição"],
-      ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"], ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"], ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
+      ["#quadro", "Quadro de indicadores por instituição", "Todos os indicadores de cada instituição do grupo, com a variação em 12 meses"], ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"], ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"], ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
     $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Visão geral do Sistema Financeiro Nacional</h2>
       <p class="lede">Os grandes números do crédito no SFN: saldo, concessões, inadimplência e atraso. Aqui ficam as séries que só existem para o sistema ou por segmento (bancos e cooperativas); o crédito rural do sistema tem aba própria. Para ver um sistema, uma central ou uma instituição, use as abas do segundo grupo. Data de referência de cada base:</p></div>${strip}
       ${kp}
@@ -1825,6 +1845,107 @@ function renderRuralSFN() {
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
 
+/* ===================== Aba Quadro de indicadores por instituição ===================== */
+const qd = { grp: "crediminas", base: "", ord: "cart", dir: "desc", busca: "", all: false };
+const QGR = [["Minas", [["crediminas", "Central Crediminas"], ["cecremge", "Central Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"]]],
+  ["Sistemas e conglomerados", [["sicoob", "Sicoob (cooperativas)"], ["cong_sicoob", "Conglomerado Sicoob"], ["sicredi", "Sicredi (cooperativas)"], ["cong_sicredi", "Conglomerado Sicredi"], ["cresol", "Cresol"], ["unicred", "Unicred"], ["coop", "Todas as cooperativas"]]],
+  ["Bancos e SFN", [["bancos", "Bancos"], ["top5", "5 maiores bancos"], ["digitais", "Bancos digitais"], ["sfn", "SFN (todas)"]]]];
+const QNOME = Object.fromEntries(QGR.flatMap(([, l]) => l));
+// id, título, unidade (val = R$ e variação %; pct = % e variação em p.p.), melhor (alto/baixo/neutro), fonte
+const QCOL = [["at", "Ativo total", "val", "alto", "IF.data"], ["cart", "Carteira de crédito", "val", "alto", "IF.data"], ["capt", "Captações", "val", "alto", "IF.data"], ["pl", "Patrimônio líquido", "val", "alto", "IF.data"],
+  ["rural", "Rural na carteira", "pct", "neutro", "Cosif"], ["inad", "Inadimplência", "pct", "baixo", "IF.data"], ["ap", "Ativos problemáticos", "pct", "baixo", "IF.data"], ["e2", "Estágio 2", "pct", "baixo", "Cosif"], ["e3", "Estágio 3", "pct", "baixo", "Cosif"],
+  ["prov", "IPROV", "pct", "neutro", "IF.data"], ["cob", "Cobertura", "pct", "alto", "IF.data"], ["basil", "Basileia", "pct", "alto", "IF.data"],
+  ["lucro", "Lucro ou sobras", "val", "alto", "IF.data"], ["roe", "ROE", "pct", "alto", "IF.data"], ["roa", "ROA", "pct", "alto", "IF.data"], ["efic", "Eficiência", "pct", "baixo", "IF.data"]];
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest("[data-qdgrp],[data-qdord],#qdmore,#qdcsv"); if (!b) return;
+  if (b.dataset.qdgrp) { qd.grp = b.dataset.qdgrp; qd.all = false; }
+  if (b.dataset.qdord) { if (qd.ord === b.dataset.qdord) qd.dir = qd.dir === "desc" ? "asc" : "desc"; else { qd.ord = b.dataset.qdord; qd.dir = (QCOL.find(c => c[0] === qd.ord) || [])[3] === "baixo" ? "asc" : "desc"; } }
+  if (b.id === "qdmore") qd.all = !qd.all;
+  if (b.id === "qdcsv") { baixaQuadro(); return; }
+  try { localStorage.setItem("quadro-filtros", JSON.stringify({ grp: qd.grp, base: qd.base, ord: qd.ord, dir: qd.dir })); } catch (e) {}
+  renderQuadroTab();
+});
+document.addEventListener("input", (ev) => { if (ev.target.id === "qdbusca") { qd.busca = ev.target.value; renderQuadroTab(); } });
+document.addEventListener("change", (ev) => { if (ev.target.id === "qdbase") { qd.base = ev.target.value; try { localStorage.setItem("quadro-filtros", JSON.stringify({ grp: qd.grp, base: qd.base, ord: qd.ord, dir: qd.dir })); } catch (e) {} renderQuadroTab(); } });
+const qBase = () => qd.base && QNOME[qd.base] ? qd.base : qd.grp;
+const QC = () => QCOL.filter(([id]) => P.agg.sfn?.[P.meta.ref]?.[id] != null);   // só colunas com dado publicado
+const qT12 = () => { const t = P.meta.ref; return P.meta.trimestres.includes(backM(t, 12)) ? backM(t, 12) : null; };
+function qDelta(id, unid, a, b) { const v = a?.[id], w = b?.[id]; if (v == null || w == null) return null; return unid === "val" ? (w > 0 ? (v / w - 1) * 100 : null) : v - w; }
+function qFmtV(id, unid, v) { if (v == null) return "—"; if (id === "lucro") return brlMi(v); if (unid === "val") return biCart(v); return nf(v, Math.abs(v) >= 100 ? 0 : id === "roa" ? 2 : 1) + "%"; }
+function qCell(id, unid, melhor, a, b, B, B12) {
+  const v = a?.[id], d = qDelta(id, unid, a, b);
+  let cmp = "";
+  if (B && melhor !== "neutro") {           // valores em reais: compara o crescimento em 12 meses; indicadores: o próprio nível
+    const x = unid === "val" ? d : v, y = unid === "val" ? qDelta(id, unid, B, B12) : B[id];
+    if (x != null && y != null && isFinite(x) && isFinite(y) && x !== y) cmp = (x > y) === (melhor === "alto") ? " cmpG" : " cmpR";
+  }
+  let seta = "";
+  if (d != null && isFinite(d)) {
+    const lim = unid === "val" ? 0.5 : 0.05, up = d > lim, dn = d < -lim;
+    const c = !up && !dn ? "flat" : melhor === "neutro" ? "flat" : (up === (melhor === "alto")) ? "up" : "down";
+    seta = `<small class="${c}">${up ? "▲" : dn ? "▼" : "="} ${unid === "val" ? sgn(d, 1) : sgn(d, 2, " p.p.")}</small>`;
+  }
+  return `<td class="num${cmp}">${qFmtV(id, unid, v)}${seta}</td>`;
+}
+function quadroLinhas() {
+  const t = P.meta.ref, t12 = qT12();
+  let list = P.inst.filter(i => (qd.grp === "sfn" || i.escopos.includes(qd.grp)) && i.s[t]);
+  const q = qd.busca.trim().toLowerCase();
+  if (q) list = list.filter(i => (i.curto + " " + i.nome + " " + i.id + " " + (i.numero || "")).toLowerCase().includes(q));
+  const k = qd.ord, sg = qd.dir === "asc" ? 1 : -1;
+  list.sort((a, b) => { const x = a.s[t][k], y = b.s[t][k]; if (x == null && y == null) return 0; if (x == null) return 1; if (y == null) return -1; return (x - y) * sg; });
+  return { t, t12, list };
+}
+function baixaQuadro() {
+  const { t, t12, list } = quadroLinhas(), A = P.agg[qd.grp]?.[t], A12 = t12 ? P.agg[qd.grp]?.[t12] : null;
+  const cab = ["Instituição", "CNPJ ou código", ...QC().flatMap(([, n, u]) => [`${n}${u === "val" ? (n === "Lucro ou sobras" ? " (R$ mi, semestre)" : " (R$ bi)") : " (%)"}`, `${n}: variação 12m${u === "val" ? " (%)" : " (p.p.)"}`])];
+  const num = (v) => v == null || !isFinite(v) ? "" : String(Math.round(v * 1000) / 1000).replace(".", ",");
+  const lin = (nome, id, a, b) => [nome, id, ...QC().flatMap(([c, , u]) => [num(a?.[c]), num(qDelta(c, u, a, b))])];
+  const rows = [cab, lin(`${QNOME[qd.grp]} (combinado)`, "", A, A12), ...list.map(i => lin(i.curto, i.id, i.s[t], t12 ? i.s[t12] : null))];
+  const csv = "﻿" + rows.map(r => r.map(x => `"${String(x).replace(/"/g, '""')}"`).join(";")).join("\r\n");
+  const a = document.createElement("a"); a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+  a.download = `quadro-indicadores-${qd.grp}-${t}.csv`; document.body.appendChild(a); a.click(); setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+function renderQuadro() {
+  if (!precisa(["posicao"])) { esperando(Perr ? `Os dados não carregaram (${esc(Perr)}). Recarregue a página.` : "Carregando os indicadores do IF.data…"); return; }
+  cid = 0;
+  if (!QNOME[qd.grp]) qd.grp = "crediminas";
+  $("#filters").innerHTML = `<div class="frow">${QGR.map(([nm, l]) => `<div class="fgroup"><span class="flabel">${nm}</span>${l.map(([k, n]) => `<button class="chip" type="button" data-qdgrp="${k}" aria-pressed="${qd.grp === k}">${esc(n)}</button>`).join("")}</div>`).join("")}</div>`;
+  $("#stamp").textContent = `IF.data e Cosif até ${ym(P.meta.ref)}`;
+  $("#view").innerHTML = `<div id="qdview"></div>`;
+  renderQuadroTab();
+}
+function renderQuadroTab() {
+  const el = $("#qdview"); if (!el) return;
+  try {
+    const { t, t12, list } = quadroLinhas(), A = P.agg[qd.grp]?.[t], A12 = t12 ? P.agg[qd.grp]?.[t12] : null;
+    const bk = qBase(), B = P.agg[bk]?.[t], B12 = t12 ? P.agg[bk]?.[t12] : null, baseIgual = bk === qd.grp;
+    const shown = qd.all || qd.busca ? list : list.slice(0, 50);
+    const th = QC().map(([id, n, u, m, f]) => `<th class="num"><button type="button" class="qsort" data-qdord="${id}" aria-pressed="${qd.ord === id}" title="${esc(f)} · clique para ordenar">${esc(n)}${qd.ord === id ? (qd.dir === "desc" ? " ↓" : " ↑") : ""}</button></th>`).join("");
+    const linha = (nome, a, b, cls = "", num = "", cmp = true) => `<tr class="${cls}"><td class="num qn">${num}</td><td class="qinst">${nome}</td>${QC().map(([id, , u, m]) => qCell(id, u, m, a, b, cmp ? B : null, B12)).join("")}</tr>`;
+    const opts = QGR.map(([nm, l]) => `<optgroup label="${esc(nm)}">${l.map(([k, n]) => `<option value="${k}"${k === bk ? " selected" : ""}>${esc(n)}${k === qd.grp ? " (o próprio grupo)" : ""}</option>`).join("")}</optgroup>`).join("");
+    const nomeI = (i) => `<div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}<small>${esc((i.nome || "").slice(0, 40))}${i.uf ? " · " + i.uf : ""}</small></span></div>`;
+    const ativo = document.activeElement?.id === "qdbusca";
+    el.innerHTML = `<div><div class="eyebrow">IF.data ${ym(t)} · Cosif ${ym(t)}${t12 ? ` · variação contra ${ym(t12)}` : ""}${tagNovo(P.meta.novo_desde)}</div><h2>Quadro de indicadores por instituição · ${esc(QNOME[qd.grp])}</h2>
+      <p class="lede">Uma linha por instituição, com o grupo combinado no topo. <b>Cor de fundo:</b> posição contra a base escolhida em "Comparar com" (verde, melhor; vermelho, pior). Nos valores em reais, compara o crescimento em 12 meses. <b>Seta:</b> variação contra o mesmo trimestre do ano anterior, verde quando favorável e vermelha quando desfavorável. IPROV e rural não têm lado bom ou ruim e ficam sem cor. Clique no título de uma coluna para ordenar e no nome para abrir a ficha.</p></div>
+      <div class="rank-tools"><label class="fgroup qbase-sel"><span class="flabel">Comparar com</span><select id="qdbase" class="sel">${opts}</select></label>
+        <span class="qlegenda"><i class="cmpG"></i>melhor que ${esc(QNOME[bk])} <i class="cmpR"></i>pior <span class="flat">▲▼ variação em 12 meses</span></span></div>
+      <div class="rank-tools"><input id="qdbusca" type="search" placeholder="Buscar por nome, número ou CNPJ" value="${esc(qd.busca)}" aria-label="Buscar instituição"><button type="button" class="linkbtn" id="qdcsv">Baixar CSV (Excel)</button></div>
+      <div class="tbl-wrap qtab"><table><thead><tr><th class="num">#</th><th class="qinst">Instituição</th>${th}</tr></thead><tbody>
+        ${!baseIgual && B ? linha(`<b>${esc(QNOME[bk])}</b><small>base de comparação</small>`, B, B12, "qbase", "", false) : ""}
+        ${A ? linha(`<b>${esc(QNOME[qd.grp])}</b><small>combinado · ${list.length} instituições${baseIgual ? " · base de comparação" : ""}</small>`, A, A12, "qagg", "", !baseIgual) : ""}
+        ${shown.map((i, k) => linha(nomeI(i), i.s[t], t12 ? i.s[t12] : null, "", k + 1)).join("") || `<tr><td colspan="${QC().length + 2}" class="empty">Nenhuma instituição encontrada.</td></tr>`}
+      </tbody></table></div>
+      ${list.length > 50 && !qd.busca ? `<button class="linkbtn" id="qdmore" type="button">${qd.all ? "Mostrar só as 50 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
+      <section class="block"><header><div class="eyebrow">Fontes e método</div><h3>Como ler o quadro</h3></header><div class="methods">
+        <p><b>Bases.</b> IF.data (trimestral, ${ym(t)}): ativo total, carteira, captações, patrimônio líquido, inadimplência, ativos problemáticos, IPROV (perda esperada sobre a carteira bruta), cobertura, Basileia, lucro do período, ROE e ROA anualizados e eficiência. Balancetes Cosif (${ym(t)}): rural na carteira e estágios 2 e 3. Valores em R$ bi, exceto lucro em R$ mi. Lucro de junho e dezembro é do semestre; de março e setembro, do trimestre.</p>
+        <p><b>Variação.</b> Valores em reais: variação percentual contra ${t12 ? ym(t12) : "o mesmo trimestre do ano anterior"}. Indicadores em %: diferença em pontos percentuais. Mudanças menores que 0,5% ou 0,05 p.p. aparecem como "=".</p>
+        <p><b>Atraso de 15 a 90 dias.</b> Não há dado público por instituição. O IF.data traz a carteira "vencida a partir de 15 dias", mas ela não é comparável à inadimplência do mesmo IF.data, que pela definição de ativo inadimplido da Res. CMN 4.966 pode incluir operações com problema de recuperação ainda sem 90 dias de atraso (em jun/26, ficou acima do vencido a partir de 15 dias em 780 de 1.071 instituições); a diferença entre as duas não mede o atraso de 15 a 90 dias. O indicador por segmento está nas abas Visão geral do SFN e Crédito rural no SFN.</p>
+        <p><b>Grupo combinado.</b> Soma dos saldos das instituições do grupo, com os indicadores recalculados sobre os totais. Centrais ficam fora das somas. <a href="${esc(P.meta.url_ifd)}" target="_blank" rel="noopener">IF.data</a> · <a href="${esc(P.meta.url_cosif)}" target="_blank" rel="noopener">Cosif</a>, Banco Central.</p></div></section>`;
+    if (ativo) { const b = $("#qdbusca"); b.focus(); b.setSelectionRange(b.value.length, b.value.length); }
+  } catch (err) { el.innerHTML = `<p class="empty">Não foi possível montar o quadro: ${esc(err.message)}</p>`; console.error(err); }
+}
+
 /* ===================== Aba Fontes e metodologia ===================== */
 function renderFontes() {
   if (!precisa(["safra", "risco", "posicao", "resultados", "carteira"])) { esperando("Carregando as datas de referência das bases…"); return; }
@@ -1834,7 +1955,7 @@ function renderFontes() {
     ["SCR.data", "Visão geral do SFN; Crédito rural no SFN", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente e modalidade", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
     ["SGS — séries temporais", "Visão geral do SFN; Crédito rural no SFN", "Saldo e concessões do SFN, por PF/PJ e modalidade; inadimplência rural", "Mensal", "~30 dias", ym(C.meta.refs.sgs), "https://www3.bcb.gov.br/sgspub/"],
     ["Balancetes Cosif", "Perfil da carteira; Carteira rural / estoque; Resultados; Qualidade e risco (estágios); Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
-    ["IF.data", "Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
+    ["IF.data", "Quadro de indicadores; Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
     ["Relação de instituições em funcionamento", "Todas", "Cadastro de cooperativas e bancos, filiação a centrais", "Diária", "—", "consulta a cada rodada", "https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento"],
     ["Lista de cooperativas do Sicoob", "Nomes e números", "Número, nome e CNPJ das cooperativas e centrais do Sicoob", "Eventual", "—", "out/26", "https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf"],
     ["Evolução do SFN — Quadro 4", "Incorporações", "Autorizações e alterações societárias, incluindo incorporações de cooperativas", "Mensal", "~4 meses", "conferido na 1ª segunda-feira do mês", "https://www.bcb.gov.br/estabilidadefinanceira/evolucaosfn"],
@@ -1881,8 +2002,8 @@ function blocoStatus(st) {
     `"Falhou" ou "reprovado": a base seguiu com o último dado válido. Registro completo na aba Actions do repositório.`);
 }
 /* ===================== Roteador ===================== */
-const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "rankings", 8: "posicao", 9: "ficha", 10: "fontes" };
-const GRUPOS_ABAS = [[[0, 1], "Grandes números do SFN", "sem filtro de instituição"], [[2, 3, 4, 5, 6, 7, 8, 9], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[10], "", ""]];
+const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes" };
+const GRUPOS_ABAS = [[[0, 1], "Grandes números do SFN", "sem filtro de instituição"], [[2, 3, 4, 5, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
@@ -1892,7 +2013,7 @@ function render() {
     const upd = () => { sc.classList.toggle("esq", row.scrollLeft > 4); sc.classList.toggle("dir", row.scrollLeft + row.clientWidth < row.scrollWidth - 4); };
     if (at && row.scrollWidth > row.clientWidth) { row.style.scrollBehavior = "auto"; row.scrollLeft = Math.max(0, at.offsetLeft - row.offsetLeft - 40); row.style.scrollBehavior = ""; }
     row.addEventListener("scroll", upd, { passive: true }); upd(); });
-  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes })[aba()]();
+  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes })[aba()]();
 }
 addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", render);
@@ -1905,6 +2026,7 @@ try { Object.assign(fsel, JSON.parse(localStorage.getItem("ficha") || "{}")); } 
 try { Object.assign(cs, JSON.parse(localStorage.getItem("cart-filtros") || "{}")); } catch (e) {}
 try { Object.assign(vg, JSON.parse(localStorage.getItem("visao-filtros") || "{}")); } catch (e) {}
 try { Object.assign(vr, JSON.parse(localStorage.getItem("ruralsfn-filtros") || "{}")); } catch (e) {}
+try { Object.assign(qd, JSON.parse(localStorage.getItem("quadro-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rus, JSON.parse(localStorage.getItem("rural-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rks, JSON.parse(localStorage.getItem("rank-filtros") || "{}")); } catch (e) {}
 render();

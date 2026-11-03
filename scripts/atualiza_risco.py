@@ -13,7 +13,7 @@ Gera <pasta_saida>/risco.json com três blocos:
 Escopos (Sicoob, Sicredi, centrais, Sicoob MG, 5 maiores, digitais) somam as instituições.
 Cooperativas incorporadas entram na incorporadora em todo o histórico.
 """
-import json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
+import time, json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
 import pandas as pd
 
 RAW, OUT = sys.argv[1], sys.argv[2]
@@ -55,13 +55,14 @@ def baixar(url, path, tries=4):
     print("falha", url, err); return False
 
 
-def olinda(path, tries=4):
+def olinda(path, tries=6):
     for i in range(tries):
         try:
             with req(f"{OLINDA}/{path}", timeout=300) as r:
                 return json.loads(r.read())["value"]
         except Exception as e:
             err = e
+            time.sleep(15 * (i + 1))           # o Olinda devolve 500 intermitente; espera crescente
     raise RuntimeError(f"{path}: {err}")
 
 

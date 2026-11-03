@@ -23,7 +23,7 @@ Blocos (contas Cosif):
   Lucro ou sobras        7000 + 8000 + 8195600001 (juros ao capital das cooperativas somados de volta, como no IF.data)
 Cooperativas incorporadas são somadas na incorporadora.
 """
-import json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
+import time, json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
 import pandas as pd
 
 RAW, OUT = sys.argv[1], sys.argv[2]
@@ -62,13 +62,14 @@ def baixar(url, path, tries=4):
             err = e
     print("falha", url, err); return False
 
-def olinda(path, tries=4):
+def olinda(path, tries=6):
     for i in range(tries):
         try:
             with req(f"{OLINDA}/{path}", timeout=300) as r:
                 return json.loads(r.read())["value"]
         except Exception as e:
             err = e
+            time.sleep(15 * (i + 1))           # o Olinda devolve 500 intermitente; espera crescente
     raise RuntimeError(f"{path}: {err}")
 
 def meses(ini, fim):
