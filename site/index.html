@@ -51,14 +51,22 @@ h1 { font-family: var(--f-display); font-stretch: 78%; font-weight: 800; font-si
 h1 span { color: var(--muted); font-weight: 600; }
 .stamp { font-family: var(--f-data); font-size: 0.76rem; color: var(--muted); }
 nav.tabs { border-bottom: 1px solid var(--line); position: relative; }
-nav.tabs .wrap { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-block: 10px; }
+nav.tabs .wrap { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: none; padding-block: 10px; align-items: flex-start; }
+.tgrp { flex: none; border: 1.5px dashed #b5bdc2; border-radius: 12px; padding: 6px 8px 8px; display: grid; gap: 5px; }
+.tgrp:first-child { border-color: #8f979c; }
+.tcap { font-size: 0.66rem; color: var(--muted); letter-spacing: 0.02em; white-space: nowrap; padding-left: 2px; position: sticky; left: 0; justify-self: start; }
+@media (min-width: 901px) { nav.tabs .wrap { overflow: visible; } nav.tabs::after { display: none; } .tgrp { flex: 0 1 auto; min-width: 0; } .tgrp:first-child { flex: none; } .trow { flex-wrap: wrap; } .tcap { white-space: normal; } }
+.tcap b { color: var(--ink); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
+.trow, .tsolo { display: flex; gap: 6px; }
+.tsolo { flex: none; padding-top: 25px; }
 nav.tabs .wrap::-webkit-scrollbar { display: none; }
 nav.tabs span, nav.tabs a { flex: none; padding: 7px 13px; font-size: 0.82rem; font-weight: 600; color: #4a5258; background: #eef0f1; border-radius: 8px; white-space: nowrap; text-decoration: none; }
+.filters:has(#filters:empty) { display: none; }
 .secao { margin-top: 32px; padding-top: 18px; border-top: 2px solid var(--grafite); }
 .secao h2 { margin: 2px 0 4px; }
 nav.tabs a:hover { background: #e2e6e8; color: var(--ink); }
 nav.tabs a[aria-current="page"] { color: #fff; background: #00786c; }
-@media (max-width: 1100px) { nav.tabs::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 36px; background: linear-gradient(to right, rgba(255,255,255,0), var(--bg)); pointer-events: none; } }
+@media (max-width: 900px) { nav.tabs::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 36px; background: linear-gradient(to right, rgba(255,255,255,0), var(--bg)); pointer-events: none; } }
 nav.tabs span[title] { cursor: default; }
 .filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--bg); border-bottom: 1px solid var(--line); }
 .filters .wrap { padding-block: 10px; display: grid; gap: 8px; }
@@ -167,7 +175,7 @@ async function carregar(nome) {
 }
 
 (() => {
-const ABAS = ["Visão geral do SFN","Perfil da carteira","Qualidade e risco","Resultados","Crédito rural","Safra (SICOR)","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia"];
+const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / SICOR","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia"];
 const MES = ["jul","ago","set","out","nov","dez","jan","fev","mar","abr","mai","jun"];
 const MESF = ["julho","agosto","setembro","outubro","novembro","dezembro","janeiro","fevereiro","março","abril","maio","junho"];
 const FIN = [["all","Todas"],["c","Custeio"],["i","Investimento"],["m","Comercialização"],["n","Industrialização"]];
@@ -1528,7 +1536,7 @@ function renderRural() {
       <td class="num">${biCart(i.rur)}</td><td class="num ${cls(i.cresc_rur)}">${sgn(i.cresc_rur)}</td><td class="num">${nf(i.p_rur, 1)}%</td>${FONTES.map(([k2]) => `<td class="num">${i[k2] == null ? "—" : nf(i[k2], 0) + "%"}</td>`).join("")}</tr>`).join("");
     const lC = `<a href="${esc(C.meta.url_cosif)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>`;
     $("#view").innerHTML = `<div><div class="eyebrow">Cosif ${ym(C.meta.refs.cosif)} · SICOR até ${dmy(D.meta.ref)}</div><h2>Crédito rural: carteira · ${esc(e.nome)}</h2>
-      <p class="lede">Estoque da carteira rural de ${esc(e.nome)}: saldo, crescimento e fonte de recursos, com o SFN como referência. Inadimplência rural e carteira por finalidade do sistema estão na <a href="#visao">Visão geral do SFN</a>; a contratação detalhada, na aba Safra.</p></div>
+      <p class="lede">Estoque da carteira rural de ${esc(e.nome)}: saldo, crescimento e fonte de recursos, com o SFN como referência. Inadimplência rural e carteira por finalidade do sistema estão na aba <a href="#ruralsfn">Crédito rural no SFN</a>; a contratação detalhada, na aba Safra de crédito rural / SICOR.</p></div>
       ${kp}
       <div class="grid2">${block("Evolução da carteira rural", `Índice, ${ym(S[0]?.d || l.d)} = 100 · mensal`, tsChart(evL, { fmt: v => nf(v, 0), label: "Carteira rural indexada" }), `Conta 1630 (financiamentos rurais) dos balancetes · ${lC}`)}
         ${block("Crescimento da carteira rural em 12 meses", `${ym(C.meta.refs.cosif)} contra ${ym(C.meta.ant)}`, divergingBars(shareB, { label: "Crescimento rural" }), `Conta 1630 dos balancetes. ${lC}`)}</div>
@@ -1693,24 +1701,6 @@ function renderVisao() {
     const mxI = Math.max(...mit.map(x => x.inad), 1);
     const modScr = mit.map(x => { const p = prev.get(x.cli + "|" + x.mod), gg = p ? (x.cart / p.cart - 1) * 100 : null, dv = p ? x.inad - p.inad : null;
       return `<tr><td>${esc(x.mod)}<small>${x.cli}</small></td><td class="num">${biCart(x.cart)}</td><td class="num">${nf(x.cart / totM * 100, 1)}%</td><td class="num ${cls(gg)}">${sgn(gg)}</td><td class="num"><b>${nf(x.inad, 2)}%</b></td><td class="bar-cell"><span class="b" style="width:calc(${x.inad / mxI * 100}% - 8px);background:var(--down)"></span></td><td class="num ${dv == null ? "flat" : dv > 0.05 ? "down" : dv < -0.05 ? "up" : "flat"}">${dv == null ? "—" : sgn(dv, 2, " p.p.")}</td><td class="num">${nf(x.a15, 2)}%</td></tr>`; }).join("");
-    // rural no SFN
-    const RF = R.scr.rural_fin?.[vg.geo] || {}, sgR = C.sgs;
-    const finRows = FINR.map(([k, n]) => { const cell = (seg) => { const a = RF[seg]?.[k], l = lastP(a), y = l ? at12(a, l.d) : null, gg = l && y ? (l.cart / y.cart - 1) * 100 : null;
-        return l ? `<td class="num">${biCart(l.cart)}<small class="${cls(gg)}">${sgn(gg)} em 12m</small></td><td class="num"><b>${nf(l.inad, 2)}%</b><small>${y ? "antes: " + nf(y.inad, 2) + "%" : ""}</small></td>` : `<td class="num">—</td><td class="num">—</td>`; };
-      return `<tr><td>${n}</td>${cell("sfn")}${cell("coop")}${cell("bancos")}</tr>`; }).join("");
-    const inadR = SEGS.map(([k, n]) => ({ name: n, pts: (s[k]?.rural || []).map(x => ({ d: x.d, v: x.inad })), c: segCor[k], w: k === vg.seg ? 3 : 1.6 }));
-    const sgsL = [["21148", "PF total", cor("#2B2F33"), 2.5], ["21146", "PF taxa de mercado", "#C2562C", 1.6], ["21147", "PF taxa regulada", "#C08A2E", 1.6], ["21136", "PJ total", "#5A6B8C", 1.6]].map(([c2, n, co2, w]) => ({ name: n, pts: (sgR[c2]?.p || []).slice(-36).map(x => ({ d: x.d, v: x.v })), c: co2, w }));
-    const cR = (() => { const a = lastP(sg["20701"]?.r12), b = lastP(sg["20689"]?.r12); if (!a || !b) return null; const ap = (sg["20701"].r12.find(x => x.d === backM(a.d, 12)) || {}), bp = (sg["20689"].r12.find(x => x.d === backM(b.d, 12)) || {});
-      return { s: a.s12 + b.s12, g: ap.s12 && bp.s12 ? ((a.s12 + b.s12) / (ap.s12 + bp.s12) - 1) * 100 : null }; })();
-    const ci = lastP(sg["21148"]?.p), ciy = ci ? at12(sg["21148"].p, ci.d) : null;
-    const rG = rr(vg.geo, "sfn"), rCg = rr(vg.geo, "coop"), rBg = rr(vg.geo, "bancos");
-    const kpR = `<div class="kpis">
-      ${kpiBox(`Carteira rural · ${gN}`, nf(rG.l?.cart, 0), " bi", `${arrow(rG.g)}${sgn(rG.g)} em 12 meses`, "flat", `${ym(R.scr.ref)} · SCR.data`)}
-      ${kpiBox("Cooperativas no rural", nf(rCg.l && rG.l ? rCg.l.cart / rG.l.cart * 100 : null, 1), "%", rCg.y && rG.y ? `${sgn(rCg.l.cart / rG.l.cart * 100 - rCg.y.cart / rG.y.cart * 100, 1, " p.p.")} em 12 meses` : "", "flat", `${gN} · SCR.data`)}
-      ${kpiBox("Inadimplência rural · cooperativas", nf(rCg.l?.inad, 2), "%", rCg.y ? `${sgn(rCg.l.inad - rCg.y.inad, 2, " p.p.")} em 12 meses` : "", rCg.y && rCg.l.inad > rCg.y.inad ? "down" : "up", `bancos: ${nf(rBg.l?.inad, 2)}% · ${gN} · SCR.data`)}
-      ${kpiBox("Inadimplência rural PF", nf(ci?.v, 2), "%", ciy ? `${sgn(ci.v - ciy.v, 2, " p.p.")} em 12 meses` : "", ciy && ci.v > ciy.v ? "down" : "up", `${ci ? ym(ci.d) : ""} · Brasil · SGS 21148`)}
-      ${kpiBox("Concessões rurais · 12 meses", nf(cR ? cR.s / 1e3 : null, 0), " bi", `${arrow(cR?.g)}${sgn(cR?.g)} sobre os 12 meses anteriores`, cls(cR?.g), `${ym(C.meta.refs.sgs)} · Brasil · SGS 20701 + 20689`)}
-    </div>`;
     // segmentos e sistemas lado a lado
     const pa = (k) => P.agg[k]?.[P.meta.ref];
     const COLS = [["sfn", "SFN"], ["coop", "Cooperativas"], ["bancos", "Bancos"], ["cong_sicoob", "Conglomerado Sicoob"], ["cong_sicredi", "Conglomerado Sicredi"], ["sicoob_mg", "Sicoob MG"]];
@@ -1720,11 +1710,11 @@ function renderVisao() {
       ["ROE 12 meses", k => q(k)?.roe == null ? "—" : nf(q(k).roe, 1) + "%", "Cosif"], ["Eficiência", k => q(k)?.efic == null ? "—" : nf(q(k).efic, 1) + "%", "Cosif"],
       ["Rural na carteira", k => { const c = lastP(C.cosif[k]); return c ? nf(c.p_rur, 1) + "%" : "—"; }, "Cosif"], [`Safra ${safraLbl(S0)}, var.`, k => sgn(sfV(k)), "SICOR"]];
     const tabela = `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th>${COLS.map(([k, n]) => `<th class="num">${n}</th>`).join("")}<th>Base</th></tr></thead><tbody>${LIN.map(([n, f, b]) => `<tr><td>${n}</td>${COLS.map(([k]) => `<td class="num">${f(k)}</td>`).join("")}<td><small>${b}</small></td></tr>`).join("")}</tbody></table></div>`;
-    const tabs = [["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos, estágios, provisão e Basileia por escopo"],
-      ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Crédito rural", "Carteira rural e fonte de recursos por escopo"], ["#safra", "Safra (SICOR)", "Contratação por safra, finalidade, programa, fonte e instituição"],
+    const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"], ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos, estágios, provisão e Basileia por escopo"],
+      ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Carteira rural", "Carteira rural e fonte de recursos por escopo"], ["#safra", "Safra de crédito rural / SICOR", "Contratação por safra, finalidade, programa, fonte e instituição"],
       ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"], ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"], ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
     $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Visão geral do Sistema Financeiro Nacional</h2>
-      <p class="lede">Os grandes números do crédito no SFN: saldo, concessões, inadimplência, atraso e crédito rural. Aqui ficam as séries que só existem para o sistema ou por segmento (bancos e cooperativas). Para ver um sistema, uma central ou uma instituição, use as abas seguintes. Data de referência de cada base:</p></div>${strip}
+      <p class="lede">Os grandes números do crédito no SFN: saldo, concessões, inadimplência e atraso. Aqui ficam as séries que só existem para o sistema ou por segmento (bancos e cooperativas); o crédito rural do sistema tem aba própria. Para ver um sistema, uma central ou uma instituição, use as abas do segundo grupo. Data de referência de cada base:</p></div>${strip}
       ${kp}
       ${block("Destaques", "Calculados a partir das bases do painel", `<ol class="hl">${dest.map(d => `<li>${esc(d)}</li>`).join("")}</ol>`, "Frases montadas com os números de cada base; nenhuma estimativa.")}
       ${secao("visao-concessoes", `SGS · ${ym(C.meta.refs.sgs)} · Brasil`, "Saldo e concessões", "Séries do SGS, que existem só para o SFN como um todo e por modalidade.")}
@@ -1749,14 +1739,73 @@ function renderVisao() {
       ${block(`Modalidades · ${segN} · ${gN}`, `${corteN} · ${ym(d1 || R.scr.ref)} · maiores carteiras, crescimento e atraso contra ${ym(d0 || R.scr.ref)}`,
         `<div class="tbl-wrap"><table><thead><tr><th>Modalidade</th><th class="num">Carteira</th><th class="num">Part.</th><th class="num">12 meses</th><th class="num">Inad. > 90d</th><th></th><th class="num">Inad. 12m</th><th class="num">Atraso 15–90</th></tr></thead><tbody>${modScr}</tbody></table></div>`,
         `Modalidades com carteira acima de R$ 0,5 bi. ${linkR("scr")}`)}
-      ${secao("visao-rural", `SCR.data · SGS · ${gN}`, "Crédito rural no SFN", "Estoque, inadimplência e concessões do crédito rural no sistema. A contratação por instituição está na aba Safra; a carteira rural por sistema ou central, na aba Crédito rural.")}
-      ${kpR}
-      ${block(`Carteira rural por finalidade · ${gN}`, `SCR.data · ${ym(R.scr.ref)} · saldo e inadimplência acima de 90 dias`, `<div class="tbl-wrap"><table><thead><tr><th>Finalidade</th><th class="num">Saldo SFN</th><th class="num">Inad. SFN</th><th class="num">Saldo coop.</th><th class="num">Inad. coop.</th><th class="num">Saldo bancos</th><th class="num">Inad. bancos</th></tr></thead><tbody>${finRows}</tbody></table></div>`, `Modalidade "financiamentos rurais" do SCR.data, por submodalidade. UF do tomador. ${linkR("scr")}`)}
-      <div class="grid2">${block(`Inadimplência rural · ${gN}`, "% da carteira rural, atraso acima de 90 dias · SCR.data", tsChart(inadR, { unit: "%", fmt: v => nf(v, 1), label: "Inadimplência rural" }), linkR("scr"))}
-        ${block("Inadimplência rural no SFN · SGS", "% da carteira, recursos direcionados · Brasil", tsChart(sgsL, { unit: "%", fmt: v => nf(v, 1), label: "Inadimplência rural SGS" }), `SGS 21148, 21146, 21147 e 21136 · ${lS}`)}</div>
       ${secao("visao-sistemas", `IF.data ${ym(P.meta.ref)} · Cosif ${ym(Q.meta.ref)} · SICOR até ${dmy(D.meta.ref)}`, "Segmentos e sistemas lado a lado", "")}
       ${block("Indicadores agregados", "Soma das instituições de cada grupo", tabela, "ROE e eficiência em 12 meses, dos balancetes. Inadimplência, ativos problemáticos, cobertura e Basileia do IF.data. Centrais de MG e demais recortes nas abas seguintes.")}
       <section class="block"><header><div class="eyebrow">Abas</div><h3>Onde aprofundar</h3></header><div class="tabcards">${tabs.map(([l, n, d]) => `<a href="${l}" class="tabcard"><b>${n}</b><span>${d}</span></a>`).join("")}</div></section>`;
+  } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
+}
+
+/* ===================== Aba Crédito rural no SFN ===================== */
+const vr = { geo: "BR", seg: "coop", corte: "rural" };
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest("[data-rgeo2],[data-rseg2],[data-rcorte2]"); if (!b) return;
+  if (b.dataset.rgeo2) vr.geo = b.dataset.rgeo2; if (b.dataset.rseg2) vr.seg = b.dataset.rseg2; if (b.dataset.rcorte2) vr.corte = b.dataset.rcorte2;
+  try { localStorage.setItem("ruralsfn-filtros", JSON.stringify(vr)); } catch (e) {}
+  const y = window.scrollY; render(); window.scrollTo(0, y);
+});
+function renderRuralSFN() {
+  if (!precisa(["safra", "risco", "carteira"])) { esperando(Rerr || Cerr ? "Alguma base não carregou. Recarregue a página." : "Carregando o crédito rural do SFN…"); return; }
+  cid = 0; $("#filters").innerHTML = "";
+  $("#stamp").textContent = `SCR.data ${ym(R.scr.ref)} · SGS ${ym(C.meta.refs.sgs)} · SICOR até ${dmy(D.meta.ref)}`;
+  try {
+    const gN = vr.geo === "BR" ? "Brasil" : "Minas Gerais", sg = C.sgs, s = R.scr.serie[vr.geo] || {};
+    const segCor = { sfn: cor("#2B2F33"), bancos: css("--grafite-2"), coop: cor("#00AE9D") };
+    const rr = (seg, corte = "rural") => { const a = s[seg]?.[corte], l = lastP(a), y = l ? at12(a, l.d) : null; return { l, y, g: l && y ? (l.cart / y.cart - 1) * 100 : null }; };
+    const rG = rr("sfn"), rC = rr("coop"), rB = rr("bancos"), rP = rr("sfn", "rural_PF");
+    const ci = lastP(sg["21148"]?.p), ciy = ci ? at12(sg["21148"].p, ci.d) : null;
+    // concessões rurais (SGS, Brasil): PF 20701 + PJ 20689
+    const pf = sg["20701"]?.p || [], pj = new Map((sg["20689"]?.p || []).map(x => [x.d, x.v]));
+    const tot = pf.filter(x => pj.has(x.d)).map(x => ({ d: x.d, v: x.v + pj.get(x.d) }));
+    const r12 = tot.map((x, i) => i >= 11 ? { d: x.d, s: tot.slice(i - 11, i + 1).reduce((a, z) => a + z.v, 0) } : null).filter(Boolean);
+    const yoy = r12.map(x => { const p = r12.find(z => z.d === backM(x.d, 12)); return { d: x.d, v: p ? (x.s / p.s - 1) * 100 : null }; }).filter(x => x.v != null);
+    const cR = lastP(r12), cRy = cR ? r12.find(z => z.d === backM(cR.d, 12)) : null, cRg = cR && cRy ? (cR.s / cRy.s - 1) * 100 : null;
+    const S0 = D.meta.safra_atual, cpS = D.comp[String(S0)].sfn[vr.geo], saf = sum4(cpS.a), safP = sum4(cpS.p);
+    const fR = `${ym(R.scr.ref)} · ${gN} · SCR.data${tagNovo(R.meta.novo_desde.scr)}`;
+    const kp = `<div class="kpis">
+      ${kpiBox("Carteira rural", nf(rG.l?.cart, 0), " bi", `${arrow(rG.g)}${sgn(rG.g)} em 12 meses`, "flat", fR)}
+      ${kpiBox("Cooperativas no rural", nf(rC.l && rG.l ? rC.l.cart / rG.l.cart * 100 : null, 1), "%", rC.y && rG.y ? `${sgn(rC.l.cart / rG.l.cart * 100 - rC.y.cart / rG.y.cart * 100, 1, " p.p.")} em 12 meses` : "", "flat", `carteira ${biCart(rC.l?.cart)} · ${sgn(rC.g)} em 12m`)}
+      ${kpiBox("Inadimplência rural · SFN", nf(rG.l?.inad, 2), "%", rG.y ? `${arrow(rG.l.inad - rG.y.inad)}${sgn(rG.l.inad - rG.y.inad, 2, " p.p.")} em 12 meses` : "", rG.y && rG.l.inad > rG.y.inad ? "down" : "up", `coop. ${nf(rC.l?.inad, 2)}% · bancos ${nf(rB.l?.inad, 2)}% · SCR.data`)}
+      ${kpiBox("Atraso de 15 a 90 dias · rural", nf(rG.l?.a15, 2), "%", rG.y ? `${arrow(rG.l.a15 - rG.y.a15)}${sgn(rG.l.a15 - rG.y.a15, 2, " p.p.")} em 12 meses` : "", rG.y && rG.l.a15 > rG.y.a15 ? "down" : "up", `coop. ${nf(rC.l?.a15, 2)}% · bancos ${nf(rB.l?.a15, 2)}% · SCR.data`)}
+      ${kpiBox("Concessões rurais · 12 meses", nf(cR ? cR.s / 1e3 : null, 0), " bi", `${arrow(cRg)}${sgn(cRg)} sobre os 12 meses anteriores`, cls(cRg), `${ym(C.meta.refs.sgs)} · Brasil · SGS 20701 + 20689${tagNovo(C.meta.novo_desde.sgs)}`)}
+      ${kpiBox(`Safra ${safraLbl(S0)} contratada`, nf(saf / 1000, 1), " bi", `${arrow(pct(saf, safP))}${sgn(pct(saf, safP))} contra o mesmo ponto`, cls(pct(saf, safP)), `${gN} · até ${dmy(D.meta.ref)} · SICOR`)}
+    </div>`;
+    const SEG2 = [["sfn", "SFN"], ["bancos", "Bancos"], ["coop", "Cooperativas"]];
+    const ctrl = `<div class="rank-tools"><div class="fgroup"><span class="flabel">Local do tomador</span><div class="seg">${[["BR", "Brasil"], ["MG", "Minas Gerais"]].map(([k, n]) => `<button type="button" data-rgeo2="${k}" aria-pressed="${vr.geo === k}">${n}</button>`).join("")}</div></div>
+      <div class="fgroup"><span class="flabel">Segmento em destaque</span><div class="seg">${SEG2.map(([k, n]) => `<button type="button" data-rseg2="${k}" aria-pressed="${vr.seg === k}">${n}</button>`).join("")}</div></div>
+      <div class="fgroup"><span class="flabel">Carteira</span><div class="seg">${[["rural", "Rural total"], ["rural_PF", "Rural PF"]].map(([k, n]) => `<button type="button" data-rcorte2="${k}" aria-pressed="${vr.corte === k}">${n}</button>`).join("")}</div></div></div>`;
+    const cN = vr.corte === "rural" ? "rural total" : "rural PF";
+    const mk = (k) => SEG2.map(([id, n]) => ({ name: n, pts: (s[id]?.[vr.corte] || []).map(p => ({ d: p.d, v: p[k] })), c: segCor[id], w: id === vr.seg ? 3 : 1.6 }));
+    const idx = (a) => { if (!a || !a.length) return []; const b = a[0].cart; return a.map(x => ({ d: x.d, v: x.cart / b * 100 })); };
+    const cartL = SEG2.map(([id, n]) => ({ name: n, pts: idx(s[id]?.[vr.corte]), c: segCor[id], w: id === vr.seg ? 3 : 1.6 }));
+    const RF = R.scr.rural_fin?.[vr.geo] || {};
+    const finRows = FINR.map(([k, n]) => { const cell = (seg) => { const a = RF[seg]?.[k], l = lastP(a), y = l ? at12(a, l.d) : null, gg = l && y ? (l.cart / y.cart - 1) * 100 : null;
+        return l ? `<td class="num">${biCart(l.cart)}<small class="${cls(gg)}">${sgn(gg)} em 12m</small></td><td class="num"><b>${nf(l.inad, 2)}%</b><small>${y ? "antes: " + nf(y.inad, 2) + "%" : ""}</small></td>` : `<td class="num">—</td><td class="num">—</td>`; };
+      return `<tr><td>${n}</td>${cell("sfn")}${cell("coop")}${cell("bancos")}</tr>`; }).join("");
+    const yoyL = [{ name: "Total", pts: yoy, c: cor("#2B2F33"), w: 3 }].concat([["20701", "PF", "#5A6B8C"], ["20689", "PJ", "#C08A2E"]].map(([c, n, co]) => ({ name: n, pts: (sg[c]?.r12 || []).map(x => ({ d: x.d, v: x.yoy12 })), c: co, w: 1.8 })));
+    const menL = [["20701", "PF", "#5A6B8C"], ["20689", "PJ", "#C08A2E"]].map(([c, n, co]) => ({ name: n, pts: (sg[c]?.p || []).slice(-24).map(x => ({ d: x.d, v: x.v / 1000 })), c: co, w: 2 }));
+    const sgsL = [["21148", "PF total", cor("#2B2F33"), 2.5], ["21146", "PF taxa de mercado", "#C2562C", 1.6], ["21147", "PF taxa regulada", "#C08A2E", 1.6], ["21136", "PJ total", "#5A6B8C", 1.6]].map(([c2, n, co2, w]) => ({ name: n, pts: (sg[c2]?.p || []).slice(-36).map(x => ({ d: x.d, v: x.v })), c: co2, w }));
+    const lS = `<a href="${esc(C.meta.url_sgs)}" target="_blank" rel="noopener">SGS, Banco Central</a>`;
+    $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Crédito rural no Sistema Financeiro Nacional</h2>
+      <p class="lede">Estoque, inadimplência, atraso e concessões do crédito rural no SFN, por segmento (bancos e cooperativas) e por UF do tomador. A contratação por instituição está na aba <a href="#safra">Safra de crédito rural / SICOR</a>; a carteira rural de cada sistema, central ou cooperativa, na aba <a href="#rural">Carteira rural</a>.</p></div>
+      ${ctrl}
+      ${kp}
+      <div class="grid2">${block(`Inadimplência acima de 90 dias · ${cN}`, `${gN} · mensal`, tsChart(mk("inad"), { unit: "%", fmt: v => nf(v, 1), label: "Inadimplência rural" }), `% da carteira rural · ${linkR("scr")}`)}
+        ${block(`Atraso de 15 a 90 dias · ${cN}`, `${gN} · antecipa a inadimplência`, tsChart(mk("a15"), { unit: "%", fmt: v => nf(v, 1), label: "Atraso rural" }), `% da carteira rural · ${linkR("scr")}`)}</div>
+      ${block(`Carteira rural por finalidade · ${gN}`, `SCR.data · ${ym(R.scr.ref)} · saldo e inadimplência acima de 90 dias`, `<div class="tbl-wrap"><table><thead><tr><th>Finalidade</th><th class="num">Saldo SFN</th><th class="num">Inad. SFN</th><th class="num">Saldo coop.</th><th class="num">Inad. coop.</th><th class="num">Saldo bancos</th><th class="num">Inad. bancos</th></tr></thead><tbody>${finRows}</tbody></table></div>`, `Modalidade "financiamentos rurais" do SCR.data, por submodalidade. UF do tomador. ${linkR("scr")}`)}
+      <div class="grid2">${block(`Carteira rural por segmento · ${gN}`, `Índice, ${ym(s.sfn?.[vr.corte]?.[0]?.d || R.scr.ref)} = 100 · ${cN}`, tsChart(cartL, { fmt: v => nf(v, 0), label: "Carteira rural indexada" }), `UF do tomador · ${linkR("scr")}`)}
+        ${block("Inadimplência rural · SGS", "% da carteira, recursos direcionados · Brasil", tsChart(sgsL, { unit: "%", fmt: v => nf(v, 1), label: "Inadimplência rural SGS" }), `SGS 21148, 21146, 21147 e 21136 · ${lS}`)}</div>
+      <div class="grid2">${block("Ritmo das concessões rurais", "Acumulado em 12 meses, variação sobre os 12 meses anteriores (% nominal) · Brasil", tsChart(yoyL, { unit: "%", fmt: v => nf(v, 1), label: "Concessões rurais 12 meses" }), `SGS 20701 (PF) e 20689 (PJ), recursos direcionados. Total = soma das duas. ${lS}`)}
+        ${block("Concessões rurais mensais", "R$ bilhões por mês · Brasil", tsChart(menL, { fmt: v => nf(v, 1), label: "Concessões rurais mensais" }), `SGS 20701 e 20689 · ${lS}`)}</div>`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
 
@@ -1765,10 +1814,10 @@ function renderFontes() {
   if (!precisa(["safra", "risco", "posicao", "resultados", "carteira"])) { esperando("Carregando as datas de referência das bases…"); return; }
   cid = 0; $("#filters").innerHTML = ""; $("#stamp").textContent = "Fontes e metodologia";
   const B = [
-    ["SICOR — Matriz de Dados do Crédito Rural", "Safra; Crédito rural; Perfil da carteira; Ficha; Rankings", "Microdados de operações de crédito rural por instituição, UF, programa, fonte e empreendimento", "Mensal (mês fechado), com revisão dos meses anteriores", "~25 dias", dmy(D.meta.ref), D.meta.url],
-    ["SCR.data", "Visão geral do SFN", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente e modalidade", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
-    ["SGS — séries temporais", "Visão geral do SFN", "Saldo e concessões do SFN, por PF/PJ e modalidade; inadimplência rural", "Mensal", "~30 dias", ym(C.meta.refs.sgs), "https://www3.bcb.gov.br/sgspub/"],
-    ["Balancetes Cosif", "Perfil da carteira; Crédito rural; Resultados; Qualidade e risco (estágios); Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
+    ["SICOR — Matriz de Dados do Crédito Rural", "Safra de crédito rural; Carteira rural; Perfil da carteira; Crédito rural no SFN; Ficha; Rankings", "Microdados de operações de crédito rural por instituição, UF, programa, fonte e empreendimento", "Mensal (mês fechado), com revisão dos meses anteriores", "~25 dias", dmy(D.meta.ref), D.meta.url],
+    ["SCR.data", "Visão geral do SFN; Crédito rural no SFN", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente e modalidade", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
+    ["SGS — séries temporais", "Visão geral do SFN; Crédito rural no SFN", "Saldo e concessões do SFN, por PF/PJ e modalidade; inadimplência rural", "Mensal", "~30 dias", ym(C.meta.refs.sgs), "https://www3.bcb.gov.br/sgspub/"],
+    ["Balancetes Cosif", "Perfil da carteira; Carteira rural; Resultados; Qualidade e risco (estágios); Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
     ["IF.data", "Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
     ["Relação de instituições em funcionamento", "Todas", "Cadastro de cooperativas e bancos, filiação a centrais", "Diária", "—", "consulta a cada rodada", "https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento"],
     ["Lista de cooperativas do Sicoob", "Nomes e números", "Número, nome e CNPJ das cooperativas e centrais do Sicoob", "Eventual", "—", "out/26", "https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf"],
@@ -1779,7 +1828,7 @@ function renderFontes() {
     ["Conglomerado Sicoob / Sicredi", "Singulares do sistema + banco cooperativo (Banco Sicoob, Banco Sicredi). No SICOR, também as centrais."], ["Sicoob, Sicredi, Cresol, Unicred", "Singulares do sistema, pela filiação na relação do BC e pelo nome."],
     ["Sicoob MG", "Singulares Sicoob com sede em MG."], ["Central Crediminas / Cecremge", "Singulares filiadas a cada central na relação atual do BC."], ["Cooperativas de MG", "Singulares de qualquer sistema com sede em MG."],
     ["5 maiores bancos", "Itaú, BB, Bradesco, Caixa e Santander, por conglomerado prudencial."], ["Bancos digitais", "Lista fixa: Nubank, Inter, C6, PagBank, Mercado Pago e BTG, quando presentes na base."]];
-  const RG = [["Organização das abas", "A Visão geral do SFN reúne as séries que só existem para o sistema inteiro ou por segmento (SGS e SCR.data). As demais abas mostram o recorte escolhido no filtro, com o SFN como referência."], ["Nunca estimar", "Número que deveria vir de uma fonte e não foi encontrado aparece como “—” ou “sem dado”, com o motivo."],
+  const RG = [["Organização das abas", "Dois grupos. Grandes números do SFN (Visão geral e Crédito rural no SFN): séries que só existem para o sistema inteiro ou por segmento (SGS e SCR.data), sem filtro de instituição. Sistemas, centrais e instituições (da Safra à Ficha): o recorte escolhido no filtro, com o SFN como referência."], ["Nunca estimar", "Número que deveria vir de uma fonte e não foi encontrado aparece como “—” ou “sem dado”, com o motivo."],
     ["Data e fonte", "Todo número leva a data de referência e a fonte, com link. Dado novo nos últimos 7 dias recebe o selo “novo”."],
     ["Nomes", "Cooperativas Sicoob aparecem com o número do sistema (ex.: 3047 Credicope), pela lista oficial do Sicoob cruzada com o BC. Demais, pelo nome da razão social. Razão social completa aparece como detalhe."],
     ["Incorporações", "Operações e saldos de instituição incorporada entram na incorporadora em todo o histórico, para comparar bases iguais. Fonte: quadro de alterações societárias do BC; para casos recentes, atos das próprias cooperativas."],
@@ -1816,13 +1865,15 @@ function blocoStatus(st) {
     `"Falhou" ou "reprovado": a base seguiu com o último dado válido. Registro completo na aba Actions do repositório.`);
 }
 /* ===================== Roteador ===================== */
-const ABA_ID = { 0: "visao", 1: "carteira", 2: "risco", 3: "resultados", 4: "rural", 5: "safra", 6: "rankings", 7: "posicao", 8: "ficha", 9: "fontes" };
+const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "rankings", 8: "posicao", 9: "ficha", 10: "fontes" };
+const GRUPOS_ABAS = [[[0, 1], "Grandes números do SFN", "sem filtro de instituição"], [[2, 3, 4, 5, 6, 7, 8, 9], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[10], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 function render() {
-  $("#tabs").innerHTML = ABAS.map((a, i) => `<a href="#${ABA_ID[i]}"${aba() === ABA_ID[i] ? ' aria-current="page"' : ""}>${a}</a>`).join("");
+  const tab = (i) => `<a href="#${ABA_ID[i]}"${aba() === ABA_ID[i] ? ' aria-current="page"' : ""}>${ABAS[i]}</a>`;
+  $("#tabs").innerHTML = GRUPOS_ABAS.map(([ids, t, sub]) => t ? `<div class="tgrp" role="group" aria-label="${esc(t)}"><div class="tcap"><b>${esc(t)}</b> · ${esc(sub)}</div><div class="trow">${ids.map(tab).join("")}</div></div>` : `<div class="tsolo">${ids.map(tab).join("")}</div>`).join("");
   const at = $("#tabs a[aria-current]"), tw = $("#tabs");   // deixa a aba atual à vista na faixa rolável
   if (at && tw.scrollWidth > tw.clientWidth) tw.scrollLeft = Math.max(0, at.offsetLeft - tw.offsetLeft - (tw.clientWidth - at.offsetWidth) / 2);
-  ({ visao: renderVisao, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes })[aba()]();
+  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes })[aba()]();
 }
 addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", render);
@@ -1834,6 +1885,7 @@ try { Object.assign(qs, JSON.parse(localStorage.getItem("res-filtros") || "{}"))
 try { Object.assign(fsel, JSON.parse(localStorage.getItem("ficha") || "{}")); } catch (e) {}
 try { Object.assign(cs, JSON.parse(localStorage.getItem("cart-filtros") || "{}")); } catch (e) {}
 try { Object.assign(vg, JSON.parse(localStorage.getItem("visao-filtros") || "{}")); } catch (e) {}
+try { Object.assign(vr, JSON.parse(localStorage.getItem("ruralsfn-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rus, JSON.parse(localStorage.getItem("rural-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rks, JSON.parse(localStorage.getItem("rank-filtros") || "{}")); } catch (e) {}
 render();
