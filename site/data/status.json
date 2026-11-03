@@ -1,10 +1,10 @@
 {
- "verificado_em": "2026-11-03T15:27:56+00:00",
+ "verificado_em": "2026-11-03T15:59:33+00:00",
  "forcado": true,
- "segundos": 670,
+ "segundos": 631,
  "bases": {
   "safra": {
-   "segundos": 197,
+   "segundos": 171,
    "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "sem mudança",
    "ref": "2026-09-30"
@@ -20,19 +20,19 @@
    }
   },
   "posicao": {
-   "segundos": 149,
+   "segundos": 169,
    "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 868, \"kb\": 1497}",
    "situacao": "atualizado",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 18,
+   "segundos": 16,
    "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 834, \"kb\": 2150}",
    "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 60,
+   "segundos": 29,
    "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 387}",
    "situacao": "sem mudança",
    "ref": {
