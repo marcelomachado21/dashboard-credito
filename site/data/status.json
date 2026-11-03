@@ -1,24 +1,18 @@
 {
- "verificado_em": "2026-11-03T17:09:48+00:00",
+ "verificado_em": "2026-11-03T17:54:00+00:00",
  "forcado": true,
- "segundos": 932,
+ "segundos": 1658,
  "bases": {
   "safra": {
-   "segundos": 486,
-   "saida": "{\"territorio\": \"2026-09-30\", \"cobertura\": 47.5, \"municipios\": 810, \"instituicoes\": 191, \"kb\": 757, \"s\": 296}",
+   "segundos": 206,
+   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "sem mudança",
    "ref": "2026-09-30"
   },
-  "territorio": {
-   "segundos": 0,
-   "saida": "gerado por atualiza_sicor.py",
-   "situacao": "reprovado",
-   "motivo": "AssertionError: cobertura do município nas operações de MG (%) = 47.5, fora da faixa 90 a 100.01"
-  },
   "risco": {
-   "segundos": 210,
+   "segundos": 369,
    "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 827}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": {
     "scr": "2026-08",
     "cosif": "2026-06",
@@ -26,21 +20,21 @@
    }
   },
   "posicao": {
-   "segundos": 153,
+   "segundos": 182,
    "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 868, \"kb\": 1497}",
    "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 18,
+   "segundos": 21,
    "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 834, \"kb\": 2781}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 52,
+   "segundos": 53,
    "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 414}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": {
     "sgs": "2026-09",
     "cosif": "2026-06"
@@ -51,6 +45,13 @@
    "saida": "{\"focus\": \"2026-10-30\", \"kb\": 24}",
    "situacao": "sem mudança",
    "ref": "2026-10-30"
+  },
+  "territorio": {
+   "segundos": 815,
+   "saida": "",
+   "situacao": "falhou",
+   "motivo": "urllib.error.HTTPError: HTTP Error 500: Internal Server Error",
+   "ref": null
   }
  },
  "ultima_atualizacao": "2026-11-03"
