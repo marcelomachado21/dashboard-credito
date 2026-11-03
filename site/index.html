@@ -1956,7 +1956,7 @@ function renderVisao() {
     const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"], ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos (estágio 3), provisão e Basileia por escopo"],
       ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Carteira rural / estoque", "Saldo rural e fonte de recursos por escopo"], ["#safra", "Safra de crédito rural / contratações", "Contratação por safra, finalidade, programa, fonte e instituição"],
       ["#consignado", "Consignado", "Crédito do Trabalhador, INSS e setor público: concessões, saldo, inadimplência e ativo problemático"], ["#expectativas", "Expectativas de mercado", "Focus: Selic, IPCA, PIB e câmbio esperados"],
-      ["#territorio", "Crédito rural por território", "Contratação rural em MG por município e região, por escopo ou instituição"],
+      ["#territorio", "Crédito rural por território", "Custeio e investimento em MG por município e região, todo o SFN"],
       ["#quadro", "Quadro de indicadores por instituição", "Todos os indicadores de cada instituição do grupo, com a variação em 12 meses"], ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"], ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"], ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
     $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Visão geral do Sistema Financeiro Nacional</h2>
       <p class="lede">Os grandes números do crédito no SFN: saldo, concessões, inadimplência e atraso. Aqui ficam as séries que só existem para o sistema ou por segmento (bancos e cooperativas); o crédito rural do sistema tem aba própria. Para ver um sistema, uma central ou uma instituição, use as abas do segundo grupo. Data de referência de cada base:</p></div>${strip}
@@ -2042,105 +2042,94 @@ function renderConsig() {
 const dict = (p) => Object.fromEntries((p || []).map(x => [x.d, x.v]));
 
 /* ===================== Aba Crédito rural por território ===================== */
-const ts = { esc: "crediminas", inst: "", nivel: "mun", met: "valor", sel: "", all: false };
-const T_ESC = [["sfn", "SFN"], ["coop", "Cooperativas"], ["bancos", "Bancos e demais"], ["sicoob", "Sicoob"], ["sicredi", "Sicredi"], ["sicoob_mg", "Sicoob MG"], ["crediminas", "Central Crediminas"], ["cecremge", "Central Cecremge"], ["bb", "Banco do Brasil"]];
+const ts = { fin: "tot", nivel: "mun", met: "valor", sel: "", all: false };
 const T_NIV = [["mun", "Município"], ["mi", "Microrregião"], ["me", "Mesorregião"], ["ri", "Região imediata"], ["rt", "Região intermediária"]];
-const T_MET = [["valor", "Valor contratado"], ["var", "Variação sobre o mesmo ponto"], ["share", "Participação no SFN"]];
+const T_FIN = [["tot", "Custeio + investimento"], ["c", "Custeio"], ["i", "Investimento"]];
+const T_MET = [["valor", "Valor contratado"], ["var", "Variação sobre o mesmo ponto"], ["pronaf", "Pronaf no valor"]];
 document.addEventListener("click", (ev) => {
-  const b = ev.target.closest("[data-tesc],[data-tniv],[data-tmet],[data-tsel],#tmore,#tlimpa"); if (!b) return;
-  if (b.dataset.tesc) { ts.esc = b.dataset.tesc; ts.inst = ""; }
+  const b = ev.target.closest("[data-tfin],[data-tniv],[data-tmet],[data-tsel],#tmore,#tlimpa"); if (!b) return;
+  if (b.dataset.tfin) ts.fin = b.dataset.tfin;
   if (b.dataset.tniv) { ts.nivel = b.dataset.tniv; ts.sel = ""; }
   if (b.dataset.tmet) ts.met = b.dataset.tmet;
   if (b.dataset.tsel != null) ts.sel = ts.sel === b.dataset.tsel ? "" : b.dataset.tsel;
   if (b.id === "tmore") ts.all = !ts.all;
   if (b.id === "tlimpa") ts.sel = "";
-  try { localStorage.setItem("terr-filtros", JSON.stringify({ esc: ts.esc, inst: ts.inst, nivel: ts.nivel, met: ts.met })); } catch (e) {}
+  try { localStorage.setItem("terr-filtros", JSON.stringify({ fin: ts.fin, nivel: ts.nivel, met: ts.met })); } catch (e) {}
   const y = window.scrollY; render(); window.scrollTo(0, y);
 });
-document.addEventListener("change", (ev) => { if (ev.target.id === "tinst") { ts.inst = ev.target.value; ts.sel = "";
-  try { localStorage.setItem("terr-filtros", JSON.stringify({ esc: ts.esc, inst: ts.inst, nivel: ts.nivel, met: ts.met })); } catch (e) {} const y = window.scrollY; render(); window.scrollTo(0, y); } });
-const tKey = (cod) => ts.nivel === "mun" ? cod : (T.mun[cod]?.[ts.nivel] || "Sem região");
-const tNome = (k) => ts.nivel === "mun" ? (T.mun[k]?.n || MAPA.m[k]?.n || k) : k;
-function tAgg(d) {          // agrega as células municipais no nível escolhido
+const tReg = (cod) => T.mun_reg?.[cod] || {};
+const tKey = (cod) => ts.nivel === "mun" ? cod : (tReg(cod)[ts.nivel] || "Sem região");
+const tNome = (k) => ts.nivel === "mun" ? (tReg(k).n || MAPA.m[k]?.n || k) : k;
+const tVal = (v, w) => ts.fin === "c" ? v[0 + w] : ts.fin === "i" ? v[1 + w] : v[0 + w] + v[1 + w];   // w: 0 = safra, 2 = mesmo ponto, 4 = anterior inteira
+function tAgg() {
   const o = {};
-  Object.entries(d || {}).forEach(([cod, v]) => { const k = tKey(cod), x = o[k] || (o[k] = { a: 0, f: [0, 0, 0, 0], p: 0, t: 0, q: 0, nm: 0 });
-    for (let i = 0; i < 4; i++) { x.f[i] += v[i]; x.a += v[i]; } x.p += v[4]; x.t += v[5]; x.q += v[6]; x.nm++; });
+  Object.entries(T.mun).forEach(([cod, v]) => { const k = tKey(cod), x = o[k] || (o[k] = { a: 0, p: 0, t: 0, c: 0, i: 0, pr: 0, pa: 0, nm: 0 });
+    x.a += tVal(v, 0); x.p += tVal(v, 2); x.t += tVal(v, 4); x.c += v[0]; x.i += v[1]; x.nm++;
+    const g = T.prog[cod]; if (g) { x.pr += g[0]; x.pa += g[0] + g[1] + g[2]; } });
   return o;
 }
 function renderTerr() {
-  if (!precisa(["territorio"]) || !MAPA) { esperando(Terr ? "Aba em validação: o arquivo do SICOR com o município de cada operação cobre só parte das operações (entre 15% e 99%, conforme a instituição). Os números ainda não são publicados para não mostrar um retrato distorcido." : "Carregando o crédito rural por município…"); return; }
+  if (!precisa(["territorio"]) || !MAPA) { esperando(Terr ? "Aba em validação: a base de crédito rural por município ainda não foi publicada pela rotina. Volte em breve." : "Carregando o crédito rural por município…"); return; }
   cid = 0;
-  const instL = Object.entries(T.inst).map(([id, i]) => ({ id, ...i, tot: Object.values(i.d).reduce((a, v) => a + v[0] + v[1] + v[2] + v[3], 0) })).filter(i => i.tot > 0).sort((a, b) => b.tot - a.tot);
-  if (ts.inst && !T.inst[ts.inst]) ts.inst = "";
-  if (!T.esc[ts.esc]) ts.esc = "sfn";
-  const nomeE = ts.inst ? T.inst[ts.inst].curto : T_ESC.find(x => x[0] === ts.esc)[1];
-  const optI = `<option value="">Escolher uma instituição…</option>` + ["coop", "banco"].map(tp => `<optgroup label="${tp === "coop" ? "Cooperativas" : "Bancos e demais"}">${instL.filter(i => (i.tipo === "coop") === (tp === "coop")).map(i => `<option value="${i.id}"${i.id === ts.inst ? " selected" : ""}>${esc(i.curto)}${i.central ? " · " + (i.central === "crediminas" ? "Crediminas" : "Cecremge") : ""}</option>`).join("")}</optgroup>`).join("");
-  $("#filters").innerHTML = `<div class="frow"><div class="fgroup"><span class="flabel">Escopo</span>${T_ESC.map(([k, n]) => `<button class="chip" type="button" data-tesc="${k}" aria-pressed="${!ts.inst && ts.esc === k}">${n}</button>`).join("")}</div>
-    <label class="fgroup"><span class="flabel">ou instituição</span><select id="tinst" class="sel">${optI}</select></label></div>
-    <div class="frow"><div class="fgroup"><span class="flabel">Nível</span><div class="seg">${T_NIV.map(([k, n]) => `<button type="button" data-tniv="${k}" aria-pressed="${ts.nivel === k}">${n}</button>`).join("")}</div></div>
+  $("#filters").innerHTML = `<div class="frow"><div class="fgroup"><span class="flabel">Finalidade</span><div class="seg">${T_FIN.map(([k, n]) => `<button type="button" data-tfin="${k}" aria-pressed="${ts.fin === k}">${n}</button>`).join("")}</div></div>
+    <div class="fgroup"><span class="flabel">Nível</span><div class="seg">${T_NIV.map(([k, n]) => `<button type="button" data-tniv="${k}" aria-pressed="${ts.nivel === k}">${n}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Cor do mapa</span><div class="seg">${T_MET.map(([k, n]) => `<button type="button" data-tmet="${k}" aria-pressed="${ts.met === k}">${n}</button>`).join("")}</div></div></div>`;
-  $("#stamp").textContent = `SICOR até ${dmy(T.meta.ref)} · atualizado em ${dmy(T.meta.atualizado)}`;
+  $("#stamp").textContent = `SICOR até ${ym(T.meta.ref)} · atualizado em ${dmy(T.meta.atualizado)}`;
   try {
-    const S0 = T.meta.safra, X = ts.inst ? T.inst[ts.inst].d : T.esc[ts.esc], A = tAgg(X), B = tAgg(T.esc.sfn);
-    const rows = Object.entries(A).map(([k, x]) => ({ k, ...x, v: x.p > 0.05 ? pct(x.a, x.p) : null, sh: B[k]?.a ? x.a / B[k].a * 100 : null })).filter(r => r.a > 0 || r.p > 0);
-    const tot = rows.reduce((s_, r) => s_ + r.a, 0), totP = rows.reduce((s_, r) => s_ + r.p, 0), totB = Object.values(B).reduce((s_, r) => s_ + r.a, 0);
-    const nMun = Object.values(X || {}).filter(v => v[0] + v[1] + v[2] + v[3] > 0).length;
-    rows.sort((a, b) => b.a - a.a);
-    const top10 = tot ? rows.slice(0, 10).reduce((s_, r) => s_ + r.a, 0) / tot * 100 : null;
-    const nivN = T_NIV.find(x => x[0] === ts.nivel)[1].toLowerCase();
+    const S0 = T.meta.safra, A = tAgg(), finN = T_FIN.find(x => x[0] === ts.fin)[1].toLowerCase(), nivN = T_NIV.find(x => x[0] === ts.nivel)[1].toLowerCase();
+    const rows = Object.entries(A).map(([k, x]) => ({ k, ...x, v: x.p > 0.05 ? pct(x.a, x.p) : null, pn: x.pa ? x.pr / x.pa * 100 : null })).filter(r => r.a > 0 || r.p > 0).sort((a, b) => b.a - a.a);
+    const tot = rows.reduce((s_, r) => s_ + r.a, 0), totP = rows.reduce((s_, r) => s_ + r.p, 0), totT = rows.reduce((s_, r) => s_ + r.t, 0);
+    const nMun = Object.values(T.mun).filter(v => tVal(v, 0) > 0).length, top10 = tot ? rows.slice(0, 10).reduce((s_, r) => s_ + r.a, 0) / tot * 100 : null;
+    const mFim = ["jul", "ago", "set", "out", "nov", "dez", "jan", "fev", "mar", "abr", "mai", "jun"][T.meta.mes_limite];
     const kp = `<div class="kpis">
-      ${kpiBox(`Contratado em MG · safra ${safraLbl(S0)}`, nf(tot, 1), " mi", `${arrow(pct(tot, totP))}${sgn(pct(tot, totP))} contra o mesmo ponto`, cls(pct(tot, totP)), `até ${dmy(T.meta.ref)} · SICOR${tagNovo(T.meta.novo_desde)}`)}
-      ${kpiBox("Participação no SFN em MG", nf(totB ? tot / totB * 100 : null, 1), "%", `SFN em MG: ${brlMi(totB)}`, "flat", "valor contratado na safra")}
+      ${kpiBox(`Contratado em MG · safra ${safraLbl(S0)}`, nf(tot / 1000, 2), " bi", `${arrow(pct(tot, totP))}${sgn(pct(tot, totP))} contra o mesmo ponto`, cls(pct(tot, totP)), `${finN} · jul a ${mFim} · SICOR${tagNovo(T.meta.novo_desde)}`)}
+      ${kpiBox(`Safra ${safraLbl(S0 - 1)} inteira`, nf(totT / 1000, 2), " bi", `${nf(totT ? tot / totT * 100 : null, 0)}% já contratado`, "flat", finN)}
       ${kpiBox("Municípios com contratação", nf(nMun, 0), "", `de ${Object.keys(MAPA.m).length} municípios de MG`, "flat", "safra corrente até a data")}
       ${kpiBox(`Concentração · 10 maiores (${nivN})`, nf(top10, 0), "%", `${rows.length} ${ts.nivel === "mun" ? "municípios" : "regiões"} com operação`, "flat", "do valor contratado")}
     </div>`;
-    // mapa
-    const val = (r) => !r ? null : ts.met === "valor" ? r.a : ts.met === "var" ? r.v : r.sh;
+    const val = (r) => !r ? null : ts.met === "valor" ? r.a : ts.met === "var" ? r.v : r.pn;
     const byK = Object.fromEntries(rows.map(r => [r.k, r]));
     const vs = rows.map(val).filter(v => v != null && isFinite(v)).sort((a, b) => a - b);
     const q = (p) => vs.length ? vs[Math.min(vs.length - 1, Math.floor(p * vs.length))] : 0;
     const SEQ = ["#E3F1EF", "#B5DCD6", "#7FC2B8", "#3F9E91", "#007A6E", "#004E46"], DIV = ["#B42318", "#E07A5F", "#F2D0C4", "#D6E9DC", "#7DBE91", "#1B7A3E"];
-    const cuts = ts.met === "var" ? [-30, -10, 0, 10, 30] : [q(0.2), q(0.4), q(0.6), q(0.8), q(0.93)];
+    const cuts = ts.met === "var" ? [-30, -10, 0, 10, 30] : ts.met === "pronaf" ? [10, 25, 40, 60, 80] : [q(0.2), q(0.4), q(0.6), q(0.8), q(0.93)];
     const pal = ts.met === "var" ? DIV : SEQ;
-    const colr = (v) => v == null || !isFinite(v) ? "var(--line)" : pal[cuts.findIndex(c => v < c) === -1 ? 5 : cuts.findIndex(c => v < c)];
-    const fmtM = (v) => v == null ? "—" : ts.met === "valor" ? brlMi(v) : ts.met === "var" ? sgn(v) : nf(v, 1) + "%";
+    const colr = (v) => { if (v == null || !isFinite(v)) return "var(--line)"; const i = cuts.findIndex(c => v < c); return pal[i === -1 ? 5 : i]; };
+    const fmtM = (v) => v == null ? "—" : ts.met === "valor" ? brlMi(v) : ts.met === "var" ? sgn(v) : nf(v, 0) + "%";
     const [W, H] = MAPA.vb;
-    const paths = Object.entries(MAPA.m).map(([cod, m]) => { const k = tKey(cod), r = byK[k], v = val(r), on = ts.sel && ts.sel === k;
-      return `<path d="${m.p}" fill="${colr(v)}" stroke="${on ? "var(--ink)" : "#fff"}" stroke-width="${on ? 1.6 : 0.35}" data-tsel="${esc(k)}" style="cursor:pointer"><title>${esc(m.n)}${ts.nivel !== "mun" ? " · " + esc(k) : ""}: ${fmtM(v)}${r ? ` · ${brlMi(r.a)}` : " · sem contratação"}</title></path>`; }).join("");
+    const paths = Object.entries(MAPA.m).map(([cod, m]) => { const k = tKey(cod), r = byK[k], on = ts.sel && ts.sel === k;
+      return `<path d="${m.p}" fill="${colr(val(r))}" stroke="${on ? "var(--ink)" : "#fff"}" stroke-width="${on ? 1.6 : 0.35}" data-tsel="${esc(k)}" style="cursor:pointer"><title>${esc(m.n)}${ts.nivel !== "mun" ? " · " + esc(k) : ""}: ${fmtM(val(r))}${r ? ` · ${brlMi(r.a)}` : " · sem contratação"}</title></path>`; }).join("");
     const leg = pal.map((c, i) => `<span class="lgi"><i style="background:${c}"></i>${i === 0 ? "< " + fmtM(cuts[0]) : i === 5 ? "≥ " + fmtM(cuts[4]) : fmtM(cuts[i - 1]) + " a " + fmtM(cuts[i])}</span>`).join("") + `<span class="lgi"><i style="background:var(--line)"></i>sem operação</span>`;
     const mapa = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Mapa de Minas Gerais">${paths}</svg><div class="tleg">${leg}</div>`;
-    // detalhe do território escolhido
-    let det = `<p class="lede" style="font-size:.88rem">Toque num ${ts.nivel === "mun" ? "município" : "território"} no mapa ou na tabela para ver os produtos, a finalidade e quem opera ali.</p>`;
-    if (ts.sel && byK[ts.sel] !== undefined || ts.sel && B[ts.sel]) {
-      const r = byK[ts.sel], b = B[ts.sel], muns = Object.keys(MAPA.m).filter(c => tKey(c) === ts.sel);
-      const pr = {}; muns.forEach(c => (T.prod[c] || []).forEach(([n, v]) => pr[n] = (pr[n] || 0) + v));
-      const prL = Object.entries(pr).sort((a, b) => b[1] - a[1]).slice(0, 6);
-      const quem = Object.entries(T.inst).map(([id, i]) => { let a = 0; muns.forEach(c => { const v = i.d[c]; if (v) a += v[0] + v[1] + v[2] + v[3]; }); return { id, i, a }; }).filter(x => x.a > 0).sort((a, b) => b.a - a.a);
-      const FN = ["Custeio", "Investimento", "Comercialização", "Industrialização"], FC = ["#4E8A3E", "#2B6F8A", "#C08A2E", "#8C4A3A"];
-      det = `<div class="eyebrow">${ts.nivel === "mun" ? "Município" : T_NIV.find(x => x[0] === ts.nivel)[1]}${ts.nivel !== "mun" ? ` · ${muns.length} municípios` : ""}</div><h3 style="margin:2px 0 6px">${esc(tNome(ts.sel))} <button class="linkbtn" id="tlimpa" type="button">limpar</button></h3>
-        <div class="pair"><div><span class="eyebrow">${esc(nomeE)}</span><span class="big">${brlMi(r?.a || 0)}</span><span class="${cls(r?.v)}">${r?.v == null ? "" : sgn(r.v) + " contra o mesmo ponto"}</span></div>
-        <div><span class="eyebrow">SFN no território</span><span class="big">${brlMi(b?.a || 0)}</span><span class="flat">${r && b?.a ? nf(r.a / b.a * 100, 1) + "% de participação" : ""}</span></div></div>
-        ${r && r.a ? hbars(FN.map((n, i) => ({ name: n, v: r.f[i] / r.a * 100, c: FC[i] })), { fmt: v => nf(v, 0) + "%", axis: false, L: 130, label: "Finalidade" }) : ""}
-        ${prL.length ? `<div class="eyebrow" style="margin:8px 0 2px">Produtos financiados no SFN</div>${hbars(prL.map(([n, v]) => ({ name: n, v, c: css("--grafite-2") })), { fmt: v => brlMi(v), axis: false, L: 170, label: "Produtos" })}` : ""}
-        <div class="eyebrow" style="margin:8px 0 2px">Quem opera aqui · safra ${safraLbl(S0)}</div>
-        <div class="tbl-wrap" style="max-height:300px;overflow-y:auto"><table><tbody>${quem.slice(0, 25).map(x => `<tr${x.id === ts.inst ? ' style="background:var(--panel)"' : ""}><td>${linkFicha(x.id, esc(x.i.curto))}${x.i.central ? `<span class="tag">${x.i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}</td><td class="num">${brlMi(x.a)}</td><td class="num">${b?.a ? nf(x.a / b.a * 100, 1) + "%" : "—"}</td></tr>`).join("")}</tbody></table></div>`;
+    let det = `<p class="lede" style="font-size:.88rem">Toque num ${ts.nivel === "mun" ? "município" : "território"} no mapa ou na tabela para ver produtos, programas e finalidade.</p>`;
+    const r = byK[ts.sel];
+    if (ts.sel && r) {
+      const muns = Object.keys(T.mun).filter(c => tKey(c) === ts.sel), pr = {}, pg = [0, 0, 0];
+      muns.forEach(c => { (T.prod[c] || []).forEach(([n, v]) => pr[n] = (pr[n] || 0) + v); (T.prog[c] || [0, 0, 0]).forEach((v, i) => pg[i] += v); });
+      const prL = Object.entries(pr).sort((a, b) => b[1] - a[1]).slice(0, 8), pgT = pg[0] + pg[1] + pg[2];
+      det = `<div class="eyebrow">${T_NIV.find(x => x[0] === ts.nivel)[1]}${ts.nivel !== "mun" ? ` · ${muns.length} municípios` : tReg(ts.sel).mi ? " · " + esc(tReg(ts.sel).mi) : ""}</div><h3 style="margin:2px 0 6px">${esc(tNome(ts.sel))} <button class="linkbtn" id="tlimpa" type="button">limpar</button></h3>
+        <div class="pair"><div><span class="eyebrow">Safra ${safraLbl(S0)} · ${finN}</span><span class="big">${brlMi(r.a)}</span><span class="${cls(r.v)}">${r.v == null ? "" : sgn(r.v) + " contra o mesmo ponto"}</span></div>
+        <div><span class="eyebrow">Participação em MG</span><span class="big">${nf(tot ? r.a / tot * 100 : null, 2)}%</span><span class="flat">safra ${safraLbl(S0 - 1)} inteira: ${brlMi(r.t)}</span></div></div>
+        ${r.c + r.i ? hbars([{ name: "Custeio", v: r.c / (r.c + r.i) * 100, c: "#4E8A3E" }, { name: "Investimento", v: r.i / (r.c + r.i) * 100, c: "#2B6F8A" }], { fmt: v => nf(v, 0) + "%", axis: false, L: 120, label: "Finalidade" }) : ""}
+        ${pgT ? `<div class="eyebrow" style="margin:8px 0 2px">Programa</div>${hbars([{ name: "Pronaf", v: pg[0] / pgT * 100, c: "#7FC2B8" }, { name: "Pronamp", v: pg[1] / pgT * 100, c: "#3F9E91" }, { name: "Demais", v: pg[2] / pgT * 100, c: css("--grafite-2") }], { fmt: v => nf(v, 0) + "%", axis: false, L: 120, label: "Programa" })}` : ""}
+        ${prL.length ? `<div class="eyebrow" style="margin:8px 0 2px">Produtos financiados · custeio e investimento</div>${hbars(prL.map(([n, v]) => ({ name: n.length > 26 ? n.slice(0, 25) + "…" : n, v, c: css("--grafite-2") })), { fmt: v => brlMi(v), axis: false, L: 190, label: "Produtos" })}` : ""}`;
     }
-    const shown = ts.all ? rows : rows.slice(0, 30);
-    const tab = `<div class="tbl-wrap"><table><thead><tr><th>#</th><th>${T_NIV.find(x => x[0] === ts.nivel)[1]}</th><th class="num">Contratado</th><th class="num">Mesmo ponto</th><th class="num">Variação</th><th class="num">Part. no SFN</th><th class="num">Contratos</th><th class="num">Custeio</th></tr></thead><tbody>${shown.map((r, i) =>
-      `<tr${ts.sel === r.k ? ' style="background:var(--panel)"' : ""}><td class="num">${i + 1}</td><td><button type="button" class="linkbtn" data-tsel="${esc(r.k)}" style="text-align:left">${esc(tNome(r.k))}</button>${ts.nivel === "mun" && T.mun[r.k]?.mi ? `<small>${esc(T.mun[r.k].mi)}</small>` : ts.nivel !== "mun" ? `<small>${r.nm} municípios</small>` : ""}</td><td class="num"><b>${brlMi(r.a)}</b></td><td class="num">${brlMi(r.p)}</td><td class="num ${cls(r.v)}">${sgn(r.v)}</td><td class="num">${r.sh == null ? "—" : nf(r.sh, 1) + "%"}</td><td class="num">${nf(r.q, 0)}</td><td class="num">${r.a ? nf(r.f[0] / r.a * 100, 0) + "%" : "—"}</td></tr>`).join("")}</tbody></table></div>
+    const shown = ts.all ? rows : rows.slice(0, 30), nivT = T_NIV.find(x => x[0] === ts.nivel)[1];
+    const tab = `<div class="tbl-wrap"><table><thead><tr><th>#</th><th>${nivT}</th><th class="num">Safra ${safraLbl(S0)}</th><th class="num">Mesmo ponto</th><th class="num">Variação</th><th class="num">% de MG</th><th class="num">Investimento</th><th class="num">Pronaf</th></tr></thead><tbody>${shown.map((r, i) =>
+      `<tr${ts.sel === r.k ? ' style="background:var(--panel)"' : ""}><td class="num">${i + 1}</td><td><button type="button" class="linkbtn" data-tsel="${esc(r.k)}" style="text-align:left">${esc(tNome(r.k))}</button>${ts.nivel === "mun" && tReg(r.k).mi ? `<small>${esc(tReg(r.k).mi)}</small>` : ts.nivel !== "mun" ? `<small>${r.nm} municípios</small>` : ""}</td><td class="num"><b>${brlMi(r.a)}</b></td><td class="num">${brlMi(r.p)}</td><td class="num ${cls(r.v)}">${sgn(r.v)}</td><td class="num">${tot ? nf(r.a / tot * 100, 1) + "%" : "—"}</td><td class="num">${r.c + r.i ? nf(r.i / (r.c + r.i) * 100, 0) + "%" : "—"}</td><td class="num">${r.pn == null ? "—" : nf(r.pn, 0) + "%"}</td></tr>`).join("")}</tbody></table></div>
       ${rows.length > 30 ? `<button class="linkbtn" id="tmore" type="button">${ts.all ? "Mostrar só os 30 primeiros" : `Mostrar todos os ${rows.length}`}</button>` : ""}`;
-    const lk = `<a href="${esc(T.meta.url)}" target="_blank" rel="noopener">SICOR, Banco Central</a>`;
-    $("#view").innerHTML = `<div><div class="eyebrow">SICOR · safra ${safraLbl(S0)} até ${dmy(T.meta.ref)} · Minas Gerais</div><h2>Crédito rural por território · ${esc(nomeE)}</h2>
-      <p class="lede">Onde ${esc(nomeE)} contrata crédito rural em Minas Gerais, por ${nivN}, na safra corrente até a data, contra o mesmo ponto da safra anterior. O município é o do empreendimento financiado, informado em cada operação do SICOR.</p></div>
+    const lk = `<a href="${esc(T.meta.url)}" target="_blank" rel="noopener">Matriz de Dados do Crédito Rural, Banco Central</a>`;
+    $("#view").innerHTML = `<div><div class="eyebrow">SICOR · safra ${safraLbl(S0)} de jul a ${mFim} · Minas Gerais · todo o SFN</div><h2>Crédito rural por território</h2>
+      <p class="lede">Onde o crédito rural é contratado em Minas Gerais, por ${nivN}: custeio e investimento de todo o SFN na safra corrente até o último mês publicado, contra o mesmo ponto da safra anterior. A base oficial por município não separa instituição; a participação de cada sistema e instituição está na aba Safra, por UF.</p></div>
       ${kp}
-      <div class="grid2">${block(`Mapa · ${T_MET.find(x => x[0] === ts.met)[1].toLowerCase()}`, `${esc(nomeE)} · por ${nivN} · safra ${safraLbl(S0)}`, mapa,
-          `${ts.met === "var" ? "Variação do valor contratado até a data contra o mesmo ponto da safra anterior; cinza claro quando não há base de comparação." : ts.met === "share" ? `Valor de ${esc(nomeE)} sobre o valor de todo o SFN no território.` : "Faixas pelos quantis do valor contratado."} Malha municipal do IBGE, simplificada. ${lk}`)}
+      <div class="grid2">${block(`Mapa · ${T_MET.find(x => x[0] === ts.met)[1].toLowerCase()}`, `${finN} · por ${nivN} · safra ${safraLbl(S0)}`, mapa,
+          `${ts.met === "var" ? "Variação contra o mesmo ponto da safra anterior; cinza claro quando não há base de comparação." : ts.met === "pronaf" ? "Participação do Pronaf no valor de custeio e investimento do território." : "Faixas pelos quantis do valor contratado."} Malha municipal do IBGE, simplificada. ${lk}`)}
         <section class="block"><header><div class="eyebrow">Detalhe</div><h3>Território escolhido</h3></header>${det}</section></div>
-      ${block(`${T_NIV.find(x => x[0] === ts.nivel)[1]}s por valor contratado`, `${esc(nomeE)} · safra ${safraLbl(S0)} até ${dmy(T.meta.ref)} · mesmo ponto = até ${dmy(T.meta.ref_anterior)}`, tab, `R$ milhões. Participação = valor de ${esc(nomeE)} sobre o do SFN no mesmo território. ${lk}`)}
+      ${block(`${nivT === "Município" ? "Municípios" : nivT === "Região imediata" ? "Regiões imediatas" : nivT === "Região intermediária" ? "Regiões intermediárias" : nivT + "s"} por valor contratado`, `${finN} · safra ${safraLbl(S0)} de jul a ${mFim}, contra o mesmo período da anterior`, tab, `R$ milhões. Investimento = participação do investimento em custeio + investimento. Pronaf = participação do programa. ${lk}`)}
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
-        <p><b>Base.</b> Operações do SICOR (valor contratado da parcela de crédito) ligadas ao arquivo complementar do SICOR, que informa o código IBGE do município de cada operação. ${nf(T.meta.cobertura, 1)}% do valor contratado em MG nas duas safras tem município informado; o restante fica fora desta aba, mas entra na aba Safra.</p>
-        <p><b>Regiões.</b> Microrregião e mesorregião (divisão de 1989) e regiões imediata e intermediária (divisão de 2017), do IBGE (${esc(T.meta.regioes_fonte || "sem fonte")}).</p>
-        <p><b>Instituição.</b> Cooperativas incorporadas entram na incorporadora nas duas safras. Valores por instituição somam as operações registradas no CNPJ da instituição financeira.</p></div></section>`;
+        <p><b>Base.</b> Matriz de Dados do Crédito Rural (SICOR), tabelas de custeio e de investimento por município e produto, mensais, de todo o SFN. A comercialização é publicada só por UF e fica fora. ${T.meta.sem_municipio_pct ? `${nf(T.meta.sem_municipio_pct, 2)}% do valor de MG não tem município identificado.` : ""}</p>
+        <p><b>Por que sem instituição.</b> O arquivo de microdados que traz o município de cada operação cobre só parte delas, de forma desigual entre instituições (de 15% a 99% do valor em MG). Para não mostrar um retrato distorcido, o painel usa a tabela oficial por município, que é completa, mas agregada.</p>
+        <p><b>Regiões.</b> Microrregião e mesorregião (divisão de 1989) e regiões imediata e intermediária (divisão de 2017), do IBGE (${esc(T.meta.regioes_fonte || "sem fonte")}).</p></div></section>`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
 /* ===================== Aba Expectativas de mercado ===================== */
@@ -2402,7 +2391,7 @@ function renderFontes() {
     ["SICOR — Matriz de Dados do Crédito Rural", "Safra de crédito rural / contratações; Perfil da carteira; Crédito rural no SFN; Ficha; Rankings", "Microdados de operações de crédito rural por instituição, UF, programa, fonte e empreendimento", "Mensal (mês fechado), com revisão dos meses anteriores", "~25 dias", dmy(D.meta.ref), D.meta.url],
     ["SCR.data", "Visão geral do SFN; Crédito rural no SFN; Consignado", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente, modalidade, porte da empresa, faixa de renda e ocupação da PF", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
     ["SGS — séries temporais", "Visão geral do SFN; Crédito rural no SFN", "Saldo e concessões do SFN, por PF/PJ e modalidade; inadimplência rural", "Mensal", "~30 dias", ym(C.meta.refs.sgs), "https://www3.bcb.gov.br/sgspub/"],
-    ["SICOR — complemento das operações", "Crédito rural por território", "Código IBGE do município de cada operação de crédito rural, ligado aos microdados de operações", "Mensal, com o SICOR", "~1 mês", T ? dmy(T.meta.ref) : "carregue a aba", "https://www.bcb.gov.br/htms/sicor/DadosBrutos/SICOR_COMPLEMENTO_OPERACAO_BASICA.gz"],
+    ["SICOR — Matriz por município (API Olinda)", "Crédito rural por território", "Custeio e investimento por município e produto, todo o SFN, sem corte por instituição", "Mensal, com o SICOR", "~1 mês", T ? ym(T.meta.ref) : "carregue a aba", "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/aplicacao#!/recursos"],
     ["Focus — expectativas de mercado", "Expectativas de mercado", "Mediana das expectativas anuais de IPCA, PIB, câmbio e Selic", "Semanal", "segunda-feira", F ? dmy(F.meta.ref) : "carregue a aba", "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/aplicacao#!/recursos/ExpectativasMercadoAnuais"],
     ["Balancetes Cosif", "Perfil da carteira; Carteira rural / estoque; Resultados; Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
     ["IF.data", "Quadro de indicadores; Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
@@ -2442,7 +2431,7 @@ function renderFontes() {
 }
 function blocoStatus(st) {
   const el = $("#stbox"); if (!el || !st || !st.bases) return;
-  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)" };
+  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, MG por município)" };
   const rf = (r) => r == null ? "—" : typeof r === "object" ? Object.entries(r).map(([k, v]) => `${k} ${String(v).length === 7 ? ym(v) : dmy(v)}`).join(" · ") : String(r).length === 7 ? ym(r) : dmy(r);
   const cl = { "atualizado": "up", "sem mudança": "flat", "falhou": "down", "reprovado": "down" };
   const quando = new Date(st.verificado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" });
@@ -2453,7 +2442,7 @@ function blocoStatus(st) {
 }
 /* ===================== Roteador ===================== */
 const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio" };
-const GRUPOS_ABAS = [[[0, 1, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[2, 14, 3, 4, 5, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[2, 3, 4, 5, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {

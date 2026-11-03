@@ -25,8 +25,9 @@ BASES = [  # (arquivo, script, pasta de brutos)
     ("resultados", "atualiza_resultados.py", os.path.join(RAW, "bcb")),
     ("carteira", "atualiza_carteira.py", os.path.join(RAW, "bcb")),
     ("focus", "atualiza_focus.py", os.path.join(RAW, "bcb")),
+    ("territorio", "atualiza_territorio.py", os.path.join(RAW, "sicor")),
 ]
-EXTRA = {"safra": ["territorio"]}     # arquivos gerados pelo mesmo script, validados e trocados à parte
+EXTRA = {}     # arquivos gerados pelo mesmo script, validados e trocados à parte
 
 
 def ler(p):
@@ -119,9 +120,10 @@ def chk_focus(n, a):
 
 def chk_territorio(n, a):
     nao_recua(n["meta"]["ref"], (a or {}).get("meta", {}).get("ref"), "referência do território")
-    faixa(n["meta"]["cobertura"], 90, 100.01, "cobertura do município nas operações de MG (%)")
-    if len(n["esc"].get("sfn", {})) < 600: raise AssertionError(f"só {len(n['esc'].get('sfn', {}))} municípios com operação")
-    if len(n.get("mun", {})) < 800: raise AssertionError("tabela de regiões do IBGE incompleta")
+    if len(n["mun"]) < 700: raise AssertionError(f"só {len(n['mun'])} municípios de MG com custeio ou investimento")
+    tot = sum(v[0] + v[1] for v in n["mun"].values()) / 1000
+    faixa(tot if n["meta"]["mes_limite"] >= 2 else 50, 5, 80, "custeio + investimento em MG na safra (R$ bi)")
+    if len(n.get("mun_reg", {})) < 800: raise AssertionError("tabela de regiões do IBGE incompleta")
 
 
 CHK = {"focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
