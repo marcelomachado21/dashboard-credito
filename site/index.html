@@ -74,6 +74,7 @@ nav.tabs .wrap::-webkit-scrollbar { display: none; }
 @media (max-width: 700px) { .qtab .qinst { min-width: 120px; max-width: 140px; } .qtab .qinst .inst-name small { display: none; } }
 .qtab tr td.cmpG, .qlegenda i.cmpG { background: rgba(27, 122, 62, 0.11); }
 .qtab tr td.cmpR, .qlegenda i.cmpR { background: rgba(180, 35, 24, 0.10); }
+.sec-h { margin: 22px 0 6px; font-size: 1.02rem; }
 .dsq { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 14px 22px; margin: 6px 0 4px; }
 .dsq-it { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; align-items: center; }
 .dsq-it svg { width: 92px; height: 92px; }
@@ -777,9 +778,27 @@ function blocoIFD() {
     block("Inadimplência acima de 90 dias", "% da carteira · trimestral", tsChart(linesI, { unit: "%", fmt: v => nf(v, 1), dots: true, label: "Inadimplência" }), linkR("ifd")) +
     block("Ativos problemáticos (estágio 3)", "% da carteira · trimestral", tsChart(lines, { unit: "%", fmt: v => nf(v, 1), dots: true, label: "Ativos problemáticos" }), `Inclui inadimplência e operações reestruturadas ou com sinais de deterioração. É a medida do estágio 3 do crédito neste painel · ${linkR("ifd")}`) +
   `</div>` +
-    block(`Risco e capital · ${esc(rEsc(rs.esc).nome)}`, `Ativo problemático (x) contra Basileia (y), por instituição · ${ym(R.ifd.ref)}`,
+    `<div class="grid2">` + block(`Risco e capital · ${esc(rEsc(rs.esc).nome)}`, `Ativo problemático (x) contra Basileia (y), por instituição · ${ym(R.ifd.ref)}`,
       scatterLin(pts, { xlab: "Ativo problemático, % da carteira", xn: "ativo probl.", yn: "Basileia", yref: 10.5, yrefLabel: "mínimo com adicional: 10,5%", label: "Risco e capital" }),
-      `Até 120 maiores carteiras do escopo. Basileia limitada a 40% no desenho. ${linkR("ifd")}`) + tabelaEscopos();
+      `Até 120 maiores carteiras do escopo. Basileia limitada a 40% no desenho. ${linkR("ifd")}`) + blocoBasilDist() + `</div>` + tabelaEscopos();
+}
+function blocoBasilDist() {
+  const nm = esc(rEsc(rs.esc).nome);
+  if (!precisa(["posicao"])) return block(`Basileia por faixa · ${nm}`, "IF.data", `<p class="empty">${Perr ? "Sem atualização: a base de posição não carregou." : "Carregando…"}</p>`);
+  const t = P.meta.ref, ins = P.inst.filter(i => (rs.esc === "sfn" || i.escopos.includes(rs.esc)) && i.s[t]?.basil != null && i.s[t]?.at > 0);
+  if (ins.length < 3) return "";
+  const F = [["Abaixo de 10,5%", -1e9, 10.5], ["10,5 a 13%", 10.5, 13], ["13 a 16%", 13, 16], ["16 a 20%", 16, 20], ["20 a 30%", 20, 30], ["Acima de 30%", 30, 1e9]];
+  const at = ins.reduce((a, i) => a + i.s[t].at, 0), fx = F.map(([n, a, b]) => { const l = ins.filter(i => i.s[t].basil >= a && i.s[t].basil < b); return { n, l, at: l.reduce((s_, i) => s_ + i.s[t].at, 0) }; });
+  const W = 640, H = 230, L = 40, R2 = 10, T = 26, B = 40, mx = Math.max(10, ...fx.map(f => f.at / at * 100)), tk = ticks(0, mx), M = tk[tk.length - 1], bw = (W - L - R2) / fx.length, Y = (v) => T + (H - T - B) * (1 - v / M);
+  const c0 = cor(rEsc(rs.esc).cor);
+  let g = tk.map(x => `<line class="grid" x1="${L}" x2="${W - R2}" y1="${Y(x)}" y2="${Y(x)}"/><text x="${L - 6}" y="${Y(x) + 4}" text-anchor="end">${nf(x, 0)}%</text>`).join("");
+  fx.forEach((f, k) => { const v = f.at / at * 100, x0 = L + k * bw + bw * 0.16, w = bw * 0.68;
+    g += `<rect x="${x0}" y="${Y(v)}" width="${w}" height="${Math.max(1, Y(0) - Y(v))}" rx="3" fill="${k === 0 ? "var(--down)" : k === 1 ? "var(--warn-ink)" : c0}"><title>${f.n}: ${nf(v, 1)}% do ativo, ${f.l.length} instituições</title></rect>
+      <text x="${x0 + w / 2}" y="${Y(v) - 6}" text-anchor="middle" class="lbl-strong">${nf(v, 0)}%</text><text x="${x0 + w / 2}" y="${H - 22}" text-anchor="middle">${f.n}</text><text x="${x0 + w / 2}" y="${H - 6}" text-anchor="middle">${f.l.length} inst.</text>`; });
+  const baixo = fx[0].l.concat(fx[1].l).sort((a, b) => a.s[t].basil - b.s[t].basil);
+  return block(`Basileia por faixa · ${nm}`, `% do ativo do escopo em cada faixa · ${ym(t)}`, `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Distribuição da Basileia">${g}</svg>
+    <p class="lede" style="font-size:.86rem">${ins.length} instituições. Mediana: ${nf(median(ins.map(i => i.s[t].basil)), 1)}%.${baixo.length ? ` Abaixo de 13%: ${baixo.slice(0, 8).map(i => `${linkFicha(i.id, esc(i.curto))} (${nf(i.s[t].basil, 1)}%)`).join(", ")}${baixo.length > 8 ? ` e mais ${baixo.length - 8}` : ""}.` : ""}</p>`,
+    `Barras: participação no ativo total do escopo; abaixo, o número de instituições. 10,5% = mínimo de 8% mais o adicional de conservação de 2,5%. Cooperativas no regime prudencial simplificado têm exigências próprias, por isso a faixa serve de referência, não de enquadramento (REF, gráfico 1.2.4.3, que usa o índice de adequação do PR, não público). <a href="${esc(P.meta.url_ifd)}" target="_blank" rel="noopener">IF.data</a>.`);
 }
 function instCorR(i) {
   const m = { bb: "#465EFF", bradesco: "#CC092F", itau: "#EC7000", caixa: "#005CA9", santander: "#EC0000", digitais: "#820AD1", cong_sicoob: "#003641", cong_sicredi: "#3FA110" };
@@ -1018,14 +1037,19 @@ function qJanela(desloca = 0) {               // índices dos meses do período;
 }
 function qCalc(m, idx) {
   if (!m || !idx) return null;
-  const S = Array(11).fill(0); let pl = 0, at = 0;
-  idx.forEach(i => { const r = m[i]; if (!r) return; for (let k = 0; k < 11; k++) S[k] += r[k] || 0; pl += r[11] || 0; at += r[12] || 0; });
+  const S = Array(11).fill(0), SV = Array(5).fill(0); let pl = 0, at = 0, ct = 0, nct = 0, recup = 0;
+  idx.forEach(i => { const r = m[i]; if (!r) return; for (let k = 0; k < 11; k++) S[k] += r[k] || 0; pl += r[11] || 0; at += r[12] || 0;
+    if (r[13] != null) { ct += r[13]; nct++; } recup += r[14] || 0; for (let k = 0; k < 5; k++) SV[k] += r[15 + k] || 0; });
   const [cred, tes, serv, out_r, capt, prov, pess, adm, depr, trib, lucro] = S, n = idx.length, f = 12 / n;
   pl /= n; at /= n;
   const rec = cred + Math.max(tes, 0) + serv + Math.max(out_r, 0);
   const out_d = rec - capt - prov - pess - adm - depr - trib - lucro - (tes < 0 ? -tes : 0) - (out_r < 0 ? -out_r : 0);
   const pc = (v) => rec ? Math.round(v / rec * 1000) / 10 : null, margem = cred + tes - capt + serv + out_r;
-  return { lucro: Math.round(lucro * 10) / 10, rec: Math.round(rec * 10) / 10, n, pl, at,
+  const cart = nct ? ct / nct : null, pcC = (v) => cart > 0 ? v * f / cart * 100 : null;
+  const sv = { s_tar: SV[0], s_pag: SV[1], s_cob: SV[2], s_seg: SV[3], s_inv: SV[4] }; sv.s_out = serv - SV.reduce((a, b) => a + b, 0);
+  const cr = { cart, recup, sv, taxa: pcC(cred), cprov: pcC(prov), rend: cart > 0 ? pcC(cred) - pcC(prov) : null,
+    p_recup: prov + recup > 0 ? recup / (prov + recup) * 100 : null };
+  return { ...cr, lucro: Math.round(lucro * 10) / 10, rec: Math.round(rec * 10) / 10, n, pl, at,
     v: { cred, tes, serv, out_r, capt, prov, pess, adm, depr, trib, out_d, lucro, rec },
     roe: pl > 0 ? Math.round(lucro * f / pl * 1000) / 10 : null, roa: at ? Math.round(lucro * f / at * 10000) / 100 : null,
     efic: margem > 0 ? Math.round((pess + adm + depr) / margem * 1000) / 10 : null,
@@ -1113,6 +1137,84 @@ function stack100(rows, parts, o = {}) {
   return legend(parts.map(([p, n, c]) => ({ name: n, c, box: true }))) + `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "composição")}">${g}</svg>`;
 }
 const CMP = ["sfn", "bancos", "coop", "cong_sicoob", "cong_sicredi", "sicoob_mg", "crediminas", "cecremge", "bb", "itau", "bradesco", "caixa", "santander", "digitais"];
+// ---------- Resultados: crédito, risco, recuperação, ROE e serviços ----------
+const SVC = [["s_tar", "Tarifas", "#2B6F8A"], ["s_pag", "Serviços de pagamento", "#7A9CB0"], ["s_cob", "Cobrança", "#C08A2E"], ["s_seg", "Seguros, previdência e capitalização", "#4E8A3E"],
+  ["s_inv", "Fundos, consórcios e investimentos", "#8C4A3A"], ["s_out", "Outros serviços", "#B9BFC4"]];
+function hbars(items, o = {}) {             // barras horizontais com zero; valores negativos para a esquerda
+  if (!items.length) return `<p class="empty">Sem dado.</p>`;
+  const W = 640, rowH = o.rowH || 26, L = o.L || 170, R2 = 76, T = 4, H = T + items.length * rowH + (o.axis === false ? 4 : 18);
+  const vs = items.map(i => i.v ?? 0), mn0 = Math.min(0, ...vs), mx0 = Math.max(0, ...vs), tk = ticks(mn0, mx0 || 1, 4), mn = tk[0], mx = tk[tk.length - 1];
+  const X = (v) => L + (W - L - R2) * (v - mn) / (mx - mn || 1), fmt = o.fmt || (v => nf(v, 1));
+  let g = o.axis === false ? "" : tk.map(t => `<line class="grid" x1="${X(t)}" x2="${X(t)}" y1="${T}" y2="${H - 18}"/><text x="${X(t)}" y="${H - 4}" text-anchor="middle">${fmt(t)}</text>`).join("");
+  items.forEach((it, k) => { const y = T + k * rowH + 4, h = rowH - 9, x0 = X(0), x1 = X(it.v ?? 0), xa = Math.min(x0, x1), w = Math.max(it.v == null ? 0 : 2, Math.abs(x1 - x0));
+    g += `<text x="${L - 8}" y="${y + h / 2 + 4}" text-anchor="end" class="${it.sel ? "lbl-strong" : ""}">${esc(it.name)}</text>`;
+    g += it.v == null ? `<text x="${x0 + 6}" y="${y + h / 2 + 4}">sem dado</text>` : `<rect x="${xa}" y="${y}" width="${w}" height="${h}" rx="3" fill="${it.c || (it.v < 0 ? "var(--down)" : css("--grafite-2"))}"${it.sel ? "" : ' opacity="0.8"'}><title>${esc(it.name)}: ${fmt(it.v)}</title></rect>
+      <text x="${it.v < 0 ? xa - 6 : xa + w + 6}" y="${y + h / 2 + 4}" text-anchor="${it.v < 0 ? "end" : "start"}" class="lbl-strong">${it.lbl ?? fmt(it.v)}</text>`; });
+  g += `<line x1="${X(0)}" x2="${X(0)}" y1="${T}" y2="${H - (o.axis === false ? 4 : 18)}" stroke="var(--ink)" stroke-width="1"/>`;
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "barras")}">${g}</svg>`;
+}
+function blocosCredRes(e, x, PT, link) {
+  if (x.cart == null) return block("Crédito: taxa, custo do risco e recuperação", esc(PT), `<p class="empty">Sem atualização: a base de resultados publicada ainda não traz o saldo mensal da carteira. Entra na próxima atualização dos dados.</p>`);
+  const ids = CMP.filter(id => qR12(id)?.cart > 0).concat(CMP.includes(qs.esc) ? [] : [qs.esc]);
+  const lin = (k) => ids.map(id => ({ name: qEsc(id).nome, v: qR12(id)?.[k], sel: id === qs.esc, c: id === qs.esc ? cor(qEsc(id).cor) : undefined }));
+  const ms = qMeses(), A = Q.agg[qs.esc];
+  const ser = (g) => ms.map((d, i) => i < 11 ? null : { d, v: qCalc(Q.agg[g]?.m, ms.slice(i - 11, i + 1).map((_, j) => i - 11 + j))?.cprov }).filter(p => p && p.v != null);
+  const cpL = [{ name: e.nome, pts: ser(qs.esc), c: cor(e.cor), w: 3 }].concat(qs.esc !== "coop" ? [{ name: "Cooperativas", pts: ser("coop"), c: css("--grafite-2"), w: 1.6 }] : [])
+    .concat(qs.esc !== "bancos" ? [{ name: "Bancos", pts: ser("bancos"), c: css("--faint"), w: 1.6, dash: "4 3" }] : []);
+  const x0 = qCalc(A.m, qJanela(-12)), dl = (a, b) => a == null || b == null ? "" : `${sgn(a - b, 2, " p.p.")} contra o mesmo período do ano anterior`;
+  const kp = `<div class="kpis">
+    ${kpiBox("Taxa média da carteira", nf(x.taxa, 1), "%", dl(x.taxa, x0?.taxa), "flat", `receita de crédito / carteira média${qAnual() || ", 12 meses"}`)}
+    ${kpiBox("Custo com provisões", nf(x.cprov, 2), "%", dl(x.cprov, x0?.cprov), x0 && x.cprov > x0.cprov + 0.05 ? "down" : x0 && x.cprov < x0.cprov - 0.05 ? "up" : "flat", `provisão líquida / carteira média${qAnual()}`)}
+    ${kpiBox("Rendimento ajustado ao risco", nf(x.rend, 1), "%", dl(x.rend, x0?.rend), x0 && x.rend > x0.rend + 0.05 ? "up" : x0 && x.rend < x0.rend - 0.05 ? "down" : "flat", "taxa da carteira menos custo com provisões")}
+    ${kpiBox("Recuperação de baixados", brlMi(x.recup).replace("R$ ", ""), "", x0?.recup ? `${sgn(pct(x.recup, x0.recup))} contra o mesmo período do ano anterior` : "", x0?.recup ? cls(pct(x.recup, x0.recup)) : "flat", `${nf(x.p_recup, 1)}% da provisão bruta · conta 7192`)}
+  </div>`;
+  const recM = ms.map((d, i) => ({ d, v: A.m[i]?.[14] })).filter(p => p.v != null).slice(-18);
+  const recBars = (() => { const W = 640, H = 170, L = 52, R2 = 10, T = 16, B = 24, v = recM.map(p => p.v), tk = ticks(0, Math.max(1, ...v)), mx = tk[tk.length - 1];
+    const Y = (z) => T + (H - T - B) * (1 - z / mx), bw = (W - L - R2) / recM.length;
+    let g = tk.map(t => `<line class="grid" x1="${L}" x2="${W - R2}" y1="${Y(t)}" y2="${Y(t)}"/><text x="${L - 6}" y="${Y(t) + 4}" text-anchor="end">${brlMi(t).replace("R$ ", "")}</text>`).join("");
+    recM.forEach((p, i) => { const x0_ = L + i * bw + bw * 0.18, w = bw * 0.64;
+      g += `<rect x="${x0_}" y="${Y(p.v)}" width="${w}" height="${Math.max(1, Y(0) - Y(p.v))}" fill="${cor(e.cor)}" rx="2"><title>${ym(p.d)}: ${brlMi(p.v)}</title></rect>`;
+      if (i % 3 === (recM.length - 1) % 3) g += `<text x="${x0_ + w / 2}" y="${H - 6}" text-anchor="middle">${ym(p.d)}</text>`; });
+    return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Recuperação mensal">${g}</svg>`; })();
+  return `<h3 class="sec-h">Crédito e custo do risco</h3>${kp}
+    <div class="grid2">${(() => { const mxp = Math.max(...ids.map(id => qR12(id)?.cprov || 0), 1);
+      const rows = ids.map(id => { const z = qR12(id), ee = qEsc(id); return `<tr${id === qs.esc ? ' style="background:var(--panel)"' : ""}><td><span class="dot" style="background:${cor(ee.cor)}"></span>${esc(ee.nome)}</td>
+        <td class="num">${nf(z.taxa, 1)}%</td><td class="num"><b>${nf(z.cprov, 2)}%</b></td><td class="num">${nf(z.rend, 1)}%</td></tr>`; }).join("");
+      return block("Taxa da carteira e custo com provisões", `% da carteira média ao ano · ${esc(PT)}`,
+      `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Taxa média</th><th class="num">Custo com provisões</th><th class="num">Ajustado ao risco</th></tr></thead><tbody>${rows}</tbody></table></div>`,
+      `Taxa média = receitas de operações de crédito (7110, 7120 e 7160) sobre o saldo médio das operações de crédito do balancete (conta 1600), anualizada. Custo com provisões = despesa de provisão líquida de reversões e recuperações, sobre o mesmo saldo médio (REF, gráfico 1.2.3.5). Ajustado ao risco = taxa menos custo com provisões. A despesa de captação não entra: o balancete não separa a captação que financia o crédito da que vai para a tesouraria e a centralização. ${link}`); })()}
+      ${block("Custo com provisões em 12 meses", `% da carteira média · mensal`, tsChart(cpL, { unit: "%", fmt: v => nf(v, 1), h: 200, label: "Custo com provisões" }) +
+        `<h3 style="margin-top:10px">Recuperação de créditos baixados como prejuízo · ${esc(e.nome)}</h3>` + recBars,
+        `Linhas: provisão líquida dos 12 meses sobre a carteira média. Barras: recuperação de ativos financeiros baixados como prejuízo, por mês (conta 7192, R$). A recuperação reduz a despesa líquida de provisão. ${link}`)}</div>`;
+}
+function blocoRoeDist(e, PT, link) {
+  const ins = Q.inst.filter(i => qs.esc === "sfn" || (i.escopos || []).includes(qs.esc)).map(i => ({ i, z: qInstPer(i) })).filter(o => o.z && o.z.roe != null && o.z.at > 0);
+  if (ins.length < 3) return "";
+  const F = [["Prejuízo", -1e9, 0], ["0 a 5%", 0, 5], ["5 a 10%", 5, 10], ["10 a 15%", 10, 15], ["15 a 20%", 15, 20], ["Acima de 20%", 20, 1e9]];
+  const at = ins.reduce((a, o) => a + o.z.at, 0);
+  const fx = F.map(([n, a, b]) => { const l = ins.filter(o => o.z.roe >= a && o.z.roe < b); return { n, l, at: l.reduce((s_, o) => s_ + o.z.at, 0) }; });
+  const W = 640, H = 230, L = 40, R2 = 10, T = 26, B = 40, mx = Math.max(10, ...fx.map(f => f.at / at * 100)), tk = ticks(0, mx), M = tk[tk.length - 1], bw = (W - L - R2) / fx.length;
+  const Y = (v) => T + (H - T - B) * (1 - v / M);
+  let g = tk.map(t => `<line class="grid" x1="${L}" x2="${W - R2}" y1="${Y(t)}" y2="${Y(t)}"/><text x="${L - 6}" y="${Y(t) + 4}" text-anchor="end">${nf(t, 0)}%</text>`).join("");
+  fx.forEach((f, k) => { const v = f.at / at * 100, x0 = L + k * bw + bw * 0.16, w = bw * 0.68;
+    g += `<rect x="${x0}" y="${Y(v)}" width="${w}" height="${Math.max(1, Y(0) - Y(v))}" rx="3" fill="${k === 0 ? "var(--down)" : k === 1 ? "var(--warn-ink)" : cor(e.cor)}"><title>${f.n}: ${nf(v, 1)}% do ativo, ${f.l.length} instituições</title></rect>
+      <text x="${x0 + w / 2}" y="${Y(v) - 6}" text-anchor="middle" class="lbl-strong">${nf(v, 0)}%</text><text x="${x0 + w / 2}" y="${H - 22}" text-anchor="middle">${f.n}</text><text x="${x0 + w / 2}" y="${H - 6}" text-anchor="middle">${f.l.length} inst.</text>`; });
+  const neg = fx[0].l.sort((a, b) => a.z.roe - b.z.roe);
+  return block(`Distribuição do ROE · ${esc(e.nome)}`, `% do ativo do escopo em cada faixa de ROE · ${esc(PT)}${qAnual()}`, `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Distribuição do ROE">${g}</svg>
+    <p class="lede" style="font-size:.86rem">${ins.length} instituições. ${nf(fx.slice(0, 3).reduce((s_, f) => s_ + f.at, 0) / at * 100, 0)}% do ativo está em instituições com ROE abaixo de 10%.${neg.length ? ` Com prejuízo: ${neg.slice(0, 8).map(o => linkFicha(o.i.id, esc(o.i.curto))).join(", ")}${neg.length > 8 ? ` e mais ${neg.length - 8}` : ""}.` : ""}</p>`,
+    `Barras: participação no ativo médio do escopo; abaixo, o número de instituições. ROE do período sobre o PL médio${qAnual()}. Mesma leitura do REF (gráficos 1.2.3.2 e 1.2.3.3). ${link}`);
+}
+function blocoServicos(e, x, PT, link) {
+  if (!x.sv || x.cart == null) return "";
+  const x0 = qCalc(Q.agg[qs.esc].m, qJanela(-12)), tot = x.v.serv, tot0 = x0?.v?.serv;
+  const var_ = tot0 > 0 ? pct(tot, tot0) : null;
+  const comp = SVC.map(([k, n, c]) => ({ name: n, v: tot ? x.sv[k] / tot * 100 : null, c }));
+  const contr = x0 && tot0 > 0 ? SVC.map(([k, n, c]) => ({ name: n, v: (x.sv[k] - x0.sv[k]) / tot0 * 100, c: (x.sv[k] - x0.sv[k]) < 0 ? "var(--down)" : c })) : null;
+  return block(`Receita de serviços · ${esc(e.nome)}`, `${esc(PT)} · ${brlMi(tot)}${var_ == null ? "" : ` · ${sgn(var_)} contra o mesmo período do ano anterior`}`,
+    `<div><div><div class="eyebrow" style="margin:4px 0">Composição, % da receita de serviços</div>${hbars(comp, { fmt: v => nf(v, 1) + "%", axis: false, L: 230, label: "Composição dos serviços" })}</div>
+     <div><div class="eyebrow" style="margin:4px 0">O que puxou: contribuição para o crescimento, p.p.</div>${contr ? hbars(contr, { fmt: v => sgn(v, 1, ""), axis: false, L: 230, label: "Contribuição para o crescimento" }) : `<p class="empty">Sem o mesmo período do ano anterior: a base começa em jan/25. Escolha "Acumulado no exercício" ou "Mensal" para ver a comparação.</p>`}</div></div>`,
+    `Contribuição = variação de cada grupo de receita sobre a receita de serviços do mesmo período do ano anterior; a soma dá o crescimento total. Tarifas: 7170100 e 7170200. Pagamento: 7170500. Cobrança: 7174. Seguros: 7177500. Fundos, consórcios e investimentos: 7171, 7173500, 7174500, 7176 e 7177. Outros: o restante de 7170 (REF, gráfico 1.2.3.6). ${link}`);
+}
 function renderRes() {
   if (!Q) { $("#filters").innerHTML = ""; $("#view").innerHTML = `<p class="empty">${Qerr ? `Os dados de resultados não carregaram (${esc(Qerr)}). Recarregue a página.` : "Carregando os resultados…"}</p>`; if (!Qerr) carregaRes(); return; }
   cid = 0; filtrosRes();
@@ -1155,6 +1257,8 @@ function renderRes() {
         ${block("Lucro ou sobras por semestre", esc(e.nome), sb + tsChart(roeL, { unit: "%", fmt: v => nf(v, 1), h: 170, label: "ROE 12 meses" }), `ROE em 12 meses (linhas): lucro dos últimos 12 meses sobre o PL médio. Juros ao capital das cooperativas somados de volta ao resultado, como no IF.data. ${link}`)}</div>
       <div class="grid2">${block("De onde vem a receita", `% da receita total · ${esc(PT)}`, stack100(rowsC, REC, { label: "Composição da receita" }), `Tesouraria inclui, nas cooperativas, a remuneração da centralização financeira (ingressos de depósitos intercooperativos). ${link}`)}
         ${block("Para onde vai a receita", `% da receita total · ${esc(PT)}`, stack100(rowsC, DESP, { label: "Despesas e resultado" }), `Provisão líquida de reversões e recuperações de créditos baixados. ${link}`)}</div>
+      ${blocosCredRes(e, x, PT, link)}
+      <div class="grid2">${blocoRoeDist(e, PT, link)}${blocoServicos(e, x, PT, link)}</div>
       ${block("Comparativo de escopos", esc(PT), `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Lucro</th><th class="num">ROE</th><th class="num">ROA</th><th class="num">Eficiência</th><th class="num">Rec. crédito</th><th class="num">Rec. tesour.</th><th class="num">Rec. serviços</th><th class="num">Captação</th><th class="num">Provisão</th><th class="num">Pessoal</th><th class="num">Adm.</th><th class="num">Deprec.</th></tr></thead><tbody>${tab}</tbody></table></div>`, `Receitas e despesas em % da receita total. ${link}`)}
       <section class="block" id="qrank"></section>
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler a aba Resultados</h3></header><div class="methods">
@@ -1529,6 +1633,23 @@ function safraEsc(id) {                    // contratado na safra corrente (Bras
   const c = D?.comp[String(D.meta.safra_atual)]?.[id]?.BR; if (!c) return null;
   const a = sum4(c.a), p = sum4(c.p); return { a, p, v: p ? pct(a, p) : null, q: c.a[4], fin: c.a.slice(0, 4), finP: c.p.slice(0, 4) };
 }
+function blocoShare(co, e, lC) {          // participação de mercado ao longo do tempo (saldo do balancete)
+  const sh = (id, den, k) => (co[id] || []).map(p => { const q = (co[den] || []).find(x => x.d === p.d); return q && q[k] > 0 && p[k] != null ? { d: p.d, v: p[k] / q[k] * 100 } : null; }).filter(Boolean);
+  const coopE = !["sfn", "bancos", "bb", "bradesco", "itau", "caixa", "santander", "digitais", "top5", "coop"].includes(cs.esc);
+  const c = cor(e.cor), mini = (pts, lab) => tsChart([{ name: e.nome, pts, c, w: 3 }], { unit: "%", fmt: v => nf(v, Math.abs(v) < 1 ? 3 : Math.abs(v) < 10 ? 2 : 1), h: 150, label: lab, dots: false });
+  const ids = CMP2.filter(id => id !== "sfn" && co[id]?.length).concat(CMP2.includes(cs.esc) || cs.esc === "sfn" ? [] : [cs.esc]);
+  const lin = (id, den, k) => { const a = sh(id, den, k), l = a[a.length - 1], l12 = l ? a.find(x => x.d === backM(l.d, 12)) : null; return { l, d: l && l12 ? l.v - l12.v : null }; };
+  const rows = ids.map(id => { const x = C.escopos.find(z => z.id === id), t = lin(id, "sfn", "tot"), r = lin(id, "sfn", "rur");
+    const f = (o) => o.l ? `<b>${nf(o.l.v, o.l.v < 1 ? 2 : 1)}%</b><small class="${o.d == null ? "" : o.d > 0.005 ? "up" : o.d < -0.005 ? "down" : "flat"}">${o.d == null ? "" : sgn(o.d, 2, " p.p.")}</small>` : "—";
+    return `<tr${id === cs.esc ? ' style="background:var(--panel)"' : ""}><td><span class="dot" style="background:${cor(x.cor)}"></span>${esc(x.nome)}</td><td class="num">${f(t)}</td><td class="num">${f(r)}</td></tr>`; }).join("");
+  const sfn = cs.esc === "sfn";
+  return `<div class="grid2">${sfn ? "" : block(`Participação de mercado · ${esc(e.nome)}`, "% do saldo · mensal", `<div class="eyebrow" style="margin:2px 0">Na carteira de crédito do SFN</div>${mini(sh(cs.esc, "sfn", "tot"), "Participação na carteira do SFN")}
+      <div class="eyebrow" style="margin:8px 0 2px">Na carteira rural do SFN</div>${mini(sh(cs.esc, "sfn", "rur"), "Participação na carteira rural do SFN")}
+      ${coopE ? `<div class="eyebrow" style="margin:8px 0 2px">Na carteira das cooperativas</div>${mini(sh(cs.esc, "coop", "tot"), "Participação na carteira das cooperativas")}` : ""}`,
+      `Saldo das operações de crédito (conta 1600) e do rural (1630) de ${esc(e.nome)} sobre o do SFN (cooperativas e conglomerados prudenciais). A participação na contratação da safra está na aba Safra. ${lC}`)}
+    ${block("Participação de mercado por escopo", `% do saldo do SFN · ${ym(C.meta.refs.cosif)} · variação em 12 meses abaixo`, `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Carteira total</th><th class="num">Carteira rural</th></tr></thead><tbody>${rows}</tbody></table></div>`,
+      `Mesma base do bloco ao lado. ${lC}`)}</div>`;
+}
 function renderCarteira() {
   if (!precisa(["carteira", "safra"])) { esperando(Cerr ? `Os dados não carregaram (${esc(Cerr)}). Recarregue a página.` : "Carregando a composição da carteira…"); return; }
   cid = 0;
@@ -1565,6 +1686,7 @@ function renderCarteira() {
       ${kp}
       <div class="grid2">${block("Evolução da carteira", `Índice, ${ym(S[0]?.d || l.d)} = 100 · mensal`, tsChart(evL, { fmt: v => nf(v, 0), label: "Carteira indexada" }), `Conta 1600 (operações de crédito) dos balancetes · ${lC}`)}
         ${block("Crescimento da carteira em 12 meses", `${ym(C.meta.refs.cosif)} contra ${ym(C.meta.ant)} · operações de crédito`, divergingBars(gI, { label: "Crescimento por escopo" }), `Conta 1600 dos balancetes. ${lC}`)}</div>
+      ${blocoShare(co, e, lC)}
       ${block("Composição da carteira", `% das operações de crédito · ${ym(C.meta.refs.cosif)}`, stack100(rows, PARTS, { label: "Composição da carteira" }), `Contas 1610, 1620, 1630 e 1640 sobre 1600 · ${lC}`)}
       ${block(`Maiores carteiras · ${esc(e.nome)}`, `${ym(C.meta.refs.cosif)} · ${inst.length} instituições · crescimento e composição`, `<div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th class="num">% do grupo</th><th class="num">12 meses</th><th class="num">Empr.</th><th class="num">Financ.</th><th class="num">Rural</th><th class="num">Imob.</th></tr></thead><tbody>${instRows}</tbody></table></div>`, `As 15 maiores. Ranking completo na aba Rankings; o grupo somado, na Ficha (grupo combinado). ${lC}`)}`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }

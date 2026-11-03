@@ -143,8 +143,12 @@ TRIB = ["8176900005", "8192500001", "8193000005", "8193300004", "7940000008", "8
 CONTAS = ["7000000003", "8000000002", "7110000003", "7120000000", "7160000008", "7140000004", "7150000001", "7198600009",
           "8150000000", "8198600008", "7170000005", "7180000002", "7190000009", "7300000002", "7199200006", "7192000007",
           "8110000002", "8120000009", "8130000006", "8199200005", "8170000004", "8180000001", "8195600001",
-          "1000000009", "2000000008", "6000000004"] + PESSOAL + TRIB
-SALDO = {"1000000009", "2000000008", "6000000004"}
+          "1000000009", "2000000008", "6000000004", "1600000007"] + PESSOAL + TRIB
+SALDO = {"1000000009", "2000000008", "6000000004", "1600000007"}
+# receita de serviços por grupo de conta (o resto de 7170 vira "outros serviços" na página)
+SERV = {"s_tar": ["7170100008", "7170200001"], "s_pag": ["7170500000"], "s_cob": ["7174000001"], "s_seg": ["7177500003"],
+        "s_inv": ["7171000004", "7173500007", "7174500006", "7176000009", "7176100002", "7177000008", "7177100001", "7177200004"]}
+CONTAS += [k for l in SERV.values() for k in l]
 # câmbio, valor justo, hedge, venda de ativos financeiros e aplicações no exterior: entram líquidos na tesouraria
 TES_R = ["7199100003", "7199300009", "7199400002", "7191600006", "7191500003", "7194000005", "7191700009"]
 TES_D = ["8199100002", "8199300008", "8199400001", "8191600005", "8191500002"]
@@ -170,7 +174,8 @@ def blocos(v):
     tes_neg = 0 if tes >= 0 else -tes
     outras_d = rec - capt - prov - pess - adm - depr - trib - lucro - (0 if tes >= 0 else -tes) - (0 if out_r >= 0 else -out_r)
     return {"cred": cred, "tes": tes, "serv": serv, "out_r": out_r, "rec": rec, "capt": capt, "prov": prov, "pess": pess,
-            "adm": adm, "depr": depr, "trib": trib, "out_d": outras_d, "lucro": lucro}
+            "adm": adm, "depr": depr, "trib": trib, "out_d": outras_d, "lucro": lucro,
+            "recup": g("7192000007"), **{k: sum(g(c) for c in l) for k, l in SERV.items()}}
 
 
 def ler_mes(am):
@@ -253,11 +258,13 @@ def serie_para(chaves):
     fl = {am: soma(fluxo(k, am) for k in chaves) for am in LISTA}
     sal = {am: soma({kk: YTD[am].get(k, {}).get(kk, 0.0) for kk in SALDO} for k in chaves) for am in LISTA}
     MM = ("cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro")
+    MX = ("recup",) + tuple(SERV)
     for am in LISTA:
         b = blocos(fl[am])
         mens.append({"d": am[:4] + "-" + am[4:], "lucro": r(b["lucro"] / 1e6, 1)})
         # blocos do mês (R$ mi) + PL e ativo do fim do mês: a página monta 12 meses, exercício ou mês a partir daqui
-        mm.append([r(b[k] / 1e6, 4) for k in MM] + [r(sal[am]["6000000004"] / 1e6, 3), r((sal[am]["1000000009"] + sal[am]["2000000008"]) / 1e6, 3)])
+        mm.append([r(b[k] / 1e6, 4) for k in MM] + [r(sal[am]["6000000004"] / 1e6, 3), r((sal[am]["1000000009"] + sal[am]["2000000008"]) / 1e6, 3),
+                   r(sal[am]["1600000007"] / 1e6, 3)] + [r(b[k] / 1e6, 4) for k in MX])
     for am in FIM12:
         i = LISTA.index(am); jan = LISTA[i - 11:i + 1]
         f12 = soma(fl[m] for m in jan)
@@ -290,7 +297,7 @@ for e, *_ in ESCOPOS + [("top5",)]:      # top5: recorte extra da ficha de grupo
     agg[e] = {"r12": o12, "sem": sem, "mens": mens, "m": mm, "n": len(membros[e])}
 
 novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("meta", {}).get("ref") == ref else HOJE.isoformat()
-out = {"meta": {"ref": ref, "meses": [m[:4] + "-" + m[4:] for m in LISTA], "m_campos": ["cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro", "pl", "at"], "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
+out = {"meta": {"ref": ref, "meses": [m[:4] + "-" + m[4:] for m in LISTA], "m_campos": ["cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro", "pl", "at", "cart", "recup"] + list(SERV), "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
                 "fonte": "Banco Central — balancetes Cosif (cooperativas, doc. 4010; conglomerados prudenciais, doc. 4060)",
                 "url": "https://www.bcb.gov.br/estabilidadefinanceira/balancetesbalancospatrimoniais"},
        "escopos": [{"id": a, "nome": b, "cor": c, "grupo": d} for a, b, c, d in ESCOPOS], "agg": agg, "inst": inst}
