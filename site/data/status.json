@@ -1,18 +1,24 @@
 {
- "verificado_em": "2026-11-03T15:59:33+00:00",
+ "verificado_em": "2026-11-03T17:09:48+00:00",
  "forcado": true,
- "segundos": 631,
+ "segundos": 932,
  "bases": {
   "safra": {
-   "segundos": 171,
-   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "segundos": 486,
+   "saida": "{\"territorio\": \"2026-09-30\", \"cobertura\": 47.5, \"municipios\": 810, \"instituicoes\": 191, \"kb\": 757, \"s\": 296}",
    "situacao": "sem mudança",
    "ref": "2026-09-30"
   },
+  "territorio": {
+   "segundos": 0,
+   "saida": "gerado por atualiza_sicor.py",
+   "situacao": "reprovado",
+   "motivo": "AssertionError: cobertura do município nas operações de MG (%) = 47.5, fora da faixa 90 a 100.01"
+  },
   "risco": {
-   "segundos": 246,
-   "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 629}",
-   "situacao": "sem mudança",
+   "segundos": 210,
+   "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 827}",
+   "situacao": "atualizado",
    "ref": {
     "scr": "2026-08",
     "cosif": "2026-06",
@@ -20,25 +26,31 @@
    }
   },
   "posicao": {
-   "segundos": 169,
+   "segundos": 153,
    "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 868, \"kb\": 1497}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 16,
-   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 834, \"kb\": 2150}",
-   "situacao": "sem mudança",
+   "segundos": 18,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 834, \"kb\": 2781}",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 29,
-   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 387}",
-   "situacao": "sem mudança",
+   "segundos": 52,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 414}",
+   "situacao": "atualizado",
    "ref": {
     "sgs": "2026-09",
     "cosif": "2026-06"
    }
+  },
+  "focus": {
+   "segundos": 11,
+   "saida": "{\"focus\": \"2026-10-30\", \"kb\": 24}",
+   "situacao": "sem mudança",
+   "ref": "2026-10-30"
   }
  },
  "ultima_atualizacao": "2026-11-03"
