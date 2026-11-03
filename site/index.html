@@ -74,6 +74,15 @@ nav.tabs .wrap::-webkit-scrollbar { display: none; }
 @media (max-width: 700px) { .qtab .qinst { min-width: 120px; max-width: 140px; } .qtab .qinst .inst-name small { display: none; } }
 .qtab tr td.cmpG, .qlegenda i.cmpG { background: rgba(27, 122, 62, 0.11); }
 .qtab tr td.cmpR, .qlegenda i.cmpR { background: rgba(180, 35, 24, 0.10); }
+.dsq { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 14px 22px; margin: 6px 0 4px; }
+.dsq-it { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; align-items: center; }
+.dsq-it svg { width: 92px; height: 92px; }
+.dsq-it h4 { margin: 0 0 2px; font-size: 0.86rem; letter-spacing: 0.02em; }
+.dsq-it p { margin: 0; font-size: 0.76rem; color: var(--muted); line-height: 1.35; }
+.dsq-it details { margin-top: 4px; font-size: 0.76rem; } .dsq-it summary { cursor: pointer; color: var(--accent-ink); }
+.dsq-sub { margin: 16px 0 6px; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.dsq-res { border-top: 1px solid var(--line); margin-top: 14px; padding-top: 12px; }
+.dsq-res .big { font-size: 1.35rem; font-weight: 650; }
 .qlegenda { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; font-size: 0.78rem; color: var(--muted); }
 .qlegenda i { display: inline-block; width: 14px; height: 14px; border-radius: 3px; vertical-align: -2px; margin-right: 4px; }
 .qtab tr.qbase td:not(.cmpG):not(.cmpR), .qtab tr.qbase .qinst { background: #eef0f1; font-weight: 600; }
@@ -1942,6 +1951,43 @@ function renderQuadro() {
   $("#view").innerHTML = `<div id="qdview"></div>`;
   renderQuadroTab();
 }
+// Quantas instituições do grupo estão piores que a base de comparação, indicador a indicador
+const DSQ = [["Risco", [["inad", "Inadimplência > 90 dias", "acima da referência", "Saldo das operações com atraso acima de 90 dias sobre a carteira."],
+    ["ap", "Ativos problemáticos (estágio 3)", "acima da referência", "Operações em atraso acima de 90 dias, reestruturadas ou com sinal de que não serão honradas sem uso de garantias."],
+    ["cob", "Cobertura", "abaixo da referência", "Perda esperada das operações de crédito sobre os ativos problemáticos."]]],
+  ["Resultado", [["roe", "ROE", "abaixo da referência", "Lucro ou sobras do período, anualizado, sobre o patrimônio líquido."],
+    ["roa", "ROA", "abaixo da referência", "Lucro ou sobras do período, anualizado, sobre o ativo total."],
+    ["efic", "Eficiência", "acima da referência", "Despesas de pessoal e administrativas sobre as receitas. Quanto maior, pior."]]]];
+function donut(pc, txt) {
+  const r = 38, C = 2 * Math.PI * r, f = Math.max(0, Math.min(100, pc || 0)) / 100;
+  const c = pc == null ? "var(--line)" : pc >= 50 ? "var(--down)" : pc >= 30 ? "var(--warn-ink)" : "var(--accent)";
+  return `<svg viewBox="0 0 92 92" role="img" aria-label="${esc(txt)}"><circle cx="46" cy="46" r="${r}" fill="none" stroke="var(--line)" stroke-width="9"/>
+    <circle cx="46" cy="46" r="${r}" fill="none" stroke="${c}" stroke-width="9" stroke-linecap="round" stroke-dasharray="${(C * f).toFixed(1)} ${C.toFixed(1)}" transform="rotate(-90 46 46)"/>
+    <text x="46" y="52" text-anchor="middle" style="font-size:19px;font-weight:650;fill:var(--ink)">${pc == null ? "—" : nf(pc, 0) + "%"}</text></svg>`;
+}
+function blocoDesenq(list, t, B, bk) {
+  if (!B || !list.length) return "";
+  const pior = (id, v) => { const m = QCOL.find(c => c[0] === id)[3], y = B[id]; return v != null && y != null && (m === "baixo" ? v > y : v < y); };
+  const nomes = (l) => l.map(i => linkFicha(i.id, esc(i.curto))).join(", ");
+  const lin = DSQ.map(([g, its]) => `<div class="dsq-sub">${g}</div><div class="dsq">${its.map(([id, n, lado, desc]) => {
+    const com = list.filter(i => i.s[t][id] != null), pi = com.filter(i => pior(id, i.s[t][id])).sort((a, b) => (b.s[t].cart || 0) - (a.s[t].cart || 0));
+    const pc = com.length ? pi.length / com.length * 100 : null;
+    return `<div class="dsq-it">${donut(pc, n)}<div><h4>${esc(n)}</h4><p><b>${pi.length} de ${com.length}</b> ${lado} (${pFmt(id, B[id])}).</p><p>${esc(desc)}</p>
+      ${pi.length ? `<details><summary>Ver instituições</summary>${nomes(pi)}</details>` : ""}</div></div>`; }).join("")}</div>`).join("");
+  // piores em todos os indicadores de risco; quem concentra metade dos ativos problemáticos
+  const RISCO = DSQ[0][1].map(x => x[0]);
+  const todos = list.filter(i => RISCO.every(id => pior(id, i.s[t][id])));
+  const comAp = list.filter(i => i.s[t].ap != null && i.s[t].cart != null).map(i => ({ i, v: i.s[t].ap / 100 * i.s[t].cart })).sort((a, b) => b.v - a.v);
+  const totAp = comAp.reduce((x, y) => x + y.v, 0); let ac = 0; const conc = [];
+  for (const x of comAp) { if (ac >= totAp * 0.5) break; conc.push(x.i); ac += x.v; }
+  const cs = new Set(conc.map(i => i.id)), noConc = todos.filter(i => cs.has(i.id));
+  const res = `<div class="dsq-res"><span class="big">${todos.length} ${todos.length === 1 ? "instituição pior" : "instituições piores"} que ${esc(QNOME[bk])} nos três indicadores de risco.</span>
+    <p class="lede" style="margin:4px 0 0">${todos.length ? `${nomes(todos)}. ` : ""}${conc.length ? `${conc.length} ${conc.length === 1 ? "instituição concentra" : "instituições concentram"} ${nf(ac / totAp * 100, 0)}% dos ativos problemáticos do grupo em reais${todos.length ? `; ${noConc.length} ${noConc.length === 1 ? "delas está" : "delas estão"} nessa lista` : ""}.` : ""}</p>
+    ${conc.length ? `<details style="font-size:0.8rem;margin-top:4px"><summary>Ver as ${conc.length} que concentram os ativos problemáticos</summary>${nomes(conc)}</details>` : ""}</div>`;
+  return block(`Quantas estão piores que ${esc(QNOME[bk])}`, `${esc(QNOME[qd.grp])} · ${list.length} instituições · ${ym(t)} · % das instituições com dado`,
+    lin + res,
+    `Referência: indicador combinado de ${esc(QNOME[bk])} (soma dos numeradores sobre soma dos denominadores), escolhido em "Comparar com". Não é média simples nem limite normativo. Ativos problemáticos em reais = percentual × carteira. Basileia, IPROV e rural ficam fora, porque estar abaixo ou acima do agregado não indica, por si, posição pior. IF.data ${ym(t)}.`);
+}
 function renderQuadroTab() {
   const el = $("#qdview"); if (!el) return;
   try {
@@ -1964,6 +2010,7 @@ function renderQuadroTab() {
         ${shown.map((i, k) => linha(nomeI(i), i.s[t], t12 ? i.s[t12] : null, "", k + 1)).join("") || `<tr><td colspan="${QC().length + 2}" class="empty">Nenhuma instituição encontrada.</td></tr>`}
       </tbody></table></div>
       ${list.length > 50 && !qd.busca ? `<button class="linkbtn" id="qdmore" type="button">${qd.all ? "Mostrar só as 50 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
+      ${qd.busca ? "" : blocoDesenq(list, t, B, bk)}
       <section class="block"><header><div class="eyebrow">Fontes e método</div><h3>Como ler o quadro</h3></header><div class="methods">
         <p><b>Bases.</b> IF.data (trimestral, ${ym(t)}): ativo total, carteira, captações, patrimônio líquido, inadimplência, ativos problemáticos, IPROV (perda esperada sobre a carteira bruta), cobertura, Basileia, lucro do período, ROE e ROA anualizados e eficiência. Balancetes Cosif (${ym(t)}): rural na carteira. Ativos problemáticos são a medida do estágio 3; os estágios do Cosif não separam o crédito dos demais ativos financeiros e ficaram fora. Valores em R$ bi, exceto lucro em R$ mi. Lucro de junho e dezembro é do semestre; de março e setembro, do trimestre.</p>
         <p><b>Variação.</b> Valores em reais: variação percentual contra ${t12 ? ym(t12) : "o mesmo trimestre do ano anterior"}. Indicadores em %: diferença em pontos percentuais. Mudanças menores que 0,5% ou 0,05 p.p. aparecem como "=".</p>
