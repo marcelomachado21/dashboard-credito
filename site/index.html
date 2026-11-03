@@ -633,7 +633,7 @@ function renderSafra() {
 
 /* ===================== Aba Qualidade e risco ===================== */
 let R = null, Rerr = "";
-const rs = { esc: "coop", geo: "BR", corte: "total", ord: "e3", all: false, busca: "" };
+const rs = { esc: "coop", geo: "BR", corte: "total", ord: "ap", all: false, busca: "" };
 const CORTES_R = [["total", "Total"], ["PF", "Pessoa física"], ["PJ", "Pessoa jurídica"], ["rural", "Rural"], ["rural_PF", "Rural PF"]];
 const GR_R = [["agregado", "Agregados"], ["conglomerado", "Conglomerados"], ["sistema", "Cooperativas por sistema"], ["mg", "Minas"], ["banco", "Bancos"]];
 const rEsc = (id) => R.escopos.find(e => e.id === id);
@@ -679,22 +679,6 @@ function tsChart(lines, o = {}) {
   }, 0);
   return `<svg class="chart" id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "série")}">${g}</svg><div class="readout" id="${id}r">Passe o dedo ou o mouse no gráfico para ver os valores.</div>`;
 }
-function stackStages(pts, o = {}) {                 // barras empilhadas: estágio 2 e 3 (e simplificada problemática)
-  const W = 640, H = o.h || 210, L = 46, R2 = 12, T = 12, B = 26;
-  const tot = pts.map(p => (p.e2 || 0) + (p.e3 || 0) + (p.sp || 0));
-  const tk = ticks(0, Math.max(...tot, 1)), mx = tk[tk.length - 1];
-  const Y = (v) => T + (H - T - B) * (1 - v / mx), bw = Math.min(26, (W - L - R2) / pts.length - 6);
-  const cs = [["e2", "var(--warn-ink)", "Estágio 2"], ["e3", "var(--down)", "Estágio 3"], ["sp", "var(--grafite-2)", "Simplificada: problemáticos"]];
-  let g = tk.map(t => `<line class="grid" x1="${L}" x2="${W - R2}" y1="${Y(t)}" y2="${Y(t)}"/><text x="${L - 6}" y="${Y(t) + 4}" text-anchor="end">${nf(t, 0)}%</text>`).join("");
-  pts.forEach((p, i) => {
-    const x = L + i * (W - L - R2) / pts.length + 3; let y0 = Y(0);
-    cs.forEach(([k, c, n]) => { const v = p[k] || 0; if (!v) return; const y1 = Y(0) - (Y(0) - Y(v)); const h = Y(0) - Y(v);
-      g += `<rect x="${x}" y="${y0 - h}" width="${bw}" height="${Math.max(0, h - 1)}" fill="${c}" opacity="0.85"><title>${ym(p.d)} · ${n}: ${nf(v, 2)}%</title></rect>`; y0 -= h; });
-    if (i % Math.max(1, Math.ceil(pts.length / 7)) === (pts.length - 1) % Math.max(1, Math.ceil(pts.length / 7))) g += `<text x="${x + bw / 2}" y="${H - 6}" text-anchor="middle">${ym(p.d)}</text>`;
-  });
-  const l = pts[pts.length - 1];
-  return legend(cs.map(([k, c, n]) => ({ name: n, c, box: true }))) + `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Estágios de risco">${g}</svg>`;
-}
 function scatterLin(pts, o = {}) {
   const W = 640, H = o.h || 300, L = 46, R2 = 18, T = 14, B = 34;
   if (!pts.length) return `<p class="empty">Sem instituições neste recorte.</p>`;
@@ -727,16 +711,13 @@ document.addEventListener("click", (ev) => {
 document.addEventListener("input", (ev) => { if (ev.target.id === "rbusca") { rs.busca = ev.target.value; renderRiscoRank(); } });
 
 function kpisRisco() {
-  const C = R.cosif.serie[rs.esc] || [], cl = lastOf(C), cy = cl ? atD(C, backM(cl.d, 12)) : null, cs0 = lastOf(R.cosif.serie.sfn);
   const F = R.ifd.serie[rs.esc] || [], fl = lastOf(F), fy = fl ? atD(F, backM(fl.d, 12)) : null, fs0 = lastOf(R.ifd.serie.sfn);
   const d = (a, b, k) => a && b && a[k] != null && b[k] != null ? a[k] - b[k] : null, sfn = rs.esc === "sfn";
   const k = (lbl, v, dl, foot, ref, upBad = true) => { const c = dl == null ? "flat" : (dl > 0.005) === upBad ? "down" : dl < -0.005 || dl > 0.005 ? "up" : "flat";
     return `<div class="kpi"><div class="lbl">${lbl}</div><div class="val">${v == null ? "sem dado" : nf(v, 2)}<small>${v == null ? "" : "%"}</small></div><div class="chg ${c}">${dl == null ? "" : `${arrow(dl)}${sgn(dl, 2, " p.p.")} em 12 meses`}</div><div class="src">${sfn || ref == null ? "" : `SFN: ${nf(ref, 2)}% · `}${foot}</div></div>`; };
   return `<div class="kpis">
     ${k("Inadimplência > 90 dias", fl?.inad, d(fl, fy, "inad"), `${fl ? ym(fl.d) : "—"} · IF.data${novoR("ifd") ? ' <span class="badge-new">novo</span>' : ""}`, fs0?.inad)}
-    ${k("Ativos problemáticos", fl?.ap, d(fl, fy, "ap"), `${fl ? ym(fl.d) : "—"} · % da carteira · IF.data`, fs0?.ap)}
-    ${k("Estágio 2", cl?.e2, d(cl, cy, "e2"), `${cl ? ym(cl.d) : "—"} · % dos ativos financeiros · Cosif${novoR("cosif") ? ' <span class="badge-new">novo</span>' : ""}`, cs0?.e2)}
-    ${k("Estágio 3", cl?.e3, d(cl, cy, "e3"), `${cl ? ym(cl.d) : "—"} · Cosif`, cs0?.e3)}
+    ${k("Ativos problemáticos (estágio 3)", fl?.ap, d(fl, fy, "ap"), `${fl ? ym(fl.d) : "—"} · % da carteira · IF.data`, fs0?.ap)}
     ${k("Provisão sobre a carteira", fl?.prov, d(fl, fy, "prov"), `${fl ? ym(fl.d) : "—"} · cobertura ${fl?.cob == null ? "—" : nf(fl.cob, 0) + "%"} · IF.data`, fs0?.prov, false)}
     ${k("Índice de Basileia", fl?.basil, d(fl, fy, "basil"), `${fl ? ym(fl.d) : "—"} · PR / RWA · IF.data`, fs0?.basil, false)}
   </div>`;
@@ -765,27 +746,16 @@ function blocoModal() {
     `<div class="tbl-wrap"><table><thead><tr><th>Modalidade</th><th class="num">Carteira</th><th class="num">Inad. > 90d</th><th></th><th class="num">12 meses</th><th class="num">Atraso 15–90</th><th class="num">Ativo probl.</th></tr></thead><tbody>${rows}</tbody></table></div>`,
     `Modalidades com carteira acima de R$ 0,5 bi. Variação contra ${ym(d0)}. ${linkR("scr")}`);
 }
-function blocoEstagios() {
-  const C = R.cosif.serie[rs.esc] || [], e = rEsc(rs.esc);
-  const lines = ["coop", "bancos", rs.esc].filter((v, i, a) => a.indexOf(v) === i).map(id => ({ name: rEsc(id).nome, pts: (R.cosif.serie[id] || []).map(p => ({ d: p.d, v: p.e3 })), c: cor(rEsc(id).cor), w: id === rs.esc ? 3 : 1.6 }));
-  const cl = lastOf(C);
-  return `<div class="grid2">` +
-    block(`Estágios 2 e 3 · ${esc(e.nome)} ${novoR("cosif") ? '<span class="badge-new">novo</span>' : ""}`, "% dos ativos financeiros sujeitos a risco de crédito · mensal",
-      (C.length ? stackStages(C) : `<p class="empty">Sem dado.</p>`) + (cl && cl.simp > 1 ? `<p class="lede">${nf(cl.simp, 0)}% dos ativos estão em instituições que usam a metodologia simplificada (sem estágios); a parte problemática dela aparece em cinza.</p>` : ""),
-      `Contas 3311 a 3315 do Cosif (Res. CMN 4.966) · ${linkR("cosif")}`) +
-    block("Estágio 3 comparado", "% dos ativos financeiros · mensal", tsChart(lines, { unit: "%", fmt: v => nf(v, 1), label: "Estágio 3" }), linkR("cosif")) +
-  `</div>`;
-}
 function tabelaEscopos() {
-  const ids = R.escopos.map(e => e.id).filter(id => R.cosif.serie[id] || R.ifd.serie[id]);
-  const rows = ids.map(id => { const e = rEsc(id), c = lastOf(R.cosif.serie[id]), f = lastOf(R.ifd.serie[id]), fy = f ? atD(R.ifd.serie[id], backM(f.d, 12)) : null;
+  const ids = R.escopos.map(e => e.id).filter(id => R.ifd.serie[id]);
+  const rows = ids.map(id => { const e = rEsc(id), f = lastOf(R.ifd.serie[id]), fy = f ? atD(R.ifd.serie[id], backM(f.d, 12)) : null;
     const dI = f && fy ? f.inad - fy.inad : null;
     return `<tr${id === rs.esc ? ' style="background:var(--panel)"' : ""}><td><span class="dot" style="background:${cor(e.cor)}"></span>${esc(e.nome)}</td>
       <td class="num">${f ? "R$ " + nf(f.cart, 0) + " bi" : "—"}</td><td class="num"><b>${f ? nf(f.inad, 2) + "%" : "—"}</b><small class="${dI == null ? "" : dI > 0.05 ? "down" : dI < -0.05 ? "up" : ""}">${dI == null ? "" : sgn(dI, 2, " p.p.")}</small></td><td class="num">${f ? nf(f.ap, 2) + "%" : "—"}</td>
-      <td class="num">${c?.e2 == null ? "—" : nf(c.e2, 2) + "%"}</td><td class="num">${c?.e3 == null ? "—" : nf(c.e3, 2) + "%"}</td><td class="num">${f?.prov == null ? "—" : nf(f.prov, 2) + "%"}</td><td class="num">${f?.cob == null ? "—" : nf(f.cob, 0) + "%"}</td><td class="num">${f?.basil == null ? "—" : nf(f.basil, 1) + "%"}</td></tr>`; }).join("");
-  return block("Qualidade da carteira por escopo", `IF.data ${ym(R.ifd.ref)} (carteira, inadimplência, ativo problemático, provisão, cobertura, Basileia) · Cosif ${ym(R.cosif.ref)} (estágios)`,
-    `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Carteira</th><th class="num">Inad. > 90d</th><th class="num">Ativo probl.</th><th class="num">Estágio 2</th><th class="num">Estágio 3</th><th class="num">Provisão / cart.</th><th class="num">Cobertura</th><th class="num">Basileia</th></tr></thead><tbody>${rows}</tbody></table></div>`,
-    `Inadimplência: variação em 12 meses abaixo do valor. Provisão = perda esperada sobre o valor contábil bruto das operações de crédito. Cobertura = perda esperada / ativos problemáticos. Basileia = soma do PR / soma do RWA. ${linkR("ifd")} · ${linkR("cosif")}`);
+      <td class="num">${f?.prov == null ? "—" : nf(f.prov, 2) + "%"}</td><td class="num">${f?.cob == null ? "—" : nf(f.cob, 0) + "%"}</td><td class="num">${f?.basil == null ? "—" : nf(f.basil, 1) + "%"}</td></tr>`; }).join("");
+  return block("Qualidade da carteira por escopo", `IF.data ${ym(R.ifd.ref)} · carteira, inadimplência, ativos problemáticos (estágio 3), provisão, cobertura e Basileia`,
+    `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Carteira</th><th class="num">Inad. > 90d</th><th class="num">Ativo probl. (E3)</th><th class="num">Provisão / cart.</th><th class="num">Cobertura</th><th class="num">Basileia</th></tr></thead><tbody>${rows}</tbody></table></div>`,
+    `Inadimplência: variação em 12 meses abaixo do valor. Provisão = perda esperada sobre o valor contábil bruto das operações de crédito. Cobertura = perda esperada / ativos problemáticos. Basileia = soma do PR / soma do RWA. ${linkR("ifd")}`);
 }
 function blocoIFD() {
   const ids = ["sfn", "coop", "bancos", rs.esc].filter((v, i, a) => a.indexOf(v) === i);
@@ -796,7 +766,7 @@ function blocoIFD() {
   const pts = inst.slice(0, 120).map((i, k) => ({ name: i.curto, x: i.ap, y: Math.min(i.basil, 40), c: i.tipo === "coop" ? cor(rEsc(i.sistema || "outras")?.cor || "#A3ACA8") : instCorR(i), lbl: k < 5 }));
   return `<div class="grid2">` +
     block("Inadimplência acima de 90 dias", "% da carteira · trimestral", tsChart(linesI, { unit: "%", fmt: v => nf(v, 1), dots: true, label: "Inadimplência" }), linkR("ifd")) +
-    block("Ativos problemáticos", "% da carteira · trimestral", tsChart(lines, { unit: "%", fmt: v => nf(v, 1), dots: true, label: "Ativos problemáticos" }), `Inclui inadimplência e operações reestruturadas ou com sinais de deterioração · ${linkR("ifd")}`) +
+    block("Ativos problemáticos (estágio 3)", "% da carteira · trimestral", tsChart(lines, { unit: "%", fmt: v => nf(v, 1), dots: true, label: "Ativos problemáticos" }), `Inclui inadimplência e operações reestruturadas ou com sinais de deterioração. É a medida do estágio 3 do crédito neste painel · ${linkR("ifd")}`) +
   `</div>` +
     block(`Risco e capital · ${esc(rEsc(rs.esc).nome)}`, `Ativo problemático (x) contra Basileia (y), por instituição · ${ym(R.ifd.ref)}`,
       scatterLin(pts, { xlab: "Ativo problemático, % da carteira", xn: "ativo probl.", yn: "Basileia", yref: 10.5, yrefLabel: "mínimo com adicional: 10,5%", label: "Risco e capital" }),
@@ -821,28 +791,29 @@ function renderRiscoRank() {
   let list = juntaInst().filter(i => rs.esc === "sfn" || (i.escopos || []).includes(rs.esc));
   const q = rs.busca.trim().toLowerCase();
   if (q) list = list.filter(i => (i.curto + " " + i.nome + " " + i.id).toLowerCase().includes(q));
-  const key = { e3: "e3", e2: "e2", inad: "inad", ap: "ap", prov: "prov", cob: "cob", basil: "basil", cart: "cart" }[rs.ord];
+  const key = { inad: "inad", ap: "ap", prov: "prov", cob: "cob", basil: "basil", cart: "cart" }[rs.ord];
   list = list.filter(i => (i.cart || i.cartc || 0) >= 0.01).sort((a, b) => ((b[key] ?? -1e9) - (a[key] ?? -1e9)));
   const shown = rs.all || q ? list : list.slice(0, 25);
   const td = (v, d = 2, s = "%") => `<td class="num">${v == null ? "—" : nf(v, d) + s}</td>`;
   const ord = (k, n) => `<button type="button" data-rord="${k}" aria-pressed="${rs.ord === k}">${n}</button>`;
   const ativo = document.activeElement?.id === "rbusca";
-  el.innerHTML = `<header><div class="eyebrow">${esc(rEsc(rs.esc).nome)} · ${list.length} instituições · IF.data ${ym(R.ifd.ref)} e Cosif ${ym(R.cosif.ref)}</div><h3>Instituições por indicador de risco</h3></header>
-    <div class="rank-tools"><div class="fgroup"><span class="flabel">Ordenar por</span><div class="seg">${ord("e3", "Estágio 3")}${ord("e2", "Estágio 2")}${ord("inad", "Inadimplência")}${ord("ap", "Ativo probl.")}${ord("prov", "Provisão")}${ord("cob", "Cobertura")}${ord("basil", "Basileia")}${ord("cart", "Carteira")}</div></div>
+  el.innerHTML = `<header><div class="eyebrow">${esc(rEsc(rs.esc).nome)} · ${list.length} instituições · IF.data ${ym(R.ifd.ref)}</div><h3>Instituições por indicador de risco</h3></header>
+    <div class="rank-tools"><div class="fgroup"><span class="flabel">Ordenar por</span><div class="seg">${ord("ap", "Ativo probl. (E3)")}${ord("inad", "Inadimplência")}${ord("prov", "Provisão")}${ord("cob", "Cobertura")}${ord("basil", "Basileia")}${ord("cart", "Carteira")}</div></div>
     <input id="rbusca" type="search" placeholder="Buscar instituição ou CNPJ" value="${esc(rs.busca)}" aria-label="Buscar instituição"></div>
-    <div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th class="num">Inad. > 90d</th><th class="num">Ativo probl.</th><th class="num">Estágio 2</th><th class="num">Estágio 3</th><th class="num">Provisão / cart.</th><th class="num">Cobertura</th><th class="num">Basileia</th></tr></thead><tbody>
-    ${shown.map(i => `<tr><td><div class="inst-name"><span class="dot" style="background:${i.tipo === "coop" ? cor(rEsc(i.sistema || "outras")?.cor || "#A3ACA8") : instCorR(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}${i.simp > 50 ? `<span class="tag">simplificada</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 60))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
-      <td class="num">${(i.cart ?? i.cartc) >= 1 ? "R$ " + nf(i.cart ?? i.cartc, 1) + " bi" : "R$ " + nf((i.cart ?? i.cartc) * 1000, 0) + " mi"}</td>${td(i.inad)}${td(i.ap)}${td(i.e2)}${td(i.e3)}${td(i.prov)}${td(i.cob, 0)}${td(i.basil, 1)}</tr>`).join("") || `<tr><td colspan="9" class="empty">Nenhuma instituição encontrada.</td></tr>`}
+    <div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th class="num">Inad. > 90d</th><th class="num">Ativo probl. (E3)</th><th class="num">Provisão / cart.</th><th class="num">Cobertura</th><th class="num">Basileia</th></tr></thead><tbody>
+    ${shown.map(i => `<tr><td><div class="inst-name"><span class="dot" style="background:${i.tipo === "coop" ? cor(rEsc(i.sistema || "outras")?.cor || "#A3ACA8") : instCorR(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 60))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
+      <td class="num">${(i.cart ?? i.cartc) >= 1 ? "R$ " + nf(i.cart ?? i.cartc, 1) + " bi" : "R$ " + nf((i.cart ?? i.cartc) * 1000, 0) + " mi"}</td>${td(i.inad)}${td(i.ap)}${td(i.prov)}${td(i.cob, 0)}${td(i.basil, 1)}</tr>`).join("") || `<tr><td colspan="7" class="empty">Nenhuma instituição encontrada.</td></tr>`}
     </tbody></table></div>
     ${list.length > 25 && !q ? `<button class="linkbtn" id="rmore" type="button">${rs.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
-    <div class="meta">Carteira, inadimplência, ativo problemático, provisão, cobertura e Basileia do IF.data (trimestral); estágios dos balancetes Cosif (mensal). "Simplificada": instituição que usa a metodologia simplificada da Res. 4.966, sem classificação em estágios. Bancos aparecem por conglomerado prudencial. ${linkR("ifd")} · ${linkR("cosif")}</div>`;
+    <div class="meta">Carteira, inadimplência, ativos problemáticos (estágio 3), provisão, cobertura e Basileia do IF.data (trimestral). Bancos aparecem por conglomerado prudencial. ${linkR("ifd")}</div>`;
   if (ativo) { const b = $("#rbusca"); b.focus(); b.setSelectionRange(b.value.length, b.value.length); }
 }
 function notasRisco() {
   return `<section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler a aba Qualidade e risco</h3></header><div class="methods">
-    <p><b>Duas bases por instituição.</b> <a href="${esc(R.cosif.url)}" target="_blank" rel="noopener">Balancetes Cosif</a> (mensal, até ${ym(R.cosif.ref)}): estágios 1, 2 e 3, provisão e carteira por cooperativa e por conglomerado prudencial. <a href="${esc(R.ifd.url)}" target="_blank" rel="noopener">IF.data</a> (trimestral, até ${ym(R.ifd.ref)}): inadimplência, ativos problemáticos, provisão e Basileia por instituição.</p>
-    <p><b>Atraso de 15 a 90 dias</b> só existe por segmento (SFN, bancos, cooperativas) no SCR.data, por isso está na aba Visão geral do SFN. Aqui, estágio 2 e ativos problemáticos fazem o papel de sinal antecedente.</p>
-    <p><b>Estágios.</b> Percentual dos ativos financeiros sujeitos a risco de crédito (contas de compensação 3311 a 3315), que inclui títulos e aplicações além do crédito. Instituições na metodologia simplificada (em geral cooperativas S4 e S5) não classificam em estágios; aparecem como "não problemáticos" e "problemáticos". Provisão e cobertura vêm do IF.data (relatório 2): perda esperada das operações de crédito sobre o valor contábil bruto, e perda esperada sobre ativos problemáticos. Os balancetes abertos do Cosif não trazem a provisão das operações de crédito separada.</p>
+    <p><b>Base por instituição.</b> <a href="${esc(R.ifd.url)}" target="_blank" rel="noopener">IF.data</a> (trimestral, até ${ym(R.ifd.ref)}): inadimplência, ativos problemáticos, provisão, cobertura e Basileia.</p>
+    <p><b>Estágio 3 = ativos problemáticos.</b> Pela Res. CMN 4.966, o ativo problemático é o que vai para o estágio 3. O painel usa o indicador de ativos problemáticos da carteira de crédito do IF.data como medida do estágio 3. Os estágios 1, 2 e 3 dos balancetes Cosif (contas 3311 a 3315) ficaram fora: classificam todos os ativos financeiros (crédito, títulos, aplicações e centralização financeira) sem separar o crédito, e por isso não medem a carteira. Pelo mesmo motivo, o painel não mostra estágio 2.</p>
+    <p><b>Atraso de 15 a 90 dias</b> só existe por segmento (SFN, bancos, cooperativas) no SCR.data, por isso está na aba Visão geral do SFN.</p>
+    <p><b>Provisão e cobertura</b> vêm do IF.data (relatório 2): perda esperada das operações de crédito sobre o valor contábil bruto, e perda esperada sobre ativos problemáticos.</p>
     <p><b>Escopos.</b> Cooperativas = singulares; centrais ficam fora das somas, porque o crédito delas é repasse às singulares. Conglomerado Sicoob e Sicredi = singulares do sistema + banco cooperativo (conglomerado prudencial). Bancos = conglomerados prudenciais. Cooperativas incorporadas entram na incorporadora em todo o histórico.</p>
     <p><b>Basileia</b> do escopo = soma do patrimônio de referência dividida pela soma dos ativos ponderados pelo risco. Linha de 10,5% = mínimo de 8% mais o adicional de conservação de 2,5%; cooperativas no regime prudencial simplificado têm exigências próprias.</p>
   </div></section>`;
@@ -850,12 +821,12 @@ function notasRisco() {
 function renderRisco() {
   if (!R) { $("#filters").innerHTML = ""; $("#view").innerHTML = `<p class="empty">${Rerr ? `Os dados de risco não carregaram (${esc(Rerr)}). Recarregue a página.` : "Carregando os dados de qualidade e risco…"}</p>`; if (!Rerr) carregaRisco(); return; }
   cid = 0; filtrosRisco();
-  $("#stamp").textContent = `IF.data ${ym(R.ifd.ref)} · Cosif ${ym(R.cosif.ref)} · atualizado em ${dmy(R.meta.atualizado)}`;
+  $("#stamp").textContent = `IF.data ${ym(R.ifd.ref)} · atualizado em ${dmy(R.meta.atualizado)}`;
   try {
-    $("#view").innerHTML = `<div><div class="eyebrow">IF.data ${ym(R.ifd.ref)} · Cosif ${ym(R.cosif.ref)}</div>
+    $("#view").innerHTML = `<div><div class="eyebrow">IF.data ${ym(R.ifd.ref)}</div>
       <h2>Qualidade e risco da carteira · ${esc(rEsc(rs.esc).nome)}</h2>
-      <p class="lede">Inadimplência, ativos problemáticos, estágios da Res. CMN 4.966, provisão, cobertura e Basileia de ${esc(rEsc(rs.esc).nome)}, com o SFN como referência. O atraso de 15 a 90 dias e a inadimplência por modalidade só existem por segmento e estão na <a href="#visao">Visão geral do SFN</a>.</p></div>
-      ${kpisRisco()}${blocoIFD()}${blocoEstagios()}${rankingRisco()}${notasRisco()}`;
+      <p class="lede">Inadimplência, ativos problemáticos (estágio 3 da Res. CMN 4.966), provisão, cobertura e Basileia de ${esc(rEsc(rs.esc).nome)}, com o SFN como referência. O atraso de 15 a 90 dias e a inadimplência por modalidade só existem por segmento e estão na <a href="#visao">Visão geral do SFN</a>.</p></div>
+      ${kpisRisco()}${blocoIFD()}${rankingRisco()}${notasRisco()}`;
     renderRiscoRank();
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
@@ -873,7 +844,7 @@ const ps = { uni: "crediminas", x: "cresc", y: "ap", tri: "", dest: "", modo: "i
 const UNIS = [["crediminas", "Filiadas Crediminas"], ["cecremge", "Filiadas Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"],
   ["sicoob", "Sicoob"], ["sicredi", "Sicredi"], ["cresol", "Cresol"], ["coop", "Todas as cooperativas"], ["bancos", "Bancos (conglomerados)"], ["top5d", "5 maiores e digitais"]];
 const PRESETS = [["Crescimento × risco", "cresc", "ap"], ["Rentabilidade × risco", "ap", "roe"], ["Capital × risco", "ap", "basil"],
-  ["Eficiência × rentabilidade", "efic", "roe"], ["Rural × inadimplência", "rural", "inad"], ["Estágio 2 × estágio 3", "e2", "e3"], ["Provisão × cobertura", "prov", "cob"]];
+  ["Eficiência × rentabilidade", "efic", "roe"], ["Rural × inadimplência", "rural", "inad"], ["Provisão × cobertura", "prov", "cob"]];
 const pm = (id) => P.metricas.find(m => m.id === id);
 const pTri = () => ps.tri && P.meta.trimestres.includes(ps.tri) ? ps.tri : P.meta.trimestres[P.meta.trimestres.length - 1];
 const noUni = (i) => ps.uni === "top5d" ? i.escopos.some(e => e === "top5" || e === "digitais") : i.escopos.includes(ps.uni);
@@ -992,17 +963,23 @@ function renderPos() {
       <div class="grid2">${destI && destI.s[t] ? fichaRapida(destI, uni.length ? uni : [destI], t) : block("Ficha rápida", "Escolha uma instituição", `<p class="empty">Clique num círculo ou use o campo Destacar para ver a posição da instituição em todos os indicadores.</p>`)}
       ${block("Instituições do grupo", `${ym(t)} · ordenadas pela carteira`, `<div class="tbl-wrap" style="max-height:560px;overflow-y:auto"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th class="num">${esc(xm.nome)}</th><th class="num">${esc(ymm.nome)}</th><th>Quadrante</th></tr></thead><tbody>${rows}</tbody></table></div>`)}</div>
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler o mapa</h3></header><div class="methods">
-        <p><b>Bases.</b> IF.data (trimestral): carteira, inadimplência, ativos problemáticos, provisão, cobertura, Basileia, lucro, patrimônio líquido, ativo, captações, receitas e despesas. Balancetes Cosif do último mês do trimestre: estágios e participação do crédito rural. Cooperativas são singulares; bancos, conglomerados prudenciais. Cooperativas incorporadas entram na incorporadora em todos os trimestres.</p>
+        <p><b>Bases.</b> IF.data (trimestral): carteira, inadimplência, ativos problemáticos (estágio 3), provisão, cobertura, Basileia, lucro, patrimônio líquido, ativo, captações, receitas e despesas. Balancetes Cosif do último mês do trimestre: participação do crédito rural. Cooperativas são singulares; bancos, conglomerados prudenciais. Cooperativas incorporadas entram na incorporadora em todos os trimestres.</p>
         <p><b>Indicadores.</b> ${P.metricas.map(m => `<b>${esc(m.nome)}</b>: ${esc(m.desc)}`).join(" ")}</p>
         <p><b>Lucro.</b> Em junho e dezembro o IF.data traz o resultado do semestre; em março e setembro, do trimestre. ROE e ROA são anualizados a partir desse período. Cooperativas apuram sobras; o indicador usa o resultado líquido informado.</p>
-        <p><b>Quadrantes.</b> Definidos pela mediana do grupo escolhido. "Melhor" segue a direção de cada indicador: crescimento, cobertura, Basileia, ROE e ROA, quanto maior melhor; inadimplência, ativos problemáticos, estágios e eficiência, quanto menor melhor.</p>
+        <p><b>Quadrantes.</b> Definidos pela mediana do grupo escolhido. "Melhor" segue a direção de cada indicador: crescimento, cobertura, Basileia, ROE e ROA, quanto maior melhor; inadimplência, ativos problemáticos e eficiência, quanto menor melhor.</p>
       </div></section>`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
+}
+// Estágios do Cosif ficam fora do painel (não separam crédito de títulos); ativo problemático = estágio 3.
+function semEstagios(d) {
+  d.metricas = d.metricas.filter(m => m.id !== "e2" && m.id !== "e3");
+  const ap = d.metricas.find(m => m.id === "ap"); if (ap) ap.nome = "Ativos problemáticos (estágio 3)";
+  return d;
 }
 let carregandoP = false;
 function carregaPos() {
   if (carregandoP) return; carregandoP = true;
-  carregar("posicao").then(d => { P = d; render(); }).catch(e => { Perr = e.message; render(); });
+  carregar("posicao").then(d => { P = semEstagios(d); render(); }).catch(e => { Perr = e.message; render(); });
 }
 
 /* ===================== Aba Resultados ===================== */
@@ -1271,14 +1248,14 @@ function renderFicha() {
     const res = Q.inst.find(x => x.id === i.id), cos = R.cosif.inst.find(x => x.id === i.id), sf = safraDaInst(i);
     const kv = (lbl, id, fmtv, sub) => { const m = pm(id), arr = uni.map(u => u.s[t]?.[id]), v = s[id], pc = m && m.melhor !== "neutro" ? pctl(arr, v, m.melhor) : null;
       const col = pc == null ? "flat" : pc >= 66 ? "up" : pc <= 33 ? "down" : "flat";
-      return `<div class="kpi"><div class="lbl">${lbl}</div><div class="val">${fmtv ?? pFmt(id, v).replace("%", "")}<small>${id === "cart" || fmtv ? "" : "%"}</small></div><div class="chg ${col}">${pc == null ? (sub || "") : `percentil ${nf(pc, 0)} · mediana ${pFmt(id, median(arr))}`}</div><div class="src">${ym(t)} · ${id === "e2" || id === "e3" || id === "rural" ? "Cosif" : "IF.data"}</div></div>`; };
+      return `<div class="kpi"><div class="lbl">${lbl}</div><div class="val">${fmtv ?? pFmt(id, v).replace("%", "")}<small>${id === "cart" || fmtv ? "" : "%"}</small></div><div class="chg ${col}">${pc == null ? (sub || "") : `percentil ${nf(pc, 0)} · mediana ${pFmt(id, median(arr))}`}</div><div class="src">${ym(t)} · ${id === "rural" ? "Cosif" : "IF.data"}</div></div>`; };
     const r12 = res ? qInstPer(res) : null;
     const kp = `<div class="kpis">
       ${kv("Carteira de crédito", "cart", pFmt("cart", s.cart), s.cresc == null ? "" : `${sgn(s.cresc)} em 12 meses`)}
       ${kv("Crescimento 12 meses", "cresc")}
       ${kv("Inadimplência > 90 dias", "inad")}
-      ${kv("Ativos problemáticos", "ap")}
-      ${kv("Estágio 3", "e3")}
+      ${kv("Ativos problemáticos (estágio 3)", "ap")}
+      ${kv("Provisão sobre a carteira", "prov")}
       ${kv("Basileia", "basil")}
       ${kv("ROE do semestre, anualizado", "roe")}
       ${kv("Eficiência", "efic")}
@@ -1314,15 +1291,7 @@ function renderFicha() {
         ${block("Receita e despesa contra o grupo", `% da receita total · ${esc(peerNome)} = agregado`, stack100([{ name: i.curto, v: r12, sel: true }].concat(qg ? [{ name: peerNome, v: qg }] : []), REC, { label: "Receita" }) + stack100([{ name: i.curto, v: r12, sel: true }].concat(qg ? [{ name: peerNome, v: qg }] : []), DESP, { label: "Despesa" }) + `<h3 style="margin-top:8px">Lucro ou sobras por semestre</h3>` + sb,
           `ROE (${esc(PT)}${qAnual()}) sobre o PL médio ${nf(r12.roe, 1)}% (grupo ${nf(qg?.roe, 1)}%); difere do ROE do semestre anualizado do IF.data, no topo, porque cobre outro período · ROA ${nf(r12.roa, 2)}% · eficiência ${nf(r12.efic, 1)}% (grupo ${nf(qg?.efic, 1)}%). Balancetes Cosif.`)}</div>`;
     }
-    // risco: estágios
     let riscoB = "";
-    if (cos) riscoB = block("Estágios de risco", `% dos ativos financeiros · ${ym(R.cosif.ref)}`, `<div class="pair">
-        <div><span class="eyebrow">Estágio 1</span><span class="big">${cos.e1 == null ? "—" : nf(cos.e1, 1) + "%"}</span></div>
-        <div><span class="eyebrow">Estágio 2</span><span class="big">${cos.e2 == null ? "—" : nf(cos.e2, 1) + "%"}</span></div>
-        <div><span class="eyebrow">Estágio 3</span><span class="big">${cos.e3 == null ? "—" : nf(cos.e3, 1) + "%"}</span></div>
-        <div><span class="eyebrow">Provisão / carteira</span><span class="big">${pFmt("prov", s.prov)}</span></div>
-        <div><span class="eyebrow">Cobertura</span><span class="big">${pFmt("cob", s.cob)}</span></div></div>${cos.simp > 50 ? `<p class="lede">Usa a metodologia simplificada da Res. 4.966: ${nf(cos.simp, 0)}% dos ativos sem classificação em estágios.</p>` : ""}`,
-      `Estágios: balancete Cosif (contas 3311 a 3315). Provisão e cobertura: IF.data ${ym(P.meta.ref)}.`);
     // safra
     let safraB = "";
     if (sf) {
@@ -1370,7 +1339,7 @@ const gMembros = (g) => P.inst.filter(i => g === "sfn" || i.escopos.includes(g))
 const gPeer = () => fsel.gpeer && fsel.gpeer !== fsel.grupo && FGRUPOS.some(x => x[0] === fsel.gpeer) ? fsel.gpeer : GPEER[fsel.grupo];
 const G_PARTS = [["p_emp", "Empréstimos", "#2B6F8A"], ["p_fin", "Financiamentos", "#7A9CB0"], ["p_rur", "Rural", "#4E8A3E"], ["p_imo", "Imobiliário", "#C08A2E"], ["p_out", "Outros", "#B9BFC4"]];
 const G_FONTES = [["f_livres", "Recursos livres", "#7A9CB0"], ["f_avista", "Exigibilidade à vista", "#2B6F8A"], ["f_poup", "Poupança rural", "#4E8A3E"], ["f_lca", "LCA", "#C08A2E"], ["f_pub", "Fontes públicas", "#8C4A3A"]];
-const G_ORD = [["cart", "Carteira"], ["cresc", "Crescimento"], ["inad", "Inadimplência"], ["ap", "Ativos problemáticos"], ["e3", "Estágio 3"], ["basil", "Basileia"], ["roe", "ROE"], ["lucro12", "Lucro 12 meses"], ["safra", "Safra"]];
+const G_ORD = [["cart", "Carteira"], ["cresc", "Crescimento"], ["inad", "Inadimplência"], ["ap", "Ativos problemáticos (E3)"], ["basil", "Basileia"], ["roe", "ROE"], ["lucro12", "Lucro 12 meses"], ["safra", "Safra"]];
 function filtrosGrupo(g, peer) {
   const chips = (lst, attr, on) => lst.map(([k, n]) => `<button class="chip" type="button" ${attr}="${k}" aria-pressed="${on === k}"><i style="background:${gCor(k)}"></i>${esc(n)}</button>`).join("");
   const blocos = [["Minas", ["crediminas", "cecremge", "sicoob_mg", "coop_mg"]], ["Sistemas e conglomerados", ["sicoob", "cong_sicoob", "sicredi", "cong_sicredi", "cresol", "unicred", "coop"]], ["Bancos e SFN", ["bancos", "top5", "digitais", "sfn"]]];
@@ -1410,7 +1379,7 @@ function renderFichaGrupo() {
       return kpiBox(lbl, pFmt(id, v).replace("%", ""), id === "cart" ? "" : "%", b == null ? "" : `${esc(pn)}: ${pFmt(id, b)}`, dirCls(id, v, b), `${ym(t)} · ${src || "IF.data"}`); };
     const kp = `<div class="kpis">
       ${kpiBox("Carteira combinada", pFmt("cart", A.cart), "", A.cresc == null ? "" : `${sgn(A.cresc)} em 12 meses`, cls(A.cresc), `${ym(t)} · IF.data`)}
-      ${kG("Inadimplência > 90 dias", "inad")}${kG("Ativos problemáticos", "ap")}${kG("Estágio 3", "e3", "Cosif")}
+      ${kG("Inadimplência > 90 dias", "inad")}${kG("Ativos problemáticos (estágio 3)", "ap")}${kG("Provisão sobre a carteira", "prov")}
       ${kG("Basileia", "basil")}${kG("ROE do período, anualizado", "roe")}${kG("Eficiência", "efic")}${kG("Rural na carteira", "rural", "Cosif")}</div>`;
     // ---------- tabela de comparação
     const mets = P.metricas.filter(m => m.id !== "cart");
@@ -1439,14 +1408,7 @@ function renderFichaGrupo() {
         ${block("Crédito rural por fonte de recursos", `% do saldo rural · ${ym(L_.d)} · Cosif`, stack100([{ name: gn, v: L_, sel: true }].concat(Lp ? [{ name: pn, v: Lp }] : []), G_FONTES, { label: "Rural por fonte" }),
           `Recursos livres, exigibilidade dos depósitos à vista, poupança rural, LCA e fontes públicas (contas 1630 a 1634). Balancetes Cosif.`)}</div>`;
     } else cartB = block("Carteira por produto", "Cosif", `<p class="empty">Sem atualização: a base de balancetes não traz composição para ${esc(gn)}.</p>`);
-    // ---------- risco: estágios
-    const rs_ = R.cosif.serie[g];
-    const riscoB = rs_ && rs_.length ? (() => { const l = lastP(rs_); return block("Estágios de risco", `% dos ativos financeiros · ${ym(l.d)} · Cosif`, `<div class="pair">
-        <div><span class="eyebrow">Estágio 1</span><span class="big">${nf(l.e1, 1)}%</span></div><div><span class="eyebrow">Estágio 2</span><span class="big">${nf(l.e2, 1)}%</span></div>
-        <div><span class="eyebrow">Estágio 3</span><span class="big">${nf(l.e3, 1)}%</span></div><div><span class="eyebrow">Provisão / carteira</span><span class="big">${pFmt("prov", A.prov)}</span></div>
-        <div><span class="eyebrow">Cobertura</span><span class="big">${pFmt("cob", A.cob)}</span></div></div>` + stackStages(rs_.slice(-18), { h: 180 }),
-      `Estágios: balancete Cosif, mensal. Provisão e cobertura: IF.data ${ym(t)}. ${l.simp > 1 ? `${nf(l.simp, 1)}% dos ativos do grupo estão na metodologia simplificada.` : ""}`); })()
-      : block("Estágios de risco", "Cosif", `<p class="empty">Sem atualização: o agregado de estágios não é calculado para ${esc(gn)}.</p>`);
+    const riscoB = "";
     // ---------- resultados
     let resB = "";
     const qa = Q.agg[g], qb = Q.agg[peer];
@@ -1476,10 +1438,9 @@ function renderFichaGrupo() {
     // ---------- concentração, alertas e contribuição ao crescimento
     const cartT = memT.reduce((s_, i) => s_ + (i.s[t].cart || 0), 0), ordC = memT.slice().sort((x, y) => (y.s[t].cart || 0) - (x.s[t].cart || 0));
     const topS = (n) => cartT ? ordC.slice(0, n).reduce((s_, i) => s_ + i.s[t].cart, 0) / cartT * 100 : null;
-    const apArr = memT.map(i => i.s[t].ap), p75 = quant(apArr, 0.75), e3p75 = quant(memT.map(i => i.s[t].e3), 0.75);
+    const apArr = memT.map(i => i.s[t].ap), p75 = quant(apArr, 0.75);
     const al = { lucro: memT.filter(i => (Qm.get(i.id)?.r12?.lucro ?? 0) < 0), basil: memT.filter(i => i.s[t].basil != null && i.s[t].basil < 15),
-      queda: memT.filter(i => i.s[t].cresc != null && i.s[t].cresc < -10), ap: memT.filter(i => i.s[t].ap > p75 && prevQ && i.s[prevQ]?.ap != null && i.s[t].ap > i.s[prevQ].ap),
-      e3: memT.filter(i => i.s[t].e3 != null && i.s[t].e3 > e3p75) };
+      queda: memT.filter(i => i.s[t].cresc != null && i.s[t].cresc < -10), ap: memT.filter(i => i.s[t].ap > p75 && prevQ && i.s[prevQ]?.ap != null && i.s[t].ap > i.s[prevQ].ap) };
     const nomes = (l) => l.length ? l.slice(0, 6).map(i => linkFicha(i.id, esc(i.curto))).join(", ") + (l.length > 6 ? ` e mais ${l.length - 6}` : "") : "nenhuma";
     const A12 = P.agg[g][t12];
     const dlt = memT.filter(i => i.s[t12]?.cart != null).map(i => ({ i, d: (i.s[t].cart - i.s[t12].cart) * 1000 })).sort((x, y) => y.d - x.d);
@@ -1492,9 +1453,8 @@ function renderFichaGrupo() {
         <tr><td>Lucro ou sobras negativos em 12 meses</td><td class="num">${al.lucro.length}</td><td>${nomes(al.lucro)}</td></tr>
         <tr><td>Basileia abaixo de 15%</td><td class="num">${al.basil.length}</td><td>${nomes(al.basil)}</td></tr>
         <tr><td>Carteira caindo mais de 10% em 12 meses</td><td class="num">${al.queda.length}</td><td>${nomes(al.queda)}</td></tr>
-        <tr><td>Ativos problemáticos acima do p75 do grupo (${pFmt("ap", p75)}) e subindo no trimestre</td><td class="num">${al.ap.length}</td><td>${nomes(al.ap)}</td></tr>
-        <tr><td>Estágio 3 acima do p75 do grupo (${pFmt("e3", e3p75)})</td><td class="num">${al.e3.length}</td><td>${nomes(al.e3)}</td></tr></tbody></table></div>`,
-      `Mesmos critérios da Visão geral, aplicados dentro do grupo. Lucro: balancetes Cosif, 12 meses até ${ym(Q.meta.ref)}. Demais: IF.data e Cosif ${ym(t)}.`);
+        <tr><td>Ativos problemáticos (estágio 3) acima do p75 do grupo (${pFmt("ap", p75)}) e subindo no trimestre</td><td class="num">${al.ap.length}</td><td>${nomes(al.ap)}</td></tr></tbody></table></div>`,
+      `Mesmos critérios da Visão geral, aplicados dentro do grupo. Lucro: balancetes Cosif, 12 meses até ${ym(Q.meta.ref)}. Demais: IF.data ${ym(t)}.`);
     const growB = dTot != null && dlt.length > 1 ? block("Quem puxou a carteira em 12 meses", `${ym(t12)} a ${ym(t)} · variação do saldo`, `<p class="lede">Carteira combinada ${dTot >= 0 ? "cresceu" : "caiu"} ${brlMi(Math.abs(dTot))} (${sgn(pct(A.cart, A12.cart))}).</p>
         <div class="tbl-wrap"><table><thead><tr><th>Maiores altas</th><th class="num">Variação</th><th class="num">Contribuição</th></tr></thead><tbody>${dlt.slice(0, 5).map(dRow).join("")}</tbody></table></div>
         <div class="tbl-wrap"><table><thead><tr><th>Maiores quedas ou menores altas</th><th class="num">Variação</th><th class="num">Contribuição</th></tr></thead><tbody>${dlt.slice(-5).reverse().map(dRow).join("")}</tbody></table></div>`,
@@ -1506,9 +1466,9 @@ function renderFichaGrupo() {
     const lst = fsel.gall ? rows : rows.slice(0, 25);
     const memB = block(`${isCoopG ? "Cooperativas e instituições" : "Instituições"} do grupo`, `${ym(t)} · ${rows.length} com dados · ordem: ${G_ORD.find(x => x[0] === key)[1].toLowerCase()}`,
       `<div class="frow" style="margin-bottom:8px"><div class="fgroup"><span class="flabel">Ordenar por</span><div class="seg">${G_ORD.map(([k, n]) => `<button type="button" data-gord="${k}" aria-pressed="${key === k}">${n}</button>`).join("")}</div></div></div>
-      <div class="tbl-wrap"><table><thead><tr><th>#</th><th>Instituição</th><th class="num">Carteira</th><th class="num">% do grupo</th><th class="num">Cresc. 12m</th><th class="num">Inad. > 90</th><th class="num">Ativos probl.</th><th class="num">Estágio 3</th><th class="num">Basileia</th><th class="num">ROE</th><th class="num">Lucro 12m</th><th class="num">Safra ${safraLbl(S0)}</th></tr></thead><tbody>
-      ${lst.map((r, k) => `<tr><td class="num">${k + 1}</td><td>${linkFicha(r.i.id, esc(r.i.curto))}</td><td class="num">${pFmt("cart", r.s.cart)}</td><td class="num">${cartT ? nf(r.s.cart / cartT * 100, 1) + "%" : "—"}</td><td class="num">${sgn(r.s.cresc)}</td><td class="num">${pFmt("inad", r.s.inad)}</td><td class="num">${pFmt("ap", r.s.ap)}</td><td class="num">${pFmt("e3", r.s.e3)}</td><td class="num">${pFmt("basil", r.s.basil)}</td><td class="num">${pFmt("roe", r.s.roe)}</td><td class="num">${brlMi(r.lucro12)}</td><td class="num">${r.safra == null ? "—" : brl(r.safra, 1)}</td></tr>`).join("")}
-      <tr><td></td><td><b>${esc(gn)} (combinado)</b></td><td class="num"><b>${pFmt("cart", A.cart)}</b></td><td class="num">100%</td><td class="num"><b>${sgn(A.cresc)}</b></td><td class="num"><b>${pFmt("inad", A.inad)}</b></td><td class="num"><b>${pFmt("ap", A.ap)}</b></td><td class="num"><b>${pFmt("e3", A.e3)}</b></td><td class="num"><b>${pFmt("basil", A.basil)}</b></td><td class="num"><b>${pFmt("roe", A.roe)}</b></td><td class="num"><b>${qa ? brlMi(lastP(qa.r12).lucro) : "—"}</b></td><td class="num"><b>${cp ? brl(sum4(cp.BR.a), 1) : "—"}</b></td></tr></tbody></table></div>
+      <div class="tbl-wrap"><table><thead><tr><th>#</th><th>Instituição</th><th class="num">Carteira</th><th class="num">% do grupo</th><th class="num">Cresc. 12m</th><th class="num">Inad. > 90</th><th class="num">Ativos probl. (E3)</th><th class="num">Basileia</th><th class="num">ROE</th><th class="num">Lucro 12m</th><th class="num">Safra ${safraLbl(S0)}</th></tr></thead><tbody>
+      ${lst.map((r, k) => `<tr><td class="num">${k + 1}</td><td>${linkFicha(r.i.id, esc(r.i.curto))}</td><td class="num">${pFmt("cart", r.s.cart)}</td><td class="num">${cartT ? nf(r.s.cart / cartT * 100, 1) + "%" : "—"}</td><td class="num">${sgn(r.s.cresc)}</td><td class="num">${pFmt("inad", r.s.inad)}</td><td class="num">${pFmt("ap", r.s.ap)}</td><td class="num">${pFmt("basil", r.s.basil)}</td><td class="num">${pFmt("roe", r.s.roe)}</td><td class="num">${brlMi(r.lucro12)}</td><td class="num">${r.safra == null ? "—" : brl(r.safra, 1)}</td></tr>`).join("")}
+      <tr><td></td><td><b>${esc(gn)} (combinado)</b></td><td class="num"><b>${pFmt("cart", A.cart)}</b></td><td class="num">100%</td><td class="num"><b>${sgn(A.cresc)}</b></td><td class="num"><b>${pFmt("inad", A.inad)}</b></td><td class="num"><b>${pFmt("ap", A.ap)}</b></td><td class="num"><b>${pFmt("basil", A.basil)}</b></td><td class="num"><b>${pFmt("roe", A.roe)}</b></td><td class="num"><b>${qa ? brlMi(lastP(qa.r12).lucro) : "—"}</b></td><td class="num"><b>${cp ? brl(sum4(cp.BR.a), 1) : "—"}</b></td></tr></tbody></table></div>
       ${rows.length > 25 ? `<button class="linkbtn" id="gmore" type="button">${fsel.gall ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${rows.length}`}</button>` : ""}`,
       `Clique no nome para abrir a ficha individual. Carteira, risco, Basileia e ROE: IF.data e Cosif ${ym(t)}. Lucro: balancetes Cosif, 12 meses até ${ym(Q.meta.ref)}. Safra: SICOR até ${dmy(D.meta.ref)}; em bancos, soma do conglomerado prudencial.`);
     $("#view").innerHTML = `${ident}${kp}${tabComp}${evol}${cartB}<div class="grid2">${riscoB}${safraB}</div>${resB}<div class="grid2">${concB}${growB}</div>${memB}
@@ -1658,12 +1618,12 @@ const rks = { uni: "crediminas", ind: "safra", dir: "desc", n: 25 };
 const IND = [
   ["Tamanho e crescimento", [["cart", "Carteira de crédito (IF.data)"], ["cresc", "Crescimento da carteira em 12 meses"], ["capt_cresc", "Crescimento das captações em 12 meses"]]],
   ["Crédito rural", [["safra", "Contratação na safra corrente (SICOR)"], ["safra_var", "Contratação: variação sobre o mesmo ponto"], ["rur", "Carteira rural (Cosif)"], ["cresc_rur", "Crescimento da carteira rural em 12 meses"], ["p_rur", "Rural na carteira (%)"]]],
-  ["Risco", [["inad", "Inadimplência > 90 dias"], ["ap", "Ativos problemáticos"], ["e2", "Estágio 2"], ["e3", "Estágio 3"], ["cob", "Cobertura dos ativos problemáticos"], ["basil", "Basileia"]]],
+  ["Risco", [["inad", "Inadimplência > 90 dias"], ["ap", "Ativos problemáticos (estágio 3)"], ["cob", "Cobertura dos ativos problemáticos"], ["basil", "Basileia"]]],
   ["Resultado", [["lucro", "Lucro ou sobras em 12 meses"], ["roe12", "ROE em 12 meses (balancetes)"], ["roa", "ROA anualizado"], ["efic", "Eficiência"], ["d_capt", "Captação / receita"], ["d_prov", "Provisão / receita"]]],
 ];
 const INDN = Object.fromEntries(IND.flatMap(([, l]) => l));
-const MENOR_MELHOR = ["inad", "ap", "e2", "e3", "efic", "d_capt", "d_prov"];
-const PCT_IND = ["cresc", "capt_cresc", "safra_var", "cresc_rur", "p_rur", "inad", "ap", "e2", "e3", "cob", "basil", "roe12", "roa", "efic", "d_capt", "d_prov"];
+const MENOR_MELHOR = ["inad", "ap", "efic", "d_capt", "d_prov"];
+const PCT_IND = ["cresc", "capt_cresc", "safra_var", "cresc_rur", "p_rur", "inad", "ap", "cob", "basil", "roe12", "roa", "efic", "d_capt", "d_prov"];
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-kuni],[data-kdir],[data-kn]"); if (!b) return;
   if (b.dataset.kuni) rks.uni = b.dataset.kuni; if (b.dataset.kdir) rks.dir = b.dataset.kdir; if (b.dataset.kn) rks.n = +b.dataset.kn;
@@ -1672,7 +1632,7 @@ document.addEventListener("click", (ev) => {
 document.addEventListener("change", (ev) => { if (ev.target.id === "kind") { rks.ind = ev.target.value; rks.dir = MENOR_MELHOR.includes(rks.ind) ? "asc" : "desc"; try { localStorage.setItem("rank-filtros", JSON.stringify(rks)); } catch (e) {} render(); } });
 function valorRank(i, ind, cache) {
   const t = P.meta.ref, s = i.s[t] || {};
-  if (["cart", "cresc", "capt_cresc", "inad", "ap", "e2", "e3", "cob", "basil", "roa", "efic"].includes(ind)) return s[ind];
+  if (["cart", "cresc", "capt_cresc", "inad", "ap", "cob", "basil", "roa", "efic"].includes(ind)) return s[ind];
   if (["lucro", "roe12", "d_capt", "d_prov"].includes(ind)) { const r = cache.res.get(i.id); return r ? r.r12[ind === "roe12" ? "roe" : ind] : null; }
   if (["rur", "cresc_rur", "p_rur"].includes(ind)) { const c = cache.cart.get(i.id); return c ? c[ind] : null; }
   if (ind === "safra" || ind === "safra_var") { const sf = cache.saf.get(i.id); if (!sf) return null; const a = sf.z.BR[sf.S0]; const tot = sum4(a.a); return ind === "safra" ? tot : (a.p >= 1 ? pct(tot, a.p) : null); }
@@ -1680,18 +1640,17 @@ function valorRank(i, ind, cache) {
 }
 function pontosAtencao(uni) {            // critérios objetivos sobre dados públicos, dentro do grupo escolhido
   const t = P.meta.ref, grp = uni.filter(i => i.s[t]), prevT = P.meta.trimestres[P.meta.trimestres.length - 2];
-  const p75 = (k) => quant(grp.map(i => i.s[t][k]), 0.75), lim = { ap: p75("ap"), e3: p75("e3") };
+  const p75 = (k) => quant(grp.map(i => i.s[t][k]), 0.75), lim = { ap: p75("ap") };
   const resM = new Map(Q.inst.map(i => [i.id, i]));
   const flags = grp.map(i => { const s = i.s[t], prev = i.s[prevT] || {}, f = [];
-    if (s.ap != null && s.ap > lim.ap && prev.ap != null && s.ap > prev.ap) f.push(`ativos problemáticos ${nf(s.ap, 1)}% e em alta`);
-    if (s.e3 != null && s.e3 > lim.e3) f.push(`estágio 3 ${nf(s.e3, 1)}%`);
+    if (s.ap != null && s.ap > lim.ap && prev.ap != null && s.ap > prev.ap) f.push(`ativos problemáticos (E3) ${nf(s.ap, 1)}% e em alta`);
     if (s.basil != null && s.basil < 15) f.push(`Basileia ${nf(s.basil, 1)}%`);
     const r = resM.get(i.id); if (r && r.r12.lucro < 0) f.push(`resultado de 12 meses negativo (${brlMi(r.r12.lucro)})`);
     if (s.cresc != null && s.cresc < -10) f.push(`carteira ${sgn(s.cresc)} em 12 meses`);
     return { i, f }; }).filter(x => x.f.length).sort((a, b) => b.f.length - a.f.length || (b.i.s[t].cart - a.i.s[t].cart));
   return block("Pontos de atenção", `${esc(UNIS.find(u => u[0] === rks.uni)[1])} · ${ym(t)} · ${grp.length} instituições · ${flags.length} com algum critério`,
     `<div class="tbl-wrap" style="max-height:420px;overflow-y:auto"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th>Critérios atingidos</th></tr></thead><tbody>${flags.map(x => `<tr><td>${linkFicha(x.i.id, esc(x.i.curto))}</td><td class="num">${pFmt("cart", x.i.s[t].cart)}</td><td>${x.f.map(esc).join("; ")}</td></tr>`).join("") || `<tr><td colspan="3" class="empty">Nenhuma instituição atinge os critérios.</td></tr>`}</tbody></table></div>`,
-    `Critérios: ativos problemáticos acima do 3º quartil do grupo (${nf(lim.ap, 1)}%) e maiores que no trimestre anterior; estágio 3 acima do 3º quartil (${nf(lim.e3, 1)}%); Basileia abaixo de 15%; resultado de 12 meses negativo; carteira caindo mais de 10% em 12 meses. IF.data e Cosif.`);
+    `Critérios: ativos problemáticos acima do 3º quartil do grupo (${nf(lim.ap, 1)}%) e maiores que no trimestre anterior; Basileia abaixo de 15%; resultado de 12 meses negativo; carteira caindo mais de 10% em 12 meses. IF.data e Cosif (resultado).`);
 }
 function renderRankings() {
   if (!precisa(["posicao", "resultados", "carteira", "safra"])) { esperando(Perr || Qerr || Cerr ? `Os dados não carregaram. Recarregue a página.` : "Carregando as bases dos rankings…"); return; }
@@ -1717,7 +1676,7 @@ function renderRankings() {
     shown.forEach((x, k) => { const y = T + k * rowH + 3, h = rowH - 7, x0 = Math.min(X(0), X(x.v)), w = Math.max(1.5, Math.abs(X(x.v) - X(0)));
       g += `<text x="${L - 8}" y="${y + h / 2 + 4}" text-anchor="end">${k + 1}. ${esc(x.i.curto.slice(0, 24))}</text><rect x="${x0}" y="${y}" width="${w}" height="${h}" rx="2" fill="${instCor2(x.i)}"><title>${esc(x.i.curto)}: ${fmtV(x.v)}</title></rect><text x="${Math.max(X(0), X(x.v)) + 5}" y="${y + h / 2 + 4}" class="lbl-strong">${fmtV(x.v)}</text>`; });
     const chart = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Ranking">${g}</svg>`;
-    const fonte = { safra: "SICOR", safra_var: "SICOR", rur: "Cosif", cresc_rur: "Cosif", p_rur: "Cosif", lucro: "Cosif (12 meses)", roe12: "Cosif (12 meses)", d_capt: "Cosif (12 meses)", d_prov: "Cosif (12 meses)", e2: "Cosif", e3: "Cosif" }[rks.ind] || "IF.data";
+    const fonte = { safra: "SICOR", safra_var: "SICOR", rur: "Cosif", cresc_rur: "Cosif", p_rur: "Cosif", lucro: "Cosif (12 meses)", roe12: "Cosif (12 meses)", d_capt: "Cosif (12 meses)", d_prov: "Cosif (12 meses)" }[rks.ind] || "IF.data";
     const refF = fonte === "SICOR" ? `até ${dmy(D.meta.ref)}` : fonte.startsWith("Cosif") ? ym(fonte.includes("12") ? Q.meta.ref : C.meta.refs.cosif) : ym(P.meta.ref);
     const rows = lst.map((x, k) => `<tr><td class="num">${k + 1}</td><td><div class="inst-name"><span class="dot" style="background:${instCor2(x.i)}"></span><span>${linkFicha(x.i.id, esc(x.i.curto))}${x.i.central ? `<span class="tag">${x.i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small>${esc(x.i.nome.slice(0, 50))}${x.i.uf ? " · " + x.i.uf : ""}</small></span></div></td><td class="num"><b>${fmtV(x.v)}</b></td><td class="num">${md == null ? "—" : (x.v >= md ? "acima" : "abaixo")}</td><td class="num">${pFmt("cart", x.i.s[P.meta.ref]?.cart)}</td></tr>`).join("");
     $("#view").innerHTML = `<div><div class="eyebrow">${esc(UNIS.find(u => u[0] === rks.uni)[1])} · ${lst.length} instituições com dado · ${fonte}, ${refF}</div><h2>Ranking · ${esc(INDN[rks.ind])}</h2>
@@ -1810,11 +1769,11 @@ function renderVisao() {
     const COLS = [["sfn", "SFN"], ["coop", "Cooperativas"], ["bancos", "Bancos"], ["cong_sicoob", "Conglomerado Sicoob"], ["cong_sicredi", "Conglomerado Sicredi"], ["sicoob_mg", "Sicoob MG"]];
     const sfV = (k) => { const c = D.comp[String(S0)][k]?.BR; return c ? pct(sum4(c.a), sum4(c.p)) : null; };
     const LIN = [["Carteira de crédito", k => pFmt("cart", pa(k)?.cart), "IF.data"], ["Crescimento 12 meses", k => sgn(pa(k)?.cresc), "IF.data"], ["Inadimplência > 90 dias", k => pFmt("inad", pa(k)?.inad), "IF.data"],
-      ["Ativos problemáticos", k => pFmt("ap", pa(k)?.ap), "IF.data"], ["Estágio 3", k => pFmt("e3", pa(k)?.e3), "Cosif"], ["Cobertura", k => pFmt("cob", pa(k)?.cob), "IF.data"], ["Basileia", k => pFmt("basil", pa(k)?.basil), "IF.data"],
+      ["Ativos problemáticos (estágio 3)", k => pFmt("ap", pa(k)?.ap), "IF.data"], ["Cobertura", k => pFmt("cob", pa(k)?.cob), "IF.data"], ["Basileia", k => pFmt("basil", pa(k)?.basil), "IF.data"],
       ["ROE 12 meses", k => q(k)?.roe == null ? "—" : nf(q(k).roe, 1) + "%", "Cosif"], ["Eficiência", k => q(k)?.efic == null ? "—" : nf(q(k).efic, 1) + "%", "Cosif"],
       ["Rural na carteira", k => { const c = lastP(C.cosif[k]); return c ? nf(c.p_rur, 1) + "%" : "—"; }, "Cosif"], [`Safra ${safraLbl(S0)}, var.`, k => sgn(sfV(k)), "SICOR"]];
     const tabela = `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th>${COLS.map(([k, n]) => `<th class="num">${n}</th>`).join("")}<th>Base</th></tr></thead><tbody>${LIN.map(([n, f, b]) => `<tr><td>${n}</td>${COLS.map(([k]) => `<td class="num">${f(k)}</td>`).join("")}<td><small>${b}</small></td></tr>`).join("")}</tbody></table></div>`;
-    const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"], ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos, estágios, provisão e Basileia por escopo"],
+    const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"], ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"], ["#risco", "Qualidade e risco", "Inadimplência, ativos problemáticos (estágio 3), provisão e Basileia por escopo"],
       ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"], ["#rural", "Carteira rural / estoque", "Saldo rural e fonte de recursos por escopo"], ["#safra", "Safra de crédito rural / contratações", "Contratação por safra, finalidade, programa, fonte e instituição"],
       ["#quadro", "Quadro de indicadores por instituição", "Todos os indicadores de cada instituição do grupo, com a variação em 12 meses"], ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"], ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"], ["#ficha", "Ficha da instituição", "Uma cooperativa, banco ou grupo combinado numa página"]];
     $("#view").innerHTML = `<div><div class="eyebrow">Dados públicos do Banco Central · sistema como um todo</div><h2>Visão geral do Sistema Financeiro Nacional</h2>
@@ -1921,7 +1880,7 @@ const QGR = [["Minas", [["crediminas", "Central Crediminas"], ["cecremge", "Cent
 const QNOME = Object.fromEntries(QGR.flatMap(([, l]) => l));
 // id, título, unidade (val = R$ e variação %; pct = % e variação em p.p.), melhor (alto/baixo/neutro), fonte
 const QCOL = [["at", "Ativo total", "val", "alto", "IF.data"], ["cart", "Carteira de crédito", "val", "alto", "IF.data"], ["capt", "Captações", "val", "alto", "IF.data"], ["pl", "Patrimônio líquido", "val", "alto", "IF.data"],
-  ["rural", "Rural na carteira", "pct", "neutro", "Cosif"], ["inad", "Inad. > 90 dias", "pct", "baixo", "IF.data"], ["ap", "Ativos problemáticos", "pct", "baixo", "IF.data"], ["e2", "Estágio 2", "pct", "baixo", "Cosif"], ["e3", "Estágio 3", "pct", "baixo", "Cosif"],
+  ["rural", "Rural na carteira", "pct", "neutro", "Cosif"], ["inad", "Inad. > 90 dias", "pct", "baixo", "IF.data"], ["ap", "Ativos probl. (estágio 3)", "pct", "baixo", "IF.data"],
   ["prov", "IPROV", "pct", "neutro", "IF.data"], ["cob", "Cobertura", "pct", "alto", "IF.data"], ["basil", "Basileia", "pct", "alto", "IF.data"],
   ["lucro", "Lucro ou sobras", "val", "alto", "IF.data"], ["roe", "ROE", "pct", "alto", "IF.data"], ["roa", "ROA", "pct", "alto", "IF.data"], ["efic", "Eficiência", "pct", "baixo", "IF.data"]];
 document.addEventListener("click", (ev) => {
@@ -2006,7 +1965,7 @@ function renderQuadroTab() {
       </tbody></table></div>
       ${list.length > 50 && !qd.busca ? `<button class="linkbtn" id="qdmore" type="button">${qd.all ? "Mostrar só as 50 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
       <section class="block"><header><div class="eyebrow">Fontes e método</div><h3>Como ler o quadro</h3></header><div class="methods">
-        <p><b>Bases.</b> IF.data (trimestral, ${ym(t)}): ativo total, carteira, captações, patrimônio líquido, inadimplência, ativos problemáticos, IPROV (perda esperada sobre a carteira bruta), cobertura, Basileia, lucro do período, ROE e ROA anualizados e eficiência. Balancetes Cosif (${ym(t)}): rural na carteira e estágios 2 e 3. Valores em R$ bi, exceto lucro em R$ mi. Lucro de junho e dezembro é do semestre; de março e setembro, do trimestre.</p>
+        <p><b>Bases.</b> IF.data (trimestral, ${ym(t)}): ativo total, carteira, captações, patrimônio líquido, inadimplência, ativos problemáticos, IPROV (perda esperada sobre a carteira bruta), cobertura, Basileia, lucro do período, ROE e ROA anualizados e eficiência. Balancetes Cosif (${ym(t)}): rural na carteira. Ativos problemáticos são a medida do estágio 3; os estágios do Cosif não separam o crédito dos demais ativos financeiros e ficaram fora. Valores em R$ bi, exceto lucro em R$ mi. Lucro de junho e dezembro é do semestre; de março e setembro, do trimestre.</p>
         <p><b>Variação.</b> Valores em reais: variação percentual contra ${t12 ? ym(t12) : "o mesmo trimestre do ano anterior"}. Indicadores em %: diferença em pontos percentuais. Mudanças menores que 0,5% ou 0,05 p.p. aparecem como "=".</p>
         <p><b>Atraso de 15 a 90 dias.</b> Não há dado público por instituição. O IF.data traz a carteira "vencida a partir de 15 dias", mas ela soma só as parcelas vencidas, enquanto a inadimplência acima de 90 dias considera o saldo inteiro da operação em atraso. As bases são diferentes, e a diferença entre as duas não mede o atraso de 15 a 90 dias. O indicador por segmento está nas abas Visão geral do SFN e Crédito rural no SFN.</p>
         <p><b>Grupo combinado.</b> Soma dos saldos das instituições do grupo, com os indicadores recalculados sobre os totais. Centrais ficam fora das somas. <a href="${esc(P.meta.url_ifd)}" target="_blank" rel="noopener">IF.data</a> · <a href="${esc(P.meta.url_cosif)}" target="_blank" rel="noopener">Cosif</a>, Banco Central.</p></div></section>`;
@@ -2097,6 +2056,9 @@ try { Object.assign(vr, JSON.parse(localStorage.getItem("ruralsfn-filtros") || "
 try { Object.assign(qd, JSON.parse(localStorage.getItem("quadro-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rus, JSON.parse(localStorage.getItem("rural-filtros") || "{}")); } catch (e) {}
 try { Object.assign(rks, JSON.parse(localStorage.getItem("rank-filtros") || "{}")); } catch (e) {}
+// filtros salvos antes da retirada dos estágios do Cosif
+{ const E = ["e2", "e3"]; if (E.includes(rs.ord)) rs.ord = "ap"; if (E.includes(ps.x)) ps.x = "cresc"; if (E.includes(ps.y)) ps.y = "ap";
+  if (E.includes(rks.ind)) { rks.ind = "ap"; rks.dir = "asc"; } if (E.includes(qd.ord)) qd.ord = "ap"; if (fsel.gord === "e3") fsel.gord = "ap"; }
 render();
 carregar("safra").then(d => {
   D = d;
