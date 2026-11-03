@@ -156,13 +156,17 @@ BASE = {}            # (trimestre, id) -> Counter de valores brutos
 INFO = {}            # id -> (tipo, nome)
 validos = []
 for am in tri:
-    try:
-        r16 = ifvals(am, 16)
-        if not r16: continue
-        r1, r2, r4, r5 = ifvals(am, 1), ifvals(am, 2), ifvals(am, 4), ifvals(am, 5)
-        cad = {x["CodInst"]: x for x in olinda(f"IFDATA/versao/v1/odata/IfDataCadastro(AnoMes=@AnoMes)?@AnoMes={am}&$format=json")}
-    except Exception as e:
-        print("IFDATA", am, e); continue
+    ok = False
+    for tentativa in range(3):                       # o Olinda falha em ondas; insiste no trimestre antes de desistir
+        try:
+            r16 = ifvals(am, 16)
+            if not r16: break
+            r1, r2, r4, r5 = ifvals(am, 1), ifvals(am, 2), ifvals(am, 4), ifvals(am, 5)
+            cad = {x["CodInst"]: x for x in olinda(f"IFDATA/versao/v1/odata/IfDataCadastro(AnoMes=@AnoMes)?@AnoMes={am}&$format=json")}
+            ok = True; break
+        except Exception as e:
+            print("IFDATA", am, "tentativa", tentativa + 1, e, file=sys.stderr); time.sleep(60)
+    if not ok: continue
     validos.append(am)
     for cod, v16 in r16.items():
         ca = cad.get(cod, {}); nome = ca.get("NomeInstituicao") or ""

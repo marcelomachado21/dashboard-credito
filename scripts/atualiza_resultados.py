@@ -248,12 +248,16 @@ FIM12 = [m for m in LISTA if LISTA.index(m) >= 11]
 SEMS = [m for m in LISTA if m[4:] in ("06", "12")]
 
 def serie_para(chaves):
-    """chaves: lista de (tipo,id). Devolve r12 por mês, semestres e lucro mensal."""
-    out12, sem, mens = [], [], []
+    """chaves: lista de (tipo,id). Devolve r12 por mês, semestres, lucro mensal e os blocos de cada mês."""
+    out12, sem, mens, mm = [], [], [], []
     fl = {am: soma(fluxo(k, am) for k in chaves) for am in LISTA}
     sal = {am: soma({kk: YTD[am].get(k, {}).get(kk, 0.0) for kk in SALDO} for k in chaves) for am in LISTA}
+    MM = ("cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro")
     for am in LISTA:
-        mens.append({"d": am[:4] + "-" + am[4:], "lucro": r(blocos(fl[am])["lucro"] / 1e6, 1)})
+        b = blocos(fl[am])
+        mens.append({"d": am[:4] + "-" + am[4:], "lucro": r(b["lucro"] / 1e6, 1)})
+        # blocos do mês (R$ mi) + PL e ativo do fim do mês: a página monta 12 meses, exercício ou mês a partir daqui
+        mm.append([r(b[k] / 1e6, 4) for k in MM] + [r(sal[am]["6000000004"] / 1e6, 3), r((sal[am]["1000000009"] + sal[am]["2000000008"]) / 1e6, 3)])
     for am in FIM12:
         i = LISTA.index(am); jan = LISTA[i - 11:i + 1]
         f12 = soma(fl[m] for m in jan)
@@ -264,16 +268,16 @@ def serie_para(chaves):
         v = soma(YTD[am].get(k, {}) for k in chaves)
         b = blocos({k: x for k, x in v.items() if not k.startswith("_")})
         sem.append({"s": ("1S" if am[4:] == "06" else "2S") + am[2:4], "d": am[:4] + "-" + am[4:], "lucro": r(b["lucro"] / 1e6, 1), "rec": r(b["rec"] / 1e6, 1)})
-    return out12, sem, mens
+    return out12, sem, mens, mm
 
 membros = collections.defaultdict(list); inst = []
 for (tipo, c), nome in INFO.items():
     sc = escopos_coop(c, nome) if tipo == "coop" else escopos_banco(c, nome)
     if not sc: continue
     for s in sc + ["sfn"]: membros[s].append((tipo, c))
-    o12, sem, mens = serie_para([(tipo, c)])
+    o12, sem, mens, mm = serie_para([(tipo, c)])
     if not o12 or not o12[-1]["rec"] or o12[-1]["rec"] < 1: continue
-    rr = {"id": c, "tipo": tipo, "nome": nome, "escopos": sc, "r12": o12[-1], "r12_ini": o12[0], "sem": sem}
+    rr = {"id": c, "tipo": tipo, "nome": nome, "escopos": sc, "r12": o12[-1], "r12_ini": o12[0], "sem": sem, "m": mm}
     if tipo == "coop":
         rr.update({"curto": curto(c, nome), "sistema": sistema(c, nome), "central": central(c), "uf": coop.get(c, {}).get("UF", "")})
     else:
@@ -282,11 +286,11 @@ for (tipo, c), nome in INFO.items():
 
 agg = {}
 for e, *_ in ESCOPOS + [("top5",)]:      # top5: recorte extra da ficha de grupo
-    o12, sem, mens = serie_para(membros[e])
-    agg[e] = {"r12": o12, "sem": sem, "mens": mens, "n": len(membros[e])}
+    o12, sem, mens, mm = serie_para(membros[e])
+    agg[e] = {"r12": o12, "sem": sem, "mens": mens, "m": mm, "n": len(membros[e])}
 
 novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("meta", {}).get("ref") == ref else HOJE.isoformat()
-out = {"meta": {"ref": ref, "meses": [m[:4] + "-" + m[4:] for m in LISTA], "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
+out = {"meta": {"ref": ref, "meses": [m[:4] + "-" + m[4:] for m in LISTA], "m_campos": ["cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro", "pl", "at"], "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
                 "fonte": "Banco Central — balancetes Cosif (cooperativas, doc. 4010; conglomerados prudenciais, doc. 4060)",
                 "url": "https://www.bcb.gov.br/estabilidadefinanceira/balancetesbalancospatrimoniais"},
        "escopos": [{"id": a, "nome": b, "cor": c, "grupo": d} for a, b, c, d in ESCOPOS], "agg": agg, "inst": inst}

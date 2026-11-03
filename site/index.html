@@ -1007,29 +1007,70 @@ function carregaPos() {
 
 /* ===================== Aba Resultados ===================== */
 let Q = null, Qerr = "";
-const qs = { esc: "crediminas", ate: "", ord: "lucro", all: false, busca: "" };
+const qs = { esc: "crediminas", per: "r12", ate: "", ano: "", mes: "", ord: "lucro", all: false, busca: "" };
 const GR_Q = [["agregado", "Agregados"], ["conglomerado", "Conglomerados"], ["sistema", "Cooperativas por sistema"], ["mg", "Minas"], ["banco", "Bancos"]];
 const qEsc = (id) => Q.escopos.find(e => e.id === id);
 const REC = [["r_cred", "Crédito", "#2B6F8A"], ["r_tes", "Tesouraria", "#7A9CB0"], ["r_serv", "Serviços e tarifas", "#C08A2E"], ["r_out", "Outras receitas", "#B9BFC4"]];
 const DESP = [["d_capt", "Captação", "#8C4A3A"], ["d_prov", "Provisão", "#C2562C"], ["d_pess", "Pessoal", "#5A6B8C"], ["d_adm", "Administrativas", "#8392AE"],
   ["d_depr", "Depreciação", "#B3BBCB"], ["d_trib", "Tributos", "#9E8F6A"], ["d_out", "Outras despesas", "#CFC7B2"], ["d_lucro", "Lucro ou sobras", "#2E8F5A"]];
 const qAte = () => { const l = Q.agg.coop.r12.map(x => x.d); return qs.ate && l.includes(qs.ate) ? qs.ate : l[l.length - 1]; };
-const qR12 = (k) => Q.agg[k]?.r12.find(x => x.d === qAte());
+// ----- período: 12 meses, acumulado no exercício ou mês, montado a partir dos blocos mensais (R$ mi) -----
+const qMeses = () => Q.meta.meses || [];
+const qAnos = () => [...new Set(qMeses().map(d => d.slice(0, 4)))].sort().reverse();
+const qAno = () => qAnos().includes(qs.ano) ? qs.ano : qAnos()[0];
+const qMes = () => qMeses().includes(qs.mes) ? qs.mes : qMeses()[qMeses().length - 1];
+const qPerOk = () => Q.agg.coop.m ? qs.per : "r12";
+function qJanela(desloca = 0) {               // índices dos meses do período; desloca = -12 dá o mesmo período do ano anterior
+  const ms = qMeses(), per = qPerOk(); let alvo = [];
+  if (per === "r12") { const i = ms.indexOf(qAte()); alvo = i >= 11 ? ms.slice(i - 11, i + 1) : []; }
+  else if (per === "ytd") alvo = ms.filter(d => d.startsWith(qAno()));
+  else alvo = [qMes()];
+  if (desloca) alvo = alvo.map(d => backM(d, -desloca));
+  const idx = alvo.map(d => ms.indexOf(d));
+  return idx.length && idx.every(i => i >= 0) ? idx : null;
+}
+function qCalc(m, idx) {
+  if (!m || !idx) return null;
+  const S = Array(11).fill(0); let pl = 0, at = 0;
+  idx.forEach(i => { const r = m[i]; if (!r) return; for (let k = 0; k < 11; k++) S[k] += r[k] || 0; pl += r[11] || 0; at += r[12] || 0; });
+  const [cred, tes, serv, out_r, capt, prov, pess, adm, depr, trib, lucro] = S, n = idx.length, f = 12 / n;
+  pl /= n; at /= n;
+  const rec = cred + Math.max(tes, 0) + serv + Math.max(out_r, 0);
+  const out_d = rec - capt - prov - pess - adm - depr - trib - lucro - (tes < 0 ? -tes : 0) - (out_r < 0 ? -out_r : 0);
+  const pc = (v) => rec ? Math.round(v / rec * 1000) / 10 : null, margem = cred + tes - capt + serv + out_r;
+  return { lucro: Math.round(lucro * 10) / 10, rec: Math.round(rec * 10) / 10, n,
+    roe: pl > 0 ? Math.round(lucro * f / pl * 1000) / 10 : null, roa: at ? Math.round(lucro * f / at * 10000) / 100 : null,
+    efic: margem > 0 ? Math.round((pess + adm + depr) / margem * 1000) / 10 : null,
+    r_cred: pc(cred), r_tes: pc(tes), r_serv: pc(serv), r_out: pc(out_r), d_capt: pc(capt), d_prov: pc(prov), d_pess: pc(pess), d_adm: pc(adm), d_depr: pc(depr), d_trib: pc(trib), d_out: pc(out_d), d_lucro: pc(lucro) };
+}
+const qR12 = (k) => qPerOk() === "r12" && !Q.agg[k]?.m ? Q.agg[k]?.r12.find(x => x.d === qAte()) : qCalc(Q.agg[k]?.m, qJanela());
+const qInstPer = (i) => i.m ? qCalc(i.m, qJanela()) : i.r12;
+const qPerTxt = () => { const per = qPerOk(); if (per === "r12") return `12 meses até ${ym(qAte())}`;
+  if (per === "ytd") { const ms = qMeses().filter(d => d.startsWith(qAno())); return `acumulado de ${qAno()}${ms.length < 12 ? ` (${ym(ms[0])} a ${ym(ms[ms.length - 1])})` : ""}`; }
+  return `mês de ${ym(qMes())}`; };
+const qAnual = () => qPerOk() === "r12" ? "" : ", anualizado";
 const brlMi = (v) => v == null ? "—" : Math.abs(v) >= 1000 ? `R$ ${nf(v / 1000, 1)} bi` : `R$ ${nf(v, 1)} mi`;
 function filtrosRes() {
   const chips = GR_Q.map(([g, nm]) => `<div class="fgroup"><span class="flabel">${nm}</span>${Q.escopos.filter(e => e.grupo === g).map(e =>
     `<button class="chip" type="button" data-qesc="${e.id}" aria-pressed="${qs.esc === e.id}"><i style="background:${cor(e.cor)}"></i>${esc(e.nome)}</button>`).join("")}</div>`).join("");
-  $("#filters").innerHTML = `<div class="frow">${chips}</div><div class="frow"><label class="fgroup"><span class="flabel">12 meses até</span><select id="qate" class="sel">${Q.agg.coop.r12.map(x => x.d).reverse().map(d => `<option value="${d}"${d === qAte() ? " selected" : ""}>${ym(d)}</option>`).join("")}</select></label></div>`;
+  const per = qPerOk(), segP = Q.agg.coop.m ? `<div class="fgroup"><span class="flabel">Período</span><div class="seg">${[["r12", "12 meses"], ["ytd", "Acumulado no exercício"], ["mes", "Mensal"]].map(([k, n]) => `<button type="button" data-qper="${k}" aria-pressed="${per === k}">${n}</button>`).join("")}</div></div>` : "";
+  const sel = per === "r12" ? `<label class="fgroup"><span class="flabel">12 meses até</span><select id="qate" class="sel">${Q.agg.coop.r12.map(x => x.d).reverse().map(d => `<option value="${d}"${d === qAte() ? " selected" : ""}>${ym(d)}</option>`).join("")}</select></label>`
+    : per === "ytd" ? `<label class="fgroup"><span class="flabel">Exercício</span><select id="qano" class="sel">${qAnos().map(a => { const ms = qMeses().filter(d => d.startsWith(a)); return `<option value="${a}"${a === qAno() ? " selected" : ""}>${a}${ms.length < 12 ? ` (até ${ym(ms[ms.length - 1])})` : ""}</option>`; }).join("")}</select></label>`
+    : `<label class="fgroup"><span class="flabel">Mês</span><select id="qmes" class="sel">${qMeses().slice().reverse().map(d => `<option value="${d}"${d === qMes() ? " selected" : ""}>${ym(d)}</option>`).join("")}</select></label>`;
+  $("#filters").innerHTML = `<div class="frow">${chips}</div><div class="frow">${segP}${sel}</div>`;
 }
 document.addEventListener("click", (ev) => {
-  const b = ev.target.closest("[data-qesc],[data-qord],#qmore"); if (!b) return;
+  const b = ev.target.closest("[data-qesc],[data-qord],[data-qper],#qmore"); if (!b) return;
   if (b.dataset.qesc) { qs.esc = b.dataset.qesc; qs.all = false; }
+  if (b.dataset.qper) qs.per = b.dataset.qper;
   if (b.dataset.qord) qs.ord = b.dataset.qord;
   if (b.id === "qmore") qs.all = !qs.all;
-  try { localStorage.setItem("res-filtros", JSON.stringify({ esc: qs.esc, ate: qs.ate })); } catch (e) {}
+  try { localStorage.setItem("res-filtros", JSON.stringify({ esc: qs.esc, ate: qs.ate, per: qs.per, ano: qs.ano, mes: qs.mes })); } catch (e) {}
   render();
 });
-document.addEventListener("change", (ev) => { if (ev.target.id === "qate") { qs.ate = ev.target.value; render(); } });
+document.addEventListener("change", (ev) => { const id = ev.target.id; if (!["qate", "qano", "qmes"].includes(id)) return;
+  qs[{ qate: "ate", qano: "ano", qmes: "mes" }[id]] = ev.target.value;
+  try { localStorage.setItem("res-filtros", JSON.stringify({ esc: qs.esc, ate: qs.ate, per: qs.per, ano: qs.ano, mes: qs.mes })); } catch (e) {} render(); });
 document.addEventListener("input", (ev) => { if (ev.target.id === "qbusca") { qs.busca = ev.target.value; renderResRank(); } });
 function waterfall(x, o = {}) {
   const W = 640, H = 260, L = 40, R2 = 12, T = 16, B = 46, items = [["Receita", 100, "base"]].concat(DESP.slice(0, -1).map(([k, n]) => [n, x[k] || 0, "neg"])).concat([["Lucro ou sobras", x.d_lucro || 0, "fim"]]);
@@ -1069,16 +1110,19 @@ function renderRes() {
   $("#stamp").textContent = `Cosif até ${ym(Q.meta.ref)} · atualizado em ${dmy(Q.meta.atualizado)}`;
   try {
     const e = qEsc(qs.esc), x = qR12(qs.esc), A = Q.agg[qs.esc], c0 = qR12("coop"), b0 = qR12("bancos");
-    if (!x) { $("#view").innerHTML = `<p class="empty">Sem resultado de 12 meses para ${esc(e.nome)} em ${ym(qAte())}.</p>`; return; }
-    const sem = A.sem, s1 = sem.find(s => s.s === "1S" + qAte().slice(2, 4)), s0 = sem.find(s => s.s === "1S" + String(+qAte().slice(2, 4) - 1).padStart(2, "0"));
-    const vS = s1 && s0 && s0.lucro > 0 ? pct(s1.lucro, s0.lucro) : null;
+    if (!x) { $("#view").innerHTML = `<p class="empty">Sem atualização: não há resultado de ${esc(qPerTxt())} para ${esc(e.nome)} nos balancetes.</p>`; return; }
+    const sem = A.sem, per = qPerOk(), PT = qPerTxt();
+    let vS = null, vTxt = "";
+    if (per === "r12") { const s1 = sem.find(s => s.s === "1S" + qAte().slice(2, 4)), s0 = sem.find(s => s.s === "1S" + String(+qAte().slice(2, 4) - 1).padStart(2, "0"));
+      vS = s1 && s0 && s0.lucro > 0 ? pct(s1.lucro, s0.lucro) : null; vTxt = `no 1º semestre contra o de ${String(+qAte().slice(0, 4) - 1)}`; }
+    else { const p0 = qCalc(A.m, qJanela(-12)); vS = p0 && p0.lucro > 0 ? pct(x.lucro, p0.lucro) : null; vTxt = "contra o mesmo período do ano anterior"; }
     const k = (lbl, v, unit, sub, foot, cl = "flat") => `<div class="kpi"><div class="lbl">${lbl}</div><div class="val">${v}<small>${unit}</small></div><div class="chg ${cl}">${sub}</div><div class="src">${foot}</div></div>`;
     const cmp = (a, b, d = 1, inv = false) => a == null || b == null ? "" : `${sgn(a - b, d, " p.p.")} contra cooperativas`;
-    const foot = `12 meses até ${ym(qAte())} · Cosif ${(Date.now() - new Date(Q.meta.novo_desde + "T12:00:00")) / 864e5 <= 7 ? '<span class="badge-new">novo</span>' : ""}`;
+    const foot = `${PT} · Cosif ${(Date.now() - new Date(Q.meta.novo_desde + "T12:00:00")) / 864e5 <= 7 ? '<span class="badge-new">novo</span>' : ""}`;
     const kp = `<div class="kpis">
-      ${k(`Lucro ou sobras · ${esc(e.nome)}`, x.lucro >= 1000 || x.lucro <= -1000 ? nf(x.lucro / 1000, 2) : nf(x.lucro, 1), x.lucro >= 1000 || x.lucro <= -1000 ? " bi" : " mi", vS == null ? "" : `${arrow(vS)}${sgn(vS)} no 1º semestre contra o de ${String(+qAte().slice(0, 4) - 1)}`, foot, cls(vS))}
-      ${k("ROE", nf(x.roe, 1), "%", cmp(x.roe, c0?.roe), "lucro 12m / PL médio · " + foot, x.roe >= c0?.roe ? "up" : "down")}
-      ${k("ROA", nf(x.roa, 2), "%", x.roa == null ? "" : `${sgn(x.roa - c0?.roa, 2, " p.p.")} contra cooperativas`, "lucro 12m / ativo médio", x.roa >= c0?.roa ? "up" : "down")}
+      ${k(`Lucro ou sobras · ${esc(e.nome)}`, x.lucro >= 1000 || x.lucro <= -1000 ? nf(x.lucro / 1000, 2) : nf(x.lucro, 1), x.lucro >= 1000 || x.lucro <= -1000 ? " bi" : " mi", vS == null ? "" : `${arrow(vS)}${sgn(vS)} ${vTxt}`, foot, cls(vS))}
+      ${k("ROE", nf(x.roe, 1), "%", cmp(x.roe, c0?.roe), `lucro / PL médio${qAnual()} · ` + foot, x.roe >= c0?.roe ? "up" : "down")}
+      ${k("ROA", nf(x.roa, 2), "%", x.roa == null ? "" : `${sgn(x.roa - c0?.roa, 2, " p.p.")} contra cooperativas`, `lucro / ativo médio${qAnual()}`, x.roa >= c0?.roa ? "up" : "down")}
       ${k("Eficiência", nf(x.efic, 1), "%", cmp(x.efic, c0?.efic), "pessoal, adm. e depreciação / margem e serviços", x.efic <= c0?.efic ? "up" : "down")}
       ${k("Captação / receita", nf(x.d_capt, 1), "%", cmp(x.d_capt, c0?.d_capt), "despesa de captação e repasses", x.d_capt <= c0?.d_capt ? "up" : "down")}
       ${k("Provisão / receita", nf(x.d_prov, 1), "%", cmp(x.d_prov, c0?.d_prov), "provisão líquida de reversões e recuperações", x.d_prov <= c0?.d_prov ? "up" : "down")}
@@ -1095,14 +1139,14 @@ function renderRes() {
       return `<tr${id === qs.esc ? ' style="background:var(--panel)"' : ""}><td><span class="dot" style="background:${cor(ee.cor)}"></span>${esc(ee.nome)}</td><td class="num">${brlMi(z.lucro)}</td><td class="num"><b>${nf(z.roe, 1)}%</b></td><td class="num">${nf(z.roa, 2)}%</td><td class="num">${nf(z.efic, 1)}%</td>
         ${["r_cred", "r_tes", "r_serv"].map(p => `<td class="num">${nf(z[p], 1)}%</td>`).join("")}${["d_capt", "d_prov", "d_pess", "d_adm", "d_depr"].map(p => `<td class="num">${nf(z[p], 1)}%</td>`).join("")}</tr>`; }).join("");
     const link = `<a href="${esc(Q.meta.url)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>`;
-    $("#view").innerHTML = `<div><div class="eyebrow">12 meses até ${ym(qAte())} · ${A.n} instituições no escopo</div><h2>Resultados · ${esc(e.nome)}</h2>
-      <p class="lede">Lucro ou sobras, rentabilidade, eficiência, de onde vem a receita e para onde ela vai. Base mensal dos balancetes, acumulada em 12 meses.</p></div>
+    $("#view").innerHTML = `<div><div class="eyebrow">${esc(PT)} · ${A.n} instituições no escopo</div><h2>Resultados · ${esc(e.nome)}</h2>
+      <p class="lede">Lucro ou sobras, rentabilidade, eficiência, de onde vem a receita e para onde ela vai, no período escolhido: ${esc(PT)}. Base mensal dos balancetes. No acumulado do exercício e no mensal, ROE e ROA aparecem anualizados.</p></div>
       ${kp}
-      <div class="grid2">${block(`Da receita ao resultado · ${esc(e.nome)}`, `% da receita total · 12 meses até ${ym(qAte())}`, waterfall(x), `Receita total = crédito + tesouraria líquida + serviços e tarifas + outras receitas (R$ ${brlMi(x.rec).replace("R$ ", "")}). ${link}`)}
+      <div class="grid2">${block(`Da receita ao resultado · ${esc(e.nome)}`, `% da receita total · ${esc(PT)}`, waterfall(x), `Receita total = crédito + tesouraria líquida + serviços e tarifas + outras receitas (R$ ${brlMi(x.rec).replace("R$ ", "")}). ${link}`)}
         ${block("Lucro ou sobras por semestre", esc(e.nome), sb + tsChart(roeL, { unit: "%", fmt: v => nf(v, 1), h: 170, label: "ROE 12 meses" }), `ROE em 12 meses (linhas): lucro dos últimos 12 meses sobre o PL médio. Juros ao capital das cooperativas somados de volta ao resultado, como no IF.data. ${link}`)}</div>
-      <div class="grid2">${block("De onde vem a receita", `% da receita total · ${ym(qAte())}`, stack100(rowsC, REC, { label: "Composição da receita" }), `Tesouraria inclui, nas cooperativas, a remuneração da centralização financeira (ingressos de depósitos intercooperativos). ${link}`)}
-        ${block("Para onde vai a receita", `% da receita total · ${ym(qAte())}`, stack100(rowsC, DESP, { label: "Despesas e resultado" }), `Provisão líquida de reversões e recuperações de créditos baixados. ${link}`)}</div>
-      ${block("Comparativo de escopos", `12 meses até ${ym(qAte())}`, `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Lucro</th><th class="num">ROE</th><th class="num">ROA</th><th class="num">Eficiência</th><th class="num">Rec. crédito</th><th class="num">Rec. tesour.</th><th class="num">Rec. serviços</th><th class="num">Captação</th><th class="num">Provisão</th><th class="num">Pessoal</th><th class="num">Adm.</th><th class="num">Deprec.</th></tr></thead><tbody>${tab}</tbody></table></div>`, `Receitas e despesas em % da receita total. ${link}`)}
+      <div class="grid2">${block("De onde vem a receita", `% da receita total · ${esc(PT)}`, stack100(rowsC, REC, { label: "Composição da receita" }), `Tesouraria inclui, nas cooperativas, a remuneração da centralização financeira (ingressos de depósitos intercooperativos). ${link}`)}
+        ${block("Para onde vai a receita", `% da receita total · ${esc(PT)}`, stack100(rowsC, DESP, { label: "Despesas e resultado" }), `Provisão líquida de reversões e recuperações de créditos baixados. ${link}`)}</div>
+      ${block("Comparativo de escopos", esc(PT), `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Lucro</th><th class="num">ROE</th><th class="num">ROA</th><th class="num">Eficiência</th><th class="num">Rec. crédito</th><th class="num">Rec. tesour.</th><th class="num">Rec. serviços</th><th class="num">Captação</th><th class="num">Provisão</th><th class="num">Pessoal</th><th class="num">Adm.</th><th class="num">Deprec.</th></tr></thead><tbody>${tab}</tbody></table></div>`, `Receitas e despesas em % da receita total. ${link}`)}
       <section class="block" id="qrank"></section>
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler a aba Resultados</h3></header><div class="methods">
         <p><b>Base.</b> Balancetes Cosif mensais (cooperativas, documento 4010; conglomerados prudenciais, 4060) desde jan/25. As contas de resultado são acumuladas no semestre; o painel converte em fluxo mensal e soma 12 meses. O lucro do semestre confere com o IF.data (ex.: BB, 1º sem/26: R$ 6.550,6 mi nas duas bases).</p>
@@ -1120,23 +1164,24 @@ function renderResRank() {
   const q = qs.busca.trim().toLowerCase(); if (q) list = list.filter(i => (i.curto + " " + i.nome + " " + i.id).toLowerCase().includes(q));
   const sAt = Q.agg.coop.sem[Q.agg.coop.sem.length - 1].s, sAn = sAt.slice(0, 2) + String(+sAt.slice(2) - 1).padStart(2, "0");
   const vs = (i) => { const a = i.sem.find(s => s.s === sAt), b = i.sem.find(s => s.s === sAn); return a && b && b.lucro > 0 ? pct(a.lucro, b.lucro) : null; };
-  const val = (i, k) => k === "vs" ? vs(i) : i.r12[k];
+  const cache = new Map(list.map(i => [i.id, qInstPer(i)]));
+  const val = (i, k) => k === "vs" ? vs(i) : cache.get(i.id)?.[k];
   const asc = ["efic", "d_capt", "d_prov", "d_pess", "d_adm", "d_depr"].includes(qs.ord);
   list = list.slice().sort((a, b) => { const x = val(a, qs.ord), y = val(b, qs.ord); if (x == null) return 1; if (y == null) return -1; return asc ? x - y : y - x; });
   const shown = qs.all || q ? list : list.slice(0, 25);
   const ord = (k, n) => `<button type="button" data-qord="${k}" aria-pressed="${qs.ord === k}">${n}</button>`;
   const ativo = document.activeElement?.id === "qbusca";
   const colI = (i) => i.tipo === "coop" ? cor(({ sicoob: "#00AE9D", sicredi: "#7CC35A", cresol: "#6E5A9E", unicred: "#9C7A3C" })[i.sistema] || "#A3ACA8") : instCorR(i);
-  el.innerHTML = `<header><div class="eyebrow">${esc(qEsc(qs.esc).nome)} · ${list.length} instituições · 12 meses até ${ym(Q.meta.ref)}</div><h3>Instituições por resultado</h3></header>
+  el.innerHTML = `<header><div class="eyebrow">${esc(qEsc(qs.esc).nome)} · ${list.length} instituições · ${esc(qPerTxt())}</div><h3>Instituições por resultado</h3></header>
     <div class="rank-tools"><div class="fgroup"><span class="flabel">Ordenar por</span><div class="seg">${ord("lucro", "Lucro")}${ord("roe", "ROE")}${ord("roa", "ROA")}${ord("efic", "Eficiência")}${ord("vs", "Lucro semestre a/a")}${ord("d_capt", "Captação")}${ord("d_prov", "Provisão")}${ord("d_pess", "Pessoal")}${ord("d_adm", "Adm.")}</div></div>
     <input id="qbusca" type="search" placeholder="Buscar instituição ou CNPJ" value="${esc(qs.busca)}" aria-label="Buscar instituição"></div>
-    <div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Lucro 12m</th><th class="num">Semestre a/a</th><th class="num">ROE</th><th class="num">ROA</th><th class="num">Eficiência</th><th class="num">Rec. crédito</th><th class="num">Captação</th><th class="num">Provisão</th><th class="num">Pessoal</th><th class="num">Adm.</th><th class="num">Deprec.</th></tr></thead><tbody>
-    ${shown.map(i => { const z = i.r12, v = vs(i); return `<tr><td><div class="inst-name"><span class="dot" style="background:${colI(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 50))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
+    <div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Lucro</th><th class="num">Semestre a/a</th><th class="num">ROE</th><th class="num">ROA</th><th class="num">Eficiência</th><th class="num">Rec. crédito</th><th class="num">Captação</th><th class="num">Provisão</th><th class="num">Pessoal</th><th class="num">Adm.</th><th class="num">Deprec.</th></tr></thead><tbody>
+    ${shown.map(i => { const z = cache.get(i.id) || {}, v = vs(i); return `<tr><td><div class="inst-name"><span class="dot" style="background:${colI(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 50))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
       <td class="num ${z.lucro < 0 ? "down" : ""}">${brlMi(z.lucro)}</td><td class="num ${cls(v)}">${v == null ? "—" : sgn(v)}</td><td class="num"><b>${z.roe == null ? "—" : nf(z.roe, 1) + "%"}</b></td><td class="num">${z.roa == null ? "—" : nf(z.roa, 2) + "%"}</td><td class="num">${z.efic == null ? "—" : nf(z.efic, 1) + "%"}</td>
       ${["r_cred", "d_capt", "d_prov", "d_pess", "d_adm", "d_depr"].map(p => `<td class="num">${z[p] == null ? "—" : nf(z[p], 1) + "%"}</td>`).join("")}</tr>`; }).join("") || `<tr><td colspan="12" class="empty">Nenhuma instituição encontrada.</td></tr>`}
     </tbody></table></div>
     ${list.length > 25 && !q ? `<button class="linkbtn" id="qmore" type="button">${qs.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
-    <div class="meta">Lucro e indicadores em 12 meses até ${ym(Q.meta.ref)}. "Semestre a/a": lucro do semestre ${sAt.replace("S", "º sem/")} contra o mesmo semestre do ano anterior (só quando o anterior foi positivo). Receitas e despesas em % da receita total. <a href="${esc(Q.meta.url)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>.</div>`;
+    <div class="meta">Lucro e indicadores: ${esc(qPerTxt())}${qAnual() ? " (ROE e ROA anualizados)" : ""}. "Semestre a/a": lucro do semestre ${sAt.replace("S", "º sem/")} contra o mesmo semestre do ano anterior (só quando o anterior foi positivo). Receitas e despesas em % da receita total. <a href="${esc(Q.meta.url)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>.</div>`;
   if (ativo) { const b = $("#qbusca"); b.focus(); b.setSelectionRange(b.value.length, b.value.length); }
 }
 let carregandoQ = false;

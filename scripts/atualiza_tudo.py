@@ -81,6 +81,11 @@ def chk_risco(n, a):
 
 def chk_posicao(n, a):
     t = n["meta"]["ref"]; nao_recua(t, (a or {}).get("meta", {}).get("ref"), "referência do IF.data")
+    tri, ant = n["meta"]["trimestres"], (a or {}).get("meta", {}).get("trimestres", [])
+    falta = [q for q in ant if q >= tri[0] and q not in tri] if tri else ant
+    if len(tri) < len(ant) or falta: raise AssertionError(f"trimestres incompletos: {tri} (antes {ant})")
+    ano = f"{int(t[:4]) - 1}{t[4:]}"
+    if ano not in tri: raise AssertionError(f"falta o trimestre {ano}, base da variação em 12 meses")
     faixa(n["agg"]["sfn"][t]["basil"], 12, 25, "Basileia do SFN")
     for g, lo, hi in (("crediminas", 55, 80), ("cecremge", 40, 65)):
         k = sum(1 for i in n["inst"] if g in i["escopos"])
