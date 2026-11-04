@@ -74,6 +74,8 @@ nav.tabs .wrap::-webkit-scrollbar { display: none; }
 .qtab tr td.cmpG, .qlegenda i.cmpG { background: rgba(27, 122, 62, 0.11); }
 .qtab tr td.cmpR, .qlegenda i.cmpR { background: rgba(180, 35, 24, 0.10); }
 .sec-h { margin: 22px 0 6px; font-size: 1.02rem; }
+.so-cel { display: none; }
+@media (max-width: 900px) { .so-desk { display: none !important; } .so-cel { display: block; } }
 .tleg { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .74rem; color: var(--muted); margin-top: 6px; }
 .tleg .lgi i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 4px; vertical-align: -2px; }
 .dsq { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 270px), 1fr)); gap: 14px 22px; margin: 6px 0 4px; }
@@ -2083,6 +2085,15 @@ function tAgg() {
     const g = T.prog[cod]; if (g) { x.pr += g[0]; x.pa += g[0] + g[1] + g[2]; } });
   return o;
 }
+function tNiveisInfo() {          // como ler os níveis territoriais (lado do mapa no computador; fontes e método no celular)
+  const n = (k) => new Set(Object.values(T.mun_reg || {}).map(r => r[k]).filter(Boolean)).size;
+  const L = [["Município", Object.keys(MAPA.m).length, "—", "A unidade básica."], ["Microrregião", n("mi"), "Antiga (1989)", "Municípios vizinhos com produção e características físicas parecidas."],
+    ["Mesorregião", n("me"), "Antiga (1989)", "Conjuntos de microrregiões; os nomes clássicos: Triângulo, Sul de Minas, Zona da Mata, Norte de Minas…"],
+    ["Região imediata", n("ri"), "Atual (2017)", "Municípios que dependem da mesma cidade próxima para compras, serviços e trabalho."],
+    ["Região intermediária", n("rt"), "Atual (2017)", "Conjuntos de regiões imediatas em torno de um polo regional (Uberlândia, Montes Claros, Varginha…)."]];
+  return `<div class="tbl-wrap"><table style="font-size:.8rem"><thead><tr><th>Nível</th><th class="num">Em MG</th><th>Divisão do IBGE</th><th>O que agrupa</th></tr></thead><tbody>${L.map(([a, b, c, d]) => `<tr${T_NIV.find(x => x[1] === a)?.[0] === ts.nivel ? ' style="background:var(--panel)"' : ""}><td><b>${a}</b></td><td class="num">${b}</td><td>${c}</td><td><small style="font-size:.78rem">${d}</small></td></tr>`).join("")}</tbody></table></div>
+    <p class="lede" style="font-size:.82rem;margin-top:6px">A divisão antiga junta municípios pelo que produzem; a atual, pela cidade de referência da população, mais perto da lógica de área de atuação de uma cooperativa ou agência.</p>`;
+}
 function renderTerr() {
   if (!precisa(["territorio"]) || !MAPA) { esperando(Terr ? "Aba em validação: a base de crédito rural por município ainda não foi publicada pela rotina. Volte em breve." : "Carregando o crédito rural por município…"); return; }
   cid = 0;
@@ -2119,6 +2130,7 @@ function renderTerr() {
     const leg = pal.map((c, i) => `<span class="lgi"><i style="background:${c}"></i>${i === 0 ? "< " + fmtM(cuts[0]) : i === 5 ? "≥ " + fmtM(cuts[4]) : fmtM(cuts[i - 1]) + " a " + fmtM(cuts[i])}</span>`).join("") + `<span class="lgi"><i style="background:var(--line)"></i>sem operação</span>`;
     const mapa = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Mapa de Minas Gerais">${paths}</svg><div class="tleg">${leg}</div>`;
     let det = `<p class="lede" style="font-size:.88rem">Toque num ${ts.nivel === "mun" ? "município" : "território"} no mapa ou na tabela para ver produtos, programas e finalidade.</p>`;
+    const info = `<div class="so-desk"><div class="eyebrow" style="margin:14px 0 4px">Os níveis territoriais</div>${tNiveisInfo()}</div>`;
     const r = byK[ts.sel];
     if (ts.sel && r) {
       const muns = Object.keys(T.mun).filter(c => tKey(c) === ts.sel), pr = {}, pg = [0, 0, 0];
@@ -2141,12 +2153,13 @@ function renderTerr() {
       ${kp}
       <div class="grid2">${block(`Mapa · ${T_MET.find(x => x[0] === ts.met)[1].toLowerCase()}`, `${finN} · por ${nivN} · safra ${safraLbl(S0)}`, mapa,
           `${ts.met === "var" ? "Variação contra o mesmo ponto da safra anterior; cinza claro quando não há base de comparação." : ts.met === "pronaf" ? "Participação do Pronaf no valor de custeio e investimento do território." : "Faixas pelos quantis do valor contratado."} Malha municipal do IBGE, simplificada. ${lk}`)}
-        <section class="block"><header><div class="eyebrow">Detalhe</div><h3>Território escolhido</h3></header>${det}</section></div>
+        <section class="block"><header><div class="eyebrow">Detalhe</div><h3>Território escolhido</h3></header>${det}${ts.sel && byK[ts.sel] ? `<details class="so-desk" style="margin-top:12px"><summary class="linkbtn">Os níveis territoriais</summary>${tNiveisInfo()}</details>` : info}</section></div>
       ${block(`${nivT === "Município" ? "Municípios" : nivT === "Região imediata" ? "Regiões imediatas" : nivT === "Região intermediária" ? "Regiões intermediárias" : nivT + "s"} por valor contratado`, `${finN} · safra ${safraLbl(S0)} de jul a ${mFim}, contra o mesmo período da anterior`, tab, `R$ milhões. Investimento = participação do investimento em custeio + investimento. Pronaf = participação do programa. ${lk}`)}
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
         <p><b>Base.</b> Matriz de Dados do Crédito Rural (SICOR), tabelas de custeio e de investimento por município e produto, mensais, de todo o SFN. A comercialização é publicada só por UF e fica fora. ${T.meta.sem_municipio_pct ? `${nf(T.meta.sem_municipio_pct, 2)}% do valor de MG não tem município identificado.` : ""}</p>
         <p><b>Por que sem instituição.</b> O arquivo de microdados que traz o município de cada operação cobre só parte delas, de forma desigual entre instituições (de 15% a 99% do valor em MG). Para não mostrar um retrato distorcido, o painel usa a tabela oficial por município, que é completa, mas agregada.</p>
-        <p><b>Regiões.</b> Microrregião e mesorregião (divisão de 1989) e regiões imediata e intermediária (divisão de 2017), do IBGE (${esc(T.meta.regioes_fonte || "sem fonte")}).</p></div></section>`;
+        <p><b>Regiões.</b> Microrregião e mesorregião (divisão de 1989) e regiões imediata e intermediária (divisão de 2017), do IBGE (${esc(T.meta.regioes_fonte || "sem fonte")}).</p>
+        <div class="so-cel">${tNiveisInfo()}</div></div></section>`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
 /* ===================== Aba Expectativas de mercado ===================== */
