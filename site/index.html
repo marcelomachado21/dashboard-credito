@@ -234,7 +234,7 @@ async function carregar(nome) {
 }
 
 (() => {
-const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território"];
+const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território · MG"];
 const MES = ["jul","ago","set","out","nov","dez","jan","fev","mar","abr","mai","jun"];
 const MESF = ["julho","agosto","setembro","outubro","novembro","dezembro","janeiro","fevereiro","março","abril","maio","junho"];
 const FIN = [["all","Todas"],["c","Custeio"],["i","Investimento"],["m","Comercialização"],["n","Industrialização"]];
@@ -1960,6 +1960,7 @@ function renderVisao() {
       ["Rural na carteira", k => { const c = lastP(C.cosif[k]); return c ? nf(c.p_rur, 1) + "%" : "—"; }, "Cosif"], [`Safra ${safraLbl(S0)}, var.`, k => sgn(sfV(k)), "SICOR"]];
     const tabela = `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th>${COLS.map(([k, n]) => `<th class="num">${n}</th>`).join("")}<th>Base</th></tr></thead><tbody>${LIN.map(([n, f, b]) => `<tr><td>${n}</td>${COLS.map(([k]) => `<td class="num">${f(k)}</td>`).join("")}<td><small>${b}</small></td></tr>`).join("")}</tbody></table></div>`;
     const tabs = [["#ruralsfn", "Crédito rural no SFN", "Carteira, inadimplência, atraso e concessões rurais do sistema"],
+      ["#territorio", "Crédito rural por território · MG", "Custeio e investimento em MG por município e região, todo o SFN"],
       ["#consignado", "Consignado", "Crédito do Trabalhador, INSS e setor público: concessões, saldo, inadimplência e ativo problemático"],
       ["#expectativas", "Expectativas de mercado", "Focus: Selic, IPCA, PIB e câmbio esperados"],
       ["#carteira", "Perfil da carteira", "Tamanho, crescimento e composição por sistema, central ou instituição"],
@@ -1967,7 +1968,6 @@ function renderVisao() {
       ["#resultados", "Resultados", "Lucro, ROE, eficiência, receita e despesa"],
       ["#safra", "Safra de crédito rural / contratações", "Contratação por safra, finalidade, programa, fonte e instituição"],
       ["#rural", "Carteira rural / estoque", "Saldo rural e fonte de recursos por escopo"],
-      ["#territorio", "Crédito rural por território", "Custeio e investimento em MG por município e região, todo o SFN"],
       ["#quadro", "Quadro de indicadores por instituição", "Todos os indicadores de cada instituição do grupo, com a variação em 12 meses"],
       ["#rankings", "Rankings", "Ordenação por indicador e pontos de atenção"],
       ["#posicao", "Mapa de posicionamento", "Cada instituição contra o grupo"],
@@ -2152,7 +2152,7 @@ function renderTerr() {
       `<tr${ts.sel === r.k ? ' style="background:var(--panel)"' : ""}><td class="num">${i + 1}</td><td><button type="button" class="linkbtn" data-tsel="${esc(r.k)}" style="text-align:left">${esc(tNome(r.k))}</button>${ts.nivel === "mun" && tReg(r.k).mi ? `<small>${esc(tReg(r.k).mi)}</small>` : ts.nivel !== "mun" ? `<small>${r.nm} municípios</small>` : ""}</td><td class="num"><b>${brlMi(r.a)}</b></td><td class="num">${brlMi(r.p)}</td><td class="num ${cls(r.v)}">${sgn(r.v)}</td><td class="num">${tot ? nf(r.a / tot * 100, 1) + "%" : "—"}</td><td class="num">${r.c + r.i ? nf(r.i / (r.c + r.i) * 100, 0) + "%" : "—"}</td><td class="num">${r.pn == null ? "—" : nf(r.pn, 0) + "%"}</td></tr>`).join("")}</tbody></table></div>
       ${rows.length > 30 ? `<button class="linkbtn" id="tmore" type="button">${ts.all ? "Mostrar só os 30 primeiros" : `Mostrar todos os ${rows.length}`}</button>` : ""}`;
     const lk = `<a href="${esc(T.meta.url)}" target="_blank" rel="noopener">Matriz de Dados do Crédito Rural, Banco Central</a>`;
-    $("#view").innerHTML = `<div><div class="eyebrow">SICOR · safra ${safraLbl(S0)} de jul a ${mFim} · Minas Gerais · todo o SFN</div><h2>Crédito rural por território</h2>
+    $("#view").innerHTML = `<div><div class="eyebrow">SICOR · safra ${safraLbl(S0)} de jul a ${mFim} · Minas Gerais · todo o SFN</div><h2>Crédito rural por território · MG</h2>
       <p class="lede">Onde o crédito rural é contratado em Minas Gerais, por ${nivN}: custeio e investimento de todo o SFN na safra corrente até o último mês publicado, contra o mesmo ponto da safra anterior. A base oficial por município não separa instituição; a participação de cada sistema e instituição está na aba Safra, por UF.</p></div>
       ${kp}
       ${cobF?.a ? `<div class="nota-fin"><b>Esta aba cobre custeio e investimento: ${nf(cobF.a[0] + cobF.a[1], 0)}% do crédito rural contratado em MG na safra ${safraLbl(S0)} até ${mFim}</b> (${nf(cobF.t[0] + cobF.t[1], 0)}% na safra ${safraLbl(S0 - 1)} inteira). Comercialização (${nf(cobF.a[2], 0)}%) e industrialização (${nf(cobF.a[3], 0)}%) ficam fora porque o Banco Central só as publica por UF, sem município. Para vê-las em Minas e por instituição, use a aba <a href="#safra">Safra de crédito rural / contratações</a>.</div>` : ""}
@@ -2427,7 +2427,7 @@ function renderFontes() {
     ["SICOR — Matriz de Dados do Crédito Rural", "Safra de crédito rural / contratações; Perfil da carteira; Crédito rural no SFN; Ficha; Rankings", "Microdados de operações de crédito rural por instituição, UF, programa, fonte e empreendimento", "Mensal (mês fechado), com revisão dos meses anteriores", "~25 dias", dmy(D.meta.ref), D.meta.url],
     ["SCR.data", "Visão geral do SFN; Crédito rural no SFN; Consignado", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente, modalidade, porte da empresa, faixa de renda e ocupação da PF", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
     ["SGS — séries temporais", "Visão geral do SFN; Crédito rural no SFN", "Saldo e concessões do SFN, por PF/PJ e modalidade; inadimplência rural", "Mensal", "~30 dias", ym(C.meta.refs.sgs), "https://www3.bcb.gov.br/sgspub/"],
-    ["SICOR — Matriz por município (API Olinda)", "Crédito rural por território", "Custeio e investimento por município e produto, todo o SFN, sem corte por instituição", "Mensal, com o SICOR", "~1 mês", T ? ym(T.meta.ref) : "carregue a aba", "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/aplicacao#!/recursos"],
+    ["SICOR — Matriz por município (API Olinda)", "Crédito rural por território · MG", "Custeio e investimento por município e produto, todo o SFN, sem corte por instituição", "Mensal, com o SICOR", "~1 mês", T ? ym(T.meta.ref) : "carregue a aba", "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/aplicacao#!/recursos"],
     ["Focus — expectativas de mercado", "Expectativas de mercado", "Mediana das expectativas anuais de IPCA, PIB, câmbio e Selic", "Semanal", "segunda-feira", F ? dmy(F.meta.ref) : "carregue a aba", "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/aplicacao#!/recursos/ExpectativasMercadoAnuais"],
     ["Balancetes Cosif", "Perfil da carteira; Carteira rural / estoque; Resultados; Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
     ["IF.data", "Quadro de indicadores; Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
@@ -2478,7 +2478,7 @@ function blocoStatus(st) {
 }
 /* ===================== Roteador ===================== */
 const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio" };
-const GRUPOS_ABAS = [[[0, 1, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 14, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
