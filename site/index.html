@@ -75,6 +75,7 @@ nav.tabs .wrap::-webkit-scrollbar { display: none; }
 .qtab tr td.cmpR, .qlegenda i.cmpR { background: rgba(180, 35, 24, 0.10); }
 .sec-h { margin: 22px 0 6px; font-size: 1.02rem; }
 .so-cel { display: none; }
+.nota-fin { margin: 4px 0 8px; padding: 10px 14px; border-left: 3px solid var(--warn-ink); background: #fbf6ee; font-size: .86rem; line-height: 1.45; color: var(--ink); border-radius: 0 8px 8px 0; }
 @media (max-width: 900px) { .so-desk { display: none !important; } .so-cel { display: block; } }
 .tleg { display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: .74rem; color: var(--muted); margin-top: 6px; }
 .tleg .lgi i { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 4px; vertical-align: -2px; }
@@ -2095,7 +2096,7 @@ function tNiveisInfo() {          // como ler os níveis territoriais (lado do m
     <p class="lede" style="font-size:.82rem;margin-top:6px">A divisão antiga junta municípios pelo que produzem; a atual, pela cidade de referência da população, mais perto da lógica de área de atuação de uma cooperativa ou agência.</p>`;
 }
 function renderTerr() {
-  if (!precisa(["territorio"]) || !MAPA) { esperando(Terr ? "Aba em validação: a base de crédito rural por município ainda não foi publicada pela rotina. Volte em breve." : "Carregando o crédito rural por município…"); return; }
+  if (!precisa(["territorio", "safra"]) || !MAPA) { esperando(Terr ? "Aba em validação: a base de crédito rural por município ainda não foi publicada pela rotina. Volte em breve." : "Carregando o crédito rural por município…"); return; }
   cid = 0;
   if (!T.mun_p) ts.prog = "tot";
   $("#filters").innerHTML = `<div class="frow"><div class="fgroup"><span class="flabel">Finalidade</span><div class="seg">${T_FIN.map(([k, n]) => `<button type="button" data-tfin="${k}" aria-pressed="${ts.fin === k}">${n}</button>`).join("")}</div></div>
@@ -2104,6 +2105,9 @@ function renderTerr() {
     <div class="fgroup"><span class="flabel">Cor do mapa</span><div class="seg">${T_MET.map(([k, n]) => `<button type="button" data-tmet="${k}" aria-pressed="${ts.met === k}">${n}</button>`).join("")}</div></div></div>`;
   $("#stamp").textContent = `SICOR até ${ym(T.meta.ref)} · atualizado em ${dmy(T.meta.atualizado)}`;
   try {
+    const cobF = (() => { const sm = D?.serie?.sfn?.MG; if (!sm) return null;
+      const soma = (S, n) => { const t = [0, 0, 0, 0]; (sm[String(S)] || []).slice(0, n).forEach(r => { for (let i = 0; i < 4; i++) t[i] += r[i]; }); const T_ = t.reduce((a, b) => a + b, 0); return T_ ? t.map(x => x / T_ * 100) : null; };
+      return { a: soma(T.meta.safra, T.meta.mes_limite + 1), t: soma(T.meta.safra - 1, 12) }; })();
     const S0 = T.meta.safra, A = tAgg(), finN = T_FIN.find(x => x[0] === ts.fin)[1].toLowerCase() + (ts.prog !== "tot" ? " · " + T_PROG.find(x => x[0] === ts.prog)[1] : ""), nivN = T_NIV.find(x => x[0] === ts.nivel)[1].toLowerCase();
     const rows = Object.entries(A).map(([k, x]) => ({ k, ...x, v: x.p > 0.05 ? pct(x.a, x.p) : null, pn: x.pa ? x.pr / x.pa * 100 : null })).filter(r => r.a > 0 || r.p > 0).sort((a, b) => b.a - a.a);
     const tot = rows.reduce((s_, r) => s_ + r.a, 0), totP = rows.reduce((s_, r) => s_ + r.p, 0), totT = rows.reduce((s_, r) => s_ + r.t, 0);
@@ -2151,12 +2155,13 @@ function renderTerr() {
     $("#view").innerHTML = `<div><div class="eyebrow">SICOR · safra ${safraLbl(S0)} de jul a ${mFim} · Minas Gerais · todo o SFN</div><h2>Crédito rural por território</h2>
       <p class="lede">Onde o crédito rural é contratado em Minas Gerais, por ${nivN}: custeio e investimento de todo o SFN na safra corrente até o último mês publicado, contra o mesmo ponto da safra anterior. A base oficial por município não separa instituição; a participação de cada sistema e instituição está na aba Safra, por UF.</p></div>
       ${kp}
+      ${cobF?.a ? `<div class="nota-fin"><b>Esta aba cobre custeio e investimento: ${nf(cobF.a[0] + cobF.a[1], 0)}% do crédito rural contratado em MG na safra ${safraLbl(S0)} até ${mFim}</b> (${nf(cobF.t[0] + cobF.t[1], 0)}% na safra ${safraLbl(S0 - 1)} inteira). Comercialização (${nf(cobF.a[2], 0)}%) e industrialização (${nf(cobF.a[3], 0)}%) ficam fora porque o Banco Central só as publica por UF, sem município. Para vê-las em Minas e por instituição, use a aba <a href="#safra">Safra de crédito rural / contratações</a>.</div>` : ""}
       <div class="grid2">${block(`Mapa · ${T_MET.find(x => x[0] === ts.met)[1].toLowerCase()}`, `${finN} · por ${nivN} · safra ${safraLbl(S0)}`, mapa,
           `${ts.met === "var" ? "Variação contra o mesmo ponto da safra anterior; cinza claro quando não há base de comparação." : ts.met === "pronaf" ? "Participação do Pronaf no valor de custeio e investimento do território." : "Faixas pelos quantis do valor contratado."} Malha municipal do IBGE, simplificada. ${lk}`)}
         <section class="block"><header><div class="eyebrow">Detalhe</div><h3>Território escolhido</h3></header>${det}${ts.sel && byK[ts.sel] ? `<details class="so-desk" style="margin-top:12px"><summary class="linkbtn">Os níveis territoriais</summary>${tNiveisInfo()}</details>` : info}</section></div>
       ${block(`${nivT === "Município" ? "Municípios" : nivT === "Região imediata" ? "Regiões imediatas" : nivT === "Região intermediária" ? "Regiões intermediárias" : nivT + "s"} por valor contratado`, `${finN} · safra ${safraLbl(S0)} de jul a ${mFim}, contra o mesmo período da anterior`, tab, `R$ milhões. Investimento = participação do investimento em custeio + investimento. Pronaf = participação do programa. ${lk}`)}
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
-        <p><b>Base.</b> Matriz de Dados do Crédito Rural (SICOR), tabelas de custeio e de investimento por município e produto, mensais, de todo o SFN. A comercialização é publicada só por UF e fica fora. ${T.meta.sem_municipio_pct ? `${nf(T.meta.sem_municipio_pct, 2)}% do valor de MG não tem município identificado.` : ""}</p>
+        <p><b>Base.</b> Matriz de Dados do Crédito Rural (SICOR), tabelas de custeio e de investimento por município e produto, mensais, de todo o SFN. A comercialização e a industrialização são publicadas só por UF e ficam fora${cobF?.a ? `: na safra ${safraLbl(S0)} até ${mFim}, somam ${nf(cobF.a[2] + cobF.a[3], 0)}% do crédito rural de MG (microdados do SICOR, aba Safra)` : ""}. ${T.meta.sem_municipio_pct ? `${nf(T.meta.sem_municipio_pct, 2)}% do valor de MG não tem município identificado.` : ""}</p>
         <p><b>Por que sem instituição.</b> O arquivo de microdados que traz o município de cada operação cobre só parte delas, de forma desigual entre instituições (de 15% a 99% do valor em MG). Para não mostrar um retrato distorcido, o painel usa a tabela oficial por município, que é completa, mas agregada.</p>
         <p><b>Regiões.</b> Microrregião e mesorregião (divisão de 1989) e regiões imediata e intermediária (divisão de 2017), do IBGE (${esc(T.meta.regioes_fonte || "sem fonte")}).</p>
         <div class="so-cel">${tNiveisInfo()}</div></div></section>`;
