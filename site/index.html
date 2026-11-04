@@ -405,7 +405,7 @@ function scatter(pts, o = {}) {                 // tamanho x variação
   pts.filter(p => p.lbl).forEach(p => { g += `<text x="${X(p.x) + 8}" y="${Y(p.y) + 4}" class="lbl-strong">${esc(p.name)}</text>`; });
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "dispersão")}">${g}</svg>`;
 }
-const legend = (items) => `<div class="legend">${items.map(i => `<span><i class="${i.dash ? "dash" : ""} ${i.box ? "box" : ""}" style="--c:${i.c};background:${i.c}"></i>${esc(i.name)}</span>`).join("")}</div>`;
+const legend = (items) => `<div class="legend">${items.map(i => `<span><i class="${i.dash ? "dash" : ""} ${i.box ? "box" : ""}" style="--c:${i.c};background:${i.bg || i.c}"></i>${esc(i.name)}</span>`).join("")}</div>`;
 const block = (title, eyebrow, body, meta) => `<section class="block"><header><div class="eyebrow">${eyebrow || ""}</div><h3>${title}</h3></header>${body}${meta ? `<div class="meta">${meta}</div>` : ""}</section>`;
 const fonteLink = () => `<a href="${esc(D.meta.url)}" target="_blank" rel="noopener">SICOR, Banco Central</a> · dados até ${dmy(D.meta.ref)}`;
 
@@ -474,9 +474,9 @@ function curva() {
       lineChart(Lf, { fmt: v => nf(v, v < 10 ? 1 : 0), label: "Acumulado da safra em R$ bilhões", note: k => cur() && k >= kr - 1 && k <= kr ? "mês em consolidação" : "" }),
       `R$ bilhões, valor contratado acumulado desde julho · ${fonteLink()}`) +
     block("Contratação mensal", tit,
-      legend([{ name: `Safra ${safraLbl(s - 1)}`, c: css("--grafite-2"), box: true }, { name: `Safra ${safraLbl(s)}`, c, box: true }].concat(cur() ? [{ name: "Mês em consolidação (hachurado)", c: "var(--warn-ink)", box: true }] : [])) +
-      barMonthly(mens, { fmt: v => v >= 1000 ? nf(v / 1000, 0) + " bi" : nf(v, 0), hatch: consolida(), label: "Contratação mensal" }),
-      `R$ milhões por mês de emissão · ${fonteLink()}`) +
+      legend([{ name: `Safra ${safraLbl(s - 1)}`, c: css("--grafite-2"), box: true }, { name: `Safra ${safraLbl(s)}`, c, box: true }].concat(cur() ? [{ name: "Mês em consolidação (hachurado)", c, bg: `repeating-linear-gradient(135deg, ${c} 0 2px, color-mix(in srgb, ${c} 30%, #fff) 2px 5px)`, box: true }] : [])) +
+      barMonthly(mens, { fmt: v => v >= 1000 ? nf(v / 1000, v % 1000 ? 1 : 0) + " bi" : v ? nf(v, 0) + " mi" : "0", hatch: consolida(), label: "Contratação mensal" }),
+      `Valor contratado por mês de emissão, em R$ · ${fonteLink()}`) +
     `</div>`;
 }
 function cortes() {
