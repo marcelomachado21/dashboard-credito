@@ -2053,28 +2053,32 @@ function renderConsig() {
 const dict = (p) => Object.fromEntries((p || []).map(x => [x.d, x.v]));
 
 /* ===================== Aba Crédito rural por território ===================== */
-const ts = { fin: "tot", nivel: "mun", met: "valor", sel: "", all: false };
+const ts = { fin: "tot", prog: "tot", nivel: "mun", met: "valor", sel: "", all: false };
+const T_PROG = [["tot", "Todos"], ["pronaf", "Pronaf"], ["pronamp", "Pronamp"], ["demais", "Demais"]];
 const T_NIV = [["mun", "Município"], ["mi", "Microrregião"], ["me", "Mesorregião"], ["ri", "Região imediata"], ["rt", "Região intermediária"]];
 const T_FIN = [["tot", "Custeio + investimento"], ["c", "Custeio"], ["i", "Investimento"]];
 const T_MET = [["valor", "Valor contratado"], ["var", "Variação sobre o mesmo ponto"], ["pronaf", "Pronaf no valor"]];
 document.addEventListener("click", (ev) => {
-  const b = ev.target.closest("[data-tfin],[data-tniv],[data-tmet],[data-tsel],#tmore,#tlimpa"); if (!b) return;
+  const b = ev.target.closest("[data-tfin],[data-tprog],[data-tniv],[data-tmet],[data-tsel],#tmore,#tlimpa"); if (!b) return;
   if (b.dataset.tfin) ts.fin = b.dataset.tfin;
+  if (b.dataset.tprog) ts.prog = b.dataset.tprog;
   if (b.dataset.tniv) { ts.nivel = b.dataset.tniv; ts.sel = ""; }
   if (b.dataset.tmet) ts.met = b.dataset.tmet;
   if (b.dataset.tsel != null) ts.sel = ts.sel === b.dataset.tsel ? "" : b.dataset.tsel;
   if (b.id === "tmore") ts.all = !ts.all;
   if (b.id === "tlimpa") ts.sel = "";
-  try { localStorage.setItem("terr-filtros", JSON.stringify({ fin: ts.fin, nivel: ts.nivel, met: ts.met })); } catch (e) {}
+  try { localStorage.setItem("terr-filtros", JSON.stringify({ fin: ts.fin, prog: ts.prog, nivel: ts.nivel, met: ts.met })); } catch (e) {}
   const y = window.scrollY; render(); window.scrollTo(0, y);
 });
 const tReg = (cod) => T.mun_reg?.[cod] || {};
 const tKey = (cod) => ts.nivel === "mun" ? cod : (tReg(cod)[ts.nivel] || "Sem região");
 const tNome = (k) => ts.nivel === "mun" ? (tReg(k).n || MAPA.m[k]?.n || k) : k;
 const tVal = (v, w) => ts.fin === "c" ? v[0 + w] : ts.fin === "i" ? v[1 + w] : v[0 + w] + v[1 + w];   // w: 0 = safra, 2 = mesmo ponto, 4 = anterior inteira
+const tProgOk = () => ts.prog !== "tot" && T.mun_p;
+const tLinha = (cod) => { if (!tProgOk()) return T.mun[cod]; const i = ["pronaf", "pronamp", "demais"].indexOf(ts.prog), v = T.mun_p[cod]; return v ? v.slice(6 * i, 6 * i + 6) : [0, 0, 0, 0, 0, 0]; };
 function tAgg() {
   const o = {};
-  Object.entries(T.mun).forEach(([cod, v]) => { const k = tKey(cod), x = o[k] || (o[k] = { a: 0, p: 0, t: 0, c: 0, i: 0, pr: 0, pa: 0, nm: 0 });
+  Object.keys(T.mun).forEach(cod => { const v = tLinha(cod), k = tKey(cod), x = o[k] || (o[k] = { a: 0, p: 0, t: 0, c: 0, i: 0, pr: 0, pa: 0, nm: 0 });
     x.a += tVal(v, 0); x.p += tVal(v, 2); x.t += tVal(v, 4); x.c += v[0]; x.i += v[1]; x.nm++;
     const g = T.prog[cod]; if (g) { x.pr += g[0]; x.pa += g[0] + g[1] + g[2]; } });
   return o;
@@ -2082,15 +2086,17 @@ function tAgg() {
 function renderTerr() {
   if (!precisa(["territorio"]) || !MAPA) { esperando(Terr ? "Aba em validação: a base de crédito rural por município ainda não foi publicada pela rotina. Volte em breve." : "Carregando o crédito rural por município…"); return; }
   cid = 0;
+  if (!T.mun_p) ts.prog = "tot";
   $("#filters").innerHTML = `<div class="frow"><div class="fgroup"><span class="flabel">Finalidade</span><div class="seg">${T_FIN.map(([k, n]) => `<button type="button" data-tfin="${k}" aria-pressed="${ts.fin === k}">${n}</button>`).join("")}</div></div>
+    ${T.mun_p ? `<div class="fgroup"><span class="flabel">Programa</span><div class="seg">${T_PROG.map(([k, n]) => `<button type="button" data-tprog="${k}" aria-pressed="${ts.prog === k}">${n}</button>`).join("")}</div></div>` : ""}
     <div class="fgroup"><span class="flabel">Nível</span><div class="seg">${T_NIV.map(([k, n]) => `<button type="button" data-tniv="${k}" aria-pressed="${ts.nivel === k}">${n}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Cor do mapa</span><div class="seg">${T_MET.map(([k, n]) => `<button type="button" data-tmet="${k}" aria-pressed="${ts.met === k}">${n}</button>`).join("")}</div></div></div>`;
   $("#stamp").textContent = `SICOR até ${ym(T.meta.ref)} · atualizado em ${dmy(T.meta.atualizado)}`;
   try {
-    const S0 = T.meta.safra, A = tAgg(), finN = T_FIN.find(x => x[0] === ts.fin)[1].toLowerCase(), nivN = T_NIV.find(x => x[0] === ts.nivel)[1].toLowerCase();
+    const S0 = T.meta.safra, A = tAgg(), finN = T_FIN.find(x => x[0] === ts.fin)[1].toLowerCase() + (ts.prog !== "tot" ? " · " + T_PROG.find(x => x[0] === ts.prog)[1] : ""), nivN = T_NIV.find(x => x[0] === ts.nivel)[1].toLowerCase();
     const rows = Object.entries(A).map(([k, x]) => ({ k, ...x, v: x.p > 0.05 ? pct(x.a, x.p) : null, pn: x.pa ? x.pr / x.pa * 100 : null })).filter(r => r.a > 0 || r.p > 0).sort((a, b) => b.a - a.a);
     const tot = rows.reduce((s_, r) => s_ + r.a, 0), totP = rows.reduce((s_, r) => s_ + r.p, 0), totT = rows.reduce((s_, r) => s_ + r.t, 0);
-    const nMun = Object.values(T.mun).filter(v => tVal(v, 0) > 0).length, top10 = tot ? rows.slice(0, 10).reduce((s_, r) => s_ + r.a, 0) / tot * 100 : null;
+    const nMun = Object.keys(T.mun).filter(c => tVal(tLinha(c), 0) > 0).length, top10 = tot ? rows.slice(0, 10).reduce((s_, r) => s_ + r.a, 0) / tot * 100 : null;
     const mFim = ["jul", "ago", "set", "out", "nov", "dez", "jan", "fev", "mar", "abr", "mai", "jun"][T.meta.mes_limite];
     const kp = `<div class="kpis">
       ${kpiBox(`Contratado em MG · safra ${safraLbl(S0)}`, nf(tot / 1000, 2), " bi", `${arrow(pct(tot, totP))}${sgn(pct(tot, totP))} contra o mesmo ponto`, cls(pct(tot, totP)), `${finN} · jul a ${mFim} · SICOR${tagNovo(T.meta.novo_desde)}`)}
@@ -2123,7 +2129,7 @@ function renderTerr() {
         <div><span class="eyebrow">Participação em MG</span><span class="big">${nf(tot ? r.a / tot * 100 : null, 2)}%</span><span class="flat">safra ${safraLbl(S0 - 1)} inteira: ${brlMi(r.t)}</span></div></div>
         ${r.c + r.i ? hbars([{ name: "Custeio", v: r.c / (r.c + r.i) * 100, c: "#4E8A3E" }, { name: "Investimento", v: r.i / (r.c + r.i) * 100, c: "#2B6F8A" }], { fmt: v => nf(v, 0) + "%", axis: false, L: 120, label: "Finalidade" }) : ""}
         ${pgT ? `<div class="eyebrow" style="margin:8px 0 2px">Programa</div>${hbars([{ name: "Pronaf", v: pg[0] / pgT * 100, c: "#7FC2B8" }, { name: "Pronamp", v: pg[1] / pgT * 100, c: "#3F9E91" }, { name: "Demais", v: pg[2] / pgT * 100, c: css("--grafite-2") }], { fmt: v => nf(v, 0) + "%", axis: false, L: 120, label: "Programa" })}` : ""}
-        ${prL.length ? `<div class="eyebrow" style="margin:8px 0 2px">Produtos financiados · custeio e investimento</div>${hbars(prL.map(([n, v]) => ({ name: n.length > 26 ? n.slice(0, 25) + "…" : n, v, c: css("--grafite-2") })), { fmt: v => brlMi(v), axis: false, L: 190, label: "Produtos" })}` : ""}`;
+        ${prL.length ? `<div class="eyebrow" style="margin:8px 0 2px">Produtos financiados · custeio e investimento${ts.prog !== "tot" ? ", todos os programas" : ""}</div>${hbars(prL.map(([n, v]) => ({ name: n.length > 26 ? n.slice(0, 25) + "…" : n, v, c: css("--grafite-2") })), { fmt: v => brlMi(v), axis: false, L: 190, label: "Produtos" })}` : ""}`;
     }
     const shown = ts.all ? rows : rows.slice(0, 30), nivT = T_NIV.find(x => x[0] === ts.nivel)[1];
     const tab = `<div class="tbl-wrap"><table><thead><tr><th>#</th><th>${nivT}</th><th class="num">Safra ${safraLbl(S0)}</th><th class="num">Mesmo ponto</th><th class="num">Variação</th><th class="num">% de MG</th><th class="num">Investimento</th><th class="num">Pronaf</th></tr></thead><tbody>${shown.map((r, i) =>

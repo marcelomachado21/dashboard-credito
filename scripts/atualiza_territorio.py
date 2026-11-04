@@ -75,6 +75,8 @@ def k_c(x): return str(x.get("codIbge") or "")[:7]
 def k_i(x): return cad.get(str(x.get("cdMunicipio")), "")
 # [custeio, investimento] na safra até o mês (a), mesmo ponto anterior (p) e safra anterior inteira (t)
 M = collections.defaultdict(lambda: [0.0] * 6)
+MP = collections.defaultdict(lambda: [0.0] * 18)      # por programa: Pronaf, Pronamp e demais, 6 campos cada
+pg_i = lambda x: 0 if x.get("cdPrograma") == "0001" else 1 if x.get("cdPrograma") == "0050" else 2
 PR = collections.defaultdict(lambda: collections.Counter())
 PG = collections.defaultdict(lambda: [0.0, 0.0, 0.0])
 sem = [0.0, 0.0]
@@ -85,17 +87,18 @@ for lst, kf, vl, j in ((cus, k_c, "VlCusteio", 0), (inv, k_i, "VlInvest", 1)):
             sem[j] += v if s_ in (S, S - 1) else 0; continue
         nome_de[k] = x.get("Municipio", "")
         if s_ == S and pos(x) <= lim:
-            M[k][j] += v
+            M[k][j] += v; MP[k][6 * pg_i(x) + j] += v
             PR[k][x.get("nomeProduto", "").strip('"')] += v
             p = x.get("cdPrograma"); PG[k][0 if p == "0001" else 1 if p == "0050" else 2] += v
         if s_ == S - 1:
-            M[k][4 + j] += v
-            if pos(x) <= lim: M[k][2 + j] += v
+            M[k][4 + j] += v; MP[k][6 * pg_i(x) + 4 + j] += v
+            if pos(x) <= lim: M[k][2 + j] += v; MP[k][6 * pg_i(x) + 2 + j] += v
 tot_ok = sum(v[0] + v[1] for v in M.values()); tot_sem = sem[0] + sem[1]
 r3 = lambda v: round(v / 1e6, 3)
 mun = {k: [r3(x) for x in v] for k, v in M.items() if any(v)}
 prod = {k: [[n.capitalize() if n.isupper() else n, r3(v)] for n, v in c.most_common(6)] for k, c in PR.items()}
 prog = {k: [r3(x) for x in v] for k, v in PG.items()}
+mun_p = {k: [r3(x) for x in v] for k, v in MP.items() if any(v)}
 mensal = {str(s_): [r3(sum(float(x.get(vl) or 0) for lst, vl in ((cus, "VlCusteio"), (inv, "VlInvest")) for x in lst if safra(x) == s_ and pos(x) == m)) for m in range(12)] for s_ in (S - 1, S)}
 # regiões: tabela fixa do IBGE no repositório (a API do IBGE não responde aos servidores do GitHub)
 import csv
@@ -109,7 +112,7 @@ out = {"meta": {"ref": ref, "safra": S, "mes_limite": lim, "atualizado": HOJE.is
                 "campos": ["custeio_a", "invest_a", "custeio_p", "invest_p", "custeio_t", "invest_t"],
                 "fonte": "Banco Central — Matriz de Dados do Crédito Rural (SICOR), custeio e investimento por município",
                 "url": "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/aplicacao#!/recursos"},
-       "mun_reg": reg, "mun": mun, "prod": prod, "prog": prog, "mensal": mensal}
+       "mun_reg": reg, "mun": mun, "mun_p": mun_p, "prod": prod, "prog": prog, "mensal": mensal}
 tmp = OUTFILE + ".tmp"
 json.dump(out, open(tmp, "w"), ensure_ascii=False, separators=(",", ":"))
 os.replace(tmp, OUTFILE)
