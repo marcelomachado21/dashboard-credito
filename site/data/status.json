@@ -1,18 +1,18 @@
 {
- "verificado_em": "2026-11-03T19:29:44+00:00",
+ "verificado_em": "2026-11-04T02:32:12+00:00",
  "forcado": true,
- "segundos": 761,
+ "segundos": 6087,
  "bases": {
   "safra": {
-   "segundos": 212,
-   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 352, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
-   "situacao": "sem mudança",
+   "segundos": 178,
+   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 348, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "situacao": "atualizado",
    "ref": "2026-09-30"
   },
   "risco": {
-   "segundos": 288,
+   "segundos": 2145,
    "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 827}",
-   "situacao": "sem mudança",
+   "situacao": "atualizado",
    "ref": {
     "scr": "2026-08",
     "cosif": "2026-06",
@@ -20,38 +20,39 @@
    }
   },
   "posicao": {
-   "segundos": 170,
-   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 868, \"kb\": 1497}",
-   "situacao": "sem mudança",
+   "segundos": 3600,
+   "saida": "tempo esgotado (60 min)",
+   "situacao": "falhou",
+   "motivo": "tempo esgotado (60 min)",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 22,
+   "segundos": 18,
    "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 834, \"kb\": 2781}",
-   "situacao": "sem mudança",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 49,
+   "segundos": 35,
    "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 414}",
-   "situacao": "sem mudança",
+   "situacao": "atualizado",
    "ref": {
     "sgs": "2026-09",
     "cosif": "2026-06"
    }
   },
   "focus": {
-   "segundos": 6,
+   "segundos": 7,
    "saida": "{\"focus\": \"2026-10-30\", \"kb\": 24}",
    "situacao": "atualizado",
    "ref": "2026-10-30"
   },
   "territorio": {
-   "segundos": 14,
-   "saida": "{\"territorio\": \"2026-09\", \"municipios\": 840, \"linhas\": 183458, \"kb\": 303}",
+   "segundos": 104,
+   "saida": "{\"territorio\": \"2026-09\", \"municipios\": 840, \"linhas\": 183458, \"kb\": 393}",
    "situacao": "atualizado",
    "ref": "2026-09"
   }
  },
- "ultima_atualizacao": "2026-11-03"
+ "ultima_atualizacao": "2026-11-04"
 }
