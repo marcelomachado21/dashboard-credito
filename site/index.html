@@ -55,7 +55,6 @@ nav.tabs .wrap { display: flex; gap: 10px; overflow-x: auto; scrollbar-width: no
 .tgrp { flex: none; border: 1.5px dashed #b5bdc2; border-radius: 12px; padding: 6px 8px 8px; display: grid; gap: 5px; }
 .tgrp:first-child { border-color: #8f979c; }
 .tcap { font-size: 0.66rem; color: var(--muted); letter-spacing: 0.02em; white-space: nowrap; padding-left: 2px; position: sticky; left: 0; justify-self: start; }
-@media (min-width: 901px) { nav.tabs .wrap { overflow: visible; } nav.tabs::after { display: none; } .tgrp { flex: 0 1 auto; min-width: 0; } .tgrp:first-child { flex: none; } .trow { flex-wrap: wrap; } .tcap { white-space: normal; } }
 .tcap b { color: var(--ink); font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; }
 .trow, .tsolo { display: flex; gap: 6px; }
 .tsolo { flex: none; padding-top: 25px; }
@@ -100,16 +99,15 @@ nav.tabs a:hover { background: #e2e6e8; color: var(--ink); }
 nav.tabs a[aria-current="page"] { color: #fff; background: #00786c; }
 .tscroll { position: relative; min-width: 0; }
 .tarr, .tdica { display: none; }
-@media (max-width: 900px) {
+/* abas: um grupo por linha, rolagem lateral com seta, no celular e no computador */
   nav.tabs .wrap { flex-direction: column; align-items: stretch; overflow: visible; gap: 8px; }
   .tgrp { min-width: 0; grid-template-columns: minmax(0, 1fr); }
   .tcap { white-space: normal; position: static; }
   .tdica { white-space: nowrap; }
-  .tgrp:first-child .trow { display: grid; grid-template-columns: 1fr 1fr; }
-  .tgrp:first-child .trow a { text-align: center; white-space: normal; }
   .tscroll .trow { overflow-x: auto; scrollbar-width: none; scroll-behavior: smooth; }
   .tscroll .trow::-webkit-scrollbar { display: none; }
-  .tdica { display: inline; color: var(--accent-ink); font-weight: 600; }
+  .tdica { color: var(--accent-ink); font-weight: 600; }
+  .tgrp.mais .tdica { display: inline; }
   .tarr { position: absolute; top: 0; bottom: 0; width: 46px; border: 0; padding: 0; cursor: pointer; z-index: 2; align-items: center; }
   .tarr span { display: inline-flex; width: 28px; height: 28px; border-radius: 50%; background: #00786c; color: #fff; font-size: 1.1rem; font-weight: 700; align-items: center; justify-content: center; box-shadow: 0 1px 4px rgba(0,0,0,0.18); }
   .tarr.r { right: -2px; justify-content: flex-end; background: linear-gradient(to right, rgba(255,255,255,0), var(--bg) 55%); }
@@ -119,7 +117,12 @@ nav.tabs a[aria-current="page"] { color: #fff; background: #00786c; }
   .tsolo a { background: none !important; color: var(--accent-ink) !important; padding: 2px 4px !important; font-size: 0.8rem !important; }
   .tsolo a::after { content: " ›"; }
   .tsolo a[aria-current="page"] { text-decoration: underline; }
+
+@media (max-width: 900px) {
+  .tgrp:first-child .trow { display: grid; grid-template-columns: 1fr 1fr; }
+  .tgrp:first-child .trow a { text-align: center; white-space: normal; }
 }
+
 .trow > span[title] { cursor: default; }
 .filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--bg); border-bottom: 1px solid var(--line); }
 .filters .wrap { padding-block: 10px; display: grid; gap: 8px; }
@@ -2455,14 +2458,15 @@ const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
   const tab = (i) => `<a href="#${ABA_ID[i]}"${aba() === ABA_ID[i] ? ' aria-current="page"' : ""}>${ABAS[i]}</a>`;
-  $("#tabs").innerHTML = GRUPOS_ABAS.map(([ids, t, sub]) => t ? `<div class="tgrp" role="group" aria-label="${esc(t)}"><div class="tcap"><b>${esc(t)}</b> · ${esc(sub)}${ids.length > 2 ? `<span class="tdica"> · ${ids.length} abas, deslize →</span>` : ""}</div><div class="tscroll"><button class="tarr l" type="button" data-tarr="-1" aria-label="Ver abas anteriores"><span>‹</span></button><div class="trow">${ids.map(tab).join("")}</div><button class="tarr r" type="button" data-tarr="1" aria-label="Ver mais abas"><span>›</span></button></div></div>` : `<div class="tsolo">${ids.map(tab).join("")}</div>`).join("");
+  $("#tabs").innerHTML = GRUPOS_ABAS.map(([ids, t, sub]) => t ? `<div class="tgrp" role="group" aria-label="${esc(t)}"><div class="tcap"><b>${esc(t)}</b> · ${esc(sub)}${ids.length > 2 ? `<span class="tdica"> · ${ids.length} abas, deslize ou use a seta →</span>` : ""}</div><div class="tscroll"><button class="tarr l" type="button" data-tarr="-1" aria-label="Ver abas anteriores"><span>‹</span></button><div class="trow">${ids.map(tab).join("")}</div><button class="tarr r" type="button" data-tarr="1" aria-label="Ver mais abas"><span>›</span></button></div></div>` : `<div class="tsolo">${ids.map(tab).join("")}</div>`).join("");
   document.querySelectorAll("#tabs .tscroll").forEach(sc => { const row = sc.querySelector(".trow"), at = row.querySelector("a[aria-current]");
-    const upd = () => { sc.classList.toggle("esq", row.scrollLeft > 4); sc.classList.toggle("dir", row.scrollLeft + row.clientWidth < row.scrollWidth - 4); };
+    const upd = () => { sc.classList.toggle("esq", row.scrollLeft > 4); sc.classList.toggle("dir", row.scrollLeft + row.clientWidth < row.scrollWidth - 4); sc.parentElement.classList.toggle("mais", row.scrollWidth > row.clientWidth + 4); };
     if (at && row.scrollWidth > row.clientWidth) { row.style.scrollBehavior = "auto"; row.scrollLeft = Math.max(0, at.offsetLeft - row.offsetLeft - 40); row.style.scrollBehavior = ""; }
-    row.addEventListener("scroll", upd, { passive: true }); upd(); });
+    row.addEventListener("scroll", upd, { passive: true }); upd(); sc._upd = upd; });
   ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes, consignado: renderConsig, expectativas: renderExpect, territorio: renderTerr })[aba()]();
 }
 addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
+addEventListener("resize", () => document.querySelectorAll("#tabs .tscroll").forEach(sc => sc._upd && sc._upd()), { passive: true });
 matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", render);
 new MutationObserver(render).observe(document.documentElement, { attributes: true, attributeFilter: ["data-theme"] });
 try { Object.assign(st, JSON.parse(localStorage.getItem("safra-filtros") || "{}")); } catch (e) {}
