@@ -121,10 +121,6 @@ nav.tabs a[aria-current="page"] { color: #fff; background: #00786c; }
   .tsolo a::after { content: " ›"; }
   .tsolo a[aria-current="page"] { text-decoration: underline; }
 
-@media (max-width: 900px) {
-  .tgrp:first-child .trow { display: grid; grid-template-columns: 1fr 1fr; }
-  .tgrp:first-child .trow a { text-align: center; white-space: normal; }
-}
 
 .trow > span[title] { cursor: default; }
 .filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 6; background: var(--bg); border-bottom: 1px solid var(--line); }
