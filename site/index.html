@@ -2254,6 +2254,7 @@ document.addEventListener("click", (ev) => {
   if (b.id === "qdmore") qd.all = !qd.all;
   if (b.id === "qdcsv") { baixaQuadro(); return; }
   try { localStorage.setItem("quadro-filtros", JSON.stringify({ grp: qd.grp, base: qd.base, ord: qd.ord, dir: qd.dir })); } catch (e) {}
+  if (b.dataset.qdgrp) document.querySelectorAll("[data-qdgrp]").forEach(x => x.setAttribute("aria-pressed", String(x.dataset.qdgrp === qd.grp)));   // destaca o grupo escolhido
   renderQuadroTab();
 });
 document.addEventListener("input", (ev) => { if (ev.target.id === "qdbusca") { qd.busca = ev.target.value; renderQuadroTab(); } });
