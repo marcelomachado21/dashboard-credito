@@ -1,40 +1,39 @@
 {
- "verificado_em": "2026-11-04T02:32:12+00:00",
+ "verificado_em": "2026-11-05T12:27:48+00:00",
  "forcado": true,
- "segundos": 6087,
+ "segundos": 949,
  "bases": {
   "safra": {
-   "segundos": 178,
-   "saida": "{\"safra\": \"2026-09-30\", \"instituicoes\": 445, \"kb\": 348, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "segundos": 170,
+   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 363, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "atualizado",
-   "ref": "2026-09-30"
+   "ref": "2026-10-30"
   },
   "risco": {
-   "segundos": 2145,
-   "saida": "{\"risco\": {\"scr\": \"2026-08\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 827}",
+   "segundos": 302,
+   "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 836}",
    "situacao": "atualizado",
    "ref": {
-    "scr": "2026-08",
+    "scr": "2026-09",
     "cosif": "2026-06",
     "ifd": "2026-06"
    }
   },
   "posicao": {
-   "segundos": 3600,
-   "saida": "tempo esgotado (60 min)",
-   "situacao": "falhou",
-   "motivo": "tempo esgotado (60 min)",
+   "segundos": 174,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 1078, \"kb\": 1838}",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 18,
-   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 834, \"kb\": 2781}",
+   "segundos": 14,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 2975}",
    "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 35,
-   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 414}",
+   "segundos": 42,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 848, \"erros\": [], \"kb\": 422}",
    "situacao": "atualizado",
    "ref": {
     "sgs": "2026-09",
@@ -42,17 +41,17 @@
    }
   },
   "focus": {
-   "segundos": 7,
+   "segundos": 8,
    "saida": "{\"focus\": \"2026-10-30\", \"kb\": 24}",
    "situacao": "atualizado",
    "ref": "2026-10-30"
   },
   "territorio": {
-   "segundos": 104,
-   "saida": "{\"territorio\": \"2026-09\", \"municipios\": 840, \"linhas\": 183458, \"kb\": 393}",
+   "segundos": 238,
+   "saida": "{\"territorio\": \"2026-09\", \"municipios\": 840, \"linhas\": 183606, \"kb\": 394}",
    "situacao": "atualizado",
    "ref": "2026-09"
   }
  },
- "ultima_atualizacao": "2026-11-04"
+ "ultima_atualizacao": "2026-11-05"
 }
