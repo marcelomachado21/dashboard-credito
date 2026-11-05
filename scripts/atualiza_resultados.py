@@ -111,6 +111,9 @@ def escopos_coop(c, nome=""):
     if s == "sicoob" and coop.get(c, {}).get("UF") == "MG": out.append("sicoob_mg")
     if central(c): out.append(central(c))
     if coop.get(c, {}).get("UF") == "MG": out.append("coop_mg")
+    if c in coop and not (coop[c].get("FILIACAO") or "").strip():   # singular sem filiação a central (cadastro do BC)
+        out.append("solteiras")
+        if coop[c].get("UF") == "MG": out.append("solteiras_mg")
     return out
 
 TOP5 = {"C0080329": "bb", "C0080075": "bradesco", "C0080099": "itau", "C0080738": "caixa", "C0080185": "santander"}
@@ -131,8 +134,9 @@ ESCOPOS = [
     ("cong_sicoob", "Conglomerado Sicoob", "#003641", "conglomerado"), ("cong_sicredi", "Conglomerado Sicredi", "#3FA110", "conglomerado"),
     ("sicoob", "Sicoob (cooperativas)", "#00AE9D", "sistema"), ("sicredi", "Sicredi (cooperativas)", "#7CC35A", "sistema"),
     ("cresol", "Cresol", "#6E5A9E", "sistema"), ("unicred", "Unicred", "#9C7A3C", "sistema"), ("outras", "Outras cooperativas", "#A3ACA8", "sistema"),
+    ("solteiras", "Cooperativas solteiras", "#B07A4A", "sistema"),
     ("coop_mg", "Cooperativas de MG", "#4F7F7A", "mg"), ("sicoob_mg", "Sicoob MG", "#2E8F86", "mg"),
-    ("crediminas", "Central Crediminas", "#007A6E", "mg"), ("cecremge", "Central Cecremge", "#5BC2B8", "mg"),
+    ("crediminas", "Central Crediminas", "#007A6E", "mg"), ("cecremge", "Central Cecremge", "#5BC2B8", "mg"), ("solteiras_mg", "Solteiras de MG", "#8C5A30", "mg"),
     ("bb", "Banco do Brasil", "#465EFF", "banco"), ("bradesco", "Bradesco", "#CC092F", "banco"), ("itau", "Itaú", "#EC7000", "banco"),
     ("caixa", "Caixa", "#005CA9", "banco"), ("santander", "Santander", "#EC0000", "banco"), ("digitais", "Bancos digitais", "#820AD1", "banco"),
 ]
@@ -283,7 +287,7 @@ for (tipo, c), nome in INFO.items():
     if not sc: continue
     for s in sc + ["sfn"]: membros[s].append((tipo, c))
     o12, sem, mens, mm = serie_para([(tipo, c)])
-    if not o12 or not o12[-1]["rec"] or o12[-1]["rec"] < 1: continue
+    if not o12 or not o12[-1]["rec"] or o12[-1]["rec"] < 0.1: continue   # receita mínima de R$ 0,1 mi em 12 meses
     rr = {"id": c, "tipo": tipo, "nome": nome, "escopos": sc, "r12": o12[-1], "r12_ini": o12[0], "sem": sem, "m": mm}
     if tipo == "coop":
         rr.update({"curto": curto(c, nome), "sistema": sistema(c, nome), "central": central(c), "uf": coop.get(c, {}).get("UF", "")})

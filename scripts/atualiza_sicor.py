@@ -246,6 +246,9 @@ def info(cnpj):
         if r["sistema"] == "sicoob" and uf == "MG": sc.append("sicoob_mg")
         if r["central"]: sc.append(r["central"])
         if uf == "MG": sc.append("coop_mg")
+        if c is not None and not fil.strip() and str(getattr(c, "CLASSE", "Singular") or "Singular") == "Singular":   # solteira: sem central
+            sc.append("solteiras")
+            if uf == "MG": sc.append("solteiras_mg")
     if cnpj in TOP5: sc.append(TOP5[cnpj]); sc.append("top5")
     if not is_coop and DIGITAIS.search(nome): sc.append("digitais")
     r["escopos"] = sc
@@ -264,7 +267,8 @@ ESCOPOS = [
     ("cong_sicoob", "Conglomerado Sicoob", "#003641", "conglomerado"), ("cong_sicredi", "Conglomerado Sicredi", "#3FA110", "conglomerado"),
     ("sicoob", "Sicoob (cooperativas)", "#00AE9D", "sistema"), ("sicredi", "Sicredi (cooperativas)", "#7CC35A", "sistema"), ("cresol", "Cresol", "#6E5A9E", "sistema"),
     ("unicred", "Unicred", "#9C7A3C", "sistema"), ("outras", "Outras cooperativas", "#A3ACA8", "sistema"),
-    ("sicoob_mg", "Sicoob MG", "#2E8F86", "mg"), ("crediminas", "Central Crediminas", "#007A6E", "mg"), ("cecremge", "Central Cecremge", "#5BC2B8", "mg"),
+    ("solteiras", "Cooperativas solteiras", "#B07A4A", "sistema"),
+    ("sicoob_mg", "Sicoob MG", "#2E8F86", "mg"), ("crediminas", "Central Crediminas", "#007A6E", "mg"), ("cecremge", "Central Cecremge", "#5BC2B8", "mg"), ("solteiras_mg", "Solteiras de MG", "#8C5A30", "mg"),
     ("bb", "Banco do Brasil", "#465EFF", "banco"), ("bradesco", "Bradesco", "#CC092F", "banco"), ("itau", "Itaú", "#EC7000", "banco"),
     ("caixa", "Caixa", "#005CA9", "banco"), ("santander", "Santander", "#EC0000", "banco"), ("digitais", "Bancos digitais", "#820AD1", "banco"),
 ]

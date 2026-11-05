@@ -874,8 +874,8 @@ function carregaRisco() {
 /* ===================== Aba Mapa de posicionamento ===================== */
 let P = null, Perr = "";
 const ps = { uni: "crediminas", x: "cresc", y: "ap", tri: "", dest: "", modo: "inst" };
-const UNIS = [["crediminas", "Filiadas Crediminas"], ["cecremge", "Filiadas Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"],
-  ["sicoob", "Sicoob"], ["sicredi", "Sicredi"], ["cresol", "Cresol"], ["coop", "Todas as cooperativas"], ["bancos", "Bancos (conglomerados)"], ["top5d", "5 maiores e digitais"]];
+const UNIS = [["crediminas", "Filiadas Crediminas"], ["cecremge", "Filiadas Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"], ["solteiras_mg", "Solteiras de MG"],
+  ["sicoob", "Sicoob"], ["sicredi", "Sicredi"], ["cresol", "Cresol"], ["unicred", "Unicred"], ["solteiras", "Cooperativas solteiras"], ["coop", "Todas as cooperativas"], ["bancos", "Bancos (conglomerados)"], ["top5d", "5 maiores e digitais"]];
 const PRESETS = [["Crescimento × risco", "cresc", "ap"], ["Rentabilidade × risco", "ap", "roe"], ["Capital × risco", "ap", "basil"],
   ["Eficiência × rentabilidade", "efic", "roe"], ["Rural × inadimplência", "rural", "inad"], ["Provisão × cobertura", "prov", "cob"]];
 const pm = (id) => P.metricas.find(m => m.id === id);
@@ -1307,8 +1307,8 @@ function carregaRes() { if (carregandoQ) return; carregandoQ = true; carregar("r
 
 /* ===================== Aba Ficha da instituição ===================== */
 const fsel = { id: "38588174", peer: "", busca: "", modo: "inst", grupo: "crediminas", gpeer: "", gord: "cart", gall: false };
-const PEERS = [["crediminas", "Filiadas Crediminas"], ["cecremge", "Filiadas Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"],
-  ["sicoob", "Sicoob"], ["sicredi", "Sicredi"], ["cresol", "Cresol"], ["coop", "Todas as cooperativas"], ["bancos", "Bancos"]];
+const PEERS = [["crediminas", "Filiadas Crediminas"], ["cecremge", "Filiadas Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"], ["solteiras_mg", "Solteiras de MG"],
+  ["sicoob", "Sicoob"], ["sicredi", "Sicredi"], ["cresol", "Cresol"], ["unicred", "Unicred"], ["solteiras", "Cooperativas solteiras"], ["coop", "Todas as cooperativas"], ["bancos", "Bancos"]];
 const fichaPronta = () => P && Q && R && D;
 function fichaInst() { return P.inst.find(i => i.id === fsel.id) || P.inst.find(i => i.id === "38588174") || P.inst[0]; }
 function fichaPeer(i) {
@@ -1444,14 +1444,14 @@ function renderFicha() {
 }
 
 /* ---------- Ficha: grupo combinado (central, sistema, conglomerado) ---------- */
-const FGRUPOS = [["crediminas", "Central Crediminas"], ["cecremge", "Central Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"],
+const FGRUPOS = [["crediminas", "Central Crediminas"], ["cecremge", "Central Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"], ["solteiras_mg", "Solteiras de MG"],
   ["sicoob", "Sicoob (cooperativas)"], ["cong_sicoob", "Conglomerado Sicoob"], ["sicredi", "Sicredi (cooperativas)"], ["cong_sicredi", "Conglomerado Sicredi"],
-  ["cresol", "Cresol"], ["unicred", "Unicred"], ["coop", "Cooperativas (SNCC)"], ["bancos", "Bancos"], ["top5", "5 maiores bancos"], ["digitais", "Bancos digitais"], ["sfn", "SFN"]];
-const GPEER = { crediminas: "sicoob_mg", cecremge: "sicoob_mg", sicoob_mg: "sicoob", coop_mg: "coop", sicoob: "coop", sicredi: "coop", cresol: "coop", unicred: "coop",
+  ["cresol", "Cresol"], ["unicred", "Unicred"], ["solteiras", "Cooperativas solteiras"], ["coop", "Cooperativas (SNCC)"], ["bancos", "Bancos"], ["top5", "5 maiores bancos"], ["digitais", "Bancos digitais"], ["sfn", "SFN"]];
+const GPEER = { crediminas: "sicoob_mg", cecremge: "sicoob_mg", sicoob_mg: "sicoob", coop_mg: "coop", solteiras_mg: "coop_mg", solteiras: "coop", sicoob: "coop", sicredi: "coop", cresol: "coop", unicred: "coop",
   cong_sicoob: "sfn", cong_sicredi: "sfn", coop: "sfn", bancos: "sfn", top5: "bancos", digitais: "bancos", sfn: "coop" };
 const gNome = (g) => (FGRUPOS.find(x => x[0] === g) || [g, g])[1];
 const gCor = (g) => cor(({ crediminas: "#007A6E", cecremge: "#5BC2B8", sicoob_mg: "#2E8F86", coop_mg: "#56606A", sicoob: "#00AE9D", cong_sicoob: "#003641", sicredi: "#3FA110",
-  cong_sicredi: "#3FA110", cresol: "#6E5A9E", unicred: "#9C7A3C", coop: "#56606A", bancos: "#8A9097", top5: "#56606A", digitais: "#820AD1", sfn: "#2B2F33" })[g] || "#56606A");
+  cong_sicredi: "#3FA110", cresol: "#6E5A9E", unicred: "#9C7A3C", solteiras: "#B07A4A", solteiras_mg: "#8C5A30", coop: "#56606A", bancos: "#8A9097", top5: "#56606A", digitais: "#820AD1", sfn: "#2B2F33" })[g] || "#56606A");
 const segModo = () => `<div class="fgroup"><span class="flabel">Ver</span><div class="seg">${[["inst", "Uma instituição"], ["grupo", "Grupo combinado"]].map(([k, n]) =>
   `<button type="button" data-fmodo="${k}" aria-pressed="${fsel.modo === k}">${n}</button>`).join("")}</div></div>`;
 const gMembros = (g) => P.inst.filter(i => g === "sfn" || i.escopos.includes(g));
@@ -1461,7 +1461,7 @@ const G_FONTES = [["f_livres", "Recursos livres", "#7A9CB0"], ["f_avista", "Exig
 const G_ORD = [["cart", "Carteira"], ["cresc", "Crescimento"], ["inad", "Inadimplência"], ["ap", "Ativos problemáticos (E3)"], ["basil", "Basileia"], ["roe", "ROE"], ["lucro12", "Lucro 12 meses"], ["safra", "Safra"]];
 function filtrosGrupo(g, peer) {
   const chips = (lst, attr, on) => lst.map(([k, n]) => `<button class="chip" type="button" ${attr}="${k}" aria-pressed="${on === k}"><i style="background:${gCor(k)}"></i>${esc(n)}</button>`).join("");
-  const blocos = [["Minas", ["crediminas", "cecremge", "sicoob_mg", "coop_mg"]], ["Sistemas e conglomerados", ["sicoob", "cong_sicoob", "sicredi", "cong_sicredi", "cresol", "unicred", "coop"]], ["Bancos e SFN", ["bancos", "top5", "digitais", "sfn"]]];
+  const blocos = [["Minas", ["crediminas", "cecremge", "sicoob_mg", "coop_mg", "solteiras_mg"]], ["Sistemas e conglomerados", ["sicoob", "cong_sicoob", "sicredi", "cong_sicredi", "cresol", "unicred", "solteiras", "coop"]], ["Bancos e SFN", ["bancos", "top5", "digitais", "sfn"]]];
   $("#filters").innerHTML = `<div class="frow">${segModo()}</div><div class="frow">${blocos.map(([nm, ids]) => `<div class="fgroup"><span class="flabel">${nm}</span>${chips(FGRUPOS.filter(x => ids.includes(x[0])), "data-fgrupo", g)}</div>`).join("")}</div>
     <div class="frow"><label class="fgroup"><span class="flabel">Comparar com</span><select id="fgpeer" class="sel">${FGRUPOS.filter(x => x[0] !== g).map(([k, n]) => `<option value="${k}"${k === peer ? " selected" : ""}>${esc(n)}</option>`).join("")}</select></label></div>`;
 }
@@ -2258,8 +2258,8 @@ function renderRuralSFN() {
 
 /* ===================== Aba Quadro de indicadores por instituição ===================== */
 const qd = { grp: "crediminas", base: "", ord: "cart", dir: "desc", busca: "", all: false };
-const QGR = [["Minas", [["crediminas", "Central Crediminas"], ["cecremge", "Central Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"]]],
-  ["Sistemas e conglomerados", [["sicoob", "Sicoob (cooperativas)"], ["cong_sicoob", "Conglomerado Sicoob"], ["sicredi", "Sicredi (cooperativas)"], ["cong_sicredi", "Conglomerado Sicredi"], ["cresol", "Cresol"], ["unicred", "Unicred"], ["coop", "Todas as cooperativas"]]],
+const QGR = [["Minas", [["crediminas", "Central Crediminas"], ["cecremge", "Central Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"], ["solteiras_mg", "Solteiras de MG"]]],
+  ["Sistemas e conglomerados", [["sicoob", "Sicoob (cooperativas)"], ["cong_sicoob", "Conglomerado Sicoob"], ["sicredi", "Sicredi (cooperativas)"], ["cong_sicredi", "Conglomerado Sicredi"], ["cresol", "Cresol"], ["unicred", "Unicred"], ["solteiras", "Cooperativas solteiras"], ["coop", "Todas as cooperativas"]]],
   ["Bancos e SFN", [["bancos", "Bancos"], ["top5", "5 maiores bancos"], ["digitais", "Bancos digitais"], ["sfn", "SFN (todas)"]]]];
 const QNOME = Object.fromEntries(QGR.flatMap(([, l]) => l));
 // id, título, unidade (val = R$ e variação %; pct = % e variação em p.p.), melhor (alto/baixo/neutro), fonte
