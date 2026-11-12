@@ -81,7 +81,8 @@ def meses(ini, fim):
 
 
 # ---------- cadastro (mesmas regras das outras abas) ----------
-coop = {x["CNPJ"]: x for x in olinda("Instituicoes_em_funcionamento/versao/v1/odata/SedesCooperativas?$format=json")}
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from cadastro import sedes_coop   # cadastro protegido contra falhas do BC
+coop = sedes_coop(olinda)
 DP = {r["cnpj"]: r for r in csv.DictReader(open(DEPARA, encoding="utf-8"), delimiter=";")} if os.path.exists(DEPARA) else {}
 INC = {r["cnpj_incorporada"]: r["cnpj_incorporadora"] for r in csv.DictReader(open(INCORP, encoding="utf-8"), delimiter=";")} if os.path.exists(INCORP) else {}
 def suc(c, n=0): return suc(INC[c], n + 1) if c in INC and n < 10 else c

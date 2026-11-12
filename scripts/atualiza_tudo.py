@@ -128,6 +128,64 @@ def chk_territorio(n, a):
 
 CHK = {"focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
 
+# ---------------- estabilidade: um dado já publicado não pode mudar muito de uma rodada para outra ----------------
+# Pega pontos que já existiam na versão publicada (meses passados, contagem de filiadas por grupo) e compara com a
+# versão nova. Se um grupo some, troca de tamanho ou o histórico muda além do limite, a base nova é recusada e o
+# painel continua com a anterior. Mudança intencional (nova regra de cálculo): rodar com ACEITAR_MUDANCA=1.
+GRUPOS = ("sfn", "coop", "bancos", "top5", "sicoob", "sicredi", "cresol", "unicred", "sicoob_mg", "coop_mg",
+          "crediminas", "cecremge", "solteiras", "solteiras_mg")
+LIM_HIST, LIM_N = 0.10, 0.15          # histórico: até 10% de revisão; contagem de instituições por grupo: até 15%
+
+
+def pontos(nome, d):
+    P = {}
+    if not d: return P
+    if isinstance(d.get("inst"), list) and d["inst"] and "escopos" in d["inst"][0]:
+        for g in GRUPOS:
+            P[("filiadas", g)] = sum(1 for i in d["inst"] if g in i.get("escopos", []))
+    if nome == "carteira":
+        for g in GRUPOS:
+            for x in d.get("cosif", {}).get(g, [])[:-1]: P[("carteira Cosif", g, x["d"])] = x["tot"]
+        for k, v in d.get("sgs", {}).items():
+            for x in v.get("p", [])[:-2]: P[("SGS", k, x["d"])] = x["v"]
+    elif nome == "risco":
+        for fonte in ("cosif", "ifd"):
+            for g in GRUPOS:
+                for x in d.get(fonte, {}).get("serie", {}).get(g, [])[:-1]: P[(f"carteira {fonte}", g, x["d"])] = x.get("cart")
+    elif nome == "posicao":
+        for g in GRUPOS:
+            for t, v in sorted(d.get("agg", {}).get(g, {}).items())[:-1]: P[("carteira IF.data", g, t)] = v.get("cart")
+    elif nome == "resultados":
+        for g in GRUPOS:
+            a = d.get("agg", {}).get(g)
+            if a:
+                P[("instituições no agregado", g)] = a.get("n")
+                for x in a.get("r12", [])[:-1]: P[("receita 12m", g, x["d"])] = x.get("rec")
+    elif nome == "safra":
+        ref = d["meta"]["ref"][:7]; y, m = int(ref[:4]), int(ref[5:])
+        lim = f"{y - (m <= 3)}-{(m - 4) % 12 + 1:02d}"        # só meses fechados há mais de 3 meses (o SICOR ainda recebe registros)
+        for g in GRUPOS:
+            for sf, rows in d.get("serie", {}).get(g, {}).get("BR", {}).items():
+                for i, r in enumerate(rows):
+                    mm = (i + 6) % 12 + 1; yy = int(sf) - 1 + (mm <= 6)
+                    if f"{yy}-{mm:02d}" < lim: P[("contratação SICOR", g, f"{yy}-{mm:02d}")] = sum(r[:4])
+    return P
+
+
+def chk_estavel(nome, n, a):
+    if os.environ.get("ACEITAR_MUDANCA") == "1": return
+    pv, pn = pontos(nome, a), pontos(nome, n)
+    erros = []
+    for k, v in pv.items():
+        if not v: continue
+        w = pn.get(k)
+        if k[0] in ("filiadas", "instituições no agregado"):
+            if w is None or abs(w - v) > max(3, LIM_N * v): erros.append(f"{k[0]} em {k[1]}: {v} → {w}")
+        elif k in pn and (w is None or abs(w / v - 1) > LIM_HIST) and abs(v) > 1e-6:
+            erros.append(f"{k[0]} de {k[1]} em {k[2]}: {v} → {w}")
+    if erros:
+        raise AssertionError(f"dado já publicado mudaria ({len(erros)} pontos), ex.: " + "; ".join(erros[:4]))
+
 
 def ref_de(nome, d):
     m = (d or {}).get("meta", {})
@@ -164,7 +222,7 @@ def main():
             else:
                 novo, velho = ler(p_tmp), ler(p_pub)
                 try:
-                    CHK[nome](novo, velho); shutil.copy2(p_tmp, p_pub); b["situacao"] = "atualizado"
+                    CHK[nome](novo, velho); chk_estavel(nome, novo, velho); shutil.copy2(p_tmp, p_pub); b["situacao"] = "atualizado"
                 except Exception as e:
                     b.update(situacao="reprovado", motivo=f"{type(e).__name__}: {e}"[:300])
         b["ref"] = ref_de(nome, ler(p_pub))
@@ -187,6 +245,8 @@ def main():
             print(f"{ex}: {be['situacao']} · {be['ref']}" + (f" · {be.get('motivo')}" if be.get("motivo") else ""), flush=True)
         print(f"{nome}: {b['situacao']} · {b['ref']} · {b['segundos']} s" + (f" · {b.get('motivo')}" if b.get("motivo") else ""), flush=True)
     shutil.rmtree(tmp, ignore_errors=True)
+    cad = ler(os.path.join(DATA, "cadastro_coop.json")) or {}
+    if cad: bases["cadastro"] = {"situacao": "alerta" if cad.get("alerta") else "ok", "ref": cad.get("data"), **({"motivo": cad["alerta"]} if cad.get("alerta") else {})}
     st = {"verificado_em": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
           "forcado": FORCAR, "segundos": round(time.time() - t0), "bases": bases,
           "ultima_atualizacao": HOJE if any(b["situacao"] == "atualizado" for b in bases.values()) else status_ant.get("ultima_atualizacao")}

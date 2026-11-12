@@ -140,7 +140,8 @@ df["prod"] = df.PRODUTO.map(produto)
 df["geo"] = "BR"
 
 # ---------- 3. instituições ----------
-coop = pd.DataFrame(olinda("Instituicoes_em_funcionamento/versao/v1/odata/SedesCooperativas?$format=json"))
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from cadastro import sedes_coop   # cadastro protegido contra falhas do BC
+coop = pd.DataFrame(list(sedes_coop(olinda).values()))
 banc = pd.DataFrame(olinda("Instituicoes_em_funcionamento/versao/v1/odata/SedesBancoComMultCE?$format=json"))
 cad = []
 am = HOJE.year * 100 + (HOJE.month - 1) // 3 * 3

@@ -2463,14 +2463,14 @@ function renderFontes() {
 }
 function blocoStatus(st) {
   const el = $("#stbox"); if (!el || !st || !st.bases) return;
-  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, MG por município)" };
+  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, MG por município)", cadastro: "Cadastro de cooperativas (filiação)" };
   const rf = (r) => r == null ? "—" : typeof r === "object" ? Object.entries(r).map(([k, v]) => `${k} ${String(v).length === 7 ? ym(v) : dmy(v)}`).join(" · ") : String(r).length === 7 ? ym(r) : dmy(r);
-  const cl = { "atualizado": "up", "sem mudança": "flat", "falhou": "down", "reprovado": "down" };
+  const cl = { "atualizado": "up", "sem mudança": "flat", "ok": "flat", "falhou": "down", "reprovado": "down", "alerta": "down" };
   const quando = new Date(st.verificado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" });
   el.innerHTML = block("Última verificação automática", `${quando} · ${st.ultima_atualizacao ? "última atualização de dados em " + dmy(st.ultima_atualizacao) : ""}`,
     `<div class="tbl-wrap"><table><thead><tr><th>Arquivo</th><th>Situação</th><th>Referência publicada</th><th>Observação</th></tr></thead><tbody>${Object.entries(st.bases).map(([k, b]) =>
       `<tr><td>${esc(nm[k] || k)}</td><td><span class="${cl[b.situacao] || "flat"}">${esc(b.situacao)}</span></td><td>${esc(rf(b.ref))}</td><td><small>${esc(b.motivo || "")}</small></td></tr>`).join("")}</tbody></table></div>`,
-    `"Falhou" ou "reprovado": a base seguiu com o último dado válido. Registro completo na aba Actions do repositório.`);
+    `"Falhou" ou "reprovado": a base seguiu com o último dado válido. Uma base é reprovada quando falha nas conferências com o SGS e nas faixas esperadas, ou quando mudaria um dado já publicado (meses passados com revisão acima de 10%, ou grupo com mais de 15% de instituições a mais ou a menos). No cadastro de cooperativas, filiação que some só é aceita depois de duas rodadas seguidas. Registro completo na aba Actions do repositório.`);
 }
 /* ===================== Roteador ===================== */
 const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio" };
