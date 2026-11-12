@@ -1,18 +1,18 @@
 {
- "verificado_em": "2026-11-09T08:49:10+00:00",
- "forcado": false,
- "segundos": 685,
+ "verificado_em": "2026-11-12T19:07:38+00:00",
+ "forcado": true,
+ "segundos": 1883,
  "bases": {
   "safra": {
-   "segundos": 189,
-   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 361, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "segundos": 196,
+   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 363, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "atualizado",
    "ref": "2026-10-30"
   },
   "risco": {
-   "segundos": 237,
-   "saida": "{\"risco\": \"sem mudan\\u00e7a\", \"refs\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}}",
-   "situacao": "sem mudança",
+   "segundos": 443,
+   "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 836}",
+   "situacao": "atualizado",
    "ref": {
     "scr": "2026-09",
     "cosif": "2026-06",
@@ -20,38 +20,44 @@
    }
   },
   "posicao": {
-   "segundos": 178,
-   "saida": "{\"posicao\": \"sem mudan\\u00e7a\", \"ref\": \"2026-06\"}",
-   "situacao": "sem mudança",
+   "segundos": 163,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 1078, \"kb\": 1838}",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 5,
-   "saida": "{\"resultados\": \"sem mudan\\u00e7a\", \"ref\": \"2026-06\"}",
-   "situacao": "sem mudança",
+   "segundos": 21,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 2975}",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 29,
-   "saida": "{\"carteira\": \"sem mudan\\u00e7a\", \"refs\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}}",
-   "situacao": "sem mudança",
+   "segundos": 47,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 849, \"erros\": [], \"kb\": 422}",
+   "situacao": "atualizado",
    "ref": {
     "sgs": "2026-09",
     "cosif": "2026-06"
    }
   },
   "focus": {
-   "segundos": 4,
-   "saida": "{\"focus\": \"sem mudan\\u00e7a\", \"ref\": \"2026-10-30\"}",
-   "situacao": "sem mudança",
-   "ref": "2026-10-30"
+   "segundos": 9,
+   "saida": "{\"focus\": \"2026-11-06\", \"kb\": 24}",
+   "situacao": "atualizado",
+   "ref": "2026-11-06"
   },
   "territorio": {
-   "segundos": 43,
-   "saida": "{\"territorio\": \"sem mudan\\u00e7a\", \"ref\": \"2026-09\"}",
-   "situacao": "sem mudança",
+   "segundos": 1001,
+   "saida": "",
+   "situacao": "falhou",
+   "motivo": "urllib.error.HTTPError: HTTP Error 500: Internal Server Error",
    "ref": "2026-09"
+  },
+  "cadastro": {
+   "situacao": "alerta",
+   "ref": "2026-11-05",
+   "motivo": "83 filiações vieram vazias de uma vez no cadastro do BC em 2026-11-12; mantida a versão de 2026-11-05"
   }
  },
- "ultima_atualizacao": "2026-11-09"
+ "ultima_atualizacao": "2026-11-12"
 }
