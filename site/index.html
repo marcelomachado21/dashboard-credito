@@ -322,9 +322,13 @@ function seletorRecorte(ids, sel, set, o = {}) {
   const grupos = G.map(([g, nm]) => { const l = nac.filter(i => RECORTES.get(i)?.grupo === g); return l.length ? `<optgroup label="${esc(nm)}">${l.map(i => `<option value="${i}"${i === d.base ? " selected" : ""}>${esc(rot(i))}</option>`).join("")}</optgroup>` : ""; }).join("");
   const temUF = ids.some(i => ufDe(i) || ehCentral(i));
   const est = temUF ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${["BR", ...UFS_ORD].map(u => `<option value="${u}"${u === d.uf ? " selected" : ""}>${u === "BR" ? "Brasil (todos)" : esc(UFN[u])}</option>`).join("")}</select></label>` : "";
-  const cs = BASES_UF.includes(d.base) && d.base !== "solteiras" ? centraisDe(I, d.base, d.uf) : [];
-  const cen = cs.length ? `<label class="fgroup"><span class="flabel">Central</span><select class="sel" data-central aria-label="Central de filiação">
-    <option value="">Todas as centrais${d.uf !== "BR" ? " · " + d.uf : ""}</option>${cs.map(c => `<option value="${c.id}"${c.id === d.central ? " selected" : ""}>${esc(c.nome)}${c.uf ? ` (${c.uf})` : ""}</option>`).join("")}</select></label>` : "";
+  // Central: lista direta, sem depender do Recorte. Com um estado escolhido, as centrais com filiadas nele vêm primeiro.
+  const todas = centraisDe(I, "coop", "BR"), noUF = d.uf !== "BR" ? todas.filter(c => (c.ufs || []).includes(d.uf)).sort((a, b) => (b.uf === d.uf) - (a.uf === d.uf)) : [];
+  const optC = (c) => `<option value="${c.id}"${c.id === d.central ? " selected" : ""}>${esc(c.nome)}${c.uf ? ` (${c.uf})` : ""}</option>`;
+  const porSis = [...SIS.map(([k, n]) => [k, n]), ["outras", "Outras"]].map(([k, n]) => { const l = todas.filter(c => !noUF.includes(c) && (c.sis === k || (k === "outras" && !SIS.some(x => x[0] === c.sis))));
+    return l.length ? `<optgroup label="${esc(noUF.length ? `${n} · demais estados` : n)}">${l.map(optC).join("")}</optgroup>` : ""; }).join("");
+  const cen = todas.length ? `<label class="fgroup"><span class="flabel">Central</span><select class="sel" data-central aria-label="Central de filiação">
+    <option value="">Todas (sem filtro de central)</option>${noUF.length ? `<optgroup label="Com filiadas ${esc(emUF(d.uf))}">${noUF.map(optC).join("")}</optgroup>` : ""}${porSis}</select></label>` : "";
   return `<div class="recsel">${est}<label class="fgroup"><span class="flabel">${esc(o.label || "Recorte")}</span><select class="sel sel-rec" data-recorte aria-label="${esc(o.label || "Recorte")}">${grupos}</select></label>${cen}</div>`;
 }
 document.addEventListener("change", (ev) => {
