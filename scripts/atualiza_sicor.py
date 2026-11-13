@@ -305,42 +305,73 @@ for esc in sorted(ids_validos):
                 rows.append(v + [int(mes_q.get((esc, geo, s, m), 0))])
             serie[esc][geo][str(s)] = rows
 
-comp, cortes = {}, {dim: {} for dim in ("prog", "fonte", "porte", "prod")}
-IN = collections.defaultdict(lambda: collections.defaultdict(dict))
+DIMS = ("prog", "fonte", "porte", "prod")
 ref_ts, refp_ts = pd.Timestamp(REF), pd.Timestamp(REF_P)
-for s in SHOW:
+K_REF = (REF.month - 7) % 12                 # índice (0 = julho) do mês da data de referência na safra corrente
+
+
+def calc(s, meses):
+    """Safra s nos meses da safra indicados (0 = julho): "a" na safra s, "p" nos mesmos meses da safra anterior.
+    Na safra corrente, "a" vai até a data de referência e "p" até o mesmo dia um ano antes (mesmo ponto)."""
     cur = s == S
+    na = both.m.isin(list(meses))
     both["ytd"] = ""
-    both.loc[(both.safra == s) & ((both.dt <= ref_ts) | (not cur)), "ytd"] = "a"
-    both.loc[(both.safra == s - 1) & ((both.dt <= refp_ts) | (not cur)), "ytd"] = "p"
+    both.loc[na & (both.safra == s) & ((both.dt <= ref_ts) | (not cur)), "ytd"] = "a"
+    both.loc[na & (both.safra == s - 1) & ((both.dt <= refp_ts) | (not cur)), "ytd"] = "p"
     ytd = por_escopo(["geo", "ytd", "fin"])
     ytd_q = ops_por_escopo(["geo", "ytd"])
     cs = collections.defaultdict(dict)
     for esc in sorted(ids_validos):
         for geo in ("BR", "MG"):
             cs[esc][geo] = {k: [r1(ytd.get((esc, geo, k, f), 0)) for f in FINS] + [int(ytd_q.get((esc, geo, k), 0))] for k in ("a", "p")}
-    comp[str(s)] = cs
-    for dim in cortes:
+    cd = {}
+    for dim in DIMS:
         t = por_escopo(["geo", "ytd", dim])
         d = collections.defaultdict(lambda: collections.defaultdict(dict))
         for (esc, geo, k, cat), v in t.items():
             if k in ("a", "p"):
                 d[esc][geo].setdefault(cat, [0, 0])[0 if k == "a" else 1] = r1(v)
-        if dim == "prod":   # mantém os 12 maiores produtos de cada escopo/UF na safra
+        if dim == "prod":   # mantém os 12 maiores produtos de cada escopo/UF
             for esc in d:
                 for geo in d[esc]:
                     it = sorted(d[esc][geo].items(), key=lambda x: -x[1][0])
                     top, rest = it[:12], it[12:]
                     d[esc][geo] = dict(top) | ({"Demais produtos": [round(sum(x[1][0] for x in rest), 1), round(sum(x[1][1] for x in rest), 1)]} if rest else {})
-        cortes[dim][str(s)] = d
+        cd[dim] = d
     pi = both.groupby(["CNPJ_IF", "geo", "ytd", "fin"]).VL.sum()
     pq = both[both.ytd == "a"].groupby(["CNPJ_IF", "geo"]).REF.nunique()
+    ie = collections.defaultdict(dict)
     for c in INST:
         for geo in ("BR", "MG"):
             a = [r1(pi.get((c, geo, "a", f), 0)) for f in FINS]
             p = round(sum(pi.get((c, geo, "p", f), 0) for f in FINS) / 1e6, 1)
             if sum(a) or p:
-                IN[c][geo][str(s)] = {"a": a, "p": p, "q": int(pq.get((c, geo), 0))}
+                ie[c][geo] = {"a": a, "p": p, "q": int(pq.get((c, geo), 0))}
+    return cs, cd, ie
+
+
+comp, cortes = {}, {dim: {} for dim in DIMS}
+IN = collections.defaultdict(lambda: collections.defaultdict(dict))
+for s in SHOW:
+    cs, cd, ie = calc(s, range(12))
+    comp[str(s)] = cs
+    for dim in DIMS: cortes[dim][str(s)] = cd[dim]
+    for c, g in ie.items():
+        for geo, v in g.items(): IN[c][geo][str(s)] = v
+
+# trimestres e semestres da safra (jul–set, out–dez, jan–mar, abr–jun; jul–dez, jan–jun), cada um contra o mesmo período da safra anterior
+PERIODOS = {"t1": range(0, 3), "t2": range(3, 6), "t3": range(6, 9), "t4": range(9, 12), "s1": range(0, 6), "s2": range(6, 12)}
+per = {}
+for k, meses in PERIODOS.items():
+    P = {"comp": {}, "cortes": {dim: {} for dim in DIMS}, "inst": collections.defaultdict(lambda: collections.defaultdict(dict))}
+    for s in SHOW:
+        if s == S and meses[0] > K_REF: continue          # período ainda não começou na safra corrente
+        cs, cd, ie = calc(s, meses)
+        P["comp"][str(s)] = cs
+        for dim in DIMS: P["cortes"][dim][str(s)] = cd[dim]
+        for c, g in ie.items():
+            for geo, v in g.items(): P["inst"][INST[c]["cnpj"]][geo][str(s)] = v
+    per[k] = P
 
 inst = []
 for c, r in INST.items():
@@ -373,7 +404,7 @@ meta = {
     "incorporacoes_aplicadas": len(mapa_inc),
 }
 out = {"meta": meta, "escopos": [{"id": a, "nome": b, "cor": c, "grupo": d} for a, b, c, d in ESCOPOS],
-       "serie": serie, "comp": comp, "cortes": cortes, "inst": inst}
+       "serie": serie, "comp": comp, "cortes": cortes, "inst": inst, "per": per}
 tmp = OUTFILE + ".tmp"
 json.dump(out, open(tmp, "w"), ensure_ascii=False, separators=(",", ":"))
 os.replace(tmp, OUTFILE)

@@ -197,6 +197,8 @@ ol.hl { margin: 0; padding-left: 20px; display: grid; gap: 8px; font-size: 0.9re
 .tabcard { display: grid; gap: 2px; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; text-decoration: none; color: var(--ink); }
 .tabcard:hover { border-color: var(--accent); }
 .tabcard span { font-size: 0.8rem; color: var(--muted); }
+tr.selp td { background: color-mix(in srgb, var(--accent) 12%, transparent); font-weight: 600; }
+.seg button:disabled { opacity: .4; cursor: not-allowed; }
 .inst-name { display: flex; align-items: center; min-width: 0; }
 .inst-name span { min-width: 0; }
 .tag { font-size: 0.64rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; margin-left: 6px; white-space: nowrap; }
@@ -243,7 +245,7 @@ const PORTE = { pequeno: "Pequeno produtor", medio: "Médio produtor", grande: "
 const DARKMAP = { "#2B2F33": "#D4D8DB", "#003641": "#3FA7B5", "#007A6E": "#2FC4B4" };
 
 let D = null;
-const st = { safra: 0, esc: "sfn", geo: "BR", fin: "all", rkTipo: "todos", rkAll: false, rkBusca: "", rkOrd: "a", rkVer: "cong" };
+const st = { safra: 0, per: "safra", esc: "sfn", geo: "BR", fin: "all", rkTipo: "todos", rkAll: false, rkBusca: "", rkOrd: "a", rkVer: "cong" };
 const $ = (s) => document.querySelector(s);
 const esc = (t) => String(t ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const nf = (v, d = 1) => v == null || !isFinite(v) ? "—" : Number(v).toLocaleString("pt-BR", { minimumFractionDigits: d, maximumFractionDigits: d });
@@ -266,15 +268,26 @@ const geoNome = () => st.geo === "BR" ? "Brasil" : "Minas Gerais";
 const SA = () => D.meta.safra_atual;
 const S = () => st.safra || SA();
 const cur = () => S() === SA();
-const refTxt = () => cur() ? `até ${dmy(D.meta.ref)}` : `safra fechada, jul/${String(S() - 1).slice(2)} a jun/${String(S()).slice(2)}`;
-const pontoTxt = () => cur() ? `mesmo ponto de ${safraLbl(S() - 1)}` : `safra ${safraLbl(S() - 1)} fechada`;
 const kRef = () => cur() ? (+D.meta.ref.slice(5, 7) - 7 + 12) % 12 : 11;            // índice do último mês com dado
+// período da safra: inteira, trimestres (jul–set, out–dez, jan–mar, abr–jun) e semestres (jul–dez, jan–jun)
+const PER = [["safra", "Safra inteira", 0, 11], ["t1", "1º tri", 0, 2], ["t2", "2º tri", 3, 5], ["t3", "3º tri", 6, 8], ["t4", "4º tri", 9, 11], ["s1", "1º sem", 0, 5], ["s2", "2º sem", 6, 11]];
+const perI = () => PER.find(p => p[0] === st.per) || PER[0];
+const perOn = (k, s = S()) => k === "safra" || D.per?.[k]?.comp?.[String(s)] != null;
+const PD = () => st.per === "safra" ? null : D.per?.[st.per];
+const perMes = () => `${MES[perI()[2]]}–${MES[perI()[3]]}`;
+const perParcial = () => cur() && kRef() < perI()[3];                                   // período ainda em curso na safra corrente
+const perNo = () => st.per === "safra" ? "na safra" : `no ${perI()[1]} (${perMes()}) da safra`;
+const refTxt = () => st.per === "safra" ? (cur() ? `até ${dmy(D.meta.ref)}` : `safra fechada, jul/${String(S() - 1).slice(2)} a jun/${String(S()).slice(2)}`)
+  : perParcial() ? `${perMes()}, até ${dmy(D.meta.ref)}` : `${perMes()} de ${safraLbl(S())}, período fechado`;
+const pontoTxt = () => st.per === "safra" ? (cur() ? `mesmo ponto de ${safraLbl(S() - 1)}` : `safra ${safraLbl(S() - 1)} fechada`)
+  : perParcial() ? `mesmo ponto do ${perI()[1]} de ${safraLbl(S() - 1)}` : `${perI()[1]} de ${safraLbl(S() - 1)} (${perMes()})`;
+const serSum = (id, geo, s) => { const r = ser(id, geo, s); return r ? r.slice(perI()[2], perI()[3] + 1).reduce((t, x) => t + val(x), 0) : 0; };
 const consolida = () => cur() ? [kRef(), kRef() - 1].filter(k => k >= 0) : [];      // meses ainda recebendo registros
-const comp = (id = st.esc, geo = st.geo) => D.comp[String(S())]?.[id]?.[geo];
+const comp = (id = st.esc, geo = st.geo) => (PD() ? PD().comp : D.comp)[String(S())]?.[id]?.[geo];
 function IG(i, geo) {
   if (i._v) return i._v[geo];
-  const s = S(), x = i[geo]?.[s]; if (!x) return null;
-  const prev = i[geo]?.[s - 1];
+  const s = S(), src = PD() ? PD().inst[i.cnpj] : i, x = src?.[geo]?.[s]; if (!x) return null;
+  const prev = src?.[geo]?.[s - 1];
   return { a: x.a, p: x.p, q: x.q, t: prev ? sum4(prev.a) : (cur() ? 0 : x.p) };
 }
 const ser = (id, geo, s) => D.serie[id]?.[geo]?.[String(s)];
@@ -415,12 +428,14 @@ function filtros() {
   $("#filters").innerHTML = `<div class="frow">${chips}</div>
     <div class="frow"><div class="fgroup"><span class="flabel">Local da operação</span><div class="seg">${[["BR","Brasil"],["MG","Minas Gerais"]].map(([k, n]) => `<button type="button" data-geo="${k}" aria-pressed="${st.geo === k}">${n}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Safra</span><div class="seg">${D.meta.safras_sel.slice().reverse().map(s => `<button type="button" data-safra="${s}" aria-pressed="${S() === s}">${safraLbl(s)}${s === SA() ? " (corrente)" : ""}</button>`).join("")}</div></div>
+    <div class="fgroup"><span class="flabel">Período da safra</span><div class="seg">${PER.map(([k, n, a, b]) => `<button type="button" data-per="${k}" aria-pressed="${st.per === k}"${perOn(k) ? (k === "safra" ? "" : ` title="${MES[a]}–${MES[b]}"`) : ` disabled title="Período ainda não começou na safra ${safraLbl(S())}"`}>${n}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Finalidade</span><div class="seg">${FIN.map(([k, n]) => `<button type="button" data-fin="${k}" aria-pressed="${st.fin === k}">${n}</button>`).join("")}</div></div></div>`;
 }
 document.addEventListener("click", (ev) => {
-  const b = ev.target.closest("[data-safra],[data-esc],[data-geo],[data-fin],[data-rk],[data-ord],[data-ver],#rkmore");
+  const b = ev.target.closest("[data-safra],[data-per],[data-esc],[data-geo],[data-fin],[data-rk],[data-ord],[data-ver],#rkmore");
   if (!b) return;
-  if (b.dataset.safra) st.safra = +b.dataset.safra;
+  if (b.dataset.safra) { st.safra = +b.dataset.safra; if (!perOn(st.per)) st.per = "safra"; }
+  if (b.dataset.per) { if (b.disabled) return; st.per = b.dataset.per; }
   if (b.dataset.esc) st.esc = b.dataset.esc;
   if (b.dataset.geo) st.geo = b.dataset.geo;
   if (b.dataset.fin) st.fin = b.dataset.fin;
@@ -428,7 +443,7 @@ document.addEventListener("click", (ev) => {
   if (b.dataset.ord) st.rkOrd = b.dataset.ord;
   if (b.dataset.ver) { st.rkVer = b.dataset.ver; st.rkAll = false; }
   if (b.id === "rkmore") st.rkAll = !st.rkAll;
-  try { localStorage.setItem("safra-filtros", JSON.stringify({ esc: st.esc, geo: st.geo, fin: st.fin, safra: st.safra })); } catch (e) {}
+  try { localStorage.setItem("safra-filtros", JSON.stringify({ esc: st.esc, geo: st.geo, fin: st.fin, safra: st.safra, per: st.per })); } catch (e) {}
   render();
 });
 document.addEventListener("input", (ev) => { if (ev.target.id === "rkbusca") { st.rkBusca = ev.target.value; renderRanking(); } });
@@ -438,19 +453,19 @@ function kpis() {
   const e = escopo(st.esc), c = comp(), cs = comp("sfn"), s = S();
   const a = val(c.a), p = val(c.p), qa = c.a[4], qp = c.p[4];
   const share = cs ? a / val(cs.a) * 100 : null, shareP = cs ? p / val(cs.p) * 100 : null;
-  const tot = ser(st.esc, st.geo, s - 1).reduce((t, r) => t + val(r), 0);
+  const tot = serSum(st.esc, st.geo, s - 1), tot2 = serSum(st.esc, st.geo, s - 2);
   const tk = qa ? a / qa * 1000 : null, tkp = qp ? p / qp * 1000 : null;
   const ref = refTxt(), src = "SICOR";
   const fin = st.fin === "all" ? "" : ` · ${finNome().toLowerCase()}`;
   const k = (lbl, v, unit, chg, cl, foot) => `<div class="kpi"><div class="lbl">${lbl}</div><div class="val">${v}<small>${unit}</small></div><div class="chg ${cl}">${chg}</div><div class="src">${foot}</div></div>`;
   const v1 = pct(a, p);
   return `<div class="kpis">
-    ${k(`Contratado na safra ${safraLbl(s)}${fin}`, a >= 1000 ? nf(a / 1000, 1) : nf(a, 0), a >= 1000 ? " bi" : " mi", `${arrow(v1)}${sgn(v1)} contra ${brl(p)}`, cls(v1), `${ref} · contra ${pontoTxt()} · ${src}`)}
+    ${k(`Contratado ${perNo()} ${safraLbl(s)}${fin}`, a >= 1000 ? nf(a / 1000, 1) : nf(a, 0), a >= 1000 ? " bi" : " mi", `${arrow(v1)}${sgn(v1)} contra ${brl(p)}`, cls(v1), `${ref} · contra ${pontoTxt()} · ${src}`)}
     ${k("Operações contratadas", nf(qa, 0), "", `${arrow(pct(qa, qp))}${sgn(pct(qa, qp))} contra ${nf(qp, 0)}`, cls(pct(qa, qp)), `${ref} · todas as finalidades · ${src}`)}
     ${k("Valor médio por operação", nf(tk, 0), " mil", `${arrow(pct(tk, tkp))}${sgn(pct(tk, tkp))} contra R$ ${nf(tkp, 0)} mil`, "flat", `${ref} · R$ mil${st.fin === "all" ? "" : " · valor da finalidade ÷ todas as operações"}`)}
     ${st.esc === "sfn" ? k(`Participação de ${geoNome() === "Brasil" ? "MG no Brasil" : "MG no Brasil"}`, nf(val(comp("sfn","MG").a) / val(comp("sfn","BR").a) * 100, 1), "%", `${sgn(val(comp("sfn","MG").a) / val(comp("sfn","BR").a) * 100 - val(comp("sfn","MG").p) / val(comp("sfn","BR").p) * 100, 1, " p.p.")} sobre ${pontoTxt()}`, "flat", `${ref} · local da operação · ${src}`)
       : k(`Participação no SFN · ${geoNome()}`, nf(share, 1), "%", `${arrow(share - shareP)}${sgn(share - shareP, 1, " p.p.")} sobre ${nf(shareP, 1)}%`, cls(share - shareP), `${ref} · contra ${pontoTxt()} · ${src}`)}
-    ${k(`Safra ${safraLbl(s - 1)} fechada`, tot >= 1000 ? nf(tot / 1000, 1) : nf(tot, 0), tot >= 1000 ? " bi" : " mi", `${sgn(pct(tot, (ser(st.esc, st.geo, s - 2) || []).reduce((t, r) => t + val(r), 0)))} sobre ${safraLbl(s - 2)}`, cls(pct(tot, (ser(st.esc, st.geo, s - 2) || []).reduce((t, r) => t + val(r), 0))), `jul/${String(s - 2).slice(2)} a jun/${String(s - 1).slice(2)} · ${src}`)}
+    ${k(st.per === "safra" ? `Safra ${safraLbl(s - 1)} fechada` : `${perI()[1]} de ${safraLbl(s - 1)} fechado`, tot >= 1000 ? nf(tot / 1000, 1) : nf(tot, 0), tot >= 1000 ? " bi" : " mi", `${sgn(pct(tot, tot2))} sobre ${safraLbl(s - 2)}`, cls(pct(tot, tot2)), `${st.per === "safra" ? `jul/${String(s - 2).slice(2)} a jun/${String(s - 1).slice(2)}` : `${perMes()} de ${safraLbl(s - 1)}`} · ${src}`)}
   </div>`;
 }
 function curva() {
@@ -483,25 +498,29 @@ function cortes() {
   const sum = (rows, a, b) => rows ? rows.slice(a, b + 1).reduce((t, r) => t + val(r), 0) : null;
   const C = [["1º tri (jul–set)", 0, 2], ["2º tri (out–dez)", 3, 5], ["3º tri (jan–mar)", 6, 8], ["4º tri (abr–jun)", 9, 11], ["1º semestre (jul–dez)", 0, 5], ["2º semestre (jan–jun)", 6, 11], ["Safra (jul–jun)", 0, 11]];
   const rs = [s - 2, s - 1, s].map(x => ser(st.esc, st.geo, x));
+  const PK = ["t1", "t2", "t3", "t4", "s1", "s2", "safra"];
   const rows = C.map(([nm, a, b], idx) => {
-    const cur = a > kr ? null : sum(rs[2], a, Math.min(b, kr)), parc = cur != null && b > kr;
-    const prevSame = sum(rs[1], a, Math.min(b, kr));
-    const v = cur == null ? null : pct(cur, parc ? prevSame : sum(rs[1], a, b));
+    let cur = a > kr ? null : sum(rs[2], a, Math.min(b, kr)), parc = cur != null && b > kr;
+    // período em curso: usa o mesmo ponto por dia (igual aos indicadores), não o mês cheio da safra anterior
+    const cp = parc ? (PK[idx] === "safra" ? D.comp : D.per?.[PK[idx]]?.comp)?.[String(s)]?.[st.esc]?.[st.geo] : null;
+    if (cp) cur = val(cp.a);
+    const v = cur == null ? null : cp ? pct(val(cp.a), val(cp.p)) : pct(cur, parc ? sum(rs[1], a, Math.min(b, kr)) : sum(rs[1], a, b));
     const vPrev = pct(sum(rs[1], a, b), sum(rs[0], a, b));
-    return `<tr class="${idx === 6 ? "tot" : idx >= 4 ? "sub" : ""}"><td>${nm}</td><td class="num">${brl(sum(rs[0], a, b))}</td><td class="num">${brl(sum(rs[1], a, b))}<small class="${cls(vPrev)}">${sgn(vPrev)}</small></td>
+    const selP = ["t1", "t2", "t3", "t4", "s1", "s2", "safra"][idx] === st.per;
+    return `<tr class="${idx === 6 ? "tot" : idx >= 4 ? "sub" : ""}${selP ? " selp" : ""}"><td>${nm}</td><td class="num">${brl(sum(rs[0], a, b))}</td><td class="num">${brl(sum(rs[1], a, b))}<small class="${cls(vPrev)}">${sgn(vPrev)}</small></td>
       <td class="num ${cur == null ? "part" : ""}">${cur == null ? "a contratar" : brl(cur)}${parc ? `<small>até ${MES[kr]}</small>` : ""}</td>
-      <td class="num ${cls(v)}">${v == null ? "—" : sgn(v)}${parc ? `<small>contra ${MES[a]}–${MES[kr]} de ${safraLbl(s - 1)}</small>` : ""}</td></tr>`;
+      <td class="num ${cls(v)}">${v == null ? "—" : sgn(v)}${parc ? `<small>contra ${cp ? `até ${dmy(D.meta.ref_anterior)}` : `${MES[a]}–${MES[kr]} de ${safraLbl(s - 1)}`}</small>` : ""}</td></tr>`;
   }).join("");
   return block("Cortes da safra por trimestre e semestre", `${escopo(st.esc).nome} · ${geoNome()} · ${finNome().toLowerCase()}`,
     `<div class="tbl-wrap"><table><thead><tr><th>Período</th><th class="num">${safraLbl(s - 2)}</th><th class="num">${safraLbl(s - 1)}</th><th class="num">${safraLbl(s)}</th><th class="num">Var. ${safraLbl(s)}</th></tr></thead><tbody>${rows}</tbody></table></div>`,
-    `Trimestre parcial comparado com os mesmos meses da safra anterior. Variação sob ${safraLbl(s - 1)}: contra ${safraLbl(s - 2)}. ${fonteLink()}`);
+    `Período em curso comparado com o mesmo ponto da safra anterior (até ${dmy(D.meta.ref_anterior)}). Linha destacada: período selecionado no filtro. Variação sob ${safraLbl(s - 1)}: contra ${safraLbl(s - 2)}. ${fonteLink()}`);
 }
 function escopos() {
   const items = D.escopos.filter(e => e.id !== "sfn").map(e => {
     const c = comp(e.id); return { id: e.id, name: e.nome, v: c && val(c.p) > 0 ? pct(val(c.a), val(c.p)) : null, c: cor(e.cor), sel: e.id === st.esc, a: c ? val(c.a) : 0 };
   });
   const sfn = comp("sfn"); items.unshift({ id: "sfn", name: "SFN", v: pct(val(sfn.a), val(sfn.p)), c: cor("#2B2F33"), sel: st.esc === "sfn", a: val(sfn.a) });
-  return block(`Quem acelera e quem freia · ${geoNome()}`, `Variação da safra ${safraLbl(S())} (${refTxt()}) sobre ${pontoTxt()} · ${finNome().toLowerCase()}`,
+  return block(`Quem acelera e quem freia · ${geoNome()}`, `Variação ${perNo()} ${safraLbl(S())} sobre ${pontoTxt()} · ${finNome().toLowerCase()}`,
     divergingBars(items, { label: "Variação por escopo" }), `Escopo selecionado em destaque. Barras cortadas em ±80% no desenho, marcadas com ›; o número é o valor exato. ${fonteLink()}`);
 }
 function finalidades() {
@@ -516,7 +535,7 @@ function finalidades() {
     `Barra cheia: safra ${safraLbl(S())}. Traço cinza: ${pontoTxt()}. ${fonteLink()}`);
 }
 function corteTabela(dim, nomes, titulo, eyebrow, top) {
-  const t = D.cortes[dim]?.[String(S())]?.[st.esc]?.[st.geo];
+  const t = (PD() ? PD().cortes : D.cortes)[dim]?.[String(S())]?.[st.esc]?.[st.geo];
   if (!t) return block(titulo, eyebrow, `<p class="empty">Sem operações neste recorte.</p>`);
   let it = Object.entries(t).map(([k, [a, p]]) => ({ k, nm: nomes ? nomes[k] || k : k, a, p })).filter(x => x.a || x.p);
   it.sort((x, y) => (x.k === "Demais produtos") - (y.k === "Demais produtos") || y.a - x.a);
@@ -598,11 +617,11 @@ function renderRanking() {
   const ord = (k, n) => `<button type="button" data-ord="${k}" aria-pressed="${st.rkOrd === k}">${n}</button>`;
   const ver = (k, n) => `<button type="button" data-ver="${k}" aria-pressed="${st.rkVer === k}">${n}</button>`;
   const ativo = document.activeElement?.id === "rkbusca";
-  el.innerHTML = `<header><div class="eyebrow">${escopo(st.esc).nome} · ${geoNome()} · ${finNome().toLowerCase()} · ${list.length} ${verC ? "conglomerados e instituições independentes" : "instituições"}</div><h3>Ranking de contratação na safra ${safraLbl(S())}${verC ? " · por conglomerado" : ""}</h3></header>
+  el.innerHTML = `<header><div class="eyebrow">${escopo(st.esc).nome} · ${geoNome()} · ${finNome().toLowerCase()} · ${list.length} ${verC ? "conglomerados e instituições independentes" : "instituições"}</div><h3>Ranking de contratação ${perNo()} ${safraLbl(S())}${verC ? " · por conglomerado" : ""}</h3></header>
     <div class="rank-tools"><div class="frow">${congOK ? `<div class="fgroup"><span class="flabel">Ver por</span><div class="seg">${ver("cong", "Conglomerado")}${ver("inst", "Instituição")}</div></div>` : ""}<div class="seg">${seg("todos", "Todas")}${seg("coop", "Cooperativas")}${seg("banco", "Bancos e demais")}</div>
-    <div class="fgroup"><span class="flabel">Ordenar</span><div class="seg">${ord("a", "Valor")}${ord("g", "Variação")}${ord("t", `Safra ${safraLbl(S() - 1)}`)}</div></div></div>
+    <div class="fgroup"><span class="flabel">Ordenar</span><div class="seg">${ord("a", "Valor")}${ord("g", "Variação")}${ord("t", `${st.per === "safra" ? "Safra" : perI()[1]} ${safraLbl(S() - 1)}`)}</div></div></div>
     <input id="rkbusca" type="search" placeholder="Buscar instituição ou CNPJ" value="${esc(st.rkBusca)}" aria-label="Buscar instituição"></div>
-    <div class="tbl-wrap"><table><thead><tr><th class="num">#</th><th>Instituição</th><th class="num">Acumulado</th><th></th><th class="num">Var.</th><th class="num">Part. ${geo === "BR" ? "SFN" : "SFN MG"}</th><th class="num">Operações</th><th class="num">Safra ${safraLbl(S() - 1)}</th></tr></thead><tbody>${rows || `<tr><td colspan="8" class="empty">Nenhuma instituição encontrada.</td></tr>`}</tbody></table></div>
+    <div class="tbl-wrap"><table><thead><tr><th class="num">#</th><th>Instituição</th><th class="num">Acumulado</th><th></th><th class="num">Var.</th><th class="num">Part. ${geo === "BR" ? "SFN" : "SFN MG"}</th><th class="num">Operações</th><th class="num">${st.per === "safra" ? "Safra" : perI()[1]} ${safraLbl(S() - 1)}</th></tr></thead><tbody>${rows || `<tr><td colspan="8" class="empty">Nenhuma instituição encontrada.</td></tr>`}</tbody></table></div>
     ${shown.length > 25 && !q ? `<button class="linkbtn" id="rkmore" type="button">${st.rkAll ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${shown.length}`}</button>` : ""}
     <div class="meta">Posição pelo valor contratado (${refTxt()}). Variação sobre ${pontoTxt()}, em todas as finalidades; abaixo de R$ 10 mi no ponto anterior a variação aparece em cinza. Operações: todas as finalidades. ${geo === "MG" ? "Em MG, conta só operações com local em Minas, de qualquer instituição." : ""} Conglomerado: Sicoob e Sicredi somam cooperativas, centrais e o banco cooperativo do sistema; bancos seguem o conglomerado prudencial do IF.data. Cooperativas Sicoob aparecem com o número do sistema. ${fonteLink()}</div>`;
   if (ativo) { const b = $("#rkbusca"); b.focus(); b.setSelectionRange(b.value.length, b.value.length); }
@@ -617,6 +636,7 @@ function notas() {
     <p><b>Escopos.</b> Cooperativas = singulares e centrais; Banco Sicoob e Banco Sicredi ficam em "Bancos e demais". Conglomerado Sicoob e Conglomerado Sicredi somam cooperativas, centrais e o banco cooperativo do sistema. No ranking por conglomerado, os bancos seguem o conglomerado prudencial do IF.data (ex.: Banco John Deere entra no conglomerado Bradesco). Bancos digitais seguem a lista fixa do projeto; nesta safra operam no rural: ${esc((m.digitais_com_operacao || []).join(", "))}. Unicred não registra operações rurais no período.</p>
     <p><b>Nomes.</b> Número e nome das cooperativas Sicoob pela <a href="https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf" target="_blank" rel="noopener">lista oficial do Sicoob</a> (encarregados de dados, com CNPJ), cruzada com a relação de instituições do BC. Na lista, Ascicred (4034) e Vale do Aço (4036) aparecem com CNPJ de outras cooperativas; o número foi associado pelo nome. Demais cooperativas pelo nome da razão social. Razão social completa aparece abaixo do nome no ranking.</p>
     <p><b>Incorporações.</b> Operações de cooperativa ou banco incorporado entram na incorporadora em todo o histórico, para comparar bases iguais (${D.meta.incorporacoes_aplicadas} instituições nesta base). Fonte principal: quadro mensal de autorizações e alterações societárias do BC (Evolução do SFN). Para incorporações de 2026 ainda fora do quadro, atos e notícias das próprias cooperativas: Vale do Cerrado na Sicredi Celeiro Centro Norte, União MT/MS no Sicoob Primavera (4345) e Credimota no Sicoob Crediceripa (3197). Sicredi Pantanal MS foi dividida entre duas cooperativas e fica com o próprio nome. Cresol Xanxerê e Cresol Áurea saíram da relação do BC sem fonte pública sobre a incorporadora; ficam com o próprio nome.</p>
+    <p><b>Trimestres e semestres.</b> O filtro de período recorta a safra em trimestres (jul–set, out–dez, jan–mar, abr–jun) e semestres (jul–dez, jan–jun). Indicadores, finalidades, programas, fontes, produtos e ranking passam a comparar o período escolhido com o mesmo período da safra anterior. Na safra corrente, período em curso compara até ${dmy(m.ref)} com até ${dmy(m.ref_anterior)}; período que ainda não começou fica desativado.</p>
     <p><b>Safras anteriores.</b> Ao escolher uma safra fechada, a comparação é com a safra fechada anterior, de julho a junho.</p>
     <p><b>Finalidade, programa e fonte</b> vêm das tabelas auxiliares do SICOR (empreendimento, programa, fonte de recursos). Produtos de máquinas e de armazenagem foram agrupados. Operações = contratos distintos (#REF_BACEN).</p>
   </div></section>`;
@@ -629,9 +649,10 @@ function renderSafra() {
   const s = S();
   try {
     const e = escopo(st.esc);
-    $("#view").innerHTML = `<div><div class="eyebrow">Safra ${safraLbl(s)} · ${cur() ? `emissões até ${dmy(D.meta.ref)}` : refTxt()} ${novo() && cur() ? '<span class="badge-new">novo</span>' : ""}</div>
+    if (!perOn(st.per)) st.per = "safra";
+    $("#view").innerHTML = `<div><div class="eyebrow">Safra ${safraLbl(s)}${st.per === "safra" ? "" : ` · ${perI()[1]} (${perMes()})`} · ${cur() ? `emissões até ${dmy(D.meta.ref)}` : refTxt()} ${novo() && cur() ? '<span class="badge-new">novo</span>' : ""}</div>
       <h2>Contratação de crédito rural · ${esc(e.nome)} em ${geoNome()}</h2>
-      <p class="lede">${cur() ? "Valor contratado na safra corrente contra o mesmo ponto da safra anterior" : `Safra ${safraLbl(s)} fechada contra a safra ${safraLbl(s - 1)} fechada`}, com cortes por trimestre, semestre, finalidade, programa, fonte e instituição.</p></div>
+      <p class="lede">${st.per !== "safra" ? `Valor contratado ${perNo()} ${safraLbl(s)}${perParcial() ? `, até ${dmy(D.meta.ref)},` : ""} contra ${pontoTxt()}. Gráficos de linha seguem com a safra inteira, para dar contexto` : cur() ? "Valor contratado na safra corrente contra o mesmo ponto da safra anterior" : `Safra ${safraLbl(s)} fechada contra a safra ${safraLbl(s - 1)} fechada`}, com cortes por trimestre, semestre, finalidade, programa, fonte e instituição.</p></div>
       ${cur() ? "" : "<!--"}<div class="note">Os meses mais recentes ainda recebem registros atrasados no SICOR. Os números de ${consolida().slice().reverse().map(k => MESF[k]).join(" e ")} devem subir nas próximas atualizações, o que reduz a queda medida hoje.</div>${cur() ? "" : "-->"}
       ${kpis()}${curva()}
       <div class="grid2">${cortes()}${finalidades()}</div>
