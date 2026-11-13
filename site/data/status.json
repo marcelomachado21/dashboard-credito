@@ -1,16 +1,16 @@
 {
- "verificado_em": "2026-11-12T19:07:38+00:00",
+ "verificado_em": "2026-11-13T12:55:55+00:00",
  "forcado": true,
- "segundos": 1883,
+ "segundos": 8564,
  "bases": {
   "safra": {
-   "segundos": 196,
-   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 363, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "segundos": 265,
+   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 1380, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "atualizado",
    "ref": "2026-10-30"
   },
   "risco": {
-   "segundos": 443,
+   "segundos": 2410,
    "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 836}",
    "situacao": "atualizado",
    "ref": {
@@ -20,19 +20,20 @@
    }
   },
   "posicao": {
-   "segundos": 163,
-   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 1078, \"kb\": 1838}",
-   "situacao": "atualizado",
+   "segundos": 2418,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 4, \"instituicoes\": 1068, \"kb\": 1296}",
+   "situacao": "reprovado",
+   "motivo": "AssertionError: trimestres incompletos: ['2025-09', '2025-12', '2026-03', '2026-06'] (antes ['2025-03', '2025-06', '2025-09', '2025-12', '2026-03', '2026-06'])",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 21,
+   "segundos": 16,
    "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 2975}",
    "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 47,
+   "segundos": 35,
    "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 849, \"erros\": [], \"kb\": 422}",
    "situacao": "atualizado",
    "ref": {
@@ -41,13 +42,13 @@
    }
   },
   "focus": {
-   "segundos": 9,
+   "segundos": 7,
    "saida": "{\"focus\": \"2026-11-06\", \"kb\": 24}",
    "situacao": "atualizado",
    "ref": "2026-11-06"
   },
   "territorio": {
-   "segundos": 1001,
+   "segundos": 3412,
    "saida": "",
    "situacao": "falhou",
    "motivo": "urllib.error.HTTPError: HTTP Error 500: Internal Server Error",
@@ -56,8 +57,8 @@
   "cadastro": {
    "situacao": "alerta",
    "ref": "2026-11-05",
-   "motivo": "83 filiações vieram vazias de uma vez no cadastro do BC em 2026-11-12; mantida a versão de 2026-11-05"
+   "motivo": "83 filiações vieram vazias de uma vez no cadastro do BC em 2026-11-13; mantida a versão de 2026-11-05"
   }
  },
- "ultima_atualizacao": "2026-11-12"
+ "ultima_atualizacao": "2026-11-13"
 }
