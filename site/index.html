@@ -290,7 +290,7 @@ let UFSEL = (() => { try { return localStorage.getItem("uf-sel") || "MG"; } catc
 let RSET = null;                                    // recorte em edição na aba atual: { ids, sel, set }
 const trocaUF = (id, uf) => { const l = uf.toLowerCase(); if (id === "crediminas" || id === "cecremge") return "coop_" + l; const m = /^(coop|sicoob|sicredi|solteiras)_[a-z]{2}$/.exec(id); return m ? `${m[1]}_${l}` : id; };
 // "BR" = Brasil, todos os estados (só recortes nacionais na lista)
-const ufAtual = (sel, ids) => { const u = ufDe(sel); if (u) return u; const tem = UFS_ORD.filter(x => ids.some(i => ufDe(i) === x)); return tem.includes(UFSEL) ? UFSEL : "BR"; };
+const ufAtual = (sel, ids) => ufDe(sel) || (UFN[UFSEL] ? UFSEL : "BR");
 const NAC_UF = ["coop", "sicoob", "sicredi", "solteiras"];                       // recortes nacionais que têm versão por estado
 const paraNacional = (id) => id === "crediminas" || id === "cecremge" ? "coop" : (/^(coop|sicoob|sicredi|solteiras)_[a-z]{2}$/.exec(id) || [])[1] || id;
 // ids: recortes que a aba aceita; sel: o atual; set(id): grava o novo. o.label muda o rótulo ("Grupo de comparação").
@@ -298,11 +298,11 @@ function seletorRecorte(ids, sel, set, o = {}) {
   ids = ids.filter(i => RECORTES.has(i)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
   if (!ids.includes(sel)) { sel = ids.includes("coop") ? "coop" : ids[0]; set(sel); }     // recorte salvo que não existe mais
   RSET = { ids: new Set(ids), sel, set, onUF: o.onUF };
-  const uf = ufAtual(sel, ids), ufs = UFS_ORD.filter(x => ids.some(i => ufDe(i) === x));
+  const uf = ufAtual(sel, ids), ufs = UFS_ORD;                                   // lista completa: Brasil e as 27 UFs
   const G = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas ${emUF(uf)}`], ["banco", "Bancos"]].filter(([g]) => g !== "uf" || uf !== "BR");
   const opt = (id) => `<option value="${id}"${id === sel ? " selected" : ""}>${esc(RECORTES.get(id).nome)}</option>`;
-  const grupos = G.map(([g, nm]) => { const l = ids.filter(i => RECORTES.get(i).grupo === g && (g !== "uf" || ufDe(i) === uf)); return l.length ? `<optgroup label="${esc(nm)}">${l.map(opt).join("")}</optgroup>` : ""; }).join("");
-  const est = ufs.length ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${["BR", ...ufs].map(u => `<option value="${u}"${u === uf ? " selected" : ""}>${u === "BR" ? "Brasil (todos)" : esc(UFN[u])}</option>`).join("")}</select></label>` : "";
+  const grupos = G.map(([g, nm]) => { const l = ids.filter(i => RECORTES.get(i).grupo === g && (g !== "uf" || ufDe(i) === uf)); return l.length ? `<optgroup label="${esc(nm)}">${l.map(opt).join("")}</optgroup>` : g === "uf" ? `<optgroup label="${esc(nm)}"><option disabled>Sem cooperativa com sede no estado nesta base</option></optgroup>` : ""; }).join("");
+  const est = ids.some(i => ufDe(i)) ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${["BR", ...ufs].map(u => `<option value="${u}"${u === uf ? " selected" : ""}>${u === "BR" ? "Brasil (todos)" : esc(UFN[u])}</option>`).join("")}</select></label>` : "";
   return `<div class="recsel">${est}<label class="fgroup"><span class="flabel">${esc(o.label || "Recorte")}</span><select class="sel sel-rec" data-recorte aria-label="${esc(o.label || "Recorte")}">${grupos}</select></label></div>`;
 }
 document.addEventListener("change", (ev) => {
