@@ -141,6 +141,7 @@ df["geo"] = "BR"
 
 # ---------- 3. instituições ----------
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from cadastro import sedes_coop   # cadastro protegido contra falhas do BC
+from escopos import lista as lista_escopos, saida as saida_escopos, sistema_de as _sis, escopos_cooperativa, uf_do_escopo, SISTEMAS, UFS
 coop = pd.DataFrame(list(sedes_coop(olinda).values()))
 banc = pd.DataFrame(olinda("Instituicoes_em_funcionamento/versao/v1/odata/SedesBancoComMultCE?$format=json"))
 cad = []
@@ -213,11 +214,7 @@ def curto_coop(nome):
     return t if " " not in t else "Coop. " + t
 
 
-def sistema_de(texto):
-    t = texto.upper()
-    for k, nm in (("SICOOB", "sicoob"), ("SICREDI", "sicredi"), ("CRESOL", "cresol"), ("UNICRED", "unicred")):
-        if k in t: return nm
-    return "outras"
+sistema_de = _sis
 
 
 def info(cnpj):
@@ -242,14 +239,9 @@ def info(cnpj):
         r["cong"] = BANCO_SISTEMA.get(cnpj) or k.get("CodConglomeradoPrudencial") or cnpj
     sc = ["sfn", "coop" if is_coop else "bancos"]
     if r["cong"] in ("sicoob", "sicredi"): sc.append("cong_" + r["cong"])
-    if is_coop:
-        sc.append(r["sistema"])
-        if r["sistema"] == "sicoob" and uf == "MG": sc.append("sicoob_mg")
-        if r["central"]: sc.append(r["central"])
-        if uf == "MG": sc.append("coop_mg")
-        if c is not None and not fil.strip() and str(getattr(c, "CLASSE", "Singular") or "Singular") == "Singular":   # solteira: sem central
-            sc.append("solteiras")
-            if uf == "MG": sc.append("solteiras_mg")
+    if is_coop:   # solteira: singular sem central no cadastro do BC
+        sing = str(getattr(c, "CLASSE", "Singular") or "Singular") == "Singular" if c is not None else False
+        sc += [e for e in escopos_cooperativa(r["sistema"], uf, fil if c is not None else "x", sing) if e not in sc]
     if cnpj in TOP5: sc.append(TOP5[cnpj]); sc.append("top5")
     if not is_coop and DIGITAIS.search(nome): sc.append("digitais")
     r["escopos"] = sc
@@ -263,41 +255,71 @@ for velho, novo in mapa_inc.items():
 digitais_achados = sorted({INST[c]["curto"] for c in INST if "digitais" in INST[c]["escopos"]})
 MAP = pd.DataFrame([(c, s) for c, r in INST.items() for s in r["escopos"]], columns=["CNPJ_IF", "esc"])
 
-ESCOPOS = [
-    ("sfn", "SFN", "#2B2F33", "agregado"), ("bancos", "Bancos e demais", "#8A9097", "agregado"), ("coop", "Cooperativas", "#56606A", "agregado"),
-    ("cong_sicoob", "Conglomerado Sicoob", "#003641", "conglomerado"), ("cong_sicredi", "Conglomerado Sicredi", "#3FA110", "conglomerado"),
-    ("sicoob", "Sicoob (cooperativas)", "#00AE9D", "sistema"), ("sicredi", "Sicredi (cooperativas)", "#7CC35A", "sistema"), ("cresol", "Cresol", "#6E5A9E", "sistema"),
-    ("unicred", "Unicred", "#9C7A3C", "sistema"), ("outras", "Outras cooperativas", "#A3ACA8", "sistema"),
-    ("solteiras", "Cooperativas solteiras", "#B07A4A", "sistema"),
-    ("sicoob_mg", "Sicoob MG", "#2E8F86", "mg"), ("crediminas", "Central Crediminas", "#007A6E", "mg"), ("cecremge", "Central Cecremge", "#5BC2B8", "mg"), ("solteiras_mg", "Solteiras de MG", "#8C5A30", "mg"),
-    ("bb", "Banco do Brasil", "#465EFF", "banco"), ("bradesco", "Bradesco", "#CC092F", "banco"), ("itau", "Itaú", "#EC7000", "banco"),
-    ("caixa", "Caixa", "#005CA9", "banco"), ("santander", "Santander", "#EC0000", "banco"), ("digitais", "Bancos digitais", "#820AD1", "banco"),
-]
-ids_validos = {e[0] for e in ESCOPOS} | {"coop_mg", "top5"}   # recortes extras usados na ficha de grupo
+ESCOPOS = lista_escopos()
+ids_validos = {e[0] for e in ESCOPOS} | {"top5"}   # top5: recorte extra da ficha de grupo
+PRESENTES = set(MAP.esc)
+
+
+def guarda(esc, geo):
+    """Recorte nacional: todas as UFs de operação. Recorte de UF: Brasil e a própria UF."""
+    u = uf_do_escopo(esc)
+    return u is None or geo in ("BR", u)
+
+
+def destino(esc, geo):
+    """'' = arquivo principal (Brasil e MG); 'SP' etc. = arquivo da UF, carregado sob demanda."""
+    u = uf_do_escopo(esc)
+    if u is None: return "" if geo in ("BR", "MG") else geo
+    return "" if u == "MG" else u
+
 
 # ---------- 4. agregados ----------
-both = pd.concat([df, df[df.CD_ESTADO == "MG"].assign(geo="MG")], ignore_index=True)
+both = df          # cada operação conta duas vezes: no Brasil (geo) e na UF da operação (CD_ESTADO); agrupado em duas passadas para não duplicar a tabela
 del df
+GEOS = set(UFS) | {"BR"}
+
+
+def gb(keys, fn, base=None):
+    """Agrupa por keys, onde "geo" vale Brasil numa passada e a UF da operação na outra."""
+    b = both if base is None else base
+    partes = []
+    for col in ("geo", "CD_ESTADO"):
+        kk = [col if k == "geo" else k for k in keys]
+        g = fn(b.groupby(kk, observed=True))
+        g.index = g.index.set_names(keys)
+        partes.append(g)
+    r = pd.concat(partes)
+    return r[r.index.get_level_values("geo").isin(GEOS)]
+
+
+# instituições com o mesmo conjunto de recortes formam uma classe: soma-se por classe e só depois se abre por recorte
+# (abrir por instituição × UF × recorte estoura a memória)
+_cl = {}
+CLS = {c: _cl.setdefault(tuple(sorted(r["escopos"])), len(_cl)) for c, r in INST.items()}
+CLSMAP = pd.DataFrame([(k, e) for t, k in _cl.items() for e in t], columns=["cls", "esc"])
+both["cls"] = both.CNPJ_IF.map(CLS).fillna(-1).astype("int32")
 
 
 def por_escopo(keys, val="VL"):
-    g = both.groupby(["CNPJ_IF"] + keys, observed=True)[val].sum().reset_index()
-    return g.merge(MAP, on="CNPJ_IF").groupby(["esc"] + keys, observed=True)[val].sum()
+    g = gb(["cls"] + keys, lambda x: x[val].sum()).reset_index()
+    return g.merge(CLSMAP, on="cls").groupby(["esc"] + keys, observed=True)[val].sum()
 
 
 def ops_por_escopo(keys):
-    g = both.groupby(["CNPJ_IF"] + keys, observed=True).REF.nunique().reset_index()
-    return g.merge(MAP, on="CNPJ_IF").groupby(["esc"] + keys, observed=True).REF.sum()
+    g = gb(["cls"] + keys, lambda x: x.REF.nunique()).reset_index()     # #REF_BACEN é de uma instituição só: soma por classe = soma por instituição
+    return g.merge(CLSMAP, on="cls").groupby(["esc"] + keys, observed=True).REF.sum()
 
 
 r1 = lambda v: round(float(v) / 1e6, 1)
 FINS = ["c", "i", "m", "n"]
+FIDX = {f: i for i, f in enumerate(FINS)}
 
 mes = por_escopo(["geo", "safra", "m", "fin"])
 mes_q = ops_por_escopo(["geo", "safra", "m"])
 serie = collections.defaultdict(lambda: collections.defaultdict(dict))
-for esc in sorted(ids_validos):
-    for geo in ("BR", "MG"):
+NAC = [e for e in ids_validos if uf_do_escopo(e) is None]
+base_eg = {(e, g) for e in NAC for g in ("BR", "MG")}
+for esc, geo in sorted({(e, g) for e, g, *_ in mes.index if e in ids_validos and guarda(e, g)} | base_eg):
         for s in SAFRAS:
             rows = []
             for m in range(12):
@@ -321,15 +343,14 @@ def calc(s, meses):
     ytd = por_escopo(["geo", "ytd", "fin"])
     ytd_q = ops_por_escopo(["geo", "ytd"])
     cs = collections.defaultdict(dict)
-    for esc in sorted(ids_validos):
-        for geo in ("BR", "MG"):
+    for esc, geo in sorted({(e, g) for e, g, *_ in ytd.index if e in ids_validos and guarda(e, g)} | base_eg):
             cs[esc][geo] = {k: [r1(ytd.get((esc, geo, k, f), 0)) for f in FINS] + [int(ytd_q.get((esc, geo, k), 0))] for k in ("a", "p")}
     cd = {}
     for dim in DIMS:
         t = por_escopo(["geo", "ytd", dim])
         d = collections.defaultdict(lambda: collections.defaultdict(dict))
         for (esc, geo, k, cat), v in t.items():
-            if k in ("a", "p"):
+            if k in ("a", "p") and esc in ids_validos and guarda(esc, geo):
                 d[esc][geo].setdefault(cat, [0, 0])[0 if k == "a" else 1] = r1(v)
         if dim == "prod":   # mantém os 12 maiores produtos de cada escopo/UF
             for esc in d:
@@ -338,15 +359,17 @@ def calc(s, meses):
                     top, rest = it[:12], it[12:]
                     d[esc][geo] = dict(top) | ({"Demais produtos": [round(sum(x[1][0] for x in rest), 1), round(sum(x[1][1] for x in rest), 1)]} if rest else {})
         cd[dim] = d
-    pi = both.groupby(["CNPJ_IF", "geo", "ytd", "fin"]).VL.sum()
-    pq = both[both.ytd == "a"].groupby(["CNPJ_IF", "geo"]).REF.nunique()
+    pi = gb(["CNPJ_IF", "geo", "ytd", "fin"], lambda x: x.VL.sum())
+    pq = gb(["CNPJ_IF", "geo"], lambda x: x.REF.nunique(), both[both.ytd == "a"])
+    acc = collections.defaultdict(lambda: [0.0, 0.0, 0.0, 0.0, 0.0])
+    for (c, geo, k, f), v in pi.items():
+        if k == "a" and f in FIDX: acc[(c, geo)][FIDX[f]] += v
+        elif k == "p": acc[(c, geo)][4] += v
     ie = collections.defaultdict(dict)
-    for c in INST:
-        for geo in ("BR", "MG"):
-            a = [r1(pi.get((c, geo, "a", f), 0)) for f in FINS]
-            p = round(sum(pi.get((c, geo, "p", f), 0) for f in FINS) / 1e6, 1)
-            if sum(a) or p:
-                ie[c][geo] = {"a": a, "p": p, "q": int(pq.get((c, geo), 0))}
+    for (c, geo), v in acc.items():
+        a = [r1(x) for x in v[:4]]; p = round(v[4] / 1e6, 1)
+        if sum(a) or p:
+            ie[c][geo] = {"a": a, "p": p, "q": int(pq.get((c, geo), 0))}
     return cs, cd, ie
 
 
@@ -378,12 +401,13 @@ for c, r in INST.items():
     if "BR" not in IN[c]: continue
     o = {k: r[k] for k in ("cnpj", "curto", "nome", "tipo", "uf", "cong") if k in r}
     o.update({k: r[k] for k in ("sistema", "central", "numero") if r.get(k)})
+    o["escopos"] = [e for e in r["escopos"] if e != "sfn"]
     o.update(IN[c])
     if c in INC_REV: o["incorporou"] = INC_REV[c]
     inst.append(o)
 inst.sort(key=lambda x: -sum(x["BR"].get(str(S), {"a": [0]})["a"]))
 
-cong_nomes = {"sicoob": "Sicoob", "sicredi": "Sicredi", "cresol": "Cresol", "unicred": "Unicred"}
+cong_nomes = {s: n for _, s, n, _c in SISTEMAS}
 for r in INST.values():
     cg = r.get("cong", "")
     if cg.startswith("C0") and cg not in cong_nomes:
@@ -403,7 +427,42 @@ meta = {
     "cong_nomes": cong_nomes, "depara": os.path.basename(DEPARA) if DP else "", "safras_sel": SHOW,
     "incorporacoes_aplicadas": len(mapa_inc),
 }
-out = {"meta": meta, "escopos": [{"id": a, "nome": b, "cor": c, "grupo": d} for a, b, c, d in ESCOPOS],
+UFD = collections.defaultdict(lambda: {"serie": {}, "comp": {}, "cortes": {}, "per": {}, "inst_geo": {}})
+
+
+def parte(d_eg, caminho):
+    """d_eg[esc][geo] -> fica no principal o que é de Brasil/MG; o resto vai para o arquivo da UF, no mesmo caminho."""
+    principal = {}
+    for esc, gs in d_eg.items():
+        for geo, v in gs.items():
+            u = destino(esc, geo)
+            if not u: principal.setdefault(esc, {})[geo] = v
+            else:
+                n = UFD[u]
+                for k in caminho: n = n.setdefault(k, {})
+                n.setdefault(esc, {})[geo] = v
+    return principal
+
+
+serie = parte(serie, ["serie"])
+comp = {s: parte(v, ["comp", s]) for s, v in comp.items()}
+cortes = {dim: {s: parte(v, ["cortes", dim, s]) for s, v in x.items()} for dim, x in cortes.items()}
+for k, P in per.items():
+    P["comp"] = {s: parte(v, ["per", k, "comp", s]) for s, v in P["comp"].items()}
+    P["cortes"] = {dim: {s: parte(v, ["per", k, "cortes", dim, s]) for s, v in x.items()} for dim, x in P["cortes"].items()}
+    for cn, gs in P["inst"].items():
+        for geo in [g for g in gs if g not in ("BR", "MG")]:
+            UFD[geo]["per"].setdefault(k, {}).setdefault("inst", {}).setdefault(cn, {})[geo] = gs.pop(geo)
+for o in inst:
+    for geo in [g for g in o if g in UFS and g != "MG"]:
+        UFD[geo]["inst_geo"].setdefault(o["cnpj"], {})[geo] = o.pop(geo)
+DIRUF = os.path.join(OUT, "safra_uf"); os.makedirs(DIRUF, exist_ok=True)
+for u, d in UFD.items():
+    d["meta"] = {"uf": u, "ref": REF.isoformat()}
+    with open(os.path.join(DIRUF, u + ".json.tmp"), "w") as fh: json.dump(d, fh, ensure_ascii=False, separators=(",", ":"))
+    os.replace(os.path.join(DIRUF, u + ".json.tmp"), os.path.join(DIRUF, u + ".json"))
+meta["ufs_operacao"] = sorted(UFD) + ["MG"]
+out = {"meta": meta, "escopos": saida_escopos(ESCOPOS, PRESENTES),
        "serie": serie, "comp": comp, "cortes": cortes, "inst": inst, "per": per}
 tmp = OUTFILE + ".tmp"
 json.dump(out, open(tmp, "w"), ensure_ascii=False, separators=(",", ":"))

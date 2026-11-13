@@ -58,21 +58,17 @@ def olinda(path, tries=6):
 
 
 # ---------- cadastro, de-para, incorporações (mesmas regras da aba de risco) ----------
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from cadastro import sedes_coop   # cadastro protegido contra falhas do BC
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from cadastro import sedes_coop
+from escopos import lista as lista_escopos, saida as saida_escopos, sistema_de, central_de, escopos_cooperativa   # cadastro protegido contra falhas do BC
 coop = sedes_coop(olinda)
 DP = {r["cnpj"]: r for r in csv.DictReader(open(DEPARA, encoding="utf-8"), delimiter=";")} if os.path.exists(DEPARA) else {}
 INC = {r["cnpj_incorporada"]: r["cnpj_incorporadora"] for r in csv.DictReader(open(INCORP, encoding="utf-8"), delimiter=";")} if os.path.exists(INCORP) else {}
 def suc(c, n=0): return suc(INC[c], n + 1) if c in INC and n < 10 else c
 
 def sistema(c, nome=""):
-    x = coop.get(c, {}); t = ((x.get("FILIACAO") or "") + " " + (x.get("NOME_INSTITUICAO") or "") + " " + nome).upper()
-    for k, s in (("SICOOB", "sicoob"), ("SICREDI", "sicredi"), ("CRESOL", "cresol"), ("UNICRED", "unicred")):
-        if k in t: return s
-    return "outras"
+    x = coop.get(c, {}); return sistema_de((x.get("FILIACAO") or "") + " " + (x.get("NOME_INSTITUICAO") or "") + " " + nome)
 
-def central(c):
-    f = (coop.get(c, {}).get("FILIACAO") or "").upper()
-    return "crediminas" if "CREDIMINAS" in f else "cecremge" if "CECREMGE" in f else ""
+def central(c): return central_de(coop.get(c, {}).get("FILIACAO"))
 
 def curto(c, nome):
     d = DP.get(c, {})
@@ -83,16 +79,9 @@ def curto(c, nome):
     return n.title()[:40]
 
 def escopos_coop(c, nome=""):
-    if coop.get(c, {}).get("CLASSE", "Singular") != "Singular": return []
-    s = sistema(c, nome); out = ["coop", s]
-    if s in ("sicoob", "sicredi"): out.append("cong_" + s)
-    if s == "sicoob" and coop.get(c, {}).get("UF") == "MG": out.append("sicoob_mg")
-    if central(c): out.append(central(c))
-    if coop.get(c, {}).get("UF") == "MG": out.append("coop_mg")
-    if c in coop and not (coop[c].get("FILIACAO") or "").strip():   # singular sem filiação a central (cadastro do BC)
-        out.append("solteiras")
-        if coop[c].get("UF") == "MG": out.append("solteiras_mg")
-    return out
+    x = coop.get(c, {})
+    if x.get("CLASSE", "Singular") != "Singular": return []
+    return escopos_cooperativa(sistema(c, nome), x.get("UF", ""), x.get("FILIACAO") if c in coop else "x", True)   # fora do cadastro: não conta como solteira
 
 TOP5 = {"C0080329": "bb", "C0080075": "bradesco", "C0080099": "itau", "C0080738": "caixa", "C0080185": "santander"}
 SIS_BANCO = {"C0080879": "cong_sicoob", "C0080745": "cong_sicredi"}
@@ -107,18 +96,7 @@ def escopos_banco(cod, nome):
     if DIGITAIS.search(nome or ""): out.append("digitais")
     return out
 
-ESCOPOS = [
-    ("sfn", "SFN", "#2B2F33", "agregado"), ("bancos", "Bancos", "#8A9097", "agregado"), ("coop", "Cooperativas", "#56606A", "agregado"),
-    ("cong_sicoob", "Conglomerado Sicoob", "#003641", "conglomerado"), ("cong_sicredi", "Conglomerado Sicredi", "#3FA110", "conglomerado"),
-    ("sicoob", "Sicoob (cooperativas)", "#00AE9D", "sistema"), ("sicredi", "Sicredi (cooperativas)", "#7CC35A", "sistema"),
-    ("cresol", "Cresol", "#6E5A9E", "sistema"), ("unicred", "Unicred", "#9C7A3C", "sistema"), ("outras", "Outras cooperativas", "#A3ACA8", "sistema"),
-    ("solteiras", "Cooperativas solteiras", "#B07A4A", "sistema"),
-    ("coop_mg", "Cooperativas de MG", "#4F7F7A", "mg"), ("sicoob_mg", "Sicoob MG", "#2E8F86", "mg"),
-    ("crediminas", "Central Crediminas", "#007A6E", "mg"), ("cecremge", "Central Cecremge", "#5BC2B8", "mg"), ("solteiras_mg", "Solteiras de MG", "#8C5A30", "mg"),
-    ("bb", "Banco do Brasil", "#465EFF", "banco"), ("bradesco", "Bradesco", "#CC092F", "banco"), ("itau", "Itaú", "#EC7000", "banco"),
-    ("caixa", "Caixa", "#005CA9", "banco"), ("santander", "Santander", "#EC0000", "banco"), ("top5", "5 maiores bancos", "#465EFF", "banco"),
-    ("digitais", "Bancos digitais", "#820AD1", "banco"),
-]
+ESCOPOS = lista_escopos()
 
 METRICAS = [
     ("cart", "Carteira de crédito", "R$ bi", "neutro", "Total da carteira de instrumentos financeiros (IF.data, rel. 16)."),
@@ -253,18 +231,20 @@ for c, (tipo, nome) in INFO.items():
         r["curto"] = NOMES_BANCO.get(c) or re.sub(r"\s*-\s*PRUDENCIAL.*$", "", nome, flags=re.I).title()
     inst.append(r)
 
-agg = {}
-for e, *_ in ESCOPOS:
-    s = {}
-    for am in validos:
-        tot, tant, tcs = collections.Counter(), collections.Counter(), collections.Counter()
-        for r in inst:
-            if e != "sfn" and e not in r["escopos"]: continue
-            if (am, r["id"]) in BASE: tot.update(BASE[(am, r["id"])])
-            if (ano_atras(am), r["id"]) in BASE: tant.update(BASE[(ano_atras(am), r["id"])])
-            tcs.update(COS.get((am, r["id"]), {}))
-        if tot["cart"]: s[am[:4] + "-" + am[4:]] = met(am, tot, tant if tant["cart"] else None, tcs)
-    agg[e] = s
+PRESENTES = {e for r in inst for e in r["escopos"]} | {"sfn"}
+agg = {e: {} for e, *_ in ESCOPOS if e in PRESENTES}
+for am in validos:
+    T = collections.defaultdict(lambda: [collections.Counter(), collections.Counter(), collections.Counter()])
+    for r in inst:
+        b, ba, cs = BASE.get((am, r["id"])), BASE.get((ano_atras(am), r["id"])), COS.get((am, r["id"]), {})
+        for e in set(r["escopos"]) | {"sfn"}:
+            if e not in agg: continue
+            t = T[e]
+            if b: t[0].update(b)
+            if ba: t[1].update(ba)
+            t[2].update(cs)
+    for e, (tot, tant, tcs) in T.items():
+        if tot["cart"]: agg[e][am[:4] + "-" + am[4:]] = met(am, tot, tant if tant["cart"] else None, tcs)
 
 ref = validos[-1][:4] + "-" + validos[-1][4:]
 if SE_MUDOU and ANT and ANT["meta"].get("ref") == ref:
@@ -273,7 +253,7 @@ novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("m
 out = {"meta": {"ref": ref, "trimestres": [t[:4] + "-" + t[4:] for t in validos], "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
                 "fonte_ifd": "Banco Central — IF.data (relatórios 1, 2, 4, 5 e 16)", "url_ifd": "https://www3.bcb.gov.br/ifdata/",
                 "fonte_cosif": "Banco Central — balancetes Cosif (doc. 4010 e 4060)", "url_cosif": "https://www.bcb.gov.br/estabilidadefinanceira/balancetesbalancospatrimoniais"},
-       "escopos": [{"id": a, "nome": b, "cor": c, "grupo": d} for a, b, c, d in ESCOPOS],
+       "escopos": saida_escopos(ESCOPOS, PRESENTES),
        "metricas": [{"id": a, "nome": b, "un": c, "melhor": d, "desc": e} for a, b, c, d, e in METRICAS],
        "inst": inst, "agg": agg}
 tmp = OUTFILE + ".tmp"

@@ -28,6 +28,7 @@ BASES = [  # (arquivo, script, pasta de brutos)
     ("territorio", "atualiza_territorio.py", os.path.join(RAW, "sicor")),
 ]
 EXTRA = {}     # arquivos gerados pelo mesmo script, validados e trocados à parte
+SUBDIR = {"safra": "safra_uf"}   # arquivos por UF, trocados junto com o arquivo principal
 
 
 def ler(p):
@@ -198,6 +199,8 @@ def main():
     tmp = tempfile.mkdtemp(prefix="dash_")
     for f in os.listdir(DATA):
         if f.endswith(".json") and f != "status.json": shutil.copy2(os.path.join(DATA, f), tmp)
+    for sd in SUBDIR.values():
+        if os.path.isdir(os.path.join(DATA, sd)): shutil.copytree(os.path.join(DATA, sd), os.path.join(tmp, sd))
     bases = {}
     for nome, script, raw in BASES:
         os.makedirs(raw, exist_ok=True)
@@ -223,6 +226,9 @@ def main():
                 novo, velho = ler(p_tmp), ler(p_pub)
                 try:
                     CHK[nome](novo, velho); chk_estavel(nome, novo, velho); shutil.copy2(p_tmp, p_pub); b["situacao"] = "atualizado"
+                    sd = SUBDIR.get(nome)
+                    if sd and os.path.isdir(os.path.join(tmp, sd)):
+                        shutil.rmtree(os.path.join(DATA, sd), ignore_errors=True); shutil.copytree(os.path.join(tmp, sd), os.path.join(DATA, sd))
                 except Exception as e:
                     b.update(situacao="reprovado", motivo=f"{type(e).__name__}: {e}"[:300])
         b["ref"] = ref_de(nome, ler(p_pub))

@@ -154,6 +154,21 @@ h3 { font-family: var(--f-display); font-stretch: 88%; font-weight: 700; font-si
 .kpi .src { font-size: 0.7rem; color: var(--faint); }
 .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--muted); }
 .solo { max-width: 760px; width: 100%; }
+.recsel { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
+@media (max-width: 640px) { .recsel { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); width: 100%; } .recsel .fgroup { min-width: 0; } .recsel .sel { width: 100%; min-width: 0; } }
+.grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 22px 28px; }
+.rosca { display: flex; flex-direction: column; gap: 8px; }
+.rosca h4 { margin: 0; font-size: 13px; font-weight: 600; color: var(--ink); }
+.rosca svg { width: 170px; height: 170px; align-self: center; }
+.rosca svg path { cursor: default; }
+.rosca svg path:hover { opacity: .85; }
+.rosca .ct { font-size: 15px; font-weight: 600; fill: var(--ink); }
+.rosca .cs { font-size: 10.5px; fill: var(--muted); }
+.rleg { list-style: none; margin: 0; padding: 0; font-size: 12.5px; }
+.rleg li { display: grid; grid-template-columns: 10px 1fr auto auto; gap: 6px; align-items: center; padding: 2px 0; border-bottom: 1px solid var(--line); }
+.rleg li i { width: 10px; height: 10px; border-radius: 2px; }
+.rleg li span:nth-child(3) { font-variant-numeric: tabular-nums; font-weight: 600; }
+.rleg li small { color: var(--muted); font-variant-numeric: tabular-nums; min-width: 52px; text-align: right; }
 .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 480px), 1fr)); gap: 26px 32px; }
 .block { display: grid; gap: 8px; min-width: 0; align-content: start; }
 .block > header { display: grid; gap: 1px; }
@@ -244,6 +259,78 @@ const FONTE = { obrig: "Obrigatórios (MCR 6.2)", lca_eq: "LCA equalizada", lca:
 const PORTE = { pequeno: "Pequeno produtor", medio: "Médio produtor", grande: "Grande produtor", outros: "Outras categorias" };
 const DARKMAP = { "#2B2F33": "#D4D8DB", "#003641": "#3FA7B5", "#007A6E": "#2FC4B4" };
 
+/* ===== Recortes: Estado + Recorte, o mesmo cabeçalho em todas as abas de instituição ===== */
+const UFN = { AC: "Acre", AL: "Alagoas", AP: "Amapá", AM: "Amazonas", BA: "Bahia", CE: "Ceará", DF: "Distrito Federal", ES: "Espírito Santo", GO: "Goiás",
+  MA: "Maranhão", MT: "Mato Grosso", MS: "Mato Grosso do Sul", MG: "Minas Gerais", PA: "Pará", PB: "Paraíba", PR: "Paraná", PE: "Pernambuco", PI: "Piauí",
+  RJ: "Rio de Janeiro", RN: "Rio Grande do Norte", RS: "Rio Grande do Sul", RO: "Rondônia", RR: "Roraima", SC: "Santa Catarina", SP: "São Paulo", SE: "Sergipe", TO: "Tocantins" };
+const UFS_ORD = Object.keys(UFN).sort((a, b) => a === "MG" ? -1 : b === "MG" ? 1 : UFN[a].localeCompare(UFN[b], "pt-BR"));
+const SIS = [["sicoob", "Sicoob", "#00AE9D"], ["sicredi", "Sicredi", "#7CC35A"], ["cresol", "Cresol", "#6E5A9E"], ["unicred", "Unicred", "#9C7A3C"],
+  ["ailos", "Ailos", "#3D7CC9"], ["credisis", "Credisis", "#C9902A"], ["uniprime", "Uniprime", "#B5487A"]];
+const BANCOS_ESC = [["bb", "Banco do Brasil", "#465EFF"], ["bradesco", "Bradesco", "#CC092F"], ["itau", "Itaú", "#EC7000"], ["caixa", "Caixa", "#005CA9"],
+  ["santander", "Santander", "#EC0000"], ["digitais", "Bancos digitais", "#820AD1"], ["top5", "5 maiores bancos", "#6B7280"], ["top5d", "5 maiores e digitais", "#6B7280"]];
+const ufDe = (id) => id === "crediminas" || id === "cecremge" ? "MG" : ((/^(coop|sicoob|sicredi|solteiras)_([a-z]{2})$/.exec(id || "") || [])[2] || "").toUpperCase() || null;
+// catálogo único: id -> {nome (completo, para títulos e legendas), menu (rótulo curto na lista), grupo, cor}
+const RECORTES = (() => {
+  const L = [["sfn", "SFN", "SFN", "agregado", "#2B2F33"], ["bancos", "Bancos", "Bancos", "agregado", "#8A9097"], ["coop", "Cooperativas", "Cooperativas", "agregado", "#56606A"],
+    ["cong_sicoob", "Conglomerado Sicoob", "Sicoob", "conglomerado", "#003641"], ["cong_sicredi", "Conglomerado Sicredi", "Sicredi", "conglomerado", "#3FA110"]];
+  SIS.forEach(([k, n, c]) => L.push([k, n, n, "sistema", c]));
+  L.push(["solteiras", "Cooperativas solteiras", "Solteiras (sem central)", "sistema", "#B07A4A"]);
+  UFS_ORD.forEach(u => { const l = u.toLowerCase();
+    L.push(["coop_" + l, `Cooperativas ${u}`, "Cooperativas", "uf", "#4F7F7A"], ["sicoob_" + l, `Sicoob ${u}`, "Sicoob", "uf", "#2E8F86"], ["sicredi_" + l, `Sicredi ${u}`, "Sicredi", "uf", "#5E9E3F"]);
+    if (u === "MG") L.push(["crediminas", "Central Crediminas", "Central Crediminas", "uf", "#007A6E"], ["cecremge", "Central Cecremge", "Central Cecremge", "uf", "#5BC2B8"]);
+    L.push(["solteiras_" + l, `Solteiras ${u}`, "Solteiras (sem central)", "uf", "#8C5A30"]); });
+  BANCOS_ESC.forEach(([k, n, c]) => L.push([k, n, n, "banco", c]));
+  return new Map(L.map(([id, nome, menu, grupo, c], i) => [id, { id, nome, menu, grupo, cor: c, ord: i }]));
+})();
+const rNome = (id) => RECORTES.get(id)?.nome || id;
+const UF_PREP = { AC: "no", AP: "no", AM: "no", CE: "no", DF: "no", ES: "no", MA: "no", MT: "no", MS: "no", PA: "no", PR: "no", PI: "no", RJ: "no", RN: "no", RS: "no", TO: "no", BA: "na", PB: "na" };
+const emUF = (g) => g === "BR" ? "no Brasil" : `${UF_PREP[g] || "em"} ${UFN[g] || g}`;
+const rCor = (id) => RECORTES.get(id)?.cor || "#8A9097";
+let UFSEL = (() => { try { return localStorage.getItem("uf-sel") || "MG"; } catch (e) { return "MG"; } })();
+let RSET = null;                                    // recorte em edição na aba atual: { ids, sel, set }
+const trocaUF = (id, uf) => { const l = uf.toLowerCase(); if (id === "crediminas" || id === "cecremge") return "coop_" + l; const m = /^(coop|sicoob|sicredi|solteiras)_[a-z]{2}$/.exec(id); return m ? `${m[1]}_${l}` : id; };
+const ufAtual = (sel, ids) => { const u = ufDe(sel); if (u) return u; const tem = UFS_ORD.filter(x => ids.some(i => ufDe(i) === x)); return tem.includes(UFSEL) ? UFSEL : (tem[0] || UFSEL); };
+// ids: recortes que a aba aceita; sel: o atual; set(id): grava o novo. o.label muda o rótulo ("Grupo de comparação").
+function seletorRecorte(ids, sel, set, o = {}) {
+  ids = ids.filter(i => RECORTES.has(i)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
+  if (!ids.includes(sel)) { sel = ids.includes("coop") ? "coop" : ids[0]; set(sel); }     // recorte salvo que não existe mais
+  RSET = { ids: new Set(ids), sel, set };
+  const uf = ufAtual(sel, ids), ufs = UFS_ORD.filter(x => ids.some(i => ufDe(i) === x));
+  const G = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas em ${UFN[uf] || uf}`], ["banco", "Bancos"]];
+  const opt = (id) => `<option value="${id}"${id === sel ? " selected" : ""}>${esc(RECORTES.get(id).nome)}</option>`;
+  const grupos = G.map(([g, nm]) => { const l = ids.filter(i => RECORTES.get(i).grupo === g && (g !== "uf" || ufDe(i) === uf)); return l.length ? `<optgroup label="${esc(nm)}">${l.map(opt).join("")}</optgroup>` : ""; }).join("");
+  const est = ufs.length ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${ufs.map(u => `<option value="${u}"${u === uf ? " selected" : ""}>${esc(UFN[u])}</option>`).join("")}</select></label>` : "";
+  return `<div class="recsel">${est}<label class="fgroup"><span class="flabel">${esc(o.label || "Recorte")}</span><select class="sel sel-rec" data-recorte aria-label="${esc(o.label || "Recorte")}">${grupos}</select></label></div>`;
+}
+document.addEventListener("change", (ev) => {
+  const t = ev.target;
+  if (t.matches("[data-recorte]") && RSET) { RSET.set(t.value); render(); }
+  else if (t.matches("[data-ufsel]") && RSET) {
+    UFSEL = t.value; try { localStorage.setItem("uf-sel", UFSEL); } catch (e) {}
+    const atual = RSET.sel, novo = trocaUF(atual, UFSEL);
+    if (ufDe(atual)) RSET.set(RSET.ids.has(novo) ? novo : RSET.ids.has("coop_" + UFSEL.toLowerCase()) ? "coop_" + UFSEL.toLowerCase() : atual);
+    else RSET.set(atual);
+    render();
+  }
+});
+// UF do recorte atual ou a escolhida no seletor: define a opção de local (operação/tomador) ao lado de "Brasil"
+const ufLocal = () => ufAtual(RSET?.sel, RSET ? [...RSET.ids] : []);
+// arquivos por UF (safra_uf/SP.json, risco_uf/SP.json): carregados uma vez e fundidos no objeto da base
+const UFCACHE = {};
+function fundir(a, b) { for (const k in b) { if (b[k] && typeof b[k] === "object" && !Array.isArray(b[k]) && a[k] && typeof a[k] === "object") fundir(a[k], b[k]); else a[k] = b[k]; } return a; }
+function garanteUF(base, obj, uf, depois) {
+  if (!obj || !uf || uf === "MG" || uf === "BR") return true;
+  const k = base + "/" + uf;
+  if (UFCACHE[k] === "ok") return true;
+  if (UFCACHE[k] === "erro") return "erro";
+  if (!UFCACHE[k]) {
+    UFCACHE[k] = "carregando";
+    fetch(FONTE_DADOS.base + base + "_uf/" + uf + ".json", { cache: "no-cache" }).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(d => { depois(d); UFCACHE[k] = "ok"; render(); }).catch(() => { UFCACHE[k] = "erro"; render(); });
+  }
+  return false;
+}
+
 let D = null;
 const st = { safra: 0, per: "safra", esc: "sfn", geo: "BR", fin: "all", rkTipo: "todos", rkAll: false, rkBusca: "", rkOrd: "a", rkVer: "cong" };
 const $ = (s) => document.querySelector(s);
@@ -260,9 +347,9 @@ const sgn = (v, d = 1, suf = "%") => { if (v == null || !isFinite(v)) return "�
 const cls = (v) => v == null ? "flat" : v > 0.05 ? "up" : v < -0.05 ? "down" : "flat";
 const arrow = (v) => v == null ? "" : v > 0.05 ? "▲ " : v < -0.05 ? "▼ " : "= ";
 const val = (row) => st.fin === "all" ? row[0] + row[1] + row[2] + row[3] : row[FIDX[st.fin]];
-const escopo = (id) => D.escopos.find(e => e.id === id);
+const escopo = (id) => D.escopos.find(e => e.id === id) || RECORTES.get(id) || { id, nome: id, cor: "#A3ACA8" };
 const finNome = () => FIN.find(f => f[0] === st.fin)[1];
-const geoNome = () => st.geo === "BR" ? "Brasil" : "Minas Gerais";
+const geoNome = () => st.geo === "BR" ? "Brasil" : UFN[st.geo] || st.geo;
 
 /* ---------- derivados ---------- */
 const SA = () => D.meta.safra_atual;
@@ -294,6 +381,7 @@ const ser = (id, geo, s) => D.serie[id]?.[geo]?.[String(s)];
 const novo = () => (Date.now() - new Date(D.meta.novo_desde + "T12:00:00")) / 864e5 <= 7;
 
 function instEscopos(i) {
+  if (i.escopos) return ["sfn", ...i.escopos];
   const s = ["sfn", i.tipo === "coop" ? "coop" : "bancos"];
   if (i.cong === "sicoob" || i.cong === "sicredi") s.push("cong_" + i.cong);
   if (i.tipo === "coop") { s.push(i.sistema || "outras"); if (i.sistema === "sicoob" && i.uf === "MG") s.push("sicoob_mg"); if (i.central) s.push(i.central); }
@@ -306,7 +394,7 @@ function instCor(i) {
   const top = { "00000000": "bb", "60746948": "bradesco", "60701190": "itau", "00360305": "caixa", "90400888": "santander" };
   if (top[i.cnpj]) return cor(escopo(top[i.cnpj]).cor);
   if (i.cong === "sicoob" || i.cong === "sicredi") return cor(escopo("cong_" + i.cong).cor);
-  if (i.tipo === "coop") return cor(escopo(i.sistema || "outras").cor);
+  if (i.tipo === "coop") return cor(rCor(i.sistema) || "#A3ACA8");
   if ((D.meta.digitais_com_operacao || []).includes(i.curto)) return cor(escopo("digitais").cor);
   return css("--grafite-2");
 }
@@ -422,11 +510,13 @@ const block = (title, eyebrow, body, meta) => `<section class="block"><header><d
 const fonteLink = () => `<a href="${esc(D.meta.url)}" target="_blank" rel="noopener">SICOR, Banco Central</a> · dados até ${dmy(D.meta.ref)}`;
 
 /* ---------- filtros ---------- */
+const salvaSafra = () => { try { localStorage.setItem("safra-filtros", JSON.stringify({ esc: st.esc, geo: st.geo, fin: st.fin, safra: st.safra, per: st.per })); } catch (e) {} };
 function filtros() {
-  const chips = GRUPOS.map(([g, nm]) => `<div class="fgroup"><span class="flabel">${nm}</span>${D.escopos.filter(e => e.grupo === g).map(e =>
-    `<button class="chip" type="button" data-esc="${e.id}" aria-pressed="${st.esc === e.id}"><i style="background:${cor(e.cor)}"></i>${esc(e.nome)}</button>`).join("")}</div>`).join("");
-  $("#filters").innerHTML = `<div class="frow">${chips}</div>
-    <div class="frow"><div class="fgroup"><span class="flabel">Local da operação</span><div class="seg">${[["BR","Brasil"],["MG","Minas Gerais"]].map(([k, n]) => `<button type="button" data-geo="${k}" aria-pressed="${st.geo === k}">${n}</button>`).join("")}</div></div>
+  const rec = seletorRecorte(D.escopos.map(e => e.id), st.esc, (id) => { st.esc = id; const u = ufDe(id); if (u && st.geo !== "BR") st.geo = u; salvaSafra(); });
+  const uf = ufLocal(), ufOk = (D.meta.ufs_operacao || ["MG"]).includes(uf);
+  if (st.geo !== "BR" && st.geo !== uf) st.geo = ufOk ? uf : "BR";
+  $("#filters").innerHTML = `<div class="frow">${rec}</div>
+    <div class="frow"><div class="fgroup"><span class="flabel">Local da operação</span><div class="seg">${[["BR", "Brasil"]].concat(ufOk ? [[uf, UFN[uf]]] : []).map(([k, n]) => `<button type="button" data-geo="${k}" aria-pressed="${st.geo === k}">${n}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Safra</span><div class="seg">${D.meta.safras_sel.slice().reverse().map(s => `<button type="button" data-safra="${s}" aria-pressed="${S() === s}">${safraLbl(s)}${s === SA() ? " (corrente)" : ""}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Período da safra</span><div class="seg">${PER.map(([k, n, a, b]) => `<button type="button" data-per="${k}" aria-pressed="${st.per === k}"${perOn(k) ? (k === "safra" ? "" : ` title="${MES[a]}–${MES[b]}"`) : ` disabled title="Período ainda não começou na safra ${safraLbl(S())}"`}>${n}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Finalidade</span><div class="seg">${FIN.map(([k, n]) => `<button type="button" data-fin="${k}" aria-pressed="${st.fin === k}">${n}</button>`).join("")}</div></div></div>`;
@@ -443,7 +533,7 @@ document.addEventListener("click", (ev) => {
   if (b.dataset.ord) st.rkOrd = b.dataset.ord;
   if (b.dataset.ver) { st.rkVer = b.dataset.ver; st.rkAll = false; }
   if (b.id === "rkmore") st.rkAll = !st.rkAll;
-  try { localStorage.setItem("safra-filtros", JSON.stringify({ esc: st.esc, geo: st.geo, fin: st.fin, safra: st.safra, per: st.per })); } catch (e) {}
+  salvaSafra();
   render();
 });
 document.addEventListener("input", (ev) => { if (ev.target.id === "rkbusca") { st.rkBusca = ev.target.value; renderRanking(); } });
@@ -463,7 +553,8 @@ function kpis() {
     ${k(`Contratado ${perNo()} ${safraLbl(s)}${fin}`, a >= 1000 ? nf(a / 1000, 1) : nf(a, 0), a >= 1000 ? " bi" : " mi", `${arrow(v1)}${sgn(v1)} contra ${brl(p)}`, cls(v1), `${ref} · contra ${pontoTxt()} · ${src}`)}
     ${k("Operações contratadas", nf(qa, 0), "", `${arrow(pct(qa, qp))}${sgn(pct(qa, qp))} contra ${nf(qp, 0)}`, cls(pct(qa, qp)), `${ref} · todas as finalidades · ${src}`)}
     ${k("Valor médio por operação", nf(tk, 0), " mil", `${arrow(pct(tk, tkp))}${sgn(pct(tk, tkp))} contra R$ ${nf(tkp, 0)} mil`, "flat", `${ref} · R$ mil${st.fin === "all" ? "" : " · valor da finalidade ÷ todas as operações"}`)}
-    ${st.esc === "sfn" ? k(`Participação de ${geoNome() === "Brasil" ? "MG no Brasil" : "MG no Brasil"}`, nf(val(comp("sfn","MG").a) / val(comp("sfn","BR").a) * 100, 1), "%", `${sgn(val(comp("sfn","MG").a) / val(comp("sfn","BR").a) * 100 - val(comp("sfn","MG").p) / val(comp("sfn","BR").p) * 100, 1, " p.p.")} sobre ${pontoTxt()}`, "flat", `${ref} · local da operação · ${src}`)
+    ${st.esc === "sfn" ? (() => { const u = comp("sfn", ufLocal()) ? ufLocal() : "MG", cu = comp("sfn", u), cb = comp("sfn", "BR");
+        return k(`Participação de ${u} no Brasil`, nf(val(cu.a) / val(cb.a) * 100, 1), "%", `${sgn(val(cu.a) / val(cb.a) * 100 - val(cu.p) / val(cb.p) * 100, 1, " p.p.")} sobre ${pontoTxt()}`, "flat", `${ref} · local da operação · ${src}`); })()
       : k(`Participação no SFN · ${geoNome()}`, nf(share, 1), "%", `${arrow(share - shareP)}${sgn(share - shareP, 1, " p.p.")} sobre ${nf(shareP, 1)}%`, cls(share - shareP), `${ref} · contra ${pontoTxt()} · ${src}`)}
     ${k(st.per === "safra" ? `Safra ${safraLbl(s - 1)} fechada` : `${perI()[1]} de ${safraLbl(s - 1)} fechado`, tot >= 1000 ? nf(tot / 1000, 1) : nf(tot, 0), tot >= 1000 ? " bi" : " mi", `${sgn(pct(tot, tot2))} sobre ${safraLbl(s - 2)}`, cls(pct(tot, tot2)), `${st.per === "safra" ? `jul/${String(s - 2).slice(2)} a jun/${String(s - 1).slice(2)}` : `${perMes()} de ${safraLbl(s - 1)}`} · ${src}`)}
   </div>`;
@@ -516,7 +607,8 @@ function cortes() {
     `Período em curso comparado com o mesmo ponto da safra anterior (até ${dmy(D.meta.ref_anterior)}). Linha destacada: período selecionado no filtro. Variação sob ${safraLbl(s - 1)}: contra ${safraLbl(s - 2)}. ${fonteLink()}`);
 }
 function escopos() {
-  const items = D.escopos.filter(e => e.id !== "sfn").map(e => {
+  const uf = ufLocal();
+  const items = D.escopos.filter(e => e.id !== "sfn" && (!ufDe(e.id) || ufDe(e.id) === uf) && comp(e.id)).map(e => {
     const c = comp(e.id); return { id: e.id, name: e.nome, v: c && val(c.p) > 0 ? pct(val(c.a), val(c.p)) : null, c: cor(e.cor), sel: e.id === st.esc, a: c ? val(c.a) : 0 };
   });
   const sfn = comp("sfn"); items.unshift({ id: "sfn", name: "SFN", v: pct(val(sfn.a), val(sfn.p)), c: cor("#2B2F33"), sel: st.esc === "sfn", a: val(sfn.a) });
@@ -546,6 +638,37 @@ function corteTabela(dim, nomes, titulo, eyebrow, top) {
   return block(titulo, eyebrow, `<div class="tbl-wrap"><table><thead><tr><th></th><th class="num">${safraLbl(S())}</th><th></th><th class="num">Var.</th></tr></thead><tbody>${rows}</tbody></table></div>`,
     `Todas as finalidades · ${refTxt()} contra ${pontoTxt()} · ${fonteLink()}`);
 }
+/* ---------- perfil da contratação: roscas de finalidade, porte e programa ---------- */
+const ROSCA_COR = { light: ["#2a78d6", "#eb6834", "#1baf7a", "#eda100"], dark: ["#3987e5", "#d95926", "#199e70", "#c98500"] };
+function rosca(titulo, itens) {        // itens: [{ nm, v, p }] já na ordem fixa; "outros" por último em cinza
+  const tot = itens.reduce((a, x) => a + x.v, 0); if (!tot) return `<div class="rosca"><h4>${esc(titulo)}</h4><p class="empty">Sem operações.</p></div>`;
+  const pal = isDark() ? ROSCA_COR.dark : ROSCA_COR.light, R = 80, r = 52, C = 85;
+  let a0 = -Math.PI / 2, g = "", k = 0;
+  const pt = (rad, ang) => `${(C + rad * Math.cos(ang)).toFixed(2)},${(C + rad * Math.sin(ang)).toFixed(2)}`;
+  itens.forEach(x => { x.c = x.cinza ? css("--faint") : pal[k++ % pal.length]; });
+  itens.forEach(x => {
+    if (!x.v) return;
+    const fr = x.v / tot, a1 = a0 + fr * 2 * Math.PI, big = fr > 0.5 ? 1 : 0;
+    const d = fr > 0.9999 ? `M${pt(R, a0)}A${R},${R} 0 1 1 ${pt(R, a0 + Math.PI)}A${R},${R} 0 1 1 ${pt(R, a0)}M${pt(r, a0)}A${r},${r} 0 1 0 ${pt(r, a0 + Math.PI)}A${r},${r} 0 1 0 ${pt(r, a0)}Z`
+      : `M${pt(R, a0)}A${R},${R} 0 ${big} 1 ${pt(R, a1)}L${pt(r, a1)}A${r},${r} 0 ${big} 0 ${pt(r, a0)}Z`;
+    const vv = x.p ? pct(x.v, x.p) : null;
+    g += `<path d="${d}" fill="${x.c}" stroke="var(--bg)" stroke-width="2" fill-rule="evenodd"><title>${esc(x.nm)}: ${brl(x.v)} · ${nf(fr * 100, 1)}%${vv == null ? "" : ` · ${sgn(vv)} sobre ${pontoTxt()}`}</title></path>`;
+    a0 = a1;
+  });
+  g += `<text x="${C}" y="${C + 2}" text-anchor="middle" class="ct">${brl(tot, 1)}</text><text x="${C}" y="${C + 17}" text-anchor="middle" class="cs">total</text>`;
+  const leg = itens.filter(x => x.v || x.p).map(x => { const vv = x.p ? pct(x.v, x.p) : null;
+    return `<li><i style="background:${x.c}"></i><span>${esc(x.nm)}</span><span>${nf(x.v / tot * 100, 1)}%</span><small class="${cls(vv)}">${vv == null ? "—" : sgn(vv, 0)}</small></li>`; }).join("");
+  return `<div class="rosca"><h4>${esc(titulo)}</h4><svg viewBox="0 0 170 170" role="img" aria-label="${esc(titulo)}">${g}</svg><ul class="rleg">${leg}</ul></div>`;
+}
+function perfil() {
+  const c = comp(), ct = (dim) => (PD() ? PD().cortes : D.cortes)[dim]?.[String(S())]?.[st.esc]?.[st.geo] || {};
+  const nm = ["Custeio", "Investimento", "Comercialização", "Industrialização"];
+  const fin = nm.map((n, i) => ({ nm: n, v: c.a[i], p: c.p[i] }));
+  const de = (dim, ordem, nomes, cz) => { const t = ct(dim); return ordem.map(k => ({ nm: nomes[k], v: t[k]?.[0] || 0, p: t[k]?.[1] || 0, cinza: k === cz })); };
+  return block(`Perfil da contratação · ${esc(escopo(st.esc).nome)}`, `${geoNome()} · ${refTxt()} · todas as finalidades`,
+    `<div class="grid3">${rosca("Finalidade", fin)}${rosca("Porte do produtor", de("porte", ["pequeno", "medio", "grande", "outros"], PORTE, "outros"))}${rosca("Programa", de("prog", ["pronaf", "pronamp", "outros", "sem_programa"], PROG, "sem_programa"))}</div>`,
+    `Fatia do valor contratado. Na legenda, a participação e a variação sobre ${pontoTxt()}. Porte pela categoria do emitente no SICOR. ${fonteLink()}`);
+}
 function participacao() {
   const s = S(), kr = kRef(), e = escopo(st.esc);
   if (st.esc === "sfn") return "";
@@ -570,7 +693,7 @@ function mapaInst() {
     `Instituições com pelo menos ${geo === "BR" ? "R$ 300 mi" : "R$ 40 mi"} na safra ${safraLbl(S())} e R$ 30 mi na base de comparação. Variação limitada a −90% e +150% no desenho; o valor exato aparece ao passar o mouse. ${fonteLink()}`);
 }
 const sum4 = (a) => a[0] + a[1] + a[2] + a[3];
-const SIST = ["sicoob", "sicredi", "cresol", "unicred"];
+const SIST = SIS.map(x => x[0]);
 function agrupaCong(list, geo) {
   const G = new Map();
   list.forEach(i => {
@@ -621,9 +744,9 @@ function renderRanking() {
     <div class="rank-tools"><div class="frow">${congOK ? `<div class="fgroup"><span class="flabel">Ver por</span><div class="seg">${ver("cong", "Conglomerado")}${ver("inst", "Instituição")}</div></div>` : ""}<div class="seg">${seg("todos", "Todas")}${seg("coop", "Cooperativas")}${seg("banco", "Bancos e demais")}</div>
     <div class="fgroup"><span class="flabel">Ordenar</span><div class="seg">${ord("a", "Valor")}${ord("g", "Variação")}${ord("t", `${st.per === "safra" ? "Safra" : perI()[1]} ${safraLbl(S() - 1)}`)}</div></div></div>
     <input id="rkbusca" type="search" placeholder="Buscar instituição ou CNPJ" value="${esc(st.rkBusca)}" aria-label="Buscar instituição"></div>
-    <div class="tbl-wrap"><table><thead><tr><th class="num">#</th><th>Instituição</th><th class="num">Acumulado</th><th></th><th class="num">Var.</th><th class="num">Part. ${geo === "BR" ? "SFN" : "SFN MG"}</th><th class="num">Operações</th><th class="num">${st.per === "safra" ? "Safra" : perI()[1]} ${safraLbl(S() - 1)}</th></tr></thead><tbody>${rows || `<tr><td colspan="8" class="empty">Nenhuma instituição encontrada.</td></tr>`}</tbody></table></div>
+    <div class="tbl-wrap"><table><thead><tr><th class="num">#</th><th>Instituição</th><th class="num">Acumulado</th><th></th><th class="num">Var.</th><th class="num">Part. ${geo === "BR" ? "SFN" : "SFN " + geo}</th><th class="num">Operações</th><th class="num">${st.per === "safra" ? "Safra" : perI()[1]} ${safraLbl(S() - 1)}</th></tr></thead><tbody>${rows || `<tr><td colspan="8" class="empty">Nenhuma instituição encontrada.</td></tr>`}</tbody></table></div>
     ${shown.length > 25 && !q ? `<button class="linkbtn" id="rkmore" type="button">${st.rkAll ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${shown.length}`}</button>` : ""}
-    <div class="meta">Posição pelo valor contratado (${refTxt()}). Variação sobre ${pontoTxt()}, em todas as finalidades; abaixo de R$ 10 mi no ponto anterior a variação aparece em cinza. Operações: todas as finalidades. ${geo === "MG" ? "Em MG, conta só operações com local em Minas, de qualquer instituição." : ""} Conglomerado: Sicoob e Sicredi somam cooperativas, centrais e o banco cooperativo do sistema; bancos seguem o conglomerado prudencial do IF.data. Cooperativas Sicoob aparecem com o número do sistema. ${fonteLink()}</div>`;
+    <div class="meta">Posição pelo valor contratado (${refTxt()}). Variação sobre ${pontoTxt()}, em todas as finalidades; abaixo de R$ 10 mi no ponto anterior a variação aparece em cinza. Operações: todas as finalidades. ${geo !== "BR" ? `Em ${esc(UFN[geo] || geo)}, conta só operações com local no estado, de qualquer instituição.` : ""} Conglomerado: Sicoob e Sicredi somam cooperativas, centrais e o banco cooperativo do sistema; bancos seguem o conglomerado prudencial do IF.data. Cooperativas Sicoob aparecem com o número do sistema. ${fonteLink()}</div>`;
   if (ativo) { const b = $("#rkbusca"); b.focus(); b.setSelectionRange(b.value.length, b.value.length); }
 }
 function notas() {
@@ -632,8 +755,8 @@ function notas() {
     <p><b>Fonte.</b> Microdados de operações da <a href="${esc(m.url)}" target="_blank" rel="noopener">Matriz de Dados do Crédito Rural (SICOR)</a>, Banco Central. Arquivo do ano corrente publicado em ${esc(new Date(m.arquivo_last_modified).toLocaleDateString("pt-BR"))}, com operações emitidas até ${dmy(m.ref)}. Cadastro: ${esc(m.cadastro)}.</p>
     <p><b>Safra.</b> Julho a junho. O valor é o contratado na emissão (VL_PARC_CREDITO), sem CPR e sem títulos do agro. "Mesmo ponto" compara emissões até ${dmy(m.ref)} com emissões até ${dmy(m.ref_anterior)}.</p>
     <p><b>Meses em consolidação.</b> O SICOR recebe registros com atraso. Em setembro, relatório da Faesp com dados do BC somava R$ 44,3 bi em jul–ago/26; o arquivo de outubro já soma ${brl((ser("sfn","BR",s)[0].slice(0,4).reduce((a,b)=>a+b,0)+ser("sfn","BR",s)[1].slice(0,4).reduce((a,b)=>a+b,0)))} para os mesmos meses. Por isso, os dois últimos meses aparecem hachurados e a queda da safra corrente tende a diminuir nas próximas atualizações. Para jul–ago/25 os dois números batem (R$ 71,3 bi e ${brl(ser("sfn","BR",s-1)[0].slice(0,4).reduce((a,b)=>a+b,0)+ser("sfn","BR",s-1)[1].slice(0,4).reduce((a,b)=>a+b,0))}).</p>
-    <p><b>Local.</b> Brasil ou Minas Gerais pelo estado da operação (local do empreendimento), não pela sede da instituição. Sicoob MG reúne singulares Sicoob com sede em MG; Central Crediminas e Central Cecremge, as singulares filiadas a cada central na relação atual do BC.</p>
-    <p><b>Escopos.</b> Cooperativas = singulares e centrais; Banco Sicoob e Banco Sicredi ficam em "Bancos e demais". Conglomerado Sicoob e Conglomerado Sicredi somam cooperativas, centrais e o banco cooperativo do sistema. No ranking por conglomerado, os bancos seguem o conglomerado prudencial do IF.data (ex.: Banco John Deere entra no conglomerado Bradesco). Bancos digitais seguem a lista fixa do projeto; nesta safra operam no rural: ${esc((m.digitais_com_operacao || []).join(", "))}. Unicred não registra operações rurais no período.</p>
+    <p><b>Local.</b> Brasil ou o estado escolhido, pelo estado da operação (local do empreendimento), não pela sede da instituição. Os recortes de cada estado (Cooperativas, Sicoob, Sicredi e solteiras) usam a UF da sede da cooperativa no cadastro do BC: Sicoob SP reúne singulares Sicoob com sede em SP, onde quer que a operação esteja. Central Crediminas e Central Cecremge reúnem as singulares filiadas a cada central na relação atual do BC.</p>
+    <p><b>Escopos.</b> Cooperativas = singulares e centrais; Banco Sicoob e Banco Sicredi ficam em "Bancos". Nesta aba, "Bancos" reúne todas as instituições que não são cooperativas (bancos, agências de fomento e demais). Sistemas pelo nome da central de filiação no cadastro do BC (Sicoob, Sicredi, Cresol, Unicred, Ailos, Credisis, Uniprime); solteiras são singulares sem central. Conglomerado Sicoob e Conglomerado Sicredi somam cooperativas, centrais e o banco cooperativo do sistema. No ranking por conglomerado, os bancos seguem o conglomerado prudencial do IF.data (ex.: Banco John Deere entra no conglomerado Bradesco). Bancos digitais seguem a lista fixa do projeto; nesta safra operam no rural: ${esc((m.digitais_com_operacao || []).join(", "))}. Unicred não registra operações rurais no período.</p>
     <p><b>Nomes.</b> Número e nome das cooperativas Sicoob pela <a href="https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf" target="_blank" rel="noopener">lista oficial do Sicoob</a> (encarregados de dados, com CNPJ), cruzada com a relação de instituições do BC. Na lista, Ascicred (4034) e Vale do Aço (4036) aparecem com CNPJ de outras cooperativas; o número foi associado pelo nome. Demais cooperativas pelo nome da razão social. Razão social completa aparece abaixo do nome no ranking.</p>
     <p><b>Incorporações.</b> Operações de cooperativa ou banco incorporado entram na incorporadora em todo o histórico, para comparar bases iguais (${D.meta.incorporacoes_aplicadas} instituições nesta base). Fonte principal: quadro mensal de autorizações e alterações societárias do BC (Evolução do SFN). Para incorporações de 2026 ainda fora do quadro, atos e notícias das próprias cooperativas: Vale do Cerrado na Sicredi Celeiro Centro Norte, União MT/MS no Sicoob Primavera (4345) e Credimota no Sicoob Crediceripa (3197). Sicredi Pantanal MS foi dividida entre duas cooperativas e fica com o próprio nome. Cresol Xanxerê e Cresol Áurea saíram da relação do BC sem fonte pública sobre a incorporadora; ficam com o próprio nome.</p>
     <p><b>Trimestres e semestres.</b> O filtro de período recorta a safra em trimestres (jul–set, out–dez, jan–mar, abr–jun) e semestres (jul–dez, jan–jun). Indicadores, finalidades, programas, fontes, produtos e ranking passam a comparar o período escolhido com o mesmo período da safra anterior. Na safra corrente, período em curso compara até ${dmy(m.ref)} com até ${dmy(m.ref_anterior)}; período que ainda não começou fica desativado.</p>
@@ -645,16 +768,23 @@ function notas() {
 function renderSafra() {
   if (!D) { $("#filters").innerHTML = ""; $("#view").innerHTML = `<p class="empty">Carregando a Matriz de Dados do Crédito Rural…</p>`; return; }
   cid = 0; filtros();
+  const ufNec = ufDe(st.esc) || (st.geo !== "BR" ? st.geo : null), okUF = garanteUF("safra", D, ufNec, (d) => {
+    fundir(D, { serie: d.serie, comp: d.comp, cortes: d.cortes, per: d.per });
+    D.inst.forEach(i => { const x = d.inst_geo?.[i.cnpj]; if (x) Object.assign(i, x); });
+  });
+  if (okUF !== true) { $("#view").innerHTML = `<p class="empty">${okUF === "erro" ? `Os dados de ${esc(UFN[ufNec] || ufNec)} não carregaram. Recarregue a página ou escolha outro estado.` : `Carregando os dados de ${esc(UFN[ufNec] || ufNec)}…`}</p>`; return; }
+  if (!comp()) { $("#view").innerHTML = `<p class="empty">Sem operações de ${esc(escopo(st.esc).nome)} no SICOR para este local. Escolha outro recorte ou local.</p>`; return; }
   $("#stamp").textContent = `SICOR até ${dmy(D.meta.ref)} · atualizado em ${dmy(D.meta.atualizado)}`;
   const s = S();
   try {
     const e = escopo(st.esc);
     if (!perOn(st.per)) st.per = "safra";
     $("#view").innerHTML = `<div><div class="eyebrow">Safra ${safraLbl(s)}${st.per === "safra" ? "" : ` · ${perI()[1]} (${perMes()})`} · ${cur() ? `emissões até ${dmy(D.meta.ref)}` : refTxt()} ${novo() && cur() ? '<span class="badge-new">novo</span>' : ""}</div>
-      <h2>Contratação de crédito rural · ${esc(e.nome)} em ${geoNome()}</h2>
+      <h2>Contratação de crédito rural · ${esc(e.nome)} ${emUF(st.geo)}</h2>
       <p class="lede">${st.per !== "safra" ? `Valor contratado ${perNo()} ${safraLbl(s)}${perParcial() ? `, até ${dmy(D.meta.ref)},` : ""} contra ${pontoTxt()}. Gráficos de linha seguem com a safra inteira, para dar contexto` : cur() ? "Valor contratado na safra corrente contra o mesmo ponto da safra anterior" : `Safra ${safraLbl(s)} fechada contra a safra ${safraLbl(s - 1)} fechada`}, com cortes por trimestre, semestre, finalidade, programa, fonte e instituição.</p></div>
       ${cur() ? "" : "<!--"}<div class="note">Os meses mais recentes ainda recebem registros atrasados no SICOR. Os números de ${consolida().slice().reverse().map(k => MESF[k]).join(" e ")} devem subir nas próximas atualizações, o que reduz a queda medida hoje.</div>${cur() ? "" : "-->"}
       ${kpis()}${curva()}
+      ${perfil()}
       <div class="grid2">${cortes()}${finalidades()}</div>
       <div class="grid2">${escopos()}${participacao() || mapaInst()}</div>
       ${participacao() ? `<div class="solo">${mapaInst()}</div>` : ""}
@@ -671,7 +801,7 @@ let R = null, Rerr = "";
 const rs = { esc: "coop", geo: "BR", corte: "total", ord: "ap", all: false, busca: "" };
 const CORTES_R = [["total", "Total"], ["PF", "Pessoa física"], ["PJ", "Pessoa jurídica"], ["rural", "Rural"], ["rural_PF", "Rural PF"]];
 const GR_R = [["agregado", "Agregados"], ["conglomerado", "Conglomerados"], ["sistema", "Cooperativas por sistema"], ["mg", "Minas"], ["banco", "Bancos"]];
-const rEsc = (id) => R.escopos.find(e => e.id === id);
+const rEsc = (id) => R.escopos.find(e => e.id === id) || RECORTES.get(id) || { id, nome: id, cor: "#A3ACA8" };
 const ym = (d) => { const [y, m] = d.split("-"); return ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"][+m - 1] + "/" + y.slice(2); };
 const backM = (d, n) => { let [y, m] = d.split("-").map(Number); m -= n; while (m <= 0) { m += 12; y--; } return `${y}-${String(m).padStart(2, "0")}`; };
 const scrSeg = () => ["sfn", "bancos", "coop"].includes(rs.esc) ? rs.esc : (rEsc(rs.esc).grupo === "banco" ? "bancos" : "coop");
@@ -730,9 +860,8 @@ function scatterLin(pts, o = {}) {
 }
 
 function filtrosRisco() {
-  const chips = GR_R.map(([g, nm]) => `<div class="fgroup"><span class="flabel">${nm}</span>${R.escopos.filter(e => e.grupo === g).map(e =>
-    `<button class="chip" type="button" data-resc="${e.id}" aria-pressed="${rs.esc === e.id}"><i style="background:${cor(e.cor)}"></i>${esc(e.nome)}</button>`).join("")}</div>`).join("");
-  $("#filters").innerHTML = `<div class="frow">${chips}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(R.escopos.map(e => e.id), rs.esc, (id) => { rs.esc = id; rs.all = false;
+    try { localStorage.setItem("risco-filtros", JSON.stringify({ esc: rs.esc, geo: rs.geo, corte: rs.corte })); } catch (e) {} })}</div>`;
 }
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-resc],[data-rgeo],[data-rcorte],[data-rord],#rmore"); if (!b) return;
@@ -895,8 +1024,8 @@ function carregaRisco() {
 /* ===================== Aba Mapa de posicionamento ===================== */
 let P = null, Perr = "";
 const ps = { uni: "crediminas", x: "cresc", y: "ap", tri: "", dest: "", modo: "inst" };
-const UNIS = [["crediminas", "Filiadas Crediminas"], ["cecremge", "Filiadas Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"], ["solteiras_mg", "Solteiras de MG"],
-  ["sicoob", "Sicoob"], ["sicredi", "Sicredi"], ["cresol", "Cresol"], ["unicred", "Unicred"], ["solteiras", "Cooperativas solteiras"], ["coop", "Todas as cooperativas"], ["bancos", "Bancos (conglomerados)"], ["top5d", "5 maiores e digitais"]];
+// grupos de comparação (mapa e rankings): cooperativas por sistema e por estado, todas as cooperativas, bancos, 5 maiores e digitais
+const uniIds = () => ["coop", "bancos", ...P.escopos.filter(e => e.grupo === "sistema" || ufDe(e.id)).map(e => e.id), "top5d"];
 const PRESETS = [["Crescimento × risco", "cresc", "ap"], ["Rentabilidade × risco", "ap", "roe"], ["Capital × risco", "ap", "basil"],
   ["Eficiência × rentabilidade", "efic", "roe"], ["Rural × inadimplência", "rural", "inad"], ["Provisão × cobertura", "prov", "cob"]];
 const pm = (id) => P.metricas.find(m => m.id === id);
@@ -906,14 +1035,15 @@ const pFmt = (id, v) => v == null ? "—" : id === "cart" ? (v >= 1 ? "R$ " + nf
 const median = (a) => { const s = a.filter(v => v != null && isFinite(v)).sort((x, y) => x - y); if (!s.length) return null; const k = Math.floor(s.length / 2); return s.length % 2 ? s[k] : (s[k - 1] + s[k]) / 2; };
 const quant = (a, q) => { const s = a.filter(v => v != null).sort((x, y) => x - y); return s.length ? s[Math.min(s.length - 1, Math.max(0, Math.round(q * (s.length - 1))))] : null; };
 function pCor(i) {
-  if (i.tipo === "coop") { if (["crediminas", "cecremge", "sicoob_mg", "coop_mg"].includes(ps.uni) && i.central) return cor(i.central === "crediminas" ? "#007A6E" : "#5BC2B8");
-    const m = { sicoob: "#00AE9D", sicredi: "#7CC35A", cresol: "#6E5A9E", unicred: "#9C7A3C" }; return cor(m[i.sistema] || "#A3ACA8"); }
+  if (i.tipo === "coop") { if (ufDe(ps.uni) === "MG" && i.central) return cor(i.central === "crediminas" ? "#007A6E" : "#5BC2B8");
+    return cor(SIS.find(x => x[0] === i.sistema)?.[2] || "#A3ACA8"); }
   const m = { bb: "#465EFF", bradesco: "#CC092F", itau: "#EC7000", caixa: "#005CA9", santander: "#EC0000", digitais: "#820AD1", cong_sicoob: "#003641", cong_sicredi: "#3FA110" };
   const k = i.escopos.find(s => m[s]); return k ? cor(m[k]) : css("--grafite-2");
 }
 function filtrosPos() {
   const opt = (sel) => P.metricas.map(m => `<option value="${m.id}"${m.id === sel ? " selected" : ""}>${esc(m.nome)}</option>`).join("");
-  $("#filters").innerHTML = `<div class="frow"><div class="fgroup"><span class="flabel">Grupo de comparação</span>${UNIS.map(([k, n]) => `<button class="chip" type="button" data-puni="${k}" aria-pressed="${ps.uni === k}">${n}</button>`).join("")}</div></div>
+  if (!uniIds().includes(ps.uni)) ps.uni = "crediminas";
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(uniIds(), ps.uni, (id) => { ps.uni = id; try { localStorage.setItem("pos-filtros", JSON.stringify(ps)); } catch (e) {} }, { label: "Grupo de comparação" })}</div>
     <div class="frow"><div class="fgroup"><span class="flabel">Atalhos</span>${PRESETS.map(([n, x, y]) => `<button class="chip" type="button" data-pxy="${x}|${y}" aria-pressed="${ps.x === x && ps.y === y}">${n}</button>`).join("")}</div></div>
     <div class="frow"><label class="fgroup"><span class="flabel">Eixo X</span><select id="px" class="sel">${opt(ps.x)}</select></label>
     <label class="fgroup"><span class="flabel">Eixo Y</span><select id="py" class="sel">${opt(ps.y)}</select></label>
@@ -983,7 +1113,7 @@ function fichaRapida(i, uni, t) {
   const rows = P.metricas.filter(m => m.id !== "cart").map(m => { const v = i.s[t]?.[m.id], arr = uni.map(u => u.s[t]?.[m.id]), md = median(arr), pc = m.melhor === "neutro" ? null : pctl(arr, v, m.melhor);
     const col = pc == null ? "var(--grafite-2)" : pc >= 66 ? "var(--up)" : pc <= 33 ? "var(--down)" : "var(--warn-ink)";
     return `<tr><td>${esc(m.nome)}</td><td class="num"><b>${pFmt(m.id, v)}</b></td><td class="num">${pFmt(m.id, md)}</td><td class="bar-cell">${pc == null ? `<small>sem ordem de melhor ou pior</small>` : `<span class="b" style="width:calc(${Math.max(3, pc)}% - 8px);background:${col}"></span>`}</td><td class="num">${pc == null ? "—" : nf(pc, 0)}</td></tr>`; }).join("");
-  return block(`Ficha rápida · ${esc(i.curto)}`, `${ym(t)} · contra ${uni.length} instituições do grupo ${esc(UNIS.find(u => u[0] === ps.uni)[1])}`,
+  return block(`Ficha rápida · ${esc(i.curto)}`, `${ym(t)} · contra ${uni.length} instituições do grupo ${esc(rNome(ps.uni))}`,
     `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th><th class="num">Valor</th><th class="num">Mediana do grupo</th><th>Percentil (100 = melhor)</th><th class="num"></th></tr></thead><tbody>${rows}</tbody></table></div>`,
     `${linkFicha(i.id, "Abrir a ficha completa")}. Percentil ajustado pela direção do indicador: 100 é a melhor posição do grupo. Provisão, crédito rural e receita de crédito não têm direção de melhor ou pior. Carteira: ${pFmt("cart", i.s[t]?.cart)}. ${esc(i.nome)}${i.id.startsWith("C0") ? "" : " · CNPJ " + i.id}.`);
 }
@@ -1008,7 +1138,7 @@ function renderPos() {
     const rows = pts.slice().sort((a, b) => (b.dest - a.dest) || b.r - a.r).map(p => `<tr${p.dest ? ' style="background:var(--panel)"' : ""}><td><div class="inst-name"><span class="dot" style="background:${p.c}"></span><span><button class="linkbtn" type="button" data-pdest="${esc(p.name)}" style="padding:0;color:var(--ink);font-weight:${p.dest ? 700 : 500}">${esc(p.name)}</button><small title="${esc(p.i.nome || "")}">${esc((p.i.nome || "").slice(0, 34))}…${p.i.uf ? " · " + p.i.uf : ""}</small></span></div></td>
       <td class="num">${pFmt("cart", p.r)}</td><td class="num">${pFmt(ps.x, p.x)}</td><td class="num">${pFmt(ps.y, p.y)}</td><td>${esc(quad(p))}</td></tr>`).join("");
     $("#view").innerHTML = `<div><div class="eyebrow">${ym(t)} · ${pts.length} instituições · IF.data e Cosif ${(Date.now() - new Date(P.meta.novo_desde + "T12:00:00")) / 864e5 <= 7 ? '<span class="badge-new">novo</span>' : ""}</div>
-      <h2>Mapa de posicionamento · ${esc(UNIS.find(u => u[0] === ps.uni)[1])}</h2>
+      <h2>Mapa de posicionamento · ${esc(rNome(ps.uni))}</h2>
       <p class="lede">${esc(xm.nome)} contra ${esc(ymm.nome.toLowerCase())}. Linhas tracejadas: mediana do grupo. Tamanho do círculo: carteira de crédito. Losangos: agregados de referência. Clique numa instituição para destacar e ver o rastro dos trimestres.</p></div>
       ${ps.x === "cresc" || ps.y === "cresc" || ps.x === "capt_cresc" || ps.y === "capt_cresc" ? `<div class="note">Crescimento em 12 meses só existe a partir de mar/26: o IF.data mudou o conceito de carteira com a Res. CMN 4.966 em jan/25, e a comparação com 2024 misturaria critérios.</div>` : ""}
       <section class="block">${mapaPos(pts, ref, { xn: xm.nome, yn: ymm.nome, xid: ps.x, yid: ps.y, xm, ym: ymm, rastro, diam })}
@@ -1041,7 +1171,7 @@ function carregaPos() {
 let Q = null, Qerr = "";
 const qs = { esc: "crediminas", per: "r12", ate: "", ano: "", mes: "", ord: "lucro", all: false, busca: "" };
 const GR_Q = [["agregado", "Agregados"], ["conglomerado", "Conglomerados"], ["sistema", "Cooperativas por sistema"], ["mg", "Minas"], ["banco", "Bancos"]];
-const qEsc = (id) => Q.escopos.find(e => e.id === id);
+const qEsc = (id) => Q.escopos.find(e => e.id === id) || RECORTES.get(id);
 const REC = [["r_cred", "Crédito", "#2B6F8A"], ["r_tes", "Tesouraria", "#7A9CB0"], ["r_serv", "Serviços e tarifas", "#C08A2E"], ["r_out", "Outras receitas", "#B9BFC4"]];
 const DESP = [["d_capt", "Captação", "#8C4A3A"], ["d_prov", "Provisão", "#C2562C"], ["d_pess", "Pessoal", "#5A6B8C"], ["d_adm", "Administrativas", "#8392AE"],
   ["d_depr", "Depreciação", "#B3BBCB"], ["d_trib", "Tributos", "#9E8F6A"], ["d_out", "Outras despesas", "#CFC7B2"], ["d_lucro", "Lucro ou sobras", "#2E8F5A"]];
@@ -1110,8 +1240,8 @@ function qPerCtrl() {                       // mesmo seletor de período da aba 
 }
 const brlMi = (v) => v == null ? "—" : Math.abs(v) >= 1000 ? `R$ ${nf(v / 1000, 1)} bi` : `R$ ${nf(v, 1)} mi`;
 function filtrosRes() {
-  const chips = GR_Q.map(([g, nm]) => `<div class="fgroup"><span class="flabel">${nm}</span>${Q.escopos.filter(e => e.grupo === g).map(e =>
-    `<button class="chip" type="button" data-qesc="${e.id}" aria-pressed="${qs.esc === e.id}"><i style="background:${cor(e.cor)}"></i>${esc(e.nome)}</button>`).join("")}</div>`).join("");
+  const chips = seletorRecorte(Q.escopos.map(e => e.id), qs.esc, (id) => { qs.esc = id; qs.all = false;
+    try { localStorage.setItem("res-filtros", JSON.stringify({ esc: qs.esc, ate: qs.ate, per: qs.per, ano: qs.ano, mes: qs.mes })); } catch (e) {} });
   const per = qPerOk(), segP = Q.agg.coop.m ? `<div class="fgroup"><span class="flabel">Período</span><div class="seg">${[["r12", "12 meses"], ["ytd", "Acumulado no exercício"], ["mes", "Mensal"]].map(([k, n]) => `<button type="button" data-qper="${k}" aria-pressed="${per === k}">${n}</button>`).join("")}</div></div>` : "";
   const sel = per === "r12" ? `<label class="fgroup"><span class="flabel">12 meses até</span><select id="qate" class="sel">${Q.agg.coop.r12.map(x => x.d).reverse().map(d => `<option value="${d}"${d === qAte() ? " selected" : ""}>${ym(d)}</option>`).join("")}</select></label>`
     : per === "ytd" ? `<label class="fgroup"><span class="flabel">Exercício</span><select id="qano" class="sel">${qAnos().map(a => { const ms = qMeses().filter(d => d.startsWith(a)); return `<option value="${a}"${a === qAno() ? " selected" : ""}>${a}${ms.length < 12 ? ` (até ${ym(ms[ms.length - 1])})` : ""}</option>`; }).join("")}</select></label>`
@@ -1683,7 +1813,7 @@ function blocoShare(co, e, lC) {          // participação de mercado ao longo 
 function renderCarteira() {
   if (!precisa(["carteira", "safra"])) { esperando(Cerr ? `Os dados não carregaram (${esc(Cerr)}). Recarregue a página.` : "Carregando a composição da carteira…"); return; }
   cid = 0;
-  $("#filters").innerHTML = `<div class="frow">${chipsEsc(C.escopos, "cesc", cs.esc)}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(C.escopos.map(e => e.id), cs.esc, (id) => { cs.esc = id; try { localStorage.setItem("cart-filtros", JSON.stringify(cs)); } catch (e) {} })}</div>`;
   $("#stamp").textContent = `Cosif até ${ym(C.meta.refs.cosif)} · SICOR até ${dmy(D.meta.ref)}`;
   try {
     const co = C.cosif, e = C.escopos.find(x => x.id === cs.esc), A = co[cs.esc] || [], S = co.sfn || [], l = lastP(A), ls = lastP(S), sfn = cs.esc === "sfn";
@@ -1734,7 +1864,7 @@ const FONTES = [["f_livres", "Recursos livres", "#7A9CB0"], ["f_avista", "Exigib
 function renderRural() {
   if (!precisa(["carteira"])) { esperando(Cerr ? `Os dados não carregaram (${esc(Cerr)}). Recarregue a página.` : "Carregando a carteira rural…"); return; }
   cid = 0;
-  $("#filters").innerHTML = `<div class="frow">${chipsEsc(C.escopos, "uesc", rus.esc)}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(C.escopos.map(e => e.id), rus.esc, (id) => { rus.esc = id; try { localStorage.setItem("rural-filtros", JSON.stringify({ esc: rus.esc })); } catch (e) {} })}</div>`;
   $("#stamp").textContent = `Cosif até ${ym(C.meta.refs.cosif)}`;
   try {
     const co = C.cosif, e = C.escopos.find(x => x.id === rus.esc), A = co[rus.esc] || [], S = co.sfn || [], l = lastP(A), ls = lastP(S), sfn = rus.esc === "sfn";
@@ -1810,14 +1940,15 @@ function pontosAtencao(uni) {            // critérios objetivos sobre dados pú
     const r = resM.get(i.id); if (r && r.r12.lucro < 0) f.push(`resultado de 12 meses negativo (${brlMi(r.r12.lucro)})`);
     if (s.cresc != null && s.cresc < -10) f.push(`carteira ${sgn(s.cresc)} em 12 meses`);
     return { i, f }; }).filter(x => x.f.length).sort((a, b) => b.f.length - a.f.length || (b.i.s[t].cart - a.i.s[t].cart));
-  return block("Pontos de atenção", `${esc(UNIS.find(u => u[0] === rks.uni)[1])} · ${ym(t)} · ${grp.length} instituições · ${flags.length} com algum critério`,
+  return block("Pontos de atenção", `${esc(rNome(rks.uni))} · ${ym(t)} · ${grp.length} instituições · ${flags.length} com algum critério`,
     `<div class="tbl-wrap" style="max-height:420px;overflow-y:auto"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th>Critérios atingidos</th></tr></thead><tbody>${flags.map(x => `<tr><td>${linkFicha(x.i.id, esc(x.i.curto))}</td><td class="num">${pFmt("cart", x.i.s[t].cart)}</td><td>${x.f.map(esc).join("; ")}</td></tr>`).join("") || `<tr><td colspan="3" class="empty">Nenhuma instituição atinge os critérios.</td></tr>`}</tbody></table></div>`,
     `Critérios: ativos problemáticos acima do 3º quartil do grupo (${nf(lim.ap, 1)}%) e maiores que no trimestre anterior; Basileia abaixo de 15%; resultado de 12 meses negativo; carteira caindo mais de 10% em 12 meses. IF.data e Cosif (resultado).`);
 }
 function renderRankings() {
   if (!precisa(["posicao", "resultados", "carteira", "safra"])) { esperando(Perr || Qerr || Cerr ? `Os dados não carregaram. Recarregue a página.` : "Carregando as bases dos rankings…"); return; }
   cid = 0;
-  $("#filters").innerHTML = `<div class="frow"><div class="fgroup"><span class="flabel">Grupo</span>${UNIS.map(([k, n]) => `<button class="chip" type="button" data-kuni="${k}" aria-pressed="${rks.uni === k}">${n}</button>`).join("")}</div></div>
+  if (!uniIds().includes(rks.uni)) rks.uni = "crediminas";
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(uniIds(), rks.uni, (id) => { rks.uni = id; try { localStorage.setItem("rank-filtros", JSON.stringify(rks)); } catch (e) {} }, { label: "Grupo" })}</div>
     <div class="frow"><label class="fgroup"><span class="flabel">Indicador</span><select id="kind" class="sel">${IND.map(([g, l]) => `<optgroup label="${esc(g)}">${l.map(([k, n]) => `<option value="${k}"${k === rks.ind ? " selected" : ""}>${esc(n)}</option>`).join("")}</optgroup>`).join("")}</select></label>
     <div class="fgroup"><span class="flabel">Ordem</span><div class="seg"><button type="button" data-kdir="desc" aria-pressed="${rks.dir === "desc"}">Maior primeiro</button><button type="button" data-kdir="asc" aria-pressed="${rks.dir === "asc"}">Menor primeiro</button></div></div>
     <div class="fgroup"><span class="flabel">Mostrar</span><div class="seg">${[10, 25, 50, 999].map(n => `<button type="button" data-kn="${n}" aria-pressed="${rks.n === n}">${n === 999 ? "Todas" : n}</button>`).join("")}</div></div></div>`;
@@ -1841,7 +1972,7 @@ function renderRankings() {
     const fonte = { safra: "SICOR", safra_var: "SICOR", rur: "Cosif", cresc_rur: "Cosif", p_rur: "Cosif", lucro: "Cosif (12 meses)", roe12: "Cosif (12 meses)", d_capt: "Cosif (12 meses)", d_prov: "Cosif (12 meses)" }[rks.ind] || "IF.data";
     const refF = fonte === "SICOR" ? `até ${dmy(D.meta.ref)}` : fonte.startsWith("Cosif") ? ym(fonte.includes("12") ? Q.meta.ref : C.meta.refs.cosif) : ym(P.meta.ref);
     const rows = lst.map((x, k) => `<tr><td class="num">${k + 1}</td><td><div class="inst-name"><span class="dot" style="background:${instCor2(x.i)}"></span><span>${linkFicha(x.i.id, esc(x.i.curto))}${x.i.central ? `<span class="tag">${x.i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small>${esc(x.i.nome.slice(0, 50))}${x.i.uf ? " · " + x.i.uf : ""}</small></span></div></td><td class="num"><b>${fmtV(x.v)}</b></td><td class="num">${md == null ? "—" : (x.v >= md ? "acima" : "abaixo")}</td><td class="num">${pFmt("cart", x.i.s[P.meta.ref]?.cart)}</td></tr>`).join("");
-    $("#view").innerHTML = `<div><div class="eyebrow">${esc(UNIS.find(u => u[0] === rks.uni)[1])} · ${lst.length} instituições com dado · ${fonte}, ${refF}</div><h2>Ranking · ${esc(INDN[rks.ind])}</h2>
+    $("#view").innerHTML = `<div><div class="eyebrow">${esc(rNome(rks.uni))} · ${lst.length} instituições com dado · ${fonte}, ${refF}</div><h2>Ranking · ${esc(INDN[rks.ind])}</h2>
       <p class="lede">Escolha o grupo e o indicador. A linha tracejada marca a mediana do grupo (${md == null ? "—" : fmtV(md)}). Clique no nome para abrir a ficha.</p></div>
       ${block(`${esc(INDN[rks.ind])}`, `${rks.dir === "asc" ? "Menor primeiro" : "Maior primeiro"} · ${shown.length} de ${lst.length}`, chart, `${fonte}, ${refF}. Métodos na aba Fontes e metodologia.`)}
       ${pontosAtencao(uni)}
@@ -2279,10 +2410,9 @@ function renderRuralSFN() {
 
 /* ===================== Aba Quadro de indicadores por instituição ===================== */
 const qd = { grp: "crediminas", base: "", ord: "cart", dir: "desc", busca: "", all: false };
-const QGR = [["Minas", [["crediminas", "Central Crediminas"], ["cecremge", "Central Cecremge"], ["sicoob_mg", "Sicoob MG"], ["coop_mg", "Cooperativas de MG"], ["solteiras_mg", "Solteiras de MG"]]],
-  ["Sistemas e conglomerados", [["sicoob", "Sicoob (cooperativas)"], ["cong_sicoob", "Conglomerado Sicoob"], ["sicredi", "Sicredi (cooperativas)"], ["cong_sicredi", "Conglomerado Sicredi"], ["cresol", "Cresol"], ["unicred", "Unicred"], ["solteiras", "Cooperativas solteiras"], ["coop", "Todas as cooperativas"]]],
-  ["Bancos e SFN", [["bancos", "Bancos"], ["top5", "5 maiores bancos"], ["digitais", "Bancos digitais"], ["sfn", "SFN (todas)"]]]];
-const QNOME = Object.fromEntries(QGR.flatMap(([, l]) => l));
+// grupos do quadro: todos os recortes do IF.data (posição), mais os 5 maiores bancos; nomes pelo catálogo único
+const qIds = () => [...P.escopos.map(e => e.id), "top5"].filter(id => RECORTES.has(id));
+const QNOME = new Proxy({}, { get: (_, id) => typeof id === "string" && P && qIds().includes(id) ? (id === "sfn" ? "SFN (todas)" : rNome(id)) : undefined });
 // id, título, unidade (val = R$ e variação %; pct = % e variação em p.p.), melhor (alto/baixo/neutro), fonte
 const QCOL = [["at", "Ativo total", "val", "alto", "IF.data"], ["cart", "Carteira de crédito", "val", "alto", "IF.data"], ["capt", "Captações", "val", "alto", "IF.data"], ["pl", "Patrimônio líquido", "val", "alto", "IF.data"],
   ["res", "Resultado do período", "res", "alto", "Cosif"], ["rural", "Rural na carteira", "pct", "neutro", "Cosif"], ["inad", "Inad. > 90 dias", "pct", "baixo", "IF.data"], ["ap", "Ativos probl. (estágio 3)", "pct", "baixo", "IF.data"],
@@ -2355,7 +2485,7 @@ function renderQuadro() {
   if (!precisa(["posicao", "resultados"])) { esperando(Perr || Qerr ? `Os dados não carregaram. Recarregue a página.` : "Carregando os indicadores do IF.data e os balancetes…"); return; }
   cid = 0;
   if (!QNOME[qd.grp]) qd.grp = "crediminas";
-  $("#filters").innerHTML = `<div class="frow">${QGR.map(([nm, l]) => `<div class="fgroup"><span class="flabel">${nm}</span>${l.map(([k, n]) => `<button class="chip" type="button" data-qdgrp="${k}" aria-pressed="${qd.grp === k}">${esc(n)}</button>`).join("")}</div>`).join("")}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(qIds(), qd.grp, (id) => { qd.grp = id; qd.all = false; try { localStorage.setItem("quadro-filtros", JSON.stringify({ grp: qd.grp, base: qd.base, ord: qd.ord, dir: qd.dir })); } catch (e) {} }, { label: "Grupo" })}</div>`;
   $("#stamp").textContent = `IF.data até ${ym(P.meta.ref)} · balancetes até ${ym(Q.meta.ref)}`;
   $("#view").innerHTML = `<div id="qdview"></div>`;
   renderQuadroTab();
@@ -2411,7 +2541,9 @@ function renderQuadroTab() {
     const shown = qd.all || qd.busca ? list : list.slice(0, 50);
     const th = QC().map(([id, n, u, m, f]) => `<th class="num"><button type="button" class="qsort" data-qdord="${id}" aria-pressed="${qd.ord === id}" title="${esc(f)} · clique para ordenar">${esc(n)}${qd.ord === id ? (qd.dir === "desc" ? " ↓" : " ↑") : ""}</button></th>`).join("");
     const linha = (nome, a, b, cls = "", num = "", cmp = true) => `<tr class="${cls}"><td class="num qn">${num}</td><td class="qinst">${nome}</td>${QC().map(([id, , u, m]) => qCell(id, u, m, a, b, cmp ? B : null, B12)).join("")}</tr>`;
-    const opts = QGR.map(([nm, l]) => `<optgroup label="${esc(nm)}">${l.map(([k, n]) => `<option value="${k}"${k === bk ? " selected" : ""}>${esc(n)}${k === qd.grp ? " (o próprio grupo)" : ""}</option>`).join("")}</optgroup>`).join("");
+    const ufB = ufDe(qd.grp) || ufDe(bk) || UFSEL, GQ = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas em ${UFN[ufB] || ufB}`], ["banco", "Bancos"]];
+    const opts = GQ.map(([g, nm]) => { const l = qIds().filter(k => RECORTES.get(k).grupo === g && (g !== "uf" || ufDe(k) === ufB || k === bk)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
+      return l.length ? `<optgroup label="${esc(nm)}">${l.map(k => `<option value="${k}"${k === bk ? " selected" : ""}>${esc(QNOME[k])}${k === qd.grp ? " (o próprio grupo)" : ""}</option>`).join("")}</optgroup>` : ""; }).join("");
     const nomeI = (i) => `<div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}<small>${esc((i.nome || "").slice(0, 40))}${i.uf ? " · " + i.uf : ""}</small></span></div>`;
     const ativo = document.activeElement?.id === "qdbusca";
     el.innerHTML = `<div><div class="eyebrow">IF.data ${ym(t)} · Cosif ${ym(t)}${t12 ? ` · variação contra ${ym(t12)}` : ""}${tagNovo(P.meta.novo_desde)}</div><h2>Quadro de indicadores por instituição · ${esc(QNOME[qd.grp])}</h2>
@@ -2454,8 +2586,9 @@ function renderFontes() {
   ];
   const ESC = [["SFN", "Agregado do Banco Central. No SCR.data e no SGS, todo o sistema; nos balancetes e no IF.data, a soma de cooperativas singulares e conglomerados prudenciais."],
     ["Bancos", "Conglomerados prudenciais (IF.data e Cosif) ou segmento Banco (SCR.data)."], ["Cooperativas", "Cooperativas singulares. Centrais ficam fora das somas, porque o crédito delas é repasse às singulares."],
-    ["Conglomerado Sicoob / Sicredi", "Singulares do sistema + banco cooperativo (Banco Sicoob, Banco Sicredi). No SICOR, também as centrais."], ["Sicoob, Sicredi, Cresol, Unicred", "Singulares do sistema, pela filiação na relação do BC e pelo nome."],
-    ["Sicoob MG", "Singulares Sicoob com sede em MG."], ["Central Crediminas / Cecremge", "Singulares filiadas a cada central na relação atual do BC."], ["Cooperativas de MG", "Singulares de qualquer sistema com sede em MG."],
+    ["Conglomerado Sicoob / Sicredi", "Singulares do sistema + banco cooperativo (Banco Sicoob, Banco Sicredi). No SICOR, também as centrais."], ["Sicoob, Sicredi, Cresol, Unicred, Ailos, Credisis, Uniprime", "Singulares do sistema, pela central de filiação no cadastro do BC (e pelo nome da cooperativa). Só Sicoob e Sicredi têm banco cooperativo, por isso só eles têm conglomerado."],
+    ["Cooperativas solteiras", "Singulares sem central de filiação no cadastro do BC."],
+    ["Recortes por estado", "Cooperativas, Sicoob, Sicredi e solteiras com sede na UF escolhida (cadastro do BC). Em MG também Central Crediminas e Central Cecremge, as singulares filiadas a cada central na relação atual do BC. Na Safra, o local da operação é outra coisa: a UF do empreendimento, de qualquer instituição."],
     ["5 maiores bancos", "Itaú, BB, Bradesco, Caixa e Santander, por conglomerado prudencial."], ["Bancos digitais", "Lista fixa: Nubank, Inter, C6, PagBank, Mercado Pago e BTG, quando presentes na base."]];
   const RG = [["Organização das abas", "Dois grupos. Grandes números do SFN (Visão geral e Crédito rural no SFN): séries que só existem para o sistema inteiro ou por segmento (SGS e SCR.data), sem filtro de instituição. Sistemas, centrais e instituições (da Safra à Ficha): o recorte escolhido no filtro, com o SFN como referência."], ["Nunca estimar", "Número que deveria vir de uma fonte e não foi encontrado aparece como “—” ou “sem dado”, com o motivo."],
     ["Data e fonte", "Todo número leva a data de referência e a fonte, com link. Dado novo nos últimos 7 dias recebe o selo “novo”."],
