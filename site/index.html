@@ -155,7 +155,7 @@ h3 { font-family: var(--f-display); font-stretch: 88%; font-weight: 700; font-si
 .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--muted); }
 .solo { max-width: 760px; width: 100%; }
 .recsel { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
-@media (max-width: 640px) { .recsel { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); width: 100%; } .recsel .fgroup { min-width: 0; } .recsel .sel { width: 100%; min-width: 0; } }
+@media (max-width: 640px) { .recsel { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); width: 100%; } .recsel .fgroup { min-width: 0; } .recsel .sel { width: 100%; min-width: 0; } .recsel .fgroup:has([data-central]) { grid-column: 1 / -1; } }
 .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 22px 28px; }
 .rosca { display: flex; flex-direction: column; gap: 8px; }
 .rosca h4 { margin: 0; font-size: 13px; font-weight: 600; color: var(--ink); }
@@ -243,7 +243,9 @@ const FONTE_DADOS = { base: "./data/" };
 async function carregar(nome) {
   const r = await fetch(FONTE_DADOS.base + nome + ".json", { cache: "no-cache" });
   if (!r.ok) throw new Error(`${nome}.json: HTTP ${r.status}`);
-  return r.json();
+  const d = await r.json();
+  if (d && d.escopos && typeof registraRecortes === "function") registraRecortes(d.escopos);
+  return d;
 }
 
 (() => {
@@ -268,60 +270,77 @@ const SIS = [["sicoob", "Sicoob", "#00AE9D"], ["sicredi", "Sicredi", "#7CC35A"],
   ["ailos", "Ailos", "#3D7CC9"], ["credisis", "Credisis", "#C9902A"], ["uniprime", "Uniprime", "#B5487A"]];
 const BANCOS_ESC = [["bb", "Banco do Brasil", "#465EFF"], ["bradesco", "Bradesco", "#CC092F"], ["itau", "Itaú", "#EC7000"], ["caixa", "Caixa", "#005CA9"],
   ["santander", "Santander", "#EC0000"], ["digitais", "Bancos digitais", "#820AD1"], ["top5", "5 maiores bancos", "#6B7280"], ["top5d", "5 maiores e digitais", "#6B7280"]];
-const ufDe = (id) => id === "crediminas" || id === "cecremge" ? "MG" : ((/^(coop|sicoob|sicredi|solteiras)_([a-z]{2})$/.exec(id || "") || [])[2] || "").toUpperCase() || null;
-// catálogo único: id -> {nome (completo, para títulos e legendas), menu (rótulo curto na lista), grupo, cor}
+const BASES_UF = ["coop", ...SIS.map(x => x[0]), "solteiras"];                  // recortes nacionais com versão por estado
+const RE_UF = new RegExp(`^(${BASES_UF.join("|")})_([a-z]{2})$`);
+// UF de um recorte estadual (Sicoob SP -> SP). Crediminas e Cecremge contam como MG para carregar dados (ficam no arquivo principal).
+const ufDe = (id) => id === "crediminas" || id === "cecremge" ? "MG" : ((RE_UF.exec(id || "") || [])[2] || "").toUpperCase() || null;
+// catálogo: id -> {nome (títulos e legendas), grupo, cor}. Centrais entram ao carregar cada base (vêm do cadastro do BC).
 const RECORTES = (() => {
-  const L = [["sfn", "SFN", "SFN", "agregado", "#2B2F33"], ["bancos", "Bancos", "Bancos", "agregado", "#8A9097"], ["coop", "Cooperativas", "Cooperativas", "agregado", "#56606A"],
-    ["cong_sicoob", "Conglomerado Sicoob", "Sicoob", "conglomerado", "#003641"], ["cong_sicredi", "Conglomerado Sicredi", "Sicredi", "conglomerado", "#3FA110"]];
-  SIS.forEach(([k, n, c]) => L.push([k, n, n, "sistema", c]));
-  L.push(["solteiras", "Cooperativas solteiras", "Solteiras (sem central)", "sistema", "#B07A4A"]);
+  const L = [["sfn", "SFN", "agregado", "#2B2F33"], ["bancos", "Bancos", "agregado", "#8A9097"], ["coop", "Cooperativas", "agregado", "#56606A"],
+    ["cong_sicoob", "Conglomerado Sicoob", "conglomerado", "#003641"], ["cong_sicredi", "Conglomerado Sicredi", "conglomerado", "#3FA110"]];
+  SIS.forEach(([k, n, c]) => L.push([k, n, "sistema", c]));
+  L.push(["solteiras", "Cooperativas solteiras", "sistema", "#B07A4A"]);
   UFS_ORD.forEach(u => { const l = u.toLowerCase();
-    L.push(["coop_" + l, `Cooperativas ${u}`, "Cooperativas", "uf", "#4F7F7A"], ["sicoob_" + l, `Sicoob ${u}`, "Sicoob", "uf", "#2E8F86"], ["sicredi_" + l, `Sicredi ${u}`, "Sicredi", "uf", "#5E9E3F"]);
-    if (u === "MG") L.push(["crediminas", "Central Crediminas", "Central Crediminas", "uf", "#007A6E"], ["cecremge", "Central Cecremge", "Central Cecremge", "uf", "#5BC2B8"]);
-    L.push(["solteiras_" + l, `Solteiras ${u}`, "Solteiras (sem central)", "uf", "#8C5A30"]); });
-  BANCOS_ESC.forEach(([k, n, c]) => L.push([k, n, n, "banco", c]));
-  return new Map(L.map(([id, nome, menu, grupo, c], i) => [id, { id, nome, menu, grupo, cor: c, ord: i }]));
+    L.push(["coop_" + l, `Cooperativas ${u}`, "uf", "#4F7F7A"]); SIS.forEach(([k, n, c]) => L.push([`${k}_${l}`, `${n} ${u}`, "uf", c])); L.push(["solteiras_" + l, `Solteiras ${u}`, "uf", "#8C5A30"]); });
+  L.push(["crediminas", "Central Crediminas", "central", "#007A6E"], ["cecremge", "Central Cecremge", "central", "#5BC2B8"]);
+  BANCOS_ESC.forEach(([k, n, c]) => L.push([k, n, "banco", c]));
+  const M = new Map(L.map(([id, nome, grupo, c], i) => [id, { id, nome, grupo, cor: c, ord: i }]));
+  M.get("crediminas").sis = M.get("cecremge").sis = "sicoob"; M.get("crediminas").ufs = M.get("cecremge").ufs = ["MG"]; M.get("crediminas").uf = M.get("cecremge").uf = "MG";
+  return M;
 })();
+function registraRecortes(escopos) {          // centrais (e qualquer recorte novo) que vierem nas bases
+  (escopos || []).forEach(e => { if (e.grupo === "central") { const o = RECORTES.get(e.id) || { ord: 5000 + RECORTES.size }; RECORTES.set(e.id, { ...o, id: e.id, nome: e.nome, grupo: "central", cor: e.cor, sis: e.sis, uf: e.uf, ufs: e.ufs || [] }); } });
+}
+window.registraRecortes = registraRecortes;
 const rNome = (id) => RECORTES.get(id)?.nome || id;
 const UF_PREP = { AC: "no", AP: "no", AM: "no", CE: "no", DF: "no", ES: "no", MA: "no", MT: "no", MS: "no", PA: "no", PR: "no", PI: "no", RJ: "no", RN: "no", RS: "no", TO: "no", BA: "na", PB: "na" };
 const emUF = (g) => g === "BR" ? "no Brasil" : `${UF_PREP[g] || "em"} ${UFN[g] || g}`;
 const rCor = (id) => RECORTES.get(id)?.cor || "#8A9097";
+const ehCentral = (id) => RECORTES.get(id)?.grupo === "central";
 let UFSEL = (() => { try { return localStorage.getItem("uf-sel") || "MG"; } catch (e) { return "MG"; } })();
-let RSET = null;                                    // recorte em edição na aba atual: { ids, sel, set }
-const trocaUF = (id, uf) => { const l = uf.toLowerCase(); if (id === "crediminas" || id === "cecremge") return "coop_" + l; const m = /^(coop|sicoob|sicredi|solteiras)_[a-z]{2}$/.exec(id); return m ? `${m[1]}_${l}` : id; };
-// "BR" = Brasil, todos os estados (só recortes nacionais na lista)
-const ufAtual = (sel, ids) => ufDe(sel) || (UFN[UFSEL] ? UFSEL : "BR");
-const NAC_UF = ["coop", "sicoob", "sicredi", "solteiras"];                       // recortes nacionais que têm versão por estado
-const paraNacional = (id) => id === "crediminas" || id === "cecremge" ? "coop" : (/^(coop|sicoob|sicredi|solteiras)_[a-z]{2}$/.exec(id) || [])[1] || id;
-// ids: recortes que a aba aceita; sel: o atual; set(id): grava o novo. o.label muda o rótulo ("Grupo de comparação").
+let RSET = null;                                    // filtro da aba atual: { ids, set, base, uf, central, onUF }
+// recorte efetivo -> Estado, Recorte (nacional) e Central
+function decompoe(id) {
+  if (ehCentral(id)) { const c = RECORTES.get(id); return { base: c.sis && RECORTES.has(c.sis) ? c.sis : "coop", central: id, uf: UFSEL === "BR" || (c.ufs || []).includes(UFSEL) ? UFSEL : (c.uf || "BR") }; }
+  const m = RE_UF.exec(id || ""); if (m) return { base: m[1], uf: m[2].toUpperCase(), central: "" };
+  return { base: id, uf: UFN[UFSEL] ? UFSEL : "BR", central: "" };
+}
+const efetivo = (ids, base, uf, central) => central || (uf !== "BR" && BASES_UF.includes(base) && ids.has(`${base}_${uf.toLowerCase()}`) ? `${base}_${uf.toLowerCase()}` : base);
+const centraisDe = (ids, base, uf) => [...ids].filter(i => ehCentral(i)).map(i => RECORTES.get(i))
+  .filter(c => (base === "coop" || c.sis === base) && (uf === "BR" || (c.ufs || []).includes(uf)))
+  .sort((a, b) => (b.uf === uf) - (a.uf === uf) || (a.id === "crediminas" ? -1 : b.id === "crediminas" ? 1 : 0) || a.nome.localeCompare(b.nome, "pt-BR"));
+// Estado -> Recorte -> Central. ids: recortes que a aba aceita; sel: o atual; set(id): grava o novo. o.label muda o rótulo do Recorte.
 function seletorRecorte(ids, sel, set, o = {}) {
-  ids = ids.filter(i => RECORTES.has(i)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
+  ids = ids.filter(i => RECORTES.has(i));
   if (!ids.includes(sel)) { sel = ids.includes("coop") ? "coop" : ids[0]; set(sel); }     // recorte salvo que não existe mais
-  RSET = { ids: new Set(ids), sel, set, onUF: o.onUF };
-  const uf = ufAtual(sel, ids), ufs = UFS_ORD;                                   // lista completa: Brasil e as 27 UFs
-  const G = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas ${emUF(uf)}`], ["banco", "Bancos"]].filter(([g]) => g !== "uf" || uf !== "BR");
-  const opt = (id) => `<option value="${id}"${id === sel ? " selected" : ""}>${esc(RECORTES.get(id).nome)}</option>`;
-  const grupos = G.map(([g, nm]) => { const l = ids.filter(i => RECORTES.get(i).grupo === g && (g !== "uf" || ufDe(i) === uf)); return l.length ? `<optgroup label="${esc(nm)}">${l.map(opt).join("")}</optgroup>` : g === "uf" ? `<optgroup label="${esc(nm)}"><option disabled>Sem cooperativa com sede no estado nesta base</option></optgroup>` : ""; }).join("");
-  const est = ids.some(i => ufDe(i)) ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${["BR", ...ufs].map(u => `<option value="${u}"${u === uf ? " selected" : ""}>${u === "BR" ? "Brasil (todos)" : esc(UFN[u])}</option>`).join("")}</select></label>` : "";
-  return `<div class="recsel">${est}<label class="fgroup"><span class="flabel">${esc(o.label || "Recorte")}</span><select class="sel sel-rec" data-recorte aria-label="${esc(o.label || "Recorte")}">${grupos}</select></label></div>`;
+  const I = new Set(ids), d = decompoe(sel);
+  RSET = { ids: I, set, onUF: o.onUF, ...d };
+  const nac = ids.filter(i => ["agregado", "conglomerado", "sistema", "banco"].includes(RECORTES.get(i).grupo)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
+  if (!nac.includes(d.base)) nac.push(d.base);
+  const G = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Sistemas cooperativos"], ["banco", "Bancos"]];
+  const rot = (i) => d.uf !== "BR" && BASES_UF.includes(i) ? (I.has(`${i}_${d.uf.toLowerCase()}`) ? `${rNome(i)} · ${d.uf}` : `${rNome(i)} (sem sede em ${d.uf})`) : rNome(i);
+  const grupos = G.map(([g, nm]) => { const l = nac.filter(i => RECORTES.get(i)?.grupo === g); return l.length ? `<optgroup label="${esc(nm)}">${l.map(i => `<option value="${i}"${i === d.base ? " selected" : ""}>${esc(rot(i))}</option>`).join("")}</optgroup>` : ""; }).join("");
+  const temUF = ids.some(i => ufDe(i) || ehCentral(i));
+  const est = temUF ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${["BR", ...UFS_ORD].map(u => `<option value="${u}"${u === d.uf ? " selected" : ""}>${u === "BR" ? "Brasil (todos)" : esc(UFN[u])}</option>`).join("")}</select></label>` : "";
+  const cs = BASES_UF.includes(d.base) && d.base !== "solteiras" ? centraisDe(I, d.base, d.uf) : [];
+  const cen = cs.length ? `<label class="fgroup"><span class="flabel">Central</span><select class="sel" data-central aria-label="Central de filiação">
+    <option value="">Todas as centrais${d.uf !== "BR" ? " · " + d.uf : ""}</option>${cs.map(c => `<option value="${c.id}"${c.id === d.central ? " selected" : ""}>${esc(c.nome)}${c.uf ? ` (${c.uf})` : ""}</option>`).join("")}</select></label>` : "";
+  return `<div class="recsel">${est}<label class="fgroup"><span class="flabel">${esc(o.label || "Recorte")}</span><select class="sel sel-rec" data-recorte aria-label="${esc(o.label || "Recorte")}">${grupos}</select></label>${cen}</div>`;
 }
 document.addEventListener("change", (ev) => {
-  const t = ev.target;
-  if (t.matches("[data-recorte]") && RSET) { RSET.set(t.value); render(); }
-  else if (t.matches("[data-ufsel]") && RSET) {
+  const t = ev.target; if (!RSET) return;
+  if (t.matches("[data-recorte]")) { RSET.set(efetivo(RSET.ids, t.value, RSET.uf, "")); render(); }
+  else if (t.matches("[data-central]")) { RSET.set(t.value || efetivo(RSET.ids, RSET.base, RSET.uf, "")); render(); }
+  else if (t.matches("[data-ufsel]")) {
     UFSEL = t.value; try { localStorage.setItem("uf-sel", UFSEL); } catch (e) {}
-    const atual = RSET.sel, l = UFSEL.toLowerCase(), tem = (x) => RSET.ids.has(x);
-    let novo = atual;
-    if (UFSEL === "BR") novo = paraNacional(atual);                                     // Brasil: volta ao recorte nacional
-    else if (ufDe(atual)) { const t = trocaUF(atual, UFSEL); novo = tem(t) ? t : tem("coop_" + l) ? "coop_" + l : atual; }
-    else if (NAC_UF.includes(atual) && tem(`${atual}_${l}`)) novo = `${atual}_${l}`;   // Sicoob -> Sicoob SP etc.
-    RSET.set(tem(novo) ? novo : atual);
+    const c = RSET.central && (UFSEL === "BR" || (RECORTES.get(RSET.central).ufs || []).includes(UFSEL)) ? RSET.central : "";   // central segue se atua no estado
+    RSET.set(efetivo(RSET.ids, RSET.base, UFSEL, c));
     if (RSET.onUF) RSET.onUF(UFSEL);
     render();
   }
 });
-// UF do recorte atual ou a escolhida no seletor: define a opção de local (operação/tomador) ao lado de "Brasil"
-const ufLocal = () => ufAtual(RSET?.sel, RSET ? [...RSET.ids] : []);
+// estado mostrado no filtro: define a opção de local da operação ao lado de "Brasil"
+const ufLocal = () => RSET?.uf || "BR";
 // arquivos por UF (safra_uf/SP.json, risco_uf/SP.json): carregados uma vez e fundidos no objeto da base
 const UFCACHE = {};
 function fundir(a, b) { for (const k in b) { if (b[k] && typeof b[k] === "object" && !Array.isArray(b[k]) && a[k] && typeof a[k] === "object") fundir(a[k], b[k]); else a[k] = b[k]; } return a; }
@@ -616,7 +635,8 @@ function cortes() {
 }
 function escopos() {
   const uf = ufLocal();
-  const items = D.escopos.filter(e => e.id !== "sfn" && (!ufDe(e.id) || ufDe(e.id) === uf) && comp(e.id)).map(e => {
+  const vale = (id) => id === st.esc || (ehCentral(id) ? ufDe(id) === uf : !ufDe(id) || ufDe(id) === uf);   // nacionais, recortes do estado e centrais de MG
+  const items = D.escopos.filter(e => e.id !== "sfn" && vale(e.id) && comp(e.id)).map(e => {
     const c = comp(e.id); return { id: e.id, name: e.nome, v: c && val(c.p) > 0 ? pct(val(c.a), val(c.p)) : null, c: cor(e.cor), sel: e.id === st.esc, a: c ? val(c.a) : 0 };
   });
   const sfn = comp("sfn"); items.unshift({ id: "sfn", name: "SFN", v: pct(val(sfn.a), val(sfn.p)), c: cor("#2B2F33"), sel: st.esc === "sfn", a: val(sfn.a) });
@@ -1033,7 +1053,7 @@ function carregaRisco() {
 let P = null, Perr = "";
 const ps = { uni: "crediminas", x: "cresc", y: "ap", tri: "", dest: "", modo: "inst" };
 // grupos de comparação (mapa e rankings): cooperativas por sistema e por estado, todas as cooperativas, bancos, 5 maiores e digitais
-const uniIds = () => ["coop", "bancos", ...P.escopos.filter(e => e.grupo === "sistema" || ufDe(e.id)).map(e => e.id), "top5d"];
+const uniIds = () => ["coop", "bancos", ...P.escopos.filter(e => e.grupo === "sistema" || e.grupo === "central" || ufDe(e.id)).map(e => e.id), "top5d"];
 const PRESETS = [["Crescimento × risco", "cresc", "ap"], ["Rentabilidade × risco", "ap", "roe"], ["Capital × risco", "ap", "basil"],
   ["Eficiência × rentabilidade", "efic", "roe"], ["Rural × inadimplência", "rural", "inad"], ["Provisão × cobertura", "prov", "cob"]];
 const pm = (id) => P.metricas.find(m => m.id === id);
@@ -2549,8 +2569,8 @@ function renderQuadroTab() {
     const shown = qd.all || qd.busca ? list : list.slice(0, 50);
     const th = QC().map(([id, n, u, m, f]) => `<th class="num"><button type="button" class="qsort" data-qdord="${id}" aria-pressed="${qd.ord === id}" title="${esc(f)} · clique para ordenar">${esc(n)}${qd.ord === id ? (qd.dir === "desc" ? " ↓" : " ↑") : ""}</button></th>`).join("");
     const linha = (nome, a, b, cls = "", num = "", cmp = true) => `<tr class="${cls}"><td class="num qn">${num}</td><td class="qinst">${nome}</td>${QC().map(([id, , u, m]) => qCell(id, u, m, a, b, cmp ? B : null, B12)).join("")}</tr>`;
-    const ufB = ufDe(qd.grp) || ufDe(bk) || (UFSEL === "BR" ? "MG" : UFSEL), GQ = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas ${emUF(ufB)}`], ["banco", "Bancos"]];
-    const opts = GQ.map(([g, nm]) => { const l = qIds().filter(k => RECORTES.get(k).grupo === g && (g !== "uf" || ufDe(k) === ufB || k === bk)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
+    const ufB = ufDe(qd.grp) || ufDe(bk) || (UFSEL === "BR" ? "MG" : UFSEL), GQ = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas ${emUF(ufB)}`], ["central", `Centrais com filiadas ${emUF(ufB)}`], ["banco", "Bancos"]];
+    const opts = GQ.map(([g, nm]) => { const l = qIds().filter(k => RECORTES.get(k).grupo === g && (g === "uf" ? ufDe(k) === ufB || k === bk : g === "central" ? (RECORTES.get(k).ufs || []).includes(ufB) || k === bk : true)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
       return l.length ? `<optgroup label="${esc(nm)}">${l.map(k => `<option value="${k}"${k === bk ? " selected" : ""}>${esc(QNOME[k])}${k === qd.grp ? " (o próprio grupo)" : ""}</option>`).join("")}</optgroup>` : ""; }).join("");
     const nomeI = (i) => `<div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}<small>${esc((i.nome || "").slice(0, 40))}${i.uf ? " · " + i.uf : ""}</small></span></div>`;
     const ativo = document.activeElement?.id === "qdbusca";
@@ -2596,7 +2616,7 @@ function renderFontes() {
     ["Bancos", "Conglomerados prudenciais (IF.data e Cosif) ou segmento Banco (SCR.data)."], ["Cooperativas", "Cooperativas singulares. Centrais ficam fora das somas, porque o crédito delas é repasse às singulares."],
     ["Conglomerado Sicoob / Sicredi", "Singulares do sistema + banco cooperativo (Banco Sicoob, Banco Sicredi). No SICOR, também as centrais."], ["Sicoob, Sicredi, Cresol, Unicred, Ailos, Credisis, Uniprime", "Singulares do sistema, pela central de filiação no cadastro do BC (e pelo nome da cooperativa). Só Sicoob e Sicredi têm banco cooperativo, por isso só eles têm conglomerado."],
     ["Cooperativas solteiras", "Singulares sem central de filiação no cadastro do BC."],
-    ["Recortes por estado", "Cooperativas, Sicoob, Sicredi e solteiras com sede na UF escolhida (cadastro do BC). Em MG também Central Crediminas e Central Cecremge, as singulares filiadas a cada central na relação atual do BC. Na Safra, o local da operação é outra coisa: a UF do empreendimento, de qualquer instituição."],
+    ["Filtro Estado → Recorte → Central", "Estado: Brasil (todos) ou uma UF. Com uma UF, os recortes de cooperativas passam a ser os da UF da sede (ex.: Sicoob SP = singulares Sicoob com sede em SP). Central: cada central de filiação do cadastro do BC, com todas as suas filiadas, de qualquer estado; a lista mostra as centrais do sistema com filiadas no estado escolhido. Na Safra, o local da operação é outra coisa: a UF do empreendimento, de qualquer instituição."],
     ["5 maiores bancos", "Itaú, BB, Bradesco, Caixa e Santander, por conglomerado prudencial."], ["Bancos digitais", "Lista fixa: Nubank, Inter, C6, PagBank, Mercado Pago e BTG, quando presentes na base."]];
   const RG = [["Organização das abas", "Dois grupos. Grandes números do SFN (Visão geral e Crédito rural no SFN): séries que só existem para o sistema inteiro ou por segmento (SGS e SCR.data), sem filtro de instituição. Sistemas, centrais e instituições (da Safra à Ficha): o recorte escolhido no filtro, com o SFN como referência."], ["Nunca estimar", "Número que deveria vir de uma fonte e não foi encontrado aparece como “—” ou “sem dado”, com o motivo."],
     ["Data e fonte", "Todo número leva a data de referência e a fonte, com link. Dado novo nos últimos 7 dias recebe o selo “novo”."],

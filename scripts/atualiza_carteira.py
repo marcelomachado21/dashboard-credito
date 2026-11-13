@@ -131,8 +131,9 @@ sgs_ref = max(p[-1][0] for c, p in series.items() if SGS[c][1] in ("saldo", "con
 
 # ---------- 2. Cosif ----------
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__))); from cadastro import sedes_coop
-from escopos import lista as lista_escopos, saida as saida_escopos, sistema_de, central_de, escopos_cooperativa   # cadastro protegido contra falhas do BC
+from escopos import lista as lista_escopos, saida as saida_escopos, sistema_de, central_de, escopos_cooperativa, prepara as prepara_centrais   # cadastro protegido contra falhas do BC
 coop = sedes_coop(lambda p: getjson(f"{OLINDA}/{p}")["value"])
+prepara_centrais(coop)
 DP = {r["cnpj"]: r for r in csv.DictReader(open(DEPARA, encoding="utf-8"), delimiter=";")} if os.path.exists(DEPARA) else {}
 INC = {r["cnpj_incorporada"]: r["cnpj_incorporadora"] for r in csv.DictReader(open(INCORP, encoding="utf-8"), delimiter=";")} if os.path.exists(INCORP) else {}
 def suc(c, n=0): return suc(INC[c], n + 1) if c in INC and n < 10 else c
