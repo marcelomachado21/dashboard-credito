@@ -16,6 +16,9 @@ RAIZ = os.path.dirname(AQUI)
 DATA = os.path.join(RAIZ, "site", "data")
 RAW = os.path.abspath(os.environ.get("RAW_DIR", os.path.join(RAIZ, "raw")))
 FORCAR = "--forcar" in sys.argv
+_arg = lambda k: next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith(k + "=")), None)
+SO, EXCETO = _arg("--so"), _arg("--exceto") or []      # ex.: --so=territorio (terça) ou --exceto=territorio (segunda)
+TEMPO = {"territorio": 3 * 3600}                          # limite por script, em segundos (padrão 60 min)
 HOJE = datetime.date.today().isoformat()
 
 BASES = [  # (arquivo, script, pasta de brutos)
@@ -28,7 +31,7 @@ BASES = [  # (arquivo, script, pasta de brutos)
     ("territorio", "atualiza_territorio.py", os.path.join(RAW, "sicor")),
 ]
 EXTRA = {}     # arquivos gerados pelo mesmo script, validados e trocados à parte
-SUBDIR = {"safra": "safra_uf"}   # arquivos por UF, trocados junto com o arquivo principal
+SUBDIR = {"safra": "safra_uf", "territorio": "territorio_uf"}   # arquivos por UF, trocados junto com o arquivo principal
 
 
 def ler(p):
@@ -120,11 +123,15 @@ def chk_focus(n, a):
 
 
 def chk_territorio(n, a):
+    """Brasil por UF (cada UF tem seu arquivo em territorio_uf/; UF que falha fica com o anterior e aparece em meta.ufs)."""
     nao_recua(n["meta"]["ref"], (a or {}).get("meta", {}).get("ref"), "referência do território")
-    if len(n["mun"]) < 700: raise AssertionError(f"só {len(n['mun'])} municípios de MG com custeio ou investimento")
-    tot = sum(v[0] + v[1] for v in n["mun"].values()) / 1000
-    faixa(tot if n["meta"]["mes_limite"] >= 2 else 50, 5, 80, "custeio + investimento em MG na safra (R$ bi)")
-    if sum(1 for r in n.get("mun_reg", {}).values() if r.get("mi") and r.get("ri")) < 800: raise AssertionError("tabela de regiões do IBGE incompleta")
+    ok = [u for u, x in n["meta"]["ufs"].items() if x.get("situacao") == "ok"]
+    if len(ok) < 14: raise AssertionError(f"só {len(ok)} UFs com dado novo do SICOR por município")
+    if n["meta"]["ufs"].get("MG", {}).get("situacao") != "ok": raise AssertionError("MG sem dado novo")
+    if n["meta"]["ufs"]["MG"].get("municipios", 0) < 700: raise AssertionError(f"só {n['meta']['ufs']['MG'].get('municipios')} municípios de MG com operação")
+    if len(n["mun"]) < 25: raise AssertionError(f"só {len(n['mun'])} UFs no total do Brasil")
+    tot = sum(v[4] + v[5] for v in n["mun"].values()) / 1000
+    faixa(tot, 150, 900, "custeio + investimento no Brasil na safra anterior inteira (R$ bi)")
 
 
 CHK = {"focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
@@ -203,18 +210,21 @@ def main():
         if os.path.isdir(os.path.join(DATA, sd)): shutil.copytree(os.path.join(DATA, sd), os.path.join(tmp, sd))
     bases = {}
     for nome, script, raw in BASES:
+        if (SO and nome not in SO) or nome in EXCETO:          # base de outro dia: mantém a situação anterior
+            if nome in status_ant.get("bases", {}): bases[nome] = status_ant["bases"][nome]
+            continue
         os.makedirs(raw, exist_ok=True)
         p_pub, p_tmp = os.path.join(DATA, nome + ".json"), os.path.join(tmp, nome + ".json")
         antes = open(p_tmp, "rb").read() if os.path.exists(p_tmp) else b""
         cmd = [sys.executable, "-I", os.path.join(AQUI, script), raw, tmp] + ([] if FORCAR else ["--se-mudou"])
         ti = time.time(); r = None
         try:
-            r = subprocess.run(cmd, capture_output=True, text=True, timeout=3600)
+            r = subprocess.run(cmd, capture_output=True, text=True, timeout=TEMPO.get(nome, 3600))
         except subprocess.TimeoutExpired:
             pass
         ok_run = r is not None and r.returncode == 0
-        saida = (r.stdout.strip().splitlines() or [""])[-1][:300] if r else "tempo esgotado (60 min)"
-        b = {"segundos": round(time.time() - ti), "saida": saida}
+        saida = (r.stdout.strip().splitlines() or [""])[-1][:300] if r else f"tempo esgotado ({TEMPO.get(nome, 3600) // 60} min)"
+        b = {"segundos": round(time.time() - ti), "saida": saida, "verificado": HOJE}
         if not ok_run:
             b.update(situacao="falhou", motivo=((r.stderr.strip().splitlines() or ["sem mensagem"])[-1][:300] if r else saida))
             if os.path.exists(p_pub): shutil.copy2(p_pub, p_tmp)
@@ -232,6 +242,9 @@ def main():
                 except Exception as e:
                     b.update(situacao="reprovado", motivo=f"{type(e).__name__}: {e}"[:300])
         b["ref"] = ref_de(nome, ler(p_pub))
+        if nome == "territorio":                                  # UFs que ficaram com o dado anterior
+            mt = [f"{u} ({x.get('motivo', '')[:60]})" for u, x in ((ler(p_pub) or {}).get("meta", {}).get("ufs") or {}).items() if x.get("situacao") != "ok"]
+            if mt: b["alerta"] = "UFs com o dado anterior: " + "; ".join(mt)
         bases[nome] = b
         for ex in EXTRA.get(nome, []):       # saídas extras do mesmo script
             pe_pub, pe_tmp = os.path.join(DATA, ex + ".json"), os.path.join(tmp, ex + ".json")

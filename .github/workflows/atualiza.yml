@@ -1,16 +1,21 @@
 name: Atualizar dados do Banco Central
 on:
   schedule:
-    - cron: "22 7 * * 1"        # segunda-feira, 4h22 em Brasília (07h22 UTC)
+    - cron: "22 7 * * 1"        # segunda-feira, 4h22 em Brasília: todas as bases menos o território
+    - cron: "22 7 * * 2"        # terça-feira, 4h22 em Brasília: território (SICOR por município, todas as UFs)
   workflow_dispatch:
     inputs:
       forcar:
-        description: "Reprocessar todas as bases (ignora a checagem de mudança)"
+        description: "Reprocessar (ignora a checagem de mudança)"
         type: boolean
         default: false
+      bases:
+        description: "Bases a rodar, separadas por vírgula (vazio = todas menos o território; ex.: territorio)"
+        type: string
+        default: ""
   push:
     branches: [main]
-    paths: ["scripts/**", ".github/workflows/atualiza.yml"]   # mudança nos scripts: reprocessa tudo para testar
+    paths: ["scripts/**", ".github/workflows/atualiza.yml"]   # mudança nos scripts: reprocessa (menos o território) para testar
 permissions:
   contents: write
   pages: write
@@ -21,7 +26,7 @@ concurrency:
 jobs:
   atualiza:
     runs-on: ubuntu-latest
-    timeout-minutes: 150
+    timeout-minutes: 240
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -30,24 +35,36 @@ jobs:
           cache: pip
           cache-dependency-path: scripts/requirements.txt
       - run: pip install -r scripts/requirements.txt
+      - name: Trazer os dados publicados (ramo dados)
+        run: |
+          # os dados ficam no ramo "dados", só com a última versão (sem acumular histórico); "dados-anterior" guarda a penúltima
+          rm -rf site/data && mkdir -p site/data
+          git fetch -q --depth 1 origin dados
+          git archive FETCH_HEAD | tar -x -C site/data
       - name: Verificar e atualizar as bases
         env:
           RAW_DIR: ${{ runner.temp }}/raw
         run: |
-          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.forcar }}" = "true" ]; then
-            python3 -I scripts/atualiza_tudo.py --forcar
-          else
-            python3 -I scripts/atualiza_tudo.py
-          fi
-      - name: Gravar os dados no repositório
+          ARGS=""
+          if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.forcar }}" = "true" ]; then ARGS="--forcar"; fi
+          if [ "${{ github.event.schedule }}" = "22 7 * * 2" ]; then ARGS="$ARGS --so=territorio"
+          elif [ -n "${{ inputs.bases }}" ]; then ARGS="$ARGS --so=${{ inputs.bases }}"
+          else ARGS="$ARGS --exceto=territorio"; fi
+          echo "argumentos: $ARGS"
+          python3 -I scripts/atualiza_tudo.py $ARGS
+      - name: Gravar os dados (ramo dados, só a última versão)
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd site/data
+          git init -q -b dados
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add site/data
-          git diff --cached --quiet && exit 0
-          git commit -m "Dados: verificação de $(TZ=America/Sao_Paulo date +%d/%m/%Y)"
-          for i in 1 2 3; do git pull --rebase -X theirs -q origin main && git push origin HEAD:main && exit 0; git rebase --abort 2>/dev/null; sleep 10; done
-          exit 1
+          git add -A
+          git commit -qm "Dados: verificação de $(TZ=America/Sao_Paulo date +%d/%m/%Y)"
+          git remote add origin "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git"
+          git fetch -q --depth 1 origin dados && git push -q -f origin FETCH_HEAD:refs/heads/dados-anterior || true
+          git push -q -f origin dados
   publica:
     needs: atualiza
     uses: ./.github/workflows/pages.yml

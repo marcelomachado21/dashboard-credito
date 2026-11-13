@@ -1,4 +1,5 @@
+*.pyc
+__pycache__/
 raw/
 raw_risco/
-__pycache__/
-*.pyc
+site/data/

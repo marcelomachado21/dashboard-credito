@@ -21,6 +21,9 @@ DIAS = 6
 def _fil(x): return (x.get("FILIACAO") or "").strip()
 
 
+def _br(d): return datetime.date.fromisoformat(d).strftime("%d/%m/%Y") if isinstance(d, str) else d.strftime("%d/%m/%Y")
+
+
 def sedes_coop(fetch):
     """fetch(path_olinda) -> lista de registros. Devolve {CNPJ: registro} já protegido."""
     hoje = datetime.date.today()
@@ -37,13 +40,13 @@ def sedes_coop(fetch):
         _salva(novo, {}, hoje); return novo
     velho, pend = snap["coop"], snap.get("pendentes", {})
     if len(novo) < 0.9 * len(velho):
-        msg = f"cadastro do BC veio com {len(novo)} cooperativas contra {len(velho)} em {hoje.isoformat()}; mantida a versão de {snap['data']}"
+        msg = f"o cadastro do BC veio com {len(novo)} cooperativas contra {len(velho)} em {_br(hoje)}; mantida a versão de {_br(snap['data'])}"
         print("aviso: " + msg, file=sys.stderr); _salva(velho, pend, datetime.date.fromisoformat(snap["data"]), msg)
         return velho
     sumiu = [c for c in novo if c in velho and _fil(velho[c]) and not _fil(novo[c])]
     com_fil = sum(1 for x in velho.values() if _fil(x))
     if com_fil and len(sumiu) > 0.15 * com_fil:
-        msg = f"{len(sumiu)} filiações vieram vazias de uma vez no cadastro do BC em {hoje.isoformat()}; mantida a versão de {snap['data']}"
+        msg = f"{len(sumiu)} cooperativas vieram sem central de filiação no cadastro do BC em {_br(hoje)}; mantida a versão de {_br(snap['data'])}"
         print("aviso: " + msg, file=sys.stderr); _salva(velho, pend, datetime.date.fromisoformat(snap["data"]), msg)
         return velho
     out, pend2 = {}, {}
