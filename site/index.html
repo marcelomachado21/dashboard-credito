@@ -289,17 +289,20 @@ const rCor = (id) => RECORTES.get(id)?.cor || "#8A9097";
 let UFSEL = (() => { try { return localStorage.getItem("uf-sel") || "MG"; } catch (e) { return "MG"; } })();
 let RSET = null;                                    // recorte em edição na aba atual: { ids, sel, set }
 const trocaUF = (id, uf) => { const l = uf.toLowerCase(); if (id === "crediminas" || id === "cecremge") return "coop_" + l; const m = /^(coop|sicoob|sicredi|solteiras)_[a-z]{2}$/.exec(id); return m ? `${m[1]}_${l}` : id; };
-const ufAtual = (sel, ids) => { const u = ufDe(sel); if (u) return u; const tem = UFS_ORD.filter(x => ids.some(i => ufDe(i) === x)); return tem.includes(UFSEL) ? UFSEL : (tem[0] || UFSEL); };
+// "BR" = Brasil, todos os estados (só recortes nacionais na lista)
+const ufAtual = (sel, ids) => { const u = ufDe(sel); if (u) return u; const tem = UFS_ORD.filter(x => ids.some(i => ufDe(i) === x)); return tem.includes(UFSEL) ? UFSEL : "BR"; };
+const NAC_UF = ["coop", "sicoob", "sicredi", "solteiras"];                       // recortes nacionais que têm versão por estado
+const paraNacional = (id) => id === "crediminas" || id === "cecremge" ? "coop" : (/^(coop|sicoob|sicredi|solteiras)_[a-z]{2}$/.exec(id) || [])[1] || id;
 // ids: recortes que a aba aceita; sel: o atual; set(id): grava o novo. o.label muda o rótulo ("Grupo de comparação").
 function seletorRecorte(ids, sel, set, o = {}) {
   ids = ids.filter(i => RECORTES.has(i)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
   if (!ids.includes(sel)) { sel = ids.includes("coop") ? "coop" : ids[0]; set(sel); }     // recorte salvo que não existe mais
-  RSET = { ids: new Set(ids), sel, set };
+  RSET = { ids: new Set(ids), sel, set, onUF: o.onUF };
   const uf = ufAtual(sel, ids), ufs = UFS_ORD.filter(x => ids.some(i => ufDe(i) === x));
-  const G = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas em ${UFN[uf] || uf}`], ["banco", "Bancos"]];
+  const G = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas ${emUF(uf)}`], ["banco", "Bancos"]].filter(([g]) => g !== "uf" || uf !== "BR");
   const opt = (id) => `<option value="${id}"${id === sel ? " selected" : ""}>${esc(RECORTES.get(id).nome)}</option>`;
   const grupos = G.map(([g, nm]) => { const l = ids.filter(i => RECORTES.get(i).grupo === g && (g !== "uf" || ufDe(i) === uf)); return l.length ? `<optgroup label="${esc(nm)}">${l.map(opt).join("")}</optgroup>` : ""; }).join("");
-  const est = ufs.length ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${ufs.map(u => `<option value="${u}"${u === uf ? " selected" : ""}>${esc(UFN[u])}</option>`).join("")}</select></label>` : "";
+  const est = ufs.length ? `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-ufsel aria-label="Estado da sede das cooperativas">${["BR", ...ufs].map(u => `<option value="${u}"${u === uf ? " selected" : ""}>${u === "BR" ? "Brasil (todos)" : esc(UFN[u])}</option>`).join("")}</select></label>` : "";
   return `<div class="recsel">${est}<label class="fgroup"><span class="flabel">${esc(o.label || "Recorte")}</span><select class="sel sel-rec" data-recorte aria-label="${esc(o.label || "Recorte")}">${grupos}</select></label></div>`;
 }
 document.addEventListener("change", (ev) => {
@@ -307,9 +310,13 @@ document.addEventListener("change", (ev) => {
   if (t.matches("[data-recorte]") && RSET) { RSET.set(t.value); render(); }
   else if (t.matches("[data-ufsel]") && RSET) {
     UFSEL = t.value; try { localStorage.setItem("uf-sel", UFSEL); } catch (e) {}
-    const atual = RSET.sel, novo = trocaUF(atual, UFSEL);
-    if (ufDe(atual)) RSET.set(RSET.ids.has(novo) ? novo : RSET.ids.has("coop_" + UFSEL.toLowerCase()) ? "coop_" + UFSEL.toLowerCase() : atual);
-    else RSET.set(atual);
+    const atual = RSET.sel, l = UFSEL.toLowerCase(), tem = (x) => RSET.ids.has(x);
+    let novo = atual;
+    if (UFSEL === "BR") novo = paraNacional(atual);                                     // Brasil: volta ao recorte nacional
+    else if (ufDe(atual)) { const t = trocaUF(atual, UFSEL); novo = tem(t) ? t : tem("coop_" + l) ? "coop_" + l : atual; }
+    else if (NAC_UF.includes(atual) && tem(`${atual}_${l}`)) novo = `${atual}_${l}`;   // Sicoob -> Sicoob SP etc.
+    RSET.set(tem(novo) ? novo : atual);
+    if (RSET.onUF) RSET.onUF(UFSEL);
     render();
   }
 });
@@ -512,7 +519,8 @@ const fonteLink = () => `<a href="${esc(D.meta.url)}" target="_blank" rel="noope
 /* ---------- filtros ---------- */
 const salvaSafra = () => { try { localStorage.setItem("safra-filtros", JSON.stringify({ esc: st.esc, geo: st.geo, fin: st.fin, safra: st.safra, per: st.per })); } catch (e) {} };
 function filtros() {
-  const rec = seletorRecorte(D.escopos.map(e => e.id), st.esc, (id) => { st.esc = id; const u = ufDe(id); if (u && st.geo !== "BR") st.geo = u; salvaSafra(); });
+  const rec = seletorRecorte(D.escopos.map(e => e.id), st.esc, (id) => { st.esc = id; const u = ufDe(id); if (u && st.geo !== "BR") st.geo = u; salvaSafra(); },
+    { onUF: (u) => { st.geo = u !== "BR" && (D.meta.ufs_operacao || ["MG"]).includes(u) ? u : "BR"; salvaSafra(); } });
   const uf = ufLocal(), ufOk = (D.meta.ufs_operacao || ["MG"]).includes(uf);
   if (st.geo !== "BR" && st.geo !== uf) st.geo = ufOk ? uf : "BR";
   $("#filters").innerHTML = `<div class="frow">${rec}</div>
@@ -553,7 +561,7 @@ function kpis() {
     ${k(`Contratado ${perNo()} ${safraLbl(s)}${fin}`, a >= 1000 ? nf(a / 1000, 1) : nf(a, 0), a >= 1000 ? " bi" : " mi", `${arrow(v1)}${sgn(v1)} contra ${brl(p)}`, cls(v1), `${ref} · contra ${pontoTxt()} · ${src}`)}
     ${k("Operações contratadas", nf(qa, 0), "", `${arrow(pct(qa, qp))}${sgn(pct(qa, qp))} contra ${nf(qp, 0)}`, cls(pct(qa, qp)), `${ref} · todas as finalidades · ${src}`)}
     ${k("Valor médio por operação", nf(tk, 0), " mil", `${arrow(pct(tk, tkp))}${sgn(pct(tk, tkp))} contra R$ ${nf(tkp, 0)} mil`, "flat", `${ref} · R$ mil${st.fin === "all" ? "" : " · valor da finalidade ÷ todas as operações"}`)}
-    ${st.esc === "sfn" ? (() => { const u = comp("sfn", ufLocal()) ? ufLocal() : "MG", cu = comp("sfn", u), cb = comp("sfn", "BR");
+    ${st.esc === "sfn" ? (() => { const u = ufLocal() !== "BR" && comp("sfn", ufLocal()) ? ufLocal() : "MG", cu = comp("sfn", u), cb = comp("sfn", "BR");
         return k(`Participação de ${u} no Brasil`, nf(val(cu.a) / val(cb.a) * 100, 1), "%", `${sgn(val(cu.a) / val(cb.a) * 100 - val(cu.p) / val(cb.p) * 100, 1, " p.p.")} sobre ${pontoTxt()}`, "flat", `${ref} · local da operação · ${src}`); })()
       : k(`Participação no SFN · ${geoNome()}`, nf(share, 1), "%", `${arrow(share - shareP)}${sgn(share - shareP, 1, " p.p.")} sobre ${nf(shareP, 1)}%`, cls(share - shareP), `${ref} · contra ${pontoTxt()} · ${src}`)}
     ${k(st.per === "safra" ? `Safra ${safraLbl(s - 1)} fechada` : `${perI()[1]} de ${safraLbl(s - 1)} fechado`, tot >= 1000 ? nf(tot / 1000, 1) : nf(tot, 0), tot >= 1000 ? " bi" : " mi", `${sgn(pct(tot, tot2))} sobre ${safraLbl(s - 2)}`, cls(pct(tot, tot2)), `${st.per === "safra" ? `jul/${String(s - 2).slice(2)} a jun/${String(s - 1).slice(2)}` : `${perMes()} de ${safraLbl(s - 1)}`} · ${src}`)}
@@ -2541,7 +2549,7 @@ function renderQuadroTab() {
     const shown = qd.all || qd.busca ? list : list.slice(0, 50);
     const th = QC().map(([id, n, u, m, f]) => `<th class="num"><button type="button" class="qsort" data-qdord="${id}" aria-pressed="${qd.ord === id}" title="${esc(f)} · clique para ordenar">${esc(n)}${qd.ord === id ? (qd.dir === "desc" ? " ↓" : " ↑") : ""}</button></th>`).join("");
     const linha = (nome, a, b, cls = "", num = "", cmp = true) => `<tr class="${cls}"><td class="num qn">${num}</td><td class="qinst">${nome}</td>${QC().map(([id, , u, m]) => qCell(id, u, m, a, b, cmp ? B : null, B12)).join("")}</tr>`;
-    const ufB = ufDe(qd.grp) || ufDe(bk) || UFSEL, GQ = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas em ${UFN[ufB] || ufB}`], ["banco", "Bancos"]];
+    const ufB = ufDe(qd.grp) || ufDe(bk) || (UFSEL === "BR" ? "MG" : UFSEL), GQ = [["agregado", "Agregados"], ["conglomerado", "Conglomerados (coop. + banco)"], ["sistema", "Cooperativas por sistema"], ["uf", `Cooperativas ${emUF(ufB)}`], ["banco", "Bancos"]];
     const opts = GQ.map(([g, nm]) => { const l = qIds().filter(k => RECORTES.get(k).grupo === g && (g !== "uf" || ufDe(k) === ufB || k === bk)).sort((a, b) => RECORTES.get(a).ord - RECORTES.get(b).ord);
       return l.length ? `<optgroup label="${esc(nm)}">${l.map(k => `<option value="${k}"${k === bk ? " selected" : ""}>${esc(QNOME[k])}${k === qd.grp ? " (o próprio grupo)" : ""}</option>`).join("")}</optgroup>` : ""; }).join("");
     const nomeI = (i) => `<div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}<small>${esc((i.nome || "").slice(0, 40))}${i.uf ? " · " + i.uf : ""}</small></span></div>`;
