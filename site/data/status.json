@@ -1,17 +1,17 @@
 {
- "verificado_em": "2026-11-13T12:55:55+00:00",
+ "verificado_em": "2026-11-13T14:10:27+00:00",
  "forcado": true,
- "segundos": 8564,
+ "segundos": 1469,
  "bases": {
   "safra": {
-   "segundos": 265,
-   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 1380, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "segundos": 342,
+   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 1416, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "atualizado",
    "ref": "2026-10-30"
   },
   "risco": {
-   "segundos": 2410,
-   "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 836}",
+   "segundos": 265,
+   "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 1017}",
    "situacao": "atualizado",
    "ref": {
     "scr": "2026-09",
@@ -20,21 +20,20 @@
    }
   },
   "posicao": {
-   "segundos": 2418,
-   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 4, \"instituicoes\": 1068, \"kb\": 1296}",
-   "situacao": "reprovado",
-   "motivo": "AssertionError: trimestres incompletos: ['2025-09', '2025-12', '2026-03', '2026-06'] (antes ['2025-03', '2025-06', '2025-09', '2025-12', '2026-03', '2026-06'])",
+   "segundos": 167,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 1078, \"kb\": 1972}",
+   "situacao": "atualizado",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 16,
-   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 2975}",
+   "segundos": 15,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 3483}",
    "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 35,
-   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 849, \"erros\": [], \"kb\": 422}",
+   "segundos": 37,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 849, \"erros\": [], \"kb\": 655}",
    "situacao": "atualizado",
    "ref": {
     "sgs": "2026-09",
@@ -42,16 +41,15 @@
    }
   },
   "focus": {
-   "segundos": 7,
+   "segundos": 10,
    "saida": "{\"focus\": \"2026-11-06\", \"kb\": 24}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": "2026-11-06"
   },
   "territorio": {
-   "segundos": 3412,
-   "saida": "",
-   "situacao": "falhou",
-   "motivo": "urllib.error.HTTPError: HTTP Error 500: Internal Server Error",
+   "segundos": 632,
+   "saida": "{\"territorio\": \"2026-09\", \"municipios\": 840, \"linhas\": 183965, \"kb\": 394}",
+   "situacao": "atualizado",
    "ref": "2026-09"
   },
   "cadastro": {
