@@ -1,17 +1,17 @@
 {
- "verificado_em": "2026-11-13T14:10:27+00:00",
+ "verificado_em": "2026-11-13T14:49:00+00:00",
  "forcado": true,
- "segundos": 1469,
+ "segundos": 1544,
  "bases": {
   "safra": {
-   "segundos": 342,
-   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 1416, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "segundos": 416,
+   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 2012, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
    "situacao": "atualizado",
    "ref": "2026-10-30"
   },
   "risco": {
-   "segundos": 265,
-   "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 1017}",
+   "segundos": 289,
+   "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 1138}",
    "situacao": "atualizado",
    "ref": {
     "scr": "2026-09",
@@ -20,20 +20,20 @@
    }
   },
   "posicao": {
-   "segundos": 167,
-   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 1078, \"kb\": 1972}",
+   "segundos": 190,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 1078, \"kb\": 2064}",
    "situacao": "atualizado",
    "ref": "2026-06"
   },
   "resultados": {
-   "segundos": 15,
-   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 3483}",
+   "segundos": 22,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 4170}",
    "situacao": "atualizado",
    "ref": "2026-06"
   },
   "carteira": {
-   "segundos": 37,
-   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 849, \"erros\": [], \"kb\": 655}",
+   "segundos": 48,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 849, \"erros\": [], \"kb\": 807}",
    "situacao": "atualizado",
    "ref": {
     "sgs": "2026-09",
@@ -41,15 +41,15 @@
    }
   },
   "focus": {
-   "segundos": 10,
+   "segundos": 11,
    "saida": "{\"focus\": \"2026-11-06\", \"kb\": 24}",
    "situacao": "sem mudança",
    "ref": "2026-11-06"
   },
   "territorio": {
-   "segundos": 632,
+   "segundos": 567,
    "saida": "{\"territorio\": \"2026-09\", \"municipios\": 840, \"linhas\": 183965, \"kb\": 394}",
-   "situacao": "atualizado",
+   "situacao": "sem mudança",
    "ref": "2026-09"
   },
   "cadastro": {
