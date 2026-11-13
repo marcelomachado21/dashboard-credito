@@ -1,0 +1,70 @@
+{
+ "verificado_em": "2026-11-13T21:19:43+00:00",
+ "forcado": true,
+ "segundos": 1573,
+ "bases": {
+  "safra": {
+   "segundos": 428,
+   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 2011, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "verificado": "2026-11-13",
+   "situacao": "sem mudança",
+   "ref": "2026-10-30"
+  },
+  "risco": {
+   "segundos": 224,
+   "saida": "{\"risco\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}, \"kb\": 1138}",
+   "verificado": "2026-11-13",
+   "situacao": "sem mudança",
+   "ref": {
+    "scr": "2026-09",
+    "cosif": "2026-06",
+    "ifd": "2026-06"
+   }
+  },
+  "posicao": {
+   "segundos": 139,
+   "saida": "{\"posicao\": \"2026-06\", \"trimestres\": 6, \"instituicoes\": 1078, \"kb\": 2065}",
+   "verificado": "2026-11-13",
+   "situacao": "sem mudança",
+   "ref": "2026-06"
+  },
+  "resultados": {
+   "segundos": 19,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 4170}",
+   "verificado": "2026-11-13",
+   "situacao": "sem mudança",
+   "ref": "2026-06"
+  },
+  "carteira": {
+   "segundos": 71,
+   "saida": "{\"carteira\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}, \"instituicoes\": 849, \"erros\": [], \"kb\": 807}",
+   "verificado": "2026-11-13",
+   "situacao": "sem mudança",
+   "ref": {
+    "sgs": "2026-09",
+    "cosif": "2026-06"
+   }
+  },
+  "focus": {
+   "segundos": 8,
+   "saida": "{\"focus\": \"2026-11-06\", \"kb\": 24}",
+   "verificado": "2026-11-13",
+   "situacao": "sem mudança",
+   "ref": "2026-11-06"
+  },
+  "territorio": {
+   "segundos": 1573,
+   "saida": "{\"territorio\": \"2026-09\", \"ufs_ok\": 26, \"ufs_mantidas\": [\"AP\"], \"linhas\": 1520961}",
+   "verificado": "2026-11-13",
+   "situacao": "atualizado",
+   "ref": "2026-09",
+   "alerta": "UFs com o dado anterior: AP (HTTP Error 500: Internal Server Error)"
+  },
+  "cadastro": {
+   "situacao": "alerta",
+   "ref": "2026-11-13",
+   "motivo": "31 filiações vazias aguardando confirmação"
+  }
+ },
+ "ultima_atualizacao": "2026-11-13"
+}
