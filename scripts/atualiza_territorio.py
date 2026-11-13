@@ -52,7 +52,7 @@ def baixa(ep, cod, ano, top=200000):
     """A API falha com $skip; consulta UF e ano de uma vez e, se falhar, mês a mês."""
     q = lambda f: f"{B}{ep}?$format=json&$top={top}&$filter=" + urllib.parse.quote(f)
     try:
-        v = get(q(f"cdEstado eq '{cod}' and AnoEmissao eq '{ano}'"), tries=3)
+        v = get(q(f"cdEstado eq '{cod}' and AnoEmissao eq '{ano}'"), tries=4)
         if len(v) >= top: raise RuntimeError("resposta truncada")
         return v
     except Exception:
@@ -94,7 +94,12 @@ def baixa_uf(cod):
 
 # MG primeiro: define o mês de referência; as demais UFs seguem, três consultas por vez (a API não aguenta muito mais)
 ERROS = {}
-_, CUS_MG, INV_MG = baixa_uf("12")
+for _t in range(3):                      # MG define a referência: até três tentativas antes de desistir da rodada
+    try:
+        _, CUS_MG, INV_MG = baixa_uf("12"); break
+    except Exception as e:
+        if _t == 2: raise
+        print(f"aviso: MG falhou na tentativa {_t + 1} ({e}); nova tentativa em 3 minutos", file=sys.stderr); time.sleep(180)
 if not CUS_MG: raise RuntimeError("API do SICOR sem custeio para MG")
 REF = min(ULT_OK, max(mes(x) for x in CUS_MG + INV_MG))
 if ANT and REF < ANT["meta"]["ref"]: REF = ANT["meta"]["ref"]
