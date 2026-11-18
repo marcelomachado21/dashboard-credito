@@ -2406,7 +2406,7 @@ const rns = (() => { try { return { esc: "sfn", bl: "", all: false, ...JSON.pars
 const salvaRN = () => { try { localStorage.setItem("reneg-filtros", JSON.stringify({ esc: rns.esc, bl: rns.bl })); } catch (e) {} };
 const mesAno = (m) => m ? `${["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"][+m.slice(5) - 1]}/${m.slice(2, 4)}` : "";
 const rnBase = (cod) => { if (cod === "todas") return "Todas as bases legais"; if (cod === "outras") return "Demais bases legais"; const b = RN.bases.find(x => x.cod === cod);
-  return b ? (b.nome ? `${b.nome} (base ${cod})` : `Base legal ${cod} · ${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}`) : `Base legal ${cod}`; };
+  return b ? (b.nome ? `${b.nome} (base ${cod}${b.confirmado ? "" : "*"})` : `Base legal ${cod} · ${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}`) : `Base legal ${cod}`; };
 const rnOrig = (k) => k === "op" ? "Operação de crédito rural" : k === "sem" ? "Dívida sem registro no SICOR" : k.startsWith("rn:") ? `Renegociação anterior · base ${k.slice(3)}` : k;
 document.addEventListener("change", (ev) => { if (!ev.target.matches("[data-rnbl]")) return; rns.bl = ev.target.value; rns.all = false; salvaRN(); render(); });
 document.addEventListener("click", (ev) => { const b = ev.target.closest("#rnmore"); if (!b) return; rns.all = !rns.all; const y = window.scrollY; render(); window.scrollTo(0, y); });
@@ -2446,6 +2446,16 @@ function renderReneg() {
     ${kpiBox("Prazo médio", nf(x.prazo, 2), " anos", sfn && rns.esc !== "sfn" ? `SFN: ${nf(sfn.prazo, 2)} anos` : "", "flat", "da emissão ao vencimento, ponderado pelo valor")}
   </div>`;
   const mes = colunas(x.mes.map(([m, v, n]) => ({ lbl: mesAno(m), v, n })), { fmt: v => v >= 1000 ? nf(v / 1000, 0) + " bi" : nf(v, 0), tip: p => `${brlMi(p.v)} · ${nf(p.n, 0)} operações`, label: "Valor renegociado por mês", c: rCor(rns.esc) === "#2B2F33" ? css("--grafite") : rCor(rns.esc) });
+  // peso da renegociação sobre as contratações do mês (fluxo contra fluxo, mesmo recorte; as renegociações não entram nas contratações do SICOR)
+  const okS = garanteUF("safra", D, ufDe(rns.esc) && ufDe(rns.esc) !== "MG" ? ufDe(rns.esc) : null, fundeSafraUF) === true;
+  const contr = {};
+  Object.entries((okS && D.serie?.[rns.esc]?.BR) || {}).forEach(([S, rows]) => rows.forEach((r, i) => { const v = r[0] + r[1] + r[2] + r[3]; if (v > 0) contr[`${+S - (i < 6 ? 1 : 0)}-${String((i + 6) % 12 + 1).padStart(2, "0")}`] = v; }));
+  const pctL = (lst) => lst.filter(([m]) => contr[m]).map(([m, v]) => ({ d: m, v: v / contr[m] * 100 }));
+  const tod = RN.serie[rns.esc]?.todas;
+  const linhas = [{ name: rnBase(rns.bl).replace(/ ·.*/, ""), pts: pctL(x.mes), c: rCor(rns.esc) === "#2B2F33" ? css("--grafite") : rCor(rns.esc), w: 3 }]
+    .concat(rns.bl !== "todas" && tod ? [{ name: "Todas as bases", pts: pctL(tod.mes), c: css("--grafite-2"), w: 1.6, dash: "4 3" }] : []);
+  const pesoTxt = (() => { const p = linhas[0].pts; const u = p[p.length - 1]; return u ? `Em ${mesAno(u.d)}, a renegociação equivaleu a ${nf(u.v, 1)}% do crédito rural contratado no mês por ${esc(nmE)}.` : ""; })();
+  const peso = Object.keys(contr).length ? tsChart(linhas, { unit: "%", fmt: v => nf(v, 0), dots: true, h: 220, label: "Renegociação sobre contratações" }) : `<p class="empty">${okS ? "Sem contratações do SICOR para este recorte." : "Carregando as contratações do estado…"}</p>`;
   // mapa por UF da operação
   let mapa = `<p class="empty">Carregando o mapa…</p>`;
   if (MAPAS.BR) {
@@ -2464,16 +2474,18 @@ function renderReneg() {
     ${lst.length > 25 ? `<button class="linkbtn" id="rnmore" type="button">${rns.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${lst.length}`}</button>` : ""}`;
   // bases legais do recorte
   const bt = RN.bases.map(b => ({ b, s: RN.serie[rns.esc]?.[b.cod] })).filter(r => r.s?.v);
-  const tabB = `<div class="tbl-wrap"><table><thead><tr><th>Base legal</th><th>Período</th><th class="num">Valor</th><th class="num">Contratos</th><th class="num">Prazo</th>${rns.esc !== "sfn" ? '<th class="num">% do SFN</th>' : ""}</tr></thead><tbody>${bt.map(({ b, s }) => `<tr${b.cod === rns.bl ? ' class="selp"' : ""}><td>${b.nome ? esc(b.nome) + " · " : ""}${esc(b.cod)}</td><td>${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}</td><td class="num">${brlMi(s.v)}</td><td class="num">${nf(s.contratos, 0)}</td><td class="num">${nf(s.prazo, 1)} anos</td>${rns.esc !== "sfn" ? `<td class="num">${nf(s.v / RN.serie.sfn[b.cod].v * 100, 1)}%</td>` : ""}</tr>`).join("")}</tbody></table></div>`;
+  const tabB = `<div class="tbl-wrap"><table><thead><tr><th>Base legal</th><th>Período</th><th class="num">Valor</th><th class="num">Contratos</th><th class="num">Prazo</th>${rns.esc !== "sfn" ? '<th class="num">% do SFN</th>' : ""}</tr></thead><tbody>${bt.map(({ b, s }) => `<tr${b.cod === rns.bl ? ' class="selp"' : ""}><td>${b.nome ? `${esc(b.nome)}${b.confirmado ? "" : "*"}<small>base ${esc(b.cod)}</small>` : `Base ${esc(b.cod)}<small>sem nome identificado</small>`}</td><td>${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}</td><td class="num">${brlMi(s.v)}</td><td class="num">${nf(s.contratos, 0)}</td><td class="num">${nf(s.prazo, 1)} anos</td>${rns.esc !== "sfn" ? `<td class="num">${nf(s.v / RN.serie.sfn[b.cod].v * 100, 1)}%</td>` : ""}</tr>`).join("")}</tbody></table></div>`;
   $("#view").innerHTML = `${head}${kp}
-    <div class="grid2">${block("Valor renegociado por mês", `${esc(nmE)} · ${esc(rnBase(rns.bl))}`, mes, `Data de emissão da operação nova. ${lk}`)}
-      ${block("Onde está a renegociação", "UF da operação nova", mapa, `Participação de cada estado no valor renegociado de ${esc(nmE)}. ${lk}`)}</div>
+    <div class="grid2">${block("Valor renegociado por mês", `${esc(nmE)} · ${esc(rnBase(rns.bl))}`, mes, `Valor nominal das operações novas, pela data de emissão. ${lk}`)}
+      ${block("Peso da renegociação", "Renegociado no mês sobre o crédito rural contratado no mês, %", peso, `${pesoTxt} Fluxo contra fluxo: o valor renegociado no mês dividido pelas contratações de crédito rural do mesmo recorte no mesmo mês (todas as finalidades, aba Safra). As renegociações ficam numa tabela própria do SICOR e não estão somadas nas contratações. Não é a participação no estoque da carteira. ${lk}`)}</div>
+    <div class="grid2">
+      ${block("Onde está a renegociação", "UF da operação nova", mapa, `Participação de cada estado no valor renegociado de ${esc(nmE)}. ${lk}`)}
+      ${block("Bases legais de renegociação", `${esc(nmE)} · desde ${mesAno(RN.meta.desde.slice(0, 7))}`, tabB, `Bases com ao menos R$ 100 milhões no SFN no período. Código novo entra sozinho, com o número e o período; o nome da norma entra quando for identificado. * Identificada pelo período e pela origem das dívidas, não pela tabela do BC. ${lk}`)}</div>
     ${block("Perfil", `${esc(nmE)} · ${esc(rnBase(rns.bl))}`, perfil, `Programa: Pronaf (código 0001), Pronamp (0050) e demais, na operação nova. Origem: a operação original pela lista de renegociações; "renegociação anterior" é dívida que já tinha sido renegociada (a base legal anterior aparece no nome). ${lk}`)}
     ${block(`Instituições · ${esc(nmE)}`, esc(rnBase(rns.bl)), tab, `R$ milhões. Instituições com ao menos R$ 500 mil renegociados desde ${mesAno(RN.meta.desde.slice(0, 7))}. Cooperativas pelo número e nome curto do cadastro. ${lk}`)}
-    ${block("Bases legais de renegociação", `${esc(nmE)} · desde ${mesAno(RN.meta.desde.slice(0, 7))}`, tabB, `Bases com ao menos R$ 100 milhões no SFN no período. ${lk}`)}
     <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
       <p><b>Base.</b> Microdados do SICOR, Banco Central: tabela de operações de renegociação (as operações novas, com instituição, UF, programa, emissão e vencimento) e lista de renegociações (cada contrato original, com o valor renegociado e a base legal). Operações emitidas desde ${mesAno(RN.meta.desde.slice(0, 7))}, até ${dmy(ref)}. Os microdados chegam com duas a três semanas de atraso; números divulgados pelo BC em nota à imprensa podem ir além desta data.</p>
-      <p><b>Base legal.</b> O BC não publica, para download, a tabela com o nome de cada código de base legal; o painel mostra o código e o período em que ele aparece. Pelo calendário e pela origem das dívidas, a base 048 (out/25 a mar/26) corresponde ao período da renegociação da MP 1.314/2025, e a base 050 (a partir de ago/26) renegocia sobretudo dívidas da 048. É uma leitura dos dados, não o nome oficial; entra quando houver a tabela do BC.</p>
+      <p><b>Base legal.</b> Cada renegociação traz o código da base legal. O BC não publica, para download, a tabela com o nome de cada código; o painel mostra o código e o período em que ele aparece e põe o nome da norma quando ele é identificado. Hoje: base 048 = MP 1.314/2025 (operações de out/25 a mar/26) e base 050 = MP 1.376/2026, regulamentada pela Res. CMN 5.330/2026 (operações a partir de ago/26, prazo de contratação até 12/11/2026; renegocia sobretudo dívidas da base 048). Estão marcadas com * porque a identificação é pelo período e pela origem das dívidas, não pela tabela do BC. Código novo entra no painel sozinho, na primeira rodada em que aparecer, e gera um aviso no topo da aba até ganhar nome.</p>
       <p><b>Recortes.</b> Sistemas, centrais e estados pelo cadastro do BC, os mesmos da aba Safra. ${nf(RN.meta.sem_instituicao_pct, 2)}% do valor não teve a instituição identificada no cadastro e entra só no SFN.</p></div></section>`;
 }
 /* ===================== Aba Expectativas de mercado ===================== */
@@ -2817,7 +2829,7 @@ function alertas() {
 }
 /* ===================== Roteador ===================== */
 const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio", 15: "reneg" };
-const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 15, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 15, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {

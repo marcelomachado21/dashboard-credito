@@ -254,6 +254,7 @@ def main():
                 except Exception as e:
                     b.update(situacao="reprovado", motivo=f"{type(e).__name__}: {e}"[:300])
         b["ref"] = ref_de(nome, ler(p_pub))
+        if (ler(p_pub) or {}).get("meta", {}).get("alerta"): b["alerta"] = ler(p_pub)["meta"]["alerta"]     # aviso do próprio script (ex.: base legal nova)
         if nome == "territorio":                                  # UFs que ficaram com o dado anterior
             mt = [f"{u} ({x.get('motivo', '')[:60]})" for u, x in ((ler(p_pub) or {}).get("meta", {}).get("ufs") or {}).items() if x.get("situacao") != "ok"]
             if mt: b["alerta"] = "UFs com o dado anterior: " + "; ".join(mt)

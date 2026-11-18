@@ -19,7 +19,11 @@ OUTFILE = os.path.join(OUT, "reneg.json")
 URL = "https://www.bcb.gov.br/estabilidadefinanceira/micrrural"
 BASE = "https://www.bcb.gov.br/htms/sicor/DadosBrutos/"
 ARQ = {"op": "SICOR_OPERACAO_BASICA_RENEGOCIACAO.gz", "lista": "SICOR_LISTA_RENEGOCIACAO.gz"}
-NOME_BASE = {}            # código -> nome oficial da norma, só com fonte do BC
+# nomes das bases legais: scripts/bases_legais_reneg.csv (cod;norma;confirmado;nota). Código novo entra sozinho no painel,
+# com o número e o período; até ganhar nome no arquivo, a rodada registra um alerta que aparece na tela.
+import csv
+with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "bases_legais_reneg.csv"), encoding="utf-8") as fh:
+    NOME_BASE = {r["cod"]: r for r in csv.DictReader(fh, delimiter=";")}
 DESDE = "2024-07-01"      # séries a partir da safra 2024/25
 os.makedirs(RAW, exist_ok=True)
 ANT = json.load(open(OUTFILE)) if os.path.exists(OUTFILE) else None
@@ -129,11 +133,15 @@ for c, g in gi.groupby("CNPJ_IF"):
     inst.append({"cnpj": c, **NOME.get(c, {"nome": c}), "escopos": [e for e in esc_de(c) if e != "sfn"], "bl": d, "v": round(tv, 2)})
 inst.sort(key=lambda x: -x["v"])
 
-bases = [{"cod": b, "nome": NOME_BASE.get(b), "ini": tb.loc[b, "ini"], "fim": tb.loc[b, "fim"], "v": r2(tb.loc[b, "v"]), "ops": int(tb.loc[b, "n"])} for b in BASES]
+bases = [{"cod": b, "nome": (NOME_BASE.get(b) or {}).get("norma") or None, "confirmado": (NOME_BASE.get(b) or {}).get("confirmado") == "sim",
+          "nota": (NOME_BASE.get(b) or {}).get("nota") or None, "ini": tb.loc[b, "ini"], "fim": tb.loc[b, "fim"], "v": r2(tb.loc[b, "v"]), "ops": int(tb.loc[b, "n"])} for b in BASES]
+lim_novo = (pd.Timestamp(REF) - pd.DateOffset(months=6)).strftime("%Y-%m")
+novos = [b for b in bases if not b["nome"] and b["ini"] >= lim_novo]
+ALERTA = ("Nova base legal de renegociação sem nome no painel: " + ", ".join(f"{b['cod']} (desde {b['ini']}, R$ {b['v']:,.0f} mi)".replace(",", ".") for b in novos)) if novos else ""
 novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("meta", {}).get("ref") == REF else HOJE.isoformat()
 out = {"meta": {"ref": REF, "desde": DESDE, "atualizado": HOJE.isoformat(), "novo_desde": novo_desde, "unidade": "R$ milhões",
                 "fonte": "Banco Central — microdados do SICOR: operações de renegociação e lista de renegociações", "url": URL,
-                "sem_instituicao_pct": round(o[~o.CNPJ_IF.isin(ESC)].VL.sum() / o.VL.sum() * 100, 2) if o.VL.sum() else None},
+                "alerta": ALERTA, "sem_instituicao_pct": round(o[~o.CNPJ_IF.isin(ESC)].VL.sum() / o.VL.sum() * 100, 2) if o.VL.sum() else None},
        "bases": bases, "escopos": SAF["escopos"], "serie": serie, "inst": inst}
 tmp = OUTFILE + ".tmp"
 json.dump(out, open(tmp, "w"), ensure_ascii=False, separators=(",", ":"))
