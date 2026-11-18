@@ -304,7 +304,15 @@ const emUF = (g) => g === "BR" ? "no Brasil" : `${UF_PREP[g] || "em"} ${UFN[g] |
 const rCor = (id) => RECORTES.get(id)?.cor || "#8A9097";
 const ehCentral = (id) => RECORTES.get(id)?.grupo === "central";
 let UFSEL = (() => { try { return localStorage.getItem("uf-sel") || "MG"; } catch (e) { return "MG"; } })();
-let RSET = null;                                    // filtro da aba atual: { ids, set, base, uf, central, onUF }
+// recorte comum a todas as abas: o último escolhido em qualquer aba vale nas demais, quando a aba tiver esse recorte
+let RECG = (() => { try { return localStorage.getItem("recorte-comum") || ""; } catch (e) { return ""; } })();
+const salvaRECG = (id) => { RECG = id; try { localStorage.setItem("recorte-comum", id); } catch (e) {} };
+let RSET = null;
+function ufComum(u) {                 // estado escolhido fora do seletor de recorte (ex.: Território): vale para as demais abas
+  if (u === UFSEL) return; UFSEL = u; try { localStorage.setItem("uf-sel", u); } catch (e) {}
+  if (RECG && RECORTES.has(RECG)) { const g = decompoe(RECG), c = g.central && (u === "BR" || (RECORTES.get(g.central).ufs || []).includes(u)) ? g.central : "";
+    salvaRECG(c || g.base); }
+}                                    // filtro da aba atual: { ids, set, base, uf, central, onUF }
 // recorte efetivo -> Estado, Recorte (nacional) e Central
 function decompoe(id) {
   if (ehCentral(id)) { const c = RECORTES.get(id); return { base: c.sis && RECORTES.has(c.sis) ? c.sis : "coop", central: id, uf: UFSEL === "BR" || (c.ufs || []).includes(UFSEL) ? UFSEL : (c.uf || "BR") }; }
@@ -318,6 +326,10 @@ const centraisDe = (ids, base, uf) => [...ids].filter(i => ehCentral(i)).map(i =
 // Estado -> Recorte -> Central. ids: recortes que a aba aceita; sel: o atual; set(id): grava o novo. o.label muda o rótulo do Recorte.
 function seletorRecorte(ids, sel, set, o = {}) {
   ids = ids.filter(i => RECORTES.has(i));
+  if (RECG && RECORTES.has(RECG)) {            // segue o recorte comum: a central, senão o recorte no estado, senão o recorte nacional
+    const g = decompoe(RECG), I0 = new Set(ids), c = [g.central, efetivo(I0, g.base, g.uf, ""), g.base].find(x => x && I0.has(x));
+    if (c && c !== sel) { sel = c; set(sel); }
+  }
   if (!ids.includes(sel)) { sel = ids.includes("coop") ? "coop" : ids[0]; set(sel); }     // recorte salvo que não existe mais
   const I = new Set(ids), d = decompoe(sel);
   RSET = { ids: I, set, onUF: o.onUF, ...d };
@@ -339,12 +351,12 @@ function seletorRecorte(ids, sel, set, o = {}) {
 }
 document.addEventListener("change", (ev) => {
   const t = ev.target; if (!RSET) return;
-  if (t.matches("[data-recorte]")) { RSET.set(efetivo(RSET.ids, t.value, RSET.uf, "")); render(); }
-  else if (t.matches("[data-central]")) { RSET.set(t.value || efetivo(RSET.ids, RSET.base, RSET.uf, "")); render(); }
+  if (t.matches("[data-recorte]")) { const x = efetivo(RSET.ids, t.value, RSET.uf, ""); RSET.set(x); salvaRECG(x); render(); }
+  else if (t.matches("[data-central]")) { const x = t.value || efetivo(RSET.ids, RSET.base, RSET.uf, ""); RSET.set(x); salvaRECG(x); render(); }
   else if (t.matches("[data-ufsel]")) {
     UFSEL = t.value; try { localStorage.setItem("uf-sel", UFSEL); } catch (e) {}
     const c = RSET.central && (UFSEL === "BR" || (RECORTES.get(RSET.central).ufs || []).includes(UFSEL)) ? RSET.central : "";   // central segue se atua no estado
-    RSET.set(efetivo(RSET.ids, RSET.base, UFSEL, c));
+    const x = efetivo(RSET.ids, RSET.base, UFSEL, c); RSET.set(x); salvaRECG(x);
     if (RSET.onUF) RSET.onUF(UFSEL);
     render();
   }
@@ -2270,12 +2282,14 @@ document.addEventListener("click", (ev) => {
   if (b.id === "tmore") ts.all = !ts.all;
   if (b.id === "tlimpa") ts.sel = "";
   try { localStorage.setItem("terr-filtros", JSON.stringify({ fin: ts.fin, prog: ts.prog, nivel: ts.nivel, nivelBR: ts.nivelBR, met: ts.met, uf: ts.uf })); } catch (e) {}
+  ufComum(ts.uf);
   const y = window.scrollY; render(); window.scrollTo(0, y);
 });
 document.addEventListener("change", (ev) => {
   if (!ev.target.matches("[data-tufsel]")) return;
   ts.uf = ev.target.value; ts.sel = ""; ts.all = false;
   try { localStorage.setItem("terr-filtros", JSON.stringify({ fin: ts.fin, prog: ts.prog, nivel: ts.nivel, nivelBR: ts.nivelBR, met: ts.met, uf: ts.uf })); } catch (e) {}
+  ufComum(ts.uf);
   render();
 });
 const tReg = (cod) => (ts.uf === "BR" ? BR_REG : TC.mun_reg)?.[cod] || {};
@@ -2319,6 +2333,7 @@ function renderTerr() {
   if (!precisa(["territorio", "safra"])) { esperando(Terr ? `A base de crédito rural por território não carregou (${esc(Terr)}). Recarregue a página.` : "Carregando o crédito rural por território…"); return; }
   const legado = !T.meta.ufs;          // arquivo antigo, só de MG: vale até a primeira rodada com todos os estados
   if (legado) { TUF.MG = T; ts.uf = "MG"; }
+  else if (ts.uf !== UFSEL && (UFSEL === "BR" || UFN[UFSEL])) { ts.uf = UFSEL; ts.sel = ""; ts.all = false; }     // estado comum às abas
   if (ts.uf !== "BR" && !UFN[ts.uf]) ts.uf = "BR";
   const pronto = garanteTerrUF(ts.uf), selUF = `<label class="fgroup"><span class="flabel">Estado</span><select class="sel" data-tufsel aria-label="Estado">${["BR", ...UFS_ORD].map(u => `<option value="${u}"${u === ts.uf ? " selected" : ""}${legado && u !== "MG" ? " disabled" : ""}>${u === "BR" ? "Brasil (todos)" : esc(UFN[u])}</option>`).join("")}</select></label>`;
   if (pronto !== true) { $("#filters").innerHTML = `<div class="frow">${selUF}</div>`; $("#view").innerHTML = `<p class="empty">${pronto === "erro" ? `Os dados ${emUF(ts.uf)} não carregaram (${esc(TERR_ERR[ts.uf])}). Recarregue a página ou escolha outro estado.` : `Carregando os dados ${emUF(ts.uf)}…`}</p>`; return; }
@@ -2415,6 +2430,7 @@ const rnOrig = (k) => k === "op" ? "Operação de crédito rural" : k === "sem" 
 document.addEventListener("change", (ev) => { if (!ev.target.matches("[data-rnbl]")) return; rns.bl = ev.target.value; rns.all = false; salvaRN(); render(); });
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-rnver],[data-rnsafra],[data-rnper]"); if (!b || b.disabled) return;
   if (b.dataset.rnver) rns.ver = b.dataset.rnver; if (b.dataset.rnsafra) rns.safra = +b.dataset.rnsafra; if (b.dataset.rnper) rns.per = b.dataset.rnper;
+  if (b.dataset.rnsafra || b.dataset.rnper) { st.safra = rns.safra === rns.sAr ? 0 : rns.safra; st.per = rns.per; salvaSafra(); }   // mesma safra e período da aba Safra
   rns.all = false; salvaRN(); const y = window.scrollY; render(); window.scrollTo(0, y); });
 document.addEventListener("click", (ev) => { const b = ev.target.closest("#rnmore"); if (!b) return; rns.all = !rns.all; const y = window.scrollY; render(); window.scrollTo(0, y); });
 function colunas(pts, o = {}) {      // barras verticais mensais; p.a = mesmo mês da safra anterior (barra cinza ao lado); p.fora = fora do período escolhido
@@ -2438,6 +2454,7 @@ function renderReneg() {
   // safra (jul–jun, rotulada pelo ano em que termina) e período, como na aba Safra
   const ref = RN.meta.ref, yR = +ref.slice(0, 4), mR = +ref.slice(5, 7), SAr = yR + (mR >= 7 ? 1 : 0), kR = (mR - 7 + 12) % 12;
   const S0 = +RN.meta.desde.slice(0, 4) + 1, SAFRAS = []; for (let s = SAr; s >= S0; s--) SAFRAS.push(s);
+  rns.sAr = SAr; rns.safra = st.safra || SAr; rns.per = st.per || "safra";      // safra e período comuns com a aba Safra
   if (!SAFRAS.includes(rns.safra)) rns.safra = SAr;
   const Sx = rns.safra, cur = Sx === SAr, P = PER.find(p => p[0] === rns.per) || PER[0];
   const pOn = (p) => !cur || p[2] <= kR;
