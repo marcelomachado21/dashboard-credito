@@ -253,7 +253,7 @@ async function carregar(nome) {
 }
 
 (() => {
-const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território"];
+const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território","Renegociação de dívidas rurais"];
 const MES = ["jul","ago","set","out","nov","dez","jan","fev","mar","abr","mai","jun"];
 const MESF = ["julho","agosto","setembro","outubro","novembro","dezembro","janeiro","fevereiro","março","abril","maio","junho"];
 const FIN = [["all","Todas"],["c","Custeio"],["i","Investimento"],["m","Comercialização"],["n","Industrialização"]];
@@ -1790,13 +1790,15 @@ function renderFichaGrupo() {
 let F = null, Ferr = "", carregandoF = false, T = null, Terr = "", carregandoT = false;
 function carregaFocus() { if (carregandoF) return; carregandoF = true; carregar("focus").then(d => { F = d; render(); }).catch(e => { Ferr = e.message; render(); }); }
 let MAPA = null;
+let RN = null, RNerr = "", carregandoRN = false;
+function carregaRN() { if (carregandoRN) return; carregandoRN = true; carregar("reneg").then(d => { RN = d; render(); }).catch(e => { RNerr = e.message; render(); }); }
 function carregaTerr() { if (carregandoT) return; carregandoT = true; carregar("territorio").then(d => { T = d; render(); }).catch(e => { Terr = e.message; render(); }); }
 let C = null, Cerr = "", carregandoC = false;
 function carregaCart() { if (carregandoC) return; carregandoC = true; carregar("carteira").then(d => { C = d; render(); }).catch(e => { Cerr = e.message; render(); }); }
 function precisa(lista) {          // garante que as bases estejam carregadas; devolve true quando todas estão prontas
-  const st = { safra: () => D, risco: () => R, posicao: () => P, resultados: () => Q, carteira: () => C, focus: () => F, territorio: () => T };
-  const er = { risco: () => Rerr, posicao: () => Perr, resultados: () => Qerr, carteira: () => Cerr, focus: () => Ferr, territorio: () => Terr };
-  const go = { risco: carregaRisco, posicao: carregaPos, resultados: carregaRes, carteira: carregaCart, focus: carregaFocus, territorio: carregaTerr };
+  const st = { safra: () => D, risco: () => R, posicao: () => P, resultados: () => Q, carteira: () => C, focus: () => F, territorio: () => T, reneg: () => RN };
+  const er = { risco: () => Rerr, posicao: () => Perr, resultados: () => Qerr, carteira: () => Cerr, focus: () => Ferr, territorio: () => Terr, reneg: () => RNerr };
+  const go = { risco: carregaRisco, posicao: carregaPos, resultados: carregaRes, carteira: carregaCart, focus: carregaFocus, territorio: carregaTerr, reneg: carregaRN };
   let ok = true;
   lista.forEach(k => { if (!st[k]()) { ok = false; if (go[k] && !(er[k] && er[k]())) go[k](); } });
   return ok;
@@ -2399,6 +2401,81 @@ function renderTerr() {
         <div class="so-cel">${tNiveisInfo()}</div></div></section>`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
+/* ===================== Aba Renegociação de dívidas rurais (microdados do SICOR) ===================== */
+const rns = (() => { try { return { esc: "sfn", bl: "", all: false, ...JSON.parse(localStorage.getItem("reneg-filtros") || "{}") }; } catch (e) { return { esc: "sfn", bl: "", all: false }; } })();
+const salvaRN = () => { try { localStorage.setItem("reneg-filtros", JSON.stringify({ esc: rns.esc, bl: rns.bl })); } catch (e) {} };
+const mesAno = (m) => m ? `${["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"][+m.slice(5) - 1]}/${m.slice(2, 4)}` : "";
+const rnBase = (cod) => { if (cod === "todas") return "Todas as bases legais"; if (cod === "outras") return "Demais bases legais"; const b = RN.bases.find(x => x.cod === cod);
+  return b ? (b.nome ? `${b.nome} (base ${cod})` : `Base legal ${cod} · ${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}`) : `Base legal ${cod}`; };
+const rnOrig = (k) => k === "op" ? "Operação de crédito rural" : k === "sem" ? "Dívida sem registro no SICOR" : k.startsWith("rn:") ? `Renegociação anterior · base ${k.slice(3)}` : k;
+document.addEventListener("change", (ev) => { if (!ev.target.matches("[data-rnbl]")) return; rns.bl = ev.target.value; rns.all = false; salvaRN(); render(); });
+document.addEventListener("click", (ev) => { const b = ev.target.closest("#rnmore"); if (!b) return; rns.all = !rns.all; const y = window.scrollY; render(); window.scrollTo(0, y); });
+function colunas(pts, o = {}) {      // barras verticais mensais
+  if (!pts.length) return `<p class="empty">Sem operações no período.</p>`;
+  const W = 640, H = o.h || 220, L = 52, R = 10, T = 12, B = 30, mx = Math.max(...pts.map(p => p.v), 1), tk = ticks(0, mx), top = tk[tk.length - 1];
+  const bw = (W - L - R) / pts.length, y = (v) => T + (H - T - B) * (1 - v / top);
+  const grid = tk.map(t => `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" class="ax">${o.fmt ? o.fmt(t) : nf(t, 0)}</text>`).join("");
+  const bars = pts.map((p, i) => { const x = L + i * bw + bw * 0.15, w = Math.max(2, bw * 0.7), h = Math.max(0, H - B - y(p.v));
+    return `<rect x="${x.toFixed(1)}" y="${y(p.v).toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${o.c || "var(--accent)"}"><title>${esc(p.lbl)}: ${o.tip ? o.tip(p) : nf(p.v, 1)}</title></rect>`
+      + (i % Math.ceil(pts.length / 12) === 0 ? `<text x="${(x + w / 2).toFixed(1)}" y="${H - B + 16}" text-anchor="middle" class="ax">${esc(p.lbl)}</text>` : ""); }).join("");
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "Série mensal")}">${grid}${bars}</svg>`;
+}
+function renderReneg() {
+  if (!precisa(["reneg", "safra"])) { esperando(RNerr ? `A base de renegociações não carregou (${esc(RNerr)}). Recarregue a página.` : "Carregando as renegociações de dívidas rurais…"); return; }
+  if (!MAPAS.BR && !renderReneg._m) { renderReneg._m = 1; fetch("mapas/BR.json").then(r => r.json()).then(m => { MAPAS.BR = m; render(); }).catch(() => {}); }
+  cid = 0; registraRecortes(RN.escopos);
+  const ids = RN.escopos.map(e => e.id).filter(id => RN.serie[id]);
+  // padrão: o programa ativo nos últimos três meses com maior valor (as bases de fluxo contínuo ficam atrás de um programa novo)
+  const mRef = RN.meta.ref.slice(0, 7), m3 = (() => { const d = new Date(mRef + "-01T12:00:00"); d.setMonth(d.getMonth() - 2); return d.toISOString().slice(0, 7); })();
+  const recente = [...RN.bases].filter(b => b.ini >= m3 || b.fim >= m3).sort((a, b) => (b.ini >= m3 ? 1 : 0) * b.v - (a.ini >= m3 ? 1 : 0) * a.v || b.v - a.v)[0]?.cod || "todas";
+  if (!rns.bl || (rns.bl !== "todas" && !RN.bases.some(b => b.cod === rns.bl))) rns.bl = recente;
+  const opts = [["todas", "Todas as bases legais"], ...RN.bases.map(b => [b.cod, rnBase(b.cod)])];
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(ids, rns.esc, (id) => { rns.esc = id; rns.all = false; salvaRN(); })}
+    <label class="fgroup"><span class="flabel">Programa de renegociação</span><select class="sel" data-rnbl aria-label="Base legal da renegociação">${opts.map(([k, n]) => `<option value="${k}"${k === rns.bl ? " selected" : ""}>${esc(n)}</option>`).join("")}</select></label></div>`;
+  const ref = RN.meta.ref, lk = `<a href="${esc(RN.meta.url)}" target="_blank" rel="noopener">microdados do SICOR, Banco Central</a>`;
+  $("#stamp").textContent = `SICOR até ${dmy(ref)} · atualizado em ${dmy(RN.meta.atualizado)}`;
+  const nmE = rNome(rns.esc), x = RN.serie[rns.esc]?.[rns.bl], sfn = RN.serie.sfn?.[rns.bl];
+  const head = `<div><div class="eyebrow">Microdados do SICOR · operações até ${dmy(ref)}${tagNovo(RN.meta.novo_desde)}</div><h2>Renegociação de dívidas rurais · ${esc(nmE)}</h2>
+    <p class="lede">${esc(rnBase(rns.bl))}. Valor das operações novas geradas pela renegociação, contratos originais renegociados e onde estão. Instituição, sistema e central pelo CNPJ da instituição que registrou a operação.</p></div>`;
+  if (!x || !x.v) { $("#view").innerHTML = head + `<p class="empty">Sem renegociação de ${esc(nmE)} nesta base legal desde ${mesAno(RN.meta.desde.slice(0, 7))}.</p>`; return; }
+  const part = rns.esc !== "sfn" && sfn?.v ? x.v / sfn.v * 100 : null;
+  const kp = `<div class="kpis">
+    ${kpiBox("Valor renegociado", brlMi(x.v).replace("R$ ", ""), "", part != null ? `${nf(part, 1)}% do SFN nesta base` : `${nf(x.ops, 0)} operações novas`, "flat", `operações novas · até ${dmy(ref)}`)}
+    ${kpiBox("Contratos renegociados", nf(x.contratos, 0), "", `${nf(x.ops, 0)} operações novas geradas`, "flat", "contratos originais na lista do SICOR")}
+    ${kpiBox("Valor médio por operação nova", nf(x.v / x.ops * 1000, 0), " mil", sfn && rns.esc !== "sfn" ? `SFN: R$ ${nf(sfn.v / sfn.ops * 1000, 0)} mil` : "", "flat", "R$")}
+    ${kpiBox("Prazo médio", nf(x.prazo, 2), " anos", sfn && rns.esc !== "sfn" ? `SFN: ${nf(sfn.prazo, 2)} anos` : "", "flat", "da emissão ao vencimento, ponderado pelo valor")}
+  </div>`;
+  const mes = colunas(x.mes.map(([m, v, n]) => ({ lbl: mesAno(m), v, n })), { fmt: v => v >= 1000 ? nf(v / 1000, 0) + " bi" : nf(v, 0), tip: p => `${brlMi(p.v)} · ${nf(p.n, 0)} operações`, label: "Valor renegociado por mês", c: rCor(rns.esc) === "#2B2F33" ? css("--grafite") : rCor(rns.esc) });
+  // mapa por UF da operação
+  let mapa = `<p class="empty">Carregando o mapa…</p>`;
+  if (MAPAS.BR) {
+    const vs = Object.values(x.uf).sort((a, b) => a - b), q = (p) => vs[Math.min(vs.length - 1, Math.floor(p * vs.length))] || 0, cuts = [q(.2), q(.4), q(.6), q(.8), q(.93)], SEQ = ["#E3F1EF", "#B5DCD6", "#7FC2B8", "#3F9E91", "#007A6E", "#004E46"];
+    const colr = (v) => { if (!v) return "var(--line)"; const i = cuts.findIndex(c => v < c); return SEQ[i === -1 ? 5 : i]; };
+    mapa = `<svg class="chart" viewBox="0 0 ${MAPAS.BR.vb[0]} ${MAPAS.BR.vb[1]}" role="img" aria-label="Renegociação por estado">${Object.entries(MAPAS.BR.m).map(([u, m]) => `<path d="${m.p}" fill="${colr(x.uf[u])}" stroke="#fff" stroke-width=".8"><title>${esc(m.n)}: ${x.uf[u] ? brlMi(x.uf[u]) + " · " + nf(x.uf[u] / x.v * 100, 1) + "%" : "sem renegociação"}</title></path>`).join("")}</svg>`;
+  }
+  const perfil = `<div class="grid3">${rosca("Programa da operação nova", [{ nm: "Pronaf", v: x.prog[0] }, { nm: "Pronamp", v: x.prog[1] }, { nm: "Demais", v: x.prog[2] }])}
+    ${rosca("Origem da dívida renegociada", (() => { const e = Object.entries(x.origem), top = e.slice(0, 3), resto = e.slice(3).reduce((a, [, v]) => a + v, 0); return top.map(([k, v]) => ({ nm: rnOrig(k), v })).concat(resto ? [{ nm: "Outras origens", v: resto, cinza: true }] : []); })())}
+    <div class="rosca"><h4>Estados com mais renegociação</h4><ul class="rleg">${Object.entries(x.uf).slice(0, 10).map(([u, v]) => `<li><i style="background:transparent"></i><span>${esc(UFN[u] || u)}</span><span>${nf(v / x.v * 100, 1)}%</span><small>${brlMi(v)}</small></li>`).join("")}</ul></div></div>`;
+  // ranking de instituições do recorte
+  const lst = RN.inst.filter(i => rns.esc === "sfn" || (i.escopos || []).includes(rns.esc)).map(i => ({ i, d: rns.bl === "todas" ? [i.v, Object.values(i.bl).reduce((a, b) => a + b[1], 0), null] : i.bl[rns.bl] })).filter(r => r.d && r.d[0] > 0).sort((a, b) => b.d[0] - a.d[0]);
+  const shown = rns.all ? lst : lst.slice(0, 25), nomeI = (i) => i.numero ? `${i.numero} ${i.curto || i.nome}` : (i.curto || i.nome);
+  const tab = `<div class="tbl-wrap"><table><thead><tr><th>#</th><th>Instituição</th><th class="num">Valor</th><th class="num">Operações</th><th class="num">% de ${esc(nmE)}</th><th class="num">Valor médio</th><th class="num">Prazo médio</th></tr></thead><tbody>
+    ${shown.map((r, k) => `<tr><td class="num">${k + 1}</td><td>${esc(nomeI(r.i))}${r.i.uf ? `<small>${esc(r.i.uf)}</small>` : ""}</td><td class="num"><b>${brlMi(r.d[0])}</b></td><td class="num">${nf(r.d[1], 0)}</td><td class="num">${nf(r.d[0] / x.v * 100, 1)}%</td><td class="num">R$ ${nf(r.d[0] / r.d[1] * 1000, 0)} mil</td><td class="num">${r.d[2] == null ? "—" : nf(r.d[2], 1) + " anos"}</td></tr>`).join("")}</tbody></table></div>
+    ${lst.length > 25 ? `<button class="linkbtn" id="rnmore" type="button">${rns.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${lst.length}`}</button>` : ""}`;
+  // bases legais do recorte
+  const bt = RN.bases.map(b => ({ b, s: RN.serie[rns.esc]?.[b.cod] })).filter(r => r.s?.v);
+  const tabB = `<div class="tbl-wrap"><table><thead><tr><th>Base legal</th><th>Período</th><th class="num">Valor</th><th class="num">Contratos</th><th class="num">Prazo</th>${rns.esc !== "sfn" ? '<th class="num">% do SFN</th>' : ""}</tr></thead><tbody>${bt.map(({ b, s }) => `<tr${b.cod === rns.bl ? ' class="selp"' : ""}><td>${b.nome ? esc(b.nome) + " · " : ""}${esc(b.cod)}</td><td>${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}</td><td class="num">${brlMi(s.v)}</td><td class="num">${nf(s.contratos, 0)}</td><td class="num">${nf(s.prazo, 1)} anos</td>${rns.esc !== "sfn" ? `<td class="num">${nf(s.v / RN.serie.sfn[b.cod].v * 100, 1)}%</td>` : ""}</tr>`).join("")}</tbody></table></div>`;
+  $("#view").innerHTML = `${head}${kp}
+    <div class="grid2">${block("Valor renegociado por mês", `${esc(nmE)} · ${esc(rnBase(rns.bl))}`, mes, `Data de emissão da operação nova. ${lk}`)}
+      ${block("Onde está a renegociação", "UF da operação nova", mapa, `Participação de cada estado no valor renegociado de ${esc(nmE)}. ${lk}`)}</div>
+    ${block("Perfil", `${esc(nmE)} · ${esc(rnBase(rns.bl))}`, perfil, `Programa: Pronaf (código 0001), Pronamp (0050) e demais, na operação nova. Origem: a operação original pela lista de renegociações; "renegociação anterior" é dívida que já tinha sido renegociada (a base legal anterior aparece no nome). ${lk}`)}
+    ${block(`Instituições · ${esc(nmE)}`, esc(rnBase(rns.bl)), tab, `R$ milhões. Instituições com ao menos R$ 500 mil renegociados desde ${mesAno(RN.meta.desde.slice(0, 7))}. Cooperativas pelo número e nome curto do cadastro. ${lk}`)}
+    ${block("Bases legais de renegociação", `${esc(nmE)} · desde ${mesAno(RN.meta.desde.slice(0, 7))}`, tabB, `Bases com ao menos R$ 100 milhões no SFN no período. ${lk}`)}
+    <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
+      <p><b>Base.</b> Microdados do SICOR, Banco Central: tabela de operações de renegociação (as operações novas, com instituição, UF, programa, emissão e vencimento) e lista de renegociações (cada contrato original, com o valor renegociado e a base legal). Operações emitidas desde ${mesAno(RN.meta.desde.slice(0, 7))}, até ${dmy(ref)}. Os microdados chegam com duas a três semanas de atraso; números divulgados pelo BC em nota à imprensa podem ir além desta data.</p>
+      <p><b>Base legal.</b> O BC não publica, para download, a tabela com o nome de cada código de base legal; o painel mostra o código e o período em que ele aparece. Pelo calendário e pela origem das dívidas, a base 048 (out/25 a mar/26) corresponde ao período da renegociação da MP 1.314/2025, e a base 050 (a partir de ago/26) renegocia sobretudo dívidas da 048. É uma leitura dos dados, não o nome oficial; entra quando houver a tabela do BC.</p>
+      <p><b>Recortes.</b> Sistemas, centrais e estados pelo cadastro do BC, os mesmos da aba Safra. ${nf(RN.meta.sem_instituicao_pct, 2)}% do valor não teve a instituição identificada no cadastro e entra só no SFN.</p></div></section>`;
+}
 /* ===================== Aba Expectativas de mercado ===================== */
 function renderExpect() {
   if (!precisa(["focus"])) { esperando(Ferr ? `Os dados não carregaram (${esc(Ferr)}). Recarregue a página.` : "Carregando as expectativas do Focus…"); return; }
@@ -2701,7 +2778,7 @@ function renderFontes() {
 }
 function blocoStatus(st) {
   const el = $("#stbox"); if (!el || !st || !st.bases) return;
-  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, por estado e município)", cadastro: "Cadastro de cooperativas (filiação)" };
+  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, por estado e município)", cadastro: "Cadastro de cooperativas (filiação)" , reneg: "Renegociações (SICOR)" };
   const rf = (r) => r == null ? "—" : typeof r === "object" ? Object.entries(r).map(([k, v]) => `${k} ${String(v).length === 7 ? ym(v) : dmy(v)}`).join(" · ") : String(r).length === 7 ? ym(r) : dmy(r);
   const cl = { "atualizado": "up", "sem mudança": "flat", "ok": "flat", "falhou": "down", "reprovado": "down", "alerta": "down" };
   const quando = new Date(st.verificado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" });
@@ -2717,9 +2794,9 @@ let STATUS = null, STATUS_ERR = false;
 const BASES_ABA = { visao: ["carteira", "risco", "focus"], ruralsfn: ["safra", "carteira", "risco"], safra: ["safra", "cadastro"], carteira: ["carteira", "cadastro"],
   risco: ["risco", "cadastro"], resultados: ["resultados", "cadastro"], rural: ["carteira", "cadastro"], quadro: ["posicao", "resultados", "cadastro"],
   rankings: ["posicao", "safra", "cadastro"], posicao: ["posicao", "cadastro"], ficha: ["posicao", "resultados", "risco", "carteira", "safra"],
-  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], fontes: [] };
+  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], fontes: [] };
 const NOME_BASE = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)",
-  focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC" };
+  focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC", reneg: "Renegociações (SICOR)" };
 function alertas() {
   const el = $("#alertas"); if (!el) return;
   const L = [];
@@ -2739,8 +2816,8 @@ function alertas() {
   el.innerHTML = L.map(x => `<div class="aviso">${x}</div>`).join("");
 }
 /* ===================== Roteador ===================== */
-const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio" };
-const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio", 15: "reneg" };
+const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 15, 6, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
@@ -2751,7 +2828,7 @@ function render() {
     if (at && row.scrollWidth > row.clientWidth) { row.style.scrollBehavior = "auto"; row.scrollLeft = Math.max(0, at.offsetLeft - row.offsetLeft - 40); row.style.scrollBehavior = ""; }
     row.addEventListener("scroll", upd, { passive: true }); upd(); sc._upd = upd; });
   alertas();
-  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes, consignado: renderConsig, expectativas: renderExpect, territorio: renderTerr })[aba()]();
+  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes, consignado: renderConsig, expectativas: renderExpect, territorio: renderTerr, reneg: renderReneg })[aba()]();
 }
 addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
 addEventListener("resize", () => document.querySelectorAll("#tabs .tscroll").forEach(sc => sc._upd && sc._upd()), { passive: true });
