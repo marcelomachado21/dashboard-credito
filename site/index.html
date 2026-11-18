@@ -155,6 +155,9 @@ h3 { font-family: var(--f-display); font-stretch: 88%; font-weight: 700; font-si
 .up { color: var(--up); } .down { color: var(--down); } .flat { color: var(--muted); }
 .solo { max-width: 760px; width: 100%; }
 .aviso { border: 1px solid #E8A33D; border-left-width: 4px; background: color-mix(in srgb, #E8A33D 10%, var(--bg)); border-radius: 8px; padding: 10px 14px; margin: 12px 0; font-size: .88rem; line-height: 1.45; }
+#alertas:not(:empty) { margin-top: 28px; padding-top: 10px; border-top: 1px solid var(--line); }
+#alertas:not(:empty)::before { content: "Situação das bases desta aba"; display: block; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+#alertas .aviso { border-color: var(--line); border-left-color: #E8A33D; background: transparent; font-size: .82rem; }
 .aviso small { display: block; color: var(--muted); margin-top: 3px; font-size: .78rem; }
 .aviso details { margin-top: 4px; } .aviso summary { cursor: pointer; color: var(--muted); font-size: .78rem; }
 .recsel { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
@@ -236,9 +239,8 @@ footer .wrap { padding-block: 0 32px; font-size: 0.74rem; color: var(--faint); }
   <div class="stamp" id="stamp">Carregando dados…</div>
 </div></header>
 <nav class="tabs" aria-label="Abas do painel"><div class="wrap" id="tabs"></div></nav>
-<div class="wrap" id="alertas" role="status" aria-live="polite"></div>
 <div class="filters"><div class="wrap" id="filters"></div></div>
-<main><div class="wrap" id="view"><p class="empty">Carregando a Matriz de Dados do Crédito Rural…</p></div></main>
+<main><div class="wrap" id="view"><p class="empty">Carregando a Matriz de Dados do Crédito Rural…</p></div><div class="wrap" id="alertas" role="status"></div></main>
 <footer><div class="wrap">Dados públicos do Banco Central. Painel em validação (estágio 1).</div></footer>
 
 <script>
