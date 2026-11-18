@@ -4,8 +4,9 @@
 Fonte: Banco Central, microdados do SICOR (Matriz de Dados do Crédito Rural):
   SICOR_OPERACAO_BASICA_RENEGOCIACAO  operações novas geradas pela renegociação (instituição, UF, programa, emissão, vencimento, valor)
   SICOR_LISTA_RENEGOCIACAO            contratos renegociados: valor, base legal (CD_BASE_LEGAL) e a operação original
-A tabela que dá o nome de cada base legal (BaseLegalRenegociacao) não está disponível para download; o painel mostra o código e
-o período em que ele aparece. Nome de norma só entra quando houver a tabela oficial (NOME_BASE abaixo, vazio por padrão).
+  Base_Legal_Renegociacao.csv         tabela de domínio do SICOR com a norma de cada código (CODIGO_BLR;DESCRICAO_BLR), baixada a cada rodada
+Código novo entra sozinho no painel com a descrição oficial. Se o código ainda não estiver na tabela do BC, entra com o número e o
+período, e a rodada registra um alerta. scripts/bases_legais_reneg.csv só guarda um rótulo curto e uma nota de contexto (opcionais).
 Recortes (sistemas, centrais, UFs da sede) vêm da base da safra (safra.json, gerada antes na mesma rodada), pelo CNPJ.
 Uso: python3 -I scripts/atualiza_reneg.py <pasta_bruta> <pasta_saida> [--se-mudou]
 """
@@ -19,11 +20,11 @@ OUTFILE = os.path.join(OUT, "reneg.json")
 URL = "https://www.bcb.gov.br/estabilidadefinanceira/micrrural"
 BASE = "https://www.bcb.gov.br/htms/sicor/DadosBrutos/"
 ARQ = {"op": "SICOR_OPERACAO_BASICA_RENEGOCIACAO.gz", "lista": "SICOR_LISTA_RENEGOCIACAO.gz"}
-# nomes das bases legais: scripts/bases_legais_reneg.csv (cod;norma;confirmado;nota). Código novo entra sozinho no painel,
-# com o número e o período; até ganhar nome no arquivo, a rodada registra um alerta que aparece na tela.
-import csv
+# rótulo curto e nota de contexto por código (opcionais): scripts/bases_legais_reneg.csv (cod;curto;nota)
+import csv, io
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "bases_legais_reneg.csv"), encoding="utf-8") as fh:
-    NOME_BASE = {r["cod"]: r for r in csv.DictReader(fh, delimiter=";")}
+    APELIDO = {r["cod"]: r for r in csv.DictReader(fh, delimiter=";")}
+URL_BL = "https://www.bcb.gov.br/htms/sicor/Base_Legal_Renegociacao.csv"
 DESDE = "2024-07-01"      # séries a partir da safra 2024/25
 os.makedirs(RAW, exist_ok=True)
 ANT = json.load(open(OUTFILE)) if os.path.exists(OUTFILE) else None
@@ -43,6 +44,17 @@ def baixa(nome):
 
 
 po, pl = baixa(ARQ["op"]), baixa(ARQ["lista"])
+# tabela oficial de bases legais; se falhar, mantém as descrições da rodada anterior
+try:
+    with urllib.request.urlopen(urllib.request.Request(URL_BL, headers={"User-Agent": "dashboard-credito"}), timeout=120) as r:
+        txt = r.read().decode("latin1")
+    OFICIAL = {x["#CODIGO_BLR"].strip(): " ".join(x["DESCRICAO_BLR"].split()) for x in csv.DictReader(io.StringIO(txt), delimiter=";") if x.get("#CODIGO_BLR")}
+    if len(OFICIAL) < 30: raise RuntimeError(f"tabela de bases legais com {len(OFICIAL)} códigos")
+    OFICIAL_OK = True
+except Exception as e:
+    print("aviso: tabela de bases legais indisponível:", e, file=sys.stderr)
+    OFICIAL = {b["cod"]: b["oficial"] for b in ((json.load(open(OUTFILE)) if os.path.exists(OUTFILE) else {}).get("bases") or []) if b.get("oficial")}
+    OFICIAL_OK = False
 o = pd.read_csv(po, sep=";", dtype=str, encoding="latin1",
                 usecols=["#REF_BACEN", "NU_ORDEM", "CNPJ_IF", "DT_EMISSAO", "DT_VENCIMENTO", "CD_ESTADO", "CD_PROGRAMA", "VL_PARC_CREDITO"])
 l = pd.read_csv(pl, sep=";", dtype=str, encoding="latin1")
@@ -133,16 +145,20 @@ for c, g in gi.groupby("CNPJ_IF"):
     inst.append({"cnpj": c, **NOME.get(c, {"nome": c}), "escopos": [e for e in esc_de(c) if e != "sfn"], "bl": d, "v": round(tv, 2)})
 inst.sort(key=lambda x: -x["v"])
 
-bases = [{"cod": b, "nome": (NOME_BASE.get(b) or {}).get("norma") or None, "confirmado": (NOME_BASE.get(b) or {}).get("confirmado") == "sim",
-          "nota": (NOME_BASE.get(b) or {}).get("nota") or None, "ini": tb.loc[b, "ini"], "fim": tb.loc[b, "fim"], "v": r2(tb.loc[b, "v"]), "ops": int(tb.loc[b, "n"])} for b in BASES]
-lim_novo = (pd.Timestamp(REF) - pd.DateOffset(months=6)).strftime("%Y-%m")
-novos = [b for b in bases if not b["nome"] and b["ini"] >= lim_novo]
-ALERTA = ("Nova base legal de renegociação sem nome no painel: " + ", ".join(f"{b['cod']} (desde {b['ini']}, R$ {b['v']:,.0f} mi)".replace(",", ".") for b in novos)) if novos else ""
+def base(b):
+    a = APELIDO.get(b) or {}
+    return {"cod": b, "oficial": OFICIAL.get(b), "curto": a.get("curto") or None, "nota": a.get("nota") or None,
+            "ini": tb.loc[b, "ini"], "fim": tb.loc[b, "fim"], "v": r2(tb.loc[b, "v"]), "ops": int(tb.loc[b, "n"])}
+bases = [base(b) for b in BASES]
+outras = [base(b) for b in tb.index if b not in BASES]          # códigos abaixo de R$ 100 mi, somados em "outras"
+sem = [b for b in bases + outras if not b["oficial"] and b["cod"] != "sem código"]
+ALERTA = ("Base legal de renegociação sem descrição na tabela do BC: " + ", ".join(f"{b['cod']} (desde {b['ini']})" for b in sem)) if sem else ""
+if not OFICIAL_OK: ALERTA = ("Tabela de bases legais do BC indisponível nesta rodada; descrições mantidas da anterior. " + ALERTA).strip()
 novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("meta", {}).get("ref") == REF else HOJE.isoformat()
 out = {"meta": {"ref": REF, "desde": DESDE, "atualizado": HOJE.isoformat(), "novo_desde": novo_desde, "unidade": "R$ milhões",
                 "fonte": "Banco Central — microdados do SICOR: operações de renegociação e lista de renegociações", "url": URL,
                 "alerta": ALERTA, "sem_instituicao_pct": round(o[~o.CNPJ_IF.isin(ESC)].VL.sum() / o.VL.sum() * 100, 2) if o.VL.sum() else None},
-       "bases": bases, "escopos": SAF["escopos"], "serie": serie, "inst": inst}
+       "bases": bases, "outras": outras, "url_bases": URL_BL, "escopos": SAF["escopos"], "serie": serie, "inst": inst}
 tmp = OUTFILE + ".tmp"
 json.dump(out, open(tmp, "w"), ensure_ascii=False, separators=(",", ":"))
 os.replace(tmp, OUTFILE)

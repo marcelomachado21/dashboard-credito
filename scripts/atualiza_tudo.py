@@ -160,7 +160,8 @@ LIM_HIST, LIM_N = 0.10, 0.15          # histórico: até 10% de revisão; contag
 def pontos(nome, d):
     P = {}
     if not d: return P
-    if isinstance(d.get("inst"), list) and d["inst"] and "escopos" in d["inst"][0]:
+    # renegociação: a lista é de quem renegociou no período (fluxo), e os recortes vêm da safra, já checada; contagem não se aplica
+    if nome != "reneg" and isinstance(d.get("inst"), list) and d["inst"] and "escopos" in d["inst"][0]:
         for g in GRUPOS:
             P[("filiadas", g)] = sum(1 for i in d["inst"] if g in i.get("escopos", []))
     if nome == "carteira":

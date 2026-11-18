@@ -1,3 +1,15 @@
-cod;norma;confirmado;nota
-048;MP 1.314/2025;nao;Identificada pelo período (out/25 a mar/26) e pelo volume; tabela de bases legais do BC indisponível para download
-050;MP 1.376/2026 · Res. CMN 5.330/2026;nao;Identificada pelo período (ago/26 a nov/26, prazo de contratação até 12/11/2026) e pela origem (renegocia dívidas da base 048)
+cod;curto;nota
+007;MCR 2-6-4 e 2-6-5;
+008;Investagro (MCR 11-1-4);
+016;MCR 2-6-7 · fontes livres;
+017;Pronaf (MCR 10-1-25);
+018;MCR 3-3-12;
+024;Composição de dívidas (MCR 2-1-9-b);
+036;Res. CMN 5.123/2024;
+045;Decreto 12.381/2025;
+047;Res. CMN 5.247/2025 · art. 1º;Regulamenta a MP 1.314/2025
+048;Res. CMN 5.247/2025 · art. 2º;Regulamenta a MP 1.314/2025
+049;MP 1.376/2026 · art. 4º;
+050;MP 1.376/2026 · art. 1º;
+051;MP 1.376/2026 · art. 2º;
+999;Liquidação antecipada (MCR 2-6-1);
