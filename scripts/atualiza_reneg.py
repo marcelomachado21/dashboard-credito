@@ -20,8 +20,12 @@ OUTFILE = os.path.join(OUT, "reneg.json")
 URL = "https://www.bcb.gov.br/estabilidadefinanceira/micrrural"
 BASE = "https://www.bcb.gov.br/htms/sicor/DadosBrutos/"
 ARQ = {"op": "SICOR_OPERACAO_BASICA_RENEGOCIACAO.gz", "lista": "SICOR_LISTA_RENEGOCIACAO.gz"}
-# rótulo curto e nota de contexto por código (opcionais): scripts/bases_legais_reneg.csv (cod;curto;nota)
+# nome padronizado por código: scripts/bases_legais_reneg.csv (cod;norma;nota). Padrão: MCR na frente, com a resolução entre
+# parênteses; sem MCR, MP / Res. CMN; senão Res. CMN, Lei ou Decreto; sem artigo nem descrição. Códigos com a mesma norma
+# (ex.: 049, 050 e 051, artigos da MP 1.376) são somados numa linha só. Código fora do arquivo: rótulo gerado da descrição oficial.
 import csv, io
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from rotulo_base_legal import rotulo
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "bases_legais_reneg.csv"), encoding="utf-8") as fh:
     APELIDO = {r["cod"]: r for r in csv.DictReader(fh, delimiter=";")}
 URL_BL = "https://www.bcb.gov.br/htms/sicor/Base_Legal_Renegociacao.csv"
@@ -72,12 +76,14 @@ bl = l.groupby(["REF", "NU_ORDEM"]).CD_BASE_LEGAL.agg(lambda s: s.dropna().iloc[
 nori = l.groupby(["REF", "NU_ORDEM"]).size().rename("NORIG")
 o = o.join(bl, on=["REF", "NU_ORDEM"]).join(nori, on=["REF", "NU_ORDEM"])
 o["BL"] = o.BL.fillna("sem código"); o["NORIG"] = o.NORIG.fillna(0)
+NORMA = lambda c: (APELIDO.get(c) or {}).get("norma") or (rotulo(OFICIAL[c]) if OFICIAL.get(c) else ("Sem código de base legal" if c == "sem código" else f"Código {c} (sem descrição no BC)"))
+o["NORMA"] = o.BL.map(NORMA)
 o["PRAZO"] = (o.DT_VENCIMENTO - o.DT_EMISSAO).dt.days / 365.25
 o["PROG"] = o.CD_PROGRAMA.map(lambda p: 0 if p == "0001" else 1 if p == "0050" else 2)
 o["MES"] = o.DT_EMISSAO.dt.strftime("%Y-%m")
 
 # origem da dívida renegociada (pela lista): renegociação anterior registrada no SICOR, outra operação do SICOR, ou sem refBacen
-reneg_bl = o.set_index("REF").BL.to_dict()
+reneg_bl = o.set_index("REF").NORMA.to_dict()
 l = l.join(bl, on=["REF", "NU_ORDEM"])
 l["ORIG"] = [("rn:" + reneg_bl[r]) if isinstance(r, str) and r in reneg_bl else "op" if isinstance(r, str) and r.strip() else "sem"
              for r in l.REF_BACEN_ORIGINAL]
@@ -92,10 +98,11 @@ esc_de = lambda c: [e for e in ESC.get(c, ["sfn"]) if e in ids_ok]
 
 o = o[o.DT_EMISSAO >= DESDE]; l = l[l.DT_EMISSAO >= DESDE]
 # bases legais relevantes no período: as que somam ao menos R$ 100 mi
-tb = o.groupby("BL").agg(v=("VL", "sum"), n=("VL", "size"), ini=("MES", "min"), fim=("MES", "max")).sort_values("v", ascending=False)
+tb = o.groupby("NORMA").agg(v=("VL", "sum"), n=("VL", "size"), ini=("MES", "min"), fim=("MES", "max")).sort_values("v", ascending=False)
+COD = o.groupby("NORMA").BL.agg(lambda s: sorted(set(s)))
 BASES = [b for b, r in tb.iterrows() if r.v >= 1e8]
-o["BLG"] = o.BL.where(o.BL.isin(BASES), "outras")
-l["BLG"] = l.BL.where(l.BL.isin(BASES), "outras")
+o["BLG"] = o.NORMA.where(o.NORMA.isin(BASES), "outras")
+l = l.merge(o[["REF", "NU_ORDEM", "BLG"]], on=["REF", "NU_ORDEM"], how="left")
 GRUPOS = BASES + (["outras"] if (o.BLG == "outras").any() else [])
 r2 = lambda v: round(float(v) / 1e6, 2)            # R$ milhões
 
@@ -144,13 +151,15 @@ for c, g in gm.groupby("CNPJ_IF"):
 inst.sort(key=lambda x: -x["v"])
 
 def base(b):
-    a = APELIDO.get(b) or {}
-    return {"cod": b, "oficial": OFICIAL.get(b), "curto": a.get("curto") or None, "nota": a.get("nota") or None,
+    cs = COD[b]; notas = sorted({(APELIDO.get(c) or {}).get("nota") for c in cs} - {None, ""})
+    return {"cod": b, "codigos": cs, "oficial": [f"{c}: {OFICIAL[c]}" for c in cs if OFICIAL.get(c)], "nota": "; ".join(notas) or None,
             "ini": tb.loc[b, "ini"], "fim": tb.loc[b, "fim"], "v": r2(tb.loc[b, "v"]), "ops": int(tb.loc[b, "n"])}
 bases = [base(b) for b in BASES]
-outras = [base(b) for b in tb.index if b not in BASES]          # códigos abaixo de R$ 100 mi, somados em "outras"
-sem = [b for b in bases + outras if not b["oficial"] and b["cod"] != "sem código"]
-ALERTA = ("Base legal de renegociação sem descrição na tabela do BC: " + ", ".join(f"{b['cod']} (desde {b['ini']})" for b in sem)) if sem else ""
+outras = [base(b) for b in tb.index if b not in BASES]          # normas abaixo de R$ 100 mi, somadas em "outras"
+sem = sorted({c for c in o.BL.unique() if c != "sem código" and not OFICIAL.get(c)})
+nov = sorted({c for c in o.BL.unique() if c != "sem código" and OFICIAL.get(c) and c not in APELIDO})
+ALERTA = "; ".join(x for x in [("Código de base legal sem descrição na tabela do BC: " + ", ".join(sem)) if sem else "",
+                               ("Código novo com nome gerado da tabela do BC (conferir): " + ", ".join(f"{c} → {NORMA(c)}" for c in nov)) if nov else ""] if x)
 if not OFICIAL_OK: ALERTA = ("Tabela de bases legais do BC indisponível nesta rodada; descrições mantidas da anterior. " + ALERTA).strip()
 novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("meta", {}).get("ref") == REF else HOJE.isoformat()
 out = {"meta": {"ref": REF, "desde": DESDE, "atualizado": HOJE.isoformat(), "novo_desde": novo_desde, "unidade": "R$ milhões",
