@@ -25,7 +25,7 @@ import csv, io
 with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "bases_legais_reneg.csv"), encoding="utf-8") as fh:
     APELIDO = {r["cod"]: r for r in csv.DictReader(fh, delimiter=";")}
 URL_BL = "https://www.bcb.gov.br/htms/sicor/Base_Legal_Renegociacao.csv"
-DESDE = "2024-07-01"      # séries a partir da safra 2024/25
+DESDE = "2023-07-01"      # séries a partir da safra 2023/24 (a 2024/25 já tem com o que comparar)
 os.makedirs(RAW, exist_ok=True)
 ANT = json.load(open(OUTFILE)) if os.path.exists(OUTFILE) else None
 
@@ -99,49 +99,47 @@ l["BLG"] = l.BL.where(l.BL.isin(BASES), "outras")
 GRUPOS = BASES + (["outras"] if (o.BLG == "outras").any() else [])
 r2 = lambda v: round(float(v) / 1e6, 2)            # R$ milhões
 
-# agregação por instituição primeiro (rápida) e depois por recorte
-gi = o.groupby(["CNPJ_IF", "BLG"]).agg(v=("VL", "sum"), n=("VL", "size"), norig=("NORIG", "sum"), pz=("PRAZO", lambda s: 0)).reset_index()
-pzv = o.assign(pzv=o.PRAZO * o.VL).groupby(["CNPJ_IF", "BLG"]).pzv.sum()
-gm = o.groupby(["CNPJ_IF", "BLG", "MES"]).agg(v=("VL", "sum"), n=("VL", "size")).reset_index()
-gu = o.groupby(["CNPJ_IF", "BLG", "CD_ESTADO"]).VL.sum().reset_index()
-gp = o.groupby(["CNPJ_IF", "BLG", "PROG"]).VL.sum().reset_index()
-go = l.groupby(["CNPJ_IF", "BLG", "ORIG"]).VR.sum().reset_index()
+# safra (jul–jun, rotulada pelo ano em que termina) e trimestre da safra: t1 jul–set, t2 out–dez, t3 jan–mar, t4 abr–jun
+o["Q"] = [f"{y + (m >= 7)}t{(m - 7) % 12 // 3 + 1}" for y, m in zip(o.DT_EMISSAO.dt.year, o.DT_EMISSAO.dt.month)]
+l = l.merge(o[["REF", "NU_ORDEM", "Q"]], on=["REF", "NU_ORDEM"], how="left")
+o["PZV"] = o.PRAZO.fillna(0) * o.VL
 
-ac = lambda: collections.defaultdict(lambda: collections.defaultdict(float))
-TOT = collections.defaultdict(lambda: collections.defaultdict(lambda: [0.0, 0, 0, 0.0]))     # esc -> bl -> [valor, ops, contratos, prazo×valor]
-MES = collections.defaultdict(lambda: collections.defaultdict(lambda: collections.defaultdict(lambda: [0.0, 0])))
-UF, PG, OR = collections.defaultdict(ac), collections.defaultdict(ac), collections.defaultdict(ac)
-for r in gi.itertuples():
-    for e in esc_de(r.CNPJ_IF):
-        for b in (r.BLG, "todas"):
-            t = TOT[e][b]; t[0] += r.v; t[1] += r.n; t[2] += r.norig; t[3] += pzv[(r.CNPJ_IF, r.BLG)]
+# por instituição e mês (valor, operações, contratos originais, prazo×valor); trimestre para UF, programa e origem
+gm = o.groupby(["CNPJ_IF", "BLG", "MES"]).agg(v=("VL", "sum"), n=("VL", "size"), c=("NORIG", "sum"), p=("PZV", "sum")).reset_index()
+gu = o.groupby(["CNPJ_IF", "BLG", "Q", "CD_ESTADO"]).VL.sum().reset_index()
+gp = o.groupby(["CNPJ_IF", "BLG", "Q", "PROG"]).VL.sum().reset_index()
+go = l.groupby(["CNPJ_IF", "BLG", "Q", "ORIG"]).VR.sum().reset_index()
+
+dd = lambda f: collections.defaultdict(f)
+MES = dd(lambda: dd(lambda: dd(lambda: [0.0, 0, 0, 0.0])))          # esc -> bl -> mês -> [valor, ops, contratos, prazo×valor]
+UF, PG, OR = (dd(lambda: dd(lambda: dd(lambda: dd(float)))) for _ in range(3))   # esc -> bl -> trimestre -> chave -> valor
 for r in gm.itertuples():
     for e in esc_de(r.CNPJ_IF):
-        for b in (r.BLG, "todas"): x = MES[e][b][r.MES]; x[0] += r.v; x[1] += r.n
+        for b in (r.BLG, "todas"): x = MES[e][b][r.MES]; x[0] += r.v; x[1] += r.n; x[2] += r.c; x[3] += r.p
 for r in gu.itertuples():
     for e in esc_de(r.CNPJ_IF):
-        for b in (r.BLG, "todas"): UF[e][b][r.CD_ESTADO] += r.VL
+        for b in (r.BLG, "todas"): UF[e][b][r.Q][r.CD_ESTADO] += r.VL
 for r in gp.itertuples():
     for e in esc_de(r.CNPJ_IF):
-        for b in (r.BLG, "todas"): PG[e][b][int(r.PROG)] += r.VL
+        for b in (r.BLG, "todas"): PG[e][b][r.Q][int(r.PROG)] += r.VL
 for r in go.itertuples():
     for e in esc_de(r.CNPJ_IF):
-        for b in (r.BLG, "todas"): OR[e][b][r.ORIG] += r.VR
+        for b in (r.BLG, "todas"): OR[e][b][r.Q][r.ORIG] += r.VR
 
 serie = {}
-for e, bs in TOT.items():
+for e, bs in MES.items():
     serie[e] = {}
-    for b, t in bs.items():
-        serie[e][b] = {"v": r2(t[0]), "ops": int(t[1]), "contratos": int(t[2]), "prazo": round(t[3] / t[0], 2) if t[0] else None,
-                       "mes": [[m, r2(x[0]), x[1]] for m, x in sorted(MES[e][b].items())],
-                       "uf": {u: r2(v) for u, v in sorted(UF[e][b].items(), key=lambda z: -z[1]) if v >= 5e4},
-                       "prog": [r2(PG[e][b].get(i, 0)) for i in range(3)],
-                       "origem": {k: r2(v) for k, v in sorted(OR[e][b].items(), key=lambda z: -z[1]) if v >= 5e4}}
+    for b, ms in bs.items():
+        qs = sorted(set(UF[e][b]) | set(PG[e][b]) | set(OR[e][b]))
+        serie[e][b] = {"mes": [[m, r2(x[0]), int(x[1]), int(x[2]), r2(x[3])] for m, x in sorted(ms.items())],
+                       "q": {q: {"uf": {u: r2(v) for u, v in sorted(UF[e][b][q].items(), key=lambda z: -z[1]) if v >= 5e4},
+                                 "prog": [r2(PG[e][b][q].get(i, 0)) for i in range(3)],
+                                 "origem": {k: r2(v) for k, v in sorted(OR[e][b][q].items(), key=lambda z: -z[1]) if v >= 5e4}} for q in qs}}
 inst = []
-for c, g in gi.groupby("CNPJ_IF"):
-    d = {b: [r2(r.v), int(r.n), round(pzv[(c, b)] / r.v, 2) if r.v else None] for r in g.itertuples() for b in [r.BLG]}
-    tv = sum(x[0] for x in d.values())
-    if tv < 0.5: continue                                           # menos de R$ 500 mil no período
+for c, g in gm.groupby("CNPJ_IF"):
+    tv = g.v.sum() / 1e6
+    if tv < 0.5: continue                                           # menos de R$ 500 mil no período todo
+    d = {b: [[r.MES, r2(r.v), int(r.n), r2(r.p)] for r in gb.sort_values("MES").itertuples()] for b, gb in g.groupby("BLG")}
     inst.append({"cnpj": c, **NOME.get(c, {"nome": c}), "escopos": [e for e in esc_de(c) if e != "sfn"], "bl": d, "v": round(tv, 2)})
 inst.sort(key=lambda x: -x["v"])
 

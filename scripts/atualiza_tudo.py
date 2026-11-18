@@ -138,12 +138,13 @@ def chk_territorio(n, a):
 def chk_reneg(n, a):
     """Renegociações (microdados do SICOR): referência não recua, SFN com volume e instituições identificadas."""
     nao_recua(n["meta"]["ref"], (a or {}).get("meta", {}).get("ref"), "referência das renegociações")
-    tot = n["serie"]["sfn"]["todas"]["v"] / 1000
-    faixa(tot, 5, 1000, "renegociações no SFN desde jul/24 (R$ bi)")
+    totv = lambda d: sum(x[1] for x in d["serie"]["sfn"]["todas"]["mes"]) / 1000 if "mes" in d["serie"]["sfn"]["todas"] and len(d["serie"]["sfn"]["todas"]["mes"][0]) > 3 else None
+    tot = totv(n)
+    faixa(tot, 5, 1000, f"renegociações no SFN desde {n['meta']['desde'][:7]} (R$ bi)")
     if len(n["inst"]) < 50: raise AssertionError(f"só {len(n['inst'])} instituições com renegociação")
     if (n["meta"].get("sem_instituicao_pct") or 0) > 10: raise AssertionError(f"{n['meta']['sem_instituicao_pct']}% do valor sem instituição identificada")
-    if a and a.get("serie", {}).get("sfn", {}).get("todas"):
-        if tot < 0.9 * a["serie"]["sfn"]["todas"]["v"] / 1000: raise AssertionError("total renegociado caiu mais de 10% em relação à versão publicada")
+    if a and a.get("serie", {}).get("sfn", {}).get("todas") and a["meta"].get("desde") == n["meta"]["desde"] and totv(a):
+        if tot < 0.9 * totv(a): raise AssertionError("total renegociado caiu mais de 10% em relação à versão publicada")
 
 
 CHK = {"reneg": chk_reneg, "focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}

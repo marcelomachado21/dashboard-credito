@@ -2404,24 +2404,29 @@ function renderTerr() {
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
 /* ===================== Aba Renegociação de dívidas rurais (microdados do SICOR) ===================== */
-const rns = (() => { try { return { esc: "sfn", bl: "", all: false, ver: "cong", ...JSON.parse(localStorage.getItem("reneg-filtros") || "{}") }; } catch (e) { return { esc: "sfn", bl: "", all: false, ver: "cong" }; } })();
-const salvaRN = () => { try { localStorage.setItem("reneg-filtros", JSON.stringify({ esc: rns.esc, bl: rns.bl, ver: rns.ver })); } catch (e) {} };
+const rns = (() => { const d = { esc: "sfn", bl: "", all: false, ver: "cong", safra: 0, per: "safra" }; try { return { ...d, ...JSON.parse(localStorage.getItem("reneg-filtros") || "{}"), safra: 0 }; } catch (e) { return d; } })();
+const salvaRN = () => { try { localStorage.setItem("reneg-filtros", JSON.stringify({ esc: rns.esc, bl: rns.bl, ver: rns.ver, per: rns.per })); } catch (e) {} };
 const mesAno = (m) => m ? `${["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"][+m.slice(5) - 1]}/${m.slice(2, 4)}` : "";
 const rnB = (cod) => RN.bases.find(x => x.cod === cod) || (RN.outras || []).find(x => x.cod === cod);
 const rnBase = (cod) => { if (cod === "todas") return "Todas as bases legais"; if (cod === "outras") return "Demais bases legais"; const b = rnB(cod);
-  return b ? (b.curto || b.oficial || `Base legal ${cod} · ${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}`) + ` (código ${cod})` : `Base legal ${cod}`; };
+  return b ? (b.curto || b.oficial || `Base legal ${cod}`) + ` (código ${cod})` : `Base legal ${cod}`; };
 const rnOrig = (k) => k === "op" ? "Operação de crédito rural" : k === "sem" ? "Dívida sem registro no SICOR" : k.startsWith("rn:") ? `Renegociação anterior · ${k.slice(3) === "outras" ? "demais bases" : rnBase(k.slice(3))}` : k;
 document.addEventListener("change", (ev) => { if (!ev.target.matches("[data-rnbl]")) return; rns.bl = ev.target.value; rns.all = false; salvaRN(); render(); });
-document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-rnver]"); if (!b) return; rns.ver = b.dataset.rnver; rns.all = false; salvaRN(); const y = window.scrollY; render(); window.scrollTo(0, y); });
+document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-rnver],[data-rnsafra],[data-rnper]"); if (!b || b.disabled) return;
+  if (b.dataset.rnver) rns.ver = b.dataset.rnver; if (b.dataset.rnsafra) rns.safra = +b.dataset.rnsafra; if (b.dataset.rnper) rns.per = b.dataset.rnper;
+  rns.all = false; salvaRN(); const y = window.scrollY; render(); window.scrollTo(0, y); });
 document.addEventListener("click", (ev) => { const b = ev.target.closest("#rnmore"); if (!b) return; rns.all = !rns.all; const y = window.scrollY; render(); window.scrollTo(0, y); });
-function colunas(pts, o = {}) {      // barras verticais mensais
+function colunas(pts, o = {}) {      // barras verticais mensais; p.a = mesmo mês da safra anterior (barra cinza ao lado); p.fora = fora do período escolhido
   if (!pts.length) return `<p class="empty">Sem operações no período.</p>`;
-  const W = 640, H = o.h || 220, L = 52, R = 10, T = 12, B = 30, mx = Math.max(...pts.map(p => p.v), 1), tk = ticks(0, mx), top = tk[tk.length - 1];
-  const bw = (W - L - R) / pts.length, y = (v) => T + (H - T - B) * (1 - v / top);
+  const W = 640, H = o.h || 220, L = 52, R = 10, T = 12, B = 30, mx = Math.max(...pts.map(p => Math.max(p.v || 0, p.a || 0)), 1), tk = ticks(0, mx), top = tk[tk.length - 1];
+  const bw = (W - L - R) / pts.length, y = (v) => T + (H - T - B) * (1 - v / top), dupla = pts.some(p => p.a != null);
   const grid = tk.map(t => `<line x1="${L}" x2="${W - R}" y1="${y(t)}" y2="${y(t)}" stroke="var(--line)"/><text x="${L - 6}" y="${y(t) + 4}" text-anchor="end" class="ax">${o.fmt ? o.fmt(t) : nf(t, 0)}</text>`).join("");
-  const bars = pts.map((p, i) => { const x = L + i * bw + bw * 0.15, w = Math.max(2, bw * 0.7), h = Math.max(0, H - B - y(p.v));
-    return `<rect x="${x.toFixed(1)}" y="${y(p.v).toFixed(1)}" width="${w.toFixed(1)}" height="${h.toFixed(1)}" rx="3" fill="${o.c || "var(--accent)"}"><title>${esc(p.lbl)}: ${o.tip ? o.tip(p) : nf(p.v, 1)}</title></rect>`
-      + (i % Math.ceil(pts.length / 12) === 0 ? `<text x="${(x + w / 2).toFixed(1)}" y="${H - B + 16}" text-anchor="middle" class="ax">${esc(p.lbl)}</text>` : ""); }).join("");
+  const rect = (x, w, v, c, op, tt) => `<rect x="${x.toFixed(1)}" y="${y(v).toFixed(1)}" width="${w.toFixed(1)}" height="${Math.max(0, H - B - y(v)).toFixed(1)}" rx="3" fill="${c}" opacity="${op}"><title>${tt}</title></rect>`;
+  const bars = pts.map((p, i) => { const x0 = L + i * bw + bw * 0.12, wt = Math.max(2, bw * 0.76), op = p.fora ? 0.35 : 1;
+    const w = dupla ? wt / 2 - 1 : wt;
+    return (dupla && p.a != null ? rect(x0, w, p.a, "var(--grafite-2, #9AA1A8)", op * 0.75, `${esc(p.lblA)}: ${o.tip ? o.tip({ v: p.a, n: p.na }) : nf(p.a, 1)}`) : "")
+      + (p.v != null ? rect(dupla ? x0 + w + 2 : x0, w, p.v, o.c || "var(--accent)", op, `${esc(p.lbl)}: ${o.tip ? o.tip(p) : nf(p.v, 1)}`) : "")
+      + `<text x="${(x0 + wt / 2).toFixed(1)}" y="${H - B + 16}" text-anchor="middle" class="ax">${esc(p.eixo || p.lbl)}</text>`; }).join("");
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "Série mensal")}">${grid}${bars}</svg>`;
 }
 function renderReneg() {
@@ -2429,81 +2434,111 @@ function renderReneg() {
   if (!MAPAS.BR && !renderReneg._m) { renderReneg._m = 1; fetch("mapas/BR.json").then(r => r.json()).then(m => { MAPAS.BR = m; render(); }).catch(() => {}); }
   cid = 0; registraRecortes(RN.escopos);
   const ids = RN.escopos.map(e => e.id).filter(id => RN.serie[id]);
-  // padrão: o programa ativo nos últimos três meses com maior valor (as bases de fluxo contínuo ficam atrás de um programa novo)
-  const mRef = RN.meta.ref.slice(0, 7), m3 = (() => { const d = new Date(mRef + "-01T12:00:00"); d.setMonth(d.getMonth() - 2); return d.toISOString().slice(0, 7); })();
-  const recente = [...RN.bases].filter(b => b.ini >= m3 || b.fim >= m3).sort((a, b) => (b.ini >= m3 ? 1 : 0) * b.v - (a.ini >= m3 ? 1 : 0) * a.v || b.v - a.v)[0]?.cod || "todas";
-  if (!rns.bl || (rns.bl !== "todas" && !RN.bases.some(b => b.cod === rns.bl))) rns.bl = recente;
-  const opts = [["todas", "Todas as bases legais"], ...RN.bases.map(b => [b.cod, rnBase(b.cod)])];
+  // safra (jul–jun, rotulada pelo ano em que termina) e período, como na aba Safra
+  const ref = RN.meta.ref, yR = +ref.slice(0, 4), mR = +ref.slice(5, 7), SAr = yR + (mR >= 7 ? 1 : 0), kR = (mR - 7 + 12) % 12;
+  const S0 = +RN.meta.desde.slice(0, 4) + 1, SAFRAS = []; for (let s = SAr; s >= S0; s--) SAFRAS.push(s);
+  if (!SAFRAS.includes(rns.safra)) rns.safra = SAr;
+  const Sx = rns.safra, cur = Sx === SAr, P = PER.find(p => p[0] === rns.per) || PER[0];
+  const pOn = (p) => !cur || p[2] <= kR;
+  if (!pOn(P)) rns.per = "safra";
+  const [, perNome, ia, ib0] = PER.find(p => p[0] === rns.per), ib = cur ? Math.min(ib0, kR) : ib0;
+  const ymDe = (s, i) => { const m = (i + 6) % 12 + 1; return `${s - (m >= 7 ? 1 : 0)}-${String(m).padStart(2, "0")}`; };
+  const idx = []; for (let i = ia; i <= ib; i++) idx.push(i);
+  const mesesA = new Set(idx.map(i => ymDe(Sx, i))), mesesB = new Set(idx.map(i => ymDe(Sx - 1, i)));
+  const qs = (s) => [...new Set(idx.map(i => `${s}t${Math.floor(i / 3) + 1}`))];
+  const parcial = cur && ib < ib0, perTxt = rns.per === "safra" ? "safra" : perNome;
+  const janela = `${mesAno(ymDe(Sx, ia))} a ${mesAno(ymDe(Sx, ib))}`;
+  const soma = (mes, set) => (mes || []).filter(r => set.has(r[0])).reduce((a, r) => [a[0] + r[1], a[1] + r[2], a[2] + r[3], a[3] + r[4]], [0, 0, 0, 0]);
+  const tot = (esc, bl, set) => soma(RN.serie[esc]?.[bl]?.mes, set);
+  // bases com valor no período (SFN); padrão: a maior do período
+  const nasBases = RN.bases.map(b => ({ b, v: tot("sfn", b.cod, mesesA)[0] })).filter(r => r.v > 0).sort((a, b) => b.v - a.v);
+  if (!rns.bl) rns.bl = "todas";
+  else if (rns.bl !== "todas" && !nasBases.some(r => r.b.cod === rns.bl)) rns.bl = nasBases[0]?.b.cod || "todas";
+  const opts = [["todas", "Todas as bases legais"], ...nasBases.map(r => [r.b.cod, rnBase(r.b.cod)])];
   $("#filters").innerHTML = `<div class="frow">${seletorRecorte(ids, rns.esc, (id) => { rns.esc = id; rns.all = false; salvaRN(); })}
-    <label class="fgroup"><span class="flabel">Programa de renegociação</span><select class="sel" data-rnbl aria-label="Base legal da renegociação">${opts.map(([k, n]) => `<option value="${k}"${k === rns.bl ? " selected" : ""}>${esc(n)}</option>`).join("")}</select></label></div>`;
-  const ref = RN.meta.ref, lk = `<a href="${esc(RN.meta.url)}" target="_blank" rel="noopener">microdados do SICOR, Banco Central</a>`;
+    <label class="fgroup"><span class="flabel">Programa de renegociação</span><select class="sel" data-rnbl aria-label="Base legal da renegociação">${opts.map(([k, n]) => `<option value="${k}"${k === rns.bl ? " selected" : ""}>${esc(n)}</option>`).join("")}</select></label></div>
+    <div class="frow"><div class="fgroup"><span class="flabel">Safra</span><div class="seg">${SAFRAS.map(s => `<button type="button" data-rnsafra="${s}" aria-pressed="${s === Sx}">${safraLbl(s)}${s === SAr ? " (corrente)" : ""}</button>`).join("")}</div></div>
+    <div class="fgroup"><span class="flabel">Período da safra</span><div class="seg">${PER.map(p => `<button type="button" data-rnper="${p[0]}" aria-pressed="${rns.per === p[0]}"${pOn(p) ? (p[0] === "safra" ? "" : ` title="${MES[p[2]]}–${MES[p[3]]}"`) : ` disabled title="Período ainda não começou na safra ${safraLbl(Sx)}"`}>${p[1]}</button>`).join("")}</div></div></div>`;
+  const lk = `<a href="${esc(RN.meta.url)}" target="_blank" rel="noopener">microdados do SICOR, Banco Central</a>`;
   $("#stamp").textContent = `SICOR até ${dmy(ref)} · atualizado em ${dmy(RN.meta.atualizado)}`;
-  const nmE = rNome(rns.esc), x = RN.serie[rns.esc]?.[rns.bl], sfn = RN.serie.sfn?.[rns.bl];
-  const head = `<div><div class="eyebrow">Microdados do SICOR · operações até ${dmy(ref)}${tagNovo(RN.meta.novo_desde)}</div><h2>Renegociação de dívidas rurais · ${esc(nmE)}</h2>
-    <p class="lede">${esc(rnBase(rns.bl))}. Valor das operações novas geradas pela renegociação, contratos originais renegociados e onde estão. Instituição, sistema e central pelo CNPJ da instituição que registrou a operação.</p></div>`;
-  if (!x || !x.v) { $("#view").innerHTML = head + `<p class="empty">Sem renegociação de ${esc(nmE)} nesta base legal desde ${mesAno(RN.meta.desde.slice(0, 7))}.</p>`; return; }
-  const part = rns.esc !== "sfn" && sfn?.v ? x.v / sfn.v * 100 : null;
+  const nmE = rNome(rns.esc), sr = RN.serie[rns.esc]?.[rns.bl];
+  const x = tot(rns.esc, rns.bl, mesesA), xa = tot(rns.esc, rns.bl, mesesB), sf = tot("sfn", rns.bl, mesesA), temAnt = Sx - 1 >= S0;
+  const ptoAnt = `${rns.per === "safra" ? "safra" : perNome} ${safraLbl(Sx - 1)}${parcial || (cur && rns.per === "safra") ? ", mesmo ponto" : ""}`;
+  const head = `<div><div class="eyebrow">Microdados do SICOR · ${parcial || (cur && ib === kR) ? `operações até ${dmy(ref)}` : "período fechado"}${tagNovo(RN.meta.novo_desde)}</div><h2>Renegociação de dívidas rurais · ${esc(nmE)}</h2>
+    <p class="lede">${esc(rnBase(rns.bl))} · ${rns.per === "safra" ? "safra" : perNome + " da safra"} ${safraLbl(Sx)} (${janela}). Valor das operações novas geradas pela renegociação, contratos originais renegociados e onde estão, contra o mesmo período da safra anterior.</p></div>`;
+  if (!x[0]) { $("#view").innerHTML = head + `<p class="empty">Sem renegociação de ${esc(nmE)} nesta base legal em ${janela}.</p>`; return; }
+  const vr = temAnt && xa[0] ? (x[0] / xa[0] - 1) * 100 : null, part = rns.esc !== "sfn" && sf[0] ? x[0] / sf[0] * 100 : null;
+  const pzA = xa[0] ? xa[3] / xa[0] : null;
   const kp = `<div class="kpis">
-    ${kpiBox("Valor renegociado", brlMi(x.v).replace("R$ ", ""), "", part != null ? `${nf(part, 1)}% do SFN nesta base` : `${nf(x.ops, 0)} operações novas`, "flat", `operações novas · até ${dmy(ref)}`)}
-    ${kpiBox("Contratos renegociados", nf(x.contratos, 0), "", `${nf(x.ops, 0)} operações novas geradas`, "flat", "contratos originais na lista do SICOR")}
-    ${kpiBox("Valor médio por operação nova", nf(x.v / x.ops * 1000, 0), " mil", sfn && rns.esc !== "sfn" ? `SFN: R$ ${nf(sfn.v / sfn.ops * 1000, 0)} mil` : "", "flat", "R$")}
-    ${kpiBox("Prazo médio", nf(x.prazo, 2), " anos", sfn && rns.esc !== "sfn" ? `SFN: ${nf(sfn.prazo, 2)} anos` : "", "flat", "da emissão ao vencimento, ponderado pelo valor")}
+    ${kpiBox("Valor renegociado", brlMi(x[0]).replace("R$ ", ""), "", vr == null ? (temAnt ? `sem renegociação nesta base em ${safraLbl(Sx - 1)}` : "") : `${arrow(vr)}${sgn(vr)} contra ${ptoAnt}`, "flat", part != null ? `${nf(part, 1)}% do SFN nesta base · ${perTxt} ${safraLbl(Sx)}` : `${perTxt} ${safraLbl(Sx)}`)}
+    ${kpiBox("Contratos renegociados", nf(x[2], 0), "", xa[2] ? `${ptoAnt}: ${nf(xa[2], 0)}` : `${nf(x[1], 0)} operações novas geradas`, "flat", "contratos originais na lista do SICOR")}
+    ${kpiBox("Valor médio por operação nova", nf(x[0] / x[1] * 1000, 0), " mil", xa[1] ? `${ptoAnt}: R$ ${nf(xa[0] / xa[1] * 1000, 0)} mil` : "", "flat", "R$")}
+    ${kpiBox("Prazo médio", nf(x[3] / x[0], 2), " anos", pzA ? `${ptoAnt}: ${nf(pzA, 2)} anos` : "", "flat", "da emissão ao vencimento, ponderado pelo valor")}
   </div>`;
-  const mes = colunas(x.mes.map(([m, v, n]) => ({ lbl: mesAno(m), v, n })), { fmt: v => v >= 1000 ? nf(v / 1000, 0) + " bi" : nf(v, 0), tip: p => `${brlMi(p.v)} · ${nf(p.n, 0)} operações`, label: "Valor renegociado por mês", c: rCor(rns.esc) === "#2B2F33" ? css("--grafite") : rCor(rns.esc) });
+  // barras: os 12 meses da safra, com o mesmo mês da safra anterior ao lado; fora do período escolhido, esmaecidos
+  const mm = (s) => Object.fromEntries((sr?.mes || []).map(r => [r[0], r]));
+  const A = mm(), cA = rCor(rns.esc) === "#2B2F33" ? css("--grafite") : rCor(rns.esc), ult = cur ? kR : 11;
+  const pts = []; for (let i = 0; i < 12; i++) { const a = A[ymDe(Sx, i)], b = A[ymDe(Sx - 1, i)];
+    pts.push({ eixo: MES[i], lbl: mesAno(ymDe(Sx, i)), v: i <= ult ? (a ? a[1] : 0) : null, n: a ? a[2] : 0, a: temAnt ? (b ? b[1] : 0) : null, na: b ? b[2] : 0, lblA: mesAno(ymDe(Sx - 1, i)), fora: i < ia || i > ib0 }); }
+  const mes = colunas(pts, { fmt: v => v >= 1000 ? nf(v / 1000, 0) + " bi" : nf(v, 0), tip: p => `${brlMi(p.v)} · ${nf(p.n, 0)} operações`, label: "Valor renegociado por mês", c: cA });
   // peso da renegociação sobre as contratações do mês (fluxo contra fluxo, mesmo recorte; as renegociações não entram nas contratações do SICOR)
   const okS = garanteUF("safra", D, ufDe(rns.esc) && ufDe(rns.esc) !== "MG" ? ufDe(rns.esc) : null, fundeSafraUF) === true;
   const contr = {};
-  Object.entries((okS && D.serie?.[rns.esc]?.BR) || {}).forEach(([S, rows]) => rows.forEach((r, i) => { const v = r[0] + r[1] + r[2] + r[3]; if (v > 0) contr[`${+S - (i < 6 ? 1 : 0)}-${String((i + 6) % 12 + 1).padStart(2, "0")}`] = v; }));
-  const pctL = (lst) => lst.filter(([m]) => contr[m]).map(([m, v]) => ({ d: m, v: v / contr[m] * 100 }));
-  const tod = RN.serie[rns.esc]?.todas;
-  const linhas = [{ name: rnBase(rns.bl).replace(/ \(código.*/, ""), pts: pctL(x.mes), c: rCor(rns.esc) === "#2B2F33" ? css("--grafite") : rCor(rns.esc), w: 3 }]
-    .concat(rns.bl !== "todas" && tod ? [{ name: "Todas as bases", pts: pctL(tod.mes), c: css("--grafite-2"), w: 1.6, dash: "4 3" }] : []);
-  const pesoTxt = (() => { const p = linhas[0].pts; const u = p[p.length - 1]; return u ? `Em ${mesAno(u.d)}, a renegociação equivaleu a ${nf(u.v, 1)}% do crédito rural contratado no mês por ${esc(nmE)}.` : ""; })();
+  Object.entries((okS && D.serie?.[rns.esc]?.BR) || {}).forEach(([S, rows]) => rows.forEach((r, i) => { const v = r[0] + r[1] + r[2] + r[3]; if (v > 0) contr[ymDe(+S, i)] = v; }));
+  const linha = (s) => { const o = []; for (let i = 0; i <= (s === Sx ? ult : 11); i++) { const m = ymDe(s, i), r = A[m]; if (contr[m]) o.push({ d: ymDe(Sx, i), v: (r ? r[1] : 0) / contr[m] * 100 }); } return o; };
+  const linhas = [{ name: safraLbl(Sx), pts: linha(Sx), c: cA, w: 3 }].concat(temAnt ? [{ name: safraLbl(Sx - 1), pts: linha(Sx - 1), c: css("--grafite-2"), w: 1.6, dash: "4 3" }] : []);
+  const pAt = soma(sr?.mes, mesesA)[0], cAt = [...mesesA].reduce((a, m) => a + (contr[m] || 0), 0), pAn = soma(sr?.mes, mesesB)[0], cAn = [...mesesB].reduce((a, m) => a + (contr[m] || 0), 0);
+  const pesoTxt = cAt ? `No período escolhido, a renegociação equivaleu a ${nf(pAt / cAt * 100, 1)}% do crédito rural contratado por ${esc(nmE)}${temAnt && cAn ? ` (${ptoAnt}: ${nf(pAn / cAn * 100, 1)}%)` : ""}.` : "";
   const peso = Object.keys(contr).length ? tsChart(linhas, { unit: "%", fmt: v => nf(v, 0), dots: true, h: 220, label: "Renegociação sobre contratações" }) : `<p class="empty">${okS ? "Sem contratações do SICOR para este recorte." : "Carregando as contratações do estado…"}</p>`;
-  // mapa por UF da operação
+  // UF, programa e origem: soma dos trimestres da safra que cobrem o período
+  const junta = (k) => { const o = {}; qs(Sx).forEach(q => { const z = sr?.q?.[q]?.[k]; if (!z) return; if (Array.isArray(z)) z.forEach((v, i) => o[i] = (o[i] || 0) + v); else Object.entries(z).forEach(([a, v]) => o[a] = (o[a] || 0) + v); }); return o; };
+  const uf = Object.fromEntries(Object.entries(junta("uf")).sort((a, b) => b[1] - a[1])), prog = junta("prog"), orig = Object.entries(junta("origem")).sort((a, b) => b[1] - a[1]);
+  const vUF = Object.values(uf).reduce((a, b) => a + b, 0) || x[0];
   let mapa = `<p class="empty">Carregando o mapa…</p>`;
   if (MAPAS.BR) {
-    const vs = Object.values(x.uf).sort((a, b) => a - b), q = (p) => vs[Math.min(vs.length - 1, Math.floor(p * vs.length))] || 0, cuts = [q(.2), q(.4), q(.6), q(.8), q(.93)], SEQ = ["#E3F1EF", "#B5DCD6", "#7FC2B8", "#3F9E91", "#007A6E", "#004E46"];
+    const vs = Object.values(uf).sort((a, b) => a - b), q = (p) => vs[Math.min(vs.length - 1, Math.floor(p * vs.length))] || 0, cuts = [q(.2), q(.4), q(.6), q(.8), q(.93)], SEQ = ["#E3F1EF", "#B5DCD6", "#7FC2B8", "#3F9E91", "#007A6E", "#004E46"];
     const colr = (v) => { if (!v) return "var(--line)"; const i = cuts.findIndex(c => v < c); return SEQ[i === -1 ? 5 : i]; };
-    mapa = `<svg class="chart" viewBox="0 0 ${MAPAS.BR.vb[0]} ${MAPAS.BR.vb[1]}" role="img" aria-label="Renegociação por estado">${Object.entries(MAPAS.BR.m).map(([u, m]) => `<path d="${m.p}" fill="${colr(x.uf[u])}" stroke="#fff" stroke-width=".8"><title>${esc(m.n)}: ${x.uf[u] ? brlMi(x.uf[u]) + " · " + nf(x.uf[u] / x.v * 100, 1) + "%" : "sem renegociação"}</title></path>`).join("")}</svg>`;
+    mapa = `<svg class="chart" viewBox="0 0 ${MAPAS.BR.vb[0]} ${MAPAS.BR.vb[1]}" role="img" aria-label="Renegociação por estado">${Object.entries(MAPAS.BR.m).map(([u, m]) => `<path d="${m.p}" fill="${colr(uf[u])}" stroke="#fff" stroke-width=".8"><title>${esc(m.n)}: ${uf[u] ? brlMi(uf[u]) + " · " + nf(uf[u] / vUF * 100, 1) + "%" : "sem renegociação"}</title></path>`).join("")}</svg>`;
   }
-  const perfil = `<div class="grid3">${rosca("Programa da operação nova", [{ nm: "Pronaf", v: x.prog[0] }, { nm: "Pronamp", v: x.prog[1] }, { nm: "Demais", v: x.prog[2] }])}
-    ${rosca("Origem da dívida renegociada", (() => { const e = Object.entries(x.origem), top = e.slice(0, 3), resto = e.slice(3).reduce((a, [, v]) => a + v, 0); return top.map(([k, v]) => ({ nm: rnOrig(k), v })).concat(resto ? [{ nm: "Outras origens", v: resto, cinza: true }] : []); })())}
-    <div class="rosca"><h4>Estados com mais renegociação</h4><ul class="rleg">${Object.entries(x.uf).slice(0, 10).map(([u, v]) => `<li><i style="background:transparent"></i><span>${esc(UFN[u] || u)}</span><span>${nf(v / x.v * 100, 1)}%</span><small>${brlMi(v)}</small></li>`).join("")}</ul></div></div>`;
-  // ranking de instituições do recorte
-  const dI = (i) => { if (rns.bl !== "todas") return i.bl[rns.bl]; const e = Object.values(i.bl), v = e.reduce((a, b) => a + b[0], 0), pv = e.filter(b => b[2] != null).reduce((a, b) => a + b[0] * b[2], 0), vp = e.filter(b => b[2] != null).reduce((a, b) => a + b[0], 0);
-    return [v, e.reduce((a, b) => a + b[1], 0), vp ? pv / vp : null]; };
-  const base = RN.inst.filter(i => rns.esc === "sfn" || (i.escopos || []).includes(rns.esc)).map(i => ({ i, d: dI(i) })).filter(r => r.d && r.d[0] > 0);
+  const perfil = `<div class="grid3">${rosca("Programa da operação nova", [{ nm: "Pronaf", v: prog[0] || 0 }, { nm: "Pronamp", v: prog[1] || 0 }, { nm: "Demais", v: prog[2] || 0 }])}
+    ${rosca("Origem da dívida renegociada", (() => { const top = orig.slice(0, 3), resto = orig.slice(3).reduce((a, [, v]) => a + v, 0); return top.map(([k, v]) => ({ nm: rnOrig(k), v })).concat(resto ? [{ nm: "Outras origens", v: resto, cinza: true }] : []); })())}
+    <div class="rosca"><h4>Estados com mais renegociação</h4><ul class="rleg">${Object.entries(uf).slice(0, 10).map(([u, v]) => `<li><i style="background:transparent"></i><span>${esc(UFN[u] || u)}</span><span>${nf(v / vUF * 100, 1)}%</span><small>${brlMi(v)}</small></li>`).join("")}</ul></div></div>`;
+  const quebraQ = qs(Sx).length * 3 !== idx.length || parcial;
+  // ranking de instituições do recorte: [valor, operações, prazo×valor] no período e no mesmo período da safra anterior
+  const dI = (i, set) => { const ls = rns.bl === "todas" ? Object.values(i.bl) : [i.bl[rns.bl] || []]; return ls.flat().filter(r => set.has(r[0])).reduce((a, r) => [a[0] + r[1], a[1] + r[2], a[2] + r[3]], [0, 0, 0]); };
+  const base = RN.inst.filter(i => rns.esc === "sfn" || (i.escopos || []).includes(rns.esc)).map(i => ({ i, d: dI(i, mesesA), a: dI(i, mesesB) })).filter(r => r.d[0] > 0);
   // por conglomerado: sistemas cooperativos inteiros (singulares, centrais e banco cooperativo) e conglomerados prudenciais dos bancos, pela base da safra
-  const congDe = new Map((D.inst || []).map(i => [i.cnpj, i.cong])), SISN = Object.fromEntries(SIS.map(x => [x[0], x[1]]));
-  const porCong = () => { const G = new Map(); base.forEach(r => { const k = congDe.get(r.i.cnpj) || r.i.sistema && SISN[r.i.sistema] && r.i.sistema || r.i.cnpj; if (!G.has(k)) G.set(k, []); G.get(k).push(r); });
+  const congDe = new Map((D.inst || []).map(i => [i.cnpj, i.cong])), SISN = Object.fromEntries(SIS.map(z => [z[0], z[1]]));
+  const porCong = () => { const G = new Map(); base.forEach(r => { const k = congDe.get(r.i.cnpj) || (r.i.sistema && SISN[r.i.sistema] ? r.i.sistema : r.i.cnpj); if (!G.has(k)) G.set(k, []); G.get(k).push(r); });
     return [...G.entries()].map(([k, m]) => { if (m.length === 1 && !SISN[k]) return m[0];
-      const v = m.reduce((a, r) => a + r.d[0], 0), n = m.reduce((a, r) => a + r.d[1], 0), wp = m.filter(r => r.d[2] != null), vp = wp.reduce((a, r) => a + r.d[0], 0);
+      const sm = (f) => m.reduce((a, r) => a.map((v, j) => v + r[f][j]), [0, 0, 0]);
       const coops = m.filter(r => r.i.tipo === "coop").length, bancos = m.length - coops;
-      const nome = SISN[k] ? `Conglomerado ${SISN[k]}` : `${(D.meta.cong_nomes || {})[k] || m.sort((a, b) => b.d[0] - a.d[0])[0].i.curto} (conglomerado)`;
+      const nome = SISN[k] ? `Conglomerado ${SISN[k]}` : `${(D.meta.cong_nomes || {})[k] || m.slice().sort((a, b) => b.d[0] - a.d[0])[0].i.curto} (conglomerado)`;
       const det = SISN[k] ? `${coops} cooperativa${coops > 1 ? "s" : ""}${bancos ? " + banco cooperativo" : ""}` : m.map(r => r.i.curto || r.i.nome).join(", ");
-      return { i: { nome: det, curto: nome, grupo: true }, d: [v, n, vp ? wp.reduce((a, r) => a + r.d[0] * r.d[2], 0) / vp : null] }; }); };
+      return { i: { nome: det, curto: nome, grupo: true }, d: sm("d"), a: sm("a") }; }); };
   const lst = (rns.ver === "cong" ? porCong() : base).sort((a, b) => b.d[0] - a.d[0]);
   const shown = rns.all ? lst : lst.slice(0, 25), nomeI = (i) => i.numero ? `${i.numero} ${i.curto || i.nome}` : (i.curto || i.nome);
   const verRN = `<div class="frow" style="margin-bottom:10px"><div class="fgroup"><span class="flabel">Ver por</span><div class="seg"><button type="button" data-rnver="cong" aria-pressed="${rns.ver === "cong"}">Conglomerado</button><button type="button" data-rnver="inst" aria-pressed="${rns.ver !== "cong"}">Instituição (CNPJ)</button></div></div></div>`;
-  const tab = `${verRN}<div class="tbl-wrap"><table><thead><tr><th>#</th><th>${rns.ver === "cong" ? "Conglomerado ou instituição" : "Instituição"}</th><th class="num">Valor</th><th class="num">Operações</th><th class="num">% de ${esc(nmE)}</th><th class="num">Valor médio</th><th class="num">Prazo médio</th></tr></thead><tbody>
-    ${shown.map((r, k) => `<tr><td class="num">${k + 1}</td><td>${r.i.grupo ? `<b>${esc(r.i.curto)}</b><small title="${esc(r.i.nome)}">${esc(r.i.nome.length > 80 ? r.i.nome.slice(0, 78) + "…" : r.i.nome)}</small>` : `${esc(nomeI(r.i))}${r.i.uf ? `<small>${esc(r.i.uf)}</small>` : ""}`}</td><td class="num"><b>${brlMi(r.d[0])}</b></td><td class="num">${nf(r.d[1], 0)}</td><td class="num">${nf(r.d[0] / x.v * 100, 1)}%</td><td class="num">R$ ${nf(r.d[0] / r.d[1] * 1000, 0)} mil</td><td class="num">${r.d[2] == null ? "—" : nf(r.d[2], 1) + " anos"}</td></tr>`).join("")}</tbody></table></div>
+  const tab = `${verRN}<div class="tbl-wrap"><table><thead><tr><th>#</th><th>${rns.ver === "cong" ? "Conglomerado ou instituição" : "Instituição"}</th><th class="num">Valor</th>${temAnt ? `<th class="num">${esc(safraLbl(Sx - 1))}</th>` : ""}<th class="num">Operações</th><th class="num">% de ${esc(nmE)}</th><th class="num">Valor médio</th><th class="num">Prazo médio</th></tr></thead><tbody>
+    ${shown.map((r, k) => `<tr><td class="num">${k + 1}</td><td>${r.i.grupo ? `<b>${esc(r.i.curto)}</b><small title="${esc(r.i.nome)}">${esc(r.i.nome.length > 80 ? r.i.nome.slice(0, 78) + "…" : r.i.nome)}</small>` : `${esc(nomeI(r.i))}${r.i.uf ? `<small>${esc(r.i.uf)}</small>` : ""}`}</td><td class="num"><b>${brlMi(r.d[0])}</b></td>${temAnt ? `<td class="num">${r.a[0] ? brlMi(r.a[0]) : "—"}</td>` : ""}<td class="num">${nf(r.d[1], 0)}</td><td class="num">${nf(r.d[0] / x[0] * 100, 1)}%</td><td class="num">R$ ${nf(r.d[0] / r.d[1] * 1000, 0)} mil</td><td class="num">${r.d[2] ? nf(r.d[2] / r.d[0], 1) + " anos" : "—"}</td></tr>`).join("")}</tbody></table></div>
     ${lst.length > 25 ? `<button class="linkbtn" id="rnmore" type="button">${rns.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${lst.length}`}</button>` : ""}`;
-  // bases legais do recorte
-  const bt = RN.bases.map(b => ({ b, s: RN.serie[rns.esc]?.[b.cod] })).filter(r => r.s?.v);
-  const tabB = `<div class="tbl-wrap"><table><thead><tr><th>Base legal</th><th>Período</th><th class="num">Valor</th><th class="num">Contratos</th><th class="num">Prazo</th>${rns.esc !== "sfn" ? '<th class="num">% do SFN</th>' : ""}</tr></thead><tbody>${bt.map(({ b, s }) => `<tr${b.cod === rns.bl ? ' class="selp"' : ""}><td>${b.oficial ? `<b>${esc(b.curto || b.oficial)}</b><small>Código ${esc(b.cod)} · ${esc(b.oficial)}${b.nota ? " · " + esc(b.nota) : ""}</small>` : `Código ${esc(b.cod)}<small>ainda sem descrição na tabela do BC</small>`}</td><td>${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}</td><td class="num">${brlMi(s.v)}</td><td class="num">${nf(s.contratos, 0)}</td><td class="num">${nf(s.prazo, 1)} anos</td>${rns.esc !== "sfn" ? `<td class="num">${nf(s.v / RN.serie.sfn[b.cod].v * 100, 1)}%</td>` : ""}</tr>`).join("")}</tbody></table></div>`;
+  // bases legais do recorte no período
+  const bt = RN.bases.map(b => ({ b, s: tot(rns.esc, b.cod, mesesA), a: tot(rns.esc, b.cod, mesesB), f: tot("sfn", b.cod, mesesA) })).filter(r => r.s[0] > 0).sort((p, q) => q.s[0] - p.s[0]);
+  const tabB = `<div class="tbl-wrap"><table><thead><tr><th>Base legal</th><th>Ativa em</th><th class="num">Valor</th>${temAnt ? `<th class="num">${esc(safraLbl(Sx - 1))}</th>` : ""}<th class="num">Contratos</th><th class="num">Prazo</th>${rns.esc !== "sfn" ? '<th class="num">% do SFN</th>' : ""}</tr></thead><tbody>${bt.map(({ b, s, a, f }) => `<tr${b.cod === rns.bl ? ' class="selp"' : ""}><td>${b.oficial ? `<b>${esc(b.curto || b.oficial)}</b><small>Código ${esc(b.cod)} · ${esc(b.oficial)}${b.nota ? " · " + esc(b.nota) : ""}</small>` : `Código ${esc(b.cod)}<small>ainda sem descrição na tabela do BC</small>`}</td><td>${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}</td><td class="num">${brlMi(s[0])}</td>${temAnt ? `<td class="num">${a[0] ? brlMi(a[0]) : "—"}</td>` : ""}<td class="num">${nf(s[2], 0)}</td><td class="num">${nf(s[3] / s[0], 1)} anos</td>${rns.esc !== "sfn" ? `<td class="num">${f[0] ? nf(s[0] / f[0] * 100, 1) + "%" : "—"}</td>` : ""}</tr>`).join("")}</tbody></table></div>`;
+  const perSub = `${perTxt} ${safraLbl(Sx)} · ${janela}`;
   $("#view").innerHTML = `${head}${kp}
-    <div class="grid2">${block("Valor renegociado por mês", `${esc(nmE)} · ${esc(rnBase(rns.bl))}`, mes, `Valor nominal das operações novas, pela data de emissão. ${lk}`)}
-      ${block("Peso da renegociação", "Renegociado no mês sobre o crédito rural contratado no mês, %", peso, `${pesoTxt} Fluxo contra fluxo: o valor renegociado no mês dividido pelas contratações de crédito rural do mesmo recorte no mesmo mês (todas as finalidades, aba Safra). As renegociações ficam numa tabela própria do SICOR e não estão somadas nas contratações. Não é a participação no estoque da carteira. ${lk}`)}</div>
+    <div class="grid2">${block("Valor renegociado por mês", `${esc(nmE)} · ${esc(rnBase(rns.bl))} · safra ${safraLbl(Sx)}${temAnt ? ` (cinza: ${safraLbl(Sx - 1)})` : ""}`, mes, `Valor nominal das operações novas, pela data de emissão, nos meses da safra (jul a jun). ${rns.per !== "safra" ? "Meses fora do período escolhido aparecem esmaecidos. " : ""}${lk}`)}
+      ${block("Peso da renegociação", `Renegociado no mês sobre o crédito rural contratado no mês, % · ${safraLbl(Sx)}${temAnt ? " e " + safraLbl(Sx - 1) : ""}`, peso, `${pesoTxt} Fluxo contra fluxo: o valor renegociado no mês dividido pelas contratações de crédito rural do mesmo recorte no mesmo mês (todas as finalidades, aba Safra). As renegociações ficam numa tabela própria do SICOR e não estão somadas nas contratações. Não é a participação no estoque da carteira. ${lk}`)}</div>
     <div class="grid2">
-      ${block("Onde está a renegociação", "UF da operação nova", mapa, `Participação de cada estado no valor renegociado de ${esc(nmE)}. ${lk}`)}
-      ${block("Bases legais de renegociação", `${esc(nmE)} · desde ${mesAno(RN.meta.desde.slice(0, 7))}`, tabB, `Bases com ao menos R$ 100 milhões no SFN no período; as demais (${(RN.outras || []).length} códigos) estão listadas no método, no fim da aba. Norma de cada código pela <a href="${esc(RN.url_bases || "https://www.bcb.gov.br/htms/sicor/Base_Legal_Renegociacao.csv")}" target="_blank" rel="noopener">tabela de bases legais do SICOR</a>, Banco Central. ${lk}`)}</div>
-    ${block("Perfil", `${esc(nmE)} · ${esc(rnBase(rns.bl))}`, perfil, `Programa: Pronaf (código 0001), Pronamp (0050) e demais, na operação nova. Origem: a operação original pela lista de renegociações; "renegociação anterior" é dívida que já tinha sido renegociada (a base legal anterior aparece no nome). ${lk}`)}
-    ${block(`Instituições · ${esc(nmE)}`, esc(rnBase(rns.bl)), tab, `R$ milhões. Instituições com ao menos R$ 500 mil renegociados desde ${mesAno(RN.meta.desde.slice(0, 7))}. Cooperativas pelo número e nome curto do cadastro. ${lk}`)}
+      ${block("Onde está a renegociação", `UF da operação nova · ${perSub}`, mapa, `Participação de cada estado no valor renegociado de ${esc(nmE)}.${quebraQ ? " Estado, programa e origem vêm por trimestre da safra; no trimestre em curso, até a data dos microdados." : ""} ${lk}`)}
+      ${block("Bases legais de renegociação", `${esc(nmE)} · ${perSub}`, tabB, `Bases com ao menos R$ 100 milhões no SFN desde ${mesAno(RN.meta.desde.slice(0, 7))}; as demais (${(RN.outras || []).length} códigos) estão listadas no método, no fim da aba. ${temAnt ? `A coluna ${safraLbl(Sx - 1)} é o mesmo período da safra anterior. ` : ""}Norma de cada código pela <a href="${esc(RN.url_bases || "https://www.bcb.gov.br/htms/sicor/Base_Legal_Renegociacao.csv")}" target="_blank" rel="noopener">tabela de bases legais do SICOR</a>, Banco Central. ${lk}`)}</div>
+    ${block("Perfil", `${esc(nmE)} · ${esc(rnBase(rns.bl))} · ${perSub}`, perfil, `Programa: Pronaf (código 0001), Pronamp (0050) e demais, na operação nova. Origem: a operação original pela lista de renegociações; "renegociação anterior" é dívida que já tinha sido renegociada (a base legal anterior aparece no nome). ${lk}`)}
+    ${block(`Instituições · ${esc(nmE)}`, `${esc(rnBase(rns.bl))} · ${perSub}`, tab, `R$ milhões. ${temAnt ? `A coluna ${safraLbl(Sx - 1)} é o mesmo período da safra anterior. ` : ""}Instituições com ao menos R$ 500 mil renegociados desde ${mesAno(RN.meta.desde.slice(0, 7))}. Cooperativas pelo número e nome curto do cadastro. ${lk}`)}
     <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
       <p><b>Base.</b> Microdados do SICOR, Banco Central: tabela de operações de renegociação (as operações novas, com instituição, UF, programa, emissão e vencimento) e lista de renegociações (cada contrato original, com o valor renegociado e a base legal). Operações emitidas desde ${mesAno(RN.meta.desde.slice(0, 7))}, até ${dmy(ref)}. Os microdados chegam com duas a três semanas de atraso; números divulgados pelo BC em nota à imprensa podem ir além desta data.</p>
-      <p><b>Base legal.</b> Cada renegociação traz o código da base legal. A norma de cada código vem da <a href="${esc(RN.url_bases || "https://www.bcb.gov.br/htms/sicor/Base_Legal_Renegociacao.csv")}" target="_blank" rel="noopener">tabela de bases legais do SICOR</a>, publicada pelo BC e baixada a cada rodada; o rótulo curto (ex.: "MP 1.376/2026 · art. 1º") é só um resumo da descrição oficial. Código novo entra sozinho, com a descrição da tabela. Se o BC ainda não tiver incluído o código na tabela, ele aparece com o número e o período, e um aviso fica no fim desta aba.</p>
-      ${(RN.outras || []).length ? `<p><b>Demais bases (abaixo de R$ 100 milhões no período).</b> ${RN.outras.map(b => `${esc(b.cod)}: ${esc(b.oficial || "sem descrição")} (${brlMi(b.v)})`).join("; ")}.</p>` : ""}
+      <p><b>Safra e período.</b> Safra de julho a junho, pela data de emissão da operação nova. Trimestres: jul–set, out–dez, jan–mar e abr–jun; semestres: jul–dez e jan–jun. A comparação é sempre com o mesmo período da safra anterior; na safra corrente, até o mesmo mês dos microdados.</p>
+      <p><b>Base legal.</b> Cada renegociação traz o código da base legal. A norma de cada código vem da <a href="${esc(RN.url_bases || "https://www.bcb.gov.br/htms/sicor/Base_Legal_Renegociacao.csv")}" target="_blank" rel="noopener">tabela de bases legais do SICOR</a>, publicada pelo BC e baixada a cada rodada; o rótulo curto (ex.: "MP 1.376/2026 · art. 1º") é só um resumo da descrição oficial. Código novo entra sozinho, com a descrição da tabela. Se o BC ainda não tiver incluído o código na tabela, ele aparece com o número e o período, e um aviso fica no fim desta aba. O filtro de programa mostra só as bases com operações no período escolhido.</p>
+      ${(RN.outras || []).length ? `<p><b>Demais bases (abaixo de R$ 100 milhões desde ${mesAno(RN.meta.desde.slice(0, 7))}).</b> ${RN.outras.map(b => `${esc(b.cod)}: ${esc(b.oficial || "sem descrição")} (${brlMi(b.v)})`).join("; ")}.</p>` : ""}
       <p><b>Conglomerado.</b> Na lista de instituições, a visão por conglomerado soma as singulares, centrais e o banco cooperativo de cada sistema (Sicoob, Sicredi, Cresol e demais) e junta os bancos do mesmo conglomerado prudencial (IF.data). A visão por instituição mostra cada CNPJ.</p>
       <p><b>Recortes.</b> Sistemas, centrais e estados pelo cadastro do BC, os mesmos da aba Safra. ${nf(RN.meta.sem_instituicao_pct, 2)}% do valor não teve a instituição identificada no cadastro e entra só no SFN.</p></div></section>`;
 }
