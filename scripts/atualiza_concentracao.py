@@ -2,7 +2,8 @@
 """Concentração dos maiores devedores por instituição, semestre a semestre (junho e dezembro).
 
 Fonte: notas explicativas das demonstrações financeiras, na Central de Demonstrações Financeiras do SFN (CDSFN, Banco Central):
-documento 9010 (Cosif) e, se a tabela não estiver nele, 9030 (IFRS) ou 9060 (conglomerado prudencial).
+documento 9010 (Cosif) e, se a tabela não estiver nele, 9030 (IFRS) ou 9060 (conglomerado prudencial). Tabela só com valores:
+percentual sobre o total da carteira da mesma nota (ponto marcado como calculado).
 Sicoob e Sicredi como sistema: demonstrações combinadas, nas páginas públicas dos sistemas.
 
 Universo: as instituições da base de posição (cooperativas singulares e conglomerados/instituições bancárias do IF.data).
@@ -92,7 +93,7 @@ def le_pdf(b, sem, chave=""):
     pg = texto(b)
     if sum(len(p.strip()) for p in pg) < 2000: return {"st": "sem_texto"}
     r = le_documento(pg, sem)
-    if TEXTOS and r["st"] in ("conferir", "sem_tabela"):
+    if TEXTOS and (r["st"] in ("conferir", "sem_tabela") or os.environ.get("CONC_TEXTOS_OK")):
         import re as _re
         kw = _re.compile(r"maiores\s+devedores|maior\s+devedor|maiores\s+clientes|devedores\s+seguintes|concentra[çc][ãa]o", _re.I)
         cand = [i for i, t in enumerate(pg) if kw.search(t)]
@@ -122,10 +123,66 @@ def processa_cdsfn(cnpjs, sem):
     return conferir or ultimo or {"st": "sem_doc"}
 
 
+def confere_carteira(r, cart_bi, tipo):
+    """Base implícita da tabela (valor ÷ %) contra a carteira de crédito do IF.data na mesma data.
+    Cooperativa: entre 0,8 e 1,25 vez a carteira; banco: entre 0,5 e 2 vezes (as tabelas de banco podem incluir avais,
+    fianças e títulos). Fora disso, a tabela vai para conferência: o % não está sobre a carteira de crédito."""
+    if r.get("st") != "ok" or not cart_bi: return r
+    for k in ("10", "50", "100", "20", "1", "60", "160"):
+        f = (r.get("faixas") or {}).get(k)
+        if f and f[0] and f[1]:
+            razao = f[0] / f[1] * 100 / 1e6 / cart_bi
+            lo, hi = (0.8, 1.25) if tipo == "coop" else (0.5, 2.0)
+            if not lo <= razao <= hi:
+                return {**r, "st": "conferir", "motivo": f"base implícita da tabela é {razao:.2f} vez a carteira de crédito do IF.data"}
+            r["razao_carteira"] = round(razao, 2)
+            break
+    return r
+
+
 def resumo(r):
     """Só o que vai para o controle (sem o texto bruto da tabela)."""
-    k = ("st", "faixas", "formato", "pagina", "nota", "doc", "cnpj", "motivo", "ambiguas", "url")
+    k = ("st", "faixas", "formato", "pagina", "nota", "desc", "calc", "base", "doc", "cnpj", "motivo", "ambiguas", "url", "razao_carteira", "comp")
     return {x: r[x] for x in k if r.get(x) not in (None, "", [])}
+
+
+def difere(fa, fb):
+    """O mesmo semestre publicado com percentual diferente em dois documentos (base revista)?"""
+    for k in ("10", "1", "20", "50", "100", "60", "160"):
+        if k in fa and k in fb and fa[k][1] and fb[k][1]:
+            a, b = fa[k][1], fb[k][1]
+            return abs(a - b) > max(0.15, 0.04 * max(a, b))
+    return False
+
+
+def serie(C, chave, sems, confere=None):
+    """Pontos publicados de uma instituição (ou sistema): o documento do próprio semestre e, na falta dele, a coluna
+    comparativa do documento seguinte (marcada com 'de'). Quando o documento seguinte republica um semestre com outro
+    percentual, o ponto seguinte leva 'rev' (a base mudou e a linha do gráfico é interrompida ali)."""
+    def ponto(e, c=None):
+        c = c or e
+        p = {"f": c["faixas"], "doc": e.get("doc"), "pag": e.get("pagina"), "nota": (e.get("nota") or "")[:70], "fmt": c.get("formato")}
+        if e.get("desc"): p["desc"] = e["desc"][:150]
+        if c.get("calc"): p["calc"] = 1; p["base"] = (c.get("base") or "")[:90]
+        if e.get("url"): p["url"] = e["url"]
+        if e.get("cnpj"): p["c"] = e["cnpj"]
+        return p
+    out = {}
+    for s in sems:
+        e = C.get(f"{chave}|{s}")
+        if e and e["st"] == "ok": out[s] = ponto(e)
+    visto = set()
+    for s in sems:                                   # do documento mais antigo para o mais novo: vale o primeiro comparativo
+        e = C.get(f"{chave}|{s}")
+        if not e or e["st"] != "ok": continue
+        for d, c in sorted((e.get("comp") or {}).items()):
+            if d not in sems or d >= s or d in visto: continue
+            visto.add(d)
+            if d in out and not out[d].get("de"):
+                if difere(out[d]["f"], c["faixas"]): out[s]["rev"] = d
+            elif d not in out and (confere is None or confere(c["faixas"], d)):
+                out[d] = {**ponto(e, c), "de": s}
+    return out
 
 
 def pendente(e, sem):
@@ -177,6 +234,7 @@ def main():
     lid = lideres(pos["meta"]["ref"], meta_c.get("lideres", {}))
     cnpjs = lambda i: [i["id"]] if not i["id"].startswith("C") else (LIDER_EXTRA.get(i["id"], []) + ([lid[i["id"]]] if lid.get(i["id"]) else []))
     cart = lambda i: (i.get("s", {}).get(pos["meta"]["ref"]) or {}).get("cart") or 0
+    cart_em = lambda i, s: (i.get("s", {}).get(s) or {}).get("cart")      # carteira (R$ bi) no IF.data, no mesmo mês
     ordem = sorted(univ, key=lambda i: (i["id"] not in TOP5, -cart(i)))
 
     # fila: semestres mais recentes primeiro; dentro do semestre, os 5 maiores e depois por tamanho da carteira
@@ -211,13 +269,14 @@ def main():
                 nxt = next(it, None)
                 if nxt is None: break
                 i, s = nxt
+                if not pendente(C.get(f"{i['id']}|{s}"), s): continue
                 voando[ex.submit(processa_cdsfn, cnpjs(i), s)] = (i, s)
             if not voando: break
             pronto, _ = cf.wait(voando, return_when=cf.FIRST_COMPLETED)
             for fu in pronto:
                 i, s = voando.pop(fu); k = f"{i['id']}|{s}"
                 try:
-                    r = fu.result(); C[k] = {**resumo(r), "ult": HOJE.isoformat(), "v": LEITURA}
+                    r = confere_carteira(fu.result(), cart_em(i, s), i["tipo"]); C[k] = {**resumo(r), "ult": HOJE.isoformat(), "v": LEITURA}
                 except Exception as e:
                     erros += 1; C[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA}
                 feitos += 1
@@ -229,16 +288,16 @@ def main():
     COD = {"ok": "o", "conferir": "c", "sem_tabela": "t", "sem_texto": "x", "sem_doc": "d", "erro": "e"}
     inst, cob = [], {s: {} for s in sems}
     for i in univ:
-        s_ok, sit = {}, {}
+        sit = {}
+        ok_carteira = lambda f, d, i=i: confere_carteira({"st": "ok", "faixas": f}, cart_em(i, d), i["tipo"])["st"] == "ok"
+        s_ok = serie(C, i["id"], sems, ok_carteira)
+        for p in s_ok.values():
+            if p.get("c") == i["id"]: p.pop("c")
         for s in sems:
             e = C.get(f"{i['id']}|{s}")
             st = e["st"] if e else "pendente"
             cob[s][st] = cob[s].get(st, 0) + 1
-            if st == "ok":
-                p = {"f": e["faixas"], "doc": e.get("doc"), "pag": e.get("pagina"), "nota": (e.get("nota") or "")[:70], "fmt": e.get("formato")}
-                if e.get("cnpj") and e["cnpj"] != i["id"]: p["c"] = e["cnpj"]
-                s_ok[s] = p
-            else:
+            if st != "ok" and s not in s_ok:
                 sit[s] = COD.get(st, "p")
                 if st == "conferir": sit[s] += f":{e.get('doc', 9010)}:{e.get('cnpj', '')}:{e.get('pagina', '')}"
         x = {k: i.get(k) for k in ("id", "tipo", "nome", "curto", "numero", "uf", "sistema", "central") if i.get(k)}
@@ -248,10 +307,8 @@ def main():
         inst.append(x)
     sistemas = {}
     for sis, nome in (("sicoob", "Sicoob (demonstrações combinadas)"), ("sicredi", "Sicredi (demonstrações combinadas)")):
-        ss = {}
-        for s in sems:
-            e = C.get(f"sis:{sis}|{s}")
-            if e and e["st"] == "ok": ss[s] = {"f": e["faixas"], "pag": e.get("pagina"), "nota": (e.get("nota") or "")[:70], "fmt": e.get("formato"), "url": e.get("url")}
+        ss = serie(C, f"sis:{sis}", sems)
+        for p in ss.values(): p.pop("doc", None)
         sistemas[sis] = {"nome": nome, "s": ss, "fonte": comb.SICOOB_RAIZ if sis == "sicoob" else comb.SICREDI_PAG}
     oks = {s: cob[s].get("ok", 0) for s in sems}
     ref = max((s for s in sems if oks[s] >= 50), default=(ant.get("meta") or {}).get("ref"))
