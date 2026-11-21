@@ -23,7 +23,7 @@ NPAL = {"um": 1, "dez": 10, "vinte": 20, "trinta": 30, "quarenta": 40, "cinquent
         "duzentos": 200, "quinhentos": 500}
 _N = r"(\d{1,3}|dez|vinte|trinta|quarenta|cinquenta|sessenta|cem|cento|duzentos|quinhentos)"
 _QUEM = r"(?:devedores|clientes|tomadores|grupos(?:\s+economicos)?|contrapartes)"
-R_MAIOR = re.compile(r"^(?:o\s+)?maior(?:es)?\s+(?:devedor|cliente|tomador|grupo|contraparte)\b")
+R_MAIOR = re.compile(r"^(?:o\s+)?(?:maior(?:es)?\s+(?:devedor|cliente|tomador|grupo|contraparte)|principal\s+(?:devedor|cliente|tomador))\b")
 R_RNG = re.compile(rf"^(\d{{1,3}})\s*(?:-|a|ate|ao)\s*(\d{{1,3}})\s*(?:o?s?\s+)?(?:(?:maiores|principais|primeiros)\s*)?{_QUEM}?")
 R_SEG = re.compile(rf"^(?:os\s+)?(?:proximos\s+)?{_N}\s+(?:(?:maiores|principais)\s+)?(?:{_QUEM}\s+)?seguintes\b|^(?:os\s+)?{_N}\s+seguintes\b|^(?:os\s+)?proximos\s+{_N}\b")
 R_TOP = re.compile(rf"^(?:os\s+)?{_N}\s+(?:maiores|principais|primeiros)\b|^(?:os\s+)?(?:maiores|principais)\s+{_N}\s+{_QUEM}")
@@ -31,7 +31,7 @@ R_DEMAIS = re.compile(r"^(?:demais|outros|restantes|acima\s+d[eo]s?\s+\d+|a\s+pa
 R_TOTAL = re.compile(r"^(?:total|saldo\s+final|saldo\s+total|total\s+geral|carteira\s+total)\b")
 R_NUM = re.compile(r"(?<![\w/,.])\(?-?\d{1,3}(?:\.\d{3})+(?:,\d+)?\)?(?:\s?%)?(?![\w/])|(?<![\w/,.])\(?-?\d+(?:[,.]\d+)?\)?(?:\s?%)?(?![\w/])")
 R_EXCL = re.compile(r"deposit|captac|passivo|fornecedor|credores|repasse|interfinanceir|individualmente significativ|perda esperada|impairment|"
-                    r"provisao para|baixad|recuperad|renegociad|garantias recebidas|cedid")
+                    r"provisao para|baixad|recuperad|renegociad|garantias recebidas|cedid|transacoes de pagamento|valores a receber")
 R_UNID_MIL = re.compile(r"em\s+milhares\s+de\s+reais|r\$\s*mil\b|em\s+r\$\s*mil|valores\s+em\s+milhares|\(em\s+milhares|milhares\s+de\s+reais|r\$\s*-\s*mil|"
                         r"expressos\s+em\s+milhares|\bem\s+milhares\b")
 R_UNID_MI = re.compile(r"em\s+milh[oõ]es\s+de\s+reais|r\$\s*milh[oõ]es|em\s+r\$\s*milh")

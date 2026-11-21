@@ -18,7 +18,7 @@ jobs:
           git archive FETCH_HEAD posicao.json cadastro_coop.json | tar -x -C out
       - name: Rotina de concentração com universo reduzido
         env:
-          CONC_MINUTOS: "45"
+          CONC_MINUTOS: "40"
           CONC_TEXTOS: "out/textos"
           CONC_TEXTOS_OK: "1"
           CONC_SO: "C0080329,C0080075,C0080099,C0080738,C0080185,C0080996,C0084693,C0084844,C0084813,C0084820,C0080336,C0080154,C0080879,C0080745,38588174,25798596,01604998,35571249,02833202,91586982"
