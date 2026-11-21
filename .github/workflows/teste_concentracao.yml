@@ -11,28 +11,24 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
-      - name: Combinadas (busca dos links)
+      - name: Trazer os dados publicados (posição e cadastro)
         run: |
           mkdir -p out
-          cd scripts && python3 -c "
-          import json, concentracao_combinados as c
-          r = {}
-          try: r['sicoob'] = c.sicoob()
-          except Exception as e: print('sicoob ERRO', e); r['sicoob_erro'] = str(e)
-          try: r['sicredi'] = c.sicredi()
-          except Exception as e: print('sicredi ERRO', e); r['sicredi_erro'] = str(e)
-          json.dump(r, open('../out/combinados.json', 'w'), indent=1, ensure_ascii=False)
-          print(json.dumps(r, indent=1, ensure_ascii=False))
-          "
-      - run: python3 -I scripts/amostra_concentracao.py out
-      - name: Gravar os textos no ramo teste-concentracao-saida
+          git fetch -q --depth 1 origin dados
+          git archive FETCH_HEAD posicao.json cadastro_coop.json | tar -x -C out
+      - name: Rotina de concentração com universo reduzido
+        env:
+          CONC_MINUTOS: "40"
+          CONC_SO: "C0080329,C0080075,C0080099,C0080738,C0080185,C0080996,C0084693,C0084844,C0084813,C0084820,C0080336,C0080154,C0080879,C0080745,38588174,25798596,01060307,01604998,41697103,24048910,71297899,02480577,81011686,35571249,91586982,02663426,08624548,82639451,01039011,02833202,03985375,01286361,44746352,75174953"
+        run: python3 -I scripts/atualiza_concentracao.py raw out
+      - name: Gravar a saída no ramo teste-concentracao-saida
         if: always()
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd out
+          cd out && rm -f posicao.json cadastro_coop.json
           git init -q -b saida
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A && git commit -qm "Teste: textos da amostra"
+          git add -A && git commit -qm "Teste: saída da rotina de concentração"
           git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" saida:refs/heads/teste-concentracao-saida

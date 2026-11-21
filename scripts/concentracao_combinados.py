@@ -29,6 +29,14 @@ def _txt(s):
     return _html.unescape(re.sub(r"<[^>]+>", " ", s)).strip()
 
 
+def _mes_titulo(t):
+    """Mês da data-base pelo título do documento (só junho e dezembro)."""
+    t = t.lower()
+    if re.search(r"\b(1[ºo°]?|primeiro)\s*semestre|30[./]06|\b06[./]20\d\d|\bjun\w*", t): return "06"
+    if re.search(r"\b(2[ºo°]?|segundo)\s*semestre|31[./]12|\b12[./]20\d\d|\bdez\w*|anual|exerc[ií]cio", t): return "12"
+    return None
+
+
 def sicoob(log=print):
     """{'AAAA-MM': url_pdf} das Demonstrações Contábeis Combinadas do Sicoob."""
     raiz = get(SICOOB_RAIZ).decode("utf-8", "replace")
@@ -45,13 +53,17 @@ def sicoob(log=print):
     for ano, url in sorted(anos.items()):
         if int(ano) < 2021: continue
         pasta = get(url).decode("utf-8", "replace")
+        vistos = set()
         for m in re.finditer(r'href="([^"]*?/view_file/(\d+)[^"]*)"[^>]*>(.*?)</a>', pasta, re.S):
             tit = _txt(m.group(3)).lower()
-            if "combinad" not in tit: continue
-            mm = re.search(r"\b(jan|fev|mar|abr|mai|jun|jul|ago|set|out|nov|dez)\w*\b", tit)
-            if not mm: continue
-            db = f"{ano}-{MES[mm.group(1)]}"
-            if db[-2:] not in ("06", "12") or db in out: continue
+            if not tit or m.group(2) in vistos: continue
+            vistos.add(m.group(2))
+            log(f"  Sicoob {ano}: '{tit[:90]}'")
+            if re.search(r"ingl|english|resumo|apresenta", tit): continue
+            mes = _mes_titulo(tit)
+            if not mes: continue
+            db = f"{ano}-{mes}"
+            if db in out: continue
             pg = get(_html.unescape(m.group(1))).decode("utf-8", "replace")
             d = re.search(r'href="(https://www\.sicoob\.com\.br/documents/d/[^"]+?\?download=true)"', pg)
             if d: out[db] = _html.unescape(d.group(1))
