@@ -3,7 +3,7 @@ on:
   push:
     branches: [teste-concentracao]
 permissions:
-  contents: read
+  contents: write
 jobs:
   amostra:
     runs-on: ubuntu-latest
@@ -11,10 +11,28 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Combinadas (busca dos links)
+        run: |
+          mkdir -p out
+          cd scripts && python3 -c "
+          import json, concentracao_combinados as c
+          r = {}
+          try: r['sicoob'] = c.sicoob()
+          except Exception as e: print('sicoob ERRO', e); r['sicoob_erro'] = str(e)
+          try: r['sicredi'] = c.sicredi()
+          except Exception as e: print('sicredi ERRO', e); r['sicredi_erro'] = str(e)
+          json.dump(r, open('../out/combinados.json', 'w'), indent=1, ensure_ascii=False)
+          print(json.dumps(r, indent=1, ensure_ascii=False))
+          "
       - run: python3 -I scripts/amostra_concentracao.py out
-      - uses: actions/upload-artifact@v4
+      - name: Gravar os textos no ramo teste-concentracao-saida
         if: always()
-        with:
-          name: amostra
-          path: out
-          retention-days: 5
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          cd out
+          git init -q -b saida
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "Teste: textos da amostra"
+          git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" saida:refs/heads/teste-concentracao-saida
