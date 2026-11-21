@@ -34,7 +34,7 @@ BASES = [  # (arquivo, script, pasta de brutos)
 ]
 EXTRA = {}     # arquivos gerados pelo mesmo script, validados e trocados à parte
 SUBDIR = {"safra": "safra_uf", "territorio": "territorio_uf"}   # arquivos por UF, trocados junto com o arquivo principal
-SEMPRE = {"concentracao": ["concentracao_controle.json"]}       # controle da carga: gravado sempre que o script roda até o fim
+SEMPRE = {"concentracao": ["concentracao_controle.json", "baixas.json"]}   # controle da carga e baixas para prejuízo (conferidas no script): gravados sempre que o script roda até o fim
 
 
 def ler(p):

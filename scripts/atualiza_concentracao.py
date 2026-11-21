@@ -27,11 +27,15 @@ import urllib.request
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from concentracao_le import le_documento          # noqa: E402
+from baixas_le import le_baixas                    # noqa: E402
 import concentracao_combinados as comb             # noqa: E402
 
 RAW, OUT = sys.argv[1], sys.argv[2]
 OUTFILE, CTRL = os.path.join(OUT, "concentracao.json"), os.path.join(OUT, "concentracao_controle.json")
+BXFILE = os.path.join(OUT, "baixas.json")
 LEITURA = 1                       # versão da leitura: subir quando a leitura melhorar, para reler "conferir" e "sem_tabela"
+LEITURA_B = 1                     # idem, para as baixas para prejuízo
+BX_INI = "2025-06"                # baixas para prejuízo: desde o 1º semestre da Res. CMN 4.966 (IF.data por instituição desde mar/25)
 MINUTOS = float(os.environ.get("CONC_MINUTOS", "120"))
 FIM = time.time() + MINUTOS * 60
 INICIO = (2021, 6)
@@ -89,23 +93,33 @@ def texto(pdf_bytes):
     return p.stdout.decode("utf-8", "replace").split("\f")
 
 
-def le_pdf(b, sem, chave=""):
+def le_pdf(b, sem, chave="", quer_c=True, quer_b=False):
+    """Lê do mesmo PDF a concentração (quer_c) e as baixas para prejuízo (quer_b). Devolve (rc, rb); None no que não foi pedido."""
     pg = texto(b)
-    if sum(len(p.strip()) for p in pg) < 2000: return {"st": "sem_texto"}
-    r = le_documento(pg, sem)
-    if TEXTOS and (r["st"] in ("conferir", "sem_tabela") or os.environ.get("CONC_TEXTOS_OK")):
+    if sum(len(p.strip()) for p in pg) < 2000:
+        return ({"st": "sem_texto"} if quer_c else None), ({"st": "sem_texto"} if quer_b else None)
+    rc = le_documento(pg, sem) if quer_c else None
+    rb = None
+    if quer_b:
+        try: rb = le_baixas(pg, sem)
+        except Exception as e: rb = {"st": "erro", "motivo": f"leitura das baixas: {str(e)[:120]}"}
+    sts = [x["st"] for x in (rc, rb) if x]
+    if TEXTOS and (any(x in ("conferir", "sem_tabela") for x in sts) or os.environ.get("CONC_TEXTOS_OK")):
         import re as _re
-        kw = _re.compile(r"maiores\s+devedores|maior\s+devedor|maiores\s+clientes|devedores\s+seguintes|concentra[çc][ãa]o", _re.I)
+        kw = _re.compile(r"maiores\s+devedores|maior\s+devedor|maiores\s+clientes|devedores\s+seguintes|concentra[çc][ãa]o|moviment|baixad|baixas? para", _re.I)
         cand = [i for i, t in enumerate(pg) if kw.search(t)]
         os.makedirs(TEXTOS, exist_ok=True)
-        with open(os.path.join(TEXTOS, f"{chave}_{r['st']}.txt"), "w", encoding="utf-8") as fh:
+        with open(os.path.join(TEXTOS, f"{chave}_{'_'.join(sts)}.txt"), "w", encoding="utf-8") as fh:
             for j in sorted({j for i in cand for j in (i - 1, i, i + 1) if 0 <= j < len(pg)}): fh.write(f"\n=== página {j + 1} ===\n{pg[j]}")
-    return r
+    return rc, rb
 
 
-def processa_cdsfn(cnpjs, sem):
-    """Lista os documentos do semestre, baixa o PDF e lê a tabela. Devolve o resultado do melhor documento."""
-    am, conferir, ultimo = sem.replace("-", ""), None, None
+def processa_cdsfn(cnpjs, sem, quer_c=True, quer_b=False, chk_b=None):
+    """Lista os documentos do semestre, baixa os PDFs e lê o que foi pedido. Devolve (concentração, baixas) do melhor documento
+    de cada uma; None no que não foi pedido. Ordem: 9010, 9030, 9060; para quando as duas leituras fecham."""
+    am = sem.replace("-", "")
+    melhor = {"c": None, "b": None}; conf = {"c": None, "b": None}; ult = {"c": None, "b": None}
+    quer = {"c": quer_c, "b": quer_b}
     for cnpj in cnpjs:
         docs = {}
         for per in (6, 3):                       # em junho, o IFRS (9030) só aparece na consulta trimestral
@@ -113,14 +127,22 @@ def processa_cdsfn(cnpjs, sem):
         pdfs = sorted((d for d in docs.values() if d["nomeArquivo"].lower().endswith(".pdf") and d["tipo"]["codigo"] in (9010, 9030, 9060)
                        and d.get("anoMes") == am), key=lambda d: (9010, 9030, 9060).index(d["tipo"]["codigo"]))
         for d in pdfs:
+            falta = {k: quer[k] and not melhor[k] for k in quer}
+            if not any(falta.values()): break
             cod = d["tipo"]["codigo"]
             b = get(f"{BASE}/download/{urllib.parse.quote(d['nomeArquivo'])}?cnpj={cnpj}&anoMes={am}&periodo=3", timeout=600)
-            r = le_pdf(b, sem, f"{cnpj}_{am}_{cod}")
-            r.update(doc=cod, cnpj=cnpj)
-            if r["st"] == "ok": return r                    # primeiro documento cuja tabela fecha
-            if r["st"] == "conferir": conferir = conferir or r
-            ultimo = ultimo if (ultimo and ultimo["st"] == "sem_tabela") else r
-    return conferir or ultimo or {"st": "sem_doc"}
+            rc, rb = le_pdf(b, sem, f"{cnpj}_{am}_{cod}", falta["c"], falta["b"])
+            if rb is not None and rb.get("st") == "ok" and chk_b:            # baixas: a tabela precisa conferir com o IF.data; senão, próximo documento
+                rb.update(doc=cod, cnpj=cnpj); rb = chk_b(rb)
+            for k, r in (("c", rc), ("b", rb)):
+                if r is None: continue
+                r.update(doc=cod, cnpj=cnpj)
+                if r["st"] == "ok": melhor[k] = r                 # primeiro documento cuja tabela fecha
+                elif r["st"] == "conferir": conf[k] = conf[k] or r
+                else: ult[k] = ult[k] if (ult[k] and ult[k]["st"] == "sem_tabela") else r
+        if not any(quer[k] and not melhor[k] for k in quer): break
+    res = {k: (melhor[k] or conf[k] or ult[k] or {"st": "sem_doc"}) if quer[k] else None for k in quer}
+    return res["c"], res["b"]
 
 
 def confere_carteira(r, cart_bi, tipo):
@@ -139,6 +161,85 @@ def confere_carteira(r, cart_bi, tipo):
             r["razao_carteira"] = round(razao, 2)
             break
     return r
+
+
+def confere_baixas(r, inst, sem):
+    """Unidade e conferência das baixas: o saldo final da tabela (provisão ou carteira) contra o IF.data da mesma data.
+    Provisão: entre 0,5 e 2 vezes a provisão do IF.data (provisão % x carteira); carteira: entre 0,5 e 2 vezes a carteira.
+    Sem unidade escrita na nota, vale a unidade (reais, mil ou milhões) que fecha com o IF.data."""
+    if not r or r.get("st") != "ok": return r
+    q = ((inst or {}).get("s") or {}).get(sem) or {}
+    cands = [r] + list(r.get("cands") or [])
+    if not q.get("cart"):
+        return {k: v for k, v in r.items() if k != "cands"} if r.get("unid_mil") else {**{k: v for k, v in r.items() if k != "cands"}, "st": "conferir", "motivo": "sem unidade na nota e sem IF.data para conferir"}
+    for c in cands:                                   # primeira tabela que fecha e cujo saldo final confere com o IF.data
+        ref = q["cart"] * 1e6 * ((q.get("prov") or 0) / 100 if c.get("tipo") == "provisao" else 1)      # R$ mil
+        if ref <= 0: continue
+        for u in ([1.0] if c.get("unid_mil") else [1.0, 0.001, 1000.0]):
+            razao = abs(c["fim"]) * u / ref
+            if 0.5 <= razao <= 2.0:
+                out = {k: v for k, v in c.items() if k != "cands"}
+                for x in ("doc", "cnpj"):
+                    if r.get(x) is not None: out[x] = r[x]
+                if u != 1.0:
+                    out.update(baixas=round(c["baixas"] * u, 1), ini=round(c["ini"] * u, 1), fim=round(c["fim"] * u, 1), unid_mil=u,
+                               comp={k: {kk: (round(vv * u, 1) if isinstance(vv, (int, float)) else vv) for kk, vv in cc.items()} for k, cc in (c.get("comp") or {}).items()})
+                return {**out, "st": "ok", "razao_ifd": round(razao, 2)}
+    return {**{k: v for k, v in r.items() if k != "cands"}, "st": "conferir", "motivo": f"saldo final das tabelas lidas não confere com o IF.data ({'provisão' if r.get('tipo') == 'provisao' else 'carteira'})"}
+
+
+def resumo_b(r):
+    k = ("st", "baixas", "ini", "fim", "per", "data_col", "trans", "tipo", "pagina", "nota", "doc", "cnpj", "motivo", "unid_mil", "comp", "url", "razao_ifd")
+    return {x: r[x] for x in k if r.get(x) not in (None, "", [], {})}
+
+
+def pendente_b(e, sem):
+    if sem < BX_INI: return False
+    if e and e.get("st") in ("conferir", "sem_tabela", "sem_texto"): return e.get("v", 0) < LEITURA_B
+    return pendente(e, sem)
+
+
+def baixas_semestre(CB, chave, sems):
+    """Baixas para prejuízo por semestre (R$ mil). Junho: 1º semestre. Dezembro: a coluna do 2º semestre; ou o exercício menos o
+    1º semestre (coluna que diz exercício, que tem o ajuste de transição de jan/25, ou cujo saldo inicial é o mesmo do documento de
+    junho); ou a própria coluna, quando o saldo inicial é o saldo final de junho. Falta de documento: comparativo do ano seguinte."""
+    out = {}
+    e_ = lambda s: CB.get(f"{chave}|{s}") or {}
+    ok = lambda e: e.get("st") == "ok" and e.get("baixas") is not None
+    for s in sems:
+        if s < BX_INI: continue
+        e = e_(s)
+        if not ok(e): continue
+        y, m = s[:4], s[5:]
+        b, deriv = None, None
+        if m == "06":
+            if e.get("per") in ("1S", None): b = e["baixas"]
+        else:
+            comp, j = e.get("comp") or {}, e_(f"{y}-06")
+            if ok(j) and abs(e["baixas"] - j["baixas"]) < 0.5 and f"{y}|2S" not in comp: continue     # dezembro igual a junho: coluna errada
+            if e.get("per") == "2S": b = e["baixas"]
+            elif f"{y}|2S" in comp: b = comp[f"{y}|2S"]["baixas"]
+            else:
+                ano = e.get("per") == "ANO" or bool(e.get("trans"))
+                if not ano and e.get("per") is None and ok(j) and e.get("ini") is not None and j.get("fim") is not None:
+                    tol = max(2.0, abs(e["ini"]) * 0.003)
+                    if abs(e["ini"] - j["fim"]) <= tol: b = e["baixas"]
+                    elif abs(e["ini"] - j.get("ini", 1e30)) <= tol: ano = True
+                if ano and ok(j) and j.get("per") in ("1S", None) and e["baixas"] >= j["baixas"] - 0.5:
+                    b, deriv = e["baixas"] - j["baixas"], "exercício menos o 1º semestre"
+        if b is None: continue
+        p = {"b": round(b, 1), "pag": e.get("pagina"), "doc": e.get("doc"), "nota": (e.get("nota") or "")[:70], "tipo": e.get("tipo")}
+        if deriv: p["deriv"] = deriv
+        if e.get("cnpj"): p["c"] = e["cnpj"]
+        if e.get("url"): p["url"] = e["url"]
+        out[s] = p
+    for s in sems:                                   # junho sem documento: coluna do mesmo semestre no documento do ano seguinte
+        if s < BX_INI or s in out or s[5:] != "06": continue
+        nx = e_(f"{int(s[:4]) + 1}-06"); c = (nx.get("comp") or {}).get(f"{s[:4]}|1S")
+        if ok(nx) and c and c.get("baixas") is not None:
+            out[s] = {"b": round(c["baixas"], 1), "pag": nx.get("pagina"), "doc": nx.get("doc"), "nota": (nx.get("nota") or "")[:70], "tipo": nx.get("tipo"),
+                      "de": f"{int(s[:4]) + 1}-06", **({"c": nx["cnpj"]} if nx.get("cnpj") else {}), **({"url": nx["url"]} if nx.get("url") else {})}
+    return out
 
 
 def resumo(r):
@@ -223,6 +324,7 @@ def main():
     cad = (ler(os.path.join(OUT, "cadastro_coop.json"), {}) or {}).get("coop", {})
     ctrl = ler(CTRL, {}) or {}
     C, meta_c = ctrl.get("itens", {}), ctrl.get("meta", {})
+    CB = ctrl.get("baixas", {})                        # baixas para prejuízo: mesmo documento, controle próprio
     ant = ler(OUTFILE, {}) or {}
     sems = semestres()
 
@@ -239,27 +341,32 @@ def main():
     ordem = sorted(univ, key=lambda i: (i["id"] not in TOP5, -cart(i)))
 
     # fila: semestres mais recentes primeiro; dentro do semestre, os 5 maiores e depois por tamanho da carteira
-    fila = [(i, s) for s in reversed(sems) for i in ordem if cnpjs(i) and pendente(C.get(f"{i['id']}|{s}"), s)]
+    falta = lambda i, s: (pendente(C.get(f"{i['id']}|{s}"), s), pendente_b(CB.get(f"{i['id']}|{s}"), s))
+    fila = [(i, s) for s in reversed(sems) for i in ordem if cnpjs(i) and any(falta(i, s))]
     print(f"universo {len(univ)} · semestres {sems[0]} a {sems[-1]} · pendentes {len(fila)}", flush=True)
 
     # sistemas: demonstrações combinadas do Sicoob e do Sicredi
     alertas = []
     for sis, fn in (("sicoob", comb.sicoob), ("sicredi", comb.sicredi)):
-        falta = [s for s in sems if pendente(C.get(f"sis:{sis}|{s}"), s)]
-        if not falta: continue
+        fs = [s for s in sems if pendente(C.get(f"sis:{sis}|{s}"), s) or pendente_b(CB.get(f"sis:{sis}|{s}"), s)]
+        if not fs: continue
         try: links = fn(log=lambda *a: print(*a, flush=True))
         except Exception as e:
             alertas.append(f"página das combinadas do {sis.capitalize()} indisponível ({str(e)[:80]})"); links = {}
-        for s in falta:
-            k = f"sis:{sis}|{s}"
+        for s in fs:
+            k = f"sis:{sis}|{s}"; qc, qb = pendente(C.get(k), s), pendente_b(CB.get(k), s)
             if s not in links:
-                C[k] = {**(C.get(k) or {}), "st": "sem_doc", "ult": HOJE.isoformat(), "v": LEITURA}; continue
+                if qc: C[k] = {**(C.get(k) or {}), "st": "sem_doc", "ult": HOJE.isoformat(), "v": LEITURA}
+                if qb: CB[k] = {**(CB.get(k) or {}), "st": "sem_doc", "ult": HOJE.isoformat(), "v": LEITURA_B}
+                continue
             try:
-                r = le_pdf(get(links[s], timeout=600), s, f"{sis}_{s}"); r["url"] = links[s]
-                C[k] = {**resumo(r), "ult": HOJE.isoformat(), "v": LEITURA}
+                rc, rb = le_pdf(get(links[s], timeout=600), s, f"{sis}_{s}", qc, qb)
+                if rc is not None: rc["url"] = links[s]; C[k] = {**resumo(rc), "ult": HOJE.isoformat(), "v": LEITURA}
+                if rb is not None: rb["url"] = links[s]; CB[k] = {**resumo_b(rb), "ult": HOJE.isoformat(), "v": LEITURA_B}
             except Exception as e:
-                C[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA}
-            print(f"{sis} {s}: {C[k]['st']} {C[k].get('faixas', '')} {C[k].get('motivo', '')}", flush=True)
+                if qc: C[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA}
+                if qb: CB[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA_B}
+            print(f"{sis} {s}: {(C.get(k) or {}).get('st')} {(C.get(k) or {}).get('faixas', '')} · baixas {(CB.get(k) or {}).get('st', '-')} {(CB.get(k) or {}).get('baixas', '')}", flush=True)
 
     # instituições: carga em paralelo, até o limite de tempo
     feitos, erros = 0, 0
@@ -270,20 +377,25 @@ def main():
                 nxt = next(it, None)
                 if nxt is None: break
                 i, s = nxt
-                if not pendente(C.get(f"{i['id']}|{s}"), s): continue
-                voando[ex.submit(processa_cdsfn, cnpjs(i), s)] = (i, s)
+                qc, qb = falta(i, s)
+                if not (qc or qb): continue
+                voando[ex.submit(processa_cdsfn, cnpjs(i), s, qc, qb, (lambda r, i=i, s=s: confere_baixas(r, i, s)))] = (i, s, qc, qb)
             if not voando: break
             pronto, _ = cf.wait(voando, return_when=cf.FIRST_COMPLETED)
             for fu in pronto:
-                i, s = voando.pop(fu); k = f"{i['id']}|{s}"
+                i, s, qc, qb = voando.pop(fu); k = f"{i['id']}|{s}"
                 try:
-                    r = confere_carteira(fu.result(), cart_em(i, s), i["tipo"]); C[k] = {**resumo(r), "ult": HOJE.isoformat(), "v": LEITURA}
+                    rc, rb = fu.result()
+                    if qc: rc = confere_carteira(rc, cart_em(i, s), i["tipo"]); C[k] = {**resumo(rc), "ult": HOJE.isoformat(), "v": LEITURA}
+                    if qb: CB[k] = {**resumo_b(rb), "ult": HOJE.isoformat(), "v": LEITURA_B}
                 except Exception as e:
-                    erros += 1; C[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA}
+                    erros += 1
+                    if qc: C[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA}
+                    if qb: CB[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA_B}
                 feitos += 1
                 if feitos % 100 == 0 or i["id"] in TOP5:
-                    print(f"{feitos}/{len(fila)} · {i.get('curto') or i['nome'][:30]} {s}: {C[k]['st']} {C[k].get('faixas', '')}", flush=True)
-    restantes = sum(1 for i, s in fila if pendente(C.get(f"{i['id']}|{s}"), s))
+                    print(f"{feitos}/{len(fila)} · {i.get('curto') or i['nome'][:30]} {s}: {(C.get(k) or {}).get('st')} {(C.get(k) or {}).get('faixas', '')} · baixas {(CB.get(k) or {}).get('st', '-')} {(CB.get(k) or {}).get('baixas', '')}", flush=True)
+    restantes = sum(1 for i, s in fila if any(falta(i, s)))
 
     # saída publicada: só o que passou nas conferências
     COD = {"ok": "o", "conferir": "c", "sem_tabela": "t", "sem_texto": "x", "sem_doc": "d", "erro": "e"}
@@ -322,10 +434,33 @@ def main():
                     "leitura": LEITURA, "cobertura": cob, "pendentes": restantes, "alerta": "; ".join(alertas)},
            "sistemas": sistemas, "inst": inst}
     with open(OUTFILE, "w", encoding="utf-8") as f: json.dump(pub, f, ensure_ascii=False, separators=(",", ":"))
+    # baixas para prejuízo por semestre (R$ mil), desde jun/25; a página calcula taxas com o IF.data e os balancetes
+    sb = [s for s in sems if s >= BX_INI]
+    cobb = {s: {} for s in sb}
+    for i in univ:
+        for s in sb:
+            e = CB.get(f"{i['id']}|{s}"); st = e["st"] if e else "pendente"; cobb[s][st] = cobb[s].get(st, 0) + 1
+    instb = []
+    for i in univ:
+        sb_ok = baixas_semestre(CB, i["id"], sems)
+        for p in sb_ok.values():
+            if p.get("c") == i["id"]: p.pop("c")
+        if sb_ok: instb.append({"id": i["id"], "s": sb_ok})
+    sisb = {sis: baixas_semestre(CB, f"sis:{sis}", sems) for sis in ("sicoob", "sicredi")}
+    antb = ler(BXFILE, {}) or {}
+    novob = any(e.get("st") == "ok" and e.get("ult") == HOJE.isoformat() for e in CB.values())
+    pubb = {"meta": {"semestres": sb, "atualizado": HOJE.isoformat(), "novo_desde": HOJE.isoformat() if novob else (antb.get("meta") or {}).get("novo_desde"),
+                     "fonte": "Notas explicativas: movimentação da provisão para perdas ou da carteira de crédito (Central de Demonstrações Financeiras do SFN)",
+                     "url": CDSFN, "url_pdf": BASE + "/download/{am}-{doc}-{cnpj}.pdf?cnpj={cnpj}&anoMes={am}&periodo=3", "leitura": LEITURA_B,
+                     "cobertura": cobb, "unidade": "R$ mil"},
+            "inst": instb, "sistemas": sisb}
+    if instb or not antb:
+        with open(BXFILE, "w", encoding="utf-8") as f: json.dump(pubb, f, ensure_ascii=False, separators=(",", ":"))
     with open(CTRL, "w", encoding="utf-8") as f:
-        json.dump({"meta": {"lideres": lid, "atualizado": HOJE.isoformat(), "leitura": LEITURA}, "itens": C}, f, ensure_ascii=False, separators=(",", ":"))
+        json.dump({"meta": {"lideres": lid, "atualizado": HOJE.isoformat(), "leitura": LEITURA, "leitura_b": LEITURA_B}, "itens": C, "baixas": CB},
+                  f, ensure_ascii=False, separators=(",", ":"))
     tot = {s: cob[s] for s in sems[-2:]}
-    print(f"concentração: {feitos} documentos nesta rodada ({erros} com erro), {restantes} pendentes, ref {ref}, {round((time.time() - t0) / 60)} min · {tot}", flush=True)
+    print(f"concentração: {feitos} documentos nesta rodada ({erros} com erro), {restantes} pendentes, ref {ref}, {round((time.time() - t0) / 60)} min · {tot} · baixas {len(instb)} instituições {cobb.get(sb[-1]) if sb else ''}", flush=True)
 
 
 if __name__ == "__main__":

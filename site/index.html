@@ -2829,7 +2829,7 @@ function renderFontes() {
     ["IF.data", "Quadro de indicadores; Qualidade e risco; Recuperação e perda; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
     ["Relação de instituições em funcionamento", "Todas", "Cadastro de cooperativas e bancos, filiação a centrais", "Diária", "—", "consulta a cada rodada", "https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento"],
     ["Lista de cooperativas do Sicoob", "Nomes e números", "Número, nome e CNPJ das cooperativas e centrais do Sicoob", "Eventual", "—", "out/26", "https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf"],
-    ["Central de Demonstrações Financeiras do SFN", "Concentração da carteira", "Notas explicativas: tabela de maiores devedores (maior, 10, 20, 50 e 100) por instituição; Sicoob e Sicredi pelas demonstrações combinadas, nos sites dos sistemas", "Semestral (junho e dezembro)", "60 a 90 dias", CO?.meta?.ref ? ym(CO.meta.ref) : "carregue a aba", "https://www.bcb.gov.br/estabilidadefinanceira/cdsfn"],
+    ["Central de Demonstrações Financeiras do SFN", "Concentração da carteira; Recuperação e perda", "Notas explicativas: tabela de maiores devedores (maior, 10, 20, 50 e 100) e baixas para prejuízo (movimentação da provisão ou da carteira) por instituição; Sicoob e Sicredi pelas demonstrações combinadas, nos sites dos sistemas", "Semestral (junho e dezembro)", "60 a 90 dias", CO?.meta?.ref ? ym(CO.meta.ref) : "carregue a aba", "https://www.bcb.gov.br/estabilidadefinanceira/cdsfn"],
     ["Evolução do SFN — Quadro 4", "Incorporações", "Autorizações e alterações societárias, incluindo incorporações de cooperativas", "Mensal", "~4 meses", "conferido na 1ª segunda-feira do mês", "https://www.bcb.gov.br/estabilidadefinanceira/evolucaosfn"],
   ];
   const ESC = [["SFN", "Agregado do Banco Central. No SCR.data e no SGS, todo o sistema; nos balancetes e no IF.data, a soma de cooperativas singulares e conglomerados prudenciais."],
@@ -3105,6 +3105,65 @@ function rcCusto(e) {
     ${block("Comparativo de escopos", esc(PT), tabE, `Custo, despesa bruta, recuperação e descontos em % da carteira média${qAnual()}; reversão e recuperação também em % da despesa bruta. Inadimplência acima de 90 dias e cobertura (provisão sobre a inadimplência) do IF.data, ${ym(R.ifd.ref)}. ${link}; ${linkR("ifd")}`)}
     ${disper}${rank}`;
 }
+// ---------- Perda efetiva: baixas para prejuízo (notas explicativas), formação de inadimplência e recuperação sobre baixas ----------
+let BX = null, BXerr = "", carregandoBX = false;
+function carregaBX() { if (carregandoBX) return; carregandoBX = true; carregar("baixas").then(d => { BX = d; render(); }).catch(e => { BXerr = e.message; render(); }); }
+const rcSemAnt = (s) => s.slice(5) === "06" ? `${+s.slice(0, 4) - 1}-12` : `${s.slice(0, 4)}-06`;
+const rcSemLbl = (s) => `${s.slice(5) === "06" ? "1º sem" : "2º sem"}/${s.slice(2, 4)}`;
+function rcPerdaInst(i, s, bx, q) {         // i: instituição da posição (IF.data); bx: baixas.json; q: resultados (para a recuperação)
+  const b = bx?.s?.[s]; if (!b) return null;
+  const Q3 = (d) => i.s?.[d], t = Q3(s), t3 = Q3(backM(s, 3)), t6 = Q3(rcSemAnt(s));
+  if (!t?.cart) return null;
+  const carts = [t6?.cart, t3?.cart, t.cart].filter(v => v > 0), cm = carts.reduce((a, v) => a + v, 0) / carts.length * 1000;     // R$ mi
+  const bm = b.b / 1000, npl = (o) => o && o.cart > 0 && o.inad != null ? o.inad / 100 * o.cart * 1000 : null;
+  const n0 = npl(t6), n1 = npl(t);
+  let rec = null;
+  if (q?.m) { const ms = Q.meta.meses, ir = Q.meta.m_campos.indexOf("recup"), fim = ms.indexOf(s);
+    if (fim >= 5 && ir >= 0) rec = ms.slice(fim - 5, fim + 1).reduce((a, _, k) => a + (q.m[fim - 5 + k]?.[ir] || 0), 0); }
+  return { b: bm, cm, c0: t6?.cart > 0 ? t6.cart * 1000 : null, n0, n1, rec, p: b };
+}
+function rcPerda(e) {
+  if (!BX) { if (!BXerr) carregaBX(); return `<h3 class="sec-h">Perda efetiva: baixas, formação de inadimplência e recuperação</h3><p class="empty">${/HTTP 404/.test(BXerr) ? "Carga inicial em andamento: a rotina está lendo as baixas para prejuízo nas notas explicativas. Os números aparecem aqui quando a primeira parte for publicada." : BXerr ? `As baixas não carregaram (${esc(BXerr)}).` : "Carregando as baixas para prejuízo…"}</p>`; }
+  if (!P) { if (!Perr) carregaPos(); return `<h3 class="sec-h">Perda efetiva: baixas, formação de inadimplência e recuperação</h3><p class="empty">${Perr ? `A base de posição não carregou (${esc(Perr)}).` : "Carregando a carteira e a inadimplência do IF.data…"}</p>`; }
+  const S = (BX.meta.semestres || []).filter(s => P.inst.some(i => i.s?.[s])), bxI = new Map(BX.inst.map(x => [x.id, x])), qI = new Map(Q.inst.map(x => [x.id, x]));
+  const memb = P.inst.filter(i => qs.esc === "sfn" || (i.escopos || []).includes(qs.esc));
+  const agg = (s) => { let b = 0, cm = 0, c0 = 0, d = 0, rec = 0, crec = 0, n = 0, nf_ = 0, cart = 0, cartCob = 0, bRec = 0;
+    memb.forEach(i => { const c = i.s?.[s]?.cart || 0; cart += c; const x = rcPerdaInst(i, s, bxI.get(i.id), qI.get(i.id)); if (!x) return;
+      n++; cartCob += c; b += x.b; cm += x.cm; if (x.n0 != null && x.n1 != null && x.c0) { d += x.n1 - x.n0 + x.b; c0 += x.c0; nf_++; }
+      if (x.rec != null) { rec += x.rec; bRec += x.b; crec++; } });
+    return { s, n, tot: memb.filter(i => i.s?.[s]).length, cob: cart > 0 ? cartCob / cart * 100 : null, b, taxa: cm > 0 ? b / cm * 200 : null,
+      form: c0 > 0 && nf_ ? d / c0 * 100 : null, recb: bRec > 0 ? rec / bRec * 100 : null }; };
+  const L = S.map(agg), ult = [...L].reverse().find(x => x.n > 0 && x.cob >= 30) || [...L].reverse().find(x => x.n > 0);
+  const tit = `<h3 class="sec-h">Perda efetiva: baixas, formação de inadimplência e recuperação</h3>`;
+  if (!ult) return `${tit}<p class="empty">Sem baixas lidas para ${esc(e.nome)} ainda. A rotina lê as notas explicativas de junho e dezembro desde 2025; a cobertura aumenta a cada rodada.</p>`;
+  const ant = L.find(x => x.s === rcSemAnt(ult.s));
+  const fonteB = `<a href="${esc(BX.meta.url)}" target="_blank" rel="noopener">notas explicativas, Central de Demonstrações Financeiras do SFN</a>`;
+  const kp = `<div class="kpis">
+    ${kpiBox(`Baixas para prejuízo · ${rcSemLbl(ult.s)}`, brlMi(ult.b).replace("R$ ", ""), "", `${ult.n} de ${ult.tot} instituições · ${nf(ult.cob, 0)}% da carteira`, "flat", `soma das notas explicativas${tagNovo(BX.meta.novo_desde)}`)}
+    ${kpiBox("Taxa de baixa", nf(ult.taxa, 2), "%", ant?.taxa != null ? `${sgn(ult.taxa - ant.taxa, 2, " p.p.")} contra o ${rcSemLbl(ant.s)}` : "", ant?.taxa != null && ult.taxa > ant.taxa + 0.05 ? "down" : ant?.taxa != null && ult.taxa < ant.taxa - 0.05 ? "up" : "flat", "baixas do semestre, anualizadas, / carteira média")}
+    ${kpiBox("Formação de inadimplência", ult.form == null ? "—" : nf(ult.form, 2), ult.form == null ? "" : "%", ult.form == null ? "sem o semestre anterior no IF.data" : (ant?.form != null ? `${sgn(ult.form - ant.form, 2, " p.p.")} contra o ${rcSemLbl(ant.s)}` : ""), ant?.form != null && ult.form > ant.form + 0.05 ? "down" : ant?.form != null && ult.form < ant.form - 0.05 ? "up" : "flat", "(variação do vencido > 90 + baixas) / carteira no início do semestre")}
+    ${kpiBox("Recuperação sobre baixas", ult.recb == null ? "—" : nf(ult.recb, 1), ult.recb == null ? "" : "%", "recuperação do semestre (conta 7192) / baixas do semestre", "flat", "balancetes Cosif e notas")}
+  </div>`;
+  const rowsS = L.filter(x => x.n > 0).map(x => `<tr${x.s === ult.s ? ' style="background:var(--panel)"' : ""}><td>${rcSemLbl(x.s)}</td><td class="num">${brlMi(x.b)}</td><td class="num"><b>${x.taxa == null ? "—" : nf(x.taxa, 2) + "%"}</b></td><td class="num">${x.form == null ? "—" : nf(x.form, 2) + "%"}</td><td class="num">${x.recb == null ? "—" : nf(x.recb, 1) + "%"}</td><td class="num">${x.n} de ${x.tot}</td><td class="num">${nf(x.cob, 0)}%</td></tr>`).join("");
+  const tabS = `<div class="tbl-wrap"><table><thead><tr><th>Semestre</th><th class="num">Baixas</th><th class="num">Taxa de baixa</th><th class="num">Formação de inad.</th><th class="num">Recup. / baixas</th><th class="num">Instituições</th><th class="num">Carteira coberta</th></tr></thead><tbody>${rowsS}</tbody></table></div>`;
+  // instituições do escopo no último semestre: formação de inadimplência e taxa de baixa
+  const lista = memb.map(i => ({ i, x: rcPerdaInst(i, ult.s, bxI.get(i.id), qI.get(i.id)) })).filter(o => o.x)
+    .map(o => ({ ...o, form: o.x.n0 != null && o.x.n1 != null && o.x.c0 ? (o.x.n1 - o.x.n0 + o.x.b) / o.x.c0 * 100 : null, taxa: o.x.b / o.x.cm * 200, recb: o.x.rec != null && o.x.b > 0 ? o.x.rec / o.x.b * 100 : null }))
+    .sort((a, b) => (b.form ?? -1e9) - (a.form ?? -1e9));
+  const shown = rcs.allB ? lista : lista.slice(0, 25), nome = (i) => i.curto || i.nome;
+  const fonteI = (o) => { const p = o.x.p; const url = p.url || BX.meta.url_pdf.replace(/\{am\}/g, (p.de || ult.s).replace("-", "")).replace(/\{doc\}/g, p.doc || 9010).replace(/\{cnpj\}/g, p.c || o.i.id);
+    return `<a href="${esc(url)}" target="_blank" rel="noopener">PDF${p.pag ? ", p. " + p.pag : ""}</a>${p.deriv ? "<small>exercício menos o 1º semestre</small>" : ""}${p.de ? `<small>comparativo de ${rcSemLbl(p.de)}</small>` : ""}`; };
+  const rowsI = shown.map(o => `<tr><td style="white-space:nowrap"><span class="dot" style="background:${rcCorI(o.i)}"></span>${linkFicha(o.i.id, esc(nome(o.i)))}</td><td class="num">${brlMi(o.x.b)}</td><td class="num">${o.x.n0 != null && o.x.n1 != null ? brlMi(o.x.n1 - o.x.n0) : "—"}</td><td class="num"><b>${o.form == null ? "—" : nf(o.form, 2) + "%"}</b></td><td class="num">${nf(o.taxa, 2)}%</td><td class="num">${o.recb == null ? "—" : nf(o.recb, 1) + "%"}</td><td>${fonteI(o)}</td></tr>`).join("");
+  const rank = block(`Instituições por formação de inadimplência · ${esc(e.nome)}`, `${rcSemLbl(ult.s)} · ${lista.length} instituições com baixas lidas`,
+    `<div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Baixas</th><th class="num">Variação do vencido &gt; 90</th><th class="num">Formação de inad.</th><th class="num">Taxa de baixa</th><th class="num">Recup. / baixas</th><th>Fonte</th></tr></thead><tbody>${rowsI}</tbody></table></div>
+    ${lista.length > 25 ? `<button class="linkbtn" id="rcmoreb" type="button">${rcs.allB ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${lista.length}`}</button>` : ""}`,
+    `Formação de inadimplência no semestre = (vencido acima de 90 dias no fim do semestre − no início + baixas para prejuízo do semestre) / carteira no início do semestre. Vencido e carteira do IF.data; baixas das notas explicativas (link). ${fonteB}; ${linkR("ifd")}`);
+  return `${tit}${kp}
+    ${block(`Baixas e formação de inadimplência por semestre · ${esc(e.nome)}`, "soma das instituições do escopo com baixas lidas", tabS,
+      `Taxa de baixa: baixas do semestre ×2 sobre a carteira média do semestre (IF.data). Formação de inadimplência: não anualizada, em % da carteira do início do semestre; mede o crédito que entrou em atraso acima de 90 dias, inclusive o que já foi baixado, e por isso não depende do prazo da baixa. Recuperação sobre baixas: recuperação de créditos baixados (balancetes, conta 7192) sobre as baixas do mesmo semestre; a recuperação vem, em geral, de baixas de anos anteriores. ${fonteB}`)}
+    ${rank}`;
+}
+document.addEventListener("click", (ev) => { const b = ev.target.closest("#rcmoreb"); if (!b) return; rcs.allB = !rcs.allB; render(); });
 function renderRec() {
   if (!precisa(["risco", "resultados"])) { esperando(Rerr || Qerr ? `Os dados não carregaram (${esc(Rerr || Qerr)}). Recarregue a página.` : "Carregando os dados de risco e de resultados…"); return; }
   cid = 0; filtrosRes();
@@ -3115,11 +3174,14 @@ function renderRec() {
       <p class="lede">Sinais de piora ou de melhora do mercado e o custo do risco de cada instituição: quanto a provisão consome da carteira, quanto volta por reversão e por recuperação de créditos já baixados, e quanto sai em descontos de renegociação.</p></div>
       ${rcMercado(seg)}
       ${rcCusto(e)}
+      ${rcPerda(e)}
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
         <p><b>Sinais do mercado.</b> SCR.data, por UF do tomador (Brasil ou Minas Gerais, conforme o estado escolhido no filtro): inadimplência acima de 90 dias, atraso de 15 a 90 dias e ativo problemático, em % da carteira ativa, e a variação em 12 meses. Por modalidade, a variação da inadimplência entre o mesmo mês de dois anos seguidos.</p>
         <p><b>Custo do risco.</b> Despesa de provisão (8199200005) menos reversões (7199200006) e recuperações de créditos baixados como prejuízo (7192000007), sobre a carteira média de operações de crédito (1600)${qAnual() ? ", anualizado" : ""}. É a mesma conta do "custo com provisões" da aba Resultados. Os descontos concedidos em renegociações (8195200009) aparecem à parte.</p>
-        <p><b>Recuperação.</b> Sobre a despesa bruta, mostra quanto da provisão volta pela cobrança de créditos já baixados; sobre a carteira, quantos pontos do custo ela devolve. Nenhuma das duas mede a eficiência da cobrança: para isso, o certo é recuperação sobre baixas para prejuízo, que só aparecem nas notas explicativas (segunda etapa desta aba).</p>
-        <p><b>O que não é público.</b> O saldo de créditos baixados (carteira de prejuízo) não está no balancete público do plano Cosif novo, e o SCR.data não divulga o prejuízo. O saldo da provisão (conta 1490) também fica de fora: em jun/26, só 4 de 135 singulares Sicoob e nenhuma das 21 Unicred o informaram no balancete público.</p>
+        <p><b>Recuperação.</b> Sobre a despesa bruta, mostra quanto da provisão volta pela cobrança de créditos já baixados; sobre a carteira, quantos pontos do custo ela devolve. Nenhuma das duas mede a eficiência da cobrança: para isso serve a recuperação sobre baixas para prejuízo, no último bloco.</p>
+        <p><b>Baixas para prejuízo.</b> Lidas nas notas explicativas de junho e dezembro (Central de Demonstrações Financeiras do SFN), no quadro de movimentação da provisão para perdas ou da carteira de crédito, desde jun/25. A tabela só entra quando o saldo inicial mais as movimentações dá o saldo final e quando o saldo final confere com a provisão (ou a carteira) do IF.data na mesma data. Em dezembro, se a coluna é do exercício, o 2º semestre é o exercício menos o 1º semestre publicado em junho; se não diz, a rotina decide comparando o saldo inicial com o documento de junho.</p>
+        <p><b>Formação de inadimplência.</b> Vencido acima de 90 dias no fim do semestre, menos o do início, mais as baixas do semestre, sobre a carteira do início. É a medida que os bancos usam para a entrada de novos atrasos, e não muda com o prazo da baixa.</p>
+        <p><b>O que não é público.</b> O saldo de créditos baixados (carteira de prejuízo) não está no balancete público do plano Cosif novo, e o SCR.data não divulga o prejuízo; o painel mostra as baixas de cada semestre, não o estoque. O saldo da provisão (conta 1490) também fica de fora: em jun/26, só 4 de 135 singulares Sicoob e nenhuma das 21 Unicred o informaram no balancete público.</p>
         <p><b>Bases.</b> Balancetes Cosif mensais desde jan/25 (cooperativas, documento 4010; conglomerados prudenciais, 4060). Inadimplência, ativo problemático e cobertura por instituição: IF.data trimestral. Cooperativas incorporadas entram na incorporadora.</p>
       </div></section>`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
@@ -3128,10 +3190,11 @@ function renderRec() {
 // Cada aba mostra os avisos das bases que usa: base recusada ou com falha na última verificação (o painel segue com o dado anterior),
 // base em alerta (cadastro do BC incompleto, estados do território com dado anterior) e rotina parada há mais de 9 dias.
 let STATUS = null, STATUS_ERR = false;
+const BASES_ABA_REC = ["risco", "resultados", "posicao", "concentracao", "cadastro"];
 const BASES_ABA = { visao: ["carteira", "risco", "focus"], ruralsfn: ["safra", "carteira", "risco"], safra: ["safra", "cadastro"], carteira: ["carteira", "cadastro"],
   risco: ["risco", "cadastro"], resultados: ["resultados", "cadastro"], rural: ["carteira", "cadastro"], quadro: ["posicao", "resultados", "cadastro"],
   rankings: ["posicao", "safra", "cadastro"], posicao: ["posicao", "cadastro"], ficha: ["posicao", "resultados", "risco", "carteira", "safra"],
-  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], concentracao: ["concentracao"], recuperacao: ["risco", "resultados", "cadastro"], fontes: [] };
+  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], concentracao: ["concentracao"], recuperacao: BASES_ABA_REC, fontes: [] };
 const NOME_BASE = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)",
   focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC", reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)" };
 function alertas() {
