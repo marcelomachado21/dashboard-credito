@@ -65,8 +65,10 @@ def sicoob(log=print):
             db = f"{ano}-{mes}"
             if db in out: continue
             pg = get(_html.unescape(m.group(1))).decode("utf-8", "replace")
-            d = re.search(r'href="(https://www\.sicoob\.com\.br/documents/d/[^"]+?\?download=true)"', pg)
-            if d: out[db] = _html.unescape(d.group(1))
+            links = [_html.unescape(x) for x in re.findall(r'href="([^"]*?/documents/[^"]*)"', pg)]
+            d = next((x for x in links if "download=true" in x), None) or next((x for x in links if ".pdf" in x.lower()), None)
+            if d: out[db] = d if d.startswith("http") else "https://www.sicoob.com.br" + d
+            else: log(f"  Sicoob {db}: link do PDF não encontrado ({len(links)} links em /documents/)")
         log(f"Sicoob combinado {ano}: {sorted(k for k in out if k.startswith(ano))}")
     return out
 

@@ -41,6 +41,11 @@ OLINDA = "https://olinda.bcb.gov.br/olinda/servico"
 UA = {"User-Agent": "dashboard-credito (github actions)"}
 TOP5 = {"C0080329": "bb", "C0080075": "bradesco", "C0080099": "itau", "C0080738": "caixa", "C0080185": "santander"}
 LIDER_EXTRA = {"C0080099": ["60872504"]}         # Itaú Unibanco Holding: onde está a nota de concentração
+# líderes dos conglomerados principais, para quando o cadastro do IF.data (Olinda) não responde
+LIDER_FIXO = {"C0080329": "00000000", "C0080075": "60746948", "C0080099": "60701190", "C0080738": "00360305", "C0080185": "90400888",
+              "C0080336": "30306294", "C0080996": "00416968", "C0084693": "18236120", "C0084844": "31872495", "C0084813": "08561701",
+              "C0084820": "10573521", "C0080154": "92702067", "C0080879": "02038232", "C0080745": "01181521"}
+TEXTOS = os.environ.get("CONC_TEXTOS")           # teste: grava o texto das páginas candidatas dos casos que não fecham
 PARALELO = 4
 
 
@@ -83,10 +88,18 @@ def texto(pdf_bytes):
     return p.stdout.decode("utf-8", "replace").split("\f")
 
 
-def le_pdf(b, sem):
+def le_pdf(b, sem, chave=""):
     pg = texto(b)
     if sum(len(p.strip()) for p in pg) < 2000: return {"st": "sem_texto"}
-    return le_documento(pg, sem)
+    r = le_documento(pg, sem)
+    if TEXTOS and r["st"] in ("conferir", "sem_tabela"):
+        import re as _re
+        kw = _re.compile(r"maiores\s+devedores|maior\s+devedor|maiores\s+clientes|devedores\s+seguintes|concentra[çc][ãa]o", _re.I)
+        cand = [i for i, t in enumerate(pg) if kw.search(t)]
+        os.makedirs(TEXTOS, exist_ok=True)
+        with open(os.path.join(TEXTOS, f"{chave}_{r['st']}.txt"), "w", encoding="utf-8") as fh:
+            for j in sorted({j for i in cand for j in (i - 1, i, i + 1) if 0 <= j < len(pg)}): fh.write(f"\n=== página {j + 1} ===\n{pg[j]}")
+    return r
 
 
 def processa_cdsfn(cnpjs, sem):
@@ -101,7 +114,7 @@ def processa_cdsfn(cnpjs, sem):
         for d in pdfs:
             cod = d["tipo"]["codigo"]
             b = get(f"{BASE}/download/{urllib.parse.quote(d['nomeArquivo'])}?cnpj={cnpj}&anoMes={am}&periodo=3", timeout=600)
-            r = le_pdf(b, sem)
+            r = le_pdf(b, sem, f"{cnpj}_{am}_{cod}")
             r.update(doc=cod, cnpj=cnpj)
             if r["st"] == "ok": return r                    # primeiro documento cuja tabela fecha
             if r["st"] == "conferir": conferir = conferir or r
@@ -128,15 +141,21 @@ def pendente(e, sem):
 
 
 def lideres(ref_ifd, antes):
-    """CodInst do conglomerado -> CNPJ (8 dígitos) da instituição líder, pelo cadastro do IF.data."""
+    """CodInst do conglomerado -> CNPJ (8 dígitos) da instituição líder, pelo cadastro do IF.data.
+    Se o Olinda não responder, usa os da rodada anterior e, para os conglomerados principais, a lista fixa."""
     am = ref_ifd.replace("-", "")
-    try:
-        cad = json.loads(get(f"{OLINDA}/IFDATA/versao/v1/odata/IfDataCadastro(AnoMes=@AnoMes)?@AnoMes={am}&$format=json", timeout=300))["value"]
-        out = {x["CodInst"]: (x.get("CnpjInstituicaoLider") or "").zfill(8)[:8] for x in cad if str(x.get("CodInst", "")).startswith("C")}
-        return {k: v for k, v in out.items() if v.strip("0")} or antes
-    except Exception as e:
-        print("aviso: cadastro do IF.data indisponível; uso os líderes da rodada anterior:", e, file=sys.stderr)
-        return antes
+    out = dict(antes or {})
+    for k in range(6):
+        try:
+            cad = json.loads(get(f"{OLINDA}/IFDATA/versao/v1/odata/IfDataCadastro(AnoMes=@AnoMes)?@AnoMes={am}&$format=json", tries=1, timeout=300))["value"]
+            novo = {x["CodInst"]: str(x.get("CnpjInstituicaoLider") or "").zfill(8)[:8] for x in cad if str(x.get("CodInst", "")).startswith("C")}
+            out.update({c: v for c, v in novo.items() if v.strip("0") or c == "C0080329"})
+            break
+        except Exception as e:
+            if k == 5: print("aviso: cadastro do IF.data indisponível; uso os líderes anteriores e a lista fixa:", e, file=sys.stderr)
+            time.sleep(15 * (k + 1))
+    for c, v in LIDER_FIXO.items(): out.setdefault(c, v)
+    return out
 
 
 def main():
@@ -177,7 +196,7 @@ def main():
             if s not in links:
                 C[k] = {**(C.get(k) or {}), "st": "sem_doc", "ult": HOJE.isoformat(), "v": LEITURA}; continue
             try:
-                r = le_pdf(get(links[s], timeout=600), s); r["url"] = links[s]
+                r = le_pdf(get(links[s], timeout=600), s, f"{sis}_{s}"); r["url"] = links[s]
                 C[k] = {**resumo(r), "ult": HOJE.isoformat(), "v": LEITURA}
             except Exception as e:
                 C[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA}
