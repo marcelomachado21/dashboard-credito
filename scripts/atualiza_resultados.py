@@ -21,6 +21,9 @@ Blocos (contas Cosif):
   Depreciação            8180 (amortização, depreciação e redução ao valor recuperável)
   Tributos               8176900005 + 8192500001 + 8193000005 + 8193300004 + IR/CS (7940 + 8940)
   Lucro ou sobras        7000 + 8000 + 8195600001 (juros ao capital das cooperativas somados de volta, como no IF.data)
+  Recuperação e perda    despesa bruta de provisão (8199200005), reversão (7199200006) e descontos concedidos em
+                         renegociações (8195200009). O saldo da provisão (1490) fica de fora: quase nenhuma singular
+                         Sicoob ou Unicred o informa no balancete público (jun/26: 4 de 135 e 0 de 21).
 Cooperativas incorporadas são somadas na incorporadora.
 """
 import time, json, os, sys, re, io, zipfile, datetime, urllib.request, collections, csv
@@ -128,7 +131,7 @@ TRIB = ["8176900005", "8192500001", "8193000005", "8193300004", "7940000008", "8
 CONTAS = ["7000000003", "8000000002", "7110000003", "7120000000", "7160000008", "7140000004", "7150000001", "7198600009",
           "8150000000", "8198600008", "7170000005", "7180000002", "7190000009", "7300000002", "7199200006", "7192000007",
           "8110000002", "8120000009", "8130000006", "8199200005", "8170000004", "8180000001", "8195600001",
-          "1000000009", "2000000008", "6000000004", "1600000007"] + PESSOAL + TRIB
+          "1000000009", "2000000008", "6000000004", "1600000007", "8195200009"] + PESSOAL + TRIB
 SALDO = {"1000000009", "2000000008", "6000000004", "1600000007"}
 # receita de serviços por grupo de conta (o resto de 7170 vira "outros serviços" na página)
 SERV = {"s_tar": ["7170100008", "7170200001"], "s_pag": ["7170500000"], "s_cob": ["7174000001"], "s_seg": ["7177500003"],
@@ -160,7 +163,9 @@ def blocos(v):
     outras_d = rec - capt - prov - pess - adm - depr - trib - lucro - (0 if tes >= 0 else -tes) - (0 if out_r >= 0 else -out_r)
     return {"cred": cred, "tes": tes, "serv": serv, "out_r": out_r, "rec": rec, "capt": capt, "prov": prov, "pess": pess,
             "adm": adm, "depr": depr, "trib": trib, "out_d": outras_d, "lucro": lucro,
-            "recup": g("7192000007"), **{k: sum(g(c) for c in l) for k, l in SERV.items()}}
+            "recup": g("7192000007"), **{k: sum(g(c) for c in l) for k, l in SERV.items()},
+            # aba Recuperação e perda: despesa bruta de provisão, reversão e descontos concedidos em renegociação (todos positivos)
+            "pdesp": -g("8199200005"), "prev": g("7199200006"), "dren": -g("8195200009")}
 
 
 def ler_mes(am):
@@ -192,7 +197,9 @@ for am in reversed(meses("202501", HOJE.strftime("%Y%m"))):
         ult = am; break
 LISTA = meses("202501", ult)
 ref = ult[:4] + "-" + ult[4:]
-if SE_MUDOU and ANT and ANT["meta"].get("ref") == ref:
+M_CAMPOS = ["cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro", "pl", "at", "cart", "recup"] + list(SERV) + ["pdesp", "prev", "dren"]
+# sem balancete novo e com os mesmos campos: nada a refazer (campo novo na base força a reconstrução uma vez)
+if SE_MUDOU and ANT and ANT["meta"].get("ref") == ref and ANT["meta"].get("m_campos") == M_CAMPOS:
     print(json.dumps({"resultados": "sem mudança", "ref": ref})); sys.exit(0)
 
 YTD = {}          # am -> {(tipo,id): {conta: valor}}
@@ -244,12 +251,13 @@ def serie_para(chaves):
     sal = {am: soma({kk: YTD[am].get(k, {}).get(kk, 0.0) for kk in SALDO} for k in chaves) for am in LISTA}
     MM = ("cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro")
     MX = ("recup",) + tuple(SERV)
+    MR = ("pdesp", "prev", "dren")
     for am in LISTA:
         b = blocos(fl[am])
         mens.append({"d": am[:4] + "-" + am[4:], "lucro": r(b["lucro"] / 1e6, 1)})
         # blocos do mês (R$ mi) + PL e ativo do fim do mês: a página monta 12 meses, exercício ou mês a partir daqui
         mm.append([r(b[k] / 1e6, 4) for k in MM] + [r(sal[am]["6000000004"] / 1e6, 3), r((sal[am]["1000000009"] + sal[am]["2000000008"]) / 1e6, 3),
-                   r(sal[am]["1600000007"] / 1e6, 3)] + [r(b[k] / 1e6, 4) for k in MX])
+                   r(sal[am]["1600000007"] / 1e6, 3)] + [r(b[k] / 1e6, 4) for k in MX] + [r(b[k] / 1e6, 4) for k in MR])
     for am in FIM12:
         i = LISTA.index(am); jan = LISTA[i - 11:i + 1]
         f12 = soma(fl[m] for m in jan)
@@ -283,7 +291,7 @@ for e, *_ in ESCOPOS + [("top5",)]:      # top5: recorte extra da ficha de grupo
     agg[e] = {"r12": o12, "sem": sem, "mens": mens, "m": mm, "n": len(membros[e])}
 
 novo_desde = (ANT or {}).get("meta", {}).get("novo_desde") if (ANT or {}).get("meta", {}).get("ref") == ref else HOJE.isoformat()
-out = {"meta": {"ref": ref, "meses": [m[:4] + "-" + m[4:] for m in LISTA], "m_campos": ["cred", "tes", "serv", "out_r", "capt", "prov", "pess", "adm", "depr", "trib", "lucro", "pl", "at", "cart", "recup"] + list(SERV), "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
+out = {"meta": {"ref": ref, "meses": [m[:4] + "-" + m[4:] for m in LISTA], "m_campos": M_CAMPOS, "atualizado": HOJE.isoformat(), "novo_desde": novo_desde,
                 "fonte": "Banco Central — balancetes Cosif (cooperativas, doc. 4010; conglomerados prudenciais, doc. 4060)",
                 "url": "https://www.bcb.gov.br/estabilidadefinanceira/balancetesbalancospatrimoniais"},
        "escopos": saida_escopos(ESCOPOS, PRESENTES), "agg": agg, "inst": inst}

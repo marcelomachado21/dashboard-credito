@@ -255,7 +255,7 @@ async function carregar(nome) {
 }
 
 (() => {
-const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território","Renegociação de dívidas rurais","Concentração da carteira"];
+const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território","Renegociação de dívidas rurais","Concentração da carteira","Recuperação e perda"];
 const MES = ["jul","ago","set","out","nov","dez","jan","fev","mar","abr","mai","jun"];
 const MESF = ["julho","agosto","setembro","outubro","novembro","dezembro","janeiro","fevereiro","março","abril","maio","junho"];
 const FIN = [["all","Todas"],["c","Custeio"],["i","Investimento"],["m","Comercialização"],["n","Industrialização"]];
@@ -2821,12 +2821,12 @@ function renderFontes() {
   cid = 0; $("#filters").innerHTML = ""; $("#stamp").textContent = "Fontes e metodologia";
   const B = [
     ["SICOR — Matriz de Dados do Crédito Rural", "Safra de crédito rural / contratações; Perfil da carteira; Crédito rural no SFN; Ficha; Rankings", "Microdados de operações de crédito rural por instituição, UF, programa, fonte e empreendimento", "Mensal (mês fechado), com revisão dos meses anteriores", "~25 dias", dmy(D.meta.ref), D.meta.url],
-    ["SCR.data", "Visão geral do SFN; Crédito rural no SFN; Consignado", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente, modalidade, porte da empresa, faixa de renda e ocupação da PF", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
+    ["SCR.data", "Visão geral do SFN; Crédito rural no SFN; Consignado; Recuperação e perda", "Carteira ativa, atraso de 15 a 90 dias, inadimplência > 90 dias e ativo problemático por segmento, UF do tomador, cliente, modalidade, porte da empresa, faixa de renda e ocupação da PF", "Mensal", "~60 dias", ym(R.scr.ref), R.scr.url],
     ["SGS — séries temporais", "Visão geral do SFN; Crédito rural no SFN", "Saldo e concessões do SFN, por PF/PJ e modalidade; inadimplência rural", "Mensal", "~30 dias", ym(C.meta.refs.sgs), "https://www3.bcb.gov.br/sgspub/"],
     ["SICOR — Matriz por município (API Olinda)", "Crédito rural por território", "Custeio e investimento por município e produto, todo o SFN, sem corte por instituição", "Mensal, com o SICOR", "~1 mês", T ? ym(T.meta.ref) : "carregue a aba", "https://olinda.bcb.gov.br/olinda/servico/SICOR/versao/v2/aplicacao#!/recursos"],
     ["Focus — expectativas de mercado", "Expectativas de mercado", "Mediana das expectativas anuais de IPCA, PIB, câmbio e Selic", "Semanal", "segunda-feira", F ? dmy(F.meta.ref) : "carregue a aba", "https://olinda.bcb.gov.br/olinda/servico/Expectativas/versao/v1/aplicacao#!/recursos/ExpectativasMercadoAnuais"],
-    ["Balancetes Cosif", "Perfil da carteira; Carteira rural / estoque; Resultados; Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
-    ["IF.data", "Quadro de indicadores; Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
+    ["Balancetes Cosif", "Perfil da carteira; Carteira rural / estoque; Resultados; Recuperação e perda; Posicionamento; Ficha", "Contas patrimoniais e de resultado por cooperativa (doc. 4010) e conglomerado prudencial (doc. 4060)", "Mensal", "~4 meses", ym(C.meta.refs.cosif), C.meta.url_cosif],
+    ["IF.data", "Quadro de indicadores; Qualidade e risco; Recuperação e perda; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
     ["Relação de instituições em funcionamento", "Todas", "Cadastro de cooperativas e bancos, filiação a centrais", "Diária", "—", "consulta a cada rodada", "https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento"],
     ["Lista de cooperativas do Sicoob", "Nomes e números", "Número, nome e CNPJ das cooperativas e centrais do Sicoob", "Eventual", "—", "out/26", "https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf"],
     ["Central de Demonstrações Financeiras do SFN", "Concentração da carteira", "Notas explicativas: tabela de maiores devedores (maior, 10, 20, 50 e 100) por instituição; Sicoob e Sicredi pelas demonstrações combinadas, nos sites dos sistemas", "Semestral (junho e dezembro)", "60 a 90 dias", CO?.meta?.ref ? ym(CO.meta.ref) : "carregue a aba", "https://www.bcb.gov.br/estabilidadefinanceira/cdsfn"],
@@ -2994,6 +2994,136 @@ function renderConc() {
       <p><b>Leitura automática.</b> A tabela é aceita quando o acumulado cresce de uma faixa para a outra e a carteira implícita (valor ÷ percentual) é a mesma em todas as faixas, dentro do arredondamento publicado. Nas cooperativas, essa carteira também precisa ficar entre 0,8 e 1,25 vez a carteira de crédito do IF.data na mesma data. Fora disso, fica em conferência e não entra nos gráficos. ${cobTxt}</p>
       <p><b>Atualização.</b> Na primeira segunda-feira de cada mês, a rotina consulta a Central e lê só os documentos novos. O prazo de envio ao BC é de 60 dias depois de junho e 90 depois de dezembro, e o BC publica depois de um exame prévio.</p></div></section>`;
 }
+/* ===================== Aba Recuperação e perda ===================== */
+// Bloco 1: sinais do mercado (SCR.data, mensal): inadimplência acima de 90 dias, atraso de 15 a 90 dias e ativo problemático, com a
+// variação em 12 meses, e as modalidades em que mais piorou ou melhorou. Bloco 2: custo do risco e recuperação por escopo e instituição
+// (balancetes Cosif desde jan/25), com a inadimplência do IF.data. Baixas para prejuízo, formação de inadimplência e taxa de recuperação
+// (notas explicativas) ficam para a segunda etapa.
+const rcs = { cli: "PF", all: false };
+const RC_K = ["pdesp", "prev", "recup", "dren", "prov"];
+function rcCalc(m, idx) {
+  if (!m || !idx) return null;
+  const C = Q.meta.m_campos || [], I = Object.fromEntries(RC_K.concat("cart").map(k => [k, C.indexOf(k)]));
+  const s = Object.fromEntries(RC_K.map(k => [k, 0])); let ct = 0, nct = 0;
+  idx.forEach(i => { const r = m[i]; if (!r) return; RC_K.forEach(k => { if (I[k] >= 0) s[k] += r[I[k]] || 0; }); if (I.cart >= 0 && r[I.cart] != null) { ct += r[I.cart]; nct++; } });
+  const novo = I.pdesp >= 0, f = 12 / idx.length, cart = nct ? ct / nct : null, pc = (v) => cart > 0 ? v * f / cart * 100 : null;
+  return { cart, s, novo, custo: pc(s.prov), bruta: novo ? pc(s.pdesp) : null, rev_c: novo ? pc(s.prev) : null, rec_c: pc(s.recup), dren_c: novo ? pc(s.dren) : null,
+    rev_p: novo && s.pdesp > 0 ? s.prev / s.pdesp * 100 : null, rec_p: novo && s.pdesp > 0 ? s.recup / s.pdesp * 100 : null, amplo: novo ? pc(s.prov + s.dren) : null };
+}
+const rcAgg = (id) => Q.agg[id]?.m ? rcCalc(Q.agg[id].m, qJanela()) : null;
+const rcSeg = () => ["sfn", "bancos", "coop"].includes(qs.esc) ? qs.esc : (qEsc(qs.esc)?.grupo === "banco" ? "bancos" : "coop");
+const rcCorI = (i) => i.tipo === "coop" ? cor(({ sicoob: "#00AE9D", sicredi: "#3FA110", cresol: "#6E5A9E", unicred: "#9C7A3C" })[i.sistema] || "#A3ACA8") : instCorR(i);
+document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-rccli],#rcmore"); if (!b) return;
+  if (b.dataset.rccli) rcs.cli = b.dataset.rccli; if (b.id === "rcmore") rcs.all = !rcs.all; render(); });
+const RC_BC = `<a href="https://www.bcb.gov.br/content/publicacoes/ref/202610/RELESTAB202610-refPub.pdf" target="_blank" rel="noopener">Relatório de Estabilidade Financeira, out/26</a>`;
+const RC_RPM = `<a href="https://www.bcb.gov.br/content/ri/relatorioinflacao/202509/rpm202509b6p.pdf" target="_blank" rel="noopener">Relatório de Política Monetária, set/25</a>`;
+function rcMercado(seg) {
+  const g = (RSET?.uf || "BR") === "MG" ? "MG" : "BR", S = R.scr.serie[g], ult = lastOf(S.sfn.total).d, ant = backM(ult, 12);
+  const cel = (a, b, k) => { const v = a?.[k], d = a && b && a[k] != null && b[k] != null ? a[k] - b[k] : null, c = d == null ? "flat" : d > 0.05 ? "down" : d < -0.05 ? "up" : "flat";
+    return `<td class="num">${v == null ? "—" : nf(v, 2) + "%"}</td><td class="num"><span class="${c}">${d == null ? "—" : arrow(d) + sgn(d, 2, " p.p.")}</span></td>`; };
+  const SEG = [["sfn", "SFN"], ["bancos", "Bancos"], ["coop", "Cooperativas"]], CT = [["total", "Total"], ["PF", "PF"], ["PJ", "PJ"]];
+  const rows = SEG.flatMap(([s, sn]) => CT.map(([c, cn], k) => { const a = atD(S[s]?.[c], ult), b = atD(S[s]?.[c], ant);
+    return `<tr${s === seg ? ' style="background:var(--panel)"' : ""}><td>${k === 0 ? `<b>${sn}</b>` : `<span class="flat">${sn} ·</span> ${cn}`}</td>${cel(a, b, "inad")}${cel(a, b, "a15")}${cel(a, b, "ap")}</tr>`; })).join("");
+  const tab = `<div class="tbl-wrap"><table><thead><tr><th>Segmento</th><th class="num">Inad. &gt; 90 dias</th><th class="num">12 meses</th><th class="num">Atraso 15 a 90</th><th class="num">12 meses</th><th class="num">Ativo problemático</th><th class="num">12 meses</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  const M = R.scr.modal[`${g}|${seg}`] || {}, ds = Object.keys(M).sort(), d1 = ds[ds.length - 1], d0 = ds[0];
+  const tot = (M[d1] || []).filter(x => x.cli === rcs.cli).reduce((a, x) => a + (x.cart || 0), 0);
+  const mods = (M[d1] || []).filter(x => x.cli === rcs.cli && x.cart >= tot * 0.005).map(x => { const y = (M[d0] || []).find(z => z.cli === x.cli && z.mod === x.mod);
+    return y && y.inad != null && x.inad != null ? { mod: x.mod, cart: x.cart, inad: x.inad, dv: x.inad - y.inad } : null; }).filter(Boolean);
+  const curtoMod = (n) => { const t = n.replace(/\s*\(ex-[^)]*\)/i, "").trim(); return t.length > 30 ? t.slice(0, 29).trim() + "…" : t; };
+  const it = (o) => ({ name: curtoMod(o.mod), v: o.dv, lbl: `${sgn(o.dv, 2, " p.p.")} · ${nf(o.inad, 1)}%`, c: o.dv > 0 ? "var(--down)" : "#2E8F5A" });
+  const piora = mods.filter(o => o.dv > 0.005).sort((a, b) => b.dv - a.dv).slice(0, 6), melhora = mods.filter(o => o.dv < -0.005).sort((a, b) => a.dv - b.dv).slice(0, 6);
+  const segN = { sfn: "SFN", bancos: "Bancos", coop: "Cooperativas" }[seg], geoN = g === "MG" ? "Minas Gerais" : "Brasil";
+  const tg = `<div class="rank-tools"><div class="fgroup"><span class="flabel">Cliente</span><div class="seg">${[["PF", "Pessoa física"], ["PJ", "Pessoa jurídica"]].map(([k, n]) => `<button type="button" data-rccli="${k}" aria-pressed="${rcs.cli === k}">${n}</button>`).join("")}</div></div></div>`;
+  const ondeF = `${tg}<div class="grid2" style="gap:12px"><div><div class="eyebrow" style="margin:4px 0">Onde mais piorou</div>${piora.length ? hbars(piora.map(it), { fmt: v => sgn(v, 2, ""), axis: false, L: 220, label: "Modalidades em que a inadimplência mais subiu" }) : `<p class="empty">Nenhuma modalidade com alta.</p>`}</div>
+    <div><div class="eyebrow" style="margin:4px 0">Onde mais melhorou</div>${melhora.length ? hbars(melhora.map(it), { fmt: v => sgn(v, 2, ""), axis: false, L: 220, label: "Modalidades em que a inadimplência mais caiu" }) : `<p class="empty">Nenhuma modalidade com queda.</p>`}</div></div>`;
+  return `<h3 class="sec-h">Sinais do mercado</h3>
+    ${block(`Inadimplência, atraso e ativo problemático · ${geoN}`, `${ym(ult)} e variação contra ${ym(ant)} · UF do tomador`, tab,
+      `Vermelho: piora (alta de mais de 0,05 p.p. em 12 meses); verde: melhora. Atraso de 15 a 90 dias antecipa a inadimplência acima de 90 dias. Ativo problemático = inadimplência acima de 90 dias e operações reestruturadas. Séries mensais completas na aba Qualidade e risco. ${linkR("scr")}`)}
+    ${block(`Inadimplência acima de 90 dias por modalidade · ${segN} · ${geoN}`, `${rcs.cli === "PF" ? "Pessoa física" : "Pessoa jurídica"} · variação de ${ym(d0)} para ${ym(d1)}, em p.p. · nível atual ao lado`, ondeF,
+      `Só modalidades com ao menos 0,5% da carteira do segmento. ${linkR("scr")}`)}
+    <div class="aviso" style="margin:8px 0 18px"><b>Quebra em jan/25.</b> Com a Res. CMN 4.966, o crédito vencido passou a ficar mais tempo na carteira antes da baixa para prejuízo. Pelo BC, cerca de 70% da alta da inadimplência no 1º semestre de 2025 veio da regra nova (${RC_RPM}); com o critério antigo, a inadimplência de jun/26 seria 0,78 p.p. menor (${RC_BC}). Comparações com 2024 superestimam a piora, e parte da alta de 2025 e 2026 ainda vem desse efeito.</div>`;
+}
+function rcCascata(x, c) {
+  const it = [["Despesa bruta de provisão", x.bruta, "add"], ["Reversão de provisão", -x.rev_c, "sub"], ["Recuperação de baixados", -x.rec_c, "sub"], ["Custo do risco", x.custo, "tot"],
+    ["Descontos em renegociação", x.dren_c, "add"], ["Custo com descontos", x.amplo, "tot"]];
+  const W = 640, rowH = 30, L = 200, R2 = 70, T = 6, H = T + it.length * rowH + 20, mx = Math.max(x.bruta || 0, x.amplo || 0, 0.1);
+  const tk = ticks(0, mx), M = tk[tk.length - 1], X = (v) => L + (W - L - R2) * v / M;
+  let g = tk.map(t => `<line class="grid" x1="${X(t)}" x2="${X(t)}" y1="${T}" y2="${H - 20}"/><text x="${X(t)}" y="${H - 5}" text-anchor="middle">${nf(t, 1)}%</text>`).join(""), run = 0;
+  it.forEach(([n, v, t], k) => { const y = T + k * rowH + 5, h = rowH - 12; let a, b;
+    if (t === "tot") { a = 0; b = v; run = v; } else { a = run; b = run + v; run = b; }
+    const x0 = X(Math.max(0, Math.min(a, b))), w = Math.max(2, Math.abs(X(b) - X(a))), fill = t === "tot" ? c : t === "add" ? "var(--down)" : "#2E8F5A";
+    g += `<text x="${L - 8}" y="${y + h / 2 + 4}" text-anchor="end" class="${t === "tot" ? "lbl-strong" : ""}">${esc(n)}</text><rect x="${x0.toFixed(1)}" y="${y}" width="${w.toFixed(1)}" height="${h}" rx="3" fill="${fill}"><title>${esc(n)}: ${nf(v, 2)}% da carteira média</title></rect>
+      <text x="${(x0 + w + 6).toFixed(1)}" y="${y + h / 2 + 4}" class="lbl-strong">${t === "sub" ? "−" : t === "add" && k > 0 ? "+" : ""}${nf(Math.abs(v), 2)}%</text>`;
+    if (k < it.length - 1 && t !== "tot") g += `<line x1="${X(b)}" x2="${X(b)}" y1="${y + h}" y2="${y + rowH + 5}" stroke="var(--faint)" stroke-dasharray="2 2"/>`; });
+  return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Da despesa bruta ao custo do risco">${g}</svg>`;
+}
+function rcCusto(e) {
+  const x = rcAgg(qs.esc), c0 = rcAgg("coop"), PT = qPerTxt(), link = `<a href="${esc(Q.meta.url)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>`;
+  if (!x || x.cart == null) return `<h3 class="sec-h">Custo do risco e recuperação</h3><p class="empty">Sem atualização: não há ${esc(PT)} para ${esc(e.nome)} nos balancetes.</p>`;
+  const ifdU = (id) => lastOf(R.ifd.serie[id]), ifI = new Map(R.ifd.inst.map(i => [i.id, i])), na = "entra na próxima atualização dos balancetes";
+  const cmp = (a, b, d = 2, suf = " p.p.") => qs.esc === "coop" || a == null || b == null ? "" : `${sgn(a - b, d, suf)} contra cooperativas`;
+  const pior = (a, b) => qs.esc === "coop" || a == null || b == null ? "flat" : a > b + 0.05 ? "down" : a < b - 0.05 ? "up" : "flat";
+  const kp = `<div class="kpis">
+    ${kpiBox("Custo do risco", nf(x.custo, 2), "%", cmp(x.custo, c0?.custo), pior(x.custo, c0?.custo), `provisão líquida / carteira média${qAnual()}`)}
+    ${kpiBox("Despesa bruta de provisão", x.novo ? nf(x.bruta, 2) : "—", x.novo ? "%" : "", x.novo ? cmp(x.bruta, c0?.bruta) : na, x.novo ? pior(x.bruta, c0?.bruta) : "flat", `conta 8199200005 / carteira média${qAnual()}`)}
+    ${kpiBox("Reversão de provisão", x.novo ? nf(x.rev_p, 1) : "—", x.novo ? "%" : "", x.novo ? cmp(x.rev_p, c0?.rev_p, 1) : na, "flat", "da despesa bruta · conta 7199200006")}
+    ${kpiBox("Recuperação de baixados", x.novo ? nf(x.rec_p, 1) : nf(x.rec_c, 2), "%", x.novo ? `${nf(x.rec_c, 2)} p.p. da carteira${qAnual()}` : `da carteira média${qAnual()}`, x.novo && c0?.rec_p != null && qs.esc !== "coop" ? (x.rec_p > c0.rec_p + 0.5 ? "up" : x.rec_p < c0.rec_p - 0.5 ? "down" : "flat") : "flat", x.novo ? "da despesa bruta · conta 7192000007" : "conta 7192000007")}
+    ${kpiBox("Descontos em renegociação", x.novo ? nf(x.dren_c, 2) : "—", x.novo ? "%" : "", x.novo ? `${brlMi(x.s.dren)} no período` : na, "flat", `da carteira média${qAnual()} · conta 8195200009`)}
+  </div>`;
+  const ids = CMP.filter(id => rcAgg(id)?.cart > 0).concat(CMP.includes(qs.esc) ? [] : [qs.esc]);
+  const td = (v, d = 2, suf = "%") => `<td class="num">${v == null ? "—" : nf(v, d) + suf}</td>`;
+  const rowsT = ids.map(id => { const z = rcAgg(id), ee = qEsc(id), f = ifdU(id); if (!z) return "";
+    return `<tr${id === qs.esc ? ' style="background:var(--panel)"' : ""}><td style="white-space:nowrap"><span class="dot" style="background:${cor(ee.cor)}"></span>${esc(ee.nome)}</td><td class="num"><b>${nf(z.custo, 2)}%</b></td>${td(z.bruta)}${td(z.rev_p, 1)}${td(z.rec_p, 1)}${td(z.rec_c)}${td(z.dren_c)}${td(f?.inad)}${td(f?.cob, 0)}</tr>`; }).join("");
+  const tabE = `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Custo do risco</th><th class="num">Desp. bruta</th><th class="num">Reversão / desp.</th><th class="num">Recup. / desp.</th><th class="num">Recup. / cart.</th><th class="num">Descontos / cart.</th><th class="num">Inad. &gt; 90</th><th class="num">Cobertura</th></tr></thead><tbody>${rowsT}</tbody></table></div>`;
+  const ms = qMeses(), k12 = x.novo ? "rec_p" : "rec_c";
+  const ser = (id) => ms.map((d, i) => i < 11 ? null : { d, v: rcCalc(Q.agg[id]?.m, ms.slice(i - 11, i + 1).map((_, j) => i - 11 + j))?.[k12] }).filter(p => p && p.v != null);
+  const linhas = [{ name: e.nome, pts: ser(qs.esc), c: cor(e.cor), w: 3 }].concat(qs.esc !== "coop" ? [{ name: "Cooperativas", pts: ser("coop"), c: css("--grafite-2"), w: 1.6 }] : [])
+    .concat(qs.esc !== "bancos" ? [{ name: "Bancos", pts: ser("bancos"), c: css("--faint"), w: 1.6, dash: "4 3" }] : []);
+  // dispersão: custo do risco x inadimplência acima de 90 dias, instituições do escopo
+  const lista = Q.inst.filter(i => qs.esc === "sfn" || (i.escopos || []).includes(qs.esc)).map(i => ({ i, z: rcCalc(i.m, qJanela()), f: ifI.get(i.id) }))
+    .filter(o => o.z && o.z.custo != null && o.z.cart > 0);
+  const disp = lista.filter(o => o.f && o.f.inad != null), fora = disp.filter(o => o.z.custo < 0 || o.z.custo > 25), dentro = disp.filter(o => o.z.custo >= 0 && o.z.custo <= 25);
+  const grandes = new Set(dentro.slice().sort((a, b) => b.z.cart - a.z.cart).slice(0, 5).map(o => o.i.id));
+  const pts = dentro.map(o => ({ x: o.z.custo, y: o.f.inad, c: rcCorI(o.i), name: o.i.curto || o.i.nome, lbl: grandes.has(o.i.id) }));
+  const uI = ifdU(qs.esc);
+  const disper = pts.length >= 3 ? block(`Custo do risco e inadimplência · ${esc(e.nome)}`, `${esc(PT)} · inadimplência do IF.data em ${ym(R.ifd.ref)}`,
+    scatterLin(pts, { xlab: "Custo do risco, % da carteira média", xn: "custo do risco", yn: "inadimplência > 90", yref: uI?.inad, yrefLabel: uI?.inad != null ? `${e.nome}: ${nf(uI.inad, 2)}%` : "", label: "Custo do risco e inadimplência por instituição" }),
+    `Cada ponto é uma instituição do escopo; nomes nas 5 maiores carteiras. À direita e acima: custo e inadimplência altos. ${fora.length ? `${fora.length} fora do gráfico (custo negativo, quando a reversão supera a despesa, ou acima de 25%). ` : ""}${link}; ${linkR("ifd")}`) : "";
+  // ranking
+  const ord = lista.slice().sort((a, b) => b.z.custo - a.z.custo), shown = rcs.all ? ord : ord.slice(0, 25);
+  const rowsI = shown.map(o => `<tr><td style="white-space:nowrap"><span class="dot" style="background:${rcCorI(o.i)}"></span>${linkFicha(o.i.id, esc(o.i.curto || o.i.nome))}</td><td class="num">${brlMi(o.z.cart)}</td><td class="num"><b>${nf(o.z.custo, 2)}%</b></td>${td(o.z.bruta)}${td(o.z.rec_p, 1)}${td(o.z.rec_c)}${td(o.z.dren_c)}${td(o.f?.inad)}${td(o.f?.ap)}</tr>`).join("");
+  const rank = block(`Instituições por custo do risco · ${esc(e.nome)}`, `${esc(PT)} · ${lista.length} instituições`,
+    `<div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Carteira média</th><th class="num">Custo do risco</th><th class="num">Desp. bruta</th><th class="num">Recup. / desp.</th><th class="num">Recup. / cart.</th><th class="num">Descontos / cart.</th><th class="num">Inad. &gt; 90</th><th class="num">Ativo probl.</th></tr></thead><tbody>${rowsI}</tbody></table></div>
+    ${ord.length > 25 ? `<button class="linkbtn" id="rcmore" type="button">${rcs.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${ord.length}`}</button>` : ""}`,
+    `Ordenado pelo custo do risco. Inadimplência e ativo problemático do IF.data (${ym(R.ifd.ref)}). ${link}`);
+  return `<h3 class="sec-h">Custo do risco e recuperação</h3>${kp}
+    <div class="grid2">${block(`Da despesa bruta ao custo do risco · ${esc(e.nome)}`, `% da carteira média${qAnual() || " em 12 meses"} · ${esc(PT)}`,
+      x.novo ? rcCascata(x, cor(e.cor)) : `<p class="empty">Sem atualização: a despesa bruta, a reversão e os descontos ${na}.</p>`,
+      `Despesa bruta (8199200005) menos reversões (7199200006) e recuperações de créditos baixados (7192000007) = custo do risco. Os descontos concedidos em renegociação (8195200009) não passam pela provisão; somados, dão o custo com descontos. ${link}`)}
+      ${block(`Recuperação de baixados em 12 meses`, x.novo ? "% da despesa bruta de provisão · mensal" : "% da carteira média · mensal", tsChart(linhas, { unit: "%", fmt: v => nf(v, 1), h: 230, label: "Recuperação de baixados" }),
+      `Quanto da despesa com provisão volta como recuperação de créditos já baixados. Com a baixa mais lenta desde 2025, a recuperação tende a cair por um tempo sem que a cobrança tenha piorado. ${link}`)}</div>
+    ${block("Comparativo de escopos", esc(PT), tabE, `Custo, despesa bruta, recuperação e descontos em % da carteira média${qAnual()}; reversão e recuperação também em % da despesa bruta. Inadimplência acima de 90 dias e cobertura (provisão sobre a inadimplência) do IF.data, ${ym(R.ifd.ref)}. ${link}; ${linkR("ifd")}`)}
+    ${disper}${rank}`;
+}
+function renderRec() {
+  if (!precisa(["risco", "resultados"])) { esperando(Rerr || Qerr ? `Os dados não carregaram (${esc(Rerr || Qerr)}). Recarregue a página.` : "Carregando os dados de risco e de resultados…"); return; }
+  cid = 0; filtrosRes();
+  $("#stamp").textContent = `SCR.data até ${ym(R.scr.ref)} · balancetes até ${ym(Q.meta.ref)} · IF.data ${ym(R.ifd.ref)}`;
+  try {
+    const e = qEsc(qs.esc), seg = rcSeg();
+    $("#view").innerHTML = `<div><div class="eyebrow">SCR.data, balancetes Cosif e IF.data · mensal e trimestral${tagNovo(Q.meta.novo_desde)}</div><h2>Recuperação e perda de crédito · ${esc(e.nome)}</h2>
+      <p class="lede">Sinais de piora ou de melhora do mercado e o custo do risco de cada instituição: quanto a provisão consome da carteira, quanto volta por reversão e por recuperação de créditos já baixados, e quanto sai em descontos de renegociação.</p></div>
+      ${rcMercado(seg)}
+      ${rcCusto(e)}
+      <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
+        <p><b>Sinais do mercado.</b> SCR.data, por UF do tomador (Brasil ou Minas Gerais, conforme o estado escolhido no filtro): inadimplência acima de 90 dias, atraso de 15 a 90 dias e ativo problemático, em % da carteira ativa, e a variação em 12 meses. Por modalidade, a variação da inadimplência entre o mesmo mês de dois anos seguidos.</p>
+        <p><b>Custo do risco.</b> Despesa de provisão (8199200005) menos reversões (7199200006) e recuperações de créditos baixados como prejuízo (7192000007), sobre a carteira média de operações de crédito (1600)${qAnual() ? ", anualizado" : ""}. É a mesma conta do "custo com provisões" da aba Resultados. Os descontos concedidos em renegociações (8195200009) aparecem à parte.</p>
+        <p><b>Recuperação.</b> Sobre a despesa bruta, mostra quanto da provisão volta pela cobrança de créditos já baixados; sobre a carteira, quantos pontos do custo ela devolve. Nenhuma das duas mede a eficiência da cobrança: para isso, o certo é recuperação sobre baixas para prejuízo, que só aparecem nas notas explicativas (segunda etapa desta aba).</p>
+        <p><b>O que não é público.</b> O saldo de créditos baixados (carteira de prejuízo) não está no balancete público do plano Cosif novo, e o SCR.data não divulga o prejuízo. O saldo da provisão (conta 1490) também fica de fora: em jun/26, só 4 de 135 singulares Sicoob e nenhuma das 21 Unicred o informaram no balancete público.</p>
+        <p><b>Bases.</b> Balancetes Cosif mensais desde jan/25 (cooperativas, documento 4010; conglomerados prudenciais, 4060). Inadimplência, ativo problemático e cobertura por instituição: IF.data trimestral. Cooperativas incorporadas entram na incorporadora.</p>
+      </div></section>`;
+  } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
+}
 /* ===================== Alertas na tela ===================== */
 // Cada aba mostra os avisos das bases que usa: base recusada ou com falha na última verificação (o painel segue com o dado anterior),
 // base em alerta (cadastro do BC incompleto, estados do território com dado anterior) e rotina parada há mais de 9 dias.
@@ -3001,7 +3131,7 @@ let STATUS = null, STATUS_ERR = false;
 const BASES_ABA = { visao: ["carteira", "risco", "focus"], ruralsfn: ["safra", "carteira", "risco"], safra: ["safra", "cadastro"], carteira: ["carteira", "cadastro"],
   risco: ["risco", "cadastro"], resultados: ["resultados", "cadastro"], rural: ["carteira", "cadastro"], quadro: ["posicao", "resultados", "cadastro"],
   rankings: ["posicao", "safra", "cadastro"], posicao: ["posicao", "cadastro"], ficha: ["posicao", "resultados", "risco", "carteira", "safra"],
-  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], concentracao: ["concentracao"], fontes: [] };
+  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], concentracao: ["concentracao"], recuperacao: ["risco", "resultados", "cadastro"], fontes: [] };
 const NOME_BASE = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)",
   focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC", reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)" };
 function alertas() {
@@ -3023,8 +3153,8 @@ function alertas() {
   el.innerHTML = L.map(x => `<div class="aviso">${x}</div>`).join("");
 }
 /* ===================== Roteador ===================== */
-const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio", 15: "reneg", 16: "concentracao" };
-const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 15, 7, 8, 9, 16, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio", 15: "reneg", 16: "concentracao", 17: "recuperacao" };
+const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 17, 5, 2, 6, 15, 7, 8, 9, 16, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
@@ -3035,7 +3165,7 @@ function render() {
     if (at && row.scrollWidth > row.clientWidth) { row.style.scrollBehavior = "auto"; row.scrollLeft = Math.max(0, at.offsetLeft - row.offsetLeft - 40); row.style.scrollBehavior = ""; }
     row.addEventListener("scroll", upd, { passive: true }); upd(); sc._upd = upd; });
   alertas();
-  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes, consignado: renderConsig, expectativas: renderExpect, territorio: renderTerr, reneg: renderReneg, concentracao: renderConc })[aba()]();
+  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes, consignado: renderConsig, expectativas: renderExpect, territorio: renderTerr, reneg: renderReneg, concentracao: renderConc, recuperacao: renderRec })[aba()]();
 }
 addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
 addEventListener("resize", () => document.querySelectorAll("#tabs .tscroll").forEach(sc => sc._upd && sc._upd()), { passive: true });
