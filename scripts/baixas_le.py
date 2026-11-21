@@ -22,7 +22,7 @@ R_TIT = re.compile(r"moviment|evolu[cç][aã]o|consolida[cç][aã]o dos est[aá]
 R_TIT_OK = re.compile(r"provis|perdas?\s+(?:esperada|incorrida|de credito)|devedores duvidosos|liquidacao duvidosa|risco de credito|carteira|estagio|operac")
 R_TIT_EXCL = re.compile(r"garantias?\s+(?:financeiras\s+)?prestad|compromiss|contingen|trabalhist|civeis|fisca|tributar|passivos|imobilizado|intangiv|"
                         r"bens nao de uso|ativos nao financeiros|transacoes de pagamento|valores a receber|outros creditos|repasses?\s+interfin|"
-                        r"titulos e valores|aplicacoes interfinanceiras|depositos|captac|beneficio|participac")
+                        r"titulos e valores|aplicacoes interfinanceiras|depositos|captac|beneficio|participac|processos|judicia|administrativ|obrigac")
 R_OUTRAS = re.compile(r"outras operacoes|caracteristicas de (?:concessao de )?credito|demais")
 P_S1 = re.compile(r"1\s?[ºo°]\s*sem|primeiro\s+sem|\b1s\b|1o\.?\s*sem")
 P_S2 = re.compile(r"2\s?[ºo°]\s*sem|segundo\s+sem|\b2s\b|2o\.?\s*sem")
@@ -82,7 +82,12 @@ def _tabelas(linhas):
                 r = _rotulo(linhas[j])
                 if R_FIM.search(r): break
                 if R_INI.search(r): j = len(linhas); break
-                if R_BX.search(r) and _tokens(linhas[j], _corte(linhas[j])): bx.append(j)
+                if R_BX.search(r):
+                    if _tokens(linhas[j], _corte(linhas[j])): bx.append(j)
+                    else:                                           # rótulo partido: "( - ) Baixa para" / valores / "Prejuízo"
+                        for jj in (j + 1, j - 1):
+                            if 0 <= jj < len(linhas) and not re.search(r"[A-Za-zÀ-ú]{4,}", linhas[jj]) and _tokens(linhas[jj], 0):
+                                bx.append(jj); break
                 j += 1
             if j < len(linhas) and bx:
                 out.append((i, j, bx)); i = j + 1; continue
@@ -123,8 +128,8 @@ def le_baixas(paginas, data_base):
             xs = [t["x1"] for t in tk_ini]
             cols = _colunas(linhas, i, jt, [t["x"] for t in tk_ini])
             # quadro por estágio (Estágio 1, 2, 3 e Total): só a coluna Total serve
-            cab = linhas[max(jt, i - 8):i]
-            est = [m for l in cab for m in re.finditer(r"est[aá]gio", l, re.I)]
+            cab = linhas[max(jt + 1, i - 8):i]                 # linhas de cabeçalho, sem o título
+            est = [m for l in cab for m in re.finditer(r"est[aá]gio\s*[123]\b", l, re.I)]
             if est:
                 tots = [(m.start() + m.end()) / 2 for l in cab for m in re.finditer(r"\btotal\b", l, re.I)]
                 if tots:
@@ -180,12 +185,16 @@ def le_baixas(paginas, data_base):
     ok = [r for r in lidos if r["st"] == "ok"]
     if not ok:
         return ({k: v for k, v in lidos[0].items()} if lidos else {"st": "sem_tabela"})
-    # preferência: provisão das operações de crédito; depois carteira; tabelas de "outras operações" por último
-    r = sorted(ok, key=lambda r: (r["outras"], r["tipo"] != "provisao", r["pagina"]))[0]
-    u = r.get("unid_mil")
-    if u:
-        for k in ("baixas", "ini", "fim"): r[k] = round(r[k] * u, 1)
-        for c in (r.get("comp") or {}).values():
-            for k in ("baixas", "ini", "fim"): c[k] = round(c[k] * u, 1)
+    # preferência: provisão das operações de crédito; depois carteira; tabelas de "outras operações" por último. As demais tabelas
+    # que fecham vão como candidatas: a rotina fica com a primeira cujo saldo confere com o IF.data.
+    ok = sorted(ok, key=lambda r: (r["outras"], r["tipo"] != "provisao", r["pagina"]))
+    for r in ok:
+        u = r.get("unid_mil")
+        if u:
+            for k in ("baixas", "ini", "fim"): r[k] = round(r[k] * u, 1)
+            for c in (r.get("comp") or {}).values():
+                for k in ("baixas", "ini", "fim"): c[k] = round(c[k] * u, 1)
+    r = dict(ok[0])
+    if len(ok) > 1: r["cands"] = [dict(x) for x in ok[1:6]]
     r["outras_tabelas"] = len(lidos) - 1
     return r

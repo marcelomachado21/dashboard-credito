@@ -114,7 +114,7 @@ def le_pdf(b, sem, chave="", quer_c=True, quer_b=False):
     return rc, rb
 
 
-def processa_cdsfn(cnpjs, sem, quer_c=True, quer_b=False):
+def processa_cdsfn(cnpjs, sem, quer_c=True, quer_b=False, chk_b=None):
     """Lista os documentos do semestre, baixa os PDFs e lê o que foi pedido. Devolve (concentração, baixas) do melhor documento
     de cada uma; None no que não foi pedido. Ordem: 9010, 9030, 9060; para quando as duas leituras fecham."""
     am = sem.replace("-", "")
@@ -132,6 +132,8 @@ def processa_cdsfn(cnpjs, sem, quer_c=True, quer_b=False):
             cod = d["tipo"]["codigo"]
             b = get(f"{BASE}/download/{urllib.parse.quote(d['nomeArquivo'])}?cnpj={cnpj}&anoMes={am}&periodo=3", timeout=600)
             rc, rb = le_pdf(b, sem, f"{cnpj}_{am}_{cod}", falta["c"], falta["b"])
+            if rb is not None and rb.get("st") == "ok" and chk_b:            # baixas: a tabela precisa conferir com o IF.data; senão, próximo documento
+                rb.update(doc=cod, cnpj=cnpj); rb = chk_b(rb)
             for k, r in (("c", rc), ("b", rb)):
                 if r is None: continue
                 r.update(doc=cod, cnpj=cnpj)
@@ -167,18 +169,23 @@ def confere_baixas(r, inst, sem):
     Sem unidade escrita na nota, vale a unidade (reais, mil ou milhões) que fecha com o IF.data."""
     if not r or r.get("st") != "ok": return r
     q = ((inst or {}).get("s") or {}).get(sem) or {}
-    if not q.get("cart"): return r if r.get("unid_mil") else {**r, "st": "conferir", "motivo": "sem unidade na nota e sem IF.data para conferir"}
-    ref = q["cart"] * 1e6 * ((q.get("prov") or 0) / 100 if r.get("tipo") == "provisao" else 1)      # R$ mil
-    if ref <= 0: return r
-    us = [1.0] if r.get("unid_mil") else [1.0, 0.001, 1000.0]
-    for u in us:
-        razao = abs(r["fim"]) * u / ref
-        if 0.5 <= razao <= 2.0:
-            if u != 1.0:
-                r = {**r, "baixas": round(r["baixas"] * u, 1), "ini": round(r["ini"] * u, 1), "fim": round(r["fim"] * u, 1), "unid_mil": u,
-                     "comp": {k: {kk: round(vv * u, 1) for kk, vv in c.items()} for k, c in (r.get("comp") or {}).items()}}
-            return {**r, "razao_ifd": round(razao, 2)}
-    return {**r, "st": "conferir", "motivo": f"saldo final da tabela não confere com o IF.data ({'provisão' if r.get('tipo') == 'provisao' else 'carteira'})"}
+    cands = [r] + list(r.get("cands") or [])
+    if not q.get("cart"):
+        return {k: v for k, v in r.items() if k != "cands"} if r.get("unid_mil") else {**{k: v for k, v in r.items() if k != "cands"}, "st": "conferir", "motivo": "sem unidade na nota e sem IF.data para conferir"}
+    for c in cands:                                   # primeira tabela que fecha e cujo saldo final confere com o IF.data
+        ref = q["cart"] * 1e6 * ((q.get("prov") or 0) / 100 if c.get("tipo") == "provisao" else 1)      # R$ mil
+        if ref <= 0: continue
+        for u in ([1.0] if c.get("unid_mil") else [1.0, 0.001, 1000.0]):
+            razao = abs(c["fim"]) * u / ref
+            if 0.5 <= razao <= 2.0:
+                out = {k: v for k, v in c.items() if k != "cands"}
+                for x in ("doc", "cnpj"):
+                    if r.get(x) is not None: out[x] = r[x]
+                if u != 1.0:
+                    out.update(baixas=round(c["baixas"] * u, 1), ini=round(c["ini"] * u, 1), fim=round(c["fim"] * u, 1), unid_mil=u,
+                               comp={k: {kk: (round(vv * u, 1) if isinstance(vv, (int, float)) else vv) for kk, vv in cc.items()} for k, cc in (c.get("comp") or {}).items()})
+                return {**out, "st": "ok", "razao_ifd": round(razao, 2)}
+    return {**{k: v for k, v in r.items() if k != "cands"}, "st": "conferir", "motivo": f"saldo final das tabelas lidas não confere com o IF.data ({'provisão' if r.get('tipo') == 'provisao' else 'carteira'})"}
 
 
 def resumo_b(r):
@@ -219,6 +226,7 @@ def baixas_semestre(CB, chave, sems):
                     elif abs(e["ini"] - j.get("ini", 1e30)) <= tol: ano = True
                 if ano and ok(j) and j.get("per") in ("1S", None) and e["baixas"] >= j["baixas"] - 0.5:
                     b, deriv = e["baixas"] - j["baixas"], "exercício menos o 1º semestre"
+            if b is not None and not deriv and ok(j) and abs(b - j["baixas"]) < 0.5: b = None     # igual a junho: coluna errada
         if b is None: continue
         p = {"b": round(b, 1), "pag": e.get("pagina"), "doc": e.get("doc"), "nota": (e.get("nota") or "")[:70], "tipo": e.get("tipo")}
         if deriv: p["deriv"] = deriv
@@ -371,7 +379,7 @@ def main():
                 i, s = nxt
                 qc, qb = falta(i, s)
                 if not (qc or qb): continue
-                voando[ex.submit(processa_cdsfn, cnpjs(i), s, qc, qb)] = (i, s, qc, qb)
+                voando[ex.submit(processa_cdsfn, cnpjs(i), s, qc, qb, (lambda r, i=i, s=s: confere_baixas(r, i, s)))] = (i, s, qc, qb)
             if not voando: break
             pronto, _ = cf.wait(voando, return_when=cf.FIRST_COMPLETED)
             for fu in pronto:
@@ -379,7 +387,7 @@ def main():
                 try:
                     rc, rb = fu.result()
                     if qc: rc = confere_carteira(rc, cart_em(i, s), i["tipo"]); C[k] = {**resumo(rc), "ult": HOJE.isoformat(), "v": LEITURA}
-                    if qb: rb = confere_baixas(rb, i, s); CB[k] = {**resumo_b(rb), "ult": HOJE.isoformat(), "v": LEITURA_B}
+                    if qb: CB[k] = {**resumo_b(rb), "ult": HOJE.isoformat(), "v": LEITURA_B}
                 except Exception as e:
                     erros += 1
                     if qc: C[k] = {"st": "erro", "motivo": str(e)[:160], "ult": HOJE.isoformat(), "v": LEITURA}
