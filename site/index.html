@@ -255,7 +255,7 @@ async function carregar(nome) {
 }
 
 (() => {
-const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território","Renegociação de dívidas rurais"];
+const ABAS = ["Visão geral do SFN","Crédito rural no SFN","Safra de crédito rural / contratações","Perfil da carteira","Qualidade e risco","Resultados","Carteira rural / estoque","Quadro de indicadores por instituição","Rankings","Mapa de posicionamento","Ficha da instituição","Fontes e metodologia","Consignado","Expectativas de mercado","Crédito rural por território","Renegociação de dívidas rurais","Concentração da carteira"];
 const MES = ["jul","ago","set","out","nov","dez","jan","fev","mar","abr","mai","jun"];
 const MESF = ["julho","agosto","setembro","outubro","novembro","dezembro","janeiro","fevereiro","março","abril","maio","junho"];
 const FIN = [["all","Todas"],["c","Custeio"],["i","Investimento"],["m","Comercialização"],["n","Industrialização"]];
@@ -479,6 +479,7 @@ function lineChart(lines, o = {}) {
   });
   ends.sort((a, b) => a.y - b.y);
   ends.forEach((e, i) => { e.ly = i && e.y - ends[i - 1].ly < 24 ? ends[i - 1].ly + 24 : e.y; });
+  for (let i = ends.length - 1, lim = H - B - 12; i >= 0; i--) { const mx = i === ends.length - 1 ? lim : ends[i + 1].ly - 24; if (ends[i].ly > mx) ends[i].ly = Math.max(T + 8, mx); }   // muitos rótulos embaixo: sobe a pilha
   ends.forEach(e => {
     g += `<circle cx="${e.x}" cy="${e.y}" r="${e.strong ? 4 : 3}" fill="${e.c}" stroke="var(--bg)" stroke-width="2"/>`;
     const tx = Math.max(e.x + 8, W - R + 6);
@@ -877,12 +878,13 @@ function tsChart(lines, o = {}) {
   const ends = [];
   lines.forEach(l => {
     const pp = l.pts.filter(p => p.v != null); if (!pp.length) return;
-    g += `<path d="${pp.map((p, i) => `${i ? "L" : "M"}${X(p.d).toFixed(1)},${Y(p.v).toFixed(1)}`).join("")}" fill="none" stroke="${l.c}" stroke-width="${l.w || 2}" stroke-linejoin="round" stroke-linecap="round"${l.dash ? ` stroke-dasharray="${l.dash}"` : ""}/>`;
+    g += `<path d="${pp.map((p, i) => `${i && !p.brk ? "L" : "M"}${X(p.d).toFixed(1)},${Y(p.v).toFixed(1)}`).join("")}" fill="none" stroke="${l.c}" stroke-width="${l.w || 2}" stroke-linejoin="round" stroke-linecap="round"${l.dash ? ` stroke-dasharray="${l.dash}"` : ""}/>`;
     if (o.dots) pp.forEach(p => { g += `<circle cx="${X(p.d)}" cy="${Y(p.v)}" r="2.5" fill="${l.c}"/>`; });
     const e = pp[pp.length - 1]; ends.push({ x: X(e.d), y: Y(e.v), v: e.v, c: l.c, name: l.name, strong: (l.w || 2) > 2 });
   });
   ends.sort((a, b) => a.y - b.y);
   ends.forEach((e, i) => { e.ly = i && e.y - ends[i - 1].ly < 24 ? ends[i - 1].ly + 24 : e.y; });
+  for (let i = ends.length - 1, lim = H - B - 12; i >= 0; i--) { const mx = i === ends.length - 1 ? lim : ends[i + 1].ly - 24; if (ends[i].ly > mx) ends[i].ly = Math.max(T + 8, mx); }   // muitos rótulos embaixo: sobe a pilha
   ends.forEach(e => { g += `<circle cx="${e.x}" cy="${e.y}" r="${e.strong ? 4 : 3}" fill="${e.c}" stroke="var(--bg)" stroke-width="2"/><text x="${W - R2 + 8}" y="${e.ly - 1}" class="${e.strong ? "lbl-strong" : ""}">${esc(e.name)}</text><text x="${W - R2 + 8}" y="${e.ly + 11}" class="${e.strong ? "lbl-strong" : ""}">${fmt(e.v)}${o.unit || ""}</text>`; });
   g += `<line id="${id}x" x1="0" x2="0" y1="${T}" y2="${H - B}" stroke="var(--faint)" visibility="hidden"/>`;
   setTimeout(() => {
@@ -891,7 +893,7 @@ function tsChart(lines, o = {}) {
     const mv = (ev) => { const b = svg.getBoundingClientRect(), px = (ev.clientX - b.left) / b.width * W;
       let best = xs[0], bd = 1e9; xs.forEach(d => { const dd = Math.abs(X(d) - px); if (dd < bd) { bd = dd; best = d; } });
       ln.setAttribute("x1", X(best)); ln.setAttribute("x2", X(best)); ln.setAttribute("visibility", "visible");
-      r.innerHTML = `<b>${lbX(best)}</b> · ` + lines.map(l => { const p = l.pts.find(q => q.d === best); return p && p.v != null ? `<span style="color:${l.c}">${esc(l.name)}: ${fmt(p.v)}${o.unit || ""}</span>` : ""; }).filter(Boolean).join(" · "); };
+      r.innerHTML = `<b>${lbX(best)}</b> · ` + lines.map(l => { const p = l.pts.find(q => q.d === best); return p && p.v != null ? `<span style="color:${l.c}">${esc(l.name)}: ${fmt(p.v)}${o.unit || ""}${p.nt ? " " + esc(p.nt) : ""}</span>` : ""; }).filter(Boolean).join(" · "); };
     svg.addEventListener("pointermove", mv); svg.addEventListener("pointerdown", mv);
   }, 0);
   return `<svg class="chart" id="${id}" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "série")}">${g}</svg><div class="readout" id="${id}r">Passe o dedo ou o mouse no gráfico para ver os valores.</div>`;
@@ -1810,9 +1812,9 @@ function carregaTerr() { if (carregandoT) return; carregandoT = true; carregar("
 let C = null, Cerr = "", carregandoC = false;
 function carregaCart() { if (carregandoC) return; carregandoC = true; carregar("carteira").then(d => { C = d; render(); }).catch(e => { Cerr = e.message; render(); }); }
 function precisa(lista) {          // garante que as bases estejam carregadas; devolve true quando todas estão prontas
-  const st = { safra: () => D, risco: () => R, posicao: () => P, resultados: () => Q, carteira: () => C, focus: () => F, territorio: () => T, reneg: () => RN };
-  const er = { risco: () => Rerr, posicao: () => Perr, resultados: () => Qerr, carteira: () => Cerr, focus: () => Ferr, territorio: () => Terr, reneg: () => RNerr };
-  const go = { risco: carregaRisco, posicao: carregaPos, resultados: carregaRes, carteira: carregaCart, focus: carregaFocus, territorio: carregaTerr, reneg: carregaRN };
+  const st = { safra: () => D, risco: () => R, posicao: () => P, resultados: () => Q, carteira: () => C, focus: () => F, territorio: () => T, reneg: () => RN, concentracao: () => CO };
+  const er = { risco: () => Rerr, posicao: () => Perr, resultados: () => Qerr, carteira: () => Cerr, focus: () => Ferr, territorio: () => Terr, reneg: () => RNerr, concentracao: () => COerr };
+  const go = { risco: carregaRisco, posicao: carregaPos, resultados: carregaRes, carteira: carregaCart, focus: carregaFocus, territorio: carregaTerr, reneg: carregaRN, concentracao: carregaCO };
   let ok = true;
   lista.forEach(k => { if (!st[k]()) { ok = false; if (go[k] && !(er[k] && er[k]())) go[k](); } });
   return ok;
@@ -2827,6 +2829,7 @@ function renderFontes() {
     ["IF.data", "Quadro de indicadores; Qualidade e risco; Posicionamento; Rankings; Ficha; Visão geral do SFN (Basileia)", "Carteira, inadimplência, ativos problemáticos, perda esperada, Basileia, lucro e DRE por instituição", "Trimestral", "~3 meses", ym(P.meta.ref), P.meta.url_ifd],
     ["Relação de instituições em funcionamento", "Todas", "Cadastro de cooperativas e bancos, filiação a centrais", "Diária", "—", "consulta a cada rodada", "https://www.bcb.gov.br/estabilidadefinanceira/relacao_instituicoes_funcionamento"],
     ["Lista de cooperativas do Sicoob", "Nomes e números", "Número, nome e CNPJ das cooperativas e centrais do Sicoob", "Eventual", "—", "out/26", "https://www.sicoob.com.br/documents/128035770/192856421/Lista_dos_DPO-Cooperativa-Central-CCS.pdf"],
+    ["Central de Demonstrações Financeiras do SFN", "Concentração da carteira", "Notas explicativas: tabela de maiores devedores (maior, 10, 20, 50 e 100) por instituição; Sicoob e Sicredi pelas demonstrações combinadas, nos sites dos sistemas", "Semestral (junho e dezembro)", "60 a 90 dias", CO?.meta?.ref ? ym(CO.meta.ref) : "carregue a aba", "https://www.bcb.gov.br/estabilidadefinanceira/cdsfn"],
     ["Evolução do SFN — Quadro 4", "Incorporações", "Autorizações e alterações societárias, incluindo incorporações de cooperativas", "Mensal", "~4 meses", "conferido na 1ª segunda-feira do mês", "https://www.bcb.gov.br/estabilidadefinanceira/evolucaosfn"],
   ];
   const ESC = [["SFN", "Agregado do Banco Central. No SCR.data e no SGS, todo o sistema; nos balancetes e no IF.data, a soma de cooperativas singulares e conglomerados prudenciais."],
@@ -2862,7 +2865,7 @@ function renderFontes() {
 }
 function blocoStatus(st) {
   const el = $("#stbox"); if (!el || !st || !st.bases) return;
-  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, por estado e município)", cadastro: "Cadastro de cooperativas (filiação)" , reneg: "Renegociações (SICOR)" };
+  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, por estado e município)", cadastro: "Cadastro de cooperativas (filiação)" , reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)" };
   const rf = (r) => r == null ? "—" : typeof r === "object" ? Object.entries(r).map(([k, v]) => `${k} ${String(v).length === 7 ? ym(v) : dmy(v)}`).join(" · ") : String(r).length === 7 ? ym(r) : dmy(r);
   const cl = { "atualizado": "up", "sem mudança": "flat", "ok": "flat", "falhou": "down", "reprovado": "down", "alerta": "down" };
   const quando = new Date(st.verificado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" });
@@ -2871,6 +2874,126 @@ function blocoStatus(st) {
       `<tr><td>${esc(nm[k] || k)}</td><td><span class="${cl[b.situacao] || "flat"}">${esc(b.situacao)}</span></td><td>${esc(rf(b.ref))}</td><td><small>${esc(b.motivo || "")}</small></td></tr>`).join("")}</tbody></table></div>`,
     `"Falhou" ou "reprovado": a base seguiu com o último dado válido. Uma base é reprovada quando falha nas conferências com o SGS e nas faixas esperadas, ou quando mudaria um dado já publicado (meses passados com revisão acima de 10%, ou grupo com mais de 15% de instituições a mais ou a menos). No cadastro de cooperativas, filiação que some só é aceita depois de duas rodadas seguidas. Registro completo na aba Actions do repositório.`);
 }
+/* ===================== Aba Concentração da carteira ===================== */
+// Maiores devedores (10, 50 e 100) nas notas explicativas das demonstrações financeiras (Central de Demonstrações Financeiras do SFN).
+// Só faixas exatas: tabela em faixas "seguintes" (10, +50, +100 = 60 e 160 maiores) fica fora dos gráficos de 50 e 100.
+// A instituição escolhida é a mesma da Ficha (fsel.id), nos dois sentidos.
+let CO = null, COerr = "", carregandoCO = false;
+function carregaCO() { if (carregandoCO) return; carregandoCO = true; carregar("concentracao").then(d => { CO = d; render(); }).catch(e => { COerr = e.message; render(); }); }
+const CC_REF = [["itau", "Itaú", "#EC7000"], ["bb", "BB", "#465EFF"], ["bradesco", "Bradesco", "#CC092F"], ["caixa", "Caixa", "#005CA9"], ["santander", "Santander", "#EC0000"]];
+const CC_SIS = [["sicoob", "Sicoob", "#003641"], ["sicredi", "Sicredi", "#3FA110"]];
+const CC_FX = [["1", "Maior"], ["10", "10"], ["20", "20"], ["50", "50"], ["100", "100"]];
+const semLbl = (s) => `${s.slice(5) === "06" ? "jun" : "dez"}/${s.slice(2, 4)}`;
+const ccNome = (i) => i.curto || i.nome;
+const brlMil = (v) => v == null ? "" : v >= 1e6 ? `R$ ${nf(v / 1e6, 1)} bi` : v >= 1e3 ? `R$ ${nf(v / 1e3, 1)} mi` : `R$ ${nf(v, 0)} mil`;
+const ccPdf = (i, s, p) => CO.meta.url_pdf.replace(/\{am\}/g, (p?.de || s).replace("-", "")).replace(/\{doc\}/g, p?.doc || 9010).replace(/\{cnpj\}/g, p?.c || i.c || i.id);
+const ccDet = (p) => [p.doc === 9030 ? "IFRS" : p.doc === 9060 ? "conglomerado prudencial" : "", p.calc ? `% calculado: faixa ÷ ${p.base || "total da carteira na mesma nota"}` : "",
+  p.de ? `coluna comparativa das demonstrações de ${semLbl(p.de)}` : "", p.rev ? `base revista: este documento republica ${semLbl(p.rev)} com outro percentual` : ""].filter(Boolean).map(t => `<small>${esc(t)}</small>`).join("");
+const ccSig = (p) => { const d = (p.desc || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
+  return { doc: p.doc || "comb", t: d ? /titulos e valores/.test(d) : null, dv: d ? /derivativ/.test(d) : null, av: d ? /avais|fianc/.test(d) : null }; };
+const ccMuda = (a, b) => a.doc !== b.doc || ["t", "dv", "av"].some(k => a[k] != null && b[k] != null && a[k] !== b[k]);
+// carteira implícita (valor ÷ %) da primeira faixa com valor; salto de mais de 60% (ou queda de mais de 40%) num semestre = outra base
+const ccBase = (p) => { const k = ["10", "1", "20", "50", "100", "60", "160"].find(k => p?.f?.[k]?.[0] && p.f[k][1]); return k ? p.f[k][0] / p.f[k][1] : null; };
+const ccSalto = (a, b) => { const x = ccBase(a), y = ccBase(b); return x && y ? (y / x > 1.6 || y / x < 0.6) : false; };
+const ccFonte = (i, s, p) => p.url ? `<a href="${esc(p.url)}" target="_blank" rel="noopener">PDF${p.pag ? ", p. " + p.pag : ""}</a>` : `<a href="${esc(ccPdf(i, s, p))}" target="_blank" rel="noopener">PDF${p.pag ? ", p. " + p.pag : ""}</a>`;
+document.addEventListener("change", (ev) => {
+  if (ev.target.id !== "ccbusca" || !CO) return;
+  const v = ev.target.value.trim().toLowerCase(), d = v.replace(/\D/g, ""), L = CO.inst;
+  const x = L.find(i => ccNome(i).toLowerCase() === v) || L.find(i => d.length >= 8 && (i.id.startsWith(d.slice(0, 8)) || (i.c || "").startsWith(d.slice(0, 8)))) ||
+    L.find(i => i.numero && v.startsWith(i.numero + " ")) || L.find(i => (ccNome(i) + " " + i.nome).toLowerCase().includes(v));
+  if (x) { fsel.id = x.id; try { localStorage.setItem("ficha", JSON.stringify(fsel)); } catch (e) {} render(); }
+});
+function ccMotivo(i, N) {
+  const S = CO.meta.semestres;
+  if (S.some(x => i.s[x])) {
+    const fx = [...new Set(S.flatMap(x => Object.keys(i.s[x]?.f || {})))].map(Number).filter(n => n !== 1).sort((a, b) => a - b);
+    return `publica ${fx.join(", ")} maiores`;
+  }
+  const st = S.map(x => (i.sit?.[x] || "p")[0]);
+  if (st.includes("c")) return "tabela fora do padrão de leitura, em conferência";
+  if (st.some(v => v === "p" || v === "e")) return "documentos ainda em leitura";
+  if (st.every(v => v === "x")) return "demonstração em imagem, sem texto";
+  if (st.every(v => v === "d")) return "sem demonstração na Central do BC";
+  return "não publica a tabela nas notas explicativas";
+}
+function renderConc() {
+  if (!precisa(["concentracao"])) { esperando(/HTTP 404/.test(COerr) ? "Carga inicial em andamento: a rotina está lendo as demonstrações financeiras dos últimos cinco anos na Central do BC. Os gráficos aparecem aqui quando a primeira parte for publicada." : COerr ? `A base de concentração não carregou (${esc(COerr)}). Recarregue a página.` : "Carregando a concentração dos maiores devedores…"); return; }
+  cid = 0;
+  const M = CO.meta, S = M.semestres, byId = new Map(CO.inst.map(i => [i.id, i])), sel = byId.get(fsel.id) || null;
+  const opts = CO.inst.slice().sort((a, b) => ccNome(a).localeCompare(ccNome(b), "pt-BR")).map(x => `<option value="${esc(ccNome(x))}">${esc(x.nome.slice(0, 60))}</option>`).join("");
+  $("#filters").innerHTML = `<div class="frow"><label class="fgroup"><span class="flabel">Instituição</span><input id="ccbusca" class="sel" list="cclist" placeholder="Nome, número ou CNPJ" value="${sel ? esc(ccNome(sel)) : ""}" style="min-width:16rem"><datalist id="cclist">${opts}</datalist></label></div>`;
+  $("#stamp").textContent = `Demonstrações financeiras até ${M.ref ? semLbl(M.ref) : "—"} · atualizado em ${dmy(M.atualizado)}`;
+  const refs = CC_REF.map(([k, n, c]) => ({ k, n, c: cor(c), i: CO.inst.find(x => x.tipo === "banco" && x.escopos.includes(k)) })).filter(r => r.i);
+  const sis = CC_SIS.map(([k, n, c]) => ({ k, n, c: cor(c), d: CO.sistemas?.[k] })).filter(x => x.d);
+  const selRef = sel && refs.find(r => r.i.id === sel.id), selCor = sel ? (selRef ? selRef.c : instCor2(sel)) : null;
+  const ccNt = (p) => { const t = [p.doc === 9030 ? "IFRS" : p.doc === 9060 ? "prudencial" : "", p.calc ? "calculado" : "", p.de ? "comparativo" : ""].filter(Boolean).join(", "); return t ? `(${t})` : ""; };
+  const pts = (s, N) => { let ant = null, antP = null; return S.filter(x => s?.[x]?.f?.[N]?.[1] != null).map(x => { const p = s[x], sg = ccSig(p);
+    const q = { d: x, v: p.f[N][1], brk: ant != null && (ccMuda(ant, sg) || !!p.rev || ccSalto(antP, p)), nt: ccNt(p) }; ant = sg; antP = p; return q; }); };
+  const grafico = (N) => {
+    const nm = (n, s) => { const u = [...S].reverse().find(x => s?.[x]?.f?.[N]); return u && M.ref && u < M.ref ? `${n} (${semLbl(u)})` : n; };
+    const L = refs.map(r => ({ name: nm(r.n, r.i.s), pts: pts(r.i.s, N), c: r.c, w: selRef === r ? 3.5 : 1.8 }));
+    if (N === "10") sis.forEach(x => L.push({ name: x.n, pts: pts(x.d.s, N), c: x.c, w: 1.8 }));
+    if (sel && !selRef) L.push({ name: nm(ccNome(sel), sel.s), pts: pts(sel.s, N), c: selCor, w: 3.5 });
+    return tsChart(L, { unit: "%", fmt: v => nf(v, 1), dots: true, h: N === "10" ? 290 : 250, label: `Participação dos ${N} maiores devedores na carteira` });
+  };
+  const falta = (N) => {
+    const f = refs.filter(r => !S.some(x => r.i.s[x]?.f?.[N])).map(r => `${r.n} (${ccMotivo(r.i, N)})`);
+    const motU = (i) => ({ t: "sem a tabela nas notas depois disso", c: "tabela seguinte em conferência", d: "documento seguinte ainda não publicado na Central", x: "documento seguinte em imagem", e: "consulta seguinte falhou", p: "documento seguinte ainda em leitura" })[(i.sit?.[M.ref] || "p")[0]] || "";
+    const para = refs.map(r => ({ r, u: [...S].reverse().find(x => r.i.s[x]?.f?.[N]) })).filter(o => o.u && M.ref && o.u < M.ref).map(o => `${o.r.n} (última tabela em ${semLbl(o.u)}; ${motU(o.r.i)})`);
+    if (N !== "10") f.push("Sicoob e Sicredi (as combinadas trazem os 10 maiores e depois faixas seguintes, que somam 60 e 160 maiores)");
+    else sis.filter(x => !S.some(s => x.d.s[s]?.f?.["10"])).forEach(x => f.push(`${x.n} (combinada ainda não lida)`));
+    if (sel && !selRef && !S.some(x => sel.s[x]?.f?.[N])) f.push(`${ccNome(sel)} (${ccMotivo(sel, N)})`);
+    return (f.length ? `Sem a faixa de ${N} maiores: ${f.map(esc).join("; ")}. ` : "") + (para.length ? `Linha que para antes de ${semLbl(M.ref)}: ${para.map(esc).join("; ")}.` : "");
+  };
+  // cartões da instituição escolhida: último semestre com tabela e variação contra o mesmo semestre do ano anterior
+  let kp = "";
+  const ultSel = sel ? [...S].reverse().find(x => sel.s[x]) : null;
+  if (ultSel) {
+    const p = sel.s[ultSel], ano = `${+ultSel.slice(0, 4) - 1}${ultSel.slice(4)}`, pa0 = sel.s[ano];
+    const outroDoc = pa0 && (ccMuda(ccSig(pa0), ccSig(p)) || S.some(x => x > ano && x <= ultSel && sel.s[x]?.rev) || ccSalto(pa0, p)), pa = outroDoc ? null : pa0;
+    kp = `<div class="kpis">${CC_FX.filter(([N]) => p.f[N]).map(([N, nm]) => { const v = p.f[N][1], a = pa?.f?.[N]?.[1], dv = a == null ? null : v - a;
+      return kpiBox(N === "1" ? "Maior devedor" : `${nm} maiores devedores`, nf(v, N === "1" ? 2 : 1), "%", dv == null ? (outroDoc ? `${semLbl(ano)} em outra base, sem comparação` : `sem ${semLbl(ano)} para comparar`) : `${arrow(dv)}${sgn(dv, 1, " p.p.")} em 12 meses`, "flat", `${semLbl(ultSel)}${p.f[N][0] != null ? " · " + brlMil(p.f[N][0]) : ""}${p.calc ? " · calculado" : ""}`); }).join("")}</div>`;
+  }
+  const head = `<div><div class="eyebrow">Notas explicativas das demonstrações financeiras · semestral${tagNovo(M.novo_desde)}</div><h2>Concentração da carteira nos maiores devedores</h2>
+    <p class="lede">Participação dos 10, 50 e 100 maiores devedores na carteira de crédito, semestre a semestre, como cada instituição publica nas notas explicativas. ${sel ? `${linkFicha(sel.id, esc(ccNome(sel)))} contra os 5 maiores bancos; Sicoob e Sicredi, como sistema, no gráfico dos 10 maiores.` : "Escolha uma instituição no filtro para comparar com os 5 maiores bancos; Sicoob e Sicredi, como sistema, aparecem no gráfico dos 10 maiores."}</p></div>`;
+  const semDado = sel && !ultSel ? `<p class="empty">${esc(ccNome(sel))}: ${esc(ccMotivo(sel, "10"))}.${(() => { const c = S.filter(x => (sel.sit?.[x] || "")[0] === "c").map(x => { const [, doc, cnpj, pag] = sel.sit[x].split(":"); return `<a href="${esc(ccPdf(sel, x, { doc, c: cnpj || null }))}" target="_blank" rel="noopener">${semLbl(x)}${pag ? ", p. " + pag : ""}</a>`; }); return c.length ? ` Documentos: ${c.join(", ")}.` : ""; })()}</p>` : "";
+  // tabela de dados: último semestre de cada linha, com o link do PDF e a página
+  const linha = (nome, obj, cmp, url) => { const ult = [...S].reverse().find(x => obj?.s?.[x]); if (!ult) return `<tr><td>${nome}</td><td colspan="7"><small>${esc(cmp)}</small></td></tr>`;
+    const p = obj.s[ult]; return `<tr><td>${nome}<small>${esc(p.nota || "")}${p.desc ? " · " + esc(p.desc) : ""}</small></td><td>${semLbl(ult)}</td>${CC_FX.map(([N]) => `<td class="num">${p.f[N] ? nf(p.f[N][1], N === "1" ? 2 : 1) + "%" : "—"}</td>`).join("")}<td>${url(ult, p)}${ccDet(p)}</td></tr>`; };
+  const rows = refs.map(r => linha(esc(r.n), r.i, ccMotivo(r.i, "10"), (s, p) => ccFonte(r.i, s, p)))
+    .concat(sis.map(x => linha(esc(x.n) + " (combinado)", x.d, "combinada ainda não lida", (s, p) => ccFonte(x.d, s, p))))
+    .concat(sel && !selRef ? [linha(`<b>${esc(ccNome(sel))}</b>`, sel, ccMotivo(sel, "10"), (s, p) => ccFonte(sel, s, p))] : []);
+  const tab = `<div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th>Semestre</th>${CC_FX.map(([, n]) => `<th class="num">${n === "Maior" ? "Maior" : n + " maiores"}</th>`).join("")}<th>Fonte</th></tr></thead><tbody>${rows.join("")}</tbody></table></div>`;
+  const hist = ultSel ? `<div class="tbl-wrap"><table><thead><tr><th>Semestre</th>${CC_FX.map(([, n]) => `<th class="num">${n === "Maior" ? "Maior" : n + " maiores"}</th>`).join("")}<th>Nota</th><th>Fonte</th></tr></thead><tbody>${[...S].reverse().map(x => { const p = sel.s[x];
+      if (!p) return `<tr><td>${semLbl(x)}</td><td colspan="7"><small>${esc(({ t: "sem a tabela no documento", x: "documento em imagem, sem texto", d: "sem demonstração na Central do BC", c: "tabela fora do padrão de leitura, em conferência", e: "consulta falhou; nova tentativa na próxima rodada", p: "ainda não lido" })[(sel.sit?.[x] || "p")[0]])}</small></td></tr>`;
+      return `<tr><td>${semLbl(x)}</td>${CC_FX.map(([N]) => `<td class="num">${p.f[N] ? nf(p.f[N][1], N === "1" ? 2 : 1) + "%" : "—"}</td>`).join("")}<td><small>${esc(p.nota || "")}${p.desc ? " · " + esc(p.desc) : ""}</small></td><td>${ccFonte(sel, x, p)}${ccDet(p)}</td></tr>`; }).join("")}</tbody></table></div>` : "";
+  const ult = M.ref, cb = (M.cobertura || {})[ult] || {}, totU = Object.values(cb).reduce((a, b) => a + b, 0);
+  const cobTxt = ult ? `Em ${semLbl(ult)}: ${nf(cb.ok || 0, 0)} instituições com a tabela lida, de ${nf(totU, 0)}; ${nf(cb.sem_tabela || 0, 0)} sem a tabela nas notas; ${nf(cb.conferir || 0, 0)} em conferência; ${nf(cb.sem_texto || 0, 0)} em imagem; ${nf((cb.sem_doc || 0) + (cb.pendente || 0) + (cb.erro || 0), 0)} ainda sem documento ou em leitura.` : "";
+  const lk = `<a href="${esc(M.url)}" target="_blank" rel="noopener">Central de Demonstrações Financeiras do SFN, Banco Central</a>`;
+  const nDoc = (d) => d === 9030 ? "IFRS" : d === 9060 ? "prudencial" : "Cosif";
+  const trocas = refs.map(r => { const ss = S.filter(x => r.i.s[x]); const t = ss.slice(1).map((x, k) => { const a = r.i.s[ss[k]], b = r.i.s[x];
+      if ((a.doc || 9010) !== (b.doc || 9010)) return `${nDoc(a.doc)} até ${semLbl(ss[k])} e ${nDoc(b.doc)} desde ${semLbl(x)}`;
+      if (ccMuda(ccSig(a), ccSig(b))) return `tabela com outra definição desde ${semLbl(x)}`;
+      if (ccSalto(a, b)) return `carteira da tabela muda de tamanho em ${semLbl(x)}`;
+      return b.rev ? `base revista em ${semLbl(x)}` : ""; }).filter(Boolean);
+    return t.length ? `${r.n}, ${t.join("; ")}` : ""; }).filter(Boolean).map(esc).join("; ");
+  const nota = (N) => `% da carteira, como publicado (ou calculado sobre o total da carteira da mesma nota, quando a tabela traz só valores). Linha interrompida: a base da tabela mudou (documento, definição ou revisão). ${falta(N)} Fonte: notas explicativas, ${lk}.`;
+  $("#view").innerHTML = `${head}${kp}${semDado}
+    ${block("10 maiores devedores", "Participação na carteira de crédito · semestre a semestre", grafico("10"), nota("10"))}
+    <div class="grid2">${block("50 maiores devedores", "Participação na carteira de crédito · semestre a semestre", grafico("50"), nota("50"))}
+      ${block("100 maiores devedores", "Participação na carteira de crédito · semestre a semestre", grafico("100"), nota("100"))}</div>
+    ${block("Dados e fonte", "Último semestre publicado de cada linha", tab, `Cada número vem da nota explicativa indicada, com link para o PDF na Central do BC (bancos e cooperativas) ou no site do sistema (combinadas). "—": faixa que a instituição não publica.`)}
+    ${hist ? block(`Histórico · ${esc(ccNome(sel))}`, "Todos os semestres", hist, `% da carteira, como publicado na nota. Link do PDF e página da tabela em cada linha.`) : ""}
+    <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
+      <p><b>Fonte.</b> Tabela de maiores devedores das notas explicativas das demonstrações financeiras semestrais (junho e dezembro), baixadas da ${lk}: documento 9010 e, quando a tabela não está nele, 9030 (IFRS) ou 9060 (conglomerado prudencial). Bancos: demonstrações da instituição líder do conglomerado prudencial (cadastro do IF.data); Itaú, da holding. Sicoob e Sicredi como sistema: <a href="${esc(CO.sistemas?.sicoob?.fonte || "#")}" target="_blank" rel="noopener">demonstrações combinadas do Sicoob</a> e <a href="${esc(CO.sistemas?.sicredi?.fonte || "#")}" target="_blank" rel="noopener">do Sicredi</a>.</p>
+      <p><b>Percentual.</b> O publicado pela instituição, sobre a carteira que ela usa na nota (carteira de crédito ou carteira com avais, fianças e outros créditos; a definição de cada tabela aparece nas tabelas abaixo). Quando a tabela traz só valores, o percentual é calculado: valor da faixa ÷ total da carteira da mesma nota (o total do quadro por setor de atividade ou por vencimento, na mesma página e data), e o ponto aparece como "calculado". Dentro da mesma instituição e do mesmo documento a série é comparável; entre instituições, a base pode variar.</p>
+      <p><b>Quebra de série.</b> A rotina lê primeiro as demonstrações no padrão Cosif; se a tabela não está nelas, lê as demonstrações em IFRS. A linha do gráfico é interrompida quando a base muda: troca de documento (Cosif para IFRS), tabela com outra definição (por exemplo, passa a excluir derivativos), base revista (o documento seguinte republica o semestre anterior com outro percentual) ou carteira da tabela (valor ÷ percentual) que cresce mais de 60% ou cai mais de 40% de um semestre para o outro.${trocas ? " Nas linhas de referência: " + trocas + "." : ""}</p>
+      <p><b>Comparativos.</b> Quando o documento de um semestre não traz a tabela, mas o documento seguinte traz a coluna comparativa daquela data, o ponto vem dessa coluna, com a indicação "comparativo" e o link do documento de onde saiu. Se a instituição republica um semestre com percentual diferente do publicado na época, vale o original, e a mudança de base aparece como quebra da linha.</p>
+      <p><b>Faixas.</b> Só faixas exatas, acumuladas: maior devedor, 10, 20, 50 e 100 maiores. Tabela em faixas seguintes (10 maiores, 50 seguintes, 100 seguintes) soma 60 e 160 maiores, e por isso fica fora dos gráficos de 50 e 100. No Sicredi, as faixas somam o total, mas o rótulo não diz onde cada uma termina; entra só a dos 10 maiores.</p>
+      <p><b>SFN e bancos.</b> O BC não publica esse indicador para o sistema nem para o agregado de bancos, e somar as instituições daria número errado, porque o mesmo grupo toma em vários bancos.</p>
+      <p><b>Leitura automática.</b> A tabela é aceita quando o acumulado cresce de uma faixa para a outra e a carteira implícita (valor ÷ percentual) é a mesma em todas as faixas, dentro do arredondamento publicado. Nas cooperativas, essa carteira também precisa ficar entre 0,8 e 1,25 vez a carteira de crédito do IF.data na mesma data. Fora disso, fica em conferência e não entra nos gráficos. ${cobTxt}</p>
+      <p><b>Atualização.</b> Na primeira segunda-feira de cada mês, a rotina consulta a Central e lê só os documentos novos. O prazo de envio ao BC é de 60 dias depois de junho e 90 depois de dezembro, e o BC publica depois de um exame prévio.</p></div></section>`;
+}
 /* ===================== Alertas na tela ===================== */
 // Cada aba mostra os avisos das bases que usa: base recusada ou com falha na última verificação (o painel segue com o dado anterior),
 // base em alerta (cadastro do BC incompleto, estados do território com dado anterior) e rotina parada há mais de 9 dias.
@@ -2878,9 +3001,9 @@ let STATUS = null, STATUS_ERR = false;
 const BASES_ABA = { visao: ["carteira", "risco", "focus"], ruralsfn: ["safra", "carteira", "risco"], safra: ["safra", "cadastro"], carteira: ["carteira", "cadastro"],
   risco: ["risco", "cadastro"], resultados: ["resultados", "cadastro"], rural: ["carteira", "cadastro"], quadro: ["posicao", "resultados", "cadastro"],
   rankings: ["posicao", "safra", "cadastro"], posicao: ["posicao", "cadastro"], ficha: ["posicao", "resultados", "risco", "carteira", "safra"],
-  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], fontes: [] };
+  consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], concentracao: ["concentracao"], fontes: [] };
 const NOME_BASE = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)",
-  focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC", reneg: "Renegociações (SICOR)" };
+  focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC", reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)" };
 function alertas() {
   const el = $("#alertas"); if (!el) return;
   const L = [];
@@ -2900,8 +3023,8 @@ function alertas() {
   el.innerHTML = L.map(x => `<div class="aviso">${x}</div>`).join("");
 }
 /* ===================== Roteador ===================== */
-const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio", 15: "reneg" };
-const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 15, 7, 8, 9, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio", 15: "reneg", 16: "concentracao" };
+const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 5, 2, 6, 15, 7, 8, 9, 16, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
@@ -2912,7 +3035,7 @@ function render() {
     if (at && row.scrollWidth > row.clientWidth) { row.style.scrollBehavior = "auto"; row.scrollLeft = Math.max(0, at.offsetLeft - row.offsetLeft - 40); row.style.scrollBehavior = ""; }
     row.addEventListener("scroll", upd, { passive: true }); upd(); sc._upd = upd; });
   alertas();
-  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes, consignado: renderConsig, expectativas: renderExpect, territorio: renderTerr, reneg: renderReneg })[aba()]();
+  ({ visao: renderVisao, ruralsfn: renderRuralSFN, carteira: renderCarteira, risco: renderRisco, resultados: renderRes, rural: renderRural, quadro: renderQuadro, safra: renderSafra, rankings: renderRankings, posicao: renderPos, ficha: renderFicha, fontes: renderFontes, consignado: renderConsig, expectativas: renderExpect, territorio: renderTerr, reneg: renderReneg, concentracao: renderConc })[aba()]();
 }
 addEventListener("hashchange", () => { render(); window.scrollTo(0, 0); });
 addEventListener("resize", () => document.querySelectorAll("#tabs .tscroll").forEach(sc => sc._upd && sc._upd()), { passive: true });

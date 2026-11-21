@@ -18,7 +18,7 @@ RAW = os.path.abspath(os.environ.get("RAW_DIR", os.path.join(RAIZ, "raw")))
 FORCAR = "--forcar" in sys.argv
 _arg = lambda k: next((a.split("=", 1)[1].split(",") for a in sys.argv if a.startswith(k + "=")), None)
 SO, EXCETO = _arg("--so"), _arg("--exceto") or []      # ex.: --so=territorio (terça) ou --exceto=territorio (segunda)
-TEMPO = {"territorio": 3 * 3600}                          # limite por script, em segundos (padrão 60 min)
+TEMPO = {"territorio": 3 * 3600, "concentracao": 4 * 3600}   # limite por script, em segundos (padrão 60 min); a concentração para sozinha (CONC_MINUTOS)
 HOJE = datetime.date.today().isoformat()
 
 BASES = [  # (arquivo, script, pasta de brutos)
@@ -30,9 +30,11 @@ BASES = [  # (arquivo, script, pasta de brutos)
     ("carteira", "atualiza_carteira.py", os.path.join(RAW, "bcb")),
     ("focus", "atualiza_focus.py", os.path.join(RAW, "bcb")),
     ("territorio", "atualiza_territorio.py", os.path.join(RAW, "sicor")),
+    ("concentracao", "atualiza_concentracao.py", os.path.join(RAW, "cdsfn")),   # 1ª segunda do mês; usa a posição (universo)
 ]
 EXTRA = {}     # arquivos gerados pelo mesmo script, validados e trocados à parte
 SUBDIR = {"safra": "safra_uf", "territorio": "territorio_uf"}   # arquivos por UF, trocados junto com o arquivo principal
+SEMPRE = {"concentracao": ["concentracao_controle.json"]}       # controle da carga: gravado sempre que o script roda até o fim
 
 
 def ler(p):
@@ -147,7 +149,26 @@ def chk_reneg(n, a):
         if tot < 0.9 * totv(a): raise AssertionError("total renegociado caiu mais de 10% em relação à versão publicada")
 
 
-CHK = {"reneg": chk_reneg, "focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
+def chk_concentracao(n, a):
+    """Maiores devedores: referência não recua; ponto já publicado não muda nem some (salvo o que veio de comparativo);
+    faixas dentro de 0 a 100 e crescentes."""
+    nao_recua(n["meta"].get("ref"), (a or {}).get("meta", {}).get("ref"), "semestre de referência da concentração")
+    novo = {(i["id"], s, k): f[1] for i in n["inst"] for s, p in i["s"].items() for k, f in p["f"].items()}
+    for i in n["inst"]:
+        for s, p in i["s"].items():
+            ps = [p["f"][k][1] for k in sorted(p["f"], key=int)]
+            if any(not 0 < x <= 100 for x in ps) or any(ps[j] > ps[j + 1] + 0.051 for j in range(len(ps) - 1)):
+                raise AssertionError(f"faixas inválidas em {i['id']} {s}: {ps}")
+    if a and os.environ.get("ACEITAR_MUDANCA") != "1":
+        # ponto que veio da coluna comparativa de um documento posterior ("de") pode ser trocado pelo do próprio semestre
+        mud = [(k, v, novo.get(k)) for i in a.get("inst", []) for s, p in i["s"].items() if not p.get("de") for k2, f in p["f"].items()
+               for k, v in [((i["id"], s, k2), f[1])] if novo.get(k) is None or abs(novo[k] - v) > 0.011]
+        if mud: raise AssertionError(f"{len(mud)} pontos já publicados mudariam ou sumiriam, ex.: {mud[:3]}")
+    if sum(len(i["s"]) for i in n["inst"]) < sum(len(i["s"]) for i in (a or {}).get("inst", [])):
+        raise AssertionError("menos pontos publicados que na versão anterior")
+
+
+CHK = {"concentracao": chk_concentracao, "reneg": chk_reneg, "focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
 
 # ---------------- estabilidade: um dado já publicado não pode mudar muito de uma rodada para outra ----------------
 # Pega pontos que já existiam na versão publicada (meses passados, contagem de filiadas por grupo) e compara com a
@@ -162,7 +183,7 @@ def pontos(nome, d):
     P = {}
     if not d: return P
     # renegociação: a lista é de quem renegociou no período (fluxo), e os recortes vêm da safra, já checada; contagem não se aplica
-    if nome != "reneg" and isinstance(d.get("inst"), list) and d["inst"] and "escopos" in d["inst"][0]:
+    if nome not in ("reneg", "concentracao") and isinstance(d.get("inst"), list) and d["inst"] and "escopos" in d["inst"][0]:
         for g in GRUPOS:
             P[("filiadas", g)] = sum(1 for i in d["inst"] if g in i.get("escopos", []))
     if nome == "carteira":
@@ -237,6 +258,9 @@ def main():
         except subprocess.TimeoutExpired:
             pass
         ok_run = r is not None and r.returncode == 0
+        if ok_run:                                                 # controle de carga: vale mesmo se o arquivo publicado for recusado
+            for ex in SEMPRE.get(nome, []):
+                if os.path.exists(os.path.join(tmp, ex)): shutil.copy2(os.path.join(tmp, ex), os.path.join(DATA, ex))
         saida = (r.stdout.strip().splitlines() or [""])[-1][:300] if r else f"tempo esgotado ({TEMPO.get(nome, 3600) // 60} min)"
         b = {"segundos": round(time.time() - ti), "saida": saida, "verificado": HOJE}
         if not ok_run:

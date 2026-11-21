@@ -1,7 +1,7 @@
 name: Atualizar dados do Banco Central
 on:
   schedule:
-    - cron: "22 7 * * 1"        # segunda-feira, 4h22 em Brasília: todas as bases menos o território
+    - cron: "22 7 * * 1"        # segunda-feira, 4h22 em Brasília: todas as bases menos o território (concentração só na 1ª segunda do mês)
     - cron: "22 7 * * 2"        # terça-feira, 4h22 em Brasília: território (SICOR por município, todas as UFs)
   workflow_dispatch:
     inputs:
@@ -10,9 +10,13 @@ on:
         type: boolean
         default: false
       bases:
-        description: "Bases a rodar, separadas por vírgula (vazio = todas menos o território; ex.: territorio)"
+        description: "Bases a rodar, separadas por vírgula (vazio = todas menos o território e a concentração; ex.: territorio)"
         type: string
         default: ""
+      rodadas:
+        description: "Só para bases=concentracao: quantas rodadas seguidas disparar enquanto houver documento pendente (carga inicial)"
+        type: string
+        default: "0"
   push:
     branches: [main]
     paths: ["scripts/**", ".github/workflows/atualiza.yml"]   # mudança nos scripts: reprocessa (menos o território) para testar
@@ -20,6 +24,7 @@ permissions:
   contents: write
   pages: write
   id-token: write
+  actions: write
 concurrency:
   group: atualiza
   cancel-in-progress: false
@@ -35,6 +40,7 @@ jobs:
           cache: pip
           cache-dependency-path: scripts/requirements.txt
       - run: pip install -r scripts/requirements.txt
+      - run: sudo apt-get install -y -qq poppler-utils    # pdftotext, para as notas explicativas (concentração)
       - name: Trazer os dados publicados (ramo dados)
         run: |
           # os dados ficam no ramo "dados", só com a última versão (sem acumular histórico); "dados-anterior" guarda a penúltima
@@ -44,12 +50,15 @@ jobs:
       - name: Verificar e atualizar as bases
         env:
           RAW_DIR: ${{ runner.temp }}/raw
+          CONC_MINUTOS: ${{ inputs.bases == 'concentracao' && '200' || '110' }}
         run: |
           ARGS=""
           if [ "${{ github.event_name }}" = "push" ] || [ "${{ inputs.forcar }}" = "true" ]; then ARGS="--forcar"; fi
+          DIA=$(TZ=America/Sao_Paulo date +%-d)
           if [ "${{ github.event.schedule }}" = "22 7 * * 2" ]; then ARGS="$ARGS --so=territorio"
           elif [ -n "${{ inputs.bases }}" ]; then ARGS="$ARGS --so=${{ inputs.bases }}"
-          else ARGS="$ARGS --exceto=territorio"; fi
+          elif [ "${{ github.event.schedule }}" = "22 7 * * 1" ] && [ "$DIA" -le 7 ]; then ARGS="$ARGS --exceto=territorio"   # 1ª segunda: inclui a concentração
+          else ARGS="$ARGS --exceto=territorio,concentracao"; fi
           echo "argumentos: $ARGS"
           python3 -I scripts/atualiza_tudo.py $ARGS
       - name: Gravar os dados (ramo dados, só a última versão)
@@ -65,6 +74,15 @@ jobs:
           git remote add origin "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git"
           git fetch -q --depth 1 origin dados && git push -q -f origin FETCH_HEAD:refs/heads/dados-anterior || true
           git push -q -f origin dados
+      - name: Continuar a carga da concentração (rodada seguinte)
+        if: inputs.bases == 'concentracao' && inputs.rodadas != '0' && inputs.rodadas != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          P=$(python3 -c "import json; print(json.load(open('site/data/concentracao.json'))['meta'].get('pendentes', 0))" 2>/dev/null || echo 0)
+          R=$(( ${{ inputs.rodadas }} - 1 ))
+          echo "pendentes: $P · rodadas restantes: $R"
+          if [ "$P" -gt 0 ] && [ "$R" -ge 0 ]; then gh workflow run atualiza.yml --repo "${{ github.repository }}" --ref main -f bases=concentracao -f rodadas="$R"; fi
   publica:
     needs: atualiza
     uses: ./.github/workflows/pages.yml
