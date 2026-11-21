@@ -1,0 +1,1260 @@
+
+=== página 47 ===
+NOTA 03 - PRINCIPAIS PRÁTICAS CONTÁBEIS
+
+As principais práticas contábeis adotadas para elaboração das demonstrações financeiras foram:
+
+(a) Apuração do Resultado
+
+O resultado é apurado com base no regime de competência.
+
+(b) Caixa e Equivalentes a Caixa
+
+Caixa e equivalentes a caixa correspondem aos saldos de disponibilidades e de aplicações interfinanceiras de
+liquidez imediatamente conversíveis, ou com prazo de vencimento original igual ou inferior a 90 dias e que
+apresentem risco insignificante de mudança em seu valor justo.
+
+(c) Aplicações Interfinanceiras de Liquidez
+
+Representam os recursos aplicados no mercado interbancário. São apresentadas pelo valor presente, calculadas
+pro rata dia com base na variação do indexador e na taxa de juros pactuadas.
+
+(d) Títulos e Valores Mobiliários
+
+Os títulos e valores mobiliários, de acordo com a Circular nº 3.068/01 do Bacen e regulamentação complementar,
+são classificados e avaliados em três categorias específicas, atendendo os critérios de contabilização:
+
+- Títulos para Negociação - incluem os títulos e valores mobiliários adquiridos com o objetivo de serem
+negociados frequentemente e de forma ativa, avaliados pelo valor de mercado, sendo os ganhos e as perdas
+sobre esses títulos reconhecidos na demonstração do resultado.
+
+- Títulos Disponíveis para Venda - incluem os títulos e valores mobiliários utilizados como parte da estratégia
+para a administração do risco de variação nas taxas de juros e podem ser negociados como resultado dessas
+variações, por mudanças nas condições de pagamento ou outros fatores. Esses títulos são ajustados pelo valor
+de mercado, deduzido perda de caráter permanente, quando aplicável, sendo os seus rendimentos auferidos
+reconhecidos no resultado. Os ganhos e as perdas, decorrentes das variações do valor de mercado e ainda não
+realizados, são reconhecidos em conta específica do patrimônio líquido, deduzidos dos correspondentes efeitos
+tributários, quando aplicável, denominada "Outros Resultados Abrangentes" até a sua realização por venda.
+
+Os ganhos e as perdas, quando realizados, serão reconhecidos na data da negociação na demonstração do
+resultado, em contrapartida da mesma conta específica do patrimônio líquido, deduzidos dos correspondentes
+efeitos tributários, quando aplicável.
+
+- Títulos Mantidos até o Vencimento - incluem os títulos e valores mobiliários para os quais a Administração
+possui a intenção e a capacidade financeira de mantê-los até o vencimento, sendo registrados ao custo de
+aquisição, desde que não haja perdas de caráter permanente, atualizados pro rata temporis em contrapartida
+ao resultado do exercício. A capacidade financeira é definida em projeções de fluxo de caixa, desconsiderando a
+possibilidade de venda desses títulos.
+
+(e) Instrumentos Financeiros Derivativos
+
+Os instrumentos financeiros derivativos são classificados, na data de sua aquisição, de acordo com a intenção da
+Administração em utilizá-los como instrumento de proteção (hedge) ou não, conforme a Circular nº 3.082/02 do
+Bacen.
+
+Os instrumentos financeiros derivativos, são contabilizadas pelo valor de mercado, com ganhos e perdas
+reconhecidas diretamente na demonstração do resultado, desde que os derivativos não sejam utilizados para
+proteção, mas adquiridos por solicitação de clientes ou para carteira própria.
+
+
+
+
+                                                                               ______________________________________________
+                                                                                                                        | 47
+
+=== página 48 ===
+            O método para reconhecer o ganho ou a perda resultante depende da designação ou não do derivativo para a
+            estrutura da contabilidade de hedge (hedge accounting) ou de hedge financeiro, além da natureza do item que
+            está sendo protegido por hedge.
+
+            O Banrisul adota a contabilidade de hedge (hedge accounting) e designa os derivativos contratados para proteção
+            das dívidas subordinadas (Nota 18) como hedge de Valor Justo de ativos ou passivos, reconhecidos ou de
+            compromisso firme (hedge de risco de mercado).
+
+            O Banrisul efetua a designação documentada, no início da operação, que descreve a relação entre os objetos e
+            os instrumentos de hedge, assim como os objetivos da gestão de risco e a estratégia para a realização das
+            proteções. Nesta gestão de risco, o Banrisul testa e documenta periodicamente os testes realizados para apurar
+            o nível de efetividade das operações de hedge accounting na compensação de variações do valor justo dos itens
+            protegidos durante o período de vigência desta proteção.
+
+            Hedge de Risco de Mercado - são classificados nesta categoria os instrumentos financeiros derivativos que se
+            destinam a compensar riscos decorrentes da exposição à variação no valor de mercado do item objeto de hedge.
+
+            O Banrisul considerou nesta categoria os instrumentos financeiros derivativos contratados com objetivo de
+            proteção da variação de moeda estrangeira oriunda das emissões das dívidas denominadas em US$523,185
+            milhões, com vencimento em 02 de fevereiro de 2022, e US$300 milhões, com vencimento em 28 de janeiro de
+            2031, com opção de recompra em cinco anos, conforme condições previamente acordadas pelo Offering
+            Memorandum desta emissão, descrito na Nota18.
+
+            As variações no valor justo de derivativos designados e qualificados como hedge de risco de mercado são
+            registradas na demonstração do resultado, com quaisquer variações no valor justo do ativo ou passivo protegido
+            por hedge que são atribuíveis ao risco protegido (Nota 08). O ganho ou perda relacionado com essa operação é
+            reconhecido na demonstração do resultado como "Resultado de Intermediação Financeira".
+
+            (f) Operações de Crédito, Arrendamento Mercantil e Outros Créditos com Característica de Concessão de
+            Crédito
+
+            Todas as operações de crédito e arrendamento mercantil têm os seus riscos classificados de acordo com
+            julgamento da Administração, levando em consideração a conjuntura econômica, a experiência passada e os
+            riscos específicos em relação às operações, aos devedores e aos garantidores, observando os parâmetros
+            estabelecidos pela Resolução nº 2.682/99 do CMN, que requer a análise periódica da carteira e sua classificação
+            em nove níveis de risco, de AA até H. A tabela com o resumo dessa classificação está apresentada na Nota 09.
+
+            As operações de crédito e arrendamento mercantil são registradas a valor presente, calculadas pro rata dia com
+            base no indexador e na taxa de juros pactuados, sendo atualizadas até o sexagésimo dia de atraso. Após esse
+            prazo, o reconhecimento de receita ao resultado ocorre quando efetivamente recebidas as operações.
+
+            Os riscos das operações ativas renegociadas são definidos conforme critério da Resolução nº 2.682/99 do CMN,
+            ou seja, permanecem no rating que se encontravam antes da renegociação e as renegociações de operações de
+            crédito que foram anteriormente baixadas contra a provisão, que estavam em contas de compensação, são
+            classificadas como nível H. Os eventuais ganhos provenientes da renegociação somente serão reconhecidos
+            como receita quando efetivamente recebidos (Nota 09 (h)).
+
+            (g) Provisões para Perdas Esperadas Associadas ao Risco de Crédito
+
+            A Provisão para perdas em operações de crédito, arrendamento mercantil e outros créditos, é constituída a partir
+            de modelos internos de risco que classificam as operações de acordo com os ratings previstos na Resolução nº
+            2.682/99 do CMN. Historicamente a provisão mantem-se em níveis considerados suficientes para cobertura de
+            eventuais perdas.
+
+            O valor total da provisão para perdas em operações de crédito, arrendamento mercantil e outros créditos, está
+            demonstrado na Nota 09(e).
+
+
+_________________________________________________
+48 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 49 ===
+(h) Outros Valores e Bens
+
+Compostos basicamente por Bens Não Destinados a Uso, que correspondem a imóveis disponíveis para venda,
+próprios desativados e/ou recebidos em dação de pagamento, os quais são ajustados a valor de mercado por
+meio da constituição de provisão, de acordo com as normas vigentes; e Despesas Antecipadas, correspondentes
+a aplicações de recursos cujos benefícios decorrentes ocorrerão em exercícios futuros.
+
+(i) Investimentos e Ágio
+
+Os investimentos em controladas e coligadas são avaliados pelo método de equivalência patrimonial, com base
+no valor do patrimônio líquido da controlada ou coligada, observando as mesmas práticas contábeis do
+controlador, ou seja, práticas contábeis adotadas no Brasil aplicáveis às instituições financeiras autorizadas a
+operar pelo Banco Central do Brasil.
+
+O ágio corresponde ao valor excedente pago na aquisição de investimentos decorrente da expectativa de
+geração de ganhos econômicos futuros, e é submetido anualmente ao teste de redução ao valor recuperável de
+ativos (impairment).
+
+(j) Imobilizado de Uso
+
+Imóveis de uso compreendem principalmente terrenos e edifícios. Conforme estabelece a Resolução nº 4.535/16
+do CMN, os imóveis de uso estão demonstrados pelo custo histórico deduzidos da depreciação, assim como
+todos os demais itens do ativo imobilizado. O custo histórico inclui gastos diretamente atribuíveis à aquisição ou
+construção dos bens.
+
+Os custos subsequentes são incluídos no valor contábil do ativo ou reconhecidos como um ativo separado,
+conforme apropriado, somente quando for provável que fluam benefícios econômicos futuros associados ao
+item e que o seu custo possa ser mensurado com segurança. Todos os outros reparos e manutenções são
+reconhecidos no resultado do período como despesas operacionais desde que não resultem efetivamente no
+aumento do prazo de vida útil, sua eficiência ou produtividade, quando incorridos.
+
+Os terrenos não são depreciados. A depreciação de outros bens é calculada usando o método linear para alocar
+seus custos aos seus valores residuais durante a vida útil estimada, conforme apresentada a seguir:
+
+Imobilizado                                                                          Estimativa Média da Vida Útil em Anos
+Imóveis de Uso                                                                                            60
+Instalações                                                                                               25
+Equipamentos em Uso                                                                                       19
+Outros                                                                                                     7
+
+
+Os valores residuais e a vida útil dos ativos são revisados e ajustados, se apropriado, ao final de cada exercício.
+Anualmente é realizada a revisão de vida útil e emissão de laudo correspondente.
+
+Os ativos que estão sujeitos à depreciação são revisados para a verificação de impairment sempre que eventos
+ou mudanças nas circunstâncias indicarem que o valor contábil pode não ser recuperável. O valor contábil de um
+ativo é imediatamente baixado para seu valor recuperável se for maior do que seu valor recuperável estimado.
+O valor recuperável é o valor mais alto entre o valor justo de um ativo menos os custos de venda e o valor em
+uso.
+
+Os ganhos e as perdas de alienações são determinados pela comparação dos resultados com o valor contábil e
+são reconhecidos em Outras Receitas (Despesas) Operacionais na demonstração do resultado.
+
+(k) Intangível
+
+Intangível corresponde aos direitos adquiridos que tenham por objeto bens incorpóreos destinados à
+manutenção da entidade ou exercidos com essa finalidade. A Resolução nº 4.534/16 do CMN, estabelece o
+reconhecimento do ativo intangível pelo valor de custo, e a amortização dos bens com vida útil definida
+reconhecida ao longo da vida útil estimada pelo método linear.
+
+                                                                                 ______________________________________________
+                                                                                                                             | 49
+
+=== página 50 ===
+            Esse grupo está representado por contratos de prestação de serviços bancários e de aquisição de softwares
+            conforme descrito a seguir:
+
+            Intangível                                                                        Estimativa Média da Vida Útil em Anos
+            Folhas de Pagamento                                                                                 5 e 10
+            Softwares                                                                                             7
+
+
+            Direitos por Aquisição de Folhas de Pagamento
+
+            Setor Público - referem-se aos contratos firmados relativos a cessão dos serviços relacionados à folha de
+            pagamento por meio da outorga onerosa de direito de exclusividade com o Estado do Rio Grande do Sul, Poder
+            Judiciário do Estado do Rio Grande do Sul, prefeituras e demais órgãos públicos. Foram realizados estudos
+            internos e de especialistas e não foi identificado indício de impairment relacionado a esses ativos (Nota 15).
+
+            Setor Privado - referem-se aos contratos firmados com o setor privado, possuem vigência por cinco anos, sendo
+            amortizados pelo prazo contratual decorrido. Não foram identificadas perdas no valor recuperável destes ativos.
+
+            Softwares
+
+            As licenças de softwares são capitalizadas com base nos custos incorridos para adquiri-los e fazer com que eles
+            estejam prontos para serem utilizados. Esses custos são amortizados durante a vida útil estimada dos softwares,
+            de sete anos.
+
+            Os custos associados à manutenção de softwares são reconhecidos como despesa, conforme incorridos. Os
+            custos de desenvolvimento que são diretamente atribuíveis ao projeto e aos testes de produtos de software
+            identificáveis e exclusivos, controlados pelo Banrisul, são reconhecidos como ativos intangíveis.
+
+            Os custos diretamente atribuíveis, que são capitalizados como parte do produto de software, incluem os custos
+            com empregados alocados no desenvolvimento de softwares e uma parcela adequada das despesas indiretas
+            aplicáveis. Os custos também incluem os custos de financiamento incorridos durante o período de
+            desenvolvimento do software.
+
+            Outros gastos de desenvolvimento que não atendam a esses critérios são reconhecidos como despesa, conforme
+            incorridos. Os custos de desenvolvimento previamente reconhecidos como despesa não são reconhecidos como
+            ativo em período subsequente.
+
+            Os custos de desenvolvimento de softwares reconhecidos como ativos são amortizados durante sua vida útil
+            estimada.
+
+            O valor contábil de um ativo intangível é imediatamente baixado para seu valor recuperável se for maior do que
+            o valor recuperável estimado, e é revisado anualmente.
+
+            (l) Redução ao Valor Recuperável de Ativos
+
+            A Instituição revisa anualmente se há alguma indicação de perda no valor recuperável dos ativos (impairment).
+            Eventuais perdas, quando identificadas, são reconhecidas no resultado do período.
+
+            (m) Conversão de Moeda Estrangeira
+
+            As demonstrações financeiras do Banrisul estão apresentadas em Reais, que é sua moeda funcional e de
+            apresentação. Para as dependências no exterior o Banrisul definiu a moeda funcional, conforme estabelece a
+            Resolução nº 4.524/16 do CMN.
+
+            O Banrisul possui duas dependências no exterior - Miami e Grand Cayman, cujas demonstrações financeiras são
+            registradas na moeda norte-americana. As demonstrações de entidades domiciliadas no exterior (nenhuma das
+            quais tem moeda de economia hiperinflacionária), cuja moeda funcional é diferente da moeda de apresentação,
+            são convertidos na moeda de apresentação de acordo com os seguintes critérios:
+
+            • Ativos e passivos são convertidos pela taxa de câmbio da data do balanço; e
+            • Receitas e despesas são convertidas pela taxa de câmbio média mensal.
+
+
+
+
+_________________________________________________
+50 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 51 ===
+Os ajustes de variação cambial decorrentes do processo de conversão são registrados nas demonstrações
+financeiras convertidas da investida no exterior como componente do Patrimônio Líquido na rubrica Outros
+Resultados Abrangentes.
+
+(n) Depósitos, Captações no Mercado Aberto, Recursos de Aceites e Emissão de Títulos e Obrigações por
+Empréstimos e Repasses
+
+São demonstrados pelos valores das exigibilidades considerando os encargos exigíveis até a data das
+demonstrações financeiras, reconhecidos em base pro rata dia. Os valores e prazos estão demonstrados nas
+Notas 16 e 17.
+
+(o) Provisões, Ativos e Passivos Contingentes e Obrigações Legais - Fiscais e Previdenciárias
+
+O reconhecimento, a mensuração e a divulgação das provisões, dos ativos e passivos contingentes e das
+obrigações legais são efetuados de acordo com os critérios definidos pelo CPC 25, o qual foi aprovado pela
+Resolução nº 3.823/09 do CMN.
+
+- Ativos Contingentes - não são reconhecidos nas demonstrações financeiras, exceto quando existem evidências
+que propiciam a garantia de sua realização sobre as quais não cabem mais recursos.
+
+- Provisões e Passivos Contingentes - a provisão para passivos contingentes é reconhecida nas demonstrações
+financeiras quando, baseado na opinião de assessores jurídicos e da Administração, for considerado provável o
+risco de perda de uma ação judicial ou administrativa, com uma provável saída de recursos para a liquidação das
+obrigações e quando os montantes envolvidos forem mensuráveis com suficiente segurança.
+
+Os passivos contingentes classificados como de perdas possíveis não são reconhecidos contabilmente, devendo
+ser apenas divulgados nas Notas Explicativas, e os de perdas remotas não requerem provisão e nem a divulgação.
+
+- Obrigações Legais - Fiscais e Previdenciárias - são registradas como exigíveis independentemente da avaliação
+quanto a probabilidade de perda.
+
+(p) Imposto de Renda e Contribuição Social
+
+O crédito tributário ou obrigação fiscal de imposto de renda e contribuição social diferidos foram calculados com
+base nas alíquotas vigentes na data das demonstrações financeiras, e na perspectiva de realização estimada para
+estes créditos no período de vigência destas alíquotas sobre as diferenças temporárias, e registrados na rubrica
+“Créditos Tributários”, em contrapartida do resultado do período. Havendo alteração da legislação tributária que
+modifique critérios e alíquotas a serem adotados em períodos futuros, os efeitos são reconhecidos
+imediatamente com base nos critérios e alíquotas aplicáveis ao período em que cada parcela do ativo será
+realizada ou do passivo liquidada. A realização destes créditos tributários ocorrerá quando da realização das
+diferenças temporárias e respectivas provisões constituídas.
+
+A provisão para imposto de renda é constituída à alíquota-base de 15% do lucro tributável, acrescida de adicional
+de 10%. Em novembro de 2019 foi promulgada a Emenda Constitucional nº 103 que estabelece no artigo 32, a
+majoração da alíquota de contribuição social sobre o lucro líquido dos “Bancos” de 15% para 20%, com vigência
+a partir de março de 2020. Para as Corretoras de Valores Mobiliários a contribuição social é calculada a alíquota
+de 15% e para as demais empresas, a contribuição social é calculada considerando a alíquota de 9%.
+
+Foi editada a Lei nº 14.183/21 aumentando a taxa da Contribuição Social sobre o Lucro Líquido (CSLL) das
+instituições financeiras. Para os bancos, a taxa se eleva dos 20% para 25%, de julho a 31 de dezembro de 2021,
+e a partir de janeiro de 2022, a mesma volta a ser de 20%.
+
+Para a Banrisul S/A Corretora de Valores Mobiliários e Câmbio a taxa aumentou de 15% para 20%, de julho a
+dezembro de 2021, e a partir de janeiro de 2022 a mesma volta a ser de 15%.
+
+
+
+
+                                                                                ______________________________________________
+                                                                                                                         | 51
+
+=== página 59 ===
+(b) Composição dos Clientes por Faixa de Vencimento e Níveis de Risco
+
+                                                                                                                                                                                                  Banrisul e Banrisul Consolidado
+                                                                                                                           Operações em Curso Normal (1)
+                                                       AA               A               B              C               D                E              F             G                H         31/12/2021           31/12/2020
+Parcelas Vincendas                               4.886.142     28.069.899       3.036.624      1.281.529         599.321          138.733        139.490       346.247        1.148.410         39.646.395            36.166.058
+01 a 30 dias                                       112.809      1.577.730         315.387        139.727          57.596           11.971         15.796         32.025          27.254          2.290.295             2.306.022
+31 a 60 dias                                        84.833      1.191.911         237.034         75.737          33.413           11.016         11.709         19.682          20.967          1.686.302             1.772.031
+61 a 90 dias                                        71.087        947.530         170.056         69.214          39.258            5.434           8.540        18.913          18.830          1.348.862             1.291.451
+91 a 180 dias                                      212.734      2.858.868         433.353        193.421          71.543           17.781         19.310         33.032          56.176          3.896.218             3.473.013
+181 a 360 dias                                     389.973      3.993.618         579.282        316.496          67.509           19.721         45.449         82.436         189.766          5.684.250             4.984.440
+Acima de 360 dias                                4.014.706     17.500.242       1.301.512        486.934         330.002           72.810         38.686       160.159          835.417         24.740.468            22.339.101
+Parcelas Vencidas                                      736         11.432           5.035           3.798          2.738            1.087            503           549            1.755             27.633                48.626
+Até 14 dias                                            736         11.432           5.035           3.798          2.738            1.087            503           549            1.755             27.633                48.626
+Subtotal                                         4.886.878     28.081.331       3.041.659      1.285.327         602.059          139.820        139.993       346.796        1.150.165         39.674.028            36.214.684
+                                                                                                                        Operações em Curso Anormal (1)
+Parcelas Vincendas                                        -              -        149.197         93.063          76.983           62.490         57.071         74.449         419.284            932.537             1.001.600
+01 a 30 dias                                             -               -          3.325           3.339          3.375            2.407           1.524         2.125          13.365             29.460                34.402
+31 a 60 dias                                             -               -          2.944           2.618          2.453            1.770           1.478         2.158          13.121             26.542                31.978
+61 a 90 dias                                             -               -          2.818           2.326          2.148            1.570           1.415         2.046          12.378             24.701                29.380
+91 a 180 dias                                            -               -          7.530           6.637          6.096            4.497           3.903         5.835          36.535             71.033                83.461
+181 a 360 dias                                           -               -         13.694         12.012          10.969            7.854           7.063        10.742          66.384            128.718               156.210
+Acima de 360 dias                                        -               -        118.886         66.131          51.942           44.392         41.688         51.543         277.501            652.083               666.169
+Parcelas Vencidas                                         -              -         14.304         23.647          28.672           27.354         22.123         58.668         260.642            435.410               389.520
+01 a 14 dias                                              -              -            502            309             222              251            260           488            3.032              5.064                 5.685
+15 a 30 dias                                              -              -         12.129           6.554          4.996            2.813           2.812         9.377          16.168             54.849                50.011
+31 a 60 dias                                              -              -          1.673         15.585           6.786            4.895           3.186         4.818          15.916             52.859                46.296
+61 a 90 dias                                              -              -               -           975          15.914            4.947           3.615         8.046          15.452             48.949                41.812
+91 a 180 dias                                             -              -               -           224             754           13.861         10.974         34.053          80.018            139.884               145.887
+181 a 360 dias                                            -              -               -              -               -             587           1.276         1.886         113.965            117.714                87.230
+Acima de 360 dias                                         -              -               -              -               -                -                 -          -          16.091             16.091                12.599
+Subtotal                                                  -              -        163.501        116.710         105.655           89.844         79.194       133.117          679.926          1.367.947             1.391.120
+Total em 31/12/2021                              4.886.878     28.081.331       3.205.160      1.402.037         707.714          229.664        219.187       479.913        1.830.091         41.041.975
+Total em 31/12/2020                              5.141.278      18.948.465       7.903.932      1.795.573         870.913          334.987        237.528         480.090      1.893.038                              37.605.804
+(1) A carteira em Curso Anormal é composta por operações de crédito que apresentam parcelas vencidas há mais de 14 dias, as demais operações são consideradas de Curso Normal.
+
+
+
+
+                                                                                                                                                                                           ______________________________________________
+                                                                                                                                                                                                                                    | 59
+
+=== página 60 ===
+            (c) Composição da Carteira por Setor de Atividade
+
+                                                                                                                                           Banrisul e Banrisul Consolidado
+                                                                                                                                 31/12/2021                    31/12/2020
+            Setor Público                                                                                                            102.207                       103.555
+            Administração Pública - Direta e Indireta                                                                                102.207                       103.555
+            Setor Privado                                                                                                         40.939.768                    37.502.249
+            Pessoa Jurídica                                                                                                        9.778.898                     8.952.228
+             Agropecuário                                                                                                            157.230                       272.623
+             Alimentos, Bebidas e Fumo                                                                                             1.428.878                     1.146.432
+             Automotivo                                                                                                              394.772                       383.325
+             Celulose, Madeira e Móveis                                                                                              201.453                       184.977
+             Comércio Atacadista Alimentos                                                                                           723.876                       535.013
+             Comércio Atacadista exceto Alimentos                                                                                    656.660                       559.942
+             Comércio Varejista - Outros                                                                                           1.003.249                       784.292
+             Construção e Imobiliário                                                                                                719.696                       837.525
+             Educação, Saúde e outros Serviços Sociais                                                                             1.025.433                     1.233.619
+             Eletroeletrônico e Informática                                                                                          350.109                       313.780
+             Financeiro e Seguro                                                                                                     376.065                       338.687
+             Máquinas e Equipamentos                                                                                                 265.830                       239.159
+             Metalurgia                                                                                                              304.044                       230.281
+             Obras de Infraestrutura                                                                                                  42.215                        31.411
+             Petróleo e Gás Natural                                                                                                  398.718                       355.341
+             Químico e Petroquímico                                                                                                  521.689                       434.053
+             Serviços Privados                                                                                                       334.628                       219.573
+             Textil, Confecções e Couro                                                                                              265.386                       234.007
+             Transportes                                                                                                             299.826                       314.693
+             Outros                                                                                                                  309.141                       303.495
+            Pessoa Física                                                                                                         31.160.870                    28.550.021
+            Total de Operações de Crédito                                                                                         41.041.975                    37.605.804
+
+
+            (d) Concentração das Operações de Crédito
+
+                                                                                                                                           Banrisul e Banrisul Consolidado
+                                                                                                                  31/12/2021                                   31/12/2020
+                                                                                                   Valor         % da Carteira                 Valor         % da Carteira
+            Principal Devedor                                                                    147.703                  0,36               163.451                  0,43
+            10 Maiores Devedores Seguintes                                                       913.843                  2,23               995.815                  2,65
+            20 Maiores Devedores Seguintes                                                     1.283.971                  3,13             1.185.353                  3,15
+            50 Maiores Devedores Seguintes                                                     1.612.343                  3,93             1.472.171                  3,91
+            100 Maiores Devedores Seguintes                                                    1.352.289                  3,29             1.304.015                  3,47
+
+
+            (e) Movimentação da Provisão para Perdas Esperadas Associadas ao Risco de Crédito
+
+            A Provisão para Perdas Esperadas no montante de R$2.678.378 (31/12/2020 – R$2.811.892), no consolidado
+            R$2.681.589 (31/12/2020 – R$2.813.138) está demonstrada a seguir:
+
+            i) Provisão para perdas em Operações de Crédito, Arrendamento Mercantil e Outros Créditos com Características
+            de Concessão de Crédito:
+
+                                                                                                                                            Banrisul e Banrisul Consolidado
+                                                                                                                         01/01 a 31/12/2021             01/01 a 31/12/2020
+            Saldo Inicial                                                                                                          2.763.101                       2.764.335
+            Constituição Líquida do Período                                                                                           786.164                      1.498.861
+            Baixas para Prejuízo                                                                                                    (919.452)                    (1.500.095)
+            Saldo Final                                                                                                            2.629.813                       2.763.101
+            Provisão sobre Operações de Crédito                                                                                    2.491.660                       2.590.995
+            Provisão sobre Operações de Arrendamento Mercantil                                                                          4.709                          6.587
+            Provisão sobre Outros Créditos com Característica de Crédito (1)                                                          133.444                        165.519
+            (1) Refere-se a constituição de provisão sobre as operações de Créditos por Avais e Fianças Honrados, Cartões de Débito e Crédito, Carteira de Câmbio e Créditos
+            Vinculados a Operações Adquiridas em Cessão.
+
+
+            ii) Provisão para perdas em Outros Créditos sem Características de Concessão de Crédito:
+
+                                                                                                                      Banrisul                          Banrisul Consolidado
+                                                                                                 01/01 a               01/01 a               01/01 a                 01/01 a
+                                                                                             31/12/2021            31/12/2020            31/12/2021              31/12/2020
+            Saldo Inicial                                                                         48.791                47.719                50.037                  50.515
+            Constituição/(Reversão) Líquida do Período                                             (146)                 1.072                 1.825                    2.634
+            Baixas para Prejuízo                                                                     (80)                    -                   (86)                 (3.112)
+            Saldo Final                                                                           48.565                48.791                51.776                  50.037
+
+
+_________________________________________________
+60 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 61 ===
+(f) Composição da Provisão para Operações de Crédito, Arrendamento Mercantil e Outros Créditos com
+    Característica de Concessão de Crédito por Níveis de Risco
+
+                                                                                                                     Banrisul e Banrisul Consolidado
+                                                                              Provisionamento Mínimo Requerido
+  Níveis de Risco                           Carteira de Crédito                pela Resolução CMN nº 2.682/99                     Provisão Existente
+         AA                                           4.886.878                              0,00%                                                 -
+          A                                         28.081.331                               0,50%                                          140.406
+          B                                           3.205.160                              1,00%                                           32.052
+          C                                           1.402.037                              3,00%                                           42.061
+          D                                             707.714                             10,00%                                           70.771
+          E                                             229.664                             30,00%                                           68.899
+          F                                             219.187                             50,00%                                          109.594
+          G                                             479.913                             70,00%                                          335.939
+          H                                           1.830.091                            100,00%                                        1.830.091
+Total em 31/12/2021                                 41.041.975                                                                            2.629.813
+Total em 31/12/2020                                 37.605.804                                                                            2.763.101
+
+
+
+(g) Programa Emergencial de Suporte a Empregos (PESE)
+
+As operações relacionadas ao Programa Emergencial de Suporte a Empregos (PESE), classificadas por nível de
+risco e acompanhada do montante da provisão constituída para cada nível de risco está demonstrada a seguir,
+conforme determina a Resolução nº 4.846/20 do CMN.
+
+                                                                                                                     Banrisul e Banrisul Consolidado
+                                                                                     31/12/2021                                         31/12/2020
+                Rating                                        Ativo                     Provisão                  Ativo                    Provisão
+                  AA                                              634                           -                   59                             -
+                  A                                         35.666                            27                 61.544                          46
+                  B                                           1.039                            2                    52                             -
+                   C                                              305                          1                     6                             -
+                  D                                               201                          3                      -                            -
+                   E                                              294                         13                      -                            -
+                   F                                              278                         21                    43                            3
+                  G                                               409                         43                      -                            -
+                  H                                           1.386                          208                      -                            -
+              Total Geral                                     40.212                         318                 61.704                          49
+Para os ratings B e C, a provisão para 31/12/2020 foi de R$77,80 e R$26,40 reais respectivamente.
+
+
+(h) Recuperação e Renegociação de Créditos
+
+As recuperações de Operações de Crédito anteriormente baixadas como prejuízo foram reconhecidas como
+Receitas de Operações de Crédito e atingiram no período o montante de R$458.049 (31/12/2020 - R$462.709),
+líquidas das perdas geradas nessas recuperações.
+
+Os valores de operações de crédito renegociadas no período totalizam R$732.364 (31/12/2020 - R$698.386).
+Conforme Resolução nº 2.682/99 do CMN, essas operações permanecem classificadas no rating que se
+encontravam antes da renegociação e as renegociações de operações de crédito que foram anteriormente
+baixadas contra a provisão, que estavam em contas de compensação, são classificadas como nível H.
+
+
+
+
+                                                                                                           ______________________________________________
+                                                                                                                                                       | 61
+
+=== página 62 ===
+            NOTA 10 - OUTROS ATIVOS FINANCEIROS
+
+                                                                                                                                                                   Banrisul
+                                                                             Até         Acima de           Total em               Até         Acima de           Total em
+                                                                       12 Meses          12 Meses        31/12/2021          12 Meses          12 Meses        31/12/2020
+            Relações Interfinanceiras                                      7.889         1.195.996         1.203.885            10.881         1.134.635         1.145.516
+             Créditos Vinculados ao SFH (1)                                     -        1.195.996         1.195.996                  -        1.134.635         1.134.635
+             Pagamentos e Recebimentos a Liquidar                          1.714                 -             1.714             2.594                 -             2.594
+             Outros                                                        6.175                 -             6.175             8.287                 -             8.287
+            Relações Interdependências                                    65.764                 -            65.764            73.101                 -            73.101
+            Carteira de Câmbio                                           888.210                 -           888.210           551.923            20.680           572.603
+            Rendas a Receber                                              72.201                 -            72.201            99.839                 -            99.839
+            Depósito em Garantia                                                -          677.718           677.718                  -          629.179           629.179
+            Pagamentos a Ressarcir                                        57.572                 -            57.572            61.667                 -            61.667
+            Títulos e Créditos a Receber (2)                           2.314.527           244.623         2.559.150         2.117.962           235.155         2.353.117
+            Créditos Vinculados a Operações Adquiridas
+             em Cessão (Nota 09 (a))                                      41.247             6.491            47.738            85.424            52.642           138.066
+            Outros                                                        23.271                 -            23.271            24.630                 -            24.630
+            Total                                                      3.470.681         2.124.828         5.595.509         3.025.427         2.072.291         5.097.718
+
+
+                                                                                                                                                     Banrisul Consolidado
+                                                                             Até         Acima de           Total em               Até         Acima de          Total em
+                                                                       12 Meses          12 Meses        31/12/2021          12 Meses          12 Meses       31/12/2020
+            Relações Interfinanceiras                                  2.167.238         1.195.996         3.363.234         1.672.441         1.134.635        2.807.076
+              Créditos Vinculados ao SFH (1)                                    -        1.195.996         1.195.996                  -        1.134.635        1.134.635
+              Pagamentos e Recebimentos a Liquidar                     2.161.063                 -         2.161.063         1.664.154                 -        1.664.154
+              Outros                                                       6.175                 -             6.175             8.287                 -            8.287
+            Relações Interdependências                                    65.764                 -            65.764            73.101                 -           73.101
+            Carteira de Câmbio                                           888.210                 -           888.210           551.923            20.680          572.603
+            Rendas a Receber                                             102.863                 -           102.863           108.086                 -          108.086
+            Negociação e Intermediação de Valores                         19.401                 -            19.401             3.693                 -            3.693
+            Depósito em Garantia                                                -          684.292           684.292                  -          639.497          639.497
+            Pagamentos a Ressarcir                                        57.925                 -            57.925            62.542                 -           62.542
+            Títulos e Créditos a Receber (2)                           2.355.853           244.623         2.600.476         2.182.660           236.081        2.418.741
+            Créditos Vinculados a Operações Adquiridas
+              em Cessão (Nota 09 (a))                                        41.247            6.491           47.738            85.424           52.642           138.066
+            Outros                                                           24.152                 -          24.152            25.499                 -           25.499
+            Total                                                         5.722.653        2.131.402        7.854.055         4.765.369        2.083.535         6.848.904
+            (1) Os Créditos Vinculados ao SFH estão compostos por:
+            (a) R$143.876 (31/12/2020 - R$166.982) refere-se aos fluxos futuros atualizados pela taxa de desconto pré-fixada de 14,07% a.a. utilizada quando da aquisição
+            de crédito junto ao FCVS do Governo do Estado do Rio Grande do Sul;
+            (b) R$1.049.256 (31/12/2020 - R$964.884) refere-se às parcelas de principal e juros dos créditos adquiridos em que o Banrisul terá o direito a receber no
+            momento da novação e que são atualizados de acordo com a remuneração dos recursos originários sendo TR + 6,17% a.a. para créditos oriundos de recursos
+            próprios e TR + 3,12% a.a. para créditos oriundos de recursos do FGTS; e
+            (c) R$2.864 (31/12/2020 - R$2.769) refere-se ao saldo dos contratos da carteira própria com cobertura de FCVS, recursos oriundos do FGTS, homologados e
+            prontos para novação, atualizados por TR + 3,12% a.a.
+            Créditos Vinculados ao SFH - Carteira Adquirida - De outubro de 2002 a março de 2005, o Banrisul adquiriu do Governo do Estado do Rio Grande do Sul, com
+            cláusula de garantia de realização financeira para eventuais contratos não performados, quando da conversão em CVS, créditos do Fundo de Compensação de
+            Variações Salariais (FCVS). Em 31 de dezembro de 2021, os créditos estão avaliados pelo preço de aquisição atualizado pela taxa de aquisição pro rata temporis,
+            no valor de R$1.193.132 (31/12/2020 - R$1.131.866). O seu valor de face é de R$1.221.358 (31/12/2020 - R$1.170.841). Esses créditos serão convertidos em
+            títulos CVS conforme processos de homologação e novação, sendo os montantes que o Banrisul terá direito a receber no momento da novação apresentados
+            separadamente e atualizados por variação de TR mais juros. Apesar de não existir definição de prazo, os valores de mercado, no momento da emissão dos títulos,
+            poderão ser significativamente diferentes dos valores contábeis.
+            Créditos Vinculados ao SFH - Carteira Própria - referem-se a créditos com o FCVS originários de créditos imobiliários, com recursos da carteira própria, já
+            homologados pelo órgão gestor do FCVS.
+            (2) Títulos e Créditos a Receber estão compostos principalmente por:
+            (a) Créditos de precatórios junto ao Tesouro Nacional. No primeiro trimestre de 2005, mantendo a política de recuperação de créditos, o Banrisul recebeu como
+            dação em pagamento, para quitação de empréstimos em atraso de empresas que pertenciam a um mesmo Grupo Econômico. O efetivo recebimento destes
+            títulos depende do desfecho de ação judicial rescisória. A Administração entende que não há necessidade de constituição de provisão para perda. Esses depósitos
+            judiciais, referentes aos precatórios cedidos ao Banrisul, cuja liberação depende da decisão final da ação judicial rescisória, em 31 de dezembro de 2021,
+            totalizavam R$190.457 (31/12/2020 - R$179.456) e são remunerados pela Taxa Referencial (TR) e juros;
+            (b) Outros Créditos sem Característica de Crédito, com o Setor Público Municipal, no valor de R$56.268 (31/12/2020 - R$58.140) relativos a direitos recebíveis
+            adquiridos do Governo do Estado do Rio Grande do Sul ou de entidades por ele controladas, com remuneração de 0,50% a 9,37% a.a. e indexados à TR e ao
+            IGP- M com vencimento até 2029. Para estes créditos, existe provisão constituída no valor de R$47.350 (31/12/2020 – R$47.575);
+            (c) Cartões de Débito e Crédito - referem-se a direitos a receber dos usuários do Banricompras e cartões das bandeiras Visa e Mastercard emitidos pelo Banrisul.
+            Em 31 de dezembro de 2021 totalizava R$2.254.780 (31/12/2020 - R$2.065.609) no Banrisul e no Consolidado; e
+            (d) Valores a receber relativo aos convênios dos cartões de benefícios e empresariais Banricard e da rede de adquirência Vero no valor de R$38.280 no
+            Consolidado (31/12/2020 - R$39.223).
+
+
+
+
+_________________________________________________
+62 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 64 ===
+            NOTA 12 - OUTROS ATIVOS
+
+                                                                                                              Banrisul                           Banrisul Consolidado
+                                                                                     Total em                Total em                Total em                Total em
+                                                                                  31/12/2021              31/12/2020              31/12/2021              31/12/2020
+            Adiantamentos a Empregados                                                 15.598                  10.823                  15.861                  11.146
+            Ativos Atuariais - Benefícios Pós-Emprego (Nota 27)                       198.580                 228.387                 199.143                 228.917
+            Devedores Diversos - País                                                 138.828                 166.848                 129.404                 166.473
+            Bens destinados para Venda                                                144.695                 228.712                 144.802                 230.131
+            Despesas Antecipadas                                                      190.353                 178.983                 191.622                 179.897
+            Outros                                                                    131.078                  74.392                  19.638                   1.430
+            Total                                                                     819.132                 888.145                 700.470                 817.994
+
+
+
+
+            NOTA 13 - INVESTIMENTOS EM COLIGADAS E CONTROLADAS E ÁGIO
+
+                                                                                                                  Banrisul                         Banrisul Consolidado
+                                                                                           31/12/2021         31/12/2020             31/12/2021             31/12/2020
+            Participações em Controladas e Coligadas no País                                 2.247.949          1.907.935                146.031               166.240
+            Participações em Controladas                                                     2.101.918          1.744.734                        -                    -
+            Participações em Coligadas                                                         146.031            163.201                146.031               166.240
+            Ágio na Aquisição de Investimentos (1)                                                 624              4.367                     624                 4.367
+            Total                                                                            2.248.573          1.912.302                146.655               170.607
+            (1) O ágio representa o benefício econômico futuro decorrente da aquisição da Bem Promotora de Vendas e Serviços S.A., cujo valor está sendo amortizado no
+            prazo de 10 anos.
+
+
+
+                                                                                                                                                             Banrisul
+                                                                              Patrimônio   Participação do             Valor do          Resultado       Resultado de
+                                                                                  Líquido Capital Social (%)      Investimento             Líquido       Equivalência
+                                                                             31/12/2021        31/12/2021           31/12/2021         31/12/2021         31/12/2021
+             Empresas Controladas                                              2.107.535                              2.101.918            462.657            462.386
+             Banrisul Armazéns Gerais S.A.                                         63.437             99,50              63.118              5.689              6.277
+             Banrisul S.A. Corretora de Valores Mobiliários e Câmbio               94.595             98,98              93.634              7.532              7.447
+             Banrisul S.A. Administradora de Consórcios                          342.806              99,68             341.720             53.782             53.611
+             Banrisul Cartões S.A.                                             1.509.496              99,78           1.506.245            280.053            279.450
+             Banrisul Seguridade Participações S.A.                                97.201           100,00               97.201            115.601            115.601
+             Empresas Coligadas                                                  292.205                                146.031             87.785             43.733
+             Bem Promotora de Vendas e Serviços S.A.                               46.280             49,90              23.093             30.092             15.016
+             Banrisul Icatu Participações S.A.                                   245.925              49,99             122.938             57.693             28.840
+             VG8JV Tecnologia S.A.(1)                                                   -                  -                  -                  -              (123)
+            (1) A empresa encerrou sua atividade em 22 de abril de 2021.
+
+
+
+
+                                                                                                                                                 Banrisul Consolidado
+                                                                              Patrimônio   Participação do             Valor do          Resultado       Resultado de
+                                                                                  Líquido Capital Social (%)      Investimento             Líquido        Equivalência
+                                                                             31/12/2021        31/12/2021           31/12/2021         31/12/2021          31/12/2021
+             Empresas Coligadas                                                  292.205                               146.031              87.785             42.830
+             Bem Promotora de Vendas e Serviços S.A.                               46.280             49,90              23.093             30.092             15.016
+             Banrisul Icatu Participações S.A.                                   245.925              49,99            122.938              57.693             28.840
+             VG8JV Tecnologia S.A.(1)                                                   -                  -                  -                   -            (1.026)
+            (1) A empresa encerrou sua atividade em 22 de abril de 2021.
+
+
+
+
+                                                                                                                                                             Banrisul
+                                                                              Patrimônio   Participação do             Valor do          Resultado       Resultado de
+                                                                                  Líquido Capital Social (%)      Investimento             Líquido       Equivalência
+                                                                             31/12/2020        31/12/2020           31/12/2020         31/12/2020         31/12/2020
+             Empresas Controladas                                              1.749.677                              1.744.734            298.517            299.351
+             Banrisul Armazéns Gerais S.A.                                         58.626             99,50              58.332              7.659              9.182
+             Banrisul S.A. Corretora de Valores Mobiliários e Câmbio               88.850             98,98              87.948              2.108              2.085
+             Banrisul S.A. Administradora de Consórcios                          301.708              99,68             300.751             43.971             43.832
+             Banrisul Cartões S.A.                                             1.295.493              99,78           1.292.703            244.779            244.252
+             Banrisul Seguridade Participações S.A.                                 5.000            100,00               5.000                  -                  -
+             Empresas Coligadas                                                  332.829                                163.201            110.910             59.982
+             Bem Promotora de Vendas e Serviços S.A.                               54.526             49,90              27.209             32.677             16.306
+             Banrisul Icatu Participações S.A.                                   271.211              49,99             135.578             88.540             44.261
+             VG8JV Tecnologia S.A.(1)                                               7.092              5,84                 414           (10.307)              (585)
+            (1) A empresa encerrou sua atividade em 22 de abril de 2021.
+
+
+
+
+_________________________________________________
+64 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 65 ===
+                                                                                                                                         Banrisul Consolidado
+                                                                    Patrimônio   Participação do             Valor do           Resultado        Resultado de
+                                                                        Líquido Capital Social (%)      Investimento               Líquido        Equivalência
+                                                                   31/12/2020        31/12/2020           31/12/2020          31/12/2020           31/12/2020
+ Empresas Coligadas                                                    332.829                               166.240              110.910              55.691
+ Bem Promotora de Vendas e Serviços S.A.                                 54.526             49,90              27.209               32.677             16.306
+ Banrisul Icatu Participações S.A.                                     271.211              49,99            135.578                88.540             44.261
+ VG8JV Tecnologia S.A.(1)                                                 7.092             48,69               3.453            (10.307)              (4.876)
+(1) A empresa encerrou sua atividade em 22 de abril de 2021.
+
+
+
+NOTA 14 - IMOBILIZADO DE USO
+
+                                                                                                                                                         Banrisul
+                                                                                                        Sistemas de
+                                                       Imóveis Equipamentos             Equipamentos Processamento
+                                                        de Uso   em Estoque Instalações       em Uso       de Dados                        Outros           Total
+Em 31 de Dezembro de 2020
+Custo                                                  174.990               1.307      239.251        142.149            342.542           23.791        924.030
+Depreciação Acumulada                                  (96.562)                   -   (133.591)        (84.452)         (257.883)         (18.527)      (591.015)
+Valor Contábil Líquido em 31 de Dezembro de 2020         78.428              1.307      105.660          57.697            84.659            5.264        333.015
+Aquisições                                               17.709              4.021         4.415          8.930            35.256              148         70.479
+Alienações - Baixas Custo                               (4.203)                 (1)      (4.951)        (7.077)            (6.158)             (35)      (22.425)
+Alienações - Baixas da Depreciação                        2.678                   -        4.042          6.668              6.115               31        19.534
+Depreciação                                             (1.137)                   -      (5.428)        (5.922)          (16.035)            (667)       (29.189)
+Transferências Líquido Custo                            (5.695)            (1.651)         (683)         10.035            (1.827)               99           278
+Transferências Líquido Depreciação                          264                   -          129        (3.614)              2.960             201            (60)
+Movimentação Líquida                                      9.616              2.369       (2.476)          9.020            20.311            (223)         38.617
+Em 31 de Dezembro de 2021
+Custo                                                  182.801              3.676       238.032        154.037            369.813           24.003        972.362
+Depreciação Acumulada                                  (94.757)                 -     (134.848)        (87.320)         (264.843)         (18.962)      (600.730)
+Valor Contábil Líquido em 31 de Dezembro de 2021         88.044             3.676       103.184          66.717           104.970            5.041        371.632
+
+
+                                                                                                                                           Banrisul Consolidado
+                                                                                                        Sistemas de
+                                                    Imóveis de Equipamentos             Equipamentos Processamento
+                                                          Uso    em Estoque Instalações       em Uso       de Dados                        Outros           Total
+Em 31 de Dezembro de 2020
+Custo                                                   191.733             38.746      248.843        148.636            413.761           26.421      1.068.140
+Depreciação Acumulada                                 (101.653)                  -    (139.134)        (88.991)         (278.006)         (20.663)      (628.447)
+Valor Contábil Líquido em 31 de Dezembro de 2020         90.080             38.746      109.709          59.645           135.755            5.758        439.693
+Aquisições                                               17.870             20.838         4.584          9.026            35.287              152          87.757
+Alienações - Baixas Custo                                (4.290)           (1.821)       (4.998)        (7.239)            (6.308)             (54)       (24.710)
+Alienações - Baixas da Depreciação                         2.749                 -         4.092          6.813              6.217               50         19.921
+Depreciação                                              (1.325)                 -       (5.969)        (6.291)          (31.616)            (811)        (46.012)
+Transferências Líquido Custo                             (5.692)          (23.275)       (1.648)         10.177            19.790                17          (631)
+Transferências Líquido Depreciação                           674                 -         1.094        (4.176)              2.961             296             849
+Movimentação Líquida                                       9.986           (4.258)       (2.845)          8.310            26.331            (350)          37.174
+Em 31 de Dezembro de 2021
+Custo                                                  199.621             34.488       246.781        160.600            462.530           26.536      1.130.556
+Depreciação Acumulada                                  (99.555)                 -     (139.917)        (92.645)         (300.444)         (21.128)      (653.689)
+Valor Contábil Líquido em 31 de Dezembro de 2021       100.066             34.488       106.864          67.955           162.086            5.408        476.867
+
+
+
+NOTA 15 - INTANGÍVEL
+
+                                                                                                                                                        Banrisul
+                                                               Direitos de Uso de       Direitos por Aquisição de
+                                                                        Softwares        Folhas de Pagamento (1)               Outros                      Total
+Em 31 de Dezembro de 2020
+Custo                                                                      158.523                     1.479.077                 1.718                 1.639.318
+Amortização Acumulada                                                      (99.104)                    (733.940)                 (668)                 (833.712)
+Valor Contábil Líquido em 31 de Dezembro de 2020                             59.419                      745.137                 1.050                   805.606
+Aquisições                                                                   48.340                        85.075                     -                  133.415
+Alienações - Baixas                                                               -                      (12.818)                  (10)                  (12.828)
+Alienações – Baixas da Amortização                                                -                        10.310                    10                    10.320
+Amortização do Período                                                     (20.973)                    (174.108)                      -                (195.081)
+Transferências Líquido Custo                                                  (278)                             -                     -                     (278)
+Transferências Líquido Amortização                                               60                             -                     -                        60
+Movimentação Líquida                                                         27.149                     (91.541)                      -                 (64.392)
+Em 31 de Dezembro de 2021
+Custo                                                                      206.585                     1.551.334                 1.708                  1.759.627
+Amortização Acumulada                                                    (120.017)                     (897.738)                 (658)                (1.018.413)
+Valor Contábil Líquido em 31 de Dezembro de 2021                            86.568                       653.596                 1.050                    741.214
+
+
+
+
+                                                                                                                  ______________________________________________
+                                                                                                                                                                     | 65
+
+=== página 66 ===
+                                                                                                                                                   Banrisul Consolidado
+                                                                              Direitos de Uso de    Direitos por Aquisição de
+                                                                                       Softwares     Folhas de Pagamento (1)                Outros                   Total
+            Em 31 de Dezembro de 2020
+            Custo                                                                        160.725                     1.479.077                1.954             1.641.756
+            Amortização Acumulada                                                      (101.202)                     (733.940)                 (885)            (836.027)
+            Valor Contábil Líquido em 31 de Dezembro de 2020                              59.523                       745.137                1.069               805.729
+            Aquisições                                                                    48.340                         85.075                    -              133.415
+            Alienações - Baixas                                                              (12)                      (12.818)                 (10)              (12.840)
+            Alienações – Baixas da Amortização                                                 12                        10.310                   10                10.332
+            Amortização do Período                                                      (21.007)                     (174.108)                     -            (195.115)
+            Transferências Líquido Custo                                                   (278)                               -                   -                 (278)
+            Transferências Líquido Amortização                                                 60                              -                   -                    60
+            Movimentação Líquida                                                          27.115                      (91.541)                     -             (64.426)
+            Em 31 de Dezembro de 2021
+            Custo                                                                        208.775                     1.551.334                1.944             1.762.053
+            Amortização Acumulada                                                      (122.137)                     (897.738)                 (875)          (1.020.750)
+            Valor Contábil Líquido em 31 de Dezembro de 2021                              86.638                       653.596                1.069               741.303
+            (1) O saldo líquido de R$653.596 (31/12/2020 - R$745.137) está composto por:
+            a) R$595.455 (31/12/2020 - R$677.429) refere-se ao contrato firmado relativo a cessão dos serviços relacionados à folha de pagamento por meio da outorga
+            onerosa de direito de exclusividade com o Estado do Rio Grande do Sul, sua administração direta, autárquica e fundacional, pelo prazo de dez anos. No segundo
+            semestre, conforme definido no contrato, houve ajuste de preço no valor de R$48.781 o qual compõe o saldo total que será diferido pelo restante do prazo do
+            contrato. Foram realizados estudos internos e de especialistas e não foi identificado indício de impairment relacionado a esse ativo;
+            b) O contrato firmado com o Poder Judiciário do Estado do Rio Grande do Sul para prestação de serviços da folha de pagamento dos servidores do Tribunal de
+            Justiça, pelo prazo de 5 anos encerrou-se no terceiro trimestre de 2021 (31/12/2020 – R$9.600);
+            c) R$44.538 (31/12/2020 - R$52.547) referem-se à contratos firmados com as prefeituras e demais órgãos, para prestação de serviços da folha de pagamento
+            dos servidores. Não foram identificadas perdas no valor recuperável destes ativos; e
+            d) R$13.603 (31/12/2020 - R$5.561) referem-se aos contratos firmados com o setor privado, possuem vigência por cinco anos, sendo amortizados pelo prazo
+            contratual decorrido. Não foram identificadas perdas no valor recuperável destes ativos.
+
+
+
+            NOTA 16 - DEPÓSITOS, CAPTAÇÕES NO MERCADO ABERTO E RECURSOS DE
+            ACEITES E EMISSÃO DE TÍTULOS
+
+                                                                                                                                                                 Banrisul
+                                                                                          Sem            Até         De 3 a      Acima de
+                                                                                    Vencimento       3 meses      12 meses       12 meses     31/12/2021     31/12/2020
+            Depósitos
+            À Vista (1)                                                              4.687.506              -             -              -     4.687.506       4.300.573
+            Poupança (1)                                                            11.565.559              -             -              -    11.565.559      11.065.557
+            Interfinanceiros                                                                 -        893.504       499.158              -     1.392.662       1.478.828
+            A Prazo (2)                                                                      -      4.185.474     6.688.238     36.512.250    47.385.962      45.957.109
+            Outros Depósitos                                                            14.158              -             -              -        14.158          18.388
+            Total                                                                   16.267.223      5.078.978     7.187.396     36.512.250    65.045.847      62.820.455
+            Captação no Mercado Aberto
+            Carteira Própria (3)                                                               -   10.774.902              -              -   10.774.902       4.573.384
+            Total                                                                              -   10.774.902              -              -   10.774.902       4.573.384
+            Recursos de Aceites e Emissão de Títulos
+            Recursos de Letras Imobiliárias, Hipotecárias, de Crédito e Similares              -     215.435      1.005.146       816.359       2.036.940      2.727.755
+            Total                                                                              -     215.435      1.005.146       816.359       2.036.940      2.727.755
+
+
+                                                                                                                                                    Banrisul Consolidado
+                                                                                          Sem            Até         De 3 a      Acima de
+                                                                                    Vencimento       3 meses      12 meses       12 meses   31/12/2021 31/12/2020
+            Depósitos
+            À Vista (1)                                                            4.675.682               -             -              -      4.675.682     4.289.107
+            Poupança (1)                                                          11.565.559               -             -              -    11.565.559     11.065.557
+            Interfinanceiros                                                                -       893.504       499.158               -      1.392.662     1.478.828
+            A Prazo (2)                                                                     -     4.185.474     5.928.429    36.512.250      46.626.153     45.599.623
+            Outros Depósitos                                                          17.324               -             -              -         17.324         13.388
+            Total                                                                 16.258.565      5.078.978     6.427.587 36.512.250         64.277.380     62.446.503
+            Captação no Mercado Aberto
+            Carteira Própria (3)                                                            -    10.721.736              -              -    10.721.736      4.362.437
+            Total                                                                           - 10.721.736                 -              -    10.721.736      4.362.437
+            Recursos de Aceites e Emissão de Títulos
+            Recursos de Letras Imobiliárias, Hipotecárias, de Crédito e Similares           -       215.436       706.206       816.359        1.738.001     2.440.535
+            Total                                                                           -       215.436       706.206       816.359       1.738.001      2.440.535
+            (1) Classificados como sem vencimento, pois não existe data de vencimento contratual.
+            (2) Considera os prazos estabelecidos nas aplicações. As captações em depósitos a prazo são realizadas com pessoas físicas ou jurídicas, nas modalidades de
+            encargos pós ou pré-fixados, os quais correspondem a 98,91% e 1,09% do total da carteira, respectivamente. A taxa média de captação para os depósitos pós-
+            fixados corresponde a 81,39% (31/12/2020 - 80,29%) da variação do CDI, e para os pré-fixados 3,69% (31/12/2020 - 1,96%) ao ano. Do total de captações em
+            depósito a prazo, 63,62% (31/12/2020 - 64,16%) possuem registro de possibilidade de resgate antecipado, cuja apropriação da despesa é efetuada pela taxa
+            contratada para o vencimento, desconsiderando descontos ou reduções, aplicados quando o resgate for antecipado. As faixas de vencimento demonstradas não
+            consideram a possibilidade do resgate antecipado.
+            (3) As captações por meio de operações compromissadas - carteira própria - no mercado aberto, realizadas com instituições financeiras, têm taxa média de
+            captação de 100% da variação do CDI.
+
+
+
+
+_________________________________________________
+66 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 67 ===
+NOTA 17 - OBRIGAÇÕES POR EMPRÉSTIMOS E REPASSES
+
+                                                                                                                            Banrisul e Banrisul Consolidado
+                                                                                  Até               De 3 a           Acima de
+                                                                              3 meses            12 meses            12 meses 31/12/2021 31/12/2020
+Obrigações por Empréstimos (1)
+Empréstimos no Exterior                                                       274.182              747.117                   -    1.021.299         425.868
+Total                                                                         274.182              747.117                   -    1.021.299         425.868
+Obrigações por Repasses (2)
+Repasses do País - Instituições Oficiais                                      614.988              201.269            578.566     1.394.823       1.473.113
+Total                                                                         614.988              201.269            578.566     1.394.823      1.473.113
+(1) São representadas por recursos captados de bancos no exterior para aplicação em operações comerciais de câmbio incorrendo à variação cambial das
+respectivas moedas, acrescida de juros as taxas entre 1,10% e 2,63% (31/12/2020 - 0,95% e 4,87%) ao ano.
+ (2) Os recursos internos para repasses representam, basicamente, captações de Instituições Oficiais (BNDES, FINAME, Caixa Econômica Federal e FINEP). Essas
+obrigações têm vencimentos mensais até junho de 2031, com incidência de encargos financeiros nas operações pós-fixadas de 0,90% a 8,00% (31/12/2020 -
+0,90% a 8,00%) ao ano, além das variações dos indexadores (TJLP, URTJ-01, Cesta de Moedas, UPRD, TLP e SELIC), e nas obrigações pré-fixadas até 15,02%
+(31/12/2020 - 18,92%) ao ano. Os recursos são repassados aos clientes nos mesmos prazos e taxas de captação, acrescidas de comissão de intermediação. Como
+garantia desses recursos, foram repassadas as garantias recebidas nas operações de crédito correspondentes.
+
+
+
+
+NOTA 18 - OUTROS PASSIVOS FINANCEIROS
+
+                                                                                                                                                     Banrisul
+                                                                Até         Acima de           Total em               Até        Acima de           Total em
+                                                          12 Meses          12 Meses        31/12/2021          12 Meses         12 Meses        31/12/2020
+Relações Interfinanceiras                                    46.592                 -            46.592            63.073                -            63.073
+Relações Interdependências                                  291.845                 -           291.845           339.731                -           339.731
+Carteira de Câmbio                                           47.964                 -            47.964            50.786                -            50.786
+Fundos Financeiros e de Desenvolvimento                   2.601.475                 -         2.601.475         1.174.014                -         1.174.014
+Dívidas Subordinadas (1)                                  3.130.149         1.559.639         4.689.788           211.437        2.768.194         2.979.631
+Credores por Recursos a Liberar                             194.784                 -           194.784           108.257                -           108.257
+Transações com Cartões a Pagar                            1.391.157                 -         1.391.157         1.237.745                -         1.237.745
+Obrigações a Pagar Adquirência                              730.199                 -           730.199           719.438                -           719.438
+Provisão para Garantias Prestadas Avais
+ e Fianças (Nota 26 (b))                                     18.738                 -            18.738            19.832                -            19.832
+Outros                                                       34.742             6.548            41.290            33.694            9.269            42.963
+Total                                                     8.487.645         1.566.187        10.053.832         3.958.007        2.777.463         6.735.470
+
+
+                                                                                                                                       Banrisul Consolidado
+                                                                Até         Acima de           Total em               Até        Acima de          Total em
+                                                          12 Meses          12 Meses        31/12/2021          12 Meses         12 Meses       31/12/2020
+Relações Interfinanceiras                                    46.592                 -            46.592            63.073                -           63.073
+Relações Interdependências                                  290.408                 -           290.408           338.919                -          338.919
+Carteira de Câmbio                                           47.964                 -            47.964            50.786                -           50.786
+Negociação e Intermediação de Valores                        19.245                 -            19.245             7.246                -            7.246
+Fundos Financeiros e de Desenvolvimento                   2.601.475                 -         2.601.475         1.174.014                -        1.174.014
+Dívidas Subordinadas (1)                                  3.130.149         1.559.639         4.689.788           211.437        2.768.194        2.979.631
+Credores por Recursos a Liberar                             196.228                 -           196.228           108.615                -          108.615
+Transações com Cartões a Pagar                            1.263.580                 -         1.263.580         1.118.976                -        1.118.976
+Obrigações a Pagar Adquirência                            2.118.722                 -         2.118.722         1.654.911                -        1.654.911
+Provisão para Garantias Prestadas Avais
+ e Fianças (Nota 26 (b))                                      18.738                  -             18.738          19.832                 -           19.832
+Outros                                                        55.875             6.548              62.423          56.647            9.269            65.916
+Total                                                      9.788.976         1.566.187        11.355.163         4.804.456        2.777.463         7.581.919
+(1) O Banco emitiu em 2012 duas tranches de Dívidas Subordinadas no montante de US$500 milhões (quinhentos milhões de dólares norte-americanos) e US$275
+milhões (duzentos e setenta e cinco milhões de dólares norte-americanos), pelo prazo de 10 anos, com vencimento em 02 de fevereiro de 2022. Em 2015 ocorreu
+a recompra parcial da Dívida Subordinada no valor de US$251,81 milhões (251,81 milhões de dólares norte-americanos). Após a recompra remanesce o saldo da
+dívida denominada em US$ com nocional de 523,185 milhões.
+(2) Em 28 de janeiro de 2021 o Banrisul realizou uma nova emissão de dívida subordinada (Tier II) no montante de US$300 milhões (trezentos milhões de dólares)
+com juros anuais de 5,375%, pelo prazo de 10 anos, com opção de recompra em 5 anos, conforme condições previamente acordadas pelo Offering Memorandum
+desta emissão.
+
+
+
+
+                                                                                                                ______________________________________________
+                                                                                                                                                                 | 67
+
+=== página 68 ===
+            NOTA 19 - PROVISÕES, ATIVOS E PASSIVOS CONTINGENTES
+
+            (a) Ativos Contingentes
+
+            Não foram reconhecidos contabilmente ativos contingentes e não existem processos em curso com ganhos
+            prováveis.
+
+            (b) Provisões e Passivos Contingentes
+
+            O Banrisul e suas controladas, na execução de suas atividades normais, são parte em processos judiciais e
+            administrativos de natureza tributária, trabalhista e cível.
+
+            As provisões foram constituídas tendo como base a opinião de assessores legais, por meio da utilização de
+            modelos e critérios que permitam a sua mensuração, apesar da incerteza inerente ao seu prazo e ao desfecho
+            de causa. O Banrisul provisiona o valor das ações cuja avaliação é classificada como provável.
+
+            A Administração entende que as provisões constituídas são suficientes para atender eventuais perdas
+            decorrentes de processos judiciais.
+
+            As movimentações das provisões estão apresentadas a seguir:
+
+                                                                                                                          Banrisul
+                                                               Fiscais   Trabalhistas       Cíveis      Outros               Total
+            Saldo Inicial em 31/12/2020                      575.226       1.037.629     237.899       156.562          2.007.316
+            Constituição e Atualização Monetária               99.825         418.183      93.528        1.744            613.280
+            Reversão da Provisão                                (622)               -    (48.193)            -            (48.815)
+            Baixas por Pagamento                             (10.120)       (183.720)    (69.413)            -          (263.253)
+            Saldo Final em 31/12/2021                        664.309       1.272.092     213.821       158.306          2.308.528
+            Depósitos em Garantia em 31/12/2021                89.935         521.888      65.895            -            677.718
+
+
+                                                                                                                          Banrisul
+                                                              Fiscais    Trabalhistas      Cíveis       Outros               Total
+            Saldo Inicial em 31/12/2019                      565.406       1.038.834     169.843       155.196          1.929.279
+            Constituição e Atualização Monetária              19.306          331.911    110.933         1.366            463.516
+            Reversão da Provisão                              (6.932)                -           -            -            (6.932)
+            Baixas por Pagamento                              (2.554)       (333.116)    (42.877)             -         (378.547)
+            Saldo Final em 31/12/2020                        575.226       1.037.629     237.899       156.562          2.007.316
+            Depósitos em Garantia em 31/12/2020               57.570          457.642    113.967              -           629.179
+
+
+                                                                                                             Banrisul Consolidado
+                                                               Fiscais   Trabalhistas       Cíveis      Outros               Total
+            Saldo Inicial em 31/12/2020                      575.355       1.040.779     240.258       156.562          2.012.954
+            Constituição e Atualização Monetária               99.870         419.318      95.062        1.744            615.994
+            Reversão da Provisão                                (622)           (380)    (48.386)             -           (49.388)
+            Baixas por Pagamento                             (10.120)       (184.439)    (69.471)             -         (264.030)
+            Saldo Final em 31/12/2021                        664.483       1.275.278     217.463       158.306          2.315.530
+            Depósitos em Garantia em 31/12/2021                90.072         527.101      67.119             -           684.292
+
+
+                                                                                                             Banrisul Consolidado
+                                                              Fiscais    Trabalhistas      Cíveis       Outros                Total
+            Saldo Inicial em 31/12/2019                      565.500       1.043.608     171.736       155.196          1.936.040
+            Constituição e Atualização Monetária              19.351          332.024    111.585         1.366             464.326
+            Reversão da Provisão                              (6.932)          (1.610)       (52)             -             (8.594)
+            Baixas por Pagamento                              (2.564)       (333.243)    (43.011)             -          (378.818)
+            Saldo Final em 31/12/2020                        575.355       1.040.779     240.258       156.562          2.012.954
+            Depósitos em Garantia em 31/12/2020               59.896          464.345    115.256              -            639.497
+
+
+            Ações Fiscais
+
+            Provisões de contingências fiscais referem-se basicamente a exigíveis relativos a tributos cuja legalidade ou
+            constitucionalidade é objeto de contestação administrativa ou judicial e a probabilidade de perda é considerada
+            provável, e são constituídas pelo valor integral em discussão. Para causas que dispõem dos respectivos depósitos
+            em garantia, os valores envolvidos não se encontram atualizados. No momento da expedição do alvará de
+            levantamento, em razão da ação julgada favorável, os valores são atualizados e resgatados.
+
+_________________________________________________
+68 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 69 ===
+As principais causas de natureza fiscal referem-se: (i) imposto de renda e contribuição social sobre a dedução da
+despesa oriunda da quitação do déficit atuarial na Fundação Banrisul de Seguridade Social, questionada pela
+Secretaria da Receita Federal para o período de 1998 a 2005, no montante de R$641.449 (31/12/2020 -
+R$553.979), no qual o Banrisul, por meio de seus assessores jurídicos, vem discutindo judicialmente o assunto,
+e registrou provisão para contingências no valor estimado da perda e respectiva sucumbência registrada nesse
+período no montante de R$80.673; e (ii) outras contingências relativas a impostos municipais e federais
+classificados pelos nossos assessores como perda provável de R$6.290 (31/12/2020 - R$12.114).
+
+Existem ainda contingências fiscais que, de acordo com a sua natureza, são consideradas como de perda possível,
+no montante de R$45.274 (31/12/2020 - R$41.051) e no Consolidado R$46.463 (31/12/2020 - R$53.325). Essas
+contingências decorrem, principalmente, de impostos municipais e federais e que de acordo com as práticas
+contábeis não foi registrada provisão para contingências. Além dessas, existe auto de infração no âmbito da
+Receita Federal sobre contribuição previdenciária do empregador e contribuição para outras entidades e fundos,
+exigindo a contribuição, principalmente sobre os benefícios do Programa de Alimentação do Trabalhador - PAT
+e Participação nos Lucros ou Resultados - PLR no montante de R$305.949 (31/12/2020 - R$203.230), classificada
+pelos nossos assessores, como de perda possível no montante de R$289.379 (31/12/2020 - R$194.097) e como
+perda provável o montante de R$16.570 (31/12/2020 - R$9.133), que está devidamente provisionado.
+
+Ações Trabalhistas
+
+Decorrem de processos, na área trabalhista, geralmente ajuizados por empregados, ex-empregados,
+empregados de empresas terceirizadas, Associações, Sindicatos e Ministério Público tendo como objeto a
+suposta violação de direitos trabalhistas.
+
+No período de janeiro a dezembro de 2021 foi efetuada a provisão de R$252.839 para ações coletivas,
+abrangendo ações em fase de liquidação e ações em curso perante o TST, cuja classificação de risco tenha sido
+alterada em razão de mudanças no cenário jurisprudencial. A Administração considera suficiente a provisão
+constituída e continua monitorando a evolução das decisões judiciais em ações dessa natureza, avaliando a
+classificação e a quantificação sempre que necessário.
+
+Além das ações acima consideradas, registra-se provisão constituída para as ações trabalhistas ajuizadas contra
+o Banrisul em conformidade a nova modelagem para a classificação e provisionamento das ações trabalhistas
+individuais implementada no segundo semestre de 2020, através de revisão dos processos, sendo a provisão
+para as ações com pedidos classificados como de perda provável. Da provisão mencionada, está depositado
+judicialmente o montante de R$420.424 (31/12/2020 - R$365.978) e no Consolidado R$423.648 (31/12/2020 -
+R$372.537). Adicionalmente, o valor de R$101.464 (31/12/2020 - R$91.664) e no Consolidado R$103.453
+(31/12/2020 - R$91.808) foi exigido para os recursos processuais.
+
+Existem ainda contingências trabalhistas que são consideradas como de perda possível, no montante de
+R$778.565 (31/12/2020 - R$1.148.575) e no Consolidado R$781.555 (31/12/2020 - R$1.159.172), que de acordo
+com a natureza destes processos refere-se principalmente a pedidos de horas extras, reintegração e equiparação
+salarial. De acordo com as práticas contábeis não foi registrada provisão para contingências.
+
+Ações Cíveis
+
+Ações de caráter indenizatório referem-se à indenização por dano material e/ou moral, referentes à relação de
+consumo, versando, principalmente, sobre questões atinentes a cartões de crédito, crédito direto ao
+consumidor, contas correntes, contas poupança, cobrança e empréstimos.
+
+Para as ações cíveis, adota-se modelagem para provisão das ações classificadas como de perda provável, onde as
+provisões totais para essas ações é definida pelo custo médio da condenação e da respectiva sucumbência. A
+administração monitora as decisões judiciais ao longo do tempo.
+
+Da provisão mencionada, está depositado judicialmente o montante de R$65.895 (31/12/2020 - R$113.967) e
+no Consolidado R$67.119 (31/12/2020 - R$115.256).
+
+
+                                                                                ______________________________________________
+                                                                                                                         | 69
+
+=== página 81 ===
+ativos do plano ou não são afetados (títulos com juros pré-fixados) ou têm uma pequena correlação (ações) com
+a inflação, o que significa que uma alta na inflação resultará também em alta no déficit.
+
+Expectativa de Vida - a maior parte das obrigações dos planos consiste na concessão de benefícios vitalícios aos
+participantes. Por essa razão, aumentos na expectativa de vida resultarão em aumento nas obrigações dos
+planos.
+
+(d) Gestão dos Ativos dos Planos
+
+O percentual de alocação dos ativos dos planos são as seguintes:
+
+Planos:                         PB I                  PBS                    FBPREV              FBPREV II             FBPREV III               Saúde
+                           % Alocação            % Alocação               % Alocação           % Alocação             % Alocação            % Alocação
+Categorias                 2021        2020      2021       2020          2021       2020      2021        2020       2021        2020      2021        2020
+Caixa e Equivalente         0,04        0,02      0,01       0,02          0,01       0,01      0,01        0,01       0,01        0,01      0,02        0,09
+Renda Fixa                80,92       71,51     72,09      75,92         73,80      78,45     70,55       77,67      81,27      71,43      98,06       97,64
+Renda Variável            10,09         9,82      8,02       8,08          4,64       4,07      6,33        5,72       9,30        9,44      1,92        2,27
+Imóveis                     4,43        4,28      3,05       3,12              -      0,27      1,41        1,57       3,85        3,92          -          -
+Outros                      4,52      14,37     16,83      12,86         21,55      17,20     21,70       15,03        5,57     15,20            -          -
+Total                    100,00      100,00    100,00     100,00        100,00     100,00    100,00     100,00      100,00    100,00      100,00      100,00
+
+
+Os ativos dos planos de benefícios definidos incluem ações do Banrisul com um valor justo de R$7.825
+(31/12/2020 - R$21.692) e imóveis alugados com um valor justo de R$136.289 (31/12/2020 - R$123.806).
+
+(e) Avaliações Atuariais
+
+O resumo da composição do passivo/(ativo) atuarial líquido para os exercícios findos em 31 de dezembro de
+2021 e 2020, preparados respectivamente com base no laudo atuarial de 31 de dezembro de 2021 e 2020 e de
+acordo com CPC 33 (R1), é demonstrado a seguir:
+
+Passivo/(Ativo) Registradas no Balanço Patrimonial com Benefícios de:                                       31/12/2021                        31/12/2020
+Planos de Previdência
+ Plano de Benefícios I (PBI)                                                                                     455.009                          556.285
+ Plano Saldado (PBS)                                                                                             258.236                          306.765
+ Plano FBPREV (FBPREV)                                                                                                  -                             452
+ Plano FBPREV II (FBPREV II)                                                                                         (71)                              (9)
+ Plano FBPREV III (FBPREV III)                                                                                    53.159                           81.458
+Plano Saúde (PAM, POD e PROMED)                                                                                (199.072)                        (228.908)
+Prêmio Aposentadoria                                                                                             146.687                          194.483
+Total                                                                                                            713.948                          910.526
+
+
+
+
+                                                                                                              ______________________________________________
+                                                                                                                                                                | 81
+
+=== página 82 ===
+         A composição do passivo/(ativo) atuarial líquido preparado com base no laudo atuarial de 31 de dezembro de 2021 e 2020 e de acordo com o CPC 33 (R1) é demonstrada a
+         seguir:
+
+         Apuração do Passivo/(Ativo) Líquido em 31/12/2021                  Plano de Benefícios I            Plano Saldado           Plano FBPREV          Plano FBPREV II      Plano FBPREV III     Plano Saúde    Prêmio Aposentadoria
+         Obrigações Atuariais Apuradas na Avaliaçao Atuarial                           1.486.513                  1.464.479                 15.920                 182.808               381.458          199.072                146.687
+         Valor Justo dos Ativos do Plano                                             (1.031.504)                (1.206.243)               (20.121)               (215.382)             (328.299)        (530.942)                      -
+         Déficit/(Superávit) Apurado                                                     455.009                    258.236                 (4.201)               (32.574)                53.159        (331.870)               146.687
+         Efeito do Teto de Ativo                                                                -                         -                   4.201                 32.503                     -          132.798                      -
+         Passivo/(Ativo) Atuarial Líquido                                                455.009                    258.236                       -                    (71)               53.159        (199.072)               146.687
+
+
+         Apuração do Passivo/(Ativo) Líquido em 31/12/2020                  Plano de Benefícios I            Plano Saldado           Plano FBPREV          Plano FBPREV II      Plano FBPREV III     Plano Saúde    Prêmio Aposentadoria
+         Obrigações Atuariais Apuradas na Avaliaçao Atuarial                           1.754.779                  1.561.554                 19.062                 178.207               427.271          228.908                194.483
+         Valor Justo dos Ativos do Plano                                             (1.198.494)                (1.254.789)               (18.618)               (186.180)             (345.834)        (512.738)                      -
+         Déficit/(Superávit) Apurado                                                     556.285                    306.765                    444                  (7.973)               81.437        (283.830)               194.483
+         Efeito do Teto de Ativo                                                                -                         -                      8                    7.964                   21           54.922                      -
+         Passivo/(Ativo) Atuarial Líquido                                                556.285                    306.765                    452                       (9)              81.458        (228.908)               194.483
+
+
+          Movimentação do Valor Presente das Obrigações Atuariais em 31/12/2021      Plano de Benefícios I          Plano Saldado         Plano FBPREV        Plano FBPREV II    Plano FBPREV III    Plano Saúde    Prêmio Aposentadoria
+          Valor Presente das Obrigações em 1º de Janeiro                                       1.754.779                1.561.554                19.062              178.207             427.271         228.908                194.483
+          Custo do Serviço Corrente Líquido                                                           154                        -                   994                (245)                   3           (615)                  9.475
+          Contribuições de Participante Realizadas no Período                                      35.783                    3.234                   588                  556                   8               -                      -
+          Juros sobre Obrigação Atuarial                                                          111.621                 105.484                  1.269               11.688              27.409          15.919                 11.567
+          Benefícios Pagos no Período                                                           (197.800)                 (98.750)                 (917)             (14.513)            (36.982)        (10.476)                (6.120)
+          (Ganhos)/Perdas nas Obrigações Atuariais                                              (218.024)               (107.043)                (5.076)                7.115            (36.251)        (34.664)               (62.718)
+          Valor Presente das Obrigações no Final do Período                                    1.486.513                1.464.479                15.920              182.808             381.458         199.072                146.687
+
+
+          Movimentação do Valor Presente das Obrigações Atuariais em 31/12/2020      Plano de Benefícios I          Plano Saldado         Plano FBPREV        Plano FBPREV II    Plano FBPREV III    Plano Saúde    Prêmio Aposentadoria
+          Valor Presente das Obrigações em 1º de Janeiro                                       1.805.025                1.529.458                17.269              156.833             411.108         212.585                214.055
+          Custo do Serviço Corrente Líquido                                                           (25)                       -                1.206                   346                   3             362                 10.353
+          Contribuições de Participante Realizadas no Período                                      36.694                    3.217                  581                   651                   -               -                      -
+          Juros sobre Obrigação Atuarial                                                          120.453                 103.874                 1.199                10.694              27.706         14.599                  13.562
+          Benefícios Pagos no Período                                                           (171.226)                 (89.991)                (764)              (11.556)            (33.398)         (9.430)               (33.148)
+          (Ganhos)/Perdas nas Obrigações Atuariais                                               (36.142)                   14.996                (429)                21.239              21.852         10.792                (10.339)
+          Valor Presente das Obrigações no Final do Período                                    1.754.779                1.561.554                19.062              178.207             427.271         228.908                194.483
+
+
+          Movimentação do Valor Justo dos Ativos do Plano em 31/12/2021              Plano de Benefícios I          Plano Saldado         Plano FBPREV        Plano FBPREV II    Plano FBPREV III    Plano Saúde    Prêmio Aposentadoria
+          Valor Justo dos Ativos do Plano em 1º de Janeiro                                    (1.198.494)              (1.254.789)             (18.618)             (186.180)           (345.834)       (512.738)                      -
+          Benefícios Pagos no Período Utilizando os Ativos do Plano                               197.800                   98.750                   917               14.513              36.982               -
+          Contribuições de Participante Realizadas no Período                                    (35.783)                  (3.234)                 (588)                (556)                  (8)              -                      -
+          Contribuições do Empregador Realizadas no Período                                      (24.836)                  (3.224)                 (499)                (543)                  (8)              -                      -
+          Rendimento Esperado dos Ativos                                                         (75.658)                 (84.261)               (1.268)             (12.270)            (21.975)        (36.352)                      -
+          (Ganhos)/Perdas no Valor Justo dos Ativos do Plano                                      105.467                   40.515                  (65)             (30.346)               2.544          18.148                      -
+          Valor Justo dos Ativos do Plano no Final do Período                                 (1.031.504)              (1.206.243)             (20.121)             (215.382)           (328.299)       (530.942)                      -
+
+
+
+
+_________________________________________________
+82 | Demonstrações Financeiras | Dezembro 2021
+
+=== página 83 ===
+Movimentação do Valor Justo dos Ativos do Plano em 31/12/2020         Plano de Benefícios I   Plano Saldado    Plano FBPREV      Plano FBPREV II    Plano FBPREV III         Plano Saúde    Prêmio Aposentadoria
+Valor Justo dos Ativos do Plano em 1º de Janeiro                               (1.334.081)       (1.276.649)        (19.566)           (168.710)           (342.081)            (461.283)                      -
+Benefícios Pagos no Período Utilizando os Ativos do Plano                          171.226            89.991              764             11.556              33.398                    -                      -
+Contribuições de Participante Realizadas no Período                               (36.694)           (3.217)            (581)              (651)                   -                    -                      -
+Contribuições do Empregador Realizadas no Período                                 (57.315)          (20.725)            (477)              (641)            (13.821)                    -                      -
+Rendimento Esperado dos Ativos                                                    (90.260)          (86.476)          (1.377)           (11.586)            (22.945)             (32.329)                      -
+(Ganhos)/Perdas no Valor Justo dos Ativos do Plano                                 148.630            42.287            2.619           (16.148)               (385)             (19.126)                      -
+Valor Justo dos Ativos do Plano no Final do Período                            (1.198.494)       (1.254.789)        (18.618)           (186.180)           (345.834)            (512.738)                      -
+
+
+Passivo/(Ativo) Atuarial Líquido do Plano em 31/12/2021               Plano de Benefícios I   Plano Saldado    Plano FBPREV      Plano FBPREV II    Plano FBPREV III         Plano Saúde    Prêmio Aposentadoria
+Passivo/(Ativo) Atuarial Líquido no Final do Período Anterior                      556.285          306.765              452                  (9)             81.458            (228.908)               194.483
+Despesa/(Receita) Reconhecida no Resultado do Exercício                             36.117            21.223             996               (287)               5.438             (17.154)                 21.042
+(Ganhos)/Perdas Reconhecidos em Resultado Abrangente                             (112.557)          (66.528)           (949)                 768            (33.729)               57.466               (62.718)
+Contribuições do Empregador                                                       (24.836)           (3.224)           (499)               (543)                  (8)            (10.476)                      -
+Benefícios Pagos Diretamente pela Empresa                                                 -                -               -                    -                   -                   -                (6.120)
+Passivo/(Ativo) Atuarial Líquido no Final do Período Atual                         455.009          258.236                -                (71)              53.159            (199.072)               146.687
+
+
+Passivo/(Ativo) Atuarial Líquido do Plano em 31/12/2020               Plano de Benefícios I   Plano Saldado    Plano FBPREV      Plano FBPREV II    Plano FBPREV III         Plano Saúde    Prêmio Aposentadoria
+Passivo/(Ativo) Atuarial Líquido no Final do Período Anterior                     470.944           252.809               (9)               (63)              69.027            (212.585)               214.055
+Despesa/(Receita) Reconhecida no Resultado do Exercício                             30.168            17.398           1.188                 282               4.764             (14.837)                 23.915
+(Ganhos)/Perdas Reconhecidos em Resultado Abrangente                              112.488             57.283           (250)                 413              21.488                7.944               (10.339)
+Contribuições do Empregador                                                       (57.315)          (20.725)           (477)               (641)            (13.821)              (9.430)                      -
+Benefícios Pagos Diretamente pela Empresa                                                 -                -                -                   -                  -                    -               (33.148)
+Passivo/(Ativo) Atuarial Líquido no Final do Período Atual                        556.285           306.765              452                  (9)             81.458            (228.908)               194.483
+
+
+Resultado do Exercício de 2021                                        Plano de Benefícios I   Plano Saldado    Plano FBPREV      Plano FBPREV II    Plano FBPREV III         Plano Saúde    Prêmio Aposentadoria
+Custo do Serviço Corrente Líquido                                                      154                -               994              (245)                   3               (615)                   9.475
+Custo de Juros sobre as Obrigações Atuariais                                      111.621          105.484              1.269             11.688              27.409              15.919                  11.567
+Rendimento Esperado dos Ativos do Plano                                           (75.658)         (84.261)           (1.268)           (12.270)            (21.975)            (36.352)                       -
+Juros sobre o Efeito do Teto de Ativo e Passivos Adicionais                              -                -                 1                540                   1               3.894                       -
+Total de Despesa/(Receita) Reconhecida no Resultado do Exercício                    36.117           21.223               996              (287)               5.438            (17.154)                  21.042
+
+
+Resultado do Exercício de 2020                                        Plano de Benefícios I   Plano Saldado    Plano FBPREV      Plano FBPREV II    Plano FBPREV III         Plano Saúde    Prêmio Aposentadoria
+Custo do Serviço Corrente Líquido                                                      (25)               -             1.206                346                   3                 362                  10.353
+Custo de Juros sobre as Obrigações Atuariais                                      120.453          103.874              1.199             10.694              27.706              14.599                  13.562
+Rendimento Esperado dos Ativos do Plano                                           (90.260)         (86.476)           (1.377)           (11.586)            (22.945)            (32.329)                       -
+Juros sobre o Efeito do Teto de Ativo e Passivos Adicionais                               -               -               160                828                   -               2.531                       -
+Total de Despesa/(Receita) Reconhecida no Resultado do Exercício                    30.168           17.398             1.188                282               4.764            (14.837)                  23.915
+
+
+Outros Resultados Abrangentes (ORA), no Período de 2021               Plano de Benefícios I   Plano Saldado    Plano FBPREV      Plano FBPREV II    Plano FBPREV III         Plano Saúde    Prêmio Aposentadoria
+(Ganhos)/Perdas nos Ativos do Plano                                                105.467           40.515               (65)          (30.346)               2.544               18.148                      -
+(Ganhos)/Perdas nas Obrigações Atuariais                                         (218.024)        (107.043)           (5.076)              7.115            (36.251)             (34.664)               (62.718)
+(Ganhos)/Perdas no Efeito do Teto do Ativo e Passivos Adicionais                         -                -             4.192             23.999                 (22)              73.982                      -
+(Ganhos)/Perdas Reconhecidos em Outros Resultados Abrangentes (ORA)              (112.557)         (66.528)             (949)                768            (33.729)               57.466               (62.718)
+
+
+
+
+                                                                                                                                                                        ______________________________________________
+                                                                                                                                                                                                                   | 83
+
+=== página 84 ===
+          Outros Resultados Abrangentes (ORA), no Período de 2020                             Plano de Benefícios I       Plano Saldado          Plano FBPREV           Plano FBPREV II        Plano FBPREV III               Plano Saúde      Prêmio Aposentadoria
+          Ganhos)/Perdas nos Ativos do Plano                                                              148.630                 42.287                 2.619                 (16.148)                   (385)                  (19.126)                         -
+          (Ganhos)/Perdas nas Obrigações Atuariais                                                        (36.142)                14.996                 (429)                   21.239                  21.852                    10.792                  (10.339)
+          (Ganhos)/Perdas no Efeito do Teto do Ativo e Passivos Adicionais                                       -                     -               (2.440)                  (4.678)                      21                    16.278                         -
+          (Ganhos)/Perdas Reconhecidos em Outros Resultados Abrangentes (ORA)                             112.488                 57.283                 (250)                      413                  21.488                     7.944                  (10.339)
+
+
+          Resultado do Exercício Projetado para o Período Seguinte:                              Plano de Benefícios I       Plano Saldado          Plano FBPREV           Plano FBPREV II        Plano FBPREV III              Plano Saúde    Prêmio Aposentadoria
+          Custo do Serviços Corrente Líquido                                                                       63                    -                     523                   (211)                      (9)                    (617)                  5.806
+          Custo de Juros sobre as Obrigações Atuariais                                                        149.731              151.534                   1.615                  18.926                  38.588                    20.883                13.566
+          Rendimento Esperado dos Ativos do Plano                                                           (102.981)            (123.963)                 (2.120)                (22.497)                (32.945)                  (57.035)                      -
+          Juros sobre o Efeito do Teto de Ativo e Passivos Adicionais                                                -                   -                     448                   3.502                        -                   14.265                      -
+          Despesa/(Receita) Atuarial Estimada                                                                  46.813               27.571                     466                   (280)                   5.634                  (22.504)                19.372
+
+
+          Fluxo de Caixa Esperado para o Período Seguinte:                                       Plano de Benefícios I       Plano Saldado          Plano FBPREV           Plano FBPREV II        Plano FBPREV III              Plano Saúde    Prêmio Aposentadoria
+          Contribuições do Empregador                                                                         26.441                 3.307                    547                     588                      11                     9.786                       -
+          Contribuições do Participante                                                                       55.439                 3.307                    547                     588                      11                         -                       -
+          Benefícios Pagos Utilizando os Ativos do Plano                                                     200.337               114.173                  1.573                  14.699                  36.964                     9.786                       -
+          Benefícios Pagos Diretamente pela Empresa                                                                  -                   -                      -                        -                       -                        -                 36.723
+
+
+         As estimativas de pagamentos de benefícios para os próximos 10 anos são demonstradas a seguir:
+
+          Perfil de Maturidade do Valor Presente da Obrigação (VPO)            Plano de Benefícios I              Plano Saldado            Plano FBPREV              Plano FBPREV II           Plano FBPREV III                Plano Saúde     Prêmio Aposentadoria
+          2022                                                                             200.337                      114.173                    1.573                     14.699                     36.964                       9.786                  36.723
+          2023                                                                             188.713                      113.770                    1.110                     13.832                     34.744                      11.736                  12.031
+          2024                                                                             184.246                      113.282                    1.091                     13.555                     33.897                      12.151                  12.212
+          2025                                                                             179.643                      112.557                    1.099                     13.321                     33.008                      12.587                  15.444
+          2026                                                                             174.625                      111.589                    1.082                     13.072                     32.073                      13.039                  13.714
+          2027 a 2031                                                                      791.138                      537.188                    5.427                     62.300                    145.023                      84.515                  47.440
+
+
+         A duração média ponderada do valor presente da obrigação é demonstrada a seguir:
+
+                                                                                                                                                                                              Plano de Saúde
+           Duration, em anos                Plano de Benefícios I            Plano Saldado             Plano FBPREV         Plano FBPREV II       Plano FBPREV III                                   PAM               POD        PROMED       Prêmio Aposentadoria
+           31/12/2021                                       9,67                     12,35                     11,08                 12,85                 10,42         Conforme Planos de Previdência (1)           12,45         17,27                     8,51
+           31/12/2020                                      10,39                     12,33                     11,97                 11,28                 10,63         Conforme Planos de Previdência (1)           13,34         16,23                     9,51
+          (1) Conforme Plano de Previdência aos quais os beneficiários estiverem inscritos.
+
+
+         Outros dados acerca dos planos são demonstrados a seguir:
+
+         Quantidade de Participantes                                                                                                                                                             Plano de Saúde
+           em 31/12/2021                     Plano de Benefícios I           Plano Saldado             Plano FBPREV         Plano FBPREV II        Plano FBPREV III                     PAM                    POD                  PROMED     Prêmio Aposentadoria
+         Ativos                                                44                      456                     5.223                 3.033                    142                      2.047                   409                    8.151                  9.064
+         Assistidos                                        3.788                     2.848                        85                 1.269                  1.787                      6.091                     -                        -                       -
+         Inativos                                               -                        -                         -                     -                       -                         -                 3.158                    6.330                       -
+         Total                                             3.832                     3.304                    5.308                  4.302                  1.929                      8.138                 3.567                   14.481                  9.064
+
+
+
+_________________________________________________
+84 | Demonstrações Financeiras | Dezembro 2021

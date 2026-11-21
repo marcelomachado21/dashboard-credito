@@ -1,0 +1,637 @@
+
+=== página 23 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      pagamento, que passarão, respectivamente, de 15% e 9% em 31 de dezembro de 2025 para 15% e 12% até
+      31 de dezembro de 2027, e posteriormente, para 20% e 15% em 2028, mediante escalonamento progressivo;
+      (ii) a elevação da alíquota do IRRF incidente sobre Juros sobre Capital Próprio (JCP) de 15% para 17,5%; e
+      (iii) a redução de benefícios e incentivos fiscais federais aplicáveis ao IRPJ, CSLL e demais tributos. A
+      Companhia realizou análise preliminar dos efeitos da Lei Complementar nº 224/2025 e estima que haverá
+      aumento da carga tributária a partir de 2026. A mensuração está em curso, com expectativa de efeitos no
+      resultado.
+
+      3.n.      Benefícios a empregados
+
+      A Companhia reconhece um passivo e uma despesa de participação nos resultados com base na
+      estimativa de pagamento da participação nos resultados. Esta é calculada conforme o cumprimento de
+      metas estipuladas pela Administração. A participação nos resultados é destinada a todos os
+      profissionais da Companhia.
+
+      3.o.      Obrigações por empréstimos
+
+      Correspondem a empréstimos captados com terceiros, reconhecidos inicialmente pelo custo e
+      atualizados de acordo com a taxa efetiva de juros.
+
+      3.p.      Partes relacionadas
+
+      As operações realizadas entre partes relacionadas são efetuadas a valores, prazos e taxas médias usuais
+      de mercado, vigentes nas respectivas datas e em condições de comutatividade.
+
+      3.q.     Resultados recorrentes e não recorrentes
+
+      A Resolução BCB nº 2, de 27 de novembro de 2020, em seu artigo 34º, passou a determinar a
+      divulgação de forma segregada dos resultados recorrentes e não recorrentes. Define-se então como
+      resultado não corrente do exercício ou semestre aquele que: I - não esteja relacionado ou esteja
+      relacionado incidentalmente com as atividades típicas da instituição; e II - não esteja previsto para ocorrer
+      com frequência nos exercícios futuros.
+
+
+      4.     DISPONIBILIDADES
+
+
+
+
+      (i) São valores depositados nos terminais eletrónicos 24 horas. (custódia da empresa Tecban - Tecnologia Bancaria S.A).
+      (ii) São compostos por valores disponíveis em dólar em contas bancárias no exterior. Em 31 de Dezembro de 2025, a variação cambial de caixa e equivalentes
+      de caixa é de R$ 13.486.
+
+
+      5.     INSTRUMENTOS FINANCEIROS
+
+      5.a. Títulos e valores mobiliários
+
+      Em 31 de Dezembro de 2025, os títulos e valores mobiliários foram classificados como “Custo Amortizado” e
+      “Valor Justo no Resultado”, composto pelos saldos apresentados abaixo:
+
+=== página 24 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      (i) As Letras Financeiras do Tesouro – LFT são utilizadas para garantir os saldos de moedas eletrônicas mantidas nas contas de pagamento, conforme
+      determinado pela Resolução BACEN/DC nº 80 de 25 de março de 2021. São ativos que possuem alta liquidez no mercado. De acordo com o modelo de
+      negócios da instituição e em conformidade com o art. 4º da Resolução CMN nº 4.966/21, os títulos da categoria "Disponível para Venda" em 31 de dezembro de
+      2024, foram reclassificados para as categorias "Custo Amortizado" e "Valor Justo no Resultado", inclusive seus valores de mercado.
+
+
+
+
+      Na data-base de 31 de dezembro de 2025, não foram registradas movimentações entre os estágios.
+
+
+
+      5.b. Instrumentos financeiros derivativos
+
+      O Mercado Pago participa de operações envolvendo instrumentos financeiros derivativos com a
+      finalidade de atender às necessidades próprias de suas operações, cujos registros são efetuados em contas
+      patrimoniais, de resultado e de compensação. Tais instrumentos financeiros derivativos são devidamente
+      aprovados dentro da política de utilização destes produtos. Esta política determina que alguns aspectos
+      devem ser analisados, tais como: objetivos, formas de utilização, riscos envolvidos etc. A metodologia
+      de precificação para a apuração do valor de mercado do instrumento derivativo de contrato a termo de
+      moeda (Non Deliverable Forward – NDF), se baseia na utilização do fluxo de caixa futuro descontado a valor
+      presente pelas curvas de juros futuros. O valor justo dos swaps é determinado utilizando técnicas de
+      modelagem de fluxo de caixa descontado, refletindo os fatores de risco adequados e observados no
+      mercado. Segregação por tipo de contrato, contraparte e notional:
+
+=== página 25 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      Os contratos de instrumentos financeiros derivativos de termo de moeda classificados como Hedge de
+      Fluxo de Caixa (Non Deliverable Forward – NDF) possuem vencimento entre 02 de Janeiro de 2026 até 04 de
+      Janeiro de 2027. Os contratos de Swap são classificados como Hedge de Valor Justo e possuem vencimento
+      entre 01 de Outubro de 2026 até 28 de Dezembro de 2026.
+
+      Hedge de Fluxo de Caixa
+
+
+      As estratégias de hedge de fluxo de caixa do Mercado Pago consistem em: hedge de exposição à variação
+      nos fluxos de caixa da empresa com exposição à taxa de câmbio, que são atribuíveis as alterações nas
+      taxas relativos a compra de dispositivos MPOS expressos em dólares americanos convertidos em reais. O
+      Mercado Pago aplica o hedge de fluxo de caixa como segue: Compra e vende moeda futura através de
+      NDF's (Non-Deliverable Foward) indexados a Dólar futuro e os designa como instrumento derivativo em
+      uma estrutura de Hedge de Fluxo de Caixa, tendo como objeto operações de compra de máquinas MPOS e
+      faturas a pagar com fornecedores indexados em dólares flutuantes e negociados através de um plano anual de
+      aquisição. Os mesmos derivativos serão adquiridos gradualmente, com o objetivo de cobrir o plano
+      mensal de compras estipulados inicialmente no plano anual de aquisições de MPOS para os próximos
+      12 meses.
+
+
+
+
+      (i) O valor do Ativo é referente ao montante do objeto de Hedge coberto nos fluxos de caixa futuros. Os contratos de NDF (Non-
+      DeliverableForward) são adquiridos para cobrir o plano mensal dos próximos 12 meses com metodologia de cobertura entre 80% e 90%. Em 31
+      de Dezembro, o plano total de aquisição de ativos - MPOS e passivos com fornecedores corresponde a um valor de R$ 1.784.207.
+
+
+      Hedge de Valor Justo
+
+      A estratégia de hedge de valor justo adotada pelo Mercado Pago tem como objetivo mitigar a exposição
+      às variações de risco de mercado associadas a passivos reconhecidos em seu balanço patrimonial.
+      Nesse contexto, a Companhia designa instrumentos derivativos do tipo swap de moeda estrangeira
+      versus CDI como instrumentos de hedge, tendo como item objeto operações de empréstimos indexadas
+      em moeda estrangeira
+
+=== página 26 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      6.      RELAÇÕES INTERFINANCEIRAS
+
+
+
+
+      (i) São constituídos pelos valores a receber das adquirentes oriundas das transações de cartões de crédito a vista e parcelado, dentro da plataforma Mercado Livre e
+      outras plataformas de e-commerce e máquinas (MPOs) de Mercado Pago, classificados no curto prazo.
+      (ii) Corresponde aos saldos de depósitos de moeda eletrônica R$ 44.240.000 e depósito em conta de pagamento instantâneo R$ 2.778.840 noBancoCentral,
+      classificados no curto prazo.
+
+
+
+
+      (i) Compostos pelas obrigações de liquidação junto as bandeiras de cartões de débito e crédito de curto prazo no passivo.
+
+
+
+      7.      OUTROS ATIVOS FINANCEIROS
+
+
+
+
+      (i) Correspondem substancialmente aos valores a receber de usuários finais, relativos a transações de pagamento utilizando os cartões de
+
+=== página 27 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+      crédito e débito do Mercado Pago como emissor pendente de liquidação.
+      (ii) Correspondem substancialmente aos saldos depositados judicialmente referente ao processo judicial relacionado ao não recolhimento do Imposto de Renda
+      Retido na Fonte (“IRRF”) de remessas para a matriz Mercado Libre Argentina. Em 31 de Dezembro de 2025, o total destes depósitos e demais em juízo
+      totalizavamR$ 1.338.671 - nota 14.a.
+      (iii) Corresponde a depósito para prestação de garantia solicitado pela empresa Visa International Service para cobertura de eventuais riscos, com valor fixo
+      e sem remuneração. Em 31 de Dezembro 2025, corresponde a um valor de R$ 12.655.
+      (iv) São transações a receber que o Mercado Pago possui com suas empresas coligadas - nota 24.
+
+
+
+      8.     PROVISÃO PARA PERDAS ASSOCIADAS AO RISCO DE CRÉDITO
+
+      A provisão para perdas associadas ao risco de crédito é constituída pelo Mercado Pago com o objetivo
+      de fazer face às perdas esperadas sobre valores a receber de usuários finais, oriundos de transações de
+      pagamento. A mensuração dessa provisão é realizada com base no modelo de perdas de crédito
+      esperadas (Expected Credit Loss – ECL), em conformidade com as práticas contábeis aplicáveis às
+      instituições autorizadas a funcionar pelo Banco Central do Brasil.
+      Os ativos a que se refere a provisão são substancialmente de curto prazo; contudo, a mensuração das
+      perdas considera o risco de crédito ao longo de sua vida esperada, refletindo a probabilidade de
+      inadimplência, a perda dada a inadimplência e a exposição no momento do default, devidamente
+      ajustadas por informações prospectivas. Adicionalmente, o cálculo das perdas de crédito esperadas
+      contempla os valores relativos a compromissos de crédito concedidos e ainda não utilizados (nota 15), os
+      quais são incorporados à mensuração por meio da aplicação de fatores de conversão de crédito (Credit
+      Conversion Factor – CCF). Dessa forma, a exposição ao risco de crédito (Exposure at Default – EAD)
+      considera não apenas os saldos efetivamente utilizados, mas também a parcela potencialmente utilizável
+      dos limites aprovados.
+      O montante reconhecido na provisão reflete a melhor estimativa da Administração na data-base das
+      demonstrações financeiras, considerando condições atuais e projeções macroeconômicas razoáveis e
+      suportáveis. A movimentação da provisão para perdas de crédito no exercício findo em 31 de dezembro
+      de 2025 está apresentada a seguir:
+
+      Movimentação da Provisão para Perdas Associadas ao Risco de Crédito
+
+
+
+
+    O valor de saldo inicial corresponde ao saldo de provisão no inicio do período, variações no montante de provisão para perdas serão
+    reconhecidas na linha de constituição/reversão.
+
+
+
+
+      9.     OUTROS ATIVOS
+
+
+
+
+     (i) Trata-se substancialmente de montantes de caixa a processar, classificados no curto prazo.
+
+=== página 28 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      10.     INTANGÍVEL
+
+      10.a. Composição do intangível
+
+
+
+
+      (i) Correspondem às horas de serviços de TI necessárias para o desenvolvimento de novos softwares / sistemas.
+
+
+      10.b. Movimentação do intangível
+
+
+
+
+      11.     DEPÓSITOS
+
+      Referem-se aos saldos em moeda eletrônica mantidos em contas de pagamento pré-pagas, inclusive os
+      saldos em trânsito entre contas de pagamento da mesma instituição e os montantes que ainda não
+      foram convertidos. Estão apresentados conforme a tabela abaixo:
+
+
+
+
+      (i) Em 31 de Dezembro de 2025, a Companhia possui saldo de R$ 83.302 depositado em saldos de livre movimentação com partes relacionadas.
+      (ii) Referem-se aos saldos em trânsito entre contas de pagamento da mesma instituição e os valores a pagar a instituições participantes de arranjo
+      de pagamento, relativos a transações de pagamento originadas de titular de conta de pagamento.
+      (iii) Referem-se aos montantes que ainda não foram convertidos em moeda eletrônica tendo em vista que não foram cumpridos os requisitos
+      previstos no arranjo de pagamento para que estes se tornem disponíveis para livre utilização.
+
+      Em 31 de Dezembro de 2025 os depósitos são classificados como curto prazo.
+
+
+
+      12. OBRIGAÇÕES POR EMPRÉSTIMOS
+
+
+
+      12.a.     Composição de obrigações por empréstimos.
+
+=== página 29 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      Correspondem a empréstimos captados junto a terceiros, reconhecidos inicialmente pelo valor justo acrescido dos custos de transação
+      diretamente atribuíveis, e subsequentemente mensurados ao custo amortizado pelo método da taxa efetiva de juros. Os empréstimos
+      possuem vencimentos entre 01 de Outubro de 2026 até 18 de Dezembro de 2026.
+
+
+
+      12.b.     Movimentação dos empréstimos.
+
+
+
+
+      13. OUTROS PASSIVOS FINANCEIROS
+
+
+
+
+      (i) São constituídos substancialmente pelos valores que devem ser repassados para empresas coligadas nas operações executadas em nossa
+      plataforma, correspondendo ao montante cobrado do usuário final por transação, líquido da parcela da receita de processamento do Mercado
+      Pago e das operações com cédula de crédito bancário emitida a favor da empresa coligada Mercado Crédito SCFI (vide nota 24). O restante
+      dos valores inclui: rateio pelo uso da plataforma, rateio pelo processamento e utilização dos servidores de internet da matriz, reembolso de
+      gastos, imagem corporativa, entre outros. Adicionalmente, o saldo contempla outros passivos com partes relacionadas no montante de
+      R$ 340.600 (nota 15), bem como R$ 83.302 referentes a valores depositados em saldos de livre movimentação com partes relacionadas
+      (nota11).
+
+      Os saldos com partes relacionadas (coligadas) referem-se a operações correntes da Companhia e, por sua natureza, são liquidados no curto
+      prazo, dentro do ciclo operacional.
+
+
+
+
+      14. PROVISÕES
+
+      O Mercado Pago, no curso normal de suas operações, é parte em processos judiciais de natureza
+      fiscal, cível e trabalhista em diversas instâncias, ajuizados. A Administração da Companhia adotou como
+      procedimento a constituição de provisão com base em vários fatores, incluindo a opinião de seus
+      assessores jurídicos externos, a análise das demandas judiciais pendentes e o histórico de perdas efetivas.
+
+      14.a. Composição das provisões
+
+      Em 31 de Dezembro de 2025, o saldo das provisões para ações judiciais é composto da seguinte forma:
+
+=== página 30 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      Para os demais processos de perda possível, o risco estimado em 31 de dezembro de 2025 totaliza
+      R$ 378.893, classificadas em natureza cível (R$ 354.818), natureza tributária (R$ 5.996) e trabalhista
+      (R$ 18.080).
+
+
+              Mandado de Segurança para aplicação do Tratado Brasil-Argentina e afastamento do IRRF
+
+      Em novembro de 2014, a sociedade Mercado Pago Instituição de Pagamento Ltda. ingressou com
+      mandado de segurança no qual pleiteia judicialmente a não retenção do Imposto de Renda Retido na Fonte
+      (“IRRF”) sobre remessas efetuadas para a sociedade argentina MercadoLibre S.R.L., relativas à prestação
+      de serviços de assistência de suporte, de assistência para manutenção e de atualização de websites, sem
+      transferência de tecnologia.
+      A avaliação da Administração, suportada pelos seus assessores jurídicos externos e internos, é de que as
+      chances de perda são prováveis e, por essa razão, a Companhia no exercício findo de 31 de Dezembro de
+      2025 provisionou um montante de R$ 1.296.443.
+
+              Mandado de Segurança buscando a suspensão da cobrança do ICMS-DIFAL em razão da
+               ausência de lei complementar.
+
+      Durante 2020 e 2021, a Sociedade impetrou mandados de segurança em tribunais estaduais brasileiros
+      buscando impedir a cobrança do ICMS-DIFAL em razão da ausência de lei complementar. Em fevereiro
+      de 2021, o STF declarou a inconstitucionalidade do ICMS-DIFAL inconstitucional sem lei complementar
+      e modulou os efeitos de sua decisão de modo que a decisão só se aplica aos casos ajuizados antes do
+      início do julgamento.
+      Com base na opinião de consultores jurídicos externos, a administração acredita que um resultado
+      desfavorável no caso restante é provável e por isso, a sociedade manteve provisionado os montantes
+      relacionados aos períodos anteriores a 2022 com prognóstico de perda provável, no montante de R$1.886
+      cujos valores também estão depositados em juízo.
+
+
+              Mandado de Segurança referente à observância da anterioridade anual e nonagesimal na
+               cobrança do ICMS-DIFAL no exercício 2022.
+
+
+      Em 2022, o Mercado Pago Instituição de Pagamento Ltda. (“Sociedade”) ajuizou mandados de
+      segurança contra as 27 Unidades da Federação, visando assegurar a aplicação das anterioridades
+      anual e nonagesimal e afastar a exigência do diferencial de alíquota do ICMS (“ICMS-DIFAL”) sobre
+      operações interestaduais de venda dos terminais (“maquininhas”) Point no mesmo exercício financeiro
+      em que foi editada a Lei Complementar nº 190, de 4 de janeiro de 2022.
+
+      Em 29 de novembro de 2023, o Supremo Tribunal Federal (“STF”), na Ação Direta de
+      Inconstitucionalidade nº 7.066 (“ADI 7.066”), decidiu pela validade da cobrança após o cumprimento da
+      noventena (a partir de 5 de abril de 2022).
+
+      Entretanto, em 17 de outubro de 2025, no Tema 1.266 da Repercussão Geral, o STF proferiu decisão
+
+=== página 31 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      acerca da modulação de efeitos, afastando a exigibilidade do imposto durante todo o exercício de 2022
+      para os contribuintes que ajuizaram ações judiciais até a data do julgamento da ADI 7.066 (29 de
+      novembro de 2023) e que deixaram de recolher o tributo, o que é o caso da Sociedade.
+
+      A Administração, com o suporte de seus assessores jurídicos, avaliou que a Sociedade se enquadra
+      nos requisitos da modulação de efeitos, uma vez que as ações foram propostas tempestivamente e os
+      valores não foram recolhidos ao Fisco, mas sim depositados em juízo.
+
+      Dessa forma, o risco de perda envolvido nas ações, anteriormente avaliado como provável para o
+      período de 5 de abril de 2022 a 31 de dezembro de 2022, foi reclassificado para remoto. Em
+      decorrência dessa alteração no prognóstico jurídico, a provisão anteriormente constituída para esse
+      período foi revertida, permanecendo os valores depositados em juízo, aguardando autorização judicial
+      para levantamento.
+
+      Em 31 de dezembro de 2025, os valores depositados em juízo e demais processos judiciais atualizados
+      totalizam R$ 1.338.671 - nota 7.
+
+
+
+      14.b. Movimentação das provisões
+
+
+
+
+      14.c. Abertura de prazo das provisões
+
+
+
+
+      15. OUTROS PASSIVOS
+
+
+
+
+      (i) São constituídos substancialmente por valores a pagar para fornecedores e valores em processamento de liquidação de faturas de usuários.
+      (ii) Inclui saldos com partes relacionadas no valor de R$ 340.600 (vide nota 24), referentes a transações correntes mantidas com partes relacionadas,
+      principalmente de valores a repassar por liquidação de ativos da contraparte.
+      (iii) Refere-se à provisão para perdas de crédito esperadas associadas a compromissos de crédito concedidos e ainda não utilizados (“créditos a
+      liberar”). A mensuração considera a exposição potencial decorrente desses compromissos, estimada por meio da aplicação de fatores de conversão
+      de crédito sobre os limites aprovados.
+      (iv) Os valores acima referem-se a provisões e obrigações operacionais, incluindo despesas com honorários, publicidade, gastos a incorrer.
+
+=== página 32 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      16. ATIVOS E PASSIVOS FISCAIS
+
+      16.a. Composição dos ativos e passivos fiscais
+
+
+
+
+      Os valores de ativos e passivos fiscais são classificados como curto prazo.
+
+
+
+      16.b. Reconciliação do Imposto de Renda de Pessoa Jurídica – IRPJ e da Contribuição Social
+            sobre o Lucro Líquido – CSLL registrada no resultado do exercício
+
+
+
+
+      16.c. Movimentação e composição do saldo do IRPJ e da CSLL diferidos:
+
+
+
+
+      16.d. Prazo de realização do crédito tributário
+
+=== página 33 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      O valor presente dos créditos tributários em 31 de Dezembro de 2025 é de R$ 1.317.446.
+
+
+
+      17. PATRIMÔNIO LÍQUIDO
+
+      17.a. Capital social
+
+      O capital social da Companhia, totalmente subscrito e integralizado, é de R$ 1.247.339.985 valor unitário e
+      representados por 1.247.339.985 cotas de valor nominal de R$ 1,00 cada uma. A quantidade de ações
+      está assim distribuída:
+
+
+
+
+      17.b. Outros Resultados Abrangentes
+
+      Representam os ajustes cumulativos de valorização ou desvalorização do valor de mercado dos
+      instrumentos financeiros derivativos líquidos de impostos, sendo estes reclassificados para o resultado
+      quando da efetiva realização dos saldos.
+
+
+
+
+      18. RESULTADO BRUTO DA INTERMEDIAÇÃO FINANCEIRA
+
+
+
+
+      19. RECEITAS DE PRESTAÇÃO DE SERVIÇOS E OPERACIONAIS
+
+
+
+
+      (i) Correspondem às receitas de prestação de serviços de transações de pagamentos, adquirência e comissões cobradas de operações realizadas
+      dentro da plataforma do Mercado Livre (processamento das operações à vista e parceladas) ou de outras plataformas de e-commerce, pagamentos de
+      compras e receita de intermediação como emissor de cartão e vendas de MPOs.
+
+
+
+      20. DESPESAS DE PESSOAL
+
+=== página 36 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      26. ESTRUTURA DE GERENCIAMENTO DE CAPITAL E DE RISCOS
+
+      Gerenciamento da estrutura de capital e riscos
+
+
+      Visando o atendimento à Resolução BCB n° 265/22, o Mercado Pago, adotou uma estrutura de
+      gerenciamento de capital e riscos que é compatível com a natureza das atividades da instituição e com
+      a complexidade dos serviços que são oferecidos, permitindo que os riscos (operacional, de liquidez e
+      de crédito) sejam identificados, mensurados, monitorados, controlados e mitigados. O Mercado Pago
+      possui e segue a política de gerenciamento de riscos que orienta em relação à natureza e a posição
+      geral dos riscos financeiros que deverão ser regularmente monitoradas e gerenciadas a fim de avaliar
+      os resultados e o impacto financeiro no fluxo de caixa. O Grupo Mercado Livre instaurou um Comitê de
+      Crise, composto pela Alta Administração das empresas/unidades de negócios do Grupo, entre elas o
+      Mercado Pago. Este Comitê se reúne periodicamente onde são discutidas e definidas as principais
+      diretrizes e medidas a serem seguidas pelas empresas do grupo. Dentre estas discussões e medidas
+      estão os temas relacionados aos Riscos Operacional, de Liquidez, de Crédito, de Tecnologia e de
+      Segurança da Informação. Esse Comitê também monitora os principais processos e controles da
+      Companhia os quais estão operando normalmente. Mais informações podem ser encontradas no
+      Relatório      de      Gerenciamento        de       Risco,    publicado      em       nosso       site
+      (https://www.mercadopago.com.br/informacoes-adicionais).
+
+      Risco Operacional
+
+      É a possibilidade de ocorrência de perdas resultantes de eventos relacionados a: i) falhas na proteção e
+      na segurança de dados relacionados aos usuários finais ou transações de pagamento, ii) falhas de
+      identificação e autenticação do usuário final, iii) falhas na autenticação das transações de pagamento,
+      iv) fraudes internas e externas, v) práticas inadequadas relativas a usuários finais e serviços de
+      pagamento etc. Foram desenvolvidas ações visando à implementação de estrutura de gerenciamento
+      de risco operacional, em conformidade com a Resolução BCB n° 265/22, que alcançam o modelo de gestão, o
+      conceito, as categorias e a política de risco operacional, os procedimentos de documentação e
+      armazenamento de informações, os relatórios de gerenciamento do risco operacional e o processo de
+      disclosure.
+
+      Risco de liquidez
+
+=== página 37 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      É o risco de a Companhia não ser capaz de: i) honrar eficientemente suas obrigações esperadas e
+      inesperadas, correntes e futuras sem afetar suas operações diárias e sem incorrer em perdas
+      significativas e ii) não ser capaz de converter moeda eletrônica em moeda física ou escritural no momento
+      da solicitação do usuário. Para administrar a liquidez do caixa, são estabelecidas premissas de
+      desembolsos e recebimentos futuros, monitoradas diariamente pela área de Riscos Financeiros. Como parte
+      dos controles diários, são estabelecidos limites de caixa mínimos, limites mínimos de cobertura de saldo de
+      moeda eletrônica de terceiros e de concentração de ativos. É feito também controle de antecipação de
+      recebíveis junto às adquirentes que permitem que ações prévias sejam tomadas para garantir um caixa
+      confortável e rentável. Em caso de necessidade, a Companhia também pode recorrer à linhas de crédito
+      pré-aprovadas em instituições parceiras, assim como a sua Matriz para obtenção de empréstimo de longo
+      prazo. A instituição possui dentro da estrutura de risco de mercado uma gestão específica para controle e
+      gerenciamento do IRRBB (Interest Rate Risk of Banking Book) verificando continuamente a aderência às
+      políticas e limites preestabelecidos e dentre as métricas autorizadas pelo Banco Central do Brasil para o
+      gerenciamento do IRRBB e risco de taxa, a instituição utiliza como principais metodologias para gestão do
+      risco as sensibilidades do DeltaEve e o Var Paramétrico. A Instituição busca proteção utilizando os mesmos
+      índices para seus contratos de ativos e passivos mitigando os riscos inerentes da volatilidade das taxas.
+      Os depósitos de clientes e os empréstimos que estão fixados em taxa CDI são protegidos pelas
+      aplicações em títulos e valores mobiliários atrelados à mesma taxa variável de juros (CDI). Os
+      resultados são apresentados mensalmente pela área de riscos financeiros através de dashboard
+      reportado para a alta gestão local e corporativa e as principais variações e limites de controles são
+      discutidos em reuniões sempre com viés de proteção a instituição da volatilidade do mercado que
+      possam afetar sua exposição ao IRRBB.
+
+      Risco de crédito
+
+      É a possibilidade de ocorrência de perdas associadas ao não cumprimento pela contraparte de suas
+      respectivas obrigações financeiras nos termos pactuados, à redução de ganhos ou remunerações, às
+      vantagens concedidas na renegociação e aos custos de recuperação, incluindo inadimplementos. O
+      risco primário da atividade resume-se à possibilidade de inadimplênciados emissores de cartões e das
+      adquirentes, os quais têm a obrigação de efetuar o pagamento dos valores relativos às transações
+      realizadas pelos portadores dos cartões por eles emitidos. A Companhia possui uma estrutura de
+      gerenciamento de riscos prevê limites para a realização de operações sujeita ao risco de crédito,
+      procedimentos destinados a identificar, avaliar, monitorar e controlar a exposição ao risco de crédito e
+      procedimentos para a recuperação de créditos.
+
+      Risco de Mercado
+
+      Busca mensurar o impacto de movimentos adversos das taxas de juros, taxas de câmbio, índices de preços e
+      dos preços de mercadorias (commodities) no capital e nos resultados da Companhia, verificando
+      continuamente a aderência às políticas e limites preestabelecidos, e dentre as métricas autorizadas pelo
+      Banco Central do Brasil para o gerenciamento.
+      Por seu modelo de negócio, a instituição atua somente com carteira bancária e, desse modo, precisa cumprir
+      a regulação do Banco Central para o cálculo do IRRBB, utilizando as métricas de delta EVE e delta NII para
+      mensuração do risco de taxa de juros, com o objetivo de apurar o impacto econômico e na receita de juros em
+      cenários de estresse. Para a alta gestão, a área de Riscos financeiros demonstra pelo menos mensalmente
+      indicadores de IRRBB incluindo delta EVE e delta NII de acordo com a RAS.
+      As demais exposições, atualmente restritas ao risco de câmbio, são acompanhadas diariamente e reportadas
+      ao Banco Central por meio do Demonstrativo Diário de Acompanhamento das Parcelas de Requerimento de
+
+=== página 38 ===
+Docusign Envelope ID: 195426ED-7C32-4101-91B4-B0531AEFDD1F
+
+
+
+
+      Capital e dos Limites Operacionais (DDR).
+
+      (i) Análise de sensibilidade
+
+      Risco de taxa de juros
+
+      As variações nas taxas de juros, como CDI, podem impactar positivamente ou negativamente as
+      demonstrações financeiras combinadas, afetando os saldos de instrumentos financeiros. Para fins de análise
+      de sensibilidade, foi considerado um cenário de estresse com uma variação de 400 pontos-base na taxa
+      básica de juros da economia em relação ao exercício findo em 31 de dezembro de 2025.
+      Nesse cenário, o impacto seria de uma perda estimada de 354 milhões de reais no resultado financeiro do
+      exercício. Esse impacto reflete a exposição da Companhia às oscilações das taxas de juros sobre seus
+      principais ativos e passivos financeiros.
+
+      Risco com taxa de câmbio
+
+      As variações nas taxas de câmbio podem impactar positiva ou negativamente as demonstrações financeiras
+      combinadas, em função dos saldos de ativos, passivos e derivativos denominados em moeda estrangeira,
+      predominantemente em dólar norte-americano (USD) e euro (EUR). Para fins de análise de sensibilidade,
+      estimou-se que, em 31 de dezembro de 2025, uma variação de 10% nas taxas de câmbio em relação à
+      moeda funcional resultaria em um impacto de 18,6 milhões de reais sobre os valores reconhecidos na referida
+      data-base. Esse montante foi apurado considerando o efeito hipotético da variação cambial sobre o saldo da
+      exposição cambial líquida da Companhia.
+
+
+
+      27. LIMITES OPERACIONAIS
+
+      O Banco Central do Brasil (BCB) estabelece que as instituições reguladas devem manter níveis de
+      Patrimônio de Referência (PR), PR Nível I e Capital Principal compatíveis com os riscos de suas
+      atividades. Esse montante deve ser superior ao requerimento mínimo, que contempla os riscos de
+      crédito, mercado, operacional e de serviços de pagamento.
+      Conforme as Resoluções BCB nº 197/2022 a 202/2022, a apuração é realizada de forma consolidada
+      pelo Conglomerado Prudencial, classificado como Tipo 3, enquadramento aplicado a conglomerados
+      liderados por Instituição de Pagamento (Mercado Pago IP Ltda.) que possuem instituição financeira
+      integrante (Mercado Crédito SCFI S.A.).
+      Em 31 de dezembro de 2025, o Patrimônio de Referência do Conglomerado totalizou R$5.272.669,
+      frente a um total de Ativos Ponderados pelo Risco (RWA) de R$42.912.708. O requerimento mínimo de
+      capital, que inclui o Adicional de Capital Principal (ACP) e o risco de taxa de juros da carteira bancária
+      (IRRBB), somou R$4.515.596. Dessa forma, a Companhia apresenta uma margem de capital de
+      R$757.073 sobre o requerimento total, resultando em um Índice de Basileia de 12,29%.
+      .
+
+      28. RESULTADOS NÃO RECORRENTES E RECORRENTES
+
+      A Resolução BCB nº 2, de 27 de novembro de 2020, em seu artigo 34º, passou a determinar a
+      divulgação de forma segregada dos resultados recorrentes e não recorrentes. Define-se então como
+      resultado não corrente do exercício aquele que: I - não esteja relacionado ou esteja relacionado
+      incidentalmente com as atividades típicas da instituição; e II - não esteja previsto para ocorrer com
+      frequência nos exercícios futuros. Em 31 de Dezembro de 2025, o Mercado Pago não possui valores

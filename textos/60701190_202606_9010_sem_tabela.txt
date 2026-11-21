@@ -1,0 +1,1209 @@
+
+=== página 9 ===
+Itaú Unibanco S.A.
+Balanço Patrimonial                                                                                 1
+(Em milhões de reais)
+                                                                                                    1
+
+Ativo                                                                       Nota      30/06/2026         31/12/2025
+Circulante e Não Circulante                                                              2.172.877          2.073.584
+ Disponibilidades                                                                            9.494              9.359
+ Aplicações Interfinanceiras de Liquidez                                   2b II, 3        387.489            444.641
+   Aplicações no Mercado Aberto                                                            233.659            265.359
+   Aplicações em Depósitos Interfinanceiros                                                153.839            179.289
+   (Provisão para Perda de Crédito Esperada)                                                       (9)                (7)
+ Títulos e Valores Mobiliários                                             2b II, 4        634.746            561.387
+   Carteira Própria                                                                        235.964            277.262
+   Vinculados                                                                              399.037            284.396
+   (Provisão para Perda de Crédito Esperada)                                                 (255)              (271)
+ Derivativos                                                              2b III, 5         89.699             61.135
+ Operações com Característica de Concessão de Crédito                      2b II, 7        738.467            706.361
+   Operações de Crédito, Arrendamentos e Outros Créditos                                   621.388            579.516
+   Títulos e Valores Mobiliários                                                           145.644            152.684
+   (Provisão para Perda de Crédito Esperada)                                               (28.565)           (25.839)
+ Relações Interfinanceiras e Interdependências                                             208.938            196.763
+ Ativos Fiscais Correntes e Diferidos                                      2b VIII          58.352             55.536
+   Ativos Fiscais Correntes                                                                  7.973              8.602
+   Ativos Fiscais Diferidos                                                 13b I           50.379             46.934
+ Outros Ativos                                                              10a             45.692             38.402
+Permanente                                                                                 143.080            145.260
+ Investimentos                                                            2b IV, 14        121.139            123.743
+   Participações em Investidas                                                             121.139            123.743
+ Imobilizado                                                                                 8.418              8.127
+   Imóveis                                                                                   8.294              8.262
+   Outras Imobilizações                                                                     13.327             12.868
+   (Depreciações Acumuladas)                                                               (13.203)           (13.003)
+ Ágio e Intangível                                                                          13.523             13.390
+   Ativos Intangíveis                                                                       38.268             35.770
+   (Amortização Acumulada)                                                                 (24.745)           (22.380)
+Total do Ativo                                                                           2.315.957          2.218.844
+As notas explicativas são parte integrante das demonstrações contábeis.
+
+=== página 10 ===
+Itaú Unibanco S.A.
+Balanço Patrimonial                                                                                             1
+(Em milhões de reais)
+                                                                                                                1
+
+Passivo e Patrimônio Líquido                                                            Nota      30/06/2026        31/12/2025
+Circulante e Não Circulante                                                                          2.152.921         2.060.557
+ Depósitos                                                                             2b II, 8        963.646           949.037
+   Depósitos à Vista                                                                                    72.616            79.149
+   Depósitos de Poupança                                                                               145.443           150.719
+   Depósitos Interfinanceiros                                                                           19.033            25.830
+   Depósitos a Prazo                                                                                   726.262           693.071
+   Outros Depósitos                                                                                        292               268
+ Captações no Mercado Aberto                                                           2b II, 8        558.654           534.385
+   Carteira Própria                                                                                    385.026           276.603
+   Carteira de Terceiros                                                                                93.928           179.302
+   Carteira Livre Movimentação                                                                          79.700            78.480
+ Instrumentos de Dívida                                                                2b II, 8        338.108           329.293
+   Recursos de Emissões                                                                                258.609           260.356
+   Obrigações por Títulos e Valores Mobiliários no Exterior                                             18.825            17.892
+   Captação por Certificados de Operações Estruturadas                                                  27.816            25.577
+   Instrumentos de Dívidas com Cláusulas de Subordinação                                                32.858            25.468
+ Obrigações por Empréstimos e Repasses                                                 2b II, 8        112.350           119.899
+   Empréstimos                                                                                          81.726            89.231
+   Repasses                                                                                             30.624            30.668
+ Derivativos                                                                          2b III, 5         82.012            55.112
+ Relações Interfinanceiras e Interdependências                                                          14.769            10.449
+ Provisões para Garantias Financeiras, Compromissos de Crédito e Créditos a Liberar    7a, 7c            1.836             1.437
+ Demais Provisões                                                                     2b VI, 9b         14.944            13.542
+ Obrigações Fiscais Correntes e Diferidas                                              2b VIII          10.457            12.720
+   Obrigações Fiscais Correntes                                                         13c              6.128             6.283
+   Obrigações Fiscais Diferidas                                                        13b II            4.329             6.437
+ Outros Passivos                                                                        10b             56.145            34.683
+Patrimônio Líquido                                                                       16            163.036           158.287
+ Capital Social                                                                                         76.200            74.567
+ Reservas de Capital                                                                                       831               838
+ Reservas de Reavaliação                                                                                        4                4
+ Reservas de Lucros                                                                                     85.951            81.379
+ Outros Resultados Abrangentes                                                          2b II                  50          1.499
+Total do Passivo e do Patrimônio Líquido                                                             2.315.957         2.218.844
+As notas explicativas são parte integrante das demonstrações contábeis.
+
+=== página 11 ===
+Itaú Unibanco S.A.
+Demonstração do Resultado                                                                                                  1
+(Em milhões de reais, exceto as informações de quantidade de ações e de lucro por ação)
+
+
+
+                                                                                                              01/01 a            01/01 a
+                                                                                              Nota
+                                                                                                             30/06/2026         30/06/2025
+Receitas da Intermediação Financeira                                                                              133.657            112.173
+ Resultado de Operações com Característica de Concessão de Crédito                                                 59.863             51.109
+ Resultado de Títulos e Valores Mobiliários, Derivativos e Outros                                                  64.373             53.144
+ Resultado das Aplicações Interfinanceiras de Liquidez e Outros                                                     9.421              7.920
+Despesas da Intermediação Financeira                                                                              (95.133)           (78.011)
+ Depósitos e Captações no Mercado Aberto                                                                          (94.790)           (81.113)
+ Instrumentos de Dívida                                                                                                    -            (652)
+ Empréstimos e Repasses                                                                                              (343)             3.754
+Resultado da Intermediação Financeira Antes da Perda de Crédito Esperada                                           38.524             34.162
+Resultado da Perda de Crédito Esperada                                                                             (9.297)            (6.996)
+ Despesa de Provisão para Perda de Crédito Esperada                                                               (10.609)            (8.062)
+ Receita de Recuperação de Ativos Financeiros Baixados como Prejuízo                                                1.312              1.066
+Resultado Bruto da Intermediação Financeira                                                                        29.227             27.166
+Outras Receitas / (Despesas) Operacionais                                                                         (12.022)           (11.302)
+ Receitas de Prestação de Serviços e Tarifas Bancárias                                      2b X, 11                6.263              6.741
+ Despesas de Pessoal                                                                            12                 (9.036)            (8.258)
+ Outras Despesas Administrativas                                                                12                 (9.590)            (9.285)
+ Despesas de Demais Provisões                                                               2b VI, 9               (2.276)            (1.440)
+   Provisões Cíveis                                                                                                  (428)              (280)
+   Provisões Trabalhistas                                                                                          (1.883)            (1.838)
+   Provisões Fiscais e Previdenciárias e Outros Riscos                                                                    35             678
+ Despesas Tributárias                                                                        13a II                (2.729)            (2.689)
+ Resultado de Participações em Investidas                                                                           6.144              6.824
+ Outras Receitas Operacionais                                                                                         507             (1.874)
+ Outras Despesas Operacionais                                                                   12                 (1.305)            (1.321)
+Resultado Operacional                                                                                              17.205             15.864
+Resultado não Operacional                                                                                                 60                 50
+Resultado Antes da Tributação Sobre o Lucro e Participações                                                        17.265             15.914
+Imposto de Renda e Contribuição Social                                                    2b VIII, 13a I            2.952              1.275
+ Devidos sobre Operações do Período                                                                                  (931)              (515)
+ Referentes a Diferenças Temporárias                                                                                3.883              1.790
+Participações no Lucro, líquido de impostos - Administradores - Estatutárias                    17b                  (109)              (142)
+Lucro Líquido                                                                                                      20.108             17.047
+
+
+Quantidade de Ações                                                                       16a              6.919.096.649       6.919.096.649
+Lucro Líquido / (Prejuízo) por Ação - R$                                                                            2,91                2,46
+As notas explicativas são parte integrante das demonstrações contábeis.
+
+=== página 12 ===
+Itaú Unibanco S.A.
+Demonstração do Resultado Abrangente
+(Em milhões de reais)
+                                                                                                   1
+
+                                                                                      01/01 a            01/01 a
+                                                                                     30/06/2026         30/06/2025
+Lucro Líquido / (Prejuízo)                                                                 20.108             17.047
+Ativos Financeiros ao Valor Justo por Meio de Outros Resultados Abrangentes                 (575)              1.307
+ Variação de Valor Justo                                                                    (286)              1.332
+ Efeito Fiscal                                                                                148                    83
+ (Ganhos) / Perdas Transferidos ao Resultado                                                (684)              (262)
+ Efeito Fiscal                                                                                308                118
+ Investidas                                                                                   (61)                   36
+Hedge                                                                                         630                741
+ Hedge de Fluxo de Caixa                                                                      267                (33)
+   Variação de Valor Justo                                                                    439              (119)
+   Efeito Fiscal                                                                            (208)                    55
+   Investidas                                                                                     36                 31
+ Hedge de Investimentos Líquidos em Operação no Exterior                                      363                774
+   Variação de Valor Justo                                                                    685              1.346
+   Efeito Fiscal                                                                            (325)              (651)
+   Investidas                                                                                      3                 79
+Remensurações em Obrigações de Benefícios Pós-Emprego (Montantes que não serão
+                                                                                              (14)                   (9)
+reclassificados subsequentemente para o resultado)
+ Remensurações                                                                                (18)               (20)
+ Efeito Fiscal                                                                                     8                  8
+ Investidas                                                                                       (4)                 3
+Variações Cambiais de Investimentos no Exterior                                            (1.492)            (4.371)
+ Variação de Valor Justo                                                                      229             (1.373)
+ Investidas                                                                                (1.721)            (2.998)
+Outros                                                                                             2                  6
+Total de Outros Resultados Abrangentes                                           1         (1.449)            (2.326)
+Total do Resultado Abrangente                                                              18.659             14.721
+As notas explicativas são parte integrante das demonstrações contábeis.
+
+=== página 20 ===
+b) Títulos e Valores Mobiliários ao Custo Amortizado (CA)
+
+                                                                                                           30/06/2026           31/12/2025
+                                                                                                         Valor Contábil       Valor Contábil
+                                                                                                             Bruto                Bruto
+Títulos Públicos                                                                                                 108.558                 79.530
+ Brasil                                                                                                           92.948                 64.395
+ América Latina                                                                                                      197                    196
+ Outros Países                                                                                                    15.413                 14.939
+Títulos Privados                                                                                                  26.729                 23.383
+ Certificado de Recebíveis Imobiliários                                                                             4.599                 4.700
+ Eurobonds e Assemelhados                                                                                         15.389                 11.983
+ Letras Financeiras                                                                                                   439                   379
+ Outros                                                                                                             6.302                 6.321
+Fundos de Investimentos                                                                                           19.809                 19.851
+Total                                                                                                            155.096               122.764
+Perda de Crédito Esperada                                                                                            (79)                 (154)
+Custo Amortizado                                                                                                 155.017               122.610
+Circulante                                                                                                        35.069                 35.588
+Não Circulante                                                                                                   119.948                 87.022
+
+
+
+c) Títulos e Valores Mobiliários ao Valor Justo por Meio de Outros Resultados Abrangentes (VJORA)
+
+                                                            30/06/2026                                          31/12/2025
+
+                                          Valor Contábil Ajuste ao Valor                       Valor Contábil Ajuste ao Valor
+                                                                                Valor Justo                                         Valor Justo
+                                              Bruto          Justo                                 Bruto          Justo
+
+Títulos Públicos                                 110.581            (986)           109.595            95.805             (182)          95.623
+ Brasil                                           94.879            (924)            93.955            87.817             (211)          87.606
+ América Latina                                       10                -                10               241                 2             243
+ Outros Países                                    15.692             (62)            15.630             7.747                  27          7.774
+Títulos Privados                                   8.944            (188)             8.756             9.835                (16)          9.819
+ Cédula do Produtor Rural                          1.020             (60)               960                 -                   -              -
+ Certificado de Recebíveis Imobiliários              230                  (9)           221               221                  1            222
+ Debêntures                                        1.780                 (86)          1.694            3.425                (43)          3.382
+ Eurobonds e Assemelhados                          5.808                  (8)          5.800            6.065                 25           6.090
+ Notas Promissórias e Comerciais                       1                    -              1                -                  -               -
+ Outros                                              105                 (25)             80              124                  1             125
+Total                                            119.525           (1.174)          118.351           105.640             (198)         105.442
+Ações (Designadas ao VJORA)                             -                -                 -                -                 -               -
+Total                                            119.525           (1.174)          118.351           105.640             (198)         105.442
+Perda de Crédito Esperada (Resultado)                (68)                                                (22)
+Ajustes ao Valor Justo (ORA)                      (1.106)                                               (176)
+Valor Justo                                      118.351                                              105.442
+Circulante                                                                           11.468                                                6.850
+Não Circulante                                                                      106.883                                              98.592
+
+=== página 21 ===
+d) Títulos e Valores Mobiliários ao Valor Justo por Meio do Resultado (VJR)
+                                                                                                             30/06/2026                                                                      31/12/2025
+                                                                            Valor Contábil Ajuste ao Valor                                                        Valor Contábil Ajuste ao Valor
+                                                                                                                                          Valor Justo                                                                     Valor Justo
+                                                                                Bruto          Justo                                                                  Bruto          Justo
+Títulos Públicos                                                                        248.676                           (855)                  247.821                     222.797                         80                222.877
+  Brasil                                                                                247.224                           (859)                  246.365                     221.008                         76                221.084
+  América Latina                                                                              1.452                            4                    1.456                      1.789                             4                1.793
+Títulos Privados                                                                              8.622                       (329)                     8.293                      8.399                      (138)                   8.261
+  Cédula do Produtor Rural                                                                        301                       (16)                      285                          128                           -                     128
+  Certificado de Depósito Bancário                                                                  9                        (2)                            7                        6                           -                        6
+  Certificado de Recebíveis Imobiliários                                                          632                       (34)                      598                          591                      (9)                        582
+  Debêntures                                                                                  4.779                       (219)                     4.560                      3.995                      (105)                   3.890
+  Eurobonds e Assemelhados                                                                    2.492                         (29)                    2.463                      2.626                       (12)                   2.614
+  Outros                                                                                          409                       (29)                      380                      1.053                       (12)                   1.041
+Ações                                                                                        17.869                      (2.134)                  15.735                      16.832                       410                  17.242
+Fundos de Investimentos                                                                      63.022                       (101)                   62.921                      63.614                       (88)                 63.526
+Total                                                                                   338.189                          (3.419)                 334.770                     311.642                       264                 311.906
+Títulos Públicos (Designados VJR)                                                            26.580                           28                  26.608                      21.403                         26                 21.429
+Total                                                                                   364.769                          (3.391)                 361.378                     333.045                       290                 333.335
+Perda de Crédito Esperada (Resultado)                                                            (108)                                                                             (95)
+Ajuste ao Valor Justo (Resultado)                                                        (3.283)                                                                                   385
+Valor Justo                                                                             361.378                                                                              333.335
+Ativos Financeiros não sujeitos à Perda de Crédito Esperada                             325.723                          (3.039)                 322.684                     305.221                       467                 305.688
+Ativos Financeiros sujeitos à Perda de Crédito Esperada                                      39.046                       (352)                   38.694                      27.824                      (177)                 27.647
+Circulante                                                                                                                                       200.906                                                                        83.604
+Não Circulante                                                                                                                                   160.472                                                                       249.731
+
+
+
+
+e) Valor Justo de Ativos e Passivos
+
+                                                                                      30/06/2026                                                                                      31/12/2025
+                                                          Nível 1           Nível 2                  Nível 3              Valor Justo                   Nível 1                Nível 2                 Nível 3            Valor Justo
+Ativos Financeiros                                            367.838          110.813                       1.078                 479.729                      353.035              85.393                    349             438.777
+  Ao Valor Justo por meio de Outros
+                                                             113.244              4.602                         505                118.351                      100.798               4.392                    252             105.442
+  Resultados Abrangentes
+    Títulos Públicos                                         109.595                         -                       -             109.595                       95.623                      -                        -         95.623
+    Títulos Privados                                            3.649             4.602                         505                  8.756                        5.175               4.392                    252               9.819
+
+  Ao Valor Justo por meio do Resultado                       254.594           106.211                          573                361.378                      252.237              81.001                      97            333.335
+
+    Títulos Públicos                                         244.804             29.625                              -             274.429                      240.368               3.938                           -        244.306
+    Títulos Privados                                            4.659             3.564                             70               8.293                        5.827               2.383                      51              8.261
+    Ações                                                       3.430            11.802                         503                 15.735                        4.262              12.934                      46             17.242
+    Fundos de Investimento                                      1.701            61.220                              -              62.921                        1.780              61.746                           -         63.526
+Derivativos Ativo                                                   17           89.255                         427                 89.699                            4              60.724                    407              61.135
+Outros Ativos Financeiros                                           38                       -                       -                     38                          -                     -                        -                   -
+Ativos Não Financeiros                                          2.008                        -                       -               2.008                        2.593                      -                        -           2.593
+Derivativos Passivo                                              (988)         (79.430)                    (1.603)             (82.021)                           (374)            (53.271)               (1.475)              (55.120)
+
+
+
+
+f) Resultado de Ajuste ao Valor Justo de Ativos e Passivos
+
+                                                                                                     01/01 a 30/06/2026                                                                   01/01 a 30/06/2025
+                                                                                                                                          Ajuste ao Valor
+                                                                            Nível 1                Nível 2               Nível 3                                   Nível 1            Nível 2             Nível 3              Total
+                                                                                                                                              Justo
+Ativos Financeiros                                                              (2.376)                    (690)             (1.558)              (4.624)                  7.923                 150                  (92)             7.981
+ Ao Valor Justo por meio de Outros Resultados Abrangentes                         (818)                      (92)                  (20)             (930)                  1.328                 80                    (7)             1.401
+   Títulos Públicos                                                               (806)                         -                     -             (806)                  1.096                   -                      -            1.096
+   Títulos Privados                                                                   (12)                   (92)                  (20)             (124)                    87                  80                    (7)              160
+   Ações                                                                                 -                      -                     -                 -                    145                   -                      -             145
+ Ao Valor Justo por meio do Resultado                                           (1.558)                    (598)             (1.538)              (3.694)                  6.595                 70                   (85)             6.580
+   Títulos Públicos                                                               (996)                       74                      -             (922)                  5.827                 60                       -            5.887
+   Títulos Privados                                                                   (90)                   (89)                  (36)             (215)                    168                 123                      7             298
+   Ações                                                                          (457)                    (585)             (1.502)              (2.544)                    533             (291)                    (92)              150
+   Fundos de Investimento                                                             (15)                     2                      -              (13)                    67                  178                      -             245
+Derivativos - Ativo                                                                    13                 28.531                    20             28.564                  2.205          (14.195)                   (382)       (12.372)
+Derivativos - Passivo                                                             (614)                  (26.159)              (128)             (26.901)              (1.314)              14.318                    422          13.426
+Nos períodos, não existiram transferências materiais entre Nível 1 e Nível 2. Transferências para dentro e fora do nível 3 são apresentadas nas movimentações do Nível 3.
+
+=== página 22 ===
+g) Movimentações do Nível 3
+
+                                                          Valor Justo    Total de Ganhos ou Perdas (Realizado /                                                   Valor Justo
+                                                              em                     não Realizado)                                                                   em             Total de
+                                                                                                                                              Transferências
+                                                                                                                                                                                   Ganhos ou
+                                                          31/12/2025                        Reconhecidos em         Compras       Liquidações no e/ou Fora do     30/06/2026
+                                                                          Reconhecidos                                                                                             Perdas (Não
+                                                                                            Outros Resultados                                      Nível
+                                                                          no Resultado                                                                                              Realizado)
+                                                                                              Abrangentes
+
+Ativos Financeiros ao Valor Justo por meio de Outros
+                                                                  252                 30                        -        151                 -             72               505             (22)
+Resultados Abrangentes
+Ativos Financeiros ao Valor Justo por meio do Resultado            97                 13                        -             -              -            463               573          (1.676)
+Derivativos - Ativo                                               407                (23)                       -        164             (106)            (15)              427            (301)
+Derivativos - Passivo                                          (1.475)                (9)                       -       (624)             448              57            (1.603)            678
+
+
+
+
+h) Análise de Sensibilidade de Operações Nível 3
+
+Análise de Sensibilidade de Operações Nível 3
+O valor justo dos instrumentos financeiros classificados como Nível 3 é mensurado utilizando-se técnicas baseadas em correlações com produtos
+associados e negociados em mercados ativos, estimativas internas e modelos internos.
+
+
+Os dados não observáveis significativos usados na mensuração a valor justo dos instrumentos classificados como Nível 3 são: taxas de juros,
+preços de ativo objeto e a volatilidade. Variações significativas em quaisquer desses inputs isolados podem resultar em alterações significativas
+no valor justo.
+
+
+A tabela a seguir, demonstra a sensibilidade desses valores justos em cenários de alterações nas taxas de juros, nos preços de ativos ou em
+cenários que variam choques nos preços e nas volatilidades para ativos não lineares:
+
+Sensibilidade - Operações Nível 3                                                                          30/06/2026                                        31/12/2025
+                                                                                                            Impactos                                             Impactos
+Grupos de Fatores de Risco de Mercado                                    Cenários
+                                                                                                Resultado               Patrimônio                Resultado                 Patrimônio
+
+                                                                              I                             (7,8)                       (0,2)                    (6,1)                   (0,1)
+Taxa de Juros                                                                II                          (194,8)                        (6,6)             (153,6)                        (3,2)
+                                                                             III                         (389,1)                      (13,1)              (306,6)                        (6,4)
+                                                                              I                           (25,1)                            -                    (2,3)                           -
+Commodities, Índices e Ações
+                                                                             II                           (50,3)                            -                    (4,6)                           -
+                                                                              I                           (36,9)                            -               (25,5)                               -
+Não Lineares
+                                                                             II                           (74,1)                            -               (40,8)                               -
+
+Na mensuração das sensibilidades são utilizados os seguintes cenários:
+
+Taxa de Juros
+
+Aplicação de choques de 1, 25 e 50 pontos-base (cenários I, II e III respectivamente) nas curvas de juros, tanto de crescimento quanto de queda,
+sendo consideradas as maiores perdas resultantes em cada cenário.
+
+Commodities, Índices e Ações
+
+Aplicação de choques de 5 e 10 pontos percentuais (cenários I e II respectivamente) nos preços de ações, tanto de crescimento quanto de queda,
+sendo consideradas as maiores perdas resultantes em cada cenário.
+
+Não lineares
+
+Cenário I: Aplicação de choques de 5 pontos percentuais nos preços e 25 pontos percentuais no nível de volatilidade, tanto de crescimento quanto
+de queda, sendo consideradas as maiores perdas resultantes em cada cenário.
+
+Cenário II: Aplicação de choques de 10 pontos percentuais nos preços e 25 pontos percentuais no nível de volatilidade, tanto de crescimento
+quanto de queda, sendo consideradas as maiores perdas resultantes em cada cenário.
+
+
+Nota 5 - Derivativos
+
+A política contábil sobre Derivativos está apresentada na 2b III.
+
+A empresa negocia derivativos com diversas contrapartes para administrar suas exposições globais e para
+auxiliar seus clientes a administrar suas próprias exposições.
+
+=== página 23 ===
+a) Derivativos por prazo de vencimento e contraparte
+                                                                            30/06/2026                                                  31/12/2025
+ Por Valor de Referência                                                                      Derivativos
+                              Futuros       Termo       Opções      Swaps         NDF                       Outros         Total          Total
+                                                                                              de Créditos
+Faixas de Vencimento
+   0 - 30                       290.892       59.151    1.595.401     503.816       86.921          1.587         116       2.537.884      2.022.200
+   31 - 90                       91.952       29.638       61.704     424.984      111.230              -          35         719.543        543.367
+   91 - 365                     234.422       62.880    3.078.402   1.684.526      142.026         44.149         336       5.246.741      4.426.955
+   366 - 720                     80.798       11.035       39.762   1.074.362       22.831         25.958       1.501       1.256.247      1.084.630
+   Acima de 720 dias            222.886        4.756       20.701   1.291.598        7.938         59.648       4.232       1.611.759      1.403.138
+Total                           920.950      167.460    4.795.970   4.979.286      370.946        131.342       6.220      11.372.174      9.480.290
+Total 31/12/2025                732.378      135.975    4.584.670   3.613.321      281.508        126.019       6.419       9.480.290
+Contrapartes
+ Bolsa                          920.950        1.148    4.673.716   3.523.606       42.740         49.501           -       9.211.661      7.782.247
+ Balcão                               -      166.312      122.254   1.455.680      328.206         81.841       6.220       2.160.513      1.698.043
+   Instituições Financeiras           -      138.318       80.274   1.197.226      203.184         81.841       6.220       1.707.063      1.309.232
+   Pessoas Jurídicas                  -       27.877       37.164     218.698      122.349              -           -         406.088        345.546
+   Pessoas Físicas                    -          117        4.816      39.756        2.673              -           -          47.362         43.265
+Total                           920.950      167.460    4.795.970   4.979.286      370.946        131.342       6.220      11.372.174      9.480.290
+Total 31/12/2025                732.378      135.975    4.584.670   3.613.321      281.508        126.019       6.419       9.480.290
+
+                                                                            30/06/2026                                                  31/12/2025
+  Por Valor Justo - Ativo                                                                     Derivativos
+                              Futuros       Termo       Opções      Swaps         NDF                       Outros         Total          Total
+                                                                                              de Créditos
+Faixas de Vencimento
+   0 - 30                               -     20.580         516         545           850              1            677       23.169         13.183
+   31 - 90                              -        497         361       2.376         1.325              -              4        4.563          3.374
+   91 - 365                             -        386       2.295      14.584         5.242             82              2       22.591         16.808
+   366 - 720                            -        479       2.589       7.683         1.028             81              9       11.869          5.693
+   Acima de 720 dias                    -         51       1.685      24.666           361            590            154       27.507         22.077
+Total                                   -     21.993       7.446      49.854         8.806            754            846       89.699         61.135
+Total 31/12/2025                        -      4.096       6.867      42.177         6.036          1.089            870       61.135
+Contrapartes
+ Bolsa                                  -        244       5.271      20.960         1.141            153            699       28.468         25.303
+ Balcão                                 -     21.749       2.175      28.894         7.665            601            147       61.231         35.832
+   Instituições Financeiras             -     20.992       1.344      19.935         4.612            601            147       47.631         25.788
+   Pessoas Jurídicas                    -          -         120         650            53              -              -          823          9.234
+   Pessoas Físicas                      -        757         711       8.309         3.000              -              -       12.777            810
+Total                                   -     21.993       7.446      49.854         8.806            754            846       89.699         61.135
+Total 31/12/2025                        -      4.096       6.867      42.177         6.036          1.089            870       61.135
+
+                                                                            30/06/2026                                                  31/12/2025
+ Por Valor Justo - Passivo                                                                    Derivativos
+                              Futuros       Termo       Opções      Swaps         NDF                       Outros         Total          Total
+                                                                                              de Créditos
+Faixas de Vencimento
+   0 - 30                               -    (21.780)       (449)       (332)       (1.372)           (6)           -        (23.939)        (12.833)
+   31 - 90                              -       (587)       (553)       (355)       (1.633)             -        (20)         (3.148)         (2.782)
+   91 - 365                             -       (360)     (1.972)    (11.545)       (5.738)          (16)        (23)        (19.654)        (14.707)
+   366 - 720                            -       (128)     (1.292)     (7.320)       (1.017)          (29)         (7)         (9.793)         (4.526)
+   Acima de 720 dias                    -        (60)     (1.148)    (23.393)         (524)         (228)       (134)        (25.487)        (20.272)
+Total                                   -    (22.915)     (5.414)    (42.945)      (10.284)         (279)       (184)        (82.021)        (55.120)
+Total 31/12/2025                        -     (4.118)     (5.562)    (39.557)       (5.365)         (368)       (150)        (55.120)
+Contrapartes
+ Bolsa                                  -           -     (2.958)    (19.601)       (1.740)         (197)        (28)        (24.524)        (23.004)
+ Balcão                                 -    (22.915)     (2.456)    (23.344)       (8.544)          (82)       (156)        (57.497)        (32.116)
+   Instituições Financeiras             -    (21.199)     (1.413)    (14.798)       (4.442)          (82)       (134)        (42.068)        (21.327)
+   Pessoas Jurídicas                    -        (61)        (68)     (2.994)          (49)             -           -         (3.172)         (8.062)
+   Pessoas Físicas                      -     (1.655)       (975)     (5.552)       (4.053)             -        (22)        (12.257)         (2.727)
+Total                                   -    (22.915)     (5.414)    (42.945)      (10.284)         (279)       (184)        (82.021)        (55.120)
+Total 31/12/2025                        -     (4.118)     (5.562)    (39.557)       (5.365)         (368)       (150)        (55.120)
+
+
+
+
+O Risco de Crédito Próprio (DVA) foi de R$ 9 (R$ 8 em 31/12/2025) e é composto por derivativos.
+
+O valor das margens dadas em garantia foi de R$ 14.172 (R$ 10.580 em 31/12/2025), composto basicamente
+por títulos públicos.
+
+=== página 29 ===
+Nota 7 - Operações com Característica de Concessão de Crédito
+
+A política contábil sobre Operações com Característica de Concessão de Crédito, que contempla Operações de
+Crédito, Arrendamento, Outros Créditos que são mensurados ao Custo Amortizado, e Títulos e Valores
+Mobiliários, está apresentada na Nota 2b II.
+
+a) Composição da Carteira de Operações com Característica de Concessão de Crédito e Arrendamento
+
+                                                                                30/06/2026        31/12/2025
+Operações de Crédito e Arrendamento Financeiro, por tipo                       Valor Contábil    Valor Contábil
+                                                                                   Bruto             Bruto
+Pessoas Físicas                                                                       293.303           252.304
+ Crédito Pessoal                                                                        59.755            54.168
+ Crédito Consignado                                                                     81.332            56.258
+ Veículos                                                                                   59               136
+ Crédito Imobiliário                                                                  152.157           141.742
+Pessoas Jurídicas                                                                     470.562           476.235
+ Grandes Empresas                                                                     259.878           270.514
+ Micro / Pequenas e Médias Empresas                                                   210.684           205.721
+Unidades Externas América Latina                                                         3.167             3.661
+Total                                                                                 767.032           732.200
+Perda de Crédito Esperada                                                             (30.401)          (27.277)
+Total de Operações de Crédito e Arrendamento Financeiro, líquido de Perda de
+                                                                                      736.631           704.923
+Crédito Esperada
+Circulante                                                                            339.572           339.571
+Não circulante                                                                        397.059           365.352
+
+
+
+
+A Provisão para Perda de Crédito Esperada contempla R$ (1.836) (R$ (1.437) em 31/12/2025) referente a
+operações de Garantias Financeiras, Compromissos de Crédito e Créditos a Liberar.
+
+No período, o ITAÚ UNIBANCO reconheceu R$ (2.711) (R$ (8.288) em 01/01 a 30/06/2025) de variação cambial
+no resultado, sem considerar os efeitos de proteção cambial.
+
+=== página 30 ===
+b) Valor contábil bruto por estágios
+
+                                   Saldo em           Transferência          Transferência     Transferência do Transferência do              Aquisição /                          Saldo em
+         Estágio 1                                                                                                                                                 Write Off
+                                   31/12/2025         para Estágio 2        para Estágio 3 (1)    Estágio 2        Estágio 3                 (Liquidação)                          30/06/2026
+Pessoas Físicas                           220.588               (10.605)              (1.272)                3.997                   222               44.942                  -         257.872
+Pessoas Jurídicas                         449.139                (6.813)              (2.562)                1.085                    43              (1.970)                  -         438.922
+Unidades Externas América
+                                             3.661                      -                    -                    -                     -               (494)                  -           3.167
+Latina
+Total                                     673.388               (17.418)              (3.834)                5.082                   265               42.478                  -         699.961
+Total 01/01 a 31/12/2025                  603.327               (28.354)              (4.354)               22.529                   714               79.526                  -         673.388
+
+                                   Saldo em           Transferência         Transferência        Transferência do Transferência do            Aquisição /                          Saldo em
+         Estágio 2                                                                                                                                                 Write Off
+                                   31/12/2025         para Estágio 1        para Estágio 3          Estágio 1        Estágio 3               (Liquidação)                          30/06/2026
+Pessoas Físicas                             18.645               (3.997)              (5.388)               10.605                   705                   24                  -          20.594
+Pessoas Jurídicas                           13.462               (1.085)              (4.837)                6.813                   181                (749)                  -          13.785
+Unidades Externas América
+                                                  -                     -                    -                    -                     -                    -                 -                -
+Latina
+Total                                       32.107               (5.082)             (10.225)               17.418                   886                (725)                  -          34.379
+Total 01/01 a 31/12/2025                    41.008              (22.529)             (17.113)               28.354                 5.582              (3.195)                  -          32.107
+
+                                   Saldo em           Transferência         Transferência        Transferência do Transferência do            Aquisição /                          Saldo em
+         Estágio 3                                                                                                                                                 Write Off
+                                   31/12/2025         para Estágio 1        para Estágio 2          Estágio 1        Estágio 2               (Liquidação)                          30/06/2026
+Pessoas Físicas                             13.071                 (222)                (705)                1.272                 5.388                1.866            (5.833)          14.837
+Pessoas Jurídicas                           13.634                  (43)                (181)                2.562                 4.837                (108)            (2.846)          17.855
+Unidades Externas América
+                                                  -                     -                    -                    -                     -                    -                 -                -
+Latina
+Total                                       26.705                 (265)                (886)                3.834               10.225                 1.758            (8.679)          32.692
+Total 01/01 a 31/12/2025                    33.307                 (714)              (5.582)                4.354               17.113               (5.457)           (16.316)          26.705
+1) Na movimentação das transferências das operações do estágio 1 para o estágio 3 ao longo do período, parte representativa delas passaram antes pelo estágio 2.
+
+
+                                   Saldo em             Aquisição /                                 Saldo em
+   Total dos 3 Estágios                                                        Write Off
+                                   31/12/2025          (Liquidação)                                30/06/2026
+Pessoas Físicas                           252.304                46.832               (5.833)              293.303
+Pessoas Jurídicas                         476.235                (2.827)              (2.846)              470.562
+Unidades Externas América
+                                             3.661                 (494)                     -               3.167
+Latina
+Total                                     732.200                43.511               (8.679)              767.032
+Total 01/01 a 31/12/2025                  677.642                70.874              (16.316)              732.200
+
+=== página 31 ===
+c) Perda de Crédito Esperada por estágios
+
+                                   Saldo em          Transferência         Transferência            Transferência       Transferência       (Constituição) /                             Saldo em
+         Estágio 1                                                                                                                                                 Write Off
+                                  31/12/2025         para Estágio 2       para Estágio 3 (1)        do Estágio 2         do Estágio 3          Reversão                                 30/06/2026
+Pessoas Físicas                           (2.670)                477                       43                (512)                (68)                 (235)                    -             (2.965)
+Pessoas Jurídicas                         (1.542)                145                       41                (147)                (22)                  (14)                    -             (1.539)
+Unidades Externas América
+                                               (3)                    -                     -                       -                   -                  -                    -                    (3)
+Latina
+Total                                     (4.215)                622                       84                (659)                (90)                 (249)                    -             (4.507)
+Total 01/01 a 31/12/2025                  (4.300)              1.535                      250              (1.596)                (77)                  (27)                    -             (4.215)
+
+                                   Saldo em          Transferência         Transferência            Transferência       Transferência       (Constituição) /                             Saldo em
+         Estágio 2                                                                                                                                                 Write Off
+                                  31/12/2025         para Estágio 1        para Estágio 3           do Estágio 1         do Estágio 3          Reversão                                 30/06/2026
+Pessoas Físicas                           (4.239)                512                  2.712                  (477)               (368)               (2.864)                    -             (4.724)
+Pessoas Jurídicas                         (3.072)                147                  1.559                  (145)               (134)               (1.145)                    -             (2.790)
+Unidades Externas América
+                                                 -                    -                     -                       -                   -                  -                    -                      -
+Latina
+Total                                     (7.311)                659                  4.271                  (622)               (502)               (4.009)                    -             (7.514)
+Total 01/01 a 31/12/2025                  (5.598)              1.596                  6.734                (1.535)             (1.924)               (6.584)                    -             (7.311)
+
+                                   Saldo em          Transferência         Transferência            Transferência       Transferência       (Constituição) /                             Saldo em
+         Estágio 3                                                                                                                                                 Write Off
+                                  31/12/2025         para Estágio 1        para Estágio 2           do Estágio 1         do Estágio 2          Reversão                                 30/06/2026
+Pessoas Físicas                           (6.985)                 68                      368                 (43)             (2.712)               (4.629)              5.833               (8.100)
+Pessoas Jurídicas                         (8.766)                 22                      134                 (41)             (1.559)               (2.916)              2.846              (10.280)
+Unidades Externas América
+                                                 -                    -                     -                       -                   -                  -                    -                      -
+Latina
+Total                                   (15.751)                  90                      502                 (84)             (4.271)               (7.545)              8.679              (18.380)
+Total 01/01 a 31/12/2025                (18.493)                  77                  1.924                  (250)             (6.734)               (8.591)             16.316              (15.751)
+1) Na movimentação das transferências das operações do estágio 1 para o estágio 3 ao longo do período, parte representativa delas passaram antes pelo estágio 2.
+
+
+                                   Saldo em          (Constituição) /                                Saldo em
+   Total dos 3 Estágios                                                       Write Off
+                                  31/12/2025            Reversão                                     30/06/2026
+Pessoas Físicas                         (13.894)              (7.728)                 5.833               (15.789)
+Pessoas Jurídicas                       (13.380)              (4.075)                 2.846               (14.609)
+Unidades Externas América
+                                               (3)                    -                     -                     (3)
+Latina
+Total                                   (27.277)             (11.803)                 8.679               (30.401)
+Total 01/01 a 31/12/2025                (28.391)             (15.202)                16.316               (27.277)
+
+
+O saldo consolidado dos 3 Estágios contempla Perda de Crédito Esperada para operações de Garantias
+Financeiras, Compromissos de Crédito e Créditos a Liberar de R$ (1.836) (R$ (1.437) em 31/12/2025).
+
+d) Operações Vinculadas e Transferência de Ativos Financeiros
+                                                                                                                             01/01 a                                                     01/01 a
+                                                                                          30/06/2026                                                     31/12/2025
+                                                                                                                            30/06/2026                                                  30/06/2025
+                 Vinculadas e Com Coobrigação
+                                                                                   Valor Contábil Bruto                                            Valor Contábil Bruto
+                                                                                                                            Resultado                                                   Resultado
+                                                                                  Ativo                 Passivo                                    Ativo            Passivo
+Operações Ativas Vinculadas                                                            10.826                 10.863                (13)                9.167             9.191                  (10)
+ Operações de Crédito                                                                  10.826                           -          (259)                9.167                       -          (933)
+ Obrigações por Títulos e Valores Mobilíários no Exterior                                       -             10.863                246                        -          9.191                  923
+Transferência de Ativos Financeiros                                                        171                      170                     -              199                 199                     -
+Total                                                                                  10.997                 11.033                (13)                9.366              9.390                 (10)
+
+                                                                                                01/01 a 30/06/2026                                             01/01 a 30/06/2025
+                         Sem coobrigação
+                                                                                   Carteira Transferida                     Resultado              Carteira Transferida                 Resultado
+Operações de Crédito e Outros Créditos                                                                            6.316             (39)                                  6.066                      60
+Operações baixadas (WO)                                                                                             390                 23                                     446                   26
+Total                                                                                                             6.706             (16)                                  6.512                      86
+
+
+
+
+e) Exigibilidade de Crédito Rural
+
+O ITAÚ UNIBANCO realiza o atendimento da Exigibilidade do Crédito Rural por meio de operações de
+empréstimos, emissões de títulos e aplicações em instrumentos financeiros, sendo o saldo total dos recursos
+obrigatórios de R$ 15.137 (R$ 15.273 em 31/12/2025) e a exigibilidade de aplicação de R$ 15.224 (R$ 14.975
+em 31/12/2025), que representa 99% (102% em 31/12/2025). Os custos para atendimento do normativo foram de
+R$ 51 (R$ 182 em 31/12/2025).
+
+=== página 32 ===
+Nota 8 - Captação de Recursos e Obrigações por Empréstimos e Repasses
+
+a) Resumo
+
+                                                                                    30/06/2026       31/12/2025
+                                                                                     Custo             Custo
+                                                                                   Amortizado        Amortizado
+Depósitos                                                                                963.646          949.037
+Captações no Mercado Aberto                                                              558.654          534.385
+ Carteira Própria                                                                        385.026          276.603
+ Carteira de Terceiros                                                                    93.928          179.302
+ Carteira Livre Movimentação                                                              79.700           78.480
+Instrumentos de Dívida                                                                   338.108          329.293
+ Recursos de Emissões                                                                    258.609          260.356
+ Obrigações por Títulos e Valores Mobiliários no Exterior                                 18.825           17.892
+ Captação por Certificados de Operações Estruturadas                                      27.816           25.577
+ Instrumentos de Dívidas com Cláusulas de Subordinação                                    32.858           25.468
+Obrigações por Empréstimos e Repasses                                                    112.350          119.899
+Total                                                                                  1.972.758        1.932.614
+Circulante                                                                               938.209          989.037
+Não Circulante                                                                         1.034.549          943.577
+
+
+
+O valor justo do total de Depósitos é de R$ 963.580 (R$ 949.048 em 31/12/2025), dos totais de Captações no
+Mercado Aberto e de Instrumentos de Dívida são iguais ao valor contábil e do total de Obrigações por
+Empréstimos e Repasses é de R$ 112.529 (R$ 120.197 em 31/12/2025).
+
+Na rubrica Obrigações por Empréstimos e Repasses, os empréstimos no exterior estão representados,
+basicamente, por aplicações em operações comerciais de câmbio, relativas a pré-financiamentos à exportação e
+financiamentos à importação.
+
+As operações realizadas entre partes relacionadas estão detalhadas na Nota 17a.
+
+b) Letras Imobiliárias Garantidas
+
+As Letras Imobiliárias Garantidas (LIGs) são títulos de crédito nominativos, transferíveis e de livre negociação,
+garantidos pela carteira de ativos do próprio emissor, submetida ao regime fiduciário.
+
+O “Termo de emissão registrado”, que esclarece as condições por operação de LIG, está disponível no site
+www.itau.com.br/relacoes-com-investidores, na seção Resultados e relatórios / Documentos regulatórios / Letra
+imobiliária garantida.
+
+I – Composição da Carteira de Ativos
+
+A carteira de ativos vinculada às LIGs corresponde a 3,25% do ativo total da empresa. Sua composição é
+apresentada no quadro abaixo. Maiores detalhes estão disponíveis no "Demonstrativo de carteira de ativos
+(mensal)", na seção Resultados e relatórios / Documentos regulatórios / Letra imobiliária garantida.
+
+                                                                                    30/06/2026       31/12/2025
+ Créditos Imobiliários                                                                     70.569          67.801
+ Títulos Públicos - Brasil                                                                  4.808           4.496
+Total da Carteira de Ativos                                                                75.377          72.297
+Total da Carteira de Ativos Ajustada                                                       75.377          72.297
+Obrigação por Emissão de LIGs                                                              70.332          64.438
+Remuneração do Agente Fiduciário                                                                 3                3
+
+=== página 33 ===
+II - Requisitos da Carteira de Ativos
+                                                                                                             30/06/2026                31/12/2025
+Composição                                                                                                              93,6%                  93,8%
+Suficiência
+  Valor Nominal                                                                                                        107,2%                  112,2%
+  Valor Presente sob Estresse                                                                                          100,1%                  100,8%
+Prazo Médio Ponderado
+  Da Carteira de Ativos                                                                                     134,6      meses           137,9   meses
+  Das LIGs em Circulação                                                                                        27,7   meses            30,8   meses
+Liquidez
+  Ativos Líquidos                                                                                                      11.750                  10.313
+
+
+
+Nota 9 - Provisões, Ativos Contingentes e Passivos Contingentes
+
+A política contábil sobre provisões, ativos e passivos contingentes está apresentada na Nota 2b VI.
+
+A empresa, em decorrência do curso normal de suas atividades, poderá figurar como parte em processos
+judiciais de natureza trabalhista, cível e fiscal. As contingências relacionadas a esses processos são
+classificadas conforme a seguir:
+
+a) Ativos Contingentes
+
+Não existem ativos contingentes contabilizados.
+
+b) Provisões e Contingências
+
+I - Provisões Cíveis, Trabalhistas e Outros Riscos
+
+Segue abaixo a movimentação das provisões Cíveis, Trabalhistas e Outros Riscos:
+                                01/01/2025                                              30/06/2026                                       31/12/2025
+                                  [@d9]                       Cíveis           Trabalhistas     Outros Riscos          Total               Total
+Saldo Inicial - 01/01                                               2.183              8.442             1.304             11.929               10.991
+(-) Provisões Garantidas por Cláusula de Indenização                   (197)            (468)                   -              (665)               (753)
+Subtotal                                                            1.986              7.974             1.304             11.264               10.238
+Atualização / Encargos                                                   47              288                    -               335                 625
+Movimentação do Período Refletida no Resultado                          428            1.883                    -              2.311               4.215
+ Constituição                                                           597            2.089                1                  2.687               5.307
+ Reversão                                                              (169)            (206)              (1)                 (376)            (1.092)
+Pagamento                                                               (18)          (1.231)              (4)            (1.253)               (3.814)
+Subtotal                                                            2.443              8.914             1.300             12.657               11.264
+(+) Provisões Garantidas por Cláusula de Indenização                    197              427                    -               624                 665
+Saldo Final                                                         2.640              9.341             1.300             13.281               11.929
+Circulante                                                          1.319              3.060              326                  4.705               4.619
+Não Circulante                                                      1.321              6.281              974                  8.576               7.310
+
+
+Para as provisões Cíveis, Trabalhistas e Outros Riscos, o saldo Circulante de Depósitos em Garantia de
+Recursos é de R$ 2.035 (R$ 1.993 em 31/12/2025) e Não Circulante de R$ 1.278 (R$ 1.180 em 31/12/2025).
+
+=== página 34 ===
+II - Provisões Fiscais e Previdenciárias
+
+As provisões tributárias correspondem ao valor principal dos tributos envolvidos em discussões fiscais administrativas ou judiciais,
+objeto de lançamento de ofício, acrescido de juros, multa e, encargos, quando aplicável.
+Abaixo está demonstrada a movimentação das provisões:
+        01/01/2026                                                                                    30/06/2026                              31/12/2025
+                                                                              Obrigação Legal
+        01/01/2025                                                                                   Ações Fiscais e
+                                                                                   Nota                                       Total                Total
+                                                                                                     Previdenciárias
+                                                                                     13c
+Saldo Inicial - 01/01                                                                       1.333                1.613                2.946                4.382
+(-) Provisões Garantidas por Cláusula de Indenização                                             -                     -                  -                    -
+Subtotal                                                                                    1.333                1.613                2.946                4.382
+Atualização/Encargos (1)                                                                       35                   60                  95                  807
+Movimentação do Período Refletida no Resultado                                              (126)                    7                (119)           (1.116)
+ Constituição                                                                                    -                  25                  25                  532
+ Reversão                                                                                   (126)                  (18)               (144)           (1.648)
+Pagamento                                                                                        -                 (17)                (17)            (1.127)
+Subtotal                                                                                    1.242                1.663                2.905                2.946
+(+) Provisões Garantidas por Cláusula de Indenização                                             -                     -                  -                    -
+Saldo Final                                                                                 1.242                1.663                2.905                2.946
+Circulante                                                                                       -                     -                  -                    -
+Não Circulante                                                                              1.242                1.663                2.905                2.946
+1) Os valores estão contemplados nas rubricas Despesas Tributárias, Despesas Operacionais e em Imposto de Renda e Contribuição Social Correntes.
+
+
+
+
+Para as provisões Fiscais e Previdenciárias, o saldo de Depósitos em Garantia de Recursos está classificado
+como Não Circulante no valor de R$ 5.913 (R$ 6.259 em 31/12/2025).
+
+A principais discussões relacionadas a Ações Fiscais e Previdenciárias estão descritas a seguir:
+
+    •      ISS sobre receitas de atividade bancária – R$ 474: discute-se a exigência, por vários municípios, do ISS
+sobre diversas receitas decorrentes de atividades bancárias que usualmente não se classificam como prestação
+de serviços.
+
+    •      Remuneração variável de administradores – R$ 402: discute-se a dedutibilidade na apuração do lucro
+real da remuneração variável em espécie dos administradores na apuração do imposto de renda, em razão de
+restrição indevida da Receita Federal do Brasil. O saldo do depósito judicial totaliza R$ 468.
+
+
+
+III - Contingências não Provisionadas no Balanço
+
+Os valores envolvidos em discussões administrativas e judiciais com risco estimado de perda possível não são
+objeto de provisão contábil e basicamente são compostas por:
+
+Ações Cíveis e Trabalhistas
+
+Nas Ações Cíveis de perda possível, o risco total estimado é de R$ 2.819 (R$ 2.766 em 31/12/2025), sendo que
+as naturezas referem-se às ações indenizatórias ou de cobranças, cujos valores individuais não são relevantes.
+
+Para as Ações Trabalhistas de perda possível, o risco estimado é de R$ 987 (R$ 1.076 em 31/12/2025).
+
+Ações Fiscais e Previdenciárias
+
+As Ações Fiscais e Previdenciárias de perda possível totalizam R$ 18.795 (R$ 19.210 em 31/12/2025), sendo as
+principais discussões a seguir:
+
+• IRPJ e CSLL - Glosa de Prejuízos - R$ 5.499: discute-se o montante do prejuízo fiscal (IRPJ) e/ou base
+negativa de CSLL utilizados pela Receita Federal na lavratura de autos de infração, que ainda estão pendentes
+de decisão definitiva.
+
+=== página 35 ===
+• ISS - Atividades Bancárias/Estabelecimento Prestador - R$ 3.312: entende-se que a operação bancária não se
+confunde com serviço e/ou não está listada na Lei Complementar nº 116/3 ou do Decreto-Lei nº 406/68.
+
+• IRPJ e CSLL - Dedutibilidade de Perdas em Operações de Crédito - R$ 2.839: autuações lavradas para
+exigência de IRPJ e de CSLL pela suposta inobservância dos critérios legais para a dedução de perdas no
+recebimento de créditos.
+
+• INSS - Verbas não Remuneratórias - R$ 1.908: defende-se a não incidência da contribuição sobre verbas não
+remuneratórias, participação nos lucros e plano para outorga de opções de ações.
+
+• IRPJ, CSLL, PIS e COFINS - Despesas de Captação - R$ 1.372: discute-se a dedutibilidade de despesas de
+captação (DI), relativas a recursos que foram capitalizados entre as empresas do grupo.
+
+• IRPJ, CSLL, PIS e COFINS - Indeferimento de Pedido de Compensação - R$ 1.121: casos em que são
+apreciadas a liquidez e a certeza do crédito compensado.
+
+• IRPJ e CSLL - Ágio - Dedução - R$ 715: discute-se a dedutibilidade do ágio com expectativa de rentabilidade
+futura na aquisição de investimentos.
+
+
+
+c) Contas a Receber - Reembolso de Provisões
+
+O saldo de valores a receber relativo a reembolso de provisões totaliza R$ 267 (R$ 283 em 31/12/2025), e
+decorre, basicamente, da garantia de recomposição patrimonial em Provisões Cíveis, Trabalhistas, Fiscais e
+Previdenciárias das empresas incorporadas.
+
+d) Garantias de Contingências
+
+As garantias relativas às discussões judiciais que envolvem a empresa e são compostas basicamente por Títulos
+e Valores Mobiliários no montante de R$ 2.590 (R$ 2.826 em 31/12/2025) e está depositado o montante de R$
+2.984 (R$ 2.828 em 31/12/2025).
+
+Nota 10 - Outros Ativos e Passivos
+
+a) Outros Ativos
+
+                                                                                   Nota        30/06/2026      31/12/2025
+Financeiros                                                                                           33.582          27.153
+   Negociação e Intermediação de Valores                                                              11.479          10.234
+   Depósitos em Garantia - Contingências, Provisões e Obrigações Legais          9b I, 9b II           9.226           9.432
+   Operações sem Características de Concessão de Crédito, líquidas de provisão                         4.404           3.902
+   Rendas a Receber                                                                                    2.077           1.766
+   Valores Líquidos a Receber de Reembolso de Provisões                              9c                  267             283
+   Outros Ativos Financeiros                                                                           6.129           1.536
+Não Financeiros                                                                                       12.110          11.249
+   Diversos no País                                                                                    4.482           3.633
+   Diversos no Exterior                                                                                   46              55
+   Despesas Antecipadas                                                                                4.264           3.948
+   Ativos Atuariais de Planos de Benefícios Pós-Emprego                             18d                  319             334
+   Outros Ativos Não Financeiros                                                                      2.008           2.593
+   Outros                                                                                               991             686
+Total                                                                                                45.692          38.402
+Circulante                                                                                           32.575          28.568
+Não Circulante                                                                                       13.117           9.834
+
+=== página 37 ===
+Nota 12 - Despesas Operacionais
+
+                                                                                       01/01 a           01/01 a
+                                                                                      30/06/2026        30/06/2025
+Remuneração, Encargos, Benefícios Sociais, Desligamentos e Treinamento                      (5.389)           (4.981)
+Participação dos Empregados nos Lucros e Pagamento Baseado em Ações                         (3.647)           (3.277)
+Serviços de Terceiros, Sistema Financeiro, Segurança, Transportes e Viagens                 (2.408)           (2.561)
+Processamento de Dados e Telecomunicações                                                   (2.578)           (2.258)
+Instalações e Materiais                                                                     (1.286)           (1.289)
+Depreciação e Amortização                                                                   (2.235)           (2.116)
+Propaganda, Promoções e Publicidade                                                           (712)             (682)
+Comercialização - Cartões de Crédito                                                          (120)              (95)
+Amortização de Ágios                                                                             (47)            (65)
+Outras                                                                                      (1.509)           (1.540)
+Total                                                                                      (19.931)          (18.864)
+
+
+
+
+Nota 13 - Tributos
+
+A política contábil sobre imposto de renda e contribuição social está apresentada na Nota 2b VIII.
+
+
+Os tributos são calculados pelas alíquotas abaixo demonstradas e consideram, para efeito das respectivas
+bases de cálculo, a legislação vigente pertinente a cada encargo.
+
+Imposto de Renda                                       15,00% PIS                                             0,65%
+Adicional de Imposto de Renda                          10,00% COFINS                                          4,00%
+Contribuição Social sobre o Lucro Líquido              20,00% ISS até                                         5,00%
+
+a) Despesas com Impostos e Contribuições
+
+I - Demonstração do cálculo com Imposto de Renda e Contribuição Social sobre o Lucro Líquido:
+
+                                                                                     01/01 a             01/01 a
+                             Devidos Sobre Operações do Período
+                                                                                    30/06/2026          30/06/2025
+Resultado Antes da Tributação sobre o Lucro                                                17.265             15.914
+Encargos (Imposto de Renda e Contribuição Social) às alíquotas vigentes                   (7.769)             (7.161)
+Acréscimos / Decréscimos aos encargos de Imposto de Renda e Contribuição Social
+decorrentes de:
+ Resultado de Participações em Investidas                                                   4.232               3.738
+ Juros sobre o Capital Próprio                                                              3.178               1.395
+ Outras Despesas Indedutíveis Líquidas de Receitas não Tributáveis (1)                      3.311               3.303
+Total de Imposto de Renda e Contribuição Social                                             2.952               1.275
+1) Contempla (Inclusões) e Exclusões Temporárias.
+
+
+II - Despesas Tributárias
+
+Estão representadas basicamente por PIS, COFINS e ISS.
+
+=== página 38 ===
+b) Tributos Diferidos
+
+I - O saldo de Ativos Fiscais Diferidos e sua movimentação estão representados por:
+
+                                                                                                                         Realização /
+                                                                                                  31/12/2025                                  Constituição         30/06/2026
+                                                                                                                          Reversão
+Refletido no Resultado                                                                                    43.798               (11.057)                 14.396           47.137
+ Provisão para Perda de Crédito Esperada                                                                  32.237                (5.468)                  4.716           31.485
+ Relativos a Prejuízos Fiscais e Base Negativa                                                                     36                    -               1.531              1.567
+ Provisões                                                                                                    4.901                 (769)                1.485              5.617
+  Provisão para Participação nos Lucros                                                                       3.566             (3.566)                  2.728              2.728
+  Obrigações Legais                                                                                            291                  (149)                    2               144
+  Ajustes de Operações Realizadas em Mercado de Liquidação Futura                                                   -                    -                324                324
+  Provisão para Fundos de Compensações de Variações Salariais                                                  621                    (90)                   3               534
+  Outras Provisões Indedutíveis                                                                               2.146             (1.015)                  3.607              4.738
+Refletido no Patrimônio Líquido                                                                               3.136                 (211)                 317               3.242
+  Ajustes ao Valor Justo de Instrumentos Financeiros ao Valor Justo por Meio de                               1.797                    (3)                283               2.077
+  Outros Resultados Abrangentes
+  Hedge de Fluxo de Caixa                                                                                      423                  (208)                    -               215
+  Benefícios Pós-Emprego                                                                                       916                       -                   8               924
+  Outros                                                                                                            -                    -                 26                   26
+Total (1)                                                                                                 46.934               (11.268)                 14.713           50.379
+1) Os Ativos Fiscais Diferidos são classificados em sua totalidade como Não Circulante.
+
+
+II - O saldo das Obrigações Fiscais Diferidas e sua movimentação estão representados por:
+
+                                                                                                                          Realização /
+                                                                                                    31/12/2025                                Constituição         30/06/2026
+                                                                                                                           Reversão
+
+Refletido no Resultado                                                                                         6.141                (4.979)              3.090              4.252
+Atualização de Depósitos de Obrigações Legais e Passivos Contingentes                                          1.151                 (236)                 185              1.100
+Ajustes ao Valor Justo de Instrumentos Financeiros ao Valor Justo por Meio do
+                                                                                                               4.462                (4.462)              2.797              2.797
+Resultado e Derivativos
+Ajustes de Operações Realizadas em Mercado de Liquidação Futura                                                    194               (194)                   -                   -
+Benefícios Pós-Emprego                                                                                             242                 (69)                 95               268
+Outros                                                                                                              92                 (18)                 13                  87
+Refletida no Patrimônio Líquido - Ajustes ao Valor Justo de Instrumentos
+                                                                                                                   296               (229)                  10                  77
+Financeiros ao Valor Justo por Meio de Outros Resultados Abrangentes
+        (1)
+Total                                                                                                          6.437                (5.208)              3.100              4.329
+Total Líquido (Ativo - Passivo)                                                                               40.497                (6.560)             12.113           46.050
+1) As Obrigações Fiscais Diferidas são classificadas, em sua totalidade, como Não Circulante.
+
+
+III - A estimativa de realização e o valor presente dos Ativos Fiscais Diferidos são:
+
+                                                                                         Ativos Fiscais Diferidos
+
+    Ano de Realização                                                             Prejuízo Fiscal e Base
+                                 Diferenças Temporárias               %                                                  %                      Total                   %
+                                                                                         Negativa
+
+              2026                                      9.606           19,7%                           1.567            100,0%                           11.173         22,2%
+              2027                                      8.939           18,3%                                  -                -                          8.939         17,7%
+              2028                                      5.528           11,3%                                  -                -                          5.528         11,0%
+              2029                                      4.524             9,3%                                 -                -                          4.524            9,0%
+              2030                                      3.843             7,9%                                 -                -                          3.843            7,6%
+         acima de 2030                                 16.372           33,5%                                  -                -                         16.372         32,5%
+              Total                                    48.812         100,0%                            1.567            100,0%                           50.379        100,0%
+     Valor Presente (1)                                39.178                                           1.475                                             40.653
+1) Para o ajuste a valor presente, foi utilizada a taxa média de captação, líquida dos efeitos tributários.
+
+
+As projeções de lucros tributáveis futuros incluem estimativas referentes a variáveis macroeconômicas, taxas de câmbio, taxas de juros, volume de
+operações financeiras e tarifas de serviços, entre outros, que podem apresentar variações em relação aos dados e valores reais.
+
+
+O lucro líquido contábil não tem relação direta com o lucro tributável para o imposto de renda e contribuição social em função das diferenças existentes
+entre os critérios contábeis e a legislação fiscal pertinente, além de aspectos societários. Portanto, é recomendável que a evolução da realização dos
+ativos fiscais diferidos apresentada acima não seja tomada como indicativo de lucros líquidos futuros.
+
+=== página 39 ===
+IV - Ativos Fiscais Diferidos não Contabilizados
+
+Em 30/06/2026, os ativos fiscais diferidos não contabilizados correspondem a R$ 13 (R$ 14 em 31/12/2025) e
+decorrem da avaliação da Administração sobre suas perspectivas de realização no longo prazo.
+
+c) Obrigações Fiscais Correntes
+
+                                                                 Nota       30/06/2026      31/12/2025
+Impostos e Contribuições sobre Lucros a Pagar                                       2.320          3.139
+Demais Impostos e Contribuições a Pagar                                             2.566          1.811
+Obrigações Legais                                                9b II              1.242          1.333
+Total                                                                               6.128          6.283
+Circulante                                                                          4.856          4.681
+Não Circulante                                                                      1.272          1.602
+
+=== página 40 ===
+Nota 14 - Investimentos
+
+                                                                                                                                                                                                                                        Movimentação de                                             Resultado de
+                                                                                                                                                                       Quantidade de                                                                                                   Investimento
+                                                                                                                                          % de Participação                                 Saldo em                                                                                                Participações
+                                                                Moeda                           Patrimônio        Lucro Líquido /                                         Ações                                                                                                            em (4)
+     Empresas                                                                    Capital                                                                                                                                             01/01 a 30/06/2026                                                   de
+                                                              Funcional (5)                      Líquido            (Prejuízo)
+                                                                                                                                                                        Ordinárias /       31/12/2025         Dividendos Pagos /         Outros Eventos         Resultado de            30/06/2026        01/01 a
+                                                                                                                                        Votante          Total                                                                                 (2)
+                                                                                                                                                                          Cotas                                Provisionados (1)                               Participações (3)                         30/06/2025
+
+No País                                                                                                                                                                                            123.713                    (6.045)                (2.703)                6.143           121.108            6.824
+ ITB Holding Brasil Participações Ltda.                           Real               34.455             56.189                  475        99,18%           99,18%      7.428.509.424               56.793                          -                (1.538)                  471            55.726              630
+ Itaú Cia. Securitizadora de Créditos Financeiros                 Real                   261               548                    26       99,99%           99,99%      7.482.229.717                   522                         -                      -                   26                548              24
+ Itauseg Participações S.A.                                       Real                 6.965            12.146                2.175        62,38%           62,38%      3.739.050.940                8.079                    (1.747)                 (113)                 1.357               7.576          1.099
+ Redecard Instituição de Pagamento S.A.                           Real               23.923             41.208                1.497        80,06%           80,06%      1.440.027.325               31.788                          -                      -                1.199            32.987            1.468
+ Itaú BBA Trading S.A.                                            Real                 6.893             7.857                  291        89,75%           89,75% 143.193.568.466                   6.183                          -                   607                   261               7.051            262
+ Dibens Leasing S.A. - Arrendamento Mercantil                     Real                   537               629                    32       99,44%           99,44%      2.203.404.578                   966                     (372)                      -                   32                626              35
+ Itaú Administradora de Consórcios Ltda.                          Real                   620             1.786                  551        99,99%           99,99%            999.990                1.234                          -                      -                  551               1.785            418
+ Provar Negócios de Varejo Ltda.                                  Real                 1.808             1.951                    84       99,99%           99,99%        305.469.393                2.193                      (327)                     2                    84               1.952             81
+ Banco Itaú Consignado S.A.                                       Real                      -                 -                     -             -                -                   -                966                         -                (1.016)                   50                    -            83
+ Redecard Sociedade de Crédito Direto S.A.                        Real                   190               309                    83       99,99%           99,99%     17.128.266.992                   753                     (528)                      -                   83                308             882
+ Outras Participações                                                                                                                                                                               14.236                    (3.071)                 (645)                 2.029            12.549            1.842
+No Exterior                                                                                                                                                                                              30                         -                      -                       1              31                  -
+ ANK Platform S.A.                                          Peso Argentino                 3                  1                     -      99,99%           99,99%        311.343.176                     -                         -                     1                        -                 1            (1)
+ Proserv - Promociones y Servicios, S.A. de C.V.            Peso Mexicano                  34               30                      1      99,99%           99,99%        193.812.902                    30                         -                    (1)                       1              30                  1
+Total                                                                                                                                                                                              123.743                    (6.045)                (2.703)                6.144           121.139            6.824
+1) Os dividendos deliberados e não pagos estão registrados em Rendas a Receber.
+2) Contemplam eventos societários decorrentes de aquisições, alienações, cisões, incorporações, aumentos ou reduções de capital e outros resultados abrangentes, se aplicável.
+3) Contempla, em Resultado de Participações, valores correspondentes aos resultados não realizados.
+4) Contempla apenas os investimentos em coligadas e controladas avaliados pelo método de equivalência patrimonial. Os saldos apresentados não consideram redução de capital em processo de homologação pelo BACEN e eventual oposição dos credores, nos termos do artigo 174 da Lei das S.A..
+5) Todas as dependências no exterior da empresa possuem moeda funcional igual a controladora, com exceção da Itaú Unibanco S.A. Miami Branch, cuja moeda funcional é Dólar.
+
+=== página 41 ===
+A tabela a seguir apresenta o resumo das informações financeiras dos investimentos da empresa:
+                                                                       30/06/2026                                        31/12/2025                            01/01 a 30/06/2026                   01/01 a 30/06/2025
+
+                                                                                                                                                            Outros                               Outros
+                                                                       Passivos           Outros                          Passivos          Outros                            Resultado                             Resultado
+                                                     Ativos Totais                                      Ativos Totais                                     Resultados                           Resultados
+                                                                      Contingentes       Passivos                       Contingentes       Passivos                        Abrangente Total                      Abrangente Total
+                                                                                                                                                          Abrangentes                          Abrangentes
+No País
+ ITB Holding Brasil Participações Ltda.                      58.232               2              57            59.136               2               25           (1.669)             (1.178)          (1.867)             (1.247)
+ Itaú Cia. Securitizadora de Créditos Financeiros               549               -               1               523               -                1                 -                  26                 -                 24
+ Itauseg Participações S.A.                                  13.385               -                -           14.207               -               43             (243)               2.037            1.242               3.058
+ Redecard Instituição de Pagamento S.A.                     178.389             134          87.236           159.478              95           84.614               (1)               1.496               (4)              1.829
+ Itaú BBA Trading S.A.                                        8.892               -             346             7.621               -               79              (24)                 269               (9)                287
+ Dibens Leasing - Arrendamento Mercantil S.A.                   648               -               1             1.061               -               70                 -                  32                 -                 36
+ Itaú Administradora de Consórcios Ltda.                      3.128              38           1.118             2.560              45            1.051                 -                 551                 -                418
+ Provar Negócios de Varejo Ltda.                              1.976              24           1.409             2.232              23                3                 2                  86                 -                 81
+ Banco Itaú Consignado S.A.                                       -               -                -           35.204             373              210                 -                   -                 -                 84
+ Redecard Sociedade de Crédito Direto S.A.                      871               -             528             2.723               -            1.404                 -                  83                 -                882
+No Exterior
+ ANK Platform S.A.                                                1                  -              1               1                  -              1                -                   -             (24)                (25)
+ Proserv - Promociones y Servicios, S.A. de C.V.                 38                  -              2              46                  -              5              (1)                   -                9                  10
+
+=== página 47 ===
+d) Evolução do Montante Líquido Reconhecido no Balanço Patrimonial
+                                                                                                                                                                                                       30/06/2026
+                                                                                                                                                                                                                                                            Outros Benefícios
+                                                                                                                                                    Planos BD e CV                                                     Planos CD                                                       Total
+                                                                                                                                                                                                                                                             Pós-Emprego
+
+                                                                                                                                               Passivos        Restrição do        Montante           Fundos           Restrição do        Montante                                  Montante
+                                                                                                                          Ativo Líquido                                                                                                                         Passivo
+                                                                                                                                               Atuariais          Ativo           Reconhecido       Previdencial          Ativo           Reconhecido                               Reconhecido
+Valor Início do Período                                                                                                             22.647         (19.111)           (5.030)           (1.494)               417               (96)               321                    (526)           (1.699)
+Valores Reconhecidos no Resultado (1+2+3+4)                                                                                          1.267          (1.067)             (286)              (86)               (11)               (5)               (16)                    (29)             (131)
+1 - Custo Serviço Corrente                                                                                                               -              (5)                 -               (5)                  -                 -                  -                       -               (5)
+2 - Custo Serviço Passado                                                                                                                -                -                 -                 -                  -                 -                  -                       -                 -
+3 - Juros Líquidos                                                                                                                   1.267          (1.062)             (286)              (81)                 23               (5)                 18                    (29)              (92)
+4 - Outras Despesas (1)                                                                                                                  -                -                 -                 -               (34)                 -               (34)                       -              (34)
+Valores Reconhecidos no Patrimônio Líquido - Outros Resultados Abrangentes (5+6+7)                                                       -                -              (18)              (18)                  -                 -                  -                       -              (18)
+5 - Efeito na Restrição do Ativo                                                                                                         -                -              (18)              (18)                  -                 -                  -                       -              (18)
+6 - Remunerações                                                                                                                         -                -                                   -                  -                 -                  -                       -                 -
+  Alterações de premissas demográficas                                                                                                   -                -                   -               -                  -                 -                  -                       -                 -
+ Alterações de premissas financeiras                                                                                                       -               -                  -                 -                  -                  -                 -                       -                 -
+  Experiência do plano (2)                                                                                                               -                -                 -                 -                 -                  -                 -                        -                 -
+7 - Variação Cambial                                                                                                                     -                -                 -                 -                 -                  -                 -                        -                 -
+Outros (8+9+10)                                                                                                                      (881)            1.043                 -               162                 -                  -                 -                       46               208
+8 - Recebimento por Destinação de Recursos                                                                                               -                -                 -                 -                 -                  -                 -                        -                 -
+9 - Benefícios Pagos                                                                                                               (1.043)            1.043                 -                 -                 -                  -                 -                       46                46
+10 - Contribuições e Aportes da Patrocinadora                                                                                          162                -                 -               162                 -                  -                 -                        -               162
+Valor Final do Período                                                                                                             23.033          (19.135)           (5.334)           (1.436)               406              (101)               305                    (509)           (1.640)
+Valor Reconhecido no Ativo                                                                                                                                                                   14                                                    305                        -               319
+Valor Reconhecido no Passivo                                                                                                                                                            (1.450)                                                      -                    (509)           (1.959)
+                                                                                                                                                                                                       31/12/2025
+                                                                                                                                                                                                                                                            Outros Benefícios
+                                                                                                                                                    Planos BD e CV                                                      Planos CD                                                      Total
+                                                                                                                                                                                                                                                             Pós-Emprego
+
+                                                                                                                                               Passivos        Restrição do        Montante           Fundos           Restrição do        Montante                                  Montante
+                                                                                                                          Ativo Líquido                                                                                                                         Passivo
+                                                                                                                                               Atuariais          Ativo           Reconhecido       Previdencial          Ativo           Reconhecido                               Reconhecido
+Valor Início do Período                                                                                                            21.215          (18.503)           (4.237)           (1.525)               444               (81)               363                    (562)           (1.724)
+Valores Reconhecidos no Resultado (1+2+3+4)                                                                                          2.378          (2.061)             (493)             (176)               (17)               (9)               (26)                    (61)             (263)
+1 - Custo Serviço Corrente                                                                                                               -              (11)                -              (11)                  -                 -                  -                       -              (11)
+2 - Custo Serviço Passado                                                                                                                -                 -                -                  -                 -                 -                  -                       -                 -
+3 - Juros Líquidos                                                                                                                   2.378          (2.050)             (493)             (165)                 50               (9)                 41                    (61)             (185)
+4 - Outras Despesas (1)                                                                                                                  -                 -                -                  -              (67)                 -               (67)                       -              (67)
+Valores Reconhecidos no Patrimônio Líquido - Outros Resultados Abrangentes (5+6+7)                                                     743            (451)             (300)                (8)              (10)               (6)               (16)                      14              (10)
+5 - Efeito na Restrição do Ativo                                                                                                         -                 -            (300)             (300)                  -               (6)                (6)                       -             (306)
+6 - Remunerações                                                                                                                       743            (451)                 -               292               (10)                 -               (10)                      14               296
+  Alterações de premissas demográficas                                                                                                   -              151                 -               151                  -                 -                  -                       -               151
+  Alterações de premissas financeiras                                                                                                    -            (384)                 -             (384)                  -                 -                  -                       4             (380)
+  Experiência do plano (2)                                                                                                             743            (218)                 -               525               (10)                 -               (10)                      10               525
+7 - Variação Cambial                                                                                                                     -                 -                -                  -                 -                 -                  -                       -                 -
+Outros (8+9+10)                                                                                                                    (1.689)            1.904                 -               215                  -                 -                  -                      83               298
+8 - Recebimento por Destinação de Recursos                                                                                               -                 -                -                  -                 -                 -                  -                       -                 -
+9 - Benefícios Pagos                                                                                                               (1.904)            1.904                 -                  -                 -                 -                  -                      83                83
+10 - Contribuições e Aportes da Patrocinadora                                                                                          215                 -                -               215                  -                 -                  -                       -               215
+Valor Final do Período                                                                                                             22.647          (19.111)           (5.030)           (1.494)               417               (96)               321                    (526)           (1.699)
+Valor Reconhecido no Ativo                                                                                                                                                                   13                                                    321                        -               334
+Valor Reconhecido no Passivo                                                                                                                                                            (1.507)                                                       -                   (526)           (2.033)
+1) Corresponde basicamente aos valores de utilização de ativos alocados em fundos previdencias dos planos CD.
+2) Correspondem aos rendimentos obtidos acima / abaixo do retorno esperado e contemplam as contribuições realizadas pelos participantes.
+
+=== página 48 ===
+Os Juros Líquidos correspondem ao valor calculado em 01/01/2026 com base no valor inicial (Ativo Líquido,
+Passivos Atuariais e Restrição do Ativo), descontando-se o valor projetado dos pagamentos/recebimentos de
+benefícios/contribuições, multiplicado pela taxa de desconto de 11,70% a.a. (Em 01/01/2025 utilizou-se a taxa de
+desconto de 11,59% a.a.).
+
+e) Contribuições de Benefício Definido
+
+                                                                                              Contribuições
+                                                                                                                          Contribuições Efetuadas
+                                                                                               Estimadas
+
+                                                                                                                         01/01 a                 01/01 a
+                                                                                                  2026
+                                                                                                                        30/06/2026              30/06/2025
+Planos de Aposentadoria - FIU                                                                                  16                    23                      23
+Planos de Aposentadoria - FUNBEP                                                                              129                137                     142
+Total                                                                                                         145                160                     165
+
+
+
+f) Perfil de Vencimento das Obrigações de Benefício Definido
+                                               Duration (1)     2026           2027            2028             2029            2030             2031 a 2035
+Planos de Aposentadoria - FIU                            7,98          1.195          1.240           1.282            1.322           1.360             7.275
+Planos de Aposentadoria - FUNBEP                         7,38           740            757             774              789               803            4.169
+Outros Benefícios Pós-Emprego                            7,42            91             72              45               47               49                 265
+Total                                                                  2.026          2.069           2.101            2.158           2.212           11.709
+1) Duration média do passivo atuarial dos planos.
+
+
+
+
+Nota 19 - Informações Suplementares
+
+a) Política de Seguros
+
+A empresa, apesar de possuir reduzido grau de risco em função da não concentração física de seus ativos, tem
+como política segurar seus valores e bens a valores considerados adequados para cobertura de eventuais
+sinistros.
+
+b) Gerenciamento de Riscos e Capital
+
+A gestão de riscos e capital é considerada um instrumento essencial para otimizar o uso de recursos e selecionar
+as melhores oportunidades de negócios, visando a obter a melhor relação Risco x Retorno.
+
+Os documentos “Relatório de Acesso Público", que detalham as diretrizes estabelecidas pelo normativo
+institucional de controle de risco do conglomerado, e não fazem parte das demonstrações contábeis, podem ser
+visualizados no site www.itau.com.br/relacoes-com-investidores, na seção Itaú Unibanco, Governança
+Corporativa, Políticas, Relatórios.
+
+c) Resultado não Recorrente Regulatório
+
+Apresentação do Resultado não Recorrente Regulatório, líquido dos efeitos fiscais, de acordo com os critérios estabelecidos na
+Resolução BCB nº 2/2020:
+
+                                                                                                                          01/01 a                01/01 a
+                                                                                                                         30/06/2026             30/06/2025
+Resultado não Recorrente Regulatório                                                                                           (1.271)                  (148)
+  Eventos Societários                                                                                                          (1.151)                         -
+  Reestruturação                                                                                                                (783)                   (556)
+  Eventos Tributários e Cíveis                                                                                                    681                    429
+  Outros                                                                                                                          (18)                   (21)
+
+=== página 49 ===
+       d) Evento Subsequente
+
+       Licitação para a gestão de folha de pagamentos de Minas Gerais
+
+       Em 01 de julho de 2026, o ITAÚ UNIBANCO celebrou o contrato decorrente da nova licitação promovida pelo
+       Governo do Estado de Minas Gerais para a prestação de serviços de pagamento a servidores estaduais e
+       fornecedores pessoas jurídicas do Estado, com vigência de 5 anos, a partir de 22 de dezembro de 2026. O
+       montante pago foi de R$ 2.188 pela gestão da folha de pagamento, que será registrado como intangível e o
+       reconhecimento diferido no resultado.
+
+
+
+
+Assinado digitalmente por      Assinado digitalmente por      Assinado digitalmente por
+FABIANA PALAZZO BARBOSA        ESTEVAO CARCIOFFI              ANDRE BALESTRIN CESTARE
+Data 26/08/2026 14:13:18 -     LAZANHA                        Data 27/08/2026 08:19:49 -
+03:00                          Data 26/08/2026 17:45:17 -     03:00
+CPF: 29806063830               03:00                          CPF: 21363464825
+                               CPF: 25211399803

@@ -1,0 +1,1011 @@
+
+=== página 9 ===
+Relatório da Administração
+
+Em atendimento à circular no 3.833/2017 e a resolução 4280/2013 ambas emitidas pelo Banco
+Central do Brasil (“BACEN”), a Administração do conglomerado prudencial do PagSeguro Internet
+S.A. (“Conglomerado”), tem o prazer de submeter à apreciação de V.Sas. as demonstrações
+financeiras consolidadas do conglomerado prudencial relativas ao exercício findo em 31 de dezembro
+de 2021.
+
+O Conglomerado é composto por uma instituição de pagamento nas modalidades de credenciador,
+emissor de moeda eletrônica e emissor de instrumento de pagamento pós pagos, por uma instituição
+financeira, que possui as carteiras comerciais e de investimentos, um FIDC e uma securitizadora, os
+quais possuem autorização para atuar como instituição de pagamento e como instituição financeira
+concedidas pelo Banco Central do Brasil (“BACEN”), conforme publicação no Diário Oficial da União.
+Adicionalmente, em 30 de outubro de 2020 foi também adquirida e, consequentemente incorporada a
+este conglomerado, a Wirecard Brazil S.A (“MOIP”), a qual é uma instituição de pagamento
+homologada pelo BACEN.
+
+Em decorrência da obtenção dessas autorizações, o Conglomerado passou a adotar procedimentos
+aplicáveis às instituições de pagamento e instituições financeiras integrantes do Sistema de
+Pagamentos Brasileiro (SPB), inclusive no tocante à forma de elaboração e divulgação de suas
+demonstrações financeiras, de acordo com critérios determinados pelo BACEN, além de seguir os
+critérios e regras contábeis definidos no Plano Contábil das Instituições do Sistema Financeiro
+Nacional (“COSIF”). Nesse sentido, as demonstrações financeiras consolidados do conglomerado
+prudencial foram elaboradas de acordo com as diretrizes contábeis emanadas da Lei nº 6.404/76 (Lei
+das Sociedades por Ações), incluindo as alterações introduzidas pelas Leis nº 11.638/07 e nº
+11.941/09, com observância das normas e instruções do Conselho Monetário Nacional (CMN), do
+BACEN, da Comissão de Valores Mobiliários (CVM).
+
+No exercício findo em 31 de dezembro de 2021, o Conglomerado obteve R$456.1 bilhões de valor
+financeiro transacionado e atingiu 7.7 milhões de clientes ativos (com pelo menos uma transação nos
+últimos 12 meses), representando um aumento de R$294.6 bilhões em relação ao valor financeiro
+transacionado de R$161.5 bilhões e 0.7 milhão em relação aos 7.0 milhões de lojistas ativos
+comparado ao exercício findo em 31 de dezembro de 2020.
+
+O conglomerado obteve lucro líquido de R$1.184 milhões, um decréscimo de R$107 milhões
+comparado ao montante de R$1.291 milhões em 31 de dezembro de 2020, destacando a receita de
+prestação de serviços que totalizou o valor de R$10.418 milhões (R$6.737 milhões em 31 de
+dezembro de 2020) substancialmente representada pela receita de intermediação financeira e receita
+com pré-pagamento, com isso as despesas tributárias aumentaram em R$285 milhões de R$524
+milhões em 31 de dezembro de 2020 contra R$809 milhões no mesmo período de 2021. Além disso
+vale destacar as despesas abaixo:
+
+    (i)   As despesas operacionais totalizaram R$5.470 milhões em 31 de dezembro de 2021, um
+          aumento de R$2.603 milhões comparado ao valor de R$2.867 milhões no mesmo período
+          de 2020, principalmente relacionado ao aumento no custo de transação de R$1.590
+          milhões e aumento no chargeback de R$227 milhões, ambos relacionados ao acréscimo
+          de TPV e aumento nas antecipações de recebíveis de R$586 milhões.
+
+
+5
+
+=== página 10 ===
+    (ii)   As despesas administrativas totalizaram R$2.208 milhões em 31 de dezembro de 2021,
+           um aumento de R$858 milhões comparado ao valor de R$1.351 em 31 de dezembro de
+           2020, principalmente relacionado às despesas com depreciação, em virtude do incremento
+           de CAPEX, sobretudo de POS.
+
+Em 31 de dezembro de 2021, os ativos do conglomerado totalizaram R$30.883 milhões (R$22.749
+milhões em 31 de dezembro de 2020). O principal ativo do conglomerado refere-se a valores a
+receber de bancos emissores de cartões, decorrente principalmente das transações realizadas com
+cartões de crédito e débito no valor de R$22.032 milhões (R$15.447 milhões em 31 de dezembro de
+2020).
+
+Em 31 de dezembro de 2021, o patrimônio líquido totalizou R$9.680 milhões e apresentou
+crescimento de R$822 milhões comparado a R$8.858 milhões em 31 de dezembro de 2020, estando
+basicamente ligado ao lucro do exercício, a venda de 15% da participação do FIDC à PagSeguro
+Digital e dos dividendos distribuídos no período.
+
+Em relação às movimentações de caixa, importante reiterar o comprometimento do Conglomerado
+em ser disruptivo no mercado e com relevantes investimentos em tecnologia, prova disso é o
+investimento de R$784 milhões em intangíveis (R$515 milhões em 31 de dezembro de 2020),
+composto basicamente por desenvolvimento de softwares e R$971 milhões em ativos fixos (R$1.525
+no exercício findo em dezembro de 2020), referentes principalmente a POS.
+
+O resultado apresentado pelo Conglomerado deve-se especialmente ao representativo número de
+clientes ativos e volume total transacionado, em linha com a estratégia do Conglomerado de
+penetração no mercado de clientes desbancarizados agregando assim ao ecossistema de produtos e
+serviços.
+
+
+São Paulo, 30 de março de 2022.
+
+
+
+
+6
+
+=== página 11 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Balanço patrimonial
+31 de dezembro de 2021 e 2020
+(Em milhares de reais - R$)
+                                              Nota       31 de dezembro    31 de dezembro de
+Ativo                                      explicativa       de 2021              2020
+Circulante
+Caixa e equivalentes de caixa                  4                955.892             1.128.008
+
+Instrumentos financeiros                                        851.280             1.232.611
+     Carteira própria                          5                851.280             1.232.611
+
+Relações interfinanceiras                                     22.032.430          15.446.660
+    Pagamentos e recebimentos a liquidar       6              22.032.430          15.446.660
+
+Operações de crédito                                            701.452              243.670
+    Operações de crédito                       7                701.452              243.670
+
+Outros créditos                                8                720.742              319.189
+    Diversos                                                    672.557              295.634
+    Rendas a receber                                             48.185               23.555
+
+Outros valores e bens                                           113.547               73.190
+    Despesas antecipadas                                        113.547               73.190
+
+Total do ativo circulante                                     25.375.343          18.443.328
+
+Realizável a longo prazo
+Instrumentos financeiros                                        378.105               75.708
+     Carteira própria LP                       5                378.105               75.708
+
+Operações de crédito                                            215.538                6.189
+    Operações de crédito                       7                215.538                6.189
+
+Outros créditos                                                1.159.215             877.386
+    Diversos LP                                8               1.159.215             877.386
+
+Outros valores e bens                                            10.855               10.288
+    Despesas antecipadas LP                                      10.855               10.288
+
+Permanente
+Investimentos                                  9                193.807              731.736
+    No país                                                     193.807              731.736
+
+Imobilizado em uso                             10              2.217.468            1.730.730
+    Imobilizações de uso                                       2.927.085            1.973.496
+    (Depreciações acumuladas)                                  (709.617)            (242.766)
+
+Intangível                                     11              1.334.497              873.375
+     Ativos intangíveis                                        2.155.647            1.390.759
+     (Amortizações acumuladas)                                 (821.150)            (517.384)
+
+Total do ativo não circulante                                  5.509.485            4.305.411
+
+Total do ativo                                                30.884.828          22.748.739
+
+
+
+
+7
+
+=== página 15 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Demonstração das mutações do patrimônio líquido
+Exercícios findos em 31 de dezembro de 2021 e 2020 e semestre findo em 31 de dezembro de 2021
+(Em milhares de reais - R$)
+
+                                                                                      Reserva de                      Ajuste de                 Participação
+                                                  Nota
+                                                              Capital     Reserva      retenção        Lucros        avaliação                       de
+                                               explicativa
+                                                              social       legal      de lucros      acumulados      patrimonial    Total       minoritários    Total
+
+Saldos em 01 de janeiro de 2019                              5.200.994            -     2.285.385                -          (200)   7.486.179         138.327   7.624.506
+
+Aumento de capital                                              30.000           -              -                -             -       30.000        300.000      330.000
+Lucro líquido do exercício                                           -           -              -       1.268.312              -    1.268.312          22.688   1.291.000
+Constituição de reserva legal                                        -      63.416              -         (63.416)             -            -               -           -
+Ajustes de avaliação patrimonial                                     -           -              -                -           825          825           (107)         718
+Distribuição de dividendos                                           -           -              -       (376.554)              -    (376.554)        (11.414)   (387.968)
+Constituição de reserva de retenção de lucro                         -           -        828.342       (828.342)              -            -               -           -
+
+Saldos em 31 de dezembro de 2020                             5.230.994/     63.416      3.113.727                -           625    8.408.762         449.494   8.858.256
+
+Reestruturação societária – cisão de
+                                                   1         (554.025)      (1.738)       (39.071)               -              -   (594.834)               -   (594.834)
+investimento
+Lucro líquido do exercício                                            -          -              -       1.110.178               -   1.110.178          73.490   1.183.668
+Constituição de reserva legal                      19                 -     55.509              -         (55.509)              -           -               -            -
+Ajustes de avaliação patrimonial                   19                 -          -              -                -          (629)       (629)              96        (533)
+Distribuição de dividendos                         19                 -          -              -       (388.032)               -   (388.032)           (308)   (388.340)
+Venda de participação de minoritária               19                 -          -              -                -              -           -        632.295      632.295
+Resgate de cotas de minoritária                    19                 -          -              -                -              -           -        (10.110)     (10.110)
+Constituição de reserva de retenção de lucro       19                 -          -        666.637       (666.637)               -           -               -            -
+
+Saldos em 31 de dezembro de 2021                             4.676.969     117.187      3.741.293                -            (4)   8.535.445       1.144.957   9.680.402
+
+Saldos em 30 de junho de 2021                                5.230.994      89.868      3.616.323                -           249    8.937.432         461.927   9.399.359
+
+Reestruturação societária – cisão de                                                                                                                        -   (594.832)
+investimento                                                 (554.025)      (1.738)       (39.071)              -               -   (594.832)
+Lucro líquido do exercício                                           -            -              -        581.130               -     581.130          60.845     641.975
+Constituição de reserva legal                                        -      29.057               -       (29.057)               -           -               -           -
+Ajustes de avaliação patrimonial                                     -            -              -              -           (253)       (253)               -       (253)
+Distribuição de dividendos                                           -            -              -      (388.032)               -   (388.032)               -   (388.032)
+Venda de participação de minoritária                                 -            -              -              -               -           -        632.295      632.295
+Resgate de cotas de minoritária                                      -            -              -              -               -           -        (10.110)    (10.110)
+Constituição de reserva de retenção de lucro                         -            -       164.041       (164.041)               -           -               -           -
+
+Saldos em 31 de dezembro de 2021                             4.676.969     117.187      3.741.293                -            (4)   8.535.445       1.144.957   9.680.402
+
+
+As notas explicativas são parte integrante das demonstrações financeiras do Conglomerado Prudencial.
+
+
+
+
+11
+
+=== página 16 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Demonstração do fluxo de caixa
+Exercícios findos em 31 de dezembro de 2021 e 2020 e semestre findo em 31 de dezembro de 2021
+(Em milhares de reais - R$)
+                                                                                Nota        2º Semestre              Exercícios
+Fluxo de caixa proveniente das atividades operacionais                        Explicativa       2021          2021                2020
+
+     Resultado antes da tributação sobre o lucro e participações                                892.615     1.729.534         1.856.153
+     Participação no lucro                                                                      (68.651)     (224.206)          (73.134)
+     Resultado antes da tributação sobre o lucro e participações - ajustado                     823.964     1.505.328/        1.783.019
+
+     Despesas (receitas) que não representam movimentação de caixa:
+      Depreciação e amortização                                                   22/           440.698        781.171              365.662
+      Baixas de imobilizado/intangível sem perda                                10 e 11/         21.167          36.495                   -
+      Equivalência patrimonial                                                     9/             2.932        (53.303)              57.085
+      Títulos incobráveis                                                         23/           151.445        377.104              267.422
+      Acréscimo (reversão) provisão para contingências                            18/            10.409          20.152              77.896
+      Acréscimo (reversão) obrigações fiscais                                                         -               -              84.294
+      Juros, receita de aplicações financeiras e variação cambial, líquida                      180.026        220.505            (168.756)
+      Outros                                                                                          -               -               1.734
+
+     Variação de ativos e passivos operacionais
+       Relações interfinanceiras                                                             (6.530.902)    (8.001.206)      (4.443.415)
+       Operações de crédito                                                                    (422.654)      (666.131)        (361.419)
+       Outros créditos                                                                         (231.281)      (541.488)        (427.965)
+       Instrumentos financeiros                                                                  172.320        152.205          345.587
+       Outros valores e bens                                                                     (16.426)       (40.924)          (1.691)
+       Depósitos                                                                               3.464.516      3.986.267        2.814.951
+       Outras obrigações                                                                       1.822.351      2.308.463        2.463.978
+       Resultado de exercício futuro                                                             (41.310)       (31.422)         141.405
+                                                                                  ...
+Caixa gerado (aplicado) pelas atividades operacionais                                         (151.744)         51.916        2.999.787
+                                                                                  ...
+       Imposto de renda e contribuição pagos                                                      (622)        (39.841)            (31.085)
+       Juros recebidos                                                                          969.830      1.038.322            (262.156)
+                                                                                  ...
+Caixa líquido gerado (aplicado) pelas atividades operacionais                                   816.464      1.050.408        2.706.546
+                                                                                  ...
+Fluxo de caixa das atividades de investimento
+    Valor pago nas aquisições                                                      9/          (43.896)       (43.896)         (331.047)
+    Aquisições de imobilizado                                                     10/         (496.066)      (971.309)       (1.525.321)
+    Aquisições de intangível                                                      11/         (462.872)      (783.664)         (514.605)
+    Aporte de capital em investidas                                                9/           (4.000)        (4.000)         (406.895)
+    Resgate de cotas                                                                           (10.110)       (10.110)                 -
+    Cisão de ágio                                                                              (28.898)       (28.898)                 -
+                                                                                  ...
+Caixa utilizado nas atividades de investimento                                               (1.045.842)    (1.841.876)      (2.777.868)
+                                                                                  ...
+Fluxo de caixa das atividades de financiamento
+    Empréstimos                                                                               1.007.313      1.007.313                    -
+    Aumento de capital                                                            19                  -              -              330.000
+    Distribuição de dividendos                                                    19/         (388.032)      (388.340)            (376.554)
+    Recebimento de dividendos                                                                         -            381                    -
+                                                                                  ...
+Caixa gerado das atividades de financiamento                                                    619.281        619.354             (46.554)
+                                                                                  ...
+Aumento (diminuição) do caixa e equivalentes de caixa                             4/            389.902      (172.116)        (117.876)
+    Caixa e equivalentes no início do exercício                                                 565.990      1.128.008        1.245.884
+    Caixa e equivalentes no final do exercício                                                  955.892        955.892        1.128.008
+Movimentação líquida do caixa e equivalentes de caixa                                           389.902      (172.116)        (117.876)
+                                                                                  ...
+
+
+As notas explicativas são parte integrante das demonstrações financeiras do Conglomerado
+Prudencial.
+
+
+12
+
+=== página 17 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+1. Informações gerais
+
+     As demonstrações financeiras consolidadas do Conglomerado Prudencial (“Conglomerado”)
+     abrangem o PagSeguro Internet S.A. ("PagSeguro”) como instituição líder, as suas controladas
+     Fundo de Investimento em Direitos Creditórios - PagSeguro (“FIDC”), Biva Securitizadora de
+     Créditos S.A (“Biva”) e Wirecard Brazil S.A (“MOIP”), além do BancoSeguro S.A (“BancoSeguro”)
+     como minoritário, já que não é uma controlada direta do PagSeguro. As instituições consolidadas
+     nesse Conglomerado estão conforme requerido nos artigos 1º e 4º da Resolução nº 4.280/13.
+
+     O Pagseguro, subsidiária do PagSeguro Digital Ltd. (“PagSeguro Digital”), é uma sociedade
+     anônima de capital fechado, constituída em 5 de setembro de 2006, sediada na cidade de São
+     Paulo - SP, Brasil e, tem por objeto social: atuação como instituidor de arranjo de pagamento;
+     instituição de pagamento nas modalidades de credenciador, e emissor de moeda eletrônica e
+     emissor de instrumento de pagamento pós pago; desempenho de atividades pertinentes ou
+     correlatas às mencionadas nos itens precedentes, incluindo, mas não se limitando, veiculação de
+     publicidade e desenvolvimento e facilitação de comércio eletrônico e liquidação financeira de
+     transações relacionadas a determinado serviço de pagamento; e participação em outras
+     sociedades, cujo objeto social seja relacionada, necessária ou conveniente a consecução do objeto
+     social da sociedade no Brasil e/ou no exterior.
+
+     O PagSeguro possui autorização para atuar como instituição de pagamento em funcionamento nas
+     modalidades de emissora de moeda eletrônica e credenciadora, o BancoSeguro possui autorização
+     para atuar como instituição financeira para as carteiras comercial e investimento e a MOIP possui
+     autorização para atuar como instituição de pagamento, ambas as instituições obtiveram as
+     aprovações concedidas pelo Banco Central do Brasil (“BACEN”), conforme publicação no Diário
+     Oficial da União. Em decorrência dessas obtenções, o Conglomerado adota procedimentos
+     aplicáveis às instituições de pagamento e financeiras integrantes do Sistema de Pagamentos
+     Brasileiro (SPB), inclusive no tocante à forma de elaboração e divulgação de suas demonstrações
+     financeiras, de acordo com critérios determinados pelo BACEN. O principal objetivo da Biva é
+     adquirir e securitizar as soluções de crédito do PagSeguro, como empréstimos e cartão de crédito.
+
+     Em 29 de março de 2018, investidores terceiros aportaram capital no valor de R$ 20 milhões no
+     FIDC, adquirindo apenas cotas sênior e mezanino do FIDC. Em 3 de novembro de 2020 e 1º de
+     novembro de 2021, os investidores terceiros resgataram todo o seu capital referente às cotas
+     seniores e cotas mezanino. Em 27 de dezembro de 2021 o PagSeguro transferiu 15% de suas
+     quotas subordinadas para o PagSeguro Digital. Portanto, em 31 de dezembro de 2021, o FIDC era
+     composto apenas por quotas subordinadas, que são 100% detidas pelo Grupo PagSeguro, sendo
+     85% pelo PagSeguro Internet e 15% pelo PagSeguro Digital.
+
+     Em 31 de outubro de 2020, o Pagseguro adquiriu 100% das ações emitidas da MOIP. A empresa
+     fornece plataforma de pagamento online e processamento de pagamentos ponta a ponta para o
+     comercio eletrônico. Além disso, a MOIP possui licença concedida pelo BACEN para atuar como
+     instituição de pagamento.
+
+
+
+
+13
+
+=== página 21 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+     2. Apresentação e elaboração das demonstrações financeiras e principais
+        práticas contábeis -- Continuação
+     2.4. Títulos e valores mobiliários
+
+          Os títulos e valores mobiliários são avaliados e classificados de acordo com os critérios
+          estabelecidos pela Circular BACEN nº 3.068/01, nas seguintes categorias:
+
+          i.    Títulos para negociação: títulos adquiridos com o propósito de serem ativa e
+                frequentemente negociados. São ajustados pelo seu valor de mercado em contrapartida
+                ao resultado do período.
+          ii.   Títulos mantidos até o vencimento: títulos adquiridos com a intenção e capacidade
+                financeira para sua manutenção em carteira até o vencimento. São registrados pelo custo
+                de aquisição, acrescidos dos rendimentos auferidos em contrapartida ao resultado do
+                período. Nesta categoria, os títulos não são ajustados ao seu valor de mercado. Para os
+                títulos reclassificados para esta categoria, o ajuste de marcação a mercado é incorporado
+                ao custo, sendo contabilizados prospectivamente pelo custo amortizado, usando o
+                método da taxa de juros efetiva.
+           iii. Títulos disponíveis para venda: títulos que não se enquadrem para negociação nem
+                como mantidos até o vencimento. São ajustados pelo seu valor de mercado em
+                contrapartida à conta destacada do Patrimônio líquido, deduzidos dos efeitos tributários;
+
+          Em 31 de dezembro de 2021, o Conglomerado possuía títulos classificados nas categorias
+          descritas nos itens (i) e (iii). Não houve reclassificações entre categorias para o semestre
+          findo em 31 de dezembro de 2021.
+
+          O valor de mercado dos instrumentos financeiros, quando aplicável, é calculado com base em
+          preços de mercado praticados para os mesmos instrumentos financeiros adquiridos pelo
+          Conglomerado. Assim, quando da liquidação financeira destas operações, os resultados
+          poderão ser diferentes das estimativas. Os instrumentos financeiros são negociados de forma
+          ativa e frequente cujos preços baseiam-se em fontes de informações independentes em
+          consonância com a Resolução do CMN nº 4.277/13.
+
+     2.5. Relações interfinanceiras
+
+          Os valores são principalmente relacionados a recebíveis de emissores de cartões de
+          crédito/débito e adquirentes originados de transações por meio da plataforma do
+          Conglomerado. Se o recebível é esperado em um ano ou menos, eles são classificados como
+          ativo circulante. Caso contrário, eles são classificados como ativo realizável a longo prazo.
+
+
+
+
+17
+
+=== página 22 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+       2. Apresentação e elaboração das demonstrações financeiras e principais
+       práticas contábeis -- Continuação
+         Com base na avaliação de risco, o Conglomerado estabelece uma redução ao valor
+         recuperável de contas a receber. A provisão considera que o saldo de relações
+         interfinanceiras é composto principalmente de transações aprovadas por grandes instituições
+         financeiras, com um nível baixo de risco, e boas avaliações das principais agências de rating.
+         O Conglomerado realizou essa avaliação de risco, conforme descrito na nota 26. Além disso,
+         essas instituições financeiras são os devedores legais dos acordos de recebíveis.
+
+         O Conglomerado incorre em despesas financeiras quando solicita receber o pagamento
+         antecipado das relações interfinanceiras de instituições financeiras. A despesa financeira é
+         reconhecida quando a instituição financeira concorda em liquidar um recebível devido em
+         parcelas pré-pagas e é registrado como despesas operacionais na demonstração do
+         resultado.
+
+     2.6. Investimentos
+
+         A participação em controladas é avaliada pelo método da equivalência patrimonial, como
+         demonstrado na nota 9.
+
+     2.7. Imobilizado em uso
+
+         Os itens do imobilizado são mensurados pelo seu custo histórico, menos depreciação
+         acumulada. O custo histórico inclui os gastos diretamente atribuíveis à aquisição dos itens e
+         pode incluir os custos de financiamento relacionados com a aquisição de ativos qualificados.
+
+         Os custos subsequentes são incluídos no valor contábil do ativo ou reconhecidos como um
+         ativo separado, conforme apropriado, somente quando for provável que fluam benefícios
+         econômicos futuros associados a esses custos e que possam ser mensurados com
+         segurança.
+
+         Os valores residuais e a vida útil dos ativos são revisados e ajustados, se apropriado, ao final
+         de cada exercício. A depreciação de outros ativos é calculada usando o método linear
+         considerando os seus custos e seus valores residuais durante a vida útil estimada, como
+         segue:
+         Equipamento de processamento de dados                    2,5 a 5 anos
+         Móveis e utensílios                                           10 anos
+         Benfeitoria em imóveis de terceiros                           10 anos
+         Máquinas e equipamentos                                   5 a 10 anos
+
+         O valor contábil de um ativo é imediatamente baixado para seu valor recuperável se o valor
+         contábil do ativo for maior que seu valor recuperável estimado.
+
+
+
+
+18
+
+=== página 23 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+práticas contábeis -- Continuação
+     2.8. Intangível
+
+          As licenças de softwares são capitalizadas com base nos custos incorridos para adquirir os
+          softwares e fazer com que eles estejam prontos para serem utilizados. Esses custos são
+          amortizados pelo método linear durante a vida útil estimada dos softwares de cinco anos.
+
+          Os custos associados à manutenção de softwares são reconhecidos como despesa,
+          conforme incorridos. Os custos de desenvolvimento que são diretamente atribuíveis ao
+          projeto e aos produtos de software identificáveis e exclusivos, controlados pelo
+          Conglomerado, são reconhecidos como ativos intangíveis.
+
+          Os custos diretamente atribuíveis, que são capitalizados como parte do produto de software,
+          incluem os custos com empregados alocados no desenvolvimento de softwares. Os custos
+          também incluem, se aplicável, os custos de financiamento incorridos durante o período de
+          desenvolvimento do software.
+
+          Outros gastos de desenvolvimento que não atendam aos critérios de capitalização são
+          reconhecidos como despesa, conforme incorridos. Os custos de desenvolvimento
+          previamente reconhecidos como despesa não são reconhecidos como ativo em período
+          subsequente. Os custos de desenvolvimento de softwares reconhecidos como ativos são
+          amortizados durante sua vida útil estimada não superior a cinco anos.
+
+     2.9. Redução ao valor recuperável de ativos
+
+          Os ativos financeiros e não financeiros são avaliados ao fim de cada período de reporte, com
+          o objetivo de identificar evidências de desvalorização em seu valor contábil. Se houver
+          alguma indicação, o Conglomerado deve estimar o valor recuperável do ativo e tal perda deve
+          ser reconhecida imediatamente na demonstração do resultado. O valor recuperável de um
+          ativo é definido como o maior montante entre o seu valor justo e o seu valor em uso.
+
+     2.10. Ágio
+
+          O ágio corresponde ao valor pago excedente ao valor contábil dos investimentos adquiridos,
+          decorrente da expectativa de rentabilidade futura e sustentado por estudos econômico-
+          financeiros que fundamentaram o preço de compra dos negócios. O ágio fundamentado na
+          previsão de resultados futuros é amortizado pelo prazo de cinco anos, devendo ainda ser
+          submetido anualmente ao teste de redução no valor recuperável, ou com maior frequência,
+          quando houver indicação de que a unidade geradora de caixa poderá apresentar redução no
+          valor recuperável. O ágio decorrente de investimentos em controladas é classificado na
+          rubrica de investimento nas demonstrações financeiras, conforme demonstrado na nota 9.
+
+
+
+
+19
+
+=== página 24 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+   práticas contábeis--Continuação
+     2.11. Obrigações com terceiros e Depósitos
+
+          As obrigações com terceiros referem-se a saldos devidos a clientes que utilizam a plataforma
+          do PagSeguro. O Conglomerado reconhece o valor justo da transação, ou seja, o montante
+          líquido do custo de transação. O valor de obrigações com terceiros registrado como depósitos
+          se refere ao valor disponível para retirada do cliente, enquanto o montante registrado como
+          outras obrigações correspondem aos montantes a serem ainda repassados aos
+          estabelecimentos comerciais referentes às transações feitas pelos portadores de cartões.
+
+     2.12. Empréstimos
+
+          Os empréstimos obtidos são inicialmente reconhecidos pelo valor justo menos quaisquer
+          custos de transação diretamente atribuíveis. Após o reconhecimento inicial, esses passivos
+          financeiros são mensurados pelo custo amortizado utilizando o método de juros efetivos,
+          exceto pelo derivativo embutido, que é mensurado pelo valor justo por meio do resultado.
+
+          Ganhos e perdas são reconhecidos na demonstração do resultado consolidado quando os
+          passivos são baixados, bem como por meio do processo de amortização pelo método dos
+          juros efetivos. O custo amortizado é calculado considerando qualquer desconto ou prêmio na
+          aquisição e taxas ou custos que são parte integrante do método de juros efetivos. A
+          amortização do método de juros efetivos é incluída na despesa de juros nas demonstrações
+          de resultados.
+
+     2.13. Provisões
+
+          O Conglomerado é parte em processos judiciais e administrativos de natureza tributária,
+          trabalhista e cível, decorrentes do curso normal de suas atividades.
+
+          As provisões incluem as obrigações legais, processos judiciais e administrativos relacionados
+          a obrigações tributárias, previdenciárias e cíveis, cujo objeto de contestação é sua legalidade
+          ou constitucionalidade, que independentemente da avaliação acerca da probabilidade de
+          sucesso, tem os seus montantes reconhecidos integralmente nas demonstrações financeiras.
+
+          As provisões são reavaliadas em cada data de balanço para refletir a melhor estimativa
+          corrente e podem ser totais ou parcialmente revertidas ou reduzidas quando deixam de ser
+          prováveis as saídas de recursos e obrigações pertinentes ao processo, incluindo a
+          decadência dos prazos legais, o trânsito em julgado dos processos, dentre outros.
+
+
+
+
+20
+
+=== página 25 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+práticas contábeis--Continuação
+          As provisões judiciais e administrativas são constituídas quando o risco de perda da ação
+          judicial ou administrativa for avaliado como provável e os montantes envolvidos forem
+          mensuráveis com suficiente segurança, com base na natureza, complexidade, histórico das
+          ações, opinião dos assessores jurídicos internos e externos e nas melhores informações
+          disponíveis. Para as provisões cujo risco de perda é possível, as provisões não são
+          constituídas e as informações são divulgadas nas notas explicativas, para as provisões cujo
+          risco de perda é remota não é requerida a divulgação.
+
+          Os ativos contingentes não são reconhecidos contabilmente, exceto quando há garantias
+          reais ou decisões judiciais favoráveis, sobre as quais não cabem mais recursos,
+          caracterizando o ganho como praticamente certo. Os ativos contingentes com êxito provável,
+          quando existentes, são apenas divulgados nas demonstrações financeiras.
+
+          No caso de trânsitos em julgado favoráveis ao Conglomerado, a contraparte tem o direito,
+          caso atendidos requisitos legais específicos, de impetrar ação rescisória em prazo
+          determinado pela legislação vigente. Ações rescisórias são consideradas novas ações e
+          serão avaliadas para fins de passivos contingentes se, e quando, forem impetradas.
+
+     2.14. Reconhecimento da receita
+
+          A receita compreende o valor justo da contraprestação recebida ou a receber pela
+          comercialização de serviços no curso normal das atividades do Conglomerado. As receitas de
+          prestação de serviços são representadas substancialmente por:
+
+          • Receita com taxa de intermediação: receitas de taxas cobradas pela intermediação de
+            pagamentos eletrônicos. São reconhecidas em termos brutos e os custos de transação
+            relacionados são reconhecidos como despesas operacionais; e
+          • Receita com pré-pagamento: taxa de desconto cobrada sobre os pagamentos antecipados
+            de obrigações com terceiros (merchants). A receita é reconhecida quando é efetuado o
+            pagamento para os merchants de forma antecipada referente aos recebíveis de origem de
+            vendas parceladas. Esta receita é registrada na rubrica de receita de prestação de serviços
+            na demonstração do resultado; e
+          • Receita de adesão: Taxa não reembolsável para adesão de clientes ao ecossistema de
+            serviços providos pelo PagSeguro. A receita de adesão é diferida ao longo do tempo
+            baseado nas métricas internas dos clientes do portfólio do PagSeguro. O saldo registrado
+            no balanço patrimonial na rubrica de resultados de exercícios futuros é composto por esta
+            receita diferida.
+
+
+
+
+21
+
+=== página 37 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+9.Investimentos--Continuação
+Informações das investidas em 31 de dezembro de 2020:
+
+
+                                                                            Participação
+                                                                             no capital
+                       Capital       Patrimônio       Lucro/Prejuízo          social e       Equivalência     Investimentos
+Controladas diretas    social         líquido           semestre            votante (%)       patrimonial    em controladas
+
+Net+Phone (i)          436.665          307.729             (92.379)               99,99         (82.694)           307.729
+Boa Compra (ii)        105.381          162.893               11.557               99,99           29.751           162.893
+BCPS                        18            1.934                  296               99,95            (205)             1.934
+R2TETCH                     10           10.872                3.671               99,99            8.864            10.872
+BIVA                    26.127           15.154              (2.763)               99,99          (3.143)            15.154
+TILIX (iii)             19.335            7.382              (1.599)               99,99          (6.240)             7.382
+YAMÍ (iv)                  155              964                  (45)              99,99              834               964
+RegistraSeguro           5.051            5.000                  (12)              99,99              (50)            5.000
+Zygo (v)                 3.706              232                     -              99,99          (1.652)               232
+CDS (vi)                 8.203            2.641                     -              99,99          (2.450)             2.641
+
+Não controlada
+NETPOS                           -                -                 -              10,00            (100)             1.400
+                                                                                                 (57.085)           516.201
+
+                                                                        Ágio gerado aquisição controladas          242.060
+                                                                                        Amortização ágio           (26.526)
+                                                                                                     Total         731.735
+
+
+
+
+10. Imobilizado
+
+
+                                                        31 de dezembro de 2021                   31 de dezembro de 2020
+                                                             Depreciação                               Depreciação
+                                                    Custo     acumulada    Líquido            Custo     acumulada    Líquido
+Máquinas e equipamentos (a)                       2.796.536      (653.155) 2.143.381        1.879.816     (203.331) 1.676.485
+Equipamentos de processamento de dados              104.176       (49.662)    54.514           75.321      (34.554)    40.767
+Benfeitorias em imóveis de terceiros                 14.990        (2.762)    12.228            9.070       (1.612)     7.458
+Móveis e utensílios                                   3.798        (1.158)     2.640            3.982         (893)     3.089
+Outros                                                7.585        (2.880)     4.705            5.307       (2.376)     2.931
+Total                                             2.927.085      (709.617) 2.217.468        1.973.496     (242.766) 1.730.730
+
+
+
+
+33
+
+=== página 38 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+10. Imobilizado--Continuação
+Movimentação do imobilizado:
+
+
+
+
+                                    Máquinas e           Equipamentos             Benfeitorias
+                                   equipamentos        processamento de           imóveis de           Móveis e
+                                        (a)                 dados                  terceiros           utensílios       Outros            Total
+
+Em 1 de janeiro de 2020
+Saldo inicial                             342.757                      45.635             6.041              1.667           785            396.885
+Custo                                   1.509.142                      11.734             2.225              2.077         4.164          1.529.342
+  Adições                               1.518.971                      13.167             2.225              2.089           143          1.536.594
+  Aquisição de subsidiária                       -                          -                 -                   -        4.021               4.021
+  Baixas                                   (9.829)                    (1.433)                 -                (12)            -            (11.274)
+Depreciação                             (175.414)                    (16.602)             (808)              (655)       (2.020)          (195.499)
+  Adições                               (175.678)                    (16.622)             (808)              (655)       (2.020)          (195.783)
+  Baixas                                       264                         20                 -                   -            -                 284
+Saldo contábil, líquido                 1.676.485                      40.767             7.458              3.089         2.931          1.730.730
+
+Em 31 de dezembro de 2020
+Custo                                   1.879.816                      75.321              9.070             3.982         5.307          1.973.496
+Depreciação acumulada                   (203.331)                    (34.554)            (1.612)             (893)       (2.376)          (242.766)
+Saldo contábil, líquido                 1.676.485                      40.767              7.458             3.089         2.931          1.730.730
+
+Em 31 de dezembro de 2021               1.676.485                      40.767              7.458             3.089         2.931          1.730.730
+Custo                                     916.720                      28.855              5.920             (184)         2.279            953.590
+  Adições                                 931.270                      29.839              5.920               276         4.004            971.309
+  Baixas                                  (14.550)                      (984)                  -             (460)       (1.725)            (17.719)
+Depreciação                             (449.824)                    (15.108)            (1.150)             (265)         (505)          (466.852)
+  Adições                               (453.190)                    (16.048)            (1.150)             (470)       (1.275)          (472.133)
+  Baixas                                     3.366                        940                  -               205           770               5.281
+Saldo contábil, líquido                 2.143.381                      54.514            12.228              2.640         4.705          2.217.468
+Em 31 de dezembro de 2021
+Custo                                   2.796.536                    104.176             14.990               3.798        7.585          2.927.085
+Depreciação acumulada                   (653.155)                    (49.662)            (2.762)            (1.158)      (2.880)          (709.617)
+Saldo contábil, líquido                 2.143.381                      54.514            12.228               2.640        4.705          2.217.468
+
+
+      (a)   O valor contábil de custo de máquinas e equipamentos inclui o montante de R$2.736.858 referente as máquinas POS (R$1.835.927 em 31 de
+            dezembro de 2020), as quais apresentam vida útil de 5 anos. A depreciação acumulada das máquinas POS em 31 de dezembro de 2021 é de
+            R$645.187 (R$200.146 em 31 de dezembro de 2020).
+
+
+
+
+34
+
+=== página 39 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+11. Intangível
+                                                     31 de dezembro de 2021                                  31 de dezembro de 2020
+                                                           Amortização                                              Amortização
+                                                Custo       acumulada     Líquido                        Custo       acumulada     Líquido
+Ativos intangíveis:
+   Gastos com software e tecnologia           1.997.964             (774.435)        1.223.529          1.297.161              (491.656)        805.505
+Outros ativos intangíveis:
+   Direito de uso de software                   157.658              (46.716)          110.942             93.573               (25.728)         67.845
+   Marcas e patentes                                 25                     -               25                 25                      -             25
+                                              2.155.647             (821.151)        1.334.496          1.390.759              (517.384)        873.375
+
+Movimentação do intangível:
+
+                                            Gastos com                Direito de
+                                             software e                uso de                 Marcas e
+                                            tecnologia                software                patentes              Total
+Em 1 de janeiro de 2020
+Saldo inicial                                        471.750                41.825                      25          513.600
+Custo                                                513.530                40.400                       -          553.930
+  Adições (a)                                        516.455                40.400                                  556.855
+  Baixas                                              (2.925)                    -                                   (2.925)
+Amortização                                        (179.775)              (14.380)                         -      (194.155)
+  Adições                                          (181.814)              (14.380)                                (196.194)
+  Baixas                                                2.039                    -                                     2.039
+Saldo contábil, líquido                              805.505                67.845                      25          873.375
+Em 31 de dezembro de 2020
+Custo                                             1.297.161                 93.573                      25        1.390.759
+Amortização acumulada                             (491.656)               (25.728)                       -        (517.384)
+Saldo contábil, líquido                             805.505                 67.845                      25          873.375
+
+Em 31 de dezembro de 2021
+Saldo inicial                                        805.505               67.845                       25           873.375
+Custo                                                700.803               64.085                        -           764.888
+   Adições (a)                                       719.579               64.085                        -           783.664
+   Baixas                                            (18.776)                   -                        -           (18.776)
+Amortização                                        (282.779)             (20.987)                        -         (303.766)
+   Adições                                         (304.185)             (24.715)                        -         (328.900)
+   Baixas                                              21.406               3.728                        -             25.134
+Saldo contábil, líquido                            1.223.529             110.943                        25         1.334.497
+Em 31 de dezembro de 2021
+Custo                                              1.997.964             157.658                        25         2.155.647
+Amortização acumulada                              (774.435)             (46.716)                         -        (821.150)
+Saldo contábil, líquido                            1.223.529             110.942                        25/        1.334.497
+
+     (a)   As adições se referem a gastos pulverizados com desenvolvimento de software, principalmente relacionados a melhora da experiência do cliente,
+           tais como: Conta digital, pagamento digital, aplicativo de celular, novas plataformas estruturais de dados e digitais, entre outros.
+
+
+
+
+35
+
+=== página 40 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+12. Depósitos
+
+                                                                 31 de dezembro de 2021                31 de dezembro de 2020
+           Depósitos a prazo (a)                                              8.622.602                              4.564.832
+           Outros depósitos (b)                                                 549.417                                750.988
+           Depósitos interfinanceiros (c)                                       404.997                                       -
+                                                                              9.577.016                              5.315.820
+           Curto prazo                                                        7.936.025                              5.121.730
+           Longo prazo                                                        1.640.991                                194.090
+                                                           ...
+     (a)    O saldo é composto: (i) pelo valor mantido pelos clientes em suas respectivas contas de pagamentos e é remunerado mensalmente no dia de
+            aniversário do depósito por uma média de 59% do CDI (45% em 31 de dezembro de 2020) e (ii) pelos certificados de depósitos bancários que são
+            remunerados por uma média de 155% do CDI (162% em 31 de dezembro de 2020).
+
+     (b)    Os depósitos são compostos substancialmente por saldos que já foram repassados aos estabelecimentos comerciais referentes as transações web,
+            transações feitas pelos portadores de cartões e o valor disponível nos cartões pré-pagos, de forma que o saldo está disponível para retirada e/ou uso
+            dos clientes.
+
+     (c)    O saldo se refere a deposito interfinanceiro com outras instituições financeiras do Brasil remunerado pela taxa de 118% do CDI.
+
+     A despesa com remuneração dos depósitos a prazo para o exercício findo em 31 de dezembro de
+     2021 totaliza R$264.933 (R$33.043 para 31 de dezembro de 2020).
+
+13. Outras obrigações - Diversas
+
+                                                                 31 de dezembro de 2021                31 de dezembro de 2020
+      Valores a repassar a estabelecimentos
+      Obrigações com terceiros (a)                                                  7.300.245                               5.449.889
+      ...
+      Diversas curto prazo
+      Fornecedores                                                                     563.014                                415.166
+      Salários e encargos                                                              189.215                                128.987
+      Partes relacionadas (b)                                                           91.093                                539.160
+      Outras contas a pagar                                                            115.461                                 78.518
+                                                                                       958.783                              1.161.832
+
+
+                                                                 31 de dezembro de 2021                  31 de dezembro de 2020
+       Diversas longo prazo
+       IR e CS diferido (c)                                                           1.655.743                              1.311.133
+       Contingências (d)                                                                380.299                                347.202
+       Total                                                                          2.036.042                              1.658.335
+
+     (a) As obrigações com terceiros correspondem aos montantes a serem repassados aos estabelecimentos comerciais referentes às transações feitas pelos
+     portadores de cartões, líquidas das taxas de intermediação e descontos aplicados. De forma geral, o prazo médio de liquidação do Conglomerado com os
+     estabelecimentos comerciais é de até 14 dias.
+
+     (b) As operações com partes relacionadas estão detalhadas na nota 15.
+
+     (c) As operações de IR e CS diferido estão detalhadas na nota 17.
+
+     (d) As operações de contingências estão detalhadas na nota 18.
+
+
+
+
+36
+
+=== página 44 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+17. Imposto de renda corrente e diferido--Continuação
+     Reconciliação do imposto de renda e da contribuição social registrados no resultado dos exercícios
+     findos em 31 de dezembro de 2021 e 2020:
+                                                                                 31 de dezembro de             31 de dezembro de
+                                                                                        2021                          2020
+
+     Lucro líquido do exercício antes do imposto de renda e da
+                                                                                             1.729.534                      1.856.153
+     contribuição social
+     Juros sobre capital próprio                                                                17.575                                -
+     Lucro líquido do exercício antes do imposto de renda e da
+                                                                                             1.747.109                                -
+     contribuição social
+     Alíquota vigente                                                                              34%                            34%
+     Expectativa da despesa de imposto de renda e contribuição
+     social, em relação ao lucro contábil antes desses impostos,
+     de acordo com a alíquota vigente                                                        (594.017)                       (631.092)
+
+     Efeito do imposto de renda e da contribuição social sobre:
+     Adições (exclusões) permanentes:
+          Participações no lucro                                                                76.230                          24.866
+          Brindes                                                                                   363                        (2.836)
+          Benefício com pesquisa e inovação tecnológica                                        182.545                        128.919
+          Resultado de participações em coligadas e controladas                                 15.410                        (25.553)
+          Outras adições (exclusões)                                                            (2.191)                         13.678
+     Despesa com imposto de renda e contribuição social
+     registrada no resultado do exercício                                                    (321.660)                       (492.018)
+     ...
+     Provisão para Imposto de Renda                                                           (60.878)                        (44.744)
+     Provisão para Contribuição Social                                                        (35.927)                        (14.894)
+     Ativo Fiscal Diferido                                                                   (224.855)                       (432.380)
+     Alíquota efetiva                                                                             17%                             27%
+
+
+
+18. Contingências
+
+                                                                     31 de dezembro de 2021               31 de dezembro de 2020
+        Contingências tributárias:
+        Imposto sobre serviços - ISS (i)                                                 164.099                              150.249
+        Contribuição para o financiamento da
+          seguridade social - COFINS (ii)                                                158.285                              151.517
+        Programa de integração social - PIS (ii)                                          25.721                               24.621
+        Contingências cíveis                                                              30.644                               20.142
+        Contingências trabalhistas                                                         1.550                                  673
+                                                                                         380.299                              347.202
+
+       (i) Imposto sobre serviços decorrente substancialmente das receitas de operações de intermediação financeira.
+       (ii) O montante registrado nessa rubrica refere-se substancialmente aos valores de PIS e COFINS sobre receitas financeiras sobre
+            antecipações de recebíveis.
+
+
+
+
+40
+
+=== página 45 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+18. Contingências--Continuação
+      O Conglomerado obteve uma decisão judicial na qual recolhe por meio de depósito judicial, até o
+      julgamento do mérito os itens “i” e “ii”, conforme descrito na nota 8.
+
+      A movimentação de contingências para o exercício findo em 31 de dezembro de 2021 está
+      demonstrada no quadro abaixo:
+
+                        1 de janeiro de 2020                   Adições                   Baixas          Atualizações          31 de dezembro de 2020
+     Cível                              8.650                   22.167                 (12.940)                   265                           20.142
+     Trabalhista                        2.495                    8.901                 (10.745)                    22                              673
+     Tributário (i)                   270.388                   46.828                     (16)                 9.196                          326.396
+                                      281.533                   77.896                 (21.710)                 9.483                          347.211
+
+
+
+                       31 de dezembro de 2020                   Adições                  Baixas             Atualizações         31 de dezembro de 2021
+     Cível                              20.142                      18.515                 (10.307)                2.294                         30.644
+     Trabalhista                           673                         236                    (197)                  838                           1.550
+     Tributário (i)                    326.396                       1.401                        -              20.308                         348.105
+                                       347.211                      20.152                 (10.504)              23.440                         380.299
+
+        (i) Referem-se a discussões sobre a elegibilidade de alguns tributos, os quais estão sendo depositados em juízo, como demonstrado na nota 8.
+
+
+      O Conglomerado é parte em ações tributárias e cíveis envolvendo riscos classificados pelos
+      assessores jurídicos como de perda possível, para os quais nenhuma provisão foi constituída em
+      31 de dezembro de 2021, totalizam aproximadamente R$17.296 (R$40.704 em 31 de dezembro de
+      2020). O Conglomerado não é parte em processos trabalhistas que envolvam riscos classificados
+      pela administração como perdas possíveis.
+
+      Em 15 de outubro de 2021, o Pagseguro Internet foi autuado pela Receita Federal do Brasil (“RFB”)
+      por não recolhimento de IOF sobre operações financeiras (“IOF”) sobre empréstimos entre
+      empresas do grupo. O IOF incide sobre operações de crédito de qualquer natureza, inclusive
+      empréstimos intercompany. O valor desta autuação foi de R$ 239.812.
+
+      A Companhia apresentou sua defesa, esclarecendo que as operações realizadas entre o
+      PagSeguro e suas controladas não são operações de crédito. O Grupo possui um caixa
+      centralizado e, de acordo com a lei, esse tipo de operação não é tributável pelo IOF.
+
+19. Patrimônio líquido
+
+      Capital social
+
+      Em 31 de dezembro de 2021, o capital social totalmente subscrito e integralizado, é de
+      R$4.676.969 (R$5.230.994 em 31 de dezembro de 2020), representado por 1.662.133.845 ações
+      ordinárias, sem valor nominal, a redução de capital social deve-se a reestruturação societária,
+      conforme destacado na nota 1.
+
+
+41
+
+=== página 46 ===
+Conglomerado Prudencial PagSeguro Internet S.A.
+Notas explicativas às demonstrações financeiras
+Exercício findo em 31 de dezembro de 2021
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+19. Patrimônio líquido--Continuação
+     Participação de não controladores
+
+     Em 31 de dezembro de 2021, há a participação de não controladores no patrimônio líquido do
+     Conglomerado, sendo, R$512.663 referente ao BancoSeguro e R$632.295 referente à 15% da
+     participação do FIDC ao PagSeguro Digital (em 31 de dezembro de 2020 o PagSeguro Internet
+     detinha 100% da participação).
+
+     Reserva legal
+
+     A reserva legal é constituída de acordo com o Estatuto, sendo 5% do lucro líquido anual até o limite
+     de 20% do capital social realizado. A Administração do Conglomerado propôs a constituição de
+     reserva legal de R$55.508, referente ao lucro líquido do exercício findo em 31 de dezembro de
+     2021. A reserva legal somente será utilizada para aumento do capital ou para absorção de
+     prejuízos.
+
+     Reserva de retenção de lucros
+
+     A Administração do Conglomerado propôs a constituição de reserva de retenção de lucros de
+     R$666.636, referente ao lucro líquido do exercício findo em 31 de dezembro de 2021.
+
+     Dividendos
+
+     Por meio de reuniões da Diretoria realizadas em 17 de novembro de 2021, 27 de dezembro de
+     2021 e 28 de dezembro de 2021, os diretores da Companhia aprovaram a distribuição de
+     dividendos intercalares de R$388.032 (R$376.554 no exercício findo em 31 de dezembro de 2020).
+
+     Ajustes de avaliação patrimonial
+
+     O Conglomerado reconhece nesta rubrica o efeito acumulado da conversão de balanços em moeda
+     estrangeira da sua controlada BCPS no valor de R$380 e o ajuste a valor de mercado dos
+     instrumentos financeiros no valor de R$(384). O saldo acumulado em 31 de dezembro de 2021 é de
+     R$(4) (R$625 em 31 de dezembro de 2020).
+
+20. Resultado de operações com instrumentos financeiros
+
+                                      31 de dezembro de 2021   31 de dezembro de 2020
+     Rendas de operações de crédito                  316.458                    77.664
+     Letras financeiras do tesouro                    55.418                    37.681
+     Depósitos interfinanceiros                       12.430                    27.346
+     Outras receitas de juros                          5.423                    17.082
+                                                     389.729                   159.773
+
+
+
+
+42

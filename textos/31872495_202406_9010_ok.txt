@@ -1,0 +1,1106 @@
+
+=== página 3 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                ÍNDICE
+
+
+                Relatório da administração .......................................................................................................................................3
+                Relatório dos auditores independentes sobre as demonstrações financeiras .............................. 6
+                Balanços patrimoniais..................................................................................................................................................8
+                Demonstrações de resultado .................................................................................................................................. 9
+                Demonstrações dos resultados abrangentes ...............................................................................................12
+                Demonstrações das mutações do patrimônio líquido .............................................................................. 11
+                Demonstrações dos fluxos de caixa ...................................................................................................................14
+                Notas explicativas às demonstrações financeiras ......................................................................................15
+
+
+
+
+                                                                                                                                                                                     2
+
+
+Classificação: Pública
+
+=== página 4 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                RELATÓRIO DA ADMINISTRAÇÃO
+
+                Prezado leitor,
+
+                O Banco C6 S.A. (“C6 Bank”), situado em São Paulo, é um banco completo para pessoas físicas, MEIs e
+                pequenas e médias empresas, que forma um grupo (“Grupo C6 Bank”) que reúne também o Banco C6
+                Consignado (“C6 Consig”), a C6 Corretora de Títulos e Valores Mobiliários (“C6 CTVM”), empresas de
+                tecnologia para meios de pagamento e assessorias de seguros. Juntas, as empresas somam cerca de
+                3,5 mil funcionários.
+
+                Impacto social
+                O C6 Bank está focado em estabelecer conexões entre a atuação do banco e as demandas da
+                sociedade. Nossa área de ESG (Environmental, Social, and Governance) promove práticas de
+                sustentabilidade, na perspectiva ambiental, de responsabilidade social e governança, reforçando a
+                imagem do banco como uma instituição ambientalmente consciente e socialmente responsável. Esses
+                valores são integrados em nossa estratégia, produtos e serviços, garantindo um compromisso
+                contínuo com a sustentabilidade.
+
+                No primeiro semestre de 2024, mantivemos nosso foco ambiental e climático alinhado ao
+                compromisso de reduzir as emissões de gases de efeito estufa (GEE) e a divulgar informações
+                ambientais de forma transparente. Além de elaborar o inventário de gases do efeito estufa (GEE)
+                referente a 2023, realizamos um estudo sobre as emissões financiadas e desenvolvemos um plano
+                interno com metas e ações para descarbonização. Também compensamos as emissões residuais de
+                escopo 1 e 2, e continuamos a investir em projetos de educação e preservação ambiental.
+
+                Já o pilar social concentrou esforços em promover iniciativas de educação financeira e de apoio a
+                situações emergenciais na região sul do país, além de aprimorar a acessibilidade nos canais de
+                atendimento do banco e ampliar o investimento em projetos que impactam diretamente a vida de
+                pessoas que fazem parte de grupos minorizados.
+
+                Na esfera da governança, o foco esteve na elaboração do relato integrado de sustentabilidade,
+                seguindo as normas internacionais GRI e SASB, além de apoiar o aprimoramento da gestão de riscos
+                sociais, ambientais e climáticos na concessão de crédito. Também implementamos diretrizes ESG para
+                avaliação de produtos e serviços lançados e atualizados, além de avançar na agenda de gestão de
+                vulnerabilidades de clientes.
+
+                Meio Ambiente e Clima
+                Em linha com nosso posicionamento, temos o compromisso de reduzir as emissões de gases de efeito
+                estufa (GEE) provenientes de nossas operações seguindo parâmetros estabelecidos com base
+                científica e a divulgar informações ambientais de forma transparente. Aprimoramos nossas práticas
+                conforme a evolução do negócio e nos posicionamos frente às mudanças climáticas como um agente
+                de transformação.
+
+                Gerenciamos o desempenho de nossas emissões com base em inventários anuais, seguindo os critérios
+                do Protocolo de Gases de Efeito Estufa (GHG Protocol). Aprimoramos nosso inventário para incluir mais
+                dados físicos, como as distâncias percorridas nas entregas de cartões. Também realizamos um estudo
+                interno sobre as emissões de GEE atribuídas indiretamente à concessão de crédito, abrangendo as
+                carteiras de crédito para pessoas jurídicas (PJ) e veículos para pessoas físicas (PF), conforme a
+                metodologia do PCAF. Além disso, em linha com nosso compromisso com o Movimento Ambição Net
+                Zero, criamos um plano interno com metas e ações para descarbonização das nossas emissões de
+                escopo 1 e 2.
+
+                Nossos clientes também podem fazer a diferença. Continuamos a acompanhar e aprimorar a
+                experiência do produto Extrato de Carbono, lançado em março de 2023, que calcula automaticamente
+                a pegada de carbono de cada cliente, seja pessoa física ou jurídica, com base nos gastos cotidianos no
+                cartão de débito e crédito, além de transferências e Pix. Tudo isso de forma automática e gratuita.
+
+                Na frente de educação ambiental, disponibilizamos o livro físico “Amazônia das Crianças”, do fotógrafo
+                Araquém Alcântara, patrocinado pelo C6 Bank e Mastercard, para escolas interessadas, além do
+
+
+                                                                                                                    3
+
+
+Classificação: Pública
+
+=== página 5 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                download gratuito no site do banco. Continuamos nossa participação na Coalizão Priceless Planet, que
+                visa plantar mais de 100 mil árvores ao redor do mundo, e promovemos ações de conscientização
+                ambiental com nossos colaboradores, como o Plantio de Horta Agroecológica durante a semana do
+                Dia do Meio Ambiente.
+
+                Social
+                Buscamos impactar positivamente a sociedade por meio de uma estratégia que conecta nosso
+                negócio aos pilares de Educação Financeira, Relacionamento com Comunidades e Diversidade,
+                Equidade e Inclusão (DEI).
+
+                A Educação Financeira, um dos pilares que priorizamos nesse contexto, é parte da nossa cultura
+                corporativa, representada no manifesto do banco. No primeiro semestre de 2024, estivemos focados
+                em promover uma trilha de educação financeira completa para colaboradores e beneficiários de
+                organizações sociais que fazem parte da nossa rede. Para clientes, facilitamos o acesso a conteúdo no
+                Canal do Youtube e Blog, além de inserirmos direcionamento sobre conteúdos de finanças pessoais no
+                chatbot.
+
+                O Relacionamento com Comunidades, por sua vez, se materializa em conexões que estabelecemos
+                com organizações sociais e projetos que atuam diretamente no apoio a populações vulneráveis, por
+                meio de ações de voluntariado e campanhas solidárias realizadas periodicamente. Também
+                facilitamos o acesso, em nosso aplicativo, da funcionalidade de doações, que faz a ponte entre clientes
+                e organizações sociais que atuam em diferentes causas. No primeiro semestre, realizamos ações de
+                voluntariado como doação de sangue e plantio coletivo, além de campanhas emergenciais e solidárias,
+                como a destinada ao Rio Grande do Sul e a de Inverno, respectivamente.
+
+                Já em Diversidade, Equidade e Inclusão (DEI), temos avançado no aprimoramento contínuo das
+                práticas voltadas a promover ambientes de trabalho diversos e inclusivos, com foco na ampliação de
+                representatividade de grupos minorizados e acompanhamento de indicadores por dashboards
+                atualizados em tempo real, reportando, inclusive, um Relatório de Equidade Salarial ao Ministério do
+                Trabalho e Emprego (MTE). Também buscamos ir além de nossa esfera de trabalho, apoiando projetos
+                que impactam diretamente a vida de pessoas e implementamos recursos de acessibilidade nas
+                centrais de atendimento do banco. No primeiro semestre, focamos em aprimorar a governança e
+                formação dos grupos de afinidade, ampliar o investimento em projetos que impactam grupos
+                minorizados, como a 6ª e a 7ª Edição do Projeto Orgulho do Meu RG e Meet Up voltado para questão de
+                gênero, com participação de público externo. Além disso, promovemos ações de letramento para
+                colaboradores e lançamos, em parceria com a área de Gente e Gestão, uma Cartilha sobre Ambientes
+                Seguros.
+
+                Governança corporativa
+                Para dar transparência aos nossos stakeholders, publicamos anualmente nosso relatório de
+                sustentabilidade de acordo com as normas GRI (Global Reporting Initiative) e SASB (Conselho de
+                Padrões Contábeis de Sustentabilidade). Elas representam as melhores práticas globais para a
+                informação pública de diferentes impactos econômicos, ambientais e sociais.
+
+                Além disso, revisamos algumas políticas e manuais que formalizam nossas diretrizes sobre práticas
+                socioambientais, como o Relatório de Riscos e Oportunidades Sociais, Ambientais e Climáticas
+                (GRSAC). Também desenvolvemos uma Política de Educação Financeira, alinhada a normativos e
+                legislações sobre o tema.
+
+                O processo de gestão de risco social, ambiental e climático também foi revisado, tanto na concessão
+                de crédito quanto no relacionamento com fornecedores do banco. Realizamos um estudo sobre como
+                as empresas que atendemos estão expostas aos riscos sociais, ambientais e climáticos, no contexto
+                setorial em que atuam, e mapeamos os riscos relativos à natureza das atividades produtivas. Esse
+                material responde a uma exigência regulatória do Banco Central, o Documento de Riscos Social,
+                Ambiental e Climático (DRSAC), que solicita o detalhamento das informações e classificações das
+                exposições aos riscos, nessas três esferas, dos clientes que compunham a carteira de crédito no
+                encerramento de 2023 e foi incorporado como parte da metodologia que utilizamos na avaliação de
+                riscos nessas frentes. Nessa avaliação, também acrescentamos temas adicionais de direitos humanos.
+
+
+
+
+                                                                                                                     4
+
+
+Classificação: Pública
+
+=== página 19 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                  Disponíveis para venda: Podem ser negociados a qualquer tempo, porém não são adquiridos com o
+                  propósito de serem ativa e frequentemente negociados. São ajustados pelo seu valor de mercado em
+                  contrapartida à conta destacada do patrimônio líquido, deduzidos dos efeitos tributários; e
+                  Mantidos até o vencimento: Adquiridos com a intenção e capacidade financeira para sua
+                  manutenção em carteira até o vencimento. São registrados pelo custo de aquisição, acrescidos dos
+                  rendimentos auferidos em contrapartida ao resultado do período. Nesta categoria, os títulos não são
+                  ajustados ao seu valor de mercado. Para os títulos reclassificados para esta categoria, o ajuste de
+                  marcação a mercado é incorporado ao custo, sendo contabilizados prospectivamente pelo custo
+                  amortizado, usando o método da taxa de juros efetiva.
+                  A metodologia de ajuste a valor de mercado foi estabelecida com observância de critérios
+                  consistentes e verificáveis, que levam em consideração o preço médio de negociação obtida por
+                  meio de cotação de mercado na data da apuração, ou, na falta deste, o valor de ajuste diário das
+                  operações de mercado futuro divulgados por fontes externas ou o valor líquido provável de
+                  realização obtido por meio de modelos de precificação, utilizando curvas de valores futuros de taxas
+                  de juros, taxas de câmbio, índices de preços e moedas, além de eventuais ajustes nos preços de títulos
+                  de baixa liquidez, todas devidamente aderentes aos preços praticados no período. O valor de
+                  mercado contempla o risco de crédito do emissor (ajuste de spread de crédito).
+                  Os rendimentos auferidos com os títulos e valores mobiliários, independentemente da categoria em
+                  que estão classificados, são apropriados pro rata dia, com base na variação do indexador e nas taxas
+                  de juros pactuados, pelo método exponencial ou linear, até a data do vencimento ou da venda
+                  definitiva do título, sendo reconhecidos diretamente no resultado do período.
+                  As perdas com títulos classificados como disponíveis para venda e como mantidos até o vencimento
+                  que não tenham caráter de perdas temporárias são reconhecidas diretamente no resultado do
+                  período e passam a compor a nova base de custo do ativo.
+                  Quando da alienação, a diferença apurada entre o valor da venda e o custo de aquisição atualizado
+                  pelos rendimentos é considerada como resultado da transação, sendo contabilizada na data da
+                  operação como lucro ou prejuízo com títulos e valores mobiliários.
+                Instrumentos financeiros derivativos
+                Os instrumentos financeiros derivativos são utilizados para proteger contra riscos de taxa de câmbio,
+                riscos de taxa de juros e outros riscos que o C6 Bank está exposto no curso normal de suas operações.
+                Esses instrumentos financeiros derivativos são reconhecidos inicialmente pelo seu valor de mercado
+                na data em que são celebrados e subsequentemente, mensurados ao valor de mercado.
+                Derivativos são registrados como ativos financeiros quando o valor de mercado é positivo e como
+                passivos financeiros quando o valor de mercado é negativo.
+                Para fins de contabilidade de hedge, os referidos instrumentos de proteção são classificados como
+                Hedges de valor justo, Hedges de fluxo de caixa, ou Hedges de investimento líquido no exterior.
+                O C6 Bank aplica as estratégias de hedge de valor justo (risco de mercado, utilizando instrumentos de
+                hedge destinados à proteção da exposição a alterações no valor justo de passivos, decorrentes da
+                exposição a mudanças de taxa de juros) e hedge de investimento líquido no exterior (risco de mercado,
+                utilizando instrumentos de hedge destinados à proteção da exposição cambial).
+
+                Hedges de valor justo, quando destinados à proteção da exposição a alterações no valor justo de um
+                ativo ou passivo reconhecido ou de um compromisso firme não reconhecido.
+                A mudança no valor justo de um instrumento de hedge é reconhecida na demonstração do resultado. A
+                mudança no valor justo do item objeto de hedge atribuível ao risco coberto é registrada como parte do
+                valor contábil do item protegido e é também reconhecida na demonstração do resultado.
+                Para hedges de valor justo relacionados a itens mensurados ao custo amortizado, qualquer ajuste ao
+                valor contábil é amortizado por meio do resultado durante o prazo remanescente do hedge, utilizando
+                o método da taxa de juros efetiva. A amortização da taxa de juros efetiva pode ser iniciada assim que
+                exista um ajuste e, no mais tardar, quando o item protegido deixar de ser ajustado por alterações no seu
+                valor justo atribuíveis ao risco coberto.
+                No momento da designação inicial do hedge, o C6 Bank formalmente documenta o relacionamento
+                entre os instrumentos de hedge e os itens objeto de hedge, incluindo os objetivos de gerenciamento
+                de riscos e a estratégia na condução da transação de hedge, juntamente com os métodos que serão
+
+
+                                                                                                                     17
+
+
+Classificação: Pública
+
+=== página 20 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                utilizados para avaliar a efetividade do relacionamento de hedge. O C6 Bank faz uma avaliação, tanto
+                no início do relacionamento de hedge, como continuamente, garantindo a existência de uma
+                expectativa que os instrumentos de hedge sejam altamente eficazes na compensação de variações no
+                valor justo dos respectivos itens objeto de hedge durante o período para o qual o hedge é designado,
+                e se essa efetividade se mantém continuamente dentro da faixa de 80% a 125%.
+                Hedge de Investimento Líquido em Operação no Exterior, a parcela do ganho ou perda sobre o
+                instrumento de hedge que for determinada como hedge efetivo é reconhecida no Patrimônio Líquido,
+                reclassificado para o resultado do período em caso de alienação da operação no exterior. A parcela
+                não efetiva é reconhecida no resultado do período.
+
+                O PERA ÇÕES    DE   CRÉDITO ,   OUTROS    CRÉDITOS     E   PROVISÃ O   PA RA   PERDA S   ESPERADA S
+
+                A SSOCIA DA S A O RISCO DE CRÉDITO
+
+                As operações de crédito e outros créditos com características de concessão de crédito são
+                classificadas de acordo com o julgamento da Administração quanto ao nível de risco, levando em
+                consideração a conjuntura econômica, a experiência passada e os riscos específicos em relação à
+                operação, aos devedores e garantidores, aos períodos de atraso e ao grupo econômico, observando
+                os parâmetros estabelecidos pelo CMN, que requer a análise da carteira e sua classificação em nove
+                níveis, sendo AA (risco mínimo) e H (risco máximo), bem como a classificação das operações com atraso
+                superior a 14 dias como operações em curso anormal. Com relação ao período de atraso verificado nas
+                operações com prazo a decorrer superior a 36 (trinta e seis) meses, adota-se a contagem em dobro
+                sobre os intervalos de atraso definidos para os nove níveis para as operações de varejo.
+                As rendas das operações de crédito vencidas há mais de 59 dias, independentemente de seu nível de
+                risco, são reconhecidas como receita quando efetivamente recebidas.
+                As operações classificadas como nível H permanecem nessa classificação por 180 dias, quando então
+                são baixadas contra a provisão existente e controladas em contas de compensação.
+                As operações renegociadas são mantidas, no mínimo, no mesmo nível em que estavam classificadas.
+                As renegociações de operações de crédito já baixadas contra a provisão são classificadas como nível
+                H e os eventuais ganhos provenientes da renegociação são reconhecidos como receita quando
+                efetivamente recebidos.
+                A provisão para operações de crédito de liquidação duvidosa, considerada suficiente pela
+                Administração, atende aos requisitos estabelecidos pela Resolução CMN nº 2.682/1999.
+
+                O PERA ÇÕES DE VENDA OU TRA NSFERÊNCIA DE ATIVOS FINA NCEIROS
+
+                O C6 Bank possui operações de transferência de ativos financeiros (operações de crédito –
+                Financiamento de Veículos) com retenção substancial dos riscos e benefícios. Essas operações
+                financeiras são classificadas e registradas conforme abaixo, de acordo com os critérios da Resolução
+                CMN nº 3.533/08:
+                Para o registro contábil da venda ou da transferência de ativos financeiros classificada na categoria
+                operações com retenção substancial dos riscos e benefícios, são observados os seguintes
+                procedimentos: O ativo financeiro objeto da venda ou da transferência permanece, na sua totalidade,
+                registrado no ativo. Os valores recebidos na operação são registrados no ativo, tendo como
+                contrapartida o passivo referente à obrigação assumida e as receitas/(despesas) são apropriadas de
+                forma segregada ao resultado do período pelo prazo remanescente da operação.
+
+                A TIVO PERMA NENTE
+                Intangível: Corresponde aos direitos que tenham por objeto bens incorpóreos destinados à
+                manutenção do C6 Bank ou exercidos com essa finalidade. Os ativos intangíveis possuem vida útil
+                definida e referem-se basicamente a construção de plataforma tecnológica, amortizadas pelo método
+                linear com base no prazo que o benefício é gerado e é incidente sobre o valor amortizável
+                (correspondente ao custo de aquisição deduzido do valor residual, quando aplicável), a partir da data
+                de disponibilização do ativo intangível para uso e contabilizada em Outras Despesas Administrativas –
+                Amortização. O valor residual desses ativos, quando aplicável, é revisado anualmente ou quando há
+                alterações significativas nas premissas utilizadas.
+
+
+
+
+                                                                                                                  18
+
+
+Classificação: Pública
+
+=== página 21 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                Investimento: As participações em coligadas e empresas com controle compartilhado são avaliadas
+                pelo método de equivalência patrimonial. Os outros investimentos permanentes estão avaliados pelo
+                custo de aquisição, deduzido, quando aplicável, de provisão para perdas.
+                Imobilizado de uso: Registrado pelo custo de aquisição. A depreciação é calculada pelo método linear
+                com base no prazo de vida útil-econômica dos bens. A amortização é calculada pelo método linear com
+                base nos prazos estimados de utilização e/ou de locação. O prazo de vida útil dos bens é de 5 anos para
+                sistemas, equipamentos e móveis, e de 10 anos para instalações, melhorias e benfeitorias.
+
+                D EPÓSITOS , CA PTA ÇÕES NO MERCA DO A BERTO E RECURSOS DE A CEITES E EMISSÕES DE
+                TÍTULOS
+
+                Os depósitos e captações no mercado são demonstrados pelos valores das exigibilidades e
+                consideram, quando aplicável, os encargos exigíveis até a data do Balanço, reconhecidos em base pro
+                rata dia.
+                Os custos incorridos na emissão de títulos ou outras formas de captação que se enquadram como
+                custos de transação são reconhecidos no resultado por regime de competência pelo prazo das
+                operações originárias.
+                As captações que são objeto de hedge de risco de mercado são avaliadas pelo seu valor de mercado,
+                utilizando critério consistente e verificável. Os ajustes de avaliação a valor de mercado dessas
+                operações são registrados na mesma linha que abriga o instrumento financeiro, em contrapartida de
+                resultado com instrumentos financeiros derivativos.
+
+                T RIBUTOS
+                Os tributos são apurados com base nas alíquotas demonstradas no quadro a seguir:
+                 Tributos                                                             Alíquotas vigentes
+                 Imposto de Renda (15% + adicional de 10%)                            25%
+                 Contribuição Social sobre o Lucro Líquido – CSLL(*)                  20%
+                 PIS/PASEP                                                            0,65%
+                 Contribuição para o Financiamento da Seguridade Social               4%
+                 Imposto sobre Serviços de Qualquer Natureza - ISSQN                  De 2% a 5%
+
+
+                (*) O encargo do IRPJ é calculado à alíquota de 15%, acrescido do adicional de 10%, aplicados sobre o
+                lucro, após efetuados os ajustes determinados pela legislação fiscal. A CSLL é calculada pela alíquota
+                20% para Bancos, incidente sobre o lucro, após considerados os ajustes determinados pela legislação
+                fiscal.
+                O Ativo Fiscal Diferido e as obrigações diferidas são obtidas pelas diferenças entre as bases de cálculo
+                contábil e tributária dos ativos e passivos. Os créditos tributários somente são reconhecidos quando
+                se considera provável que a instituição irá gerar lucro tributável futuro para a sua compensação. A
+                realização esperada do crédito tributário é baseada na projeção de lucros tributáveis futuros e por
+                estudo de capacidade de realização.
+
+                O UTROS A TIVOS E PA SSIVOS
+                Os demais ativos estão demonstrados pelos valores de realização, incluindo, quando aplicável, os
+                rendimentos e as variações monetárias e cambiais auferidas em base pro rata die e provisão para
+                perda, quando julgada necessária. Os demais passivos estão demonstrados pelos valores conhecidos
+                e mensuráveis, acrescidos, quando aplicável, dos encargos e das variações monetárias e cambiais
+                incorridos em base pro rata die.
+
+                P ROVISÕES E PA SSIVOS CONTING ENTES
+                Provisões para contingências são registradas quando, baseado na opinião de assessores jurídicos e da
+                administração, for considerado provável o risco de perda de uma ação judicial ou administrativa e
+                quando os montantes envolvidos forem mensuráveis com suficiente segurança.
+                Os passivos contingentes relevantes classificados como perdas possíveis pelos assessores jurídicos
+                são apenas divulgados em notas explicativas, enquanto aqueles classificados como perda remota não
+                requerem provisão e divulgação.
+
+
+
+
+                                                                                                                     19
+
+
+Classificação: Pública
+
+=== página 27 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                             O PERAÇÕES DE CRÉDITO
+                C OMPOSIÇÃO
+                                                                             30/06/2024                           31/12/2023
+                                                                            Saldo       Provisão                Saldo        Provisão
+                 Empréstimos                                            6.285.476    (1.226.655)            6.259.406     (1.357.483)
+                 Financiamentos                                         9.287.651       (271.666)           5.210.833        (212.511)
+                 Créditos cedidos com coobrigação (i)                   2.942.401        (45.399)           3.795.216         (19.885)
+                 Valores a receber relativos a transações de            7.849.534        (43.685)           8.146.962         (44.477)
+                 pagamento
+                 Valores e créditos a receber com característica           72.799             (2.655)           72.226           (5.405)
+                 de concessão de crédito
+                 Ajuste a valor de mercado (hedge accounting -          (233.895)                    -          46.328                  -
+                 operações de financiamento de veículos)
+                 Total empréstimos e outros valores a receber
+                 com característica de crédito                        26.203.966        (1.590.061)        23.530.971        (1.639.761)
+
+
+                (i) Operações de financiamento de veículos cedidas com retenção substancial dos riscos e benefícios. As
+                responsabilidades por créditos cedidos com retenção substancial de riscos e benefícios totalizam R$ 2.942.651 (R$
+                3.794.162 em 31 de dezembro de 2023), apurado pelo valor presente por meio das taxas dos contratos (Nota 16).
+
+                P OR FA IXA DE VENCIMENTO E NÍVEIS DE RISCO
+                                                           30/06/2024                                               31/12/2023
+                                                    a vencer
+                Nível de                     até 6    de 6 a 12    após 12
+                             Vencidas                                            Total            Provisão          Total       Provisão
+                risco                       meses       meses        meses
+                AA                    -   136.042     452.589      759.669  1.348.300                       -    1.394.172                -
+                A                46.667 9.903.187   3.105.287 7.532.252 20.587.393                (102.836)     17.616.353        (88.080)
+                B                62.277   877.348     469.048     598.736   2.007.409               (20.276)     2.136.880         (21.369)
+                C                67.506   139.778        71.611    144.220     423.116               (12.715)      288.185          (8.646)
+                D               98.805      52.203      35.314     104.815     291.137               (29.114)      250.916        (25.092)
+                E              107.342      29.994      21.126      112.752    271.214              (81.364)      222.472          (66.742)
+                F              126.854      26.318      18.204      48.948    220.324              (110.162)       185.010        (92.484)
+                G               107.681     20.972      14.824       41.076   184.553              (129.187)       177.687       (124.380)
+                H              725.028     105.139      72.148    202.099    1.104.414          (1.104.406)      1.212.968     (1.212.968)
+                Ajuste a valor de mercado (hedge accounting - operações de
+                                                                            (233.895)                      -       46.328                   -
+                financiamento de veículos)
+                Total        1.342.160 11.290.981    4.260.151 9.544.568 26.203.966            (1.590.061) 23.530.971         (1.639.761)
+                Circulante                                                        16.659.398 (1.242.422)        16.074.114 (1.374.295)
+                Não
+                                                                                  9.544.568      (347.638)      7.456.857      (265.466)
+                circulante
+
+
+                P OR SETORES E ATIVIDA DES ECONÔMICA S
+                                                                                                         30/06/2024          31/12/2023
+                 Pessoa física                                                                            21.466.395          18.819.930
+                 Pessoa jurídica                                                                            4.737.571           4.711.041
+                   Comércio                                                                                   875.421          1.022.802
+                   Serviços                                                                                3.009.163           2.828.379
+                   Indústria                                                                                 739.940             767.422
+                   Outros                                                                                     113.047             92.438
+                 Total                                                                                    26.203.966          23.530.971
+
+
+
+                C ONCENTRAÇÃ O DOS MA IORES DEVEDORES
+                                                                   30/06/2024        % da carteira       31/12/2023      % da carteira
+                 10 maiores                                             617.441                2%            493.698               2%
+                 20 maiores                                             877.194                3%            727.334               3%
+                 50 maiores                                           1.269.141                5%           1.117.039              5%
+                 100 maiores                                         1.590.252                 6%          1.479.330               6%
+
+
+
+
+                                                                                                                                       25
+
+
+Classificação: Pública
+
+=== página 28 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                P ROVISÃ O PA RA PERDA ESPERA DA A SSOCIA DA A O RISCO DE CRÉDITO
+                                                                                                   30/06/2024      31/12/2023
+                 Saldos iniciais                                                                     (1.639.761)    (1.323.469)
+                 (Constituição)/ Reversão de provisão                                                 (837.055)      (2.058.116)
+                 Baixas a prejuízo                                                                      886.755        1.741.824
+                 Total                                                                              (1.590.061)     (1.639.761)
+
+
+
+                R ENEG OCIA ÇÃ O E RECUPERA ÇÃ O DE CRÉDITOS BA IXA DOS PA RA PREJUÍZO
+                Em 30 de junho de 2024, a carteira de crédito inclui R$1.475.753 (PDD – 455.690) referente a operações
+                renegociadas (31 de dezembro de 2023 – R$ 1.017.284 com PDD de R$ 324.941). Houve recuperação de
+                créditos baixados para prejuízo no valor de R$ 84.722 no semestre findo em 30 de junho de 2024 (30 de
+                junho de 2023 – R$ 31.929).
+
+
+
+                              O UTROS ATIVOS E PASSIVOS FINANCEIROS
+                                                                                                 30/06/2024        31/12/2023
+                 Aplicações no mercado aberto (nota 4)                                               825.747                 -
+                 Títulos e créditos a receber - sem característica de concessão de crédito            38.042           260.947
+                 Reservas compulsórias no Banco Central                                                91.701           50.627
+                 Demais depósitos no Banco Central                                                 1.635.780         1.046.759
+                 Operações de câmbio (nota 10.1)                                                     630.418           427.152
+                 Negociação e intermediação de valores                                                54.537            50.373
+                 Outros ativos financeiros                                                         3.276.225         1.835.858
+                 Circulante                                                                        3.276.225         1.835.858
+                 Não circulante                                                                             -                 -
+                                                                                                 30/06/2024        31/12/2023
+                 Operações compromissadas                                                          15.017.284       12.049.343
+                 Recebimentos de pagamentos a liquidar (i)                                          8.479.392         8.789.166
+                 Operações de câmbio (nota 10.1)                                                      673.257          477.099
+                 Negociação e intermediação de valores                                                 66.046            27.052
+                 Outros passivos financeiros                                                      24.235.979       21.342.660
+                 Circulante                                                                       24.235.979       21.342.660
+                 Não circulante                                                                            -                -
+                 (i)        Refere-se aos valores a pagar para adquirentes devido ao uso de cartão de crédito e débito
+                            por parte dos clientes do C6 Bank.
+
+
+                       1 0. 1 O P E R A Ç Õ E S D E C Â M B I O
+
+                                                                                   30/06/2024                31/12/2023
+                                                                                  Ativo    Passivo         Ativo      Passivo
+                 Câmbio comprado / vendido a liquidar                         506.345      132.836       278.720      147.938
+                 Direitos / Obrigações sobre operações de câmbio               131.725     478.964       148.758     283.583
+                 (-) Adiantamentos em moedas estrangeiras                             -          -              -           -
+                 (-) Adiantamentos em moeda nacional                            (7.652)          -         (326)            -
+                 Valores a pagar em moeda estrangeira                                 -     61.457              -      45.578
+                 Total                                                        630.418      673.257       427.152     477.099
+                 Circulante                                                    630.418       673.257     427.152       477.099
+                 Não circulante                                                      -             -           -             -
+
+
+                              O UTROS ATIVOS
+                                                                                               30/06/2024          31/12/2023
+                 Rendas a receber                                                                   22.030              25.527
+                 Outros créditos - diversos (nota 11.1)                                             821.081            978.703
+                 Outros valores e bens                                                              141.872            128.954
+                 Despesas antecipadas (i)                                                          538.007             488.427
+                 Total                                                                           1.522.990            1.621.611
+                 Circulante                                                                       1.398.755          1.501.595
+                 Não circulante                                                                     124.235            120.016
+
+
+                                                                                                                             26
+
+
+Classificação: Pública
+
+=== página 29 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                (i) Em 30 de junho de 2024 e 31 de dezembro de 2023, o saldo de despesas antecipadas refere-se, substancialmente, a comissões
+                pagas a terceiros por estruturação de operações com o mercado a serem reconhecidas pelo prazo dos contratos e o diferimento
+                do custo da matéria prima do plástico utilizado para elaboração do cartão, após o desbloqueio pelo cliente.
+
+                     1 1.1 O U T R O S C R É D I T O S D I V E R S O S
+
+                                                                                                                30/06/2024                    31/12/2023
+                 Adiantamentos e antecipações salariais                                                              17.889                        22.368
+                 Adiantamentos para pagamentos de nossa conta                                                       149.228                        90.557
+                 Valores a receber de sociedades ligadas (i)                                                        423.109                       456.174
+                 Devedores diversos                                                                                 145.376                      374.507
+                 Devedores por depósito em garantia                                                                   3.655                         2.739
+                 Impostos e contribuições a compensar                                                                81.824                        32.358
+                 Outros ativos                                                                                      821.081                      978.703
+                 Circulante                                                                                          818.494                      976.943
+                 Não circulante                                                                                        2.587                        1.760
+
+                (i) Refere-se substancialmente aos valores recebidos da C6 Corretora de Títulos e Valores Mobiliários Limitada (“C6 CTVM”) no dia
+                útil subsequente, decorrente de movimentações de clientes após o encerramento do expediente bancário.
+
+
+
+                            I NVESTIMENTOS
+                                                                        Movimentação dos investimentos
+                                                                    % de
+                                                            participação         Aporte /               Resultado
+                                                              no Capital (encerramento)       Ajustes           de
+                                                 31/12/2023        Social / (dividendos) patrimoniais participação 30/06/2024
+                No país
+                C6 CTVM Ltda.                        100.480             100%                   -                (5)         104.245             204.720
+                NTK Solutions S.A. (i)               462.556             100%             230.000                  -           9.924             702.480
+                Banco C6 Consignado S.A.           1.247.470           56,82%                   -             2.954          329.770            1.580.194
+                C6 Corretora de Seguros               40.397             100%                   -                  -          24.541               64.938
+                S.A.
+                Ágio - C6 Corretora de                    4.447          100%                     -                  -                    -         4.447
+                Seguros S.A.
+                Total                              1.855.350                               221.550            2.949          468.480            2.556.780
+
+                (i) Conforme ata da Assembleia Geral Extraordinária realizada em 24 de junho de 2024, foi aprovado o aumento de capital, mediante
+                a emissão de 2.157.598.500 novas ações ordinária, nominativas e sem valor nominal. As novas ações foram integralmente subscritas
+                pelo único acionista Banco C6 S.A.
+
+
+
+                R ESUMO DAS INFORMA ÇÕES DE COLIGADA S E CONTROLA DAS
+                                                                  30/06/2024                                             31/12/2023
+                                                                  Patrimônio                                             Patrimônio
+                                                % de                               Resultado do           % de                                 Resultado
+                                                                    líquido                                                líquido
+                                            participação                            semestre          participação                            do exercício
+                                                                   ajustado                                               ajustado
+                 No país
+                 C6 CTVM Ltda.                           100%           204.720             104.245              100%            100.480                54.121
+                 NTK Solutions S.A.                      100%           702.480               9.924              100%            462.556               29.453
+                 Banco C6 Consignado S.A.              56,82%          1.580.194            329.770            56,82%          1.095.693             (176.275)
+                 C6 Corretora de Seguros S.A.            100%             64.938             24.541              100%             40.397                13.094
+
+                            D EPÓSITOS
+                                                                             30/06/2024                                                       31/12/2023
+                                                                             de 90 a    de 1 a 3            de 3 a 5 acima de 5
+                                                  Total até 90 dias                                                                                  Total
+                                                                            365 dias      anos                anos        anos
+                Depósitos à vista           2.018.140       2.018.140              -           -                   -          -                 2.232.214
+                Depósitos
+                                                783.718      559.806           223.912                -              -                -           412.768
+                interfinanceiros
+                Depósitos a prazo         26.489.677        3.486.840     4.383.049       15.812.286       1.107.143      1.700.359           23.005.878
+                Outros depósitos                  55               55             -                -               -              -                  486
+                Total                     29.291.590        6.064.842     4.606.961       15.812.286       1.107.143      1.700.359           25.651.346
+                Circulante                 10.671.802                                                                                          9.388.323
+                Não circulante             18.619.788                                                                                         16.263.023
+
+
+
+
+                                                                                                                                                        27
+
+
+Classificação: Pública
+
+=== página 30 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                           O BRIGAÇÃO POR CESSÃO DE CRÉDITO
+                                                                                               30/06/2024                31/12/2023
+                 Cessão com retenção substancial de riscos e benefícios                          2.924.927                 3.794.162
+                 Total                                                                           2.924.927                 3.794.162
+                 Circulante                                                                         1.071.538             1.526.340
+                 Não circulante                                                                    1.853.389              2.267.822
+
+
+                O C6 Bank realizou, em novembro de 2023, a cessão de uma carteira de operações de financiamento
+                de veículos, com retenção substancial de riscos e benefícios, tendo em vista a que o C6 Bank adquiriu a
+                série subordinada das debêntures relacionadas a essa operação.
+
+                           R ECURSOS DE ACEITES E EMISSÃO DE TÍTULOS
+                                                                              30/06/2024                                 31/12/2023
+                                                                                                                Acima
+                                                                    até 90    de 90 a     de 1 a 3 de 3 a 5      de 5
+                                                           Total      dias   365 dias       anos     anos        anos           Total
+                Recursos de letras imobiliárias,
+                hipotecárias de crédito e similares    2.372.507 794.253 1.010.307 479.317          68.310      20.320      1.774.361
+                Obrigações por emissões de letras de      701.881 101.933  599.793     156               -           -         431.011
+                crédito imobiliário
+                Obrigações por emissões de letras de     522.895   183.125    337.712      2.058          -          -       652.139
+                crédito do agronegócio
+                Obrigações por letras financeiras       1.147.731 509.195   72.802 477.104          68.310      20.320         691.211
+                Total                                  2.372.507 794.253 1.010.307 479.317          68.310      20.320      1.774.361
+                Circulante                             1.804.560                                                           1.593.007
+                Não circulante                           567.947                                                             181.354
+
+
+                Em 30 de junho de 2024 e 31 de dezembro de 2023, recursos de letras imobiliárias, hipotecárias de
+                crédito e similares são basicamente indexados a percentuais de taxa referencial de juros (CDI ou SELIC)
+                entre 100% e 122%.
+
+                           D ÍVIDAS SUBORDINADAS
+                Abaixo estão apresentadas as Letras Financeiras Subordinadas vigentes no período:
+                                                               30/06/2024                                                31/12/2023
+                                                              Valor        Indexador                                           Saldo
+                 Emissão                Vencimento        principal              (a.a.)       Saldo contábil                contábil
+                 2021            2026                       99.900          1,3% + CDI               146.354                 136.227
+                 2023            2033                       72.059        9,5% + IPCA                 73.137                  73.758
+                 Total                                                                               219.491                209.985
+
+
+
+                           O UTROS PASSIVOS
+                                                                                                30/06/2024               31/12/2023
+                 Contas a pagar de despesas com pessoal                                             100.387                   84.815
+                 Contas a pagar de despesas administrativas                                          29.326                   94.228
+                 Provisão para participação nos lucros                                              199.285                  187.929
+                 Provisão para pagamento a fornecedores                                             157.477                   56.190
+                 Obrigações por vendas de cartões de débito e crédito                                36.725                   36.831
+                 Provisão relacionada a programa de fidelidade                                      450.557                 454.548
+                 Credores diversos                                                                   111.765                 193.142
+                 Outros                                                                              87.249                   17.568
+                 Total                                                                             1.172.771               1.125.251
+                 Circulante                                                                         928.055                 846.717
+                 Não circulante                                                                     244.716                 278.534
+
+
+
+
+                                                                                                                                  28
+
+
+Classificação: Pública
+
+=== página 31 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                            P ROVISÕES E PASSIVOS CONTINGENTES
+                Provisões
+                As provisões registradas para processos em que a probabilidade de perda é provável e os montantes
+                mensuráveis com suficiente segurança estão assim apresentados:
+                                                                                 Adições/     Pagamentos/
+                                                                31/12/2023    Atualizações       Reversões    30/06/2024
+                 Ações cíveis                                        13.091           4.167          (844)         16.414
+                 Ações trabalhistas                                   4.314           7.924              -         12.238
+                 Contingências fiscais                                    -          39.461              -         39.461
+                 Total                                               17.405         51.552           (844)         68.113
+
+                                                                                 Adições/     Pagamentos/
+                                                                31/12/2022    Atualizações       Reversões    31/12/2023
+                 Ações cíveis                                         8.578          4.533             (20)        13.091
+                 Ações trabalhistas                                     886          3.428                -         4.314
+                 Total                                               9.464            7.961           (20)         17.405
+
+                Os depósitos judiciais realizados pelo C6 Bank em face dos processos em que é parte montam R$ 3.655
+                em 30 de junho de 2024 (31 de dezembro de 2023 – R$ 2.739), apresentados na Nota Explicativa 11 -
+                Outros ativos.
+                Passivos contingentes
+                Em 30 de junho de 2024, o C6 Bank figurava como parte em processos cíveis no montante de
+                R$ 454.853 (31 de dezembro de 2023 – R$ 703.624) e como parte em processos trabalhistas no
+                montante de R$ 120.783 (31 de dezembro de 2023 – R$ 81.032), com probabilidade de perda possível,
+                os quais não são provisionados.
+
+                            P ATRIMÔNIO LÍQUIDO
+                CAPITAL SOCIAL
+                Em 30 de junho de 2024, o Capital Social é de R$ 6.470.433 (31 de dezembro de 2023 – R$ 6.470.433),
+                dividido em 1.352.561.604 ações ordinárias (31 de dezembro de 2023 – 1.352.561.604), nominativas e
+                sem valor nominal, e a Reserva de Capital de R$ 152.253 (31 de dezembro de 2023 – R$ 126.552).
+
+                R ESERVA DE CA PITAL
+                Constituída por valores relativos a transações com pagamento baseado em ações ou outros
+                instrumentos de capital a serem liquidadas com entrega de instrumentos patrimoniais, vide nota 27.
+
+                J UROS SOBRE CAPITAL PRÓPRIO
+                Em reunião do Conselho de administração do C6 Bank realizada em 25 e 26 de março de 2024, foi
+                aprovada a distribuição e pagamento de juros sobre capital próprio (JCP) de até R$ 750.000 até o final
+                de 2024 para a única acionista, N7 Holding, sujeita à aprovação em sede de Assembleia Geral do C6
+                Bank. Essa distribuição será realizada sobre o lucro do exercício, segundo os critério de distribuição de
+                JCP previstos pela Lei 9.249/1995.
+
+                Em 30 de junho de 2024 ficou constituída reserva de R$ 375.000. O impacto fiscal reconhecido no
+                resultado decorrente da constituição de crédito tributário de imposto de renda e contribuição social
+                relativo à dedutibilidade dos juros sobre o capital próprio foi de R$ 168.750.
+
+
+
+
+                                                                                                                       29
+
+
+Classificação: Pública
+
+=== página 32 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                            I MPOSTO DE RENDA E CONTRIBUIÇÃO SOCIAL
+                D EMONSTRAÇÃ O DA DESPESA DE IRPJ E CSLL
+                                                                                                              30/06/2024       30/06/2023
+                 Resultado antes do Imposto de Renda e Contribuição Social                                        910.491       (1.834.667)
+                 Encargo total do Imposto de Renda e Contribuição Social às alíquotas vigentes                  (409.721)          825.600
+
+                 Efeitos no cálculo dos tributos decorrentes de:
+                 Participação em coligadas e controladas                                                           210.817         (22.561)
+                 Despesas indedutíveis                                                                                 187           (4.029)
+                 Crédito Tributário Não Ativado                                                                   120.000           (31.134)
+                 Outros Valores                                                                                   236.681                  -
+                 Encargos sobre efeitos no cálculo dos tributos                                                   567.686         (57.724)
+                 Imposto de Renda e Contribuição Social no semestre                                               157.965          767.876
+                 Efeitos de adições e exclusões temporárias no cálculo dos tributos:
+                 Provisão para participação nos lucros                                                               8.627         (36.979)
+                 Provisão para créditos de liquidação duvidosa                                                     179.463         421.806
+                 Provisão para contingência cíveis                                                                   1.495            1.044
+                 Provisão para contingência Fiscais                                                                 17.724                 -
+                 Provisão para pagamentos                                                                           72.276             (518)
+                 Juros sobre capital próprio                                                                       168.750
+                 Marcação a mercado                                                                               (410.811)        382.523
+                 Constituição/(Realização) dos impostos diferidos sobre adições e exclusões
+                                                                                                                    37.524         767.876
+                 temporárias
+
+                 Constituição/(Realização) de Prejuízo Fiscal e Base Negativa                                      120.441                -
+
+
+                M OVIMENTAÇÃ O DOS A TIVOS FISCA IS DIFERIDOS
+                                                                          31/12/2023    Constituição      Realização/Baixa     30/06/2024
+                 Provisão para participação nos lucros                         80.721        86.573                 (77.945)        89.349
+                 Provisão para créditos de liquidação duvidosa              1.758.465       464.412               (284.949)      1.937.928
+                 Provisão para contingência cíveis                              6.019          1.495                       -         7.514
+                 Provisão para contingência Fiscais                                 -         17.724                       -        17.724
+                 Provisão para pagamentos                                      52.519         75.676                 (3.400)       124.795
+                 Juros sobre capital próprio                                        -       168.750                        -       168.750
+                 Marcação a mercado                                           248.855              -             (248.855)               -
+                 Prejuízo fiscal/Base negativa de CSLL                              -       120.441                        -       120.441
+                 Total dos créditos tributários ativados                    2.146.579       935.071               (615.149)      2.466.501
+                 Impostos de renda                                          1.192.544                                            1.370.279
+                 Contribuição social                                         954.035                                             1.096.222
+
+
+                Em 30 de Junho de 2024, a parcela de R$ 2.641 (31 de dezembro de 2023 – R$ (781)) corresponde ao
+                crédito tributário referente ao ajuste a valor justo de títulos e valores mobiliários classificados como
+                disponíveis para venda, registrados em conta de patrimônio líquido.
+
+                M OVIMENTAÇÃ O DA S OBRIG A ÇÕES FISCA IS DIFERIDA S
+                                                                                                 Movimentação do exercício
+                                                                                31/12/2023       Constituição  Realização      30/06/2024
+                 Marcação a mercado                                                      -           (161.956)      3.422         (158.534)
+                 Total das Obrigações Fiscais Diferidas                                  -          (161.956)       3.422        (158.534)
+                 Impostos de renda                                                        -                                       (88.074)
+                 Contribuição social                                                      -                                       (70.460)
+
+
+                E XPECTA TIVA DE REA LIZAÇÃ O DO CRÉDITO TRIBUTÁ RIO
+                                                                                                                               30/06/2024
+                 Em 2024                                                                                                          545.850
+                 Em 2025                                                                                                           924.900
+                 Em 2026                                                                                                           485.700
+                 Em 2027                                                                                                           485.150
+                 Em 2028                                                                                                                 -
+                 A partir de 2029                                                                                                   24.901
+                 Total de créditos tributários                                                                                   2.466.501
+                 Valor presente                                                                                                  2.121.822
+
+
+
+
+                                                                                                                                         30
+
+
+Classificação: Pública
+
+=== página 33 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                C RÉDITOS TRIBUTÁ RIOS NÃ O A TIVA DOS
+                                                                                   Movimento
+                                                                     31/12/2023                     Ativação     30/06/2024
+                                                                                   do estoque
+                 Prejuízo fiscal/Base negativa de CSLL                1.014.920             -       (120.000)        894.920
+                 Total dos Créditos Tributários Não Ativados          1.014.920             -               -        894.920
+                  Imposto de Renda                                     563.844                                        497.178
+                  Contribuição Social                                  451.076                                        397.742
+
+
+                Em 30 de junho de 2024, o saldo do crédito não ativado de R$ 894.920, o qual será reconhecido
+                contabilmente, apenas, quando atender aos aspectos regulatórios para sua ativação e apresentar
+                perspectiva de realização de acordo com os cenários econômicos projetados pela Instituição
+                documentados no estudo de realização do crédito tributário.
+
+
+                O BRIG A ÇÕES FISCA IS CORRENTES
+                                                                                         30/06/2024               31/12/2023
+                 Pis, Cofins e ISS correntes                                                  13.529                    9.918
+                 Impostos de terceiros                                                         17.145                  25.794
+                 Outros                                                                          693                        -
+                 Total                                                                        31.367                   35.712
+                 Circulante                                                                     31.367                 35.712
+
+
+
+
+                              R ECEITAS DE PRESTAÇÃO DE SERVIÇOS
+                                                                                    30/06/2024                  30/06/2023
+                 Comissão sobre compras - intercâmbio                                  338.059                      274.483
+                 Rendas com tarifas bancárias e serviços bancários                     384.422                      194.284
+                 Rendas de transferência de fundos                                         1.191                      6.375
+                 Corretagens de câmbio                                                    1.318                       1.607
+                 Cobrança                                                                   928                         565
+                 Rendas de garantias prestadas                                              333                          181
+                 Serviços de seguros e resseguros                                        69.219                      27.778
+                 Outros serviços                                                        33.424                       32.152
+                 Total                                                                 828.894                     537.425
+
+
+
+                              D ESPESAS COM PESSOAL
+                                                                        30/06/2024                              30/06/2023
+                 Proventos                                                  (145.811)                              (152.502)
+                 Encargos sociais                                           (37.246)                                (74.425)
+                 Benefícios                                                 (66.848)                                 (75.768)
+                 Férias e 13º                                               (32.890)                                (46.552)
+                 Honorários                                                   (4.369)                                 (5.293)
+                 Gratificações                                                 (4.761)                               (61.973)
+                 Outros                                                        (1.681)                                 (1.777)
+                 Total                                                    (293.606)                               (418.290)
+
+
+
+                              O UTRAS DESPESAS ADMINISTRATIVAS
+                                                                                    30/06/2024                  30/06/2023
+                 Telecomunicações e processamento de dados                            (205.438)                    (261.648)
+                 Serviços técnicos especializados                                     (240.483)                     (199.051)
+                 Propaganda e publicidade                                                (96.213)                    (53.277)
+                 Serviços do sistema financeiro                                         (25.474)                     (33.630)
+                 Outros serviços de terceiros e consultorias                             (78.221)                    (26.630)
+                 Outras despesas administrativas                                        (47.944)                     (60.685)
+                 Total                                                                (693.773)                   (634.921)
+
+
+
+
+                                                                                                                            31
+
+
+Classificação: Pública
+
+=== página 34 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                            O UTRAS RECEITAS E DESPESAS OPERACIONAIS
+                                                                                          30/06/2024           30/06/2023
+                 Receitas e despesas relacionadas a programas de fidelidade                      28.821                18.732
+                 Variação cambial                                                                28.091                 8.670
+                 Despesa de comissão                                                         (139.810)            (102.813)
+                 Custo de emissão de cartão                                                    (55.113)            (55.510)
+                 Serviços associados a transações de pagamentos                                (12.992)             (11.426)
+                 Despesas com perdas associadas a cartões                                     (53.869)             (57.620)
+                 Despesas com outras perdas operacionais                                               -            (17.068)
+                 Despesas com plano de outorga de ações                                       (39.094)                (3.398)
+                 Despesas de provisão para contingências                                      (64.008)              (17.007)
+                 Outras receitas e despesas operacionais                                           1.771             (10.817)
+                 Total                                                                      (306.203)            (248.257)
+
+                            O UTORGA DE DIREITOS SOBRE INSTRUMENTOS PATRIMONIAIS
+                A movimentação do saldo está apresentada na tabela abaixo:
+                                                          31/12/2023           Adições          Resgates        30/06/2024
+                 Parceria                                      59.078           47.262                 -            106.340
+                 Total                                        59.078            47.262                 -            106.340
+
+
+
+                Esses programas são contabilizados de acordo com as normas aplicáveis a pagamentos baseados em
+                ações e referem-se a transações com pagamento mediante outorga de direitos sobre instrumentos
+                patrimoniais concedidas por entidades controladoras indiretas que possuem interesse econômico no
+                C6 Bank, que é a entidade que recebe o serviço.
+
+                            P ARTES RELACIONADAS
+                As operações realizadas entre partes relacionadas são efetuadas a valores, prazos e taxas médias
+                usuais de mercado.
+                Operações pactuadas com controladas direta, indireta, pessoal chave da Administração e
+                controlador:
+                                                                                             30/06/2024        31/12/2023
+                Ativo
+                    Aplicações em depósitos interfinanceiros - C6 Consignado                    6.079.071        7.438.052
+                    Outros ativos financeiros - C6 CTVM                                           188.397           453.111
+                    Empréstimos e repasses - C6 Consignado                                       440.255            271.669
+                    Contas a receber - C6 CTVM                                                     20.571                 -
+                    Outros ativos - C6 Consignado                                                       -           25.554
+                    Derivativos - C6 Consignado                                                         -             7.573
+                Passivo
+                    Depósitos a prazo - Fundo Carbono                                              73.646           68.962
+                    Depósitos a vista - C6 CTVM                                                         10           3.528
+                    Depósitos a vista - C6 Corretora de Seguros Ltda.                                    -              141
+                    Depósitos interfinanceiros - C6 CTVM                                          241.283           97.554
+                    Derivativos - C6 Consignado                                                    49.504                 -
+                    Operações compromissadas - C6 CTVM                                         6.325.489         5.838.453
+                    Operações compromissadas - C6 Consignado                                     1.861.011         380.578
+                    Contas a pagar - C6 Consignado                                                 74.929                 -
+                    Letras financeiras subordinadas - Carbon Asset Management Ltda.                 31.169          30.593
+                    Outros passivos - C6 Consignado                                                    317             357
+                                                                                             30/06/2024        30/06/2023
+                Resultado
+                    Receita de depósitos interfinanceiros - C6 Consignado                          411.243          768.751
+                    Derivativos - C6 Consignado                                                   (57.077)                 -
+                    Receita de prestação de serviços - C6 Consignado                                       -             113
+                    Resultado de operações com instrumentos financeiros - C6 Consignado                    -          3.098
+                    Resultado de operações com instrumentos financeiros - C6 CTVM                 289.337                  -
+                    Resultado de operações compromissadas - C6 CTVM                                        -      (234.402)
+                    Empréstimos e repasses - C6 Consignado                                        (16.307)                 -
+                    Corretagem de operações em bolsa - C6 CTVM                                       (1.257)           (741)
+                    Despesas de captação - Fundo Carbono                                            (4.297)             (24)
+                    Outras despesas - C6 Consignado                                                      42                 -
+
+
+
+                                                                                                                          32
+
+
+Classificação: Pública
+
+=== página 35 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                R EMUNERA ÇÃ O DO PESSOA L CHA VE DA A DMINISTRAÇÃ O
+                A remuneração total do pessoal-chave da administração para o semestre foi de R$ 16.112 (31 de
+                dezembro de 2023– R$ 14.163) a qual é considerada benefício de curto prazo.
+
+                              G ERENCIAMENTO DE RISCOS E DE CAPITAL
+                A estrutura de Gerenciamento de Riscos e Capital do Banco C6 S.A. reflete a estratégia e o modelo de
+                negócios do Banco, sendo compatível com a natureza e a complexidade de suas operações e produtos.
+                A gestão de risco e capital é realizada por uma área segregada das unidades operacionais de negócios,
+                assegurando, dessa forma, a independência de suas operações. O C6 Bank gerencia de forma proativa
+                os riscos inerentes às suas atividades, por entender que a continuidade dos seus negócios no longo
+                prazo está diretamente relacionada ao adequado processo de controle desses riscos. A filosofia do
+                banco é investir esforços significativos no entendimento da natureza e dos potenciais efeitos dos
+                riscos assumidos, visando definir práticas adequadas à gestão dos negócios.
+                A gestão de riscos é disseminada a todos os níveis da organização, de forma que todos os
+                colaboradores, a qualquer momento, possam identificar os potenciais riscos, assegurando, dessa
+                forma, que estes sejam devidamente avaliados e geridos nas diferentes áreas do banco.
+
+                     2 7. 1       ANÁLISE DE SENSIBILIDADE DAS CARTEIRAS
+
+                A análise de sensibilidade das carteiras permite avaliar o efeito dos movimentos relativos das curvas de
+                mercado e dos preços dos ativos financeiros sobre as posições mantidas pelo C6 Bank. Nesse sentido,
+                são empregados três cenários específicos:
+                Cenário I: Aplicação de choques de 1 ponto-base nas taxas de juros pré-fixado, cupom de moedas,
+                inflação e índice de taxas de juros, e 1 ponto percentual nos preços de moedas e ações, tanto de alta
+                quanto de queda, sendo consideradas as maiores perdas resultantes por fator de risco;
+                Cenário II: Aplicação de choques de 25% nas taxas das curvas de juros pré-fixado, cupom de moedas,
+                inflação, índices de taxas de juros e nos preços de moedas e ações, tanto de alta quanto de queda,
+                sendo consideradas as maiores perdas resultantes por fator de risco;
+                Cenário III: Aplicação de choques de 50% nas taxas das curvas de juros pré-fixado, cupom de moedas,
+                inflação e índices de taxas de juros e nos preços de moedas e ações, tanto de alta quanto de queda,
+                sendo consideradas as maiores perdas resultantes por fator de risco.
+                Exposições                                        30/06/2024                   31/12/2023
+                Fatores de Risco Risco de Variação em:   Cenário I Cenário II Cenário III   Cenário I Cenário II Cenário III
+                                 Taxa de Juros
+                Prefixado                                    (716)    (2.442)     (4.891)         19          65        129
+                                 Prefixada em Reais
+                Cupons           Taxa dos Cupons de
+                                                              (10)      (261)      (523)           2          41         82
+                Cambiais         Moedas Estrangeiras
+                Moedas           Taxas de Câmbio              (17)     (422)       (843)           2          45         89
+                                 Índices de preços de
+                Ações                                            -          -           -           -          -           -
+                                 renda variável
+                                 Taxas dos Cupons de
+                Cupom IPCA                                     (1)       (29)        (58)         (1)       (22)        (44)
+                                 IPCA
+                Total Geral                                 (745)     (3.154)     (6.315)         21         128        256
+
+
+                Os resultados apresentados revelam os impactos para cada cenário numa posição estática da carteira.
+                O dinamismo do mercado e das carteiras faz com que essas posições se alterem continuamente e não
+                obrigatoriamente reflitam a posição aqui demonstrada. Além disso, a Organização possui um processo
+                de gestão contínua do risco de mercado, que procura, constantemente, formas de mitigar os riscos
+                associados, de acordo com a estratégia determinada pela Alta Administração. Assim, em casos de
+                sinais de deterioração de determinada posição, ações proativas são tomadas para minimização de
+                possíveis impactos negativos, visando maximizar a relação risco retorno para a Organização.
+
+
+                Os ativos financeiros mensurados ao valor de mercado (Notas 5, 6 e 8) são representados por
+                investimentos em títulos públicos brasileiros e instrumentos financeiros derivativos, classificados no
+                Nível 1 na hierarquia do valor justo, cuja mensuração se dá pela observação de preços ativamente
+                negociados no mercado; títulos privados, incluindo CRA classificadas no Nível 2 na hierarquia do valor
+
+
+                                                                                                                         33
+
+
+Classificação: Pública
+
+=== página 36 ===
+                Demonstrações financeiras
+                Banco C6 S.A.
+                30 de junho de 2024
+
+                justo, cuja mensuração se dá por técnica de avaliação que utiliza somente dados de mercado
+                observáveis; e cotas de fundos de investimento, classificados no Nível 2 na hierarquia do valor justo,
+                cuja mensuração se dá pela atualização do valor da cota divulgada por seus administradores.
+
+                     2 7. 2        GERENCIAMENTO DE CAPITAL
+
+                Os requerimentos de capital do C6 Bank são determinados com base no conjunto de regras emanadas
+                pelo CMN e pelo BACEN que refletem, no Brasil, os padrões globais de requerimento de capital (BIS
+                BACENS). Para calcular os requerimentos mínimos de capital, apura-se o montante total dos Ativos
+                Ponderados por Risco (RWA) através da soma das parcelas dos Ativos Ponderados por Risco de Crédito,
+                de Mercado e Operacional. O C6 Bank utiliza as abordagens padronizadas para o cálculo dessas
+                parcelas, consoante a regulamentação em vigor.
+                A tabela a seguir apresenta os requerimentos mínimos de capital e limites operacionais:
+                                                                                    30/06/2024            31/12/2023
+                 Patrimônio de Referência                                              4.710.570           3.879.483
+                   Nível I                                                            3.658.796            2.836.496
+                     Capital Principal                                                 3.596.155            2.775.610
+                     Patrimônio Líquido                                                3.869.370           2.898.425
+                     (-) Ajustes Prudenciais previstos na Resolução nº 4955/21          (273.215)            (122.814)
+                   Capital complementar                                                    62.641               60.885
+                   Nível II                                                            1.051.773            1.042.987
+                     Dívida Subordinada                                                 1.051.773           1.042.987
+                 Ativos ponderados pelo risco - RWA                                  36.525.055           31.998.223
+                   Risco de Crédito                                                   33.103.981          29.322.865
+                   Risco de Mercado                                                       213.298              101.920
+                   Risco Operacional                                                   3.207.777            2.573.437
+                 Patrimônio de Referência mínimo requerido                            2.922.004            2.559.858
+                 Índice de Basiléia (PR/RWA)                                              12,90%                12,12%
+
+
+
+                              O UTRAS INFORMAÇÕES
+                O C6 Bank possui acordos de compensação no âmbito de convênios de derivativos, bem como acordos
+                para compensação e liquidação de operações ativas e passivas ao amparo da Resolução CMN n°
+                3.263/05, cujo objetivo é permitir a compensação de créditos e débitos mantidos com uma mesma
+                contraparte, onde os vencimentos dos direitos e obrigações podem ser antecipados para a data em
+                que ocorrer o evento de inadimplência por uma das partes ou em caso de falência do devedor.
+
+
+
+
+                                                                      * * *
+
+
+
+
+                                                                                                                   34
+
+
+Classificação: Pública

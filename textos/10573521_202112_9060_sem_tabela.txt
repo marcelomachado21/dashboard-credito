@@ -1,0 +1,828 @@
+
+=== página 17 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    Segregação por tipo de contrato, contraparte e notional:
+                                                                                                                                                       31.12.2021
+                                                                                                                                                      Valor de
+                                                                                                                                                                     Diferencial a        Diferencial a
+                                                                                                                               Contraparte          Referência
+                    Contratos                                                                                                                                            Receber                 Pagar
+                                                                                                                                                    (Notional)
+                    Termo de Moeda                                                                                                                           -                        -              -
+                                                                                                                       Mercado de Balcão
+                    Termo de Moeda - Hedge Fluxo de Caixa                                                                                              499.358               11.785            (4.418)
+                    Total                                                                                                                             499.358               11.785             (4.418)
+
+
+                    Os contratos de instrumentos financeiros derivativos possuem vencimento entre 01 de janeiro de 2022 e 01 de dezembro de 2022.
+
+
+                                                                                                                                                       31.12.2020
+                                                                                                                                                      Valor de
+                                                                                                                                                                     Diferencial a        Diferencial a
+                                                                                                                               Contraparte          Referência
+                                                                                                                                                                         Receber                 Pagar
+                                                                                                                                                    (Notional)
+                    Contratos
+
+                    Termo de Moeda                                                                                                                   1.117.291                        -       (18.955)
+                                                                                                                      Mercado de Balcão
+                    Termo de Moeda - Hedge Fluxo de Caixa                                                                                              383.207                        -       (14.854)
+                    Total                                                                                                                           1.500.498                      -         (33.809)
+
+
+                    Hedge de Fluxo de Caixa
+
+                    As estratégias de hedge de fluxo de caixa do Mercado Pago consistem em: hedge de exposição à variação nos fluxos de caixa da empresa com exposição à taxa de
+                    câmbio, que são atribuíveis as alterações nas taxas relativos a compra de dispositivos MPOS expressos em dólares americanos convertidos em reais.
+                    O Mercado Pago aplica o hedge de fluxo de caixa como segue:
+                    • Contrata moeda futura através de NDF's (Non-Deliverable Foward ) indexados a Dólar futuro e os designa como instrumento derivativo em uma estrutura de
+                    Hedge de Fluxo de Caixa, tendo como objeto operações de compra de máquinas MPOS indexados em dólares flutuante e negociados através de um plano anual de
+                    aquisição.
+                    Os mesmos derivativos serão adquiridos gradualmente, com o objetivo de cobrir o plano mensal de compras estipulados inicialmente no plano anual de aquisições
+                    de MPOS para os próximos 12 meses.
+
+                                                                                                                                                                 31.12.2021
+                    Estratégias:                                                                                                                    Instrumentos de Hedge                      Objeto
+                                                                                                                                                      Valor de                                Valor de
+                                                                                                                                                                       Marcação a
+                                                                                                                                                    Referência                              Referência
+                                                                                                                                                                         Mercado
+                    Contratos de NDF                                                                                                                (Notional)                              (Notional)
+                    Hedge Compra Futura de Ativo - USD x BRL (i)                                                                                       499.358                 7.367           497.722
+
+                                                                                                                                                                 31.12.2020
+                    Estratégias:                                                                                                                    Instrumentos de Hedge                   Objeto
+                                                                                                                                                      Valor de                                Valor de
+                                                                                                                                                                       Marcação a
+                                                                                                                                                    Referência                              Referência
+                                                                                                                                                                         Mercado
+                    Contratos de NDF                                                                                                                (Notional)                              (Notional)
+                    Hedge Compra Futura de Ativo - USD x BRL (i)                                                                                       383.207            (14.854)             383.171
+
+                    (i) O valor do Ativo é referente ao montante do objeto de Hedge coberto na aquisição futura de máquinas MPOS. Os contratos de NDF ( Non-Deliverable Foward ) são adquiridos para
+                    cobrir o plano mensal dos próximos 12 meses com metodologia de cobertura de 80% para os 3 primeiros meses, 60% do 4º mês até o 6º mês, 40% do 7º mês até o 9º mês e 20% do
+                    10º mês até o 12º mês. Em 31 de dezembro de 2021, o plano total de aquisição de ativos - MPOS corresponde a um valor de R$ 1.000.684.
+
+                    d)     Operações de Crédito e Provisão para perdas esperadas associadas ao risco de crédito:
+
+                    Saldo em 31 de Dezembro de 2021 e 2020, das operações de crédito contratadas no Sistema Financeiro Nacional:
+
+                    (i) Composição da carteira de crédito e abertura por contraparte :
+
+                                                                                                                                      31.12.2021                                          31.12.2020
+                                                                                                                           Carteira            Provisão                                    Carteira
+                    Modalidade de crédito
+                    Crédito pessoal                                                                                                    648                (80)                                               -
+                    Cartão de crédito                                                                                             244.067            (115.336)                                           1
+                    Capital de Giro                                                                                                41.809              (5.784)                                               -
+                    Financiamentos                                                                                                 17.392              (2.228)                                               -
+                    Total                                                                                                        303.916            (123.427)                                            1
+
+                    Circulante                                                                                                    303.916             123.427                                            1
+                    Não Circulante                                                                                                                           -                                               -
+
+                    Abertura por Contraparte:
+                                                                                                                  31.12.2021                                                31.12.2020
+                                                                                                       Carteira           Provisão                                  Carteira               Provisão
+
+
+                    Pessoa física                                                                          297.560               (122.611)                                        1                          -
+                    Pessoa jurídica                                                                           6.356                   (816)                                           -                      -
+                                                                                                          303.916               (123.427)                                         1                  -
+
+                    (ii) Composição das operações de crédito por vencimento:
+                                                                                                                               31.12.2021                                                  31.12.2020
+                    Curso Normal
+                    Parcelas a vencer                                                                                             149.340                                                                1
+                    até 3 meses                                                                                                   127.490                                                                1
+                    3 a 6 meses                                                                                                    13.039                                                                    -
+                    6 a 12 meses                                                                                                    8.811                                                                    -
+                    Curso Anormal
+                    Parcelas vencidas                                                                                             154.576                                                                    -
+                    Até 14 dias                                                                                                     49.857                                                                   -
+                    até 3 meses                                                                                                     68.124                                                                   -
+                    3 a 6 meses                                                                                                     36.088                                                                   -
+                    6 a 12 meses                                                                                                       507                                                                   -
+                    Total                                                                                                        303.916                                                                 1
+
+
+
+
+                                                                                                                                                                                                                 13
+
+=== página 18 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    (iii) Classificação da carteira das operações de crédito:
+                                                                                     31.12.2021                                                                          31.12.2020
+                    Nível                                    Curso Normal                Curso Anormal Total                                   Curso Normal             Curso Anormal               Total
+
+
+                    A                                                           -                  -               -                                               1                    -                        -
+                    C                                                        77.834                -            77.834                                         -                        -                        -
+                    D                                                        64.439                -            64.439                                         -                        -                        -
+                    E                                                         5.226             63.683          68.909                                         -                        -                        -
+                    F                                                               90                 56          146                                         -                        -                        -
+                    G                                                         1.750             90.331          92.081                                         -                        -                        -
+                    H                                                                1             506             507                                         -                        -                        -
+                                                                                                                      0
+                    Total                                                   149.340           154.576          303.916                                              1                   -                            1
+
+
+                    (iv) Classificação da provisão por fator de risco das operações de crédito:
+
+                    Nível                                                                                                                                  31.12.2021
+
+                                                                                                                          %Provisão Mínima
+                                                                                                                                 Requerida              Requerida               Adicional                       Total
+                    C                                                                                                                     3%                2.335                   5.441                      7.776
+                    D                                                                                                                    10%                6.444                   1.859                      8.303
+                    E                                                                                                                    30%               20.673                   6.980                    27.653
+                    F                                                                                                                    50%                       73                       3                        76
+                    G                                                                                                                    70%               64.457                 14.655                     79.112
+                    H                                                                                                                   100%                  507                       -                       507
+                    Total                                                                                                                                 94.488                  28.939                    123.427
+
+
+                    Em 31 de dezembro de 2021 não houve baixa relevante para prejuízo ( baixa no período menor que R$ 1 ) ou recuperação de crédito.
+                    Para gestão do risco de crédito, a Companhia utiliza modelos internos de avaliação das suas operações de crédito. A provisão adicional é constituída com base principalmente na
+                    expectativa de realização da carteira de crédito, em adição ao mínimo requerido pela regulamentação vigente. A provisão requerida segue com base a Resolução 2.682/99 do CMN.
+
+                    e)     Outros Ativos a Receber:
+                                                                                                                                                      31.12.2021                                     31.12.2020
+                    Valores a receber – Adquirentes (i)                                                                                                  3.891.488                                          1.607.500
+                    Valores a receber – Ligadas (ii) – nota 20                                                                                             206.827                                           236.103
+                    Valores a receber – Transações de pagamentos (iii)                                                                                   1.424.129                                            26.952
+                    Conta de pagamento Instantâneo - PIX                                                                                                   827.585                                           296.972
+                    Outros ativos a receber (iv)                                                                                                           140.515                                            15.790
+                    Despesas antecipadas                                                                                                                    19.445                                             8.300
+                    Devedores por depósitos em garantia (v) (vi)                                                                                           340.157                                           180.040
+                    Total                                                                                                                               6.850.146                                       2.371.657
+                    Outros Créditos - Curto Prazo                                                                                                        6.487.956                                          2.191.617
+                    Outros Créditos - Longo Prazo ( vii)                                                                                                   362.189                                           180.040
+
+
+                    (i) São constituídos pelos valores a receber das adquirentes oriundas das transações de cartões de crédito a vista e parcelado, dentro da plataforma Mercado Livre e outras plataformas
+                    de e-commerce e máquinas (MPOs) de Mercado Pago.
+                    (ii) São transações a receber que o Mercado Pago possui com suas empresas coligadas - nota 20.
+                    (iii) Correspondem substancialmente aos valores a receber de usuários finais e incentivos de performance Visa, relativos a transações de pagamento utilizando os cartões de crédito e
+                    débito de Mercado Pago como emissor pendente de liquidação.
+                    (iv) Valores representados substancialmente por valores a receber de títulos e créditos a receber, outras comissões diversas de serviços de transações de pagamento e caixa a
+                    compensar
+                    (v) Correspondem substancialmente aos saldos depositados judicialmente referente ao processo judicial relacionado ao não recolhimento de determinados impostos sobre operações de
+                    remessas para a matriz MercadoLibre Argentina. Em 31 de dezembro de 2021, o total dos depósitos em juízo totalizavam R$327.322 (Em 2020 - R$ 180.040).
+                    (vi) Corresponde a depósito para prestação de garantia solicitado pela empresa Visa International Service para cobertura de eventuais riscos, com valor fixo e sem remuneração. Em
+                    31 de dezembro de 2021, corresponde a um valor de R$12.835 (Em 2020 -R$11.952).
+                    (vii) Corresponde aos montantes dos itens (v) e (vi) e aos valores a receber de usuários finais (iii) em estoque acima de 12 meses correspondiam aos montante de R$22.032.
+
+
+                    6.     PROVISÃO PARA CHARGEBACK
+                    A Companhia realiza a provisão para fazer face às perdas prováveis em valores a receber de usuários finais, relativos às transações de pagamento. A movimentação
+                    dos exercícios findos em 31 de dezembro de 2021 e 2020, está detalhada a seguir:
+
+                                                                                                                                                      31.12.2021                                     31.12.2020
+                    Saldo inicial                                                                                                                         (64.804)                                           (31.110)
+                        Reversão                                                                                                                            66.034                                            94.112
+                        Constituição                                                                                                                     (184.400)                                          (127.805)
+                    Saldo final                                                                                                                         (183.170)                                            (64.804)
+                    7. INTANGÍVEL
+                    a)    Composição do intangível
+                                                                                                                                                           31.12.2021
+
+                                                                                                                           Taxa Anual de                     Custo            Amortização                     Saldo
+                                                                                                                            Amortização                                        Acumulada                    Residual
+                    Software                                                                                                     33%                       517.743               (230.734)                   287.009
+                    Software em desenvolvimento (i)                                                                               -                         93.879                              -             93.879
+                    Total                                                                                                                                 611.622               (230.734)                   380.888
+
+                                                                                                                                                           31.12.2020
+
+                                                                                                                           Taxa Anual de                     Custo            Amortização                     Saldo
+                                                                                                                            Amortização                                        Acumulada                    Residual
+                    Software                                                                                                     33%                       304.274               (147.269)                   157.005
+                    Software em desenvolvimento (i)                                                                               -                         50.834                              -             50.834
+                    Total                                                                                                                                 355.108               (147.269)                   207.839
+
+
+                    (i) Correspondem às horas de serviços de TI necessárias para o desenvolvimento de novos softwares / sistemas.
+
+
+
+
+                                                                                                                                                                                                                          14
+
+=== página 19 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    b)    Movimentação do intangível
+
+                                                                                                                                                                31.12.2021
+                                                                                                                                                                Desenvolvimento
+                                                                                                                                                  Softwares                                  Total
+                                                                                                                                                                     de software
+                    Saldos em 31.12.2019                                                                                                              65.280              18.525            83.805
+                    Adições                                                                                                                          148.941               32.309          181.250
+                    Amortização                                                                                                                     (57.216)                       -      (57.216)
+                    Saldos em 31.12.2020                                                                                                             157.005               50.834          207.839
+                    Adições / transferências                                                                                                         213.469               43.046          256.515
+                    Amortização                                                                                                                     (83.465)                       -      (83.465)
+                    Saldos em 31.12.2021                                                                                                            287.009               93.880          380.888
+
+
+                    8. DEPÓSITOS
+
+                    a)    Depósito de saldo de moeda eletrônica
+                    Referem-se aos saldos em moeda eletrônica mantidos em contas de pagamento pré-pagas, inclusive os saldos em trânsito entre contas de pagamento da mesma
+                    instituição. Estão apresentados conforme a tabela abaixo:
+                                                                                                                                                 31.12.2021                            31.12.2020
+
+                    Saldos de livre movimentação                                                                                                   4.586.363                             2.119.858
+                    Obrigações por transação de Pagamentos (i)                                                                                     1.337.330                             1.865.200
+                    Saldos bloqueados (ii)                                                                                                           314.517                               397.409
+                    Total                                                                                                                         6.238.210                             4.382.467
+
+                    (i) Refere-se aos montantes que ainda não foram convertidos em moeda eletrônica tendo em vista que não foram cumpridos os requisitos previstos no arranjo de pagamento para que
+                    estes se tornem disponíveis para livre utilização.
+                    (ii) Se referem aos saldos em trânsito entre contas de pagamento da mesma instituição e os valores a pagar a instituições participantes de arranjo de pagamento, relativos a
+                    transações de pagamento originadas de titular de conta de pagamento.
+
+                    b)    Depósitos de Captação de depósito e Recursos de Aceites e Emissão de Títulos:
+                    (i) Composição dos depósitos:
+                                                                                                                                                                                       31.12.2021
+                    Certificado Depósito Interfinanceiro - CDI                                                                                                                             131.122
+                    Certificado Depósito Bancário - CDB                                                                                                                                  3.134.257
+                    Letra Financeira - LF                                                                                                                                                  515.919
+                    Total                                                                                                                                                               3.781.298
+
+                    (ii) Composição dos depósitos por prazo de vencimento:
+                                                                                                                                                    31.12.2021
+                                                                                                                        Até 3 Meses        De 3 meses a 12 Acima de 12 meses
+                                                                                                                                                                                        Total
+                                                                                                                                                meses
+                    Certificado Depósito Interfinanceiro - CDI (i)                                                             131.122                  -                     -           131.122
+                    Certificado Depósito Bancário - CDB (ii)                                                                 1.490.804            1.637.890                5.563        3.134.257
+                    Letra Financeira - LF (iii)                                                                                     -                   -                515.919          515.919
+                    Total                                                                                                   1.621.926            1.637.890              521.482        3.781.298
+
+
+                    Total circulante dos saldos de depósitos e recursos de aceites e emissão de títulos                                                                                9.498.026
+                    Total não circulante dos saldos de depósitos e recursos de aceites e emissão de títulos                                                                              521.482
+
+
+                    (i) Em 31 de dezembro de 2021, os certificados de depósitos interfinanceiros são indexados a percentuais da taxa referencial de juros (DI).
+                    (ii) Em 31 de dezembro de 2021, os certificados de depósitos bancário pós fixados são indexados a percentuais da taxa referencial de juros (DI) que variam entre
+                    98% a 129%. Os certificados de depósitos pré fixados as taxas de juros variam entre 6,9% à 12,85%.
+                    (iii) Em 31 de dezembro de 2021, as letras financeiras são indexados a 100% do percentual da taxa referencial de juros (DI) mais taxa nominal pré fixada de 1,1%.
+
+
+                    9. RELAÇÕES INTERFINANCEIRAS
+
+                    O saldo da rubrica relações interfinanceiras é composto de valores a pagar a instituições financeiras, demais instituições autorizadas a funcionar pelo Banco Central
+                    do Brasil e instituições de pagamento participantes de arranjo de pagamento, relativos a transações de pagamento. No exercício findo de 31 de dezembro de 2021,
+                    são compostos substancialmente pelas obrigações de liquidação junto as bandeiras de cartões de débito e crédito no valor de R$1.515.333 (em 2020 - R$144.244).
+
+
+                    10. OBRIGAÇÕES POR EMPRÉSTIMOS
+                    a) Composição de obrigações por empréstimos
+                                                                                                                                  31.12.2021                                           31.12.2020
+                                                                                                                        De 3 a 12 meses                 Total                                   Total
+                    Em moeda nacional                                                                                            24.825               24.825                            1.051.044
+                                                                                                                                 24.825              24.825                            1.051.044
+
+
+                    b) Movimentação dos Empréstimos
+                                                                                    31.12.2020                  Captações                              Pagamentos                      31.12.2021
+                                                                                      Saldo Inicial        Principal   Juros apropriados            Principal                Juros      Saldo Final
+                    Em moeda nacional                                                  1.051.044           224.822               21.566          (1.239.929)             (32.678)          24.825
+                                                                                       1.051.044           224.822               21.566         (1.239.929)             (32.678)           24.825
+
+
+
+
+                                                                                                                                                                                                        15
+
+=== página 20 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    11. OUTROS PASSIVOS DIVERSOS E OUTRAS OBRIGAÇÕES
+                    a)   Sociais e estatutárias
+                                                                                                                                                       31.12.2021                              31.12.2020
+                    Gratificações e participações a pagar                                                                                                   48.824                                  23.700
+                    Total                                                                                                                                  48.824                                  23.700
+
+
+                    b)    Diversas
+                                                                                                                                                       31.12.2021                              31.12.2020
+                    Valores a pagar de sociedades ligadas (i)                                                                                             1.713.087                              1.864.573
+                    Credores diversos - país (ii)                                                                                                          572.681                                 277.441
+                    Provisão para pagamentos a efetuar                                                                                                       14.546                                  16.005
+                    Total                                                                                                                               2.300.314                               2.158.019
+
+
+                    c)   Impostos e contribuições a recolher
+                                                                                                                                                       31.12.2021                              31.12.2020
+                    Impostos e contribuições a recolher                                                                                                    161.741                                 102.965
+                    Impostos e contribuições sobre lucros a pagar                                                                                            16.179                                  58.348
+                    Total                                                                                                                                  177.920                                161.313
+
+
+                    d)    Total de Outros passivos diversos e Outras obrigações
+                                                                                                                                                       31.12.2021                              31.12.2020
+                    Outras Obrigações Curto Prazo                                                                                                         2.152.008                              2.144.038
+                    Outras Obrigações Longo Prazo                                                                                                          375.050                                 198.994
+                    Total                                                                                                                               2.527.058                               2.343.032
+
+
+
+                    (i) São constituídos substancialmente pelos valores que devem ser repassados para empresas coligadas nas operações de shipping e corresponde ao montante que é cobrado do
+                    usuário final por transação nas plataformas, líquido da parcela da receita de processamento do Mercado Pago.
+                    O restante dos valores inclui: rateio pelo uso da plataforma, rateio pelo processamento e utilização dos servidores de internet da matriz, reembolso de gastos, imagem corporativa, etc.
+                    (ii) São constituídos substancialmente por valores a pagar para fornecedores.
+                    (iii) São constituídos substancialmente por valores referente ao recolhimento do Imposto de Renda Retido na Fonte (“IRRF”) sobre as remessas efetuadas para controladora na
+                    Argentina.
+
+
+                    12. PROVISÕES
+                    O Conglomerado Prudencial, no curso normal de suas operações, é parte em processos judiciais de natureza fiscal, cível e trabalhista em diversas instâncias,
+                    ajuizados. A Administração da Companhia adotou como procedimento a constituição de provisão com base em vários fatores, incluindo a opinião de seus assessores
+                    jurídicos externos, a análise das demandas judiciais pendentes e o histórico de perdas efetivas.
+
+
+                    a)    Composição das provisões
+                    Em 31 de dezembro de 2021 e 2020, o saldo das provisões para ações judiciais é composto pelo seguinte:
+                                                                                                                                                       31.12.2021                              31.12.2020
+                    Provisão para ações judiciais (i)                                                                                                        27.748                                  17.930
+
+
+                    (i) Correspondem às provisões representadas por ações de natureza cível de relação de consumo, trabalhistas e tributárias no qual há a probabilidade de perdas prováveis segundo
+                    opinião dos assessores jurídicos.
+                    A Companhia pleiteia judicialmente o não recolhimento do Imposto de Renda Retido na Fonte (“IRRF”) sobre remessas efetuadas para controladora na Argentina, relativas à prestação
+                    de serviços de IT, tendo em vista evitar a dupla tributação dos valores envolvidos nessas operações. Os assessores legais avaliaram que as chances de perda de tal causa é possível e,
+                    por essa razão, a Companhia efetua depósitos em juízo relativos a tais valores e demais processos enquanto discute a causa no âmbito judicial. Os valores depositados de tais valores e
+                    demais processos judiciais atualizados em 31 de dezembro de 2021 eram de R$ 327.322 - nota 5.e (v) ( Em 2020 - R$168.088).
+                    Para as Ações de perda possível, o risco estimado em 31 de dezembro de 2021 é de R$153.553 (Em 2020 de R$ 79.000).
+
+                    b)    Movimentação das provisões
+                                                                                                                                                       31.12.2021                              31.12.2020
+
+                    Saldo inicial                                                                                                                            17.930                                  15.966
+                    Constituição/ (Reversão)                                                                                                                 25.355                                  10.161
+                    Pagamentos                                                                                                                             (15.537)                                 (8.197)
+                    Saldo final                                                                                                                             27.748                                  17.930
+
+
+
+
+                                                                                                                                                                                                               16
+
+=== página 21 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    13. PATRIMÔNIO LÍQUIDO
+                    a)   Capital social
+                    O capital social da Companhia, totalmente subscrito e integralizado, é de R$ 577.339 representados por 577.339.985 cotas no valor nominal de R$ 1,00 cada uma.
+                    São assim distribuídas:
+                                                                                                           %                  31.12.2021                                 %            31.12.2020
+
+
+                    MercadoLivre.com Atividades de Internet ltda.                                        26,44%               152.664.699                              54,19            118.289.095
+                    MercadoPago, LLC                                                                     71,32%               411.768.070                              41,23             90.000.000
+                    Mercadolibre, INC.                                                                   2,44%                 12.907.216                               4,58             10.000.890
+                    Total (em reais)                                                                     100%               577.339.985                                100%            218.289.985
+
+
+                    Em 31 de janeiro de 2020, foi aprovada pelas sócios representantes da totalidade do capital social do Mercado Pago, o aumento de Capital Social por meio de
+                    recursos próprios no montante de R$20.000 mediante a emissão de 20.000.000 de cotas. O referido aumento de capital foi aprovado pelo BACEN em 07 de julho de
+                    2020.
+                    Em 29 de setembro de 2020, foi aprovada pelas sócios representantes da totalidade do capital social do Mercado Pago, a integração como sócia da Companhia a
+                    empresa MERCADOPAGO.LLC via aumento de Capital Social por meio de recursos próprios no montante de R$90.000 mediante a emissão de 90.000.000 de cotas.
+                    O referido aumento de capital foi aprovado pelo BACEN em 15 de dezembro de 2020.
+                    Em AGE de 28 de dezembro de 2020, foi aprovada pelos sócios representantes da totalidade do capital social do Mercado Pago, o aumento de Capital Social por
+                    meio de recursos próprios no montante de R$129.050 mediante a emissão de 129.050.000 de cotas. O referido aumento de capital foi aprovado pelo BACEN em 8
+                    de abril de 2021.
+                    Em AGE de 30 de abril de 2021, foi aprovada pelos sócios representantes da totalidade do capital social do Mercado Pago, o aumento de Capital Social por meio de
+                    recursos próprios no montante de R$100.000 mediante a emissão de 100.000.000 de cotas. O referido aumento de capital foi aprovado pelo BACEN em 23 de junho
+                    de 2021.
+                    Em AGE de 28 de dezembro de 2021, foi aprovada pelos sócios representantes da totalidade do capital social do Mercado Pago, o aumento de Capital Social por
+                    meio de recursos próprios no montante de R$130.000 mediante a emissão de 130.000.000 de cotas. O referido aumento em 31 de dezembro de 2021 está em
+                    processo de aprovação pelo BACEN.
+
+                    b)   Destinação dos lucros
+                    No exercício findo em 31 de dezembro de 2020, conforme deliberação dos sócios, houve a distribuição por meio de juros sobre capital próprio no valor de R$ 7.150.
+
+
+
+                    c)   Outros Resultados Abrangentes
+                    Representam os ajustes cumulativos de valorização ou desvalorização do valor de mercado dos títulos e valores mobiliários e instrumentos financeiros derivativos
+                    líquidos de impostos, sendo estes reclassificados para o resultado quando da efetiva realização dos saldos.
+
+                    d)   Participação de não controladores
+                    O capital social da companhia Mercado Crédito, totalmente subscrito e integralizado, é de R$ 165.000 representados por 165.000.000 ações no valor nominal de R$
+                    1,00 cada uma. São assim distribuídas:
+                                                                                                           %                  31.12.2021                                 %            31.12.2020
+                    Mercado Crédito Holding Financeira Ltda                                              50,01%                82.516.500                             50,01%             20.004.000
+                    Mercadopago, LLC                                                                     49,99%                82.483.500                             49,99%             19.996.000
+                    Total                                                                                100%                    165.000                               100%             40.000.000
+
+
+                    O resultado do exercício de 31 de dezembro de 2021 foi um prejuízo no montante de R$ 42.608 e o Patrimônio Líquido na referida data base é de R$ 122.398.
+
+
+
+                    14. RECEITAS DE PRESTAÇÃO DE SERVIÇOS
+
+                                                                                                                                                   31.12.2021                           31.12.2020
+                    Receitas de prestação de serviço com meios de pagamentos (i)                                                                     7.868.152                             4.775.795
+                    Receitas com intermediação de serviços (ii)                                                                                        340.873                               123.433
+                    Total                                                                                                                           8.209.025                             4.899.228
+
+
+                    (i) Correspondem às receitas de prestação de serviços de transações de pagamentos, adquirência e comissões cobradas de operações realizadas dentro da plataforma do Mercado Livre
+                    (processamento das operações à vista e parceladas) ou de outras plataformas de e-commerce, pagamentos de compras e tarifa de retiradas.
+                    (ii) Refere-se basicamente à outras receitas operacionais pelos serviços de intermediação no qual o Mercado Pago atua como correspondente bancário na originação de operações de
+                    crédito de bancos parceiros, receita de intermediação como emissor de cartão e vendas de MPOs.
+
+
+                    15. DESPESAS DE PESSOAL
+
+                                                                                                                                                   31.12.2021                           31.12.2020
+                    Proventos                                                                                                                        (489.305)                             (335.440)
+                    Encargos sociais                                                                                                                  (50.262)                              (22.910)
+                    Benefícios                                                                                                                        (23.270)                               (9.181)
+                    Treinamento                                                                                                                          (719)                                 (130)
+                    Total                                                                                                                           (563.556)                             (367.661)
+
+
+                    16. OUTRAS DESPESAS ADMINISTRATIVAS
+
+                                                                                                                                                   31.12.2021                           31.12.2020
+                    Despesa com processamento de dados                                                                                               (135.810)                             (282.268)
+                    Despesa com promoções e relações públicas                                                                                        (235.268)                             (209.511)
+                    Despesa com propaganda e publicidade                                                                                             (258.113)                             (150.834)
+                    Despesa com depreciação e amortização                                                                                             (88.003)                              (62.277)
+                    Despesa com serviços técnicos especializados                                                                                      (52.156)                              (28.245)
+                    Outras despesas administrativas                                                                                                   (24.161)                               (5.201)
+                    Total                                                                                                                           (793.511)                             (738.336)
+
+
+
+
+                                                                                                                                                                                                        17
+
+=== página 22 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    17. DESPESAS TRIBUTÁRIAS
+
+                                                                                                                                                  31.12.2021                             31.12.2020
+                    Despesa de contribuição ao COFINS                                                                                                (620.200)                             (418.613)
+                    Despesa de ISS                                                                                                                   (156.410)                             (107.305)
+                    Despesa de contribuição ao PIS/PASEP                                                                                             (134.402)                              (90.703)
+                    Outras despesas tributárias (i)                                                                                                  (222.439)                             (133.485)
+                    Total                                                                                                                         (1.133.451)                             (750.106)
+
+
+                    (i) Correspondem substancialmente às despesas tributárias relacionadas a contribuições de intervenção no domínio econômico (CIDE) e ao imposto sobre circulação de mercadorias e
+                    serviços (ICMS).
+
+                    18. OUTRAS DESPESAS OPERACIONAIS
+
+                                                                                                                                                  31.12.2021                             31.12.2020
+                    Despesa direta por transações de pagamentos (i)                                                                                (1.282.191)                           (1.263.963)
+                    Despesa com serviços associados a transações de pagamento (ii)                                                                 (2.572.077)                           (1.484.350)
+                    Outras despesas operacionais (iii)                                                                                             (2.129.421)                             (508.754)
+                    Total outras receitas/despesas operacionais                                                                                   (5.983.689)                           (3.257.067)
+
+
+                    (i) Referem-se substancialmente às despesas e custos diretos por transação relacionadas meios de pagamentos.
+                    (ii) Referem-se basicamente a despesas e custos com serviços associados a transações de pagamentos, como por exemplo: comissões a empresas de arranjo de pagamentos, emissões
+                    de boletos, custos associados a novas tecnologias, comissões com revendedores, prevenção a fraude e chargeback.
+                    (iii) Correspondem substancialmente às despesas relacionadas à comercialização de equipamentos (MPOS) e rateio de despesas e custos operacionais com partes relacionadas.
+
+
+                    19. IMPOSTO DE RENDA E CONTRIBUIÇÃO SOCIAL
+                    a)    Reconciliação do Imposto de Renda de Pessoa Jurídica – IRPJ e da Contribuição Social sobre o Lucro Líquido – CSLL registrada no resultado do semestre.
+
+                                                                                                                                                  31.12.2021                             31.12.2020
+
+
+                    Prejuízo antes do IRPJ e da CSLL (i)                                                                                             (342.375)                             (124.583)
+                    Alíquota vigente (ii)                                                                                                          34% e 45%                              34% e 40%
+                    Despesa de IRPJ e CSLL de acordo com alíquota vigente                                                                             124.929                              (42.364)
+                    Efeito de itens permanentes
+                      Outros gastos não dedutíveis                                                                                                    (16.511)                                    6.275
+                    Despesa de IRPJ e CSLL                                                                                                            108.418                              (38.552)
+
+
+                    (ii) Alíquota 34% para a empresa Mercado Pago e 40% para a empresa Mercado Crédito. Entre os dias 01 de julho de 2021 até 31 de dezembro de 2021 a alíquota da Mercado Crédito
+                    estava em um total de 45%, devido a majoração da alíquota de CSLL.
+
+
+                    b)    Movimentação e composição do saldo do IRPJ e da CSLL diferidos:
+                                                                                                                                                                  Constituição e
+                    Impostos diferidos ativos sobre:                                                                                          31.12.2020           Realização            31.12.2021
+                    PDD e Chargeback                                                                                                                    23.155               90.283             113.438
+                    Provisões para contingências e outras provisões                                                                                     92.575               45.945             138.520
+                    Depósito Judicial - Importação Serviço                                                                                             (4.432)               (4.002)            (8.434)
+                    Provisão para bônus                                                                                                                  8.758                5.777              14.535
+                    Derivativos                                                                                                                         11.450             (14.184)             (2.734)
+                    Prejuízo fiscal e base negativa de CSLL                                                                                                 37                1.975               2.012
+                    Outros                                                                                                                                  49                  (95)               (46)
+                    Total                                                                                                                             131.592              125.699          257.291
+
+
+                    Ativo Fiscal Diferido Ativo                                                                                                        136.024              132.481             268.505
+                    Passivo Fiscal Diferido Passivo                                                                                                    (4.432)               (6.782)        (11.214)
+                    Total                                                                                                                             131.592              125.699          257.291
+
+                    c)    Prazo de realização do crédito tributário:
+
+                                                                                                                                                     Em 1 ano            Em 5 anos               Saldo
+
+                    Saldo do IRPJ e da CSLL diferidos                                                                                                  119.312              137.979             257.291
+
+
+                    O valor presente dos créditos tributários em 31 de dezembro de 2021 é de R$197.865.
+
+
+
+
+                                                                                                                                                                                                          18
+
+=== página 23 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    20.     PARTES RELACIONADAS
+                    Em 31 de dezembro de 2021 e 2020, a Companhia manteve transações com partes relacionadas conforme detalhado a seguir:
+
+                                                                                                                                                                            31.12.2021
+                                                                                                                                       Valores
+                                                                                                               Valores a receber       a pagar           Receita            Despesa
+                    Deremate .com de Mexico S. de R.L. de C.V.                                                              1.125                    -              3.408             -
+                    DeRemate.com de Uruguay S.R.L.                                                                            131            (2.508)                    -      (13.544)
+                    Ebazar.com.br Ltda.                                                                                  103.116          (606.901)                 9.103                   -
+                    Mercado Credito FIDC Nao Padronizados                                                                          -         (5.145)                    -                   -
+                    Mercado Credito I FIDC Nao Padronizados                                                                 6.180                    -                  -                   -
+                    Mercado Credito II Brasil FIDC Nao Padronizados                                                           217                (236)                  -                   -
+                    Mercado Credito Merchant FIDC Nao Padronizados                                                                 -              (98)                  -                   -
+                    FIDC Arandu                                                                                            49.931                    -                  -                   -
+                    Ibazar.com Atividades de Internet Ltda.                                                                   301                (154)                  -                   -
+                    MercadoLibre Colombia Ltda.                                                                                98           (10.915)                    -      (53.167)
+                    Mercado Envios Serviços de Logística Ltda.                                                              9.987         (548.175)                     -                 (1)
+                    MercadoLibre S.R.L.                                                                                     8.928         (444.043)                     -     (926.886)
+                    MercadoLivre.com Atividades de Internet Ltda                                                            3.183           (36.732)                    -                   -
+                    MercadoLibre Chile Ltda.                                                                                  317            (1.059)                    -       (2.244)
+                    MercadoLibre, S.R.L. de C.V.                                                                            2.669                    -              9.710                   -
+                    MercadoPago S.A.                                                                                          674                    -              2.862                   -
+                    Mercado Pago International LLC                                                                         19.739                    -                  -                   -
+                    MercadoPago Colombia Ltda.                                                                                231                    -              1.114                   -
+                    Meli Uruguay S.R.L                                                                                             -        (51.800)                    -     (102.260)
+                    MercadoLibre México Ltda                                                                                       -         (4.375)                    -      (19.513)
+                    Mercado Crédito Holding Financeira Ltda                                                                        -             (145)                  -                   -
+                    MercadoLibre Inc.                                                                                              -             (801)                  -      (11.895)
+                    Total                                                                                                206.827         (1.713.087)               26.197   (1.129.510)
+
+
+                                                                                                                                                                            31.12.2020
+                                                                                                               Valores a receber       a pagar           Receita            Despesa
+
+                    MercadoLivre Brasil                                                                                    23.911         (391.399)                     -                   -
+                    Mercado Envios Brasil                                                                                      16                  (2)                  -                   -
+                    Ibazar Brasil                                                                                        130.966          (885.471)                     -                   -
+                    eBazar Brasil                                                                                          80.441                    -                  -                   -
+                    Mercado Pago Int Argentina                                                                                     -      (540.501)                     -     (763.229)
+                    MercadoLibre Argentina                                                                                         -         (1.218)                    -      (23.631)
+                    MercadoLibre Inc Estados Unidos                                                                                -         (3.723)                    -      (15.165)
+                    Deremate.com Uruguai                                                                                           -         (2.179)                    -       (2.857)
+                    MercadoLibre Colombia                                                                                          -             4.770                  -                   -
+                    Meli Tecnology Estados Unidos                                                                                  -        (14.596)                    -      (77.167)
+                    MercadoLibre Uruguai                                                                                           -             (928)                  -       (1.478)
+                    Mercado Crédito Holding Financeira LTDA                                                                        -             (146)                  -         (146)
+                    MercadoLibre Chile                                                                                        101                    -                  -                   -
+                    Total                                                                                                235.435         (1.835.392)                    -     (883.672)
+
+
+                    A remuneração total dos administradores no exercício foi de R$9.678 (Em 2020 - R$3.422).
+
+
+                    21. VALOR JUSTO DOS INSTRUMENTOS FINANCEIROS
+                    Conforme quadro abaixo, os instrumentos financeiros foram classificados em 31 de dezembro de 2021 e 2020 através de hierarquia utilizando o método de
+                    mensuração dos ativos:
+
+
+
+                                                                                                                                            31.12.2021
+                                                                                                                          Nível 1           Nível 2            Nível 3           Total
+
+                    Ativo
+                    Títulos e Valores Mobiliários                                                                     5.460.457            127.639                      -    5.588.096
+                    Títulos privados                                                                                               -       127.639                      -      127.639
+                    Certificados de depósitos bancários – CDB                                                                      -         88.102                     -       88.102
+                    Cotas de fundos de investimento                                                                                -         39.537                     -       39.537
+                    Outros                                                                                                         -                 -                  -                   -
+                    Títulos públicos                                                                                  5.460.457                      -                  -    5.460.457
+                    Letra Financeira do Tesouro - LFT                                                                  5.460.457                     -                  -     5.460.457
+                    Instrumentos Financeiros Derivativos                                                                           -         11.785                     -       11.785
+                    Termo de Moeda - NDF - Hedge                                                                                   -         11.785                     -       11.785
+                    Passivo
+                    Instrumentos Financeiros Derivativos                                                                           -        (4.418)                     -      (4.418)
+                    Termo de Moeda - NDF - Hedge                                                                                   -         (4.418)                    -       (4.418)
+
+
+
+
+                                                                                                                                                                                                19
+
+=== página 24 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                                                                                                                                               31.12.2020
+                                                                                                                                   Nível 1      Nível 2          Nível 3          Total
+                    Ativo
+                    Títulos e Valores Mobiliários                                                                               3.885.093      766.843                 -      4.651.936
+                    Negociação
+                    Títulos privados                                                                                                       -    40.066                 -         40.066
+                    Cotas de fundos de investimento                                                                                        -     40.066                -         40.066
+                    Disponível para Venda
+                    Títulos privados                                                                                                       -   726.777                 -       726.777
+                    Certificados de depósitos bancários – CDB                                                                              -    726.724                -        726.724
+                    Cotas de fundos de investimento                                                                                        -        45                 -             45
+                    Outros                                                                                                                 -          8                -              8
+                    Títulos públicos                                                                                            3.885.093             -                -      3.885.093
+                    LFT - vinculados à prestação de garantias                                                                    3.885.093            -                -      3.885.093
+                    Instrumentos Financeiros Derivativos                                                                                   -   (33.809)                -       (33.809)
+                    Instrumentos Financeiros Derivativos                                                                                   -   (33.809)                -       (33.809)
+                    Termo de Moeda - NDF                                                                                                       (18.955)                         (18.955)
+                    Termo de Moeda - NDF - Hedge                                                                                           -   (14.854)                -        (14.854)
+
+                    Nos exercícios de 2021 e 2020, não ocorreram transferências entre níveis de mensuração dos instrumentos financeiros.
+
+
+                    22. ESTRUTURA DE GERENCIAMENTO DE CAPITAL E DE RISCOS
+                    Gerenciamento da estrutura de capital e riscos
+                    Visando o atendimento à Circular BACEN nº 3.681/2013 e à Resolução CMN 4.557/17, o Mercado Pago e Mercado Crédito adotaram uma estrutura de
+                    gerenciamento de capital e riscos que é compatível com a natureza das atividades das Instituições e com a complexidade dos serviços que são oferecidos,
+                    permitindo que os riscos (Mercado, Operacional, de Liquidez e de Crédito) sejam identificados, mensurados, monitorados, controlados, mitigados.
+
+                    O Mercado Pago e Mercado Crédito possuem e seguem a política de gerenciamento de riscos que orienta em relação à natureza e a posição geral dos riscos
+                    financeiros que deverão ser regularmente monitoradas e gerenciadas a fim de avaliar os resultados e os impactos financeiros no fluxo de caixa.
+                    O Grupo Mercado Livre instaurou um Comitê de Crise, composto pela Alta Administração das empresas/unidades de negócios do Grupo, entre elas o Mercado Pago.
+                    Este Comitê se reúne periodicamente onde são discutidas e definidas as principais diretrizes e medidas a serem seguidas pelas empresas do grupo, seguindo
+                    inclusive as diretrizes governamentais e legislativas relacionadas a pandemia do Covid-19. Dentre estas discussões e medidas estão os temas relacionados aos
+                    Riscos Operacional, de Liquidez, de Crédito, de Tecnologia e de Segurança da Informação. Esse Comitê também monitora os principais processos e controles da
+                    Companhia os quais estão operando normalmente.
+                    Mais informações podem ser encontradas no Relatório de Gerenciamento de Risco, publicado em nosso site (https://www.mercadopago.com.br/informacoes-
+                    adicionais).
+
+                    Risco operacional
+
+                    É a possibilidade de ocorrência de perdas resultantes de eventos relacionados a: I) falhas na proteção e na segurança de dados relacionados aos usuários finais ou
+                    transações de pagamento; II) falhas de identificação e autenticação do usuário final; III) falhas na autenticação das transações de pagamento; IV) fraudes internas
+                    e externas; V) práticas inadequadas relativas a usuários finais e serviços de pagamento etc; VI) demandas trabalhistas e segurança deficiente do local de trabalho;
+                    VII) práticas inadequadas relativas a clientes, produtos e serviços; VIII) danos a ativos físicos próprios ou em uso pela instituição; IX) situações que acarretem a
+                    interrupção das atividades da instituição; X) falhas em sistemas, processos ou infraestrutura de tecnologia da informação (TI); XI) falhas na execução, no
+                    cumprimento de prazos ou no gerenciamento das atividades da instituição.
+                    Foram desenvolvidas ações visando à implementação de estrutura de gerenciamento de risco operacional, em conformidade com os normativos vigentes, que
+                    alcançam o modelo de gestão, o conceito, as categorias e a política de risco operacional, os procedimentos de documentação e armazenamento de informações, os
+                    relatórios de gerenciamento do risco operacional e o processo de disclosure.
+
+                    Risco de liquidez
+
+                    É o risco de a Companhia não ser capaz de: i) honrar eficientemente suas obrigações esperadas e inesperadas, correntes e futuras sem afetar suas operações
+                    diárias e sem incorrer em perdas significativas e ii) não ser capaz de converter moeda eletrônica em moeda física ou escritural no momento da solicitação do
+                    usuário.
+
+                    Para administrar risco de liquidez, são estabelecidas premissas de desembolsos e recebimentos futuros, monitoradas diariamente pela área de Riscos Financeiros.
+                    Como parte dos controles diários, são estabelecidos limites de caixa mínimos e de concentração de passivos. Em caso de necessidade, a Companhia também pode
+                    recorrer à sua Matriz para obtenção de empréstimo de longo prazo.
+
+                    Risco de mercado
+
+                    Busca mensurar o impacto de movimentos adversos das taxas de juros no capital e nos resultados da instituição financeira, verificando continuamente a aderência
+                    às políticas e limites preestabelecidos. Dentre as métricas autorizadas pelo Banco Central do Brasil para o gerenciamento do risco de mercado e IRRBB, a Instituição
+                    utiliza como principais metodologias para a gestão de risco a métrica de Delta EVE e cenários de estresse. É reportado mensalmente pela área de riscos financeiros
+                    um apetite a risco por meio de um dashboard à alta gestão local e corporativa e as principais variações e limites são discutidos em reunião com as principais áreas
+                    envolvidas, procurando sempre proteger a instituição da volatilidade de mercado.
+
+                    Risco de crédito
+
+                    É a possibilidade de ocorrência de perdas associadas ao não cumprimento pela contraparte de suas respectivas obrigações financeiras nos termos pactuados, à
+                    redução de ganhos ou remunerações, às vantagens concedidas na renegociação e aos custos de recuperação, incluindo inadimplementos.
+                    As exposições primárias estão atreladas à possibilidade de inadimplência dos emissores de cartões e das adquirentes, os quais têm a obrigação de efetuar o
+                    pagamento dos valores relativos às transações realizadas pelos portadores dos cartões por eles emitidos. Além, o risco está voltado também às exposições de
+                    empréstimos através de cartões de crédito.
+                    A estrutura de gerenciamento de riscos prevê limites para a realização de operações sujeitas ao risco de crédito, em aderência à resolução CMN 4.677/18, e limites
+                    para concessão de crédito à Partes Relacionadas, em aderência à resolução 4.693/18, além de estabelecer limites gerenciais através de política interna para
+                    enquadramento à Circular BCB 3.681/13. A estrutura possui também procedimentos destinados a identificar, avaliar, monitorar e controlar a exposição ao risco de
+                    crédito e procedimentos para a recuperação de créditos.
+
+
+
+
+                                                                                                                                                                                           20
+
+=== página 25 ===
+DocuSign Envelope ID: DC94D767-0774-449C-B58D-37CCB2346F8E
+
+
+
+
+                    Gestão de Capital
+                    O nível de capital é calculado pela área de Riscos Financeiros com base na apuração do Índice de Basileia, e tem o objetivo de cumprimento regulatório e de
+                    subsídio à alta administração quanto aos valores mínimos para manutenção e continuidade das operações realizadas pela Instituição, visando o enquadramento às
+                    Resoluções CMN 4.192/13 e 4.193/13. Por autorização do Banco Central, a gestão de capital para fins de Basileia abrange apenas o Mercado Crédito SCFI, cujo
+                    índice em 31 de dezembro de 2021 foi de 39,18%, conforme abaixo:
+                                                                                                                                     31.12.2021                         31.12.2020
+
+                    Patrimônio de Referência (PR)                                                                                       122.399                             39.944
+
+                        Nível I                                                                                                         122.399                             39.944
+
+                      Capital Principal                                                                                                  122.399                            39.944
+
+                    Ativos Ponderados pelo Risco (RWA)                                                                                  312.390                            142.301
+
+                       Risco de Crédito (RWA Cpad)                                                                                       193.776                            40.193
+
+                       Risco Operacional (RWA Opad)                                                                                      118.614                           102.108
+
+                    PR Mínimo Requerido                                                                                                  24.991                            11.384
+
+                    Margem PR                                                                                                            97.408                            28.560
+
+                    Índice de Basileia                                                                                                  39,18%                             28,07%
+
+                    Margem PR considerando RBAN                                                                                          86.240                             26.762
+
+                    23. LIMITES OPERACIONAIS
+                    De acordo com a Circular nº 3.681/13, as instituições de pagamento emissoras de moeda eletrônica estão obrigadas a manter, permanentemente, Patrimônio
+                    Líquido ajustado pelas contas de resultado em valor correspondente a, no mínimo, o maior valor entre 2% do valor médio mensal das transações de pagamento
+                    executadas pela instituição nos últimos 12 meses ou do saldo das moedas eletrônicas por elas emitidas, apurado diariamente.
+
+
+                    Em 31 de dezembro de 2021, o patrimônio líquido do Conglomerado Prudencial é de R$ 441.912 ( Em 2020 - R$305.798), superior a 2% do valor médio mensal
+                    transacionado nos últimos 12 meses, que corresponde a R$ 319.172 (Em 2020-R$ 204.965).
+
+                    24. RESULTADOS NÃO RECORRENTES E RECORRENTES
+                    A Resolução BCB nº 2, de 27 de novembro de 2020, em seu artigo 34º, passou a determinar a divulgação de forma segregada dos resultados recorrentes e não
+                    recorrentes. Define-se então como resultado não corrente do semestre aquele que: I - não esteja relacionado ou esteja relacionado incidentalmente com as
+                    atividades típicas da instituição; e II - não esteja previsto para ocorrer com frequência nos exercícios futuros. Em 31 de dezembro de 2021, o Conglomerado
+                    Prudencial não possuí valores de resultados não recorrentes.
+                    25. EVENTOS SUBSEQUENTES
+                    A companhia está estudando e elaborando o plano para a implementação da regulamentação contábil estabelecida pela Resolução 4.966 de 25/11/21 e os impactos
+                    desta norma nas Demonstrações Financeiras;
+                    Em 02 de março de 2022, foi aprovada pelo BACEN o aumento de Capital Social da companhia Mercado pago no montante de R$130.000 mediante a emissão de
+                    130.000.000 de cotas.
+                    Em AGE de 31 de janeiro de 2022, foi aprovada pelos sócios representantes da totalidade do capital social do Mercado Pago, o aumento de Capital Social por meio
+                    de recursos próprios no montante de R$395.000 mediante a emissão de 395.000.000 de cotas. O referido aumento foi aprovado pelo BACEN em 17 de março de
+                    2022.
+                    Em AGE de 24 de fevereiro de 2022, foi aprovada pelos sócios representantes da totalidade do capital social da Mercado Crédito, o aumento de Capital Social por
+                    meio de recursos próprios no montante de R$300.000 mediante a emissão de 300.000.000 de cotas. O referido aumento foi aprovado pelo BACEN em 11 de março
+                    de 2022.
+
+
+
+
+                    Tulio Xavier de Oliveira                                                                                  Regis Reis
+                    Responsável Legal                                                                                         Contador CRC-1SP 192454/O-8
+
+
+
+
+                                                                                                                                                            Digitally signed
+                                                                                                                             REGIS                          by REGIS
+                                                                                                                                                            REIS:1827019581
+                                                                                                                             REIS:1827                      2
+                                                                                                                             0195812                        Date: 2022.03.31
+                                                                                                                                                            15:34:18 -03'00'
+
+
+
+
+                                                                                                                                                                                      21

@@ -1,0 +1,1517 @@
+
+=== página 25 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+
+São classificados de acordo com a intenção da Administração, na data da contratação da operação, levando em conta se
+sua finalidade é para proteção contra risco (hedge) ou não.
+
+As operações que utilizam instrumentos financeiros efetuadas por conta própria, ou que não atendam aos critérios de
+proteção (principalmente derivativos utilizados para administrar a exposição global de risco), são contabilizadas pelo valor
+justo, com os ganhos e as perdas, realizados e não realizados, reconhecidos diretamente no resultado do período.
+
+Os instrumentos financeiros derivativos utilizados para mitigar os riscos decorrentes das exposições às variações no valor
+de mercado dos ativos e passivos financeiros e que sejam altamente correlacionados no que se refere às alterações no
+seu valor de mercado em relação ao valor de mercado do item que estiver sendo protegido, tanto no início quanto ao longo
+da vida do contrato e considerado efetivo na redução do risco associado à exposição a ser protegida, são considerados
+como instrumentos de proteção (hedge) e são classificados de acordo com sua natureza em:
+
+     •   Hedge de risco de mercado: os instrumentos financeiros classificados nessa categoria, bem como seus ativos e
+         passivos financeiros relacionados, objeto de hedge, são mensurados a valor justo e têm seus ganhos e perdas,
+         realizados ou não realizados, registrados no resultado;
+
+     •   Hedge de fluxo de caixa: os instrumentos classificados nesta categoria são mensurados a valor justo, sendo a
+         parcela efetiva das valorizações ou desvalorizações registrada, líquida dos efeitos tributários, em conta destacada
+         no patrimônio líquido. A parcela não efetiva do respectivo hedge é reconhecida diretamente no resultado; e
+
+     •   Hedge de Investimento Líquido em Operações no Exterior: é contabilizado de forma similar ao hedge de fluxo de
+         caixa, ou seja, a parcela do ganho ou perda sobre o instrumento de hedge que for determinada como hedge efetivo
+         é reconhecida no patrimônio líquido, reclassificado para o resultado do período em caso de alienação da operação
+         no exterior. A parcela não efetiva é reconhecida no resultado do período.
+
+f.   Valor justo dos títulos e valores mobiliários, instrumentos financeiros derivativos e demais direitos e
+     obrigações
+
+O valor justo dos títulos e valores mobiliários, instrumentos financeiros derivativos e demais direitos e obrigações, quando
+aplicável, é calculado com base em preços de mercado, modelos de avaliação de preços, ou ainda com base no preço
+determinado para outros instrumentos financeiros com características semelhantes. Assim, quando da liquidação financeira
+dessas operações, os resultados poderão ser diferentes das estimativas. Os ajustes diários das operações realizadas no
+mercado futuro são registrados como receita ou como despesa efetiva quando auferidas ou incorridas. Os prêmios pagos
+ou recebidos na realização de operações no mercado de opções de ações, outros ativos financeiros e mercadorias são
+registrados nas respectivas contas patrimoniais pelos valores pagos ou recebidos, ajustados a preços de mercado em
+contrapartida do resultado.
+
+As operações realizadas no mercado a termo de ativos financeiros e mercadorias são registradas pelo valor final contratado,
+deduzido de diferença entre esse valor e o preço do bem ou direito ajustado a preços de mercado, na adequada conta de
+ativo ou passivo. As receitas e despesas são reconhecidas de acordo com o prazo de fluência dos contratos.
+
+Os ativos e passivos decorrentes das operações de swap e de termo de moedas – dos contratos a termo sem entrega
+física (NDF) – são registrados em contas patrimoniais pelo valor contábil, ajustado ao valor de mercado, em contrapartida
+do resultado.
+
+O valor nocional dos contratos é registrado em contas de compensação.
+
+g.   Instrumentos financeiros - apresentação líquida
+
+Ativos e passivos financeiros são apresentados líquidos no balanço patrimonial se, e somente se, houver um direito legal
+corrente e executável de compensar os montantes reconhecidos e se houver a intenção de compensação, ou de realizar o
+ativo e liquidar o passivo simultaneamente, de acordo com a Resolução CMN 3.263/05.
+
+h.   Operações de venda ou de transferência de ativos financeiros com retenção substancial de riscos e benefícios
+
+Ativos financeiros permanecem no balanço da entidade que transferiu seus ativos quando ela mantém os riscos e os
+benefícios relacionados a esse ativo. Nesse caso, um passivo financeiro é reconhecido.
+
+
+
+
+                                                                                                                         14
+
+=== página 26 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+i.   Operações de crédito e outros créditos (operações com característica de concessão de crédito)
+
+São aplicadas as disposições constantes da Resolução CMN nº 2.682/1999. Em consequência, as operações são
+registradas a valor presente, calculado "pro-rata die" com base na variação do indexador e na taxa de juros pactuados,
+sendo atualizadas até o 59º dia de atraso, observada a expectativa do recebimento. A partir do 61º dia, o reconhecimento
+no resultado ocorre quando da efetiva amortização da dívida. As operações renegociadas são mantidas, no mínimo, no
+mesmo nível em que estavam classificadas anteriormente à renegociação e, no caso de já terem sido baixadas contra
+provisão, são classificadas como nível H. Os ganhos são reconhecidos na receita quando do efetivo recebimento.
+
+j.   Provisão para perdas esperadas associadas ao risco de crédito
+
+Constituída com base na análise dos riscos de realização dos créditos, considerando o risco do cliente e a natureza e as
+condições da operação, em montante considerado suficiente para a cobertura de eventuais perdas, atendidas às
+disposições constantes da Resolução CMN nº 2.682/1999, dentre as quais se destacam:
+
+     •   As provisões são constituídas a partir da concessão do crédito, considerando a classificação do cliente, nos termos
+         dessa Resolução, e as condições da operação, em função da análise periódica do nível de risco do cliente, das
+         garantias da operação e dos setores de atividade, e não apenas quando da inadimplência;
+
+     •   Considerando exclusivamente a inadimplência, as baixas de operações de crédito contra prejuízo são efetuadas
+         após 360 dias do vencimento do crédito ou após 540 dias do vencimento para as operações com prazo a decorrer
+         superior a 36 meses; e
+
+     •   A provisão para créditos de liquidação duvidosa e de outros créditos é estimada com base em análise das
+         operações e dos riscos específicos apresentados em cada carteira, de acordo com os critérios estabelecidos pela
+         Resolução CMN nº 2.682/1999.
+
+k.   Propriedades para investimento
+
+Em conformidade com a Resolução CMN nº 4.967/2018, as propriedades para investimento mantidos pelas subsidiárias do
+Banco, das quais a principal atividade é o setor imobiliário, são inicialmente mensuradas ao custo delas, incluindo custos da
+transação. Após o reconhecimento inicial, propriedades para investimento são apresentadas a valor justo, que reflete as
+condições de mercado na data do balanço. Os ajustes a valor justo são reconhecidos no resultado e apurados considerando
+o valor justo da propriedade menos os custos a elas atribuídos.
+
+O valor justo das propriedades para investimento é determinado no mínimo anualmente ou quando a Administração julgar
+necessário e pode ser realizada por avaliadores independentes devidamente capacitados.
+
+Propriedades para investimento são baixadas quando forem vendidas ou quando deixarem de ser permanentemente
+utilizadas e não se espera nenhum benefício econômico futuro na sua venda.
+
+l.   Investimentos
+
+As participações em controladas, em controladas em conjunto e em coligadas são avaliadas pelo método de equivalência
+patrimonial. A Resolução CMN n° 4.817/2020 que define critérios para mensuração e reconhecimento contábeis de
+investimentos em coligadas, controladas e controladas em conjunto, passou a vigorar a partir de janeiro de 2022, não
+havendo impactos materiais por essa alteração, considerando sua aplicação prospectiva.
+
+m. Conversão de Moedas Estrangeiras
+
+A Resolução CMN n° 4.924/2021, com vigência a partir de janeiro de 2022, facultou a utilização de uma taxa alternativa à
+de câmbio à vista para conversão de transações e de demonstrações em moeda estrangeira para a moeda nacional. O
+Banco manteve seu processo de conversão com a PTAX que é a taxa fechamento calculada pelo Banco Central do Brasil.
+Os ativos e os passivos de subsidiárias e de agências no exterior são convertidos pela PTAX da data do balanço. As
+receitas e as despesas são convertidas pela taxa de câmbio média mensal. Os resultados de equivalência patrimonial de
+subsidiárias no exterior são reconhecidos da seguinte forma: para aquelas com moeda funcional igual ao real no resultado
+do período e, para aquelas com moeda funcional diferente do real: a) resultado do período - parcela referente ao resultado
+efetivo da subsidiária; e b) Patrimônio Líquido - parcela relativa aos ajustes de variação cambial decorrentes do processo
+de conversão, líquida dos efeitos tributários.
+
+n.   Ágio ou deságio
+
+De acordo com a Resolução nº 4.817/20, o ágio ou deságio é definido como a diferença entre o valor pago na aquisição de
+uma empresa e o valor justo dos ativos e passivos da entidade adquirida. O ágio resultante da aquisição de uma
+participação (em que não se detém anteriormente o controle) é contabilizado no ativo, enquanto que o deságio é registrado
+
+                                                                                                                          15
+
+=== página 27 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+como receita na demonstração do resultado. Já em aquisições adicionais de entidades já controladas, o ágio ou deságio
+deve ser registrado no patrimônio líquido.
+
+A amortização do ágio é um processo sistemático que deve ser realizado com base em projeções de rentabilidade futura
+na demonstração do resultado.
+
+o.   Imobilizado de uso
+
+Registrado pelo custo de aquisição. A depreciação é calculada pelo método linear com base no prazo de vida útil-econômica
+dos bens.
+
+p.   Intangíveis
+
+Corresponde aos direitos adquiridos que tenham por objeto bens incorpóreos destinados à manutenção da entidade ou
+exercidos com essa finalidade, de acordo com a Resolução CMN nº 4.534. Está composto por (i) ágio pago na aquisição
+de sociedades, transferido para o ativo intangível em razão da incorporação do patrimônio da adquirente pela adquirida ou
+pela consolidação do Banco, e (ii) intangíveis identificados em combinação de negócios entre partes independentes e por
+direitos na aquisição de contratos de gestão de ativos e (iii) softwares e benfeitorias. A amortização é calculada pelo método
+linear com base no período em que os direitos geram benefícios.
+
+q.   Redução ao valor recuperável de ativos não financeiros
+
+É reconhecida como perda no resultado do período sempre que existirem evidências claras de que os ativos estejam
+avaliados por valor não recuperável. Esse procedimento é realizado no mínimo no fim de cada exercício.
+
+Os ativos sujeitos à avaliação da redução do valor recuperável são deduzidos, quando aplicável, de provisão para
+desvalorização, que é calculada de acordo com o maior valor entre o valor em uso e o valor justo menos custos para venda
+dos ativos. As principais estimativas utilizadas na determinação da provisão são: expectativa de fluxos de caixa futuros;
+taxas de descontos; e iliquidez, entre outras.
+
+r.   Imposto de Renda e Contribuição Social
+
+As provisões para imposto de renda e contribuição social, quando devidos, são constituídas com base no lucro contábil,
+ajustado pelas adições e exclusões previstas na legislação fiscal. O imposto de renda e a contribuição social diferidas são
+calculadas sobre o valor das diferenças temporárias, sempre que a realização desses montantes for julgada provável. Para
+o imposto de renda (IRPJ) a alíquota utilizada é de 15%, acrescida de adicional de 10% sobre o lucro tributável anual
+excedente a R$240, e de 20% para contribuição social sobre o lucro líquido (CSLL), para bancos. Para as demais
+instituições financeiras a alíquota nominal da CSLL é de 15%, e de 9% para as instituições não financeiras.
+
+O componente diferido, representado pelos créditos tributários e as obrigações fiscais diferidas, é obtido pelas diferenças
+entre as bases de cálculo contábil e tributária dos ativos e passivos. Os créditos tributários somente são reconhecidos
+quando for provável que lucros tributáveis futuros estarão à disposição para sua compensação.
+
+s.   Provisões, Passivos e Ativos Contingentes
+
+São reconhecidos no Balanço Patrimonial e/ou divulgados nas demonstrações contábeis de acordo com a estimativa de
+probabilidade para cada um dos itens indicados a seguir. Essas estimativas são realizadas pela administração tendo como
+base, inclusive, em interpretações de assessores jurídicos externos.
+
+i. Provisões
+
+Uma provisão é um passivo de prazo ou de valor incertos e somente deve ser reconhecida no Balanço Patrimonial quando:
+   •   há uma obrigação presente (legal ou não formalizada);
+   •   a administração entende que é provável a saída de recursos para quitar a obrigação; e
+   •   o valor pode ser estimado com confiabilidade.
+
+ii. Passivos contingentes
+
+Um passivo contingente é:
+   •   uma obrigação possível cuja existência possa ser confirmada apenas na ocorrência de eventos futuros incertos;
+       ou
+   •   uma obrigação presente referente a qual não é provável a saída de recursos para quitar a obrigação ou que os
+       valores não possam ser mensurados com confiabilidade.
+
+
+
+                                                                                                                           16
+
+=== página 28 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+Os passivos contigentes não são reconhecidos no Balanço Patrimonial, mas, quando relevantes, são divulgados nas
+demonstrações contábeis do Banco, exceto se a probabilidade de saída de recursos seja remota.
+
+Periodicamente os passivos contingentes são reavaliados para determinar se uma saída de recursos se torna provável. Se
+isso acontecer, a provisão deve ser reconhecida nas demonstrações contábeis do período em que ocorrer a mudança na
+estimativa da probabilidade
+
+iii. Ativos contingentes
+
+Ativo contingente é um ativo possível cuja existência será confirmada apenas pela ocorrência ou não de um ou mais eventos
+futuros incertos.
+
+Ativos contigentes não são reconhecidos no Balanço Patrimonial, mas, quando relevantes, são divulgados nas
+demonstrações contábeis do Banco quando for provável a entrada de benefícios econômicos para a entidade.
+
+t.   Lucro por ação
+
+É calculado com base na média ponderada de ações durante os períodos, segregado entre o básico e o diluído, como
+requerem as práticas contábeis para as companhias abertas.
+
+u.   Reconhecimento de receita/despesa
+
+O resultado das operações é apurado pelo regime de competência.
+
+v.   Resultado recorrente e não recorrente
+
+Conforme disposto na Resolução BCB Nº 2/2020, o BTG Pactual divulga o resultado não recorrente em nota explicativa,
+apresentando eventos não recorrentes que ocorreram e contribuíram para o resultado, que não são relacionados (ou
+estejam relacionados incidentalmente) com as atividades típicas do Banco.
+
+5.   Gerenciamento de risco
+
+O gerenciamento de riscos no BTG Pactual é realizado mediante o envolvimento de todas as instâncias de gestão e de
+controle da Instituição. O Conselho de Administração do Banco, nos termos da Resolução CMN 4.557/2017, é a instância
+responsável por fixar os níveis de apetite a riscos, aprovar e revisar as políticas, as estratégias e os limites de riscos, as
+políticas e as estratégias de gestão de capital, o programa de testes de estresse, a gestão da política de gestão da
+continuidade dos negócios, entre outras atividades. À Diretoria Executiva, cabe formular políticas, definir diretrizes de riscos
+e supervisionar os processos de gestão e de controles de riscos. Na sequência, há um conjunto de comitês e de áreas de
+riscos encarregados da execução de atividades de gestão e de controles de riscos.
+
+Os principais comitês/áreas envolvidas em atividades de gestão de risco são: (i) Reunião de Diretoria, que formula as
+políticas, propõe limites globais e é a última instância responsável pela gestão dos nossos riscos; (ii) Comitê de Risco e
+Capital, composto por maioria de membros independentes que avaliam os resultados da gestão do risco e das estratégias;
+(iii) Comitê de Novos Produtos, que avalia a viabilidade e supervisiona a implementação de propostas de novos negócios
+e produtos; (iv) Área de Risco de Crédito, que é responsável pela aprovação de novas operações de crédito de acordo com
+a diretrizes estabelecidas pelo Chief Risk Officer (“CRO”); (v) área de Risco de Mercado, que é responsável pelo
+monitoramento do risco de mercado, incluindo a utilização dos limites de risco (VaR), e para a aprovação de exceções na
+forma prevista em normas internas; (vi) área de Risco Operacional, que avalia os principais riscos operacionais frente às
+políticas internas e aos limites regulatórios; (vii) Comitê de Compliance, que é responsável por estabelecer regras de Anti
+Money Laundry (“AML”) e por relatar problemas potenciais que envolvem lavagem de dinheiro; (viii) CRO, que é
+responsável por monitorar o risco de liquidez, incluindo a posição de caixa e o gerenciamento da estrutura de capital; (ix)
+Comitê de Auditoria, que é responsável pela verificação independente da adequação dos controles internos, pelas
+avaliações quanto à manutenção dos registros contábeis e da qualidade e da integridade das demonstrações contábeis;
+(x) área de Risco Socioambiental, que avalia os riscos social, ambiental e climático, de acordo com os princípios da
+relevância e da proporcionalidade, bem como administra e mitiga impactos sociais, ambientais e climáticos adversos
+resultantes de nossas operações e atividades; e (xi) Comitê ESG que é responsável por supervisionar e gerenciar a
+implantação das políticas e práticas ESG, dos processos e procedimentos de riscos sociais, ambientais e climáticos,
+garantindo a aderência do Banco a essas diretrizes.
+
+O Banco monitora e controla a exposição a riscos por meio de uma variedade de sistemas internos, distintos porém
+complementares, de crédito, financeiro e não financeiro, operacional, compliance, tributos e legal. Acreditamos que o
+envolvimento dos comitês e das áreas (incluindo suas subcomissões) com a gestão e o controle contínuos dos riscos
+promove a cultura de rigoroso e efetivo controle de riscos em todo o Grupo BTG Pactual. As comissões do Banco são
+compostas por membros seniores das unidades de negócios e por membros superiores dos departamentos de controle, os
+
+
+                                                                                                                             17
+
+=== página 29 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+quais são segregados e independentes das áreas de negócio. Maiores detalhes sobre o gerenciamento de riscos podem
+ser consultados no site https://ri.btgpactual.com/, na seção Governança Corporativa / Gerenciamento de Risco.
+
+a.   Limites operacionais
+                                                                                       30/06/2023                31/12/2022
+ Patrimônio Líquido Consolidado                                                              46.708.474               42.371.767
+   Nível I                                                                                   42.722.742               39.349.820
+      Capital Principal                                                                      42.284.457               38.920.976
+      Capital complementar                                                                      438.285                  428.844
+   Nível II                                                                                  10.589.000                7.090.539
+ Patrimônio de Referência (PR) - (a)                                                         53.311.742               46.440.359
+ Patrimônio de Referência Exigido (PRE)                                                      27.642.806               24.672.681
+ Exposicao total ponderada pelo risco – (b)                                                 345.535.076              308.408.513
+   Risco de Crédito                                                                         240.847.099              236.523.528
+   Risco Operacional                                                                         25.615.023               23.527.597
+   Risco de Mercado                                                                          79.072.955               48.357.389
+ Índice de Basiléia - (a/b)                                                                       15,4%                   15,1%
+   Capital de Nível I                                                                             12,4%                   12,8%
+   Capital de Nível II                                                                             3,1%                     2,3%
+ Índice de consumo de Imobilização                                                                50,4%                   56,5%
+   Limite para imobilização (LI)                                                             26.655.871               23.220.179
+   Situação para o limite de imobilização                                                    13.432.692               13.126.907
+   Valor da margem ou insuficiência                                                          13.223.179               10.093.272
+
+Foram observadas as Resoluções CMN nºs 4.955 e 4.958, de 2021, que passaram a vigorar em janeiro de 2022 e dispõem
+sobre os critérios de apuração das parcelas e os requerimentos de capital, incluindo o requerimento mínimos de Patrimônio
+de Referência (PR), de Capital de Nível I e de Capital Principal e os Adicionais de Capital Principal. Para o cálculo das
+parcelas de risco, foram observados os procedimentos previstos nas Circulares nºs 3.644, 3.652, 3.679, de 2013, e 3.696,
+de 2014, para o risco de crédito, nas Circulares nºs 3.634, 3.635, 3.636, 3.637, 3.638, 3.639, 3.641 e 3.645, todas de 2013,
+e na Carta-Circular nº 3.498, de 2011, para o risco de mercado, e nas Circulares nºs 3.640 e 3.675, de 2013, para risco
+operacional, todas do Banco Central do Brasil.
+
+O Banco optou pela abordagem do indicador básico para mensuração do Risco Operacional.
+
+No semestre findo em 30 de junho de 2023 e no exercício findo em 31 de dezembro 2022, todos os limites prudenciais e
+operacionais estão plenamente atendidos.
+
+b.   Risco de mercado
+
+Análise de sensibilidade
+
+Value at Risk (VaR) é uma medida de sensibilidade da perda potencial nos instrumentos financeiros devido a movimentos
+adversos do mercado em um horizonte de tempo definido com um nível de confiança especificado. Junto com testes de
+estresse, o VaR é utilizado para medir a exposição e sensibilidade de nossos instrumentos financeiros para o risco de
+mercado. O BTG Pactual aplica simulação histórica com total remensuração dos instrumentos para o cálculo do VaR,
+preservando as distribuições reais e a correlação entre os ativos, não fazendo uso de aproximações (greek aproximations)
+e de distribuições normais. Nosso VaR pode ser medido e indicado de acordo com diferentes períodos, dados históricos e
+níveis de confiança. A precisão da metodologia de risco de mercado é testada por meio de testes (back-testing) diários que
+comparam a aderência entre as estimativas de VaR e os ganhos realizados e as perdas incorridas.
+
+O VaR, apresentado abaixo, foi calculado para o período de um dia, nível de confiança de 95% e um ano de dado histórico.
+Nível de confiança de 95% significa que existe uma possibilidade, em vinte ocorrências, de que as receitas líquidas de
+negociação ficarão abaixo do VaR estimado. Dessa forma, déficits nas receitas líquidas de negociação em um único dia
+de negociação maior que o VaR apresentados são esperados e previstos de ocorrer, em média, cerca de uma vez por mês.
+
+Deficiências em um único dia podem exceder o VaR apresentado por montantes significantes; e também podem ocorrer
+com mais frequência ou acumular ao longo de um período maior, como um número de dias consecutivos de negociação.
+Dada a sua dependência dos dados históricos, a precisão do VaR é limitada em sua capacidade de prever mudanças de
+mercado sem precedentes, como distribuições históricas nos fatores de risco de mercado não podem produzir estimativas
+precisas de risco de mercado futuro. Diferentes metodologias de VaR e estimativas de distribuição estatística podem
+produzir VaR substancialmente diferente. Além disso, o VaR calculado para um período de um dia não captura o risco de
+mercado das posições que não podem ser liquidadas ou compensadas por hedges no prazo de um dia. Como foi referido
+anteriormente, nós usamos modelos nos teste de estresse como um complemento do VaR em nossas atividades diárias
+com exposição a riscos.
+
+A tabela a seguir contém a média diária do VaR do Banco para os semestres findos em:
+
+ Em R$ milhões                                                         Junho de 2023                  Dezembro de 2022
+ Média diária do VaR                                                      167,35                           132,7
+
+
+
+                                                                                                                              18
+
+=== página 30 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+c.   Risco de crédito
+
+Todas as contrapartes do Banco e de suas controladas são submetidas a um rigoroso processo de análise de crédito, cujo
+foco principal é a avaliação da capacidade de pagamento do tomador, tendo por base simulações do fluxo de caixa,
+alavancagem e cronograma da dívida, qualidade dos ativos, cobertura de juros e capital de giro. Aspectos de natureza
+qualitativa, tais como orientação estratégica, setor de negócios, áreas de especialização, eficiência, ambiente regulatório e
+participação no mercado, são sistematicamente avaliados e complementam o processo de análise de crédito. Os limites
+de crédito das contrapartes são estabelecidos e revisados periodicamente pela área de Risco de Crédito e, quando
+aplicável, revisados e aprovados pelo Conselho de administração, de acordo com as exposições correspondentes. A
+mensuração e o acompanhamento da exposições ao risco de crédito abrangem todos os instrumentos financeiros capazes
+de gerar risco de contraparte, tais como operações de crédito, títulos privados, derivativos, garantias prestadas, eventuais
+riscos de liquidação das operações, entre outros.
+
+d.   Risco de liquidez
+
+O Banco e as suas controladas gerenciam o risco de liquidez concentrando sua carteira em ativos de alta qualidade de
+crédito e de grande liquidez, utilizando recursos obtidos por meio de contrapartes de primeira linha a taxas competitivas. O
+Banco e as suas controladas mantêm uma forte estrutura de capital e um baixo grau de alavancagem. Eventuais
+descasamentos entre ativos e passivos são monitorados, considerando o impacto de condições extremas de mercado, a
+fim de avaliar a sua capacidade de realizar ativos ou de reduzir alavancagem. As garantias nas operações são também
+monitoradas periodicamente.
+
+e.   Risco operacional
+
+Alinhado às orientações do Bacen e aos conceitos do Comitê de Basiléia, o Banco definiu política de gerenciamento do
+risco operacional aplicável ao Banco e às suas controladas no Brasil e no exterior.
+
+A política consiste num conjunto de princípios, de procedimentos e de instrumentos que proporcionam a permanente
+adequação do gerenciamento do risco ao porte, à natureza e à complexidade dos produtos, dos serviços, das atividades,
+dos processos e dos sistemas do Banco.
+
+O Banco e as suas controladas têm uma forte cultura de gestão do risco operacional, que se baseia na avaliação, no
+monitoramento, na simulação e na validação do risco e está fundamentada em consistentes controles internos. Há um
+constante aprimoramento dos mecanismos de gestão e de controle do risco operacional, visando o cumprimento das
+exigências normativas e das diretrizes dos órgãos reguladores, à adaptação rápida a mudanças e antecipação à
+tendências, entre as quais podemos destacar as novas propostas de revisão da Basileia.
+
+f.   Risco social, ambiental e climático
+
+O BTG Pactual entende como riscos social, ambiental e climático: perdas financeiras ou danos à imagem e à reputação
+em decorrência de danos socioambientais. Inclui a possibilidade de ocorrência de perdas para a instituição ocasionadas,
+direta ou indiretamente, por eventos associados ao processo de transição para uma economia de baixo carbono, em que
+a emissão de gases do efeito estufa é reduzida ou compensada; e por eventos associados a condições ambientais
+extremas, que possam ser relacionadas a mudanças em padrões climáticos.
+
+O BTG Pactual, na condução dos seus negócios, atividades e processos operacionais, assume compromissos com base
+em práticas de negócios responsáveis e sustentáveis, equilibrando os aspectos econômicos, financeiros, regulatórios,
+ambientais, sociais e climáticos nas suas operações. Acreditamos que práticas comerciais sólidas e responsabilidade
+empresarial são fundamentos de longo prazo que devem ser aplicados diariamente para gerar valor aos acionistas e aos
+clientes por meio de crescimento sustentável no longo prazo.
+
+Para informações atualizadas sobre gerenciamento dos mencionados riscos e a respeito de ESG, consulte os nossos
+relatórios anuais publicados na página de RI, assim como a nossa página de ESG.
+
+6.   Disponibilidades
+
+O saldo dessa rubrica refere-se basicamente a depósitos no exterior em bancos.
+
+
+
+
+                                                                                                                          19
+
+=== página 38 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+ Consolidado                                             30/06/2023                                                                             31/12/2022
+                           Custo          Mercado               Até 6 meses              De 6 a 12 meses              Acima de 1 ano             Mercado
+ Swaps
+   Posição ativa            3.960.087        4.894.587              1.542.694                      778.201                     2.573.692            6.430.579
+   Posição passiva          4.994.450        6.270.330              1.769.053                      494.977                     4.006.300            4.088.255
+ Derivativos de crédito
+   Posição ativa                4.720         183.012                         -                      8.700                         174.312            124.003
+   Posição passiva             48.852          85.009                         -                      7.094                          77.915            241.160
+ Contratos a termo - NDF
+   Posição ativa            5.847.023        3.894.226                909.199                     1.024.898                    1.960.129            2.534.071
+   Posição passiva          5.648.962        5.309.579              2.304.039                     1.023.443                    1.982.097            5.260.535
+ Operação a termo
+   Posição ativa           15.449.831      15.618.652               9.188.161                       76.344                     6.354.147            1.887.209
+   Posição passiva         15.735.028      15.763.392               9.200.806                      136.286                     6.426.300            2.085.240
+ Mercado de opções
+   Posição ativa            2.152.339       3.007.155               1.745.777                       998.021                      263.357            3.312.354
+   Posição passiva          1.527.424       2.356.636                 940.660                       931.646                      484.330            2.085.239
+ Posição ativa             27.414.000      27.597.632              13.385.831                     2.886.164                   11.325.637           14.288.216
+ Posição passiva           27.954.716      29.784.946              14.214.558                     2.593.446                   12.976.942           13.760.429
+
+
+
+
+d.    Derivativos de crédito
+
+                                                           Banco                                                           Consolidado
+                                        30/06/2023                       31/12/2022                           30/06/2023                     31/12/2022
+ Swap de crédito
+ Risco transferido
+  Soberano                                              69.807                        33.837                             50.530                        33.837
+  Corporativo                                        4.867.003                     1.314.376                          4.823.630                     1.314.376
+ Risco recebido
+  Soberano                                         (87.951)                          (33.837)                           (68.674)                      (12.966)
+  Corporativo                                   (5.993.323)                       (5.165.039)                        (5.949.950)                   (5.118.079)
+ Total                                          (1.144.464)                       (3.850.663)                        (1.144.464)                   (3.782.832)
+
+
+No semestre findo em 30 de junho de 2023 e no exercício findo em 31 de dezembro de 2022, não houve a ocorrência de
+evento de crédito relativo a fatos geradores previstos nos contratos.
+
+e.    Margens dadas em garantia
+
+A margem de garantia dada em operações negociadas na B3 S.A. e em outras bolsas de valores com instrumentos
+financeiros derivativos é composta principalmente por títulos públicos federais, títulos emitidos por governos de outros
+países, debêntures e outros, perfazendo o montante de R$ 3.164.201 para o Banco e R$ 8.308.724 para o Consolidado
+(31 de dezembro de 2022 – R$1.107.398 e R$3.674.668).
+
+10. Operações de crédito
+As operações de crédito são classificadas em níveis de risco de acordo com os critérios estabelecidos pela Resolução
+CMN nº 2.682/1999. Essa classificação leva em consideração, entre outros fatores, uma análise periódica das operações,
+dos atrasos, do histórico do cliente e das garantias das operações, bem como a aplicação de modelos internos para as
+operações de varejo.
+
+A provisão para perdas esperadas associadas ao risco de crédito é constituída com base nos níveis de risco das operações
+definidos pela referida Resolução.
+
+As operações de crédito e outras operações com características de concessão de crédito podem ser assim demonstradas:
+
+
+
+
+                                                                                                                                                             27
+
+=== página 39 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+a.        Operações de crédito
+
+          i.    Por modalidade de crédito
+
+                                                                              Banco                                                              Consolidado
+                                                              30/06/2023                 31/12/2022                               30/06/2023                    31/12/2022
+ Modalidade de crédito                                    Saldo      Provisão        Saldo      Provisão                      Saldo       Provisão          Saldo       Provisão
+ Empréstimos                                            36.996.592 (2.029.001)     51.586.293 (1.978.747)                   75.208.491 (3.577.158)        84.924.615 (3.848.090)
+ Financiamentos                                          6.642.440    (241.061)     6.299.715    (500.823)                  25.153.928 (1.488.827)        22.722.026 (1.490.735)
+ FINAME/BNDES                                            4.801.385     (23.660)     4.611.090     (22.298)                   4.801.385      (23.660)       4.611.090      (22.298)
+ Operações com características de concessão
+                                                            978.829        (4.973)        1.002.312         (19.730)         2.808.043        (40.341)         3.294.589          (81.321)
+ de crédito
+ Adiantamento de contratos de câmbio                     3.450.778        (13.361)        3.600.871        (12.637)        3.450.778         (13.361)          3.600.871         (12.637)
+ Financiamento de títulos e valores mobiliários            342.798               -          342.822               -          978.870         (16.215)          1.000.715         (17.667)
+ Créditos cedidos com coobrigação                                -               -                -               -          130.059          (6.828)            198.221         (13.283)
+ Subtotal                                               53.212.822     (2.312.056)       67.443.103     (2.534.235)      112.531.553      (5.166.390)        120.352.127      (5.486.031)
+ Ajuste ao valor de mercado (i)                             32.878               -           13.219               -          565.486                -          (243.078)                -
+    Total de operações de crédito                       53.245.700     (2.312.056)       67.456.322     (2.534.235)      113.097.039      (5.166.390)        120.109.049      (5.486.031)
+
+(i)             Considera os ajustes a valor de mercado dos objetos de hedge contábil de valor justo.
+
+          ii.   Por nível de risco e prazo de vencimento
+
+ Banco                                                                          30/06/2023                                                                          31/12/2022
+                                                                       A vencer
+                                                    Em até 6           De 6 a 12          Após 12
+         Nível de risco         Vencidas                                                                         Total             Provisão                 Total             Provisão
+                                                     meses              meses              meses
+ AA                                 157.356          9.929.400          2.488.133          13.503.239           26.078.128                   -             30.992.091                    -
+ A                                   75.249          2.698.068          1.557.471          10.332.891           14.663.679            (73.320)             19.948.942             (99.754)
+ B                                   10.320          1.497.281          1.115.519           4.453.212            7.076.332            (70.894)              9.499.502             (94.995)
+ C                                  242.138             62.168            101.320             994.967            1.400.593            (69.767)              1.068.313             (60.078)
+ D                                    8.389             26.917              70.663            602.196              708.165            (78.707)                916.009            (110.910)
+ E                                  204.785              1.852                 776            160.243              367.656           (141.937)              3.709.617          (1.216.058)
+ F                                1.929.245              3.165              41.524            360.073            2.334.007         (1.347.477)                658.222            (379.242)
+ G                                  168.304              8.418               1.451              7.336              185.509           (131.201)                294.982            (217.773)
+ H                                  169.012             21.137               9.703            198.901              398.753           (398.753)                355.425            (355.425)
+ Total                            2.964.798         14.248.406          5.386.560          30.613.058           53.212.822         (2.312.056)             67.443.103          (2.534.235)
+
+
+
+      Consolidado                                                              30/06/2023                                                                           31/12/2022
+                                                                       A vencer
+                                                  Em até 6            De 6 a 12          Após 12
+      Nível de risco          Vencidas                                                                           Total             Provisão                 Total              Provisão
+                                                   meses                meses             meses
+      AA                         195.750         12.744.290            3.459.806        17.828.413             34.228.259            (15.290)             42.289.854             (13.737)
+      A                          223.595         12.634.970           15.469.821        26.478.814             54.807.199           (283.292)             50.137.685            (253.873)
+      B                          317.440          2.567.857            1.540.389         6.881.353             11.307.039           (133.786)             14.257.916            (171.334)
+      C                          474.925            681.768              385.510         1.968.266              3.510.469           (136.996)              3.043.999            (132.119)
+      D                          279.479            231.326              299.014         1.243.721              2.053.540           (249.763)              1.925.858            (193.275)
+      E                          452.012            157.700              104.027           492.502              1.206.241           (399.302)              4.537.909          (1.469.538)
+      F                        2.146.574             93.123              110.264           539.613              2.889.575         (1.624.625)              1.278.615            (649.439)
+      G                          396.212             68.204               48.620           269.105                782.141           (576.247)                935.290            (657.715)
+      H                        1.005.188            172.677              108.865           460.358              1.747.089         (1.747.089)              1.945.001          (1.945.001)
+      Total                    5.491.176         29.351.916           21.526.316        56.162.145            112.531.553         (5.166.390)            120.352.127          (5.486.031)
+
+
+          iii. Por setor de atividade
+
+                                                                      Banco                                                                  Consolidado
+      Setor                                      30/06/2023                            31/12/2022                            30/06/2023                                31/12/2022
+      Comércio                                              51.572                               66.901                               9.924.304                                11.640.277
+      Indústria                                         19.430.394                           24.659.070                              19.481.965                                24.428.594
+      Serviços                                          29.401.666                           37.300.196                              41.853.398                                40.669.149
+      Rural                                                418.301                              685.904                                 422.429                                   689.604
+      Pessoas Físicas                                    3.910.889                            4.731.032                              40.849.457                                42.924.503
+      Total                                             53.212.822                           67.443.103                             112.531.553                               120.352.127
+
+
+b.        Concentração de risco de crédito
+
+                                                                       Banco                                                                      Consolidado
+                                               30/06/2023             %         31/12/2022              %                    30/06/2023           %         31/12/2022                %
+ Maiores devedores
+ 10 maiores devedores                              14.964.567       28%              21.201.876      33%                       14.964.567         14%                21.201.876      18%
+ 20 seguintes maiores devedores                     7.919.828       15%              10.195.916      15%                        8.782.925          8%                10.779.033       9%
+ 50 seguintes maiores devedores                     8.598.343       16%               9.765.745      14%                       10.129.386          9%                11.481.976      10%
+ 100 seguintes maiores devedores                    7.822.332       15%               8.976.383      13%                        9.500.617          8%                11.348.026       9%
+ 200 seguintes maiores devedores                    6.682.135       13%               7.734.794      11%                        8.505.322          8%                10.228.237       8%
+ 500 seguintes maiores devedores                    4.344.361        8%               4.737.404       7%                        6.174.631          5%                 7.108.204       6%
+ Acima de 500 maiores devedores                     2.881.256        5%               4.830.985       7%                       54.474.106         48%                48.204.775      40%
+ Total                                             53.212.822      100%              67.443.103     100%                      112.531.553        100%               120.352.127     100%
+
+
+
+
+                                                                                                                                                                                         28
+
+=== página 40 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+c.    Provisão para perdas esperadas associadas ao risco de crédito
+
+A movimentação da provisão para perdas esperadas associadas ao risco de crédito durante os exercícios foi a seguinte:
+
+                                                                    Banco                                       Consolidado
+                                                   30/06/2023               30/06/2022         30/06/2023                  30/06/2022
+ Saldos iniciais do período                           (2.534.235)                (1.074.129)      (5.486.031)                     (3.379.335)
+ Reversão/(constituição) de provisão                     (10.247)                  (370.326)      (1.102.720)                     (1.639.983)
+ Baixa contra provisão                                    232.426                    106.508        1.422.361                       1.261.940
+ Saldos finais do período                             (2.312.056)                (1.337.947)      (5.166.390)                     (3.757.378)
+
+
+d.    Renegociação
+
+Banco
+
+•     Operações de crédito renegociadas entre 01 de janeiro de 2023 e 30 de junho de 2023: R$ 76.910 (R$ 189.772 – no
+      mesmo período de 2022).
+•     Liquidações entre 01 de janeiro de 2023 e 30 de junho de 2023 de contratos anteriormente renegociados: R$ 329.362
+      (R$ 47.246 – no mesmo período de 2022).
+•     Valor baixado para prejuízo entre 01 de janeiro de 2023 e 30 de junho de 2023 de contratos anteriormente
+      renegociados: R$ 34.388 (R$ 557 – no mesmo período de 2022).
+
+Consolidado
+
+•     Operações de crédito renegociadas entre 01 de janeiro de 2023 e 30 de junho de 2023: R$ 784.223 (R$ 587.690 – no
+      mesmo período de 2022).
+•     Liquidações entre 01 de janeiro de 2023 e 30 de junho de 2023 de contratos anteriormente renegociados: R$ 480.127
+      (R$ 85.419 – no mesmo período de 2022).
+•     Valor baixado para prejuízo entre 01 de janeiro de 2023 e 30 de junho de 2023 de contratos anteriormente
+      renegociados: R$ 48.828 (R$ 10.474 – no mesmo período de 2022).
+
+e.    Recuperação de Crédito baixados para prejuízo
+
+Banco
+
+Entre 01 de janeiro de 2023 e 30 de junho de 2023, o Banco reconheceu receita de recuperação de créditos baixados para
+prejuízo no montante de R$ 12.584 (R$ 118.201 – no mesmo período de 2022).
+
+Consolidado
+
+Entre 01 de janeiro de 2023 e 30 de junho de 2023, o Grupo BTG Pactual reconheceu receita de recuperação de créditos
+baixados para prejuízo no montante de R$ 144.211 (R$301.843 – no mesmo período de 2022).
+
+f.    Garantias prestadas
+
+Banco
+
+Em 30 de junho de 2023, o Banco possuía avais e fianças prestados no valor de R$ 36.253.274 (31 de dezembro de
+2022 – R$ 33.250.032). As provisões para perda relacionadas a estas posições correspondem ao valor de R$ 229.293
+(31 de dezembro de 2022 – R$ 210.756).
+
+Consolidado
+
+Em 30 de junho de 2023, Grupo BTG Pactual possuía avais e fianças prestados no valor de R$ 36.263.220 (31 de dezembro
+de 2022 – R$ 34.155.948). As provisões para perda relacionadas a estas posições correspondem ao valor de R$ 249.026
+(31 de dezembro de 2022 – R$ 234.298).
+
+
+
+
+                                                                                                                                           29
+
+=== página 41 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+11. Carteira de câmbio
+
+a.         Ativo – Outros créditos
+
+                                                                                       Banco                                           Consolidado
+                                                                        30/06/2023                 31/12/2022             30/06/2023                 31/12/2022
+ Direitos sobre vendas de câmbio                                             13.439.814                  37.698.067            14.062.079                 38.166.987
+ (-) Adiantamentos em moeda nacional recebidos                                  (12.020)                     (6.759)              (12.019)                    (6.759)
+ Moeda Nacional                                                              13.427.794                  37.691.308            14.050.060                 38.160.228
+
+ Câmbio comprado a liquidar                                                  12.885.006                   9.602.967            12.430.374                  8.941.392
+ (-) Adiantamentos em moeda estrangeira recebidos                               (90.871)                      (130)               (90.871)                     (130)
+ Moeda Estrangeira                                                           12.794.135                   9.602.837            12.339.503                  8.941.262
+
+
+ Total                                                                       26.221.929                  47.294.145            26.389.563                 47.101.490
+ Circulante                                                                  26.242.747                  47.242.897            26.410.381                 47.050.374
+ Não Circulante                                                                 (20.818)                     51.248               (20.818)                    51.116
+
+
+b.         Passivo – Outras obrigações
+
+                                                                                       Banco                                           Consolidado
+                                                                        30/06/2023                 31/12/2022             30/06/2023                 31/12/2022
+ Câmbio vendido a liquidar                                                   13.263.847                  37.968.934            13.509.789                 37.979.509
+ (-) Adiantamentos em moedas estrangeiras concedidos                                  -                           -                     -                          -
+ Moeda Estrangeira                                                           13.263.847                  37.968.934            13.509.789                 37.979.509
+
+ Obrigações por compras de câmbio                                            16.650.595                  12.874.884            16.418.814                 12.482.472
+ (-) Adiantamentos sobre contratos de câmbio                                 (3.603.870)                 (3.513.566)           (3.603.870)                (3.513.566)
+ Moeda Nacional                                                              13.046.725                    9.361.318           12.814.944                   8.968.906
+
+ Total                                                                       26.310.572                  47.330.252            26.324.733                 46.948.415
+ Circulante                                                                  26.308.931                  47.313.789            26.323.238                 46.946.672
+ Não circulante                                                                   1.641                      16.463                 1.495                      1.743
+
+
+
+
+12. Outros créditos
+a.         Rendas a receber
+
+                                                                                                 Banco                                    Consolidado
+                                                                                 30/06/2023               31/12/2022           30/06/2023             31/12/2022
+ Dividendos e bonificações                                                             305.876                  341.648              128.679                140.965
+ Serviços prestados a receber                                                           11.476                   22.637              158.137                206.226
+ Direitos sobre operações de energia                                                   738.393                  157.018            1.133.256                157.018
+ Taxa de administração e performance de fundos e carteiras de investimento               8.541                    9.757              953.632              1.011.786
+ Taxa de distribuição                                                                   18.462                   16.771               16.967                 16.817
+ Comissões de fianças                                                                   25.363                   36.309               32.739                 42.124
+ Total                                                                               1.108.111                  584.140            2.423.410              1.574.936
+ Circulante                                                                            432.273                  539.912            1.375.607              1.500.316
+ Não circulante                                                                        675.838                   44.228            1.047.803                 74.620
+
+
+b.         Diversos
+
+                                                                                                 Banco                                    Consolidado
+                                                                                 30/06/2023               31/12/2022           30/06/2023             31/12/2022
+ Devedores diversos (i)                                                              7.158.995                7.120.838            8.033.040              5.761.771
+ Depósitos judiciais                                                                 1.226.516                1.188.688            3.142.093              2.941.481
+ Impostos a compensar                                                                  543.188                  326.724            2.252.299              1.632.120
+ Commodities                                                                                 -                        -              652.051                554.619
+ Negociação e intermediação de valores                                               5.301.609                3.660.026            7.266.102              5.298.359
+ Sem característica de concessão de crédito                                            429.555                  716.490            7.939.952              7.717.086
+ Propriedade para investimento                                                               -                        -              707.829                570.835
+ Outros                                                                                110.806                  682.680              914.900                231.128
+ Total                                                                              14.770.669               13.695.446          30.908.266             24.707.399
+ Circulante                                                                          7.449.921                5.454.262          18.859.270             13.139.179
+ Não circulante                                                                      7.320.748                8.241.184          12.048.996             11.568.220
+
+
+     (i)          No banco, refere-se majoritariamente a valores a receber de controladas. No Consolidado, substancialmente, corresponde a valores a
+                  receber decorrentes de vendas a prazo de commodities.
+
+
+
+
+                                                                                                                                                                  30
+
+=== página 42 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+(Em milhares de reais, exceto quando indicado)
+
+13. Participações em controladas, coligadas e empresas com controle compartilhado
+ Banco
+                                                                                                                                           Controladas. coligadas e empresas com controle compartilhado
+                                                                                                 Patrimônio líquido ajustado (i)                            Lucro líquido / (Prejuízo) ajustado (i)                          Participação direta
+                                                                                             30/06/2023                  31/12/2022                      30/06/2023                       30/06/2022                 30/06/2023               31/12/2022
+ BTG Pactual Holding Internacional S.A.                                                          10.714.457                  11.062.467                           102.749                          312.975                 99,99%                   99,99%
+ Banco Sistema S.A.                                                                                4.090.703                  4.224.116                         (133.900)                          151.860                 99,97%                   99,97%
+ Banco Pan S.A.                                                                                    7.024.607                  7.508.764                         (335.590)                          364.513                 48,15%                   48,02%
+ Banco BESA S.A.                                                                                   2.722.246                  1.839.429                           955.010                                -                100,00%                   96,50%
+ BTG Pactual Corretora de Títulos e Valores Mobiliários S.A.                                       1.511.886                  1.416.567                             95.319                         113.401                 99,99%                   99,99%
+ ECTP Brasil S.A. (ii)                                                                             1.714.132                           -                            22.527                               -                100,00%                         -
+ BTG Pactual Asset Management S.A. DTVM                                                              862.645                     811.542                            69.890                          34.621                 99,99%                   99,99%
+ BTG Pactual Holding de Seguros Ltda.                                                                811.808                     915.317                            81.173                          59.424                 99,99%                   99,99%
+ BTG Pactual Holding Participações S.A.                                                              552.120                     213.741                          337.452                           38.729                 99,99%                   99,99%
+ BTG Pactual (Cayman) Internacional Holding Ltd.                                                     536.527                     577.543                            21.513                          22.336                100,00%                  100,00%
+ BTG Pactual Serviços Financeiros S.A. DTVM                                                          513.206                     375.174                          138.032                          123.492                 99,99%                   99,99%
+ BW Properties S.A.                                                                                  522.292                     521.626                               666                           (634)                 85,27%                   75,54%
+
+(i) Considera eventuais ajustes de lucros ou prejuízos não realizados em transações entre a controladora e suas controladas.
+(ii) Controle direto a partir do primeiro semestre de 2023. Em 31 de dezembro de 2022, essa empresa era investimento indireto do Banco por meio da controlada Holding Internacional S.A.
+
+
+                                                                                                                                        Movimentação dos investimentos
+                                                                                Aquisição / Aporte /          Dividendos / Juros                                                               Ajuste de                                      Resultado de
+                                                                                                                                             Resultado de               Variação
+                                                        31/12/2022                Transferëncia /                sobre capital                                                                 avaliação               30/06/2023             Participação
+                                                                                                                                             Participação               Cambial
+                                                                                     (Vendas)                       próprio                                                                   patrimonial                                     de 30/06/2022
+ BTG Pactual Holding Internacional S.A.                     11.061.925                              -                           -                    102.668               (547.858)                  97.722             10.714.457                  312.975
+ Banco Sistema S.A.                                          4.223.076                              -                           -                  (133.867)                       -                     487              4.089.696                  151.778
+ Banco Pan S.A.                                              3.605.950                              -                    (64.471)                  (160.113)                       -                     901              3.382.267                  443.542
+ Banco BESA (ii)                                             1.766.559                         23.057                           -                    955.010                       -                (22.380)              2.722.246                         -
+ BTG Pactual Corretora de Títulos e Valores
+                                                               1.416.567                               -                          -                   95.319                       -                       -               1.511.886                 113.399
+ Mobiliários S.A.
+ ECTP Brasil S.A.                                                     -                     1.685.993                            -                    28.139                       -                       -               1.714.132                       -
+ BTG Pactual Asset Management S.A. DTVM                         811.542                             -                            -                    69.890                       -                (18.787)                 862.645                  34.398
+ BTG Pactual Holding de Seguros Ltda.                           915.244                             -                    (184.154)                    81.173                       -                   (456)                 811.807                  59.424
+ BTG Pactual Holding Participações S.A.                         213.740                             -                            -                   337.452                     926                       -                 552.118                  38.729
+ BTG Pactual (Cayman) Internacional Holding
+                                                                577.543                                -                          -                   21.513                (44.821)                (17.708)                536.527                   22.332
+ Ltd.
+ BTG Pactual Serviços Financeiros S.A. DTVM                    375.174                              -                            -                   138.032                       -                      -                 513.206                  123.492
+ BW Properties S.A.                                            394.019                         50.749                            -                       593                       -                      -                 445.361                    (269)
+ Outros (i)                                                  5.803.342                         86.969                        (727)                    53.373                       -                      -               5.942.957                  223.808
+ Total                                                      31.164.681                      1.846.768                    (249.352)                 1.589.182               (591.753)                 39.779              33.799.305                1.523.608
+
+        (i)    O saldo da rubrica em questão é composto pelos ágios pagos nas aquisições de sociedades (que são transferidos para o ativo intangível na consolidação do Banco), bem como os saldos referentes às seguintes participações: 100% - Vitreo Holding
+               S.A., 100% - Vitreo Holding Financeira S.A., 100% - Empiricus Research Publicações S.A., 100% - BTG Pactual Inst. Pagto. – Pay2All, 100% - Enforce Gestão de Ativos S.A., 100% - BTG Pactual Solutions Ltda, 70% - Pris Software Ltda, 65,20% -
+               Resale Tecnologia e Serviços S.A., 49,90% - LSMC Cursos e Treinamentos S.A., 49,90% - EQI Investimentos, 21,24% - Eneva, 20% - CSD Central de Serviços de Registro e Depósito aos Mercados Financeiros e de Capitais S.A. e 6,67% - Galgo
+               S.A. (Em 31 de dezembro de 2022 – 100% - Vitreo Holding S.A., 100% - Vitreo Holding Financeira S.A., 100% - Empiricus Research Publicações S.A., 100% - BTG Pactual Inst. Pagto. – Pay2All, 21,53% - Eneva e 6,67% - Galgo S.A).
+        (ii)   Aquisição no 4° trimestre de 2022.
+
+
+
+
+                                                                                                                                                                                                                                                            31
+
+=== página 43 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+ Consolidado
+                                                                                                                                    Controladas. coligadas e empresas com controle compartilhado
+                                                                                                     Patrimônio líquido                                    Lucro líquido / (Prejuízo)                               Participação direta
+                                                                                           30/06/2023                 31/12/2022                    30/06/2023                    30/06/2022                30/06/2023               31/12/2022
+ Too Seguros S.A.                                                                                   575.966                   450.877                        165.781                        65.559                 51,00%                   51,00%
+ Pan Corretora S.A.                                                                                  53.210                    49.044                         28.049                        21.306                 51,00%                   51,00%
+ BTG Pactual Holding S.A.R.L.                                                                     3.717.290                 3.427.813                      1.180.006                     1.193.712                 40,00%                   40,00%
+
+
+
+ Consolidado
+                                                                                                                                      Movimentação dos investimentos
+                                                                                  Aquisição / Aporte /       Dividendos / Juros                                                     Ajuste de                                   Resultado de
+                                                                                                                                        Resultado de           Variação
+                                                              31/12/2022            Transferëncia /             sobre capital                                                       avaliação            30/06/2023            Participação de
+                                                                                                                                        Participação           Cambial
+                                                                                       (Vendas)                   próprio                                                          patrimonial                                   30/06/2022
+ Too Seguros S.A.                                                   229.947                           -                 (21.281)                84.548                    -                   528             293.742                       33.437
+ Pan Corretora S.A.                                                  25.011                           -                 (12.180)                14.305                    -                     -              27.136                       10.866
+ BTG Pactual Holding S.A.R.L.                                     1.371.125                           -                (235.948)               472.002            (120.263)                     -           1.486.916                      489.780
+ Outros (i)                                                       5.768.152                    147.298                  (10.001)                96.615             (34.715)              (16.385)           5.950.963                    (125.347)
+ Total                                                            7.394.235                    147.298                 (279.410)               667.470            (154.979)              (15.857)           7.758.758                      408.736
+
+
+      (i) A rubrica de Outros contempla basicamente saldos referentes às seguintes participações: Eneva: 21,24%, Galgo S.A: 6,67% e Visum: 50% (Em 31 de dezembro de 2022 – Eneva 21,53%, Galgo S.A. 6,67% e Visum 50%).
+
+
+
+
+                                                                                                                                                                                                                                                32
+
+=== página 44 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+(Em milhares de reais, exceto quando indicado)
+
+14. Ativo Imobilizado e Intangível
+ Banco                                                                                                  Movimentação do Imobilizado e Intangível
+                                                                                   Aquisições /
+                                                                                                                   Amortizações /
+                                                         31/12/2022               transferência /                                                  Variação cambial          30/06/2023
+                                                                                                                   Depreciações (i)
+                                                                                      Baixas
+  Ativos Imobilizados
+ Imóveis de uso                                                      3.089                          -                                -                                -                3.089
+ Outras imobilizações de uso                                       451.707                    22.840                                 -                                -              474.547
+ Depreciações acumuladas                                         (245.682)                    (2.142)                         (15.762)                                -            (263.586)
+  Total                                                            209.114                    20.698                          (15.762)                                -              214.050
+ Ativos Intangíveis
+ Custo                                                             938.861                   109.630                                 -                        (6.427)              1.042.064
+ Amortização acumulada                                           (334.435)                   (16.607)                        (147.694)                          6.427              (492.309)
+ Total                                                             604.426                     93.023                        (147.694)                              -                549.755
+
+
+ Consolidado                                                                                            Movimentação do Imobilizado e Intangível
+                                                                                    Aquisições /
+                                                                                                                   Amortizações /
+                                                            31/12/2022             transferência /                                                 Variação cambial          30/06/2023
+                                                                                                                   Depreciações (i)
+                                                                                       Baixas
+  Ativos Imobilizados
+ Imóveis de uso                                                      8.904                     (782)                                 -                              -                  8.122
+ Outras imobilizações de uso                                       993.763                    48.789                                 -                             99              1.042.651
+ Depreciações acumuladas                                         (494.049)                    20.460                          (75.826)                           (38)              (549.453)
+  Total                                                            508.618                    68.467                          (75.826)                             61                501.320
+ Ativos Intangíveis
+ Custo                                                           6.036.529                   158.683                                -                            362                6.195.574
+ Amortização acumulada                                         (1.333.142)                    58.697                        (448.283)                            (60)             (1.722.788)
+ Total                                                           4.703.387                   217.380                        (448.283)                            302                4.472.786
+
+
+      (i)            O prazo de depreciação e amortização médios do imobilizado e intangível de 5 anos.
+
+
+O ágio pago na aquisição de sociedades está demonstrado na rubrica de participações em controladas, sendo transferido para o ativo
+intangível no processo de consolidação do Banco.
+
+Conforme destacado na nota 2, em junho de 2022 foi concluída a avaliação da alocação dos ativos da aquisição do Banco Pan S.A., sem
+efeitos materiais nas linhas de ativos. Também não foi identificada necessidade de realização de impairment no período.
+
+15. Captações de recursos e obrigações por empréstimos e repasses
+
+a.    Resumo
+                                                                                                    Banco                                                        Consolidado
+                                                                                      30/06/2023                        31/12/2022                    30/06/2023             31/12/2022
+Depósitos                                                                                   114.999.956                    101.544.487                   124.030.275            115.749.672
+Captações no mercado aberto                                                                  98.603.254                     78.555.680                    98.021.212             87.139.332
+Recursos de aceites e emissão de títulos                                                     47.782.045                     51.220.628                    68.167.246             67.944.679
+Obrigações por empréstimos e repasses                                                        11.632.339                     14.727.150                    12.659.707             17.693.933
+Dívidas subordinadas e instrumentos de dívida elegíveis a capital                            11.527.570                      7.665.952                    12.087.382              8.220.005
+Total                                                                                       284.545.164                    253.713.897                   314.965.822            296.747.621
+
+
+b.    Depósitos
+
+ Banco                                                                                      30/06/2023                                                                        31/12/2022
+                                                                                   De 90 a 365
+                                              Total               Até 90 dias                       De 1 a 3 anos               De 3 a 5 anos           Acima 5 anos            Total
+                                                                                      dias
+ Depósitos à vista                             5.834.273              5.834.273                -                 -                               -                   -           7.854.696
+ Depósitos interfinanceiros                    8.748.964              4.360.470       1.664.905            325.813                       2.397.776                   -           5.102.271
+ Depósitos à prazo                           100.433.793             49.252.286      46.143.740          4.356.863                         597.278              83.626          88.592.353
+ Subtotal                                    115.017.030             59.447.029      47.808.645          4.682.676                       2.995.054              83.626         101.549.320
+ Ajuste ao valor de mercado (i)                  (17.074)                                                                                                                           (4.833)
+ Total                                       114.999.956                                                                                                                       101.544.487
+
+
+
+Consolidado                                                                                  30/06/2023                                                                       31/12/2022
+                                              Total               Até 90 dias     De 90 a 365 dias    De 1 a 3 anos              De 3 a 5 anos           Acima 5 anos            Total
+Depósitos à vista                               6.484.406             6.484.406                  -                  -                             -                    -          8.641.922
+Depósitos interfinanceiros                      5.289.603             1.595.187            111.829         1.184.810                      2.397.776                    -          4.590.532
+Depósitos à prazo                             112.023.653            41.942.184        54.820.778         11.481.260                      3.690.842               88.588        102.303.311
+Outros depósitos                                  249.687               105.618            144.069                  -                             -                    -            218.740
+Subtotal                                      124.047.349            50.127.396        55.076.677         12.666.070                      6.088.619               88.588        115.754.505
+Ajuste ao valor de mercado (i)                    (17.074)                                                                                                                           (4.833)
+Total                                         124.030.275                                                                                                                       115.749.672
+
+
+         (i)   Considera os ajustes a valor de mercado dos objetos de hedge contábil de valor justo.
+
+
+
+
+                                                                                                                                                                                           33
+
+=== página 45 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+c.        Captações no mercado aberto
+
+As captações no mercado aberto têm lastro nos seguintes títulos:
+      Banco                                                                                                  30/06/2023                                             31/12/2022
+                                                                                                         De 90 a       De 1 a 3         De 3 a 5       Acima 5
+                                                                      Total         Até 90 dias                                                                       Total
+                                                                                                         365 dias       anos             anos           anos
+      Carteira própria                                              49.581.663        43.363.194         6.218.469              -                  -           -     15.709.373
+        Títulos públicos federais                                   36.302.681        35.380.853           921.828              -                  -           -      9.613.117
+        Títulos corporativos                                        13.229.286         7.939.530         5.289.756              -                  -           -      5.942.561
+        Títulos da divida externa brasileira                            42.811            42.811                  -             -                  -           -        153.695
+        Títulos governos de outros países                                6.885                 -             6.885              -                  -           -        153.695
+      Carteira de terceiros                                         39.390.431        39.390.431                  -             -                  -           -     48.740.927
+      Carteira livre movimentação                                    9.631.160         5.452.543         3.022.751      128.960                    -   1.026.906     14.105.380
+      Total                                                         98.603.254        88.206.168         9.241.220      128.960                    -   1.026.906     78.555.680
+
+
+
+      Consolidado                                                                                             30/06/2023                                            31/12/2022
+                                                                                                         De 90 a        De 1 a 3        De 3 a 5       Acima 5
+                                                                     Total          Até 90 dias                                                                       Total
+                                                                                                         365 dias        anos            anos           anos
+      Carteira própria                                              54.906.126       49.412.009          5.381.103         52.244          50.134         10.636     23.533.248
+        Títulos públicos federais                                   38.961.546       38.218.135            740.870          2.541                -             -     14.830.125
+        Títulos corporativos                                        13.788.064        9.044.242          4.633.348         49.703          50.134         10.636      7.024.163
+        Títulos emitidos por outros governos                         2.113.706        2.106.821              6.885               -               -             -      1.408.228
+        Títulos da dívida externa brasileira                            42.811           42.811                   -              -               -             -        270.732
+      Carteira de terceiros                                         35.483.024       35.205.999                   -      242.237            1.975         32.813     46.304.707
+      Carteira livre movimentação                                    7.632.062        5.452.543                   -      128.960         254.858       1.795.701     17.301.377
+      Total                                                         98.021.212       90.070.551          5.381.103       423.440         306.968       1.839.150     87.139.332
+
+
+d.        Recursos de aceites e emissão de títulos
+
+      Banco                                                                                              30/06/2023                                                 31/12/2022
+                                                                                                   De 90 a 365      De 1 a 3           De 3 a 5        Acima 5
+                                                                 Total           Até 90 dias                                                                          Total
+                                                                                                      dias            anos               anos           anos
+      Títulos e valores mobiliários – país                       38.521.802        5.856.665        13.903.984      13.073.222          4.399.501      1.288.429     40.175.137
+        Letras financeiras                                       18.289.418          888.434         5.624.438       8.954.753          1.929.427        892.366     19.308.609
+        Letras de crédito imobiliários/agronegócio               17.596.290        4.941.179         7.994.790       3.583.025            740.269        337.027     18.904.449
+        Certificados de operações estruturadas                    2.636.094           27.052           284.756         535.444          1.729.805         59.036      1.962.079
+      Títulos e valores mobiliários – exterior                    9.401.183            6.266           128.244       7.602.925          1.365.972        297.776     11.590.621
+        Medium term notes                                         6.826.316                -                  -      6.826.316                  -              -      9.109.512
+       Credit - linked notes and others                           2.574.867            6.266           128.244         776.609          1.365.972        297.776      2.481.109
+      Subtotal                                                   47.922.985        5.862.931        14.032.228      20.676.147          5.765.473      1.586.205     51.765.758
+      Ajuste ao valor de mercado (i)                              (140.940)                                                                                           (545.130)
+      Total                                                      47.782.045                                                                                          51.220.628
+
+
+ Consolidado                                                                                             30/06/2023                                                 31/12/2022
+                                                                                                   De 90 a 365                                         Acima 5
+                                                                 Total           Até 90 dias                     De 1 a 3 anos       De 3 a 5 anos                    Total
+                                                                                                      dias                                              anos
+ Títulos e valores mobiliários – país                            56.248.168         7.765.943        18.941.456        18.732.182        7.480.398      3.328.189    53.326.359
+   Letras financeiras                                            29.033.105         1.705.773         9.408.238        14.611.218        2.415.510        892.366    29.848.247
+   Letras de crédito imobiliários/agronegócio                    24.578.969         6.033.118         9.248.462         3.585.520        3.335.083      2.376.787    21.380.905
+   Certificados de operações estruturadas                         2.636.094            27.052           284.756           535.444        1.729.805         59.036     1.939.481
+   Debêntures                                                             -                 -                 -                 -                -              -       157.726
+ Títulos e valores mobiliários – exterior                        12.060.018         1.106.552         1.203.298         8.216.141          894.245        639.782    15.163.450
+   Medium term notes                                              9.753.912           328.592         1.089.192         7.648.566          345.558        342.006    11.803.051
+  Credit - linked notes and others                                2.306.106           777.961           114.106           567.575          548.688        297.776     3.360.399
+ Subtotal                                                        68.308.186         8.872.496        20.144.754        26.948.322        8.374.643      3.967.970    68.489.809
+ Ajuste ao valor de mercado (i)                                   (140.940)                                                                                           (545.130)
+ Total                                                           68.167.246                                                                                          67.944.679
+
+
+(i)              Considera os ajustes a valor de mercado dos objetos de hedge contábil de valor justo.
+
+
+e.        Obrigações por empréstimos e repasses
+
+ Banco                                                                                                    30/06/2023                                                31/12/2022
+                                                                                                   De 90 a 365      De 1 a 3           De 3 a 5        Acima 5
+                                                                   Total          Até 90 dias                                                                         Total
+                                                                                                      dias           anos               anos            anos
+ Empréstimos no exterior                                            7.078.688        2.331.355        1.368.180        258.587            696.514       2.424.052     5.999.123
+  Obrigações em moedas estrangeiras                                 6.347.459        1.600.126        1.368.180        258.587            696.514       2.424.052     5.465.954
+  Obrigações por empréstimos no exterior                              731.229          731.229                 -             -                  -               -       533.169
+ Empréstimos e repasses no país                                     4.553.651           33.189           42.393        234.668                  -       4.243.401     8.728.027
+   Linhas financeiras de liquidez                                           -                -                 -             -                  -               -     4.361.552
+   FINAME/BNDES                                                     4.553.651           33.189           42.393        234.668                  -       4.243.401     4.366.475
+ Total                                                             11.632.339        2.364.544        1.410.573        493.255            696.514       6.667.453    14.727.150
+
+
+ Consolidado                                                                                              30/06/2023                                                31/12/2022
+                                                                                                   De 90 a 365      De 1 a 3                           Acima 5
+                                                                   Total          Até 90 dias                                        De 3 a 5 anos                    Total
+                                                                                                      dias           anos                               anos
+ Empréstimos no exterior                                            8.046.600       2.444.187         1.725.752        756.095            696.514       2.424.052     7.097.919
+  Obrigações em moedas estrangeiras                                 6.347.458       1.600.126         1.368.180        258.587            696.514       2.424.052     5.465.954
+  Obrigações por empréstimos no exterior                            1.699.141         844.061           357.572        497.508                  -               -     1.631.965
+ Empréstimos e repasses no país                                        52.381               3                 2              99            51.712             566     6.203.600
+   Obrigações por empréstimos no país                                  52.381               3                 2              99            51.712             566     6.203.600
+ Obrigações por repasses no país                                    4.560.726          33.189            48.374        235.762                  -       4.243.401     4.392.414
+   FINAME/BNDES                                                     4.560.726          33.189            48.374        235.762                  -       4.243.401     4.392.414
+ Total                                                             12.659.707       2.477.379         1.774.128        991.956            748.226       6.668.019    17.693.933
+
+
+                                                                                                                                                                              34
+
+=== página 46 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+f.       Dívidas subordinadas e instrumentos de dívida elegíveis a capital
+  Banco
+                                                                                                                                                                                                     Saldo
+                                                                                                                                                                            Saldo contábil em
+                    Nome do papel - moeda original                         Valor Principal (moeda original)      Emissão            Vencimento          Remuneração a.a                           contábil em
+                                                                                                                                                                               30/06/2023
+                                                                                                                                                                                                   31/12/2022
+  Letras Financeiras Subordinadas Elegíveis a Capital - R$ (i)                                     8.550.096    11/02/2019    03/04/2034 e Perpétuo       110% a 126% DI              8.550.096      4.544.574
+  Notas Subordinadas - US$                                                                             2.609    15/02/2019    15/02/2029                           7,75%                 12.574          37.555
+  Notas Subordinadas Elegíveis a Capital - US$                                                       602.002    15/02/2019    15/02/2029                           7,75%              2.901.166      3.141.063
+  Subtotal                                                                                                                                                                           11.463.836      7.723.192
+  Ajuste ao valor de mercado (ii)                                                                                                                                                        63.734        (57.240)
+  Total                                                                                                                                                                              11.527.570      7.665.952
+
+
+  Consolidado
+                                                                                                                                                                                                     Saldo
+                                                                              Valor Principal (moeda                                                                       Saldo contábil em
+  Nome do papel - moeda original                                                                            Emissão            Vencimento          Remuneração a.a                                contábil em
+                                                                                     original)                                                                                30/06/2023
+                                                                                                                                                                                                   31/12/2022
+  Letras Financeiras Subordinadas Elegíveis a Capital - R$ (i)                               8.562.092     11/02/2019      03/04/2034 e Perpétuo      100% a 140% CDI                8.562.092        4.555.561
+  Notas Subordinadas - US$                                                                       2.609     15/02/2019      15/02/2029                       7,75% a.a.                  12.574            37.555
+  Notas Subordinadas - CLP                                                                  91.150.725     16/01/2019      01/11/2028                       2,25% a.a.                 547.816          543.066
+  Notas Subordinadas Elegíveis a Capital - US$                                                 602.002     15/02/2019      15/02/2029                       7,75% a.a.               2.901.166        3.141.063
+  Subtotal                                                                                                                                                                          12.023.648        8.277.245
+  Ajuste ao valor de mercado (ii)                                                                                                                                                       63.734          (57.240)
+  Total                                                                                                                                                                             12.087.382        8.220.005
+
+
+(i)      Letras financeiras possuem data de emissão, vencimentos, taxas e valor principal distintos, com amortizações semestrais.
+(ii)     Considera os ajustes a valor de mercado dos objetos de hedge contábil de valor justo.
+
+
+16. Outras obrigações
+
+a.       Sociais e estatutárias
+
+                                                                                                                Banco                                                       Consolidado
+                                                                                            30/06/2023                        31/12/2022                        30/06/2023              31/12/2022
+   Dividendos e bonificações a pagar                                                                      3                        1.269.380                            56.716               1.364.124
+   Participações nos lucros / Gratificações de funcionários                                         958.555                        1.202.000                         1.748.688               2.205.595
+   Total                                                                                            958.558                        2.471.380                         1.805.404               3.569.719
+   Circulante                                                                                       958.558                        2.471.380                         1.805.404               3.569.719
+   Não circulante                                                                                         -                                -                                 -                       -
+
+
+b.       Fiscais e previdenciárias
+
+                                                                                                               Banco                                                         Consolidado
+                                                                                            30/06/2023                        31/12/2022                        30/06/2023               31/12/2022
+  Impostos e contribuições a recolher                                                              188.700                              8.776                           353.350                  194.566
+  Impostos e contribuições a pagar                                                                 287.102                           409.309                          1.643.955                1.289.591
+  Total                                                                                            475.802                           418.085                          1.997.305                1.484.157
+  Circulante                                                                                       188.700                             99.270                         1.690.939                1.165.342
+  Não circulante                                                                                   287.102                           318.815                            306.367                  318.815
+
+
+c.       Diversas
+
+                                                                                                               Banco                                                         Consolidado
+                                                                                            30/06/2023                        31/12/2022                        30/06/2023               31/12/2022
+  Negociação e intermediação de valores                                                           6.193.947                         4.444.306                        11.430.849                8.713.810
+  Obrigações por aquisição de bens e direitos (i)                                                   267.298                           249.995                           267.498                  250.195
+  Provisão para pagamentos a efetuar                                                                213.901                           215.941                         2.616.570                3.012.580
+  Credores diversos e Receitas antecipadas (ii)                                                   1.636.209                         1.628.524                        24.346.669              19.972.506
+  Total                                                                                           8.311.355                         6.538.766                        38.661.586              31.949.091
+  Circulante                                                                                      7.051.584                         5.933.839                        38.030.562              30.486.703
+  Não circulante                                                                                  1.259.771                           604.927                           631.024                1.462.388
+
+
+       (i)    Refere-se a valores a pagar pela aquisição de investimentos (substancialmente Banco Pan S.A.).
+       (ii)   No individual, refere-se principalmente a valores a pagar entre empresas do grupo. No consolidado, corresponde substancialmente a provisões matemáticas de benefícios
+              a conceder a participantes de planos de previdência.
+
+
+17. Provisões e passivos contingentes
+
+A Administração do Banco avalia as obrigações das empresas do Grupo BTG Pactual e constitui provisão sempre que
+considerar como provável a saída de recursos para quitar as obrigações presentes (legais ou não formalizadas) de prazos
+ou valores incertos. O julgamento da Administração para determinar a expectativa de perda leva em consideração,
+inclusive, as interpretações de seus assessores jurídicos externos.
+
+
+
+
+                                                                                                                                                                                                             35
+
+=== página 47 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+a.       Provisões
+
+i.       Tributárias
+
+As provisões para processos fiscais e previdenciários são decorrentes de processos judiciais e administrativos relacionados
+à tributos federais, estaduais e municipais. Sua constituição é baseada na probabilidade de saída de recursos,
+considerando também a opinião de consultores jurídicos externos e a instância em que se encontra cada um dos processos.
+
+ii.      Cíveis
+
+Nas ações cíveis com potencial de perda (danos morais e patrimoniais e outros processos com pedidos condenatórios), os
+valores das contingências são provisionados com base na probabilidade de sáida de recursos, tendo o parecer de
+consultores jurídicos externos como uma das fontes para a estimativa.
+
+iii. Trabalhistas
+
+São compostas por demandas judiciais de ex-colaboradores, constituídas principalmente por pedidos de horas extras e de
+equiparação salarial. Os valores das provisões são estimados de acordo com análise do valor potencial de perda,
+considerando, entre outros, o estágio do processo e pareceres de consultores jurídicos externos.
+
+b.       Composição e movimentação das provisões
+
+As provisões constituídas no início e fim do período e as respectivas movimentações podem ser assim demonstradas em
+30 de junho de 2023:
+
+     Banco                                                                                           30/06/2023
+                                                                  Tributária                                        Cível           Trabalhista                Total
+                                                                    Ações Fiscais e
+                                        Obrigações Legais                                    Total
+                                                                    Previdenciárias
+     Saldo no início do período                    1.164.298                     1.161     1.165.459                    31.563            37.174                 1.234.196
+     Constituição / Reversão                          41.711                        23        41.734                    24.164              2.201                   68.099
+     Baixa                                             (428)                         -         (428)                     (972)            (5.130)                   (6.529)
+     Saldo no final do período                     1.205.581                     1.184     1.206.765                    54.754            34.246                 1.295.765
+
+
+
+     Consolidado                                                                                   30/06/2023
+                                                                Tributária                                        Cível (i)         Trabalhista                Total
+                                                                    Ações Fiscais e
+                                      Obrigações Legais                                    Total
+                                                                    Previdenciárias
+     Saldo no início do período                    1.373.490                1.685.971      3.059.461               1.815.423             216.562                 5.091.446
+     Constituição / Reversão                           49.658                 (86.743)       (37.085)                246.802             (11.475)                  198.242
+     Baixa                                           (98.617)                        -       (98.617)              (142.828)             (32.721)                (274.165)
+     Saldo no final do período                     1.324.532                1.599.228      2.923.760               1.919.397             172.366                 5.015.522
+
+
+(i) Considera, em 30 de junho de 2023, provisão para outros riscos não litigiosos no montante de R$ 682.008 (R$ 687.258 em 31 de dezembro de 2022). Deste montante, R$ 22.218
+decorrem de constituições/reversões e R$ (27.269) de baixas para pagamento no período.
+
+
+i.Tributos com exigibilidade suspensa e outros passivos tributários
+
+O Banco vem discutindo judicialmente a legalidade de alguns impostos e contribuições. Os valores referentes as obrigações
+presentes (legais ou não formalizadas), referente as quais se estima (com base inclusive em interpretações de assessores
+jurídicos externos) como provável saída de recursos, estão provisionados no montante que a Administração considera
+adequados para cobrir perdas futuras. Entre as referidas discussões judiciais, destacamos o processo que envolve a
+legalidade da cobrança da COFINS de acordo com as regras estabelecidas na Lei 9.718/98.
+
+Em 30 de junho de 2023, o Banco figurava como parte em processos tributários com probabilidade de êxito possível, os
+quais não estão provisionados, de acordo com as normas contábeis vigentes. A seguir a descrição dos processos
+relevantes.
+
+         •     Processos relativos ao pagamento de Participação nos Lucros e Resultados (PLR), em que se discute suposta
+               incidência de contribuição previdenciária sobre os valores referentes à participação e a sua dedutibilidade da base
+               de cálculo do IRPJ e CSLL. O valor envolvido é de R$ 1.400 milhões. Parte desse valor conta com garantia por
+               cláusula de indenização, uma vez que se refere ao período anterior à aquisição do Banco pelos atuais
+               controladores.
+
+         •     Processo relativo à desmutualização e ao IPO da Bovespa e da BM&F, em que se discute a tributação de PIS e
+               Cofins sobre receitas auferidas na alienação das ações das referidas sociedades. O valor envolvido é de R$ 71
+               milhões e conta também com garantia por cláusula de indenização, uma vez que se refere ao período anterior à
+               aquisição do Banco pelos atuais controladores.
+                                                                                                                                                                         36
+
+=== página 48 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+
+
+    •   Em dezembro de 2015, foi recebido auto de infração no valor de R$ 2.094 milhões, referente aos anos de 2010 e
+        2011, no qual a autoridade fiscal considerou indevido o aproveitamento do ágio gerado nas operações de
+        aquisição do Banco pelo UBS, realizada em 2006, bem como na recompra do Banco pelo BTG, em 2009. Foi
+        apresentada defesa contra esse auto no Conselho Administrativo de Recursos Fiscais da Receita Federal do
+        Brasil (CARF), que foi julgada parcialmente favorável para reduzir o valor autuado em R$ 278 milhões. Contra a
+        parte desfavorável, o Banco apresentou recurso, também ao CARF, o qual, em fevereiro de 2019, foi julgado
+        procedente para o aproveitamento do ágio gerado na operação de aquisição do Banco pelo UBS. Contra essa
+        decisão, foram interpostos recursos pela PGFN e pelo Banco.
+
+    •   Em dezembro de 2017, foi recebido auto de infração no valor de R$ 1.155 milhões, referente a 2012, em que foi
+        considerado indevido o aproveitamento do ágio gerado nas operações de aquisição do Banco pelo UBS realizada
+        em 2006, o ágio referente à recompra do Banco pelo BTG em 2009 e o ágio gerado na subscrição privada de
+        ações realizada por investidores através da Companhia Copa Prince, em 2011. Em outubro de 2019, a segunda
+        instância administrativa julgou parcialmente procedente para reconhecer o ágio gerado na subscrição privada de
+        ações realizada por investidores por meio da Companhia Copa Prince. Contra essa decisão, foram interpostos
+        recursos pelo Banco e pela PGFN. Em dezembro de 2018, foi recebido um auto de infração no valor de R$ 525
+        milhões, referente a 2013. Foi apresentada defesa contra essa autuação que aguarda decisão de segunda
+        instância administrativa. Por fim, em fevereiro de 2019, foi recebido auto de infração no valor de R$ 316 milhões,
+        referente a 2014. Contra essa atuação foi apresentada defesa, que aguarda julgamento na segunda instância
+        administrativa. O Banco não espera incorrer em qualquer perda (além das despesas do recurso) relacionada aos
+        autos de infração, e não constituiu (e não espera ter de constituir) qualquer provisão em suas demonstrações
+        contábeis. Além da avaliação quanto à improcedência dos autos de infração, caso o Banco venha a incorrer em
+        perdas, a Administração acredita ter o direito de ser indenizado por sua controladora por parte dessas perdas.
+        Dessa forma, em nenhum caso o BTG Pactual espera incorrer em qualquer perda material relacionada a esse
+        assunto.
+
+    •   Em dezembro de 2017, o Banco recebeu auto de infração em que se discute uma suposta insuficiência de
+        recolhimento de PIS e COFINS e impõe multa isolada, referente a 2012, no valor de R$ 232 milhões. Contra a
+        autuação, foi apresentado recurso administrativo, que foi julgado parcialmente procedente para excluir a multa
+        isolada. Contra a parte desfavorável da decisão, foi interposto recurso para a segunda instância administrativa.
+
+    •   Em dezembro de 2017, na qualidade de responsável solidário pelo Banco Pan S.A., o Banco recebeu auto de
+        infração de IRRF supostamente devido na alienação de investimento no Brasil por ente estrangeiro, referente ao
+        ano de 2012, no valor de R$ 89 milhões. Contra a autuação, foi apresentado recurso administrativo, que aguarda
+        julgamento na segunda instância administrativa.
+
+    •   Em dezembro de 2017, o Banco recebeu auto de infração que visa à cobrança de Imposto de Renda sobre o
+        suposto ganho de capital na incorporação de sociedades, ocasião em que a One Properties foi incorporada pela
+        BR Properties, no valor de R$1.300 milhões. Contra a autuação, foi apresentado recurso administrativo, que
+        aguarda julgamento na segunda instância administrativa.
+
+    •   Em dezembro de 2018, o Banco teve ciência da não homologação da compensação de saldo negativo de IRPJ,
+        referente a 2013, no valor de R$ 81 milhões. Em junho de 2019 foi proferida decisão desfavorável na primeira
+        instância administrativa. Contra essa decisão foi apresentado recurso, que aguarda julgamento na segunda
+        instância administrativa. Em março de 2019, o Banco teve ciência da não homologação da compensação de saldo
+        negativo de CSLL, referente ao mesmo ano, no valor de R$ 77 milhões. Em agosto de 2019, foi proferida decisão
+        desfavorável ao Banco em primeira instância administrativa. Contra essa decisão, foi apresentado recurso para a
+        segunda instância administrativa.
+
+    •   Em setembro de 2019, na condição de responsável solidário do Banco Sistema, o Banco recebeu auto de infração
+        que visa à cobrança de IRPJ, CSLL, PIS e COFINS, totalizando R$ 4.120 milhões, referente à aquisição do Banco
+        Bamerindus do Brasil (atual Banco Sistema) em 2014. Em outubro de 2019, foi apresentada defesa em primeira
+        instância administrativa que, em abril de 2020, foi julgada parcialmente procedente, reduzindo em 98% o valor da
+        autuação. Contra a parte desfavorável da decisão, foi interposto recurso para a segunda instância administrativa.
+        Em caso de decisão desfavorável definitiva haverá reflexos no saldo de prejuízo fiscal e base negativa de CSLL
+        utilizados para pagamento do PERT, em 2017, no montante de R$ 1.245 milhões. Em razão do prognóstico
+        atribuído pelos advogados, o Banco não constituiu qualquer provisão em suas demonstrações contábeis
+        individuais. Além disso, a Administração não espera incorrer em qualquer perda relacionada ao tema.
+
+    •   Em março de 2020, o Banco recebeu auto de infração que visa à cobrança de IRPJ, CSLL, PIS e COFINS sobre
+        o ganho de capital na venda das ações da Rede D’or, em 2015, no valor de R$ 684 milhões. Em setembro de
+        2020, foi proferida decisão desfavorável em primeira instância administrativa. Contra essa decisão, foi
+        apresentado recurso para a segunda instância administrativa.
+
+
+                                                                                                                       37
+
+=== página 49 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+    •   Em julho de 2021, na condição de responsável solidário, o Banco recebeu auto de infração de IRRF supostamente
+        devido sobre os rendimentos distribuídos a cotistas de fundo de investimento, no valor de R$ 406 milhões. Contra
+        a autuação, foi apresentado recurso administrativo que aguarda julgamento.
+
+    •   Em dezembro de 2021, o Banco recebeu auto de infração que visa a cobrança de IRPJ/CSLL, no valor de R$112
+        milhões, decorrente de suposto erro formal no preenchimento de sua ECF no ano de 2016. Contra a autuação, foi
+        apresentado recurso administrativo que aguarda julgamento.
+
+    •   Em dezembro de 2018, a Gestora de Recursos, controlada indireta do Banco, recebeu auto de infração totalizando
+        o valor de R$112 milhões, referente aos anos de 2013 e 2014, acerca do ágio amortizado gerado na aquisição da
+        BFRE em 2012. Em setembro de 2019, foi proferida decisão de primeira instância desfavorável. Contra essa
+        decisão, foi interposto recurso para a segunda instância administrativa.
+
+    •   Em dezembro de 2021, o Banco Sistema, controlada direta do Banco, recebeu auto de infração de PIS/COFINS,
+        no valor de R$142 milhões, supostamente incidente sobre receitas operacionais referente ao período de 2007 a
+        2009. Contra a autuação, foi apresentado recurso administrativo, que foi julgado procedente para excluir o débito
+        tributário. Contra a referida decisão a PGFN interpôs recurso que aguarda julgamento na segunda instância
+        administrativa.
+
+    •   INSS sobre Participação nos Lucros ou Resultados (PLR) e Programa de Alimentação ao Trabalhador (PAT) –
+        Incidência de contribuição previdenciária sobre PLR e PAT, dos anos calendários de 2012, 2013, 2016 e 2017 do
+        Banco Pan, controlada direta do Banco. Em junho de 2023, os valores relacionados a esses processos totalizam
+        aproximadamente R$ 142.049.
+
+    •   Compensações não homologadas - Indeferimento de pedidos de compensações de IRPJ, CSLL, PIS, COFINS,
+        decorrentes de pagamentos a maior ou indevidos do Banco Pan, controlada direta do Banco. Em junho de 2023,
+        os valores relacionados a esses processos totalizam aproximadamente R$ 268.096.
+
+    •   IRPJ/CSLL – Dedutibilidade de Perdas em Operações de Crédito e outras despesas operacionais, referente aos
+        anos calendários de 2007 a 2017 do Banco Pan. Em junho de 2023, os valores relacionados a esses processos
+        totalizam aproximadamente R$ 1.012.374.
+
+    •   PIS/COFINS – Dedutibilidade de despesas de comissões pagos aos correspondentes bancários e de perdas em
+        venda ou transferência de ativos financeiros, referente ao ano calendário de 2017 do Banco Pan. Em junho de
+        2023, o valor relacionado a esse processo totaliza aproximadamente R$ 252.130.
+
+    •   Em março de 2023, na condição de responsável solidário do Fundo de Investimento Imobiliário - FII Shopping
+        Parque Dom Pedro, a PSF recebeu auto de infração que visa à cobrança de IRPJ, CSLL, PIS e COFINS e multas
+        por descumprimento de obrigação acessória, totalizando R$ 545 milhões, referente ao enquadramento do fundo
+        como pessoa jurídica, nos moldes da Lei 9.779/99. Contra a autuação foi apresentado defesa. Em razão do
+        prognóstico atribuído pelos advogados, a PSF não constituiu qualquer provisão em suas demonstrações contábeis
+        individuais.
+
+
+
+
+                                                                                                                      38
+
+=== página 50 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+18. Imposto de renda e contribuição social
+
+A conciliação da despesa de imposto de renda e contribuição social sobre o lucro com o produto da alíquota fiscal sobre o
+lucro antes dos impostos é demonstrada como se segue nos semestres findos em junho:
+
+                                                                                                    Banco                                     Consolidado
+                                                                                      30/06/2023             30/06/2022             30/06/2023         30/06/2022
+ Base de cálculo                                                                              5.043.332            4.778.147             5.224.524          5.211.967
+ Encargo total do imposto de renda e contribuição social às alíquotas vigentes              (2.269.499)          (2.150.166)           (2.351.036)        (2.345.385)
+ (Inclusões) / exclusões no cálculo da tributação                                             2.580.428            2.129.829             1.518.515          1.769.536
+ Resultado de equivalência patrimonial                                                          972.062            1.484.003               (99.665)         1.022.958
+ Ganho / (Perda) cambial sobre investimentos no exterior                                         20.825                31.277                20.825            31.277
+ Juros sobre capital próprio                                                                    254.250              254.250               254.250            254.250
+ Provisão para créditos de liquidação duvidosa                                                   19.259            (152.043)             (163.577)            112.914
+ Dividendos                                                                                      73.289              181.792               193.594            185.136
+ Resultado da avaliação a mercado de títulos e instrumentos financeiros derivativos           1.543.617            1.209.578             1.773.269          1.159.351
+ Outras depesas indedutíveis líquidas de receitas tributárias                                 (302.874)            (879.028)             (460.180)          (996.350)
+ Despesa de imposto de renda e contribuição social                                              310.928              (20.337)            (832.521)          (575.649)
+ Despesa de ativos fiscais diferidos                                                          (779.791)            (747.927)               182.466          (626.436)
+ Total de despesa                                                                             (468.863)            (768.264)             (650.055)        (1.202.085)
+
+
+O imposto de renda e a contribuição social diferidos estão constituídos e registrados de acordo com os critérios
+estabelecidos pela Resolução BCB nº 4.842/2020, levando em consideração o período de realização.
+
+A movimentação dos ativos fiscais diferidos, podem ser assim demonstrados:
+
+ Banco
+ Imposto de renda e contribuição social                                                 31/12/2022          Constituição         Realização              30/06/2023
+ Prejuízos fiscais de IR e base negativa de CSLL                                                  -              673.810                     -               673.810
+ Juros sobre capital próprio                                                                254.250              359.787             (254.250)               359.787
+ Provisão para créditos de liquidação duvidosa                                            2.383.004                11.599                    -             2.394.603
+ Ajuste a valor de mercado de títulos e derivativos                                         359.795                      -         (1.651.458)           (1.291.663)
+ Contingências fiscais e provisões para tributos com exibilidade suspensa                   241.163                 2.084                    -               243.247
+ Outras diferenças temporárias                                                            1.051.662              112.596                     -             1.164.258
+ Total                                                                                    4.289.874            1.159.876           (1.905.708)             3.544.042
+
+ Imposto de renda e contribuição social                                                 31/12/2021            Constituição         Realização            30/06/2022
+ Prejuízos fiscais de IR e base negativa de CSLL                                           487.280                232.100                    -              719.380
+ Juros sobre capital próprio                                                               254.250                       -            (39.966)              214.284
+ Provisão para créditos de liquidação duvidosa                                           1.716.676                111.429                    -            1.828.105
+ Ajuste a valor de mercado de títulos e derivativos                                      1.537.489                       -         (1.214.529)              322.960
+ Contingências fiscais e provisões para tributos com exibilidade suspensa                  236.825                   1.830                   -              238.655
+ Outras diferenças temporárias                                                             698.822                167.983                    -              866.805
+ Total                                                                                   4.931.342                513.342          (1.254.495)            4.190.189
+
+
+
+ Consolidado
+ Imposto de renda e contribuição social                                                31/12/2022           Constituição        Realização            30/06/2023
+ Prejuízos fiscais de IR e base negativa de CSLL                                          1.563.907                615.264                    -            2.179.171
+ Juros sobre capital próprio                                                                254.250                401.249            (254.250)              401.249
+ Outras diferenças temporais                                                              2.198.106                203.421                    -            2.401.527
+ Provisão para créditos de liquidação duvidosa                                            3.877.606                208.227                    -            4.085.833
+ Ajuste a valor de mercado de títulos e derivativos                                         350.120                      -          (1.597.202)          (1.247.082)
+ Contingências fiscais e provisões para tributos com exibilidade suspensa                   311.856                      -              (1.787)              310.069
+ Total                                                                                    8.555.845              1.428.161          (1.853.239)            8.130.767
+ Imposto de renda e contribuição social                                                31/12/2021           Constituição        Realização            30/06/2022
+ Prejuízos fiscais de IR e base negativa de CSLL                                          1.993.882                313.470                    -           2.307.352
+ Juros sobre capital próprio                                                                254.250                261.498            (254.250)             261.498
+ Outras diferenças temporais                                                              1.501.043                484.903                    -           1.985.946
+ Provisão para créditos de liquidação duvidosa                                            3.621.721                       -            (93.146)           3.528.575
+ Ajuste a valor de mercado de títulos e derivativos                                       1.552.962                       -         (1.221.217)             331.745
+ Contingências fiscais e provisões para tributos com exibilidade suspensa                   301.629                   7.419                   -             309.048
+ Total                                                                                    9.225.487              1.067.290          (1.568.613)           8.724.164
+
+
+A rubrica ativos fiscais diferidos possui créditos tributários, que se referem a PIS e COFINS diferidos no montante de R$
+20.555 no Banco e de R$ 875 no Consolidado (31 de dezembro de 2022 – R$150.812 no Banco e R$ 151.244 no
+Consolidado).
+
+
+
+
+                                                                                                                                                                   39
+
+=== página 51 ===
+Demonstrações Contábeis Completas
+Banco BTG Pactual S.A.
+
+
+A seguir, é apresentada a composição do valor presente dos créditos tributários, tendo em vista a expectativa para a
+realização dos ativos fiscais diferidos:
+
+ Banco
+                                                  Créditos tributários sobre diferenças temporárias            Prejuízo e base negativa                       Total
+                                                                                                                                         -                               -
+ 2023                                                                                            838.679                             673.810                       1.512.489
+ 2024                                                                                             47.542                                   -                          47.542
+ 2025                                                                                            446.642                                   -                         446.642
+ 2026                                                                                          1.101.155                                   -                       1.101.155
+ 2027                                                                                            436.215                                   -                         436.215
+  A partir de 2028                                                                                     -                                   -                               -
+ Total                                                                                         2.870.233                             673.810                       3.544.042
+  Valor presente                                                                               2.246.783                             634.299                       2.881.082
+
+
+ Consolidado
+                                                   Créditos tributários sobre diferenças temporárias           Prejuízo e base negativa              Total
+ 2023                                                                                         1.672.450                              751.650                          2.424.100
+ 2024                                                                                         1.659.183                              218.033                          1.877.217
+ 2025                                                                                           191.523                              206.270                            397.793
+ 2026                                                                                           818.736                              180.022                            998.758
+ 2027                                                                                           118.578                              257.830                            376.408
+ A partir de 2028                                                                             1.624.328                              432.163                          2.056.491
+ Total                                                                                        6.084.798                            2.045.969                          8.130.767
+ Valor presente                                                                               4.479.444                            1.709.157                          6.188.601
+
+
+ (i) O Banco Pan S.A., empresa controlada e consolidadas nas demonstrações contábeis, possui um saldo de crédito tributário de R$ 3.401 bilhões, reconhecidos substancialmente
+com base em estudo do cenário atual e futuro aprovado por sua Administração.
+
+
+O Banco possui obrigações fiscais diferidas no montante de R$ 3.569 no Banco e R$ 624.378 no Consolidado (31 de
+dezembro de 2022 - R$2.528 no Banco e R$ 694.187 no Consolidado).
+
+19. Patrimônio líquido
+
+a.    Capital social e reserva de capital
+
+Em 30 de junho de 2023, o capital social, totalmente subscrito e integralizado, é composto por 11.506.119.928 ações (31
+de dezembro de 2022 – 11.506.119.928), sendo 7.244.165.568 ações ordinárias (31 de dezembro de 2022 –
+7.244.165.568), 2.864.529.000 ações preferenciais classe A (31 de dezembro de 2022 – 2.864.529.000) e 1.397.425.360
+ações preferenciais classe B (31 de dezembro de 2022 – 1.397.425.360), todas nominativas e sem valor nominal.
+
+As ações ordinárias propiciam aos respectivos detentores o direito a um voto nas deliberações da Assembleia Geral e
+participarão, em igualdade de condições com as ações preferenciais Classe A e as ações preferenciais Classe B, na
+distribuição dos lucros.
+
+Os titulares das ações preferenciais Classe A e B tem direito a voto restrito, mas terão prioridade no reembolso de capital,
+sem prêmio, e participarão, em igualdade de condições com as ações ordinárias, na distribuição de lucros.
+
+As ações preferenciais Classe A conferem aos respectivos titulares o direito de serem incluídos em oferta pública de
+aquisição de ações em decorrência de Alienação de Controle da Companhia ao mesmo preço e nas mesmas condições
+ofertadas ao Acionista Controlador Alienante.
+
+As ações preferenciais Classe B serão conversíveis em ações ordinárias, mediante simples pedido por escrito de seu titular
+ou do Banco, sem a necessidade de deliberação e reunião de conselho ou de acionistas, desde que (i) tal conversão ocorra
+por ocasião da emissão de novas ações pelo Banco, dentro ou não do limite do capital autorizado (salvo se o acionista a
+converter seja BTG Pactual Holding S.A.) (ii) após a conversão, BTG Pactual Holding S.A. (ou a sociedade que venha a
+lhe suceder a qualquer título, inclusive por força de incorporação, fusão, cisão ou outro tipo de reorganização societária)
+continue detendo, direta ou indiretamente, mais que 50% das ações ordinárias de emissão do Banco e (iii) seja sempre
+observado o acordo de acionistas do Banco. Essas ações serão conversíveis em ações preferenciais Classe A, a pedido
+de seu titular, e desde que (i) o Banco seja uma companhia aberta com suas ações listadas em bolsa de valores e (ii) seja
+sempre observado o Acordo de Acionistas do Banco. As ações preferenciais Classe B tem direito de serem incluídas em
+oferta pública de aquisição em decorrência de eventual alienação de controle do Banco. ao mesmo preço e mesmas
+condições
+
+b.    Ações em tesouraria
+
+No semestre findo em 30 de junho de 2023 o Banco realizou recompra de 14.119.600 units no valor total de R$301.176,
+em 31 de dezembro de 2022 o Banco realizou recompra de 10.000.000 no valor de R$231.252.
+
+c.    Reserva legal
+
+
+
+                                                                                                                                                                             40

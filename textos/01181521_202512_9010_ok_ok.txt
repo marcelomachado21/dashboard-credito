@@ -1,0 +1,1485 @@
+
+=== página 23 ===
+Apresentação das Demonstrações financeiras individuais e consolidadas
+
+As Demonstrações financeiras individuais e consolidadas foram preparadas de acordo com as práticas
+contábeis adotadas no Brasil, observando as diretrizes contábeis emanadas pela Lei nº 6.404/76, alterações
+introduzidas pelas Leis nº 11.638/07 e nº 11.941/09 e em consonância com as diretrizes estabelecidas pelo
+BACEN, CMN, consubstanciadas no Plano Contábil das Instituições do Sistema Financeiro Nacional - COSIF
+e os novos pronunciamentos, orientações e as interpretações emitidas pelo Comitê de Pronunciamentos
+Contábeis - CPC aprovados pelo BACEN (CPC 00 (R2), 01 (R1), 03 (R2), 04 (R1), 05 (R1), 06 (R2) 10 (R1),
+23, 24, 25, 27, 28, 33 (R1), 41, 46 e 47).
+
+A aprovação destas Demonstrações financeiras individuais e consolidadas, elaboradas no pressuposto da
+continuidade operacional do Banco e suas controladas, foi dada pela Diretoria em 09 de fevereiro de 2026.
+
+a)   Critérios de consolidação
+
+No processo de consolidação, os saldos de transações entre as empresas foram eliminados e foram
+destacadas as parcelas do lucro líquido e do patrimônio líquido referente às participações dos acionistas não
+controladores. As demonstrações financeiras consolidadas foram elaboradas com o propósito de permitir aos
+acionistas, diretores, instituições financeiras e possíveis investidores do Banco Cooperativo Sicredi avaliar a
+posição patrimonial e financeira consolidada do Banco, em 31 de dezembro de 2025, e o desempenho
+consolidado de suas operações para o exercício findo nesta data, de acordo com as práticas contábeis
+adotadas no Brasil aplicáveis às instituições autorizadas a funcionar pelo Banco Central do Brasil, bem como
+sua estrutura societária. Consequentemente, as demonstrações financeiras consolidadas podem não ser
+adequadas para outro fim.
+
+b) Demonstrações financeiras consolidadas
+
+As demonstrações financeiras consolidadas estão apresentadas de acordo com as práticas contábeis
+adotadas no Brasil, aplicadas às instituições autorizadas a funcionar pelo Banco Central do Brasil e a partir
+das diretrizes contábeis emanadas da Lei das Sociedades Anônimas, e incluem as demonstrações financeiras
+individuais do Banco e das seguintes controladas:
+
+                             Em presa                         Atividade           31/12/2025
+Participações diretas no capital:                                                     %
+  Administradora de Consórcios Sicredi Ltda.       Administradora de Consórcios            99,99
+  Administradora de Bens Sicredi Ltda.             Administradora de Bens                  99,98
+  Corretora de Seguros Sicredi Ltda.               Corretora de Seguros                   100,00
+
+
+As controladas são integralmente consolidadas a partir da data de aquisição, sendo esta data o início da
+obtenção de controle por parte do Banco, as quais continuarão a ser consolidadas até a data em que esse
+controle deixe de existir. As demonstrações financeiras são elaboradas para o mesmo exercício de divulgação
+
+=== página 24 ===
+que o da controladora, utilizando políticas contábeis consistentes. Todos os saldos intragrupo, receitas e
+despesas e ganhos e perdas não realizados, oriundos de transações intragrupo, são eliminados por completo.
+
+c)    Moeda funcional
+
+As demonstrações financeiras consolidadas são expressas em reais, que é a moeda funcional de todo o
+Sistema, e as informações, exceto quando indicado de outra forma, em milhares de reais (R$ mil).
+
+2.1       Adoção de novas normas
+
+a)    Mudanças em vigor
+
+O Banco adotou as normas e instruções que entraram em vigor a partir de 1 de janeiro de 2025.
+As seguintes normas e interpretações são aplicáveis à Instituição:
+
+Resolução CMN 4.966/21 e Resolução BCB 352/23: introdução de mudanças significativas nas normas
+contábeis para instrumentos financeiros, alinhando-se aos conceitos da norma internacional IFRS 9 (CPC 48).
+Como principal impacto da resolução presente na respectiva demonstração financeira, destaca-se:
+
+      •   A adoção do modelo de perda esperada completa para o reconhecimento das Perdas Esperadas
+          associadas ao risco de crédito. Classificando, ainda, os instrumentos financeiros em estágios, de
+          acordo com o incremento do risco de crédito associado, são 3 estágios de classificação. Essa
+          abordagem antecipa a identificação do risco de perda antes da ocorrência de inadimplência.
+      •   Ativos financeiros passam a ser mensurados e classificados com base no modelo de negócio do
+          Sicredi e em suas características contratuais de fluxos de caixa (também denominado teste de
+          "SPPJ").
+      •   As receitas e os encargos atrelados diretamente a originação/emissão de instrumentos financeiros
+          devem ser reconhecidos no resultado, utilizando-se o método de taxa de juros efetivas;
+      •   Novos critérios para mensuração de operações renegociadas e reestruturadas, visando maior
+          transparência e comparabilidade;
+      •   Mudança do critério de suspensão da apropriação de juros, que passa a ocorrer a partir do momento
+          em que as operações são caracterizadas como "ativo financeiro com problema de risco de
+          recuperação";
+      •   Mudança no critério de baixa de ativos financeiros para prejuízo, que passam a ser baixados a partir
+          do momento em que a Instituição não tem mais expectativa de recuperação.
+      •   Vedação de registro no ativo de instrumentos baixados a prejuízo, exceto quando houver
+          renegociação do instrumento, observando os devidos requisitos dispostos na Resolução.
+
+      Instruções Normativas BCB n° 426 a 433, de 1 de dezembro de 2023, Instruções Normativas BCB n° 493
+      a 500 de 26 de julho de 2024, Instruções Normativas BCB n° 537 a 543, de 05 de novembro de 2024:
+      define as rubricas contábeis do elenco de contas do Padrão Contábil das Instituições Reguladas pelo
+      Banco Central do Brasil (Cosif) referentes aos grupos: (i) ativo realizável e permanente; (ii) grupos de
+      compensação ativa e passiva; (iii) passivo exigível; (iv) patrimônio líquido; (v) resultado credor e devedor.
+
+=== página 25 ===
+    As projeções fiscais utilizadas para a avaliação da realização dos ativos fiscais diferidos já consideram
+    tanto os efeitos da Resolução CMN nº 4.966/21 quanto os critérios previstos na Lei nº 14.467.
+
+b) Adoção inicial
+
+O Banco adotou a disposição transitória prevista no artigo 79 da Resolução CMN nº 4.966/21 e no artigo 102
+da BCB nº 352, de não reapresentar informações comparativas de períodos anteriores decorrentes das
+alterações na classificação e mensuração de instrumentos financeiros (incluindo perdas de crédito
+esperadas).Conforme disposto no Art. 70 da Resolução CMN nº 4.966/21, a aplicação dos novos critérios
+ocorreu de forma prospectiva e os efeitos do ajuste de transição foram reconhecidos diretamente em lucros
+ou prejuízos acumulados, líquidos dos efeitos tributários.
+
+A reconciliação do patrimônio líquido demonstrando os efeitos da transição da norma em 1º de janeiro de
+2025, está apresentado na nota explicativa nº4.
+
+O BACEN aprovou a adoção do CPC 06 (R2) por meio da Resolução CMN Nº 4.975/21, tornando obrigatória
+a aplicação da norma às instituições financeiras arrendadoras e arrendatárias em contratos firmados e/ou
+renovados a partir de 2025. A adoção gradual foi definida pela Resolução CMN n° 5.101/23. Essa norma
+estabelece os princípios para o reconhecimento, mensuração, apresentação e divulgação de operações de
+arrendamento mercantil por instituições financeiras, tanto na condição de arrendadoras quanto de
+arrendatárias. As alterações entraram em vigor em 01 de janeiro de 2025. Até a presente data, o Banco não
+possui contratos de arrendamento que atendam aos critérios de reconhecimento estabelecidos pelo CPC 06
+(R2) – Arrendamentos.
+
+
+
+
+As políticas e os métodos contábeis utilizados na preparação destas demonstrações financeiras equivalem-
+se àqueles aplicados às demonstrações financeiras referentes ao exercício encerrado em 31 de dezembro de
+2024, exceto pela aplicação da Resolução CMN 4.966/21 (relacionada a instrumentos financeiros) que entrou
+em vigor em 1º de janeiro de 2025.
+
+As principais práticas contábeis adotadas para a elaboração das Demonstrações financeiras individuais e
+consolidadas foram:
+
+a) Apuração do resultado
+
+O resultado é apurado de acordo com o regime de competência, que estabelece que as receitas e despesas
+devam ser incluídas na apuração dos resultados dos períodos em que ocorrerem, sempre simultaneamente
+quando se correlacionarem, independentemente de recebimento ou pagamento. As operações com taxas
+prefixadas são registradas pelo valor de resgate, e as receitas e despesas correspondentes ao exercício futuro
+são apresentadas em conta redutora dos respectivos ativos e passivos.
+
+As receitas e despesas de natureza financeira são contabilizadas pelo critério pro rata die e calculadas com
+base no modelo exponencial, exceto aquelas relativas a títulos descontados ou relacionadas a operações
+
+=== página 26 ===
+com o exterior, que são calculadas com base no método linear. As operações com taxas pós-fixadas ou
+indexadas a moedas estrangeiras são atualizadas até a data do balanço.
+
+b) Caixa e equivalentes de caixa
+
+Caixa e equivalentes de caixa são representados por: disponibilidades em moeda nacional, moeda
+estrangeira; aplicações interfinanceiras de liquidez; depósitos voluntários de liquidez diária junto ao Banco
+Central do Brasil e fundos de investimento de renda fixa, cujo vencimento das operações na data da efetiva
+aplicação seja igual ou inferior a 90 dias e que apresentem risco insignificante de mudança de valor justo.
+
+A partir de janeiro de 2025, o Banco e suas controladas passaram a incluir as cotas de fundos de renda fixa
+como caixa e equivalentes de caixa, em razão de sua liquidez imediata e da intenção de utilização como
+recurso disponível para a gestão de caixa, em conformidade com os critérios estabelecidos pelo
+Pronunciamento Técnico CPC 03 – Demonstração dos Fluxos de Caixa.
+
+c) Instrumentos financeiros
+
+I. Classificação dos instrumentos financeiros
+
+Os ativos financeiros do Banco Cooperativo Sicredi são classificados nas seguintes categorias:
+
+Custo Amortizado: o ativo é gerido dentro de modelo de negócios cujo objetivo é manter ativos financeiros
+com o fim de receber os respectivos fluxos de caixa contratuais, constituídos apenas por pagamentos de
+principal e juros.
+
+Valor Justo por meio de Outros Resultados Abrangentes: o ativo financeiro é gerido dentro de modelo de
+negócios cujo objetivo é gerar retorno tanto pelo recebimento dos fluxos de caixa contratuais quanto pela
+venda do ativo financeiro com transferência substancial de riscos e benefícios, constituídos apenas por
+pagamentos de principal e juros, quanto para a venda.
+
+Valor Justo no Resultado: utilizada para ativos financeiros que não atendem os critérios descritos acima.
+
+A classificação contábil em cada uma das categorias de depende da avaliação do modelo de negócios para
+cada ativo financeiro, bem como das características dos seus fluxos de caixa contratuais (Somente
+Pagamento de Principal e Juros – "Teste SPPJ").
+
+Para determinar o modelo de negócios, a Instituição avalia a estratégia de obtenção de resultados financeiros,
+ou seja, pelo i) recebimento de fluxos de caixa de principal e juros, ii) pela venda, ou por iii) ambos. Para isso,
+leva em consideração, entre outros, as seguintes evidências:
+
+    •   os riscos que afetam o desempenho do modelo de negócio;
+    •   como os gestores do negócio são remunerados; e
+    •   como o desempenho do modelo de negócios é avaliado e reportado à Administração.
+
+=== página 27 ===
+A avaliação das características dos fluxos de caixa é feita por meio de aplicação do teste "SPPJ" a fim de
+avaliar se os fluxos de caixa contratuais constituem apenas pagamento de principal e juros. Para atender
+esse conceito os fluxos de caixa devem incluir contraprestação pelo valor do dinheiro no tempo e risco de
+crédito. Se esse conceito não for atendido, o ativo financeiro é classificado ao Valor Justo por meio do
+Resultado.
+
+O Banco não faz uso da opção irrevogável, aplicável a ativos financeiros, de mensuração ao valor justo no
+reconhecimento inicial, para os ativos financeiros.
+
+II.    Mensuração subsequente dos instrumentos financeiros
+
+A mensuração dos ativos e passivos financeiros para cada categoria de classificação contábil, sendo:
+
+Custo amortizado: os ativos e passivos financeiros nesta categoria são inicialmente reconhecidos pelo seu
+valor justo, acrescidos dos custos de transação ou valores recebidos. Subsequentemente são mensurados ao
+custo amortizado, acrescidos das atualizações efetuadas utilizando a taxa efetiva de juros. Os ganhos dos
+ativos financeiros desta categoria são reconhecidos como "Receitas de juros", enquanto as despesas de juros
+dos passivos financeiros são reconhecidas como "Despesas de juros", ao longo do prazo do respectivo
+contrato.
+
+Ao valor justo em outros resultados abrangentes: os ativos financeiros nesta categoria são inicialmente
+reconhecidos pelo seu valor justo, acrescidos dos custos de transação ou valores recebidos.
+Subsequentemente são mensurados pelo valor justo, sendo os ganhos ou perdas provenientes de alterações
+no valor justo reconhecidos diretamente em rubrica específica do patrimônio líquido intitulada "Ajuste de
+avaliação patrimonial", até que o ativo financeiro seja baixado. Quando da realização de baixa do ativo, os
+ganhos ou perdas acumulados na rubrica específica do patrimônio líquido são transferidos para o resultado
+do período. Os juros de ativos financeiros classificados nesta categoria são reconhecidos no resultado do
+exercício na como "Receitas de juros". Os juros desses ativos financeiros são calculados com base na
+aplicação do método da taxa efetiva de juros.
+
+Ao valor justo por meio do resultado e designados ao valor justo no reconhecimento inicial: são inicialmente
+reconhecidos pelo seu valor justo, sendo os respectivos custos de transação ou valores recebidos
+reconhecidos diretamente como despesa ou receita na emissão ou aplicação do instrumento financeiro. Os
+ganhos ou as perdas decorrentes de variações no valor justo desses ativos e passivos financeiros são
+apresentados na demonstração consolidada do resultado como "Resultado líquido de juros", no período em
+que ocorrem.
+
+III.   Hierarquia do valor justo
+
+A hierarquia do valor justo (HVJ) é uma das formas de realizar a precificação dos ativos e passivos conforme
+suas negociações em mercado ou dados observáveis disponíveis, assim mensura-se o valor justo utilizando
+premissas adotadas pelo mercado, considerando seus riscos.
+
+Os tipos de classificação dos inputs utilizados na mensuração do valor justo, baseada na sua confiabilidade
+e disponibilidade.
+
+=== página 28 ===
+• HVJ1= Nível 1 de hierarquia de valor justo referente a preços cotados em mercados ativos para os
+instrumentos negociados;
+
+• HVJ2 = Nível 2 de hierarquia de valor justo de dados observáveis, similar em mercados dos ativos ou Proxy;
+
+• HVJ3 = Nível 3 de hierarquia de valor justo de dados não observáveis, modelos de apreçamento
+desenvolvidos internamente.
+
+IV.   Reclassificação dos instrumentos financeiros
+
+Em conformidade com a Resolução CMN nº 4.966/21, em 1º de janeiro de 2025, a instituição reclassificou os
+títulos registrados até 31 de dezembro de 2024 como: Mantidos até o Vencimento, Disponíveis para Venda,
+e Negociação para as novas categorias contábeis: Custo Amortizado, Valor Justo por meio de Outros
+Resultados Abrangentes (VJORA) e Valor Justo por meio do Resultado (VJR). Os ajustes foram realizados
+com base no modelo de negócios e nas características dos fluxos de caixa dos ativos, com os efeitos
+devidamente reconhecidos nas demonstrações financeiras e evidenciados na nota explicativa nº4.
+
+Em 1º de janeiro de 2025 as operações de Cédula de Produto Rural (CPR) foram reclassificadas para o grupo
+de "Outros ativos financeiros", que até 31 de dezembro de 2024, estavam classificadas como "Títulos e
+valores mobiliários", sem alteração de mensuração destes ativos, conforme evidenciado na nota explicativa
+nº4.
+
+Os contratos de operações de câmbio com liquidação futura e câmbio pronto, classificados nos grupos de
+"Outros ativos financeiros" e "Outros passivos financeiros" até 31 de dezembro de 2024 como custo
+amortizado, foram reclassificados como derivativos a partir de 1º de janeiro de 2025, conforme evidenciado
+na nota explicativa nº4.
+
+As provisões com garantias financeiras prestadas classificadas no grupo de "Outros passivos" em 31 de
+dezembro de 2024 foram reclassificadas como Provisões e outras obrigações com instrumentos financeiros
+a partir de 1º de janeiro de 2025, conforme evidenciado na nota explicativa nº4.
+
+V.    Baixa dos instrumentos financeiros
+
+Os ativos financeiros são baixados quando os direitos contratuais de recebimento dos fluxos de caixa
+provenientes destes ativos cessam ou se houver uma transferência substancial dos riscos e benefícios de
+propriedade do instrumento e tal transferência se qualifica para baixa.
+
+Passivos financeiros são baixados se a obrigação for extinta contratualmente ou liquidada.
+
+d) Derivativos
+
+A Instituição utiliza derivativos, como swaps e futuros de taxas de juros, swap de moedas, futuros de câmbio
+em moedas estrangeiras e opções de taxas de juros com o objetivo de atender às necessidades próprias para
+administrar a exposição global do Banco e são classificados, na data de sua aquisição, de acordo com a
+
+=== página 29 ===
+intenção da Administração em utilizá-los como instrumento de proteção contra risco (Hedge), conforme a
+Circular nº 3.082, de 30/01/2002, do BACEN.
+
+Os instrumentos financeiros derivativos são ajustados para ao valor justo em contrapartida ao resultado do
+período.
+
+Operações de futuros: são acordos entre duas partes para comprar ou vender um ativo em uma data futura
+específica, por um preço previamente acordado. As operações de futuro são registradas pelo valor dos ajustes
+diários, apropriados como receita ou despesa.
+
+Operações de Swap: são acordos financeiros entre duas partes para trocar fluxos de caixa futuros com base
+em diferentes critérios, como taxas de juros, moedas ou índices. As operações de "swap" são registradas pelo
+diferencial a receber ou a pagar pelo valor justo, e apropriado como receita ou despesa.
+
+Contratos a termo: são acordos de compra e venda de um ativo em uma data futura, por preço previamente
+estabelecido. Esses acordos são particulares e estabelecidos entre dois agentes financeiros, no qual uma das
+partes assume sua posição de compra no contrato a termo em data específica e por um preço certo e ajustado;
+e a contraparte assume sua posição de venda em iguais condições. As operações a termo são registradas
+pelo valor final contratado deduzido da diferença entre esse valor e o preço à vista do bem ou direito, sendo
+essa diferença reconhecida como receita ou despesa em razão do prazo de fluência dos contratos. Inclui os
+contratos de câmbio que são termos de moeda.
+
+As operações com opções são registradas pelo valor dos prêmios pagos ou recebidos até o efetivo exercício
+da opção, quando então é baixado como redução, ajustado ao valor justo ou aumento do custo do bem ou
+direito, pelo efetivo exercício, ou como receita ou despesa, no caso de não exercício.
+
+Os contratos de câmbio, anteriormente classificadas sob rubricas específicas de ativos ou passivos
+relacionados à moeda estrangeira, agora devem ser registradas como derivativos, conforme o Art. 2º, inciso
+XI, da Resolução CMN nº 4.966, já que são instrumentos financeiros cujo valor varia em decorrência de
+variáveis como a taxa de câmbio, sendo que sua liquidação ocorre em data futura. Essa transição impacta
+diretamente a forma como essas operações são tratadas contábil e financeiramente, sendo agora mensuradas
+a Valor Justo no Resultado (VJR).
+
+As operações com outros instrumentos financeiros derivativos, são registradas de acordo com as
+características do contrato, ajustado ao valor justo
+
+As operações com instrumentos financeiros derivativos são registradas pelo seu valor justo, considerando as
+metodologias de marcação a mercado adotadas pelo Sicredi. O método de reconhecimento dos ganhos e
+perdas resultantes das operações depende do fato do derivativo ser designado ou não como um instrumento
+de Hedge, em casos de adoção da contabilidade de Hedge ou Hedge accounting.
+
+Os instrumentos designados para fins de Hedge accounting podem ser classificados de acordo com sua
+natureza nas seguintes categorias:
+
+=== página 30 ===
+    •   Hedge de valor justo: devem ser classificados os instrumentos financeiros derivativos que se
+        destinam a compensar riscos decorrentes da exposição à variação no valor de mercado do item objeto
+        de Hedge, sendo que os valores dos ganhos e perdas devem ser registrados em contrapartida ao
+        resultado do exercício da Instituição;
+
+    •   Hedge de fluxo de caixa: devem ser classificados os instrumentos financeiros derivativos que se
+        destinam a compensar variações no fluxo de caixa estimado da Instituição, sendo que os valores dos
+        ganhos e perdas, da parcela efetiva, em contrapartida a conta destacada do patrimônio líquido
+        deduzido os efeitos tributários e demais variações em contrapartida ao resultado do exercício.
+
+Para os derivativos classificados na categoria de Hedge accounting existe a identificação documental com as
+informações detalhadas das operações e os riscos envolvidos, a efetividade da estratégia, através de testes
+de efetividade prospectiva e/ou retrospectiva, bem como a marcação a mercado dos instrumentos e dos
+objetos de Hedge, conforme determina a Circular nº 3.082/02.
+
+As operações com derivativos no mercado de futuro e opções são custodiadas na B3 S.A. – Brasil, Bolsa e
+Balcão ("B3"). A determinação dos valores de mercado de tais instrumentos financeiros derivativos é baseada
+nas cotações divulgadas pelas bolsas especializadas.
+
+e) Método de Taxa de Juros Efetiva
+
+A taxa de juros efetiva é a taxa que desconta a valor presente os pagamentos e recebimentos ao longo do
+prazo contratual do ativo ou passivo financeiro.
+
+A taxa de juros efetiva é estabelecida no reconhecimento inicial do ativo ou passivo financeiro.
+
+O cálculo da taxa efetiva de juros inclui os custos de transação identificados como elegíveis, como:
+
+    •   Receita com tarifas e taxas atreladas a concessão das operações;
+    •   Custos com empresas especializadas (análise documental, cobrança, serviços de vistorias e
+        avaliações); e
+    •   Custos com comissões e portabilidade de operações.
+
+Entende-se como custos da transação elegíveis, os custos incrementais diretamente atribuíveis à aquisição,
+emissão ou alienação de um ativo ou passivo financeiro.
+
+Conforme requisitos determinados pela Resolução BCB 352/23, o Banco Cooperativo Sicredi optou em
+utilizar a metodologia diferenciada proporcional para operações de crédito e com características de crédito.
+
+=== página 31 ===
+f) Provisão para perdas
+
+I.    Visão Geral
+
+O Banco Cooperativo Sicredi integra o segmento prudencial "S2", de acordo com a Resolução CMN nº 5.146,
+de 26/06/2024, as instituições financeiras integrantes de sistemas Cooperativos de dois ou de três níveis que
+contenham instituição enquadrada nos segmentos 1 ("S1"), 2 ("S2") ou 3 ("S3"), deverão adotar para o
+sistema cooperativo como um todo a metodologia completa de perdas esperadas.
+
+Nessa metodologia, foram construídos modelos estatísticos de perdas esperadas baseados nos conceitos da
+Resolução CMN nº 4.966 de 2021 e avaliados os pisos mínimos de provisionamento para operações em
+Estágio 3, conforme Resolução BCB n° 352 de 2023.
+
+A Instituição registra perdas esperadas, para os seguintes instrumentos financeiros:
+
+      •   Aplicações interfinanceiras de liquidez;
+      •   Títulos e valores mobiliários (mensurados a custo amortizado e "VJORA");
+      •   Operações de créditos;
+      •   Outros ativos financeiros; e
+      •   Exposições "off-balance" (que gerem risco de crédito).
+
+II.   Estágios
+
+O Banco aplica a abordagem de três estágios para mensurar a perda de crédito esperada, na qual os ativos
+financeiros migram de um estágio para outro de acordo com as mudanças no risco de crédito.
+
+Estágio 1: refere-se aos instrumentos financeiros sem aumento significativo do risco de crédito em relação à
+data da originação do crédito. Para esses casos, a probabilidade de default (moratória) considerada no
+modelo de perda estimada é calculada para os próximos 12 meses apenas.
+
+Estágio 2: refere-se aos instrumentos financeiros com aumento significativo do risco de crédito, mas que
+ainda não são considerados ativos com problemas de risco de recuperação (sem default). Para esses casos,
+a perda esperada é baseada no cálculo da probabilidade de default (PD) para o prazo remanescente da
+operação, devendo compor no mínimo a PD12 meses.
+
+Estágio 3: refere-se a instrumentos financeiros em risco de recuperação (em default). Para esses casos, para
+fins de reconhecimento de perdas é reconhecido o maior valor de perda entre:
+     • A Perda Esperada calculada com base nos dados observados estatísticos; ou
+     • O piso de Estágio 3 determinado pela Resolução BCB n° 352 de 2023 (anexo 1 da normativa –
+         "Provisão para perdas incorridas aplicável aos ativos financeiros inadimplidos").
+
+=== página 32 ===
+III.   Aumento significativo no risco de crédito
+
+O conceito de risco de crédito da operação é baseado na probabilidade de default para sua vida toda.
+
+Originalmente, quando a operação é concedida pela Instituição a classificação de risco é registrada em estágio
+1, e posteriormente, a cada data base de fechamento mensal, o Banco avalia se o ativo apresentou aumento
+significativo no risco de crédito desde o reconhecimento inicial. Em caso de aumento, esta operação deve
+passar a ser considerada em estágio 2, ou ainda se o ativo, além de apresentar aumento significativo no risco
+de crédito, demonstrar evidência objetiva de risco na recuperação, será alocado em estágio 3. Por fim, se a
+operação, além de apresentar a evidência de risco de recuperação, tiver estimativas insignificantes de
+recuperação, deverá ser baixada para prejuízo.
+
+As definições de aumento significativo e evidência de ativo problemático são baseadas não apenas em
+aspectos qualitativos e prospectivos (projeções de modelos de probabilidade de default), mas também no
+atraso efetivo do ativo financeiro.
+
+Os ativos que devem ser considerados como estágio 2 são aqueles com aumento significativo do risco de
+crédito desde o reconhecimento inicial, tendo como premissa refutável o atraso em 30 dias (limitado a 60
+dias).
+
+Os ativos que devem ser considerados como estágio 3 são todos os contratos que têm evidência de problema
+de risco de recuperação. Essencialmente, a marcação de ativo problemático é dada quando um contrato
+atinge atraso de pagamento da dívida acima de 90 dias em atraso, marcação de reestruturação ou quando o
+cliente possui características que evidencie dificuldade de pagamento como quando ele está em situação de
+recuperação judicial.
+
+IV.    Cálculo da perda esperada
+
+O cálculo da perda esperada visa gerar a expectativa das perdas em crédito ao longo de um dado horizonte
+de tempo e engloba a avaliação de três parâmetros:
+
+       •   Probabilidade de default – PD: A PD é a probabilidade futura de um ativo entrar em inadimplemento
+           em uma janela de tempo determinada;
+       •   Perda dado o default – LGD: A LGD é o percentual esperado de perda de um cliente dado o default.
+           É um componente importante para a modelagem do risco de crédito da instituição para que consiga
+           através de modelos mensurar qual é a probabilidade esperada de perda dada a
+           contratação/renovação de contratos e clientes, podendo estender análises específicas para os
+           diferentes tipos de garantias, percentual de cobertura das garantias, entre outras informações do
+           cliente.
+       •   Exposição ao default – EAD: É a exposição na data da inadimplência. Para créditos rotativos com
+           limites é feita a estimativa da exposição no momento do default através de fatores de conversão. Já
+           para créditos parcelados é considerado o saldo contábil da operação no mês do reporte.
+
+Adicionalmente, a Resolução CMN nº 4.966 de 2021, determina que todos os modelos tenham inclusão de
+variáveis preditivas de fatores macroeconômicos para proporcionar uma visão do risco à exposição dos
+
+=== página 33 ===
+fatores exógenos, preparar e antecipar as instituições na avaliação de impactos em eventos extremos
+(cenários sob estresses). Em outras palavras, as variáveis forward looking funcionam como uma calibragem
+dos modelos sob efeitos macroeconômicos ou política de crédito.
+
+g) Ativos financeiro com problema de risco de recuperação
+
+O ativo financeiro é caracterizado como "Ativo Problemático" quando:
+
+    •   Ocorrer atraso superior a 90 (noventa) dias no pagamento de principal e encargos;
+    •   Se houver algum indicativo e que a respectiva obrigação não será integralmente honrada nas
+        condições pactuadas, sem que seja necessário recorrer a garantias ou a colaterais;
+    •   Todas as operações enquadradas como reestruturadas.
+
+
+É considerado reestruturação uma renegociação que implique a concessão de vantagens à contraparte em
+decorrência da deterioração da sua qualidade creditícia ou da qualidade creditícia do interveniente ou do
+instrumento mitigador.
+
+Quando um instrumento financeiro é caracterizado como ativo com problema de risco de recuperação, as
+operações de uma mesma contraparte ou de contrapartes conectadas, são arrastados (na data-base do
+balancete relativo ao mês em que ocorreu a caracterização) para Estágio 3.
+
+Poderá não ocorrer o efeito arrasto nas ocasiões em que a Instituição apresentar instrumento financeiro que,
+em virtude de sua natureza ou de sua finalidade, apresente risco de crédito significativamente inferior ao
+instrumento da mesma contraparte caracterizado como ativo com problema de risco de recuperação.
+
+A partir do momento da caracterização como ativo problemático, as receitas ainda não recebidas são
+suspensas, sendo apropriadas no resultado quando do seu efetivo recebimento.
+
+As operações serão baixadas para prejuízo se, além de serem considerados ativos com problemas de risco
+de recuperação, possuam estimativas insignificantes de que vá ocorrer a recuperação.
+
+O Banco considera que o ativo financeiro deixará de ser problemático, ou seja, foi curado, quando os seguintes
+aspectos são alcançados:
+
+    •   Ausência de parcelas vencidas, incluindo encargos;
+    •   Pagamento tempestivo de principal e encargos por um período suficiente para indicar melhoria
+        financeira significativa da contraparte; e
+    •   Cumprimento de outras obrigações contratuais, caso existam, por um período suficiente para
+        demonstrar melhoria financeira significativa da contraparte.
+
+Reclassificação em Estágios (Processo de Cura): em conformidade com a Resolução CMN nº 4.966, os ativos
+financeiros passam por revisões periódicas de classificação de estágio, permitindo melhora conforme critérios
+definidos que levam em consideração a inexistência de parcelas vencidas e a manutenção de pagamentos e/
+
+=== página 34 ===
+ou outras características que possibilitam identificar melhora na capacidade financeira para honrar as
+obrigações existentes.
+
+h) Operações de crédito cedidas
+
+As cessões de crédito com retenção substancial de riscos e benefícios passam a ter os seus resultados
+reconhecidos pelo prazo remanescente das operações. Os ativos financeiros objetos da cessão permanecem
+registrados como operações de crédito e o valor recebido como obrigações por operações de venda ou de
+transferência de ativos financeiros.
+
+i) Demais ativos circulantes e realizáveis a longo prazo (não circulantes)
+
+Demonstrados pelos valores de realização, incluindo, quando aplicável, os rendimentos e as variações
+monetárias pro rata die incorridos e as variações cambiais, deduzidos das correspondentes provisões para
+perdas ou ajuste ao valor de mercado e rendas a apropriar.
+
+j) Investimentos
+
+Estão demonstrados ao custo de aquisição, sendo que os investimentos em controladas estão ajustados por
+avaliação pelo método da equivalência patrimonial. Os outros investimentos estão avaliados ao custo,
+reduzidos ao valor recuperável, quando aplicável.
+
+k) Imobilizado de uso
+
+Demonstrado ao custo de aquisição. A depreciação do imobilizado de uso é computada pelo método linear,
+com base nas taxas anuais mencionadas no quadro abaixo, que levam em consideração a vida útil-econômica
+dos bens.
+
+                                            Controladora                 Consolidado
+Imobilizado                           Taxa anual de depreciação    Taxa anual de depreciação
+Edificações                                   2% a 10%                     2% a 10%
+Móveis, utensílios e instalações                10%                        2% a 50%
+Equipamentos de informática e                   20%                       7% a 38%
+Sistemas de transporte                          20%                       11% a 25%
+Outras imobilizações                         10% a 33%                     8% a 33%
+
+
+
+l) Intangível
+
+Corresponde à direitos adquiridos que têm por objeto bens incorpóreos destinados à manutenção da
+Instituição ou exercidos com essa finalidade. Está demonstrado aos valores de custo e contempla gastos na
+aquisição e desenvolvimento de software, ajustado por amortizações acumuladas, calculadas a partir do
+momento em que começam a ser usufruídos os benefícios respectivos, na razão de 10% a 20% ao ano, pelo
+método linear. No exercício, o Banco Sicredi e suas controladas não apresentaram s Ativos Intangíveis.
+
+=== página 56 ===
+b) Composição das operações por estágios:
+
+                                                                                                       Controladora e Consolidado
+                                                                                                               31/12/2025
+                                                                                    Estágio 1          Estágio 2        Estágio 3      Total da carteira
+Ativos financeiros ao custo amortizado
+
+Repasses Interfinanceiros                                                            82.178.948                    -            -           82.178.948
+
+ Provisão para perdas incorridas e esperadas                                             (15.504)                  -            -               (15.504)
+
+Subtotal - Repasses Interfinanceiros, líquido de Perda de Crédito Esperada           82.163.444                    -            -           82.163.444
+
+Operações de crédito                                                                 45.057.320             33.598            7.587         45.098.505
+
+ Empréstimos e títulos descontados                                                    7.048.588                -                -            7.048.588
+ Financiamentos                                                                       4.092.400             33.598            7.587          4.133.585
+ Financiamentos rurais e agroindustriais                                             30.961.329                -                -           30.961.329
+ Financiamentos imobiliários                                                          2.955.003                -                -            2.955.003
+
+Provisão para perdas incorridas e esperadas                                               (9.099)           (2.512)          (6.308)            (17.919)
+
+Subtotal - Operações de crédito, líquido de Perda de Crédito Incorrida e Esperada    45.048.221             31.086            1.279         45.080.586
+
+Outros ativos financeiros                                                             1.132.532                    -            -            1.132.532
+
+ Adiantamentos sobre contratos de câmbio                                              1.094.278                    -            -            1.094.278
+ Títulos com característica de concessão de crédito                                      38.254                    -            -               38.254
+
+Provisão para perdas incorridas e esperadas                                                     (63)               -            -                    (63)
+
+Subtotal - Outros ativos financeiros, líquido de Perda de Crédito Esperada            1.132.469                    -            -            1.132.469
+
+ Total Bruto 2025                                                                   128.368.800             33.598            7.587        128.409.985
+
+Total Provisão para perdas incorridas e esperadas                                        (24.666)           (2.512)          (6.308)            (33.486)
+Total da carteira de crédito líquida de provisão                                    128.344.134             31.086            1.279        128.376.499
+
+=== página 57 ===
+c) Movimentação da provisão para perdas esperadas
+
+                                                                   Controladora e Consolidado
+                                                                            31/12/2025
+Saldo em 31/12/2024                                                                        (123.692)
+
+Ajuste de transição Res. 4.966 - reversão de provisão                                        57.642
+Reversão de provisão                                                                         23.836
+
+Subtotal                                                                                    (42.214)
+
+Créditos baixados para compensado                                                             8.728
+
+Saldo final                                                                                 (33.486)
+
+
+d) Concentração das operações
+
+i)    Maiores devedores:
+
+
+                             Controladora e Consolidado
+
+                               31/12/2025               %
+10 maiores devedores              29.536.969              23,00
+50 maiores devedores              47.782.492              37,21
+100 maiores devedores               6.786.386               5,29
+Demais                            44.304.138              34,50
+
+Total - 2025                     128.409.985                100
+
+
+ii)   Perfil de atividade:
+
+                                                                      Controladora e Consolidado
+                                                                             31/12/2025
+Perfil
+                                 Vencidas a partir                       De 3 a 12       Acima de 12
+                                                        Até 3 meses                                       Total        %
+                                   de 15 dias                              meses           meses
+Pessoa Jurídica                             1.497        8.618.485       38.417.814       45.083.129     92.120.925   71,74
+Pessoa Física - Urbano                        535          249.109          664.678         3.360.676     4.274.998    3,33
+Pessoa Física - Agro                        1.657        1.223.977        6.502.730       24.285.698     32.014.062   24,93
+Total - 2025                                3.689       10.091.571       45.585.222       72.729.503    128.409.985    100
+
+=== página 58 ===
+            e) Reconciliação da carteira bruta das operações, segregadas por estágios:
+
+                                                                                                                          Controladora e Consolidado
+
+                                                                                                                                    31/12/2025
+Estágio 1
+                                                                                                                                                                               Aquisição/
+                                                                 Saldo em           Transferência p/ Transferência p/ Transferência do Transferência do                                         Saldo Final em
+                                                                                                                                                                             (Liquidação) do
+                                                              01/01/2025                Estágio 2              Estágio 3            Estágio 2               Estágio 3                            31/12/2025
+                                                                                                                                                                                estágio 1
+Repasses Interfinanceiros                                                                                                                                                                           82.178.820
+ Repasses Interfinanceiros                                         77.509.152                         -                   -                    -                     -            4.669.668         82.178.820
+
+Operações de crédito                                                                                                                                                                                45.057.448
+ Empréstimos e títulos descontados                                   6.854.307                        -                   -                    -                 10.700             183.581          7.048.588
+ Financiamentos                                                      3.379.322                 (36.369)             (7.653)                  638                  3.275             753.303          4.092.516
+ Financiamentos rurais e agroindustriais                           25.447.119                         -                   -                  898                 13.558           5.499.766         30.961.341
+ Financiamentos imobiliários                                         2.027.755                        -                   -                        84               203             926.961          2.955.003
+
+Outros ativos financeiros                                                                                                                                                                            1.132.532
+ Adiantamentos sobre contratos de câmbio                              892.318                         -                   -                    -                     -              201.960          1.094.278
+ Títulos com característica de concessão de crédito                        9.653                      -                   -                    -                     -               28.601             38.254
+
+Total - 2025                                                     116.119.626                   (36.369)             (7.653)                1.620                 27.736          12.263.840        128.368.800
+
+
+
+
+                                                                                                                    Controladora e Consolidado
+                                                                                                                               31/12/2025
+Estágio 2
+                                                         Saldo em           Transferência p/          Transferência p/ Transferência do Transferência do                      Aquisição/        Saldo Final em
+                                                        01/01/2025             Estágio 1                 Estágio 3         Estágio 1        Estágio 3                        (Liquidação)        31/12/2025
+Operações de crédito                                                                                                                                                                                      33.598
+ Empréstimos e títulos descontados                                    65                      -                    -                     -                        -                     (65)                -
+ Financiamentos                                                    3.821                     (638)              (2.292)               36.369                      132               (3.794)              33.598
+ Financiamentos rurais e agroindustriais                             922                     (898)                 -                     -                        -                     (24)                -
+ Financiamentos imobiliários                                          84                       (84)                -                     -                        -                    -                    -
+
+Total - 2025                                                       4.892                (1.620)                 (2.292)               36.369                      132               (3.883)              33.598
+
+
+                                                                                                                    Controladora e Consolidado
+                                                                                                                              31/12/2025
+Estágio 3
+                                                      Saldo em        Transferência p/ Transferência p/ Transferência do Transferência do                      Baixa para      Aquisição/       Saldo Final em
+                                                      01/01/2025            Estágio 1             Estágio 2          Estágio 1             Estágio 2            prejuízo       (Liquidação)       31/12/2025
+Operações de crédito                                                                                                                                                                                      7.587
+ Empréstimos e títulos descontados                          18.247              (10.700)                   -                    -                       -                -            (7.547)                  -
+ Financiamentos                                             13.422                 (3.275)                (132)               7.653                 2.292          (5.721)            (6.652)             7.587
+ Financiamentos rurais e agroindustriais                    18.871              (13.558)                   -                    -                       -                -            (5.313)                  -
+ Financiamentos imobiliários                                  203                   (203)                  -                    -                       -                -              -                      -
+
+Total - 2025                                                50.743              (27.736)                  (132)               7.653                 2.292          (5.721)          (19.512)              7.587
+
+=== página 59 ===
+         Consolidação dos estágios:
+
+                                                                                                                               Controladora e Consolidado
+                                                                                                                                          31/12/2025
+Consolidado dos 3 Estágios
+                                                           Saldo em                                                                                                 Baixa para           Aquisição/          Saldo Final em
+                                                                                     Estágio 1                  Estágio 2                   Estágio 3
+                                                          01/01/2025                                                                                                 prejuízo          (Liquidação)            31/12/2025
+Repasses Interfinanceiros
+ Repasses Interfinanceiros                                  77.509.152                            -                         -                            -                     -             4.669.668            82.178.820
+
+Operações de crédito
+ Empréstimos e títulos descontados                           6.872.619                         10.700                      -                       (10.700)                    -               175.969               7.048.588
+ Financiamentos                                              3.396.565                     (40.109)                    33.571                        6.538                 (5.721)             742.857               4.133.701
+ Financiamentos rurais e agroindustriais                    25.466.912                         14.456                    (898)                     (13.558)                    -             5.494.429           30.961.341
+ Financiamentos imobiliários                                 2.028.042                           287                        (84)                        (203)                  -               926.961               2.955.003
+
+Outros ativos financeiros
+ Adiantamentos sobre contratos de câmbio                           892.318                        -                         -                            -                     -               201.960                1.094.278
+ Títulos com característica de concessão de crédito                     9.653                     -                         -                            -                     -                28.601                      38.254
+
+Total - 2025                                               116.175.261                    (14.666)                     32.589                     (17.923)                 (5.721)       12.240.445             128.409.985
+
+
+
+         f)        Reconciliação de perdas esperadas das operações de crédito, segregadas por estágios:
+                                                                                                                                       Controladora e Consolidado
+
+    Estágio 1
+                                                                                Transferência p/        Transferência p/        Transferência do    Transferência do           Constituição/         Saldo Final em
+                                                                                   Estágio 2               Estágio 3               Estágio 2                 Estágio 3          (Reversão)
+
+
+      Repasses Interfinanceiros
+
+    Operações de crédito
+
+
+
+
+                                                                                                                                       Controladora e Consolidado
+                                                           Saldo em                                                           31/12/2025
+    Estágio 2
+                                                          01/01/2025        Transferência p/ Transferência p/ Transferência do Transferência do Constituição/                                      Saldo Final em
+                                                                                    Estágio 1
+    Operações de crédito
+      Financiamentos                                                    1.779                  (207)
+      Financiamentos rurais e agroindustriais                              1                     (1)
+
+    Total - 2025                                                        1.780                  (208)
+
+
+                                                                                                                                  Controladora e Consolidado
+                                                                                                                                            31/12/2025
+                                                       Saldo em
+    Estágio 3
+                                                      01/01/2025         Transferência p/ Transferência p/ Transferência do Transferência do                     Baixa para        Constituição/       Saldo Final em
+                                                                            Estágio 1             Estágio 2            Estágio 1             Estágio 2             prejuízo         (Reversão)          31/12/2025
+
+    Operações de crédito                                                                                                                                                                                         6.308
+      Empréstimos e títulos descontados                         17                      (13)                -                     -                  -                      -                    (4)              -
+      Financiamentos                                         6.968                    (291)                 (81)                1.350              1.220                 (5.486)             2.629              6.309
+      Financiamentos rurais e agroindustriais                      20                  (12)                 -                      -                 -                     -                     (9)                  (1)
+
+    Total - 2025                                             7.005                    (316)                 (81)                1.350              1.220                 (5.486)             2.616              6.308
+
+=== página 60 ===
+    Consolidação dos estágios:
+
+                                                                                                          Controladora e Consolidado
+                                                                                                                  31/12/2025
+                                                       Saldo em
+Consolidado dos 3 Estágios
+                                                      01/01/2025                                                           Baixa para      Constituição/         Saldo Final em
+                                                                       Estágio 1        Estágio 2         Estágio 3
+                                                                                                                            prejuízo        (Reversão)             31/12/2025
+
+Repasses Interfinanceiros
+ Repasses Interfinanceiros                                  26.152             -                -                 -                 -             (10.651)              15.501
+
+Operações de crédito
+ Empréstimos e títulos descontados                           1.954                 13           -                  (13)             -               (1.108)                846
+ Financiamentos                                             26.382          (3.133)             935             2.198            (5.486)            (8.915)             11.981
+ Financiamentos rurais e agroindustriais                     9.571                 13               (1)            (12)             -               (4.902)              4.669
+ Financiamentos imobiliários                                   559             -                -                 -                 -                (134)                 425
+
+Outros ativos financeiros
+ Adiantamentos sobre contratos de câmbio                       580             -                -                 -                 -                (520)                  60
+ Títulos com característica de concessão de crédito                9           -                -                 -                 -                      (5)               4
+
+Total - 2025                                                65.207          (3.107)             934             2.173            (5.486)          (26.235)              33.486
+
+
+
+
+    g) Resultado com operações de crédito e repasses interfinanceiros
+
+                                                                                        Controladora e Consolidado
+                                                                                                      31/12/2025
+     Repasses interfinanceiros                                                                                            8.639.384
+        Empréstimos                                                                                                       1.079.318
+        Financiamentos                                                                                                      505.390
+        Financiamentos rurais e agroindustriais                                                                           1.757.713
+        Financiamentos habitacionais                                                                                        202.063
+        Outros                                                                                                                  4.216
+
+     Subtotal                                                                                                             12.188.084
+
+     Recuperação de créditos baixados como prejuízo                                                                             2.067
+
+     Total                                                                                                                12.190.151
+
+    Conforme requisitos determinados pela Resolução BCB 352/23, o Banco optou em utilizar para fins de taxa
+    efetiva de juros a "metodologia diferenciada proporcional" para operações de crédito.
+    Foram considerados como custos da transação elegíveis os custos incrementais diretamente atribuíveis à
+    aquisição, das operações de crédito.
+
+    No exercício findo de 31 de dezembro de 2025, as recuperações de operações de crédito anteriormente
+    baixadas como prejuízo totalizaram o montante de R$ 2.067 e foram registradas como "Receitas da
+    intermediação financeira - Operações de crédito e repasses interfinanceiros".
+
+    Durante o exercício findo de 31 de dezembro de 2025, não foram realizadas renegociações de operações de
+    crédito.
+
+=== página 61 ===
+                                                                                Controladora       Consolidado
+                                                                       Nota
+                                                                                31/12/2025         31/12/2025
+Outros Ativos financeiros ao Custo Amortizado
+Operações com cartões (a)                                                          16.450.678        16.450.678
+Adiantamento de contrato de câmbio                                    9.a           1.084.041         1.084.041
+Rendas a receber                                                                       78.587            78.587
+Serviços prestados a receber                                                           73.198             76.190
+Títulos com característica de concessão de crédito                    9.a              15.624            15.624
+Devedores por convênios                                                                (7.274)           (7.274)
+Transações de pagamento (b)                                                         6.429.237         6.429.238
+
+Total circulante                                                                   24.124.091        24.127.084
+
+Adiantamento de contrato de câmbio                                    9.a               10.237            10.237
+Títulos com característica de concessão de crédito                    9.a               22.630            22.630
+Devedores por depósitos em garantia                                                     19.466            19.945
+
+Total não circulante                                                                    52.333            52.812
+
+Provisão para perdas esperadas                                                              (69)             (120)
+
+Total Líquido 2025                                                                 24.176.355        24.179.776
+
+(a)   As operações com cartões referem-se aos saldos que o Banco tem a receber das Cooperativas, sendo o montante composto por:
+      (i) valores da agenda financeira da emissão, que compreendem transações de compras e saques efetuados por nossos Associados
+      e provisionados para pagamento às bandeiras e (ii) valores do produto aceitação, que se referem a saldos a receber no processo de
+      pagamento dos custos da credenciadora, tais como tarifas de bandeiras, custos de processamento e aluguéis das máquinas de
+      cartões.
+(b)   As transações de pagamento referem-se a valores a receber dos emissores sobre a intermediação de operações realizados com
+      cartões de crédito e de débito.
+
+=== página 67 ===
+montante de R$ 550.000, e em 20 de agosto de 2025 no montante de R$ 325.000. Estas operações foram
+adquiridas pelas Cooperativas Centrais e não possuem prazo de vencimento.
+
+As captações totalizam o montante de R$ 2.359.539 e encontram-se distribuídas entre as Centrais da
+seguinte forma:
+
+ Data de emissão da              Controladora e Consolidado
+        operação                  Valor inicial da aplicação
+      03/01/2014                                        134.539
+      14/12/2023                                        750.000
+      21/08/2024                                        600.000
+      19/02/2025                                        550.000
+      20/08/2025                                        325.000
+
+Total não cirulante
+
+
+                                                    Controladora e Consolidado
+              Central                Valor inicial
+                                                   Rendimentos/Juros Pagos       31/12/2025
+                                     da aplicação
+Central Sicredi Sul/Sudeste            1.043.604                    99.363         1.142.967
+Central Sicredi Nordeste                  45.673                      2.096           47.769
+Central Sicredi PR/SP/RJ                 663.357                     49.413          712.770
+Central Sicredi Centro Norte             378.621                     24.656          403.277
+Central Sicredi Brasil Central           228.284                     11.326          239.610
+
+Total não cirulante                     2.359.539                   186.854        2.546.393
+
+
+
+b) Dívida subordinada
+
+Em conformidade com a Resolução CMN nº 4.955/2021, o Banco possui Letras Financeiras Subordinadas
+(LFSN) emitidas no valor de R$ 979.700, com vencimento até 2035.
+
+Em janeiro de 2022, o Banco realizou a emissão de Green Bond Subordinado no valor de US$ 100 milhões
+junto ao BID Invest, membro do Banco Interamericano de Desenvolvimento (BID), destinado em sua
+integralidade para o financiamento de projetos de energia renovável e eficiência energética junto aos
+associados do Sicredi. O valor captado em reais, equivalente a R$ 549.780, possui vencimento até 2035
+(principal) e pagamento de juros semestrais.
+
+Em 31 de dezembro de 2025, o valor total atualizado destes instrumentos de dívida subordinada é de R$
+1.933.365.
+
+=== página 68 ===
+                                                                Controladora e Consolidado
+                                                Valor inicial da aplicação Rendimentos 31/12/2025
+    Instrumentos de dívida subordinada                            1.529.480            403.885   1.933.365
+
+                                                                  1.529.480            403.885   1.933.365
+
+
+
+
+O Banco é parte em processos judiciais dos quais seus assessores jurídicos classificam como risco de perda
+provável, sendo que os valores estimados e suas respectivas provisões estão registrados na rubrica "Provisão
+para riscos cíveis, tributário e trabalhistas" e demonstrados no quadro a seguir, conforme a natureza dos
+passivos.
+
+                       Controladora         Consolidado
+        Natureza
+                        31/12/2025           31/12/2025
+
+Trabalhista                   13.625                  13.625
+Cível                               427                 472
+
+Total não circulante          14.052                  14.097
+
+Em 31 de dezembro de 2025, o Banco possuía também processos cíveis, trabalhistas e tributários cuja
+probabilidade de perda é possível na Controladora no montante de R$ 70.025 e no Consolidado no montante
+de R$ 83.127.
+
+Nas ações avaliadas como risco possível, destacamos a ação cível de indenização de danos morais no valor
+de R$ 59.250 movida contra o Banco Sicredi referentes ao Programa Minha Casa Minha Vida, do Governo
+Federal.
+
+A movimentação da provisão para riscos cíveis e trabalhistas é como segue:
+
+                                               Controladora
+        Natureza                      Aumento         Baixa/Reversão
+                       31/12/2024                                         31/12/2025
+                                      Provisão         de Provisão
+Trabalhista                15.682            2.342              (4.400)      13.624
+Cível                      10.935            2.897             (13.404)         428
+
+Total não circulante       26.617            5.239             (17.804)      14.052
+
+
+                                               Consolidado
+        Natureza                          Aumento      Baixa/Reversão
+                       31/12/2024                                         31/12/2025
+                                          Provisão       de Provisão
+Trabalhista                15.752             2.343             (4.473)       13.622
+Cível                      10.981             2.918            (13.424)          475
+
+Total não circulante       26.733             5.261            (17.897)       14.097
+
+=== página 69 ===
+Em 31 de dezembro de 2025, os depósitos judiciais relacionados aos riscos supracitados contemplam o
+montante de R$ 19.466 na Controladora e de R$ 19.945 no Consolidado.
+
+
+
+
+a) Composição da carteira
+
+                                                        Controladora e Consolidado
+                                                                 31/12/2025
+Provisões para garantias financeiras prestadas                                       2.541
+Provisões para compromissos de Crédito                                                 576
+
+Total                                                                                3.117
+
+
+b) Movimentação das provisões e outras obrigações com instrumentos financeiros
+
+                                                        Controladora e Consolidado
+                                                               31/12/2025
+Saldo Inicial em 01/01/2025                                                          4.432
+
+Ajuste de transição Res. 4.966 - Reversão de provisão                                (2.896)
+
+Subtotal                                                                             1.536
+
+(Provisões) para perdas esperadas de garantias                                       1.581
+
+Total                                                                                3.117
+
+=== página 70 ===
+                                                         Controladora   Consolidado
+                                                          31/12/2025    31/12/2025
+ Cobrança e arrecadação de tributos e assemelhados (a)          6.687         6.687
+ Obrigações com Operações no Exterior                        179.966        178.887
+ Credores imobiliários                                       135.901        135.901
+ Dividendos a pagar                                          105.259        105.259
+ Fiscais e previdenciárias                                    29.817         51.265
+ Valores a regularizar                                        37.475         39.100
+ Provisão para incentivos promocionais                        69.458         85.108
+ Obrigações por convênios oficiais (b)                        56.487         56.487
+ Provisão para pagamentos a efetuar                          112.379        112.380
+ Provisão folha de pagamento                                  51.744         52.823
+ Contas a pagar - empresas do grupo (c)                      191.223        311.701
+ Receitas diferidas (d)                                           -         119.280
+ Carteira BNDES                                                  793            793
+ Credores diversos                                           161.502        163.765
+ Demais fornecedores (e)                                      74.627         80.955
+
+Total circulante                                           1.213.318      1.500.391
+
+ Receitas diferidas (d)                                           -         431.513
+
+Total não circulante                                              -         431.513
+
+Total                                                      1.213.318      1.931.904
+
+(a)   Cobrança e arrecadação de tributos e assemelhados referem-se aos valores de arrecadações de IOF, GPS, DARF e DAS.
+(b)   Obrigações por convênios oficiais referem-se aos valores recebidos do INSS para pagamento de benefícios previdenciários mensais.
+(c)   Contas a pagar – empresas do grupo referem-se aos valores da remuneração da distribuição dos produtos do Banco pelas
+      Cooperativas integrantes do Sicredi.
+(d)   Conforme adequação ao CPC47 todos os recebimentos relacionados a taxa de Administração sobre lances e antecipações pelas
+      vendas de cotas de consórcios e corretagem de seguros registrados no passivo, são mensalmente atualizados de acordo com sua
+      competência, com novos diferimentos e a baixa daqueles reconhecidos como receitas. Até setembro de 2024 tais valores eram
+      reconhecidos no resultado na sua integralidade.
+(e)   Demais fornecedores referem-se principalmente a tecnologia de serviços financeiros prestados pela Fiserv.
+
+
+
+
+a) Capital social
+
+Em 31 de dezembro de 2025, o capital social é de R$ 5.220.974, representado por 4.064.460.734 ações
+ordinárias e 330.142.434 ações preferenciais, escriturais, sem valor nominal.
+
+Na reunião do Conselho de Administração realizada em 25 de junho de 2025 foi autorizado o aumento de
+capital social no Banco em R$ 350.000 mediante a emissão de 291.332.411 ações ordinárias. A
+homologação deste aporte junto ao Banco Central ocorreu em 30 de julho de 2025.
+
+As ações preferenciais Classe A têm os seguintes direitos: (a) dividendos fixos e não cumulativos; (b)
+prioridade na distribuição de dividendos sobre todas as classes de ações atualmente existentes e a serem
+emitidas pelo Banco; (c) os mesmos direitos de voto concedidos às ações ordinárias do Banco atualmente
+
+=== página 71 ===
+existentes; e (d) prioridade no reembolso do capital social. Os dividendos atribuídos às ações ordinárias serão
+constituídos pelos lucros remanescentes após o pagamento das ações preferenciais Classe A.
+
+As ações preferenciais Classe B têm os seguintes direitos: (a) dividendos fixos e não cumulativos; (b)
+prioridade na distribuição de dividendos sobre todas as classes de ações atualmente existentes e a serem
+emitidas pelo Banco, com exceção das Ações Preferenciais Classe A que se colocarão pari passu com as
+Ações Preferenciais Classe B e, portanto, terão a mesma prioridade que as Ações Preferenciais Classe B; e
+(c) prioridade no reembolso do capital social, pari passu com as ações preferenciais Classe A.
+
+                        31/12/2024      Movimentação do exercício   31/12/2025
+        Ações
+                           Quant.             Integralização           Quant.
+Ordinária               3.773.128.323                 291.332.411   4.064.460.734
+Preferencial Classe A    330.142.434                           -     330.142.434
+Preferencial Classe B               -                          -                -
+Total                   4.103.270.757                 291.332.411   4.394.603.168
+
+
+b) Reserva de lucros
+
+Reserva Legal - constituída à razão de 5% do lucro líquido do exercício limitado a até 20% do capital social
+nos termos do art. 193 da Lei nº 6.404/76.
+
+c) Dividendos
+
+Conforme estatuto social da Instituição, o lucro líquido verificado, após as destinações legais e estatutárias,
+será totalmente distribuído aos acionistas.
+
+Na reunião do Conselho de Administração do Banco Sicredi, realizada em 21 de janeiro de 2026, foi aprovada
+a destinação do lucro líquido referente ao exercício findo em 2025, no valor de R$ 180.521 e o saldo referente
+aos ajustes de transição da Lei nº 4.966/21, no montante de R$ 25.015. Desses montantes, R$ 10.277 foram
+destinados à reserva legal, R$ 90.000 foram distribuídos aos acionistas sob a forma de juros sobre o capital
+próprio, imputados aos dividendos do exercício de 2025, e R$ 105.259 serão distribuídos via dividendos.
+
+=== página 72 ===
+a) Conciliação do resultado de IRPJ e CSLL
+
+As provisões para CSLL foram constituídas pela aplicação da alíquota de 20% e as provisões para Imposto
+de Renda (IR) pela aplicação de alíquota de 15%, acrescida de 10% sobre o lucro tributável que exceder a
+R$ 240 no exercício, sobre o lucro tributável, conforme demonstrado abaixo:
+
+                                                                 Controladora       Consolidado
+                                                                 31/12/2025         31/12/2025
+Resultado antes da participação nos lucros, juros ao capital e
+                                                                       267.430           278.003
+antes da tributação sobre o lucro
+Participação nos lucros e juros ao capital                             (30.224)          (30.996)
+
+Resultado após a participação nos lucros, juros ao capital e           237.206           247.007
+
+IRPJ e CSLL pelas alíquotas fiscais de 45%                            (106.743)         (111.153)
+
+Exclusões / (Adições)
+ Permanentes
+   Resultado de participações em controladas                            10.120            10.120
+   Incentivos fiscais                                                    5.557             6.290
+   Constituição de PPR diretores                                        (2.271)           (2.271)
+   Honorários diretores                                                   (159)             (159)
+   Brindes, doações e patrocínios                                       (3.321)           (3.587)
+   Juros sobre capital próprio                                          40.500            40.500
+   Efeito da majoração da alíquota (a)                                     -               3.554
+   Outras movimentações permanentes                                    (32.179)          (32.131)
+   Adicional IR                                                                24            765
+   Outros                                                               29.760            29.760
+
+Subtotal                                                                48.031            52.841
+
+ Temporárias
+   (Provisão) de PPR pessoal                                            (1.951)           (1.978)
+   (Provisão) de PPR diretores                                             (98)              (98)
+   Reversão de provisão para operações de crédito                       13.583            13.583
+   Reversãp de provisão para riscos cíveis, tributários e
+                                                                         5.081             5.105
+   trabalhistas
+   Outras provisões                                                     (5.729)              -
+   Ajustes de títulos marcados a mercado                              (182.905)         (182.905)
+   Outras reversões de provisões de incentivos                          10.433             1.549
+   Depreciação                                                             -              (3.577)
+   Prejuizo Fiscal - IRPJ                                               38.088            38.088
+   Base Negativa - CSLL                                                 29.925            29.925
+
+Subtotal                                                               (93.573)         (100.308)
+
+ IRPJ corrente                                                         (83.290)          (95.182)
+ CSLL corrente                                                         (69.826)          (74.397)
+
+ Reversão IR e CSLL do exercício anterior                                2.858             2.786
+
+ Constituição de créditos tributários                                   93.573           100.308
+
+IRPJ e CSLL registrados no resultado                                   (56.685)          (66.485)
+
+Alíquotas efetivas                                                         24%               27%
+
+
+(a) O efeito da majoração da alíquota é referente ao diferencial de alíquota para as demais empresas não financeiras, nas quais a
+    alíquota de Contribuição Social é de 9%.
+
+As análises realizadas refletem os impactos das alterações trazidas pelos normativos Lei 14.467/2022 e
+MP 1.261/2024, com vigência a partir 1° de janeiro de 2025.
+
+=== página 73 ===
+b) Tributos diferidos ativos e passivos
+
+i.   Composição dos tributos diferidos
+
+Em 31 de dezembro de 2025, os saldos de tributos diferidos da Instituição Financeira foram registrados
+conforme as alíquotas fiscais vigentes, sendo 25% para o Imposto de Renda e 20% para a Contribuição Social
+sobre o Lucro Líquido. Os valores foram contabilizados nas rubricas "Créditos Tributários" no ativo e
+"Obrigações Fiscais Diferidas" no passivo, conforme demonstrado no quadro:
+
+                                                                   Controladora    Consolidado
+                                                                   31/12/2025      31/12/2025
+Diferenças temporárias - Ativo Fiscal Diferido
+Provisão para riscos cíveis, tributários e trabalhistas                  6.323           6.338
+Provisões de PLR e PPR                                                  14.411          14.673
+Provisão para perdas em ativos                                          23.270          23.264
+”arcação a mercado TV”’s e instrumentos financeiros derivativos        176.589         176.589
+Outras provisões                                                        31.120          36.441
+Receitas diferidas                                                         -           187.270
+Prejuizo Fiscal e Base Negativa                                        185.178         185.178
+Total                                                                  436.891         629.753
+Diferenças temporárias - Passivo Fiscal Diferido
+”arcação a mercado TV”’s e instrumentos financeiros derivativos        (231.281)      (231.281)
+Depreciação/amortização                                                     -             (573)
+Despesas diferidas                                                          -         (184.190)
+Total                                                                  (231.281)      (416.044)
+
+O reconhecimento contábil levou em consideração a realização provável desses tributos a partir de resultados
+futuros elaborados com base em premissas internas e em cenários econômicos futuros que podem, portanto,
+sofrer alterações.
+
+Em 31 de dezembro de 2025, o valor presente dos créditos tributários ativos líquidos, calculados
+considerando a taxa média de 14,70%, apurada com base na taxa média dos títulos públicos e das operações
+de crédito em carteira, monta a R$ 379.905.
+
+Não existem créditos tributários não constituídos em 31 de dezembro de 2025.
+
+=== página 74 ===
+ii.      Período estimado de realização
+
+Os valores dos ativos, fiscais diferidos, apresentam as seguintes expectativas de realização 31 de dezembro
+de 2025:
+
+                                                            Controladora                Consolidado
+                                                 Ano      Valor dos créditos          Valor dos créditos
+                                                             31/12/2025                  31/12/2025
+                                              2026                    82.826                       130.393
+                                              2027                    65.242                         97.576
+                                              2028                    71.156                         99.423
+                                              2029                    61.037                         85.184
+                                              2030                    40.387                         60.055
+                                              2031                    39.012                         53.837
+                                              2032                    49.464                         59.749
+                                              2033                      4.379                        11.408
+                                              2034                           275                       5.177
+                                              2035                    23.113                         26.951
+                                              Total                  436.891                       629.753
+
+
+Como a base tributável do imposto de renda e da contribuição social sobre o lucro líquido decorre não apenas
+do lucro que pode ser gerado, mas também da existência de receitas não tributáveis, despesas não dedutíveis,
+incentivos fiscais e outras variáveis, não existe uma correlação imediata entre o lucro líquido da Instituição e
+o resultado de imposto de renda e a contribuição social. Portanto a expectativa da utilização dos créditos
+fiscais não deve ser tomada como único indicativo de resultados futuros da Instituição.
+
+iii. Movimentação no exercício
+
+                                                                                      Controladora
+                                                                                       31/12/2025
+                                                            Diferido ativo     Diferido passivo         Patrimônio líquido
+Saldo no início do exercício                                     702.074               (560.155)                      (6.162)
+
+      Tributos diferidos constituídos/provisionados (a)           382.781               442.838                      36.707
+      Tributos diferidos realizados/revertidos                   (647.964)             (113.964)                       (662)
+
+Saldo no final do exercício                                      436.891               (231.281)                     29.883
+
+
+                                                                                         Consolidado
+                                                                                         31/12/2025
+                                                           Diferido ativo          Diferido passivo        Patrimônio líquido
+Saldo no início do exercício                                      827.050                  (683.766)                         (6.162)
+
+Tributos diferidos constituídos/provisionados (a)                 575.644                   258.075                      36.707
+Tributos diferidos realizados/revertidos                         (772.941)                    9.647                        (662)
+
+Saldo no final do exercício                                       629.753                  (416.044)                     29.883
+
+(a) A linha de tributos diferidos constituídos/provisionados – Patrimônio Líquido, considera o saldo do imposto diferido referente ao
+ajuste de transição da Resolução CMN nº 4.966/21, no montante de R$ 27.773 (nota explicativa nº4).
+
+=== página 75 ===
+Instituições relacionadas / Sistema de Crédito Cooperativo – (Sicredi)
+
+Conforme detalhado no contexto operacional (nota explicativa nº1), o Banco foi criado para atendimento às
+necessidades das Cooperativas de Crédito no acesso ao mercado financeiro em sua totalidade. Abaixo
+apresentamos as principais operações realizadas pelo Banco com as entidades do Sistema Sicredi:
+
+                                                                          Controladora
+                                                                          31/12/2025
+Ativo                                                                        106.700.250
+ Aplicações em depósitos interfinanceiros                                      7.963.203
+  Repasses Interfinanceiros, líquido de provisão para perdas esperadas       82.163.444
+  Operações de crédito                                                           93.669
+  Rendas a receber                                                                2.258
+  Outros créditos - diversos                                                 16.477.676
+
+Passivo                                                                      29.239.290
+  Depósitos à vista                                                              30.259
+  Depósitos a prazo                                                           8.137.694
+  Depósitos interfinanceiros                                                 18.393.445
+  Sociais e estatutárias                                                        130.534
+  Outras obrigações - diversas                                                      965
+  Instrumentos híbridos de capital e dívida                                   2.546.393
+
+
+                                                                          31/12/2025
+
+Receitas                                                                      7.497.312
+ Operações de crédito e repasses interfinanceiros                             4.795.264
+  Resultado de operações com títulos e valores mobiliários                    1.818.545
+  Receitas de prestação de serviços                                               7.993
+  Outras receitas operacionais                                                  875.510
+
+Despesas                                                                      7.824.619
+  Operações de captação no mercado                                            5.330.790
+  Outras despesas administrativas                                             2.498.651
+  Outras despesas operacionais                                                      957
+  (Reversão) para Perdas Esperadas Associadas ao Risco de Crédito                 (5.779)
+
+=== página 82 ===
+O sistema de Gestão de Continuidade de negócios estruturado no Sicredi contempla:
+
+• Norma de Gestão de Continuidade de negócios;
+• Análise de impacto de negócio - BIAs;
+• Estratégias de recuperação de desastre de T; na visão de negócio;
+• Planos de continuidade operacional;
+• Planos de substituição de empresas terceiras.
+
+Por fim, a estrutura centralizada do Sicredi disponibiliza, através da Norma Sistêmica de Continuidade de
+Negócios, para todas as suas cooperativas algumas recomendações para aumento da resiliência de seus
+serviços, orientando a criação de Análises de Impacto ao Negócio e Planos de Continuidade.
+
+IV - Risco de Mercado
+
+Define-se risco de mercado como a possibilidade de ocorrência de perdas resultantes da flutuação nos
+valores de mercado de posições detidas por uma instituição financeira. Incluem-se nessa definição, as
+operações sujeitas aos riscos de variação cambial, das taxas de juros, dos preços de ações e dos preços de
+mercadorias (commodities).
+
+O gerenciamento de risco de mercado das instituições do Sistema Sicredi é centralizado no Banco
+Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade dos
+produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo
+estabelecimento dos processos, políticas e sistemas que apoiam as instituições do Sistema na gestão do risco
+de mercado.
+
+Os processos e políticas para o gerenciamento do risco de mercado são estabelecidos seguindo os critérios
+mínimos da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas pelas alçadas
+competentes de cada instituição do Sistema.
+
+Os processos para o gerenciamento do risco de mercado do Sistema Sicredi incluem:
+
+• Regras claras de classificação da carteira de negociação que garantam o correto tratamento das operações;
+• Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de mercado em níveis
+considerados aceitáveis pela Instituição;
+• Processos destinados a monitorar e reportar a aderência ao apetite ao risco de mercado da ;nstituição em
+relação ao seu capital;
+• Definição das metodologias de risco de mercado a serem aplicadas;
+• Sistemas para executar o cálculo e medir os riscos, considerando a complexidade dos produtos e a
+dimensão da exposição ao risco de mercado das instituições do Sistema.
+
+=== página 83 ===
+V - Risco De Variação Das Taxas De Juros Em Instrumentos Classificados Na Carteira Bancária (IRRBB)
+
+
+
+O IRRBB é o risco, atual ou prospectivo, do impacto de movimentos adversos das taxas de juros nos
+resultados ou no valor econômico da instituição, resultante dos instrumentos classificados na carteira
+bancária.
+
+O gerenciamento de risco de IRRBB das instituições do Sistema Sicredi é centralizado no Banco Cooperativo
+Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade dos produtos e
+a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo estabelecimento
+dos processos, políticas e sistemas que apoiam as instituições do Sistema na gestão do risco de IRRBB.
+Para a mensuração e controle desse risco no Sicredi, utiliza-se as abordagens de valor econômico (EVE) e de
+resultado de intermediação financeira (NII). O Sistema Sicredi define as regras para o cálculo do risco de
+variação da taxa de juros das operações em linha com as práticas de mercado e com as exigências da
+regulamentação vigente.
+
+Os processos para o gerenciamento do risco de IRRBB do Sistema Sicredi incluem:
+• Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de ;RRBB em níveis
+considerados aceitáveis pela Instituição;
+• Processos destinados a monitorar e reportar a aderência ao apetite ao risco de ;RRBB da ;nstituição em
+relação ao seu capital;
+• Definição das metodologias de risco de ;RRBB a serem aplicadas;
+• Sistemas para executar o cálculo e medir os riscos, considerando a complexidade dos produtos e a
+dimensão da exposição ao risco de IRRBB das instituições do Sistema.
+
+VI - Risco de Liquidez
+
+O entendimento de Risco de Liquidez é essencial para a sustentabilidade das instituições que atuam no
+mercado financeiro e de capitais e está associado à capacidade da instituição de financiar os compromissos
+adquiridos a preços de mercado razoáveis e realizar seus planos de negócio com fontes estáveis de
+financiamento. Para este efeito, define-se risco de liquidez como:
+
+• A possibilidade da instituição não ser capaz de honrar eficientemente suas obrigações esperadas e
+inesperadas, correntes e futuras, inclusive as decorrentes de vinculação de garantias, sem afetar suas
+operações diárias e sem incorrer em perdas significativas; e
+• A possibilidade de a instituição não conseguir negociar a preço de mercado uma posição, devido ao seu
+tamanho elevado em relação ao volume normalmente transacionado ou em razão de alguma descontinuidade
+no mercado.
+
+O gerenciamento de risco de liquidez das instituições do Sistema Sicredi é centralizado no Banco Cooperativo
+Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade dos produtos e
+a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo estabelecimento
+dos processos, políticas e sistemas que apoiam as entidades do Sistema na gestão do risco de liquidez.
+
+=== página 84 ===
+Os processos e políticas para o gerenciamento do risco de liquidez são estabelecidos seguindo os critérios
+da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas pelas alçadas
+competentes de cada Instituição do Sistema.
+
+Os processos para o gerenciamento do risco de liquidez do Sistema Sicredi incluem:
+
+• Definição de processos para identificar, avaliar, monitorar e controlar a exposição ao risco de liquidez em
+diferentes horizontes de tempo;
+• O estabelecimento de processos de rastreio e reporte da observância ao apetite ao risco de liquidez e em
+níveis considerados aceitáveis pela instituição;
+• Definição das estratégias de captação que proporcionem diversificação adequada das fontes de recursos e
+dos prazos de vencimento;
+• Definição de plano de contingência de liquidez, regularmente atualizado, que estabeleça responsabilidades
+e procedimentos para enfrentar situações de estresse de liquidez;
+• Realização periódica de testes de estresse com cenários de curto e de longo prazo.
+
+VII - Risco de Crédito
+
+A gestão do risco de crédito consiste no processo de identificação, mensuração, controle e mitigação dos
+riscos decorrentes das operações de crédito realizadas pelas instituições financeiras.
+
+No Sicredi, o gerenciamento do Risco de Crédito é realizado por uma estrutura centralizada e pelos colegiados
+locais. Os processos e políticas de riscos de crédito são estabelecidos seguindo os critérios da
+regulamentação em vigor, alinhados às melhores práticas de mercado e ao apetite a risco do sistema,
+aprovadas pelas alçadas competentes do sistema.
+
+O Banco Cooperativo Sicredi responde pelo conjunto de políticas, estratégias e metodologias voltadas ao
+controle e gerenciamento das exposições ao risco de crédito de cada entidade do Sistema, possuindo como
+principais atribuições: responder pelas políticas corporativas de gestão de risco de crédito; desenvolver e
+propor metodologias de classificação de risco de crédito, inclusive por meio de modelos quantitativos; e
+realizar o monitoramento constante das exposições sujeitas ao risco de crédito de contraparte de todas as
+empresas do Sicredi.
+
+As áreas e colegiados locais são responsáveis pela execução do gerenciamento de risco de crédito,
+observando as políticas e limites pré-estabelecidos sistemicamente.
+
+VIII - Riscos Sociais, Ambientais e Climáticos
+
+Os riscos sociais, ambientais e climáticos são definidos pela possibilidade de ocorrência de perdas para as
+instituições financeiras decorrentes de danos sociais, ambientais e climáticos. Além disso, está envolvido
+indiretamente com uma série de outros riscos, podendo gerar tanto impactos financeiros, como legais e de
+reputação. No Sicredi, o gerenciamento é realizado por uma estrutura centralizada e pelas áreas e colegiados
+locais. Os processos e políticas para o gerenciamento dos riscos sociais, ambientais e climáticos são
+estabelecidos seguindo os critérios da regulamentação em vigor, alinhados às melhores práticas de mercado,
+
+=== página 86 ===
+X - Risco de Segurança da Informação
+
+O Risco de Segurança da Informação no Sicredi é definido como o risco relacionado a probabilidade de
+exploração de uma vulnerabilidade, considerando as ameaças vinculadas, e o impacto na confidencialidade,
+integridade ou disponibilidade das informações. Riscos de segurança cibernética ou cibersegurança fazem
+parte do contexto de riscos de segurança da informação.
+
+No Sicredi, o gerenciamento do risco de segurança da informação é realizado de forma conjunta entre Banco,
+Centrais e Cooperativas Singulares, os quais possuem responsabilidade pelo cumprimento dos normativos
+internos e externos, contando com ferramentas e metodologias sistêmicas que podem ser complementados
+por ações locais. Os processos e ações voltados para segurança da informação visam a identificação e
+manutenção dos riscos em níveis aceitáveis, incluindo a utilização de controles adequados e efetivos para a
+mitigação, frente aos custos, tecnologia e objetivos de negócio.
+
+XI - Informações Adicionais
+
+A descrição da estrutura completa e do processo de gerenciamento de riscos e capital pode ser acessada por
+meio do sítio www.sicredi.com.br, no caminho: Sobre nós > Relatórios > Gestão de Riscos > Conglomerado
+Prudencial do Banco > Relatórios de Pilar 3.
+
+Já a Política de Gerenciamento dos Riscos Sociais, Ambientais e Climáticos e o Relatório de Sustentabilidade,
+documentos com o detalhamento e números dos processos no tema, também podem ser acessados por meio
+do sítio www.sicredi.com.br, no caminho: Sobre nós > Sustentabilidade > Políticas e Relatórios.
+
+=== página 87 ===
+Em atendimento às exigências do art. 35 da Resolução Bacen nº 2/20, apresentamos três cenários para a
+análise de sensibilidade. Para definição destes cenários, utilizamos premissas considerando o momento atual
+da economia, que pode ocorrer nos principais itens de balanço:
+
+    •      Resultado da intermediação financeira: considerando uma redução da aplicação de recursos das
+           Cooperativas no Banco, a redução de disponibilidade de funding e a redução pela procura de
+           crédito por parte dos Associados e Cooperativas;
+    •      Carteira de crédito – aumento da provisão de perdas esperadas: aumento considerando a migração
+           do porte das Cooperativas e a qualidade da carteira de crédito;
+    •      Provisão para riscos cíveis, tributários e trabalhistas: possível aumento visto as incertezas que se
+           encontram no mercado e na economia;
+    •      Créditos tributários: aumento resultante das movimentações ocorridas nos itens e cenários acima
+           descritos.
+
+O quadro a seguir apresenta os indicadores utilizados em cada cenário e o seu efeito no resultado:
+
+Cenários                          Cenário 1                           Cenário 2                             Cenário 3
+Item sensibilizado                                     Resultado da intermediação financeira
+Premissa                        Redução de 5%                     Redução de 10%                          Redução de 15%
+Efeito no resultado                             99.591                             199.183                                298.774
+Item sensibilizado                       Carteira de crédito - aumento da provisão de perdas esperadas
+Premissa                         Piora de 20%                       Piora de 30%                           Piora de 40%
+Efeito no resultado                             (10.880)                            (16.320)                              (21.760)
+Item sensibilizado                              Provisão para riscos cíveis, tributários e trabalhistas
+Premissa                         Piora de 10%                       Piora de 20%                           Piora de 30%
+Efeito no resultado                              (1.405)                             (2.810)                               (4.216)
+Item sensibilizado                                         Impacto nos créditos tributários
+Premissa                       Aumento de 10%                     Aumento de 20%                      Aumento de 30%
+Efeito no resultado
+
+=== página 88 ===
+As instituições financeiras e demais instituições autorizadas a funcionar pelo Banco Central do Brasil devem
+manter, permanentemente, valor de Patrimônio de Referência (PR), apurado nos termos das Resoluções CMN
+n° 4.192/13 revogada e substituída pela Resolução CMN nº 4.955/21 e pela Resolução CMN nº 4.193/13
+revogada e substituída pela Resolução CMN nº 4.958/21, compatível com os riscos de suas atividades, sendo
+apresentado abaixo o cálculo dos limites:
+
+                                                                                     Controladora e Consolidado
+                                   Limites operacionais
+                                                                                              31/12/2025
+     Patrimônio de Referência (PR)                                                                        7.730.714
+      Nivel I (NI)                                                                                        7.675.091
+      Capital Principal (CP)                                                                              5.128.698
+      Capital Social                                                                                      5.220.987
+      Reservas de Capital                                                                                    97.840
+      Perdas não realizadas de ajustes de avaliação patrimonial                                              (4.952)
+      Ajustes Prudenciais                                                                                  (185.177)
+      Ajuste Negativo Decorrente Da Constituição De Perdas Esperadas                                             51
+      Capital Complementar (CC)                                                                           2.546.393
+      Letras Financeiras e Dívidas Subordinadas                                                           2.546.393
+      Nivel II (NII)                                                                                         55.623
+      Letras Financeiras e Dívidas Subordinadas                                                           1.933.365
+      Dedução de investimento em outras entidades                                                        (1.877.742)
+     Ativos Ponderados pelo Risco (RWA)                                                                  38.323.770
+      Risco de Crédito                                                                                   32.675.746
+      Risco de Mercado                                                                                      835.049
+      Risco de Serviços de Pagamento                                                                      1.441.824
+      Risco Operacional                                                                                   3.371.150
+      Risco de Taxa de Juros da Carteira Bancária                                                           236.667
+     Margem de Capital¹                                                                                   2.445.278
+     Índice de Basileia (PR / RWA)                                                                             20,2%
+       Capital Nível I (NI / RWA)                                                                             20,0%
+       Capital Principal (CP / RWA)                                                                           13,4%
+       Capital Complementar (CC / RWA)                                                                          6,6%
+       Capital Nível II (NII / RWA)                                                                             0,1%
+       Situação de Imobilização (Imob)                                                                      109.957
+     Índice de Imobilização (Imob / PR)                                                                         1,4%
+     ¹ Margem de Capital consiste no excedente de capital da instituição aos requerimentos mínimos regulamentares e
+     ao adicional de capital principal.

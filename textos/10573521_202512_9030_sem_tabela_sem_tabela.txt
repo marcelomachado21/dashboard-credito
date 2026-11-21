@@ -1,0 +1,724 @@
+
+=== página 21 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    j) Imposto de renda e contribuição social
+
+    Correntes: a provisão para imposto de renda e contribuição social está baseada no lucro tributável do
+    exercício. O lucro tributável difere do lucro apresentado na demonstração do resultado, porque exclui
+    receitas ou despesas tributáveis ou dedutíveis em outros exercícios, além de excluir itens não tributáveis ou
+    não dedutíveis de forma permanente. O regime de apuração adotado pela Companhia é o lucro real.
+
+    Diferidos: os impostos diferidos podem ser reconhecidos sobre diferenças dedutíveis temporariamente,
+    prejuízos fiscais e bases negativas de contribuição social. A recuperação do saldo dos impostos diferidos
+    ativos é revisada no fim de cada exercício e, quando não for mais provável que lucros tributáveis futuros
+    estarão disponíveis para permitir a recuperação de todo o ativo, ou parte dele, o saldo do ativo é ajustado
+    pelo montante que se espera que seja recuperado.
+
+    O IRPJ (Imposto de Renda da Pessoa Jurídica) é calculado aplicando-se a alíquota de 15% sobre o lucro
+    real, acrescida de adicional de 10% sobre o excedente previsto em lei. Já a CSLL (Contribuição Social sobre
+    o Lucro Líquido) possui alíquotas diferenciadas de acordo com a atividade da empresa: para instituições
+    financeiras, a alíquota vigente é de 15%, e para instituições não financeiras, aplica-se a alíquota de 9%.
+    Ambas as contribuições devem ser calculadas sobre o lucro ajustado, conforme a legislação vigente.
+
+    Os impostos correntes e diferidos são reconhecidos no resultado, exceto quando correspondem a itens
+    registrados na rubrica “outros resultados abrangentes” diretamente no Patrimônio Líquido.
+
+    A Lei Complementar nº 224, de 26 de dezembro de 2025, introduziu alterações relevantes que devem
+    impactar estas demonstrações financeiras a partir do exercício de 2026. Entre as principais mudanças,
+    destacam-se: (i) o aumento das alíquotas da CSLL para instituições de pagamento, que passarão, de 9%
+    em 31 de dezembro de 2025 para 12% até 31 de dezembro de 2027, e posteriormente, para 15% em 2028,
+    mediante escalonamento progressivo; (ii) a elevação da alíquota do IRRF incidente sobre Juros sobre
+    Capital Próprio (JCP) de 15% para 17,5%; e (iii) a redução de benefícios e incentivos fiscais federais
+    aplicáveis ao IRPJ, CSLL e demais tributos. A Companhia realizou uma análise preliminar dos efeitos da Lei
+    Complementar nº 224/2025 e estima que haverá aumento da carga tributária a partir do exercício de 2026.
+    A administração estimou um impacto tributário de R$ 75.431 em virtude dessa normativa.
+
+    k) Imobilizado
+
+    O ativo imobilizado compreende bens tangíveis próprios e benfeitorias em imóveis de terceiros, utilizados
+    na manutenção das atividades da Companhia ou para essa finalidade por período superior a um exercício
+    social. Os ativos são reconhecidos ao custo de aquisição, incluindo gastos diretamente atribuíveis à sua
+    aquisição ou construção, líquidos de depreciação acumulada e eventuais perdas por redução ao valor
+    recuperável (impairment), quando aplicável. Gastos subsequentes são incorporados ao valor do ativo
+    somente quando for provável que gerarão benefícios econômicos futuros mensuráveis de forma confiável;
+    caso contrário, são registrados como despesas à medida que ocorrem. A Companhia revisa anualmente as
+    vidas úteis estimadas e os valores residuais dos ativos, ajustando-os se necessário. A depreciação é
+    calculada pelo método linear, com base na vida útil estimada de cada ativo, conforme as seguintes taxas
+    anuais: imóveis de uso e instalações em imóveis – 5%, móveis e utensílios – 20%, máquinas e equipamentos
+    – 33%.
+
+    l) Intangível
+
+    Os ativos intangíveis compreendem ativos não monetários identificáveis sem substância física, adquiridos
+    ou desenvolvidos internamente pela Companhia, desde que sejam separáveis ou decorram de direitos
+    contratuais ou legais. São reconhecidos ao custo de aquisição ou desenvolvimento, incluindo todos os
+    gastos diretamente atribuíveis para que estejam prontos para uso pretendido pela Administração, líquidos
+    de amortização acumulada e eventuais perdas por redução ao valor recuperável (impairment), quando
+    aplicável.
+
+    A Companhia não possui ativos intangíveis com vida útil indefinida. Para os ativos intangíveis com vida útil
+    definida, a amortização é calculada pelo método linear ao longo da vida útil estimada, utilizando as seguintes
+    taxas anuais: marcas e patentes – 20%, aquisições e desenvolvimento de software – 33% ou de acordo com
+    o período contratual, se aplicável. A Companhia revisa anualmente as vidas úteis e valores residuais dos
+    ativos intangíveis, ajustando-os quando necessário. Gastos subsequentes, incluindo custos de manutenção,
+
+=== página 22 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    são reconhecidos como despesa no resultado quando incorridos. Quando determinado que um ativo
+    intangível não mais gera benefícios econômicos futuros, seu valor contábil é baixado contra o resultado do
+    exercício.
+
+    m) Depósitos
+
+    Os depósitos apresentados no balanço compreendem os saldos em moeda eletrônica mantidos em contas
+    de pagamento pré-pagas, incluindo aqueles em trânsito entre contas da mesma instituição. Estes valores
+    correspondem a montantes a serem pagos aos usuários, originados de transações efetuadas em
+    plataformas como Mercado Livre e outras, e que não foram resgatados até o encerramento do exercício.
+
+    n) Obrigações por empréstimos
+
+    Correspondem a empréstimos captados junto a terceiros, reconhecidos inicialmente pelo valor justo
+    acrescido dos custos de transação diretamente atribuíveis, e subsequentemente mensurados ao custo
+    amortizado pelo método da taxa efetiva de juros.
+
+    o) Provisão para contingências
+
+    O reconhecimento, a mensuração e a divulgação das provisões, dos ativos e passivos contingentes e das
+    obrigações legais são efetuados conforme descrito a seguir:
+
+    Ativos contingentes: São possíveis ativos que resultam de eventos passados, cuja existência será
+    confirmada apenas pela ocorrência ou não de um ou mais eventos futuros incertos, não totalmente sob o
+    controle da Companhia. Os ativos contingentes não são reconhecidos nas demonstrações financeiras,
+    sendo divulgados caso a realização do ganho seja provável. Quando houver evidências de que a realização
+    do ganho é praticamente certa, eles deixam de ser considerados contingentes e passam a ser reconhecidos.
+
+    Provisões e passivos contingentes: São reconhecidas provisões para obrigações presentes (legais ou
+    não formalizadas) resultantes de eventos passados, quando é provável a necessidade de saída de recursos
+    para sua liquidação e quando podem ser mensuradas de forma confiável.
+    As avaliações são realizadas pela Administração, com base nas melhores estimativas e nos pareceres dos
+    assessores jurídicos, reconhecendo provisões quando a probabilidade de perda é considerada provável, e
+    divulgando, sem reconhecimento de provisão, quando a probabilidade de perda é considerada possível e
+    relevante. Obrigações cuja probabilidade de perda é considerada remota não requerem provisão nem
+    divulgação.
+
+    Os depósitos judiciais vinculados às provisões para contingências ou obrigações legais são atualizados
+    mensalmente.
+
+    p) Reconhecimento de receitas e despesas
+
+    Os principais critérios adotados pela Companhia para o reconhecimento de suas receitas e despesas são:
+
+    (i) Receita líquida por transação de pagamento e outros serviços:
+
+    Referem-se às receitas decorrentes da prestação de serviços de transações de pagamento, adquirência e
+    comissões cobradas sobre o processamento de transações à vista e parceladas na plataforma Mercado
+    Livre e em outras plataformas de e-commerce, abrangendo ainda pagamentos de compras, receita de
+    intermediação na qualidade de emissor de cartão e vendas de MPOs, líquidas de impostos.
+
+    (ii) Despesas de juros e similares:
+
+    As despesas com juros e similares incluem juros de empréstimos tomados e a remuneração sobre saldos
+    de contas de pagamento. São reconhecidas no resultado pelo regime de competência pelo método da taxa
+    efetiva de juros, incluindo custos de transação e prêmios/descontos no custo amortizado do passivo, com
+    apropriação pro rata temporis. Modificações contratuais são avaliadas conforme o IFRS 9 para determinar
+    recálculo do custo amortizado ou baixa do passivo e o efeito é reconhecido no resultado.
+
+=== página 23 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    (iii) Receitas e despesas financeiras:
+
+    Os ganhos e perdas com instrumentos financeiros, incluindo derivativos, bem como as receitas e despesas
+    relativas à variação cambial sobre ativos e passivos financeiros denominados em moeda estrangeira, são
+    reconhecidos pelo regime de competência como receitas ou despesas financeiras no resultado do período,
+    de acordo com a classificação dos instrumentos e conforme os critérios estabelecidos nas políticas
+    contábeis.
+
+    (iv) Outras receitas e despesas não financeiras:
+
+    Incluem, principalmente, os custos dos serviços prestados, bem como as demais receitas e despesas
+    operacionais, administrativas e gerais incorridas no curso normal das atividades da Companhia. Esses itens
+    são reconhecidos pelo regime de competência, no período em que os serviços são prestados ou em que os
+    gastos são incorridos, independentemente do efetivo recebimento ou pagamento, sendo apropriados nas
+    respectivas linhas da demonstração do resultado conforme sua natureza e função.
+
+    5. CAIXA E EQUIVALENTES DE CAIXA
+
+
+
+
+    (i) São valores depositados nos terminais eletrônicos 24 horas (custódia da empresa Tecban - Tecnologia Bancária S.A).
+    (ii) São compostos por valores disponíveis em dólar em contas bancárias no exterior. Em 31 de dezembro de 2025, a variação
+    cambial de caixa e equivalentes de caixa é de R$ 13.486 (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$ 23.192 e R$ 0).
+    (iii) São aplicações em cotas de fundos de investimento de renda fixa tendo por objetivo a gestão de caixa da Companhia.
+
+    6. INSTRUMENTOS FINANCEIROS
+
+    a) Títulos e valores mobiliários
+
+    Em 31 de dezembro de 2025, 31 de dezembro de 2024 e 01 de janeiro de 2024, os títulos e valores
+    mobiliários estão classificados como “custo amortizado” e “valor justo por meio do resultado”, e são
+    compostos pelos saldos apresentados abaixo:
+
+=== página 26 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+
+    (i) O valor do ativo é referente ao montante do objeto de hedge coberto nos fluxos de caixa futuros. Os contratos de NDF ( Non
+    Deliverable Forward) são adquiridos para cobrir o plano mensal dos próximos 12 meses com metodologia de cobertura entre 80%
+    e 90%. Em 31 de dezembro de 2025, o plano total de aquisição de ativos - MPOS e passivos com fornecedores corresponde a um
+    valor de R$ 1.784.207 (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$ 843.907 e R$ 882.011).
+
+    Os ganhos ou perdas derivadas dos instrumentos financeiros designados como hedge de fluxo de caixa são
+    inicialmente reconhecidos em outros resultados abrangentes, permanecendo no patrimônio líquido até a
+    efetiva realização do fluxo de caixa protegido, momento em que são transferidos para o resultado do período
+    e reconhecidos como receita ou despesa, conforme a natureza da transação protegida.
+
+    A abertura por vencimento dos passivos financeiros, incluindo derivativos, está detalhada na nota 28.
+
+    7. PROVISÃO PARA PERDAS ESPERADAS ASSOCIADAS AO RISCO DE CRÉDITO
+
+    Para gestão do risco de crédito, a Companhia utiliza modelos internos de avaliação das operações,
+    constituindo provisões com base na perda de crédito esperada ao longo da vida dos ativos financeiros,
+    considerando dados históricos, atuais e cenários prospectivos. O cálculo das perdas de crédito esperadas
+    também contempla os valores referentes a compromissos de crédito concedidos e ainda não utilizados,
+    registrados na rubrica de outros passivos - nota 17 (iii), os quais são incorporados por meio da aplicação de
+    fator de conversão de crédito (Credit Conversion Factor – CCF), de forma que a exposição ao risco de crédito
+    (Exposure at Default – EAD) considera tanto os saldos efetivamente utilizados quanto a parcela
+    potencialmente utilizável dos limites aprovados. O valor reconhecido reflete a melhor estimativa da
+    administração em cada data de balanço.
+
+    a) Classificação por estágios
+
+=== página 27 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+
+    b) Composição da provisão para perdas esperadas
+
+
+
+
+    (i) A provisão para créditos a liberar compõe a rubrica de outros passivos – nota 17 (iii).
+
+    c) Movimentação da provisão para perdas esperadas
+
+
+
+
+    8. TRANSAÇÕES INTERFINANCEIRAS
+
+
+
+
+    As transações a receber referem-se aos valores a serem recebidos das adquirentes, provenientes de
+    operações com cartões de crédito à vista e parcelados realizadas nas plataformas Mercado Livre, outras
+    plataformas de e-commerce e máquinas de pagamento (MPOS). As transações a pagar correspondem às
+    obrigações de liquidação junto às bandeiras de cartões de débito e crédito de curto prazo no passivo.
+
+    9. RESERVAS NO BANCO CENTRAL DO BRASIL
+
+    A Companhia mantém recursos de usuários em contas segregadas para atender à obrigatoriedade de
+    salvaguarda conforme as resoluções do Banco Central do Brasil. Parte dos valores vinculados às contas de
+    pagamento está depositada em Conta de Custódia de Moeda Eletrônica (CCME) no Banco Central,
+    enquanto a parcela remanescente é aplicada em Letras Financeiras do Tesouro (LFT), conforme permitido
+    pela regulamentação vigente - nota 6.a. Além disso, a Companhia mantém saldo na Conta de Pagamentos
+    Instantâneos (PI) no Banco Central para garantir a liquidação imediata das transações no âmbito do Pix,
+    atendendo integralmente às exigências de segurança e disponibilidade dos recursos dos usuários. Os
+    procedimentos de controle e as movimentações da Conta PI são periodicamente revisados pela área de
+    gestão de riscos e liquidez da Companhia, assegurando aderência às melhores práticas de mercado e às
+    normas estabelecidas pelo Banco Central do Brasil. A seguir, são apresentados os saldos mantidos em
+
+=== página 28 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    reserva junto ao Banco Central do Brasil em 31 de dezembro de 2025, 31 de dezembro de 2024 e 01 de
+    janeiro de 2024:
+
+
+
+
+    10. OUTROS ATIVOS E PASSIVOS FINANCEIROS
+
+
+
+
+    (i) Correspondem substancialmente aos valores a receber de usuários finais, relativos a transações de pagamento utilizando os
+    cartões de débito e crédito no qual a Companhia é emissora, e pendentes de liquidação.
+    (ii) Representados substancialmente por valores a receber de comissões diversas por serviços ligados a transações de pagamentos.
+    Em 31 de dezembro de 2024, possuía o montante de R$ 2.938 com partes relacionadas – nota 26.
+    (iii) Correspondem substancialmente aos saldos depositados judicialmente referente ao processo judicial relacionado ao não
+    recolhimento do Imposto de Renda Retido na Fonte (“IRRF”) de remessas para a matriz Mercado Libre Argentina. Em 31 de
+    dezembro de 2025, o total destes depósitos e demais em juízo totalizavam R$ 1.338.671- nota 15.c (31 de dezembro de 2024 e 01
+    de janeiro de 2024 – R$ 996.175 e R$ 726.909).
+    (iv) Corresponde ao depósito para prestação de garantia solicitado pela empresa Visa International Service para cobertura de
+    eventuais riscos, com valor fixo e sem remuneração. Em 31 de dezembro de 2025, corresponde ao valor de R$ 12.655 (31 de
+    dezembro de 2024 e 01 de janeiro de 2024 – R$ 14.242 e R$ 10.854).
+    (v) São as transações a receber que a Companhia possui com suas empresas coligadas - nota 26.
+    (vi) Esses valores referem-se, em sua maior parte, aos montantes a serem repassados para empresas coligadas em decorrência
+    das operações realizadas na plataforma - nota 26. Os demais valores abrangem: rateio pelo uso da plataforma, rateio pelo
+    processamento e pela utilização dos servidores de internet da matriz, reembolso de despesas, utilização da imagem corporativa,
+    entre outros.
+
+    11. OUTROS ATIVOS
+
+
+
+
+    (i) Referem-se, em sua maior parte, a montantes de caixa a processar.
+
+    12. INTANGÍVEL
+
+=== página 29 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+
+    (i) Correspondem às horas de serviços de TI necessárias para o desenvolvimento de novos softwares/sistemas.
+
+
+
+
+    As despesas com amortização estão apresentadas no item “despesas administrativas” da demonstração do
+    resultado.
+
+    13. DEPÓSITOS E OBRIGAÇÕES POR TRANSAÇÕES DE PAGAMENTO
+
+    Os depósitos reconhecidos pela Companhia abrangem os saldos em moeda eletrônica mantidos em contas
+    de pagamento pré-pagas, incluindo valores em trânsito entre contas de pagamento da mesma instituição.
+    As obrigações por transações de pagamento correspondem aos valores que ainda não foram convertidos
+    em moeda eletrônica por não terem atendido integralmente às condições previstas no arranjo de pagamento.
+
+    a) Composição
+
+
+
+
+    (i) Em 31 de dezembro de 2025, a Companhia possui saldo de R$ 83.302 depositados em saldos de livre movimentação com partes
+    relacionadas (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$ 196.092 e R$ 389.084) – nota 26.
+    (ii) Referem-se aos saldos em trânsito entre contas de pagamento da mesma instituição e os valores a pagar a instituições
+    participantes de arranjo de pagamento, relativos a transações de pagamento originadas de titular de conta de pagamento.
+    (iii) Referem-se aos montantes que ainda não foram convertidos em moeda eletrônica tendo em vista que não foram cumpridos os
+    requisitos previstos no arranjo de pagamento para que estes se tornem disponíveis para livre utilização.
+
+    Os prazos de vencimento dos depósitos estão apresentados na nota explicativa 28.
+
+=== página 30 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    14. OBRIGAÇÕES POR EMPRÉSTIMOS
+
+
+
+
+    Em 31 de dezembro de 2024 e 01 de janeiro de 2024, as movimentações dos empréstimos foram
+    integralmente compensadas no próprio exercício, razão pela qual não há posição de balanço.
+
+
+
+
+    Os empréstimos da Companhia estão contratados em moeda estrangeira (dólar americano e euro), com
+    taxas de juros tanto prefixadas quanto pós-fixadas, conforme as condições específicas de cada operação.
+
+    Os prazos de vencimento dos empréstimos estão apresentados na nota explicativa 28.
+
+    15. PROVISÃO PARA CONTINGÊNCIAS
+
+    A Companhia, no curso normal de suas operações, é parte em processos judiciais de natureza fiscal, cível
+    e trabalhista em diversas instâncias, ajuizados. A Administração da Companhia adotou como procedimento
+    a constituição de provisão com base em vários fatores, incluindo a opinião de seus assessores jurídicos
+    externos, a análise das demandas judiciais pendentes e o histórico de perdas efetivas.
+
+    a) Natureza das provisões:
+
+
+
+
+    Mandado de Segurança para aplicação do Tratado Brasil-Argentina e afastamento do IRRF
+
+    Em novembro de 2014, a Companhia ingressou com mandado de segurança no qual pleiteia judicialmente
+    a não retenção do Imposto de Renda Retido na Fonte (“IRRF”) sobre remessas efetuadas para a sociedade
+    argentina MercadoLibre S.R.L., relativas à prestação de serviços de assistência de suporte, de assistência
+    para manutenção e de atualização de websites, sem transferência de tecnologia.
+
+    A avaliação da Administração, suportada pelos seus assessores jurídicos externos e internos, é de que as
+    chances de perda são prováveis e, por essa razão, a Companhia no exercício findo de 31 de dezembro de
+    2025 provisionou um montante de R$ 1.296.443 (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$
+    1.024.397 e R$ 813.063).
+
+    Mandado de Segurança buscando a suspensão da cobrança do ICMS-DIFAL em razão da ausência
+    de lei complementar
+
+    Ao longo dos anos de 2020 e 2021, a Companhia ajuizou mandados de segurança em tribunais estaduais
+    brasileiros, buscando impedir a cobrança do ICMS-DIFAL em razão da ausência de lei complementar. Em
+
+=== página 31 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    fevereiro de 2021, o STF declarou a inconstitucionalidade do ICMS-DIFAL sem lei complementar e modulou
+    os efeitos de sua decisão de modo que seja aplicada aos casos ajuizados antes do início do julgamento.
+
+    Com base na opinião de consultores jurídicos externos, a administração acredita que um resultado
+    desfavorável no caso restante é provável e, por isso, a Companhia manteve provisionados os montantes
+    relacionados aos períodos anteriores a 2022, com prognóstico de perda provável, no montante de R$ 1.886
+    (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$ 9.382 e R$ 8.328), os quais também estão
+    depositados em juízo.
+
+    Mandado de Segurança referente à observância da anterioridade anual e nonagesimal na cobrança
+    do ICMS-DIFAL no exercício 2022
+
+    Em 2022, a Companhia ajuizou mandados de segurança contra as 27 Unidades da Federação, visando
+    assegurar a aplicação da anterioridade anual e nonagesimal e afastar a exigência do diferencial de alíquota
+    do ICMS (“ICMS-DIFAL”) sobre operações interestaduais de venda dos terminais “maquininhas Point” no
+    mesmo exercício financeiro em que a Lei Complementar nº 190, de 4 de janeiro de 2022 foi editada.
+
+    Em 29 de novembro de 2023, o Supremo Tribunal Federal (“STF”) na Ação Direta de Inconstitucionalidade
+    7066 (“ADI 7066”) decidiu pela validade da cobrança após o cumprimento da noventena (a partir de 5 de
+    abril de 2022).
+
+    Entretanto, em 17 de outubro de 2025, no Tema 1.266 da Repercussão Geral, o STF proferiu decisão sobre
+    a modulação de efeitos, excluindo a exigibilidade do imposto durante todo o exercício de 2022 para os
+    contribuintes que ajuizaram ações judiciais até a data do julgamento da ADI 7066 (29 de novembro de 2023)
+    e que deixaram de recolher o tributo, que é o caso da Companhia.
+
+    A Administração, suportada pelos seus assessores jurídicos, avaliou que a Companhia se enquadra nos
+    requisitos da modulação de efeitos, uma vez que as ações foram propostas tempestivamente e os valores
+    não foram recolhidos ao Fisco, mas sim depositados em juízo.
+
+    Dessa forma, o risco de perda envolvido nas ações, anteriormente avaliado como provável para o período
+    de 05 de abril de 2022 a 31 de dezembro de 2022, foi reclassificado para remoto. Em decorrência dessa
+    alteração no prognóstico jurídico, a provisão anteriormente constituída para este período foi revertida,
+    permanecendo os valores depositados em juízo aguardando autorização judicial para levantamento.
+
+    b) Movimentação das provisões:
+
+
+
+
+    c) Depósitos judiciais
+
+    Em 31 de dezembro de 2025, os valores depositados em juízo e demais processos judiciais atualizados
+    totalizam R$ 1.338.671 (31 de dezembro de 2024 e 01 de janeiro de 2024 - R$ 996.175 e R$ 726.909) - nota
+    10 (iii). Para os demais processos de perda possível, o risco estimado em 31 de dezembro de 2025 totaliza
+    R$ 378.893 (em 31 de dezembro de 2024 e 01 de janeiro de 2024 - R$318.422 e R$ 224.677), classificadas
+    em natureza cível - R$ 354.818 (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$ 163.571 e R$
+    96.769), natureza tributária - R$ 5.996 (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$ 145.246 e
+    R$ 125.339) e natureza trabalhista - R$ 18.080 (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$
+    9.606 e R$ 2.569).
+
+=== página 32 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    16. ATIVOS E PASSIVOS FISCAIS
+
+    a) Composição dos ativos e passivos fiscais:
+
+
+
+
+    b) Reconciliação do imposto de renda de pessoa jurídica - IRPJ e da contribuição social sobre o
+       lucro líquido - CSLL registrada no resultado do exercício
+
+
+
+
+    c) Movimentação e composição dos saldos de IRPJ e CSLL diferidos:
+
+
+
+
+    d) Prazo de realização dos créditos tributários
+
+
+
+
+    17. OUTROS PASSIVOS
+
+
+
+
+    (i) São constituídos substancialmente por valores a pagar para fornecedores e valores em processamento.
+
+=== página 33 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    (ii) Inclui saldos com partes relacionadas no valor de R$ 340.600 (31 de dezembro de 2024 e 01 de janeiro de 2024 – R$ 694.111 e
+    R$ 318.474) – nota 26.
+    (iii) Refere-se aos compromissos com limites concedidos e não utilizados – nota 7.b.
+
+    18. PATRIMÔNIO LÍQUIDO
+
+    a) Capital social
+
+    O capital social da Companhia, totalmente subscrito e integralizado, é de R$ 1.247.339.985 representados
+    por 1.247.339.985 cotas no valor nominal de R$ 1,00 cada uma. A quantidade de ações está assim
+    distribuída:
+
+
+
+
+    Em Assembleia Geral Extraordinária de 01 de dezembro de 2023, foi aprovada pelos sócios representantes
+    da totalidade do capital social do Mercado Pago, o aumento de Capital Social por meio de recursos próprios
+    no montante de R$ 275.000, mediante a emissão de 275.000.000 de ações sendo totalmente subscrito nesta
+    data. Deste montante, foram totalmente integralizados R$ 10.000 e R$ 265.000 a ser realizados no prazo
+    de até 1 ano. O referido aumento foi aprovado pelo Banco Central do Brasil em 23 de fevereiro de 2024.
+
+    Em Assembleia Geral Extraordinária de 20 de março de 2024, foi aprovada pelo sócio representante da
+    totalidade do capital social do Mercado Pago, o aporte de R$ 132.500, e em Assembleia Geral Extraordinária
+    de 27 de setembro de 2024, foi aprova322da pelo sócio representante da totalidade do capital social do
+    Mercado Pago, o aporte restante de R$132.500, finalizando o aporte inicialmente previsto em 01 de
+    dezembro 2024.
+
+    b) Outros resultados abrangentes
+
+    Representam os ajustes cumulativos de valorização ou desvalorização do valor de mercado dos
+    instrumentos financeiros derivativos líquidos de impostos, sendo estes reclassificados para o resultado
+    quando da efetiva realização dos saldos.
+
+    19. RECEITA LÍQUIDA POR TRANSAÇÃO DE PAGAMENTO E OUTROS SERVIÇOS
+
+
+
+
+    (i) Refere-se às despesas tributárias incidentes sobre os serviços prestados e a receita bruta, tais como PIS, COFINS e ISS.
+
+    Correspondem às receitas decorrentes da prestação de serviços de transações de pagamento, adquirência
+    e comissões cobradas sobre o processamento de transações à vista e parceladas na plataforma Mercado
+    Livre e em outras plataformas de e-commerce, abrangendo ainda pagamentos de compras, receita de
+    intermediação na qualidade de emissor de cartão, receitas por antecipação de obrigações e vendas de
+    MPOs.
+
+    20. CUSTO DOS SERVIÇOS PRESTADOS
+
+=== página 39 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    b) Instrumentos financeiros mensurados ao valor justo por meio do resultado
+
+
+
+
+    Nos exercícios findos em 31 de dezembro de 2025, 31 de dezembro de 2024 e 01 de janeiro de 2024 não
+    ocorreram transferências entre níveis de mensuração dos instrumentos financeiros.
+
+    28. ESTRUTURA DE GERENCIAMENTO DE CAPITAL E DE RISCOS
+
+    Gerenciamento da estrutura de capital e riscos
+
+    A Companhia adotou uma estrutura de gerenciamento de capital e riscos que é compatível com a natureza
+    das atividades da Companhia e com a complexidade dos serviços que são oferecidos, permitindo que os
+    riscos (operacional, de liquidez e de crédito) sejam identificados, mensurados, monitorados, controlados e
+    mitigados. A Companhia possui e segue a política de gerenciamento de riscos que orienta em relação à
+    natureza e a posição geral dos riscos financeiros que deverão ser regularmente monitoradas e gerenciadas
+    a fim de avaliar os resultados e o impacto financeiro no fluxo de caixa. O Grupo Mercado Livre instaurou um
+    comitê de crise, composto pela alta administração das empresas/unidades de negócios do Grupo, entre elas
+    as entidades que compõem a Companhia. Este comitê se reúne periodicamente onde são discutidas e
+    definidas as principais diretrizes e medidas a serem seguidas pelas empresas do grupo. Dentre estas
+    discussões e medidas estão os temas relacionados aos riscos operacionais, de liquidez, de crédito, de
+    tecnologia e de segurança da informação. Esse comitê também monitora os principais processos e controles
+    da Companhia os quais estão operando normalmente. Mais informações podem ser encontradas no relatório
+    de gerenciamento de risco publicado em nosso site (https://www.mercadopago.com.br/informacoes-
+    adicionais).
+
+    Risco operacional
+
+    O risco operacional é definido como a possibilidade da ocorrência de perdas resultantes de eventos externos
+    ou de falha, deficiência ou inadequação de processos internos, pessoas ou sistemas. Neste contexto,
+    também deve ser considerado o risco legal associado à inadequação ou deficiência em contratos firmados
+    pela Companhia, às sanções em razão de descumprimento de dispositivos legais e às indenizações por
+    danos a terceiros decorrentes das atividades desenvolvidas pela Companhia.
+
+=== página 40 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    O controle do risco operacional é baseado em princípios de conformidade, fortalecimento dos controles
+    internos, capacitação de pessoas e disseminação da cultura de riscos. São utilizados instrumentos como
+    Risk Assessment, registro e análise de incidentes, avaliação de riscos para novos produtos e serviços,
+    planos de continuidade de negócios e contingência, gestão de terceiros relevantes e monitoramento de
+    indicadores-chave de risco (KRIs). O processo é contínuo, visando a identificação, avaliação,
+    monitoramento, reporte e mitigação de falhas, perdas e deficiências relacionadas a processos, sistemas,
+    pessoas e eventos externos.
+
+    A Companhia possui um processo consolidado para a captura e construção de dados de riscos operacionais
+    em base interna. O objetivo é prover mecanismos de monitoramento de tendências que auxiliem na tomada
+    de decisão e na mitigação de riscos, com o devido reporte ao Comitê de Riscos.
+
+    A estrutura de gerenciamento de riscos da Companhia adota o modelo de três linhas de defesa, no qual
+    todas as áreas possuem responsabilidade para manter o bom funcionamento do ambiente de controle e
+    gestão de riscos.
+
+        ✓ Primeira linha de defesa: Áreas de negócios e operacionais, responsáveis pela criação dos
+          processos e produtos, pela identificação, avaliação e gestão inicial dos riscos inerentes, e pela
+          execução dos controles primários.
+        ✓ Segunda linha de defesa: Áreas de Gestão de Riscos, Controles Internos e Compliance, que
+          apoiam o atendimento aos requisitos regulatórios, fornecem conhecimento e ferramentas de gestão
+          de riscos, e monitoram a efetividade dos processos, prestando suporte às áreas de negócio.
+        ✓ Terceira linha de defesa: Auditoria Interna, responsável por avaliações independentes da eficácia
+          da governança corporativa, do gerenciamento de riscos e dos controles internos, com reporte direto
+          ao Comitê de Auditoria, garantindo independência em suas funções.
+
+    Risco social, ambiental e climático
+
+    A Companhia compreende que a administração de riscos associados a questões socioambientais e
+    climáticas é crucial para a relação com seus clientes e para a viabilidade de suas operações. Ignorar esses
+    aspectos pode acarretar sérias consequências, como a diminuição do fluxo de caixa, perda de ativos,
+    comprometimento da imagem corporativa, riscos à saúde pública, violações aos direitos humanos e
+    degradação de ecossistemas.
+
+    Os riscos sociais, ambientais e climáticos são definidos como a possibilidade de ocorrência de perdas para
+    a Companhia ocasionadas por eventos associados à violação de direitos e garantias fundamentais,
+    degradação do meio ambiente, eventos extremos ambientais ou de longo prazo relacionados a mudanças
+    climáticas, e aqueles advindos da transição para uma economia de baixo carbono.
+
+    Risco de Liquidez
+
+    O risco de liquidez refere-se à possibilidade de a Companhia não conseguir honrar eficientemente suas
+    obrigações esperadas e inesperadas, correntes e futuras, sem afetar suas operações diárias ou incorrer em
+    perdas significativas. Também inclui a incapacidade de converter moeda eletrônica em moeda física ou
+    escritural no momento da solicitação do usuário.
+
+    Para uma administração adequada da liquidez, a área de Riscos Financeiros monitora diariamente as
+    premissas de desembolsos e recebimentos futuros, avaliando o fluxo de caixa em diferentes horizontes de
+    tempo e sob cenários de estresse. A principal estratégia de mitigação consiste na manutenção de um
+    Colchão de Liquidez, formado por ativos líquidos de alta qualidade, como Títulos Públicos Federais livres de
+    restrições e reservas no Banco Central, que podem ser prontamente convertidos em caixa.
+
+    Nos controles diários, são rigorosamente acompanhados os indicadores de limites de Caixa Mínimo, o LCR
+    que avalia a sobrevivência em cenários de estresse a 30 dias, o mapa de concentração de captações e os
+    limites regulatórios e gerenciais de cobertura para a salvaguarda do saldo de moeda eletrônica de terceiros,
+    representados pelo Índice de Cobertura de Instituição de Pagamento.
+
+    Adicionalmente, a Companhia possui um Plano de Contingência formalizado, que prevê o acesso tempestivo
+    a linhas de crédito pré-aprovadas em instituições parceiras (como contas garantidas) em caso de
+
+=== página 41 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    necessidade, conforme a severidade do cenário. Também contempla o acionamento de linhas de liquidez
+    para suporte financeiro junto à sua Matriz.
+
+    (i) Abaixo, o vencimento dos passivos financeiros da Companhia, considerando os fluxos de caixa
+    não descontados:
+
+
+
+
+    Risco de Crédito
+
+    É a possibilidade de ocorrência de perdas associadas ao não cumprimento, pela contraparte, de suas
+    obrigações financeiras nos termos pactuados, bem como à redução de ganhos ou remunerações e à
+    reestruturação de instrumentos financeiros.
+
+    No contexto das atividades da Companhia, o risco de crédito decorre, principalmente da inadimplência de
+    emissores de cartões e de adquirentes, responsáveis por liquidar os valores relativos às transações
+    realizadas pelos portadores dos cartões por eles emitidos.
+
+    A Companhia mantém estrutura de gerenciamento de risco de crédito que contempla limites para a
+    realização de operações sujeitas a esse risco, incluindo limites para concessão de crédito a partes
+    relacionadas, em conformidade com a Resolução CMN nº 4.693/18. Essa estrutura inclui, ainda,
+    procedimentos destinados a identificar, avaliar, monitorar e controlar a exposição ao risco de crédito, bem
+    como diretrizes e rotinas para a recuperação de créditos.
+
+=== página 42 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+    Risco de Mercado
+
+    Busca mensurar o impacto de movimentos adversos das taxas de juros, taxas de câmbio, índices de preços
+    e dos preços de mercadorias (commodities) no capital e nos resultados da Companhia, verificando
+    continuamente a aderência às políticas e limites preestabelecidos, e dentre as métricas autorizadas pelo
+    Banco Central do Brasil para o gerenciamento.
+
+    Por seu modelo de negócio, a instituição atua somente com carteira bancária e, desse modo, precisa cumprir
+    a regulação do Banco Central para o cálculo do IRRBB, utilizando as métricas de delta EVE e delta NII para
+    mensuração do risco de taxa de juros, com o objetivo de apurar o impacto econômico e na receita de juros
+    em cenários de estresse. Para a alta gestão, a área de Riscos financeiros demonstra pelo menos
+    mensalmente indicadores de IRRBB incluindo delta EVE e delta NII de acordo com a RAS.
+
+    As demais exposições, atualmente restritas ao risco de câmbio, são acompanhadas diariamente e
+    reportadas ao Banco Central por meio do Demonstrativo Diário de Acompanhamento das Parcelas de
+    Requerimento de Capital e dos Limites Operacionais (DDR).
+
+    (i) Análise de sensibilidade
+
+    As variações nas taxas de juros, como CDI, podem impactar positivamente ou negativamente as
+    demonstrações financeiras, afetando os saldos de instrumentos financeiros. Para fins de análise de
+    sensibilidade, foi considerado um cenário de estresse com uma variação de 400 pontos-base na taxa básica
+    de juros da economia em relação ao exercício findo em 31 de dezembro de 2025.
+    Nesse cenário, o impacto seria de uma perda estimada de R$ 354 milhões no resultado financeiro do
+    exercício. Esse impacto reflete a exposição da Companhia às oscilações das taxas de juros sobre seus
+    principais ativos e passivos financeiros.
+
+    Risco com taxa de câmbio
+
+    As variações nas taxas de câmbio podem impactar positiva ou negativamente as demonstrações financeiras,
+    em função dos saldos de ativos, passivos e derivativos denominados em moeda estrangeira,
+    predominantemente em dólar norte-americano (USD) e euro (EUR). Para fins de análise de sensibilidade,
+    estimou-se que, em 31 de dezembro de 2025, uma variação de 10% nas taxas de câmbio em relação à
+    moeda funcional resultaria em um impacto de 18,6 milhões de reais sobre os valores reconhecidos na
+    referida data-base. Esse montante foi apurado considerando o efeito hipotético da variação cambial sobre o
+    saldo da exposição cambial líquida da Companhia.
+
+    29. LIMITES OPERACIONAIS
+
+    O Banco Central do Brasil (“BACEN”) estabelece que as instituições reguladas devem manter níveis de
+    Patrimônio de Referência (PR), PR Nível I e Capital Principal compatíveis com os riscos de suas atividades.
+    Esse montante deve ser superior ao requerimento mínimo, que contempla os riscos de crédito, mercado,
+    operacional e de serviços de pagamento.
+
+    Conforme as Resoluções BCB nº 197/2022 a 202/2022, a Companhia é classificada como Tipo 3,
+    enquadramento aplicado a conglomerados liderados por Instituição de Pagamento (Mercado Pago IP Ltda.)
+    que possuem instituição financeira integrante (Mercado Crédito SCFI S.A.).
+
+    Em 31 de dezembro de 2025, o Patrimônio de Referência do Conglomerado apurado de acordo com os
+    critérios brasileiros (BR GAAP), totalizou R$ 5.272.669, frente a um total de Ativos Ponderados pelo Risco
+    (RWA) de R$ 42.912.708. O requerimento mínimo de capital, que inclui o Adicional de Capital Principal
+    (ACP) e o risco de taxa de juros da carteira bancária (IRRBB), somou R$ 4.515.596. Dessa forma, a
+    Companhia apresenta uma margem de capital de R$ 757.073 sobre o requerimento total, resultando em um
+    Índice de Basileia de 12,29%.
+
+=== página 43 ===
+Docusign Envelope ID: 08046E03-3880-4687-B451-0EE658C3ADB7
+
+
+
+
+      _____________________________________                  _____________________________________
+              João Paulo Santin Lima                             Gabriel Parreira Faustino da Silva
+                 Responsável legal                                Contador – CRC: SP-301017/O-4
+
+                                                               GABRIEL PARREIRA    Digitally signed by GABRIEL
+                                                                                   PARREIRA FAUSTINO DA
+                                                               FAUSTINO DA         SILVA:36581351822
+                                                               SILVA:36581351822   Date: 2026.03.30 17:25:32 -03'00'

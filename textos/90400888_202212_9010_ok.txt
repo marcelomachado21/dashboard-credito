@@ -1,0 +1,2043 @@
+
+=== página 4 ===
+ Relatório da                     Relatório dos Auditores     Demonstrações                                          Declarações dos
+                                                                                        Notas Explicativas
+ Administração                    Independentes               Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+    Relatório da Administração
+
+Senhores Acionistas:
+
+Apresentamos o Comentário de Desempenho às Demonstrações Financeiras Individuais e Consolidadas do Banco Santander (Brasil)
+S.A. (Banco Santander ou Banco) relativas ao exercício findo em 31 de dezembro de 2022, elaboradas de acordo com as práticas
+contábeis adotadas no Brasil, estabelecidas pela Lei das Sociedades por Ações, em conjunto às normas do Conselho Monetário
+Nacional (CMN), do Banco Central do Brasil (Bacen) e modelo do documento previsto no Plano Contábil das Instituições do Sistema
+Financeiro Nacional (Cosif) e da Comissão de Valores Mobiliários (CVM), no que não conflitam com as normas emitidas pelo Bacen.
+As Demonstrações Financeiras Consolidadas elaboradas com base no padrão contábil internacional emitido pelo International
+Accounting Standards Board (IASB) relativas ao exercício findo em 31 de dezembro de 2022, serão divulgadas no prazo legal no
+endereço eletrônico www.santander.com.br/ri.
+
+1. Conjuntura Econômica
+
+Ao final do quarto trimestre de 2022, o Banco Santander observou a mediana das projeções de agentes econômicos quanto ao
+desempenho da economia brasileira indicar crescimento do PIB brasileiro de 3,0% em 2022 frente à expansão de 5,0% no ano anterior.
+A projeção para 2022 é maior que a observada no final do terceiro trimestre e, na avaliação do Banco, foi influenciada pela r ecente
+publicação de que o resultado efetivo observado naquele período ficou em linha com a mediana das expectativas de mercado, a
+despeito da revisão altista nos resultados anteriores da série histórica, indicando maior robustez da economia brasileira em 2022.
+Parece-nos que a robustez está diretamente atrelada à manutenção dos estímulos fiscais e tributários aprovados anteriormente e que
+foram implementados ao longo do segundo semestre do ano. Os dados de atividade econômica divulgados ficaram aquém da nossa
+estimativa de crescimento do PIB no trimestre anterior - estimávamos alta de 4,2% - porém julgamos que a frustração esteve
+diretamente ligada à revisão mencionada na série histórica e não à alteração na dinâmica de crescimento recente. Juntamente c om
+os estímulos mencionados anteriormente, este quadro nos levou a alterar nossa expectativa sobre qual será a expansão em 2022. Ao
+invés da estimativa de 2,6% anterior, projetamos atualmente crescimento de 3,0% em 2022.
+
+No último trimestre de 2022, o Banco testemunhou a variação interanual do IPCA recuar para 5,8% frente ao patamar de 7,2%
+observado ao final do terceiro trimestre. Apesar do recuo, o patamar atingido ainda ficou acima da meta de 3,5% determinada para
+2022. O Banco entende que este ambiente inflacionário e o balanço de riscos foram os motivadores para que o Banco Central do
+Brasil tenha justificado a manutenção da taxa básica em 13,75% a.a. entre o final do terceiro trimestre de 2022 e o trimestre anterior.
+O Santander julga que esta abordagem quanto à taxa Selic aumenta a chance de que a inflação convirja para as metas estabeleci das
+dentro do horizonte de tempo relevante para a política monetária, principalmente após a sinalização do governo eleito de que
+ampliará o montante de gastos públicos a partir do próximo ano, o que poderá tornar o processo de desinflação mais lento. Nes te
+sentido, o Banco projeta que a taxa Selic atingirá 12,00% a.a. ao final de 2023 e 9,0% a.a. no encerramento de 2024.
+
+Com relação ao comportamento do câmbio, o Banco Santander viu a cotação da moeda brasileira frente ao dólar norte -americano
+flutuar entre R$5,02/US$ e R$5,53/US$ no quarto trimestre e encerrar o período cotada a R$5,22/US$. Ou seja, abaixo da cotação de
+R$5,41/US$ verificada no encerramento do terceiro trimestre. A volatilidade demonstrada pela trajetória do real está alinhada com
+nossa previsão de que a taxa de câmbio terá espaço limitado para registrar valorização significativa nos próximos anos. Na verdade,
+projetamos que a taxa de câmbio atingirá R$5,40/US$ ao final de 2023 e R$5,50/US$ ao final de 2025.
+
+Os desempenhos mencionados anteriormente aconteceram em meio a um ambiente internacional que o Banco julgou desfavorável
+e que teve como destaques os seguintes temas: 1) manutenção de pressões inflacionárias ao redor do globo; 2) sinalização de ajuste
+mais extenso na política monetária dos EUA; 3) intensificação no ritmo de normalização da política monetária na Zona do Euro e; 4)
+novos surtos de contaminação de COVID-19 na China, elevando o receio de desaceleração intensa na economia daquele país que
+provocasse recessão global de grande magnitude. No ambiente doméstico, o Santander entende que os principais temas foram os
+seguintes: 1) encerramento da eleição presidencial sem danos ao arcabouço institucional brasileiro; 2) aprovação de emenda
+constitucional autorizando o governo eleito a ampliar o montante de despesas públicas não sujeitas à regra do teto de gastos públicos
+a partir de 2023 e; 3) deterioração nas expectativas dos agentes econômicos quanto ao início do processo de redução da taxa S ELIC
+em 2023 (anteriormente, apontavam possibilidade de cortes no início do ano e, atualmente, indicam chance para o segundo semestre
+de 2023).
+
+
+
+
+                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 4
+
+=== página 5 ===
+ Relatório da                     Relatório dos Auditores               Demonstrações                                         Declarações dos
+                                                                                                 Notas Explicativas
+ Administração                    Independentes                         Financeiras                                           Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+2. Desempenho
+
+Em relação ao desempenho financeiro, o resultado gerencial alcançou R$1.689 milhões no quarto trimestre de 2022, com variação -
+45,9% no trimestre. O lucro líquido gerencial foi de R$12.900 milhões em 2022 com queda de 21,0% se comparado com o mesmo
+período do ano anterior. O retorno gerencial sobre o patrimônio líquido foi de 8,35% no 4T22 e 16,3% em 2022.
+
+A carteira de crédito atingiu R$489.687 milhões representando crescimento de 5,8% se comparado com o mesmo período do ano
+anterior. Destaque para o crescimento da carteira de pessoas físicas com de crescimento 8,0% (principalmente por Consignado,
+Imobiliário e Crédito Pessoal) e Pequenas e Médias Empresas com crescimento de 7,2%. No trimestre, a carteira cresceu 1,1% com
+destaque para Pessoas Físicas, influenciada principalmente por movimentos sazonais de final de ano – com destaque para as linhas
+de Cartão de Crédito e crédito consignado por efeito principalmente do aumento da margem de consignado.
+
+A margem financeira bruta totalizou R$51.756 milhões em 2022 com queda de 6,9% se comparado com o mesmo período do ano
+anterior. No 4T22, a margem alcançou R$12.517 milhões com queda de -0,6% em relação ao 3T22 refletindo principalmente o menor
+resultado com clientes no período que apresentou queda de -2,6%. A margem de operações com o mercado totalizou (R$ 1.265)
+milhões no 4T22, melhora de 18,1%.
+
+O resultado de créditos de liquidação duvidosa atingiu R$23.875 milhões com crescimento de 72,0% em relação ao ano anterior,
+justificado pelo crescimento da inadimplência principalmente nas operações de crédito a pessoas físicas. No 4T22, o resultado atingiu
+(R$7.309) milhões com crescimento de 17,7% sobre o 3T22.
+
+As receitas totais de prestação de serviços tiveram queda de 0,2% em 2022, no entanto, apresenta crescimento de 2,2% se
+normalizarmos a saída da GetNet no ano passado. No quarto trimestre de 2022, a receita atingiu R$5.075 milhões, representando
+aumento de 7,2%, influenciado por Seguros (efeitos sazonais de renovação apólice de seguro de vida e mudança de regi stro de
+competência de corretagem de Seguros), Cartões e Receita de Adm. de Fundos, Consórcios e Bens.
+
+As despesas gerais atingiram R$6.049 milhões no 4T22, alta de 6,3% no trimestre. Esta variação é justificada por maiores gast os com
+pessoal que cresceu 4,8% no trimestre impactadas pelo acordo coletivo aplicado sobre a base salarial da companhia a partir de
+setembro de 2022, maiores gastos administrativos com variação de +7,6%, principalmente pelo crescimento em linhas de Marketing,
+tecnologia pela transmissão de dados e licenças de uso de software e maior gasto de amortização e depreciação que atingiu 7,1%
+neste trimestre refletindo principalmente os maiores investimentos realizados em software e hardware. Em 2022 as despesas ati ngiram
+R$22.706 milhões, crescimento de 5,7%. O índice de eficiência foi de 40,8% no 4T22 com aumento de 3,37 p.p. no trimestre e 1,6 p.p.
+no ano. Seguimos comprometidos na busca constante por eficiência, com uma abordagem omni-channel, por meio da integração da
+nossa plataforma e industrialização dos nossos processos.
+
+
+
+2.1) Resultado Societário
+
+Demonstração dos Resultados Consolidado                                               variação                                             variação
+                                                     12M22             12M21                             4T22              3T22
+(R$ Milhões)                                                                          anual %                                            trimestral %
+Receitas da Intermediação Financeira                       99.768,6      99.112,2              0,7         20.055,7         37.313,3              (46,3)
+Despesas da Intermediação Financeira                      (71.653,9)    (59.797,4)            19,8        (14.752,8)       (30.985,4)             (52,4)
+Resultado Bruto da Intermediação
+Financeira                                                28.114,7      39.314,9             (28,5)        5.302,9           6.327,9             (16,2)
+Outras Receitas (Despesas) Operacionais                   (11.360,0)    (15.652,3)            (27,4)       (3.284,5)         (2.524,3)            30,1
+Resultado Operacional                                     16.754,7      23.662,6             (29,2)        2.018,4           3.803,6             (46,9)
+Resultado não Operacional                                     543,1           9,0          5.934,6             93,5              33,4            180,0
+Resultado antes da Tributação sobre o
+Lucro e Participações                                     17.297,8      23.671,6             (26,9)         2.111,9          3.837,0              (45,0)
+Imposto de Renda e Contribuição Social                     (2.326,2)     (6.503,2)            (64,2)          189,0           (226,7)            (183,4)
+Participações no Lucro                                     (2.222,0)     (2.059,7)              7,9          (616,7)          (566,2)               8,9
+Participações dos Acionistas Minoritários                    (179,4)       (120,9)             48,3            (75,4)            (5,3)          1.321,8
+Lucro Líquido Societário                                  12.570,2      14.987,7             (16,1)         1.608,8          3.038,8              (47,1)
+
+
+
+
+                                                                        Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 5
+
+=== página 6 ===
+ Relatório da                     Relatório dos Auditores           Demonstrações                                                  Declarações dos
+                                                                                                Notas Explicativas
+ Administração                    Independentes                     Financeiras                                                    Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+RESULTADO OPERACIONAL ANTES DA TRIBUTAÇÃO
+AJUSTADO                                                                                       variação                                             variação
+                                                               12M22          12M21                                   4T22            3T22
+                                                                                               anual %                                          trimestral %
+(R$ Milhões)
+Resultado antes da Tributação sobre o Lucro e
+                                                             17.297,8      23.671,6                  (26,9)       2.111,9          3.837,0            (45,0)
+Participações
+Hedge Cambial                                                       -        2.236,9                 (100,0)            -               -                -
+
+Resultado Operacional Antes da Tributação Ajustado           17.297,8      25.908,5                  (33,2)       2.111,9          3.837,0            (45,0)
+
+
+
+IMPOSTO SOBRE A RENDA                                                                          variação                                             variação
+                                                               12M22          12M21                                   4T22            3T22
+(R$ Milhões)                                                                                   anual %                                          trimestral %
+
+Imposto de Renda e Contribuição Social                       (2.326,2)      (6.503,2)                (64,2)          189,0          (226,7)          (183,4)
+Hedge Cambial                                                       -        (2.236,9)               (100,0)            -               -                -
+
+Imposto sobre a Renda e Contribuição Social ajustado         (2.326,2)      (8.740,1)                (73,4)          189,0          (226,7)          (183,4)
+
+
+
+O retorno do exercício tomando por base o resultado contábil sobre o patrimônio líquido médio atingiu 15,63%, redução de 3,09 p.p
+comparado ao mesmo período de 2021.
+
+a) Hedge Cambial das Agências Grand Cayman e Luxemburgo
+
+O Banco Santander opera agências nas Ilhas Cayman e em Luxemburgo, que são usadas, principalmente, para a captação de recurso s
+nos mercados de capital e financeiro internacionais, para o fornecimento ao Banco de linhas de crédito que são estendidas aos seus
+clientes para financiamentos ao comércio exterior e capital de giro. Para cobrir a exposição desses ativos às variações cambiais, o
+Banco utiliza captações externas e instrumentos derivativos. De acordo com as regras fiscais brasileiras, a partir de jane iro de 2021,
+50% dos ganhos ou perdas decorrentes do impacto da valorização ou desvalorização do Real sobre os investimentos estrangeiros
+passaram a ser computados na determinação do lucro real e na base de cálculo da Contribuição Social sobre o Lucro Líqu ido (CSLL)
+da pessoa jurídica investidora domiciliada no país, enquanto que os ganhos ou perdas das obrigações e dos instrumentos deriva tivos
+utilizados como cobertura são 100% tributáveis ou dedutíveis. O objetivo desses instrumentos derivativos é o de proteger o resultado
+líquido após impostos. A partir de 2022, em atendimento a Lei nº 14.031, toda variação cambial passou a ser computada na base
+tributável do IRPJ e CSLL.
+
+O tratamento fiscal distinto de tais diferenças cambiais resulta em volatilidade no resultado operacional e nas contas de despesas
+tributárias (PIS/COFINS) e tributos sobre a renda (IR/CSLL), conforme demonstrado abaixo:
+
+                                                                                                                                              variação
+Hedge Cambial das Agências Grand Cayman e Luxemburgo                                                   variação
+                                                                           12M22          12M21                             4T22        3T22 trimestral
+(R$ Milhões)                                                                                           anual %
+                                                                                                                                                 %
+Variação Cambial - Resultado de Intermediação Financeira                  (2.644,0)      3.862,1           (168,5)    (1.383,4)      1.239,7      (211,6)
+Instrumentos Financeiros Derivativos - Resultado de Intermediação
+Financeira                                                                 2.773,0       (6.374,1)         (143,5)     1.450,4      (1.300,2)        (211,6)
+IR/CSLL                                                                         -         2.236,9          (100,0)          -             -              -
+PIS/COFINS                                                                  (129,0)         275,1          (146,9)       (67,0)         60,5         (210,7)
+
+
+
+2.2) Ativos e Passivos
+
+Balanço Patrimonial Consolidado (R$ Milhões)                                                 Dez/22                  Dez/21            variação anual %
+Ativo Circulante e Não Circulante                                                              1.034.164,2              950.440,4                     8,8
+Permanente                                                                                        14.353,7               12.935,5                   11,0
+Total do Ativo                                                                                1.048.517,9              963.375,9                     8,8
+Passivo Circulante e Não Circulante                                                              965.102,7              882.996,9                     9,3
+Resultados de Exercícios Futuros                                                                        -                   382,2                 (100,0)
+Participação dos Acionistas Minoritários                                                           1.353,3                1.257,2                     7,6
+Patrimônio Líquido                                                                                82.061,9               78.739,6                     4,2
+Total do Passivo e Patrimônio Líquido                                                         1.048.517,9              963.375,9                     8,8
+
+
+
+
+                                                                    Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 6
+
+=== página 7 ===
+ Relatório da                     Relatório dos Auditores            Demonstrações                                          Declarações dos
+                                                                                               Notas Explicativas
+ Administração                    Independentes                      Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+2.3) Patrimônio Líquido
+
+Em 31 de dezembro de 2022, o patrimônio líquido consolidado do Banco Santander apresentou aumento de 4,2 % em comparação
+a 31 de dezembro de 2021.
+
+A variação do Patrimônio Líquido entre 31 de dezembro de 2022 e 31 de dezembro de 2021, foi decorrente, principalmente, do lucro
+líquido do exercício no montante de R$12.570 milhões, do ajuste de avaliação patrimonial negativo (títulos e valores mobiliários e
+instrumentos financeiros derivativos) no montante de R$835 milhões e do pagamento de dividendos no montante de R$2.820 milhões
+e dos Juros Sobre Capital Próprio no montante de R$5.280 milhões.
+
+Para informações adicionais, vide nota explicativa nº 21.
+
+2.4) Índice de Basileia
+
+O Bacen determina às instituições financeiras a manutenção de um Patrimônio de Referência (PR), PR Nível I e Capital Principal
+compatíveis com os riscos de suas atividades, superior ao requerimento mínimo do Patrimônio de Referência Exigido, representa do
+pela soma das parcelas de risco de crédito, risco de mercado e risco operacional.
+
+Conforme estabelecido na Resolução CMN nº 4.958/2021 a exigência de PR está em 11,50%, incluindo 8,00% de Mínimo de Patrimônio
+de Referência, mais 2,50% de Adicional de Conservação de Capital e 1,00% de Adicional Sistêmico. O PR Nível I é de 9,50% e o Capital
+Principal Mínimo de 8,00%.
+
+Segundo as regras estabelecidas pela Resolução CMN nº 4.955/2021, a apuração dos índices de capital é calculada de forma
+consolidada com base nas informações do Conglomerado Prudencial, cuja definição é estabelecida pela Resolução CMN nº
+4.950/2021, como demonstrado a seguir:
+
+Índice de Basileia %                                                                                          Dez/22                  Dez/21
+Patrimônio de Referência Nível I                                                                                    75.943,7                76.969,9
+Capital Principal                                                                                                   69.229,0                69.919,9
+Capital Complementar                                                                                                 6.714,7                 7.050,1
+Patrimônio de Referência Nível II                                                                                   13.109,8                12.591,3
+Patrimônio de Referência (Nível I e II)                                                                            89.053,5                89.561,3
+Risco de Crédito                                                                                                   559.230,6               527.119,3
+Risco de Mercado                                                                                                    19.332,1                15.122,2
+Risco Operacional                                                                                                   60.073,2                58.499,8
+Total de RWA                                                                                                      638.635,9               600.741,3
+Índice de Basileia Nível I                                                                                            11,89                   12,81
+Índice de Basileia Capital Principal                                                                                  10,84                   11,64
+Índice de Basileia Patrimônio de Referência                                                                           13,94                   14,91
+
+
+
+2.5) Principais Controladas
+
+A tabela abaixo apresenta os saldos de ativos totais, patrimônio líquido, lucro líquido e carteira de operações de créditos r eferentes
+ao exercício findo em 31 de dezembro de 2022, das principais controladas do Banco Santander:
+
+                                                                            Patrimônio        Lucro (Prejuízo)     Carteira de
+Controladas (R$ Milhões)                                  Ativos Totais                                                                Particip. %
+                                                                             Líquido              Líquido           Crédito
+
+Aymoré Crédito, Financiamento e Investimento S.A.               60.654,0           41.886,9            1.761,0            54.804,7             100,0%
+Santander Leasing S.A. Arrendamento Mercantil                   15.523,0           11.096,3              568,0             2.863,1             100,0%
+Santander Corretora de Seguros, Investimento e
+Serviços S.A.                                                   12.974,1            4.586,7            1.413,0                   -             100,0%
+Santander Corretora de Câmbio e Valores Mobiliários
+S.A.                                                             1.497,5              800,6              124,9                   -             100,0%
+
+
+
+As demonstrações financeiras das Controladas acima foram preparadas de acordo com as práticas contábeis adotadas no Brasil,
+estabelecidas pela Lei das Sociedades por Ações, em conjunto às normas do CMN, do Bacen e modelo do documento previsto no
+Plano Contábil das Instituições do Cosif, da CVM, no que não conflitam com as normas emitidas pelo Bacen, sem a eliminação de
+operações com ligadas.
+
+
+
+
+                                                                      Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 7
+
+=== página 8 ===
+ Relatório da                     Relatório dos Auditores     Demonstrações                                          Declarações dos
+                                                                                        Notas Explicativas
+ Administração                    Independentes               Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+3. Eventos Societários
+
+Durante o exercício findo em 31 de dezembro de 2022 e exercício findo em 31 de dezembro de 2021, foram implementados diversos
+movimentos societários com o intuito de reorganizar as operações e atividades das entidades de acordo com o plano de negócios
+do Banco Santander.
+
+Para informações adicionais, vide nota explicativa às demonstrações financeiras nº 31.
+
+4. Estratégia e Agências de Rating
+
+Para informações referentes à estratégia e a classificação do Banco nas agências de rating, vide Informe de Resultados disponível no
+endereço eletrônico www.santander.com.br/ri.
+
+5. Governança Corporativa
+
+A estrutura de Governança do Banco Santander Brasil é integrada pela Diretoria Executiva e o seu Comitê Executivo constituído pelos
+Diretores Presidente, Vice-Presidentes Executivos Seniores e Vice-Presidentes Executivos, e pelo Conselho de Administração e seus
+Comitês de Assessoramento, são eles: Auditoria, Riscos e Compliance, Sustentabilidade, Remuneração e Nomeação e Governança.
+
+Para maiores informações sobre as práticas de governança corporativa adotadas pelo Banco Santander Brasil e deliberações do
+Conselho de Administração, vide endereço eletrônico www.santander.com.br/ri.
+
+6. Gestão de Riscos
+
+O Bacen publicou em 23 de fevereiro de 2017, a Resolução CMN n°4.557 que dispõe sobre a estrutura de gerenciamento de riscos e
+de capital (GIRC) entrando em vigor a partir do mesmo ano. A resolução destaca a necessidade de implementação de estrutura de
+gerenciamento integrado de riscos e capital, definição de programa de teste de estresse integrado e declaração de Apetite por Riscos
+(RAS – Risk Appetite Statement), constituição de Comitê de Riscos, definição de política de divulgação de informações publicadas,
+indicação de diretor para gerenciamento de riscos, diretor de capital e diretor responsável pela política de divulgação de informações.
+
+O Banco Santander desenvolve ações necessárias de forma contínua e progressiva, visando a aderência à resolução. Não foram
+identificados impactos relevantes decorrentes dessa norma.
+
+Para maiores informações, vide a nota explicativa nº 30 desta publicação.
+
+Estrutura de Gerenciamento de Capital
+
+A estrutura de gerenciamento de capital do Banco Santander conta com uma governança robusta, a qual suporta os processos
+relacionados a este tema e estabelece as atribuições de cada uma das equipes envolvidas. Além disto, há uma clara definição das
+diretrizes que devem ser adotadas para a efetiva gestão do capital. Maiores detalhes podem ser consultados na Estrutura de
+Gerenciamento de Riscos e Capital, disponível no endereço eletrônico www.santander.com.br/ri.
+
+Auditoria Interna
+
+A Auditoria Interna reporta-se diretamente ao Conselho de Administração, sendo o Comitê de Auditoria responsável por sua
+supervisão.
+
+A Auditoria Interna é uma função permanente e independente de qualquer outra função ou unidade, que tem como missão
+proporcionar ao Conselho de Administração e à alta direção análise independente sobre a qualidade e eficácia dos processos e
+sistemas de controle interno, de gestão dos riscos (atuais ou emergentes) e de governo, contribuindo assim para a proteção do valor
+da organização, da sua solvência e reputação. A Auditoria Interna possui certificado de qualidade emitido pelo Instituto dos Auditores
+Internos (IIA).
+
+Para cumprir suas funções e riscos de cobertura inerentes à atividade do Banco Santander, a Auditoria Interna possui um conju nto de
+ferramentas desenvolvidas internamente e que são atualizadas quando necessário. Entre elas se destaca a matriz de risco, utilizada
+como ferramenta de planejamento, priorizando o nível de risco do universo auditável considerando, entre outros, seus riscos inerentes,
+o último rating de auditoria, o grau de cumprimento das recomendações e sua dimensão. Os programas de trabalho, que descrevem
+os testes de auditoria a serem realizados, são revisados periodicamente.
+
+O Comitê de Auditoria e o Conselho de Administração analisaram favoravelmente e aprovaram o plano de trabalho da Auditoria
+Interna para o ano de 2022.
+
+
+
+
+                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 8
+
+=== página 9 ===
+    Relatório da                  Relatório dos Auditores     Demonstrações                                          Declarações dos
+                                                                                        Notas Explicativas
+    Administração                 Independentes               Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+7. Pessoas
+
+No Banco seguimos cuidando de nossas pessoas. Afinal, são elas que pensam, projetam, desenvolvem, interagem e constroem aquilo
+que o Banco deseja ser. Esse é o motivo de o Banco investir em cada um dos 52.603 funcionários aqui no Brasil.
+
+No tema Saúde, temos implementado uma série de ações para promover o Bem Estar e a Saúde Física e Emocional de nossas pessoas,
+principalmente neste momento de retomada pós COVID-19, sempre seguindo as orientações dos órgãos sanitários e de saúde.
+
+Para o desenvolvimento de nossas pessoas, a Universidade Corporativa – a Academia Santander, trabalha por uma cultura forte,
+transversal, proporcionando que todos, de forma on-line e presencial, possam aprimorar aquilo que já conhecem e explorem novas
+possibilidades. De certificações obrigatórias para determinadas funções aos cursos de Liderança Digital, o mais importante é sair da
+zona de conforto e investir em si mesmo por meio da ampliação de conhecimento e repertório.
+
+O Banco apoia líderes e gestores para que estejam próximos e disponíveis. Essa atuação é baseada em três pilares: Feedback, Papo
+Aberto e Reconhecimento Personalizado, fazendo com que haja alinhamento entre todos por meio de conversas recorrentes e franc as,
+direcionamento de carreira e momentos especiais para premiar o crescimento das equipes.
+
+O Banco Santander preza por um ambiente diverso, onde cada competência e cada diferença é valorizada. Exemplo é o Grupo de
+Afinidade, criado para promover a diversidade e inclusão baseado nos 5 pilares: Liderança Feminina; Equidade Racial; Pessoas com
+Deficiência; Diversidade de Formações, Experiências e Gerações e o pilar LGBTQIA+. Outro bom exemplo é o Show de Talentos. Nele,
+o Santander abre espaço para conhecer as mais diferentes performances e explorar o universo de habilidades que existem no Banco,
+permitindo interação e confraternização entre os colegas.
+
+Na esfera de Clientes, continuamos focados em oferecer os melhores produtos e serviços, de forma Simples, Pessoal e Justa.
+
+Neste contexto, tivemos em outubro e novembro o Todos na Mesma Página, que é uma iniciativa criada em 2021 e que ocorre de 3
+a 4 vezes ao ano. Para esses encontros, incentivamos a leitura de um livro e proporcionamos um debate entre nosso CEO e toda a
+organização. Nas últimas apresentações, debatemos os livros “As Cartas de Bezos” e “Pequeno Manual Antirracista”, com participação
+de 57 mil espectadores (total).
+
+No início de outubro, tivemos a Semana Santander, que aconteceu em todas as unidades do Santander no mundo. Neste ano, nossas
+atividades foram pensadas com foco em um dos nossos Comportamentos Corporativos, o Think Customer (Penso no Cliente). Foram
+diversas atividades pensadas para melhorar a experiência dos nossos clientes. Além disso, tivemos novamente o Amigo de Valor, que
+apoia políticas públicas voltadas para a garantia de direitos de crianças e adolescentes e permite a destinação de parte do i mposto
+de renda devido diretamente aos Fundos de Direto da Criança e do Adolescente.
+
+Também em outubro tivemos nossa segunda Campanha de Doação de Sangue do ano, com excelente adesão dos nossos
+funcionários.
+
+8. Desenvolvimento Sustentável
+
+Nosso propósito é contribuir para o progresso das pessoas e dos negócios. Ao mesmo tempo, queremos apoiar a construção de um
+Brasil mais justo e sustentável. Temos uma estratégia clara para as nossas aspirações ambientais (ser referência em negócios
+sustentáveis), sociais (trabalhar para que todos tenham oportunidades) e de governança (ter as melhores práticas d e gestão ESG).
+
+AMBIENTAL
+
+•     Em 2022, viabilizamos R$ 32,2 bilhões em negócios sustentáveis, apoiando a transição para uma economia de baixo carbono,
+      resiliente e inclusiva. Entre os destaques, estão:
+            o Mantivemos a liderança no mercado de CBIOs, que ajudamos a criar em 2020, com 54,4% de market share.
+            o Em Agro sustentável, que considera linhas que fomentam agricultura de baixo carbono e energia solar, desembolsamos
+                R$ 394 milhões.
+•     Em novembro, durante a COP27, Itaú, Marfrig, Santander, Suzano, Rabobank e Vale lançaram a empresa Biomas, cujo objetivo é
+      restaurar, conservar e preservar 4 milhões de hectares de florestas nos biomas da Amazônia, Caatinga, Mata Atlântica e Cerrad o.
+      A aliança prevê reduzir da atmosfera aproximadamente 900 milhões de toneladas de carbono equivalente durante o período de
+      duas décadas.
+•     Participamos do lançamento da Plataforma de Inovação em Negócios da Bioeconomia na Amazônia, com o objetivo de capacitar
+      3 mil talentos e criar 200 startups em três anos. A iniciativa é liderada pela Fundação CERTI e conta com a coparticipação e
+      investimentos dos bancos do Plano Amazônia (Bradesco, Itaú Unibanco e Santander) e Fundo Vale.
+•     Em relação a gestão ambiental das nossas atividades, atingimos nosso compromisso de termos 100% do nosso consumo interno
+      proveniente de energias renováveis.
+
+
+
+
+                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 9
+
+=== página 31 ===
+    Relatório da                  Relatório dos Auditores     Demonstrações                                          Declarações dos
+                                                                                        Notas Explicativas
+    Administração                 Independentes               Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+A Resolução CMN n° 4.975/2021, estabelece a observância ao Pronunciamento Técnico do Comitê de Pronunciamentos Contábeis
+(CPC) 06 (R2) – Arrendamentos, no reconhecimento, na mensuração, na apresentação e na divulgação de operações de arrendamento
+mercantil a partir de 1° de janeiro de 2025. O Banco Santander está avaliando os impactos e alterações necessárias para atendimento
+desta norma.
+
+A Instrução Normativa BCB n° 319/2022 revoga a partir de 1° de janeiro de 2023 a Carta-Circular n° 3.429/2010, que estabelecia regras
+para o registro contábil de obrigações tributárias em discussão judicial, trazendo convergência à norma internacional IAS 37, cujo
+correspondente no Brasil é o CPC 25 – Provisões, Passivos Contingentes e Ativos Contingentes. O Banco Santander está avaliando
+impactos desta normativa.
+
+As demonstrações financeiras individuais e consolidadas incluem o Banco e suas empresas controladas e os fundos de investimentos
+indicados na Nota 14, onde as empresas do Conglomerado Santander são as principais beneficiárias ou detentoras das principais
+obrigações. As carteiras desses fundos de investimentos estão classificadas por tipo de operação e estão distribuídos nas mesmas
+categorias em que originalmente foram alocados.
+
+Na elaboração das demonstrações financeiras individuais e consolidadas foram eliminadas as participações societárias, os saldos
+relevantes a receber e a pagar, as receitas e despesas decorrentes de transações entre dependências no país, dependência no e xterior
+e controladas, os resultados não realizados entre essas empresas e destacada a participação dos acionistas minoritários no patrimônio
+líquido e no resultado.
+
+A preparação das demonstrações financeiras requer a adoção de estimativas por parte da Administração, impactando certos ativo s e
+passivos, divulgações sobre provisões e passivos contingentes e receitas e despesas nos períodos demonstrados. Uma vez que o
+julgamento da Administração envolve estimativas referentes à probabilidade de ocorrência de eventos futuros, os montantes rea is
+podem diferir dessas estimativas, sendo as principais, provisão para perdas esperadas associadas ao risco de crédito, realização de
+ativos fiscais diferidos, provisão para processos judiciais, cíveis, fiscais e trabalhistas, plano de pensão e o valor justo dos ativos
+financeiros.
+
+O Conselho de Administração autorizou a emissão das demonstrações financeiras individuais e consolidadas para o período findo em
+31 de dezembro de 2022, na reunião realizada em 01 de fevereiro de 2023.
+
+As Demonstrações Financeiras Consolidadas elaboradas com base no padrão contábil internacional emitido pelo International
+Accounting Standards Board (IASB) relativas ao exercício findo em 31 de dezembro de 2022, serão divulgadas, no prazo legal, no
+endereço eletrônico www.santander.com.br/ri.
+
+3.    Principais Políticas Contábeis
+a) Apuração do Resultado
+
+O regime contábil de apuração do resultado é o de competência e considera os rendimentos, encargos e variações monetárias ou
+cambiais, calculados a índices ou taxas oficiais, pro rata dia incidentes sobre ativos e passivos atualizados até a data do b alanço.
+
+b) Moeda Funcional
+
+Moeda Funcional e Moeda de Apresentação
+
+Conforme Resolução CMN nº 4524/2016, as demonstrações financeiras estão apresentadas em Reais, moeda funcional e de
+apresentação do Banco Santander e de suas controladas, incluindo sua subsidiária e agências no exterior.
+
+
+Os ativos e passivos das dependências e subsidiária no exterior são convertidos para o Real como segue:
+
+•         Ativos e passivos são convertidos pela taxa de câmbio da data do balanço; e
+
+•         Receitas e despesas são convertidas pela taxa de câmbio média mensal.
+
+c) Caixa e Equivalentes de Caixa
+
+Para fins da demonstração dos fluxos de caixa, equivalentes de caixa correspondem aos saldos de aplicações interfinanceiras d e
+liquidez com conversibilidade imediata, sujeito a um insignificante risco de mudança de valor e com prazo original igual ou inferior a
+noventa dias.
+
+d) Aplicações Interfinanceiras de Liquidez e Créditos Remunerados Vinculados ao Bacen
+
+São demonstradas pelos valores de realização e/ou exigibilidade, incluindo os rendimentos, encargos e variações monetárias ou
+cambiais auferidos e/ou incorridos até a data do balanço, calculados pro rata dia.
+
+
+
+
+                                                              Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 31
+
+=== página 32 ===
+ Relatório da                     Relatório dos Auditores       Demonstrações                                          Declarações dos
+                                                                                          Notas Explicativas
+ Administração                    Independentes                 Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+d.1) Operações Compromissadas
+
+Venda com Compromisso de Recompra
+
+Os títulos de renda fixa próprios utilizados para lastrear as operações compromissadas são destacados em contas específicas do ativo
+(títulos vinculados) na data da operação, pelo valor médio contábil atualizado, por tipo e vencimento do papel. A diferença e ntre os
+valores de recompra e o de venda representa a despesa da operação.
+
+O Banco também utiliza lastros de terceiros para realizar captações em operações de venda com compromisso de recompra, tais
+captações são registradas como posição financiada.
+
+Compra com Compromisso de Revenda
+
+Os financiamentos concedidos mediante lastro com títulos de renda fixa (de terceiros) são registrados na posição bancada pelo valor
+de liquidação. A diferença entre os valores de revenda e de compra representa a renda da operação. Os títulos adquiridos com
+compromisso de revenda são transferidos para a posição financiada quando utilizados para lastrear operações de venda com
+compromisso de recompra.
+
+Operações Compromissadas Realizadas com Acordo de Livre Movimentação
+
+Para operações com cláusula de livre movimentação, no momento da venda definitiva dos títulos adquiridos com compromisso de
+revenda, o passivo referente à obrigação de devolução do título deve ser avaliado pelo valor de mercado do título.
+
+e) Títulos e Valores Mobiliários
+
+A carteira de títulos e valores mobiliários está demonstrada, conforme Circular n° 3.068/2001 do Banco Central, pelos seguint es
+critérios de registro e avaliação contábeis:
+
+I - títulos para negociação;
+
+II - títulos disponíveis para venda; e
+
+III - títulos mantidos até o vencimento.
+
+Na categoria títulos para negociação estão registrados os títulos e valores mobiliários adquiridos com o propósito de serem a tiva e
+frequentemente negociados e na categoria títulos mantidos até o vencimento, aqueles para os quais existe intenção e capacidade
+financeira do Banco de mantê-los em carteira até o vencimento. Na categoria títulos disponíveis para venda, estão registrados os
+títulos e valores mobiliários que não se enquadram nas categorias I e III. Os títulos e valores mobiliários classificados nas categorias I
+e II estão demonstrados pelo valor de aquisição acrescido dos rendimentos auferidos até a data do balanço, calculados pro rat a dia,
+ajustados ao valor de mercado (valor justo), computando-se a valorização ou a desvalorização decorrente de tal ajuste em
+contrapartida:
+
+(1) da adequada conta de receita ou despesa, líquida dos efeitos tributários, no resultado do período, quando relativa a tí tulos e
+valores mobiliários classificados na categoria títulos para negociação; e
+
+(2) da conta destacada do patrimônio líquido, líquida dos efeitos tributários, quando relativa a títulos e valores mobiliários classificados
+na categoria títulos disponíveis para venda. Os ajustes ao valor de mercado (valor justo) realizados na venda desses títulos são
+transferidos para o resultado do período.
+
+Os títulos e valores mobiliários classificados na categoria mantidos até o vencimento estão demonstrados pelo valor de aquisição
+acrescido dos rendimentos auferidos até a data do balanço, calculados pro rata dia.
+
+As perdas de caráter permanente no valor de realização dos títulos e valores mobiliários classificados nas categorias títulos disponíveis
+para venda e títulos mantidos até o vencimento são reconhecidas no resultado do período.
+
+f) Instrumentos Financeiros Derivativos
+
+De acordo com a Circular n° 3.082/2002 do Banco Central, os instrumentos financeiros derivativos são classificados de acordo com a
+intenção da Administração em utilizá-los como instrumento destinados a hedge ou não. As operações efetuadas por solicitação de
+clientes, por conta própria, ou que não atendam aos critérios de hedge contábil, principalmente derivativos utilizad os na
+administração da exposição global de risco, são contabilizadas pelo valor de mercado, com os ganhos e as perdas realizados e não
+realizados, reconhecidos no resultado do período.
+
+
+
+
+                                                                Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 32
+
+=== página 33 ===
+ Relatório da                     Relatório dos Auditores      Demonstrações                                          Declarações dos
+                                                                                         Notas Explicativas
+ Administração                    Independentes                Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+Os instrumentos financeiros derivativos designados como parte de uma estrutura de proteção contra riscos (hedge) podem ser
+classificados como:
+
+I - hedge de risco de mercado; e
+
+II - hedge de fluxo de caixa.
+
+Os instrumentos financeiros derivativos destinados a hedge e os respectivos objetos de hedge são ajustados ao valor de mercado,
+observado o seguinte:
+
+(1) para aqueles classificados na categoria I, a valorização ou a desvalorização é registrada em contrapartida à adequada con ta de
+receita ou despesa, líquida dos efeitos tributários, no resultado do período; e
+
+(2) para aqueles classificados na categoria II, a valorização ou desvalorização da parcela efetiva é registrada em contrapart ida à conta
+destacada do patrimônio líquido, líquida dos efeitos tributários.
+
+Alguns instrumentos financeiros híbridos são compostos por um instrumento financeiro derivativo e um ativo ou passivo não
+derivativo. Nestes casos, o instrumento financeiro derivativo representa um derivativo embutido. Os derivativos embutidos são
+registrados separadamente em relação ao contrato a que estejam vinculados.
+
+Uma vez que o Banco não detém investimentos no exterior em moeda funcional diferente do real, não há operações de hedge de
+investimento.
+
+g) Carteira de Créditos e Provisão para Perdas Esperadas Associadas ao Risco de Crédito
+
+A carteira de crédito inclui as operações de crédito, operações de arrendamento mercantil, adiantamentos sobre contratos de c âmbio
+e outros créditos com características de concessão de crédito. É demonstrada pelo seu valor presente, considerando os indexadores,
+taxa de juros e encargos pactuados, calculados pro rata dia até a data do balanço. Para operações vencidas a partir de 60 dia s, o
+reconhecimento em receitas só ocorrerá quando do seu efetivo recebimento.
+
+Normalmente, o Banco efetua a baixa de créditos para prejuízo quando estes apresentam atraso superior a 360 dias. No caso de
+operações de crédito de longo prazo (acima de 3 anos) são baixadas quando completam 540 dias de atraso. A operação de crédito
+baixada para prejuízo é registrada em conta de compensação pelo prazo mínimo de 5 anos e enquanto não esgotados todos os
+procedimentos para cobrança.
+
+As cessões de crédito sem retenção de riscos resultam na baixa dos ativos financeiros objeto da operação, que passam a ser mantidos
+em conta de compensação. O resultado da cessão é reconhecido integralmente, quando de sua realização.
+
+Conforme determinado pela Resolução CMN nº 3.533/2008, todas as cessões de crédito com retenção substancial de riscos passam
+a ter seus resultados reconhecidos pelos prazos remanescentes das operações, e os ativos financeiros objetos da cessão permanecem
+registrados como operações de crédito e o valor recebido como obrigações por operações de venda ou de transferência de ativos
+financeiros.
+
+As provisões para operações de crédito são fundamentadas nas análises das operações de crédito em aberto (vencidas e vincendas),
+na experiência passada, expectativas futuras e riscos específicos das carteiras e na política de avaliação de risco da Admini stração na
+constituição das provisões, conforme estabelecido pela Resolução CMN nº 2.682/1999.
+
+A Resolução CMN n° 4.855/2020, que entrou em vigor em 1º de janeiro de 2021, determina que, para os critérios de provisão de
+operações realizadas no âmbito dos programas instituídos com o propósito de enfrentamento dos efeitos da pandemia da COVID -
+19 na economia, nas quais haja compartilhamento de recursos ou de riscos entre a União e as instituições participantes ou garantia
+prestada pela União, os percentuais definidos na Resolução CMN nº 2.682/1999, devem ser aplicados somente sobre a parcela do
+valor contábil da operação, cujo risco de crédito é detido pela instituição. Nos casos de transferência para prejuízo, o montante levado
+para contas de compensação deve ser de 100% do saldo da operação.
+
+g.1) Reestruturação de Operação de Crédito
+
+A Resolução CMN nº 4.803/2020, posteriormente alterada pela Resolução CMN n° 4.855/2020 mencionada acima, permitiu às
+Instituições Financeiras reclassificar para o nível em que estavam classificadas em 29 de fevereiro de 2020, as operações renegociadas
+entre 1º de março a 31 de dezembro de 2020, não incluindo aquelas operações com atraso igual ou superior a quinze dias em 29 de
+fevereiro de 2020 e que apresentem evidências de incapacidade de honrar a obrigação nas novas condições pactuadas.
+
+
+
+
+                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 33
+
+=== página 34 ===
+ Relatório da                     Relatório dos Auditores    Demonstrações                                          Declarações dos
+                                                                                       Notas Explicativas
+ Administração                    Independentes              Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+h) Ativos Não Financeiros Mantidos para Venda e Outros Valores e Bens
+
+Ativos não financeiros mantidos para venda incluem o valor contábil de itens individuais, grupos de alienação ou itens que façam
+parte de uma unidade de negócios destinada à alienação (operações descontinuadas), cuja venda em sua condição atual seja
+altamente provável e cuja ocorrência é esperada para dentro de um ano.
+
+Outros valores e bens referem-se principalmente a ativos não financeiros, compostos basicamente por imóveis e veículos recebidos
+em liquidação de instrumentos financeiros de difícil ou duvidosa solução não destinados ao próprio uso.
+
+Ativos não financeiros mantidos para venda e outros valores e bens são registrados e avaliados pelo menor valor entre; o valor
+contábil líquido e o valor justo líquido de despesa de vendas, na data em que forem classificados nessa categoria e não são
+depreciados.
+
+i) Despesas Antecipadas
+
+São contabilizadas as aplicações de recursos em pagamentos antecipados, cujos benefícios ou prestação de serviços ocorrerão em
+exercícios seguintes e são apropriadas ao resultado, de acordo com a vigência dos respectivos contratos.
+
+i.1) Comissões Pagas a Correspondentes Bancários
+
+Conforme Resolução CMN nº 4.935/2021 e Circular Bacen nº 3.693/2013, as comissões pagas aos agentes intermediadores da
+originação de novas operações de crédito ficam limitadas aos percentuais máximos de (i) 6% do valor da nova operação originad a e
+(ii) 3% do valor da operação objeto de portabilidade.
+
+As referidas comissões devem ser integralmente reconhecidas como despesa quando incorridas.
+
+j) Investimentos
+
+Os investimentos em sociedades coligadas e controladas são inicialmente reconhecidos pelo seu valor de aquisição, e posteriormente
+avaliados pelo método de equivalência patrimonial e os resultados apurados são reconhecidos em resultado de participações em
+coligadas e controladas. Os outros investimentos estão avaliados ao custo, reduzidos ao valor recuperável, quando aplicável.
+
+Mudança no Escopo de Consolidação – Consiste na alienação, aquisição ou mudança de controle de determinado investimento.
+
+k) Imobilizado de Uso
+
+É demonstrado ao custo de aquisição, líquido das respectivas depreciações acumuladas e está sujeito à avaliação do valor recuperável
+em períodos anuais.
+
+A depreciação do imobilizado é feita pelo método linear, com base nas seguintes taxas anuais: edificações - 4%, instalações, móveis,
+equipamentos de uso e sistemas de segurança e comunicações - 10%, sistemas de processamento de dados e veículos - 20% e
+benfeitorias em imóveis de terceiros - 10% ou até o vencimento do contrato de locação.
+
+l) Intangível
+
+O ágio na aquisição de sociedades controladas e coligadas é amortizado em até 10 anos, observada a expectativa de resultados
+futuros e está sujeito à avaliação do valor recuperável em períodos anuais ou em maior frequência se as condições ou circunst âncias
+indicarem a possibilidade de perda de seu valor.
+
+Os direitos por aquisição de folhas de pagamento são contabilizados pelos valores pagos na aquisição de direitos de prestação de
+serviços de pagamento de salários, proventos, soldos, vencimentos, aposentadorias, pensões e similares, de entidades públicas ou
+privadas, e amortizados de acordo com a vigência dos respectivos contratos.
+
+Os gastos de aquisição e desenvolvimento de software são amortizados pelo prazo máximo de 5 anos.
+
+m) Provisões Técnicas Relacionadas às Atividades de Previdência e de Capitalização
+
+As provisões técnicas são constituídas e calculadas de acordo com as determinações e critérios estabelecidos na regulamentação do
+Conselho Nacional de Seguros Privados (CNSP) e da Superintendência de Seguros Privados (Susep).
+
+Provisões Técnicas de Previdência
+
+As provisões técnicas são constituídas, principalmente, de acordo com os critérios abaixo:
+
+• Provisões Matemáticas de Benefícios a Conceder e Concedidos (PMBaC e PMBC)
+
+
+
+
+                                                             Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 34
+
+=== página 54 ===
+  Relatório da                    Relatório dos Auditores    Demonstrações                                  Declarações dos
+                                                                                   Notas Explicativas
+  Administração                   Independentes              Financeiras                                    Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+                                                                                                                                                                                         Banco/Consolidado
+                                                                                                                                                                                              Valor Nominal
+                                                                                                                          31/12/2022                                                              31/12/2021
+                                                                       Risco Retido - Swap de Taxa de     Risco Transferido - Swap de    Risco Retido - Swap de Taxa de          Risco Transferido - Swap de
+                                                                                        Retorno Total                          Crédito                    Retorno Total                               Crédito
+Swap de Créditos                                                                            3.725.358                                -                        3.984.392                                     -
+Total                                                                                      3.725.358                                 -                       3.984.392                                      -
+
+
+
+                                                                                                                          31/12/2022                                                                31/12/2021
+Futuros - Brutos                                                                  Acima de 12 Meses                             Total                Acima de 12 Meses                                   Total
+Por Instrumento: CDS                                                                       3.725.358                        3.725.358                         3.984.392                              3.984.392
+Por Classificação de Risco: Abaixo do Grau de Investimento                                 3.725.358                        3.725.358                         3.984.392                              3.984.392
+Por Entidade de Referência: Governo Brasileiro                                             3.725.358                        3.725.358                         3.984.392                              3.984.392
+
+
+VI) Instrumentos Financeiros Derivativos - Margens Dadas em Garantia
+
+A margem dada em garantia de operações negociadas na B3 com instrumentos financeiros derivativos próprios e de terceiros é co mposta por títulos públicos federais.
+
+                                                                                                                                Banco                                                             Consolidado
+                                                                                         31/12/2022                        31/12/2021                         31/12/2022                            31/12/2021
+Letras Financeiras do Tesouro - LFT                                                       13.623.247                       28.481.618                          18.269.122                           31.305.549
+Letras do Tesouro Nacional - LTN                                                           1.694.357                        1.015.470                           3.291.246                            3.751.223
+Notas do Tesouro Nacional - NTN                                                            7.900.510                        4.551.507                          10.904.676                            7.725.538
+Total                                                                                    23.218.114                       34.048.594                          32.465.044                           42.782.310
+
+
+
+7. Relações Interfinanceiras
+
+O saldo da rubrica relações interfinanceiras é composto por créditos vinculados representados, principalmente, por depósitos efetuados no Bacen para cumprimento das exigibilidades dos compulsórios
+sobre depósitos à vista, depósitos de poupança e depósitos a prazo e por pagamentos e recebimentos a liquidar, representados por cheques e outros papéis remetidos ao serviço de compensação e
+transações de pagamento (posição ativa e passiva).
+
+
+
+
+                                                                                                                              Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 54
+
+=== página 55 ===
+ Relatório da                     Relatório dos Auditores         Demonstrações                                         Declarações dos
+                                                                                           Notas Explicativas
+ Administração                    Independentes                   Financeiras                                           Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+     8.   Carteira de Créditos e Provisão para Perdas Esperadas Associadas ao Risco de Crédito
+
+a) Carteira de Créditos
+
+                                                                                                        Banco                        Consolidado
+                                                                               31/12/2022          31/12/2021       31/12/2022         31/12/2021
+Operações de Crédito                                                          343.372.638        317.359.419       411.414.378       383.479.674
+Empréstimos e Títulos Descontados                                              219.131.829        209.544.801       222.068.396       211.026.403
+Financiamentos                                                                  50.362.934         39.635.785       115.468.107       104.274.438
+Financiamentos Rurais e Agroindustriais                                         15.608.384         13.409.499        15.608.384        13.409.499
+Financiamentos Imobiliários                                                     58.269.491         54.769.334        58.269.491        54.769.334
+Operações de Arrendamento Mercantil                                                     -                  -         2.920.719         2.695.952
+Adiantamentos sobre Contratos de Câmbio (1)                                     6.019.522          6.380.642         6.019.522         6.380.642
+Outros Créditos (2)                                                            66.001.113         66.841.237        69.398.431        70.101.593
+Créditos por Avais e Fianças Honrados (Nota 10.a.)                                 366.567            169.942           587.156           471.385
+Rendas a Receber de Adiantamento Concedido e Importações Financiadas
+(Nota 9)                                                                                125.214       131.244           125.214           131.244
+Outros Créditos Diversos                                                             65.509.332    66.540.051        68.686.061        69.498.964
+Total                                                                            415.393.273     390.581.298       489.753.050       462.657.861
+(1) Os adiantamentos sobre contratos de câmbio estão classificados como redução de outras obrigações.
+(2) Devedores por compra de valores e bens e títulos e créditos a receber (Nota 12).
+
+Operações de Venda ou de Transferência de Ativos Financeiros
+
+De acordo com a Resolução CMN nº 3.533/2008 e alterações posteriores, as operações de cessão de crédito com retenção substanc ial
+dos riscos e benefícios, passaram a partir de 1 de janeiro de 2012 a permanecer registradas na carteira de c rédito. Para as operações
+de cessão de crédito realizadas até 31 de dezembro de 2011, independente da retenção ou transferência substancial de riscos e
+benefícios, os ativos financeiros eram baixados do registro da operação original e o resultado apurado n a cessão apropriada ao
+resultado do período.
+
+(i) Com Transferência Substancial de Riscos e Benefícios
+
+No Banco e no Consolidado, durante o exercício findo em 31 de dezembro de 2022, foram realizadas operações de cessão de créditos
+sem coobrigação no montante de R$ 9.598.823 - (31/12/2021 - R$13.255.965), sendo R$1.395.670 em Carteira Ativa, gerando um
+resultado positivo de R$134.280 (31/12/2021 – R$195.649) e, R$ 8.203.153 em Carteira de Prejuízo. Esses montantes referiam-se a
+operações, substancialmente, de empréstimos e títulos descontados, não tendo valores deste montante com empresa do Grupo.
+
+(ii) Com Retenção Substancial de Riscos e Benefícios
+
+Em dezembro de 2011, o Banco realizou cessão de créditos com coobrigação referente à financiamento imobiliário no montante de
+R$ 688.821, cujos vencimentos ocorrerão até outubro de 2041. Em 31 de dezembro de 2022, o valor presente das operações cedidas
+é de R$ 32.647 - (31/12/2021- R$40.790).
+
+Estas operações de cessão foram realizadas com cláusula de coobrigação, sendo prevista a recompra compulsória nas seguintes
+situações:
+
+- Contratos inadimplentes por um período superior a 90 dias consecutivos;
+
+- Contratos objeto de renegociação;
+
+- Contratos objeto de portabilidade, nos termos da Resolução CMN nº 3.401/2006; e
+
+- Contratos objeto de interveniência.
+
+O valor de recompra compulsória será calculado pelo saldo devedor do crédito devidamente atualizado na data da respe ctiva
+recompra.
+
+A partir da data da cessão, os fluxos de caixa das operações cedidas serão pagos diretamente à entidade cessionária.
+
+
+
+
+                                                                 Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 55
+
+=== página 56 ===
+ Relatório da                     Relatório dos Auditores            Demonstrações                                           Declarações dos
+                                                                                                Notas Explicativas
+ Administração                    Independentes                      Financeiras                                             Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+b) Carteira de Créditos por Vencimento
+
+b.1) Operações de Crédito e Arrendamento Mercantil
+
+                                                                                                             Banco                       Consolidado
+                                                                                    31/12/2022          31/12/2021       31/12/2022       31/12/2021
+Vencidas                                                                             10.010.890          8.046.212        11.365.501       9.111.771
+A vencer:
+  Até 3 meses                                                                        51.112.801         48.840.796       60.419.997        57.901.539
+  De 3 a 12 meses                                                                    80.033.981         73.115.136      103.396.133        95.338.039
+  Acima de 12 meses                                                                 202.214.966        187.357.275      239.153.466       223.824.277
+Total                                                                              343.372.638        317.359.419      414.335.097       386.175.626
+
+
+
+b.2) Outros Créditos e Adiantamentos
+
+                                                                                                             Banco                       Consolidado
+                                                                                    31/12/2022          31/12/2021       31/12/2022       31/12/2021
+Vencidas                                                                               379.244             558.326          471.443          740.219
+A vencer:
+  Até 3 meses                                                                        44.440.153         46.699.791        45.553.123       47.788.649
+  De 3 a 12 meses                                                                    22.097.675         21.271.124        23.894.467       22.939.799
+  Acima de 12 meses                                                                   5.103.563          4.692.638         5.498.920        5.013.568
+Total                                                                               72.020.635         73.221.879        75.417.953       76.482.235
+
+
+
+c) Carteira de Créditos por Setor de Atividades
+
+                                                                                                            Banco                          Consolidado
+                                                                                   31/12/2022          31/12/2021        31/12/2022         31/12/2021
+Setor Privado                                                                     414.136.260        389.584.358       488.495.452        461.660.021
+Indústria                                                                           77.071.821         66.175.356         78.400.599        67.326.360
+Comércio                                                                            49.695.023         46.914.290         55.942.928        52.116.991
+Instituições Financeiras                                                             1.964.768          1.409.948           1.490.891         1.139.660
+Serviços e Outros (1)                                                               57.372.140         64.288.268         64.765.459        70.874.163
+Pessoas Físicas                                                                   222.713.048        206.057.453       282.525.830        265.381.454
+  Cartão de Crédito                                                                 47.890.503         45.804.859         47.890.503        45.804.859
+  Crédito Imobiliário                                                               56.263.363         52.992.797         56.263.363        52.992.797
+  Crédito Consignado                                                                58.550.295         52.303.502         58.550.295        52.303.502
+  Financiamento e Leasing de Veículos                                                  995.712          1.703.858         56.645.490        56.514.921
+  Outros (2)                                                                        59.013.175         53.252.437         63.176.179        57.765.375
+Agricultura                                                                         5.319.460          4.739.043          5.369.745          4.821.393
+Setor Público                                                                       1.257.013             996.940         1.257.598            997.840
+Governo Estadual                                                                        88.423            331.735              88.423           331.735
+Governo Municipal                                                                    1.168.590            665.205           1.169.175           666.105
+Total                                                                             415.393.273        390.581.298       489.753.050        462.657.861
+(1) Inclui as atividades de crédito imobiliário às construtoras/incorporadoras (plano empresarial), serviços de transporte, de saúde, pessoais entre
+outros.
+(2) Inclui crédito pessoal, cheque especial entre outros.
+
+
+
+
+                                                                     Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 56
+
+=== página 57 ===
+  Relatório da                    Relatório dos Auditores           Demonstrações                                         Declarações dos
+                                                                                              Notas Explicativas
+  Administração                   Independentes                     Financeiras                                           Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+d) Carteira de Créditos e da Provisão para Perdas Esperadas Associadas ao Risco de Crédito Distribuída pelos Correspondentes Níveis de Risco
+
+                                                                                                                                                                                                                        Banco
+                                                                                                                  31/12/2022                                                                                        31/12/2021
+                                                          Carteira de Créditos                                       Provisão                               Carteira de Créditos                                      Provisão
+              %Provisão
+Nível de        Mínima                                                                                                                                   Curso
+Risco         Requerida Curso Normal         Curso Anormal (1)        Total (3)    Requerida     Adicional (2)          Total Curso Normal        Anormal (1)     Total (3)          Requerida Adicional (2)             Total
+AA                0,0%    182.891.334                       -      182.891.334             -               -               -    180.139.073                -   180.139.073                   -          -                   -
+A                 0,5%    111.655.015                       -      111.655.015        558.275               6         558.281   104.992.054                -   104.992.054              524.960          2             524.962
+B                 1,0%     33.944.746                2.713.488      36.658.234        366.582             209         366.791    35.871.587         2.253.434   38.125.021              381.250        167             381.417
+C                 3,0%     28.690.898                2.437.240      31.128.138        933.844           1.831         935.675    29.029.189         2.798.938   31.828.127              954.844      1.899             956.743
+D                10,0%     13.414.768                3.670.370      17.085.138      1.708.514         104.986       1.813.500    10.439.757         3.063.622   13.503.379            1.350.338  2.206.475           3.556.813
+E                30,0%      7.184.838                3.145.705      10.330.543      3.099.163         119.771       3.218.934     2.346.953         2.301.009    4.647.962            1.394.389    757.194           2.151.583
+F                50,0%      2.633.480                2.645.496       5.278.976      2.639.488         862.240       3.501.728     1.828.300         1.831.787    3.660.087            1.830.043    582.385           2.412.428
+G                70,0%      2.721.163                2.546.902       5.268.065      3.687.645       1.202.336       4.889.981     1.865.631         1.570.929    3.436.560            2.405.590    643.556           3.049.146
+H               100,0%      4.663.505               10.368.118      15.031.623     15.031.623              -       15.031.623     3.375.689         6.964.787   10.340.476           10.340.475         -           10.340.475
+Total               -    387.799.747               27.527.319     415.327.066     28.025.134       2.291.379      30.316.513   369.888.233        20.784.506 390.672.739            19.181.889 4.191.678           23.373.567
+Circulante                                                                                                         9.003.810                                                                                        6.208.228
+Não Circulante                                                                                                    21.312.703                                                                                       17.165.339
+
+
+                                                                                                                                                                                                                  Consolidado
+                                                                                                                  31/12/2022                                                                                       31/12/2021
+                                                          Carteira de Créditos                                       Provisão                               Carteira de Créditos                                     Provisão
+             % Provisão
+Nível de        Mínima                                                                                                                                      Curso
+Risco        Requerida Curso Normal         Curso Anormal (1)           Total (3)     Requerida Adicional (2)              Total Curso Normal        Anormal (1)       Total (3)      Requerida Adicional (2)            Total
+AA                0,0%   200.385.215                         -       200.385.215               -              -               -      199.635.521              -    199.635.521               -             -                -
+A                 0,5%   148.370.146                      3.081      148.373.227         741.866               6         741.872     138.688.667           2.090   138.690.757          693.454            -           693.454
+B                 1,0%    41.821.551                  4.552.974       46.374.525         463.745             209         463.954      44.189.990       3.890.801     48.080.791         480.808           167          480.975
+C                 3,0%    30.787.777                  4.154.955       34.942.732       1.048.282           1.831       1.050.113      31.313.221       4.196.290     35.509.511       1.065.285         1.899       1.067.184
+D                10,0%    14.209.145                  4.683.498       18.892.643       1.889.264         104.991       1.994.255      11.009.408       3.847.376     14.856.784       1.485.678     2.245.960       3.731.638
+E                30,0%     7.385.922                  3.857.417       11.243.339       3.373.002         119.771       3.492.773       2.633.675       2.896.095      5.529.770       1.658.931       887.864       2.546.795
+F                50,0%     2.920.740                  3.244.118        6.164.858       3.082.429         862.240       3.944.669       1.936.705       2.275.793      4.212.498       2.106.249       690.148       2.796.397
+G                70,0%     2.807.941                  3.015.922        5.823.863       4.076.704       1.202.336       5.279.040       2.031.334       1.916.832      3.948.166       2.763.716       765.637       3.529.353
+H               100,0%     5.021.018                12.465.423        17.486.441     17.486.441               -       17.486.441       3.690.054       8.595.444     12.285.498      12.285.498            -       12.285.498
+Total                   453.709.455                35.977.388      489.686.843      32.161.733        2.291.384     34.453.117      435.128.575      27.620.721 462.749.296         22.539.619 4.591.675          27.131.294
+Circulante                                                                                                           10.656.597                                                                                    7.706.994
+Não Circulante                                                                                                       23.796.520                                                                                   19.424.300
+(1) Inclui parcelas vincendas e vencidas.
+(2) A provisão adicional é constituída com base principalmente na expectativa de realização da carteira de crédito, em adição ao mínimo requ erido pela regulamentação vigente.
+(3) No Banco e no Consolidado o total da carteira de créditos inclui o valor de R$ 66.207 - (31/12/2021- R$91.435), referente ao ajuste a valor de mercado das operações de crédito que são objeto de proteção, registrados de
+acordo com o artigo 5 da Carta Circular 3.624 do Bacen de 26 de dezembro de 2013 e que não estão contemplados na nota dos níveis de riscos.
+
+
+
+                                                                                                                                              Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 57
+
+=== página 58 ===
+    Relatório da                  Relatório dos Auditores             Demonstrações                                            Declarações dos
+                                                                                                Notas Explicativas
+    Administração                 Independentes                       Financeiras                                              Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+Programa Emergencial de Suporte a Empregos (PESE)
+
+ Conforme a Resolução CMN nº 4.846/20, demonstramos a seguir, as operações relacionadas ao Programa Emergencial de Suporte
+a Empregos (PESE), classificadas por nível de risco e juntamente com o montante da provisão constituída para cada nível de risco:
+
+                                                                                                                                      Banco/Consolidado
+                                                                                                31/12/2022                                   31/12/2021
+
+                        % Provisão Mínima                                                Provisão Requerida                           Provisão Requerida
+Nível de Risco                                                                  Ativo                                       Ativo
+                                Requerida                                                               (1)                                          (1)
+
+AA                                      0,0%                                    5.990                        -              9.132                     -
+A                                       0,5%                                  152.344                   114               401.095                   301
+B                                       1,0%                                   62.462                    94               276.818                   415
+C                                       3,0%                                   91.149                   410               285.783                  1.286
+D                                      10,0%                                   82.236                 1.234               165.099                  2.476
+E                                      30,0%                                    7.974                   359                15.153                   682
+F                                      50,0%                                    4.398                   330                19.682                  1.476
+G                                      70,0%                                    4.212                   442                15.714                  1.650
+H                                     100,0%                                  285.143                 8.487               120.077                18.011
+Total                                                                        695.908                11.470              1.308.553                26.297
+(1) Saldo de provisão constituída sobre a parcela do crédito cujo risco é do Banco Santander (Brasil) S.A.
+
+
+
+e) Movimentação da Provisão para Perdas Esperadas Associadas ao Risco de Crédito
+
+                                                                                                             Banco                          Consolidado
+                                                                                         01/01 a            01/01 a            01/01 a           01/01 a
+                                                                                     31/12/2022         31/12/2021         31/12/2022        31/12/2021
+Saldo Inicial                                                                        23.373.567         21.835.445         27.131.294        25.067.489
+Constituições Líquidas das Reversões                                                  20.819.824         12.580.038         24.805.825        15.356.108
+Baixas                                                                               (13.876.878)       (11.041.916)       (17.484.002)      (13.292.303)
+Saldo Final                                                                          30.316.513         23.373.567         34.453.117        27.131.294
+Créditos Recuperados                                                                  2.382.789          3.005.852          3.010.301         3.422.116
+
+
+
+f) Créditos Renegociados
+
+                                                                                                      Banco                                 Consolidado
+                                                                          31/12/2022             31/12/2021            31/12/2022             31/12/2021
+Créditos Renegociados                                                      32.020.885            20.005.822             36.922.114            23.634.268
+Provisão para Perdas Esperadas Associadas ao Risco de Crédito             (16.382.264)          (10.100.946)           (18.050.001)          (11.120.588)
+Percentual de Cobertura sobre a Carteira de Renegociação                        51,2%                 50,5%                  48,9%                 47,1%
+
+
+
+g) Concentração de Crédito
+
+                                                                                                                                            Consolidado
+                                                                                               31/12/2022                                    31/12/2021
+Carteira de Crédito com Avais e Fianças (1), Títulos e Valores
+Mobiliários (2) e Instrumentos Financeiros Derivativos (3)                        Risco                    %                 Risco                     %
+Maior Devedor                                                                 7.664.790                1,2%              6.767.732                  1,4%
+10 Maiores                                                                  45.301.948                 7,1%             40.864.829                  7,5%
+20 Maiores                                                                  67.455.138                10,6%             60.535.018                 11,2%
+50 Maiores                                                                106.339.412                 16,7%             93.411.357                 17,6%
+100 Maiores                                                               140.646.054                 22,1%            124.364.929                 23,1%
+(1) Inclui as parcelas de crédito a liberar para construtoras/incorporadoras.
+(2) Refere-se à posição de debêntures, notas promissórias e certificados de recebíveis imobiliários - CRI.
+(3) Refere-se ao risco de crédito de derivativos.
+
+
+
+
+                                                                      Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 58
+
+=== página 59 ===
+ Relatório da                     Relatório dos Auditores      Demonstrações                                          Declarações dos
+                                                                                         Notas Explicativas
+ Administração                    Independentes                Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+9. Carteira de Câmbio
+
+Carteira de Câmbio
+                                                                                                                         Banco/Consolidado
+                                                                                                                 31/12/2022     31/12/2021
+Ativo
+Direitos sobre Venda de Câmbio                                                                                    59.206.385        25.885.822
+Câmbio Comprado a Liquidar                                                                                        37.956.916        38.311.762
+Adiantamentos em Moeda Nacional Recebidos                                                                           (428.837)         (138.651)
+Rendas a Receber de Adiantamentos Concedidos e Importações Financiadas
+(Nota 8.a)                                                                                                          125.214           131.244
+Cambiais e Documentos a Prazo em Moedas Estrangeiras                                                                      -             2.752
+Total                                                                                                            96.859.678        64.192.929
+Passivo
+Câmbio Vendido a Liquidar                                                                                         70.558.496        34.822.053
+Obrigações por Compra de Câmbio                                                                                   26.956.254        29.117.239
+Adiantamentos sobre Contratos de Câmbio (Nota 8.a)                                                                (6.019.522)       (6.380.642)
+Outros                                                                                                                   129               141
+Total                                                                                                            91.495.357        57.558.791
+
+
+
+Contas de Compensação
+Créditos Abertos para Importação                                                                                 1.192.865            2.433.568
+Créditos de Exportação Confirmados                                                                                  42.803              288.822
+
+
+
+10. Outros Ativos Financeiros
+     a)   Outros Ativos Financeiros
+
+                                                                                                                                        Banco
+                                                                                                              31/12/2022            31/12/2021
+                                                                                                                     Total                Total
+Carteira de Câmbio                                                                                             96.859.678           64.192.929
+Negociação e Intermediação de Valores                                                                           3.026.543            5.625.242
+Relações Interfinanceiras                                                                                      95.324.074           87.981.008
+Créditos por Avais e Fianças Honrados (Nota 8.a.)                                                                 366.567              169.942
+Total                                                                                                        195.576.862          157.969.121
+
+
+Circulante                                                                                                   188.955.414          149.591.910
+Não Circulante                                                                                                 6.621.448             8.377.211
+
+                                                                                                                                  Consolidado
+                                                                                                              31/12/2022            31/12/2021
+Carteira de Câmbio                                                                                             96.859.678           64.192.929
+Negociação e Intermediação de Valores                                                                           4.740.568            6.723.764
+Relações Interfinanceiras                                                                                      95.643.095           88.376.555
+Créditos por Avais e Fianças Honrados (Nota 8.a.)                                                                 587.156              471.385
+Total                                                                                                        197.830.497          159.764.633
+
+
+Circulante                                                                                                   189.292.202          149.081.133
+Não Circulante                                                                                                 8.538.295           10.683.500
+
+
+
+
+                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 59
+
+=== página 65 ===
+  Relatório da                    Relatório dos Auditores   Demonstrações                        Declarações dos
+                                                                            Notas Explicativas
+  Administração                   Independentes             Financeiras                          Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+c.2) Expectativa de Exigibilidade dos Passivos Fiscais Diferidos
+
+                                                                                                                                                                                          Banco
+                                                                                                                                                                                    31/12/2022
+                                                                                                                        Diferenças Temporárias                                             Total
+Ano                                                                                                              IRPJ                    CSLL             PIS/COFINS                Registrados
+2023                                                                                                         330.603                  263.041                  62.913                  656.557
+2024                                                                                                         330.603                  263.041                  62.913                  656.557
+2025                                                                                                         330.603                  263.041                  62.913                  656.557
+2026                                                                                                         328.825                  263.041                  62.913                  654.779
+2027                                                                                                         328.825                  263.041                  62.913                  654.779
+2028 a 2032                                                                                                   29.631                   23.612                       -                    53.243
+Até 2033                                                                                                            -                       -                       -                         -
+Total                                                                                                      1.679.090                1.338.817                314.565                 3.332.472
+
+
+
+                                                                                                                                                                                   Consolidado
+                                                                                                                                                                                    31/12/2022
+                                                                                                                        Diferenças Temporárias                                            Total
+Ano                                                                                                              IRPJ                    CSLL             PIS/COFINS                Registrados
+2023                                                                                                         660.753                  334.146                  85.107                 1.080.006
+2024                                                                                                         673.104                  338.593                  85.107                 1.096.804
+2025                                                                                                         492.979                  334.146                  85.107                   912.232
+2026                                                                                                         464.042                  318.435                  83.309                   865.786
+2027                                                                                                         464.042                  318.435                  83.309                   865.786
+2028 a 2032                                                                                                   36.039                   26.129                       -                    62.168
+Até 2033                                                                                                            -                       -                       -                         -
+Total                                                                                                      2.790.959                1.669.884                421.939                 4.882.782
+
+
+
+
+                                                                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 65
+
+=== página 66 ===
+ Relatório da                     Relatório dos Auditores           Demonstrações                                          Declarações dos
+                                                                                             Notas Explicativas
+ Administração                    Independentes                     Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+d) Imposto de Renda e Contribuição Social
+
+
+
+                                                                                                              Banco                    Consolidado
+                                                                                          01/01 a            01/01 a       01/01 a            01/01 a
+                                                                                      31/12/2022        31/12/2021     31/12/2022        31/12/2021
+Resultado antes da Tributação sobre o Lucro e Participações                           12.888.608       21.216.882      17.297.797       23.671.563
+Participações no Lucro (1)                                                             (1.938.115)       (1.860.596)    (2.222.015)       (2.059.673)
+Resultado não Realizado                                                                         -                 -           (176)             (142)
+Resultado antes dos Impostos                                                          10.950.493       19.356.286      15.075.606       21.611.748
+Encargo Total do Imposto de Renda e Contribuição Social às Alíquotas de 25% e
+20%, Respectivamente (3)                                                               (4.927.722)     (9.678.143)     (6.825.273)     (10.805.874)
+Resultado de Participações em Coligadas e Controladas (2)                                2.689.799       1.838.324           (6.889)         34.697
+Despesas Indedutíveis Líquidas de Receitas não Tributáveis                                 814.609        (221.023)      1.171.504         (230.261)
+Juros sobre o Capital Próprio                                                            2.359.306       1.810.797       2.404.610        1.854.422
+Variação Cambial de Investimentos no Exterior                                                    -         768.902                -         768.902
+IRPJ e CSLL sobre as Diferenças Temporárias e Prejuízo Fiscal de Exercícios Anteriores     691.037         264.650         302.404          264.191
+Efeito da Majoração da Alíquota de CSLL (3)                                                      -         553.901         716.350        1.196.504
+Demais Ajustes, Incluindo Lucros Disponibilizados no Exterior                             (218.997)        301.814         (88.943)         414.194
+Imposto de Renda e Contribuição Social                                                  1.408.032      (4.360.778)     (2.326.237)      (6.503.225)
+Impostos Correntes                                                                       (106.875)     (2.161.881)     (3.268.848)      (4.653.737)
+Imposto de renda e contribuição social do período                                         (106.875)     (2.161.881)     (3.268.848)      (4.653.737)
+Impostos Diferidos                                                                        763.439      (1.328.439)        169.063         (895.292)
+Constituição/realização no período sobre adições e exclusões temporárias - Resultado       763.439      (1.328.439)        169.063         (895.292)
+Movimentação do Período:                                                                         -       (870.458)          20.545        (953.457)
+Base Negativa de Contribuição Social                                                             -        (375.801)         29.297         (380.409)
+Prejuízo Fiscal                                                                                  -        (494.657)          (8.752)       (573.048)
+Constituição no período sobre:                                                            751.468                -        753.003             (739)
+Base Negativa de Contribuição Social                                                       369.333               -         370.039             (284)
+Prejuízo Fiscal                                                                            382.135               -         382.964             (455)
+Total dos impostos diferidos                                                            1.514.907      (2.198.897)        942.611       (1.849.488)
+Imposto de Renda e Contribuição Social                                                  1.408.032      (4.360.778)     (2.326.237)      (6.503.225)
+
+(1) A base de cálculo é o lucro líquido, após o IR e CSLL.
+(2) No resultado de participações em coligadas e controladas não estão incluídos os juros sobre o capital próprio recebidos e a receber.
+(3) Em 2021, a Lei nº 14.183/2021 majorou a alíquota das empresas financeiras de 15% para 20% e dos Bancos de 20% para 25% de julho a dezembro
+    de 2021. Em 2022, a CSLL foi majorada de 15% para 16% para empresas Financeiras e de 20% para 21% de agosto a dezembro de 2022, de acordo
+    com a Lei 14.446/22.No Consolidado consideramos as diferenças de alíquotas de CSLL de 9% (empresas não financeiras), 16% (empresas
+    Financeiras) e 21% (Bancos). Além dos eventos recorrentes demonstrados nessa linha, também foram reconhecidos os valores relativos do
+    julgamento do Tema 962 pelo Supremo Tribunal Federal (STF) a não incidência do IRPJ e da CSLL sobre os valores atinentes à taxa Selic de
+    repetição de indébito tributário.
+
+Hedge Cambial da Agência Grand Cayman, da Agência de Luxemburgo
+
+O Banco Santander opera agências nas Ilhas Cayman e em Luxemburgo, que são usadas principalmente para a captação de recursos
+nos mercados de capital e financeiro internacionais, para o fornecimento ao Banco de linhas de crédito que são estendidas aos seus
+clientes para financiamentos ao comércio exterior e capital de giro.
+
+Para cobrir a exposição a variações cambiais, o Banco utiliza derivativos e captações. De acordo com as regras fiscais b rasileiras, os
+ganhos ou perdas decorrentes do impacto da valorização ou desvalorização do Real sobre os investimentos estrangeiros não eram
+tributáveis, mas a partir de janeiro de 2021 passaram a ser tributáveis ou dedutíveis para fins de IR/CSLL, enquanto que os ganhos ou
+perdas dos derivativos utilizados como cobertura são tributáveis ou dedutíveis. O objetivo desses derivativos é o de proteger o
+resultado líquido após impostos.
+
+A Lei 14.031, de 28 de julho de 2020, determinou que a partir de janeiro de 2021, 50% da variação cambial dos investimentos no
+exterior deverá ser computada na determinação do lucro real e na base de cálculo da Contribuição Social sobre o Lucro Líquido (CSLL)
+da pessoa jurídica investidora domiciliada no País. A partir de 2022, a variação cambial foi integralmente computada nas bases
+tributáveis do IRPJ e CSLL.
+
+O tratamento fiscal ainda distinto para os tributos PIS e COFINS, de tais diferenças cambiais, resulta em volatilidade no "Resultado
+Operacional antes da Tributação" e na rubrica de "Impostos de renda e contribuição social". A seguir constam os efeitos das operações
+efetuadas, bem como o efeito total do Hedge cambial para os exercícios findos em 31 de dezembro de 2022 e 2021:
+
+
+
+
+                                                                   Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 66
+
+=== página 67 ===
+ Relatório da                      Relatório dos Auditores              Demonstrações                                          Declarações dos
+                                                                                                  Notas Explicativas
+ Administração                     Independentes                        Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+                                                                                                                               01/01 a            01/01 a
+Em Reais Milhões                                                                                                           31/12/2022         31/12/2021
+Resultado da Intermediação Financeira
+  Resultado gerado em decorrência das variações cambiais sobre investimento do Banco na Agência de Cayman,
+  Luxemburgo                                                                                                                     (2.644)            3.862
+  Resultado gerado em decorrência dos contratos de derivativos utilizados como hedge cambial                                      2.773            (6.374)
+Despesas Tributárias
+Efeito fiscal dos contratos de derivativos utilizados como hedge cambial - PIS/COFINS                                               (129)            275
+Imposto de Renda e Contribuição Social
+  Efeito fiscal dos contratos de derivativos utilizados como hedge cambial - IR/CS                                                     -           2.237
+
+
+
+e) Despesas Tributarias
+
+                                                                                                   Banco                                    Consolidado
+
+                                                                        01/01 a                   01/01 a                01/01 a                  01/01 a
+                                                                    31/12/2022                30/12/2021             31/12/2022               31/12/2021
+Despesa com Cofins                                                    2.171.376                 2.101.852               3.098.441              2.867.884
+Despesa com ISS                                                         621.822                   639.152                812.849                 825.008
+Despesa com PIS                                                         352.849                   341.551                546.630                 488.354
+Outras                                                                  390.810                   289.077                554.202                 349.781
+Total                                                                3.536.857                 3.371.632               5.012.122              4.531.027
+
+
+
+
+     12. Outros Ativos
+
+                                                                                                      Banco                                 Consolidado
+                                                                          31/12/2022             31/12/2021           31/12/2022              31/12/2021
+Títulos e Créditos a Receber
+  Cartões de Crédito                                                       38.799.284            38.697.565             38.799.284            38.697.565
+  Direitos Creditórios (1)                                                 26.052.723            27.228.813             31.761.056            31.770.716
+Devedores por Depósitos em Garantia
+  Para Interposição de Recursos Fiscais                                     5.416.291              5.481.136             7.284.567             7.258.166
+  Para Interposição de Recursos Trabalhistas                                1.643.491              1.648.343             1.760.965             1.752.187
+  Outros - Cíveis                                                             723.830              1.096.701               903.062             1.286.274
+Garantias Contratuais de Ex-Controladores (Nota 20.f.)                            496                    496                   496                   496
+Pagamentos a Ressarcir                                                        133.949               178.077                149.153               192.562
+Adiantamentos Salariais/Outros                                                 87.632               199.212              1.909.304               856.579
+Plano de Benefícios a Funcionários (Nota 29.a.)                               235.377               231.100                292.770               287.809
+Devedores por Compra de Valores e Bens                                        525.978               551.756                646.886               602.780
+Valores a Receber de Sociedades Ligadas                                        29.862                 38.827               256.384               242.217
+Rendas a Receber                                                            2.934.909              3.077.494             2.608.540             3.110.771
+Outros Valores e Bens                                                       1.774.655              1.361.411             1.990.836             1.552.099
+Outros (2)                                                                  5.435.171              2.081.481             7.382.926             2.755.980
+Total                                                                     83.793.648            81.872.412             95.746.229            90.366.201
+
+
+Circulante                                                                69.993.173            67.383.339             79.362.666            73.005.988
+Não Circulante                                                            13.800.475            14.489.073             16.383.563            17.360.213
+     (1)     Consiste em operações com características de cessão de crédito, substancialmente, compostas por operações de "Confirming" com pessoas
+             jurídicas sujeitas ao risco de crédito e análise de perdas esperadas associadas ao risco de crédito por segmento, de acordo com as políticas
+             de risco do Banco.
+     (2)     Nos períodos findos em 31 de dezembro de 2022 e 2021, inclui, principalmente, saldos em aberto dos Fundos de Direito Creditórios (FIDC)
+             estes relacionados na nota explicativa Escopo de Consolidação (nota 14).
+
+
+
+
+                                                                        Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 67
+
+=== página 72 ===
+ Relatório da                     Relatório dos Auditores         Demonstrações                                         Declarações dos
+                                                                                           Notas Explicativas
+ Administração                    Independentes                   Financeiras                                           Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+     15. Imobilizado de Uso
+                                                                                                                                           Banco
+                                                                                                             31/12/2022               31/12/2021
+                                                                    Custo           Depreciação                 Residual                Residual
+Imóveis de Uso                                                 2.425.172               (951.895)              1.473.277               1.546.882
+Terrenos                                                          629.138                      -                 629.138                 640.772
+Edificações                                                     1.796.034               (951.895)                844.139                 906.110
+Outras Imobilizações de Uso                                   13.604.298             (9.365.300)              4.238.998               4.519.804
+Instalações, Móveis e Equipamentos de Uso                       5.747.634             (3.848.098)              1.899.536               1.982.893
+Sistemas de Processamento de Dados                              2.537.400             (1.703.794)                833.606                 927.367
+Benfeitorias em Imóveis de Terceiros                            4.330.347             (3.187.311)              1.143.036               1.271.430
+Sistemas de Segurança e Comunicações                              919.358               (600.926)                318.432                 282.965
+Outras                                                             69.559                (25.171)                 44.388                  55.149
+Total                                                         16.029.470            (10.317.195)              5.712.275               6.066.686
+
+                                                                                                                                    Consolidado
+                                                                                                             31/12/2022              31/12/2021
+                                                                    Custo           Depreciação                 Residual                Residual
+Imóveis de Uso                                                 2.711.940             (1.023.637)              1.688.303               1.774.302
+Terrenos                                                          698.906                      -                 698.906                 712.200
+Edificações                                                     2.013.034             (1.023.637)                989.397               1.062.102
+Outras Imobilizações de Uso                                   13.923.997             (9.497.247)              4.426.750               4.610.046
+Instalações, Móveis e Equipamentos de Uso                       5.824.735             (3.880.750)              1.943.985               1.983.785
+Sistemas de Processamento de Dados                              2.635.567             (1.718.489)                917.078                 951.003
+Benfeitorias em Imóveis de Terceiros                            4.450.016             (3.268.340)              1.181.676               1.316.232
+Sistemas de Segurança e Comunicações                              923.401               (604.374)                319.027                 283.684
+Outras                                                             90.278                (25.294)                 64.984                  75.342
+Total                                                         16.635.937            (10.520.884)              6.115.053               6.384.348
+
+
+
+     16. Intangível
+                                                                                                                                           Banco
+                                                                                                             31/12/2022               31/12/2021
+                                                                    Custo           Amortização                  Líquido                 Líquido
+Ágio na Aquisição de Sociedades Controladas                   27.220.515            (26.717.730)                502.785                 702.497
+Outros Ativos Intangíveis                                     12.311.516             (6.499.159)              5.812.357               4.568.941
+Aquisição e Desenvolvimento de Logiciais                        7.856.265             (4.513.702)              3.342.563               2.711.778
+Direitos por Aquisição de Folhas de Pagamento                   4.281.871             (1.853.385)              2.428.486               1.792.934
+Outros                                                            173.380               (132.072)                 41.308                  64.229
+Total                                                         39.532.031            (33.216.889)              6.315.142               5.271.438
+
+
+
+
+                                                                                                                                    Consolidado
+                                                                                                             31/12/2022              31/12/2021
+                                                                     Custo          Amortização                  Líquido                 Líquido
+Ágio na Aquisição de Sociedades Controladas                    28.292.002           (27.036.037)              1.255.965               1.434.721
+Outros Ativos Intangíveis                                      12.810.585            (6.774.410)              6.036.176               4.687.979
+Aquisição e Desenvolvimento de Logiciais                         8.333.226            (4.757.051)              3.576.175               2.845.136
+Direitos por Aquisição de Folhas de Pagamento                    4.281.872            (1.853.385)              2.428.487               1.792.935
+Outros                                                             195.488              (163.974)                 31.514                  49.908
+Total                                                          41.102.587           (33.810.447)              7.292.141               6.122.700
+(*) Para o exercício findo em 31 de dezembro de 2022, não houve impairment.
+
+
+
+
+                                                                 Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 72
+
+=== página 73 ===
+  Relatório da                    Relatório dos Auditores               Demonstrações                               Declarações dos
+                                                                                           Notas Explicativas
+  Administração                   Independentes                         Financeiras                                 Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+     17. Captações
+
+a) Abertura de contas Patrimoniais
+
+                                                                                                                                                                                                            Banco
+                                                                                                                                                                               31/12/2022               31/12/2021
+
+                                                                                        Sem Vencimento          Até 3 Meses   De 3 a 12 Meses   Acima de 12 Meses                     Total                   Total
+Depósitos                                                                                   95.814.154      102.763.606          100.809.203           122.526.177            421.913.140             406.882.409
+Depósitos à Vista                                                                            35.548.256                -                    -                     -             35.548.256              40.776.429
+Depósitos de Poupança                                                                        60.204.483                -                    -                     -             60.204.483              65.220.066
+Depósitos Interfinanceiros                                                                            -        2.247.316            3.322.210               230.841              5.800.367               5.621.237
+Depósitos a Prazo (1)                                                                            61.415      100.516.290           97.486.993           122.295.336            320.360.034             295.264.677
+Captações no Mercado Aberto                                                                           -      21.053.999            2.735.011            93.179.916            116.968.926             100.870.087
+Carteira Própria                                                                                      -       17.850.738               87.949            41.603.586             59.542.273              75.114.059
+  Títulos Públicos                                                                                    -          510.939               53.816            41.597.960             42.162.715              61.635.928
+  Outros                                                                                              -       17.339.799               34.133                 5.626             17.379.558              13.478.131
+Carteira de Terceiros                                                                                 -                -                    -            31.905.978             31.905.978               6.859.710
+Carteira de Livre Movimentação                                                                        -        3.203.261            2.647.062            19.670.352             25.520.675              18.896.318
+Recursos de Aceites e Emissão de Títulos                                                              -      14.971.170           40.218.240            92.686.125            147.875.535             115.842.979
+Recursos de Letras Imobiliárias, Hipotecárias, de Crédito e Similares                                 -       10.857.263           34.250.912            55.336.557            100.444.732              73.517.897
+  Letras de Crédito Imobiliário - LCI (2)                                                             -        4.217.733            7.394.352            22.527.080             34.139.165              28.924.170
+  Letras de Crédito do Agronegócio - LCA                                                              -        5.251.634           12.492.241             6.301.445             24.045.320              16.989.434
+  Letras Financeiras - LF (3)                                                                         -        1.386.702           14.364.319            17.962.027             33.713.048              25.074.264
+  Letras Imobiliárias Garantidas - LIG (4)                                                            -            1.194                    -             8.546.005              8.547.199               2.530.030
+Obrigações por Títulos e Valores Mobiliários no Exterior                                              -        3.861.139            4.662.390            32.075.615             40.599.144              38.427.171
+Certificados de Operações Estruturadas                                                                -          252.768            1.304.938             5.273.953              6.831.659               3.897.911
+Obrigações por Empréstimos e Repasses                                                                 -      29.973.488           38.394.664            13.277.406             81.645.558              91.581.834
+Obrigações por Empréstimos no Exterior                                                                -       28.639.557           34.892.324             4.143.215             67.675.096              79.728.750
+  Linhas de Financiamento à Exportação e Importação                                                   -       12.117.778           18.581.223             1.940.214             32.639.215              50.769.169
+  Outras Linhas de Crédito                                                                            -       16.521.779           16.311.101             2.203.001             35.035.881              28.959.581
+Obrigações por Repasses do País                                                                       -        1.333.931            3.502.340             9.134.191             13.970.462              11.853.084
+Total                                                                                       95.814.154      168.762.263          182.157.118           321.669.624            768.403.159             715.177.309
+
+Circulante                                                                                  95.814.154      168.762.263          182.157.118                     -            446.733.535             496.745.355
+Não Circulante                                                                                       -                -                    -           321.669.624            321.669.624             218.431.954
+
+
+
+
+                                                                                                                                  Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 73
+
+=== página 74 ===
+  Relatório da                    Relatório dos Auditores               Demonstrações                                    Declarações dos
+                                                                                             Notas Explicativas
+  Administração                   Independentes                         Financeiras                                      Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+                                                                                                                                                                                                                Consolidado
+                                                                                                                                                                                         31/12/2022              31/12/2021
+
+                                                                                        Sem Vencimento              Até 3 Meses        De 3 a 12 Meses    Acima de 12 Meses                    Total                   Total
+Depósitos                                                                                   95.711.018             102.412.483            100.234.409          122.570.919              420.928.829             403.639.687
+Depósitos à Vista                                                                            35.336.874                       -                       -                    -              35.336.874              40.454.250
+Depósitos de Poupança                                                                        60.204.483                       -                       -                    -              60.204.483              65.220.066
+Depósitos Interfinanceiros                                                                            -               1.555.593               2.744.484              275.488               4.575.565               4.723.077
+Depósitos a Prazo (1)                                                                            61.415             100.856.890             97.489.925          122.295.431              320.703.661             293.242.294
+Outros Depósitos                                                                                108.246                       -                       -                    -                 108.246                       -
+Captações no Mercado Aberto                                                                           -             20.814.653               2.681.195           86.265.076             109.760.924              95.648.600
+Carteira Própria                                                                                      -              17.611.392                  34.133           38.676.000              56.321.525              71.192.568
+  Títulos Públicos                                                                                    -                 271.118                       -           38.670.374              38.941.492              57.714.437
+  Outros                                                                                              -              17.339.799                  34.133                5.626              17.379.558              13.478.131
+Carteira de Terceiros                                                                                 -                       -                       -           27.918.724              27.918.724               5.559.714
+Carteira de Livre Movimentação                                                                        -               3.203.261               2.647.062           19.670.352              25.520.675              18.896.318
+Recursos de Aceites e Emissão de Títulos                                                              -             16.408.519             39.523.634            71.476.933             127.409.086              95.380.860
+Recursos de Aceites Cambiais                                                                          -                  80.600                 150.461              978.621               1.209.682               1.361.443
+Recursos de Letras Imobiliárias, Hipotecárias, de Crédito e Similares                                 -              11.505.308             34.992.606            58.361.704             104.859.618              77.169.438
+  Letras de Crédito Imobiliário - LCI (2)                                                             -               4.217.733               7.394.352           22.527.080              34.139.165              28.924.170
+  Letras de Crédito do Agronegócio - LCA                                                              -               5.251.633             12.492.241             6.301.445              24.045.319              16.989.434
+  Letras Financeiras - LF (3)                                                                         -               2.034.748             15.106.013            20.987.174              38.127.935              28.725.804
+  Letras Imobiliárias Garantidas - LIG (4)                                                            -                   1.194                       -            8.546.005               8.547.199               2.530.030
+Obrigações por Títulos e Valores Mobiliários no Exterior                                              -               4.569.843               3.075.629            6.862.654              14.508.126              12.952.068
+Certificados de Operações Estruturadas                                                                -                 252.768               1.304.938            5.273.954               6.831.660               3.897.911
+Obrigações por Empréstimos e Repasses                                                                 -             30.049.052             38.394.664            13.277.406              81.721.122              91.586.750
+Obrigações por Empréstimos no País                                                                    -                  75.564                       -                                       75.564                   4.916
+Obrigações por Empréstimos no Exterior                                                                -              28.639.557             34.892.324              4.143.215             67.675.096              79.728.750
+  Linhas de Financiamento à Exportação e Importação                                                   -              12.117.778             18.581.223              1.940.214             32.639.215              50.769.169
+  Outras Linhas de Crédito                                                                            -              16.521.779             16.311.101              2.203.001             35.035.881              28.959.581
+Obrigações por Repasses do País                                                                       -               1.333.931               3.502.340             9.134.191             13.970.462              11.853.084
+Total                                                                                       95.711.018             169.684.707            180.833.902            293.590.334            739.819.961             686.255.897
+
+Circulante                                                                                         95.711.018            169.684.707            180.833.902                       -        446.229.627           486.234.899
+Não Circulante                                                                                                -                      -                       -         293.590.334         293.590.334           200.020.998
+ (1) Consideram os vencimentos estabelecidos nas respectivas aplicações, existindo a possibilidade de saque imediato, de forma antecipada ao seu vencimento.
+ (2) Letras de crédito imobiliário são títulos de renda fixa lastreados por créditos imobiliários e garantidos por hipoteca ou por alienação fiduciária de bem imóvel. Em 31 de dezembro de 2022 possuem prazo de vencimento
+      entre 2023 e 2028.
+ (3) As principais características das letras financeiras são prazo mínimo de dois anos, valor nominal mínimo de R$ 50 e permissão de resgate antecipado de apenas 5% do montante emitido. Em 31 de dezembro de 2022
+      possuem prazo de vencimento entre 2023 e 2032.
+ (4) Letras Imobiliárias Garantidas são títulos de renda fixa lastreados por créditos Imobiliários garantidos pelo emissor e por u m pool de créditos imobiliários apartados dos demais ativos do emissor. Em 31 de dezembro
+      de 2022, possuem prazo de vencimento entre 2023 e 2035 (31/12/2021 - com prazo de vencimento entre 2022 e 2035).
+
+
+
+
+                                                                                                                                            Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 74
+
+=== página 75 ===
+  Relatório da                    Relatório dos Auditores            Demonstrações                                          Declarações dos
+                                                                                               Notas Explicativas
+  Administração                   Independentes                      Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+No Banco e no Consolidado, as linhas de financiamento à exportação e importação são recursos captados junto a instituições fi nanceiras
+no exterior, destinados à aplicação em operações comerciais de câmbio, relativas a desconto de letras de exportação e pré-financiamento
+à exportação e importação, cujos vencimentos vão até o ano de 2023 (31/12/2021 - até o ano de 2024) e estão sujeitas a encargos
+financeiros, correspondentes à variação cambial acrescida de juros que variam de 1,09% a 6,45% a.a. (31/12/2021 - de 0,33% a.a. a 4,75%
+a.a.).
+
+As obrigações por repasses do país - instituições oficiais têm incidência de encargos financeiros correspondentes a TJLP, variação cambial
+da cesta de moedas do BNDES ou a variação cambial do Dólar americano, acrescidos de juros, de acordo com as políticas operaci onais
+do Sistema BNDES.
+
+b) Obrigações por Títulos e Valores Mobiliários no Exterior:
+
+                                                                                                  Banco                                      Consolidado
+                                                                     31/12/2022               31/12/2021               31/12/2022             31/12/2021
+                                       Taxa de Juros
+Emissão            Vencimento até      (a.a.)                              Total                   Total                     Total                  Total
+2018               2025                               4,4%               221.113                 336.367                         -                306.253
+2019               2027                    Até 6,4% + CDI              1.829.032               5.067.541                    32.204              1.189.699
+2020               2027                       Até 9% + CDI             1.508.500              16.243.390                    90.068              3.363.551
+2021               2031                       Até 9% + CDI            17.519.679              16.779.872                 6.306.335              8.092.563
+2022               2035                       Até 9% + CDI            19.520.820                       -                 8.079.519                      -
+Total                                                                40.599.144              38.427.171                14.508.126             12.952.068
+
+
+
+c) Abertura de contas de resultado
+
+                                                                                                              Banco                         Consolidado
+                                                                                         01/01 a            01/01 a           01/01 a             01/01 a
+                                                                                     31/12/2022         31/12/2021        31/12/2022          31/12/2021
+Depósitos a Prazo (1) (2)                                                             25.003.223         12.363.768         21.619.497        12.221.164
+Depósitos de Poupança                                                                  4.513.237           2.059.346         4.513.237          2.059.346
+Depósitos Interfinanceiros                                                               551.284            216.372            428.845            266.846
+Captação no Mercado Aberto                                                            12.745.181           5.472.444        12.106.850          5.269.305
+Atualização e Juros de Provisões de
+Previdência e de Capitalização                                                                  -              5.626           275.320            190.736
+Outras (3)                                                                            12.388.906         14.433.171         13.071.934        14.627.630
+Total                                                                                55.201.831        34.550.727          52.015.683        34.635.027
+(1) No Banco e no Consolidado, inclui o registro de juros no valor de R$ 863.395 (2021 - R$ 885.718), referente a emissão de Instrumento de Dívida Elegível
+a Capital Nível I e II (Nota 18.b).
+(2) Inclui despesa de variação cambial no valor de R$ 5.414.167 no Banco e no Consolidado (2021 - despesa de variação cambial no valor de R$ 1.528.068
+no Banco e no Consolidado).
+(3) Em 31 de dezembro de 2022 inclui despesa de variação cambial no valor de R$ 1.089.010 no Banco e no Consolidado (2021 – Despesa de variação
+cambial no valor de R$ 9.161.115).
+
+
+
+
+                                                                          Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 75
+
+=== página 77 ===
+ Relatório da                     Relatório dos Auditores             Demonstrações                                             Declarações dos
+                                                                                               Notas Explicativas
+ Administração                    Independentes                       Financeiras                                               Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+     19. Outros Passivos
+                                                                                                             Banco                        Consolidado
+                                                                                      31/12/2022        31/12/2021          31/12/2022     31/12/2021
+Provisão Técnica para Operações de Capitalização                                                -                -            4.271.215     3.747.397
+Obrigações com Cartões de Crédito                                                      40.274.848       40.390.304           40.544.183    40.674.867
+Provisão para Riscos Fiscais e Obrigações Legais (Nota 20.b)                            4.141.393        4.312.234            6.722.249     6.748.684
+Provisão para Processos Judiciais e Administrativos - Ações Trabalhistas e Cíveis
+(Nota 20.b)                                                                             4.257.374           5.033.675         4.594.202     5.325.716
+Provisão para Garantias Financeiras Prestadas                                             413.438             324.728           413.438       324.728
+Plano de Benefícios a Funcionários (Nota 29)                                            1.752.607           2.699.902         1.775.202     2.728.125
+Obrigações por Aquisição de Bens e Direitos                                                 4.995              22.307             4.995        22.307
+Provisão para Processos Judiciais e Administrativos - Responsabilidade de Ex-
+Controladores (Nota 20.f)                                                                    496                 496                496           496
+Provisão para Pagamentos a Efetuar
+  Despesas de Pessoal                                                                   1.901.611        1.794.489            2.265.757     2.077.434
+  Despesas Administrativas                                                                239.761          254.802              516.502       393.089
+  Outros Pagamentos                                                                        66.564           84.847              192.212       223.968
+Credores por Recursos a Liberar                                                           996.143        1.485.921              996.143     1.485.921
+Obrigações por Prestação de Serviço de Pagamento                                          612.844          619.570              612.844       619.570
+Fornecedores                                                                              588.811          777.377            1.000.553     1.318.328
+Sociais e Estatutárias                                                                    850.219        1.149.828            1.062.494     1.468.031
+Obrigações com Operações TVM Exterior                                                   3.775.387        4.033.863            3.775.387     4.033.863
+Débitos com Operações de Seguros                                                                -                -            1.949.710     2.015.370
+Outras (1)                                                                              4.478.017        2.534.892            8.719.931     6.729.058
+Total                                                                                 64.354.508       65.519.235           79.417.513    79.936.952
+
+Circulante                                                                            30.260.094       10.218.257           36.571.840    16.164.475
+Não Circulante                                                                        34.094.414       55.300.978           42.845.673    63.772.477
+(1) Inclui impactos da variação cambial referentes a Notes.
+
+
+a) Provisão para Garantias Financeiras Prestadas
+
+A classificação das operações de garantias prestadas para constituição de provisionamento é baseada na estimativa do risco
+envolvido. Decorre do processo de avaliação da qualidade dos clientes e operações, por modelo estatístico baseado em informações
+quantitativas e qualitativas ou por um analista de crédito especializado, que permite classificá-las em função de sua probabilidade de
+default, baseado em variáveis objetivas internas e de mercado (bureaus), previamente identificadas como preditivas da probabilidade
+de default. Após essa avaliação, as operações são classificadas de acordo com os ratings de provisionamento, tendo como refer ência
+a Resolução CMN nº 2.682/1999. Através desta análise, são registrados os valores de provisão para a cobertura de cada operação,
+considerando o tipo da garantia prestada, de acordo com o requerido na Resolução CMN nº 4.512/2016.
+
+                                                                                                                                    Banco/Consolidado
+                                                                                            31/12/2022                                     31/12/2021
+                                                                   Saldo Garantias                             Saldo Garantias
+Tipo de Garantia Financeira                                              Prestadas             Provisão              Prestadas               Provisão
+Vinculadas ao Comércio Internacional de Mercadorias                      2.156.115               27.835              6.244.755                 28.506
+Vinculadas a Licitações, Leilões, Prestação de Serviços ou
+Execução de Obras                                                         6.454.815                 7.369               6.796.175               4.198
+Vinculadas ao Fornecimento de Mercadorias                                 1.965.704                 1.448               1.698.518               2.442
+Aval ou Fiança em Processos Judiciais e Administrativos de
+Natureza Fiscal                                                          12.188.938            308.422              11.823.964               243.235
+Outros Avais                                                                 93.919              1.774                 376.784                 1.897
+Outras Fianças Bancárias                                                 23.192.067             60.752              19.525.773                36.489
+Outras Garantias Financeiras Prestadas                                      267.886              5.837                  88.388                 7.960
+Total                                                                   46.319.444             413.437             46.554.357                324.727
+
+
+
+
+                                                                     Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 77
+
+=== página 78 ===
+ Relatório da                     Relatório dos Auditores             Demonstrações                                          Declarações dos
+                                                                                                   Notas Explicativas
+ Administração                    Independentes                       Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+Movimentação da Provisão para Garantias Financeiras Prestadas
+
+                                                                                                                            Banco/Consolidado
+                                                                                                                 01/01 a                 01/01 a
+                                                                                                            31/12/2022              31/12/2021
+Saldo Inicial                                                                                                   324.728                255.179
+Constituição                                                                                                      93.304                 95.431
+Reversão (1)                                                                                                      (4.595)               (25.883)
+Saldo                                                                                                           413.437                324.727
+(1) Corresponde a fianças honradas, mudança de rating ou provisão constituída na linha de Provisão para Perdas Esperadas Associadas ao Risco de
+Crédito.
+
+     20. Provisões, Passivos Contingentes, Ativos Contingentes e Obrigações Legais - Fiscais e Previdenciárias
+
+a) Ativos Contingentes
+
+No Banco e no Consolidado, em 31 de dezembro de 2022 e 31 de dezembro de 2021, não foram reconhecidos contabilmente ativos
+contingentes.
+
+b) Saldos Patrimoniais das Provisões para Processos Judiciais e Administrativos e Obrigações Legais por Natureza
+
+                                                                                                           Banco                          Consolidado
+                                                                                     31/12/2022        31/12/2021       31/12/2022         31/12/2021
+Provisão para Riscos Fiscais e Obrigações Legais (Nota 19)                            4.141.393        4.312.234         6.722.249          6.748.684
+Provisão para Processos Judiciais e Administrativos - Ações
+Trabalhistas e Cíveis (Nota 19)                                                       4.257.374        5.033.675         4.594.202          5.325.716
+Ações Trabalhistas                                                                     1.532.949        1.941.169         1.711.146          2.084.247
+Ações Cíveis                                                                           2.724.425        3.092.506         2.883.056          3.241.469
+Total                                                                                 8.398.767        9.345.909        11.316.451         12.074.400
+
+
+
+c) Movimentação das Provisões para Processos Judiciais e Administrativos e Obrigações Legais
+
+                                                                                                                                                 Banco
+                                                                                            01/01 a                                             01/01 a
+                                                                                        31/12/2022                                         31/12/2021
+                                                      Fiscais       Trabalhistas         Cíveis          Fiscais       Trabalhistas        Cíveis
+Saldo Inicial                                         4.312.234        1.941.169         3.092.507       4.249.744        2.656.098        3.265.784
+Constituição Líquida de Reversão (1)                     144.787          720.840           298.527          85.877          800.704           462.721
+Atualização Monetária                                    198.085          105.314           306.736         102.210           99.391           409.410
+Baixas por Pagamento                                    (513.713)      (1.234.374)         (973.345)       (125.597)      (1.615.024)       (1.045.408)
+Saldo Final (3)                                       4.141.393        1.532.949         2.724.425       4.312.234        1.941.169        3.092.507
+Depósitos em Garantia - Outros Créditos                1.473.382          708.426           271.252       1.330.438          690.146           695.474
+Depósitos em Garantia - Títulos e Valores
+Mobiliários                                               2.904            1.469               203           3.177            3.810            1.330
+Total dos Depósitos em Garantia (2)                   1.476.286          709.895           271.455       1.333.615          693.956          696.804
+
+
+                                                                                                                                         Consolidado
+                                                                                            01/01 a                                           01/01 a
+                                                                                        31/12/2022                                        31/12/2021
+                                                      Fiscais       Trabalhistas         Cíveis          Fiscais       Trabalhistas        Cíveis
+Saldo Inicial                                       6.748.684          2.084.247        3.241.469     6.707.293        2.900.835        3.441.445
+Constituição Líquida de Reversão (1)                   165.120            802.359          510.104       124.822          833.487          628.477
+Atualização Monetária                                  350.668            108.372          309.743       156.021           99.416          414.472
+Baixas por Pagamento                                  (542.223)        (1.283.832)      (1.178.260)     (239.452)      (1.749.491)      (1.242.925)
+Saldo Final (3)                                     6.722.249          1.711.146        2.883.056     6.748.684        2.084.247        3.241.469
+Depósitos em Garantia - Outros Créditos              2.812.055            751.114          279.236     2.571.110          733.616          705.768
+Depósitos em Garantia - Títulos e Valores
+Mobiliários                                               4.003              1.469             203         4.177            3.810            1.330
+Total dos Depósitos em Garantia (2)                 2.816.058            752.583          279.439     2.575.287          737.426          707.098
+(1) Riscos fiscais contemplam as constituições de provisões para impostos relacionados a processos judiciais e administrativos e obrigações lega is,
+contabilizados em outras receitas operacionais e outras despesas operacionais e IR e CSLL.
+(2) Referem-se aos valores de depósitos em garantias, limitados ao valor da provisão e não contemplam os depósitos em garantia relativos as
+contingências possíveis e/ou remotas e depósitos recursais.
+(3) Os saldos finais são compostos por R$ 4.141.393, R$ 5.910.093, R$ 3.015.365 de provisão no Banco e R$ 6.722.249, R$ 6.281.983, R$ 3.253.660 no
+consolidado e de R$ 0, R$ 4.377.144, R$ 290.939 de conta redutora no Banco e R$ 0, R$ 4.570.837, R$ 370.604 no consolidado registrados pagamentos
+parciais de processos não encerrados de natureza fiscal, trabalhista e cível respectivamente.
+
+
+                                                                      Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 78
+
+=== página 79 ===
+ Relatório da                     Relatório dos Auditores    Demonstrações                                          Declarações dos
+                                                                                       Notas Explicativas
+ Administração                    Independentes              Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+d) Provisões Fiscais e Previdenciárias, Trabalhistas e Cíveis
+
+O Banco Santander e suas controladas são parte integrantes em processos judiciais e administrativos de natureza fiscal e
+previdenciária, trabalhista e cível, decorrentes do curso normal de suas atividades.
+
+As provisões foram constituídas com base na natureza, complexidade e histórico das ações e na avaliação de perda das ações das
+empresas com base nas opiniões dos assessores jurídicos internos e externos. O Banco Santander tem por política provisionar
+integralmente o valor em risco das ações cuja avaliação é de perda provável. As obrigações legais de natureza fiscal e previdenciária
+têm os seus montantes reconhecidos integralmente nas demonstrações financeiras.
+
+A Administração entende que as provisões constituídas são suficientes para atender obrigações legais e eventuais perdas decorrentes
+de processos judiciais e administrativos conforme segue:
+
+d.1) Processos Judiciais e Administrativos de Natureza Fiscais e Previdenciárias
+
+Principais processos judiciais e administrativos relacionados a obrigações legais, fiscais e previdenciárias
+
+PIS e COFINS - R$ 1.983.243 no Banco e R$ 4.233.700 no Consolidado (31/12/2021 - R$1.973.373 no Banco e R$4.090.025 no
+Consolidado): o Banco Santander e as empresas controladas ajuizaram medidas judiciais visando afastar a aplicação da Lei nº
+9.718/1998, que modificou a base de cálculo do PIS e da COFINS para que incidissem sobre todas as receitas das pessoas jurídi cas e
+não apenas sobre aquelas decorrentes de prestação de serviços e venda de mercadorias. Em relação ao processo do Banco Santander,
+em 23 de abril de 2015, foi publicada decisão do Supremo Tribunal Federal (STF) admitindo o Recurso Extraordinário interposto pela
+União referente ao PIS e negando o seguimento ao Recurso Extraordinário do Ministério Público Federal referente à COFINS. Ambos
+recorreram desta decisão, sem qualquer sucesso, de modo que o pleito referente à COFINS está definido, prevalecendo a sentenç a
+do Tribunal Regional Federal da 4ª Região de agosto de 2007, favorável ao Banco Santander. Seguem pendentes de julgamento
+definitivo pelo STF a exigibilidade do PIS do Banco Santander, bem como a exigibilidade do PIS e da COFINS das demais empresa s
+controladas.
+
+Principais processos judiciais e administrativos com risco de perda provável
+
+O Banco Santander e suas empresas controladas são partes em processos judiciais e administrativos relacionados a discussões fiscais
+e previdenciárias, que são classificados com base na opinião dos assessores jurídicos, como risco de perda provável.
+
+Contribuição Provisória sobre a Movimentação Financeira (CPMF) em Operações de Clientes - R$ 1.016.253 (31/12/2021 -
+R$945.715) no Banco e Consolidado: em maio de 2003, a Receita Federal do Brasil lavrou um auto de infração na Santander
+Distribuidora de Títulos e Valores Mobiliários Ltda. (Santander DTVM) e outro auto no Banco Santander (Brasil) S.A. O objeto dos
+autos foi a cobrança de CPMF sobre operações efetuadas pela Santander DTVM na administração de recursos de seus clientes e
+serviços de compensação prestados pelo Banco para a Santander DTVM, ocorridos durante os anos de 2000, 2001 e 2002. O processo
+administrativo se encerrou desfavorável para ambas as Companhias. Em 3 de julho de 2015, Banco e Santander Brasil Tecnologia S.A.
+(atual denominação da Produban Serviços de Informática S.A. e Santander DTVM) impetraram ação judicial visando anular ambos os
+débitos fiscais. Referida ação teve sentença e acórdão improcedentes, o que ensejou as interposições de Recurso Especial ao STJ e
+Recurso Extraordinário ao STF, que aguardam julgamento. Com base na avaliação dos assessores jurídicos, foi constituída provisão
+para fazer face à perda considerada provável na ação judicial.
+
+Instituto Nacional do Seguro Social (INSS) - R$ 130.164 no Banco e R$ 133.593 no Consolidado (31/12/2021 - R$53.936 no Banco
+e R$53.936 no Consolidado): o Banco Santander e as empresas controladas discutem administrativa e judicialmente a cobrança da
+contribuição previdenciária e do salário-educação sobre diversas verbas que, segundo avaliação dos assessores jurídicos, não
+possuem natureza salarial.
+
+Imposto sobre Serviços (ISS) - Instituições Financeiras - R$ 288.660 Banco e R$ 319.020 no Consolidado (31/12/2021 - R$256.770
+no Banco e R$283.528 no Consolidado): o Banco Santander e as empresas controladas discutem administrativa e judicialmente a
+exigência, por vários municípios, do pagamento de ISS sobre diversas receitas decorrentes de operações que usualmente não se
+classificam como prestação de serviços. Além disso, outras ações envolvendo ISS, classificados como risco de perda possível, estão
+descritos na nota 20.e.
+
+
+
+
+d.2) Processos Judiciais e Administrativos de Natureza Trabalhista
+
+
+
+                                                             Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 79
+
+=== página 80 ===
+ Relatório da                     Relatório dos Auditores     Demonstrações                                          Declarações dos
+                                                                                        Notas Explicativas
+ Administração                    Independentes               Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+São ações movidas pelos Sindicatos, Associações, Ministério Público do Trabalho e ex-empregados pleiteando direitos trabalhistas
+que entendem devidos, em especial ao pagamento de “horas extras” e outros direitos trabalhistas, incluindo processos relacionados
+a benefícios de aposentadoria.
+
+Para ações consideradas comuns e semelhantes em natureza, as provisões são registradas com base na média histórica dos processos
+encerrados. As ações que não se enquadram no critério anterior são provisionadas de acordo com avaliação individual realizada,
+sendo as provisões constituídas com base no risco provável de perda, na lei e na jurisprudência de acordo com a avaliação de perda
+efetuada pelos assessores jurídicos.
+
+Ex-Empregados do Banespa. Ação distribuída em 1998 pela Associação de Aposentados do Banespa (AFABESP) requerendo o
+pagamento de gratificação semestral prevista no regulamento do Banco Banespa para aproximadamente 8.400 ex -empregados
+(aposentados), segundo o qual o pagamento se dará na hipótese de o Banco obter lucro e a distribuição deste lucro for aprovada
+pelo conselho de administração. A gratificação não foi paga em 1994 e 1995 porque o banco Banespa não obteve lucro durante es tes
+anos. Pagamentos parciais foram feitos entre 1996 e 2000 conforme aprovação do conselho de administração. A mencionada cláusula
+foi excluída do regulamento em 2001. O Tribunal Regional do Trabalho e o Tribunal Superior do Trabalho condenaram o Santander
+Brasil, como sucessor do Banespa, a pagar a gratificação semestral referentes aos períodos relativo ao segundo semestre de 1996 e
+semestres de 1997. Em 20 de março de 2019, uma decisão do Supremo Tribunal Federal (Supremo Tribunal Federal, ou “STF”) rejeitou
+o recurso extraordinário interposto pelo Banco Santander, o que não resolveu o mérito do processo. Ingressamos com ação rescisória
+para anular a sentença em função de ausência de legitimidade da AFABESP (segundo precedente nº 573.232 do STF) ou reconhecer
+a nulidade do acórdão do TRT que não intimou o Banco Santander sobre os efeitos modificativos da decisão, bem como para
+suspender a execução no processo principal. A ação rescisória foi julgada improcedente, sendo que dessa decisão foram opostos
+Embargos de Declaração, em função da ausência de manifestação explícita acerca dos argumentos trazidos pelo Banco. Acerca dos
+Embargos de Declaração os pontos de omissão não foram respondidos como determina a legislação, motivo pelo qual foi interpost o
+Recurso Extraordinário que teve o seguimento negado pelo TST. Desta decisão o Banco interpôs agravo, o qual está pendente de
+admissibilidade, tendo em vista que as decisões proferidas pelo Tribunal Superior do Trabalho contrariam posição já pacífica no STF
+(precedente nº 573.232), segundo o qual a Associação necessita de procuração específica para demandar em juízo, e, também a
+decisão afronta preceitos constitucionais acerca do acesso à justiça (inciso XXXV do art. 5º da CF) pela determinação de reco lhimento
+excessivo de custas. Em relação a ação principal, em agosto de 2021, foi proferida decisão que determinou que a execução fosse feita
+individualmente no foro correspondente de cada representado e a AFABESP interpôs recurso que foi negado provimento, motivo
+pelo qual a decisão transitou em julgado.
+
+Nossos consultores jurídicos classificaram o risco de perda como provável. As atuais decisões do tribunal, e tampouco da vara no
+processo principal, não definem um valor específico a ser pago pelos substituídos, devendo os valores serem apurados em regul ar
+liquidação de sentença, razão pela qual já foram distribuídas aproximadamente 4,5 mil ações de cumprimento individual da sentença
+coletiva.
+
+Em 31 de dezembro de 2022 a provisão está constituída com base na estimativa de perda provável das ações individuais contra o
+Banco.
+
+d.3) Processos Judiciais e Administrativos de Natureza Cível
+
+Estas provisões são em geral decorrentes de: (1) ações com pedido de revisão de termos e condições contratuais ou pedidos de
+ajustes monetários, incluindo supostos efeitos da implementação de vários planos econômicos do governo, (2) ações decorrentes de
+contratos de financiamento, (3) ações de execução; e (4) ações de indenização por perdas e danos. Para ações cíveis considera das
+comuns e semelhantes em natureza, as provisões são registradas com base na média histórica dos processos encerrados. As ações
+que não se enquadram no critério anterior são provisionadas de acordo com avaliação individual realizada, sendo as provisões
+constituídas com base no risco provável de perda, na lei e na jurisprudência de acordo com a avaliação de perda efetuada pelos
+assessores jurídicos.
+
+Os principais processos classificados como risco de perda provável estão descritos a seguir:
+
+Ações de Caráter Indenizatório - Referem-se à indenização por dano material e/ou moral, referentes à relação de consumo,
+versando, principalmente, sobre questões atinentes a cartões de crédito, crédito direto ao consumidor, contas correntes, cobr ança e
+empréstimos e outros assuntos. Nas ações relativas a causas consideradas semelhantes e usuais para o negócio, no curso normal das
+atividades do Banco, a provisão é constituída com base na média histórica dos processos encerrados. As ações que não se enqua dram
+no critério anterior são provisionadas de acordo com avaliação individual realizada, sendo as provisões constituídas com base no risco
+provável de perda, na lei e na jurisprudência de acordo com a avaliação de perda efetuada pelos assessores jurídicos.
+
+Planos Econômicos - Referem-se a discussões judiciais, que pleiteiam supostos expurgos inflacionários decorrentes de Planos
+Econômicos (Bresser, Verão, Collor I e II), por entenderem que tais planos violaram direitos adquiridos relativos à aplicação de índices
+inflacionários supostamente devidos a Cadernetas de Poupança, Depósitos Judiciais e Depósitos a Prazo (CDBs). As ações são
+provisionadas com base na avaliação individualizada de perda efetuada pelos assessores jurídicos.
+
+                                                              Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 80
+
+=== página 107 ===
+  Relatório da                     Relatório dos Auditores             Demonstrações                                           Declarações dos
+                                                                                                  Notas Explicativas
+  Administração                    Independentes                       Financeiras                                             Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+Os instrumentos financeiros são segregados nas carteiras de negociação (Trading Book) e carteira bancária (Banking Book), conforme
+efetuado no gerenciamento da exposição de risco de mercado, de acordo com as melhores práticas de mercado e com os critérios
+de classificação de operações e gestão de capital do Banco Central do Brasil . A carteira de negociação consiste em todas as operações
+com instrumentos financeiros e mercadorias, inclusive derivativos, mantidas com intenção de negociação. A carteira banking consiste
+nas operações estruturais provenientes das diversas linhas de negócio do Banco Santander e seus eventuais hedges. Assim sendo, de
+acordo com a natureza das atividades do Banco Santander, a análise de sensibilidade foi dividida entre as carteiras de negociação e
+bancária.
+
+O Banco Santander efetua a análise de sensibilidade dos instrumentos financeiros de acordo com a Instrução CVM nº 475/2008,
+considerando as informações de mercado e cenários que afetariam negativamente as posições do Banco.
+
+Os quadros resumos apresentados abaixo sintetizam valores de sensibilidade gerados pelos sistemas corporativos do Banco
+Santander, referente à carteira de negociação e da carteira banking, para cada um dos cenários da s carteiras do dia 31 de dezembro
+de 2022.
+
+Carteira Negociação                                                                                                                      Consolidado
+Fatores de Risco                      Descrição                                                          Cenário 1         Cenário 2           Cenário 3
+                                      Exposições sujeitas à Variação de Taxas de Juros Pré -
+Taxa de Juros em Reais                Fixadas                                                               (3.551)         (118.932)           (237.864)
+                                      Exposições sujeitas à Variação das Taxas dos Cupons de
+Cupom de Taxa de Juros                Taxa de Juros                                                           (133)            (2.163)             (4.327)
+                                      Exposições sujeitas à Variação da Taxa do Cupom de
+Cupom de Dólar                        Dólar                                                                   (338)            (1.090)             (2.180)
+                                      Exposições sujeitas à Variação das Taxas dos Cupons de
+Cupom de Outras Moedas                Moedas Estrangeiras                                                   (3.201)          (11.599)            (23.198)
+Moeda Estrangeira                     Exposições sujeitas à Variação Cambial                                (4.779)         (119.468)           (238.936)
+                                      Exposições sujeitas à Variação da Taxa de Juros de Papéis
+Eurobond/Treasury/Global              Negociados no Mercado Internacional                                     (598)            (7.856)           (15.712)
+                                      Exposições sujeitas à Variação das Taxas de Cupons de
+Inflação                              Índices de Preços                                                    (10.476)         (117.218)           (234.436)
+Ações e Índices                       Exposições sujeitas à Variação do Preço de Ações                        (428)          (10.688)            (21.375)
+                                      Exposições sujeitas à Variação do Preço de Mercadorias
+Commodities                           (Commodities)                                                           (588)          (14.688)            (29.376)
+Total (1)                                                                                                 (24.092)         (403.702)           (807.404)
+(1) Valores líquidos de efeitos tributários.
+
+Cenário 1: Choque de +10bps nas curvas de juros e 1% para variação de preços (moedas e ações);
+
+Cenário 2: Choque de +25% e -25% em todos os fatores de risco, sendo consideradas as maiores perdas por fator de risco.
+
+Cenário 3: Choque de +50% e -50% em todos os fatores de risco, sendo consideradas as maiores perdas por fator de risco.
+
+Carteira Banking                                                                                                                         Consolidado
+Fatores de Risco                      Descrição                                                         Cenário 1          Cenário 2           Cenário 3
+                                      Exposições sujeitas à Variação de Taxas de Juros Pré -
+Taxa de Juros em Reais                Fixadas                                                             (73.325)        (2.801.686)         (5.869.026)
+TR e Taxa de Juros de Longo Prazo
+                                      Exposições sujeitas à Variação de Cupons de TR e TJLP
+(TJLP)                                                                                                     (8.008)          (220.681)           (404.026)
+                                      Exposições sujeitas à Variação das Taxas de Cupons de
+Inflação                              Índices de Preços                                                   (39.332)          (629.260)         (1.159.017)
+                                      Exposições sujeitas à Variação da Taxa do Cupom de
+Cupom de Dólar                        Dólar                                                               (13.644)          (148.985)           (288.282)
+                                      Exposições sujeitas à Variação das Taxas dos Cupons de
+Cupom de Outras Moedas                Moedas Estrangeiras                                                    (399)            (5.284)            (11.041)
+Taxa de Juros Mercado                 Exposições sujeitas à Variação da Taxa de Juros de Papéis
+Internacional                         Negociados no Mercado Internacional                                 (25.479)          (290.492)           (601.714)
+Moeda Estrangeira                     Exposições sujeitas à Variação Cambial                                 (422)           (10.539)            (21.079)
+Total (1)                                                                                               (160.609)        (4.106.927)         (8.354.185)
+ (1) Valores líquidos de efeitos tributários.
+
+Cenário 1: Choque de +10bps nas curvas de juros e 1% para variação de preços (moedas);
+
+Cenário 2: Choque de +25% e -25% em todos os fatores de risco, sendo consideradas as maiores perdas por fator de risco.
+
+Cenário 3: Choque de +50% e -50% em todos os fatores de risco, sendo consideradas as maiores perdas por fator de risco.
+
+
+
+
+                                                                      Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 107
+
+=== página 108 ===
+ Relatório da                     Relatório dos Auditores     Demonstrações                                          Declarações dos
+                                                                                       Notas Explicativas
+ Administração                    Independentes               Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+     31. Reestruturações Societárias
+
+Durante o período findo em 31 de dezembro de 2022 e exercício findo em 31 de dezembro de 2021, foram implementados diversos
+movimentos societários com o intuito de reorganizar as operações e atividades das entidades de acordo com o plano de negócios
+do Banco Santander (Brasil) S.A. (“Banco Santander”, “Santander Brasil” ou “Companhia”):
+
+a)        Investimento da Lexisnexis Serviços de Análise de Risco Ltda. na Gestora de Inteligência de Crédito S.A.
+
+Em 20 de dezembro de 2022, o Banco Santander (Brasil) S.A. (“Santander”), em conjunto com os demais acionistas, realizou o
+fechamento da operação de investimento, por meio de subscrição de novas ações, pela Lexisnexis Serviços de Análise de Risco L tda.
+(“Lexisnexis”) na Gestora de Inteligência de Crédito S.A. (“GIC”). Com a conclusão da subscrição a Lexisnexis passa a ser acionista
+titular de ações equivalentes a 20% (vinte por cento) do capital social da GIC.
+
+Com a implementação do fechamento e a entrada da Lexisnexis na GIC, o Santander passa a ser titular de 15,559% das ações de
+emissão da GIC.
+
+b)      Venda da totalidade da participação detida pela Aymoré Crédito, Financiamento e Investimento S.A. no Banque PSA
+Finance, S.A. e pela Santander Corretora de Seguros, Investimentos e Serviços S.A. na PSA Corretora de Seguros e Serviços
+Ltda.
+
+Em 29 de novembro de 2022, a Aymoré Crédito, Financiamento e Investimento S.A. (“Aymoré”) e a Santander Corretora de Seguros,
+Investimentos e Serviços S.A. (“Santander Corretora de Seguros”) formalizaram, junto ao Banque PSA Finance, S.A. (“Banque PSA”) e
+Stellantis Services Ltd. (“Stellantis Services”), determinado contrato de compra e venda de participações societárias e outras avenças
+referente a venda de participações societárias detida (a) pela Aymoré, representando 50% (cinquenta por cento) do capital social do
+Banco PSA Finance Brasil S.A., para o Banque PSA, e (b) pela Santander Corretora de Seguros, representando 50% (cinquenta por
+cento) do capital social da PSA Corretora de Seguros e Serviços Ltda., para a Stellantis Services (“Operação”).
+
+A efetivação da Operação estará sujeita à implementação de determinadas condições usuais nesse tipo de transação, incluindo as
+aprovações regulatórias aplicáveis.
+
+c)      Investimento da Santander Corretora de Seguros, Investimentos e Serviços S.A. na Biomas – Serviços Ambientais,
+Restauração e Carbono S.A.
+
+Em 9 de novembro de 2022, a Santander Corretora de Seguros, Investimentos e Serviços S.A. (“Santander Corretora”) celebrou um
+acordo de investimento para se tornar acionista (“Operação”) da Biomas – Serviços Ambientais, Restauração e Carbono S.A. (“Biomas”).
+
+A Biomas é uma empresa constituída com a finalidade de prestar serviços voltados para o desenvolvimento e execução de atividades
+destinadas à restauração e conversação da biodiversidade e ecossistemas naturais, se alinhando, portanto, com os propósitos ESG
+(Environmental, Social and Governance) do Grupo Santander.
+
+A efetivação da Operação estará sujeita à celebração dos instrumentos definitivos e à implementação de determinadas condições
+usuais nesse tipo de transação, incluindo as aprovações regulatórias aplicáveis.
+
+
+
+d)      Cisão Total da Atual Serviços de Recuperação de Créditos e Meios Digitais S.A. para Return Capital S.A. e Liderança
+Serviços Especializados em Cobrança Ltda.
+
+
+Em 31 de outubro de 2022, a Atual Serviços de Recuperação de Créditos e Meios Digitais S.A. (“Atual”) foi cindida totalmente tendo
+seu patrimônio absorvido por ambas suas controladas diretas, Return Capital S.A. (“Return”) e Liderança Serviços Especializados em
+Cobrança Ltda. (“Liderança”) de acordo com as proporções estabelecidas no Protocolo e Justificação da operação. Com a
+implementação da cisão total a Return teve seu capital aumentado em R$ 3.990.617.559,32 e a Liderança em R$ 267.027.054,61,
+ambas passando a ser detidas diretamente pelo Banco Santander (Brasil) S.A. como o único acionista da Return e único sócio da
+Liderança.
+
+
+
+
+                                                            Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 108
+
+=== página 109 ===
+     Relatório da                 Relatório dos Auditores     Demonstrações                                          Declarações dos
+                                                                                       Notas Explicativas
+     Administração                Independentes               Financeiras                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+e)        Aquisição de participação na SX Tools Soluções e Serviços Compartilhados Ltda.
+
+Em 26 de setembro de 2022, o Banco Santander (Brasil) S.A. (“Banco Santander”) subscreveu o aumento de capital na SX Tools
+Soluções e Serviços Compartilhados Ltda (“SX Tools”) passando a ser o único sócio da sociedade. Em 30 de setembro de 2022 estava
+pendente a integralização do capital. A SX Tools irá atuar primariamente na prestação de serviços ao Banco Santander e empresas do
+Grupo e irá concentrar as contratações de fornecedores de tecnologias voltadas para prestação de tais serviços.
+
+f)        Aquisição de participação na CSD Central de Serviços de Registro e Depósito aos Mercados Financeiro e de Capitais
+S.A.
+
+Em 21 de janeiro de 2022, a Santander Corretora de Seguros, Investimentos e Serviços S.A. (“Santander Corretora”), em conjunto com
+outros investidores, junto a CSD Central de Serviços de Registro e Depósito aos Mercados Financeiro e de Capitais S.A. (“CSD BR”) e
+seus respectivos acionistas, determinado acordo de investimento e outras avenças (“Acordo”) com vistas à subscrição de participação
+minoritária na CSD BR (“Operação”). A CSD BR opera como uma registradora de ativos financeiros, derivativos, valores mobiliários e
+apólices de seguro, autorizada pelo Banco Central do Brasil, pela Comissão de Valores Mobiliários e pela Superintendência de Seguros
+Privados. Após o cumprimento das condições precedentes estabelecidas no Acordo, o fechamento da Operação ocorreu em 26 de
+maio de 2022, de forma que a Santander Corretora passou a deter 20% (vinte por cento) da participação acionária da CSD BR.
+
+g)        Venda da totalidade da participação detida na Paytec Tecnologia em Pagamentos Ltda. e Paytec Logística e Armazém
+Ltda.
+
+Em 26 de maio de 2022, o Banco Santander celebrou, junto à Getnet Adquirência e Serviços para Meios de Pagamento S.A. – Instituição
+de Pagamento (“Getnet IP”), o contrato de compra e venda de quotas, transferência de titularidade e outras avenças, de 100% das
+quotas sociais da Paytec Tecnologia em Pagamentos Ltda. (“Operação”). Com a implementação da Operação a Getnet IP passou a
+deter diretamente 100% das quotas da Paytec Tecnologia em Pagamentos Ltda e indiretamente o controle da Paytec Logística e
+Armazém Ltda.
+
+h)        Aquisição de Participação Societária na Monetus Investimentos Ltda. e Monetus Corretora de Seguros Ltda.
+
+Em 15 de junho de 2021, a Santander Distribuidora de Títulos e Valores Mobiliários S.A. (“Santander DTVM”, nova denominação social
+da PI Distribuidora de Títulos e Valores Mobiliários S.A.), Toro Corretora de Títulos e Valores Mobiliários S.A. (“Toro CTVM”), e Toro
+Investimentos S.A. (“Toro Investimentos” e, em conjunto com a Toro CTVM, “Toro”) celebraram, junto aos sócios de Monetus
+Investimentos Ltda., e Monetus Corretora de Seguros Ltda. (em conjunto “Monetus”), acordo de investimentos e outras avenças, pelo
+qual, uma vez efetivada a operação, a Toro Investimentos passaria a deter 100% do capital social da Monetus (“Operação”). A Monetus,
+originária de Belo Horizonte, exerce suas atividades por meio de aplicativo de investimento automatizado baseado em objetivos.
+Após o cumprimento das condições precedentes aplicáveis, o fechamento da Operação foi formalizado em 4 de janeiro de 2022.
+
+i)        Aquisição de Participação Societária na Mobills Labs Soluções em Tecnologia Ltda. e Mob Soluções em Tecnologia
+Ltda.
+
+Em 15 de junho de 2021, a Santander Distribuidora de Títulos e Valores Mobiliários S.A. (“Santander DTVM”, nova denominação social
+da PI Distribuidora de Títulos e Valores Mobiliários S.A.), Toro Corretora de Títulos e Valores Mobiliários S.A. (“Toro CTVM”), e Toro
+Investimentos S.A. (“Toro Investimentos” e, em conjunto com a Toro CTVM, “Toro”) celebraram, junto aos sócios da Mobills Labs
+Soluções em Tecnologia Ltda., e Mob Soluções em Tecnologia Ltda (em conjunto “Mobills”), acordo de investimentos e outras avenças,
+pelo qual, uma vez efetivada a operação, a Toro Investimentos passaria a deter 100% do capital social da Mobills (“Operação”). Com
+sede no Ceará, a Mobills possui uma variedade de aplicativos financeiros que contam com uma grande base de usuários, em especial
+relacionados a planejamento financeiro. Após o cumprimento das condições precedentes aplicáveis, o fechamento da Operação foi
+formalizado em 4 de janeiro de 2022.
+
+j)        Aquisição de Participação Societária na Apê11 Tecnologia e Negócios Imobiliários Ltda.
+
+Em 2 de setembro de 2021, a Santander Holding Imobiliária S.A. (“SHI”) – subsidiária integral da Companhia - celebrou, junto aos
+sócios da Apê11 Tecnologia e Negócios Imobiliários Ltda. (“Apê11”), determinados Contrato de Compra e Venda de Ações e Acordo
+de Investimento, pelos quais, uma vez efetivada a operação, passaria a deter 90% do capital social da Apê11 (“Operação”). A Apê11
+atua como um marketplace colaborativo, pioneiro na digitalização da jornada de compra de casas e apartamentos. Após o
+cumprimento das condições precedentes estabelecidas nos Acordo de Investimento Compra e Venda de Ações, o fechamento da
+Operação foi formalizado em 16 de dezembro de 2021.
+
+
+
+                                                            Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2022 | 109

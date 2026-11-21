@@ -1,0 +1,706 @@
+
+=== página 23 ===
+    Relatório dos Auditores    Demonstrações                                                          Comentário de                Composição da
+                                                            Notas Explicativas
+    Independentes              Financeiras                                                            Desempenho                   Administração
+    *Valores expressos em milhares, exceto quando indicado.
+
+
+
+g) Alienação da totalidade da participação societária detida na Summer Empreendimentos Ltda.
+
+    Em 24 de fevereiro de 2025, a Santander Holding Imobiliária S.A. (“SHI”) e o Banco Santander (Brasil) S.A. realizaram a assinatura de determinados documentos
+    estabelecendo os termos e condições de compra e venda das quotas representativas da totalidade do capital social da Summer Empreendimentos Ltda
+    ("Summer"). com a RFM-E Ltda. (“Operação”). Em 29 de setembro de 2025, com a conclusão da Operação, o Banco Santander (Brasil) S.A. e a SHI deixaram de
+    deter participação societária na Summer Empreendimentos Ltda.
+
+        3.    Ativos Financeiros
+
+        a)    Classificação por natureza e categoria
+
+    A classificação por natureza e categoria para fins de avaliação dos ativos do Banco, exceto saldos relacionados com “Disponibilidades” e
+    “Derivativos utilizados como Hedge”, em 30 de junho de 2026 e 31 de dezembro de 2025 está demonstrada abaixo:
+
+                                                                                                                                                    30/06/2026
+                                                                                                      Ativos Financeiros
+                                                                           Ativos Financeiros                                       Ativos
+                                                                                                    Mensurados ao Valor
+                                                                              Mensurados ao                                    Financeiros
+                                                                                                      Justo por Meio de                                   Total
+                                                                               Valor Justo no                              mensurados ao
+                                                                                                      Outros Resultados
+                                                                                   Resultado                             Custo Amortizado
+                                                                                                           Abrangentes
+    Reservas no Banco Central do Brasil                                          101.581.383                          -        90.984.456          192.565.839
+    Empréstimos e outros valores com instituições de crédito, líquidos                      -                         -        61.588.546           61.588.546
+     Sendo:
+      Empréstimos e outros valores com instituições de crédito, bruto                       -                         -        61.589.309           61.589.309
+      Perda de valor recuperável (impairment) (Nota 3-b.2)                                  -                         -               (763)                (763)
+    Empréstimos e adiantamentos a clientes, líquidos                               5.290.448                          -       552.895.747          558.186.195
+     Sendo:
+      Empréstimos e adiantamentos a clientes, brutos (1)                           5.290.448                          -       590.923.883          596.214.331
+      Perda de valor recuperável (impairment) (Nota 3-b.2)                                  -                         -        (38.028.136)         (38.028.136)
+    Instrumentos de dívida, líquidos                                             105.623.829                 62.076.982       126.307.680          294.008.491
+     Sendo:
+      Instrumentos de dívida, bruto (2)                                          105.623.829                 62.076.982       130.166.474          297.867.285
+      Perda de valor recuperável (impairment) (Nota 3-b.2)                                  -                         -         (3.858.794)          (3.858.794)
+    Instrumentos de patrimônio                                                     5.447.165                      2.168                  -            5.449.333
+    Derivativos                                                                   27.134.022                          -                  -          27.134.022
+    Total                                                                        245.076.847                 62.079.150       831.776.429        1.138.932.426
+
+
+                                                                                                                                                    31/12/2025
+                                                                                                      Ativos Financeiros
+                                                                            Ativos Financeiros                                      Ativos
+                                                                                                    Mensurados ao Valor
+                                                                               Mensurados ao                                   Financeiros
+                                                                                                      Justo por Meio de                                   Total
+                                                                                Valor Justo no                             mensurados ao
+                                                                                                      Outros Resultados
+                                                                                    Resultado                            Custo Amortizado
+                                                                                                           Abrangentes
+    Reservas no Banco Central do Brasil                                            89.994.937                         -        91.754.315          181.749.252
+    Empréstimos e outros valores com instituições de crédito, líquidos                          -                     -        35.947.923           35.947.923
+     Sendo:
+      Empréstimos e outros valores com instituições de crédito, bruto                           -                     -        35.949.344           35.949.344
+      Perda de valor recuperável (impairment) (Nota 3-b.2)                                      -                     -             (1.421)              (1.421)
+    Empréstimos e adiantamentos a clientes, líquidos                                6.413.587                         -       558.134.969          564.548.556
+     Sendo:
+      Empréstimos e adiantamentos a clientes, brutos (1)                            6.413.587                         -       591.732.899          598.146.486
+      Perda de valor recuperável (impairment) (Nota 3-b.2)                                      -                     -        (33.597.930)         (33.597.930)
+    Instrumentos de dívida, líquidos                                               95.546.026                69.354.220       114.708.615          279.608.861
+     Sendo:
+      Instrumentos de dívida, bruto                                                95.546.026                69.354.220       116.778.171          281.678.417
+      Perda de valor recuperável (impairment) (Nota 3-b.2)                                      -                     -         (2.069.556)          (2.069.556)
+    Instrumentos de patrimônio                                                      4.862.393                    92.363                  -            4.954.756
+    Derivativos                                                                    65.590.206                         -                  -          65.590.206
+    Total                                                                         262.407.149                69.446.583       800.545.822        1.132.399.554
+
+
+
+                                                                           Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 23
+
+=== página 24 ===
+Relatório dos Auditores    Demonstrações                                                                    Comentário de                       Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                                      Desempenho                          Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+(1) Em 30 de junho de 2026, o saldo registrado em “Empréstimos e adiantamentos a clientes” referente a operações da carteira de crédito cedida é de R$15.260 (31/12/2025 –
+R$16.768).
+(2) No 2º trimestre de 2025 uma parcela de títulos da carteira ALCO, no montante equivalente a R$ 23.190 milhões, passou a ser classificada na categoria de Ativos Financeiros
+mensurados ao custo amortizado (nota 1.c.4) gerando uma reversão dos ajustes de marcações a mercado sobre os títulos reclassificados impactando positivamente o patrimônio
+líquido em R$ 514 milhões líquidos dos efeitos fiscais (R$ 934 milhões bruto) na época..
+
+
+    b)     Ajustes de avaliação decorrentes de perda de valor recuperável dos ativos financeiros
+
+    b.1) Ativos financeiros mensurados ao valor justo por meio de Outros Resultados Abrangentes
+
+Conforme indicado na nota explicativa nº 2 às Demonstrações Financeiras consolidadas do Banco referentes ao semestre findo em 30 de junho
+de 2026, as variações no valor contábil de ativos e passivos financeiros são reconhecidas na demonstração consolidada do resultado e exceto
+no caso de ativos financeiros mensurados a valor justo por meio de outros resultados abrangentes, em que as variações no valor justo são
+reconhecidas temporariamente no patrimônio líquido consolidado, em “Outros resultados abrangentes”.
+
+Os débitos ou créditos em "Outros Resultados Abrangentes" provenientes das variações ao valor justo, permanecem no patrimônio líquido
+consolidado do Banco até que os respectivos ativos sejam baixados, quando então são reconhecidos na demonstração consolidada do
+resultado. Como parte do processo de mensuração ao valor justo, quando há evidência, de perdas no valor recuperável desses instrumentos,
+os valores deixam de ser reconhecidos no patrimônio líquido sob a rubrica "Ativos Financeiros Mensurados a Valor Justo por meio de Outros
+resultados abrangentes” e são reclassificados para a Demonstração Consolidada do Resultado pelo valor cumulativo naquela data.
+
+Em 30 de junho de 2026 o Banco analisou as variações no valor justo dos diversos ativos que compõem essa carteira e concluiu que, nessa
+data, não houve diferenças significativas cuja origem poderia ser considerada como decorrentes de perdas de valor recuperável (impairment).
+Consequentemente, a totalidade das variações no valor justo desses ativos está apresentada em "Outros Resultados Abrangentes”, sendo as
+movimentações ocorridas no período intermediário reconhecidas na respectiva demonstração consolidada.
+
+    b.2) Ativos Financeiros Mensurados ao Custo Amortizado - Empréstimos, outros valores com instituições de crédito, adiantamentos a
+clientes e Instrumento de Dívida
+
+As variações nas provisões para perdas de valor recuperável dos ativos incluídos em “Ativos Financeiros Mensurados ao Custo Amortizado -
+Empréstimos, Outros Valores com Instituições de Crédito, Adiantamentos a Clientes e Instrumento de Dívida” (1) nos semestres findos em 30
+de junho de 2026 e de 2025 foram as seguintes:
+
+
+                                                                                                                                                   01/01 a                01/01 a
+                                                                                                                                              30/06/2026             30/06/2025
+Saldo no início do período                                                                                                                     40.694.182             35.668.907
+Constituição (Reversão) para perdas com ativos financeiros                                                                                     12.347.131             16.660.974
+Baixa dos saldos não recuperáveis contra provisão para perdas registradas                                                                     (11.135.145)           (13.956.309)
+Variação Cambial                                                                                                                                   (18.475)               (25.389)
+Saldo no final do período (Nota 3.a)                                                                                                           41.887.693             38.348.183
+Provisões para compromissos contingentes                                                                                                          841.534                454.770
+Total da provisão para perdas de valor recuperável, incluindo provisões para compromissos contingentes
+decorrentes desses ativos                                                                                                                      42.729.227             38.802.953
+Recuperações de empréstimos baixados para prejuízo                                                                                                376.207                669.077
+Desconto Concedido                                                                                                                             (2.487.983)            (1.396.261)
+(1) Inclui Provisão para Perdas de Contratos de garantias Financeiras Prestadas.
+
+
+Considerando os valores reconhecidos em “Constituição (Reversão) para perdas com ativos financeiros", "Recuperações de empréstimos
+baixados para prejuízo” e "Desconto Concedido" totalizam R$14.458.907 e R$17.388.158 nos semestres findos em 30 de junho de 2026 e de
+2025, respectivamente.
+
+Considerando o plano de atualização dos modelos de apuração da provisão para perda de valor recuperável (impairment), o saldo reconhecido
+de provisão complementar (Post Model Adjustment) é de R$1.389 milhões em 30 de junho de 2026, para atender a atualização dos parâmetros
+macroeconômicos e outros parâmetros relevantes dos modelos de cálculo de provisão para perda de valor recuperável (impairment) do Banco,
+em conformidade com o IFRS 9, o que resultou em provisões mais elevadas, refletindo um ambiente econômico mais complexo previsto.
+
+   c)    Ativos não recuperáveis
+Um ativo financeiro é considerado não recuperável quando há prova objetiva da ocorrência de eventos que: (i) ocasionem um impacto adverso
+sobre os fluxos de caixa futuros estimados na data da transação, no caso de instrumentos de dívida (empréstimos e títulos de dívida); (ii)
+
+
+
+                                                                                   Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 24
+
+=== página 25 ===
+Relatório dos Auditores    Demonstrações                                                          Comentário de             Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                            Desempenho                Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+signifiquem que seu valor contábil não pode ser integralmente recuperado, no caso de instrumentos de patrimônio; (iii) decorrentes da
+violação de cláusulas ou termos de empréstimos, e (iv) por ocasião do processo de falência.
+
+Os detalhes das variações no saldo dos ativos financeiros classificados como “Empréstimos, adiantamentos a clientes e Instrumentos de Dívida”
+considerados como não recuperável devido ao risco de crédito nos semestres findos em 30 de junho de 2026 e de 2025 são os seguintes:
+
+
+                                                                                                                                01/01 a          01/01 a
+                                                                                                                            30/06/2026        30/06/2025
+Saldo no início do período                                                                                                   48.899.708       42.242.354
+Adições                                                                                                                      17.505.609       12.521.015
+Baixa dos saldos não recuperáveis contra provisão para perdas registradas                                                   (11.699.626)     (11.023.481)
+Saldo no final do período                                                                                                    54.705.691       43.739.888
+
+
+   d)     Provisões para Perdas de Contratos de Garantias Financeiras Prestadas
+
+O IFRS 9 requer que seja registrada a provisão para perdas de crédito esperadas para contratos de garantias financeiras prestadas, que ainda
+não tenham sido honradas. Deverá ser mensurada e contabilizado à despesa de provisão que reflita o risco de crédito no caso de garantias
+honradas e o cliente avalizado não cumprir com suas obrigações contratuais. Abaixo consta a movimentação dessas provisões para os
+semestres findos em 30 de junho de 2026 e de 2025.
+
+
+                                                                                                                              01/01 a            01/01 a
+                                                                                                                          30/06/2026          30/06/2025
+Saldo no início do período                                                                                                    787.837            440.113
+Constituição (Reversão) de provisão para perdas de contratos de garantias financeiras prestadas                                53.697             14.657
+Saldo no final do período                                                                                                     841.534            454.770
+
+
+   4.     Ativos não correntes mantidos para venda
+
+Ativos não correntes mantidos para venda inclui bens ativos não de uso.
+
+
+
+
+                                                                        Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 25
+
+=== página 26 ===
+Relatório dos Auditores    Demonstrações                                                Comentário de                 Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                  Desempenho                    Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+    5.    Participações em coligadas e empreendimentos em conjuntos
+
+Controle Conjunto
+
+O Banco Santander e suas controladas consideram os investimentos classificados como controle conjunto quando possuem acordo de
+acionistas nos quais define que as decisões estratégicas, financeiras e operacionais exigem o consentimento unânime de todos os investidores.
+
+Influência Significativa
+
+Coligadas são entidades nas quais o Banco tem condições de exercer influência significativa (influência significativa é o poder de participar das
+decisões de políticas financeiras e operacionais da investida) mas não controla nem detém controle conjunto.
+
+    a)    Composição
+
+
+                                                                                                                       Participação em %
+                                                                                       Atividade        País        30/06/2026         31/12/2025
+Controle conjunto do Banco Santander
+Banco RCI Brasil S.A.                                                                      Banco       Brasil            39,89%             39,89%
+Gestora de Inteligência de Crédito (1)                                            Birô de Crédito      Brasil            15,56%             15,56%
+Controladas em Conjunto da Santander Corretora de Seguros
+Hyundai Corretora de Seguros                                                Corretora de Seguros       Brasil            50,00%             50,00%
+Controlada da Webmotors S.A.
+Loop Gestão de Pátios S.A. (Loop)                                           Prestação de Serviços      Brasil            51,00%             51,00%
+Car10 Tecnologia e Informação S.A.                                                   Technology        Brasil            66,67%             66,67%
+Controlada da Car10 Tecnologia e Informação S.A.
+Pag10 Fomento Mercantil Ltda.                                                         Tecnologia       Brasil          100,00%             100,00%
+Controlada da Tecnologia Bancária S.A
+Tbnet Comércio, Locação e Administração Ltda. (Tbnet)                          Outras Atividades       Brasil          100,00%             100,00%
+TecBan Serviços Integrados Ltda.                                               Outras Atividades       Brasil          100,00%             100,00%
+Controlada da Tbnet
+Tbforte Segurança e Transporte de Valores Ltda. (Tbforte)                      Outras Atividades       Brasil          100,00%             100,00%
+Influência Significativa do Banco Santander
+Núclea S.A.                                                                    Outras Atividades       Brasil            17,53%             17,53%
+Pluxee Beneficios Brasil S.A.                                                          Benefícios      Brasil            20,00%             20,00%
+Santander Auto S.A                                                             Outras Atividades       Brasil            50,00%             50,00%
+Influência Significativa da Santander Corretora de Seguros
+Tecnologia Bancária S.A. - TECBAN                                              Outras Atividades       Brasil            18,98%             18,98%
+Biomas - Serviços Ambientais, Restauração e Carbono S.A.                       Outras Atividades       Brasil            16,66%             16,66%
+Webmotors S.A.                                                                 Outras Atividades       Brasil            30,00%             30,00%
+
+
+
+
+                                                                  Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 26
+
+=== página 30 ===
+Relatório dos Auditores    Demonstrações                                                                   Comentário de                       Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                                     Desempenho                          Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+                                                                                                                                             30/06/2026             31/12/2025
+Composição:
+Banco ABN Amro Real S.A. (Banco Real)                                                                                                         27.217.566            27.217.566
+Em Dia Serviços Especializados em Cobranças Ltda. (Nova denominação da Liderança Serviços Especializados em
+Cobranças LTDA.)                                                                                                                                 184.447               184.447
+Toro Corretora de Títulos e Valores Mobiliários Ltda.                                                                                            160.769               160.770
+Olé Consignado (Atual Denominação Social do Banco Bonsucesso Consignado)                                                                           62.800                   62.800
+CSD Central de Serviços de Registro e Depósito aos Mercados Financeiro e de Capitais S.A.                                                                 -                 42.135
+Return Capital Serviços de Recuperação de Créditos S.A. (atual denominação social da Ipanema Empreendimentos e
+Participações S.A.)                                                                                                                                21.303                   21.304
+Monetus Investimentos S.A.                                                                                                                         39.919                   39.919
+Mobills Labs Soluções em Tecnologia Ltda.                                                                                                          35.483                   35.483
+Solution 4Fleet Consultoria Empresarial S.A.                                                                                                              -                 32.590
+Santander Brasil Tecnologia S.A.                                                                                                                   16.381                   16.381
+FIT Economia de Energia S.A.                                                                                                                        3.992                    3.992
+Vora Gestão e Consultoria de Energia e Gás S.A.                                                                                                    27.287                   27.287
+Total                                                                                                                                         27.769.947            27.844.674
+
+
+                                                                                                                                                              Banco Comercial
+                                                                                                                                                                  31/12/2025
+Principais premissas:
+Bases para determinação do valor recuperável                                                                                                  Valor em uso: fluxos de caixa
+Período das projeções dos fluxos de caixa (1)                                                                                                                        5 anos
+Taxa de Crescimento Perpétuo (1)                                                                                                                                      4,0 %
+Taxa de desconto antes de impostos (2)                                                                                                                              18,5 %
+Taxa de desconto (2)                                                                                                                                                12,2 %
+
+
+                                                                                                                                            Em Dia             Toro Corretora
+                                                                                                                                                                  31/12/2025
+Principais premissas:
+Bases para determinação do valor recuperável                                                                                                  Valor em uso: fluxos de caixa
+Período das projeções dos fluxos de caixa (1)                                                                                                    5 anos                5 anos
+Taxa de Crescimento Perpétuo                                                                                                                      3,6 %                 3,6 %
+Taxa de desconto                                                                                                                                 13,8 %                14,5 %
+(1) As projeções de fluxo de caixa são baseadas no orçamento interno e planos de crescimento da Administração, considerando dados históricos, expectativas e condições de
+mercado tais como o crescimento da indústria, taxa de juros e índices de inflação.
+(2) A taxa de desconto é calculada com base no modelo de precificação de ativos de capital (CAPM).
+
+
+
+Um teste quantitativo de recuperabilidade de ágio é realizado anualmente.
+
+Para os ágios reconhecidos sobre a aquisição do Banco Real e Olé, conforme detalhado nos quadros acima, ao término de cada exercício é
+realizada uma análise sobre a existência de indícios de impairment. No período findo em 30 de junho de 2026 e exercício de 2025 não houve
+evidências de impairment. No teste de recuperabilidade do ágio, as taxas de desconto e crescimento na perpetuidade são as premissas mais
+sensíveis para o cálculo do valor presente (valor em uso) dos fluxos de caixa futuros descontados.
+
+
+
+
+                                                                                 Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 30
+
+=== página 31 ===
+Relatório dos Auditores    Demonstrações                                                                 Comentário de                       Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                                   Desempenho                          Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+    8.      Ativo Intangível - Outros ativos intangíveis
+
+A movimentação dos outros ativos intangíveis nos semestres findos em 30 de junho de 2026 e de 2025, foi a seguinte:
+
+
+                                                                                                     Movimentação de:
+                                                                  31/12/2025 a 30/06/2026                                        31/12/2024 a 30/06/2025
+
+                                                      Desenvolvimento de                                           Desenvolvimento de
+                                                           Tecnologia da                                                Tecnologia da
+                                                              Informação         Outros Ativos          Total              Informação           Outros Ativos       Total
+Saldo inicial                                                     5.277.548            104.761     5.382.309                    4.828.519            105.400    4.933.919
+Adições                                                             853.084              7.628       860.712                      804.157             79.486     883.643
+Baixas                                                                (7.154)            (3.914)     (11.068)                     (22.707)           (25.595)     (48.302)
+Transferências                                                        1.627                  (1)       1.626                        6.066              7.502      13.568
+Amortizações no período                                            (801.899)           (39.689)     (841.588)                    (703.381)           (44.188)    (747.569)
+Impairment no período                                                       -                  -             -                           -           (18.233)     (18.233)
+Saldo final                                                       5.323.206             68.785     5.391.991                    4.912.654            104.372    5.017.026
+Vida útil estimada                                                    5 anos         Até 5 anos                                     5 anos         Até 5 anos
+As despesas com amortização foram contabilizadas na rubrica "Depreciação e amortização" na demonstração do resultado.
+
+
+    9.      Passivos Financeiros
+
+    a)      Classificação por natureza e categoria
+
+A classificação, por natureza e categoria para fins de avaliação, dos passivos financeiros do Banco que não aqueles incluídos em “Derivativos
+utilizados como Hedge”, em 30 de junho de 2026 e 31 de dezembro de 2025:
+
+                                                                                                                                                            30/06/2026
+                                                                                             Passivos Financeiros        Passivos Financeiros
+                                                                                            Mensurados ao Valor         Mensurados ao Custo
+                                                                                              Justo no Resultado                  Amortizado                     Total
+Depósitos do Banco Central do Brasil e Depósitos de instituições de crédito                                     -                160.962.783               160.962.783
+Depósitos de clientes                                                                                           -                 621.378.788              621.378.788
+Obrigações por títulos e valores mobiliários                                                              454.269                 156.704.844              157.159.113
+Derivativos                                                                                            22.495.692                           -               22.495.692
+Posições vendidas                                                                                      50.252.044                           -               50.252.044
+Instrumentos de Dívida Elegíveis a Capital                                                                      -                  31.657.370               31.657.370
+Outros passivos financeiros                                                                                     -                  81.085.913               81.085.913
+Total                                                                                                  73.202.005               1.051.789.698            1.124.991.703
+
+
+                                                                                                                                                            31/12/2025
+                                                                                           Passivos Financeiros          Passivos Financeiros
+                                                                                          Mensurados ao Valor           Mensurados ao Custo
+                                                                                            Justo no Resultado                    Amortizado                     Total
+Depósitos do Banco Central do Brasil e Depósitos de instituições de crédito                                   -                  146.867.521               146.867.521
+Depósitos de clientes                                                                                         -                  593.328.796               593.328.796
+Obrigações por títulos e valores mobiliários                                                          3.263.266                  156.662.290               159.925.556
+Derivativos                                                                                         59.827.986                              -               59.827.986
+Posições vendidas                                                                                   49.380.059                              -               49.380.059
+Instrumentos de Dívida Elegíveis a Capital                                                                    -                   28.113.937                28.113.937
+Outros passivos financeiros                                                                                   -                   67.414.002                67.414.002
+Total                                                                                              112.471.311                  992.386.546              1.104.857.857
+
+
+
+
+                                                                                Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 31
+
+=== página 32 ===
+Relatório dos Auditores    Demonstrações                                                                        Comentário de                         Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                                          Desempenho                            Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+    b)     Composição e detalhes
+
+    b.1) Depósitos do Banco Central do Brasil e Depósitos de instituições de crédito
+
+                                                                                                                                          30/06/2026                  31/12/2025
+Depósitos à vista (1)                                                                                                                        1.295.489                  1.951.466
+Depósitos a prazo (2)                                                                                                                     134.362.948                119.636.099
+Operações compromissadas                                                                                                                   25.304.345                  25.279.956
+Sendo:
+  Operações Lastreadas com Títulos Públicos                                                                                                25.304.345                  25.279.956
+Total                                                                                                                                     160.962.782                146.867.521
+(1) Contas não remuneradas.
+(2) Inclui as operações com instituições de crédito decorrentes das linhas de financiamento à exportação e importação, repasses do país (BNDES e Finame) e do exterior, e outras
+linhas de crédito no exterior.
+
+
+    b.2) Depósitos de clientes
+
+                                                                                                                                          30/06/2026                  31/12/2025
+Depósitos à vista                                                                                                                          86.513.080                  85.108.276
+  Contas correntes (1)                                                                                                                     35.295.265                  31.906.984
+  Cadernetas de poupança                                                                                                                   51.217.815                  53.201.292
+Depósitos a prazo                                                                                                                         442.546.668                431.658.793
+Operações compromissadas                                                                                                                   92.319.040                  76.561.727
+Sendo:
+  Operações Lastreadas com Títulos Privados                                                                                                22.464.615                  18.906.726
+  Operações Lastreadas com Títulos Públicos                                                                                                69.854.425                  57.655.001
+Total                                                                                                                                     621.378.788                593.328.796
+(1) Contas não remuneradas.
+
+
+    b.3) Obrigações por títulos e valores mobiliários
+
+                                                                                                                                          30/06/2026                  31/12/2025
+Letras de Crédito Imobiliário - LCI (1)                                                                                                    53.857.031                  53.374.694
+Eurobonds                                                                                                                                  16.370.802                  18.052.632
+Letras financeiras (2)                                                                                                                     42.128.363                  38.233.834
+Letras de Crédito do Agronegócio - LCA                                                                                                     36.624.721                  38.740.151
+Letra Imobiliária Garantida - LIG (3)                                                                                                        6.565.428                 11.524.245
+Recursos de Aceites Cambiais                                                                                                                 1.612.768                             -
+Total                                                                                                                                     157.159.113                159.925.556
+(1) Letras de crédito imobiliário são títulos de renda fixa lastreados por créditos imobiliários e garantidos por hipoteca ou por alienação fiduciária de bem imóvel. Em 30 de junho
+de 2026 possuem prazo de vencimento entre 2026 e 2034 (31/12/2025 – com prazo de vencimento entre 2025 e 2035).
+(2) As principais características das letras financeiras são prazo mínimo de dois anos, valor nominal mínimo de R$ 50 e permissão de resgate antecipado de apenas 5% do
+montante emitido. Em 30 de junho de 2026, possuem prazo de vencimento entre 2026 e 2036 (31/12/2025 – com prazo de vencimento entre 2025 e 2035).
+(3) Letras Imobiliárias Garantidas são títulos de renda fixa lastreados por créditos Imobiliários garantidos pelo emissor e por um pool de créditos imobiliários apartados dos
+demais ativos do emissor. Em 30 de junho de 2026, possuem prazo de vencimento entre 2026 e 2045 (31/12/2025 – com prazo de vencimento entre 2025 e 2035).
+
+
+As variações no saldo de "Obrigações por títulos e valores imobiliários" no semestres findo em 30 de junho de 2026 e de 2025 foram as
+seguintes:
+
+                                                                                                                                              01/01 a                      01/01 a
+                                                                                                                                         30/06/2026                   30/06/2025
+Saldo no início do período                                                                                                              159.925.556                  139.678.128
+Emissões                                                                                                                                128.660.136                       315.566
+Pagamentos                                                                                                                             (131.582.471)                             —
+Juros                                                                                                                                      1.975.908                    6.471.879
+Variação cambial e outros                                                                                                                 (1.820.016)                     (593.608)
+Saldo no final do período                                                                                                               157.159.113                  145.871.965
+
+
+
+
+                                                                                    Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 32
+
+=== página 48 ===
+Relatório dos Auditores    Demonstrações                                                Comentário de                 Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                  Desempenho                    Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+   17.    Valor justo dos ativos e passivos financeiros
+
+Segundo o IFRS 13, a mensuração do valor justo utilizando uma hierarquia de valor justo que reflita o modelo utilizado no processo de
+mensuração, deve estar de acordo com os seguintes níveis hierárquicos:
+
+Nível 1: Determinados com base em cotações públicas de preços (não ajustados) em mercados ativos para ativos e passivos idênticos,
+incluem títulos da dívida pública, ações, derivativos listados.
+
+Nível 2: São os derivados de dados diferentes dos preços cotados incluídos no Nível 1 que são observáveis para o ativo ou passivo,
+diretamente (como preços) ou indiretamente (derivados dos preços).
+
+Nível 3: São derivados de técnicas de avaliação que incluem dados para os ativos ou passivos que não são baseados em variáveis
+observáveis de mercado (dados não observáveis).
+
+Ativos e Passivos Financeiros mensurados a valor justo no resultado ou por meio de Outros Resultados Abrangentes
+
+Nível 1: Os títulos e valores mobiliários de alta liquidez com preços observáveis em um mercado ativo estão classificados no nível 1. Neste
+nível foram classificados a maioria dos Títulos do Governo Brasileiro (principalmente LTN, LFT, NTN-B e NTN-F), ações em bolsa e outros
+títulos negociados no mercado ativo.
+
+Nível 2: Quando as cotações de preços não podem ser observadas, a Administração, utilizando seus próprios modelos internos, faz a sua
+melhor estimativa do preço que seria fixado pelo mercado. Esses modelos utilizam dados baseados em parâmetros de mercado
+observáveis como uma importante referência. A melhor evidência do valor justo de um instrumento financeiro no reconhecimento inicial é
+o preço da transação, a menos que, o valor justo do instrumento possa ser obtido a partir de outras transações de mercado realizadas com
+o mesmo instrumento ou com instrumentos similares ou possa ser mensurado utilizando-se uma técnica de avaliação na qual as variáveis
+usadas incluem apenas dados de mercado observáveis, sobretudo taxas de juros. No nível 2 são classificados, principalmente por Reservas
+no Banco Central do Brasil (Compromissadas).
+
+Nível 3: Quando houver informações que não sejam baseadas em dados de mercado observáveis, o Banco Santander utiliza modelos
+desenvolvidos internamente, visando mensurar adequadamente o valor justo destes instrumentos. No nível 3 são classificados,
+principalmente, por Títulos Públicos (NTN-C).
+
+Derivativos
+
+Nível 1: Os derivativos negociados em bolsas de valores são classificados no nível 1 da hierarquia.
+
+Nível 2: Para os derivativos negociados em balcão, para a avaliação de instrumentos financeiros (basicamente swaps e opções), utilizam-se
+normalmente dados de mercado observáveis como, taxas de câmbio, taxas de juros, volatilidade, correlação entre índices e liquidez de
+mercado.
+
+No apreçamento dos instrumentos financeiros mencionados, utiliza-se a metodologia do modelo de Black-Scholes (opções de taxa de
+câmbio, opções de índice de taxa de juros, caps e floors) e do método do valor presente (desconto dos valores futuros por curvas de
+mercado).
+
+Nível 3: Os derivativos não negociados em bolsa e que não possuem informações observáveis num mercado ativo foram classificados como
+nível 3, e estão compostos, alguns derivativos estruturados.
+
+A tabela a seguir mostra um resumo dos valores justos dos ativos e passivos financeiros no período findo em 30 de junho de 2026 e de 31
+de dezembro de 2025, classificados com base nos diversos métodos de mensuração adotados pelo Banco para apurar seu valor justo.
+
+
+
+
+                                                                  Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 48
+
+=== página 49 ===
+Relatório dos Auditores    Demonstrações                                                     Comentário de                Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                       Desempenho                   Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+                                                                                                                                         30/06/2026
+                                                                                                Nível 1        Nível 2      Nível 3             Total
+Ativos financeiros mensurados ao valor justo no resultado                                  91.163.483     150.869.916     3.043.448      245.076.847
+Instrumentos de dívida                                                                     86.090.169      18.601.470      932.190       105.623.829
+Instrumentos de patrimônio                                                                   5.073.314               -     373.851         5.447.165
+Derivativos                                                                                           -    26.178.432      955.590        27.134.022
+Empréstimos e adiantamentos a clientes                                                                -     4.508.631      781.817         5.290.448
+Reservas no Banco Central do Brasil                                                                   -   101.581.383                -   101.581.383
+Ativos financeiros mensurados ao valor justo nos outros resultados abrangentes             57.742.683        225.600      4.110.867       62.079.150
+Instrumentos de dívida                                                                     57.742.667        225.600      4.108.715       62.076.982
+Instrumentos de patrimônio                                                                          16               -       2.152             2.168
+Derivativos Utilizados como Hedge Accounting (Ativo)                                                  -        41.989                -        41.989
+Passivos Financeiros mensurados ao Valor Justo no Resultado                                           -    72.032.273     1.169.732       73.202.005
+Derivativos                                                                                           -    21.325.960     1.169.732       22.495.692
+Posições vendidas                                                                                     -    50.252.044                -    50.252.044
+Obrigações por Títulos e Valores Mobiliários                                                          -      454.269                 -       454.269
+Derivativos Utilizados como Hedge Accounting (Passivo)                                                -        14.753                -        14.753
+
+
+
+                                                                                                                                          31/12/2025
+                                                                                                Nível 1        Nível 2       Nível 3            Total
+Ativos financeiros mensurados ao valor justo no resultado                                  84.368.028     174.725.164     3.313.957      262.407.149
+Instrumentos de dívida                                                                     79.505.635      14.889.571     1.150.820       95.546.026
+Instrumentos de patrimônio                                                                    4.862.393              -               -     4.862.393
+Derivativos                                                                                           -    64.266.589     1.323.617       65.590.206
+Empréstimos e adiantamentos a clientes                                                                -     5.574.067       839.520        6.413.587
+Reservas no Banco Central do Brasil                                                                   -    89.994.937                -    89.994.937
+Ativos financeiros mensurados ao valor justo nos outros resultados abrangentes             65.444.645                -    4.001.938       69.446.583
+Instrumentos de dívida                                                                     65.444.625                -    3.909.595       69.354.220
+Instrumentos de patrimônio                                                                          20               -       92.343           92.363
+Derivativos Utilizados como Hedge Accounting (Ativo)                                                  -       217.492                -       217.492
+Passivos Financeiros mensurados ao Valor Justo no Resultado                                           -   110.545.164     1.926.147      112.471.311
+Derivativos                                                                                           -    57.901.839     1.926.147       59.827.986
+Posições vendidas                                                                                     -    49.380.059                -    49.380.059
+Obrigações por Títulos e Valores Mobiliários                                                          -     3.263.266                -     3.263.266
+Derivativos Utilizados como Hedge Accounting (Passivo)                                                -       184.005                -       184.005
+
+
+Movimentações de Valor Justo de Nível 3
+
+As tabelas a seguir demonstram as movimentações ocorridas durante os semestres de 30 de junho de 2026 e de 2025 para os ativos e
+passivos financeiros classificados como Nível 3 na hierarquia do valor justo:
+
+
+                                                Valor justo    Total de Ganhos ou Perdas       Transferências no e/ ou    Adições/        Valor Justo
+                                               31/12/2025      (Realizado/não Realizado)           Fora do Nível 3        (Baixas)       30/06/2026
+Ativos financeiros mensurados ao valor justo
+no resultado                                     3.313.957                        (203.246)                    212.995      (280.258)      3.043.448
+Ativos financeiros mensurados ao valor justo
+nos outros resultados abrangentes                4.001.938                         108.929                          —             —        4.110.867
+Passivos financeiros mensurados ao valor
+justo no resultado                               1.926.147                        (255.506)                    (85.769)     (415.140)      1.169.732
+
+
+
+
+                                                                     Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 49
+
+=== página 50 ===
+Relatório dos Auditores    Demonstrações                                                     Comentário de                     Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                       Desempenho                        Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+                                                               Total de Ganhos ou
+                                                     Valor justo                         Transferências no e/                               Valor Justo
+                                                               Perdas (Realizado/                                Adições/ (Baixas)
+                                                                                          ou Fora do Nível 3
+                                                    31/12/2024   não Realizado)                                                            30/06/2025
+Ativos financeiros mensurados ao valor justo
+no resultado                                          7.123.218              (284.717)              (825.923)             (3.868.243)        2.144.335
+Ativos financeiros mensurados ao valor justo
+nos outros resultados abrangentes                     3.438.024              (101.325)              (108.237)               (58.356)         3.170.106
+Passivos financeiros mensurados ao valor
+justo no resultado                                      509.368              187.390                (305.806)              (267.576)           123.376
+
+
+Movimentações de valor justo atreladas a risco de crédito
+
+As variações no valor justo atribuíveis a mudanças no risco de crédito são determinadas com base nas variações dos preços de credit
+default swaps comparados com obrigações semelhantes do mesmo devedor quando tais preços são observáveis, visto que esses credit
+default swaps refletem melhor a avaliação do mercado dos riscos de crédito para um ativo financeiro específico. Quando referidos preços
+não são observáveis, as variações do valor justo atribuíveis a mudanças no risco de crédito são determinadas como o valor total das
+variações no valor justo não atribuíveis a mudanças na taxa básica de juros ou em outras taxas de mercado observadas. Na ausência de
+dados observáveis específicos, esta abordagem fornece uma aproximação razoável das mudanças atribuíveis ao risco de crédito, pois
+estima a mudança de margem acima do valor de referência que o mercado poderá exigir para o ativo financeiro.
+
+Ativos e passivos financeiros não mensurados ao valor justo
+
+Os ativos financeiros do Banco são mensurados ao valor justo no balanço patrimonial consolidado, exceto ativos financeiros mensurados ao
+custo amortizado.
+
+No mesmo sentido, os passivos financeiros do Banco exceto os passivos financeiros para negociação e os mensurados ao valor justo - são
+avaliados ao custo amortizado no balanço patrimonial consolidado.
+
+i) Ativos financeiros mensurados a outro valor que não o valor justo
+
+Abaixo apresentamos uma comparação entre os valores contábeis dos ativos financeiros do Banco mensurados a outro valor que não o seu
+valor justo e seus respectivos valores justos em 30 de junho de 2026 e 31 de dezembro de 2025:
+
+                                                                                                                                           30/06/2026
+Ativo                                                                 Valor Contábil      Valor Justo           Nível 1          Nível 2       Nível 3
+Disponibilidades                                                         28.089.594       28.089.594                  -      28.089.594              -
+Ativos financeiros ao custo amortizado:
+Empréstimos e outros valores com instituições de crédito                 61.588.546       61.588.546                  -      30.689.805     30.898.741
+Empréstimos e adiantamentos a clientes                                  552.895.747      553.196.117                  -               -    553.196.117
+Ativos financeiros mensurados ao custo amortizado - Instrumentos de
+dívida                                                                  126.307.680      125.063.247      63.028.071                  -     62.035.176
+Reservas no Banco Central do Brasil                                      90.984.456       90.984.456               -         90.984.456              -
+Total                                                                   859.866.023      858.921.960      63.028.071        149.763.855    646.130.034
+
+
+                                                                                                                                           31/12/2025
+Ativo                                                                 Valor Contábil      Valor Justo           Nível 1          Nível 2        Nível 3
+Disponibilidades                                                         20.232.729       20.232.729                  -      20.232.729               -
+Ativos financeiros ao custo amortizado:
+Empréstimos e outros valores com instituições de crédito                 35.947.923       35.947.923                  -      20.311.427     15.636.496
+Empréstimos e adiantamentos a clientes                                  558.134.969      558.401.338                  -               -    558.401.338
+Ativos financeiros mensurados ao custo amortizado - Instrumentos de
+dívida                                                                  114.708.615      114.803.683      53.703.410              2.426     61.097.847
+Reservas no Banco Central do Brasil                                      91.754.315       91.754.315               -         91.754.315              -
+Total                                                                   820.778.551      821.139.988      53.703.410        132.300.897    635.135.681
+
+
+
+
+                                                                      Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 50
+
+=== página 51 ===
+Relatório dos Auditores    Demonstrações                                                        Comentário de                Composição da
+                                                        Notas Explicativas
+Independentes              Financeiras                                                          Desempenho                   Administração
+*Valores expressos em milhares, exceto quando indicado.
+
+ii) Passivos financeiros mensurados a outro valor que não o valor justo
+
+A seguir apresentamos uma comparação entre os valores contábeis dos passivos financeiros ao custo amortizado do Banco mensurados a
+outro valor que não o valor justo e seus respectivos valores justos em 30 de junho de 2026 e 31 de dezembro de 2025:
+
+                                                                                                                                          30/06/2026
+Passivo                                                                        Valor Contábil     Valor Justo   Nível 1        Nível 2        Nível 3
+Passivos financeiros ao custo amortizado:
+Depósitos do Banco Central do Brasil e depósitos de instituições de crédito      160.962.783   160.962.783            -    25.304.346     135.658.437
+Depósitos de clientes                                                            621.378.788   621.378.788            -    92.319.040     529.059.748
+Obrigações por títulos e valores mobiliários                                     156.704.844   153.831.847            -             -     153.831.847
+Instrumentos de Dívida Elegíveis a Capital                                        31.657.370    31.657.370            -             -      31.657.370
+Outros passivos financeiros                                                       81.085.913    81.085.913            -             -      81.085.913
+Total                                                                          1.051.789.698 1.048.916.701            -   117.623.386     931.293.315
+
+
+                                                                                                                                          31/12/2025
+Passivo                                                                        Valor Contábil     Valor Justo   Nível 1        Nível 2        Nível 3
+Passivos financeiros ao custo amortizado:
+Depósitos do Banco Central do Brasil e depósitos de instituições de crédito      146.867.521     146.867.521          -    25.279.956     121.587.565
+Depósitos de clientes                                                            593.328.796     593.328.796          -    76.561.726     516.767.070
+Obrigações por títulos e valores mobiliários                                     156.662.290     159.163.562          -             -     159.163.562
+Instrumentos de Dívida Elegíveis a Capital                                        28.113.937      28.113.937          -             -      28.113.937
+Outros passivos financeiros                                                       67.414.002      67.414.002          -             -      67.414.002
+Total                                                                            992.386.546     994.887.818          -   101.841.682     893.046.136
+
+
+Os métodos e premissas utilizados para a estimativa do valor justo estão definidos abaixo:
+
+Empréstimos e outros valores com instituições de crédito e com clientes - O valor justo é estimado por grupos de operações de créditos
+similares. O valor justo dos empréstimos foi determinado pelo desconto dos fluxos de caixa utilizando as taxas de juros dos novos
+contratos. Ou seja, o fluxo de caixa futuro da carteira de crédito atual é estimado com base nas taxas contratuais, e, em seguida, os spreads
+com base nos novos empréstimos são incorporados para a curva de juros livre de risco, a fim de calcular o valor justo da carteira de crédito.
+Em termos de hipóteses de comportamento, é importante sublinhar que a taxa de pré-pagamento é aplicada à carteira de crédito.
+
+Depósitos do Banco Central do Brasil e depósitos de instituições de crédito e de clientes - O valor justo dos depósitos foi calculado
+mediante o desconto da diferença entre os fluxos de caixa nas condições contratuais e as taxas atualmente praticadas no mercado para
+instrumentos cujos vencimentos são similares. O valor justo dos depósitos a prazo com taxa variável foi considerado como próximo ao seu
+valor contábil.
+
+Obrigações por títulos e valores mobiliários - Os valores justos destes itens foram estimados por meio do cálculo de fluxo de caixa
+descontado através das taxas de juros oferecidas no mercado a obrigações com prazos e vencimentos similares.
+
+Outros passivos financeiros - conforme nota explicativa, incluem substancialmente valores a repassar decorrentes das operações de
+cartões de crédito, transações pendentes de liquidação e dividendos e juros sobre o capital próprio a pagar, cujo valor contábil é similar ao
+seu valor justo.
+
+As técnicas de avaliação utilizadas para a estimativa de cada nível estão definidas na Nota 1.c.3.1.i.
+
+
+
+
+                                                                         Demonstrações Financeiras Consolidadas Condensadas | 30 de junho de 2026 | 51

@@ -1,0 +1,1170 @@
+
+=== página 8 ===
+Relatório da Administração
+Em atendimento aos dispositivos estabelecidos pelo Banco Central do Brasil (BACEN) e do Conselho
+Monetário Nacional (CMN), a Administração do PagSeguro Internet Instituição de Pagamento S.A.
+(“PagSeguro”), subsidiária do PagSeguro Digital Ltda. (“PagSeguro Digital”) tem o prazer de submeter
+à apreciação de V.Sas. as demonstrações financeiras do PagSeguro relativas ao exercício findo em
+31 de dezembro de 2023.
+
+O PagSeguro é um arranjo de pagamento fechado e uma instituição de pagamento nas modalidades
+de credenciador, emissor de moeda eletrônica e emissor de instrumento de pagamentos pós-pagos
+além de desempenhar atividades pertinentes ou correlatas às mencionadas nos itens precedentes,
+incluindo, mas não se limitando, veiculação de publicidade e desenvolvimento e facilitação de
+comércio eletrônico e liquidação financeira de transações relacionadas a determinado serviço de
+pagamento e participação em outras sociedades, cujo objeto social seja relacionada, necessária ou
+conveniente a consecução do objeto social da sociedade no Brasil e/ou no exterior. O PagSeguro
+obteve em 17 de outubro de 2018 autorização para atuar como instituição de pagamento em
+funcionamento nas modalidades de emissora de moeda eletrônica e credenciadora, concedida pelo
+Banco Central do Brasil (“BACEN”), conforme publicação no Diário Oficial da União.
+
+Em decorrência da obtenção dessa autorização, o PagSeguro passou a adotar procedimentos
+aplicáveis às instituições de pagamento integrantes do Sistema de Pagamentos Brasileiro (SPB),
+inclusive no tocante à forma de elaboração e divulgação de suas demonstrações financeiras, de
+acordo com critérios determinados pelo BACEN, além de seguir os critérios e regras contábeis
+definidos no Plano Contábil das Instituições do Sistema Financeiro Nacional (“COSIF”). Nesse
+sentido, as demonstrações financeiras individuais foram elaboradas de acordo com as diretrizes
+contábeis emanadas da Lei nº 6.404/76 (Lei das Sociedades por Ações), incluindo as alterações
+introduzidas pelas Leis nº 11.638/07 e nº 11.941/09, com observância das normas e instruções do
+Conselho Monetário Nacional (CMN), do BACEN e da Comissão de Valores Mobiliários (CVM).
+
+Com o objetivo de melhorar a experiencia dos clientes e sinergia dos produtos ofertados pela
+Companhia, em agosto de 2023 o PagSeguro absorveu todos os novos processamentos oriundos da
+Wirecard Brazil Instituição de Pagamento S.A (“MoiP”).
+
+No exercício findo em 31 de dezembro de 2023 o PagSeguro obteve R$394 bilhões de valor
+financeiro transacionado em adquirência e atingiu 6.5 milhões de clientes ativos (com pelo menos
+uma transação nos últimos 12 meses), representando um aumento de R$47 bilhões em relação ao
+valor financeiro transacionado de R$347 bilhões no exercício findo em 31 de dezembro de 2022.
+
+O PagSeguro obteve lucro líquido de R$1.134 milhões no exercício findo em 31 de dezembro de
+2023, um acréscimo de R$84 milhões comparado ao montante de R$1.050 milhões no exercício findo
+em 31 de dezembro de 2022, os principais fatores destacados abaixo:
+
+    (i) A receita de prestação de serviços que totalizou o valor de R$14.125 milhões
+        substancialmente representada pela receita de intermediação financeira, um aumento de
+        R$1.350 milhões comparado ao valor de R$12.776 milhões do exercício findo em 2022.
+    (ii) As despesas operacionais totalizaram R$ 10.247 milhões em 31 de dezembro de 2023, um
+         aumento de R$434 milhões comparado ao valor de R$9.813 milhões no mesmo período de
+         2022, principalmente relacionado ao aumento no custo de transação de R$377 milhões
+         (devido ao acréscimo de TPV).
+
+
+
+
+5
+
+=== página 9 ===
+    (iii) As despesas administrativas totalizaram R$2.740 milhões em 31 de dezembro de 2023, um
+         aumento de R$250 milhões comparado ao valor de R$2.490 milhões em 31 de dezembro de
+         2022, principalmente relacionado às despesas com depreciação, em virtude do incremento de
+         CAPEX, sobretudo de POS.
+
+    (iv) As despesas tributárias totalizaram R$1.317 milhões em 31 de dezembro de 2023, um
+        aumento de R$76 milhões comparado ao valor de R$1.240 milhões em 31 de dezembro de
+        2022, principalmente relacionado ao aumento da receita de prestação de serviços.
+
+Em 31 de dezembro de 2023, os ativos do PagSeguro totalizaram R$43.366 milhões, um crescimento
+de R$15.148 milhões comparado ao total de R$28.219 milhões registrados em 31 de dezembro de
+2022. O principal ativo do PagSeguro refere-se a valores a receber de bancos emissores de cartões,
+decorrente das transações realizadas com cartões de crédito e débito no valor de R$27.393 milhões,
+um crescimento de R$12.990 milhões comparado ao valor de R$14.403 milhões referente ao
+exercício de 2022.
+
+Em 31 de dezembro de 2023, o patrimônio líquido totalizou R$9.127 milhões, apresentou decréscimo
+de R$166 milhões comparado a R$9.293 milhões em 31 de dezembro de 2022, a diminuição está
+relacionada principalmente a distribuição de dividendos ocorrida no período, que impactou no saldo
+da reserva de lucros no exercício.
+
+Em relação às movimentações de caixa, importante reiterar o comprometimento do PagSeguro em
+ser uma empresa disruptiva no mercado e com relevantes investimentos em tecnologia, prova disso é
+o investimento de R$1.006 milhões em intangíveis, composto basicamente por desenvolvimento de
+softwares e R$954 bilhões em ativos fixos, referentes principalmente a POS.
+
+
+São Paulo, 25 de março de 2024.
+
+
+
+
+6
+
+=== página 10 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Balanço patrimonial
+31 de dezembro de 2023 e 31 de dezembro de 2022
+(Em milhares de Reais - R$)
+
+                                                            Nota
+Ativo                                                    explicativa        31 de dezembro de 2023    31 de dezembro de 2022
+Circulante
+
+Caixa e equivalentes de caixa                                 4                          1.948.218                   791.566
+
+Instrumentos financeiros                                                                   212.756                   315.775
+     Carteira própria                                         5                            212.756                   315.775
+
+Relações interfinanceiras                                                               27.142.404                14.280.957
+    Pagamentos Recebimentos a liquidar                        6                         27.142.404                14.280.957
+
+Outros créditos                                               7                          1.214.219                   293.977
+    Rendas a receber                                                                        16.059                    38.225
+    Diversos                                                                             1.198.160                   255.752
+
+Outros valores e bens                                                                      101.405                    82.429
+    Despesas antecipadas                                                                   101.405                    82.429
+
+Total do ativo circulante                                                               30.619.002                15.764.704
+
+Realizável a longo prazo
+
+Instrumentos financeiros                                                                 6.267.728                 6.460.555
+     Carteira própria                                         5                          6.267.728                 6.460.555
+
+Relações interfinanceiras                                                                  250.501                   122.214
+    Pagamentos e recebimentos a liquidar                      6                            250.501                   122.214
+
+Outros créditos                                                                          1.341.369                 1.284.252
+    Diversos                                                  7                          1.341.369                 1.284.252
+
+Outros valores e bens                                                                        9.511                    11.338
+    Despesas antecipadas                                                                     9.511                    11.338
+
+Permanente
+
+Investimentos                                                 8                            307.947                   300.016
+     No país                                                                               307.947                   300.016
+
+Imobilizado em uso                                            9                           2.354.208                 2.430.166
+    Imobilizações de uso                                                                  3.935.007                 3.614.591
+    (Depreciações acumuladas)                                                           (1.580.799)               (1.184.425)
+
+Intangível                                                   10                           2.216.456                 1.845.272
+     Ativos intangíveis                                                                   4.085.221                 3.079.656
+     (Amortizações acumuladas)                                                          (1.868.765)               (1.234.384)
+
+Total do ativo não circulante                                                           12.747.719                12.453.813
+
+Total do ativo                                                                          43.366.722                28.218.517
+
+As notas explicativas são parte integrante das demonstrações financeiras.
+
+
+
+7
+
+=== página 14 ===
+  PagSeguro Internet Instituição de Pagamento S.A.
+  Demonstração das mutações do patrimônio líquido
+  Exercícios findos em 31 de dezembro de 2023 e 2022 e semestre findo de dezembro de 2023
+  (Em milhares de Reais - R$)
+                                                                                                                                               Ajuste de
+                                                    Nota
+                                                                    Capital           Reserva           Reserva de             Lucros          avaliação
+                                                 explicativa         social             legal       retenção de lucros       acumulados       patrimonial          Total
+Saldos em 31 de dezembro de 2021
+                                                                    4.676.968            255.245              3.603.238                   -            (4)       8.535.447
+
+Lucro líquido do semestre                                                   -                  -                      -          1.050.119               -       1.050.119
+Constituição de reserva legal                                               -             52.506                      -            (52.506)              -                -
+Ajustes de avaliação patrimonial                                            -                  -                      -                   -           (89)             (89)
+Distribuição de dividendos                                                  -                  -                      -          (292.543)               -       (292.543)
+Constituição de reserva de retenção de lucro                                -                  -                705.070          (705.070)               -                -
+Saldos em 31 de dezembro de 2022                                    4.676.968            307.751              4.308.308                   -           (93)       9.292.934
+
+Lucro líquido do exercício                           17                       -                -                      -          1.134.265               -        1.134.265
+Constituição de reserva legal                        17                       -           56.713                      -            (56.713)              -                -
+Ajustes de avaliação patrimonial                     17                       -                -                      -                   -          (116)            (116)
+Distribuição de dividendos                           17                       -                -            (1.300.000)                                  -      (1.300.000)
+Constituição de reserva de retenção de lucro         17                       -                -              1.077.552        (1.077.552)               -                -
+
+Saldos em 31 de dezembro de 2023
+                                                                    4.676.968            364.464              4.085.860                   -          (209)       9.127.083
+
+
+Saldos em 30 de junho de 2023
+                                                                    4.676.968            333.638              4.800.154                   -        (1.082)       9.809.678
+
+Lucro líquido do semestre
+                                                                              -                -                         -        616.532               -          616.532
+Constituição de reserva legal                                                 -           30.826                         -        (30.826)              -                -
+Ajustes de avaliação patrimonial                                              -                -                         -               -            873              873
+Distribuição de dividendos
+                                                                              -                 -           (1.300.000)                  -                  -   (1.300.000)
+Constituição de reserva de retenção de lucro                                  -                 -               585.706          (585.706)                  -             -
+Saldos em 31 de dezembro de 2023
+                                                                    4.676.968            364.464              4.085.860                   -          (209)       9.127.083
+
+
+
+
+  As notas explicativas da administração são parte integrante das demonstrações financeiras.
+
+
+
+
+  11
+
+=== página 15 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Demonstração dos fluxos de caixa
+Exercícios findos em 31 de dezembro 2023 e 2022 e semestre findo em 31 de dezembro de 2023
+(Em milhares de Reais - R$)
+                                                                         Nota        2º Semestre               Exercícios
+                                                                       Explicativa       2023           2023                2022
+ Fluxo de caixa proveniente das atividades operacionais
+ Lucro antes do imposto de renda e da contribuição social                                 881.825      1.627.187         1.381.967
+     Participação no lucro                                                              (112.945)      (227.663)         (145.551)
+ Lucro antes do imposto de renda e da contribuição social - ajustado                      768.880      1.399.524        1.236.416
+   Despesas (receitas) que não representam movimentação de
+ caixa:
+     Depreciação e amortização                                             20              711.612      1.352.773        1.128.695
+     Baixas de imobilizado sem ganho/perda                                 9               168.460        306.751          219.335
+     Equivalência patrimonial                                              8              (30.643)        (29.634)           54.625
+     Chargeback                                                          5 e 21            166.195        319.161          326.823
+     Acréscimo (reversão) provisão para contingências                      16               54.563          66.299         (22.458)
+     Juros, receita de aplicações financeiras, líquida                                 (1.930.173)    (3.060.927)      (2.474.127)
+
+   Variação de ativos e passivos operacionais
+     Relações Interfinanceiras                                                       (15.188.778)    (17.380.596)      (5.665.923)
+     Outros Créditos                                                                    (791.135)       (927.664)          227.734
+     Instrumentos financeiros                                                           2.262.574       3.752.922        1.419.298
+     Outros valores e bens                                                                (11.839)        (17.149)           29.564
+     Depósitos                                                                          1.259.378         823.701          682.725
+     Diversas                                                                           1.779.269         942.405        2.843.433
+     Resultado de exercício futuro                                                           2.795           2.081         (35.396)
+ Caixa gerado pelas atividades operacionais                                          (10.778.842)    (12.450.353)          (29.256)
+
+     Imposto de renda e contribuição social pagos                                            (315)         (6.351)        (11.931)
+     Juros recebidos                                                                     2.157.293      4.072.897       3.478.681
+ Caixa líquido gerado (aplicado) pelas atividades operacionais                         (8.621.864)    (8.383.807)       3.437.494
+
+ Fluxo de caixa das atividades de investimento                                                                                   -
+     Valor pago nas aquisições                                             8              (31.313)       (31.313)                -
+     Aquisições de imobilizado                                             9             (528.056)      (953.831)      (1.095.746)
+     Aquisições de intangível                                              10            (505.829)    (1.005.784)        (998.570)
+     Aporte de capital em investidas                                       8                     -              -         (15.509)
+ Caixa gerado das (utilizada nas) atividades de investimento                           (1.065.198)    (1.990.928)      (2.109.825)
+
+ Fluxo de caixa das atividades de financiamento
+     Empréstimos                                                                       12.868.089     13.168.089           250.000
+     Pagamento de empréstimos                                                            (336.702)      (336.702)      (1.270.075)
+     Distribuição de dividendos                                                        (1.300.000)    (1.300.000)        (292.543)
+ Caixa gerado das (utilizado nas) atividades de financiamento                          11.231.387     11.531.387       (1.312.618)
+
+ Aumento (diminuição) do caixa e equivalentes de caixa                                  1.544.325      1.156.652             15.051
+  Saldo Inicial:
+    Caixa e equivalentes de caixa no início do exercício/semestre          4              403.893        791.566            776.515
+  Saldo Final:
+    Caixa e equivalentes de caixa no final do exercício/semestre           4            1.948.218      1.948.218            791.566
+ Movimentação líquida do caixa e equivalentes de caixa                                  1.544.325      1.156.652             15.051
+
+
+
+
+12
+
+=== página 16 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas da administração às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+1. Informações gerais
+
+     O Pagseguro Internet Instituição de Pagamento S.A. (“PagSeguro”), uma subsidiária do PagSeguro
+     Digital Ltd. (“PagSeguro Digital”), é uma sociedade anônima de capital fechado, constituída em 5 de
+     setembro de 2006, sediada na cidade de São Paulo - SP, Brasil e, tem por objeto social: atuação
+     como instituidor de arranjo de pagamento; instituição de pagamento nas modalidades de
+     credenciador, e emissor de moeda eletrônica e emissor de instrumento de pagamento pós pago;
+     desempenho de atividades pertinentes ou correlatas às mencionadas nos itens precedentes,
+     incluindo, mas não se limitando, a veiculação de publicidade e desenvolvimento e facilitação de
+     comércio eletrônico e liquidação financeira de transações relacionadas a determinado serviço de
+     pagamento; e participação em outras sociedades, cujo objeto social seja relacionada, necessária ou
+     conveniente a consecução do objeto social da sociedade no Brasil e/ou no exterior.
+
+     O PagSeguro obteve, em 17 de outubro de 2018, autorização para atuar como instituição de
+     pagamento em funcionamento nas modalidades de emissora de moeda eletrônica e credenciadora,
+     concedida pelo Banco Central do Brasil (“BACEN”), conforme publicação no Diário Oficial da União.
+     Em decorrência da obtenção dessa autorização, o Pagseguro passou a adotar procedimentos
+     aplicáveis às instituições de pagamento integrantes do Sistema de Pagamentos Brasileiro (SPB),
+     inclusive no tocante à forma de elaboração e divulgação de suas demonstrações financeiras, de
+     acordo com critérios determinados pelo BACEN.
+
+     O PagSeguro tem como subsidiárias as empresas: Biva Secutirizadora de Créditos Financeiros S.A
+     (“Biva Sec”), Concil Inteligência em Conciliação S.A. (“Concil”), Wirecard Brazil Instituição de
+     Pagamento S.A (“MoiP”) e Netpos Serviços de Informática S.A. ("Netpos”).
+
+     Contexto operacional das controladas
+
+     • Biva Sec: O principal objetivo da empresa é adquirir e securitizar soluções de crédito, como
+       empréstimos e cartão de crédito;
+     • Concil: Em 12 de agosto de 2021, o PagSeguro adquiriu 100% do capital social da Concil. A
+       empresa tem por objeto social a prestação de serviços profissionais de processamento de dados,
+       provedores de serviços de aplicativos, serviços de hospedagem de internet, suporte técnico,
+       manutenção e outros serviços em tecnologia da informação, licenciamento e cessão de direito de
+       uso de informática
+     • MOIP: Em 31 de outubro de 2020, o Pagseguro adquiriu 100% das ações emitidas da MOIP. A
+      empresa fornece plataforma de pagamento online e processamento de pagamentos ponta a ponta
+      para o comercio eletrônico. Além disso, a MOIP possui licença concedida pelo BACEN para atuar
+      como instituição de pagamento.
+     • Netpos: Em 18 de julho de 2023, o PagSeguro adquiriu 90%, além dos 10% anteriormente
+       adquiridos e obteve 100% da participação capital da empresa. A principal atividade da Netpos são
+       soluções de software e hardware focadas em desenvolver melhores condições de gestão
+       empresarial. Conforme detalhado na nota explicativa 8
+
+
+13
+
+=== página 19 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas da administração às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+práticas contábeis--Continuação
+
+         iii.Títulos disponíveis para venda: títulos que não se enquadrem para negociação nem como
+             mantidos até o vencimento. São ajustados pelo seu valor de mercado em contrapartida à
+             conta destacada do patrimônio líquido, deduzidos dos efeitos tributários;
+
+          Em 31 de dezembro de 2023, o PagSeguro possuía apenas títulos classificados na categoria
+          (iii) acima, ajustados pelo valor de mercado em conta destacada no patrimônio líquido. Não
+          houve reclassificações entre categorias para o exercício findo em 31 de dezembro de 2023.
+
+          O valor de mercado dos instrumentos financeiros, quando aplicável, é calculado com base na
+          comparação dos preços de mercado praticados para os mesmos instrumentos financeiros
+          adquiridos pelo PagSeguro. Assim, quando da liquidação financeira destas operações, os
+          resultados poderão ser diferentes das estimativas. Os instrumentos financeiros são
+          negociados de forma ativa e frequente cujos preços baseiam-se em fontes de informações
+          independentes em consonância com a Resolução do CMN nº 4.277/13.
+
+     2.5. Relações interfinanceiras
+
+          Os valores são principalmente relacionados a recebíveis de emissores de cartões de
+          crédito/débito e adquirentes originados de transações por meio da plataforma do PagSeguro.
+          Se o recebível é esperado em um ano ou menos, eles são classificados como ativo circulante.
+          Caso contrário, eles são classificados como ativo realizável a longo prazo.
+
+          Com base na avaliação de risco, o PagSeguro estabelece uma redução ao valor recuperável
+          de contas a receber. A provisão considera que o saldo de relações interfinanceiras é
+          composto principalmente de transações aprovadas por grandes instituições financeiras, com
+          um nível baixo de risco e boas avaliações das principais agências de rating, sem histórico de
+          atraso e default de forma que a administração concluiu que não é necessário constituir
+          provisão para o risco de perda de crédito nesses recebíveis. O PagSeguro realiza
+          periodicamente essa avaliação de risco conforme descrito na nota 24. Além disso, essas
+          instituições financeiras são os devedores legais dos acordos de recebíveis.
+
+          O PagSeguro incorre em despesas financeiras quando solicita receber o pagamento
+          antecipado das relações interfinanceiras de instituições financeiras. A despesa financeira é
+          reconhecida quando a instituição financeira concorda em liquidar um recebível devido em
+          parcelas pré-pagas e é registrado como despesas operacionais na demonstração do
+          resultado.
+
+
+
+
+16
+
+=== página 20 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas da administração às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+   práticas contábeis--Continuação
+     2.6. Investimentos
+
+          A participação em controladas é avaliada pelo método da equivalência patrimonial, como
+          demonstrado na nota 8.
+
+     2.7. Imobilizado em uso
+
+          Os itens do imobilizado são mensurados pelo seu custo histórico, menos depreciação
+          acumulada. O custo histórico inclui os gastos diretamente atribuíveis à aquisição dos itens e
+          pode incluir os custos de financiamento relacionados com a aquisição de ativos qualificados.
+          Os custos subsequentes são incluídos no valor contábil do ativo ou reconhecidos como um
+          ativo separado, conforme apropriado, somente quando for provável que fluam benefícios
+          econômicos futuros associados a esses custos e que possam ser mensurados com
+          segurança.
+          Os valores residuais e a vida útil dos ativos são revisados e ajustados, se apropriado, ao final
+          de cada exercício. A depreciação de outros ativos é calculada usando o método linear
+          considerando os seus custos e seus valores residuais durante a vida útil estimada, como
+          segue:
+
+          Equipamento de processamento de dados    2,5 a 5 anos
+          Móveis e utensílios                        10 anos
+          Benfeitoria em imóveis de terceiros        10 anos
+          Máquinas e equipamentos                  5 a 10 anos
+
+          O valor contábil de um ativo é imediatamente baixado para seu valor recuperável se o valor
+          contábil do ativo for maior que seu valor recuperável estimado.
+     2.8. Intangível
+
+          As licenças de softwares são capitalizadas com base nos custos incorridos para adquirir os
+          softwares e fazer com que eles estejam prontos para serem utilizados. Esses custos são
+          amortizados pelo método linear durante a vida útil estimada dos softwares de cinco anos.
+          Os custos associados à manutenção de softwares são reconhecidos como despesa, conforme
+          incorridos. Os custos de desenvolvimento que são diretamente atribuíveis ao projeto e aos
+          produtos de software identificáveis e exclusivos, controlados pelo PagSeguro, são
+          reconhecidos como ativos intangíveis.
+
+          Os ágios gerados relativos à aquisição de controladas serão amortizados pelo período de 5
+          anos.
+
+
+
+17
+
+=== página 21 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas da administração às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+   práticas contábeis--Continuação
+          Os custos diretamente atribuíveis, que são capitalizados como parte do produto de software,
+          incluem os custos com empregados alocados no desenvolvimento de softwares. Os custos
+          também incluem, se aplicável, os custos de financiamento incorridos durante o período de
+          desenvolvimento do software.
+
+          Outros gastos de desenvolvimento que não atendam aos critérios de capitalização são
+          reconhecidos como despesa, conforme incorridos. Os custos de desenvolvimento previamente
+          reconhecidos como despesa não são reconhecidos como ativo em período subsequente. Os
+          custos de desenvolvimento de softwares reconhecidos como ativos são amortizados durante
+          sua vida útil estimada não superior a cinco anos.
+
+     2.9. Redução ao valor recuperável de ativos
+
+          Os ativos financeiros e não financeiros são avaliados ao fim de cada período de reporte, com
+          o objetivo de identificar evidências de desvalorização em seu valor contábil. Se houver
+          alguma indicação, o PagSeguro deve estimar o valor recuperável do ativo e tal perda deve ser
+          reconhecida imediatamente na demonstração do resultado. O valor recuperável de um
+          ativo é definido como o maior montante entre o seu valor justo e o seu valor em uso.
+
+     2.10. Ágio
+
+          O ágio corresponde ao valor pago excedente ao valor contábil dos investimentos adquiridos,
+          decorrente da expectativa de rentabilidade futura e sustentado por estudos econômico-
+          financeiros que fundamentaram o preço de compra dos negócios. O ágio fundamentado na
+          previsão de resultados futuros é amortizado pelo prazo de cinco anos, devendo ainda ser
+          submetido anualmente ao teste de redução no valor recuperável ou com maior frequência,
+          quando houver indicação de que a unidade geradora de caixa poderá apresentar redução no
+          valor recuperável. O ágio decorrente de investimentos em controladas é classificado na
+          rubrica de investimento nas demonstrações financeiras, como demonstrado na nota 8.
+
+     2.11. Obrigações com terceiros e Depósitos
+
+          As obrigações com terceiros referem-se a saldos devidos a clientes que utilizam a plataforma
+          do PagSeguro. O PagSeguro reconhece o valor justo da transação, ou seja, o montante
+          líquido do custo de transação. O valor de obrigações com terceiros registrado como depósitos
+          se refere ao valor disponível para retirada do cliente, enquanto o montante registrado como
+          outras obrigações correspondem aos montantes a serem ainda repassados aos
+          estabelecimentos comerciais referentes às transações feitas pelos portadores de cartões.
+
+
+
+
+18
+
+=== página 22 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas da administração às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+   práticas contábeis--Continuação
+     2.12. Empréstimos
+
+          Os empréstimos obtidos são inicialmente reconhecidos pelo valor justo menos quaisquer
+          custos de transação diretamente atribuíveis. Após o reconhecimento inicial, esses passivos
+          financeiros são mensurados pelo custo amortizado utilizando o método de juros efetivos,
+          exceto pelo derivativo embutido, que é mensurado pelo valor justo por meio do resultado.
+
+          Ganhos e perdas são reconhecidos na demonstração do resultado quando os passivos são
+          baixados, bem como por meio do processo de amortização pelo método dos juros efetivos. O
+          custo amortizado é calculado considerando qualquer desconto ou prêmio na aquisição e taxas
+          ou custos que são parte integrante do método de juros efetivos. A amortização do método de
+          juros efetivos é incluída na despesa de juros nas demonstrações de resultados.
+
+     2.13. Provisões
+
+          O PagSeguro é parte em processos judiciais e administrativos de natureza tributária,
+          trabalhista e cível, decorrentes do curso normal de suas atividades.
+
+          As provisões incluem as obrigações legais, processos judiciais e administrativos relacionados
+          a obrigações tributárias, previdenciárias e cíveis, cujo objeto de contestação é sua legalidade
+          ou constitucionalidade, que independentemente da avaliação acerca da probabilidade de
+          sucesso, tem os seus montantes reconhecidos integralmente nas demonstrações financeiras.
+
+          As provisões são reavaliadas em cada data de balanço para refletir a melhor estimativa
+          corrente e podem ser totais ou parcialmente revertidas ou reduzidas quando deixam de ser
+          prováveis as saídas de recursos e obrigações pertinentes ao processo, incluindo a
+          decadência dos prazos legais, o trânsito em julgado dos processos, dentre outros.
+
+          As provisões judiciais e administrativas são constituídas quando o risco de perda da ação
+          judicial ou administrativa for avaliado como provável e os montantes envolvidos forem
+          mensuráveis com suficiente segurança, com base na natureza, complexidade, histórico das
+          ações, opinião dos assessores jurídicos internos e externos e nas melhores informações
+          disponíveis. Para as provisões cujo risco de perda é possível, as provisões não são
+          constituídas e as informações são divulgadas nas notas explicativas para as provisões cujo
+          risco de perda é remota, não é requerida a divulgação.
+
+          Os ativos contingentes não são reconhecidos contabilmente, exceto quando há garantias
+          reais ou decisões judiciais favoráveis sobre as quais não cabem mais recursos,
+          caracterizando o ganho como praticamente certo. Os ativos contingentes com êxito provável,
+          quando existentes, são apenas divulgados nas demonstrações financeiras.
+
+
+
+19
+
+=== página 23 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas da administração às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+2. Apresentação e elaboração das demonstrações financeiras e principais
+   práticas contábeis--Continuação
+          No caso de trânsitos em julgado favoráveis ao PagSeguro, a contraparte tem o direito, caso
+          atendidos requisitos legais específicos, de impetrar ação rescisória em prazo determinado
+          pela legislação vigente. Ações rescisórias são consideradas novas ações e serão avaliadas
+          para fins de passivos contingentes se, e quando, forem impetradas.
+
+     2.14. Reconhecimento da receita de serviços
+
+          A receita compreende o valor justo da contraprestação recebida ou a receber pela
+          comercialização de serviços no curso normal das atividades do PagSeguro. As receitas de
+          prestação de serviços são representadas substancialmente por:
+
+          • Receita com taxa de intermediação: receitas de taxas cobradas pela intermediação de
+            pagamentos eletrônicos. São reconhecidas em termos brutos e os custos de transação
+            relacionados são reconhecidos como despesas operacionais;
+          • Receita com pré-pagamento: taxa de desconto cobrada sobre os pagamentos antecipados
+            de obrigações com terceiros (merchants). A receita é reconhecida quando é efetuado o
+            pagamento para os merchants de forma antecipada referente aos recebíveis de origem de
+            vendas parceladas, sendo registrada na rubrica de receita de prestação de serviços na
+            demonstração do resultado; e
+          • Receita de adesão: taxa não reembolsável para adesão de clientes ao ecossistema de
+            serviços providos pelo PagSeguro. A receita de adesão é diferida ao longo do tempo
+            baseado nas métricas internas dos clientes do portfólio do PagSeguro. O saldo registrado
+            no balanço patrimonial na rubrica de resultados de exercícios futuros é composto
+            basicamente por esta receita diferida.
+
+     2.15. Distribuição de dividendos
+
+          A distribuição de dividendos para os acionistas é reconhecida como um passivo nas
+          demonstrações financeiras ao final do ano, com base no estatuto social, que prevê que, no
+          mínimo, 1% do lucro líquido do exercício seja distribuído como dividendos. Qualquer valor
+          acima do mínimo obrigatório somente é provisionado na data em que são aprovados pelos
+          diretores em Reunião de Diretoria.
+
+
+
+
+20
+
+=== página 34 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+
+8. Investimentos--Continuação
+O justo valor dos ativos e passivos adquiridos em 2023 foi o seguinte:
+
+                                                                                         31 de dezembro de 2023
+       Valor justo reconhecido na aquisição
+       Caixa e equivalentes de caixa                                                                        4.567
+       Contas a receber                                                                                     1.409
+       Impostos a recuperar                                                                                    26
+       Outros ativos                                                                                          472
+       Passivos                                                                                           (2.415)
+       Outras contas a pagar (Dividendos)                                                                 (4.311)
+       Ativos líquidos identificados adquiridos                                                             (252)
+       Goodwill                                                                                           32.252
+       Ativos líquidos adquiridos                                                                         32.000
+       Caixa considerado                                                                                  32.000
+       Dividendos pagos                                                                                     3.880
+       Caixa e equivalentes de caixa adquiridos                                                           (4.567)
+       Valor pago na aquisição, líquido do dinheiro adquirido                                             31.313
+
+
+
+.   9. Imobilizado
+                                                        31 de dezembro de 2023                    31 de dezembro de 2022
+                                                              Depreciação                               Depreciação
+                                                  Custo        acumulada     Líquido         Custo       acumulada     Líquido
+    Máquinas e equipamentos (a)                  3.656.832       (1.481.315) 2.175.517      3.379.735      (1.113.756) 2.265.979
+    Equipamentos de processamento de dados         238.576          (85.888)   152.688        209.231         (64.129)   145.102
+    Móveis e utensílios                              2.962           (1.335)     1.627          3.030          (1.065)     1.965
+    Benfeitorias imóveis de terceiros               17.327           (5.787)    11.540         17.386          (4.426)    12.960
+    Outros                                          19.310           (6.474)    12.836          5.209          (1.049)     4.160
+    Total                                        3.935.007       (1.580.799) 2.354.208      3.614.591      (1.184.425) 2.430.166
+
+
+
+
+31
+
+=== página 35 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+
+
+9. Imobilizado--Continuação
+Movimentação do imobilizado:
+                                            Máquinas e  Equipamentos                                        Benfeitorias
+                                           equipamentos processamento                     Móveis e          imóveis de
+                                                (a)        de dados                       utensílios         terceiros            Outros             Total
+     Em 31 de dezembro de 2021
+     Custo                                         2.796.537                101.647              2.970              14.990            3.648          2.919.792
+     Depreciação acumulada                         (653.154)                (47.863)             (769)              (2.762)           (327)          (704.875)
+     Saldo contábil, líquido                       2.143.383                  53.784             2.201              12.228            3.321          2.214.917
+
+     Em 31 de dezembro de 2022
+     Saldo inicial                                 2.143.383                  53.784             2.201              12.228             3.321         2.214.917
+     Custo                                           583.198                107.584                  60               2.396            1.561           694.799
+      Adições                                        981.201                109.192                  99               2.490            2.764         1.095.746
+      Baixas                                       (398.003)                 (1.608)               (39)                 (94)         (1.203)         (400.947)
+     Depreciação                                   (460.602)                (16.266)             (296)              (1.664)            (722)         (479.550)
+      Adições                                      (647.009)                (16.378)             (304)              (1.682)            (904)         (666.277)
+      Baixas                                         186.407                     112                  8                   18             182           186.727
+     Saldo contábil, líquido                       2.265.979                145.102              1.965              12.960             4.160         2.430.166
+
+     Em 31 de dezembro de 2022
+     Custo                                          3.379.735               209.231              3.030              17.386             5.209        3.614.591
+     Depreciação acumulada                        (1.113.756)               (64.129)           (1.065)              (4.426)          (1.049)      (1.184.425)
+     Saldo contábil, líquido                        2.265.979               145.102              1.965              12.960             4.160        2.430.166
+
+     Em 31 de dezembro de 2023
+     Saldo inicial                                 2.265.979                145.102              1.965              12.960             4.160         2.430.166
+     Custo                                           277.097                  29.345               (68)                 (59)         14.101            320.416
+      Adições                                        902.788                  33.071                 33               1.038          17.374            954.304
+      Baixas (b)                                   (625.691)                 (3.726)             (101)              (1.097)          (3.273)         (633.888)
+     Depreciação                                   (367.559)                (21.759)             (270)              (1.361)          (5.425)         (396.374)
+      Adições                                      (692.487)                (22.597)             (300)              (1.716)          (6.399)         (723.499)
+      Baixas (b)                                     324.928                     838                 30                 355              974           321.125
+     Saldo contábil, líquido                       2.175.517                152.688              1.627              11.540           12.836          2.354.208
+
+     Em 31 de dezembro de 2023
+     Custo                                          3.656.832               238.576              2.962              17.327           19.310         3.935.007
+     Depreciação acumulada                        (1.481.315)               (85.888)           (1.335)              (5.787)          (6.474)      (1.580.799)
+     Saldo contábil, líquido                        2.175.517               152.688              1.627              11.540           12.836         2.354.208
+
+       (a)   O valor contábil de custo de máquinas e equipamentos inclui o montante de R$3.587.601 referente às máquinas POS (R$3.312.292 em 31 de
+             dezembro de 2022), as quais apresentam vida útil de 5 anos. A depreciação acumulada das máquinas POS em 31 de dezembro de 2023 é de
+             R$1.460.365 (R$1.099.601 em 31 de dezembro de 2022).
+
+       (b)   O valor contábil líquido das baixas está impactado por R$ 246.771 referentes a baixa de POS, sendo R$ 536.006 de custo e R$ 289.235 de
+             depreciação. Durante o exercício findo em 31 de dezembro de 2023, a Companhia revisou sua estratégia de negócios para um grupo específico
+             de lojistas e observou que nenhum benefício econômico futuro deles é esperado, resultando na baixa de dispositivos POS alocados a esses
+             lojistas.
+
+
+
+
+32
+
+=== página 36 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+
+10. Intangível
+                                                                31 de dezembro de 2023                                    31 de dezembro de 2022
+                                                                     Amortização                                                Amortização
+                                                      Custo           acumulada        Líquido                      Custo        acumulada       Líquido
+Ativos intangíveis
+   Gastos com software e tecnologia                 3.811.872             (1.738.392)           2.073.480         2.860.094             (1.150.158)          1.709.936
+   Direito de uso de software                         273.324               (130.373)             142.951           219.537                (84.226)            135.311
+   Marcas e patentes                                       25                       -                  25                25                       -                 25
+                                                    4.085.221             (1.868.765)           2.216.456         3.079.656             (1.234.384)          1.845.272
+
+Movimentação do intangível:
+                                                                Gastos com software e               Direito de uso de            Marcas e
+                                                                     tecnologia                         software                 patentes                Total
+
+Em 31 de dezembro de 2021
+Custo                                                                             1.931.000                     156.322                   25               2.087.347
+Amortização acumulada                                                             (734.181)                     (46.240)                   -               (780.421)
+Saldo contábil, líquido                                                           1.196.819                     110.082                   25               1.306.926
+                                                               ...
+Em 31 de dezembro de 2022
+Saldo inicial                                                                     1.196.819                     110.082                   25               1.306.926
+Custo                                                                               929.094                       63.215                   -                 992.309
+  Adições (a)                                                                       935.355                       63.215                   -                 998.570
+  Baixas                                                                             (6.261)                           -                   -                  (6.261)
+Amortização                                                                       (415.977)                     (37.986)                   -               (453.963)
+  Adições                                                                         (417.123)                     (37.986)                   -               (455.109)
+  Baixas                                                                               1.146                           -                   -                    1.146
+Saldo contábil, líquido                                                           1.709.936                     135.311                   25               1.845.272
+
+Em 31 de dezembro de 2022
+Custo                                                                             2.860.094                     219.537                   25               3.079.656
+Amortização acumulada                                                           (1.150.158)                     (84.226)                   -             (1.234.384)
+Saldo contábil, líquido                                                           1.709.936                     135.311                   25             1.845.272
+
+
+Em 31 de dezembro de 2023
+Saldo inicial                                                                   1.709.936                      135.311                    25               1.845.272
+Custo                                                                             951.776                        53.787                    -               1.005.563
+  Adições (a)                                                                     951.998                        53.787                    -               1.005.785
+  Baixas                                                                            (222)                             -                    -                   (222)
+Amortização                                                                     (588.234)                      (46.145)                    -               (634.379)
+  Adições                                                                       (588.468)                      (46.145)                    -               (634.613)
+  Baixas                                                                              234                             -                    -                     234
+Saldo contábil, líquido                                                         2.073.478                      142.953                    25               2.216.456
+
+Em 31 de dezembro de 202
+Custo                                                                            3.811.872                     273.324                    25               4.085.221
+Amortização acumulada                                                          (1.738.392)                   (130.373)                     -             (1.868.765)
+Saldo contábil, líquido                                                          2.073.480                     142.951                    25               2.216.456
+
+
+      (a)   As adições se referem aos gastos pulverizados com desenvolvimento de software, principalmente relacionados a melhora da experiência do
+            cliente, tais como: Adquirência, emissão, conta digital, pagamento digital, aplicativo de celular, novas plataformas estruturais de dados e digitais,
+            entre outros. Adicionalmente, foi realizado avaliação no reconhecimento contábil dos ativos intangíveis gerados internamente e que têm como
+            objetivo tornar essas práticas mais aderentes aos requerimentos da Resolução BCB nº7/20.
+
+
+
+
+33
+
+=== página 37 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+
+11. Depósitos e outras obrigações – diversas
+
+                                                                                        31 de dezembro de 2023                  31 de dezembro de 2022
+  Outros depósitos
+  Obrigações com terceiros (a)                                                                               1.875.369                                1.051.668
+  Total                                                                                                      1.875.369                                1.051.668
+
+                                                                                       .
+                                                                                        31 de dezembro de 2023                  31 de dezembro de 2022
+  Valores a repassar a estabelecimentos
+  Obrigações com terceiros (b)                                                                             14.887.383                               14.098.368
+
+  Diversas curto prazo
+  Fornecedores                                                                                                 566.664                                  490.327
+  Salários e encargos                                                                                          241.573                                  177.471
+  Partes relacionadas (c)                                                                                       40.786                                   83.128
+  Subsídios a pagar (d)                                                                                         55.494                                  119.800
+  Outras contas a pagar                                                                                         31.618                                   10.168
+  Total                                                                                                        936.135                                  880.894
+
+                                                                                       .
+                                                                                        31 de dezembro de 2023                  31 de dezembro de 2022
+  Diversas longo prazo
+  Partes relacionadas (c)                                                                                      267.600                                  124.386
+  Contingências (e)                                                                                            439.485                                  387.585
+  Outras contas a pagar                                                                                         29.639                                   44.547
+  Total                                                                                                        736.724                                  556.518
+
+     (a) Os depósitos são compostos substancialmente por saldos que já foram repassados aos estabelecimentos comerciais referentes às transações web,
+         transações feitas pelos portadores de cartões e o valor disponível nos cartões pré-pagos, cartão da conta e conta digital, de forma que o saldo está
+         disponível para retirada e/ou uso dos clientes.
+
+     (b) As obrigações com terceiros correspondem aos montantes a serem repassados aos estabelecimentos comerciais e aos valores bloqueados
+         referentes às transações feitas pelos portadores de cartões, líquidas das taxas de intermediação e descontos aplicados. De forma geral, o prazo de
+         liquidação do PagSeguro com os estabelecimentos comerciais está substancialmente inferior a 1 ano.
+
+     (c) As operações com partes relacionadas estão detalhadas na nota 13.
+
+     (d) O saldo relacionado aos valores de subsídio efetuado pelo PagSeguro para empresa Net+Phone Telecomunicações, em relação as operações de
+         atendimento.
+
+     (e) As contingências do PagSeguro estão detalhadas na nota 16.
+
+
+
+
+34
+
+=== página 38 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+12. Empréstimos
+Em novembro de 2021, o Grupo contratou um empréstimo de US$ 180 milhões, equivalente a
+R$1.012.086 na data da sua contratação, com vencimento em um ano a partir da data de assinatura,
+sendo o pagamento em parcela única conforme a data de vencimento. Os juros de empréstimos
+foram pagos no vencimento do financiamento, juntamente com a liquidação total do instrumento
+financeiro, para o mesmo financiamento, a Companhia contratou instrumentos financeiros derivativos
+(“Swaps”), com o objetivo específico de proteger o referido empréstimo de flutuações decorrentes da
+variação cambial. Em novembro de 2022, foi liquidado no valor total de R$1.143.026 considerando
+principal, juros, impostos e a liquidação total dos instrumentos financeiros.
+
+Em fevereiro de 2022, o Grupo afirmou um contrato de empréstimo de R$250 milhões com
+vencimento em três meses a partir da data de assinatura, a taxa de juros era de 112% do CDI e o
+pagamento seria em parcela única na data de vencimento. Em maio de 2022, o contrato de
+empréstimo foi renovado com novo vencimento por mais três meses e foi liquidado em agosto de
+2022 no valor principal de R$250 milhões e os juros de R$7.015 foram pagos em maio e R$8.322 em
+agosto.
+
+Em março de 2023, o Grupo PagSeguro celebrou um contrato de empréstimo de US$38,4 milhões
+com vencimento de um ano a partir da data do contrato com pagamento em duas parcelas
+semestrais. Na data de assinatura do acordo, a taxa de câmbio era deR$ 5,2149 por dólar norte-
+americano, totalizando R$200 milhões. A Companhia contratou instrumentos financeiros derivativos
+(“Swaps”), com o objetivo específico de proteger os empréstimos contra oscilações decorrentes de
+variação cambial. A remuneração final, considerando todos os custos da operação, equivale a
+111,0% do CDI e a companhia possui R$16.671 de juros acumulados em 31 de dezembro de 2023 e
+a primeira parcela ds juros semestrais foi liquidada em setembro de 2023 no valor de R$6.340.
+
+Em abril de 2023, o Grupo contratou um empréstimo de R$100 milhões com vencimento em três
+meses a partir da data do contrato, o pagamento foi em parcela única no vencimento e a taxa de
+juros, foi de 107,5% do CDI. Em julho de 2023, o Grupo PagSeguro liquidou este empréstimo no valor
+total de R$103.273 considerando principal, o juros e impostos.
+
+A partir de agosto de 2023 o PagSeguro passou a obter empréstimos intercompany no montante de
+R$ 12.983.576 milhôes em 31 dezembro 2023 com o BancoSeguro, todos pela taxa de 110% do CDI
+com prazo de vencimento inferior a um ano.
+
+Em dezembro de 2023 a Companhia registrou no passivo os efeitos dos derivativos swap no
+montante de R$ 17.631 representados basicamente pelas diferentes taxas de câmbio vigentes no
+momento da celebração do contrato de empréstimo e dezembro de 2023 acrescidas de juros.
+
+
+
+
+35
+
+=== página 39 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+
+     12. Empréstimos--Continuação
+A movimentação dos empréstimos está demonstrada abaixo:
+
+       Em 31 de dezembro de 2021                      1.005.787
+       Adições                                          250.000
+       Juros                                            175.338
+       Pagamentos                                   (1.270.075)
+       Instrumentos derivativos                       (161.050)
+       Em 31 de dezembro de 2022                               -
+       Adições                                      13.168.089
+       Juros                                            359.246
+       Pagamento                                      (336.702)
+       Instrumentos derivativos                         (17.631)
+       Em 31 de dezembro de 2023                    13.173.002
+
+
+
+     13. Partes relacionadas
+                                                                             31 de dezembro de 2023                       31 de dezembro de 2022
+                                                                             Ativo          Passivo                       Ativo          Passivo
+Controladora
+  PagSeguro Digital Ltd. (a)                                                             -               267.600                     -                124.386
+  Universo Online S/A (b)                                                                -                 8.932                     -                 10.809
+Controladas e Afiliadas
+  BancoSeguro (c)                                                                 13.093                       -               2.489                   13.892
+  PagSeguro Tecnologia Ltda (d)                                                    2.034                       -                   -                   27.241
+  Concil Inteligência em conciliação S/A (e)                                         675                   1.234                   -                    4.067
+  Compasso Informática S/A (f)                                                         -                  12.568                   -                   12.624
+  Invillia Desenvolvimento de produtos digitais S/A (g)                                -                  10.479                   -                   12.196
+  Zygo Serviços de Tecnologia Ltda.(h)                                                 -                   4.365                 209                        -
+  MOIP (i)                                                                             -                       -               3.033                        -
+  Outros                                                                           1.663                   3.208                 609                    2.299
+                                                                                  17.465                 308.386               6.340                  207.514
+
+      (a) Saldo passivo relacionado ao Plano de Incentivo de Longo Prazo (PILP)
+      (b) Compra de serviços de publicidade, suporte técnico em informática e por repasse de despesas, principalmente relacionadas a despesas de pessoal.
+      (c) Os valores se referem a repasses de despesas de consultoria, software e pessoal.
+
+      (d) Em 2022 o saldo passivo refere-se prestação de serviços de desenvolvimento de manutenção de software relacionado a conciliação e intermediação
+          no comércio de produtos e serviços e saldo ativo refere-se a repasse de despesa de pessoal.
+
+      (e) Saldo passivo é substancialmente representado pelo repasse de serviços de conciliação bancária e ativo referente ao repasse de despesa de
+          pessoal.
+
+      (f)   Compra de serviços de informática e hospedagem (cloud).
+
+      (g) Refere-se a serviço de desenvolvimento de software.
+
+      (h) O saldo passivo trata-se de notas de débito relacionado ao repasse de serviço de tecnologia.
+
+      (i) O saldo ativo é composto substancialmente por repasse de despesas, principalmente relacionadas a despesas de pessoal.
+
+
+
+
+36
+
+=== página 40 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+     13. Partes relacionadas – Continuação
+
+                                                                    31 de dezembro de 2023                           31 de dezembro de 2022
+                                                                   Receita           Despesa                        Receita           Despesa
+        Controladora final
+          Universo Online S/A (a)                                          3.134                167.156                    3.115                 200.777
+        Controladas e Afiliadas
+          BancoSeguro (b)                                               136.487                       -                  110.704                       -
+          PagSeguro Tecnologia Ltda (c)                                  44.262                     902                   53.807                  46.442
+          MOIP (d)                                                       12.622                       -                   23.560                       -
+          Concil Inteligência em conciliação S/A (e)                      5.143                  12.235                    1.025                   3.246
+          Compasso Informática S/A (f)                                        -                 146.703                        -                 136.725
+          Outros                                                          7.963                  28.153                    8.972                  23.796
+                                                                        209.611                 355.149                  201.183                 410.986
+
+
+      (a) Compartilhamento de custos de serviços relacionados sobretudo a folha de pagamento de funcionários e serviços de publicidade, em relação a
+          receita se refere aos fees cobrados na intermediação.
+
+      (b) Refere-se substancialmente a repasse de despesas de consultoria e software.
+
+      (c) As receitas referem-se a intermediação de serviços, a PagSeguro Tecnologia atua como facilitador internacional de pagamentos. As despesas
+          referem-se subtancialmente a provisão de aluguel de software para conciliação bancária, o qual passou a ser realizado pela Concil.
+
+      (d) Refere-se ao serviço de intermediação de pagamento.
+
+      (e) Saldo de despesa é substancialmente representado pelo repasse de serviços de conciliaçao bancária, e o saldo de receita refere-se a aluguel de
+          software.
+
+      (f)   Serviços de suporte técnico em informática e hospedagem (cloud).
+
+
+
+      Remuneração do pessoal-chave da Administração
+      O pessoal-chave da Administração inclui os diretores do PagSeguro. A remuneração paga aos
+      diretores do PagSeguro para o exercício findo em 31 de dezembro de 2023 foi de R$35.074
+      (R$21.226 para o exercício findo em 31 de dezembro de 2022).
+
+
+14. Fiscais e previdenciárias
+
+                                                                                          31 de dezembro de 2023                31 de dezembro de 2022
+     .
+     Circulante
+     Impostos retidos (PIS, COFINS, IRRF, ISS) (a)                                                              213.216                                 62.947
+     Previdenciários                                                                                             31.728                                 34.555
+     Imposto de renda e contribuição social – corrente                                                            5.217                                 23.220
+     Outros                                                                                                         867                                    296
+                                                                                                                251.028                                121.018
+     Exigível a longo prazo
+     Imposto de renda e contribuição social – diferido (b)                                                    2.216.958                             2.074.322
+
+                                                                                                              2.467.986                             2.195.340
+
+      (a) O saldo de impostos retidos refere-se substancialmente a aos impostos sobre o FIDC.
+
+      (b) Os saldos de imposto de renda e contribuição social diferidos estão detalhados na nota 15.
+
+
+
+
+37
+
+=== página 42 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+15. Imposto de renda corrente e diferido--Continuação
+     A realização estimada dos impostos de renda diferidos ativos e passivos está demonstrada a
+     seguir:
+
+                                    31 de dezembro de 2023
+                                    Ativo         Passivo
+     2024                            111.959        (1.470.366)
+     2025                              82.175         (296.502)
+     2026                            189.542          (142.951)
+     2027                              40.751         (162.919)
+     2028                              29.111         (144.220)
+                                     453.538        (2.216.958)
+
+
+     A estimativa de valor presente do imposto de renda diferido ativo é de R$ 387.633 calculados
+     considerando as taxas médias de mercado.
+
+     A reconciliação do imposto de renda e da contribuição social registrados no resultado em 31 de
+     dezembro de 2023 e 31 de dezembro de 2022:
+
+                                                                                       31 de dezembro de      31 de dezembro de
+                                                                                              2023                   2022
+     Lucro líquido do exercício antes do imposto de renda e da contribuição social                1.627.190             1.381.967
+     Participações no Lucro                                                                       (227.663)              (145.551)
+     Lucro líquido do exercício antes do imposto de renda e da contribuição social –
+     ajustado                                                                                    1.399.527              1.236.416
+     Alíquota vigente                                                                                 34%                    34%
+     Expectativa da despesa de imposto de renda e contribuição social, em relação
+     ao lucro contábil antes desses impostos, de acordo com a alíquota vigente                    (475.839)              (420.381)
+
+     Efeito do imposto de renda e da contribuição social sobre:
+     Adições (exclusões) permanentes:
+          Benefício com pesquisa e inovação tecnológica - Lei nº 11.196/05                         193.404                249.810
+          Equivalência Patrimonial                                                                  10.076                (18.573)
+          Outras adições (exclusões)                                                                 7.097                   2.847
+
+     Despesa com imposto de renda e contribuição social registrada no resultado do
+     exercício                                                                                    (265.262)              (186.297)
+
+     Provisão para imposto de renda                                                                 (5.215)               (18.335)
+     Provisão para contribuição social                                                                  (2)                (4.885)
+     Ativo fiscal diferido                                                                        (260.045)              (163.077)
+
+     Alíquota efetiva                                                                                 16%                    13%
+
+
+
+
+39
+
+=== página 43 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+16. Contingências
+                                                                                         31 de dezembro de 2023               31 de dezembro de 2022
+  Contingências tributárias:
+  Imposto sobre serviços - ISS (i)                                                                             176.330                              163.005
+  Contribuição para o financiamento da seguridade social - COFINS (ii)                                         189.630                              172.805
+  Programa de integração social - PIS (ii)                                                                      30.813                               28.081
+  Contingências cíveis                                                                                          31.038                               20.039
+  Contingências trabalhistas                                                                                    11.674                                3.655
+                                                                                                               439.485                              387.585
+
+       (i)   Imposto sobre serviços decorrente substancialmente das receitas de operações de intermediação financeira.
+
+       (ii) O montante registrado nessa rubrica refere-se substancialmente aos valores de PIS e COFINS sobre receitas financeiras sobre antecipações de
+            recebíveis.
+
+
+       O PagSeguro obteve uma decisão judicial na qual recolhe por meio de depósito judicial, até o
+       julgamento do mérito os itens “i” e “ii”, conforme descrito na nota 7.
+
+       A movimentação de contingências está demonstrada abaixo:
+
+                                    31 de dezembro de 2021               Adições             Baixas         Atualizações          31 de dezembro de 2022
+        Trabalhista                                    1.550                   1.677             (763)              1.191                          3.655
+        Cível                                         16.690                  20.781          (19.300)              1.868                         20.039
+        Tributário (i)                               348.048                       -           (4.998)             20.841                        363.891
+                                                     366.288                  22.458          (25.061)             23.900                        387.585
+
+
+                                    31 de dezembro de 2022               Adições             Baixas         Atualizações          31 de dezembro de 2023
+        Trabalhista                                    3.655                   9.393           (2.757)              1.382                         11.673
+        Cível                                         20.039                  45.828          (35.754)                925                         31.038
+        Tributário (i)                               363.891                  11.078          (12.296)             34.102                        396.774
+                                                     387.585                  66.299          (50.807)             36.408                        439.485
+
+     (i) Referem-se a discussões sobre a elegibilidade de alguns tributos, os quais estão sendo depositados em juízo, como demonstrado na nota 7.
+
+
+       O PagSeguro é parte em ações tributárias, trabalhistas e cíveis com riscos classificados pelos
+       assessores jurídicos como de perda possível, para os quais nenhuma provisão foi constituída em
+       31 de dezembro de 2023 e 31 de dezembro de 2022. As ações classificadas como perda
+       possível totalizam R$595.973 (R$462.851 em 31 de dezembro de 2022).
+
+       Em 15 de outubro de 2021, o PagSeguro Internet foi autuado pela Receita Federal do Brasil
+       (“RFB”) por não recolhimento de IOF sobre operações financeiras (“IOF”) sobre empréstimos
+       entre empresas do grupo. O IOF incide sobre operações de crédito de qualquer natureza,
+       inclusive empréstimos intercompany, O valor desta autuação foi de R$293.264 (R$266.957 em
+       31 de dezembro de 2022). A Companhia apresentou sua defesa, esclarecendo que as operações
+       realizadas entre o PagSeguro e suas controladas não são operações de crédito. O Grupo possui
+       um caixa centralizado e, de acordo com a lei, esse tipo de operação não é tributável pelo IOF.
+
+       Adicionalmente o PagSeguro possui um processo trabalhista no valor de R$156.289 (R$115.238
+       em 31 de dezembro de 2022).
+
+
+
+
+40
+
+=== página 44 ===
+PagSeguro Internet Instituição de Pagamento S.A.
+Notas explicativas às demonstrações financeiras
+31 de dezembro de 2023 e 2022
+(Em milhares de reais - R$, exceto quando indicado de outra forma)
+
+
+17. Patrimônio líquido
+
+     Capital social
+
+     Em 31 de dezembro de 2023 e 31 de dezembro de 2022, o capital social totalmente subscrito e
+     integralizado, é de R$4.676.968, representado por 1.662.133.845 ações ordinárias, sem valor
+     nominal.
+     Reserva legal
+     A reserva legal é constituída de acordo com o Estatuto, sendo 5% do lucro líquido até o limite de
+     20% do capital social realizado. A Administração do PagSeguro propôs a constituição de reserva
+     legal de R$56.713 (R$52.506 em 31 de dezembro de 2022), referente ao lucro líquido do
+     exercício findo em 31 de dezembro de 2023. A reserva legal totalizou um montante de
+     R$364.464 (R$307.751 em 31 de dezembro de 2022), somente será utilizada para aumento do
+     capital ou para absorção de prejuízos.
+     Reserva de retenção de lucros
+     A Administração do PagSeguro propôs a constituição de reserva de retenção de lucros de
+     R$1.077.552 (R$705.070 em 31 de dezembro de 2022), referente ao lucro líquido do exercício
+     findo em 31 de dezembro de 2023.
+     Dividendos
+     Por meio de reuniões da Diretoria, aprovaram a distribuição de dividendos intercalares nos
+     valores de R$700.000 em 13 de setembro de 2023, R$50.000 em 23 de outubro de 2023 e
+     R$550.000 em 21 de dezembro de 2023. Totalizando um montante de R$1.300.000 de
+     dividendos pagos.
+
+     Ajustes de avaliação patrimonial
+     O PagSeguro reconhece nesta rubrica o ajuste a valor de mercado dos instrumentos financeiros
+     negativo no valor de R$ 116 (R$89 negativo em 31 de dezembro de 2022), totalizando um
+     montante negativo de R$209 (R$93 negativo em 31 de dezembro de 2022).
+
+18. Receitas de prestação de serviços
+
+                                                               31 de dezembro de 2023            31 de dezembro de 2022
+                                                              ...
+     Receita de intermediação                                               9.331.735                             8.461.700
+     Receita com pré-pagamento                                              4.577.998                             4.173.050
+     Outras receitas (i)                                                      264.137                               195.820
+     Cancelamentos                                                            (48.343)                              (54.841)
+                                                                           14.125.527                            12.775.829
+
+      (i) Refere-se substancialmente a comissão sobre indicação de clientes para CDB´s e contas rendeiras do BancoSeguro.
+
+
+
+
+41

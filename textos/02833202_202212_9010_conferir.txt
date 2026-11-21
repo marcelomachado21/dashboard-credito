@@ -1,0 +1,996 @@
+
+=== página 13 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+        NOTA 1 - CONTEXTO OPERACIONAL
+
+        A Cooperativa de Crédito dos Médicos e Demais Profissionais da Saúde de Vitória da Conquista. - Unicred Sudoeste da Bahia (“Unicred Sudoeste da Bahia”
+        ou “Cooperativa”), CNPJ 02.833.202/0001-40, é uma cooperativa de crédito singular, instituição financeira não bancária, fundada em 25 de novembro de
+        1996, filiada à Cooperativa de Crédito Unicred Central Multirregional Ltda. - Unicred Central Multirregional (“Cooperativa Central”), e em conjunto com outras
+        cooperativas singulares e centrais é componente do Sistema Unicred - Sistema das Cooperativas de Crédito do Brasil (“Unicred do Brasil”). Tem sua
+        constituição e funcionamento regulamentados pela Lei 4.595/64, que dispõe sobre a Política e as Instituições Monetárias, Bancárias e Creditícias, pela Lei
+        5.764/71, que define a Política Nacional do Cooperativismo, pela Lei Complementar 130/09, que dispõe sobre o Sistema Nacional de Crédito Cooperativo e
+        pela Resolução 4.434/15 do Conselho Monetário Nacional - CMN, que dispõe sobre a constituição e funcionamento de cooperativas de crédito.
+
+        A Unicred Sudoeste da Bahia, possui sede, administração e foro jurídico na cidade de Vitória da Conquista – BA, e possui área de ação limitada ao município
+        sede e aos seguintes municípios: Anagé, Aracatú, Abaíra, Barra da Estiva, Barra do Choça, Belo Campo, Boa Nova, Brumado, Bom Jesus da Lapa, Botuporã,
+        Caatiba, Caetanos, Cândido Sales, Caculé, Candiba, Carinhanha, Caturama, Cordeiros, Dom Basílio, Encruzilhada, Érico Cardoso, Feira da Mata, Guajeru,
+        Guanambi, Ibiassucê, Ibicuí, Iguaí, Itambé, Itapetinga, Itarantim, Igaporã, Iuiu, Licínio de Almeida, Livramento de Nossa Senhora, Macaúbas, Malhada, Matina,
+        Mortugaba, Macaraní, Maiquinique, Malhada de Pedras, Nova Canaã, Piripá, Poções, Planalto, Palmas de Monte Alto, Paramirim, Pindaí, Rio do Antônio,
+        Riacho de Santana, Rio de Contas, Rio do Pires, Sebastião Laranjeiras, Serra do Ramalho, Tremedal, Urandi.
+
+        A Unicred Sudoeste da Bahia tem por fim a educação cooperativista, assistência financeira e prestação de serviços aos seus associados, através de ajuda
+        mútua, da economia sistemática e do uso adequado do crédito, dentro das normas que regem as operações ativas, passivas, acessórias e especiais.
+        Procurará, ainda, por todos os meios, fomentar a expansão do cooperativismo de economia e crédito mútuo. Deverá também:
+
+        (i) Prevenir e corrigir situações anormais que possam configurar infrações a normas legais ou regulamentares, ou acarretar risco para solidez das Unicred’s e
+        do sistema cooperativo;
+        (ii) Adotar medidas para assegurar o cumprimento das normas em vigor referentes à implementação de sistemas de controles internos e à certificação de
+        empregados;
+        (iii) Contratar auditoria externa para realizarem inspeções e auditagem.
+        O resumo da estrutura e gerenciamento dos riscos da Unicred Sudoeste da Bahia está descrito na nota 22.
+
+        A Administração da Cooperativa, em análise dos ativos e passivos, entende que não há riscos de liquidez, conforme a política da Unicred do Brasil. Além do
+        acompanhamento diário das operações de crédito e o baixo índice de inadimplência, não há histórico de saques relevantes de depósitos que possam vir a
+        prejudicar a liquidez.
+
+        NOTA 2 - APRESENTAÇÃO DAS DEMONSTRAÇÕES FINANCEIRAS E RESUMO DAS PRINCIPAIS PRÁTICAS CONTÁBEIS
+
+        a. Apresentação das demonstrações financeiras
+
+        As demonstrações financeiras foram elaboradas de acordo com as normas regulamentares constantes do plano contábil das Instituições do Sistema
+        Financeiro Nacional – COSIF e estão sendo apresentadas em conformidade com a atual legislação societária e práticas contábeis, em observância aos
+        Pronunciamentos Contábeis homologados pelo Banco Central do Brasil, com as regulamentações emanadas pela resolução do Conselho Monetário Nacional -
+        CMN nº 4.818/20 onde regulamenta e consolida os critérios gerais para elaboração e divulgação de demonstrações financeiras e pela resolução do Banco
+        Central do Brasil - BCB nº 2/20, que estabeleceu diretrizes, incluindo divulgação da Demonstração do Resultado Abrangente, abertura dos saldos no Balanço
+        Patrimonial de provisões, depreciações e amortizações, alterações que não modificam o saldo total desta demonstração, relativos às contas de ativo e
+        passivo.
+
+        As demonstrações financeiras, incluindo as notas explicativas, são de responsabilidade da Unicred Sudoeste Bahia e foram aprovadas em 28 de março de
+        2023.
+        a1. Mudanças nas Políticas Contábeis e Divulgação
+
+        Apresentamos a seguir um resumo sobre as normas emitidas pelos órgãos reguladores que entrarão em vigor a partir de 2023:
+
+        Resolução BCB nº 208, de 22 de março de 2022: a norma trata da remessa diária de informações ao Banco Central do Brasil referentes a poupança, volume
+        financeiro das transações de pagamento realizadas no dia, Certificados de Depósito Bancário (CDBs), Recibos de Depósito Bancário (RDBs) e depósitos de
+        aviso prévio de emissão própria e saldos contábeis de natureza ativa e passiva, tais como disponibilidades, depósitos, recursos disponíveis de clientes, entre
+        outros. Entra em vigor em 1º de março de 2023.
+
+        Resolução CMN n.º 4.966, de 25 de novembro de 2021: a norma dispõe sobre os conceitos e os critérios contábeis aplicáveis a instrumentos financeiros, e
+        quanto à designação e ao reconhecimento das relações de proteção (contabilidade de hedge) pelas instituições financeiras e demais instituições autorizadas a
+        funcionar pelo Banco Central do Brasil, buscando reduzir as assimetrias das normas contábeis previstas no Cosif em relação aos padrões internacionais. Deve
+        ser remetido ao Banco Central do Brasil o plano para a implementação desse normativo, até 31/12/2022. No que tange às alterações a serem aplicadas a
+        partir de 1º/1/2025. além da divulgação das demonstrações financeiras consolidadas de acordo o Padrão Contábil das instituições Reguladas pelo Banco
+        Central do Brasil (Cosif) e das demonstrações no padrão contábil internacional.
+        O Sistema Unicred elaborou um plano Sistêmico para a implementação da Resolução CMN n.º 4.966/21, que dispõe sobre os conceitos e os critérios
+        contábeis aplicáveis a instrumentos financeiros, e quanto à designação e ao reconhecimento das relações de proteção (contabilidade de hedge) pelas
+        instituições financeiras e demais instituições autorizadas a funcionar pelo Banco Central do Brasil.
+        Visando atender a Resolução, a Unicred contratou a BIP Consultoria, empresa de consultoria internacional, reconhecida pela expertise no tema. O processo
+        de mapeamento das áreas impactadas e sistemas internos ocorreu entre os meses de abril e junho de 2022. Durante a realização do trabalho, foram
+        realizadas entrevistas com as áreas impactadas, revisados os checklists de conformidades, dimensionadas e refinadas ações de dimensão de: atividades,
+        responsáveis, prazos e dependências internas ou externas.
+
+        O escopo do projeto contemplou a identificação de não conformidades da situação atual com os requerimentos previstos pela resolução, avaliando com
+        profundidade a arquitetura dos sistemas de tecnologia, entendimento ao grau de aderência às necessidades de cálculo, controle e contabilização, análise do
+        modelo de perdas esperadas, suportando a decisão entre a construção interna de novas soluções ou busca por contratação de parceiros externos.
+
+        O resultado deste trabalho foi a elaboração do Plano de Implementação do Sistema Unicred, o qual foi apresentado e aprovado pelo Conselho de
+        Administração de cada uma das Cooperativas filiadas ao Sistema durante o exercício de 2022.
+
+
+
+
+                                                                                                                                                                           9
+                                                                                                                                                  #   Classificação: Interno
+
+=== página 14 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+        Conforme o inciso II do parágrafo único do artigo 76 da Resolução CMN nº 4.966/2021, divulgamos abaixo, de forma resumida, o plano de implementação da
+        referida regulamentação:
+        a) Resumo do Plano de Implementação:
+        • Contratação de Consultoria para avaliação do cenário atual e entendimento dos impactos da norma, seguido de aprovação do plano nos conselhos; (2022)
+        • Revisão dos critérios de classificação e mensuração dos instrumentos financeiros, renegociação, reestruturação e baixa; (Previsão de 2023);
+        • Adequação do modelo de apuração da Provisão para perdas esperadas atreladas ao risco de crédito; (Previsão de 2024);
+        • Implementação de soluções de sistemas de informação; (Previsão de 2024)
+        • Atualização de políticas, normas e procedimentos; (Previsão de 2024)
+        • Acompanhamento da publicação de novos normativos pelo órgão regulador. (2022, 2023 e 2024).
+        O referido plano está sujeito a ajustes e adequações, visto que para a implementação completa, faz-se necessária a emissão de novos normativos pelo órgão
+        regulador. O Sistema Unicred permanecerá atento as essas publicações, visando estar em linha com a legislação vigente e as práticas contábeis, garantindo a
+        implementação no que tange às alterações a serem aplicadas a partir de 01/01/2025.
+
+
+        b. Descrição das principais práticas contábeis
+
+        As principais práticas contábeis aplicadas na preparação dessas demonstrações financeiras estão definidas abaixo. Essas práticas foram aplicadas de modo
+        consistente nos exercícios apresentados.
+
+        b.1 Estimativas contábeis
+
+        A preparação de demonstrações financeiras requer o uso de certas estimativas contábeis críticas e também o exercício de julgamento por parte da
+        Administração da Cooperativa no processo de aplicação das políticas contábeis. As demonstrações financeiras da Cooperativa incluem, portanto, estimativas
+        referentes à seleção das vidas úteis do ativo imobilizado, provisão para perdas nas operações de crédito, valor justo de certos instrumentos financeiros,
+        provisão para riscos cíveis, tributários e trabalhistas e outras similares. Os resultados reais podem apresentar variações em relação às estimativas. A
+        Administração da Cooperativa monitora e revisa as estimativas e suas premissas pelo menos semestralmente.
+
+        b.2 Caixa e equivalentes de caixa
+
+        Caixa e equivalentes de caixa são representados por disponibilidades em moeda nacional, depósitos bancários, centralização financeira mantida na Central,
+        cujo vencimento das operações na data da efetiva aplicação seja igual ou inferior a 90 dias, que apresentam risco insignificante de mudança de valor e são
+        utilizados pela Instituição para o gerenciamento de seus compromissos de curto prazo.
+
+        b.3 Instrumentos financeiros – ativo
+
+
+        De acordo com a Resolução BCB nº 3.534/08 art. 2º, considera-se instrumento financeiro qualquer contrato que dê origem a um ativo financeiro para uma
+        entidade, que podem ser observados na nota 04.
+        Direitos junto a participantes de sistemas de liquidação - referem-se a títulos e outros papéis em favor da Unicred, apresentados por participantes de sistemas
+        de liquidação e demais instituições autorizadas a funcionar pelo Banco Central do Brasil, para sua liquidação interbancária.
+        Pix - é o meio de pagamento eletrônico instantâneo, criado pelo Banco Central (BC) em que os recursos são transferidos entre contas em poucos segundos.
+        Foi lançado oficialmente no dia 5 de outubro de 2020 com início de funcionamento integral em 16 de novembro de 2020.
+
+        Relações interfinanceiras - são os recursos substancialmente representados pela centralização financeiras na Cooperativa Central, os quais são por ela
+        administrados e aplicados no mercado financeiro e, que são atualizados pelos rendimentos auferidos até a data do balanço. Essas operações são
+        caracterizadas como atos cooperativos, pela Lei nº 5.764/71 que define a política nacional do cooperativismo.
+        A Instrução Normativa BCB nº 250/22 criou e alterou rubricas contábeis para o registro das participações de cooperativas em títulos e valores mobiliários,
+        anteriormente registradas nas rubricas de investimentos em participações em coligadas e controladas, sendo revogada pela Instrução Normativa BCB nº
+        276/22 e passando a vigorar as novas rubricas através da Instrução Normativa BCB nº 268/22, a qual consolidou o grupo ativo realizável do elenco de contas
+        do COSIF. As participações de cooperativas estão demonstradas ao custo de aquisição e referem-se as cotas de capital junto a Central.
+
+
+        b.4 Operações de crédito
+
+        As operações pré-fixadas são registradas pelo valor futuro, retificadas pela conta de rendas a apropriar, e as operações pós-fixadas são atualizadas até a data
+        do balanço, observados os índices contratados. Para as operações vencidas há mais de 60 dias, os juros permanecerão em rendas a apropriar, até a
+        liquidação da operação. As operações classificadas como nível “H” permanecem nessa classificação por seis meses, quando então são baixadas contra a
+        provisão existente e controladas, por cinco anos, em contas de compensação, não mais figurando no balanço patrimonial.
+        Sobre as operações de crédito, a Administração da Cooperativa constituiu provisão para perdas em montante considerado suficiente para cobrir eventuais
+        perdas na realização de valores a receber, com base em critérios consistentes e verificáveis, amparadas por informações internas e externas, pelo menos em
+        relação ao devedor e seus garantidores (situação econômico-financeira, grau de endividamento, capacidade de geração de resultados, fluxo de caixa,
+        administração e qualidade de controles, pontualidade a atrasos nos pagamentos, contingências, setor de atividade econômica, limite de crédito) e, em relação
+        à operação (natureza e finalidade, características das garantias com suficiência de liquidez e valor), conforme determina a resolução do Conselho Monetário
+        Nacional - CMN nº 2.682/99 e nº 2.697/00, que classifica as operações em nove níveis de risco (de AA a H).
+        As provisões para perdas esperadas associadas ao risco de crédito são constituídas fundamentadas em análises das operações, levando em consideração as
+        garantias existentes, a experiência passada, a capacidade de pagamento do tomador, os riscos específicos e globais das carteiras e a conjuntura econômica,
+        em observância aos critérios estabelecidos pelo BCB, em especial àqueles definidos nas Resoluções CMN nº 2.682/99 e nº 2.697/00.
+
+
+
+
+                                                                                                                                                                           10
+                                                                                                                                                   #   Classificação: Interno
+
+=== página 15 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+
+        b.5 Imobilizado e intangível
+
+        O Imobilizado corresponde aos direitos que tenham por objeto bens corpóreos destinados à manutenção das atividades ou exercidos com essa finalidade, é
+        composto pelas edificações, instalações, móveis, utensílios e outros equipamentos, sistemas de segurança, sistemas de comunicação, equipamentos de
+        processamento de dados e softwares de uso, demonstrados pelo custo de aquisição.
+        As depreciações são calculadas e computadas pelo método linear, levando-se em consideração a vida útil econômica dos bens conforme demonstrado na
+        nota 8 reconhecidos no resultado do período.
+
+
+
+
+        A vida útil dos ativos e os métodos de depreciação são revistos no encerramento de cada exercício de acordo com os critérios definidos pelo CPC 27 – Ativo
+        Imobilizado, o qual foi aprovado pela Resolução nº 4.535/16 do CMN.
+        O intangível correspondem aos direitos adquiridos que tenham por objeto bens incorpóreos destinados à manutenção da Cooperativa ou exercidos com essa
+        finalidade. Está demonstrado pelo valor de custo e contempla gastos com aquisição e desenvolvimento de ativos que visem à produção de dispositivos,
+        produtos, sistemas e serviços novos ou substancialmente aprimorados, ajustado por amortizações acumuladas, calculadas a partir do momento em que
+        começam a ser usufruídos os benefícios respectivos, com base em taxas anuais que levam em consideração a vida útil econômica dos bens, a qual varia de 5
+        à 10 anos e são revistos no encerramento de cada exercício de acordo com os critérios definidos pelo CPC 04 (R1) – Ativo Intangível, o qual foi aprovado pela
+        Resolução nº 4.534/16 do CMN.
+
+        b.6 Redução ao valor recuperável de ativos não financeiros (“impairment”)
+
+        Os títulos e valores mobiliários, o imobilizado e os outros ativos não circulantes, inclusive o ativo intangível, são revistos anualmente de acordo com os critérios
+        definidos pelo CPC 01 (R1) – Redução ao Valor Recuperável de Ativos, o qual foi aprovado pela Resolução CMN nº 4.924/21, para se identificar evidências de
+        perdas não recuperáveis ou ainda sempre que eventos ou alterações nas circunstâncias indicarem que o valor contábil pode não ser recuperável. Quando este
+        for o caso, o valor recuperável é calculado para verificar se há perda. Quando houver perda, ela é reconhecida pelo montante em que o valor contábil do ativo
+        ultrapassa seu valor recuperável, que é o maior entre o preço líquido de venda e o valor em uso de um ativo.
+        Não há avalição no período corrente que indique reconhecimento de perdas por “impairment”.
+
+        b.7 Depósitos e recursos de aceite e emissão de títulos
+
+        Os depósitos à vista são os saldos disponíveis em conta corrente, cuja disponibilidade é imediata aos associados, portanto sem prazo determinado para
+        movimentá-lo, ficando a critério do portador dos recursos fazê-lo conforme sua necessidade.
+        Os depósitos sob aviso e a prazo possuem remuneração com base em indicadores econômicos de mercado e taxas fixadas no ato da aplicação. Os depósitos
+        a prazo podem ser contratados com vencimentos variados, conforme opções de prazo disponíveis para cada produto.
+        Os recursos de aceite e emissão de títulos são demonstrados pelos valores das exigibilidades e consideram, quando aplicável, os encargos exigíveis até a
+        data do balanço, reconhecidos em base pro rata die, conforme demonstrado na nota 9 .
+
+        b.8 Instrumentos financeiros – passivo
+
+        Em conformidade com a Resolução BCB nº 3.534/08 art. 2º, instrumentos financeiros passivo é qualquer contrato que dê origem a um passivo financeiro ou
+        instrumento de capital próprio para outra instituição autorizada a funcionar pelo Banco Central do Brasil. Destina-se ao registro dos recursos em trânsito de
+        terceiros, gerados contra a Unicred, apresentados por participantes de sistemas de liquidação.
+
+        b.9 Provisões
+
+        As práticas contábeis para registro, mensuração e divulgação de provisões e passivos contingentes estão de acordo com os critérios definidos pelo CPC 25 –
+        Provisões, Passivos Contingentes e Ativos Contingentes, o qual foi aprovado pela Resolução CMN nº 3.823/09. As provisões ativas não são reconhecidas,
+        exceto quando da existência de evidências concretas que assegurem a sua realização. As provisões passivas são reconhecidas quando a cooperativa tem
+        uma obrigação presente legal ou implícita como resultado de eventos passados, sendo provável que um recurso econômico seja requerido para saldar uma
+        obrigação legal. As provisões são registradas tendo como base as melhores estimativas do risco envolvido.
+
+        b. 10 Provisões para contingências
+
+        As provisões para contingências são constituídas quando as perdas forem avaliadas como prováveis, levando em consideração a opinião dos assessores
+        jurídicos, a natureza das ações, a similaridade com processos anteriores, a complexidade e o posicionamento de tribunais, e os montantes envolvidos forem
+        mensuráveis com suficiente segurança. Os passivos contingentes avaliados como de perdas possíveis são apenas divulgados em nota explicativa, pois a sua
+        existência somente será confirmada pela ocorrência ou não de um ou mais eventos futuros e incertos que não estejam totalmente sob o controle da
+        Administração. E aqueles não mensuráveis com suficiente segurança e classificados como perdas remotas não são provisionados e/ou divulgados.
+
+        b.11 Demais ativos e passivos circulantes e não circulantes
+
+        Os demais ativos são apresentados ao valor de custo ou de realização, incluindo, quando aplicável, os rendimentos e as variações monetárias auferidos.
+
+        Os demais passivos são demonstrados pelos valores conhecidos ou calculáveis, acrescidos, quando aplicável, dos correspondentes encargos e das variações
+        monetárias incorridas.
+
+        b.12 Apuração do resultado
+
+        Os ingressos e dispêndios são reconhecidos pelo regime de competência do exercício.
+
+
+
+
+                                                                                                                                                                               11
+                                                                                                                                                       #   Classificação: Interno
+
+=== página 16 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+
+        b.13 Segregação entre circulante e não circulante
+
+        Os valores realizáveis e exigíveis com prazos inferiores a 360 dias estão classificados no circulante, e os prazos superiores, no não circulante.
+
+        b.14 Demonstração dos fluxos de caixa
+
+        A demonstração do fluxo de caixa foi elaborada de acordo com o CPC 03 (R2) Demonstração do Fluxo de Caixa emitido pelo Comitê de Pronunciamentos
+        Contábeis. Com o intuito de demonstrar maior transparência nas operações e uma melhor gestão dos recursos financeiros a cooperativa optou pelo método
+        indireto. Este método se baseia pelas sobras ou perdas do exercício que é ajustado pelos itens econômicos, (depreciação/amortização) e pelas variações nas
+        contas patrimoniais.
+
+        b.15 Impostos e contribuições
+
+
+        As provisões para Imposto de Renda, Contribuição Social, Programa de Integração Social - PIS, Contribuição para o Financiamento da Seguridade Social -
+        COFINS e Imposto sobre serviço de qualquer natureza - ISSQN foram calculadas às alíquotas vigentes, considerando, para as respectivas bases de cálculo, a
+        legislação pertinente a cada tributo.
+        A Cooperativa está sujeira à tributação pelo Imposto de Renda das Pessoas Jurídicas – IRPJ e Contribuição Social sobre o Lucro Líquido – CSLL quando
+        auferir resultados positivos em atos não cooperativos. Nesses casos, a provisão é constituída com base nas alíquotas vigentes de 15%, acrescida de adicional
+        de 10% quando for o caso, considerando as adições e exclusões e a compensação de prejuízos fiscais e de base negativa de CSLL limitados a 30% do lucro
+        tributável.
+        A alíquota da CSLL para as cooperativas de crédito foi elevada de 15% para 16% para o período-base compreendido entre 1º de agosto de 2022 e 31 de
+        dezembro de 2022, e a partir de 1º de janeiro de 2023 a alíquota retorna para 15%, conforme Lei nº 14.446/22.
+        O recolhimento do Imposto Sobre Serviço de Qualquer Natureza – ISSQN, é calculado sobre os ingressos e receitas auferidas com atos não cooperativos. A
+        alíquota aplicada varia de 2% a 5%, de acordo com a legislação vigente de cada município.
+
+
+        b.16 Coobrigações
+
+        Conforme resolução 4.512/16 as coobrigações por garantias financeiras prestadas devem ser objeto de avaliação e registro, quando aplicável de provisões
+        para cobertura das perdas associadas ao final de cada mês. O Cálculo é efetuado conforme valores em garantia, sendo aplicado sobre os valores o percentual
+        conforme nível de risco que o cooperado se encontra na Unicred Sudoeste da Bahia ao final de cada mês (nota 11).
+
+        b.17 Fiança
+
+        Fiança é a operação na qual o cooperado necessita de um fiador para operações de crédito em outras instituições, onde a Unicred Sudoeste da Bahia entra
+        como fiadora da operação. De acordo com a resolução 4.512/2016, por se tratar de garantia financeira ocorre a necessidade de ser efetuado a provisão de
+        forma mensal com base no percentual do nível de risco do cooperado (nota 17).
+        b.18 Resultado recorrente e não recorrente
+
+        Resultados recorrentes são aqueles que estão relacionados com as atividades ocorridas com frequência na Cooperativa seja no presente ou previstas que
+        possam ocorrer no futuro, enquanto o resultado não recorrente é aquele que decorre de um evento extraordinário, imprevisível, pontual que não se repetirá no
+        futuro.
+        Na avaliação da Administração, no exercício corrente não existem indicativos para reconhecimento de resultados não recorrentes.
+
+        NOTA 3 - CAIXA E EQUIVALENTES DE CAIXA
+
+
+        As disponibilidades e a centralização financeira são classificados como caixa e equivalentes de caixa para fins de apresentação da Demonstração dos Fluxos
+        de Caixa, de acordo com os critérios definidos pelo CPC 03 (R2) – Demonstração dos Fluxos de Caixa, o qual foi aprovado pela Resolução CMN nº 4.818/20.
+
+
+                                                                                                                          31/12/2022                              31/12/2021
+        Disponibilidades                                                                                                          89                                     577
+         Caixa                                                                                                                    89                                     577
+        Centralização financeira                                                                                              38.033                                  36.668
+        Total                                                                                                                 38.122                                  37.245
+
+        NOTA 4 - INSTRUMENTOS FINANCEIROS
+
+
+        Referem-se à centralização financeira das disponibilidades líquidas da Unicred Sudoeste da Bahia depositada junto à Cooperativa Central, conforme
+        determinado no artigo 17 da resolução nº 4.434/15, bem como recursos a receber decorrente de movimentação de PIX, títulos e outros papéis apresentados
+        por participantes de sistemas de liquidação e demais instituições autorizadas a funcionar pelo Banco Central do Brasil.
+
+
+                                                                                                                          31/12/2022                              31/12/2021
+        Títulos e valores mobiliários (a)                                                                                      4.137                                   4.137
+        Créditos vinculados ao Banco Central                                                                                     905                                     501
+        Centralização financeira (90 dias)                                                                                    38.033                                  36.668
+        Total                                                                                                                 43.075                                  41.306
+
+        No exercício de 2022, os valores referente aos Instrumentos Financeiros operados na Centralização Financeira, foram remunerados a uma taxa acumulada foi
+        de 105,56% a do CDI, que gerou rendimentos registrados em ingressos de depósitos intercooperativos, no montante de R$ 4.514 (No exercício de 2021 a taxa
+        acumulada foi de 114,88% do CDI, que gerou rendimentos registrados em ingressos de depósitos intercooperativos, no montante de R$ 1.874 ).
+
+
+
+
+                                                                                                                                                                              12
+                                                                                                                                                      #   Classificação: Interno
+
+=== página 17 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+
+        a. Composição Títulos e valores mobiliários
+
+                               Descrição                                     Participação                                    31/12/2022                              31/12/2021
+        Participação da Cooperativa Central                                        30%                                           4.134                                    4.134
+        Outras participações                                                                                                         3                                          3
+        Total                                                                                                                    4.137                                     4.137
+
+
+        A Instrução Normativa BCB nº 268/22 alterou a rubrica contábil para o registro das participações de cooperativas em títulos e valores mobiliários,
+        anteriormente registradas nas rubricas de investimentos em participações em coligadas e controladas.
+
+        NOTA 5 – OPERAÇÕES DE CRÉDITO E PROVISÃO PARA CRÉDITOS DE LIQUIDAÇÃO DUVIDOSA
+
+        a) Composição da carteira de créditos por tipo de operação.
+                                                                                                             31/12/2022                                              31/12/2021
+                        Operações de crédito
+                                                                      Circulante        Não Circulante            Total    Circulante        Não Circulante               Total
+        Cheque especial e adiantamento a depositantes                          515                       -          515               445                      -              445
+        Empréstimos                                                          11.413              16.533           27.946            6.787              8.521               15.308
+        Títulos descontados                                                        28                    -           28                48                      -               48
+        Financiamentos                                                        2.328               3.019            5.347            2.074              3.124                5.198
+        Financiamentos habitacionais                                           211                 719              930               195                752                  947
+        (-) Provisões para perdas esperadas associadas ao
+                                                                              (412)               (576)            (988)             (280)             (363)                 (643)
+        risco de crédito
+        Carteira total                                                       14.083              19.695           33.778            9.269             12.034               21.303
+
+
+        b) Composição de outros créditos.
+
+        Estão inclusos na base de cálculo da provisão para operações de crédito valores relativos a outros créditos, assim compostos:
+
+                                                                                                             31/12/2022                                              31/12/2021
+                           Outros créditos
+                                                                      Circulante        Não Circulante            Total    Circulante        Não Circulante               Total
+        Créditos por avais e fianças                                            71                   -                71                 -                     -               -
+        Valores a receber relativos a transação de pagto                     2.840                   5            2.845             1.433                      -          1.433
+        (-) Provisões para perdas esperadas associadas ao risco              (101)                   -             (101)              (23)                     -            (23)
+        Total                                                                2.810                   5            2.815             1.410                      -          1.410
+
+        Total da carteira de operações de crédito e outros créditos         16.893              19.700           36.593            10.679            12.034               22.713
+
+        c) Operações de crédito a pessoas físicas
+                                             Tipo de operação                                                                31/12/2022                              31/12/2021
+        Cheque especial e adiantamento a depositantes                                                                              314                                       318
+        Empréstimos                                                                                                             12.595                                    8.055
+        Títulos descontados                                                                                                         28                                        30
+        Financiamentos                                                                                                           3.217                                    3.544
+        Financiamentos habitacionais                                                                                               930                                       947
+        Créditos por avais e fianças                                                                                                10                                         -
+        Valores a receber relativos a transação de pagto                                                                         2.845                                    1.433
+        (-) Provisões para perdas esperadas associadas ao risco de crédito                                                        (609)                                    (391)
+        Total                                                                                                                    19.330                                  13.936
+
+        d) Operações de crédito a pessoas jurídicas
+                                           Tipo de operação                                                                  31/12/2022                              31/12/2021
+        Cheque especial e adiantamento a depositantes                                                                              201                                       127
+        Empréstimos                                                                                                             15.351                                    7.253
+        Títulos descontados                                                                                                         -                                         18
+        Financiamentos                                                                                                           2.130                                    1.654
+        Créditos por avais e fianças                                                                                                 61                                       -
+        (-) Provisões para perdas esperadas associadas ao risco de crédito                                                        (480)                                    (275)
+        Total                                                                                                                    17.263                                   8.777
+
+        e) Concentração dos principais devedores
+        Descrição                                                                                  31/12/2022                 %                  31/12/2021                   %
+        Maior devedor                                                                                   3.714               8,15                      1.287                 4,12
+        10 maiores devedores                                                                           17.039              34,81                      9.081                22,12
+        20 maiores devedores                                                                           21.468              43,60                     12.487                32,25
+
+
+
+
+                                                                                                                                                                                 13
+                                                                                                                                                         #   Classificação: Interno
+
+=== página 18 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+        f) Composição da carteira de créditos por níveis de risco
+                                                                                                          31/12/2022                                               31/12/2021
+                                                                                    Provisões para                                        Provisões para
+                      Nível                          %                              perdas esperadas                                      perdas esperadas
+                                                                   Carteira                                    Total     Carteira                                         Total
+                                                                                    associadas ao                                         associadas ao
+                                                                                    risco de crédito                                      risco de crédito
+                       AA                            -                   10.530                       -        10.530          2.915                         -            2.915
+                       A                          0,50                   13.022                   (65)         12.957          9.968                   (50)               9.918
+                       B                          1,00                    8.654                   (87)          8.567          5.983                   (60)               5.923
+                       C                          3,00                    3.109                   (93)          3.016          2.436                   (73)               2.363
+                       D                         10,00                    1.316                 (132)           1.184          1.402                  (140)               1.262
+                       E                         30,00                        281                 (84)           197                457               (137)                 320
+                        F                        50,00                        250               (125)            125                  -                      -                 -
+                       G                         70,00                         56                 (39)            17                 38                (26)                  12
+                       H                         100,00                       464               (464)               -               180               (180)                    -
+                      Total                                              37.682                (1.089)         36.593         23.379                  (666)              22.713
+
+
+        g) Cronograma de vencimentos das operações
+                                           Tipo de operação                                                              31/12/2022                                31/12/2021
+        Vencidos até 15 dias                                                                                                    48                                         62
+        Vencidos há mais de 15 dias                                                                                            388                                         99
+        Vincendos até 90 dias                                                                                                6.167                                      3.772
+        Vincendos de 91 até 180 dias                                                                                         4.266                                      2.743
+        Vincendos de 181 dias até 360 dias                                                                                   6.500                                      4.281
+        Vincendos de 361 dias até 720 dias                                                                                   8.989                                      5.952
+        Vincendos após 720 dias                                                                                             11.324                                      6.470
+        Total                                                                                                                37.682                                    23.379
+
+        h) Movimentação da provisão para operações de crédito duvidosa e outros créditos
+                                          Tipo de operação                                                               31/12/2022                                31/12/2021
+        Saldo inicial                                                                                                          (666)                                     (478)
+        Créditos baixados para prejuízo                                                                                         152                                         64
+        Constituição/reversão da provisão                                                                                      (575)                                    (252)
+        Total                                                                                                                (1.089)                                     (666)
+
+        i) Créditos baixados contra prejuízo, renegociados e recuperados
+                                           Tipo de operação                                                              31/12/2022                                31/12/2021
+        Saldo inicial                                                                                                          132                                         399
+        Valor das operações baixadas para prejuízo no período                                                                  152                                          64
+        Valor das operações recuperadas no período                                                                              -                                        (331)
+        Total                                                                                                                   284                                        132
+
+
+        Durante o exercício de 2022, não foram realizadas recuperações (R$ 331 em 2021), que havia sido reconhecidos como prejuízo em exercícios anteriores.
+        Foram realizadas renegociações, no montante de R$ 578 (R$ 1.105 em 2021), classificadas nas operações de crédito.
+
+
+        j) Receita de operações de crédito
+                                                                                    2º semestre 2022
+                              Descrição                                                                                  31/12/2022                                31/12/2021
+                                                                                       (não auditado)
+        Rendas de adiantamentos a depositantes                                                    16                             32                                         62
+        Rendas de empréstimos                                                                  2.530                          4.483                                      2.016
+        Rendas de empréstimos cheque especial                                                    174                            344                                        248
+        Rendas de outros empréstimos                                                              88                            162                                         73
+        Rendas de direitos creditórios descontados                                                 5                             15                                         15
+        Rendas de financiamentos                                                                 709                          1.326                                        650
+        Rendas de crédito avais honrados                                                           2                              3                                          1
+        Total                                                                                   3.524                          6.365                                     3.065
+
+        NOTA 6 - OUTROS CRÉDITOS
+
+                                                                                                          31/12/2022                                               31/12/2021
+                              Descrição
+                                                                  Circulante         Não Circulante            Total    Circulante    Não Circulante                    Total
+        Rendas a receber                                                    10                     -               10              36                -                      36
+        Adiantamentos e antecipações                                        10                     -               10               9                -                       9
+        Devedores por depósitos em garantias                                 -                   413              413               -            368                      368
+        Créditos por avais e fianças                                        71                     -               71               -                -                       -
+        Valores a receber relativos a transação de pagto                 2.840                     5           2.845           1.433                 -                  1.433
+        (-) Provisões para perdas esperadas associadas ao risco          (101)                     -            (101)            (23)                -                    (23)
+        Impostos e contribuições a compensar                                32                     -               32              32                -                      32
+        Devedores diversos - País                                           61                     -               61              69                -                      69
+        Total                                                            2.923                   418           3.341           1.556             368                    1.924
+
+        Devedores por depósitos em garantias, referem-se aos depósitos judiciais relativos aos processos de:
+        COFINS no montante de R$ 345 (R$ 307 em 2021)
+        PIS no montante de R$ 68 (R$ 61 em 2021)
+
+
+                                                                                                                                                                               14
+                                                                                                                                                       #   Classificação: Interno
+
+=== página 19 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+
+        NOTA 7 - OUTROS VALORES E BENS
+
+                                                Descrição                                                                31/12/2022                              31/12/2021
+        Despesas antecipadas                                                                                                      -                                      1
+        Total                                                                                                                     -                                       1
+
+        NOTA 8 - IMOBILIZADO E INTANGÍVEL
+
+        Demonstrado pelo custo de aquisição ou construção, menos depreciação acumulada. As depreciações são calculadas pelo método linear, com base em taxas
+        determinadas pelo prazo de vida útil estimada dos bens, conforme demonstrados abaixo:
+
+        a) Imobilizado de uso e depreciação acumulada
+                                                                                                                                            31/12/2022           31/12/2021
+                                      Descrição                                    Taxa anual de                      Depreciação
+                                                                                                        Custo                                    Líquido             Líquido
+                                                                                    depreciação                        acumulada
+        Bens Moveis                                                                    0%                        21                 -                    21                 -
+        Instalações                                                                    10%                        9               (7)                     2                 1
+        Mobiliários                                                                    10%                       62              (53)                     9                14
+        Equipamentos de comunicação                                                    10%                       24              (20)                     4                 5
+        Equipamento de processamento de dados                                          20%                      104              (57)                    47                12
+        Outros equipamentos                                                            10%                       24              (18)                     6                 4
+        Total                                                                                                   244             (155)                    89                36
+
+
+        b) Intangível e amortização acumulada
+
+        Nesta rubrica registram-se os softwares adquiridos depois da criação do grupo ativos intangíveis pela carta circular do Banco Central do Brasil nº 3.357/2008.
+        São registrados pelo custo de aquisição.
+
+                                                                                                                                            31/12/2022           31/12/2021
+                                      Descrição                                    Taxa anual de                      Amortização
+                                                                                                        Custo                                    Líquido             Líquido
+                                                                                    amortização                        acumulada
+        Outros ativos intangíveis                                                      20%                      345             (340)                     5                  -
+        Total                                                                                                   345             (340)                     5                  -
+
+        NOTA 9 - DEPÓSITOS
+
+                                                                                               31/12/2022                                                        31/12/2021
+                   Descrição
+                                               Circulante        Não Circulante            Total              Circulante       Não Circulante                 Total
+        Depósitos à vista                              20.103                 -                     20.103            16.830                -                          16.830
+          Pessoa física                                  5.542                -                      5.542             4.815                -                           4.815
+          Pessoa jurídica                              14.561                 -                     14.561            12.015                -                          12.015
+        Depósitos a prazo                                    1           39.021                     39.022                 1            30.800                         30.801
+         Pessoa física                                       1           17.785                     17.786                 1            14.210                         14.211
+         Pessoa jurídica                                     -           21.236                     21.236                 -            16.590                         16.590
+        Total                                          20.104             39.021                    59.125            16.831            30.800                         47.631
+
+
+        Os depósitos à vista não são remunerados. Os depósitos a prazo são remunerados por encargos financeiros calculados com base no CDI e RDC, podendo ser
+        contratados em prazos de vencimento variados. Em 31 de dezembro de 2022 foram remunerados encargos financeiros no montante de R$ 4.110 (R$ 1.121
+        em 2021), e foram registrados em dispêndios da intermediação financeira – operação de captação de mercado. Os depósitos a prazo foram segregados entre
+        passivo circulante e não circulante de acordo com o prazo de vencimento das respectivas captações.
+
+        Os depósitos, com exceção a Letra Financeira (LF), estão garantidos até o limite de R$ 250 mil por CPF/CNPJ pelo FGCoop (Fundo Garantidor do
+        Cooperativismo de Crédito), fundo este constituído por todas as cooperativas de crédito brasileiras e bancos cooperativos integrantes do Sistema Nacional de
+        Crédito Cooperativo (SNCC). O FGCoop tem por finalidade conforme seu estatuto:
+        I - Proteger depositantes e investidores das instituições associadas, respeitados os limites e condições estabelecidos no seu regulamento;
+        II- Contribuir para a manutenção da estabilidade do Sistema Nacional de Crédito Cooperativo (SNCC);
+        III - Contribuir para prevenção de crise sistêmica no segmento cooperativista. O estatuto e o regulamento do fundo tiveram aprovação através da resolução do
+        Conselho Monetário Nacional - CMN nº 4.933/21.
+
+        NOTA 10 - INSTRUMENTOS FINANCEIROS - PASSIVO
+
+                                                 Descrição                                                               31/12/2022                              31/12/2021
+        Relações Interfinanceiras                                                                                            2.895                                    1.456
+        Obrigações junto part. de sistemas de liquidação                                                                     2.895                                    1.456
+        Relações Interdependencias                                                                                               9                                        9
+        Recursos em trânsito de terceiros                                                                                        9                                        9
+        Total                                                                                                                 2.904                                   1.465
+
+
+
+
+                                                                                                                                                                             15
+                                                                                                                                                     #   Classificação: Interno
+
+=== página 20 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+
+        NOTA 11 - OUTRAS OBRIGAÇÕES E PROVISÕES
+
+                                                                                                       31/12/2022                                            31/12/2021
+                             Descrição
+                                                                 Circulante    Não Circulante               Total    Circulante   Não Circulante                  Total
+        Outras obrigações                                                  848                -               848             853                -                  853
+         Impostos e contribuições a recolher                                 8                -                 8              45                -                   45
+         Fundo de assistência técnica, educacional e social                477                -               477             514                -                  514
+         Cotas de capital a pagar                                          169                -               169             176                -                  176
+         Impostos e contribuições fiscais a recolher                        48                -                48               9                -                    9
+         Impostos e contribuições previdenciárias a recolher                54                -                54              42                -                   42
+         Credores diversos                                                  80                -                80              63                -                   63
+         Fornecedores diversos                                              12                -                12               4                -                    4
+        Provisões                                                          328            414                 742             217            368                    585
+         Provisões para pagamentos a efetuar                                 8                -                 8               5                -                    5
+         Provisões para despesas com pessoal                               304                -               304             190                -                  190
+         Provisões para garantias coobrigação                               16                -                16              22                -                   22
+         Provisões para contingências                                        -            414                 414               -            368                    368
+        Total                                                            1.176            414               1.590           1.070            368                  1.438
+
+
+        A provisão para contingências é registrada frente a eventuais perdas que possam advir de desfechos desfavoráveis nas ações em processos judiciais que a
+        Unicred Sudoeste da Bahia é parte. A Administração da Unicred Sudoeste da Bahia, constituiu provisão para processos de riscos, fiscais, cíveis e trabalhistas
+        em montantes considerados suficientes para fazer face à eventuais perdas que possam advir de desfechos desfavoráveis nas ações. A provisão teve a
+        seguinte movimentação no exercício:
+
+
+        Descrição                                                                                         Fiscais          Cíveis        Trabalhista                Total
+        Saldo em 1º de janeiro de 2021                                                                        353               -                  -                 353
+         Provisões/atualização durante o exercício                                                             15               3                  -                  18
+         Reversão de provisão                                                                                   -             (3)                  -                  (3)
+        Saldo em 31 de dezembro de 2021                                                                       368               -                  -                 368
+
+        Saldo em 1º de janeiro de 2022                                                                        368                -                     -             368
+         Provisões/atualização durante o exercício                                                              65               2                     -               67
+         Reversão de provisão                                                                                 (20)             (1)                     -             (21)
+        Saldo em 31 de dezembro de 2022                                                                       413                1                     -             414
+
+        De acordo com assessoria jurídcia a Unicred Sudoeste Bahia não possui ações com prognóstico de perda possível.
+
+        A provisão de coobrigações é constituída para fazer frente a cobertura das perdas associadas às garantias financeiras. Durante o exercício de 2022 o valor
+        total de garantias prestadas com coobrigações é de R$ 546 (R$ 812 em 2021) e a provisão constituída totaliza R$ 81 (R$ 10 em 2021). A provisão teve a
+        seguinte movimentação no exercício:
+
+                                                Descrição                                                              31/12/2022                            31/12/2021
+        Saldo inicial                                                                                                          22                                     22
+         Constituição                                                                                                          81                                     10
+         Reversão                                                                                                             (87)                                  (10)
+        Saldo final                                                                                                             16                                    22
+
+        NOTA 12 - PATRIMÔNIO LÍQUIDO
+
+        a. Capital social
+
+        Durante o exercício de 2022 o Capital Social é de R$ 10.933 (R$ 10.365 em 2021), de acordo com o estatuto social, cada associado tem direito a um voto,
+        independentemente do número de suas cotas partes. É representado pelas integralizações de 1.004 e 914 associados em 31 de dezembro de 2022 e de
+        2021, respectivamente.
+
+        b. Destinações estatutárias e legais
+
+        As sobras apuradas no fim do exercício, conforme estatuto social, tem a seguinte destinação:
+
+           20% para a reserva legal, sobre a sobras deduzidas do FATES ato não cooperativo, esta reserva tem a finalidade de reparar perdas eventuais futuras e a
+        atender ao desenvolvimento das atividades da Cooperativa;
+           5% para o Fundo de Assistência Técnica, Educacional e Social (FATES), sobre a sobras deduzidas do FATES ato não cooperativo, tem a finalidade de
+        prestar assistência e educação a seus associados, familiares e empregados, que podem ser executados mediante convênio com entidades especializadas,
+        oficiais ou não. Atendendo à carta circular nº 3.224/06, o FATES é registrado como exigibilidade.
+
+
+
+
+                                                                                                                                                                         16
+                                                                                                                                                 #   Classificação: Interno
+
+=== página 21 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+
+        c. Sobras acumuladas
+
+        As sobras são distribuídas e apropriadas conforme o estatuto social, normas do Banco Central do Brasil e posterior deliberação da assembleia Geral Ordinária
+        (AGO). Atendendo à instrução do Banco Central do Brasil - BCB, o Fundo de Assistência Técnica, Educacional e Social (F.A.T.E.S) é registrado como
+        exigibilidade e utilizado em despesas para o qual se destina, conforme a Lei nº 5.764/71.
+
+        As sobras à disposição da AGO no exercício de 2022 e 2021, após as destinações, estão assim compostas:
+
+                                               Descrição                                                              31/12/2022                            31/12/2021
+        Sobras/perda líquidas do exercício                                                                                2.881                                  1.247
+        Reserva legal                                                                                                      (570)                                 (238)
+        Sobras de exercício anterior                                                                                         -                                    422
+        FATES – ato cooperativo                                                                                            (142)                                   (60)
+        FATES – ato não cooperativo                                                                                          (34)                                (238)
+        Sobras líquidas a disposição da AGO                                                                               2.135                                  1.133
+
+        As destinações acima demonstradas foram apropriadas às respectivas contas nas demonstrações financeiras de 31 de dezembro de 2022 e serão submetidas
+        para revisão e aprovação da Assembleia Geral Ordinária (AGO).
+
+        NOTA 13 - INGRESSOS DE PRESTAÇÃO DE SERVIÇOS
+
+                                                                               2º semestre 2022
+                             Descrição                                                                                31/12/2022                            31/12/2021
+                                                                                  (não auditado)
+        Rendas de cobrança                                                                  182                              322                                    319
+        Rendas de serviços prioritários                                                        5                              11                                     13
+        Rendas de anuidade cartão visa                                                        32                              44                                     16
+        Rendas de tarifas bancárias                                                           56                             104                                     87
+        Rendas de compensação                                                                  9                              18                                     22
+        Rendas intercâmbio mastercard                                                         16                              36                                     53
+        Rendas juros master                                                                  -                               -                                       21
+        Rendas anuidade master                                                                 3                              10                                     18
+        Rendas de pacotes de serviços                                                         22                              44                                     44
+        Rendas comissão previdência                                                           56                             106                                     94
+        Rendas comissão consórcio                                                              2                               5                                     16
+        Rendas de outros serviços                                                           106                              189                                     87
+        Total                                                                               489                              889                                    790
+
+        NOTA 14 - DISPÊNDIOS DE PESSOAL E HONORÁRIOS
+
+                                                                               2º semestre 2022
+                             Descrição                                                                                31/12/2022                            31/12/2021
+                                                                                  (não auditado)
+        Dispêndios de honorários                                                           (169)                            (315)                                  (323)
+        Dispêndios de pessoal benefícios                                                     (58)                           (103)                                   (82)
+        Dispêndios de pessoal encargo social                                               (185)                            (313)                                  (230)
+        Dispêndios de pessoal proventos                                                    (438)                            (722)                                  (474)
+        Dispêndios de participação no resultado                                              (35)                            (56)                                   (47)
+        Dispêndios de pessoal treinamento                                                     (4)                             (4)                                   -
+        Dispêndios de remuneração de estagiários                                              (5)                             (5)                                   -
+        Total                                                                              (894)                          (1.518)                                (1.156)
+
+        NOTA 15 - OUTROS DISPÊNDIOS ADMINISTRATIVOS
+
+                                                                               2º semestre 2022
+        Descrição                                                                                                     31/12/2022                            31/12/2021
+                                                                                  (não auditado)
+        Dispêndios com serviços                                                            (520)                            (916)                                  (751)
+        Dispêndios com aluguéis                                                              (26)                            (52)                                   (46)
+        Dispêndios com comunicações                                                          (15)                            (26)                                   (20)
+        Dispêndios com processamentos                                                        (34)                            (67)                                   (17)
+        Dispêndios com propaganda e publicidade                                              (47)                            (51)                                    (4)
+        Dispêndios com depreciação e amortização                                             (19)                            (28)                                   (16)
+        Dispêndios com manutenção e conservação de bens                                       (7)                            (14)                                   (14)
+        Dispêndios com viagens e transportes                                                 (15)                            (34)                                   (10)
+        Dispêndios com seguros                                                                (7)                            (11)                                   (11)
+        Dispêndios com Unicred do Brasil                                                   (458)                            (922)                                  (817)
+        Dispêndios com Unicred Central                                                     (216)                            (442)                                  (547)
+        Outros dispêndios administrativos                                                    (87)                           (161)                                   (53)
+        Total                                                                            (1.451)                          (2.724)                                (2.306)
+
+
+
+
+                                                                                                                                                                        17
+                                                                                                                                                #   Classificação: Interno
+
+=== página 22 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+
+        NOTA 16 - OUTROS DISPÊNDIOS OPERACIONAIS
+
+                                                                                2º semestre 2022
+                             Descrição                                                                                 31/12/2022                             31/12/2021
+                                                                                   (não auditado)
+        Fundo garantidor de depósitos - FGCOOP                                                (41)                             (75)                                   (63)
+        Outros dispêndios operacionais                                                         (7)                             (15)                                   (11)
+        Perda de capital                                                                       (1)                              (2)                                    (2)
+        Total                                                                                 (49)                             (92)                                   (76)
+
+        NOTA 17 - OUTROS INGRESSOS OPERACIONAIS
+
+                                                                                2º semestre 2022
+                             Descrição                                                                                 31/12/2022                             31/12/2021
+                                                                                   (não auditado)
+        Recuperação de créditos baixados como prejuízo                                        -                                -                                      351
+        Ressarcimento de dispêndios administrativos                                           -                                 25                                      1
+        Outras rendas operacionais                                                             50                               89                                     25
+        Comissão corretora                                                                     38                               74                                     72
+        Ganhos de capital                                                                       2                                5                                      2
+        Total                                                                                   90                             193                                    451
+
+        NOTA 18 - SEGUROS CONTRATADOS
+
+        A Administração da Unicred Sudoeste da Bahia adota a política de contratar seguros, cujas coberturas são consideradas suficientes pela Administração e
+        agentes seguradores para fazer face à ocorrência de eventuais sinistros. As premissas de risco adotadas, dada a sua natureza, não fazem parte do escopo da
+        auditoria das demonstrações financeiras, consequentemente, não foram auditadas pelos nossos auditores independentes.
+
+        NOTA 19 - INSTRUMENTOS FINANCEIROS
+
+        Os ativos e passivos financeiros estão demonstrados no balanço patrimonial por valores contábeis, os quais são iguais ou que se aproximam dos seus valores
+        justos, conforme critérios mencionados nas correspondentes notas explicativas, com destaque para as disponibilidades, relações interfinanceiras, operações
+        de crédito, depósitos à vista e a prazo.
+
+        NOTA 20 - PARTES RELACIONADAS
+
+        A Unicred Sudoeste da Bahia é filiada à Unicred Central Multirregional, em conjunto com outras Cooperativas singulares filiadas, que representa suas
+        associadas perante os organismos governamentais e privados ligados ao cooperativismo e às instituições financeiras.
+
+        A Unicred Central Multirregional é uma sociedade cooperativista que tem por objetivo a organização em comum em maior escala dos serviços econômico-
+        financeiros e assistenciais de suas filiadas (cooperativas singulares), integrando e orientando suas atividades, de forma autônoma e independente, através dos
+        instrumentos previstos na legislação pertinente e normas exaradas do Banco Central do Brasil, bem como facilitar a utilização recíproca dos serviços, para
+        consecução de seus objetivos.
+
+        Para assegurar a consecução de seus objetivos, cabe a Unicred Central Multirregional, a coordenação das atividades de suas filiadas, a difusão e fomento do
+        cooperativismo de crédito, a orientação e aplicação dos recursos captados, a implantação e implementação de controles internos voltados para os sistemas
+        que acompanhem informações econômico-financeiras, operacionais e gerenciais, entre outras.
+
+        A Unicred Sudoeste da Bahia responde solidariamente pelas obrigações contraídas pela Unicred Central Multirregional perante terceiros, até o limite do valor
+        das cotas-partes do capital que subscrever, proporcionalmente à sua participação nessas operações. As operações com a Unicred Central Multirregional e
+        Unicred do Brasil estão relacionadas abaixo.
+
+                                            Descrição                                                                  31/12/2022                             31/12/2021
+        Ativo                                                                                                             42.170                                  40.805
+         Centralização financeira (NOTA 4)                                                                                38.033                                  36.668
+         Participação em Cooperativa (NOTA 4)                                                                              4.137                                   4.137
+
+        Receitas                                                                                                            4.514                                   1.874
+         Ingressos de depósitos intercooperativos                                                                           4.514                                   1.874
+
+        Despesas                                                                                                           (1.364)                                 (1.364)
+         Unicred do Brasil (NOTA 15)                                                                                         (922)                                   (817)
+         Unicred Central (NOTA 15)                                                                                           (442)                                   (547)
+
+
+
+        As operações são realizadas em condições normais de mercado e regulamentações internas.
+
+        As operações de crédito e depósitos são realizadas em condições semelhantes aquelas com os demais cooperados. As remunerações pagas aos Diretores e
+        membros dos Conselhos são deliberadas e aprovadas em Assembleia Geral Ordinária.
+
+        As pessoas chave da Administração da Cooperativa abrangem os membros do conselho de administração, do conselho fiscal e da diretoria executiva, os
+        quais têm autoridade e responsabilidade de planejar, dirigir e controlar as atividades da Instituição.
+
+        As transações com as pessoas chave da Administração, divulgadas abaixo, referem-se aos saldos de depósitos (à vista e a prazo) e às operações de crédito
+        mantidas por elas na Unicred Sudoeste da Bahia as quais foram realizadas dentro do contexto normal de suas atividades, observando as mesmas condições
+        estabelecidas para os demais cooperados.
+
+
+
+
+                                                                                                                                                                          18
+                                                                                                                                                  #   Classificação: Interno
+
+=== página 23 ===
+DocuSign Envelope ID: 1397F9EF-51D7-4B48-B764-034849BE1059
+
+
+
+
+        COOPERATIVA DE CRÉDITO DOS MÉDICOS E DEMAIS PROFISSIONAIS DA SAÚDE DE VITÓRIA DA CONQUISTA
+        NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES CONTÁBEIS EM 31 DE DEZEMBRO DE 2022
+        (Em milhares de reais)
+
+
+        Ainda em cumprimento do pronunciamento técnico CPC 05 (R1) - divulgação sobre Partes Relacionadas, também estão divulgados abaixo os valores
+        referentes aos honorários, à cédula de presença e às gratificações realizadas concedidas às pessoas chave da Administração da Unicred Sudoeste da Bahia
+        na competência do exercício findo.
+        De acordo com a resolução resolusão CMN 4.693/18, deve ser considerado partes relacionadas cônjuge, o companheiro e os parentes, consanguíneos ou
+        afins, até o segundo grau, e Pessoas Jurídicas, de todos os membros estatutários.
+
+
+                                                                                                                       Operações de
+                               Descrição                                Período        Quantidade       Honorários                       Depósitos           Capital Social
+                                                                                                                         crédito
+        Diretoria, conselho de administração e fiscal                31/12/2022          16                    (315)          4.288             25.163                 4.699
+        Diretoria, conselho de administração e fiscal                31/12/2021          16                    (323)          4.171              5.244                 1.134
+
+        NOTA 21 - ÍNDICE DE BASILEIA
+
+        O patrimônio líquido da Unicred Sudoeste da Bahia apresenta-se compatível com o grau de risco da estrutura dos ativos, com índices da Basileia de 36,52%
+        em 31 de dezembro de 2022 e 42,41% em 31 de dezembro de 2021, conforme demonstrativo abaixo:
+
+
+                                                 Descrição                                                                         31/12/2022                    31/12/2021
+          Patrimônio de Referência – PR                                                                                               16.752                        14.613
+          RWA para Risco de Crédito - RWAcpad                                                                                         43.950                        32.637
+          RWA para Risco Operacional - RWAopad                                                                                         1.918                         1.822
+          RWA Total                                                                                                                   45.868                        34.459
+          Patrimônio de Referência Mínimo Requerido para o RWA                                                                         5.504                         4.135
+          Margem sobre o PR considerando o adicional de Capital Principal                                                             10.101                         9.616
+
+        Índice de Basileia                                                                                                            36,52%                         42,41%
+
+        NOTA 22 - RESUMO DA ESTRUTURA DE GERENCIMENTO DE RISCOS
+
+        Em cumprimento às normas do Banco Central do Brasil, o Sistema Unicred adota uma estrutura centralizada de gerenciamento de riscos e capital, por meio
+        da Confederação Nacional das Cooperativas Centrais Unicred - UBR, sendo compatível com o modelo de negócios, produtos e serviços. A descrição da
+        estrutura é apresentada no site da Unicred do Brasil no endereço eletrônico: www.unicred.com.br.
+
+        Essa estrutura fundamenta-se nas resoluções do Conselho Monetário Nacional (CMN) nº 4.606/17 e nº 4.557/17, tendo a atribuição de gerenciar os riscos
+        assumidos pela instituição, bem como a interação entre eles, mantendo-os em níveis adequados ao Apetite por Riscos definido pela Cooperativa, dando
+        suporte na definição de estratégias e na tomada de decisão pela alta administração.
+
+        Para cada tipo de risco incorrido existem diretrizes específicas, mas que podem ser assim resumidas:
+
+        a) Risco operacional
+
+        O gerenciamento do risco operacional tem por objetivo identificar, avaliar, monitorar e controlar os riscos associados a falhas, deficiências ou inadequações de
+        processos internos, pessoas e sistemas, ou de eventos externos. Também abrange as funções da Cooperativa, e, quando aplicável, parceiros terceirizados,
+        em consonância com os seus níveis de apetite de riscos.
+
+        b) Risco de crédito
+
+
+        O gerenciamento do risco de crédito tem por objetivo identificar, mensurar, controlar e mitigar os riscos de perdas associadas à contraparte de suas
+        respectivas obrigações financeiras nos termos pactuados, à desvalorização de contrato de crédito decorrente da deterioração na classificação de risco do
+        tomador, à redução de ganhos ou remunerações, às vantagens concedidas na renegociação e aos custos de recuperação.
+
+
+        c) Risco de liquidez
+
+        O gerenciamento do risco de liquidez tem por objetivo monitorar os riscos associados à capacidade de honrar as obrigações esperadas e inesperadas,
+        correntes e futuras, inclusive as decorrentes de vinculação de garantias, sem afetar as operações diárias.
+
+        d) Risco de mercado
+
+        O gerenciamento do risco de mercado tem por objetivo avaliar e controlar a flutuação nos valores de mercado de instrumentos detidos pela Cooperativa.
+
+        e) Risco socioal, ambiental e climático
+
+        O gerenciamento do risco socioambiental avalia os riscos decorrentes de danos sociais, ambientais e climáticos, em conformidade com a resolução do
+        Conselho Monetário Nacional (CMN) nº 4.945/21
+
+        f) Gestão de continuidade de negócios
+
+        A gestão de continuidade de negócios garante a resposta adequada à recuperação e restauração dos processos mais críticos no caso de ocorrência de
+        eventuais interrupções.
+
+
+
+
+                                                                                                                                                                             19
+                                                                                                                                                     #   Classificação: Interno

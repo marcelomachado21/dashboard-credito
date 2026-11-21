@@ -1,0 +1,1764 @@
+
+=== página 33 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                Nu Pagamentos S.A.
+                                                               Demonstrações financeiras consolidadas
+                                                                  em 31 de dezembro de 2025 e 2024
+
+
+                        é o valor do saldo esperado na inadimplência após considerar o
+                        comportamento de pagamentos.
+
+                    ● Perda em caso de inadimplência (LGD): a porcentagem que se espera
+                      que não seja recuperada de um saldo inadimplente. Esse índice
+                      representa o valor presente de todas as recuperações, ajustado pelos
+                      custos de cobrança, dividido pelos saldos inadimplentes.
+
+                    ● Taxa de desconto: é a taxa de juros efetiva média calculada com base
+                      em dados históricos.
+
+                Os parâmetros mencionados acima são segmentados em grupos de risco
+                homogêneos, determinados por modelos internos, apoiando-se, entre outras,
+                em informações comportamentais internas e externas dos clientes, incluindo
+                inadimplência e utilização de crédito.
+
+                Governança em torno da perda de crédito esperada
+
+                A equipe de risco de crédito do Grupo é responsável pela metodologia de perda
+                de crédito esperada (ECL). Os resultados mensais são monitorados e
+                discutidos em fóruns apropriados envolvendo os times que desenvolvem as
+                políticas de crédito e finanças.
+
+                O Grupo avalia o desempenho das estimativas de perda de crédito esperada
+                utilizando os métodos a seguir:
+
+                    ● Back testing: comparar o resultado do modelo em datas de referência
+                      anteriores às inadimplências materializadas, líquidas de recuperações
+                      permite que o Grupo avalie como as previsões do modelo se
+                      compararam com os dados reais.
+
+                    ● Duração da cobertura: durante o back test, o Grupo analisa quantos
+                      meses ele está coberto para perdas durante o provisionamento da perda
+                      de crédito esperada calculado.
+
+                Apresentação da provisão para perdas de crédito esperadas no balanço
+                patrimonial consolidado
+
+                As provisões para perdas de crédito esperadas são apresentadas no balanço
+                patrimonial consolidado como uma dedução do valor contábil bruto dos ativos.
+                Qualquer excesso da provisão para perdas sobre o valor bruto é apresentado
+                como provisão em “Outros passivos”.
+
+
+
+                                                                                                  32
+
+=== página 34 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                  Nu Pagamentos S.A.
+                                                                 Demonstrações financeiras consolidadas
+                                                                    em 31 de dezembro de 2025 e 2024
+
+                Baixa
+
+                O Grupo reduz diretamente o valor contábil bruto de um ativo financeiro quando
+                não tem uma expectativa razoável de recuperá-lo integralmente ou
+                parcialmente. Para empréstimos não garantidos, uma baixa é realizada quando
+                todas as vias internas de cobrança da dívida foram esgotadas e a dívida é
+                entregue a agências de cobrança externas ou o Grupo não tem uma
+                expectativa razoável de recuperar mais valores. Todos os saldos são baixados
+                e estão sujeitos a atividades de execução. Um contato é feito com os clientes
+                com o objetivo de obter um acordo de pagamento realista e sustentável.
+
+                Recuperações
+
+                As recuperações de perdas de crédito são registradas como receita,
+                compensadas com perdas de crédito e classificadas nas demonstração
+                consolidada do resultado como “Despesas com provisão para perdas de
+                crédito”.
+
+                Modificações de ativos financeiros
+
+                Os fatores utilizados pela Companhia para determinar se há uma modificação
+                substancial de um contrato são: avaliação se há uma renegociação que não faz
+                parte dos termos contratuais originais, mudança dos fluxos de caixa contratuais
+                e extensões significativas do prazo da operação devido a uma restrição
+                financeira do devedor e mudanças significativas na taxa de juros, entre outros.
+
+                As principais alterações nos ativos financeiros da Companhia correspondem às
+                variações nos fluxos de caixa contratuais quando os recebíveis de cartão de
+                crédito, circulantes ou rotativos, são modificados para recebíveis parcelados ou
+                alterações no perfil de parcelamento em empréstimos a clientes. Essas
+                modificações ocorrem como resultado de uma atividade de reestruturação
+                comercial ou devido ao risco de crédito do mutuário, uma avaliação deve ser
+                realizada para determinar se os termos do novo contrato são substancialmente
+                diferentes dos termos do contrato existente. Esta avaliação considera tanto a
+                mudança nos fluxos de caixa decorrentes dos termos modificados quanto a
+                mudança no perfil geral de risco do instrumento.
+
+                Quando os termos são substancialmente diferentes, o crédito existente será
+                baixado e um novo será reconhecido ao valor justo, com qualquer diferença na
+                avaliação reconhecida imediatamente na demonstração do resultado, sujeita a
+                critérios de observação. Quando os termos não forem substancialmente
+                diferentes, o valor contábil dos recebíveis será ajustado para refletir o valor
+                presente dos fluxos de caixa modificados, descontado à taxa de juros efetiva
+
+
+                                                                                                    33
+
+=== página 35 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                 Nu Pagamentos S.A.
+                                                                Demonstrações financeiras consolidadas
+                                                                   em 31 de dezembro de 2025 e 2024
+
+
+                original, com qualquer ganho ou perda resultante reconhecido imediatamente
+                na demonstração do resultado.
+
+                Para efeitos de perdas de crédito esperadas, qualquer modificação que
+                implique uma tolerância será reconhecida como Estágio 3. A indicação implica
+                a concessão de vantagens à contraparte como resultado da deterioração da
+                qualidade de crédito da contraparte. Para essa definição, são consideradas
+                vantagens (i) quaisquer descontos significativos aplicados à obrigação corrente
+                e (ii) alterações de preços que não representem o perfil de risco de crédito do
+                cliente.
+
+                Instrumentos financeiros derivativos
+
+                Derivativos são contratos ou acordos cujo valor é derivado de um ou mais
+                índices subjacentes ou valores de ativos inerentes ao contrato ou acordo, que
+                exigem nenhum ou pouco investimento líquido inicial e são liquidados em uma
+                data futura. As transações são realizadas por meio de swaps e contratos a
+                termo de taxas de juros, moedas cruzadas e outros índices.
+
+                Os derivativos são mantidos para fins de gerenciamento de riscos e
+                classificados como mantidos para negociação, a menos que sejam designados
+                como estando em uma relação contábil de hedge. Os derivativos são
+                reconhecidos inicialmente ao custo de aquisição (como melhor evidência de
+                valor justo na data em que um contrato de derivativos é celebrado) e são
+                subsequentemente remensurados com base nos valores justos dos derivativos
+                negociados em bolsa que são obtidos a partir dos preços cotados no mercado.
+                Valores justos dos derivativos de balcão são estimados usando técnicas de
+                avaliação (valuation), incluindo fluxo de caixa descontado e modelos de
+                precificação de opções.
+
+                Um contrato de derivativos é apresentado como um ativo ou como um passivo
+                de acordo com o seu valor justo na data de reporte, exceto quando a
+                compensação é permitida. O método de reconhecimento de ganhos e perdas
+                de valor justo depende se os derivativos são mantidos para negociação ou são
+                designados como instrumentos de hedge e, no segundo caso, da natureza dos
+                riscos que estão sendo protegidos. Os ganhos e as perdas decorrentes de
+                variações no valor justo de derivativos mantidos para negociação são
+                reconhecidos na demonstração consolidada do resultado e incluídos em
+                “Receita de juros e ganhos (perdas) sobre instrumentos financeiros”.
+
+                Contabilidade de hedge
+
+
+
+
+                                                                                                   34
+
+=== página 44 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                              Nu Pagamentos S.A.
+                                                                             Demonstrações financeiras consolidadas
+                                                                                em 31 de dezembro de 2025 e 2024
+
+
+                i) Imobilizado e ativo intangível
+
+                O imobilizado é mensurado pelo seu custo histórico, menos a depreciação
+                acumulada. O custo inclui gastos que são diretamente atribuíveis à aquisição
+                do ativo e são depreciados a partir da data em que estão disponíveis para uso.
+                A depreciação é calculada para amortizar o custo dos itens do imobilizado,
+                menos seus valores residuais estimados, usando o método linear com base na
+                vida útil econômica dos itens, sendo revisada anualmente e ajustada
+                prospectivamente, caso apropriado.
+
+                Ativos intangíveis adquiridos separadamente são mensurados ao custo no
+                reconhecimento inicial pelo custo. O custo dos ativos intangíveis adquiridos em
+                uma combinação de negócios corresponde ao valor justo na data de aquisição.
+                Os ativos intangíveis, incluindo software e outros ativos, são reconhecidos se
+                advirem de direitos contratuais ou outros direitos legais ou se puderem ser
+                separados ou divididos do Grupo e vendidos, transferidos, licenciados,
+                alugados ou trocados. Ativos intangíveis com vida útil definida são amortizados
+                pelo método linear ao longo de sua vida útil estimada e anualmente avaliados
+                quanto à redução ao valor recuperável ou sempre que eventos ou mudanças
+                nas circunstâncias indicarem a existência de uma redução ao valor
+                recuperável.
+
+                Gastos diretamente atribuíveis relacionados a ativos intangíveis gerados
+                internamente, principalmente relacionados ao desenvolvimento de novas
+                funções e/ou produtos, são capitalizados a partir da data em que a entidade
+                consegue demonstrar, entre outros fatores, sua viabilidade técnica, intenção de
+                conclusão, capacidade de uso e pode demonstrar benefícios econômicos
+                futuros prováveis razoavelmente.
+
+                Os valores gastos com benfeitoria em imóveis de terceiros são amortizados de
+                acordo com o prazo do contrato de aluguel do imóvel.
+
+                A vida útil dos itens dos imobilizados e intangíveis é conforme segue:
+
+                                Móveis e outros equipamentos de escritório    10 anos
+                                Equipamentos de informática                   05 anos
+                                Software e ativos desenvolvidos
+                                                                              05 anos
+                                internamente
+
+
+
+
+                                                                                                                43
+
+=== página 45 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                 Nu Pagamentos S.A.
+                                                                Demonstrações financeiras consolidadas
+                                                                   em 31 de dezembro de 2025 e 2024
+
+
+
+                Os ativos intangíveis decorrentes de combinações de negócios possuem vidas
+                úteis específicas, determinadas durante os procedimentos de alocação do
+                preço de compra.
+
+                j)   Ágio
+
+                O ágio é mensurado inicialmente ao custo, sendo o excedente do total da
+                contraprestação transferida e o valor reconhecido para quaisquer participações
+                de acionistas não controladores e qualquer participação anterior detida sobre
+                os ativos líquidos identificáveis adquiridos e passivos assumidos. Se o valor
+                justo dos ativos líquidos adquiridos exceder a contraprestação agregada
+                transferida, o Grupo reavalia se identificou corretamente todos os ativos
+                adquiridos e todos os passivos assumidos e revisa os procedimentos utilizados
+                para mensurar os valores a serem reconhecidos na data de aquisição. Se a
+                reavaliação ainda resultar em um excedente do valor justo dos ativos líquidos
+                adquiridos em relação à contraprestação total transferida, o ganho é
+                reconhecido no resultado.
+
+                O ágio não é amortizado, mas é testado quanto à redução ao valor recuperável
+                anualmente ou com maior frequência caso circunstâncias adversas indicarem
+                que é mais provável do que improvável que o valor contábil exceda seu valor
+                justo. Esses indicadores podem incluir uma queda sustentada e significativa no
+                preço das ações da Companhia, uma diminuição nos fluxos de caixa projetados
+                esperados, atividade de alienação significativa, uma mudança adversa
+                significativa no ambiente econômico ou de negócios e o teste de
+                recuperabilidade de um grupo de ativos significativo, entre outros.
+
+                k) Redução do valor recuperável de ativos não financeiros (impairment)
+
+                Anualmente, ou mais frequentemente quando eventos ou mudanças nas
+                circunstâncias o exigirem, o imobilizado e os ativos intangíveis com uma vida
+                útil definida são avaliados quanto a indicadores de redução ao valor
+                recuperável. Se houver indicações, esses ativos estão sujeitos a uma revisão
+                de redução ao valor recuperável.
+
+                Os valores contábeis do imobilizado, ágio e outros ativos intangíveis são
+                baixados pelo valor de qualquer redução ao valor recuperável e a perda deve
+                ser reconhecida na demonstração do resultado no período em que ocorrer.
+                Uma perda por redução ao valor recuperável previamente reconhecida
+                relacionada ao imobilizado e ativos intangíveis pode ser revertida parcial ou
+                totalmente quando uma mudança nas circunstâncias levar a uma mudança nas
+                estimativas utilizadas para determinar o valor recuperável do imobilizado e dos
+
+
+                                                                                                   44
+
+=== página 46 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                  Nu Pagamentos S.A.
+                                                                 Demonstrações financeiras consolidadas
+                                                                    em 31 de dezembro de 2025 e 2024
+
+
+                ativos intangíveis. O valor contábil do imobilizado e ativos intangíveis só será
+                aumentado até o valor que ele teria atingido caso a redução ao valor
+                recuperável original não tivesse sido reconhecida.
+
+                l)   Outros ativos
+
+                Outros ativos incluem o valor dos ativos não registrados em outras rubricas,
+                incluindo despesas antecipadas e despesas diferidas. As despesas diferidas
+                estão relacionadas principalmente, a determinados custos de emissão
+                incorridos nas operações de cartões de crédito e débito, como custos de
+                estampagem e de envio, entre outros. Os custos de emissão do cartão são
+                amortizados ao longo da vida esperada do cartão, ajustados para eventuais
+                cancelamentos.
+
+                m) Depósitos
+
+                Corresponde aos valores depositados por clientes principalmente em:
+
+                        (i) Conta do Nubank;
+                        (ii) Recibo de Depósito Bancário (“RDB”) e Recibo de Depósito Bancário
+                              Vinculado (“RDB-V”);
+                        (iii) Depósitos a prazo;
+                        (iv) Certificado de depósito bancário (CDB); e
+                        (v) Outros depósitos.
+
+                Para esses depósitos, a despesa de juros é reconhecida usando o método da
+                taxa efetiva de juros.
+
+                n) Valores a repassar à rede
+
+                Os valores a repassar às redes de cartões de crédito correspondem a passivos
+                financeiros reconhecidos ao custo amortizado a pagar por meio das câmaras
+                de compensação aos cartões de crédito Mastercard e a outras câmaras de
+                compensação que também integram a rede de cartões de crédito.
+
+                o) Empréstimos e financiamentos
+
+                Correspondem a empréstimos obtidos junto a terceiros que são inicialmente
+                reconhecidos ao custo e posteriormente ao custo amortizado pela taxa de juros
+                efetiva.
+
+
+
+
+                                                                                                    45
+
+=== página 50 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                    Nu Pagamentos S.A.
+                                                                   Demonstrações financeiras consolidadas
+                                                                      em 31 de dezembro de 2025 e 2024
+
+
+
+                v) Benefícios de curto prazo a empregados
+
+                Obrigações de benefícios de curto prazo a empregados são mensuradas em
+                base não descontada e são incorridas como despesa conforme o serviço
+                relacionado é prestado. O passivo é reconhecido pelo valor que se espera ser
+                pago no curto prazo se houver uma obrigação presente legal ou construtiva de
+                pagar e se o valor puder ser estimado com segurança.
+
+                w) Imposto de renda, incluindo impostos diferidos
+
+                O imposto de renda e a contribuição social corrente originam-se dos impostos a
+                serem pagos ou recuperados no período aplicável.
+
+                A provisão para imposto de renda é constituída à alíquota-base de 15% do
+                lucro tributável, acrescida de adicional de 10% sobre lucro tributável excedente
+                de R$240 (duzentos e quarenta mil reais). Adicionalmente, a contribuição social
+                é constituída à alíquota de 15% do lucro tributável.
+
+                O lucro tributável difere do lucro líquido conforme reportado no balanço
+                patrimonial pois exclui itens de receita ou despesa que são tributáveis ou
+                dedutíveis em outros exercícios e, além disso, exclui itens que nunca são
+                tributáveis ou dedutíveis. O passivo fiscal corrente é calculado usando as
+                alíquotas de imposto que foram promulgadas ou substancialmente
+                promulgadas na data do balanço.
+
+                O passivo fiscal corrente para o período corrente ou anterior é mensurado pelo
+                valor que se espera ser pago às autoridades fiscais. O Grupo considera se é
+                provável que uma autoridade tributária aceite um tratamento fiscal incerto. Se o
+                Grupo considerar provável que a autoridade tributária aceitará um tratamento
+                fiscal incerto, o Grupo determina o lucro tributável (prejuízo fiscal), bases
+                fiscais, prejuízos fiscais não utilizados, créditos fiscais não utilizados ou
+                alíquotas de imposto consistentes com o tratamento fiscal utilizado ou
+                planejado utilizado nas suas declarações de imposto de renda. Quando o
+                Grupo conclui que não é provável que a autoridade tributária aceite um
+                tratamento fiscal incerto, o efeito da incerteza é refletido na determinação do
+                lucro tributável relacionado (prejuízo fiscal), bases tributárias, prejuízos fiscais
+                não utilizados, créditos fiscais não utilizados ou alíquotas de imposto usando
+                um dos seguintes métodos:
+
+                    ● o valor mais provável - o valor único mais provável em uma gama de
+                      resultados possíveis ou;
+
+
+
+                                                                                                      49
+
+=== página 51 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                    Nu Pagamentos S.A.
+                                                                   Demonstrações financeiras consolidadas
+                                                                      em 31 de dezembro de 2025 e 2024
+
+
+                    ● o valor esperado - a soma dos valores ponderados pela probabilidade
+                      em uma gama de resultados possíveis.
+
+                O imposto de renda diferido é o imposto a pagar ou a recuperar sobre prejuízos
+                fiscais disponíveis a compensar e sobre diferenças temporárias entre as bases
+                fiscais de ativos e passivos e seus valores contábeis nas demonstrações
+                financeiras consolidadas. Ele é contabilizado usando o método do passivo do
+                balanço patrimonial. O passivo fiscal diferido é geralmente reconhecido para
+                todas as diferenças temporárias tributáveis, e o ativo fiscal diferido é
+                reconhecido na extensão em que seja provável que lucros tributáveis estarão
+                disponíveis, contra os quais os ativos possam ser utilizados quando forem
+                revertidos.
+
+                O imposto diferido é calculado com base nas alíquotas de imposto que se
+                espera aplicar no período em que o passivo é liquidado, ou o ativo é realizado
+                com base nas taxas promulgadas ou substantivamente promulgadas na data
+                do balanço. O imposto diferido é debitado ou creditado na demonstração do
+                resultado, exceto quando se refere a itens reconhecidos em outros resultados
+                abrangentes ou diretamente no patrimônio líquido, caso em que o imposto
+                diferido também é reconhecido em outros resultados abrangentes ou
+                diretamente no patrimônio líquido.
+
+                O Grupo revisa o valor contábil dos impostos diferidos ativos em cada data do
+                balanço e baixado na extensão em que não é mais provável que lucros
+                tributáveis estarão disponíveis para permitir que todo ou parte do ativo venha a
+                ser recuperado.
+
+                O imposto diferido relacionado às remensurações do valor justo de
+                instrumentos financeiros contabilizados ao VJORA e instrumentos de hedge de
+                fluxo de caixa é debitado ou creditado diretamente em outros resultados
+                abrangentes e é reconhecido posteriormente na demonstração do resultado
+                quando o ganho ou perda do valor justo diferido é reconhecido na
+                demonstração do resultado.
+
+                Os ativos e passivos fiscais diferidos e correntes são compensados somente
+                quando surgem no mesmo grupo de relatórios fiscais e quando existe o direito
+                legal e a intenção de liquidá-los em base líquida ou de realizar o ativo e liquidar
+                o passivo simultaneamente.
+
+                5. Julgamentos, estimativas e premissas contábeis significativas
+
+                Uso de estimativas e julgamentos
+
+
+
+                                                                                                      50
+
+=== página 52 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                  Nu Pagamentos S.A.
+                                                                 Demonstrações financeiras consolidadas
+                                                                    em 31 de dezembro de 2025 e 2024
+
+
+                A elaboração das demonstrações financeiras consolidadas exige julgamentos,
+                estimativas e premissas da administração que afetam a aplicação de políticas
+                contábeis e os valores reportados de ativos, passivos, receitas e despesas. Os
+                resultados reais podem divergir dessas estimativas. As estimativas e premissas
+                são revisadas continuamente. As revisões das estimativas são reconhecidas
+                prospectivamente.
+
+                a) Perdas de crédito em instrumentos financeiros para recebíveis de
+                cartão de crédito e empréstimos a clientes
+
+                O Grupo reconhece uma provisão para perdas esperadas de crédito em
+                recebíveis de cartão de crédito e empréstimos a clientes que representa a
+                melhor estimativa da administração da provisão em cada data de
+                apresentação.
+                A administração realiza uma análise dos valores de cartões de crédito e
+                empréstimos para determinar se as perdas de crédito ocorreram e para avaliar
+                a adequação da provisão com base nas tendências históricas e atuais, bem
+                como em outros fatores que afetam as perdas de crédito.
+
+                Principais áreas de julgamento
+                Os principais julgamentos críticos feitos pela administração na aplicação da
+                metodologia de provisão para perdas esperadas de crédito são:
+
+                    a) As informações macroeconômicas utilizadas para definir a determinação
+                       dos pesos de probabilidade a serem dados nos diferentes cenários
+                       macroeconômicos e os respectivos pesos;
+                    b) Definição de inadimplência;
+                    c) Definição de aumento significativo no risco de crédito e de vida esperada
+                       do cartão de crédito; e
+                    d) Avaliação retrospectiva, utilizado para estimativas de parâmetro
+                       (probabilidade de inadimplência - PD, exposição no momento da
+                       inadimplência - EAD e perdas dado a inadimplência - LGD).
+
+                Análise de sensibilidade
+                Em 31 de dezembro de 2025, a provisão para perdas esperadas de crédito
+                para recebíveis de cartões de crédito e empréstimos a clientes totalizou R$
+                25.201.484, dos quais R$ 17.400.640 estão relacionados a recebíveis de
+                cartão de crédito e R$ 7.800.844 a empréstimos a clientes. A provisão para
+                perdas esperadas de crédito é sensível à metodologia, premissas e estimativas
+                subjacentes ao seu cálculo. Uma premissa importante refere-se às
+                ponderações da probabilidade dos cenários macroeconômicos entre otimista,
+                base e pessimista, uma vez que o valor contábil da provisão para perdas de
+                crédito é determinado com base na média ponderada desses cenários. Essas
+
+
+                                                                                                    51
+
+=== página 72 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                      Nu Pagamentos S.A.
+                                                                                     Demonstrações financeiras consolidadas
+                                                                                        em 31 de dezembro de 2025 e 2024
+
+                                                                                  31/12/2025
+                                                                Estágio 1         Estágio 2         Estágio 3        Total
+
+
+                Provisão para perdas de crédito no início
+                do período                                          3.333.839        2.384.582       7.594.559     13.312.980
+                Transferências do Estágio 1 para o Estágio 2         (370.632)         370.632               -              -
+                Transferências do Estágio 2 para o Estágio 1          658.785         (658.785)              -              -
+                Transferência para o Estágio 3                       (598.702)      (1.493.108)      2.091.809              -
+                Transferências do Estágio 3                         1.017.298          125.129      (1.142.427)             -
+                Baixas                                                      -                -      (8.616.892)    (8.616.892)
+                Aumento líquido da provisão para perdas
+                (Nota 7)                                             133.623        3.479.452        9.091.478     12.704.552
+                 Novas originações (a)                               518.848          129.179           56.686        704.713
+                 Mudanças na exposição de contas
+                 preexistentes (b)                                  4.238.302         161.753          (40.340)     4.359.716
+                 Outras variações, principalmente
+                 saques/reembolsos líquidos e
+                 remensurações líquidas de variações entre
+                 estágios e faixas de risco dentro de cada      (4.228.970)         2.255.863        9.632.801      7.659.694
+                 estágio
+                 Mudanças nos modelos utilizados no
+                 cálculo (c)                                         (394.558)        932.657         (557.669)       (19.570)
+                Provisão para perdas de crédito no final
+                do período                                          4.174.211       4.207.902        9.018.527     17.400.640
+
+                                                                                 31/12/2024
+                                                                               (Não auditado)
+                                                                     Estágio 1    Estágio 2   Estágio 3              Total
+
+
+                Provisão para perdas de crédito no início do
+                período                                               2.555.541        2.085.536      4.311.307     8.952.385
+                Transferências do Estágio 1 para o Estágio 2           (262.106)         262.106              -             -
+                Transferências do Estágio 2 para o Estágio 1            485.137         (485.137)             -             -
+                Transferência para o Estágio 3                         (433.137)      (1.231.077)     1.664.214             -
+                Transferências do Estágio 3                             268.727           71.118       (339.844)            -
+                Baixas                                                        -                 -    (5.963.786)   (5.963.786)
+                Aumento líquido da provisão para perdas
+                (Nota 7)                                                719.677       1.682.036      7.922.668     10.324.381
+                 Novas originações (a)                                  595.291          68.451         53.627        717.369
+                 Mudanças na exposição de contas
+                 preexistentes (b)                                    1.890.428          59.791         (31.657)    1.918.562
+                 Outras variações, principalmente
+                 saques/reembolsos líquidos e remensurações
+                 líquidas de variações entre estágios e faixas de
+                 risco dentro de cada estágio                         (1.659.821)     1.637.744      7.536.969      7.514.892
+                 Mudanças nos modelos utilizados no cálculo             (106.220)       (83.950)       363.729        173.558
+                 (c)
+                Provisão  para perdas de crédito no final do
+                período                                               3.333.839       2.384.582      7.594.559     13.312.980
+
+
+                O “aumento líquido da provisão para perdas” é distribuído considerando os
+                estágios do final do exercício, exceto no item (c), que é calculado considerando
+                os estágios do início do exercício.
+
+                (a) Considera todas as contas originadas do início ao fim do exercício. Os
+                efeitos de perdas de crédito esperadas apresentados na tabela foram
+                calculados como se fossem aplicados os parâmetros de risco no início do
+                exercício.
+
+
+                                                                                                                             71
+
+=== página 73 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                Nu Pagamentos S.A.
+                                                                               Demonstrações financeiras consolidadas
+                                                                                  em 31 de dezembro de 2025 e 2024
+
+
+
+                (b) Reflete as movimentações de exposição (limites com e sem drawdown —
+                utilização de limite) de contas que já existiam no início do ano. Os efeitos de
+                perdas de crédito esperadas foram calculados como se fossem aplicados os
+                parâmetros de risco das exposições no início do exercício.
+
+                (c) As mudanças nos modelos ocorridas durante o exercício incluem,
+                principalmente, a calibração dos parâmetros de perda de crédito esperadas
+                para refletir dados mais recentes de risco e recuperação, o que reflete as
+                mudanças nas políticas de subscrição da Companhia e nas estratégias de
+                cobrança nesses exercícios históricos.
+
+                As tabelas a seguir apresentam mudanças no valor contábil bruto da carteira
+                de cartão de crédito para demonstrar os efeitos das mudanças na provisão
+                para perdas para a mesma carteira conforme apresentado acima. “Aumento
+                líquido do valor contábil” inclui resgates, pagamentos e acréscimos de juros.
+
+                                                                                   31/12/2025
+                                                               Estágio 1     Estágio 2     Estágio 3       Total
+
+
+                Valor contábil bruto no início do período      66.327.200     7.923.319     8.259.941  82.510.461
+                Transferências do Estágio 1 para o Estágio 2   (5.166.480)    5.166.480              -          -
+                Transferências do Estágio 2 para o Estágio 1    3.520.427    (3.520.427)             -          -
+                Transferência para o Estágio 3                 (4.961.612)   (3.283.510)    8.245.122           -
+                Transferências do Estágio 3                     1.148.509       141.325    (1.289.835)          -
+                Baixas                                                   -             -   (8.616.892) (8.616.892)
+                Aumento líquido do valor contábil              25.814.968     4.726.983     3.827.374  34.369.325
+                Valor contábil bruto no final do período       86.683.011    11.154.171    10.425.711 108.262.893
+
+                                                                                   31/12/2024
+                                                                                 (Não auditado)
+                                                               Estágio 1     Estágio 2     Estágio 3       Total
+
+
+                Valor contábil bruto no início do período      52.900.275     6.917.992     5.108.043    64.926.310
+                Transferências do Estágio 1 para o Estágio 2   (3.545.723)    3.545.723             -             -
+                Transferências do Estágio 2 para o Estágio 1    2.422.383    (2.422.383)            -             -
+                Transferência para o Estágio 3                 (3.619.988)   (2.574.197)    6.194.184             -
+                Transferências do Estágio 3                       425.586       112.791      (538.377)            -
+                Baixas                                                  -              -   (5.963.786)   (5.963.786)
+                Aumento líquido do valor contábil              17.744.667     2.343.393     3.459.878    23.547.938
+                Valor contábil bruto no final do período       66.327.200     7.923.319     8.259.941    82.510.461
+
+
+
+
+                                                                                                                   72
+
+=== página 74 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                               Nu Pagamentos S.A.
+                                                                              Demonstrações financeiras consolidadas
+                                                                                 em 31 de dezembro de 2025 e 2024
+
+
+                13. Empréstimos a clientes
+                                                                                       31/12/2024     01/01/2024
+                                                                                          (Não           (Não
+                                                                        31/12/2025     auditado)      auditado)
+
+                Empréstimos a pessoas físicas (i)                       54.140.930      35.621.436     17.912.276
+                Empréstimos a pessoas jurídicas                          4.207.219       1.556.892        108.479
+                Total de empréstimos                                    58.348.149      37.178.328     18.020.756
+
+
+                Provisão para perdas de crédito esperadas de            (7.800.844)     (4.794.091)     (2.487.353)
+                empréstimos
+                Ajuste a valor justo - hedge de portfólio                         -               -           3.392
+                Total                                                   50.547.305      32.384.237      15.536.794
+                (i) Em 31 de dezembro de 2025, o saldo incluiu R$ 15.028.074 de empréstimos garantidos (R$ 8.672.990
+                em 31 e dezembro de 2024 e R$ 1.235.619 em 01 de janeiro de 2024).
+
+                a) Abertura por vencimento
+
+                A tabela a seguir mostra os empréstimos a clientes por vencimento em 31 de
+                dezembro de 2025 e 2024, considerando cada parcela individualmente.
+
+                                                                          31/12/2024              01/01/2024
+                                                  31/12/2025            (Não auditado)          (Não auditado)
+                                                Valor        %          Valor        %          Valor        %
+
+
+                Empréstimos a clientes
+                com vencimento em:
+                Até 30 dias                         775.871    1,3 %     525.960      1,4 %      262.250     1,5 %
+                30 <= 60 dias                       389.122    0,7 %     260.867      0,7 %      157.710     0,9 %
+                60 <= 90 dias                       320.913    0,5 %     195.575      0,5 %      112.372     0,6 %
+                Acima de 90 dias                    842.805    1,4 %     420.405      1,1 %      176.816     1,0 %
+                Total de empréstimos a
+                clientes a vencer               2.328.710      4,0 %    1.402.807     3,8 %      709.148     3,9 %
+
+
+                Empréstimos a clientes
+                vencidos há:
+                Até 30 dias                     6.345.400     10,9 %    4.598.609    12,4 %    2.677.056    14,9 %
+                30 <= 60 dias                   5.331.415      9,1 %    4.341.266    11,7 %    2.525.655    14,0 %
+                60 <= 90 dias                   5.700.806      9,8 %    3.519.279     9,5 %   12.108.897    67,2 %
+                Acima de 90 dias               38.641.817     66,2 %   23.316.367    62,7 %            -       -
+                Total de empréstimos a
+                clientes vencidos              56.019.438     96,0 %   35.775.521    96,2 %   17.311.608    96,1 %
+                Total                          58.348.149      100 %   37.178.328     100 %   18.020.756     100 %
+
+
+                b) Provisão para perdas de crédito - por estágios
+
+                Em 31 de dezembro de 2025, a provisão de perdas esperadas de crédito para
+                empréstimos a clientes totalizou R$ 7.800.844 (R$ 4.794.091 em 31 de
+                dezembro de 2024 e R$ 2.487.353 em 01 de janeiro de 2024). A provisão é
+                estimada usando um método técnico, aplicado de forma consistente, que é
+                sensível aos métodos, premissas e parâmetros de risco subjacentes ao seu
+                cálculo.
+
+
+
+
+                                                                                                                 73
+
+=== página 81 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                      Nu Pagamentos S.A.
+                                                                                     Demonstrações financeiras consolidadas
+                                                                                        em 31 de dezembro de 2025 e 2024
+
+                                                                                          31/12/2024         01/01/2024
+                                                                    31/12/2025          (Não auditado)     (Não auditado)
+
+
+                Impostos a recuperar (i)                                 3.498.685               766.329          1.837.188
+                Despesas diferidas (ii)                                  1.113.025           1.007.293             840.177
+                Despesas antecipadas (iii)                                461.007                473.097           383.191
+                Adiantamentos a fornecedores e empregados                 387.197                436.825           443.934
+                Depósitos judiciais (Nota 24)                              32.953                 33.032            17.030
+                Outros valores                                            315.934                153.116           400.926
+                Total                                                    5.808.801           2.869.692            3.922.444
+
+                (i) Impostos a recuperar referem-se a impostos e contribuições pagos a maior, bem como créditos fiscais
+                    sobre custos e despesas elegíveis para compensações ou restituições futuras.
+
+                (ii) Refere-se aos custos de emissão de cartão de crédito, incluindo custos de impressão, embalagem,
+                     envio, entre outros. As despesas são amortizadas com base na metodologia da vida útil estimada do
+                     cartão, ajustadas para eventuais cancelamentos.
+
+                (iii) As despesas antecipadas referem-se às notas fiscais relacionadas ao plano de economia na nuvem,
+                      de acordo com o contrato do fornecedor.
+
+
+
+                17. Ativos intangíveis e ágio
+
+                a) Composição do intangível e ágio
+
+                (i) Ativos intangíveis
+
+                                                                                                 31/12/2025
+
+                                                                                                 Amortizaçã
+                                                                                   Custo                           Valor
+                                                                                                     o            Líquido
+                                                                                                 acumulada
+
+
+                Intangíveis relacionados a aquisições                              471.988          (224.128)       247.860
+                Intangíveis desenvolvidos internamente                           2.612.969          (502.076)     2.110.893
+                Outros intangíveis                                                  88.629           (84.194)         4.436
+                Total                                                            3.173.586          (810.398)     2.363.189
+
+                                                           31/12/2024                               01/01/2024
+                                                         (Não auditado)                           (Não auditado)
+                                                           Amortizaçã    Valor                      Amortizaçã    Valor
+                                                Custo          o                        Custo           o
+                                                                        Líquido                                  Líquido
+                                                           acumulada                                acumulada
+
+                Intangíveis relacionados
+                a aquisições                  470.244        (161.976)   308.269       316.366        (119.683)    196.683
+                Intangíveis
+                desenvolvidos                1.438.227       (251.886) 1.186.341   912.497             (98.129)   814.368
+                internamente
+                Outros intangíveis              88.365        (79.160)     9.205    87.481             (70.976)    16.506
+                Total                        1.996.837       (493.021) 1.503.815 1.316.344            (288.788) 1.027.556
+
+
+
+
+                (ii) Ágio
+
+                                                                                                                            80
+
+=== página 82 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                          Nu Pagamentos S.A.
+                                                                                         Demonstrações financeiras consolidadas
+                                                                                            em 31 de dezembro de 2025 e 2024
+
+
+
+                                                                                                                          01/01/2024
+                                                                                                   31/12/2024                (Não
+                                                                           31/12/2025            (Não auditado)           auditado)
+
+
+                Aquisição da Nu Investimentos                                      1.807.143          1.807.143             1.807.143
+                Outras aquisições                                                   210.414               210.414             206.264
+                Total                                                              2.017.558          2.017.558             2.013.407
+
+
+                b) Movimentação do intangível e ágio
+
+                                                                                     31/12/2025
+                                                Ágio                                    Ativos intangíveis
+                                                                 Intangíveis          Intangíveis           Outros           Total de
+                                                                relacionados        desenvolvidos         intangíveis      intangíveis
+                                                                a aquisições         internamente
+
+
+                Saldo no início do           2.017.558               308.268             1.186.341             9.205        1.503.815
+                período
+                Adições                                 -              1.744             1.226.033               326        1.228.102
+                Baixas                                  -                  -               (48.358)                   -       (48.358)
+                Amortizações                            -            (62.152)             (253.123)           (5.095)        (320.370)
+                Saldo no final do período    2.017.558               247.860             2.110.893             4.436        2.363.189
+
+                                                                                      31/12/2024
+                                                                                    (Não auditado)
+                                                 Ágio                                    Ativos intangíveis
+                                                                  Intangíveis         Intangíveis
+                                                                                     desenvolvido       Outros               Total de
+                                                                 relacionados
+                                                                                            s         intangíveis          intangíveis
+                                                                 a aquisições
+                                                                                     internamente
+
+                Saldo no início do período      2.013.407             196.683              814.368            16.506        1.027.556
+                Adições                            4.150              153.878              612.987                  887       767.752
+                Baixas                                      -                  -               (77.429)               -       (77.429)
+                Amortizações                                -         (42.292)            (163.585)            (8.187)       (214.065)
+                Saldo no final do período       2.017.558             308.268             1.186.341            9.205        1.503.815
+
+
+
+                18. Instrumentos financeiros derivativos
+
+                A Nu Pagamentos Consolidada executa transações com instrumentos
+                financeiros derivativos, que em sua maioria se destinam a atender às suas
+                próprias necessidades, a fim de reduzir sua exposição a riscos de mercado,
+                moeda e taxa de juros. Os derivativos são classificados ao valor justo por meio
+                do resultado, exceto aqueles nas estratégias de contabilidade de hedge de
+                fluxo de caixa, para os quais a parcela efetiva dos ganhos ou perdas dos
+                derivativos é reconhecida diretamente em outros resultados abrangentes. A
+                administração desses riscos é realizada por meio da determinação de limites e
+
+
+                                                                                                                                       81
+
+=== página 83 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                        Nu Pagamentos S.A.
+                                                                       Demonstrações financeiras consolidadas
+                                                                          em 31 de dezembro de 2025 e 2024
+
+
+                estabelecimento de estratégias operacionais. Os contratos de derivativos são
+                considerados nível 1, 2 ou 3 na hierarquia de valor justo e são utilizados para
+                proteger as exposições, mas a contabilidade de hedge é adotada apenas para
+                transações previstas relacionadas à infraestrutura em nuvem, transações
+                intercompanhias e determinadas licenças de software utilizadas pelo Nu (hedge
+                de risco de moeda estrangeira), para proteger os juros da carteira de crédito de
+                taxa pré fixada (hedge do risco de taxa de juros do portfólio) e para cobrir o
+                desembolso de caixa futuro relacionado a transações futuras altamente
+                prováveis, conforme mostrado abaixo.
+
+                                                                                    31/12/2025
+                                                                                         Valores justos
+                                                                        Valor de       Ativo           Passivo
+                                                                       referência
+
+
+                Derivativos classificados ao valor justo por meio do
+                resultado
+                Contratos de taxa de juros - Futuros                       75.021                  -         25
+                Contratos de taxa de câmbio - Futuros                  11.387.718         197            72.867
+                Contratos de taxa de juros - Swaps                         18.400          25                    -
+
+                Contratos de taxa de câmbio - Swaps                     7.562.658      24.425           240.239
+
+                Títulos de garantia (Warrants)                                246          26                    -
+
+
+                Derivativos mantidos para hedge
+                Designados como hedge de fluxo de caixa
+                Contratos de taxa de câmbio - Futuros                   1.407.133              -         22.871
+                Total                                                  20.451.176       24.672          336.002
+
+
+
+
+                                                                                                                 82
+
+=== página 85 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                              Nu Pagamentos S.A.
+                                                                             Demonstrações financeiras consolidadas
+                                                                                em 31 de dezembro de 2025 e 2024
+
+
+
+                A Nu Financeira protegeu sua exposição à moeda estrangeira por meio de
+                operações de hedge e possui contratos a termo para aquisição de ativos
+                financeiros.
+
+                Os contratos de swaps de risco de juros são liquidados na data de vencimento
+                e são negociados em mercado de balcão tendo como contrapartes instituições
+                financeiras.
+
+                Abertura por vencimento
+
+                A tabela abaixo mostra a abertura por vencimento dos valores de referência:
+
+                                                                                 31/12/2025
+                                                                                         Acima de
+                                                                Até 3        3 a 12         12           Total
+                                                                meses        meses        meses
+
+
+                Contratos de taxa de juros - Futuros                   -            -       75.021        75.021
+                Contratos de taxa de câmbio - Futuros         12.794.851            -            -    12.794.851
+                Contratos de taxa de juros - Swaps                     -            -       18.400        18.400
+                Contratos de taxa de câmbio - Swaps            2.283.461    3.733.311    1.545.886     7.562.658
+                Títulos de garantia (Warrants)                         -            -          246           246
+                Total do passivo                              15.078.312    3.733.311    1.639.553    20.451.176
+
+                                                                                 31/12/2024
+                                                                               (Não auditado)
+                                                                                        Acima de
+                                                             Até 3         3 a 12           12           Total
+                                                             meses         meses          meses
+
+
+                Contratos de taxa de juros - Futuros         1.886.441       89.649       279.331      2.255.421
+                Contratos de taxa de câmbio - Futuros        5.242.895            -             -      5.242.895
+                Contratos de taxa de juros - Swaps                   -            -        18.400         18.400
+                Contratos a termo de câmbio sem entrega      2.040.332            -              -     2.040.332
+                física - NDF
+                Títulos de garantia (Warrants)                       -            -           120            120
+                Total do passivo                             9.169.668       89.649       297.851      9.557.168
+
+                                                                                  01/01/2024
+                                                                                (Não auditado)
+                                                                                        Acima de
+                                                               Até 3        3 a 12         12           Total
+                                                               meses        meses         meses
+
+
+
+                Contratos de taxa de juros - Futuros                  -    3.527.886     144.413       3.672.299
+                Contratos de taxa de câmbio - Futuros         2.953.453            -           -       2.953.453
+                Contratos de taxa de juros - Swaps                    -            -      53.100          53.100
+                DI - Futuro                                    597.639      526.775        47.157      1.171.571
+                Total do passivo                              3.551.092    4.054.661     244.670       7.850.423
+
+
+                A tabela abaixo mostra a abertura por vencimento dos valores justos:
+
+                                                                                                                 84
+
+=== página 86 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                               Nu Pagamentos S.A.
+                                                                              Demonstrações financeiras consolidadas
+                                                                                 em 31 de dezembro de 2025 e 2024
+
+
+
+                                                                                           31/12/2025
+                                                                                            Acima de
+                                                                               Até 12          12             Total
+                                                                               meses         meses
+
+
+                Ativo
+                Contratos de taxa de câmbio - Futuros                               197              -            197
+                Contratos de taxa de juros - Swaps                                   25              -             25
+                Contratos de taxa de câmbio - Swaps                              24.425              -         24.425
+                Títulos de garantia (Warrants)                                        -             26             26
+                Total do ativo                                                   24.647             26         24.673
+
+
+                Passivo
+                Contratos de taxa de câmbio - Swaps                             150.717          89.522       240.239
+                Contratos de taxa de câmbio - Futuros                            95.738               -        95.738
+                Contratos de taxa de juros - Futuros                                 25               -            25
+                Total do passivo                                                246.480          89.522       336.002
+                                                                31/12/2024                      01/01/2024
+                                                              (Não auditado)                  (Não auditado)
+                                                                  Acima                           Acima
+                                                        Até 12               Total      Até 12               Total
+                                                                  de 12                            de 12
+                                                        meses                           meses
+                                                                 meses                            meses
+
+
+                Ativo                                      983        -        983          30            -       30
+                Contratos de taxa de juros - Futuros         5        -          5      14.637            -   14.637
+                Contratos de taxa de câmbio - Futuros   24.440        -     24.440           -            -        -
+                Contratos de taxa de câmbio - Swaps          -       63         63           -            -        -
+                Títulos de garantia (Warrants)               -        -          -         291            -      291
+                DI - Future                             25.428       63     25.491      14.958            -   14.958
+                Total do ativo
+
+
+                Passivo                                    482         -       482         239            -      239
+                Contratos de taxa de câmbio - Swaps     83.762         -    83.762           -            -        -
+                Contratos a termo de câmbio sem
+                entrega física - NDF                    15.437         -    15.437          20            -       20
+                Total do passivo                        99.681         -    99.681         260            -      260
+
+                a) Hedge de risco de moeda estrangeira
+
+                A Nu Pagamentos Consolidada está exposta ao risco de moeda estrangeira
+                nas despesas de transações previstas relacionadas à infraestrutura em nuvem,
+                algumas licenças de software e despesas intercompanhias. A Nu Pagamentos
+                Consolidada gerencia sua exposição à variabilidade nos fluxos de caixa das
+                transações previstas em moeda estrangeira a flutuações nas taxas de câmbio
+                por meio da celebração de contratos de câmbio de moeda estrangeira (futuros
+                de câmbio). Esses instrumentos são celebrados para coincidir com o perfil de
+                fluxo de caixa das transações previstas e são negociados em bolsa com os
+                movimentos de valor justo liquidados diariamente.
+
+                A Nu Pagamentos Consolidada aplica a contabilidade de hedge para as
+                transações previstas relacionadas a despesas em moeda estrangeira, incluindo
+
+                                                                                                                      85
+
+=== página 87 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                     Nu Pagamentos S.A.
+                                                                                    Demonstrações financeiras consolidadas
+                                                                                       em 31 de dezembro de 2025 e 2024
+
+
+                despesas intercompanhias e com software. A efetividade é avaliada
+                mensalmente por meio da análise dos termos críticos. Os termos críticos do
+                instrumento de cobertura (hedge) e o valor das transações cobertas previstas
+                são significativamente os mesmos. Os derivativos geralmente são repactuados
+                mensalmente. A previsão é que isso ocorra no mesmo mês fiscal da data de
+                vencimento do instrumento de hedge. Portanto, espera-se que a cobertura seja
+                eficaz. As avaliações posteriores da efetividade são realizadas verificando e
+                documentando se os termos críticos do instrumento de hedge e a transação
+                prevista de cobertura mudaram durante o período em revisão e se ele
+                permanece provável. Se não houver tais mudanças em termos críticos, a Nu
+                Pagamentos Consolidada continuará concluindo que a relação de cobertura é
+                eficaz. As fontes de inefetividade são as diferenças no valor e no cronograma
+                entre a previsão e o pagamento real das despesas. A Companhia avalia a
+                efetividade dessas operações sob o escopo do IFRS 9, por meio da
+                comparação entre a despesa provisionada e a efetivamente realizada.
+
+                A tabela abaixo mostra a mudança no hedge de risco de moeda estrangeira:
+
+                                                                                                               31/12/2024
+                                                                                            31/12/2025
+                                                                                                             (Não auditado)
+
+
+                Saldo no início do período                                                          68.027          (35.368)
+                Variação do valor justo da parcela efetiva do hedge reconhecida no                (83.993)          238.687
+                ORA durante o período
+                Valor total reclassificado da reserva de hedge de fluxo de caixa para a           (67.353)          (66.294)
+                demonstração do resultado durante o período
+                 para “Suporte ao cliente e operações”                                           (255.585)           (7.446)
+                 para “Despesas gerais e administrativas”                                          73.368            (6.178)
+                 para “Outras receitas”                                                           114.864           (52.670)
+                Tributos diferidos                                                                 59.400           (68.998)
+                Saldo no final do período                                                         (23.920)           68.027
+
+
+                As transações futuras esperadas que são objeto de contabilidade de hedge são:
+
+                                                                                                     31/12/2025
+                                                                                       Até 3           3 a 12       Total
+                                                                                       meses          meses
+
+
+                Transações esperadas em moeda estrangeira                              423.291      1.256.237     1.679.528
+                Total                                                                  423.291      1.256.237     1.679.528
+
+                                                           31/12/2024                             01/01/2024
+                                                         (Não auditado)                         (Não auditado)
+                                               Até 3        3 a 12                        Até 3     3 a 12
+                                                                            Total                              Total
+                                               meses        meses                         meses     meses
+
+
+                Transações esperadas em
+                moeda estrangeira              360.647       831.030      1.191.677       327.100       580.431    907.531
+                Total                          360.647       831.030      1.191.677       327.100       580.431    907.531
+
+
+
+
+                                                                                                                            86
+
+=== página 92 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                  Nu Pagamentos S.A.
+                                                                                 Demonstrações financeiras consolidadas
+                                                                                    em 31 de dezembro de 2025 e 2024
+
+                (i) Em 31 de dezembro de 2025, a Nu Financeira emitiu letras financeiras, indexadas ao CDI, ou CDI mais
+                um spread pré fixado. O valor do principal era de R$ 13.901.616 (R$ 7.276.221 em
+                31 de dezembro de 2024 e R$ 1.049.484 em 01 de janeiro de 2024). O vencimento dessas letras
+                financeiras é de janeiro de 2026 até novembro de 2028.
+
+                (ii) Correspondem a uma linha de crédito de empréstimo de margem, lastreada em títulos públicos como
+                garantia para a operação que a Nu Pagamentos Consolidada contratou por meio da Nu Financeira. Em 31
+                de dezembro de 2025, o valor do principal era de R$ 12.512.385 (R$ 3.770.671 em 31 de dezembro de
+                2024 e R$ 1.783.879 em 01 de janeiro de 2024). Os empréstimos são indexados à taxa CME Term SOFR
+                (a taxa SOFR a termo apurada e publicada diariamente pelo CME Group) mais um spread pré fixado. O
+                vencimento desses empréstimos é de março de 2026 a janeiro de 2027.
+
+                As variações nos empréstimos e financiamentos são as seguintes:
+
+                                                                                              31/12/2024
+                                                     31/12/2025
+                                                                                            (Não auditado)
+                                      Linhas de                                   Linhas de
+                                      crédito de       Letras                     crédito de       Letras
+                                      empréstim      financeira       Total       empréstim      financeira     Total
+                                         o de            s                           o de            s
+                                       margem                                      margem
+                Saldo no início do      3.770.671     7.276.221 11.046.892                  -     1.049.484   1.049.484
+                período
+                Novos empréstimos       9.016.458     6.484.550 15.501.008         3.349.240      5.703.843   9.053.083
+                Pagamentos –                     -     (992.500)     (992.500)              -             -             -
+                principal
+                Pagamentos – juros       (336.548)     (294.868)     (631.416)              -            -           -
+                Juros apropriados         357.847     1.429.286     1.787.133         66.511       524.883     591.394
+                Custos da transação             -        (1.072)       (1.072)       354.920        (1.989)    352.931
+                Variação Cambial         (293.044)            -      (293.044)              -            -           -
+                Saldo no final do      12.515.385    13.901.617 26.417.002         3.770.671      7.276.221 11.046.892
+                período
+
+
+                24. Provisão para processos judiciais e administrativos
+
+                                                                                      31/12/2024          01/01/2024
+                                                                   31/12/2025       (Não auditado)      (Não auditado)
+
+
+                Riscos fiscais                                           25.690                 5.452                   -
+                Riscos cíveis                                           120.798             115.133             36.582
+                Riscos trabalhistas                                       6.989                 5.544            2.266
+                Total                                                   153.478             126.129             38.848
+
+
+
+
+                                                                                                                        91
+
+=== página 93 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                 Nu Pagamentos S.A.
+                                                                                Demonstrações financeiras consolidadas
+                                                                                   em 31 de dezembro de 2025 e 2024
+
+
+                A Companhia e suas subsidiárias são parte em ações judiciais e processos
+                administrativos, decorrentes de tempos em tempos do curso normal das
+                operações, envolvendo aspectos cíveis, tributários e trabalhistas. Esses
+                assuntos estão sendo abordados em ambas as esferas administrativa e
+                judicial, e, quando aplicáveis, são amparados por depósitos judiciais. As
+                provisões para as perdas prováveis decorrentes desses assuntos são
+                estimadas e atualizadas pela administração, com suporte dos assessores
+                jurídicos externos. Há uma incerteza significativa relacionada ao momento de
+                qualquer desembolso de caixa, se houver, para riscos cíveis e trabalhistas.
+
+                a) Provisões
+
+                Os processos cíveis estão relacionados principalmente a operações com
+                cartões de crédito. Com base na avaliação da administração e nas
+                contribuições dos consultores jurídicos externos do Nu, a Nu Pagamentos
+                Consolidada provisionou R$ 120.798 (R$ 115.133 em 31 de dezembro de 2024
+                e R$ 36.582 em 01 de Janeiro de 2024) considerado suficiente para cobrir
+                perdas estimadas em ações cíveis consideradas prováveis.
+
+                b) Movimentações
+
+                As movimentações das provisões para processos judiciais e administrativos
+                são as seguintes:
+
+                                                                                                        31/12/2024
+                                                                  31/12/2025                          (Não auditado)
+                                             Tributárias     Cíveis      Trabalhistas      Total          Total
+
+
+                Saldo no início do período        5.452      115.133            5.545      126.130            38.848
+                Constituições                    18.357      146.199           10.949      175.505          244.069
+                Correção monetária                1.882          324              631        2.836             2.634
+                (Baixa/reversão)                       -     (140.857)         (10.135)   (150.993)         (159.421)
+                Saldo no final do período        25.691      120.798            6.989      153.478          126.129
+
+
+                c) Contingências
+
+                A Nu Pagamentos Consolidada é réu em processos cíveis e trabalhistas,
+                envolvendo riscos classificados pela administração e suportados pelos seus
+                assessores jurídicos como perdas possíveis, no valor aproximado de R$
+                23.162 e R$ 24.877, respectivamente (R$ 16.129 e R$ 40.745 em 31 de
+                dezembro de 2024 e R$ 55.378 e R$ 34.363 em 01 de janeiro de 2024).
+
+                d) Depósitos judiciais
+
+
+
+                                                                                                                   92
+
+=== página 94 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                             Nu Pagamentos S.A.
+                                                                            Demonstrações financeiras consolidadas
+                                                                               em 31 de dezembro de 2025 e 2024
+
+
+                Em 31 de dezembro de 2025, o valor total dos depósitos judiciais apresentados
+                como “Outros ativos” (nota 16) é de R$ 32.753 (R$ 33.032 em 31 de dezembro
+                de 2024 e R$ 17.030 em 01 de janeiro de 2024) e está substancialmente
+                atribuído ao depósito judicial realizado por conta e ordem dos acionistas da Nu
+                Investimentos, antes da aquisição, devido a um processo fiscal relacionado a
+                impostos retidos na fonte deduzidos indevidamente de valores pagos a
+                funcionários.
+
+                25. Receita diferida
+
+                                                                                 31/12/2024        01/01/2024
+                                                               31/12/2025      (Não auditado)    (Não auditado)
+
+                Receita diferida dos programas de
+                recompensas                                         419.267           428.365           303.950
+                Outras receitas diferidas                                 -                 -            13.416
+                Total                                               419.267           428.365           317.366
+
+
+                A receita diferida de programas de recompensas está relacionada ao programa
+                de recompensas do Grupo para seus clientes de cartão de crédito,
+                especificamente “Nubank+” e “Ultravioleta”. Nesses programas, os membros
+                acumulam pontos de acordo com o uso do cartão de crédito. Os pontos não
+                expiram e não há limite para a quantidade de pontos que um portador de cartão
+                elegível pode acumular. Os pontos podem ser resgatados por cashback ou
+                convertidos em milhas aéreas.
+
+                O Nu usa modelos financeiros para estimar as taxas de resgate de prêmios
+                ganhos até o momento pelos atuais membros do cartão e, portanto, o valor
+                financeiro estimado dos pontos, com base nas tendências históricas de resgate
+                e comportamento de resgate do participante atual, entre outros. A estimativa do
+                valor financeiro é registrada na demonstração do resultado quando a obrigação
+                de desempenho é cumprida, especificamente no momento que os pontos de
+                recompensa são resgatados.
+
+                26. Outros passivos
+                                                                                  31/12/2024       01/01/2024
+                                                               31/12/2025       (Não auditado)   (Não auditado)
+
+                Fornecedores diversos (i)                          1.963.674         1.354.049           670.747
+                Transações de pagamento - outras (ii)              1.307.943         1.185.697         1.000.046
+                Obrigações Intercompanias                            401.075           200.511           250.189
+                Provisão para perdas de crédito esperadas de
+                cartões de crédito (Nota 12) (iii)                  245.541           182.061           107.178
+                Fundos de terceiros em trânsito (iv)                 228.976           211.074                -
+                Valores a repassar às seguradoras                     66.991           102.688           71.867
+                Intermediação de valores mobiliários                  21.275            21.424           62.343
+                Outros passivos (v)                                  436.240           246.959          634.473
+                Total                                              4.671.716         3.504.463         2.796.843
+
+
+
+                                                                                                               93
+
+=== página 111 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                               Nu Pagamentos S.A.
+                                                                              Demonstrações financeiras consolidadas
+                                                                                 em 31 de dezembro de 2025 e 2024
+
+                                                                                          31/12/2024    01/01/2024
+                                                                           31/12/2025        (Não          (Não
+                                                                                          auditado)     auditado)
+
+
+                Efeitos de hedge de fluxo de caixa, líquidos de impostos       (91.947)      103.395        (35.368)
+                diferidos
+                Mudanças no valor justo - instrumentos financeiros a           27.329         18.516        36.472
+                VJORA, líquido de impostos diferidos
+                Ajuste de conversão de moeda em entidades estrangeiras             (39)           56           (17)
+                Ajuste de risco de crédito da própria companhia                 (2.376)         (202)        2.578
+                Total                                                          (67.032)      121.765         3.664
+
+                g) Reconciliação do Patrimônio Líquido e do Lucro Líquido do BRGAAP
+                para IFRS
+
+
+                As demonstrações financeiras individuais da Nu Pagamentos S.A. são
+                elaboradas de acordo com as práticas contábeis adotadas no Brasil,
+                observando as diretrizes contábeis emanadas pela Lei das Sociedades por
+                Ações nº 6.404/76, alterações introduzidas pela Lei nº 11.638/07 em
+                consonância com as diretrizes estabelecidas pelo BACEN, pelo Conselho
+                Monetário Nacional ("CMN"), consubstanciadas no Plano Contábil das
+                Instituições do Sistema Financeiro Nacional – COSIF, emitido pelo BACEN
+                (BRGAAP), diferente destas demonstrações financeiras consolidadas que
+                foram elaboradas de acordo com as International Financial Reporting
+                Standards (“IFRS”) emitidas pelo International Accounting Standards Board
+                (“IASB”).
+
+                Estas são as primeiras demonstrações consolidadas elaboradas em
+                conformidade com as normas IFRS. Como não houve divulgação prévia de
+                demonstrações consolidadas segundo o BR GAAP, não se apresenta a
+                reconciliação entre o GAAP anterior e o IFRS, conforme previsto no parágrafo
+                24 do IFRS 1. Na adoção inicial das IFRS, a Nu Pagamentos Consolidada
+                avaliou as isenções opcionais previstas no IFRS 1 e concluiu que não utilizou
+                nenhuma delas. As políticas contábeis foram aplicadas retrospectivamente na
+                elaboração destas demonstrações financeiras consolidadas.
+
+                Conforme estabelecido pela Resolução BCB nº 02, apresentamos abaixo as
+                principais diferenças entre as demonstrações financeiras individuais elaboradas
+                de acordo com o BRGAAP e as demonstrações consolidadas, elaboradas de
+                acordo com as IFRS.
+
+
+
+
+                                                                                                                110
+
+=== página 112 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                 Nu Pagamentos S.A.
+                                                                                Demonstrações financeiras consolidadas
+                                                                                   em 31 de dezembro de 2025 e 2024
+
+                                                                 Patrimônio Líquido               Lucro Líquido
+                                                                            31/12/2024                    31/12/2024
+                                                              31/12/2025       (Não          31/12/2025      (Não
+                                                                            auditado)                      auditado)
+
+
+                Nu Pagamentos S.A. - Individual -             23.060.025      19.055.990     12.687.321      9.528.665
+                BRGAAP
+                Ajuste IFRS 9 – perdas de crédito              1.932.119                 -    1.932.119               -
+                esperadas e baixas (i)
+                Estorno da amortização de ágio (ii)               950.417      1.312.568        139.577        501.729
+                Impostos diferidos sobre ajustes IFRS (iii)    (1.272.020)             -     (1.272.020)             -
+                Ajuste a valor presente - Cartão de crédito         2.817        (48.152)         2.817        (48.152)
+                Impostos correntes – reclassificação para        118.373        (159.680)       118.369       (159.680)
+                base líquida
+                Ajustes de adesão da 4966 (iv)                 2.698.999                 -      558.624               -
+                Ajustes de arrendamentos – ativo e passivo           17.207         (2.394)             -        (2.394)
+                Ajuste a valor justo – letras financeiras             2.376          1.426         2.376           (950)
+                Ajustes de Consolidação                              92.403       127.520         14.249        (16.224)
+                Efeito acumulado em LPA                             534.144       246.758               -             -
+                Outros                                               58.446        58.440               -             -
+                Nu Pagamentos S.A. - Consolidada -               28.195.305    20.592.476     14.183.431     9.802.993
+                IFRS
+                (i) Ajustes na provisão para perdas de crédito decorrentes de diferenças entre BRGAAP e IFRS na
+                mensuração da perda de crédito esperada, uma vez que o BRGAAP estabelece determinados requisitos
+                prudenciais mínimos para operações inadimplentes e créditos renegociados anteriormente baixados.
+                (ii) Reversão das amortizações de ágio registradas em BRGAAP, uma vez que, pelo IFRS (IAS 38), o ágio
+                possui vida útil indefinida e não é amortizado, sendo apenas testado anualmente para impairment.
+                (iii) Reconhecimento dos impostos diferidos relacionados aos ajustes identificados na reconciliação entre
+                BRGAAP e IFRS.
+                (iv) Ajustes decorrentes da adesão à Resolução nº 4.966, que introduziu no BRGAAP critérios mais
+                alinhados ao modelo de classificação, mensuração e perda de crédito esperada previsto no IFRS 9.
+
+
+
+                31. Gerenciamento de riscos financeiros, instrumentos financeiros e
+                outros riscos
+
+                a) Visão geral
+
+                O Grupo monitora riscos que possam impactar significativamente seus
+                objetivos estratégicos ou o cumprimento das exigências regulatórias aplicáveis.
+                Para gerenciar e mitigar esses riscos de forma eficiente, a estrutura de
+                gerenciamento de riscos realiza a identificação e avaliação com base em seu
+                potencial impacto nos resultados financeiros, capital, liquidez, relacionamentos
+                com clientes e reputação. Essa priorização visa garantir que o Grupo capture
+                oportunidades enquanto mitiga ameaças aos seus pilares estratégicos.
+
+                b) Estrutura de gerenciamento de riscos
+
+                O Gerenciamento de Riscos é um pilar fundamental da governança estratégica
+                do Grupo. A estrutura de gerenciamento de riscos é integrada em toda a
+                organização, com o objetivo de garantir que os riscos sejam consistentemente
+
+                                                                                                                    111
+
+=== página 113 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                  Nu Pagamentos S.A.
+                                                                 Demonstrações financeiras consolidadas
+                                                                    em 31 de dezembro de 2025 e 2024
+
+
+                identificados, mensurados, mitigados, monitorados e reportados. Esse
+                processo contínuo está incorporado à cultura e às estruturas de tomada de
+                decisão do Grupo, visando minimizar perdas, maximizar a rentabilidade e
+                reforçar os valores fundamentais do Grupo.
+
+                A estrutura de gerenciamento de riscos do Grupo considera o tamanho e a
+                complexidade dos seus negócios, o que permite rastrear, monitorar e controlar
+                os riscos aos quais está exposto. O processo de gerenciamento de riscos está
+                alinhado às diretrizes da Administração, que, por meio de comitês e demais
+                reuniões internas, definem os objetivos estratégicos, incluindo o apetite ao
+                risco. Por outro lado, as unidades de controle de capital e gestão de capital
+                fornecem suporte por meio de processos de monitoramento e análise de risco e
+                capital.
+
+                O Grupo considera a declaração de apetite ao risco (“RAS”) um instrumento
+                essencial de apoio ao gerenciamento de riscos e à tomada de decisões. O
+                Conselho de Administração revisa e aprova a RAS, como diretrizes e limites
+                para o plano de negócios e aplicação de capital. O Nu definiu uma RAS
+                (alinhada às exigências regulatórias locais) que prioriza os principais riscos e,
+                para cada um deles, foram implementadas declarações qualitativas e métricas
+                quantitativas expressas em relação a lucros, capital, medidas de risco, liquidez
+                e outras medidas relevantes, conforme apropriado.
+
+                O Nu opera no modelo de três linhas, que ajuda a identificar estruturas e
+                processos que melhor auxiliam no cumprimento dos objetivos e promovem uma
+                estrutura robusta de governança e gerenciamento de riscos.
+
+                        ● Primeira linha: funções e suportes ou atividades de apoio que
+                          geram exposição a um risco, cujos gestores realizam a
+                          gerenciamento de riscos de acordo com políticas, limites e demais
+                          condições definidas e aprovadas pelo Conselho. A primeira linha
+                          deve ter meios para identificar, mensurar, tratar e reportar riscos.
+                        ● Segunda linha: consistindo nas áreas de Gerenciamento de Riscos,
+                          Controles Internos e Compliance, é responsável por garantir um
+                          controle de risco efetivo e assegura que os riscos sejam gerenciados
+                          de acordo com o nível de apetite definido. É responsável por propor
+                          políticas de gerenciamento de riscos, desenvolvimento de modelos e
+                          metodologias de riscos e supervisão de primeira linha.
+                        ● Terceira linha: composta pela Auditoria Interna, é responsável por
+                          avaliar periodicamente e independente se as políticas, métodos e
+                          procedimentos são adequados, além de verificar a sua efetiva
+                          implementação.
+
+
+
+                                                                                                  112
+
+=== página 120 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                                 Nu Pagamentos S.A.
+                                                                                Demonstrações financeiras consolidadas
+                                                                                   em 31 de dezembro de 2025 e 2024
+
+                A tabela a seguir resume os passivos financeiros da Nu Pagamentos
+                Consolidada e seus vencimentos contratuais:
+
+                                                                         31/12/2025
+                                                                                                            Acima de
+                                         Valor                        Até 1       De 1 a 3      3 a 12
+                                                        Total                                                  12
+                                        contábil                      mês         meses         meses        meses
+
+
+                Passivos
+                financeiros
+                Instrumentos
+                financeiros                 336.002               -             -            -            -            -
+                derivativos
+                Compromissos de
+                recompra                  9.089.676     (9.127.186) (7.700.179) (1.427.008)               -            -
+                Depósitos de Clientes
+                (i)                       3.824.598     (5.237.762)    (558.963) (1.077.129) (2.722.317)        (879.354)
+                Recibos de Depósitos
+                Bancários (RDB) (ii) 175.885.712                  -             -            -            -            -
+                Certificado de
+                Depósito Bancário
+                (CDB)                     2.571.579     (2.831.755)    (156.935) (717.594) (1.248.093)          (709.134)
+                Valores a repassar à
+                rede de cartão de
+                crédito                  72.727.937               -             -            -            -            -
+                Empréstimos e
+                financiamentos           26.417.002 (29.511.080)       (481.882) (4.093.992) (12.192.483) (12.742.722)
+                Instrumentos
+                elegíveis a capital       6.837.852 (14.024.990)       (446.866)             -     (418.135) (13.159.988)
+                Obrigação por cotas
+                de fundos de
+                investimento                964.434               -             -            -            -            -
+                Total dos passivos
+                financeiros             298.654.790 (60.732.773) (9.344.823) (7.315.722) (16.581.029) (27.491.198)
+                (i) De acordo com as exigências regulatórias e em garantia desses depósitos, em dezembro de 2025, o
+                saldo de títulos públicos detidos pelas subsidiárias para fins regulatórios era zero (R$ 315.641 em 31 de
+                dezembro de 2024). O Grupo optou por manter apenas depósitos compulsórios no Banco Central do
+                Brasil (vide Nota 14) para cumprir essas exigências regulatórias.
+
+                (ii) Considerando a primeira data em que o cliente pode levantar o depósito. A taxa de resgate esperada
+                para os depósitos do Nu, utilizada dentro da estrutura de gerenciamento de risco de liquidez previamente
+                descrita, é estimada com base no comportamento histórico observado dos clientes.
+
+
+
+
+                                                                                                                    119
+
+=== página 121 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                 Nu Pagamentos S.A.
+                                                                Demonstrações financeiras consolidadas
+                                                                   em 31 de dezembro de 2025 e 2024
+
+
+                O limite não utilizado dos cartões de crédito é o limite pré-aprovado que ainda
+                não foi utilizado pelo cliente e representa a exposição de crédito potencial
+                máxima atual. Portanto, não representa a real necessidade de liquidez
+                decorrente dos compromissos. Quando os clientes utilizam seus limites,
+                espera-se que a duração dos recebíveis de cartão de crédito seja inferior à
+                duração dos valores a repassar à rede.
+
+                Considerando o perfil de alocação de ativos apresentado acima, o Grupo
+                estabelece um plano de financiamento com o objetivo de manter uma posição
+                financeira saudável a curto e longo prazo. A principal fonte de financiamento é
+                a franquia de depósitos (Depósitos em moeda eletrônica e recibos de
+                depósitos bancários), que o Grupo pretende combinar com um colchão de
+                liquidez no lado do ativo. Os títulos são compostos principalmente por Títulos
+                Públicos, que podem ter vencimentos mais longos (conforme demonstrado na
+                tabela acima), mas são negociados em um mercado que historicamente tem
+                alta liquidez.
+
+                Além disso, apesar de ser contratualmente resgatável no curto prazo, o Grupo
+                considera o saldo dos depósitos como um instrumento de financiamento
+                crescente, utilizado em conjunto com outras emissões de dívida para garantir
+                uma combinação adequada de fontes de financiamento.
+
+                O Grupo monitora e utiliza essas informações como parte do seu mecanismo
+                de gerenciamento de risco de liquidez.
+
+                Risco de mercado e risco da taxa de juros da carteira bancária (IRRBB)
+
+                O risco de mercado é definido como o risco de perdas decorrentes de
+                movimentos nos fatores de risco de mercado, tais como risco de taxa de juros,
+                ações, taxas de câmbio (FX) e preços de commodities. O IRRBB refere-se ao
+                risco atual ou potencial para o capital e rendimentos da entidade decorrentes
+                de movimentos adversos nas taxas de juros que afetam as posições da carteira
+                bancária.
+
+                Uma estrutura de gerenciamento e controle do risco de mercado e IRRBB, que
+                opera de forma independente das unidades de negócio, é responsável pelos
+                processos e ferramentas para mensurar, monitorar, controlar e reportar o risco
+                de mercado e o IRRBB, enquanto verifica continuamente o cumprimento das
+                políticas e dos limites aprovados.
+
+                O gerenciamento de risco de mercado e do IRRBB é baseado em métricas que
+                são reportadas ao Fórum Técnico de Gestão de Ativos e Passivos e Capital
+                (“ALM”) e ao Comitê de Risco em nível de cada país. A administração está
+
+                                                                                                 120
+
+=== página 122 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                  Nu Pagamentos S.A.
+                                                                 Demonstrações financeiras consolidadas
+                                                                    em 31 de dezembro de 2025 e 2024
+
+
+                autorizada a utilizar instrumentos financeiros conforme descrito nas políticas
+                internas do Grupo para proteção contra exposições de riscos de mercado e
+                IRRBB.
+
+                O gerenciamento de risco de mercado e do risco de taxa de juros da Carteira
+                Bancária (IRRBB) baseia-se nas seguintes métricas:
+
+                        ● Sensibilidade de taxa de juros (DV01): impacto no valor de mercado
+                          dos fluxos de caixa, quando submetido a um aumento de um ponto
+                          base nas taxas de juros atuais anuais ou indexador;
+
+                        ● Valor em Risco (VaR): perda máxima de valor de mercado para um
+                          período de detenção com um nível de confiança; e
+
+                        ● Exposições cambiais: considerando todas as posições financeiras que
+                          trazem risco cambial e despesas operacionais em outras moedas.
+
+                O Banco Central do Brasil (BCB) exige uma avaliação da suficiência de capital
+                para o risco de taxa de juros da carteira bancária (IRRBB) com base nas
+                métricas Delta EVE e Delta NII. O Grupo calcula essas métricas de acordo com
+                o padrão regulatório para gerenciar esse requisito de capital. Delta EVE é a
+                variação do valor econômico do patrimônio líquido do Grupo nos cenários
+                prescritos pelo BCB. Delta NII é a variação da receita líquida de juros do Grupo
+                nos mesmos cenários padrão prescritos pelo regulador.
+
+                A tabela abaixo apresenta que o Valor em Risco (VaR) é calculado utilizando
+                um nível de confiança de 99% e período de detenção de 10 dias. O cálculo é
+                realizado utilizando uma abordagem de simulação histórica filtrada, com base
+                em um período histórico de 5 anos. O VaR é calculado apenas para a Carteira
+                de Negociação.
+
+               VaR                                                                            2025
+
+
+
+               Nu Pagamentos Consolidada                                                          (72)
+
+
+
+
+                                                                                                     121
+
+=== página 126 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                Nu Pagamentos S.A.
+                                                               Demonstrações financeiras consolidadas
+                                                                  em 31 de dezembro de 2025 e 2024
+
+
+                Compliance, bem como centralização do relacionamento com reguladores em
+                relação a solicitações de informações e exames. Se não estiver em
+                conformidade com as leis e regulamentos, o Grupo pode estar exposto a
+                sanções, perda de licença, bem como potenciais implicações criminais no
+                gerenciamento.
+
+                O Programa de Prevenção e Combate à Lavagem de Dinheiro (AML) do Nu
+                representa a estrutura global e as diretrizes para AML e Combate ao
+                Financiamento do Terrorismo (CTF) e riscos de evasão de sanções, e é a base
+                para o planejamento estratégico da equipe de AML. Envolve o risco de a
+                Companhia ficar exposta a sanções por não implementar controles para evitar
+                a lavagem de dinheiro, financiamento do terrorismo e evasão de sanções.
+
+                O Programa está estruturado em três níveis – estratégico, tático e operacional
+                – e é composto por 7 pilares (nível estratégico): Avaliação de Riscos
+                Empresariais; Políticas e procedimentos; Comunicação e treinamento; Know
+                Your Customer (KYC); Due Diligence (KYE, KYS, KYP e KYB); MSAC -
+                Monitoramento, Seleção, Análise e Comunicação (SAR); e Programa de
+                Avaliação de Eficácia.
+
+                 ● Risco reputacional
+
+                O Grupo acredita que a materialização de outros riscos pode impactar
+                negativamente a sua reputação, uma vez que estão intrinsecamente ligados.
+                Eventos desfavoráveis em diferentes áreas de risco, como continuidade dos
+                negócios, segurança cibernética, ética e integridade, atividades negativas nas
+                redes sociais, entre outras, podem prejudicar a reputação do Nu.
+
+                Assim, o Grupo conta com equipes e processos dedicados à supervisão da
+                comunicação externa e ao gerenciamento de crises, que são elementos
+                fundamentais para identificar e mitigar eventos de reputação, bem como para
+                obter uma visão de longo prazo para melhor prevenir ou responder a eventos
+                futuros.
+
+                 ● Programa de Testes de Estresse
+
+                O programa de testes de estresse considera choques/impactos nos principais
+                produtos do Nu, como cartões de crédito, empréstimos pessoais e instrumentos
+                de financiamento, além de seus respectivos subprodutos. Os cenários são
+                integrados, com diferentes riscos sendo considerados simultaneamente, em
+                diferentes níveis de intensidade e probabilidade, bem como cenários nos quais
+                são adotadas ações gerenciais para aumentar a resiliência do Grupo e
+                preservar seus indicadores de capital e liquidez.
+
+                                                                                                125
+
+=== página 127 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                Nu Pagamentos S.A.
+                                                               Demonstrações financeiras consolidadas
+                                                                  em 31 de dezembro de 2025 e 2024
+
+
+
+
+                Os cenários propostos são apresentados ao Fórum Técnico de Testes de
+                Estresse. São discutidos os cenários a serem abordados, a duração, a
+                gravidade e a plausibilidade de cada choque, bem como as formas como serão
+                modelados e o nível de detalhe necessário. Após a modelagem e execução dos
+                testes, os resultados são submetidos aos comitês e fóruns técnicos
+                competentes, parte integrante da estrutura de gerenciamento de riscos do Nu.
+                As ações propostas que visam garantir a resiliência do Grupo são discutidas e
+                aprovadas. O Programa de Testes de Estresse é atualizado anualmente e
+                define quais testes a equipe deve realizar nos próximos 12 meses.
+
+                32. Gerenciamento de capital
+
+                O objetivo do gerenciamento de capital é assegurar a adequação de capital do
+                Grupo através do controle e monitoramento da posição de capital, da avaliação
+                da necessidade de capital tendo em vista os riscos incorridos e os objetivos
+                estratégicos do Grupo; e do planejamento de capital para atender a futuros
+                requerimentos de capital regulatório com base nas projeções de crescimento
+                do Grupo, exposição ao risco, movimentos de mercado e outras informações
+                relevantes. Além disso, a estrutura de gerenciamento de capital é responsável
+                pela identificação das fontes de capital, pela redação e submissão do plano de
+                capital para aprovação, bem como pelo acompanhamento do atual nível dos
+                índices de capital regulatório.
+
+                No nível executivo, o Fórum Técnico de Asset and Liability Management (ALM
+                Fórum) é responsável por aprovar as metodologias de avaliação de risco e
+                cálculo de capital, bem como revisar, monitorar e recomendar planos de ação
+                ao Comitê de Riscos.
+
+                A tabela a seguir apresenta os valores dos índices de capital, bem como sua
+                exigência mínima, para o Conglomerado Prudencial, de acordo com a
+                regulamentação em vigor no Brasil.
+
+
+
+
+                                                                                                126
+
+=== página 128 ===
+Docusign Envelope ID: 9C0D01B0-0DDA-4229-9991-8AB41B1D4433
+
+
+                                                                                            Nu Pagamentos S.A.
+                                                                           Demonstrações financeiras consolidadas
+                                                                              em 31 de dezembro de 2025 e 2024
+
+                                                                                31/12/2024        01/01/2024
+                                                             31/12/2025
+                                                                              (Não auditado)    (Não auditado)
+
+
+                Patrimônio de referência (PR)                 28.354.236        22.408.545         12.770.895
+                Nível I                                       24.579.307        20.064.520         11.637.888
+                 Capital principal                            22.232.144        18.156.195         10.672.168
+                 Capital complementar                          2.347.163          1.908.325           965.720
+                Nível II                                       3.774.929          2.344.025         1.133.007
+
+
+                Ativos ponderados ao risco (RWA)             171.138.518       123.915.744         93.557.039
+                Risco de crédito (RWA CPAD)                  122.900.295        91.195.553         66.904.075
+                Risco de mercado (RWA MPAD)                    6.573.494           284.478            704.895
+                Risco operacional (RWA OPAD)                  32.650.719        27.819.399         19.605.042
+                Risco de serviços de pagamento (RWA SP)        9.014.010          4.616.314         6.343.027
+
+
+                PR mínimo requerido                           17.969.544        10.842.628          6.315.100
+
+
+                Margem PR                                     10.384.692        11.565.917          6.455.795
+
+
+                Índice CET1                                        12,99 %            14,70 %           11,40 %
+                Índice de Nível 1                                  14,36 %            16,20 %           12,40 %
+                Índice de adequação de capital                     16,57 %            18,10 %           13,70 %
+
+
+
+
+                                                                                                            127

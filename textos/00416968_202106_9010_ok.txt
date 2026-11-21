@@ -1,0 +1,1848 @@
+
+=== página 22 ===
+           x    Nota explicativa nº 12 – reconhecimento de ativos fiscais diferidos: disponibilidade
+                de lucro tributável futuro contra o qual prejuízos fiscais possam ser utilizados;
+
+           x    Nota explicativa nº 21 – reconhecimento e mensuração de provisões e contingências:
+                principais premissas sobre a probabilidade e magnitude das saídas de recursos.
+
+
+  3    Principais políticas contábeis
+
+
+ a.    Base de consolidação
+       A tabela a seguir apresenta as entidades controladas incluídas nas demonstrações
+       financeiras semestrais consolidadas:
+                                                                                                   Participação no capital (%)
+                                 Controladas                               Ramo de atividade       30/06/2021      31/12/2020
+       BMA Inter Fundo de Investimento em Direitos Creditórios
+                                                                         Fundo de Investimento          68,3%            81,2%
+       Multissetorial
+       Inter Digital Corretora e Consultoria de Seguros Ltda.            Corretora de seguros           60,0%           60,0%
+       Acerto Cobrança e Informações Cadastrais S.A.                     Cobranças                      60,0%             0,0%
+       Matriz Participações Ltda.                                        Gestora de recursos            70,0%            70,0%
+       Inter Títulos Fundo de Investimento                               Fundo de Investimento          97,7%            96,5%
+       Inter Distribuidora de Títulos e Valores Mobiliários Ltda.        Distribuidora de TVM           98,3%            98,3%
+       Inter Marketplace Ltda.                                           Prestação de serviços          99,9%            99,9%
+       TBI Fundo de Investimento Renda Fixa Crédito Privado              Fundo de Investimento         100,0%          100,0%
+       XII Fundo de Investimento Renda Fixa Crédito Privado              Fundo de Investimento         100,0%             0,0%
+
+
+                           Controladas indiretas                            Ramo de atividade      30/06/2021      31/12/2020
+       Inter Food S.A.                                                   Prestação de serviços          50,0%                -
+       Inter Asset Gestão de Recursos Ltda.                              Administração de fundos        70,0%            70,0%
+
+
+
+(i)    Controladas
+       O Inter controla uma entidade quando está exposto a, ou tem direito sobre, os retornos
+       variáveis advindos de seu envolvimento com a entidade e tem a habilidade de afetar esses
+       retornos exercendo seu poder sobre a entidade. As demonstrações financeiras semestrais de
+       controladas são incluídas nas demonstrações financeiras semestrais consolidadas a partir da
+       data em que o Inter obtiver o controle e até a data em que o controle deixa de existir.
+       Nas demonstrações financeiras semestrais individuais da controladora, quando requeridas,
+       as demonstrações financeiras semestrais de controladas são reconhecidas por meio do
+       método de equivalência patrimonial.
+
+
+(ii)   Investimentos em entidades contabilizadas pelo método de equivalência patrimonial
+       Os investimentos do Grupo em entidades contabilizadas pelo método da equivalência
+       patrimonial compreendem suas participações em coligadas.
+       As coligadas são aquelas entidades nas quais o Inter, direta ou indiretamente, tenha influência
+       significativa, mas não controle ou controle conjunto, sobre as políticas financeiras e
+       operacionais. Para ser classificada como uma entidade controlada em conjunto, deve existir
+       um acordo contratual que permite ao Inter controle compartilhado da entidade e dá ao Inter
+       direito aos ativos líquidos da entidade controlada em conjunto, e não direito aos seus ativos
+       e passivos específicos.
+
+
+
+                                                                    18
+
+=== página 23 ===
+        Tais investimentos são reconhecidos inicialmente pelo custo, o qual inclui os gastos com a
+        transação. Após o reconhecimento inicial, as demonstrações financeiras semestrais incluem
+        a participação do Inter no lucro ou prejuízo líquido do exercício e outros resultados
+        abrangentes da investida até a data em que a influência significativa ou controle conjunto
+        deixa de existir. Nas demonstrações financeiras semestrais individuais da controladora,
+        investimentos em controladas também são contabilizados com o uso desse método.
+
+
+(iii)   Combinações de negócios
+        Combinações de negócio são registradas utilizando o método de aquisição quando o
+        conjunto de atividades e ativos adquiridos atende à definição de um negócio e o controle é
+        transferido para o Inter. Ao determinar se um conjunto de atividades e ativos é um negócio,
+        o Inter avalia se o conjunto de ativos e atividades adquiridos inclui, no mínimo, um input e
+        um processo substantivo que juntos contribuam, significativamente, para a capacidade de
+        gerar output.
+        O Inter tem a opção de aplicar um “teste de concentração” que permite uma avaliação
+        simplificada se um conjunto de atividades e ativos adquiridos não é um negócio. O teste de
+        concentração opcional é atendido se, substancialmente, todo o valor justo dos ativos brutos
+        adquiridos estiver concentrado em um único ativo identificável ou grupo de ativos
+        identificáveis similares.
+        A contraprestação transferida é geralmente mensurada ao valor justo, assim como os ativos
+        líquidos identificáveis adquiridos. Qualquer ágio que surja na transação é avaliado quanto à
+        perda por redução ao valor recuperável. Ganhos em uma compra vantajosa são
+        reconhecidos imediatamente no resultado. Os custos da transação são registrados no
+        resultado conforme incorridos, exceto os custos relacionados à emissão de instrumentos de
+        dívida ou patrimônio.
+        A contraprestação transferida não inclui montantes referentes ao pagamento de relações
+        preexistentes. Esses montantes são geralmente reconhecidos no resultado do semestre.
+        Qualquer contraprestação contingente a pagar é mensurada pelo seu valor justo na data de
+        aquisição. Se a contraprestação contingente é classificada como instrumento patrimonial,
+        então ela não é remensurada e a liquidação é registrada dentro do patrimônio líquido. As
+        demais contraprestações contingentes são remensuradas ao valor justo em cada data de
+        relatório e as alterações subsequentes ao valor justo são registradas no resultado do
+        semestre.
+
+
+(iv)    Aquisição de investimentos
+
+
+        (iv.1) Aquisição de controladas
+
+
+        (iv.1.1) Aquisição da controlada Acerto Cobrança e Informações Cadastrais S.A.
+
+
+        (iv.1.1.1) Contraprestação
+        Em 12 de fevereiro de 2021, o Inter obteve o controle da Acerto Cobrança e Informações
+        Cadastrais S.A. (“Meu Acerto”), focada na renegociação de dívidas, cobrança, reativação,
+        retenção de bases de clientes e upsell, ao adquirir 60% das ações do capital votante dessa
+        entidade.
+
+
+                                                     19
+
+=== página 24 ===
+A aquisição de controle da Meu Acerto pretende dar robustez para a atividade de cobrança
+do Inter, e acelerar a evolução do modelo de Winback, que compreende os pilares de
+Reativação e Retenção de bases de clientes, além de upsell, com objetivo de trazer
+vantagens competitivas relevantes não só para o Inter, como também para vários players que
+atuam no mercado digital.
+
+No semestre findo em 30 de junho de 2021, a Meu Acerto contribuiu com uma receita de
+R$2.282 e prejuízo de R$781 às demonstrações financeiras semestrais consolidadas.
+
+(iv.1.1.2) Contraprestação transferida
+O preço de aquisição da empresa “Meu Acerto” foi de R$45.000, sendo R$25.000 na forma
+de pagamento aos sócios (R$7.250 pagos à vista e R$17.750 a serem pagos em duas parcelas,
+nos anos de 2022 e 2023, atualizadas pelo CDI) e R$20.000 na forma de aporte de capital na
+investida.
+
+(iv.1.1.3) Ativos identificáveis adquiridos, passivos assumidos e ágio
+O Inter contratou serviço de avaliação independente para elaboração do estudo para
+alocação do preço de compra (“PPA”) em ativos identificáveis adquiridos, passivos
+assumidos e ágio.
+
+A tabela a seguir resume os valores dos ativos adquiridos e passivos assumidos na data de
+aquisição.
+
+Em reais (mil)                                                                          2021
+Instrumentos financeiros                                                             20.212
+Outros ativos financeiros                                                              1.940
+Créditos tributários                                                                      317
+Imobilizado                                                                              499
+Intangível                                                                              1.251
+Obrigações por empréstimos e repasses                                                (1.455)
+Outros passivos                                                                       (1.977)
+Ativos líquidos                                                                      20.797
+
+
+O ágio decorrente da aquisição foi apurado conforme abaixo, considerando uma alocação
+preliminar da contraprestação paga, a qual o Inter pretende finalizar até o final de 2021:
+
+Em reais (mil)                                                                        2021
+Contraprestação transferida                                                         45.000
+Participação de acionistas não controladores, com base na participação
+proporcional nos ativos adquiridos e passivos reconhecidos                            8.318
+Ativos líquidos                                                                    (20.797)
+Goodwill                                                                             32.522
+
+
+(iv.1.1.4) Custos de aquisição
+O Inter incorreu em custos relacionados à aquisição no valor de R$25 referentes a honorários
+advocatícios e custos de due dilligence. Os honorários advocatícios e os custos de due
+dilligence foram registrados como “Despesas administrativas” na demonstração de
+resultado.
+
+
+
+
+                                                       20
+
+=== página 28 ===
+h.      Instrumentos financeiros derivativos
+        Os instrumentos financeiros derivativos são avaliados pelo valor de mercado por ocasião dos
+        balancetes mensais e balanços. As valorizações ou desvalorizações são registradas em contas
+        de receitas ou despesas dos respectivos instrumentos financeiros.
+        A metodologia de marcação a mercado dos instrumentos financeiros derivativos foi
+        estabelecida em observância aos critérios consistentes e verificáveis que levam em
+        consideração o preço médio de negociação no dia da apuração ou, na falta deste, em modelos
+        de precificação que traduzam o valor líquido provável de realização de acordo com as
+        características do derivativo.
+        As operações são registradas pelo seu valor justo considerando as metodologias de
+        marcação a mercado adotadas pelo Inter, podendo ter seu ajuste contabilizado no resultado
+        ou no patrimônio líquido, dependendo da classificação entre hedge contábil, suas categorias
+        e hedge econômico.
+        Os instrumentos financeiros derivativos utilizados para compensar, no todo ou em parte, os
+        riscos decorrentes das exposições às variações no valor de mercado ou no fluxo de caixa de
+        ativos ou passivos financeiros, compromisso ou transação futura prevista, são considerados
+        instrumentos de proteção (hedge) e são classificados de acordo com a sua natureza em:
+            x   Hedge de risco de mercado: os instrumentos financeiros assim classificados, bem
+                como o item objeto de hedge, têm suas valorizações ou desvalorizações reconhecidas
+                em contas de resultado do exercício;
+            x   Hedge de fluxo de caixa: para os instrumentos financeiros enquadrados nesta
+                categoria, a parcela efetiva das valorizações ou desvalorizações registra-se, líquida
+                dos efeitos tributários, na conta “Ajuste de Avaliação Patrimonial do Patrimônio
+                Líquido”. Entende-se por parcela efetiva aquela em que a variação no item objeto de
+                hedge, diretamente relacionada ao risco correspondente, é compensada pela
+                variação no instrumento financeiro utilizado para hedge, considerando o efeito
+                acumulado da operação. As demais variações verificadas nesses instrumentos são
+                reconhecidas diretamente no resultado do exercício.
+        Para os derivativos classificados na categoria hedge contábil existe o acompanhamento da
+        efetividade da estratégia, através de testes de efetividade prospectiva e retrospectiva, e
+        marcação a mercado dos instrumentos de hedge.
+
+
+     (i) Precificação e registro
+        Os títulos e valores mobiliários classificados na categoria para negociação, disponível para
+        venda, bem como os instrumentos financeiros derivativos, são demonstrados no balanço
+        patrimonial pelo seu valor justo estimado. O valor justo, geralmente, baseia-se em cotações
+        de preços de mercado ou em cotações de preços de mercado para ativos ou passivos com
+        características semelhantes. Se esses preços de mercado não estiverem disponíveis, os
+        valores justos são baseados em cotações de operadores de mercado, modelos de
+        precificação, fluxo de caixa descontado ou técnicas similares, para as quais a determinação
+        do valor justo pode exigir julgamento ou estimativa significativa por parte da Administração.
+        Os títulos públicos estão custodiados no Sistema Especial de Liquidação e Custódia – SELIC
+        e os contratos de derivativos e títulos privados são registrados na B3 S.A. – Brasil, Bolsa,
+        Balcão.
+
+
+
+                                                     24
+
+=== página 29 ===
+i.   Operações de crédito e Provisão para perdas esperadas associadas ao risco de crédito
+     Constituídas, basicamente, de empréstimos e financiamentos com operações efetuadas a
+     taxas pré e pós-fixadas. Encontram-se demonstradas pelos valores de realização, incluídos
+     os rendimentos auferidos em função da fluência dos prazos contratuais das operações, e são
+     classificadas nos respectivos níveis de risco, observando: (i) os parâmetros estabelecidos
+     pela Resolução CMN nº 2.682/1999, que requer a sua classificação em um dos nove níveis (de
+     “AA” a “H” (risco máximo)); e (ii) a avaliação da Administração quanto ao nível de risco.
+     Essa avaliação, realizada periodicamente, considera a conjuntura econômica, a experiência
+     passada e os riscos específicos e globais em relação às operações, aos devedores e aos
+     garantidores. Adicionalmente, também são considerados os períodos de atraso definidos na
+     Resolução CMN nº 2.682/1999, para atribuição dos níveis de classificação dos clientes da
+     seguinte forma:
+                                                                       Classificação
+                                         Período de atraso              do cliente
+                     Até 14 dias                                            A
+                     de 15 a 30 dias                                        B
+                     de 31 a 60 dias                                        C
+                     de 61 a 90 dias                                        D
+                     de 91 a 120 dias                                       E
+                     de 121 a 150 dias                                      F
+                     de 151 a 180 dias                                      G
+                     superior a 180 dias                                    H
+
+
+
+     A atualização das operações de crédito vencidas até o 59º dia é contabilizada em receitas de
+     operações de crédito e, a partir do 60º dia, em rendas a apropriar, e somente serão
+     apropriadas ao resultado quando efetivamente forem recebidas.
+     As operações renegociadas são mantidas, no mínimo, no mesmo nível em que estavam
+     classificadas. As renegociações de operações de crédito que haviam sido baixadas contra a
+     provisão e que estavam em contas de compensação são classificadas como nível “H”, e os
+     eventuais ganhos provenientes da renegociação somente são reconhecidos como receita
+     quando efetivamente recebidos.
+     As operações em atraso classificadas como nível “H” permanecem nessa classificação por
+     seis meses, quando, então, são baixadas contra a provisão existente e controladas em conta
+     de compensação por, no mínimo, cinco anos.
+     Para as operações com prazo a decorrer superior a 36 meses, admite-se a contagem em dobro
+     dos períodos de atraso acima descritos.
+     A Provisão para perdas esperadas associadas ao risco de crédito é apurada em valor
+     suficiente para cobrir prováveis perdas conforme as normas e instruções do Banco Central
+     do Brasil, associadas a avaliações procedidas pela Administração, na determinação dos
+     riscos de crédito.
+
+
+ (i) Cessão de créditos
+     A Resolução CMN nº 3.533/08 estabelece critérios para o registro das operações de crédito
+     cedidas com e sem retenção substancial de riscos e benefícios.
+
+
+
+                                                     25
+
+=== página 30 ===
+      As operações com retenção substancial dos riscos e benefícios devem permanecer no ativo,
+      com registro de passivo financeiro decorrente da obrigação assumida, e as receitas e
+      despesas decorrentes dessas operações apropriadas no resultado pelo prazo remanescente
+      das operações.
+      As operações com transferência substancial dos riscos e benefícios devem ser baixadas do
+      ativo e o ganho reconhecido no resultado do período.
+
+
+ j.   Outros ativos
+      Compostos, basicamente, por bens não de uso próprio e despesas antecipadas. Os bens não
+      de uso próprio correspondentes a imóveis disponíveis para venda são classificados como
+      bens recebidos em dação em pagamento e registrados pelo valor contábil do empréstimo ou
+      financiamento, ou pelo valor de avaliação do imóvel, dos dois, o menor, conforme disposto
+      na Circular Bacen nº 909/1985.
+      As despesas antecipadas são correspondentes a aplicações de recursos cujos benefícios
+      decorrentes ocorrerão em exercícios futuros. A apropriação ao resultado das parcelas de
+      despesas antecipadas é realizada de acordo com o regime de competência.
+
+
+k.    Investimentos
+      Quando há controle ou influência significativa na administração, os investimentos são
+      avaliados pelo método de equivalência patrimonial. Na inexistência de controle ou influência
+      significativa, os investimentos são registrados a custo de aquisição. É reconhecida uma
+      provisão para perda por impairment no resultado do período, quando o valor contábil de um
+      investimento, incluindo ágio, exceder seu valor recuperável.
+
+
+ l.   Imobilizado
+      Corresponde aos direitos que tenham por objeto bens corpóreos destinados à manutenção
+      das atividades ou exercidos com essa finalidade, inclusive os decorrentes de operações que
+      transfiram os riscos, os benefícios e o controle dos bens para a entidade.
+      Itens do imobilizado são mensurados pelo custo histórico de aquisição ou construção,
+      deduzido de depreciação acumulada e quaisquer perdas acumuladas por redução ao valor
+      recuperável (impairment), quando aplicáveis. As depreciações são calculadas pelo método
+      linear, observando-se as seguintes taxas anuais: móveis e equipamentos de uso e sistema de
+      comunicação, 10%, e sistema de processamento de dados, 20%.
+
+
+m.    Intangível
+      Os ativos intangíveis correspondem aos direitos adquiridos que tenham por objeto bens
+      incorpóreos destinados à manutenção da entidade ou exercidos com essa finalidade. É
+      composto, principalmente, por: (i) Direitos de uso, amortizados de acordo com os prazos dos
+      contratos ou na medida que os benefícios econômicos fluem para a empresa; e (ii) Softwares
+      e intangíveis gerados internamente amortizados em até dez anos.
+      Os ativos intangíveis de vida útil definida são amortizados de forma linear pelo prazo de sua
+      vida útil estimada. O Inter não possui ativos intangíveis de vida útil indefinida em 30 de junho
+      de 2021.
+
+
+
+                                                    26
+
+=== página 31 ===
+n.   Redução do valor recuperável de ativos – Impairment
+     Os ativos financeiros e não financeiros são avaliados para verificar se há evidência objetiva de
+     que tenha ocorrido uma perda no seu valor contábil.
+     A evidência objetiva de que os ativos financeiros perderam valor pode incluir o não
+     pagamento ou atraso no pagamento por parte do devedor, indicações de processo de
+     falência ou mesmo um declínio significativo ou prolongado do valor do ativo.
+     Uma perda por redução ao valor recuperável (impairment) de um ativo financeiro ou não
+     financeiro é reconhecida no resultado do exercício se o valor contábil do ativo ou da unidade
+     geradora de caixa exceder o seu valor recuperável.
+     O Inter avalia se há indicativo de desvalorização de um ativo e, se houver evidência de perda,
+     o valor recuperável do ativo é estimado e comparado com o valor contábil. O valor
+     recuperável refere-se ao maior entre o valor justo menos custos de venda e o seu valor em
+     uso.
+
+
+o.   Provisões, passivos contingentes e ativos contingentes
+     O reconhecimento, a mensuração e a divulgação dos ativos e dos passivos contingentes e
+     obrigações legais são efetuados de acordo com a Resolução CMN nº 3.823/2009, conforme
+     critérios, a saber:
+        x   Ativos contingentes: não são reconhecidos, exceto quando da existência de
+            evidências suficientes que assegurem elevado grau de confiabilidade de realização,
+            usualmente representado pelo trânsito em julgado da ação e pela confirmação da
+            capacidade de sua recuperação por recebimento ou compensação com outro exigível.
+        x   Passivos contingentes (quando aplicável): decorrem, basicamente, de processos
+            judiciais e administrativos, inerentes ao curso normal dos negócios, movidos por
+            terceiros, ex-funcionários e órgãos públicos, em ações cíveis, trabalhistas, de natureza
+            fiscal e outros riscos. Essas contingências são avaliadas por assessores legais e levam
+            em consideração a probabilidade de que recursos financeiros sejam exigidos para
+            liquidar as obrigações e de que o montante das obrigações possa ser estimado com
+            suficiente segurança.
+     As provisões e/ou passivos contingentes são classificadas como: (a) prováveis, para as quais
+     são constituídas provisões; (b) possíveis, que somente são divulgadas sem que sejam
+     provisionadas; e (c) remotas, que não requerem provisão e divulgação. Os valores das
+     contingências são quantificados utilizando-se modelos e critérios que permitam a sua
+     mensuração de forma adequada, apesar da incerteza inerente ao prazo e ao valor.
+     Com relação às bases de mensuração das provisões, a entidade observa, segundo o CPC 25,
+     a melhor estimativa do desembolso exigido para liquidar a obrigação presente na data do
+     balanço, considerando os riscos e incertezas envolvidos. Quando relevante, o efeito
+     financeiro produzido pelo desconto a valor presente dos fluxos de caixa futuros necessários
+     para liquidar a obrigação; e os eventos futuros que possam alterar a quantia necessária para
+     liquidar a obrigação.
+     A provisão para riscos cíveis, fiscais e trabalhistas é registrada nas demonstrações financeiras
+     semestrais quando baseada na opinião de assessores jurídicos e for considerado provável o
+     risco de perda de uma ação judicial ou administrativa, com uma provável saída de recursos
+     para a liquidação das obrigações e os montantes envolvidos forem mensuráveis com
+
+
+                                                   27
+
+=== página 50 ===
+                                                             Consolidado
+                                         30/06/2021                                        31/12/2020
+          % mínimo      Valor da     Provisão            Provisão       Provisão      Valor da    Provisão
+Rating
+         de provisão    carteira      2.682         Complementar          Total       carteira     Total
+  AA          -          5.262.727              -            (14.528)     (14.528)    4.191.808               -
+  A        0,50%        6.017.059      (29.071)              (12.298)     (41.369)    3.911.975         (34.197)
+  B         1,00%         440.935      (4.409)               (3.802)       (8.211)      271.617         (2.959)
+  C        3,00%          365.088      (10.953)               (7.461)     (18.414)     160.403          (6.276)
+  D        10,00%          142.361     (14.236)              (8.690)     (22.926)       66.789           (8.149)
+   E       30,00%          75.005     (22.502)               (2.342)     (24.844)       38.900          (11.641)
+   F       50,00%           75.611    (37.806)                      -    (37.806)       27.699          (13.845)
+  G        70,00%          44.554      (31.188)                     -     (31.188)      26.480          (18.510)
+  H       100,00%         135.223     (135.223)                     -    (135.223)     110.208     (110.208)
+ Total                 12.558.563    (285.388)               (49.118)   (334.506)    8.805.879     (205.785)
+
+
+O Banco possui controles para apuração da provisão para crédito de liquidação duvidosa
+(provisão regulatória e provisão complementar), atendendo, de forma estruturada, os
+requisitos na Resolução CMN nº 2.682/1999, no que diz respeito à classificação de risco das
+operações, definida com base em critérios consistentes e verificáveis, amparados por
+informações internas e externas.
+Para determinar o montante a ser provisionado, a avaliação do rating de um contrato consiste
+em uma análise conjunta do seu histórico de pagamento e de sua garantia, sendo analisada a
+classificação de risco, por tipo de operação, resultando na apuração da provisão da forma
+descrita a seguir.
+Contratos que apresentam algum atraso recente em relação à data-base devem se mostrar
+capazes de liquidar suas parcelas em um período de, no mínimo, 3 meses para que possam
+apresentar melhora no rating. Caso contrário, ele será mantido no pior rating apresentado nos
+últimos meses. Isso permite que sejam atribuídos, com mais segurança, ratings melhores aos
+contratos que possuem bom histórico de pagamento, como o rating AA. Esse procedimento
+garante, também, que não haja forte variação nos ratings entre os contratos.
+De maneira geral, contratos com atraso somente terão uma melhora no rating após
+demonstrar solidez nos pagamentos, sendo que os contratos em dia serão beneficiados com
+uma provisão mais baixa, com base em um bom histórico de pagamentos.
+Em se tratando das garantias, é verificado se o seu valor em relação aos contratos do crédito
+imobiliário leva a carteira a uma baixa perda geral (Loan-to-value - LTV). Ao considerar o
+potencial valor de venda das garantias, o custo de oportunidade e a probabilidade de sucesso
+na consolidação dos imóveis que compõem as observações para o cálculo da perda nas
+operações (Loss given default - LGD), frente à exposição à perda dos contratos (Exposure at
+default - EAD), muitos mostram-se com o valor em risco negativo, ou seja, com baixa perda
+de crédito potencial.
+A análise das garantias é também utilizada para determinar o arrasto, ou não, dos contratos
+de um mesmo cliente. Contratos com garantia real não são arrastados por contratos sem
+garantia. Dessa forma, um contrato de crédito imobiliário pode arrastar um contrato de
+cartão de crédito, porém o contrário não é possível, dada a segurança do Banco em recuperar
+aquele crédito caso o cliente se torne incapaz de quitar suas dívidas.
+
+
+
+
+                                                    22
+
+=== página 51 ===
+d.   Composição da Provisão para perdas associadas ao risco de crédito por modalidade
+                                                           Controladora                          Consolidado
+                                                    30/06/2021      31/12/2020            30/06/2021      31/12/2020
+     Pessoas jurídicas                                  (54.157)          (7.870)             (54.434)          (7.970)
+     Empréstimos pessoas jurídicas com
+                                                          (4.137)          (8.472)              (4.137)             (8.472)
+     garantia imobiliária
+     Financiamentos imobiliários                        (27.697)          (20.835)            (27.697)             (20.835)
+     Empréstimos pessoa físicas com garantia
+                                                         (12.924)          (16.514)            (12.924)            (16.514)
+     imobiliária
+     Financiamentos Rurais                                (2.124)            (838)              (2.124)               (838)
+     Pessoas físicas                                   (192.044)         (130.483)           (192.044)            (130.483)
+     Outros Créditos                                     (41.146)         (20.673)             (41.146)            (20.673)
+     Total                                             (334.229)         (205.685)           (334.506)           (205.785)
+
+
+
+     Durante o semestre findo em 30 de junho de 2021, o total de créditos recuperados foi de
+     R$43.729 (30 de junho de 2020: R$13.333), o de créditos renegociados foi de R$110.458 (30
+     de junho de 2020: R$62.333) e de créditos baixados como prejuízo foi de R$81.269 (30 de
+     junho de 2020: R$64.095).
+
+
+e.   Movimentação da Provisão para perdas associadas ao risco de crédito
+
+
+                                                               Controladora                        Consolidado
+                                                         30/06/2021   30/06/2020            30/06/2021    30/06/2020
+
+     Saldo inicial                                         (205.685)        (145.388)        (205.785)           (145.388)
+     Provisão constituída                                   (227.367)        (112.739)        (227.579)           (112.743)
+     Reversão de provisão                                      17.554           15.548           17.554              15.548
+     Baixas para prejuízo                                      81.269          64.095            81.304             64.095
+     Saldo final                                           (334.229)        (178.483)        (334.506)           (178.488)
+
+     (-) Provisão para perdas associadas ao risco de
+     crédito (nota 9a)                                     (293.083)         (171.848)        (293.360)           (171.853)
+
+     (-) Provisão para perdas com outros créditos
+     com característica de concessão de crédito               (41.146)         (6.635)          (41.146)           (6.635)
+     (nota 9a)
+                                                           (334.229)        (178.483)        (334.506)           (178.488)
+
+
+
+f.   Despesa de Provisão para perdas associadas ao risco de crédito
+
+
+                                                                                               Controladora
+
+                                                                                      30/06/2021          30/06/2020
+     Provisão constituída                                                                  (227.367)           (112.739)
+     Reversão de provisão                                                                     17.554              15.549
+     Total                                                                                (209.813)            (97.190)
+
+
+
+                                                                                                Consolidado
+
+                                                                                         30/06/2021        30/06/2020
+
+     Provisão constituída                                                                    (227.579)             (112.744)
+     Reversão de provisão                                                                       17.554                15.549
+     Total                                                                                  (210.025)              (97.195)
+
+                                                             23
+
+=== página 52 ===
+g.   Rendas de operações de crédito
+
+                                                                                          Controladora
+                                                                                   30/06/2021     30/06/2020
+     Rendas Pessoa jurídica                                                              55.800           23.853
+
+     Rendas Empréstimos pessoa jurídica com garantia imobiliária                             34.655               34.721
+
+     Rendas Financiamentos imobiliários                                                     176.609              96.699
+
+     Rendas Empréstimos pessoa física com garantia imobiliária                               64.355               57.841
+
+     Rendas Pessoa física                                                                  251.909               142.789
+     Renda bruta de operações de crédito                                                   583.328              355.902
+
+
+     Recuperação de créditos baixados                                                       25.474                13.333
+     (-) Despesas de comissões pagas                                                         (368)               (2.409)
+     Total                                                                                 608.434              366.826
+
+
+
+
+                                                                                              Consolidado
+                                                                                        30/06/2021   30/06/2020
+     Rendas Pessoa jurídica                                                                   63.968         24.354
+     Rendas Empréstimos pessoa jurídica com garantia imobiliária                               34.655               34.721
+     Rendas Financiamentos imobiliários                                                       176.609              96.699
+     Rendas Empréstimos pessoa física com garantia imobiliária                                 64.355              57.841
+     Rendas Pessoa física                                                                    251.909              142.789
+     Renda bruta de operações de crédito                                                     591.495             356.402
+
+     Recuperação de créditos baixados                                                          25.474              13.333
+     (-) Despesas de comissões pagas                                                            (368)             (2.409)
+     Total                                                                                    616.601            367.326
+
+
+
+h.   Concentração de operações de crédito
+                                                                         Controladora
+                                                30/06/2021         % da carteira   31/12/2020           % da carteira
+     Maior devedor                                    267.870              2,2%            144.821               1,7%
+     10 Maiores devedores                             988.325              8,0%           895.475               10,3%
+     20 Maiores devedores                            1.384.258             11,2%         1.250.510              14,4%
+     50 Maiores devedores                            1.850.062            14,9%         1.695.446               19,5%
+     100 Maiores devedores                          2.209.346             17,8%          2.041.657              23,5%
+                                                    6.699.861             54,1%         6.027.909              69,4%
+
+
+
+                                                                         Consolidado
+                                                30/06/2021         % da carteira   31/12/2020           % da carteira
+     Maior devedor                                    267.870              1,4%           144.821                1,6%
+     10 Maiores devedores                             988.325              7,4%           895.475              10,0%
+     20 Maiores devedores                            1.384.258             9,6%         1.250.510               14,0%
+     50 Maiores devedores                           1.850.062              9,9%         1.695.446               18,9%
+     100 Maiores devedores                          2.467.536             15,2%         2.157.462              22,8%
+                                                    6.958.051            43,5%          6.143.714              67,3%
+
+
+
+
+                                                          24
+
+=== página 53 ===
+i.   Cessões de Crédito
+
+
+ (i) Com retenção substancial dos riscos e benefícios
+     A Resolução CMN nº 3.533/08, com modificações posteriores, estabelece procedimentos
+     para classificação, registro contábil e divulgação de operações de venda ou de transferências
+     de ativos financeiros.
+     O Inter realizou, no período, operação de cessão de créditos com retenção substancial dos
+     riscos e benefícios de crédito e, portanto, não foram baixados do ativo do Banco. O resultado
+     apurado na negociação será reconhecido de acordo com o prazo dos contratos cedidos.
+     O montante cedido no período findo em 30 de junho de 2021 foi de R$58.688 a valor presente,
+     em conformidade com a Resolução CMN nº 3.533/08. Nesta operação, foram cedidos
+     créditos imobiliários adimplentes, substancialmente registrados no rating “A”.
+     O montante recebido na operação foi reconhecido no ativo tendo como contrapartida um
+     passivo referente à obrigação assumida (vide nota nº 18d).
+
+
+ (ii) Com transferência substancial dos riscos e benefícios
+     No semestre findo em 30 de junho de 2021, foi realizada cessão de créditos sem retenção
+     substancial dos riscos e benefícios e, portanto, foram baixados do ativo do Banco.
+     O ganho apurado na negociação foi reconhecido no resultado do período.
+     O valor recebido na operação de venda das operações de crédito, decorrentes da cessão sem
+     retenção de risco, foi de R$18.255, em conformidade com a Resolução CMN nº 3.533/08, para
+     o montante cedido de R$156.027, a valor presente.
+     Nesta operação, foram cedidos créditos inadimplentes de cartão, substancialmente
+     registrados no rating “H” ou já baixados para prejuízo. O valor de R$135.007, que já estava em
+     prejuízo, foi baixado apenas em contas de compensação, sendo o restante, R$21.020, que
+     ainda estava na carteira ativa, baixado contra resultado.
+
+
+     Reconciliação do resultado com cessão de crédito sem coobrigação
+     Valor recebido na cessão
+      Outras receitas operacionais (nota 10d)                                                 18.255
+     Valor da baixa da carteira cedida
+      Resultado com baixa de carteira cedida                                                (21.020)
+     Valor da baixa de provisão dos créditos cedidos
+      Reversão de provisão dos créditos cedidos                                              16.998
+     Efeito líquido no resultado                                                             14.233
+
+
+
+
+                                                       25
+
+=== página 54 ===
+11    Outros ativos financeiros
+
+
+      Compreendem saldos de devedores diversos, bonificações a receber, impostos e
+      contribuições a compensar, entre outros.
+
+
+                                                                         Controladora                           Consolidado
+
+                                                                 30/06/2021          31/12/2020         30/06/2021          31/12/2020
+
+      Devedores diversos (a)                                          296.764              174.124            315.546            184.670
+
+      Adiantamentos a terceiros (b)                                        8.122             2.273             28.472             10.370
+
+      Outras rendas a receber (c)                                      125.963            105.136             147.158            115.465
+
+      Impostos e contribuições a compensar                             40.834              19.563              41.844             20.152
+      Negociação e intermediação de valores                                7.891            7.908              22.176             16.076
+      Créditos vinculados Cessão de Crédito (d)                         62.927                    -            62.927                    -
+
+      Operações de Câmbio                                                  1.250                  -              1.250                   -
+
+      Depósito em garantia                                                  386              1.314               2.179             2.307
+
+      Total                                                           544.137             310.318             621.552          349.040
+
+
+      Total circulante                                                417.788            203.868             493.410            241.052
+      Total não circulante                                            126.349            106.450              128.142           107.988
+
+
+
+      Em relação aos saldos do Consolidado:
+
+(a)   Referem-se a operações de crédito consignado baixadas, cujo recurso é repassado pelos órgãos em D+2, no valor de R$48.985 (2020:
+      R$34.891); portabilidades a processar, de R$23.370 (2020: R$9.445); devedores diversos de bens não de uso no valor de R$28.477
+      (2020: R$24.542); convênios no valor de R$8.493 (2020: R$9.091); valores a processar cartões no montante de R$103.601 (2020:
+      R$64.250); valores em discussão de operações de cartão (chargeback), de R$15.632 (2020: R$11.286); devedores de conta de
+      liquidações pendentes (investimentos), no valor de R$3.647 (2020: R$2.271); valores a receber afiliados/parceiros Marketplace, no
+      valor de R$54.463 (2020: R$48.239) e outros valores R$28.878 (2020: R$11.535).
+
+(b)   Referem-se a saldos de adiantamentos de despesas administrativas R$21.322 (2020: R$9.785), e adiantamentos a funcionários, no
+      valor de R$7.150 (2020: R$585).
+
+(c)   Referem-se, substancialmente, a bonificações a receber da parceria firmada com a Mastercard em razão da utilização da bandeira
+      pelos clientes do Inter; a bonificações a receber da Wiz Soluções, nos termos do contrato de compra e venda de quotas pelo Inter, as
+      quais estão sujeitas a ajustes de acordo com a performance financeira da Inter Seguros, aferida pelo seu EBITDA, conforme divulgado
+      na nota explicativa 14(c) e à valores a receber por acordo para vendas de seguros junto à Sompo Seguros.
+
+(d)   Valores a receber decorrentes da cessão de operações de crédito com coobrigação, conforme nota explicativa nº 10 i (i). Deste total,
+      R$9.706 mil serão recebidos na forma de Certificados de Recebíveis Imobiliários (CRI’s), decorrentes da securitização da carteira de
+      crédito imobiliário pela True Securitizadora S.A.
+
+
+
+12    Créditos tributários
+      Os créditos tributários são decorrentes de diferenças temporárias (relativas às provisões
+      sobre operações de crédito, provisão sob ações cíveis e trabalhistas, marcação a mercado
+      dos títulos classificados como disponíveis para venda, prejuízo fiscal e base de cálculo
+      negativa de contribuição social, entre outras). A totalidade desses créditos tem sua
+      realização estimada até 2025.
+      O valor presente dos créditos tributários foi calculado com base na taxa média de
+      Certificados de Depósitos Interfinanceiros projetada para os períodos correspondentes, CDI
+      de 4,23% a.a. (2020: CDI de 2,39% a.a.).
+
+
+
+
+                                                                      26
+
+=== página 55 ===
+                                                                                   Controladora
+                                                                                   30/06/2021
+                                                                                                         Saldo de
+                                                                   Base de         Base de crédito -
+                                                                                                         créditos
+                                                                crédito - IRPJ           CSLL
+Itens-base do diferimento                                                                               tributários
+
+
+Diferenças temporárias:
+Provisão para perdas associadas ao risco de crédito                 267.935            267.935              123.598
+Provisão sobre ações cíveis, fiscais e trabalhistas                   17.674             17.674               7.953
+Prejuízo fiscal                                                     240.877            240.877              108.395
+Marcação a mercado                                                  192.050            192.050               86.423
+Operações de hedge                                                    71.919             71.919              32.364
+Diferenças temporárias diversas                                        1.344              1.344                 605
+Base de cálculo à alíquota de 25% para IR e 20%/25% para
+                                                                    791.799            791.799              359.337
+CSLL
+
+Alíquota                                                                25%           20%/25% 12a
+Crédito tributário diferido atual                                   197.950             161.387             359.337
+
+
+Movimentação dos créditos
+
+Créditos tributários em 31 de dezembro de 2020                      345.143            345.143              155.334
+Constituição do período                                              528.841            528.841              241.662
+Realização do período                                               (82.982)           (82.982)             (37.659)
+Créditos tributários em 30 de junho de 2021                         791.002            791.002              359.337
+
+
+                                                                Circulante                                       -
+                                                                Não Circulante                             359.337
+
+
+
+                                                                                   Controladora
+                                                                                    31/12/2020
+                                                                                                        Saldo de
+                                                                    Base de            Base de
+                                                                                                        créditos
+                                                                 crédito - IRPJ     crédito - CSLL
+Itens-base do diferimento                                                                              tributários
+
+Diferenças temporárias:
+Provisão para perdas associadas ao risco de crédito                   148.648            148.648            66.684
+Provisão sobre ações cíveis, fiscais e trabalhistas                     19.596             19.596             8.791
+Prejuízo fiscal                                                        127.710            127.710            57.291
+Marcação a mercado                                                       (1.116)            (1.116)           (501)
+Operações de hedge                                                     49.476             49.476            22.195
+Diferenças temporárias diversas                                             828                828              371
+
+Base de cálculo à alíquota de 25% para IR e 20%/25% para CSLL         345.143            345.143           154.831
+
+
+Alíquota                                                                 25%            20%/25% 12a
+Crédito tributário diferido atual                                     85.802             69.029            154.831
+
+
+Movimentação dos créditos
+
+Créditos tributários em 31 de dezembro de 2019                        138.716             138.716           61.233
+Constituição do período                                               279.122             279.122          125.605
+Realização do período                                                (72.696)            (72.696)         (32.007)
+Créditos tributários em 31 de dezembro de 2020                        345.143            345.143           154.831
+
+
+                                                                Circulante                                       -
+                                                                Não Circulante                             154.831
+
+
+
+
+                                                      27
+
+=== página 56 ===
+                                                                                 Consolidado
+                                                                                 30/06/2021
+                                                                                                   Saldo de
+                                                                   Base de          Base de
+                                                                                                   créditos
+                                                                crédito - IRPJ   crédito - CSLL
+Itens-base do diferimento                                                                         tributários
+
+Diferenças temporárias:
+Provisão para perdas associadas ao risco de crédito                 267.935          267.935          123.598
+Provisão sobre ações cíveis, fiscais e trabalhistas                   17.674           17.674           7.953
+Prejuízo fiscal                                                     246.283          246.283          110.462
+Marcação a mercado                                                  192.050          192.050           86.423
+Operações de hedge                                                    71.919           71.919          32.364
+Diferenças temporárias diversas                                        1.344            1.344             605
+
+Base de cálculo à alíquota de 25% para IR e 20%/25% para CSLL       797.205          797.205          361.404
+
+
+Alíquota                                                                25%         20%/25% 12a
+Crédito tributário diferido atual                                    199.301         162.053          361.404
+
+
+Movimentação dos créditos
+
+Créditos tributários em 31 de dezembro de 2020                       348.491          348.491        156.383
+Constituição do período                                             530.899          530.899         242.680
+Realização do período                                               (82.982)         (82.982)        (37.659)
+Créditos tributários em 30 de junho de 2021                         796.408          796.408         361.404
+
+
+                                                                Circulante                                 -
+                                                                Não Circulante                       361.404
+
+
+
+
+                                                                                 Consolidado
+                                                                                  31/12/2020
+                                                                                                   Saldo de
+                                                                   Base de          Base de
+                                                                                                   créditos
+                                                                crédito - IRPJ   crédito - CSLL
+Itens-base do diferimento                                                                         tributários
+
+Diferenças temporárias:
+Provisão para perdas associadas ao risco de crédito                  148.648          148.648          66.684
+Provisão sobre ações cíveis, fiscais e trabalhistas                   19.596           19.596           8.791
+Prejuízo fiscal                                                      131.060          131.060          58.794
+Marcação a mercado                                                     (1.116)          (1.116)          (501)
+Operações de hedge                                                    49.476           49.476          22.195
+Diferenças temporárias diversas                                           828              828             371
+
+Base de cálculo à alíquota de 25% para IR e 20% para CSLL           348.943          348.943          156.334
+
+
+Alíquota                                                                25%              20%
+Crédito tributário diferido atual                                    86.636           69.699          156.335
+
+
+Movimentação dos créditos
+
+Créditos tributários em 31 de dezembro de 2019                       139.021          139.021           61.370
+Constituição do período                                              282.165          282.165          127.624
+Realização do período                                               (72.695)         (72.695)          (32.611)
+Créditos tributários em 31 de dezembro de 2020                      348.491          348.491          156.383
+
+
+                                                                Circulante                                  -
+                                                                Não Circulante                        156.383
+
+
+
+
+                                                      28
+
+=== página 57 ===
+A expectativa de realização dos créditos tributários constituídos está amparada em estudo
+de realização do crédito tributário, conforme demonstrado abaixo:
+
+
+                                                                  Controladora
+                                                                  30/06/2021
+              Base créditos diferidos                 IR                                CSLL                          Total
+              Base do           Valor        Valor            Valor            Valor             Valor       Valor              Valor
+Período
+              crédito         presente      crédito         presente          crédito          presente     crédito           presente
+2021           261.778         258.192       65.445             64.548         56.849            56.070     122.294             120.619
+2022           158.078        150.830        39.519             37.708          30.149            28.767     69.668             66.474
+2023           141.258        123.062        35.314             30.765          28.252            24.612     63.566             55.378
+2024           90.083           77.836       46.137             39.865          36.910            31.892     83.047              71.756
+2025           140.603         121.487       11.534              9.966           9.227             7.973     20.762              17.939
+Total geral    791.799        731.407       197.950             182.852        161.387           149.314    359.337            332.166
+
+
+
+                                                                      Controladora
+                                                                       31/12/2020
+                  Base créditos diferidos                  IR                             CSLL                        Total
+
+                   Base do         Valor       Valor               Valor        Valor              Valor     Valor              Valor
+Período
+                   crédito       presente     crédito            presente      crédito           presente   crédito           presente
+
+2021               107.395        106.469      26.699              26.468           21.479         21.294     48.178            47.762
+2022                99.827         96.399       24.817             24.019           19.965         19.280    44.783             43.299
+2023                 66.718        65.316       16.586             16.349           13.344         13.063    29.930             29.412
+2024                67.799         65.627       16.855             16.427           13.560         13.125     30.415            29.552
+2025                 3.403          3.294         846                  844             681           659       1.527             1.502
+Total geral        345.143        337.106      85.803              84.107        69.029            67.421    154.831           151.528
+
+
+
+                                                                  Consolidado
+                                                                  30/06/2021
+              Base créditos diferidos                 IR                                CSLL                          Total
+              Base do           Valor        Valor            Valor            Valor             Valor       Valor              Valor
+Período
+              crédito         presente      crédito         presente          crédito          presente     crédito           presente
+2021           261.887        258.292        65.474              64.575        56.869            56.088     122.343            120.664
+2022           158.078        150.830        39.519             37.708          30.149            28.767     69.668             66.474
+2023           146.664        128.094        36.666             32.024           28.918           25.256     65.584             57.280
+2024           90.083           77.836       46.137             39.865          36.910            31.892     83.047              71.756
+2025           140.603         121.487       11.534              9.966           9.227             7.973     20.762              17.939
+Total geral    797.314        736.539       199.331             184.137       162.073            149.976    361.404             334.113
+
+
+
+                                                                      Consolidado
+                                                                       31/12/2020
+                  Base créditos diferidos                  IR                             CSLL                        Total
+
+                   Base do         Valor       Valor               Valor        Valor              Valor     Valor              Valor
+Período
+                   crédito       presente     crédito            presente      crédito           presente   crédito           presente
+
+2021               107.395        106.469      26.699              26.468           21.479         21.294     48.178            47.762
+2022                103.177       103.177      25.694             25.650            20.635        20.635     46.330             46.286
+2023                 66.718        65.316       16.586             16.349           13.344         13.063    29.930             29.412
+2024                67.799         65.627       16.855             16.427           13.560         13.125     30.415            29.552
+2025                 3.403          3.294         846                  844             681           659       1.531             1.502
+Total geral        348.493       343.884       86.680             85.738         69.699           68.777    156.383            154.515
+
+
+
+
+                                                                 29
+
+=== página 59 ===
+14   Investimentos
+
+
+a.   Composição dos investimentos
+     O resultado de equivalência dos investimentos em controladas e coligadas, apresentados
+     nas demonstrações financeiras semestrais individuais da controladora, é como segue:
+
+
+
+
+                                                                                       Consolidado
+
+                                                   Investimentos               Participação no capital social         Resultado de equivalência
+
+     Empresas coligadas                      30/06/2021      31/12/2020        30/06/2021        31/12/2020         30/06/2021       30/06/2020
+
+
+     Granito Soluções em Pagamentos                33.361               -            45,0%                      -         3.893                   -
+     S.A.
+     Ágio por expectativa de rentabilidade        60.590
+     futura - Granito
+     Total das coligadas                          93.951                -                                                 3.893                   -
+
+
+     Outros Investimentos                           1.105          1.105
+     Total dos investimentos                      95.056           1.105
+
+
+
+
+     Os ajustes decorrentes da avaliação pelo método de equivalência patrimonial dos
+     investimentos foram registrados em contas de resultado, sob a rubrica “Resultado de
+     participações em controladas”.
+
+
+b.   Informações resumidas das empresas controladas
+
+
+                                              Total de ativos                   Patrimônio líquido                        Capital social
+     Empresas controladas               30/06/2021      31/12/2020          30/06/2021       31/12/2020             30/06/2021      31/12/2020
+     Inter Digital Corretora e
+     Consultoria de Seguros                   98.223           81.299             29.624              35.516                100               100
+     Ltda.
+     Inter DTVM Ltda                          175.032          75.998             30.345             29.303              25.000           25.000
+     Acerto Cobrança e
+                                               21.750               -             19.696                    -            21.032                   -
+     informações
+     Inter Marketplace Ltda.                  153.768         69.383              68.601              21.426              5.000             5.000
+     Matriz Participações S.A.                  7.010          5.829               4.270                3.411              1.015            5.000
+
+
+
+
+                                                                          31
+
+=== página 60 ===
+c.    Movimentação dos investimentos
+
+                                                                                                        Controladora
+
+                                                                                Resultado
+                                       Saldo                 Aquisição                             Amortização           Dividendos
+                                                                               Equivalência                                                  ORA            30/06/2021       31/12/2020
+                                       inicial             investimentos                             do ágio             recebidos
+                                                                               Patrimonial
+
+      Inter Digital Corretora e
+                                         21.310                    -                 17.714                        -           (21.250)             -              17.774            21.310
+      Consultoria de Seguros Ltda.
+      Inter DTVM Ltda                    28.815                    -                  1.819                        -                     -         32             30.666            28.815
+      Inter Marketplace Ltda.            21.426                    -                 46.174                        -                     -          -             67.600            21.426
+      Matriz Participações S.A.            3.114                   -                 2.489                         -            (1.715)             -              3.888              3.114
+      Acerto Cobrança e
+                                                 -           12.644                   (827)                        -                     -          -              11.817                 -
+      informações
+      Granito Soluções em
+                                                 -           29.468                  3.893                         -                     -          -             33.361                  -
+      Pagamentos S.A.
+      Ágio por expectativa de
+                                         37.332              93.019                       -                (7.163)                       -                        123.188           37.332
+      rentabilidade futura
+      Outros Investimentos                1.105                    -                      -                        -                     -          -               1.105             1.105
+      Total                             113.102              135.131                71.262                (7.163)             (22.965)             32          289.399              113.102
+
+
+
+
+      Os detalhes da aquisição dos investimentos estão apresentados na nota explicativa 3(a).
+                                                                                                   Consolidado
+                                                                                    Resultado
+                                         Saldo                Aquisição                                 Amortização        Dividendos
+                                                                                   Equivalência                                               ORA             30/06/2021        31/12/2020
+                                         inicial            investimentos                                do ágio           recebidos
+                                                                                   Patrimonial
+      Granito Soluções em                            -             29.468              3.893                   -                     -                  -            33.361                   -
+      Pagamentos S.A.
+      Ágio por expectativa de                        -             60.590                     -                -                     -                  -           60.590
+      rentabilidade futura - Granito
+      Outros Investimentos                  1.105                          -                  -                -                     -                  -              1.105                  -
+      Total                                 1.105                 90.058              3.893                    -                     -                  -           95.056                    -
+
+
+
+
+15    Ativos Intangíveis e ágio
+
+
+a.    Composição do intangível
+
+
+                                                                                                                   Controladora
+                                                                                      30/06/2021                                               31/12/2020
+                                            Taxa anual                   Custo       (Amortização            Valor               Custo         Amortização              Valor
+                                            amortização                Histórico      acumulada)            líquido            Histórico        Acumulada             líquido
+      Direito de Uso (a)                        20%                      92.611         (38.509)               54.102           67.733             (43.386)             24.347
+      Custos de desenvolvimento (b)          10% a 50%                  113.833          (4.600)              109.233           74.407              (5.263)              69.144
+      Carteira de clientes                      20%                       9.341          (2.806)                6.535             9.341                   -               9.341
+      Intangível em andamento                                           86.354                 -               86.354           70.760                    -             70.760
+      Total                                                            302.139          (45.915)              256.224          222.241            (48.649)             173.592
+
+
+
+                                                                                                                       Consolidado
+                                                                                      30/06/2021                                               31/12/2020
+                                           Taxa anual                   Custo         Amortização            Valor              Custo          Amortização             Valor
+                                           amortização                 Histórico      Acumulada             líquido            Histórico       Acumulada              líquido
+      Direito de Uso (a)                             20%                94.856           (39.627)              55.229            73.379             (43.890)           29.489
+      Custos de desenvolvimento (b)          10% a 50%                  116.642           (5.257)              111.385          74.407                  (5.263)         69.144
+      Carteira de clientes                           20%                  9.341           (2.806)                  6.535             9.341                    -             9.341
+      Ágio por expectativa de
+                                                     8%                  71.392               (7.196)           64.196          38.963                  (1.631)         37.332
+      rentabilidade futura (c)
+      Intangível em andamento                                           111.399                    -           111.399          79.208                        -        79.208
+      Total                                                            403.630          (54.886)              348.744          275.298             (50.784)           224.514
+
+
+(a)   Direito de uso: refere-se a softwares e licenças adquiridos de terceiros e utilizados na prestação de serviços de processamento de
+      informações do Inter.
+(b)   Custos de desenvolvimento refere-se a gastos com desenvolvimento de novos produtos ou serviços que visam incrementar a receita
+      do Inter.
+(c)   Vide nota 3 (ii).
+
+
+
+
+                                                                                        32
+
+=== página 61 ===
+b.   Movimentação do intangível
+                                                                        Controladora
+
+                                  31/12/2020      Adição       Baixas            Transferências    Amortização        30/06/2021
+
+     Direito de Uso                    24.347      57.344                -                    -          (27.590)             54.102
+     Custos de desenvolvimento         69.144              -             -               42.976           (2.886)            109.233
+     Carteira de clientes                9.341             -             -                    -           (2.806)              6.535
+     Intangível em andamento           70.760      58.570                -             (42.976)                   -           86.354
+     Total                            173.592      115.914               -                    -          (33.282)           256.224
+
+
+                                  31/12/2019      Adição       Baixas            Transferências     Amortização        31/12/2020
+     Total                             77.779     146.707       (13.589)                      -          (37.304)            173.592
+
+
+
+                                                                        Consolidado
+
+                                  31/12/2020      Adição       Baixas            Transferências    Amortização        30/06/2021
+
+     Direito de Uso                    29.489      53.363                -                    -          (27.623)             55.229
+     Custos de desenvolvimento         69.144        2.152               -               42.976           (2.886)             111.385
+     Carteira de clientes                9.341             -             -                    -           (2.806)              6.535
+     Ágio por expectativa de
+                                       37.332      27.906                -                    -           (1.042)             64.196
+     rentabilidade futura
+     Intangível em andamento           79.208      75.167                -             (42.976)                   -          111.399
+     Total                            224.514     158.587                -                    -          (34.357)           348.744
+
+
+                                  31/12/2019      Adição       Baixas            Transferências     Amortização        31/12/2020
+     Total                             79.245     197.933       (13.459)                      -          (39.205)            224.514
+
+
+
+
+16   Depósitos e recursos de aceites e emissão de títulos
+
+
+a.   Depósitos
+                                                                             Controladora
+                                                    31 a 180         181 a 360          Acima de        Total em           Total em
+                                    1 a 30 dias
+                                                      dias             dias             360 dias       30/06/2021         31/12/2020
+
+
+     Depósitos à vista               8.411.788             -                -                   -        8.411.788         6.744.941
+     Depósitos poupança              1.049.178             -                -                   -        1.049.178           887.666
+     Depósitos a prazo                  26.259       262.866          462.293          5.368.543         6.119.961         4.892.626
+     Depósitos Interfinanceiros              -             -                -             175.812          175.812                 -
+     Total geral                    9.487.225        262.866          462.293          5.544.355       15.756.739         12.525.233
+
+                                                                    Circulante                         10.212.384          8.310.650
+                                                                    Não circulante                      5.544.355          4.214.583
+
+
+                                                                             Consolidado
+                                                   31 a 180         181 a 360         Acima de          Total em           Total em
+                                    1 a 30 dias
+                                                     dias             dias            360 dias         30/06/2021         31/12/2020
+
+
+     Depósitos à vista               8.336.911             -               -                  -          8.336.911         6.703.356
+     Depósitos poupança              1.049.178             -               -                  -          1.049.178           887.666
+     Depósitos a prazo                  26.259       262.866         462.293          5.331.384         6.082.802          4.826.706
+     Depósitos Interfinanceiros              -             -               -            175.812            175.812                 -
+     Total geral                    9.412.348       262.866          462.293         5.507.196         15.644.703         12.417.728
+
+
+                                                                Circulante                             10.137.507         8.269.065
+                                                                Não circulante                          5.507.196         4.148.663
+
+
+                                                               33
+
+=== página 62 ===
+b.   Recursos de aceites e emissão de títulos
+
+
+                                                                          Controladora
+                                                                                    Acima de        Total em       Total em
+                                     1 a 30 dias   31 a 180 dias   181 a 360 dias
+                                                                                    360 dias       30/06/2021     31/12/2020
+
+
+     Letras de Crédito Imobiliário       50.819      456.993           173.353       1.432.838      2.114.003      1.730.316
+     Total geral                         50.819      456.993           173.353      1.432.838       2.114.003      1.730.316
+
+
+                                                                   Circulante                         681.165       587.376
+                                                                   Não circulante                   1.432.838      1.142.940
+
+
+
+                                                                          Consolidado
+                                                                                    Acima de        Total em       Total em
+                                     1 a 30 dias   31 a 180 dias   181 a 360 dias
+                                                                                    360 dias       30/06/2021     31/12/2020
+
+
+     Letras de Crédito Imobiliário       50.819       455.214          173.353       1.432.838       2.112.224      1.729.436
+     Total geral                         50.819       455.214          173.353      1.432.838        2.112.224     1.729.436
+
+
+                                                                   Circulante                        679.386        586.496
+                                                                   Não circulante                   1.432.838      1.142.940
+
+
+
+
+c.   Despesas com operações de captação no mercado
+
+
+                                                                                                   Controladora
+                                                                                          30/06/2021         30/06/2020
+     Despesas de captação
+     Depósitos Interfinanceiros                                                                    (1.013)                 (1)
+     Despesa com depósitos de poupança                                                            (6.904)             (4.341)
+     Depósitos a prazo                                                                            (82.101)          (54.024)
+     Letra Imobiliária Garantida                                                                         -              (219)
+     Letras de Crédito Imobiliário                                                               (52.496)            (37.081)
+     Total                                                                                       (142.514)         (95.666)
+
+     Despesas com obrigações por operações
+     Letras financeiras                                                                                  -              (151)
+     Total                                                                                               -              (151)
+
+
+     Total geral                                                                                 (142.514)          (95.817)
+
+
+
+
+                                                             34
+
+=== página 68 ===
+c.   Reserva de lucros
+     Nos semestres anteriores, após a constituição da Reserva Legal, a Administração do Inter
+     optou por destinar o saldo remanescente de lucros para constituição de Reserva de Lucros.
+
+d.   Dividendos e juros sobre o capital próprio
+     O Inter adota uma política de remuneração do capital distribuindo juros sobre o capital
+     próprio no valor máximo calculado em conformidade com a legislação vigente, os quais são
+     imputados, líquidos de Imposto de Renda na Fonte, no cálculo dos dividendos obrigatórios
+     do exercício previsto no Estatuto Social e art. 202 da Lei nº 6.404/1976.
+
+     As destinações dos resultados dos períodos findos em 30 de junho de 2021 e 2020, estão
+     apresentadas a seguir:
+                                                                                   30/06/2021                     30/06/2020
+
+     Lucro (Prejuízo) líquido                                                                    24.521                     (9.572)
+       Reserva Legal                                                                             (1.228)                             -
+       JSCP pagos e/ou dividendos provisionados                                                       -                    (39.951)
+       Constituicão/ reversão de reserva estatutária                                        (23.293)                        49.523
+
+
+
+     Foi aprovado na data de 15 de março de 2021, pelo Conselho de Administração, a proposta da
+     Diretoria para pagamento de Juros sobre o Capital Próprio no valor de R$10.373.
+
+     Em 30 de junho de 2021, foi aprovada pelo conselho de Administração, a proposta da
+     Diretoria para pagamento de Juros sobre o Capital Próprio no valor de R$ 31.081, que prevê
+     pagamento no mês de agosto de 2021.
+
+e.   Ações em tesouraria
+     Em 30 de junho de 2021 o saldo de ações em tesouraria perfazia o montante de R$36.363 (31
+     de dezembro de 2020: R$117.521), sendo composto por 2.347.560 ações ordinárias e 1.114.020
+     ações preferenciais, totalizando 3.461.580 ações.
+
+     Ao longo do semestre findo em 30 de junho de 2021, foram vendidas ações em tesouraria,
+     sendo o valor recebido reconhecido como um aumento no patrimônio líquido, e o ganho ou
+     perda resultantes da transação apresentado como reserva de capital. O efeito líquido dessas
+     alienações foi de R$7.039.
+
+
+f.   Outros resultados abrangentes
+     O saldo dos outros resultados abrangentes do Inter é de R$(55. 360) (30 de junho de 2020:
+     R$(3.145)). O valor corresponde à variação a valor de mercado dos títulos públicos federais
+     disponíveis para venda.
+
+
+g.   Resultado por ação
+                                                               Resultado básico                                  Resultado diluído
+                                                            30/06/2021            30/06/2020                30/06/2021          30/06/2020
+     Ações em circulação                                  2.293.333.935       2.120.859.090            2.293.333.935           2.120.859.090
+     Efeito da média do período das ações em circulação      (7.816.575)             1.770.819               (7.816.575)             1.770.819
+     Efeitos das acões em tesouraria                          3.461.580           (12.015.900)                3.461.580         (12.015.900)
+     Efeito dos planos de ações ao serem exercidas                     -                     -               30.593.681              1.554.670
+
+     Média ponderada de ações em circulação               2.288.978.940       2.110.614.009                2.319.572.621        2.112.168.679
+
+
+                                                                  40
+
+=== página 69 ===
+                                                                                   Controladora
+                                                                            30/06/2021         30/06/2020
+      Lucro (Prejuízo) líquido atribuível aos acionistas (R$ mil)                24.522             (9.572)
+      Número médio de ações                                                2.288.978.940      2.319.572.621
+      Resultado por ação básico (R$)                                            0,02757          (0,01361)
+
+      Resultado por ação diluído (R$)                                           0,02665          (0,01358)
+
+
+
+
+h.   Participação de acionistas não controladores
+     O Inter possui participações em empresas dos segmentos de corretora de seguros, gestora
+     de recursos, cobranças, prestação de serviço, distribuidora de títulos de valores mobiliários
+     e fundos de investimentos, retendo substancialmente os seus riscos e benefícios
+     econômicos. Em decorrência disto, na consolidação das demonstrações financeiras
+     semestrais de 30 de junho de 2021, há o montante de R$125.685 (30 de junho 2020: R$39.540)
+     referente a participações de acionistas não controladores no Inter.
+
+
+21   Provisões, ativos e passivos contingentes e obrigações legais - Fiscais e
+     previdenciárias
+
+
+a.   Ativos contingentes
+     Os ativos contingentes não são reconhecidos contabilmente pelo Inter, uma vez que se
+     referem a ativo possível resultante de eventos passados e cuja existência será confirmada
+     apenas pela ocorrência ou não de um ou mais eventos futuros incertos não totalmente sob
+     controle do Inter.
+
+
+b.   Provisões classificadas como perdas prováveis e obrigações legais - Fiscais e
+     previdenciárias
+     O Inter é parte em processos judiciais de naturezas trabalhista, cível e fiscal, decorrentes do
+     curso normal de suas atividades. As provisões para contingências são estimadas levando em
+     consideração a opinião dos assessores jurídicos, a natureza das ações, a similaridade com
+     processos anteriores, a complexidade e o posicionamento dos tribunais, sempre que a perda
+     for avaliada como provável.
+     A Administração entende que a provisão constituída é suficiente para atender às perdas
+     decorrentes dos respectivos processos. Há provisão para contingências relativas a diversas
+     ações cíveis e trabalhistas no valor de R$21.519 (30 de junho 2020: R$18.510). Vide
+     movimentação dos saldos no item “b.1”.
+     O passivo relacionado à obrigação legal em discussão judicial é mantido até o ganho
+     definitivo da ação, representado por decisões judiciais favoráveis, sobre as quais não cabem
+     mais recursos ou a sua prescrição.
+
+
+
+
+                                                                    41
+
+=== página 70 ===
+b.1     Movimentação das provisões e classificação por natureza
+
+
+                                                                       Controladora e Consolidado
+         Natureza                                  Trabalhistas          Cíveis             Fiscais            Total
+         Saldo em 31 de dezembro de 2020                   3.173             16.423               1.017           20.613
+         Constituições/atualizações                         898               8.280                    -            9.178
+         Pagamentos                                        (782)            (6.473)             (1.017)           (8.272)
+         Saldo em 30 de junho de 2021                     3.289              18.230                    -           21.519
+
+
+         Saldo em 31 de dezembro de 2019                  3.678              13.880                957             18.515
+         Constituições/atualizações                         190               4.058                   29           4.277
+         Pagamentos                                        (541)             (3.725)                   -          (4.266)
+         Saldo em 30 de junho de 2020                     3.327              14.213                986            18.526
+
+
+
+
+ c.     Passivos contingentes com perdas possíveis
+
+c.1     Passivos contingentes fiscais classificados como perdas possíveis
+
+      (i) Imposto de Renda e Contribuição Social sobre o Lucro Líquido – IRPJ e CSLL
+          Em 30 de agosto de 2013, foi lavrado auto de infração para constituir créditos tributários a
+          título de IRPJ e CSLL, relativos aos anos-calendário de 2008 a 2009, acrescidos de multa de
+          ofício (qualificada) de 150% e dos juros de mora, bem como para aplicar multa isolada de 50%
+          sobre valores de estimativas de IRPJ e de CSLL.
+
+        Os autos de infração têm por objetivo glosa de despesas incorridas com prestação de
+        serviços. Tendo em vista a situação fática em discussão e os argumentos de defesa do Inter,
+        avaliamos a expectativa de desfecho como possível, mas com menor probabilidade de perda.
+
+        Seguem valores atualizados em 30 de junho de 2021:
+
+                                                                      30/06/2021
+                                  Principal    Multa       Juros         Valor Atualizado   Valor em risco   Percentual
+         Imposto de renda             10.300    24.716       20.582                55.598         27.799            50%
+
+
+                                                                      31/12/2020
+                                  Principal    Multa       Juros         Valor Atualizado   Valor em risco   Percentual
+         Imposto de renda             10.300    19.892       23.082                53.274         26.637            50%
+
+
+
+  (ii) Contribuição para o Financiamento da Seguridade Social – COFINS
+        O Inter discute judicialmente débitos de COFINS, no período de 1999 a 2008, devido ao
+        entendimento do Governo Federal de que as receitas financeiras devem compor a base de
+        cálculo da referida contribuição. Entretanto, o Inter possui decisão do Supremo Tribunal
+        Federal, datada de 19 de dezembro de 2005, garantindo o direito de recolhimento da COFINS
+        com base na receita de prestação de serviços. Durante o período de 1999 a 2006, o Inter
+        efetuou depósito judicial e/ou realizou o pagamento da obrigação e em 2006, mediante
+        decisão favorável do Supremo Tribunal Federal e concordância expressa da Receita Federal,
+        realizou o levantamento do referido depósito judicial. Ademais, a habilitação dos créditos
+
+
+                                                           42
+
+=== página 71 ===
+       sobre o recolhimento dos impostos foi homologada sem questionamento pela Receita
+       Federal do Brasil, em 11 de maio de 2006.
+
+
+
+
+22     Rendas de prestação de serviço
+
+                                                                                                              Controladora
+                                                                                                        30/06/2021 30/06/2020
+       Rendas de Tarifas Bancárias (a)                                                                         19.916      14.026
+       Rendas de intercâmbio (b)                                                                              138.873       45.721
+       Outros serviços                                                                                          3.199        1.414
+       Taxas de gestão e estruturação                                                                           1.473         1.211
+       Taxas de cadastro crédito imobiliário                                                                    1.959          514
+       Taxas de cadastro empréstimos PJ                                                                           440          914
+       Outras rendas de prestação de serviço                                                                       45            19
+       Total                                                                                                 165.905       63.819
+
+
+
+
+                                                                                                               Consolidado
+                                                                                                      30/06/2021         30/06/2020
+       Rendas de Tarifas Bancárias (a)                                                                         19.916              14.025
+       Rendas de intercâmbio (b)                                                                              138.873              45.720
+       Outros serviços                                                                                          3.400               8.696
+       Intermediação de negócios na Marketplace (c)                                                            91.994                     -
+       Rendas de cobrança                                                                                       5.007                     -
+       Taxas de gestão e estruturação                                                                            1.473                1.210
+       Taxas de cadastro crédito imobiliário                                                                     1.959                  514
+       Taxas de cadastro empréstimos PJ                                                                            440                  914
+       Outras rendas de prestação de serviço                                                                        43                   19
+       Corretagem de seguros                                                                                   25.199               13.103
+       Rendas de comissões e colocação de títulos                                                               11.186               5.267
+       Rendas de corretagens e operações em bolsa                                                               2.826               2.260
+       Administração de fundos                                                                                  8.226                6.985
+       Total                                                                                                  310.542               98.713
+
+
+ (a)   Referem-se, substancialmente, a tarifas e taxas de serviços de compensação e tarifas interbancárias.
+ (b)   A receita é vinculada ao volume de transações efetuados com cartões emitidos pelo Inter.
+ (c)   A referida receita é composta, substancialmente, por take rate (percentual ganho sobre cada transação), por relização de venda por
+       intermédio do nosso Marketplace.
+
+                                                                       43
+
+=== página 75 ===
+27   Pagamento baseado em ações
+
+     O Plano de Opção de Compra de Ações, instituído nos termos do art. 168, § 3º, da Lei nº
+     6.404/1976, é uma iniciativa do Conselho de Administração do Inter, por meio do qual foram
+     outorgadas, aos administradores, aos executivos e aos colaboradores do Inter, opções para
+     aquisição de Ações do Inter, com vista a incentivar o desempenho e favorecer a retenção de
+     administradores, executivos e colaboradores do Inter, na medida em que sua participação no
+     capital social do Inter permitirá que se beneficiem dos resultados para os quais tenham
+     contribuído e que sejam refletidos na valorização do preço de suas ações, formando assim,
+     com os acionistas, uma comunhão de interesses.
+     O “Plano 2” iniciou-se no ano de 2012 e foi desmembrado em três tranches, nos anos de 2012,
+     2013 e 2014, cada uma com períodos de vesting distintos. A data do último exercício foi em
+     janeiro de 2021. Para as tranches de 2013 e 2014, os colaboradores que não exerceram a
+     opção, ou seja, foram desligados do Inter, perderam o direito ao exercício. Uma vez exercidas
+     as opções, o outorgado não poderá vender, transferir ou alienar tais ações, bem como aquelas
+     que venham a ser por ele adquiridas em virtude de bonificações, desdobramentos,
+     subscrição ou qualquer outra forma de aquisição, desde que tais direitos tenham decorrido
+     para o adquirente das ações objeto do Plano, pelo período mínimo de cinco anos contados
+     da data do recebimento da primeira oferta de ações a ele oferecidas pelo Inter.
+     Em 2016 foi lançado o terceiro Plano de Opção de Compra de Ações (“Plano 3”), com períodos
+     de vesting de 2017 a 2021. As opções que tornarem-se exercíveis poderão ser exercidas pelo
+     participante em até três anos do decurso do último período de vesting. Os colaboradores que
+     não exercerem a opção no prazo ou forem desligados do Inter, perdem o direito ao exercício.
+     Em 05 de fevereiro de 2018, foi aprovado pelo Conselho de Administração do Inter o “Plano
+     4” de opção de compra. Em 09 de julho de 2020 foi aprovada a segunda tranche do “Plano 4”,
+     com período de vesting iniciado em janeiro de 2021 até janeiro de 2025. Estas opções
+     poderão ser exercidas dentro do período de 3 (três) anos, contados dos respectivos períodos
+     de vesting. Caso não sejam exercidas no prazo determinado, o direito às ações será
+     automaticamente extinto, sem direito a indenização.
+     O preço de exercício das opções outorgadas nos Planos 2, 3 e primeira tranche do Plano 4 é
+     equivalente ao valor patrimonial por ação no fechamento do ano anterior à outorga. Já para a
+     segunda tranche do Plano 4, o preço de exercício equivale à divisão por três do resultado da
+     média das cotações das Units de emissão do Banco (BIDI11 – formadas pelo conjunto de 1 ação
+     ordinária e 2 ações preferenciais), conforme apuradas no fechamento dos últimos 90
+     (noventa) pregões do segmento especial de negociação da B3 S.A. – Brasil, Bolsa e Balcão.
+     As regras para exercício e extinção das opções fazem parte do regulamento do plano e estão
+     arquivadas na sede do Inter.
+
+
+     As principais características dos Planos estão descritas abaixo (por ação):
+                                                            Preço Médio
+         Plano       Aprovação     Opções       Vesting                       Participantes           Prazo Final de Exercício
+                                                            de Exercício
+                                                                                                   1ª tranche: 31/12/2019
+                                                                           Diretores, gestores e
+     2               24/02/2012   10.196.820   Até 5 anos     R$0,21                               2ª tranche: 31/12/2020
+                                                                           colaboradores chave
+                                                                                                   3ª tranche: 31/12/2021
+                                                                           Diretores, gestores e
+     3               30/09/2016   3.528.000    Até 5 anos     R$0,26                               31/12/2023
+                                                                           colaboradores chave
+                                                                           Diretores, gestores e
+     4 (Tranche 1)   15/02/2018   10.904.928   Até 5 anos     R$0,25                               15/02/2025
+                                                                           colaboradores chave
+                                                                           Diretores, gestores e
+     4 (Tranche 2)   09/07/2020   4.992.900    Até 5 anos     R$3,60                               31/12/2027
+                                                                           colaboradores chave
+
+
+
+                                                                47
+
+=== página 76 ===
+As movimentações das opções de cada plano para o semestre findo em 30 de junho de 2021,
+e informações complementares são demonstradas abaixo:
+
+
+                                       Movimentações 30/06/2021 (Ações)
+                          Qtde.            Saldo                               Prescritas/
+        Plano                                             Concedidas                               Exercidas        Saldo Final
+                      colaboradores       inicial                              Canceladas
+          3                 3             7.128.000            648.000                    -         3.715.200        4.060.800
+        4 (1)               31           19.652.310                  -           2.131.200          2.772.720        14.748.390
+        4 (2)              59           14.978.700                   -            135.000           1.166.400        13.677.300
+Total                                   41.759.010           648.000            2.266.200          7.654.320        32.486.490
+
+
+Preço Médio Pond. das Ações                 R$ 0,26              R$ 0,72            R$ 1,54           R$ 2,76           R$ 6,35
+
+
+
+                                        Movimentações 31/12/2020 (Ações)
+
+                          Qtd.                                                  Prescritas/
+        Plano                           Saldo Inicial     Concedidas                               Exercidas        Saldo Final
+                      Colaboradores                                             Canceladas
+          2                 1                431.046                  -                    -           431.046                 -
+          3                16             8.839.800                   -              91.800         1.620.000          7.128.000
+        4 (1)              33             22.667.274          2.880.000             837.522         5.057.442         19.652.310
+        4 (2)              59                      -         14.978.700                    -                 -       14.978.700
+Total                                     31.938.120         17.858.700            929.322          7.108.488        41.759.010
+
+Preço Médio Pond. das Ações                     R$ 0,87            R$ 0,26          R$ 0,26           R$ 0,26           R$ 0,26
+
+
+
+                                                 Outras Informações
+                                                                                            Período                  Vida
+                 Núm. de                            Custo do            Custo de         Remanescente do           Contratual
+                              Núm. de Ações
+  Plano           Ações                             Prêmio no         Prêmio a Ser          Custo de               Remanesce
+                                Exercíveis
+                Exercíveis                          semestre          Reconhecido        Remuneração (em            nte (em
+                                                                                             anos)                   anos)
+     3           3.715.200         4.060.800                   -                    -                   -                  2,8
+   4 (1)         2.772.720         14.748.390                  -                    -                 N/A                  3,9
+   4 (2)         1.166.400         13.677.300              1.512               14.698                 4,8                  4,8
+
+
+(*) O custo de prêmio referente à primeira tranche do plano nº 4 é de responsabilidade dos participantes, não sendo
+reconhecido nenhum custo por parte do Inter.
+
+
+
+O impacto estimado é referente ao valor dos prêmios das opções outorgadas aos
+colaboradores nas demonstrações financeiras semestrais com base no seu valor justo. Os
+valores justos dos programas foram estimados com base no modelo de valorização de
+opções Black & Scholes, tendo sido consideradas as seguintes premissas:
+                                                                                    Programa
+                                                   2(2013)          2(2014)         3(2016)          4(2018)        4(2020)
+Preço de Exercício                                        0,21               0,21         0,26           0,30             3,58
+Taxa Livre de Risco                                     11,05%          11,15%          11,68%          9,97%           9,98%
+Duração do Exercício (anos)                                  8                 8               7               7              7
+Volatilidade Anualizada Esperada                      35,06%           35,06%           60,33%         64,28%          64,28%
+Valor Justo da Opção na Data de
+                                                          0,05             0,06           0,06           0,02            0,03
+Outorga/Ação
+
+
+
+
+                                                          48
+
+=== página 77 ===
+28   Gestão de Riscos
+     A gestão de riscos no Inter é entendida como o conjunto de atividades e processos
+     estabelecidos para identificar, avaliar, mensurar, controlar, mitigar e monitorar os riscos
+     considerados materiais (ou prioritários) pelo Conselho de Administração.
+     Neste contexto, o gerenciamento de riscos é realizado através de uma abordagem
+     prospectiva, sempre buscando uma adequada compreensão das fontes e fatores primários
+     de riscos, das características, interdependências e correlações existentes entre os riscos,
+     bem como dos potenciais impactos sobre o negócio.
+     A gestão de riscos no Inter busca manter uma estrutura de gerenciamento de riscos adequada
+     à complexidade (e estratégia) das atividades, produtos e serviços do Inter, promovendo o
+     desenvolvimento contínuo de processos, sistemas e disseminando uma cultura para todos os
+     níveis organizacionais do Banco.
+     Os detalhes sobre a estrutura de gestão de riscos do Inter estão disponíveis no sítio
+     eletrônico http://ri.bancointer.com.br, na seção Gestão de Riscos.
+
+
+a.   Gestão de risco de liquidez
+     O risco de liquidez é definido como a possibilidade do Inter não ser capaz de honrar com suas
+     obrigações esperadas e inesperadas, correntes e futuras, inclusive as decorrentes de
+     vinculação de garantias, sem afetar suas operações e sem incorrer em perdas significativas; e
+     a possibilidade de o Inter não conseguir negociar a preço de mercado uma posição, devido
+     ao seu tamanho elevado em relação ao volume normalmente transacionado ou em razão de
+     alguma descontinuidade no mercado.
+     As funções de gerenciamento de risco de liquidez compreendem um conjunto de atividades
+     e processos que consideram o acompanhamento (e monitoramento) diário das posições de
+     caixa, tesouraria, concentração, carteira de captação, carteira de crédito, entre outros pontos
+     relevantes associados ao controle de liquidez.
+     Adicionalmente, de maneira a aumentar o nível de governança das decisões estratégicas,
+     bem como reforçar o monitoramento de riscos, o Inter estabeleceu um Comitê de Ativos e
+     Passivos que, dentre diversas atribuições, atua de maneira efetiva na gestão dos riscos de
+     liquidez e mercado.
+
+
+b.   Gestão de riscos de mercado
+     Define-se o Risco de Mercado como a possibilidade de ocorrência de perdas resultantes da
+     flutuação nos valores de mercado de posições detidas pelo Inter e suas controladas,
+     incluindo os riscos das operações sujeitas à variação cambial, das taxas de juros, dos preços
+     das ações e dos preços de mercadorias (commodities).
+
+     No Inter, a gestão do risco de mercado tem, entre outros, o objetivo de apoiar as áreas de
+     negócios, estabelecendo processos e implementando ferramentas necessárias para
+     avaliação e controle     dos riscos    relacionados, possibilitando     a mensuração e o
+     acompanhamento dos níveis de risco, conforme definidos pela Alta Administração.
+
+     A Política de Risco de Mercado é seguida e monitorada pelo Comitê̂ de Ativos e Passivo, onde
+     são analisados os relatórios de controle e posições gerenciais. Os controles de risco de
+     mercado permitem a avaliação analítica das informações, e estão em constante processo de
+     melhorias, buscando proporcionar uma visão mais condizente com as necessidades atuais do
+                                                   49
+
+=== página 78 ===
+      Inter e suas controladas. O Inter e suas controladas veem aprimorando os aspectos internos
+      de gerenciamento e mitigação de riscos.
+
+(i)   Mensuração
+
+      O Inter, em conformidade com a Resolução CMN n.º 4.557/2017 e com a Circular Bacen n.º
+      3.354/2007, visando maior eficiência na gestão de suas operações expostas ao risco de
+      mercado, segrega as suas operações, inclusive instrumentos financeiros derivativos, da
+      seguinte forma:
+
+         x   Carteira de Negociação (Trading Book): formada por todas as operações de posições
+             próprias realizadas com intenção de negociação ou destinadas a hedge da carteira de
+             negociação, para as quais haja a intenção de serem negociadas antes de seu prazo
+             contratual, observadas as condições normais de mercado, e que não contenham
+             cláusula de inegociabilidade.
+
+         x   Carteira Bancária (Banking Book): formada por operações não classificadas na Carteira
+             de Negociação, tendo como característica principal a intenção de manter tais
+             operações até o seu vencimento.
+
+      Alinhado às melhores práticas de mercado, o Inter gerencia seus riscos de forma dinâmica,
+      buscando identificar, mensurar, avaliar, monitorar, reportar, controlar e mitigar as exposições
+      aos riscos de mercado de suas posições próprias. Uma das formas de avaliação das posições
+      sujeitas ao risco de mercado é realizada através de um modelo de Value at Risk (VaR). A
+      metodologia utilizada para cálculo de VaR considera um modelo paramétrico com 99% de
+      nível de confiança (NC) e horizonte de tempo (HP) de 01 (um) dia, escalado para 21 dias.
+
+      Apresentamos abaixo o VaR do conjunto de operações registradas nas carteiras de
+      negociação e bancária e VaR individual por fator de risco, ambos calculados com 99% de nível
+      de confiança e horizonte de tempo de 21 (vinte um) dias.
+
+                         Em milhares                        30/06/2021       31/12/2020
+                          Fator de Risco                     VaR 21 (du)      VaR 21 (du)
+                         Cupom de IPCA                          209.744          157.834
+                         Cupom de IGP-M                          13.209           21.622
+                         Cupom de taxa de juros (TR)              5.457             1.631
+                         Taxas pré-fixadas de juros              57.304           20.947
+                         Cupom de moeda estrangeira                      -           365
+                         Taxas de câmbio                            260             2.011
+                         Preço de Ações                           1.649            4.056
+                         Outros                                  16.428           22.845
+                         Subtotal                               304.051           231.310
+
+
+                         Efeito Diversificação                  101.358           45.345
+                         Var-at-Risk                            202.693          185.968
+
+
+
+
+                                                       50
+
+=== página 79 ===
+(ii) Hierarquia de valor justo
+
+    O valor justo dos ativos e passivos são mensurados de acordo com os níveis de informação
+    disponíveis:
+        x   Nível 1: são usados preços cotados em mercados ativos para instrumentos financeiros
+            idênticos. Um instrumento financeiro é considerado como cotado em um mercado
+            ativo se os preços cotados estiverem pronta e regularmente disponíveis, e se esses
+            preços representarem transações de mercado reais e que ocorrem regularmente
+            numa base em que não exista relacionamento entre as partes.
+
+        x   Nível 2: são usadas outras informações disponíveis, exceto aquelas do Nível 1, onde os
+            preços são cotados em mercados não ativos ou para ativos e passivos similares, ou
+            são usadas outras informações que estão disponíveis ou que podem ser corroboradas
+            pelas informações observadas no mercado para suportar a avaliação dos ativos e
+            passivos.
+
+        x   Nível 3: são usadas informações na definição do valor justo que não estão disponíveis
+            no mercado. Se o mercado para um instrumento financeiro não estiver ativo, o Inter
+            estabelece o valor justo usando uma técnica de valorização que considera dados
+            internos, mas que seja consistente com as metodologias econômicas aceitas para a
+            precificação de instrumentos financeiros.
+
+
+    Controladora                                                    30.06.2021        Nível 1     Nível 2     Nível 3
+    Ativos                                                            13.416.175    5.948.649    7.467.526              -
+    Aplicações financeiras de liquidez                                5.948.649     5.948.649             -             -
+    Títulos e valores mobiliários disponíveis para negociação, a
+                                                                        404.126             -      404.126              -
+    valor de mercado
+    Títulos e valores mobiliários disponíveis para venda, a valor
+                                                                      7.051.722             -    7.051.722              -
+    de mercado
+    Instrumentos financeiros derivativos                                  11.678            -        11.678             -
+
+    Passivos                                                           (78.887)             -     (78.887)              -
+    Instrumentos financeiros derivativos                               (78.887)             -     (78.887)              -
+
+
+    Consolidado                                                     31.12.2020        Nível 1     Nível 2     Nível 3
+    Ativos                                                           13.407.400      2.192.537   5.524.665              -
+    Aplicações financeiras de liquidez                                 5.990.154     5.990.154            -             -
+    Títulos e valores mobiliários disponíveis para negociação, a
+                                                                        764.620              -     764.620              -
+    valor de mercado
+    Títulos e valores mobiliários disponíveis para venda, a valor
+                                                                      6.640.948              -   6.640.948              -
+    de mercado
+    Instrumentos financeiros derivativos                                   11.678            -       11.678             -
+
+
+    Passivos                                                            (78.887)             -     (78.887)             -
+    Instrumentos financeiros derivativos                                (78.887)             -     (78.887)             -
+
+
+
+
+                                                             51
+
+=== página 80 ===
+(iii) Análise de sensibilidade
+
+    Para determinar a sensibilidade do capital das posições do Inter aos movimentos das
+    variáveis de mercado, foi realizada análise de sensibilidade por fatores de risco de mercado
+    considerados relevantes. As maiores perdas, por fator de risco, em cada um dos cenários
+    foram apresentadas com impacto sobre o resultado, proporcionando uma visão da exposição
+    por fator de risco do Inter em cenários específicos.
+
+    Foram realizadas simulações com três possíveis cenários em conformidade com a ICVM
+    nº475/2008, a fim de estimar o impacto no valor justo dos ativos financeiros apresentados a
+    seguir:
+
+        x     Cenário I: Situação provável, a qual reflete a percepção da alta administração do Banco
+              em relação ao cenário com maior probabilidade de ocorrência considerando fatores
+              macroeconômicos e informações de mercado (B3, Anbima, etc.) observados no
+              período. Premissa utilizada: deterioração e de evolução nas variáveis de mercado
+              através de choques paralelos choque de 1 ponto base nas taxas de cupom de índice de
+              preços, cupom de taxa de juros, pré-fixada de juros, sendo consideradas as piores
+              perdas resultantes por fator de risco e, consequentemente, não considerando a
+              racionalidade entre as variáveis macroeconômicas.
+
+        x     Cenário II: Situação eventual de deterioração e evolução nas variáveis de mercado.
+              através de choque de 25% nas curvas de taxas de cupom de índice de preços, cupom
+              de taxa de juros, pré-fixada de juros com base nas condições de mercado observadas
+              em cada período, sendo consideradas as piores perdas resultantes por fator de risco
+              e, consequentemente, não considerando a racionalidade entre as variáveis
+              macroeconômicas.
+
+        x     Cenário III: Situação eventual de deterioração e evolução nas variáveis de mercado.
+              através de choque de 50% nas curvas de taxas de cupom de índice de preços, cupom
+              de taxa de juros, pré-fixada de juros com base nas condições de mercado observadas
+              em cada período, sendo consideradas as piores perdas resultantes por fator de risco
+              e, consequentemente, não considerando a racionalidade entre as variáveis
+              macroeconômicas.
+
+    No quadro abaixo, encontram-se sintetizados os resultados para a Carteira de Negociação e
+    a para a Carteira Bancária de forma agregada.
+
+
+
+
+                                                    52
+
+=== página 81 ===
+c.   Gestão de riscos operacionais
+
+     Os riscos operacionais permeiam todo o Inter e estão presentes em todas as atividades e
+     processos, pois estes são susceptíveis a falhas e erros decorrentes de processos, pessoas,
+     sistemas e eventos externos.
+
+     Dado o atual modelo de negócio do Inter, especialmente no que concerne à estratégia
+     digital, o Inter promove o aprimoramento contínuo de processos, sistemas e controles que
+     buscam mitigar eventos de instabilidade operacional, reduzir riscos de cyber-ataques, entre
+     outros.
+
+     Os incidentes de risco operacional são acompanhados e reportados através de diversos
+     comitês diretivos, onde são definidos a respectiva crítica de relevância, bem como planos
+     de ação a serem executados.
+
+     Para alocação de capital para o risco operacional, o Inter adotou a metodologia do Indicador
+     Básico de mensuração ou BIA, conforme previsto no Art. 1º da Circular Bacen nº
+     3.640/20132013.
+
+
+d.   Gestão de risco de crédito
+
+     A gestão dos riscos de crédito no conglomerado prudencial do Inter tem como objetivo
+     manter o perfil de risco e a rentabilidade da carteira de crédito enquadrados dentro dos
+     limites definidos na Declaração de Apetite a Riscos (“RAS”).
+
+     O gerenciamento do risco de crédito possui uma estrutura de controle independente das
+     unidades de negócios, sendo responsável pelo processo de monitoramento dos níveis de
+     risco, bem como por assegurar a aderência às políticas do Inter.
+
+     A gestão de risco de crédito é baseada em alguns pilares:
+
+     Políticas e diretrizes de concessão de crédito e cobrança segmentas por produtos e/ou
+     categorias de clientes.
+
+     Modelos estatísticos para mensuração e classificação de riscos para pessoas físicas e política
+     conservadora (e restritiva) de garantias e/ou risco para operações com empresas.
+
+     Definição e aprovação de limites de concentração, mitigando o acúmulo de riscos por
+     categorias e/ou segmentos.
+
+     Monitoramento do perfil de risco da carteira que por meio de uma visão prospectiva para
+     antecipar eventuais riscos e/ou desequilíbrios.
+
+     Avaliação das garantias, colaterais e demais instrumentos mitigadores de riscos.
+
+     Utilização de modelos estatísticos que contemplem projeção de probabilidades de
+     inadimplência, bem como níveis de recuperação de default (no caso de inadimplência).
+
+     Adicionalmente, reforça-se que o gerenciamento do risco de crédito considera um processo
+     estruturado de classificação de risco (e provisionamento) baseado em modelos criteriosos e
+     consistentes, ponderando a complexidade das operações, garantias envolvidas, entre outros
+     pontos.
+
+
+
+
+                                                  53
+
+=== página 82 ===
+     Assim, por fim, destaca-se que os modelos adotados na gestão de riscos de crédito atendem
+     às diretrizes e boas práticas de mercado e se mostram aderentes à complexidade (e riscos)
+     das operações do Inter.
+
+e.   Índice de Basileia
+
+     Em 23 de fevereiro de 2017, o Banco Central do Brasil (Bacen) divulgou a Resolução CMN nº
+     4.557/2017, que estabeleceu a necessidade de implementação de estrutura de
+     gerenciamento de capital para as instituições financeiras.
+     O Inter possui mecanismos que possibilitam a identificação e a avaliação dos riscos
+     relevantes incorridos, inclusive aqueles não cobertos pelo Patrimônio de Referência Mínimo
+     Requerido (PRMR). As políticas e as estratégias, bem como o plano de capital, possibilitam a
+     manutenção do capital em níveis compatíveis com os riscos incorridos pelo Inter. Os testes
+     de estresse são realizados periodicamente e seus impactos são avaliados sob a ótica de
+     capital. Os relatórios gerenciais de adequação de capital são reportados para as áreas e para
+     os comitês estratégicos intervenientes, constituindo-se em subsídio para o processo de
+     tomada de decisão pela Alta Administração do Inter.
+     O Índice de Basileia foi apurado segundo os critérios estabelecidos pelas Resoluções CMN nº
+     4.192/2013 e nº 4.193/2013, que tratam do cálculo do Patrimônio de Referência (PR) e do
+     Patrimônio de Referência Mínimo Requerido (PRMR) em relação aos Ativos Ponderados pelo
+     Risco (RWA).
+     A metodologia de apuração do capital regulamentar, continua a ser estabelecido nos Níveis I
+     e II, sendo o Nível I composto pelo Capital Principal (deduzido de Ajustes Prudenciais) e
+     Capital Complementar, e o escopo utilizado para consolidação e verificação dos limites
+     operacionais considera o Conglomerado Prudencial formado pelo Inter e pela Inter
+     Distribuidora de Títulos e Valores Mobiliários e fundos de investimentos, quando aplicáveis.
+
+
+
+
+                                                  54

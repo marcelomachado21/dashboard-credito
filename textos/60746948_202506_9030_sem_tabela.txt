@@ -1,0 +1,2101 @@
+
+=== página 2 ===
+relatório de análise
+econômica e financeira
+
+          3T24
+Demonstrações Financeiras
+     Consolidadas
+          de acordo com as Normas Internacionais de
+            relatório financeiro (IFRS) emitidas pelo
+        “International Accounting Standard Board IASB"
+
+
+
+                   1S25
+
+=== página 3 ===
+Relatório da Administração
+Senhoras e Senhores Acionistas,
+       Submetemos à apreciação de V. Sas. as Demonstrações Financeiras Consolidadas do Banco
+Bradesco S.A. relativas ao primeiro semestre de 2025. Seguimos as práticas do International Financial
+Reporting Standards (IFRS) emitidas pelo International Accounting Standards Board (IASB).
+
+
+
+Comentário Econômico
+        A economia brasileira se manteve aquecida nos seis primeiros meses do ano. O crescimento do PIB
+foi impulsionado pelo mercado de trabalho ainda aquecido e pela safra recorde de grãos colhida no primeiro
+trimestre. Entretanto, começam a surgir sinais de acomodação, reflexos da elevação da taxa Selic e da
+redução do impulso fiscal. Esse movimento deve se intensificar na segunda metade do ano. Nossas
+projeções indicam que o PIB crescerá 2,1% em 2025.
+        O Banco Central interrompeu o ciclo de altas dos juros, após levar a taxa Selic a 15%. Apesar de as
+expectativas de inflação permanecerem desancoradas e a inflação corrente estar em patamar ainda
+elevado, há sinais de descompressão dos preços. Acreditamos que a inflação continuará desacelerando ao
+longo do segundo semestre, favorecida pela acomodação da atividade econômica e pela apreciação
+recente do câmbio. Isso permitirá ao Banco Central começar a cortar a taxa básica de juros ainda no final
+do ano.
+        As incertezas permanecem elevadas no cenário internacional. A política tarifária norte-americana
+ainda representa o principal risco para o desempenho da economia global. Adicionalmente, a preocupação
+com a deterioração fiscal dos EUA coloca uma pressão estrutural sobre o dólar. Esse contexto de incerteza
+é agravado pelo acirramento das disputas geopolíticas ao redor do mundo.
+
+
+
+Destaques do Período
+        Em maio de 2025, o Bradesco publicou os Relatórios Integrado e ESG referentes a 2024, arquivando-
+os também na CVM. Em conjunto, os documentos compartilham aspectos relevantes sobre o Bradesco,
+incluindo informações sobre governança, estratégia, modelo de gestão de riscos e oportunidades, além dos
+principais resultados financeiros alcançados no exercício e do desempenho em indicadores ambientais,
+sociais e climáticos.
+       Ainda no mês de maio de 2025, o Banco Bradesco S.A. informou aos seus acionistas e ao mercado
+em geral que o Conselho de Administração deliberou renovar o programa de recompra de ações de própria
+emissão que autoriza a Diretoria a adquirir, no período de 8.5.2025 a 8.11.2026, até 106.584.881 ações
+nominativas-escriturais, sem valor nominal, sendo até 53.413.506 ações ordinárias e até 53.171.375 ações
+preferenciais, para permanência em tesouraria e posterior cancelamento, sem redução do capital social.
+        O Banco Bradesco S.A. no 2T25 destinou R$ 3.589.829.000,00 de juros sobre o capital próprio para
+os seus acionistas. No mês de junho de 2025 a Diretoria da Sociedade aprovou o pagamento de juros sobre
+o capital próprio intermediários, no valor total de R$ 3.000.000.000,00, sendo R$ 0,270146729 por ação
+ordinária e R$ 0,297161402 por ação preferencial, além disso houve o pagamento de juros sobre o capital
+próprio mensal, no valor total de R$ 574.670.051,00.
+
+
+
+
+BRADESCO | Relatório da Administração | Demonstrações Financeiras Consolidadas em IFRS                   2
+
+=== página 4 ===
+         informações selecionadas
+         1S25
+          LUCRO LÍQUIDO CONTÁBIL                                                         LUCRO POR AÇÃO
+
+          R$ 11,8 bi                                                                     R$ 1,05 ON
+                                                                                         R$ 1,16 PN
+                                            +40,9 % a/a
+
+
+    VALOR PATRIMONIAL POR AÇÃO                                  PATRIMÔNIO LÍQUIDO (1)
+        R$ 16,46
+    VALOR DE MERCADO
+        R$ 165,7 bi
+                                                                 R$ 174,1 bi
+    ÍNDICE DE CAPITAL - NÍVEL I                                                                  +5,7% a/a
+         13,0%
+                   +0,4 p.p. a/a
+
+
+
+                                            JCP R$ 6,8 bi (bruto)
+
+
+         CARTEIRA DE CRÉDITO EXPANDIDA                                       DEPÓSITOS TOTAIS
+                (Jun25 vs. Jun24)                                             (Jun25 vs. Jun24)
+
+                 R$ 1.018,4 bi (+11,7%)                                    R$ 642,2 bi (+3,7%)
+
+  PESSOAS FÍSICAS: R$ 442,4 bi (+15,9%)                            TÍTULOS E VALORES MOBILIÁRIOS
+  PESSOAS JURÍDICAS: R$ 576,0 bi (+8,6%)
+                                                                          (Jun25 vs. Jun24)
+
+                                                                           R$ 808,2 bi (+7,1%)
+         PROVISÃO PARA PERDA ESPERADA                                  VJORA: R$ 124,5 bi (-46,2%)
+                (Jun25 vs. Jun24)                                        VJR: R$ 428,9 bi (+22,1%)
+                   R$ 56,7 bi (+5,3%)                         Custo Amortizado: R$ 254,8 bi (+48,3%)
+
+
+  (1)   Atribuído aos controladores.
+
+
+
+
+BRADESCO | Relatório da Administração | Demonstrações Financeiras Consolidadas em IFRS                    3
+
+=== página 5 ===
+Tecnologia e Inovação
+        A estratégia AI First segue como protagonista da transformação digital do Bradesco, consolidando a
+inteligência artificial como um pilar fundamental para entregas de jornadas e experiências para os clientes.
+Construímos a plataforma proprietária Bridge (Bradesco Inteligência de Dados Generativa), capaz de
+democratizar o uso de LLMs (large language models) e serviços baseados em IA generativa para nossos
+desenvolvedores e usuários de negócio. Esta plataforma oferece mais de mil modelos predefinidos e dezenas
+de serviços já construídos, como sumarização, busca de conteúdo em documentos, transcrição de voz para
+texto, construção de chats e camadas de controle, monitoração, segurança e IA responsável. Temos centenas
+de casos de uso e a plataforma está exponencializando o volume de entregas usando GenAI, com mais pessoas
+usando e reaproveitando serviços já construídos. A BIA Clientes com IA generativa já está disponível para 100%
+dos clientes, com taxa de resolutividade entre 85% e 90%.
+        A inteligência artificial também faz parte do cotidiano corporativo, com 100% dos colaboradores
+utilizando assistentes inteligentes e 80% dos desenvolvedores adotando o GitHub Copilot, o que acelerou a
+codificação em até 37%. O plano AI First impulsiona o talento humano, e os multiagentes, atuando como
+“squads virtuais”, ampliam a capacidade de resposta ao resolver tarefas complexas com agilidade e precisão.
+O projeto Renda BRA 5.0 reduziu em 95% o tempo de modelagem de crédito, enquanto a IA, trabalhando como
+mentora nas assessorias de cobrança, contribuindo com 20% de melhora na performance. Já o novo Portal
+Developers Bradesco, com mais de 120 funcionalidades, fortalece o ecossistema de APIs e parcerias.
+        As soluções para Pessoa Física evoluíram com foco em agilidade e inclusão. No mobile, reforçamos
+nosso compromisso com a autonomia e a experiência do cliente. Agora é possível renegociar dívidas, contratar
+seguros de vida, ajustar limites de Pix e antecipar o saque-aniversário do FGTS diretamente pelo app. O Pix
+Automático, antecipado pelo banco, permite pagamentos recorrentes com controle total do pagador.
+Também foi lançado o Pix por comando de voz no WhatsApp, com uso de IA generativa. E para quem planeja
+o futuro, o app oferece metas personalizadas de investimento com o CDB Objetivos, além de simulações
+inteligentes.
+       O E-agro Simplifica utiliza IA para acelerar a análise de documentos dos clientes e otimizar a jornada
+de tomada de crédito. O My Account agora permite transferências internacionais sem tarifa, em tempo real e
+com conversão automática em mais de 180 moedas, além da possibilidade de cadastrar o cartão no Google
+Pay. A abertura de contas PF ganhou reforço de segurança com biometria facial nas agências, e o seguro
+prestamista pode ser acionado com poucos cliques no app.
+         Na frente de investimentos, simplificamos a visualização do Invest Fácil — agora exibido junto ao saldo
+da conta no app e no Internet Banking —, lançamos CDBs com movimentação 24h e aprimoramos o extrato de
+investimentos, preparando a estrutura para a conta corrente remunerada. Para os assessores, o novo Cockpit
+360 oferece uma visão unificada da carteira de clientes, com gestão integrada via WhatsApp e suporte
+especializado. Em cartões, a experiência digital foi ampliada: clientes podem parcelar compras à vista, ativar
+ou desativar o pagamento por aproximação e antecipar faturas via Pix, tudo pelo app. A nova plataforma
+agiliza a contratação de cartões com análise de crédito antecipada e aceite digital. O Simulador de Cartões,
+revitalizado, permite comparar as opções de cartões disponíveis, através de exportação em PDF, atendendo
+tanto PF quanto PJ.
+       Para empresas, entregamos soluções que simplificam o cotidiano. No Net Empresa, é possível
+acompanhar a abertura de contas de novos colaboradores e autorizar cheques empresariais de até R$ 100 mil.
+O app Bradesco Empresas e Negócios ganhou novas funcionalidades e a emissão de boletos pode ser feita
+diretamente pelo WhatsApp com a BIA. Cartões empresariais agora podem ser solicitados pelo site e
+cadastrados na Samsung Wallet, e o canal WhatsApp PJ foi habilitado para ofertas e comunicações
+personalizadas em larga escala.
+        O trimestre ainda foi marcado por iniciativas que fortalecem a cultura tech: o lançamento da Tech
+Academy, uma nova plataforma de desenvolvimento com trilhas especializadas para capacitação em
+tecnologia, realizamos nossa Tech Week, uma semana com mais de 15 horas de conteúdo para
+desenvolvimento de todos os nossos funcionários e a parceria com a empresa Ada para atração de novos
+talentos. Atualmente, alcançamos um crescimento de mais de 33% no quadro de desenvolvedores desde o
+início de 2024.
+       Com a evolução do modelo de Enterprise Agility, o Bradesco vem ampliando o uso de práticas ágeis
+com tribos autônomas co-gerenciadas por negócios e tecnologia, alinhadas às jornadas dos clientes. Essa
+abordagem já resultou em uma redução de aproximadamente 33% no time-to-market e 35% no retrabalho no
+
+
+
+BRADESCO | Relatório da Administração | Demonstrações Financeiras Consolidadas em IFRS                      4
+
+=== página 6 ===
+desenvolvimento de novas soluções na comparação entre o primeiro semestre de 2025 e o mesmo período
+do ano anterior.
+       O Bradesco foi eleito pela Global Finance como o Banco Mais Inovador da América Latina no prêmio
+The Innovators 2025, com destaque para o IDBra, nossa identidade digital descentralizada baseada em
+blockchain. Também fomos reconhecidos pela The Banker como o Melhor Banco Global em AI & Machine
+Learning pelo segundo ano consecutivo e celebramos o prêmio do Agile Trends 2025 pela nossa
+transformação organizacional acelerada.
+      A tecnologia e a inovação estão sempre presentes no DNA da organização e seguem como motor do
+movimento Change, impulsionando um Bradesco mais ágil, inteligente e centrado nas pessoas.
+
+
+
+Produtos e Serviços para o Poder Público
+       Para atender o setor público, possuímos estruturas exclusivas em todo o território nacional, com
+gerentes de negócios capacitados para ofertar produtos, serviços e soluções com qualidade e segurança aos
+poderes executivo, legislativo e judiciário federais, estaduais e municipais, além de autarquias, fundações
+públicas, empresas públicas e de economia mista e as forças armadas e auxiliares. Mensalmente, mais de 10,9
+milhões de aposentados e pensionistas do INSS recebem seus benefícios no Bradesco, sendo o maior pagador
+dentre todos os bancos no país.
+       Dispomos de 09 estruturas especializadas no atendimento aos governos, capitais, tribunais,
+assembleias, ministérios públicos, defensorias públicas, além dos maiores municípios do PIB brasileiro e,
+também, 30 estruturas de varejo para atender as demais prefeituras e órgãos. Saiba mais em
+bradescopoderpublico.com.br.
+
+
+
+Recursos Humanos
+        O Capital Humano é um dos pilares estratégicos da Organização, sendo um importante alicerce para
+realização dos negócios. O nosso modelo de Gestão de Capital Humano é pautado no respeito, na
+transparência e no contínuo investimento no desenvolvimento dos funcionários. Mantemos nossas equipes
+motivadas por meio de oportunidades de crescimento na carreira, reconhecimentos, capacitação,
+remuneração e benefícios diferenciados, além da valorização da diversidade e do equilíbrio entre a vida
+profissional e pessoal.
+       Muito mais do que políticas e práticas, consolidamos uma cultura de respeito disseminada pela
+consciência do valor das pessoas, de suas identidades e competências.
+        Ao final do período, a Organização contava com 82.147 funcionários, sendo 70.724 do Banco Bradesco
+e 11.423 de Empresas Ligadas e exterior.
+        Para mais informações sobre Recursos Humanos, acesse o Relatório de Capital Humano, disponível no
+site bradescori.com.br.
+
+
+
+Sustentabilidade para o Bradesco
+        A Sustentabilidade é um dos nossos direcionadores estratégicos, expressa também em nossa
+Declaração de Propósito. Acreditamos que a governança, a gestão e o engajamento em aspectos ambientais,
+sociais e de governança (ASG) são fundamentais para o crescimento sustentável e a perenidade das nossas
+operações, gerando valor a longo prazo para todos os nossos stakeholders. Nossa estratégia de
+sustentabilidade está alinhada aos Objetivos de Desenvolvimento Sustentável (ONU) e é pautada na gestão e
+transparência ASG.
+         Como parte relevante da nossa agenda estratégica, temos um compromisso com o financiamento de
+negócios sustentáveis e com o apoio contínuo aos nossos clientes na transição para uma economia mais verde,
+resiliente e inclusiva. Até junho de 2025, alcançamos 95,5% da nossa meta ampliada de direcionar R$ 350
+bilhões para setores e atividades com benefícios socioambientais até o final do ano, reforçando nosso papel
+no financiamento de negócios sustentáveis
+
+
+
+BRADESCO | Relatório da Administração | Demonstrações Financeiras Consolidadas em IFRS                  5
+
+=== página 7 ===
+        Nossa atuação em sustentabilidade tem sido reconhecida em índices e ratings nacionais e
+internacionais de referência, como o Índice Dow Jones de Sustentabilidade (DJSI) da Bolsa de Valores de Nova
+York e o Índice de Sustentabilidade Empresarial (ISE) da B3. Esses índices refletem nossa gestão e
+desempenho em critérios econômicos, ambientais e sociais de longo prazo.
+       Para acompanhar nossas iniciativas, acesse: bradescori.com.br | bradescosustentabilidade.com.br.
+
+
+
+Governança Corporativa
+        O Banco observa e estimula as boas práticas de governança corporativa, fundamentando-se,
+principalmente, nas demandas legais e de mercado, de modo a zelar pelos interesses dos acionistas e demais
+stakeholders. Nossa estrutura é bem definida, possibilitando a garantia e viabilidade da adoção das melhores
+práticas. Assim, entregamos os melhores esforços para sempre estarmos em conformidade com tais padrões,
+buscando a geração de valor sustentável para nossa Organização.
+        A Assembleia Geral é o mais importante evento societário de nossa governança. Nela, os acionistas
+elegem os membros do Conselho de Administração, os quais possuem um mandato único de 2 (dois) anos.
+Constituído por 11 (onze) membros, dentre os quais há 4 (quatro) membros independentes, o órgão tem como
+principais atribuições estabelecer, supervisionar e monitorar a estratégia corporativa do Banco Bradesco, cuja
+responsabilidade de implementação é da Diretoria, além de revisar os planos de ação e políticas de negócios.
+Os cargos de Presidente do Conselho de Administração e de Diretor-Presidente, conforme devidamente
+previsto no Estatuto Social da Companhia, não são cumulativos.
+        Assessorado por uma Secretaria de Governança, o Conselho de Administração reúne-se
+ordinariamente 12 (doze) vezes ao ano e, extraordinariamente, quando os interesses da Companhia assim o
+exigirem. Com Regimento Interno próprio, o Conselho de Administração possui, ainda, um calendário anual de
+reuniões fixado pelo seu Presidente.
+        Contamos, ainda, com a Auditoria Interna Global, a qual é subordinada ao Conselho de Administração,
+além de 7 Comitês também a ele subordinados. Destes, 2 (dois) são estatutários (Comitês de Auditoria e de
+Remuneração) e 5 (cinco) não-estatutários (Comitês de Integridade e Conduta Ética, Riscos, Sustentabilidade
+e Diversidade, Nomeação e Sucessão e Estratégico).
+        A Diretoria do Banco Bradesco é o órgão responsável por representar a Organização, cabendo à
+Diretoria Executiva coordenar a execução da estratégia aprovada pelo Conselho de Administração. Ela realiza
+reuniões ordinárias quinzenalmente e extraordinárias sempre que necessário, deliberando sobre todos os
+assuntos e matérias essenciais para o cumprimento de nossos objetivos e atribuições. Comitês Executivos
+auxiliam nas atividades da Diretoria Executiva, todos normatizados por regimentos próprios.
+       Na função de Órgão Fiscalizador dos atos dos Administradores e com atuação permanente, temos o
+Conselho Fiscal, também eleito pelos acionistas e com mandato único de 1 (um) ano. É composto por 5 (cinco)
+membros efetivos, sendo 2 (dois) eleitos por acionistas minoritários, com número igual de suplentes.
+       Nossa Organização está listada no Nível 1 de Governança Corporativa da B3 – Brasil, Bolsa, Balcão, e
+nossas práticas atestam o compromisso com a geração de valor para acionistas, funcionários e a sociedade
+em geral.
+       Demais informações sobre a Governança Corporativa do Banco Bradesco estão disponíveis no site de
+Relações com Investidores (banco.bradesco/ri – Seção Governança Corporativa).
+
+
+
+Auditoria Interna
+       Compete ao Departamento de Auditoria Interna Global, que está subordinada e reporta funcional,
+administrativa e operacionalmente ao Conselho de Administração do Banco Bradesco S.A., considerar, no
+escopo de seus exames/análises, a efetividade da governança corporativa e do gerenciamento de riscos e
+controles; a confiabilidade, a efetividade e a integridade dos processos e sistemas de informações gerenciais
+e operacionais; a observância ao arcabouço legal, infralegal, regulatório, normas e códigos de conduta
+internos aplicáveis aos membros do quadro funcional da Organização; e à salvaguarda dos ativos frente às
+suas metas e objetivos estratégicos.
+
+
+
+
+BRADESCO | Relatório da Administração | Demonstrações Financeiras Consolidadas em IFRS                     6
+
+=== página 25 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+"sZesvrwdRevgsWZeEeNRZrgsPEPgsRdXErEevZENcEssZWZNEPgsNgdgúvZ|gsWZeEeNRZrgsEg|Ecgr
+`wsvg ogr dRZg Pg rRswcvEPgûÒ vgvEcZErEd Rd 0 de junho de 2025, R$ 36.814.309 mil (Em
+dezembro de 2024 - R$ 15.626.382 mil), sendo composto em sua maioria por títulos públicos
+brasileiros.
+
+     c) Passivos financeiros ao valor justo por meio do resultado
+                                                                                                      R$ mil
+                                                            Em 30 de junho de        Em 31 de dezembro de
+                                                                  2025                       2024
+ Instrumentos financeiros derivativos                                   19.701.727                16.240.611
+ Total                                                                 19.701.727                 16.240.611
+
+
+ 7) INSTRUMENTOS FINANCEIROS DERIVATIVOS
+
+   A Organização participa de operações envolvendo instrumentos financeiros derivativos,
+   registrados em contas patrimoniais e de compensação, que se destinam a atender necessidades
+   próprias para administrar sua exposição global, bem como para atender às solicitações de seus
+   clientes, no sentido de administrar suas exposições. Essas operações envolvem uma variedade
+   de derivativos, inclusive swaps de taxas de juros, swaps de moeda, futuros e opções. A política
+   de gestão de riscos da Organização é fundamentada na utilização de instrumentos financeiros
+   derivativos com o objetivo, predominantemente, de mitigar os riscos decorrentes das operações
+   efetuadas pela Organização e empresas controladas.
+
+   Os instrumentos financeiros derivativos, são demonstrados no balanço patrimonial consolidado
+   pelo seu valor justo estimado. O valor justo, geralmente, baseia-se em cotações de preços de
+   mercado ou cotações de preços de mercado para ativos ou passivos com características
+   semelhantes. Se esses preços de mercado não estiverem disponíveis, os valores justos são
+   baseados em cotações de operadores de mercado, modelos de precificação, fluxo de caixa
+   descontado ou técnicas similares, para as quais a determinação do valor justo pode exigir
+   julgamento ou estimativa significativa por parte da Administração.
+
+   Para instrumentos financeiros derivativos, cotações de preço de mercado são usadas para
+   determinar o valor justo destes instrumentos. O valor justo dos swaps é determinado utilizando
+   técnicas de modelagem de fluxo de caixa descontado que usam curvas de rendimento, refletindo
+   os fatores de risco adequados. As informações para construir as curvas de rendimento são
+   obtidas, principalmente, na B3 e no mercado secundário doméstico e internacional. Estas curvas
+   de rendimento são utilizadas para determinar o valor justo dos swaps de moeda, de taxa de juros
+   e swaps com outros fatores de risco. O valor justo dos contratos a termo e de futuros também é
+   determinado com base em cotações de preços de mercado para derivativos negociados em
+   bolsa ou utilizando metodologias similares aquelas descritas para swaps. O valor justo dos
+   instrumentos derivativos de crédito é determinado com base em cotações de preços de mercado
+   ou obtido junto a entidades especializadas. O valor justo das opções é determinado com base
+   em modelos matemáticos, tais como Black & Scholes, usando curvas de rendimento,
+   volatilidades implícitas e o valor justo do ativo correspondente. Os preços atuais de mercado
+   são usados para precificar as volatilidades. Para a estimação do valor justo dos instrumentos
+   financeiros derivativos de balcão também é levado em consideração a qualidade creditícia de
+   cada contraparte, associando assim uma perda esperada para cada portfólio de derivativos
+   (CVA).
+
+   Os instrumentos financeiros derivativos no Brasil referem-se, substancialmente, a operações de
+   swaps e futuros, sendo registradas na B3.
+
+   Os instrumentos financeiros derivativos realizados no exterior referem-se a operações de swaps,
+   termo, opções, crédito e futuros efetuadas, substancialmente, nas Bolsas de Chicago e Nova
+   York, bem como mercado de balcão.
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                              24
+
+=== página 26 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+   As macros estratégias de atuação são delimitadas pelas carteiras Trading (proprietária) e
+   Banking. As operações da Carteira Trading, inclusive derivativos são realizadas com o objetivo de
+   aproveitar movimentos direcionais de preços e/ou taxas, estratégias de arbitragem, hedge,
+   market maker, podendo ser liquidadas total ou parcialmente antes do vencimento contratado
+   originalmente. As operações da Carteira Banking são compostas por operações comerciais e os
+   seus respectivos hedges.
+
+   Os riscos destas carteiras são controlados em visões consolidadas por fator de risco e a gestão
+   eficiente dos riscos destas carteiras requer o uso conjunto de operações de derivativos e demais
+   instrumentos, dentre eles, os títulos e valores mobiliários.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                      25
+
+=== página 27 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+                                                                                                                                                                             R$ mil
+                                                                     Em 30 de junho de 2025                                            Em 31 de dezembro de 2024
+                                                    Valor de          Custo        Ajuste ao                            Valor de          Custo       Ajuste ao
+                                                                                                    Valor justo                                                        Valor justo
+                                                   referência       atualizado    valor justo                          referência       atualizado   valor justo
+ Contratos futuros
+ Compromissos de compra:                            158.804.761          93.386        542.018          635.404         211.703.083                -               -                 -
+ - Mercado interfinanceiro                           89.444.075           61.342        61.492          122.834         178.029.255                -               -                 -
+ - Moeda estrangeira                                 48.842.525           14.845       425.700          440.545          22.985.640                -               -                 -
+ - Outros                                             20.518.161           17.199       54.826            72.025         10.688.188                -               -                 -
+ Compromissos de venda:                             128.744.514        (110.619)     (398.482)         (509.101)        161.641.895                -               -                 -
+ - Mercado interfinanceiro (1)                       88.447.389         (98.382)      (120.905)         (219.287)        95.605.090                -               -                 -
+ - Moeda estrangeira (2)                             32.061.431           (3.919)     (233.276)         (237.195)        48.246.297                -               -                 -
+ - Outros                                             8.235.694           (8.318)      (44.301)          (52.619)        17.790.508                -               -                 -
+
+
+ Contratos de opções
+ Compromissos de compra:                           642.934.666           785.105       133.075           918.180        685.622.189        1.151.336       27.409         1.178.745
+ - Mercado interfinanceiro                          567.818.389         335.063                 -        335.063        528.190.365         504.563                -       504.563
+ - Moeda estrangeira                                  3.838.222           42.786        145.610          188.396          3.949.723         156.053       (42.981)          113.072
+ - Outros                                            71.278.055         407.256        (12.535)          394.721         153.482.101       490.720         70.390            561.110
+ Compromissos de venda:                            628.741.610       (1.760.391)       236.896        (1.523.495)      672.980.325       (1.779.852)      123.200       (1.656.652)
+ - Mercado interfinanceiro                         568.484.343         (204.725)             -          (204.725)       513.818.125        (440.226)            -         (440.226)
+ - Moeda estrangeira                                  6.160.544        (262.368)       (61.920)        (324.288)          6.870.683       (220.375)      (180.480)        (400.855)
+ - Outros                                            54.096.723       (1.293.298)      298.816         (994.482)         152.291.517      (1.119.251)     303.680          (815.571)
+
+
+ Contratos a termo
+ Compromissos de compra:                            63.868.302        10.411.069      (22.346)        10.388.723         64.273.935       2.540.319       (11.634)        2.528.685
+ - Moeda estrangeira                                 53.678.951        2.580.952              -        2.580.952         62.442.929       2.569.853              -        2.569.853
+ - Outros                                             10.189.351        7.830.117      (22.346)        7.807.771           1.831.006        (29.534)      (11.634)          (41.168)
+ Compromissos de venda:                              63.926.755     (10.715.379)          (119)     (10.715.498)         47.310.325      (1.099.617)      (17.442)       (1.117.059)
+ - Moeda estrangeira (2)                             61.109.450      (3.466.436)                -    (3.466.436)         46.463.548      (1.522.017)               -     (1.522.017)
+ - Outros                                             2.817.305      (7.248.943)          (119)      (7.249.062)            846.777        422.400        (17.442)         404.958
+
+
+ Contratos de swap
+ Posição ativa:                                   1.058.229.098       5.701.724      3.069.732         8.771.456      1.080.360.424       9.792.714      3.841.711       13.634.425
+ - Mercado interfinanceiro                           338.711.693      2.443.266        153.649         2.596.915          57.567.711        949.727      3.611.358        4.561.085
+ - Prefixados                                         111.811.393       1.310.199      451.509          1.761.708       692.873.598         893.378      (513.808)          379.570
+ - Moeda estrangeira                                559.429.357        1.681.879        612.515        2.294.394        319.020.245       7.213.979       258.094         7.472.073
+ - IGP-M                                                        -               -               -                 -          41.362          41.466           399            41.865
+ - Outros                                            48.276.655         266.380       1.852.059         2.118.439        10.857.508         694.164       485.668          1.179.832
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                                     26
+
+=== página 44 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+     e) Análise de sensibilidade
+
+     A mensuração da perda de créditos esperadas incorpora informações prospectivas a partir
+     de projeções de cenários econômicos, que são desenvolvidos por uma equipe de
+     especialistas e aprovados conforme governança de riscos da Organização. Cada cenário
+     econômico possui a evolução ao longo do tempo de um rol de variáveis macroeconômicas,
+     dentre as quais podemos destacar: índices de inflação (IPCA), índices de atividade
+     econômica (PIB, desemprego, etc), taxas de juros brasileira e moedas, refletindo as
+     expectativas e premissas de cada cenário. As projeções são revisadas minimamente
+     anualmente, sendo mais tempestiva em casos de eventos relevantes que possam alterar
+     de forma material as perspectivas futuras.
+
+     A estimativa da perda de crédito esperada é feita pela combinação de múltiplos cenários,
+     que são ponderados de acordo com a probabilidade atribuída a cada cenário, sendo o
+     cenário base o mais provável. Em vista a determinar possíveis oscilações da perda esperada
+     decorrentes das projeções econômicas, foram feitas simulações alterando a ponderação
+     dos cenários utilizados no cálculo da perda esperada. No quadro abaixo demonstramos as
+     probabilidades atribuídas a cada cenário e os impactos:
+
+                                                                                             Em 30 de junho de 2025 - R$ mil
+                                                                        Ponderação
+                                                                                                             Constituição/
+                                                                          Cenário            Cenário          (Reversão)
+                                                       Cenário Base
+                                                                         Otimista*         Pessimista**
+
+ Simulação 1                                                    100%                   -               -           (280.969)
+ Simulação 2                                                       -            100%                   -           (1.113.763)
+ Simulação 3                                                       -                   -          100%              639.424
+ * Cenário em que a economia cresce mais que o esperado.
+ ** Cenário em que a economia cresce menos do que o esperado.
+
+
+     f) Perda esperada de empréstimos e adiantamentos
+
+                                                                                                                      R$ mil
+                                                                       2° trimestre               Acumulado em 30 de junho
+                                                                 2025             2024               2025            2024
+ Constituição                                                     9.105.156           9.291.167     17.866.902      17.398.971
+ Recuperações                                                    (1.412.199)     (1.473.301)         (2.719.118)   (2.763.466)
+ Despesa de provisão para perdas esperadas associadas ao
+                                                                 7.692.957        7.817.866         15.147.784      14.635.505
+ risco de crédito líquida de recuperações
+
+
+     g) Empréstimos e adiantamentos a clientes reestruturados
+
+       gvgvEcPRúdorSsvZdgsREPZEevEdRevgsENcZRevRsNgdoRrPERsoRrEPEûÒgePRRsvKg
+     incluídas as reestruturações, que são operações que contemplam alongamento de prazos,
+     concessão de carência, redução na taxa de juros, e, em alguns casos, desconto parcial do
+     principal.
+
+     Reestruturações podem ocorrer tanto em função de atrasos nos pagamentos ou de
+     percepção de que a qualidade do crédito se deteriorou fortemente. O objetivo das
+     reestruturações é adequar as operações à nova capacidade do cliente de pagar seu débito.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                 43
+
+=== página 45 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+     A tabela a seguir demonstra as mudanças efetuadas e a nossa análise da carteira de
+     empréstimos e adiantamentos a clientes reestruturados:
+
+                                                                                                                          R$ mil
+                                                                                    Em 30 de junho de        Em 30 de junho de
+                                                                                          2025                     2024
+ Saldo inicial                                                                               34.755.068               39.111.735
+ Reestruturação                                                                                9.346.545              15.015.299
+ Recebimento/Outros (1)                                                                       (7.109.584)            (9.880.174)
+ Baixas                                                                                      (6.938.268)              (6.372.851)
+ Saldo final                                                                                  30.053.761             37.874.009
+ Perda esperada de empréstimos e adiantamentos                                              (16.014.639)            (16.802.554)
+ Empréstimos e adiantamentos aos clientes totais reestruturados, líquido de
+                                                                                              14.039.122              21.071.455
+ perda esperada
+
+ Perda esperada sobre os empréstimos e adiantamentos reestruturados como
+                                                                                                     53,3%                44,4%
+ percentual do total dos empréstimos e adiantamentos reestruturados
+ Total dos empréstimos e adiantamentos reestruturados como percentual do
+                                                                                                      4,1%                 5,7%
+ portfólio de empréstimo total
+ Total dos empréstimos e adiantamentos reestruturados como percentual do
+                                                                                                     4,4%                  6,2%
+ portfólio de empréstimo total, líquido de perda esperada
+ (1) Contempla a liquidação de contratos reestruturados por meio da realização de novas operações.
+
+
+     No momento em que o empréstimo é modificado, a Administração considera as condições
+     do novo empréstimo e o vencimento reestruturado, e não mais o considera vencido. A
+     partir da data da modificação, os juros reestruturados começam a acumular, utilizando o
+     método da taxa efetiva de juros, levando em consideração a capacidade do cliente quitar
+     o empréstimo, com base na análise efetuada pela Administração. Se o cliente não consegue
+     manter os novos termos reestruturados, a Administração considera cessar o acúmulo a
+     partir desse ponto.
+
+     Adicionalmente, quaisquer saldos relativos a empréstimos e adiantamentos a clientes
+     reestruturados, que já tenham sido baixados e registrados em contas fora do balanço
+     patrimonial, bem como quaisquer ganhos de reestruturação, são reconhecidos apenas
+     quando recebidos.
+
+ 12) ATIVOS NÃO CORRENTES MANTIDOS PARA VENDA
+
+                                                                                                                      R$ mil
+                                                                                                      Em 31 de dezembro de
+                                                                       Em 30 de junho de 2025
+                                                                                                              2024
+ Bens não de uso próprio
+ Imóveis                                                                               1.099.448                     1.082.436
+ Veículos e afins                                                                        490.039                      343.948
+ Máquinas e equipamentos                                                                    1.380                         546
+ Outros (1)                                                                             2.125.536                   2.068.020
+ Total                                                                               3.716.403                  3.494.950
+ (1) Contempla R$ 2.060.445 mil de ações de companhias abertas recebidas em dação de pagamento, destinadas para alienação
+ e estão disponíveis para venda.
+
+
+     Os ativos não circulantes recebidos em liquidação total ou parcial das obrigações de
+     pagamento de seus devedores são considerados como ativos não correntes mantidos para
+     venda por meio da execução de leilões, os quais ocorrem normalmente em até um ano.
+     Ativos não correntes mantidos para venda são destinados à alienação, cuja venda em sua
+     condição atual seja altamente provável e sua ocorrência é esperada em até um ano.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                44
+
+=== página 46 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+ 13) INVESTIMENTOS EM COLIGADAS E JOINT VENTURE
+
+     a) Composição dos investimentos em coligadas e joint venture
+
+                                                                                                                                                                        R$ mil
+                                                                                                                                              Acumulado em 30 de junho de
+                                                                                      Em 30 de junho de 2025
+                                                                                                                                                          2025
+                                                                                                                                                                      Lucro
+                        Empresa                                                                                                   Passivo    Resultado              líquido/
+                                                                                                   Ativo   Ativo Não   Passivo
+                                                                    Participação     Valor                                          Não          da                (prejuízo)
+                                                       Participação                             Circulante Circulante Circulante                          Receitas
+                                                                    com direito   contábil do                                    Circulante equivalência               do
+                                                          total                                     da         da         da                                (2)
+                                                                       a voto    investimento                                        da     patrimonial             período
+                                                                                                investida investida investida
+                                                                                                                                 investida       (1)                   da
+                                                                                                                                                                   investida
+ Haitong Banco de Investimento do Brasil S.A.            20,00%       20,00%            119.535  6.551.064 2.499.200 5.893.828 2.578.549           20.138  470.588    100.690
+ Tecnologia Bancária S.A. (3)                             24,55%        24,32%            247.992      854.272    2.431.618      811.936   1.483.001          6.714 1.440.480      27.348
+ Swiss Re Corporate Solutions Brasil (3)                  40,00%        40,00%            519.686    3.063.852    2.166.795   3.282.399      885.401          8.217 1.106.287      20.543
+ Elo Participações Ltda. (4)                              50,01%        50,01%            622.558     1.071.893   5.294.969     599.653    4.394.930       398.555    876.628     796.051
+ Outras (5)                                                                            10.809.467                                                          449.104
+ Total geral em 30 de junho de 2025                                                         12.319.238                                                     882.728
+ (1) Os ajustes decorrentes de avaliação consideram os resultados apurados, periodicamente, pelas companhias e incluem variações patrimoniais das investidas não decorrentes de resultado,
+ bem como os ajustes por equalização de práticas contábeis, quando aplicáveis;
+ (2) Receita da intermediação financeira ou receita de prestação de serviços;
+ (3) Empresas com cálculo de equivalência patrimonial utilizando balanços com defasagem em relação a data-base das demonstrações financeiras, permitidos pela regulamentação;
+ (4) Empresa brasileira, prestadora de serviços relacionados a cartões de crédito e débito e outros meios de pagamento; e
+ (5) Inclui, basicamente, investimentos na Cielo S.A. e Banco John Deere. A Organização recebeu de dividendos, R$ 123.957 mil no 1º Semestre de 2025 referente à Empresa Cielo S.A.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                                             45
+
+=== página 47 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+                                                                                                                                                                           R$ mil
+                                                                                                                                                Acumulado em 30 de junho de
+                                                                                      Em 31 de dezembro de 2024
+                                                                                                                                                             2024
+                                                                                                                                                                         Lucro
+                        Empresa                                                                                                     Passivo    Resultado               líquido/
+                                                                                                     Ativo   Ativo Não   Passivo
+                                                                      Participação     Valor                                          Não          da                 (prejuízo)
+                                                         Participação                             Circulante Circulante Circulante                           Receitas
+                                                                      com direito   contábil do                                    Circulante equivalência                 do
+                                                            total                                     da         da         da                                 (2)
+                                                                         a voto    investimento                                        da     patrimonial              período
+                                                                                                  investida investida investida
+                                                                                                                                   investida       (1)                     da
+                                                                                                                                                                      investida
+ Haitong Banco de Investimento do Brasil S.A.                 20,00%       20,00%         98.243 5.099.950    1.945.607  4.559.541  1.994.799        (1.990)  339.338     (9.949)
+ Tecnologia Bancária S.A. (3)                                 24,55%         24,32%          241.277     854.080    2.354.233      774.316     1.471.727        10.970 1.387.393       44.679
+ Swiss Re Corporate Solutions Brasil (3)                      40,00%         40,00%          552.687    2.667.390   2.356.236    3.026.387     854.949           6.863 1.294.437        17.157
+ Elo Participações Ltda. (4)                                  50,01%         50,01%         2.263.011     963.331    4.746.612     965.266       91.253       489.762      63.109     951.772
+ Outras (5) (6)                                                                            7.873.794                                                           426.391
+ Total geral em 31 de dezembro de 2024                                                    11.029.012
+ Total geral em 30 de junho de 2024                                                                                                                              931.996
+ (1) Os ajustes decorrentes de avaliação consideram os resultados apurados, periodicamente, pelas companhias e incluem variações patrimoniais das investidas não decorrentes de resultado,
+ bem como os ajustes por equalização de práticas contábeis, quando aplicáveis;
+ (2) Receita da intermediação financeira ou receita de prestação de serviços;
+ (3) Empresas com cálculo de equivalência patrimonial utilizando balanços com defasagem de data de até 60 dias, permitidos pela regulamentação. No exercício findo em 31 de dezembro de
+ 2024, a Organização recebeu de dividendos de R$ 2.204 mil referente à Empresa Tecnologia Bancária S.A.;
+ (4) Empresa brasileira, prestadora de serviços relacionados a cartões de crédito e débito e outros meios de pagamento. A Organização recebeu de dividendos, R$ 64.922 mil, no exercício findo
+ em 31 de dezembro de 2024 referente à Empresa Elo Participações Ltda.;
+ (5) Em agosto de 2024, foi realizado o leilão da oferta pública unificada de aquisição de ações ordinárias de emissão da Cielo S.A. para conversão do seu registro de companhia aberta da
+ NEvRXgrZEúûoErEú ûeE gdZssKgPR7EcgrRsgMZcZFrZgsRsE\PEPgsegmento Novo Mercado da B3 S.A., com isso, o total da participação da Organização na Cielo S.A. passou a ser de 50,72%,
+ sendo 30,61% de participação direta e 20,11% de participação indireta, por meio das empresas do Grupo Elopar (em 31 de dezembro de 2023, a participação total era de 31,41%, sendo que a
+ participação direta era de 30,06%). A Organização recebeu da Cielo S.A, juros sobre capital próprio de R$ 151.453 mil, no exercício findo em 31 de dezembro de 2024; e
+ (6) Inclui, basicamente, investimentos em companhia aberta e Cielo S.A.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                                                46
+
+=== página 48 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+A Organização não possui passivos contingentes de investimentos em coligadas, o qual é
+responsável em parte ou na totalidade.
+
+    b) Movimentação dos investimentos em coligadas
+
+                                                                                                                            R$ mil
+                                                                                         2025                       2024
+Saldo no início do período                                                                     11.029.012              9.616.840
+Entradas                                                                                       2.728.230                         -
+Resultado de participações em coligadas                                                          882.728                   931.996
+Dividendos/JCP                                                                                 (2.152.378)              (157.177)
+Outras                                                                                          (168.354)                  73.748
+Saldo em 30 de junho                                                                           12.319.238             10.465.407
+
+
+
+14) IMOBILIZADO DE USO
+
+    a) Composição por classe de imobilizado de uso
+
+                                                                                                                            R$ mil
+                                                               Vida útil                         Depreciação
+                                                                                 Custo                             Valor líquido
+                                                               estimada                           acumulada
+Edificações                                                       4%              4.550.707         (1.448.397)         3.102.310
+Terrenos                                                           -               846.078                    -         846.078
+Instalações, móveis e equipamentos de uso                        10%              5.908.275         (3.588.215)        2.320.060
+Sistemas de segurança e comunicações                          10% a 20%             383.160           (267.375)            115.785
+Sistemas de processamento de dados                            20% a 40%           7.048.830         (4.459.279)        2.589.551
+Sistemas de transportes                                       10% a 20%             330.210           (125.908)         204.302
+Saldos em 30 de junho de 2025 (1)                                               19.067.260          (9.889.174)        9.178.086
+
+
+Edificações                                                       4%              8.251.334          (5.391.615)       2.859.719
+Terrenos                                                           -                871.952                   -            871.952
+Instalações, móveis e equipamentos de uso                        10%              5.573.061         (2.866.228)        2.706.833
+Sistemas de segurança e comunicações                             10%                386.802            (267.132)          119.670
+Sistemas de processamento de dados                            20% a 40%           13.641.163       (10.208.530)        3.432.633
+Sistemas de transportes                                       10% a 20%             367.431           (137.794)          229.637
+Saldos em 31 de dezembro de 2024 (1)                                             29.091.743        (18.871.299)       10.220.444
+(1) Inclui ativos subjacentes identificados nos contratos de arrendamento reconhecidos no escopo da norma IFRS 16.
+
+
+         Celebramos contratos de arrendamento mercantil, basicamente, para imóveis e
+         equipamentos de processamento de dados, que são registrados como edificações e
+         equipamentos arrendados no ativo imobilizado. Veja Nota 23 para a divulgação da
+         obrigação.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                    47
+
+=== página 49 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+    b) Movimentação líquida do imobilizado de uso por classe
+
+                                                                                                                                                                                      R$ mil
+                                                                                                       Instalações,
+                                                                                                                         Sistema de       Sistemas de
+                                                                                                         móveis e                                          Sistemas de
+                                                                  Edificações        Terrenos                            segurança e     processamento                         Total (1)
+                                                                                                      equipamentos                                         transporte
+                                                                                                                        comunicações        de dados
+                                                                                                          de uso
+Saldo ajustado em 31 de dezembro de 2023                                3.610.211         912.088          3.074.492          126.350         3.305.062            89.806         11.118.009
+Adições/(Baixas)                                                        (49.208)           (11.976)        (303.794)            17.490         1.503.717          153.890           1.310.119
+Depreciação (2)                                                         (331.768)                -          (203.173)         (15.536)         (736.270)           (15.716)      (1.302.463)
+Saldos em 30 de junho de 2024                                          3.229.235           900.112         2.567.525          128.304         4.072.509           227.980         11.125.665
+
+
+Saldos em 31 de dezembro de 2024                                       2.859.719           871.952         2.706.833           119.670        3.432.633           229.637        10.220.444
+Adições/(Baixas)                                                         551.563          (25.874)           138.105            10.438         (481.772)           (4.995)          187.465
+Depreciação (2)                                                        (308.972)                 -         (524.878)          (14.323)         (361.310)         (20.340)        (1.229.823)
+Saldos em 30 de junho de 2025                                             3.102.310         846.078         2.320.060           115.785         2.589.551          204.302         9.178.086
+(1) Inclui ativos subjacentes identificados nos contratos de arrendamento reconhecidos no escopo da norma IFRS 16; e
+(2) A diferença de R$ 37.675 mil (2024 - R$ 30.531 mil) em relação ao montante apresentado na nota 35 refere-se a despesas atribuíveis aos contratos de seguros os quais são apresentados na
+Demonstração do Resultado na rubrica "Resultado de seguros e previdência".
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                                          48
+
+=== página 50 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+ 15) ATIVOS INTANGÍVEIS E ÁGIO
+
+     a) Movimentação dos ativos intangíveis e ágio por classe
+
+                                                                                                                                                                                           R$ mil
+                                                                                                                                      Ativos intangíveis
+                                                                               Ágio            Aquisição de
+                                                                                                                                         Carteira de
+                                                                                                 direitos          Software (1)                             Outros (1)             Total
+                                                                                                                                         clientes (1)
+                                                                                              financeiros (1)
+ Saldos em 31 de dezembro de 2023                                                6.596.649           5.811.168           8.463.216             1.115.481           120.632          22.107.146
+ Adições/(Baixas)                                                                   133.993            698.571           1.380.786               106.581            171.852           2.491.783
+ Amortização (2)                                                                          -          (886.084)           (842.516)             (122.873)          (134.254)         (1.985.727)
+ Saldos em 30 de junho de 2024                                                   6.730.642           5.623.655           9.001.486            1.099.189            158.230          22.613.202
+
+
+ Saldos em 31 de dezembro de 2024                                                6.730.642           5.535.378          10.287.830             976.220             219.138         23.749.208
+ Adições/(Baixas)                                                                   512.455            571.094            1.536.854                     -          105.323           2.725.726
+ Amortização (2)                                                                          -          (944.232)          (1.385.889)            (114.702)           (47.169)        (2.491.992)
+ Saldos em 30 de junho de 2025                                                     7.243.097            5.162.240           10.438.795              861.518         277.292          23.982.942
+ (1) Taxa de amortização: aquisição de direitos bancários ò dentro dos prazos do contrato; software ò até 10%; carteira de clientes e outros contratos; e
+ (2) A diferença de R$ 185.997 mil (2024 - R$ 189.550 mil) em relação ao montante apresentado na nota 35 refere-se a despesas atribuíveis aos contratos de seguros os quais são apresentados na
+ Demonstração do Resultado na rubrica "Resultado de seguros e previdência".
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                                             49
+
+=== página 51 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+     b) Composição do ágio por segmento
+
+                                                                                                                      R$ mil
+                                                                                      Em 30 de junho    Em 31 de dezembro
+                                                                                         de 2025             de 2024
+ Bancário                                                                                     6.742.457           6.230.002
+ Seguros                                                                                        500.640                500.640
+ Total                                                                                         7.243.097             6.730.642
+
+
+           As Unidades Geradoras de Caixa (UGCs) alocadas no segmento bancário e de Seguros,
+           Previdência e Capitalização são testados anualmente para perda por redução ao valor
+           recuperável (impairment) do ágio. Não foi identificada a necessidade de reconhecimento
+           de perda por redução ao valor recuperável do ágio em 2025 e 2024.
+
+ 16) OUTROS ATIVOS
+
+     a) Outros ativos
+
+                                                                                                                    R$ mil
+                                                                                    Em 30 de junho de Em 31 de dezembro
+                                                                                          2025             de 2024
+ Ativos financeiros (1) (2)                                                                84.060.956          81.195.242
+ Operações de câmbio (3)                                                                      43.188.701             44.132.289
+ Devedores por depósitos em garantia (4)                                                      22.394.287             21.743.293
+ Negociação e intermediação de valores                                                         4.879.739              5.848.323
+ Títulos e créditos a receber                                                                  5.958.634              6.032.514
+ Rendas a receber                                                                              7.639.595              3.438.823
+ Outros ativos                                                                                15.653.822             15.824.815
+ Devedores diversos                                                                            4.508.560              5.777.906
+ Despesas antecipadas                                                                          4.599.989              3.568.136
+ Relações interfinanceiras e interdependências                                                   104.771               224.343
+ Outros (5)                                                                                    6.440.502              6.254.430
+ Total                                                                                         99.714.778            97.020.057
+ (1) Ativos financeiros contabilizados ao custo amortizado;
+ (2) Em 2025 e 2024, não houve constituição de perdas esperadas para outros ativos financeiros;
+ (3) Refere-se, basicamente, a compras em moeda estrangeira efetuadas pela instituição para os clientes e os direitos em moeda
+ nacional da instituição, decorrentes de operações de venda de câmbio;
+ (4) Refere-se a depósitos decorrentes de exigências legais ou contratuais, inclusive garantias prestadas em dinheiro, tais como
+ os realizados para interposição de recursos em repartições ou juízos e os que garantem prestação de serviço de qualquer
+ natureza; e
+ (5) Inclui, basicamente, material em estoque, valores a receber, outros adiantamentos, antecipações e pagamentos a ressarcir e
+ propriedade para investimento.
+
+
+ 17) RECURSOS DE INSTITUIÇÕES FINANCEIRAS
+     Os passivos WZeEeNRZrgs PRegdZeEPgs PR ú-RNwrsgs PR ZesvZvwZOmRs WZeEeNRZrEsû sKg
+     mensurados inicialmente ao valor justo e, subsequentemente, pelo seu custo amortizado,
+     utilizando-se do método da taxa efetiva de juros.
+
+     a) Composição por natureza
+                                                                                                                      R$ mil
+                                                                                      Em 30 de junho    Em 31 de dezembro
+                                                                                         de 2025             de 2024
+ Depósitos à vista                                                                            1.699.280            1.419.303
+ Depósitos interfinanceiros                                                                    1.199.480             3.008.439
+ Captações no mercado aberto                                                                300.950.861            283.049.765
+ Obrigações por empréstimos                                                                   40.835.366            46.769.666
+ Obrigações por repasses                                                                      27.787.871              27.571.137
+ Total                                                                                      372.472.858             361.818.310
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                 50
+
+=== página 52 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+ 18) RECURSOS DE CLIENTES
+
+     "s oEssZ|gs WZeEeNRZrgs PRegdZeEPgs PR ú-RNwrsgs PR NcZRevRsû sKg dReswrEPgsÒ
+     inicialmente, ao valor justo e, subsequentemente, pelo seu custo amortizado utilizando o
+     método da taxa efetiva de juros.
+
+                                                                                                                     R$ mil
+                                                                                Em 30 de junho de      Em 31 de dezembro
+                                                                                      2025                  de 2024
+ Depósitos à vista                                                                       30.613.894              44.119.254
+ Depósitos de poupança                                                                   127.352.640             132.502.157
+ Depósitos a prazo                                                                       481.298.376            467.717.052
+ Total                                                                                  639.264.910            644.338.463
+
+
+
+ 19) RECURSOS DE EMISSÃO DE TÍTULOS
+
+     a) Composição por tipo de papel emitido e localização
+
+                                                                                                                    R$ mil
+                                                                               Em 30 de junho de       Em 31 de dezembro
+                                                                                     2025                   de 2024
+ Títulos emitidos – País:
+ Letras de crédito imobiliário                                                           68.652.508              55.865.741
+ Letras de agronegócio                                                                   49.129.684              46.738.613
+ Letras financeiras                                                                     117.590.740             106.220.794
+ Letras imobiliárias garantidas                                                          30.339.771              35.805.829
+ Subtotal                                                                               265.712.703            244.630.977
+ Títulos e valores mobiliários – Exterior:
+ MTN Program Issues (1)                                                                  10.854.530               9.529.345
+ Subtotal                                                                                10.854.530               9.529.345
+ Certificados de operações estruturadas                                                   4.822.944               3.817.022
+ Total geral                                                                             281.390.177             257.977.344
+ (1) Emissão de títulos no mercado internacional para aplicação em operações comerciais de câmbio, pré-financiamento à
+ exportação, financiamento à importação e financiamento de capital de giro, substancialmente, a médio e longo prazo.
+
+
+     b) Movimentação líquida de recursos de emissão de títulos
+
+                                                                                                                       R$ mil
+                                                                                      2025                    2024
+ Saldo inicial no período                                                               257.977.344            244.966.258
+ Emissões                                                                                 68.141.958             30.492.604
+ Juros                                                                                    13.084.137              13.485.186
+ Liquidação e pagamentos de juros                                                       (59.028.326)            (35.802.171)
+ Variação cambial                                                                          1.215.064                 1.114.067
+ Saldo final em 30 de junho                                                             281.390.177            254.255.944
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                               51
+
+=== página 53 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+ 20)DÍVIDAS SUBORDINADAS
+
+     a) Composição das dívidas subordinadas
+
+                                                                                                                            R$ mil
+                            Vencimento                            Prazo                                               Em 31 de
+                                                                              Valor da            Em 30 de
+                                                                 original                                           dezembro de
+                                                                              operação          junho de 2025
+                                                                 em anos                                               2024
+ No País:
+ Letras Financeiras:
+                               2025                                  7            3.871.906           7.123.841         6.659.038
+                               2027                                  7             401.060                688.017           640.590
+                               2025                                  8            2.810.664          2.995.041             3.693.797
+                               2026                                  8             694.800           1.277.014             1.193.335
+                               2028                                  8               55.437                95.271            88.658
+                               2030                                  8           2.368.200           3.616.606             3.365.783
+                               2025                                  9               15.570             46.690               755.966
+                               2027                                  9              89.700                175.241            163.973
+                               2025                                 10              178.937               699.916           648.219
+                               2026                                 10              196.196               615.003            571.365
+                               2027                                 10             256.243                556.167           523.757
+                               2028                                 10             248.300            538.892               505.316
+                               2030                                 10             134.500            221.483               210.044
+                               2031                                 10           7.270.000          12.184.975          11.319.069
+                               2032                                 10           5.378.500           8.180.775          7.606.668
+                               2033                                 10             531.000                669.301           626.578
+                               2026                                 11               2.500                 4.289              4.337
+                               2027                                 11              47.046                110.286           102.990
+                               2028                                 11              74.764                168.893            159.193
+                             Perpétua                                -           19.153.355         20.285.917          18.620.251
+ Total geral (1)                                                                                  60.253.618        57.458.927
+ (1) Inclui o montante de R$ 46.459.229 mil (em 31 de dezembro de 2024 ò R$ 43.096.504 mil), referente as dívidas subordinadas
+ rRXZsvrEPEsNgdgúesvrwdRevgsPR \|ZPEcRX\|RZsE EoZvEcûoErEWZesPRNEoZvEcrRXwcEdRevErÑ
+
+
+     b) Movimentação líquida das dívidas subordinadas
+                                                                                                                             R$ mil
+                                                                                       2025                         2024
+ Saldo inicial no período                                                                 57.458.927                  50.337.854
+ Emissões                                                                                     5.555.700                          -
+ Juros                                                                                        4.158.713                3.086.079
+ Liquidação e pagamentos de juros                                                         (6.919.722)                  (2.172.641)
+ Saldo final em 30 de junho                                                               60.253.618                   51.251.292
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                      52
+
+=== página 54 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+ 21) CONTRATOS DE SEGUROS
+     a) Passivos de contratos de seguros
+                                                                                                                                                                                                             R$ mil
+                                                                                  Em 30 de junho de 2025                                                     Em 31 de dezembro de 2024
+                                                               PAA                      BBA/VFA                       Total                     PAA                      BBA/VFA                     Total
+ Passivo de cobertura remanescente (PCR)                          3.102.982                 379.934.769                383.037.751                  3.413.117                   359.997.742           363.410.859
+ - Valor presente dos fluxos de caixa futuros (BEL)                           -              351.932.311                351.932.311                           -                 333.588.968           333.588.968
+ - Ajuste do risco não financeiro (RA)                                        -                  1.733.671                1.733.671                           -                    1.713.661             1.713.661
+ - Margem de cobertura de seguros (CSM)                                       -              26.268.787                 26.268.787                            -                   24.695.113            24.695.113
+ - Abordagem de alocação de prêmios (PAA)                             3.102.982                          -               3.102.982                  3.413.117                              -             3.413.117
+ Passivo de sinistros incorridos                                 14.193.340                      1.915.352              16.108.692                13.527.747                      1.854.214             15.381.961
+ - Melhor estimativa do passivo (BEL)                            13.749.377                      1.846.548              15.595.925                 13.109.372                     1.788.775             14.898.147
+ - Ajuste do risco não financeiro (RA)                                 443.963                     68.804                     512.767                   418.375                      65.439               483.814
+ Total dos passivos de contrato de seguros                       17.296.322                  381.850.121              399.146.443                16.940.864                     361.851.956          378.792.820
+     b) Cobertura remanescente para modelo geral (BBA)/abordagem de taxa variável (VFA)
+                                                                                                                                                                                                             R$ mil
+                                                                                                     Em 30 de junho de 2025                                       Em 31 de dezembro de 2024
+                                                                                           Contratos Não     Contratos                                    Contratos Não     Contratos
+                                                                                                                              Total                                                         Total
+                                                                                            Onerosos         onerosos                                      Onerosos         onerosos
+ Estimativa do valor presente dos fluxos de caixa de saída futuros                            433.630.185      31.814.957   465.445.142                      415.934.920     32.862.946   448.797.866
+ - Fluxos de caixa de aquisição                                                                    3.930.332             110.986           4.041.318                3.789.618             119.449      3.909.067
+ - Sinistros e outras despesas diretamente atribuíveis                                           429.699.853          31.703.971        461.403.824               412.145.302         32.743.497     444.888.799
+ Estimativa do valor presente dos fluxos de caixa de entrada futura                              (107.701.338)        (5.811.493)       (113.512.831)         (109.275.236)           (5.933.662)    (115.208.898)
+ Ajuste de risco não financeiro                                                                       995.188           738.483             1.733.671                926.022             787.639         1.713.661
+ Margem de cobertura de seguros                                                                    26.165.269            103.518          26.268.787               24.594.993            100.120       24.695.113
+ Total de cobertura remanescente do modelo geral/modelo de taxa variável                         353.089.304       26.845.465           379.934.769               332.180.699         27.817.043     359.997.742
+
+     c) Realização da margem de cobertura de seguros
+                                                                                                                                                                                                             R$ mil
+                                                                                                                                                                                     Acima de 5
+                                                                                     Até 1 ano        1 a 2 anos         2 a 3 anos          3 a 4 anos            4 a 5 anos                           Total
+                                                                                                                                                                                        anos
+ Contratos de Seguro Emitidos
+ - Seguro Direto                                                                       2.941.995         2.360.069            1.980.247          1.736.135            1.722.358         15.527.983     26.268.787
+ Modelo geral/ abordagem de taxa variável em 30 de junho de 2025                       2.941.995         2.360.069            1.980.247          1.736.135            1.722.358         15.527.983     26.268.787
+ Contratos de Seguro Emitidos
+ - Seguro Direto                                                                       2.450.329          2.180.759           1.840.336         1.603.463             1.410.985         15.209.241      24.695.113
+ Modelo geral/ abordagem de taxa variável em 31 de dezembro de 2024                    2.450.329         2.180.759            1.840.336         1.603.463             1.410.985         15.209.241      24.695.113
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                                                      53
+
+=== página 55 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+     d) Movimentação da Provisão de Cobertura Remanescente (PCR)
+                                                                                                                                                                           R$ mil
+                                                                                                 BBA/VFA                                               PAA
+     Valores reconhecidos para cobertura remanescente                                                             Componente                       Abordagem de
+                                                                      Excluindo Componente de Perda                                 TOTAL                             Total
+                                                                                                                   de Perda                         alocação de
+                                                                                                                                   BBA/VFA
+                                                                   BEL             RA             CSM                 BEL                             prêmios
+ Saldo inicial no exercício                                       326.129.277       1.713.661     24.695.113          7.459.691    359.997.742           3.413.117   363.410.859
+ Mudanças técnicas relacionadas ao período atual (Receita
+                                                                  (2.706.888)        (91.715)      (821.050)                   -    (3.619.653)      (26.216.028)    (29.835.681)
+ Seguros)
+   Contratos pelo método retrospectivo total                        (284.018)        (10.204)         (270.807)                -      (565.029)                  -      (565.029)
+   Contratos pelo método do valor justo                            (1.802.165)      (44.057)          (173.655)                -    (2.019.877)                  -    (2.019.877)
+   Emissão de contratos após transição (Outros contratos)           (632.698)       (37.454)          (376.588)                -    (1.046.740)                  -    (1.046.740)
+   Apropriação referente a melhor estimativa de saída -BEL             11.993              -                  -                -         11.993                  -         11.993
+   Apropriação referentes a contratos abordagem de alocação
+                                                                            -                -                -                -              -       (26.216.028)   (26.216.028)
+ de prêmios
+ Mudanças técnicas relacionadas aos períodos futuros                 677.660          42.853       2.795.344                   6      3.515.863       (1.806.489)      1.709.374
+    Mudanças nas estimativas que ajustam a margem de
+                                                                     1.691.221       (47.691)     (1.656.726)                  6        (13.190)                 -        (13.190)
+ cobertura de seguros
+    Mudanças nas estimativas que não ajustam a margem de
+                                                                    (277.929)         (7.389)                 -                -      (285.318)                  -      (285.318)
+ cobertura de seguros (ORA)
+    Apropriação / constituição referente a melhor estimativa de
+                                                                           113               -         422.804                 -        422.917                  -        422.917
+ saída - CSM
+    Contratos inicialmente reconhecidos no período                  (735.745)           97.933     4.029.266                   -      3.391.454        (1.806.489)      1.584.965
+ Despesas de Seguros                                                  125.661                -                -        245.773         371.434          2.119.462      2.490.896
+   Constituição de contratos onerosos                                       -                -                -        245.773         245.773                  -        245.773
+   Custo de aquisição                                                 125.661                -                -                -        125.661          2.119.462      2.245.123
+ Despesas financeiras                                             20.892.254          68.872           562.425          10.762       21.534.313                 -      21.534.313
+   Despesas financeiras de contratos de seguro                     20.892.254           68.872         562.425          10.762       21.534.313                  -     21.534.313
+ Fluxos de caixa                                                    (901.885)                -                -                -     (901.885)        25.592.920      24.691.035
+   Prêmios recebidos                                               23.170.085                -                -                -     23.170.085        27.632.337     50.802.422
+   Componente de investimento                                     (23.951.916)               -                -                -    (23.951.916)                -     (23.951.916)
+   Fluxos de caixa de aquisição de seguros                          (120.054)                -                -                -      (120.054)        (2.039.417)     (2.159.471)
+ Saldo em 30 de junho de 2025                                     344.216.079       1.733.671     27.231.832          7.716.232    380.897.814          3.102.982    384.000.796
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                       54
+
+=== página 56 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+                                                                                                                                                                           R$ mil
+                                                                                                  BBA/VFA                                              PAA
+     Valores reconhecidos para cobertura remanescente                                                             Componente                       Abordagem de
+                                                                      Excluindo Componente de Perda                                 TOTAL                             Total
+                                                                                                                   de Perda                         alocação de
+                                                                                                                                   BBA/VFA
+                                                                    BEL            RA              CSM                BEL                             prêmios
+ Saldo inicial no exercício                                       295.011.098      1.831.794       24.414.760        6.630.079     327.887.731         3.260.899     331.148.630
+ Mudanças técnicas relacionadas ao período atual (Receita
+                                                                   (2.476.556)      (78.381)        (852.247)                  -    (3.407.184)      (23.890.131)    (27.297.315)
+ Seguros)
+   Contratos pelo método retrospectivo total                        (283.807)        (16.435)         (378.087)                -     (678.329)          (122.747)       (801.076)
+   Contratos pelo método do valor justo                            (1.948.981)      (55.325)          (272.244)                -    (2.276.550)                 -     (2.276.550)
+   Emissão de contratos após transição (Outros contratos)            (214.156)          (6.621)       (201.916)                -     (422.693)                  -      (422.693)
+   Apropriação referente a melhor estimativa de saída -BEL            (29.612)               -                -                -       (29.612)                 -        (29.612)
+   Apropriação referentes a contratos abordagem de alocação
+                                                                             -               -                -                -              -      (23.767.384)    (23.767.384)
+ de prêmios
+ Mudanças técnicas relacionadas aos períodos futuros                (410.428)       (64.482)        1.443.950                  -      969.040         (1.685.740)      (716.700)
+    Mudanças nas estimativas que ajustam a margem de
+                                                                    2.007.382       (89.388)       (1.954.500)                 -       (36.506)                 -        (36.506)
+ cobertura de seguros
+    Mudanças nas estimativas que não ajustam a margem de
+                                                                   (1.533.943)      (48.012)                  -                -     (1.581.955)                -      (1.581.955)
+ cobertura de seguros (ORA)
+    Apropriação / constituição referente a melhor estimativa de
+                                                                             -               -          511.401                -        511.401                 -         511.401
+ saída - CSM
+    Contratos inicialmente reconhecidos no período                  (883.867)           72.918      2.887.049                  -     2.076.100        (1.685.740)        390.360
+ Despesas de Seguros                                                   40.476                -                -        232.320         272.796          1.868.574      2.141.370
+   Constituição de contratos onerosos                                        -               -                -        232.320         232.320                  -        232.320
+   Custo de aquisição                                                  40.476             -                  -                 -        40.476          1.868.574      1.909.050
+ Despesas financeiras                                               13.334.118       62.670            430.915                 -    13.827.703                  -     13.827.703
+   Despesas financeiras de contratos de seguro                      13.334.118        62.670           430.915                 -    13.827.703                  -     13.827.703
+ Fluxos de caixa                                                    4.192.035                -                -                -     4.192.035         23.586.710     27.778.745
+   Prêmios recebidos                                               25.300.620                -                -                -    25.300.620         25.379.322     50.679.942
+   Componente de investimento                                     (20.912.020)               -                -                -   (20.912.020)                 -    (20.912.020)
+   Fluxos de caixa de aquisição de seguros                           (196.565)               -                -                -      (196.565)        (1.792.612)    (1.989.177)
+ Saldo em 30 de junho de 2024                                     309.690.743       1.751.601      25.437.378        6.862.399     343.742.121          3.140.312    346.882.433
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                       55
+
+=== página 57 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+     e) Movimentação da Provisão de Sinistro (PSI)
+                                                                                                                                                                               R$ mil
+                                                                              PSI - BBA e VFA                                      PSI - PAA
+                                                                                                Total Passivo
+                                                                                                                                                      Total Passivo     TOTAL PSI
+                                                                                                de sinistros
+                                                               VP FCF               RA                              BEL               RA              de sinistros
+                                                                                              incorridos - BBA
+                                                                                                                                                    incorridos - PAA
+                                                                                                   e VFA
+ Saldo em 31 de dezembro de 2023                                  1.302.911            71.949         1.374.860     11.847.652          421.079           12.268.731       13.643.591
+ Despesas com prestação de seguros                               2.448.525              4.548         2.453.073     18.133.649             60.592         18.194.241      20.647.314
+   Sinistros incorridos e outras despesas com prestação de
+                                                                 2.448.525              4.548         2.453.073      18.133.649            60.592          18.194.241     20.647.314
+ seguros
+ Ajustes de passivos de sinistros incorridos                     (128.669)                   -        (128.669)       (43.973)                  -           (43.973)       (172.642)
+ Despesas financeiras de contratos de seguro                        55.797              3.410           59.207         431.789             15.748           447.537          506.744
+ Mudanças reconhecidas em outros resultados abrangente            (16.487)             (1.796)         (18.283)       (121.288)         (13.765)           (135.053)        (153.336)
+ Fluxos de caixa                                               (2.036.970)                   -      (2.036.970)    (17.186.947)                 -       (17.186.947)     (19.223.917)
+  Sinistros e outras despesas com prestação de seguros pagas    (2.036.970)                  -       (2.036.970)    (17.186.947)                -        (17.186.947)     (19.223.917)
+ Saldo em 30 de junho de 2024                                    1.625.107              78.111        1.703.218     13.060.882          483.654           13.544.536      15.247.754
+
+
+ Saldo em 31 de dezembro de 2024                                 1.788.775             65.439         1.854.214      13.109.371         418.375           13.527.746      15.381.960
+ Despesas com prestação de seguros                               1.922.905             (1.449)        1.921.456      18.146.513             6.053         18.152.566      20.074.022
+   Sinistros incorridos e outras despesas com prestação de
+                                                                 1.922.905             (1.449)        1.921.456      18.146.513             6.053         18.152.566      20.074.022
+ seguros
+ Ajustes de passivos de sinistros incorridos                      (119.137)                  -         (119.137)       (17.393)                 -           (17.393)       (136.530)
+ Despesas financeiras de contratos de seguro                        79.817               3.913          83.730         545.269             17.586           562.855          646.585
+ Mudanças reconhecidas em outros resultados abrangente              (7.143)               902           (6.241)       (55.280)              1.948           (53.332)         (59.573)
+ Fluxos de caixa                                                (1.818.669)                  -      (1.818.669)    (17.979.103)                 -       (17.979.103)     (19.797.772)
+  Sinistros e outras despesas com prestação de seguros pagas    (1.818.669)                  -       (1.818.669)   (17.979.103)                 -        (17.979.103)    (19.797.772)
+ Saldo em 30 de junho de 2025                                    1.846.548             68.805         1.915.353     13.749.377          443.962           14.193.339      16.108.692
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                 56
+
+=== página 58 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+     f) Margem de cobertura de seguros
+
+                                                                                                                                                                                 R$ mil
+                                                                            Em 30 de junho de 2025                                          Em 30 de junho de 2024
+                                                                                          Emissão de                                                      Emissão de
+                                                         Contratos         Contratos                                      Contratos        Contratos
+                                                                                          contratos                                                       contratos
+                                                       avaliados por       avaliados                                    avaliados por      avaliados
+                                                                                            após                                                            após
+                                                       meio do valor      pelo método                      Total        meio do valor     pelo método                        Total
+                                                                                          transição                                                       transição
+                                                         justo em        retrospectivo                                    justo em       retrospectivo
+                                                                                           (Outros                                                         (Outros
+                                                         transição            total                                       transição           total
+                                                                                         contratos)                                                      contratos)
+ Saldo inicial em 1º de janeiro                              7.215.705         8.414.912    9.064.496     24.695.113        11.313.528         8.591.169     4.510.061      24.414.758
+ Mudanças em relação ao período atual                       (494.570)        (592.022)      (697.503)     (1.784.095)       (684.589)        (790.431)      (305.002)       (1.780.022)
+ - Margem de cobertura de seguros reconhecidos no
+                                                            (494.570)           (592.022)    (697.503)    (1.784.095)       (684.589)         (790.431)      (305.002)      (1.780.022)
+ período
+ Mudanças em relação aos períodos futuros                      43.449            158.377     2.593.518     2.795.344        (628.335)          567.528       1.504.757       1.443.950
+ - Contratos inicialmente reconhecidos                         161.691            85.198     3.782.377     4.029.266           60.159            6.670       2.820.220       2.887.049
+ - Mudanças nas estimativas que ajustam a margem de
+                                                             (118.242)             73.179   (1.188.859)   (1.233.922)       (688.494)          560.858      (1.315.463)     (1.443.099)
+ cobertura de seguros
+ Total de mudanças técnicas                                  (451.121)       (433.645)       1.896.015      1.011.249      (1.312.924)       (222.903)       1.199.755       (336.072)
+ Despesas financeiras de contratos de seguro                   18.608         204.468          339.349       562.425            41.584         216.239         173.094         430.917
+ Saldo final em 30 de junho                                 6.783.192           8.185.735   11.299.860    26.268.787       10.042.188        8.584.505       5.882.910      24.509.603
+
+
+
+     g) Movimentação de outros resultados abrangentes
+
+                                                                                                                                                                                 R$ mil
+                                                                                                                                          Acumulado em 30 de junho
+                                                                                                                                   2025                              2024
+ Saldo inicial em 1º de janeiro                                                                                                              3.614.624                        1.265.455
+ Mudanças nos outros resultados abrangentes                                                                                                   206.871                        1.040.812
+ Receitas e despesas reconhecidas no período em Outros resultados abrangentes                                                                 344.891                        1.735.288
+ Imposto diferido                                                                                                                            (138.020)                        (694.476)
+ Saldo final em 30 de junho                                                                                                                  3.821.495                       2.306.267
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                       57
+
+=== página 59 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+
+     h) Receita de seguros
+
+                                                                                                          R$ mil
+                                                                                 Acumulado em 30 de junho
+                                                                                  2025             2024
+ Valores relacionados a mudanças nas responsabilidades por cobertura
+                                                                                   29.835.681       27.297.315
+ remanescente (PCR)
+ Saídas referentes a contratos do modelo geral                                      2.706.887        2.477.584
+ - Expectativa de sinistros ocorridos e Despesas                                    2.593.220        2.406.468
+ - Recuperação de Fluxo de Caixa de Aquisição                                         125.661           40.476
+ - Ajustes experiência                                                                (11.994)          30.640
+ Mudança no ajuste de risco não financeiro                                               91.715           78.383
+ Margem de cobertura de seguros reconhecidos para modelo geral e taxa variável        821.050          852.247
+ Saídas referentes a contratos abordagem de alocação de prêmios                    26.216.029        23.889.101
+ Receita de Seguro                                                                 29.835.681       27.297.315
+
+
+
+     i) Despesa financeira de seguros
+
+                                                                                                          R$ mil
+                                                                                 Acumulado em 30 de junho
+                                                                                  2025             2024
+ Mudanças na obrigação de pagar decorrente do retorno de investimento              (8.178.074)      (3.057.495)
+ Acreditação de juros                                                            (14.002.824)       (11.276.901)
+ Valores reconhecidos no resultado                                               (22.180.898)      (14.334.396)
+ Efeito das variações nas taxas de juros                                              344.891         1.735.288
+ Valores reconhecidos em outros resultados abrangentes                                344.891        1.735.288
+ Despesas financeiras de contratos de seguro emitidos                            (21.836.007)      (12.599.108)
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                   58
+
+=== página 62 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+           perdas de cada demanda, tendo em vista as decisões e as matérias ainda em análise
+           no Superior Tribunal de Justiça (STJ).
+
+           Em dezembro de 2017, com mediação da Advocacia Geral da União (AGU) e
+           interveniência do Banco Central do Brasil (BCB), as entidades representativas dos
+           bancos e dos poupadores, firmaram acordo relacionado aos litígios de planos
+           econômicos, com a finalidade de encerramento dessas ações, no qual foram
+           estabelecidos condições e cronograma para os poupadores exercerem o direito a
+           adesão. O referido acordo foi homologado pelo Supremo Tribunal Federal (STF) em
+           1º de março de 2018. Em 11 de março de 2020 as entidades signatárias celebraram
+           aditivo prorrogando o acordo coletivo pelo prazo de 5 (cinco) anos, o Supremo
+           Tribunal Federal homologou a prorrogação do acordo por 30 meses. Em 16 de
+           dezembro de 2022, o Supremo Tribunal Federal (STF) homologou o pedido de
+           prorrogação do acordo por mais 30 meses. Em 23 de maio de 2025, o STF proferiu
+           decisão reconhecendo a constitucionalidade dos planos econômicos, mas também
+           validou o acordo firmado entre poupadores, bancos e governo para o pagamento das
+           diferenças de correção monetária, prorrogando o período para adesão em mais 24
+           meses a contar a partir do julgamento. Considerando tratar de acordo voluntário, o
+           qual não obriga o poupador a adesão, não existe estimativa de quantos o farão.
+           Destaca-se que, o Bradesco entende que possui provisionamento para cobrir os
+           processos elegíveis ao referido acordo.
+    III)   Provisão para riscos fiscais
+           A Organização vem discutindo judicialmente a legalidade e constitucionalidade de
+           alguns tributos e contribuições, os quais estão totalmente provisionados. Esses
+           processos, tem acompanhamento regular de suas evoluções nos trâmites do
+           Judiciário e nas esferas administrativas, dos quais destacamos:
+
+             -   PIS e Cofins ò R$ 3.357.952 mil (em 31 de dezembro de 2024 ò R$ 3.263.824 mil):
+                 pleiteia calcular e recolher as contribuições ao PIS e a Cofins somente sobre
+                 venda de mercadorias/prestação de serviços (faturamento), excluindo das
+                 bases de cálculo as receitas financeiras;
+
+             -   PIS e Cofins ò R$ 887.629 mil (em 31 de dezembro de 2024 ò R$ 838.178 mil):
+                 pleiteia assegurar as empresas o direito de recolher as contribuições ao PIS e
+                 a Cofins pelo regime cumulativo (alíquota 3,65% sobre vendas de
+                 mercadorias/prestação de serviços); e
+
+             -   INSS - Contribuição ao SAT ò R$ 542.493 mil (em 31 de dezembro de 2024 ò R$
+                 527.030 mil): em ação ordinária movida pela Federação Nacional dos Bancos -
+                 Febraban, desde abril de 2007, em nome de seus associados, é questionado o
+                 enquadramento dos bancos no grau de risco mais elevado, no que tange ao
+                 Risco de Acidentes de Trabalho - RAT, o que acabou por elevar a alíquota da
+                 respectiva contribuição de 1% para 3%, conforme Decreto no 6.042/07.
+
+             -   Contribuições Previdenciárias ò R$ 1.242.003 mil (em 31 de dezembro de 2024
+                 ò R$ 1.989.629 mil): relativas às contribuições previdenciárias sobre aportes em
+                 planos de previdência privada, referentes aos períodos anteriores,
+                 considerados pela fiscalização como verbas remuneratórias. No período,
+                 houve processos incluídos no Programa de Transação Integral (PTI) criado pela
+                 Portaria MF nº 1.384/2024.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                   61
+
+=== página 63 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+                   Em geral, as provisões referentes às ações judiciais são consideradas de longo
+                   prazo, devido à imprevisibilidade do tempo de duração dos processos no sistema
+                   judiciário brasileiro, razão pela qual não foi divulgada a estimativa com relação
+                   ao ano específico em que essas ações judiciais serão encerradas.
+
+     IV)     Movimentação das provisões segregadas por natureza
+                                                                                                        R$ mil
+                                                  Trabalhistas      Cíveis         Fiscais         Total
+ Saldos em 31 de dezembro de 2023                     4.622.138       8.587.613      7.059.304     20.269.055
+ Atualização monetária                                  229.844          229.520         197.322      656.686
+ Constituições líquidas de (reversões e baixas)          842.612       1.253.895       (65.900)     2.030.607
+ Pagamentos                                          (2.289.977)     (1.820.749)        (15.405)    (4.126.131)
+ Saldos em 30 de junho de 2024                        3.404.617       8.250.279       7.175.321    18.830.217
+
+
+                                                                                                        R$ mil
+                                                  Trabalhistas      Cíveis         Fiscais         Total
+ Saldos em 31 de dezembro de 2024                     2.613.403        7.827.251      7.457.160    17.897.814
+ Atualização monetária                                    141.924        250.017        236.410        628.351
+ Constituições líquidas de (reversões e baixas)         2.885.618        825.165      1.393.901      5.104.684
+ Pagamentos                                           (1.790.019)    (1.550.858)      (589.817)    (3.930.694)
+ Saldos em 30 de junho de 2025                        3.850.926        7.351.575     8.497.654     19.700.155
+
+
+     c) Passivos contingentes classificados como perdas possíveis
+
+         A Organização mantém um sistema de acompanhamento para todos os processos
+         administrativos e `wPZNZEZsRdqwRWZXwrENgdgúEwvgrEûgwúrSûRÒEdoErEPEeEgoZeZKg
+         dos assessores jurídicos, classifica as ações de acordo com a expectativa de insucesso.
+         Periodicamente são realizadas análises sobre as tendências jurisprudenciais e efetivada,
+         se necessária, a reclassificação dos riscos desses processos. Neste contexto, os
+         processos contingentes avaliados como de risco de perda possível não são
+         reconhecidos contabilmente e totalizaram, em 30 de junho de 2025, R$ 12.883.324 mil
+         (em 31 de dezembro de 2024 ò R$ 11.570.068 mil) para os processos cíveis e R$
+         43.984.109 mil (em 31 de dezembro de 2024 ò R$ 46.932.523 mil) para os processos
+         fiscais.
+
+         Os principais processos fiscais com essa classificação são:
+
+                   - Autuações de IRPJ e CSLL ò Anos bases de 2012 a 2015 ò R$ 12.688.955 mil (em
+                   31 de dezembro de 2024 ò R$ 12.239.074 mil): glosa de despesas operacionais de
+                   captação (CDI), relativas a recursos que foram capitalizados entre as empresas
+                   da Organização;
+
+                   - COFINS ò Anos bases de 1999 a 2014 ò R$ 10.169.691 mil (em 31 de dezembro de
+                   2024 ò R$ 9.906.689 mil): autuações e glosas de compensações de créditos de
+                   Cofins, lançadas após o trânsito em julgado favorável em processo judicial, onde
+                   foi discutida a inconstitucionalidade da ampliação da base de cálculo pretendida
+                   para outras receitas que não as de faturamento (Lei nº 9.718/98);
+
+                   - IRPJ e CSLL ò Anos bases de 2006 a 2020 ò R$ 7.602.192 mil (em 31 de dezembro
+                   de 2024 ò R$ 9.429.961 mil): lançados sobre glosa de amortização de ágio na
+                   aquisição de investimentos;
+
+                   - Autuação de IRPJ e CSLL ò Anos bases de 2008 a 2019 ò R$ 3.348.309 mil (em 31
+                   de dezembro de 2024 ò R$ 3.216.302 mil): relativa à glosa de despesas com
+                   perdas no recebimento de créditos;
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                            62
+
+=== página 64 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+                  - PIS e COFINS ò Autuações e glosas de compensações ò R$ 1.922.932 mil (em 31
+                  de dezembro de 2024 ò R$ 1.919.536 mil): relativas à inconstitucional ampliação
+                  da base de cálculo pretendida para outras receitas que não as de faturamento
+                  (Lei nº 9.718/98), oriundas de empresas adquiridas;
+                  - Autuações de IRPJ e CSLL ò Anos bases de 2000 a 2014 ò R$ 1.006.076 mil (em
+                  31 de dezembro de 2024 ò R$ 1.280.106 mil): relativas às glosas de despesas e
+                  exclusões sobre receitas de superveniência de depreciação, despesas de
+                  insuficiência de depreciação, despesas de depreciação de bens arrendados,
+                  despesas e receitas operacionais e glosa de compensação de prejuízo fiscal;
+
+                  - Juros Sobre Capital Próprio (TJLP) ò Ano base 2019 ò R$ 206.249 mil (em 31 de
+                  dezembro de 2024 ò R$ 196.906 mil): autuações de IRPJ/CSLL relativas ao ano de
+                  2019 questionando a dedutibilidade nas bases de cálculo dos tributos acima da
+                  despesa relativa ao Juros Sobre Capital Próprio (TJLP); e
+
+                  - PLR ò Participação nos Lucros e Resultados ò Anos bases de 2009 a 2011 ò R$
+                  196.534 mil (em 31 de dezembro de 2024 ò R$ 192.607 mil): autuações para
+                  exigência de contribuição previdenciária sobre valores pagos aos empregados
+                  como participação nos lucros e resultados, por suposto desatendimento das
+                  regras contidas na Lei nº 10.101/00 oriundas de empresas adquiridas.
+
+ 23) OUTROS PASSIVOS
+     a) Outros passivos
+                                                                                                                      R$ mil
+                                                                               Em 30 de junho de       Em 31 de dezembro
+                                                                                     2025                   de 2024
+ Passivos financeiros                                                                 108.529.378               101.086.011
+ Operações de cartões de crédito (1)                                                    41.531.775              35.852.340
+ Operações de câmbio (2)                                                               43.671.304                41.677.829
+ Obrigações com cessões de crédito                                                       3.314.579                3.846.323
+ Planos de capitalização                                                               10.033.490                 9.707.588
+ Negociação e intermediação de valores                                                  6.408.075                 6.852.160
+ Passivo financeiro de arrendamento (Nota 23b)                                           3.570.155                 3.149.771
+
+ Outros passivos                                                                        63.934.543               55.381.892
+ Recursos em trânsito de terceiros (3)                                                    8.453.399                9.417.841
+ Provisão para pagamentos a efetuar                                                       13.283.110             13.036.420
+ Credores diversos                                                                        7.275.874                 6.591.177
+ Sociais e estatutárias                                                                 10.573.604                8.628.253
+ Outros impostos a pagar                                                                   1.513.432               1.827.943
+ Obrigação por aquisição de bens e direitos                                                 662.549                  929.055
+ Cobrança e arrecadação de tributos e assemelhados                                       6.804.990                   853.978
+ Obrigações por cotas de fundos de investimento                                           2.889.649               2.868.334
+ Outros (4)                                                                              12.477.936               11.228.891
+ Total                                                                                       172.463.921       156.467.903
+ (1) Referem-se a valores a pagar para estabelecimentos comerciais;
+ (2) Referem-se, basicamente, a vendas em moeda estrangeira efetuadas pela instituição a clientes e os direitos em moeda
+ nacional da instituição, decorrente de operações de venda de câmbio;
+ (3) Referem-se, basicamente, as ordens de pagamento emitidas no país e o valor das ordens de pagamento em moedas
+ estrangeiras provenientes do exterior; e
+ (4) Inclui, basicamente, créditos por recursos a liberar e obrigações por recursos de pagamentos.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                              63
+
+=== página 79 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+ 39) TRANSAÇÕES COM PARTES RELACIONADAS
+
+     A Organização também dispõe de política de transações com partes relacionadas que são divulgadas no site de Relações com Investidores.
+     Essas operações são realizadas em condições e taxas compatíveis com as médias praticadas com terceiros, vigentes nas datas das
+     operações. As principais transações estão assim representadas:
+
+                                                                                                                                                                                            R$ mil
+                                                                                                    Coligadas e de controle             Pessoal chave da
+                                                                   Controladores (1)                                                                                           Total
+                                                                                                      compartilhado (2)                 Administração (3)
+                                                                                  Em 31 de                         Em 31 de                        Em 31 de                           Em 31 de
+                                                              Em 30 de                             Em 30 de                         Em 30 de                         Em 30 de
+                                                                                dezembro de                      dezembro de                     dezembro de                        dezembro de
+                                                            junho de 2025                        junho de 2025                    junho de 2025                    junho de 2025
+                                                                                   2024                              2024                            2024                              2024
+ Ativo
+ Títulos e valores mobiliários e instrumentos financeiros
+                                                                          -                 -         642.242         569.106                 -                -         642.242          569.106
+ derivativos
+ Empréstimos e adiantamentos a clientes e outros ativos                   9                9         4.742.840       2.850.123          185.163         168.778        4.928.012        3.018.910
+ Passivo
+ Recursos de clientes e instituições financeiras                 5.292.004         3.984.694         1.499.333        1.135.148         356.122         457.928        7.147.459        5.577.770
+ Recursos de emissão de títulos e dívidas subordinadas           25.561.376        22.980.518                -                -        1.483.111         711.521      27.044.487       23.692.039
+ Instrumentos financeiros derivativos                                     -                 -           51.088                -               -                -          51.088                 -
+ Outros passivos (4)                                              2.782.565         2.873.187       12.992.493      13.384.216            7.012            1.527      15.782.070       16.258.930
+
+
+
+                                                                                                                                                              Acumulado em 30 de junho - R$ mil
+                                                                                                    Coligadas e de controle            Pessoal chave da
+                                                                    Controladores (1)                                                                                          Total
+                                                                                                      compartilhado (2)                Administração (3)
+                                                                   2025             2024             2025            2024             2025          2024               2025            2024
+ Resultado
+ Resultado líquido de juros                                       (1.965.282)      (1.386.090)        (222.245)          31.938        (110.862)        (73.359)      (2.298.389)       (1.427.511)
+ Receita de prestação de serviços                                         80               66           209.312         77.854               191              45         209.583           77.965
+ Outras despesas, líquidas de outras receitas operacionais            98.601           51.255       (1.357.416)      (1.403.707)       (36.664)         (17.097)      (1.295.479)      (1.369.549)
+ (1) Cidade de Deus Cia. Coml. de Participações, Fundação Bradesco, NCF Participações S.A., BBD Participações S.A. e Nova Cidade de Deus Participações S.A. e NCD Participações Ltda.;
+ (2) Empresas relacionadas na Nota 13;
+ (3) Membros do Conselho de Administração e Diretoria; e
+ (4) Inclui juros sobre capital próprio.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                                                               78
+
+=== página 80 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+     a) Remuneração do pessoal-chave da Administração
+
+         Anualmente, na Assembleia Geral Ordinária são fixados:
+
+         • O montante global anual da remuneração dos Administradores, que é definido em
+             reunião do Conselho de Administração, a ser paga aos membros do próprio Conselho
+             e da Diretoria, conforme determina o Estatuto Social; e
+
+         • A    verba destinada a custear Planos de Previdência complementar dos
+             Administradores, dentro do Plano de Previdência destinado aos Funcionários e
+             Administradores da Organização Bradesco (Bradesco S.A. e demais empresas do
+             conglomerado).
+
+         Para 2025, foi determinado o valor máximo de R$ 1.183.531 mil para remuneração dos
+         Administradores e de R$ 53.824 mil para custear planos de previdência de contribuição
+         definida.
+
+         Ainda em relação à remuneração da Administração, a atual política estabelece que 50%
+         do valor líquido da remuneração variável, caso haja, deve ser destinada à aquisição de
+         ações PNB de emissão da BBD Participações S.A. e/ou de ações PN de emissão do Banco
+         Bradesco S.A., que terão sua movimentação disponível em três parcelas iguais, anuais e
+         sucessivas, vencendo a primeira parcela no ano subsequente da data de pagamento.
+         Este procedimento está aderente às Resoluções da CMN nº 5.177/24 e nº 432/24, que
+         dispõe sobre a política de remuneração de administradores das instituições financeiras.
+
+         O Bradesco não possui benefícios de longo prazo de rescisão de contrato de trabalho
+         ou remuneração em instrumento baseado em ações, nos termos do CPC 10 ò Pagamento
+         Baseado em Ações, aprovado pela Resolução CMN nº 3.989/11, para seu pessoal-chave
+         da Administração.
+                                                                                                                      R$ mil
+                                                                        2° trimestre              Acumulado em 30 de junho
+                                                                    2025            2024             2025            2024
+ Remuneração de curto, médio e longo prazo                            292.982          124.542         569.998         244.879
+ Pós Emprego - Planos de previdência                                    11.944          134.211         25.895         265.051
+ Total                                                                304.926          258.753         595.893         509.930
+
+
+
+     b) Participação acionária
+
+           Os membros do Conselho de Administração e da Diretoria possuíam em conjunto,
+           diretamente, a seguinte participação acionária no Bradesco:
+
+                Participação acionária direta                     Em 30 de junho de 2025          Em 31 de dezembro de 2024
+
+ Ações ordinárias                                                                       0,32%                           0,32%
+ Ações preferenciais                                                                    1,00%                           0,93%
+ Total de ações (1)                                                                       0,66%                           0,63%
+ (1) Em 30 de junho de 2025, a participação acionária direta e indireta dos membros do Conselho de Administração e da Diretoria
+ no Bradesco totalizou 2,12% de ações ordinárias, 1,04% de ações preferenciais e 1,58% do total de ações (em 31 de dezembro
+ de 2024 - 1,62% de ações ordinárias, 0,96% de ações preferenciais e 1,29% do total de ações).
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                              79
+
+=== página 81 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+ 40)   GERENCIAMENTO DE RISCOS
+
+    A atividade de gerenciamento de riscos é altamente estratégica em virtude da crescente
+    complexidade dos produtos e serviços e da globalização dos negócios da Organização. O
+    dinamismo dos mercados conduz a Organização a um constante aprimoramento desta
+    atividade.
+
+    A Organização exerce o controle corporativo dos riscos de modo integrado e
+    independente, preservando e valorizando o ambiente de decisões colegiadas,
+    desenvolvendo e implementando metodologias, modelos e ferramentas de mensuração e
+    controle. Promove a disseminação da cultura de riscos a todos os funcionários, em todos
+    os níveis hierárquicos, desde as áreas de negócios até o Conselho de Administração.
+
+    Informações detalhadas a respeito do processo de gerenciamento de riscos, patrimônio de
+    referência, bem como das exposições a riscos da Organização podem ser encontradas no
+    Relatório de Gerenciamento de Riscos ò Pilar 3, disponível no site de Relações com
+    Investidores (www.bradescori.com.br ò Informações ao Mercado ò Relatórios e Planilhas -
+    Gerenciamento de Riscos).
+
+    40.1. Gerenciamento de capital
+
+    O Índice de Basileia é um dos principais indicadores acompanhados no processo de
+    Gerenciamento de Capital, com o objetivo de mensurar a suficiência de capital em relação
+    à exposição aos riscos. A tabela a seguir apresenta a composição do Patrimônio de
+    Referência e dos Ativos Ponderados pelo Risco, conforme as normas estabelecidas pelo
+    Bacen. No período analisado, o Bradesco manteve conformidade com todos os
+    requerimentos mínimos regulatórios.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                            80
+
+=== página 83 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+
+
+     •   Estágio 1: Ativos financeiros que não apresentaram aumento significativo no risco de
+         crédito;
+     •   Estágio 2: Ativos financeiros que apresentaram aumento significativo no risco de
+         crédito; e
+     •   Estágio 3: Ativos financeiros que apresentaram indicativos de que não serão honrados
+         integralmente.
+
+    O aumento significativo no risco de crédito é avaliado com base em diferentes indicadores
+    para classificação em estágios, de acordo com o perfil do cliente, o tipo do produto e o
+    status de pagamento atual, conforme demonstramos abaixo:
+
+    Segmento Varejo:
+
+    • Estágio 1: Ativos financeiros que estão com as obrigações em dia ou vencidas até 30 dias
+      e cuja classificação de risco de crédito do cliente seja baixo risco;
+    • Estágio 2 (Aumento significativo de risco de crédito): Ativos financeiros que estão com
+      as obrigações vencidas entre 31 e 90 dias ou cujo rating interno dos clientes migraram
+      de baixo risco para médio ou alto risco;
+    • Estágio 3 (Descumprimento ou “impaired”): Ativos financeiros que estão com as
+      obrigações vencidas acima de 90 dias ou que apresentaram eventos falimentares,
+      recuperação judicial ou reestruturação de dívidas
+    • Recategorização do estágio 3 para estágio 2: Ativos financeiros que regularizaram os
+      valores vencidos e os ratings internos migraram para médio risco;
+    • Recategorização do estágio 2 para estágio 1: Ativos financeiros que regularizaram os
+      valores vencidos e os ratings internos migraram para baixo risco; e
+    • Recategorização do estágio 3 para o estágio 1: Ativos financeiros que retornaram o
+      pagamento regular levando à reclassificação como baixo risco.
+
+    Segmento Atacado:
+
+    • Estágio 1: Ativos financeiros que estão com as obrigações em dia ou vencidas até 30 dias
+      e cuja classificação de risco de crédito do cliente seja baixo risco;
+    • Estágio 2 (Aumento significativo de risco de crédito): Ativos financeiros que estão com
+      as obrigações vencidas entre 31 e 90 dias ou cujo rating interno dos clientes migraram
+      de baixo risco para médio ou alto risco;
+    • Estágio 3 (Descumprimento ou “impaired”): Ativos financeiros que estão com as
+      obrigações relevantes vencidas acima de 90 dias ou que apresentaram eventos
+      falimentares, recuperação judicial, reestruturação de dívidas ou necessidade de
+      execução de garantias;
+    • Recategorização do estágio 3 para estágio 2: Ativos financeiros que não atentaram aos
+      critérios do estágio 3 e os ratings internos migraram para médio risco;
+    • Recategorização do estágio 2 para estágio 1: Ativos financeiros que regularizaram os
+      valores vencidos e os ratings internos migraram para baixo risco; e
+    • Recategorização do estágio 3 para o estágio 1: Ativos financeiros que retornaram o
+      pagamento regular levando à reclassificação como baixo risco.
+
+    As perdas esperadas são baseadas na multiplicação dos parâmetros de risco de crédito:
+    Probabilidade de descumprimento (PD), Perda dado o descumprimento (LGD) e Exposição
+    ao descumprimento (EAD).
+
+    O parâmetro PD refere-se à probabilidade de descumprimento percebida pela Organização
+    sobre o cliente, conforme modelos internos de avaliação, que no varejo utilizam
+    metodologias estatísticas baseadas nas características do cliente, tais como rating interno
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                               82
+
+=== página 84 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+     e segmento de negócio, e da operação, tais como produto e garantia e no caso do atacado
+     utilizam modelos especialistas baseados em informações financeiras e análises
+     qualitativas.
+
+     O LGD refere-se ao percentual de perda em relação a exposição em caso de
+     descumprimento, considerando todos os esforços de recuperação, conforme modelo
+     interno de avaliação que utilizam metodologias estatísticas baseadas nas características
+     da operação, tais como produto e garantia.
+
+     Clientes com exposição significativa possuem estimativas baseadas em análise individuais,
+     que são embasadas na estrutura da operação e no conhecimento de especialista, visando
+     capturar à complexidade e as particularidades de cada operação.
+
+     O EAD refere-se à exposição (valor contábil) do cliente perante a Organização no momento
+     da estimação da perda esperada. No caso de compromissos ou garantias financeiras
+     prestadas, o EAD terá a adição do valor esperado dos compromissos ou garantias
+     financeiras prestadas que serão convertidos em crédito em caso de descumprimento do
+     cliente.
+
+     Exposição ao risco de crédito
+
+     A tabela a seguir apresenta a exposição máxima ao risco de crédito dos instrumentos
+     financeiros:
+
+                                                                                                                        R$ mil
+                                                                       Em 30 de junho de              Em 31 de dezembro de
+                                                                              2025                             2024
+                                                                                    Perda                            Perda
+                                                                    Valor bruto                      Valor bruto
+                                                                                   esperada                         esperada
+ Ativos financeiros
+ Caixa e disponibilidades em bancos (Nota 5)                           137.116.616              -      146.614.670             -
+ Ativos financeiros ao valor justo por meio do resultado (Nota 6)    449.955.829       (286.996)       371.883.348             -
+ Ativos financeiros ao valor justo por meio de outros resultados
+                                                                     124.469.594         (26.648)      156.292.584       (14.306)
+ abrangentes (Nota 8) (1)
+ Empréstimos e adiantamentos a instituições financeiras (Nota 10)    223.126.155            -          196.421.127      (187.829)
+ Empréstimos e adiantamentos a clientes (Nota 11)                    737.676.614 (47.646.026)         720.239.586    (47.857.481)
+ Títulos e valores mobiliários ao custo amortizado (Nota 9)          260.727.856      (5.924.253)      273.148.967   (6.157.000)
+ Outros ativos financeiros (Nota 16)                                  84.060.956                -       81.195.242             -
+ Provisão para perda esperada
+ Compromissos de Empréstimos (Nota 11 e 24)                          341.768.603       (2.141.574)    342.660.453     (2.447.791)
+ Garantias financeiras (Nota 11 e 24)                                 118.201.874     (1.395.568)      119.229.609    (1.257.645)
+ Total da exposição                                                  2.477.104.097 (57.421.065) 2.407.685.586 (57.922.052)
+ (1) Os ativos financeiros mensurados ao valor justo por meio de outros resultados abrangentes não são reduzidos pela provisão
+ para perda.
+
+
+     Empréstimos e adiantamentos a clientes
+
+             Concentração do risco de crédito
+
+                                                                                                                    R$ mil
+                                                                                     Em 30 de junho de Em 31 de dezembro
+                                                                                           2025             de 2024
+ Maior devedor                                                                                    0,5%               0,7%
+ Dez maiores devedores                                                                               3,5%                  4,4%
+ Vinte maiores devedores                                                                             5,3%                  7,0%
+ Cinquenta maiores devedores                                                                         8,6%                 10,9%
+ Cem maiores devedores                                                                               11,5%                14,0%
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                               83
+
+=== página 85 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+               Por setor de atividade
+
+               A análise de concentração de risco de crédito apresentada abaixo está baseada no
+               setor de atividade no qual a contraparte atua.
+
+                                                                                                       R$ mil
+                                                            Em 30 de                    Em 31 de
+                                                            junho de       %          dezembro de      %
+                                                              2025                       2024
+ Setor público                                                 6.813.286       0,9        6.853.540        1,0
+ Setor privado                                              730.863.328     99,1        713.386.046     99,0
+ Total                                                      737.676.614    100,0        720.239.586    100,0
+ Pessoa jurídica                                             316.290.614    42,9        316.936.343     44,0
+ Atividades imobiliárias e construção                        23.502.700        3,2       23.610.490        3,3
+ Varejo                                                       36.937.116        5,0      37.709.778        5,2
+ Serviços                                                     91.418.356       12,4      79.995.896        11,1
+ Transportes e concessão                                      27.410.550       3,7       28.680.534        4,0
+ Automobilística                                               7.388.278        1,0       7.553.422         1,0
+ Alimentícia                                                  13.206.048        1,8      13.677.857         1,9
+ Atacado                                                      19.683.916       2,7       20.378.978        2,8
+ Energia elétrica                                              8.198.813        1,1       8.633.777         1,2
+ Petróleo, derivados e atividades agregadas                    6.196.999       0,8        6.918.329         1,0
+ Demais setores                                              82.347.838        11,2      89.777.282        12,5
+ Pessoa física                                              421.386.000        57,1     403.303.243     56,0
+
+
+               Mitigação do risco de crédito
+
+               As perdas potenciais de crédito são mitigadas pela utilização de diversos tipos de
+               garantias reais, formalizadas por meio de instrumentos jurídicos como alienações
+               fiduciárias, hipotecas, pela utilização de garantias fidejussórias, tais como avais e
+               fianças de terceiros, ou ainda pela utilização de instrumentos financeiros, como os
+               derivativos de crédito, ou acordos de compensação (netting). A avaliação da
+               eficiência desses instrumentos é realizada considerando o tempo para recuperação
+               e realização do bem dado em garantia, o seu valor de mercado, o risco de contraparte
+               dos garantidores e a segurança jurídica dos contratos. Os principais tipos de garantias
+               reais são: depósitos a prazo; aplicações financeiras e títulos e valores mobiliários;
+               imóveis residenciais e comerciais; bens móveis como veículos, aeronaves; incluem-se
+               ainda entre as garantias reais, títulos comerciais como duplicatas, cheques e faturas
+               de cartão de crédito. Entre os avais e fianças destacam-se as garantias bancárias.
+
+               Os derivativos de crédito são contratos bilaterais no qual uma das contrapartes
+               compra proteção contra um risco de crédito de um determinado instrumento
+               financeiro e seu risco é transferido para a contraparte vendedora da proteção.
+               Normalmente, esta recebe uma remuneração ao longo da vigência da operação. No
+               caso de descumprimento do tomador (default), a contraparte que comprou a
+               proteção receberá um pagamento, cujo objetivo é compensar a perda de valor no
+               instrumento financeiro. Nesse caso, a contraparte vendedora recebe o ativo
+               subjacente em troca do referido pagamento.
+
+               No quadro abaixo está demonstrado o valor justo das garantias nas operações de
+               empréstimos e adiantamentos a clientes.
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                             84
+
+=== página 86 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+                                                                                                                       R$ mil
+                                                                 Em 30 de junho de 2025         Em 31 de dezembro de 2024
+                                                                   Valor      Valor Justo          Valor      Valor Justo
+                                                                Contábil (1)  da Garantia       Contábil (1)  da Garantia
+ Pessoa Jurídica                                                 316.290.614   221.477.539       316.936.343   177.693.556
+ Estágio 1                                                        283.123.578     204.211.178     284.237.991     167.357.458
+ Estágio 2                                                         8.679.068        6.726.816       6.946.383        5.014.721
+ Estágio 3                                                        24.487.968       10.539.545      25.751.969        5.321.377
+
+
+ Pessoa Física                                                   421.386.000     389.433.792     403.303.243      278.052.177
+ Estágio 1                                                       363.553.329     354.658.352       347.118.719   248.932.254
+ Estágio 2                                                         24.577.743     20.726.924        21.911.700     18.284.746
+ Estágio 3                                                        33.254.928       14.048.516      34.272.824       10.835.177
+ Total                                                             737.676.614      610.911.331  720.239.586      455.745.733
+ (1) Do saldo contábil total de operações de crédito R$ 320.106.836 mil (Em 31 de dezembro 2024 - R$ 438.532.231 mil) referem-
+ se a operações sem garantias.
+
+
+             40.3. Risco de mercado
+
+             Exposição financeira – Carteira Trading (Valor Justo)
+
+                                                                                                                       R$ mil
+                       Fatores de Riscos                         Em 30 de junho de 2025         Em 31 de dezembro de 2024
+                                                                  Ativo           Passivo          Ativo          Passivo
+ Prefixado                                                        48.665.123       23.524.175    124.477.896       10.549.194
+ IGP-M (Índice Geral de Preços do Mercado) / IPCA (Índice de
+                                                                   4.561.556        2.517.763       2.438.885       2.010.863
+ Preços ao Consumidor Amplo)
+ Cupom cambial                                                       403.418           12.305          668.191               -
+ Moedas estrangeiras                                              10.392.821      10.059.585       14.134.242      13.689.527
+ Renda variável                                                    9.232.714        9.208.011      10.344.471       9.979.524
+ Soberanos/eurobonds e treasuries                                  18.736.521     15.745.478       21.988.976      19.627.310
+ Outros                                                            4.987.955         530.783        2.839.750         235.287
+ Total                                                           96.980.108       61.598.100      176.892.411      56.091.705
+
+
+             VaR Modelo Interno – Carteira Trading
+
+             O VaR da Carteira Trading, líquido de efeitos fiscais e com o horizonte de 1 dia, foi de
+             R$ 19.220 mil, no final do segundo trimestre de 2025 tendo o fator de risco Prefixado
+             como a maior participação no risco da Carteira.
+
+                                                                                                                  R$ mil
+                                Fatores de Riscos                                  Em 30 de junho de Em 31 de dezembro
+                                                                                         2025             de 2024
+ Prefixado                                                                                      8.816              1.395
+ IGP-M / IPCA                                                                                    7.262                  5.403
+ Cupom cambial                                                                                      109                     181
+ Moedas estrangeiras                                                                             3.905                  4.580
+ Soberanos/eurobonds e treasuries                                                                2.994                   4.112
+ Renda variável                                                                                   1.135                 2.829
+ Outros                                                                                           6.016                  7.155
+ Efeito correlação/diversificação                                                               (11.017)              (9.480)
+ VaR no final do ano                                                                            19.220                 16.175
+
+
+ VaR médio no ano                                                                                19.492                 14.916
+ VaR mínimo no ano                                                                              10.289                  4.982
+ VaR máximo no ano                                                                              33.668                 45.150
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                            85
+
+=== página 87 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+              VaR Modelo Interno – Carteira Regulatória
+
+              O capital é calculado pelo modelo VaR Delta-Normal com base na Carteira Regulatória,
+              composta pela Carteira Trading e as exposições Cambial e de Commodities da Carteira
+              Banking. Adicionalmente, para a mensuração de todos os fatores de risco da carteira
+              de opções, são aplicados os modelos de riscos de simulação histórica e o Delta-Gama-
+              Vega, prevalecendo o mais conservador entre os dois, sendo este risco de opção
+              adicionado ao VaR da Carteira. Cabe destacar que, o valor em risco é extrapolado para
+              o horizonte regulatório(1) (maior entre 10 dias e o horizonte da carteira) pelo método
+              da raiz do tempo. Os valores de VaR e VaR Estressado demonstrados a seguir são para
+              o horizonte de dez dias e estão líquidos de efeitos fiscais.
+
+                                                                                                                                         R$ mil
+                     Fatores de Riscos                              Em 30 de junho de 2025                 Em 31 de dezembro de 2024
+                                                                     VaR            VaR Estressado             VaR            VaR Estressado
+ Taxa de juros                                                           58.001               81.039               20.444               23.846
+ Taxa de câmbio                                                            17.297             37.435               24.497               21.405
+ Preço de mercadoria (Commodities)                                           717                2.167                  995               2.247
+ Preço de ações                                                             3.641               5.357                23.212             30.064
+ Efeito correlação/diversificação                                       (16.804)            (46.740)              (19.896)            (28.643)
+ VaR no final do ano                                                     62.852               79.258               49.252               48.919
+
+
+ VaR médio no ano                                                        59.747               65.927               67.082               98.963
+ VaR mínimo no ano                                                       34.162               25.537               32.264               33.126
+ VaR máximo no ano                                                      107.226              128.374              124.674              272.495
+ Obs.: VaR para o horizonte de 10 dias e líquidos de efeitos fiscais.
+
+
+              Para efeito da apuração da necessidade de capital regulamentar, segundo o modelo
+              interno, deve-se levar em consideração as regras descritas nas Circulares nº 3.646/13
+              e nº 3.674/13 do Banco Central do Brasil, como o uso do VaR e do VaR Estressado sem
+              efeitos fiscais, da média dos últimos 60 dias e seu multiplicador.
+
+              VaR Modelo Interno – Backtesting
+
+              A metodologia de risco aplicada é avaliada, continuamente, através de técnicas de
+              backtesting, que consistem na comparação do VaR com período de manutenção de 1
+              dia e o resultado hipotético, obtido com as mesmas posições utilizadas no cálculo do
+              VaR, e o resultado efetivo, aqui considerando também a movimentação do dia para o
+              qual o VaR foi estimado.
+
+              O principal objetivo deste acompanhamento é monitorar, validar e avaliar a aderência
+              do modelo de VaR, sendo que o número de rompimentos ocorridos deve ser
+              compatível com o número de rompimentos aceitos pelos testes estatísticos realizados
+              para o nível de confiança estabelecido. Outro objetivo é aprimorar os modelos
+              utilizados pela Organização, através das análises realizadas para diferentes períodos
+              de observação e níveis de confiança do VaR, tanto para o VaR Total como por fator de
+              risco.
+
+              Os resultados diários correspondentes aos últimos 250 dias úteis, superaram o
+              respectivo VaR com o nível de confiança de 99%, duas vezes na visão hipotética e três
+              vezes na visão e efetiva, em junho de 2025. Em dezembro de 2024 os resultados diários
+              correspondentes aos últimos 250 dias úteis superaram o respectivo VaR com o nível
+
+
+(1)
+      É adotado o máximo entre o período de manutenção (holding period) da carteira e 10 dias, que é o horizonte regulatório mínimo exigido pelo
+      Banco Central do Brasil.
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                             86
+
+=== página 88 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+               de confiança de 99% duas vezes na visão hipotética e três vezes na visão efetiva.
+
+               De acordo com o documento publicado pelo Basel Committee on Banking
+               Supervision(2)ÒgsrgdoZdRevgssRrZEdNcEssZWZNEPgsNgdgúF-sorte ou os mercados
+               sR dg|RrEd PR WgrdE eKg orR|ZsvE oRcg dgPRcgûÒ gw seja, a volatilidade foi,
+               significativamente, maior do que o esperado e/ou as correlações foram diferentes
+               daquelas assumidas pelo modelo.
+
+               Análise de Estresse – Carteira Trading
+
+               A Organização avalia, também, diariamente, os possíveis impactos nas posições em
+               cenários de estresse para um horizonte de 20 dias úteis, com limite estabelecido no
+               processo de governança. Dessa forma, considerando o efeito de diversificação entre
+               os fatores de risco e os valores líquidos de efeitos fiscais.
+
+                                                                                                                                 R$ mil
+                                                                                                  Em 30 de junho de Em 31 de dezembro
+                                                                                                        2025             de 2024
+ No final do ano                                                                                              160.461           124.714
+ Médio do ano                                                                                                 101.505           238.134
+ Mínimo do ano                                                                                                   50.950                    98.257
+ Máximo do ano                                                                                                 207.007                    473.851
+ Obs.: Valores líquidos de efeitos fiscais.
+
+
+               Análise de sensibilidade das exposições financeiras
+
+               As análises de sensibilidade das exposições financeiras (Carteiras Trading e Banking)
+               da Organização, foram efetuadas a partir dos cenários elaborados para as respectivas
+               datas, sempre considerando as informações de mercado na época e cenários que
+               afetariam negativamente nossas posições, conforme exemplos abaixo:
+
+               Cenário 1: Com base nas informações de mercado (B3, Anbima, etc.) foram aplicados
+               choques de 1 ponto base para taxa de juros e 1,0% de variação para preços;
+
+               Cenário 2: Foram determinados choques de 25,0% com base no mercado; e
+
+               Cenário 3: Foram determinados choques de 50,0% com base no mercado.
+
+               Os resultados apresentados revelam os impactos para cada cenário numa posição
+               estática da carteira. O dinamismo do mercado e das carteiras faz com que essas
+               posições se alterem continuamente e não obrigatoriamente reflitam a posição aqui
+               demonstrada. Além disso, a Organização possui um processo de gestão contínua do
+               risco de mercado, que procura, constantemente, formas de mitigar os riscos
+               associados, de acordo com a estratégia determinada pela Alta Administração. Assim,
+               em casos de sinais de deterioração de determinada posição, ações proativas são
+               tomadas para minimização de possíveis impactos negativos, visando maximizar a
+               relação risco retorno para a Organização.
+
+
+
+
+(2)
+      O Comitê de Supervisão Bancária da Basileia é uma organização que congrega autoridades de supervisão bancária, visando a fortalecer a solidez
+       dos sistemas financeiros.
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                                87
+
+=== página 95 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+            As tabelas a seguir demonstram os ganhos/(perdas) devido a variações no valor justo,
+            incluindo os ganhos e perdas realizados e não realizados, registrados no resultado
+            para os instrumentos financeiros ativos e passivos classificados no Nível 3:
+
+                                                                                                                               R$ mil
+                                                                                                     Ativos
+                                                                                Ativos
+                                                                                                 financeiros ao
+                                                                           financeiros ao
+                                                                                                 valor justo por
+                                                                           valor justo por                                 Total
+                                                                                                 meio de outros
+                                                                               meio do
+                                                                                                   resultados
+                                                                              resultado
+                                                                                                  abrangentes
+ Resultado líquido de juros                                                             4.206              17.238              21.444
+ Ganhos/(perdas) líquidos realizados e não realizados                                  103.771           (43.929)              59.842
+ Total em 30 de junho de 2024                                                       107.977              (26.691)              81.286
+
+
+ Resultado líquido de juros                                                         477.526                 8.495             486.021
+ Ganhos/(perdas) líquidos realizados e não realizados                                  191.791          (153.094)              38.697
+ Total em 30 de junho de 2025                                                       669.317            (144.599)              524.718
+
+
+            Análise de sensibilidade dos ativos financeiros classificados como Nível 3
+
+                                                                                                                               R$ mil
+                                                                               Em 30 de junho de 2025
+                                                        Impacto no resultado (1)                   Impacto no patrimônio (1)
+                                                        1          2               3               1            2              3
+ Taxa de juros em reais                                     (2)        (758)       (1.459)              -           (19)           (37)
+ Índices de preços                                             -       (11)            (21)             -             -              -
+ Cupom cambial                                              (21)   (2.405)         (4.702)              -             -              -
+ Moeda estrangeira                                          982    24.558           49.116              -             -              -
+ Renda variável                                         10.927     273.185        546.369           5.254      131.354       262.708
+ (1) Valores líquidos de efeitos fiscais.
+
+
+            As análises de sensibilidade foram efetuadas a partir dos cenários elaborados para as
+            datas indicadas, sempre considerando as informações de mercado na época e cenários
+            que afetariam negativamente nossas posições, conforme os cenários abaixo:
+
+            Cenário 1: Com base nas informações de mercado (B3, Anbima, etc.) foram aplicados
+            choques de 1 ponto base para taxa de juros e 1,0% de variação para preços;
+
+            Cenário 2: Foram determinados choques de 25,0% com base no mercado; e
+
+            Cenário 3: Foram determinados choques de 50,0% com base no mercado.
+
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                      94
+
+=== página 96 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+            Instrumentos financeiros não mensurados ao valor justo
+
+            A tabela abaixo resume os valores contábeis e os valores justos dos ativos e passivos
+            financeiros que não foram apresentados no balanço patrimonial ao seu valor justo,
+            classificados pelos níveis hierárquicos:
+                                                                                                                                       R$ mil
+                                                                                      Em 30 de junho de 2025
+                                                                                     Valor Justo                                    Valor
+                                                              Nível 1           Nível 2         Nível 3           Total            Contábil
+ Ativos financeiros (1)
+ Empréstimos e adiantamentos
+ · a instituições financeiras                                            -     223.140.442                -   223.140.442          223.126.155
+ · a clientes                                                            -                -   570.663.284     570.663.284         737.676.614
+ Títulos e valores mobiliários ao custo amortizado        140.875.779           97.910.868      12.182.469      250.969.116       260.727.856
+
+
+ Passivos financeiros
+ Recursos de instituições financeiras                                    -                -   372.248.449     372.248.449         372.472.858
+ Recursos de clientes                                                    -                -    636.158.560    636.158.560         639.264.910
+ Recursos de emissão de títulos                                          -                -    282.655.131      282.655.131       281.390.177
+ Dívidas subordinadas                                                    -                -    62.044.896       62.044.896         60.253.618
+
+
+
+                                                                                                                                       R$ mil
+                                                                                    Em 31 de dezembro de 2024
+                                                                                     Valor Justo                                    Valor
+                                                              Nível 1           Nível 2         Nível 3           Total            Contábil
+ Ativos financeiros (1)
+ Empréstimos e adiantamentos
+ · a instituições financeiras                                            -     196.235.524                -   196.235.524         196.233.298
+ · a clientes                                                       -                   -      727.760.109    727.760.109         720.239.586
+ Títulos e valores mobiliários ao custo amortizado        151.449.296          98.794.868       10.067.466    260.311.630         273.148.967
+
+
+ Passivos financeiros
+ Recursos de instituições financeiras                                    -                -    374.212.384    374.212.384          361.818.310
+ Recursos de clientes                                                    -                -   644.856.874     644.856.874         644.338.463
+ Recursos de emissão de títulos                                          -                -   259.054.688     259.054.688         257.977.344
+ Dívidas subordinadas                                                    -                -    58.990.729       58.990.729         57.458.927
+ (1) Os valores de empréstimos e adiantamentos estão apresentados líquidos da provisão para perdas ao valor recuperável.
+
+
+            40.6. Risco de seguro/subscrição
+
+            Concentração de riscos
+            A Companhia atua em todo território nacional, de modo que as potenciais exposições
+            à concentração de riscos são monitoradas por relatórios gerenciais onde são
+            observados os resultados dos contratos vendidos no âmbito do negócio por ramo de
+            atuação. O quadro abaixo mostra a concentração de riscos baseada nos valores de
+            passivos de seguros:
+                                                                                                                                       R$ mil
+                                                                                       Em 30 de junho
+                Passivos de seguros
+                                                                        2025                                        2024
+                                                      Bruto       Resseguro          Líquido         Bruto       Resseguro          Líquido
+ Vida                                                24.147.912          29.227      24.118.685    22.956.820        42.056        22.914.764
+ Previdência                                     353.589.554                  - 353.589.554 318.741.450                   - 318.741.450
+ Não vida                                           3.491.116            29.554   3.461.562   3.501.328              29.429   3.471.899
+ Saúde                                               17.917.787                 -    17.917.787    14.324.936                 -    14.324.936
+
+
+
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                               95
+
+=== página 97 ===
+RdgesvrEOmRsZeEeNRZrEs gesgcZPEPEsRd-.İNotas Explicativas
+            Teste de sensibilidade
+
+            O objetivo do teste de sensibilidade é mensurar impactos, caso ocorram alterações
+            isoladas, razoavelmente possíveis, em premissas inerentes às operações da
+            Companhia que possam ser afetadas devido ao processo de subscrição dos riscos e
+            que sejam consideradas relevantes na data do balanço.
+
+            Como fatores de risco, elegeram-se as seguintes premissas:
+
+                 •   Taxa de juros livre de risco ò representa o nível mínimo de rentabilidade que
+                     pode ser tomado como certo pela Companhia. O teste avaliou o impacto de um
+                     aumento na curva da taxa de juros livre de risco;
+                 •   Conversão em renda ò O teste avaliou o impacto de um aumento no índice de
+                     conversão em renda para contratos de anuidade;
+                 •   Longevidade (Improvement) ò representa a expectativa de vida de um indivíduo,
+                     com base no ano de seu nascimento, sua idade atual e outros fatores
+                     demográficos, incluindo sexo. O teste avaliou o impacto de um aumento na
+                     estimativa de melhoria na expectativa de vida para contratos de anuidade; e
+                 •   Sinistralidade ò é o principal indicador dos contratos de seguros e equivale à
+                     relação entre as despesas e a receita que a Companhia recebeu pelo contrato.
+                     O teste avaliou o impacto de um aumento na sinistralidade.
+
+            Resultados do teste de sensibilidade
+
+            O quadro abaixo apresenta o impacto no resultado e patrimônio líquido da Companhia
+            para os seguros de vida com cobertura de sobrevivência, previdência e vida individual,
+            considerando variações nas premissas mencionadas anteriormente:
+
+ Taxa de Juros - Variação de +5% (*)                                                               Em 30 de junho de 2025 (**)
+ Previdência                                                                                                                 (60.806)
+ (*) Para melhor refletir o risco da taxa de juros, foi sensibilizada a rentabilidade projetada dos saldos e não foi sensibilizada a
+ taxa bottom-up, utilizada para descontar os fluxos.
+ Conversão em Renda - Variação de + 5%                                                             Em 30 de junho de 2025 (**)
+ Previdência                                                                                                                 (40.447)
+
+ Longevidade (Improvement) - Variação de +0,2%                                                Em 30 de junho de 2025 (**)
+ Previdência                                                                                                       (142.544)
+ (**) O resseguro não está sujeito à aplicação do choque, pois trata-se de contrato não proporcional e imaterial.
+
+
+            Para os seguros não vida, vida exceto vida individual, e saúde incluindo odontológico,
+            o quadro abaixo apresenta o resultado do impacto no resultado e patrimônio líquido
+            da Companhia caso houvesse variação na sinistralidade:
+
+                                                                                                                               R$ mil
+
+            Sensibilidade - Variação de 1%                    Bruto de resseguro                      Líquido de resseguro
+                                                        Em 30 de junho Em 30 de junho            Em 30 de junho Em 30 de junho
+                                                           de 2025          de 2024                 de 2025          de 2024
+ Não Vida                                                      (29.194)         (27.729)                (29.051)         (27.598)
+ Vida                                                             (18.988)            (17.590)           (18.893)            (17.506)
+ Saúde                                                           (119.017)          (108.808)           (119.065)           (108.808)
+
+
+
+ 41) PLANOS FECHADOS DE PREVIDÊNCIA COMPLEMENTAR
+
+        As despesas totais com contribuições efetuadas, no acumulado em 30 de junho de 2025,
+        foram de R$ 220.388 mil (Em 30 de junho de 2024 ò R$ 573.423 mil).
+BRADESCO | Demonstrações Financeiras Consolidadas em IFRS                                                                      96

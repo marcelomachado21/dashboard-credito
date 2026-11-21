@@ -1,0 +1,976 @@
+
+=== página 20 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                desembolso é incerta e não está sob o controle do C6 Bank, estão mensurados a valor presente uma vez que
+                são reconhecidos inicialmente pelo valor de desembolso estimado na data da avaliação e são atualizados
+                mensalmente.
+
+
+                C A IX A E EQUIVA LENTES DE CA IXA
+                Caixa e equivalentes de caixa são representados por disponibilidades em moeda nacional, moeda
+                estrangeira, aplicações em operações compromissadas – posição bancada, aplicações em depósitos
+                interfinanceiros e aplicações em moedas estrangeiras, com alta liquidez e risco insignificante de mudança
+                de valor, cujo vencimento das operações, na data efetiva da aplicação, seja igual ou inferior a 90 dias.
+
+
+                A PL ICA ÇÕES INTERFINA NCEIRA S DE L IQUIDEZ
+                As aplicações interfinanceiras de liquidez são registradas pelo valor de aplicação ou aquisição, acrescido
+                dos rendimentos auferidos até a data do balanço, com base em remuneração estabelecida na data da
+                contratação e ajustadas por provisão para perdas, quando aplicável.
+
+
+                I NSTRUMENTOS FINA NCEIROS
+                Os títulos e valores mobiliários adquiridos para são registrados pelo valor efetivamente pago reduzido da
+                provisão para perda, quando julgado necessário, e classificados em função da intenção da Administração
+                em três categorias distintas, conforme regulamentação vigente:
+                Negociação: Adquiridos com o propósito de serem ativa e frequentemente negociados. São ajustados pelo
+                seu valor de mercado em contrapartida ao resultado do período;
+                Disponíveis para venda: Podem ser negociados a qualquer tempo, porém não são adquiridos com o
+                propósito de serem ativa e frequentemente negociados. São ajustados pelo seu valor de mercado em
+                contrapartida à conta destacada do patrimônio líquido, deduzidos dos efeitos tributários; e
+                Mantidos até o vencimento: Adquiridos com a intenção e capacidade financeira para sua manutenção em
+                carteira até o vencimento. São registrados pelo custo de aquisição, acrescidos dos rendimentos auferidos
+                em contrapartida ao resultado do período. Nesta categoria, os títulos não são ajustados ao seu valor de
+                mercado. Para os títulos reclassificados para esta categoria, o ajuste de marcação a mercado é incorporado
+                ao custo, sendo contabilizados prospectivamente pelo custo amortizado, usando o método da taxa de juros
+                efetiva.
+                A metodologia de ajuste a valor de mercado foi estabelecida com observância de critérios consistentes e
+                verificáveis, que levam em consideração o preço médio de negociação obtida por meio de cotação de
+                mercado na data da apuração, ou, na falta deste, o valor de ajuste diário das operações de mercado futuro
+                divulgados por fontes externas ou o valor líquido provável de realização obtido por meio de modelos de
+                precificação, utilizando curvas de valores futuros de taxas de juros, taxas de câmbio, índices de preços e
+                moedas, além de eventuais ajustes nos preços de títulos de baixa liquidez, todas devidamente aderentes aos
+                preços praticados no período. O valor de mercado contempla o risco de crédito do emissor (ajuste de
+                spread de crédito)
+                Os rendimentos auferidos com os títulos e valores mobiliários, independentemente da categoria em que
+                estão classificados, são apropriados pro rata dia, com base na variação do indexador e nas taxas de juros
+                pactuados, pelo método exponencial ou linear, até a data do vencimento ou da venda definitiva do título,
+                sendo reconhecidos diretamente no resultado do período.
+                As perdas com títulos classificados como disponíveis para venda e como mantidos até o vencimento que
+                não tenham caráter de perdas temporárias são reconhecidas diretamente no resultado do período e
+                passam a compor a nova base de custo do ativo.
+                Quando da alienação, a diferença apurada entre o valor da venda e o custo de aquisição atualizados pelos
+                rendimentos é considerada como resultado da transação, sendo contabilizada na data da operação como
+                lucro ou prejuízo com títulos e valores mobiliários.
+
+
+
+
+                                                                                                                       19
+
+
+Classificação: Pública
+
+=== página 21 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                I NSTRUMENTOS FINA NCEIROS DERIVATIVOS
+                Os instrumentos financeiros derivativos são utilizados para proteger contra riscos de taxa de câmbio, riscos
+                de taxa de juros e outros, respectivamente. Esses instrumentos financeiros derivativos são reconhecidos
+                inicialmente pelo valor justo na data em que um contrato de derivativo é celebrado e são,
+                subsequentemente, novamente mensurados ao valor justo.
+                Derivativos são registrados como ativos financeiros quando o valor justo é positivo e como passivos
+                financeiros quando o valor justo é negativo.
+                Para fins de contabilidade de hedge, os referidos instrumentos de proteção são classificados como:
+                Hedges de valor justo, quando destinados à proteção da exposição a alterações no valor justo de um ativo
+                ou passivo reconhecido ou de um compromisso firme não reconhecido.
+                A mudança no valor justo de um instrumento de hedge é reconhecida na demonstração do resultado. A
+                mudança no valor justo do item objeto de hedge atribuível ao risco coberto é registrada como parte do valor
+                contábil do item protegido e é também reconhecida na demonstração do resultado.
+                Para hedges de valor justo relacionados a itens mensurados ao custo amortizado, qualquer ajuste ao valor
+                contábil é amortizado por meio do resultado durante o prazo remanescente do hedge, utilizando o método
+                da taxa de juros efetiva. A amortização da taxa de juros efetiva pode ser iniciada assim que exista um ajuste
+                e, no mais tardar, quando o item protegido deixar de ser ajustado por alterações no seu valor justo
+                atribuíveis ao risco coberto.
+                Hedges de fluxo de caixa, quando destinados à proteção da exposição à variabilidade nos fluxos de caixa
+                que seja atribuível a um risco específico associado a um ativo ou passivo reconhecido ou a uma transação
+                prevista altamente provável, ou ao risco de moeda estrangeira em um compromisso firme não reconhecido.
+                A parcela efetiva do ganho ou perda do instrumento de hedge é reconhecida em outros resultados
+                abrangentes, enquanto qualquer parcela inefetiva é reconhecida imediatamente na demonstração do
+                resultado. A reserva de hedge de fluxo de caixa é ajustada ao menor valor entre o ganho ou a perda
+                acumulada no instrumento de hedge e a mudança acumulada no valor justo do item objeto de hedge.
+                Hedges de investimento líquido no exterior. Os hedges de investimento líquido em uma operação no
+                exterior, incluindo hedge de item monetário contabilizado como parte do investimento líquido, são
+                contabilizados de maneira similar aos hedges de fluxo de caixa. Ganhos ou perdas no instrumento de hedge
+                relacionados à parte eficaz do hedge são reconhecidos como outros resultados abrangentes, enquanto
+                quaisquer ganhos ou perdas relacionadas à parcela ineficaz são reconhecidos na demonstração do
+                resultado. Na alienação da operação no exterior, o valor acumulado de quaisquer destes ganhos ou perdas
+                registradas no patrimônio líquido é transferido para demonstração do resultado.
+                O C6 Bank não possuía instrumentos financeiros derivativos designados para fins de hedge em 31 de
+                dezembro de 2021 e 2020.
+
+
+                O PERAÇÕES DE CRÉDITO , OUTROS CRÉDITOS E PROVISÃO PARA PERDA S ESPERADA S ASSOCIADA S
+                A O RISCO DE CRÉDITO
+
+                As operações de crédito e outros créditos com características de concessão de crédito são classificadas de
+                acordo com o julgamento da Administração quanto ao nível de risco, levando em consideração a conjuntura
+                econômica, a experiência passada e os riscos específicos em relação à operação, aos devedores e
+                garantidores, aos períodos de atraso e ao grupo econômico, observando os parâmetros estabelecidos pelo
+                CMN, que requer a análise da carteira e sua classificação em nove níveis, sendo AA (risco mínimo) e H (risco
+                máximo), bem como a classificação das operações com atraso superior a 14 dias como operações em curso
+                anormal. Com relação ao período de atraso verificado nas operações com prazo a decorrer superior a 36
+                (trinta e seis) meses, adota-se a contagem em dobro sobre os intervalos de atraso definidos para os nove
+                níveis para as operações de varejo.
+                As rendas das operações de crédito vencidas há mais de 59 dias, independentemente de seu nível de risco,
+                são reconhecidas como receita quando efetivamente recebidas.
+                As operações classificadas como nível H permanecem nessa classificação por 180 dias, quando então são
+                baixadas contra a provisão existente e controladas em contas de compensação.
+
+
+
+
+Classificação: Pública
+
+=== página 22 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                As operações renegociadas são mantidas, no mínimo, no mesmo nível em que estavam classificadas. As
+                renegociações de operações de crédito já baixadas contra a provisão são classificadas como nível H e os
+                eventuais ganhos provenientes da renegociação são reconhecidos como receita quando efetivamente
+                recebidos.
+                A provisão para operações de crédito de liquidação duvidosa, considerada suficiente pela Administração,
+                atende aos requisitos estabelecidos pela Resolução CMN nº 2.682/1999.
+
+
+                A TIVO PERMANENTE
+                Intangível: Corresponde aos direitos que tenham por objeto bens incorpóreos destinados à manutenção
+                do C6 Bank ou exercidos com essa finalidade. Os ativos intangíveis possuem vida útil definida e referem-se
+                basicamente a construção de plataforma tecnológica, amortizadas pelo método linear com base no prazo
+                que o benefício é gerado e é incidente sobre o valor amortizável (correspondente ao custo de aquisição
+                deduzido do valor residual, quando aplicável), a partir da data de disponibilização do ativo intangível para
+                uso e contabilizada em Outras Despesas Administrativas – Amortização. O valor residual desses ativos,
+                quando aplicável, é revisado anualmente ou quando há alterações significativas nas premissas utilizadas.
+                Investimento: As participações em coligadas e empresas com controle compartilhado são avaliadas pelo
+                método de equivalência patrimonial. Os outros investimentos permanentes estão avaliados pelo custo de
+                aquisição, deduzido, quando aplicável, de provisão para perdas.
+                Imobilizado de uso: Registrado pelo custo de aquisição. A depreciação é calculada pelo método linear com
+                base no prazo de vida útil-econômica dos bens. A amortização é calculada pelo método linear com base nos
+                prazos estimados de utilização e/ou de locação. O prazo de vida útil dos bens varia entre 5 e 10 anos
+
+
+                D EPÓSITOS , CA PTA ÇÕES NO MERCA DO ABERTO E RECURSOS DE A CEITES E EMISSÕES DE TÍTULOS
+                Os depósitos e captações no mercado são demonstrados pelos valores das exigibilidades e consideram,
+                quando aplicável, os encargos exigíveis até a data do Balanço, reconhecidos em base pro rata dia.
+                Os custos incorridos na emissão de títulos ou outras formas de captação que se enquadram como custos
+                de transação são reconhecidos no resultado por regime de competência pelo prazo das operações
+                originárias.
+                As captações que são objeto de hedge de risco de mercado são avaliadas pelo seu valor de mercado,
+                utilizando critério consistente e verificável. Os ajustes de avaliação a valor de mercado dessas operações
+                são registrados na mesma linha que abriga o instrumento financeiro, em contrapartida de resultado com
+                instrumentos financeiros derivativos.
+
+
+                T RIBUTOS
+                Os tributos são apurados com base nas alíquotas demonstradas no quadro a seguir:
+                                                    Tributos                                          Alíquotas Vigentes
+
+                 Imposto de Renda (15% + adicional de 10%)                                                             25%
+                 Contribuição Social sobre o Lucro Líquido – CSLL – Banco C6 S.A. (*)                                  20%
+                 Contribuição Social sobre o Lucro Líquido – CSLL – Demais instituições                            9% - 15%
+                 PIS/PASEP                                                                                           0,65%
+                 Contribuição para o Financiamento da Seguridade Social                                                    4%
+                 Imposto sobre Serviços de Qualquer Natureza - ISSQN                                            De 2% a 5%
+
+
+
+                (*) O encargo do IRPJ é calculado à alíquota de 15%, acrescido do adicional de 10%, aplicados sobre o lucro,
+                após efetuados os ajustes determinados pela legislação fiscal. A CSLL é calculada pela alíquota 20% para
+                Bancos, incidente sobre o lucro, após considerados os ajustes determinados pela legislação fiscal.
+
+
+
+                                                                                                                           21
+
+
+Classificação: Pública
+
+=== página 23 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                O Ativo Fiscal Diferido e as obrigações diferidas são obtidas pelas diferenças entre as bases de cálculo
+                contábil e tributária dos ativos e passivos. Os créditos tributários somente são reconhecidos quando se
+                considera provável que a instituição irá gerar lucro tributável futuro para a sua compensação. A realização
+                esperada do crédito tributário é baseada na projeção de lucros tributáveis futuros e por estudo de
+                capacidade de realização.
+                A Lei 14.183/2021 (resultado da conversão em Lei da Medida Provisória (MP) 1.034/2021) determina a
+                majoração em 5% da alíquota da CSLL para o período compreendido entre 1 de julho de 2021 e 31 de
+                dezembro de 2021 para os bancos de qualquer espécie, as instituições financeiras, pessoas jurídicas de
+                seguros privados e as de capitalização.
+
+
+                O UTROS A TIVOS E PA SSIVOS
+                Os demais ativos estão demonstrados pelos valores de realização, incluindo, quando aplicável, os
+                rendimentos e as variações monetárias e cambiais auferidas em base pró rata die e provisão para perda,
+                quando julgada necessária. Os demais passivos estão demonstrados pelos valores conhecidos e
+                mensuráveis, acrescidos, quando aplicável, dos encargos e das variações monetárias e cambiais incorridos
+                em base pró rata die.
+
+
+
+                CONTINGÊNCIAS PASSIVAS
+                As contingências são registradas quando, baseado na opinião de assessores jurídicos e da administração,
+                for considerado provável o risco de perda de uma ação judicial ou administrativa e quando os montantes
+                envolvidos forem mensuráveis com suficiente segurança. Os passivos contingentes relevantes classificados
+                como perdas possíveis pelos assessores jurídicos são apenas divulgados em notas explicativas, enquanto
+                aqueles classificados como perda remota não requerem provisão e divulgação.
+
+
+                D ESPESA S A NTECIPA DAS
+                As despesas antecipadas são aplicações de recursos em pagamentos antecipados, cujos benefícios ou
+                prestação de serviços ocorrerão em exercícios seguintes e são apropriadas ao resultado, de acordo com a
+                vigência dos respectivos contratos.
+
+
+                P A GA MENTO BA SEA DO EM A ÇÕES
+                O C6 Bank fornece pagamentos baseados em ações a parceiros de negócios, por meio dos quais o C6 Bak
+                recebe serviços em troca de instrumentos patrimoniais (ou opções de tais instrumentos).
+                O C6 Bank mensura o valor justo dos serviços prestados por referência ao valor justo dos instrumentos
+                patrimoniais concedidos na data da outorga (que podem ser ações ou opções de ações conversíveis),
+                levando em consideração as condições de mercado de cada plano na estimativa do valor justo. Os custos
+                incorridos são reconhecidos durante o período de carência para aquisição do direito ao exercício dos
+                instrumentos. O valor total a ser registrado como despesa é determinado pelo valor justo dos instrumentos
+                de patrimônio, excluindo o impacto de qualquer prestação de serviços e prazos de carência.
+
+
+
+                     C AIXA E EQUIVALENTES DE CAIXA
+
+                                                                             Consolidado                   Individual
+                                                                      31/12/2021     31/12/2020    31/12/2021     31/12/2020
+                 Disponibilidades                                        400.580         301.493      363.732         248.256
+                 Aplicações no mercado aberto (nota 10)                        -         363.499             -        363.499
+                 Aplicações em depósitos interfinanceiros (nota 10)    4.152.540       1.827.632    4.152.540       1.827.632
+                 Aplicações em depósitos de poupança (nota 10)                77             283             -              -
+                 Total                                                 4.553.197      2.492.907     4.516.272      2.439.387
+
+
+
+
+                                                                                                                           22
+
+
+Classificação: Pública
+
+=== página 27 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                     O PERAÇÕES DE CRÉDITO
+
+                C OMPOSIÇÃO
+                                                                                                           Consolidado
+                                                                                           31/12/2021                      31/12/2020
+                                                                                     Saldo          Provisão           Saldo        Provisão
+                 Empréstimos                                                         2.944.074        (398.734)          667.770      (17.065)
+                 Financiamentos                                                        174.466            (1.481)              -              -
+                 Financiamentos à exportação                                            42.207             (386)               -              -
+                 Valores a receber relativos a transações de pagamento               3.969.985          (22.672)         585.179        (4.801)
+                 Valores e créditos a receber com característica de concessão
+                                                                                           53.033                (265)            52.753             (264)
+                 de crédito
+                 Total Empréstimos e outros valores a receber com
+                                                                                     7.183.765              (423.538)           1.305.702       (22.130)
+                 característica de crédito
+                                                                                                                  Individual
+                                                                                           31/12/2021                               31/12/2020
+                                                                                     Saldo          Provisão                    Saldo        Provisão
+                 Empréstimos                                                         2.583.715        (394.576)                   683.142      (16.645)
+                 Financiamentos                                                        174.466            (1.481)                       -             -
+                 Financiamentos à exportação                                            42.207             (386)                        -             -
+                 Valores a receber relativos a transações de pagamento               3.969.985          (22.672)                  585.100       (3.083)
+                 Valores e créditos a receber com característica de concessão
+                                                                                           53.033                (265)            52.753             (264)
+                 de crédito
+                 Total Empréstimos e outros valores a receber com
+                                                                                     6.823.406               (419.380)          1.320.995       (19.992)
+                 característica de crédito
+
+
+
+                P OR FA IX A DE VENCIMENTO E NÍVEIS DE RISCO
+                                                                                   Consolidado
+                                                                      31/12/2021                                                        31/12/2020
+                                                               a vencer
+                                                 até 6         de 6 a 12      após 12
+                 Nível de risco   Vencidas                                                   Total               Provisão          Total        Provisão
+                                                 meses          meses          meses
+                 AA                      -              -               -             -              -                      -             107            -
+                 A                  42.496      4.040.143       675.675        924.185     5.682.499                (28.413)      1.231.050       (7.873)
+                 B                  44.435       258.939        168.734        309.357        781.465                 (7.815)        48.594         (486)
+                 C                  71.695         55.007         10.913         5.343        142.958                (4.288)          6.902         (207)
+                 D                  63.273          7.252          3.164         4.130          77.819                (7.781)          2.975        (297)
+                 E                  68.372          5.618          3.094         3.984         81.068              (24.320)            1.987        (596)
+                 F                  84.331          4.135          2.014         2.473         92.953               (46.476)           2.139      (1.070)
+                 G                  60.846          3.597          1.720         2.365         68.528               (47.970)            1.157        (810)
+                 H                 234.756          9.290          5.066         7.363       256.475              (256.475)           10.791     (10.791)
+                 Total             670.204      4.383.981       870.380      1.259.200      7.183.765            (423.538)        1.305.702     (22.130)
+                 Circulante                                                                    5.924.565         (403.800)         843.961      (17.366)
+                 Não
+                                                                                               1.259.200           (19.738)         461.741      (4.764)
+                 circulante
+                                                                                     Individual
+                                                                      31/12/2021                                                        31/12/2020
+                                                               a vencer
+                                                  até 6        de 6 a 12      após 12
+                 Nível de risco   Vencidas                                                          Total        Provisão          Total        Provisão
+                                                 meses          meses          meses
+                 AA                      -          11.687        14.264        60.967             86.918                   -        81.368                -
+                 A                  38.880      3.919.425       671.222        897.819         5.527.346            (27.637)       1.173.113      (5.866)
+                 B                  40.904        233.385        127.180        110.981          512.450              (5.126)        43.102           (431)
+                 C                  70.565         33.048         10.913          5.332           119.858            (3.596)           4.363           (131)
+                 D                  63.273           7.252         3.164           4.121            77.810            (7.781)          2.975         (297)
+                 E                  68.372           5.618         3.094          3.984            81.068          (24.320)            1.987         (596)
+                 F                  84.331           4.135         2.014          2.473            92.953           (46.476)           2.139       (1.070)
+                 G                  60.846           3.597         1.720          2.365            68.528           (47.969)            1.158         (810)
+                 H                 234.756          9.290          5.066          7.363          256.475          (256.475)           10.790     (10.791)
+                 Total             661.927      4.227.437       838.637      1.095.405         6.823.406          (419.380)      1.320.995      (19.992)
+                 Circulante                                                                    5.728.001          (401.759)         795.190     (15.314)
+                 Não
+                                                                                               1.095.405            (17.621)       525.805       (4.678)
+                 circulante
+
+
+
+
+                                                                                                                                                        26
+
+
+Classificação: Pública
+
+=== página 28 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                P OR SETORES E A TIVIDA DES ECONÔMICA S
+                                                                                  Consolidado                          Individual
+                                                                         31/12/2021       31/12/2020         31/12/2021        31/12/2020
+                 Pessoa física                                             5.185.574            711.314         5.185.574            711.314
+                 Pessoa jurídica                                            1.998.191          594.388         1.637.832            609.681
+                   Comércio                                                  326.563            34.051           245.829             23.491
+                   Serviços                                                 1.188.759           511.411        1.256.680            565.876
+                   Indústria                                                 225.242            42.224            123.030            20.194
+                   Outros                                                    257.627             6.702             12.293                120
+                 Total                                                     7.183.765         1.305.702         6.823.406          1.320.995
+
+
+
+                C ONCENTRAÇÃ O DOS MA IORES DEVEDORES
+                                                                                                Consolidado
+                                                                        31/12/2021         % da carteira    31/12/2020        % da carteira
+                 10 maiores                                                    143.704               2%         154.938                 11%
+                 20 maiores                                                   245.073                3%         226.115                16%
+                 50 maiores                                                   448.263                6%        362.066                 26%
+                 100 maiores                                                   673.457               9%        490.645                 35%
+                                                                                                 Individual
+                                                                        31/12/2021         % da carteira    31/12/2020        % da carteira
+                 10 maiores                                                    165.213               2%         154.938                 11%
+                 20 maiores                                                   268.328                4%         226.115                16%
+                 50 maiores                                                    473.971               7%        358.692                 26%
+                 100 maiores                                                  683.920               10%        480.303                 35%
+
+
+
+                P ROVISÃ O PARA PERDA ESPERADA A SSOCIA DA AO RISCO DE CRÉDITO
+                                                                                   Consolidado                          Individual
+                                                                           31/12/2021      31/12/2020         31/12/2021       31/12/2020
+                Saldos iniciais                                                  (22.130)          (1.867)          (19.992)           (1.851)
+                (Constituição)/ Reversão de provisão                           (426.262)         (24.108)         (422.524)          (21.986)
+                Baixas a prejuízo                                                 24.854            3.845             23.136            3.845
+                Total                                                         (423.538)         (22.130)          (419.380)         (19.992)
+                (*) O saldo de provisão para perda esperada associada ao risco de crédito na demonstração do resultado referentes as
+                demonstrações financeiras consolidadas de 31 de dezembro de 2020 incluem o resultado do C6 Consignado de agosto
+                a outubro – período que o C6 Bank tinha 100% de participação do mesmo (vide nota 2).
+
+
+
+                R ENEGOCIA ÇÃ O E RECUPERA ÇÃ O DE CRÉDITOS BAIXADOS PA RA PREJUÍZO
+                Na carteira de crédito houve R$ 50.736 (PDD – R$ 3.074) referente a renegociações no exercício findo em 31
+                de dezembro de 2021 (31 de dezembro de 2020 – R$ 11.321 e com PDD -R$ 67). Em 31 de dezembro de 2021
+                houve R$ 145 (PDD – R$ 145) de recuperação de créditos baixados para prejuízo (31 de dezembro de 2020 –
+                zero).
+
+
+
+
+                                                                                                                                          27
+
+
+Classificação: Pública
+
+=== página 29 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                      O UTROS ATIVOS E PASSIVOS FINANCEIROS
+
+                                                                                             Consolidado                       Individual
+                                                                                     31/12/2021      31/12/2020       31/12/2021       31/12/2020
+                 Aplicações no mercado aberto (nota 5)                                         -          363.499                -          363.499
+                 Aplicações em depósitos interfinanceiros (nota 5)                     4.152.540        1.827.632       4.152.540         1.827.632
+                 Aplicações em depósitos de poupança (nota 5)                                 77              283                -                -
+                 Títulos e créditos a receber - sem característica de concessão de
+                                                                                        458.950            94.810            336.119         56.226
+                 crédito
+                 Depósitos de moeda eletrônica no Banco Central                         514.200           67.410             514.200         67.410
+                 Reservas compulsórias no Banco Central                                 357.734                -             357.734              -
+                 Demais depósitos no Banco Central                                       60.465           88.478              60.465         88.478
+                 Operações câmbio (nota 10.1)                                           255.678          221.649             255.678        221.649
+                 Negociação e intermediação de valores                                   46.192           30.877               15.815        25.312
+                 Outros ativos financeiros                                            5.845.836        2.694.638           5.692.551      2.650.206
+                 Circulante                                                            4.313.684       2.686.753        4.171.508         2.642.321
+                 Não circulante                                                        1.532.152            7.885       1.521.043              7.885
+                                                                                     31/12/2021      31/12/2020       31/12/2021        31/12/2020
+                 Recebimentos de pagamentos a liquidar                                  4.116.963         611.440        4.116.963           611.440
+                 Obrigações vinculadas                                                          -               -                -                 -
+                 Operações câmbio (nota 10.1)                                            277.784         221.649          277.784           221.649
+                 Negociação e intermediação de valores                                     10.138          18.998                -            16.522
+                 Resultados de exercícios futuros                                           5.726        125.774            19.261          226.957
+                 Outros passivos financeiros                                            4.410.611        977.861        4.414.008         1.076.568
+                 Circulante                                                           4.403.754          852.087           4.407.151        849.611
+                 Não circulante                                                           6.857          125.774              6.857        226.957
+
+                      10.1 O P E R A Ç Õ E S D E C Â M B I O
+
+                                                                                                            Consolidado
+                                                                                            31/12/2021                       31/12/2020
+                                                                                      Ativo           Passivo          Ativo          Passivo
+                 Câmbio comprado / vendido a liquidar                                   176.143          95.647         138.676          82.973
+                 Direitos / Obrigações sobre operações de câmbio                         95.647         176.143          82.973         138.676
+                 (-) Adiantamentos em moeda nacional                                    (16.112)              -                -              -
+                 Valores a receber / pagar em moeda estrangeira                                -          5.994                -              -
+                 Total                                                                 255.678          277.784         221.649         221.649
+                 Circulante                                                             255.678          277.784            221.649         221.649
+                                                                                                              Individual
+                                                                                            31/12/2021                           31/12/2020
+                                                                                      Ativo           Passivo              Ativo          Passivo
+                 Câmbio comprado / vendido a liquidar                                   176.143          95.647             138.676          82.973
+                 Direitos / Obrigações sobre operações de câmbio                         95.647         176.143              82.973         138.676
+                 (-) Adiantamentos em moeda nacional                                    (16.112)              -                    -              -
+                 Valores a receber / pagar em moeda estrangeira                                -          5.994                    -              -
+                 Total                                                                 255.678          277.784             221.649         221.649
+                 Circulante                                                             255.678          277.784            221.649         221.649
+
+
+
+                      O UTROS ATIVOS
+
+                                                                                              Consolidado                       Individual
+                                                                                      31/12/2021      31/12/2020       31/12/2021      31/12/2020
+                Rendas a receber                                                             20.148           2.826           19.259             973
+                Outros créditos - diversos (nota 11.1)                                      118.122         103.735          110.687          86.877
+                Outros valores e bens                                                      206.099           75.963         204.981           75.801
+                Despesas antecipadas (i)                                                   321.004          159.493         317.404          156.426
+                Outros                                                                         633              190                -               -
+                Total                                                                      666.006         342.207          652.331         320.077
+                Circulante                                                                 519.126         143.659            508.374        176.973
+                Não circulante                                                             146.880         198.548            143.957        143.104
+                (i) Em 31 de dezembro de 2021 e 2020 o saldo de despesas antecipadas refere-se, substancialmente, a comissões pagas
+                a terceiros por estruturação de operações com o mercado a serem reconhecidas pelo prazo dos contratos e o
+                diferimento do custo da matéria prima do plástico utilizado para elaboração do cartão, após o desbloqueio pelo cliente.
+
+
+
+
+                                                                                                                                                 28
+
+
+Classificação: Pública
+
+=== página 30 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                     11.1 O U T R O S C R É D I T O S D I V E R S O S
+
+                                                                                Consolidado                      Individual
+                                                                        31/12/2021      31/12/2020      31/12/2021      31/12/2020
+                Adiantamentos e antecipações salariais                            931             206             519               -
+                Adiantamentos para pagamentos de nossa conta                   17.473             385          17.369               -
+                Valores a receber de sociedades ligadas                        15.426          39.020          15.002         37.252
+                Devedores diversos                                             65.120          33.458          64.944         33.364
+                Devedores por depósito em garantia                              2.663             317           2.024             251
+                Impostos e contribuições a compensar                           16.509          30.349          10.829          16.010
+                Outros ativos                                                 118.122         103.735         110.687         86.877
+                Circulante                                                    98.688         103.735          93.013          86.877
+                Não circulante                                                19.434               -          17.674               -
+
+
+
+
+Classificação: Pública
+
+=== página 31 ===
+             Demonstrações financeiras individuais e consolidadas
+             Banco C6 S.A.
+             31 de dezembro de 2021
+             (em milhares de reais)
+
+                  I NVESTIMENTOS
+
+
+                                                                                                                                    Movimentação dos investimentos
+                                                                                                                   Aquisição /                                          Resultado de
+                                                                                                31/12/2020                                Ajustes patrimoniais                             31/12/2021
+                                                                                                                     aporte                                             participação
+             No país
+               C6 Corretora de Títulos e Valores Mobiliários Ltda.                                   30.722                20.000                           27                   (1.859)        48.890
+               NTK Solutions S.A.                                                                    80.089               170.000                      (1.204)                 (59.413)        189.472
+               Banco C6 Consignado S.A.                                                             199.493                     -                        1.637                  (11.580)       189.550
+               C6 Corretora de Seguros S.A.                                                          23.808                     -                            -                     7.479        31.287
+               Ágio - C6 Corretora de Seguros S.A.                                                    4.447                     -                            -                         -         4.447
+               Instituição de Design e Ensino, Aprendizagem e Treinamentos Ltda. ("Idea9")            1.503                     -                            -                       833         2.336
+               Ágio - Idea9                                                                           5.340                     -                            -                         -         5.340
+               Outros                                                                                    25                     -                            -                         -            25
+             No exterior
+               C6 Holdings LLC                                                                       51.414                 2.298                           -                   (21.211)        32.501
+             Total                                                                                  396.841               192.298                         460                  (85.751)        503.848
+
+
+
+                                                                                                       31/12/2021                                                         31/12/2020
+                                                                                     % de                 Patrimônio         Resultado                   % de              Patrimônio       Resultado
+                                                                                 participação          líquido ajustado       líquido                participação       líquido ajustado     líquido
+             No país
+               C6 Corretora de Títulos e Valores Mobiliários Ltda.                           100%                48.890               (1.859)                    100%            30.722         (13.987)
+               NTK Solutions S.A.                                                            100%               189.472             (59.413)                     100%            80.089        (56.594)
+               Banco C6 Consignado S.A.                                                       15%             1.263.665             (77.198)                      15%         1.329.953       (110.975)
+               C6 Corretora de Seguros S.A.                                                  100%                31.287                 7.479                    100%            23.808          (9.523)
+               Instituição de Design e Ensino, Aprendizagem e Treinamentos
+                                                                                             100%                2.336                  833                      100%              1.503         (262)
+             Ltda.
+             No exterior
+               C6 Holdings LLC                                                               100%               32.501               (21.211)                    100%             51.414       (12.145)
+
+
+
+
+Classificação: Pública
+
+=== página 32 ===
+             Demonstrações financeiras individuais e consolidadas
+             Banco C6 S.A.
+             31 de dezembro de 2021
+             (em milhares de reais)
+
+                 I MOBILIZADO
+
+                                                                                                                                                            Consolidado
+                                                                                                       31/12/2020           Aquisição / (Baixa)          Depreciação (i)                Transferências               31/12/2021
+             Sistemas de processamento de dados                                                                26.413                       370                           -                              (79)              26.704
+             Melhorias                                                                                         39.172                      (127)                          -                                 -              39.045
+             Mobília e equipamento                                                                            113.819                    65.223                           -                            (440)              178.602
+             Depreciação                                                                                     (31.550)                        181                   (22.844)                               50              (54.163)
+             Total                                                                                           147.854                     65.647                    (22.844)                            (469)              190.188
+                                                                                                                                                             Individual
+                                                                                                       31/12/2020           Aquisição / (Baixa)          Depreciação (i)                Transferências               31/12/2021
+             Sistemas de processamento de dados                                                               26.332                        372                             -                              -               26.704
+             Melhorias                                                                                         34.616                        108                            -                              -               34.724
+             Mobília e equipamento                                                                              3.416                     16.122                            -                              -                19.538
+             Depreciação                                                                                     (16.849)                          -                     (11.127)                              -              (27.976)
+             Total                                                                                             47.515                    16.602                      (11.127)                              -               52.990
+                 (i)       As movimentações de depreciações e amortizações não incluem despesas advindas de ativos imobilizados e intangíveis próprias, bem como de despesas advindas de contrato de rateio de custos celebrado
+                           entre o C6 Bank e sua controladora indireta C6 Holding S.A., dedicada a condução de atividades de suporte e apoio administrativo para controladas, por esse motivo o saldo no Demonstração de Resultado é
+                           maior do que o demonstrado acima.
+
+
+
+
+Classificação: Pública
+
+=== página 33 ===
+             Demonstrações financeiras individuais e consolidadas
+             Banco C6 S.A.
+             31 de dezembro de 2021
+             (em milhares de reais)
+
+                 I NTANGÍVEL
+
+                                                                                                                                                         Consolidado
+                                                                                                 31/12/2020            Aquisição / (Baixa)              Transferência                  Amortização (i)              31/12/2021
+             Ágio                                                                                     159.270                     (20.270)                                  -                      (951)                 138.049
+             Intangíveis                                                                               55.268                       34.215                               682                           -                  90.165
+             Amortização                                                                              (10.229)                         195                               (50)                   (13.448)                (23.532)
+             Total                                                                                    204.309                       14.140                               632                   (14.399)                 204.682
+                                                                                                                                                          Individual
+                                                                                                 31/12/2020            Aquisição / (Baixa)              Transferência                  Amortização (i)              31/12/2021
+             Intangíveis                                                                               29.748                            -                                  -                            -                29.748
+             Amortização                                                                               (5.513)                           -                                  -                      (2.757)                (8.270)
+             Total                                                                                     24.235                            -                                  -                      (2.757)                21.478
+                 (i)       As movimentações de depreciações e amortizações não incluem despesas advindas de ativos imobilizados e intangíveis próprias, bem como de despesas advindas de contrato de rateio de custos celebrado
+                           entre o C6 Bank e sua controladora indireta C6 Holding S.A., dedicada a condução de atividades de suporte e apoio administrativo para controladas, por esse motivo o saldo no Demonstração de Resultado é
+                           maior do que o demonstrado acima.
+
+
+
+
+                                                                                                                                                                                                                                32
+
+
+Classificação: Pública
+
+=== página 34 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                     D EPÓSITOS
+
+                                                                                     Consolidado
+                                                                             31/12/2021                                                   31/12/2020
+                                                        até 90          de 90 a       de 1 a 3           de 3 a 5       acima de
+                                         Total                                                                                              Total
+                                                          dias         365 dias         anos              anos           5 anos
+                 Depósitos à vista    2.333.366        2.333.366                -              -                 -              -             680.520
+                 Depósitos a prazo     8.521.960         603.821       2.508.838     3.952.681           1.204.200       252.420             4.768.973
+                 Outros depósitos       490.295          490.295                -              -                 -              -               63.178
+                 Total                11.345.621       3.427.482       2.508.838     3.952.681           1.204.200       252.420             5.512.671
+                 Circulante           5.936.320                                                                                              1.475.747
+                 Não circulante       5.409.301                                                                                             4.036.924
+                                                                                      Individual
+                                                                             31/12/2021                                                   31/12/2020
+                                                         até 90         de 90 a       de 1 a 3           de 3 a 5       acima de
+                                         Total                                                                                              Total
+                                                           dias         365 dias        anos              anos           5 anos
+                 Depósitos à vista    2.398.793         2.398.793                -             -                    -           -               685.163
+                 Depósitos
+                                                 -              -                -               -                  -             -               10.851
+                 interfinanceiros
+                 Depósitos a prazo    8.524.045          603.861       2.509.456        3.954.108        1.204.200          252.420          4.768.978
+                 Outros depósitos       490.295          490.295               -                -                -                -             63.178
+                 Total                11.413.133       3.492.949       2.509.456        3.954.108        1.204.200          252.420          5.528.170
+                 Circulante           6.002.405                                                                                              1.484.102
+                 Não circulante       5.410.728                                                                                             4.044.068
+
+
+
+                     C APTAÇÕES
+
+                As captações no mercado aberto têm lastro nos seguintes títulos:
+                                                                                             Consolidado e Individual
+                                                                                             31/12/2021                                  31/12/2020
+                                                                                     de 90 a         de 1 a 3           de 3 a 5
+                                                                    Total                                                                   Total
+                                                                                     365 dias         anos               anos
+                 Carteira própria                                   2.105.485          520.114       1.231.838           353.533                       -
+                 Títulos públicos                                   2.105.485          520.114       1.231.838           353.533                       -
+                 Total                                              2.105.485          520.114       1.231.838           353.533                       -
+                 Circulante                                           520.114                                                                          -
+                 Não circulante                                     1.585.371                                                                          -
+
+
+
+                     R ECURSOS DE ACEITES E EMISSÃO DE TÍTULOS
+
+                                                                                  Consolidado e Individual
+                                                                            31/12/2021                                                31/12/2020
+                                                                    de 90 a 365       de 1 a 3        de 3 a 5
+                                                     Total                                                                              Total
+                                                                        dias           anos            anos
+                 Recursos de letras
+                 imobiliárias, hipotecárias          213.655             119.419             91.012                 3.224                       199.346
+                 de crédito e similares
+                 Obrigações por emissões
+                 de letras de crédito                 24.025             24.025                      -                  -                         4.183
+                 imobiliário
+                 Obrigações por emissões
+                 de letras de crédito do              20.650             20.650                      -                  -                              -
+                 agronegócio
+                 Obrigações por letra
+                                                      168.980               74.744           91.012                 3.224                       195.163
+                 financeira
+                 Total                               213.655             119.419             91.012                 3.224                       199.346
+                 Circulante                           119.419                                                                                   138.018
+                 Não circulante                       94.236                                                                                     61.328
+
+                Em 31 de dezembro 2021 e 2020, recursos de letras imobiliárias, hipotecárias de crédito e similares são
+                basicamente indexados a percentuais de taxa referencial de juros (CDI ou SELIC) entre 100% e 122%.
+
+
+
+
+Classificação: Pública
+
+=== página 40 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                     D ESPESAS COM PESSOAL
+
+                                                Consolidado                                                           Individual
+                                                 31/12/2021              31/12/2020                            31/12/2021                      31/12/2020
+                                                  Exercício               Exercício               2º semestre             Exercício             Exercício
+                 Proventos                            (172.500)               (142.775)                  (58.176)              (119.451)             (88.947)
+                 Encargos sociais                      (74.454)                (50.073)                 (35.697)               (58.694)              (33.985)
+                 Benefícios                            (54.297)                 (36.510)                  (27.181)             (44.789)              (25.652)
+                 Férias e 13º                          (44.960)                (30.484)                  (21.679)              (36.947)               (20.819)
+                 Honorários                             (10.928)                (10.435)                   (5.061)               (9.950)               (6.558)
+                 Bônus                                 (38.524)                  (9.562)                 (33.109)               (33.109)                 (460)
+                 Outros                                   (4.115)                 (3.917)                  (1.005)               (2.582)               (3.283)
+                 Total                               (399.778)               (283.756)                 (181.908)             (305.522)              (179.704)
+
+
+
+                     O UTRAS DESPESAS ADMINISTRATIVAS
+
+                                                                   Consolidado                                           Individual
+                                                           31/12/2021       31/12/2020                            31/12/2021                   31/12/2020
+                                                            Exercício        Exercício                   2º semestre       Exercício            Exercício
+                 Telecomunicações e processamento
+                                                               (542.207)             (253.601)              (301.337)           (534.013)           (252.118)
+                 de dados
+                 Serviços técnicos especializados              (182.687)              (89.539)              (88.264)            (163.321)              (71.541)
+                 Propaganda e publicidade                      (136.863)               (48.150)             (84.765)            (135.251)            (46.467)
+                 Serviços do sistema financeiro                 (83.530)              (83.038)              (35.352)             (60.037)             (70.816)
+                 Serviços de terceiros e consultorias           (22.598)               (17.706)                 (166)               (622)               (1.100)
+                 Outras despesas administrativas                 (37.730)             (34.834)               (19.177)             (37.103)          (32.069)
+                 Total                                       (1.005.615)            (526.868)              (529.061)           (930.347)            (474.111)
+
+
+
+                     O UTRAS RECEITAS E DESPESAS OPERACIONAIS
+
+                                                                              Consolidado                                      Individual
+                                                                    31/12/2021        31/12/2020                       31/12/2021               31/12/2020
+                                                                     Exercício         Exercício             2º semestre        Exercício        Exercício
+                 Variação cambial                                             753          20.530                   19.091           (2.187)           6.832
+                 Reversão de provisões                                    28.392             (799)                   11.271          28.387              (717)
+                 Custo de emissão de cartão                              (41.348)         (14.298)                (25.815)         (41.348)          (14.298)
+                 Pagamento baseado em ações                             (20.462)           (6.295)                 (6.626)        (20.462)            (6.295)
+                 Despesas com perdas associadas a cartões                (12.252)          (6.669)                  (3.417)         (12.183)          (6.667)
+                 Despesa de comissão                                     (26.176)         (46.516)               (20.025)          (26.176)           (4.287)
+                 Custos de aquisição de máquinas de
+                                                                        (17.132)             (2.359)              (11.344)          (17.132)          (2.359)
+                 pagamento
+                 Serviços associados a transações de
+                                                                        (60.178)               (824)               (5.113)         (22.103)             (316)
+                 pagamento
+                 Despesas relacionadas a venda de produtos
+                                                                         (8.060)                     -            (3.869)           (8.060)                  -
+                 personalizados
+                 Receitas e despesas relacionadas a programa
+                                                                            3.754                 632               6.310             3.754              632
+                 de fidelidade
+                 Despesas de provisão de contingência                    (2.116)                (848)              (1.091)           (1.867)           (597)
+                 Outras receitas e despesas operacionais                  2.487              (25.787)               (434)           (2.680)            5.508
+                 Total                                                (152.338)             (83.233)             (41.062)        (122.057)          (22.564)
+
+
+
+
+Classificação: Pública
+
+=== página 41 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                     P AGAMENTO BASEADO EM AÇÕES
+
+                O C6 Bank possui planos de participação acionária para parceiros com o objetivo de engajá-los no processo
+                de desenvolvimento da instituição a médio e longo prazo.
+                A movimentação do saldo de planos de pagamento com base em ações está apresentada na tabela abaixo:
+                                                                              Consolidado e Individual
+                                                             31/12/2020       Adições        Resgates         31/12/2021
+                 Parceria                                            20.054      22.273            (1.241)            41.086
+                 Total                                               20.054      22.273            (1.241)            41.086
+
+
+                Pagamentos baseados em ações no C6 Bank referem-se a transações com pagamento baseado em ações
+                concedidas por entidades controladoras indiretas que possuem interesse econômico no C6 Bank, que é a
+                entidade que recebe o serviço.
+
+
+
+                     P ARTES RELACIONADAS
+
+                O C6 Bank e suas empresas controladas diretas mantêm transações entre si, as quais foram eliminadas no
+                consolidado. Os saldos de operações do C6 Bank com controladas direta, indireta, pessoal chave da
+                Administração e controlador podem ser observados conforme abaixo:
+                 Partes relacionadas e seus produtos                               31/12/2021                31/12/2020
+                 Ativo
+                   Coligadas e controladas                                                4.111.082                1.990.243
+                     Negociação e intermediação de valores                                        -                    1.828
+                     Cotas de fundo de investimento                                               -                   79.443
+                     Operações de crédito                                                         -                   81.340
+                     Aplicação em depósitos interfinanceiros                             4.083.673                 1.827.632
+                     Diversas                                                               27.409                         -
+                 Passivo
+                   Coligadas e controladas                                                  99.951                   114.861
+                     Depósitos a vista                                                            -                    2.823
+                     Depósitos interfinanceiros                                                   -                   10.855
+                     Rendas antecipadas                                                           -                  101.183
+                     Empréstimos no país                                                   93.379                          -
+                     Comissão de fiança                                                          59                        -
+                     Diversas                                                                 6.513                        -
+                 Partes relacionadas e seus produtos                               31/12/2021                31/12/2020
+                 Receitas
+                   Coligadas e controladas                                                 136.079                   36.798
+                     Cotas de fundo de investimento                                              -                     2.041
+                     Operações de crédito                                                        -                     2.361
+                     Rendas antecipadas                                                          -                    11.165
+                     Aplicação em depósitos interfinanceiros                                     -                    21.231
+                     Receita de prestação de serviços                                          454                         -
+                     Resultado de operações com títulos e valores
+                                                                                           135.625                         -
+                 mobiliários
+                   Coligadas e controladas                                                  5.400                      1.798
+                     Depósitos interfinanceiros                                                   -                      602
+                     Corretagem de operações em bolsa                                             -                      918
+                     Operações de empréstimos e repasses                                       227                         -
+                     Captações no mercado aberto - LFT                                        5.173                      278
+                 Partes relacionadas e seus produtos                               31/12/2021                31/12/2020
+                 Ativo
+                   Controladores indiretos                                                       51                        -
+                     Diversas                                                                    51                        -
+                 Passivo
+                   Controladores indiretos                                                        -                    1.433
+                     Depósitos a vista                                                            -                    1.433
+
+
+
+
+Classificação: Pública
+
+=== página 42 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                R EMUNERAÇÃO DO PESSOAL CHA VE DA ADMINISTRA ÇÃO
+                A remuneração total do pessoal-chave da administração para o período foi de R$ 26.978 (31 de dezembro
+                de 2020 – R$ 23.544) a qual é considerada benefício de curto prazo.
+
+
+
+                     G ERENCIAMENTO DE RISCOS E DE CAPITAL
+
+                Não houve alteração nas estruturas de gerenciamento de risco do C6 Bank no semestre.
+
+                     3 2 .1      ANÁLISE DE SENSIBILIDADE DAS CARTEIRAS
+
+                A análise de sensibilidade das carteiras permite avaliar o efeito dos movimentos relativos das curvas de
+                mercado e dos preços dos ativos financeiros sobre as posições mantidas pelo C6 Bank. Nesse sentido, são
+                empregados três cenários específicos:
+                Cenário I: Aplicação de choques de 1 ponto-base nas taxas de juros pré-fixado, cupom de moedas, inflação
+                e índice de taxas de juros, e 1 ponto percentual nos preços de moedas e ações, tanto de alta quanto de
+                queda, sendo consideradas as maiores perdas resultantes por fator de risco;
+                Cenário II: Aplicação de choques de 25% nas taxas das curvas de juros pré-fixado, cupom de moedas,
+                inflação, índices de taxas de juros e nos preços de moedas e ações, tanto de alta quanto de queda, sendo
+                consideradas as maiores perdas resultantes por fator de risco;
+                Cenário III: Aplicação de choques de 50% nas taxas das curvas de juros pré-fixado, cupom de moedas,
+                inflação e índices de taxas de juros e nos preços de moedas e ações, tanto de alta quanto de queda, sendo
+                consideradas as maiores perdas resultantes por fator de risco.
+                 Exposições                                           31/12/2021                  31/12/2020
+                 Fatores de        Risco de Variação      Cenário      Cenário   Cenário       Cenário Cenário        Cenário
+                 Risco             em:                       I            II       III            I        II           III
+                                   Taxa de Juros
+                 Prefixado                                    (66)     (15.277)   (30.650)       (504)     (45.467)    (89.324)
+                                   Prefixada em Reais
+                 Cupons            Taxa dos Cupons de
+                                                                  -         (8)        (17)         (1)        (21)        (42)
+                 Cambiais          Moedas Estrangeiras
+                 Moedas            Taxas de Câmbio            (43)      (1.075)     (2.151)        (71)     (1.772)     (3.545)
+                                   Índices de preços de
+                 Ações                                            -           -            -    (3.384)    (84.606)   (169.212)
+                                   renda variável
+                                   Taxas dos Cupons de
+                 Cupom IPCA                                    (18)     (2.327)    (4.186)         (71)     (3.558)     (7.150)
+                                   IPCA
+                 Total Trading                               1.229      30.501      61.019     (2.429)     (60.651)   (121.318)
+                 Total Banking                              (1.357)    (49.189)   (98.023)      (1.603)    (74.773)   (147.953)
+
+                 Total Geral                                 (127)     (18.687)   (37.004)     (4.032)
+                                                                                                          (135.424) (269.272)
+                Os resultados apresentados revelam os impactos para cada cenário numa posição estática da carteira. O
+                dinamismo do mercado e das carteiras faz com que essas posições se alterem continuamente e não
+                obrigatoriamente reflitam a posição aqui demonstrada. Além disso, a Organização possui um processo de
+                gestão contínua do risco de mercado, que procura, constantemente, formas de mitigar os riscos
+                associados, de acordo com a estratégia determinada pela Alta Administração. Assim, em casos de sinais de
+                deterioração de determinada posição, ações proativas são tomadas para minimização de possíveis
+                impactos negativos, visando maximizar a relação risco retorno para a Organização.
+
+
+
+
+Classificação: Pública
+
+=== página 43 ===
+                Demonstrações financeiras individuais e consolidadas
+                Banco C6 S.A.
+                31 de dezembro de 2021
+                (em milhares de reais)
+
+                     3 2 .2       GERENCIAMENTO DE CAPITAL
+
+                Os requerimentos de capital do C6 Bank são determinados com base no conjunto de regras emanadas pelo
+                CMN e pelo BACEN que refletem, no Brasil, os padrões globais de requerimento de capital (BIS BACENS). Para
+                calcular os requerimentos mínimos de capital, apura-se o montante total dos Ativos Ponderados por Risco
+                (RWA) através da soma das parcelas dos Ativos Ponderados por Risco de Crédito, de Mercado e
+                Operacional. O C6 Bank utiliza as abordagens padronizadas para o cálculo dessas parcelas, consoante a
+                regulamentação em vigor.
+                A tabela a seguir apresenta os requerimentos mínimos de capital e limites operacionais:
+                                                                                          31/12/2021         31/12/2020
+                 Patrimônio de Referência                                                    1.543.777          1.224.288
+                   Nível I                                                                   1.407.521          1.224.288
+                     Capital Principal                                                       1.407.521          1.224.288
+                   Nível II                                                                    136.256                   -
+                 RWA                                                                       13.546.220           7.064.950
+                   Risco de Crédito                                                         12.987.543          4.203.207
+                   Risco de Mercado                                                             48.947          2.562.135
+                   Risco Operacional                                                           509.730            299.608
+                 Índice de Basiléia (PR/RWA)                                                    11,40%             17,33%
+                 Requerimento Mínimo                                                            10,00%              9,25%
+                 Índice Nível 1                                                                 10,39%             17,33%
+                 Requerimento Mínimo                                                             8,00%              7,25%
+                 Índice Capital Principal                                                       10,39%             17,33%
+                 Requerimento Mínimo                                                             6,50%              5,75%
+
+
+                     E VENTOS SUBSEQUENTES
+
+                O C6 Bank e o JPMorgan Chase concluíram em 04 de fevereiro de 2022 o investimento estratégico que
+                prevê a venda de uma participação de 40% do banco brasileiro. O fechamento do negócio ocorre após a
+                obtenção das aprovações regulatórias cabíveis tanto no Brasil quanto nos Estados Unidos e deve acelerar o
+                crescimento do C6 Bank.
+                Ainda em 04 de fevereiro de 2022 o Banco C6 S.A. foi capitalizado em R$3.625.000, sujeito à aprovação
+                regulatória do Banco Central do Brasil.
+
+
+
+                              BANCO C6 S      Assinado de forma digital por
+                                              BANCO C6 S
+                              A:3187249500017 A:31872495000172
+                                              Dados: 2022.04.04 15:55:15
+                              2               -03'00'
+
+
+
+
+Classificação: Pública

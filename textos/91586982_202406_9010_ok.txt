@@ -1,0 +1,981 @@
+
+=== página 8 ===
+                                    DEMONSTRAÇÕES DOS RESULTADOS ABRANGENTES
+                                              (Em milhares de Reais)
+
+
+
+
+              Cooperativa de Crédito, Poupança e Investimento Sicredi Pioneira RS - Sicredi Pioneira RS
+                                         CNPJ/MF nº 91.586.982/0001-09
+
+                                                                                       01/01/2024 a 01/01/2023 a
+                                                                                        30/06/2024   30/06/2023
+Sobras ou perdas do semestre                                                  73.131
+Outros resultados abrangentes                                                    -                -          -
+Resultado abrangente atribuível                                               73.131              -          -
+
+
+                     As notas explicativas são parte integrante das Demonstrações Financeiras
+
+
+
+
+                                                          #
+
+=== página 9 ===
+                                                                                              Notas Explicativas
+                                                                                                 (Em milhares de Reais)
+
+
+
+
+NOTA 01 – CONTEXTO OPERACIONAL
+
+A Cooperativa de Crédito, Poupança e Investimento Sicredi Pioneira RS - Sicredi Pioneira RS ("Cooperativa"), é uma instituição financeira cooperativa, filiada à Central Sicredi Sul/Sudeste ("Central") e
+integrante do Sistema Cooperativo Sicredi (“Sicredi”). A Cooperativa é uma instituição financeira não bancária, autorizada a funcionar pelo Banco Central do Brasil ("Bacen") com início das atividades em
+28/12/1902 e sede situada na Rua Sete de Setembro, 374, na cidade de Nova Petrópolis - RS. A Cooperativa tem por objetivos principais:
+
+
+i) Desenvolver programas de poupança, de uso adequado do crédito e de prestação de serviços, praticando todas as operações ativas, passivas e acessórias próprias de cooperativas de crédito;
+
+ii) Prestar, através da mutualidade, a assistência financeira aos associados em suas atividades específicas;
+iii) Atuar na formação educacional de seus associados, no sentido de fomentar o cooperativismo.
+A execução das atividades obedece ao disposto na legislação pertinente, assim como aos atos regulamentares oficiais, ao estatuto social, e às normas internas do Sicredi.
+
+O Sicredi, em 30 junho de 2024, está organizado por 104 Cooperativas de Crédito filiadas, que operam com uma rede de atendimento com mais de 2.740 pontos ativos, dos quais a Cooperativa opera em
+52 pontos de atendimentos. A estrutura conta ainda com cinco Centrais Regionais – acionistas da Sicredi Participações S.A. (“SicrediPar”) – a Confederação das Cooperativas do Sicredi (“Confederação
+Sicredi”), uma Fundação juntamente com o Banco Cooperativo Sicredi S.A. (“Banco”).
+
+
+A Cooperativa é parte integrante do Fundo Garantidor do Cooperativismo de Crédito (FGCoop), associação civil sem fins lucrativos, com personalidade jurídica de direito privado de abrangência nacional,
+conforme anexo I à Resolução do Conselho Monetário Nacional ("CMN") nº 4.933, de 29 de julho de 2021.
+
+O FGCoop tem por objeto prestar garantia de créditos em situações de intervenção ou liquidação extrajudicial de instituição associada, até o limite de R$ 250 (duzentos e cinquenta mil reais) por
+associado (CPF/CNPJ), Além disso, o FGCoop também pode realizar operações de assistência, de suporte financeiro e de liquidez com essas instituições.
+
+A Cooperativa também é parte integrante da Sicredi Fundos Garantidores ("SFG"), empresa sem fins lucrativos cuja formação de reservas advém de contribuições mensais e extraordinárias de
+cooperativas associadas ao fundo o qual tem por objeto assegurar a credibilidade e a solvabilidade das suas associadas. Conforme regras estabelecidas nos Regulamentos dos Fundos Garantidores, as
+contribuições mensais são apuradas pelo somatório de duas parcelas: parcela fixa, relacionada ao objetivo de cada Fundo; e parcela variável, relativa ao risco imputado ao Sistema (considera níveis de
+liquidez, de margem de capital e de utilização de dispositivos de segurança).
+
+NOTA 02 – APRESENTAÇÃO DAS DEMONSTRAÇÕES FINANCEIRAS
+
+As demonstrações financeiras foram elaboradas e estão sendo apresentadas em conformidade com as regulamentações emanadas pelo CMN e pelo Banco Central do Brasil - BACEN, incluindo a Resolução
+CMN nº 4.818/20 e Resolução BCB nº 2/20 que regulamentaram procedimentos para elaboração e divulgação das demonstrações financeiras. Foram respeitadas também, as normas regulamentares
+constantes no Plano Contábil das Instituições do Sistema Financeiro Nacional - COSIF, os Pronunciamentos Contábeis homologados pelo BACEN (CPCs 00 (R2), 01 (R1), 02 (R2), 03 (R2), 04 (R1), 05 (R1), 10
+(R1), 23, 24, 25, 27, 33 (R1) e 46 e a legislação aplicada às cooperativas de crédito, especialmente às disposições das Leis nº 4.595/64 e nº 5.764/71, com alterações pelas Leis Complementares nº 130/09 e
+196/22.
+
+Conforme o disposto no Art. 2, parágrafo 4º da Resolução BCB nº 2/20, as demonstrações financeiras semestrais relativas aos semestres findos em 30 junho de 2024, podem ser acompanhadas de notas
+explicativas selecionadas. Listamos a seguir as notas explicativas que foram apresentadas nas demonstrações financeiras do exercício findo em 31 de dezembro de 2023, as quais não estão sendo incluídas
+ou apresentadas no mesmo grau de detalhamento nestas demonstrações financeiras semestrais:
+I. Operações de crédito (composição das operações segregada por setor de atividades e faixas de vencimento e concentração das operações);
+II. Outros ativos (movimentação da provisão para desvalorização de outros valores e bens);
+III. Obrigações por repasses;
+IV. Patrimônio líquido (juros ao capital, destinações, resultados acumulados);
+V. Sicredi fundo garantidor;
+VI. Imposto de renda e contribuição social;
+VII. Transações com partes relacionadas;
+IX. Índices de basiléia e de imobilização;
+
+A Diretoria concedeu autorização para a conclusão destas demonstrações financeiras em 05 de agosto de 2024.
+
+NOTA 03 – POLÍTICAS CONTÁBEIS MATERIAIS
+
+Foram adotadas as seguintes políticas contábeis materiais para a elaboração das demonstrações financeiras:
+a) Apuração do resultado
+
+Os ingressos e os dispêndios, assim como as receitas e as despesas, são registrados mensalmente de acordo com o regime de competência, que estabelece que os ingressos e os dispêndios e as receitas e
+despesas devem ser incluídas na apuração dos resultados dos períodos em que ocorrerem, sempre simultaneamente quando se correlacionarem, independentemente de recebimento ou pagamento,
+alocados de forma proporcional de acordo com os montantes do ingresso bruto de ato cooperativo e da receita bruta de ato não-cooperativo, quando não identificados com cada atividade.
+
+
+
+As operações com taxas prefixadas são registradas pelo valor de resgate, e as receitas e despesas correspondentes ao período futuro são apresentadas em conta redutora dos respectivos ativos e passivos.
+
+As receitas e despesas de natureza financeira são contabilizadas pelo critério pro-rata die e calculadas com base no modelo exponencial, exceto aquelas relativas a títulos descontados ou relacionadas a
+operações com o exterior, que são calculadas com base no método linear. As operações com taxas pós-fixadas ou indexadas a moedas estrangeiras são atualizadas até a data do balanço.
+
+No semestre findo em 30 junho de 2024 a Cooperativa apresentou um resultado líquido de R$ -4.572 (junho de 2023 - R$ -2.099) referente a Atos Não Cooperativos. Este resultado não está considerando
+os juros sobre capital próprio, o qual também é ato não cooperativo, não sendo apresentado na DSP.
+
+b) Caixa e equivalentes de caixa
+
+Caixa e equivalentes de caixa são representados pelas disponibilidades em moeda nacional, moeda estrangeira e aplicações interfinanceiras de liquidez, cujos valores são aplicados pelas Cooperativas nas
+Centrais via Centralização Financeira e pelas cotas de fundos de investimento de renda fixa e multimercado, com vencimento de curto prazo, por exemplo, três meses ou menos, a contar da data da
+aquisição e que estão sujeitas a risco insignificante de mudança de valor.
+
+=== página 10 ===
+                                                                                            Notas Explicativas
+                                                                                              (Em milhares de Reais)
+
+
+
+
+c) Aplicações interfinanceiras de liquidez
+
+Representam operações a preços fixos referentes às compras de títulos com compromisso de revenda e aplicações em depósitos interfinanceiros e estão demonstradas pelo valor de resgate, líquidas dos
+rendimentos a apropriar correspondentes a períodos futuros.
+
+d) Títulos e valores mobiliários
+
+A carteira está composta por títulos de renda fixa, renda variável e fundos de investimentos, os quais são apresentados pelo custo acrescido dos rendimentos auferidos até a data do balanço, ajustados
+aos respectivos valores justos, conforme aplicável.
+
+e) Relações interfinanceiras – centralização financeira
+
+A centralização financeira compreende as sobras de caixa da cooperativa, não investidas em suas atividades, as quais são centralizadas através de repasses interfinanceiros para a Cooperativa Central.
+Estes montantes são aplicados no mercado financeiro e/ou emprestados para as cooperativas filiadas para o financiamento das suas atividades e possuem liquidez imediata e remuneração mensal.
+
+f) Operações de crédito
+
+Estão demonstradas ao custo acrescido dos rendimentos auferidos. As operações de crédito estão classificadas de acordo com análise da Administração quanto ao nível de risco, considerando a
+conjuntura econômica e os riscos específicos em relação às operações, aos devedores e aos garantidores, observando os parâmetros estabelecidos nas Resoluções CMN nº 2.682/99 e nº 2.697/00.
+
+
+A atualização das operações de crédito vencidas em até 59 dias é contabilizada em receitas de operações de crédito, e a partir do 60º dia, em rendas a apropriar. As operações classificadas como nível “H”
+permanecem nessa classificação por seis meses, quando então são baixadas contra a provisão existente e controladas, por no mínimo cinco anos, em contas de compensação, não mais figurando no
+balanço patrimonial.
+
+g) Provisão para perdas esperadas associadas ao risco de crédito
+
+A provisão para perdas esperadas associadas ao risco de crédito é fundamentada na análise das operações e leva em consideração a conjuntura econômica, a experiência passada, os riscos específicos e
+globais das carteiras, considerando os critérios de provisionamento, definidos nas Resoluções CMN nº 2.682/99 e nº 2.697/00, associados às avaliações procedidas pela Administração, na determinação
+dos riscos de crédito.
+
+h) Ativos não financeiros mantidos para venda
+Os ativos não financeiros mantidos para venda, determinados pela Resolução CMN nº 4.747/19, são segregados em próprios e recebidos de terceiros. Esses bens não depreciam e são mensurados pelo
+valor justo de acordo com os critérios estabelecidos pelo CPC 46, o qual foi aprovado pela Resolução CMN nº 4.924/21.
+
+ Próprios: representam os bens de propriedade da cooperativa, os quais não são utilizados no desempenho da atividade social, estando disponíveis para venda imediata e cuja alienação seja altamente
+provável no período máximo de um ano.
+
+ Recebidos de terceiros: representam os bens recebidos como dação em pagamento de dívidas, não destinados ao uso próprio.
+
+i) Demais ativos circulantes e realizáveis a longo prazo (não circulantes)
+
+Demonstrados pelo custo de aquisição, incluindo, quando aplicável, os rendimentos auferidos e as variações monetárias pro-rata die incorridos e as variações cambiais, deduzidos das correspondentes
+provisões para perdas ou ajuste ao valor de mercado e rendas a apropriar.
+
+j) Investimentos
+Estão demonstrados ao custo de aquisição, referem-se a participação em empresas do Sistema Sicredi, ajustados por provisão para perdas quando aplicável.
+k) Imobilizado de uso
+
+Corresponde aos direitos que tenham por objeto bens corpóreos destinados à manutenção das atividades ou exercidos com essa finalidade. Está demonstrado ao custo de aquisição, deduzido da
+depreciação do imobilizado de uso, a qual é calculada pelo método linear, com base nas taxas anuais mencionadas na Nota "Imobilizado de uso e intangível", que levam em consideração a vida útil-
+econômica dos ativos.
+
+A vida útil dos ativos e os métodos de depreciação são revistos no encerramento de cada exercício de acordo com os critérios definidos pelo CPC 27 - Ativo Imobilizado, o qual foi aprovado pela Resolução
+CMN nº 4.535/16.
+l) Intangível
+
+Os ativos intangíveis são bens incorpóreos, não monetários, identificáveis sem substância física, destinados à manutenção do sistema ou exercidos com essa finalidade e na geração de benefícios
+econômicos futuros, adquiridos ou desenvolvidos pela instituição. Está demonstrado aos valores de custo e contempla gastos na aquisição e desenvolvimento de software, ajustado por amortizações
+acumuladas, calculadas a partir do momento em que começam a ser usufruídos os benefícios respectivos, com base em taxas anuais que levam em consideração a vida útil-econômica dos bens, de acordo
+com as disposições da Resolução CMN nº 4.534/16 e CPC 04 - Ativo Intangível, conforme mencionado na Nota "Imobilizado de uso e intangível". As amortizações acumuladas, calculadas a partir do
+momento em que começam a ser usufruídos os benefícios respectivos, na razão de 10% a 20% ao ano, pelo método linear.
+
+
+m) Redução ao valor recuperável de ativos
+
+O imobilizado e outros ativos não circulantes, inclusive o ativo intangível, são revistos anualmente para se identificar evidências de perdas não recuperáveis, ou ainda, sempre que eventos ou alterações
+nas circunstâncias indicarem que o valor contábil pode não ser recuperável. Quando este for o caso, o valor recuperável é calculado para verificar se há perda. Quando houver perda, ela é reconhecida
+pelo montante em que o valor contábil do ativo ultrapassa seu valor recuperável, que é o maior entre o preço líquido de venda e o valor em uso de um ativo.
+
+=== página 11 ===
+                                                                                            Notas Explicativas
+                                                                                              (Em milhares de Reais)
+
+
+
+
+n) Depósitos, obrigações por empréstimos e repasses
+Estão demonstrados pelos valores das exigibilidades, considerados os encargos, variações cambiais e monetárias até a data das demonstrações financeiras, reconhecidos em base pro rata-die, segregados
+da seguinte forma:
+
+Os depósitos à vista são compostos de valores cuja disponibilidade é imediata aos associados, portanto sem prazo determinado para movimentá-los, ficando a critério do portador dos recursos fazê-lo
+conforme sua necessidade.
+Os depósitos de poupança são compostos de valores cuja disponibilidade pode ser de livre movimentação, ficando a critério do portador dos recursos fazê-lo conforme sua necessidade, e também para
+fins específicos. Os recursos recebem atualizações por encargos financeiros remuneratórios de acordo com sua finalidade.
+
+Os depósitos a prazo são compostos por valores pactuados para disponibilidade em prazos pré-estabelecidos, os quais recebem atualizações por encargos financeiros remuneratórios conforme a sua
+contratação em pós-fixada e estão demonstrados pelo seu valor de resgate, líquidos das despesas financeiras a decorrer.
+
+Os depósitos interfinanceiros são compostos por recursos recebidos em depósito de outras instituições do mercado, na forma da regulamentação vigente e específica para as operações de depósitos
+interfinanceiros, observado que a instituição deve manter controles internos para efeito de limite de captação.
+
+Os recursos de aceite e emissão de títulos são demonstrados pelos valores das exigibilidades e consideram, quando aplicáveis, os encargos exigíveis até a data do balanço, reconhecidos em base "pro rata
+die".
+As obrigações por empréstimos e repasses correspondem aos recursos repassados pelo Banco Cooperativo Sicredi, Cooperativa Central e demais instituições com a finalidade de operações de
+financiamento.
+
+o) Demais passivos circulantes e exigíveis a longo prazo (não circulantes)
+São demonstrados pelos valores conhecidos ou calculáveis, incluindo, quando aplicável, os encargos e as variações monetárias em base pro rata-die incorridos, deduzidos das correspondentes despesas a
+apropriar.
+
+p) Impostos e contribuições
+
+O Imposto de Renda (IRPJ) e a Contribuição Social sobre o Lucro Líquido (CSLL) incidem sobre o resultado positivo em atos não cooperativos. A provisão corresponde às alíquotas vigentes para o IRPJ (15%,
+acrescida de adicional de 10%) e a CSLL é de 15%. As alíquotas de IRPJ e CSLL são aplicadas sobre o lucro auferido, após os ajustes de base de cálculo previstos na legislação e a compensação de prejuízos
+fiscais e base de cálculo negativa de CSLL de anos anteriores, sendo essa dedução limitada à 30% do lucro tributável.
+
+
+Ainda no âmbito federal, as cooperativas estão sujeitas às contribuições para o Programa de Integração Social (PIS – 0,65%) e Contribuição para o Financiamento da Seguridade Social (COFINS – 4%) sobre
+as receitas auferidas nas operações com não associados, após a dedução de itens específicos previstos pela legislação, como as sobras apuradas nas Demonstrações de Sobras ou Perdas (DSP).
+
+
+Na esfera municipal, a cooperativa está sujeita à incidência do Imposto sobre Serviços de Qualquer Natureza (ISSQN), apurado a partir da receita com atos não cooperativos, ou seja, em decorrência da
+prestação de serviços a não associados; as alíquotas variam entre 2% e 5% e são determinadas pela legislação vigente em cada município.
+
+Os ingressos decorrentes de operações realizadas com cooperados não possuem incidência de tributos.
+q) Provisão para riscos cíveis, tributários e trabalhistas
+As práticas contábeis para registro, mensuração e divulgação de ativos e passivos contingentes e, também, das obrigações legais, são aplicadas de acordo com os critérios definidos pelo Pronunciamento
+Técnico CPC 25, emitido pelo Comitê de Pronunciamentos Contábeis (CPC), o qual foi aprovado pela Resolução nº 3.823/09, a saber:
+
+ Ativos contingentes são reconhecidos somente quando há garantias reais ou decisões judiciais favoráveis, transitadas em julgado. Os ativos contingentes com êxitos prováveis são apenas divulgados em
+nota explicativa;
+
+ Passivos contingentes são provisionados quando as perdas forem avaliadas como prováveis e os montantes envolvidos forem mensuráveis com suficiente segurança. Os passivos contingentes avaliados
+como de perdas possíveis são divulgados, e aqueles não mensuráveis com suficiente segurança e como de perdas remotas não são provisionados e/ou divulgados;
+
+ As obrigações legais são registradas como exigíveis, independentemente da avaliação sobre as probabilidades de êxito.
+r) Principais julgamentos e estimativas contábeis
+As estimativas contábeis são determinadas pela Administração, considerando fatores e premissas estabelecidas com base em julgamento, que são revisados a cada semestre. Itens significativos sujeitos a
+essas estimativas e premissas incluem as provisões para perdas esperadas associadas ao risco de crédito, ajuste dos ativos ao valor provável de realização ou recuperação, as provisões para contingências,
+entre outros.
+A liquidação das transações envolvendo essas estimativas poderá resultar em valores divergentes em razão de imprecisões inerentes ao processo de sua determinação.
+
+
+I - Provisão para perdas esperadas associadas ao risco de crédito: Além de observar os requisitos para constituição de provisão em função do atraso no pagamento de parcela de principal ou encargos das
+operações, a provisão é calculada com base no julgamento da Administração quanto ao nível de risco, considerando a conjuntura econômica, os riscos específicos em relação à operação, aos devedores e
+garantidores, aos períodos de atraso e ao grupo econômico, observando os parâmetros estabelecidos nas Resoluções CMN nº 2.682/99 e nº 2.697/00.
+O detalhamento da provisão para perdas está apresentado na nota Operações de Crédito;
+
+
+II - Provisão para riscos cíveis, tributários e trabalhistas: Com base em prognósticos de perda avaliados pela Administração, constituindo provisão para as demandas de naturezas cíveis, tributárias e
+trabalhistas, através de avaliações jurídicas. A avaliação dos prognósticos de perda leva em conta a probabilidade de desembolsos da entidade para cada elemento processual e pode incorrer em alto grau
+de julgamento, quanto maior for a incerteza existente.
+O detalhamento das provisões e passivos contingentes está apresentado na nota Provisão para riscos cíveis, tributários e trabalhistas;
+
+III - Redução ao valor recuperável de ativos intangíveis e outros ativos: o teste de perda por redução ao valor recuperável desses ativos é realizado, no mínimo anualmente, de forma a apurar se há algum
+indicativo de que um ativo possa ter sofrido desvalorização. Quando o valor recuperável destes ativos não puder ser obtido por meio de fontes externas, a avaliação do valor recuperável desses ativos
+pode incorrer em consideráveis julgamentos, principalmente na mensuração dos potenciais benefícios econômicos futuros associados;
+
+s) Moeda funcional
+As demonstrações financeiras são expressas em reais (R$), que é a moeda funcional da Cooperativa, exceto quando indicado de outra forma, em milhares de reais (R$ mil).
+t) Resultados recorrentes e não recorrentes
+Resultados recorrentes são aqueles que estão relacionados com as atividades características da Cooperativa que ocorrem com frequência no presente e previstas para ocorrer no futuro, enquanto os
+resultados não recorrentes são aqueles que procedem de um evento extraordinário e/ou imprevisível, com tendência de não se repetir no futuro.
+
+=== página 12 ===
+                                                                                            Notas Explicativas
+                                                                                               (Em milhares de Reais)
+
+
+
+
+NOTA 04 – CAIXA E EQUIVALENTES DE CAIXA
+Na elaboração das demonstrações dos fluxos de caixa, foram classificados como caixa e equivalentes de caixa os seguintes montantes:
+Descrição                                                                                                                                    30/06/2024                      31/12/2023
+Disponibilidades                                                                                                                                            28.610                                 26.437
+Cotas de fundos de renda fixa e multimercado - centralização financeira                                                                                  3.464.136                              2.494.092
+Centralização financeira                                                                                                                                   341.222                                253.061
+Total                                                                                                                                                    3.833.968                              2.773.590
+
+As disponibilidades e as aplicações financeiras de liquidez são classificadas como caixa e equivalentes de caixa para fins de apresentação da Demonstração dos Fluxos de Caixa, quando atendido às
+determinações do CPC 03 (R2) – Demonstração dos Fluxos de Caixa.
+
+A centralização financeira é composta pela transferência das sobras de caixa das Cooperativas filiadas, sem prazo de resgate, e remunerados de acordo com as taxas praticadas no mercado, que na média
+de 2024 equivale a 103% do CDI (dezembro de 2023 - 103%).
+
+NOTA 05 - APLICAÇÕES INTERFINANCEIRAS DE LIQUIDEZ
+
+                                                                                                                                                    30/06/2024
+                                                                                                                                                                                           31/12/2023
+                                                                                                                                                     A vencer
+                                            Descrição
+                                                                                                                                                      Acima de 12
+                                                                                                             Até 3 meses             3 a 12 meses                    Total                     Total
+                                                                                                                                                         meses
+Depósitos Interfinanceiros com o Banco Cooperativo Sicredi S.A. (Nota 06)                                                  33.042               -         326.743             359.785             261.475
+Depósitos interfinanceiros entre Cooperativas do Sicredi                                                                         -        50.181           98.681             148.862              71.531
+Total                                                                                                                      33.042         50.181          425.424             508.647             333.006
+
+Total circulante                                                                                                                                                               83.223             102.840
+Total não circulante                                                                                                                                                          425.424             230.166
+
+
+As aplicações de Depósitos Interfinanceiros entre Cooperativas do Sicredi são realizadas com a finalidade de fornecer liquidez. Por ser um leilão, a taxa varia na aplicação, mas tem mínimo de 105% do CDI.
+
+As aplicações de DI entre a Cooperativa e o Banco Sicredi são efetuadas para cobrir a necessidade de funding do Banco em função das operações realizadas pelas cooperativas com seus associados (crédito
+rural equalizado, antecipação de recebíveis, consignado, INSS, prorrogações, entre outros). Além desta finalidade, algumas operações de DI buscam proteger a carteira de crédito da cooperativa
+(operações de hedge) e outras buscam prover liquidez ao Banco para destinações diversas.
+
+NOTA 06 – TÍTULOS E VALORES MOBILIÁRIOS
+
+                                                                                                                                                    30/06/2024
+                                                                                                                                                                                           31/12/2023
+                                                                                                                                                     A vencer
+                                            Descrição
+                                                                                                                                                      Acima de 12
+                                                                                                             Até 3 meses             3 a 12 meses                    Total                     Total
+                                                                                                                                                         meses
+Letras financeiras subordinadas entre Cooperativas                                                                               -              -           8.411                8.411              8.490
+Títulos de renda fixa - CPR                                                                                                  5.396          7.697          35.529               48.622             47.875
+Cotas de fundos de renda fixa - centralização financeira                                                                 2.034.289              -                -           2.034.289          1.254.037
+Cotas de fundos multimercado - centralização financeira                                                                  1.429.847              -                -           1.429.847          1.240.055
+Participações de Cooperativas                                                                                                    -              -         107.588              107.588            107.588
+Total                                                                                                                   3.469.532           7.697         151.528            3.628.757          2.658.045
+
+Total circulante                                                                                                                                                             3.477.229           2.508.246
+Total não circulante                                                                                                                                                           151.528             149.799
+
+As letras financeiras subordinadas são aplicações emitidas com cláusula de subordinação e foram firmadas em fevereiro de 2021, com vencimento em fevereiro de 2028.
+
+O valor de mercado das cédulas do produtor rural (CPR) é mensurado a partir da curva de juros, indexado ao Depósito Interfinanceiro (DI) e taxas pré-fixadas em contrato, os títulos são registrados na B3
+S.A. – Brasil, Bolsa, Balcão.
+
+As cotas de fundos são valorizadas diariamente, através do valor da cota, divulgada pelo administrador do fundo no site da Comissão de Valores Mobiliários - CVM e Associação Brasileira de Entidades de
+Mercado Financeiro e de Capitais - ANBIMA.
+a) Participações de cooperativas
+
+Registrados ao custo de aquisição                                                                                                            30/06/2024                      31/12/2023
+Sicredi Participações S.A.                                                                                                                                 19.834                                  19.834
+Sicredi Fundos Garantidores - SFG                                                                                                                               2                                       2
+Cooperativa Central                                                                                                                                        87.752                                  87.752
+Total                                                                                                                                                     107.588                                 107.588
+
+=== página 13 ===
+                                                                                             Notas Explicativas
+                                                                                               (Em milhares de Reais)
+
+
+
+
+NOTA 07 – OPERAÇÕES DE CRÉDITO
+
+a) Composição das operações de créditos por tipo de operação e prazos
+                                                                                                                                    30/06/2024                                                  31/12/2023
+                                                                                                                                  A vencer
+                    Operações de crédito e Outros créditos                      Vencidas a partir
+                                                                                                                                                 Acima de 12         Total da carteira        Total da carteira
+                                                                                   de 15 dias                Até 3 meses          3 a 12 meses
+                                                                                                                                                    meses
+Empréstimos e títulos descontados                                                           69.534                      333.596        725.017       1.835.833                    2.963.980           2.775.694
+Financiamentos                                                                               7.191                       86.073        232.692         509.615                      835.571             908.084
+Financiamentos rurais e agroindustriais                                                      1.429                       55.711        108.623         195.922                      361.685             362.147
+Financiamentos habitacionais                                                                   120                          819          1.876          57.059                       59.874              53.437
+Total das operações de crédito                                                              78.274                      476.199      1.068.208       2.598.429                    4.221.110           4.099.362
+Avais e fianças honrados (Nota 08)                                                             218                          106              7               -                          331                 390
+Valores a receber relativos a transações de pagamento (Nota 08)                                  -                      270.213        108.650           1.622                      380.485             381.537
+Títulos e créditos a receber sem característica de concessão (Nota 08)                         883                            -              -               -                          883                 783
+Total de outros créditos                                                                       218                      270.319        108.657           1.622                      380.816             381.927
+Carteira total                                                                              78.492                      746.518      1.176.865       2.600.051                    4.601.926           4.481.289
+
+Total circulante                                                                                                                                                                  2.001.875          1.995.379
+Total não circulante                                                                                                                                                              2.600.051          2.485.910
+
+b) Composição da carteira de créditos por níveis de risco
+                                                                     Carteira                                                   Provisão para perdas esperadas associadas ao risco de crédito
+                      %          % Adicional
+Níveis de Risco                                                                                                Mínimo              Adicional         Total         Mínimo        Adicional
+                    Mínimo       30/06/2024             30/06/2024                31/12/2023                                                                                                  Total 31/12/2023
+                                                                                                             30/06/2024           30/06/2024     30/06/2024      31/12/2023 31/12/2023
+      AA              0,00           0,49                          270.665                 261.493                            -          1.326           1.326              -          1.281              1.281
+       A              0,50           0,40                        1.958.903               2.000.176                        9.794          7.836          17.630        10.001           8.001             18.002
+       B              1,00           0,00                        1.198.774               1.197.095                       11.987               -         11.987        11.971               -             11.971
+       C              3,00           0,00                          592.298                 547.785                       17.769               -         17.769        16.434               -             16.434
+       D              10,00          0,00                          280.690                 221.432                       28.069               -         28.069        22.143               -             22.143
+       E              30,00          0,00                           84.229                  76.573                       25.269               -         25.269        22.972               -             22.972
+       F              50,00          0,00                           48.580                  66.207                       24.290               -         24.290        33.103               -             33.103
+       G              70,00          0,00                           46.305                  25.877                       32.414               -         32.414        18.114               -             18.114
+       H             100,00          0,00                          121.482                  84.651                      121.482               -        121.482        84.651               -             84.651
+     Total                                                       4.601.926               4.481.289                      271.074          9.162         280.236       219.389           8.001            228.671
+
+
+A Cooperativa também possui coobrigações em garantias prestadas no montante de R$ 494.008 (dezembro de 2023 - R$ 470.503) onde estão inclusas as operações com recursos recebidos de instituições
+financeiras e repassados aos associados via Banco Cooperativo Sicredi S.A., em que a Cooperativa é intermediária e garantidora solidária por força de contrato firmado entre as partes (Nota 27) As
+provisões decorrentes desses contratos compreendem o montante de R$ 10.185 (dezembro de 2023 - R$ 8.879) conforme (Nota 14).
+
+Em 30 de junho de 2024, a Cooperativa possui outros créditos sem característica de concessão de crédito para os quais registrou provisão no montante de R$ 883 (dezembro de 2023 - R$ 783).
+
+c) Composição da carteira de créditos segregada por setor de atividade e faixas de vencimento
+                                                                                                                                    30/06/2024                                                  31/12/2023
+                                                                                                                                  A vencer
+                                    Setor                                       Vencidas a partir
+                                                                                                                                                 Acima de 12         Total da Carteira        Total da Carteira
+                                                                                   de 15 dias                Até 3 meses          3 a 12 meses
+                                                                                                                                                    meses
+Pessoas físicas                                                                             44.653                      388.647        416.036         665.354                    1.514.690           1.491.932
+Rural                                                                                        1.429                       55.711        108.623         195.922                      361.685             362.147
+Industrial                                                                                   2.352                       36.355         78.290         219.155                      336.152             270.913
+Comércio                                                                                     9.581                       97.549        189.556         410.248                      706.934             676.703
+Habitacional                                                                                   120                          819          1.876          57.059                       59.874              53.438
+Pessoas jurídicas                                                                           20.357                      167.437        382.484       1.052.313                    1.622.591           1.626.156
+Total                                                                                       78.492                      746.518      1.176.865       2.600.051                    4.601.926           4.481.289
+
+Total circulante                                                                                                                                                                  2.000.992          1.995.379
+Total não circulante                                                                                                                                                              2.600.051          2.485.910
+
+d) Concentração das operações de crédito
+                                                                                                                 30/06/2024                %                     31/12/2023                          %
+10 maiores devedores                                                                                                      403.082            8,76                                   410.827                8,99
+50 devedores seguintes                                                                                                    508.234           11,04                                   522.308               11,34
+100 devedores seguintes                                                                                                   355.055            7,72                                   352.030                7,92
+Demais                                                                                                                  3.335.555           72,48                                 3.196.124               71,75
+Total                                                                                                                   4.601.926          100,00                                 4.481.289              100,00
+
+=== página 14 ===
+                                                                                             Notas Explicativas
+                                                                                               (Em milhares de Reais)
+
+
+
+
+e) Movimentação da provisão para perdas esperadas associadas ao risco de crédito
+                                                                                                                                 30/06/2024                                30/06/2023
+Saldo inicial                                                                                                           -                     228.671                                          122.990
+Constituição de provisão                                                                                                -                     160.357                                           87.215
+Reversão de provisão                                                                                                    -                     (45.840)                                         (24.106)
+Movimento da provisão para perdas no resultado                                                                          -                     114.517                                           63.109
+Movimentação de baixados para prejuízo                                                                                  -                     (62.952)                                         (24.772)
+Saldo final                                                                                                             -                     280.236                                          161.327
+
+f) Resultado com operações de crédito:
+                                                                                                                                 30/06/2024                                30/06/2023
+Empréstimos e títulos descontados                                                                                                              290.754                                         257.449
+Financiamentos                                                                                                                                  79.094                                          91.089
+Financiamentos rurais e agroindustriais                                                                                                         16.005                                          15.305
+Financiamentos habitacionais                                                                                                                     3.321                                           1.987
+Outros                                                                                                                                              28                                              52
+Subtotal                                                                                                                                       389.202                                         365.882
+Recuperações de créditos baixados como prejuízo                                                                                                  7.463                                           2.819
+Total                                                                                                                                          396.665                                         368.701
+
+NOTA 08 – OUTROS ATIVOS FINANCEIROS
+
+Os créditos diversos, classificados no grupo de outros ativos financeiros, estão assim compostos:
+
+                                                     Descrição                                                                   30/06/2024                                31/12/2023
+Valores a receber relativos a transações de pagamento (a) (Nota 07)                                                                            378.862                                         379.982
+Ressarcimento de Despesas (c)                                                                                                                    4.763                                           6.175
+Dividendos a Receber                                                                                                                                  -                                            155
+Avais e fianças honrados (Nota 07)                                                                                                                 331                                             390
+Transações com cartão de crédito (b)                                                                                                            21.412                                          22.826
+Títulos e créditos a receber                                                                                                                       883                                             783
+Rendas a Receber MP 1.216/24 (d)                                                                                                                16.817                                                -
+Outros                                                                                                                                             858                                             953
+Total Circulante                                                                                                                               423.926                                         411.264
+
+Devedores por depósitos em garantia (Nota 15)                                                                                                    4.227                                           4.071
+Outros Créditos                                                                                                                                  1.622                                           1.556
+Total não circulante                                                                                                                             5.849                                           5.627
+Total                                                                                                                                          429.775                                         416.891
+
+(a) Valores a receber relativo a transações de pagamento, sejam de associados (carteira de emissão) ou do Banco Cooperativo Sicredi (repasses das receitas sobre a carteira de Adquirência).
+
+(b) valores a receber de associados, relativo às transações com cartão de crédito das bandeiras Visa e Mastercard.
+
+(c) O ressarcimento de despesas trata-se do valor a receber das filiadas referente os valores a ressarcir das despesas administrativas resultante da contribuição das filiadas sobre o orçamento da
+Cooperativa Central.
+(d) O Valor registrado na linha de rendas a receber refere-se ao Programa Nacional de Apoio às Microempresas e Empresas de Pequeno Porte (PRONAMPE) Solidário RS com Subvenção Econômica, que
+consta na Medida Provisória nº 1.216 publicada em 9 de maio de 2024. Esta medida autoriza o Poder Executivo federal a conceder subvenção econômica aos mutuários afetados pelos eventos climáticos
+extremos, ocorridos em abril e maio de 2024, assim como visa mitigar os impactos financeiros sofridos por empresas e indivíduos nas áreas atingidas.
+O processo de ressarcimento junto ao Ministério do Empreendedorismo da Microempresa e da Empresa de Pequeno Porte (MEMP) ocorrerá mensalmente a partir de agosto de 2024, onde os valores
+serão depositados após a conferência do ministério e abatidos desta conta.
+
+NOTA 09 – OUTROS ATIVOS
+
+Os créditos diversos, classificados no grupo de outros ativos, estão assim compostos:
+
+                                                       Descrição                                                                 30/06/2024                                31/12/2023
+Outros valores e bens                                                                                                                           18.484                                           7.496
+Adiantamentos e antecipações salariais                                                                                                           2.582                                             552
+Adiantamentos para pagamentos de nossa conta                                                                                                     1.831                                           2.286
+Adiantamentos para Confederação Sicredi (a)                                                                                                      6.077                                           5.424
+Convênios                                                                                                                                           25                                              25
+Cotas de consórcio                                                                                                                               1.049                                             853
+Atualização monetária sobre DIs (Central)                                                                                                        3.509                                           2.477
+Impostos e contribuições a compensar (b)                                                                                                         1.147                                           1.017
+Pendências a regularizar                                                                                                                         1.016                                             127
+Valores a receber Portabilidades                                                                                                                    71                                              74
+Valores a receber SFG                                                                                                                              427                                              87
+Ressarcimento Centralizadora (c)                                                                                                                    11                                                -
+Outros                                                                                                                                             484                                             190
+Total circulante                                                                                                                                36.713                                          20.608
+
+Outros valores e bens                                                                                                                            7.237                                           9.029
+Total não circulante                                                                                                                             7.237                                           9.029
+
+Total                                                                                                                                           43.950                                          29.637
+
+=== página 15 ===
+                                                                                              Notas Explicativas
+                                                                                                 (Em milhares de Reais)
+
+
+
+
+(a) Os adiantamentos para Confederação Sicredi referem-se à antecipação de valores, a qual está elaborando investimentos em estruturas e plataformas de tecnologia, através de aquisição de bens
+(móveis, equipamentos, softwares, instalações, etc.) e de gastos com projetos específicos (aplicativos, produtos, etc.). Após sua conclusão os mesmos serão repassados para as Cooperativas.
+
+b) Os valores de impostos e contribuições a compensar referem-se a pagamentos indevidos ou a maior de tributos e também a retenções sofridas de impostos com direito à compensação. Estes valores
+serão compensados através de PER/DCOMP Web ou através de Pedidos de Restituição à Receita Federal e Prefeituras
+(c) Ressarcimento centralizadora referem-se à provisão de valores adiantados para a Confederação, a qual está elaborando investimentos em estruturas e plataformas de tecnologia, através de aquisição
+de bens(móveis, equipamentos, softwares, instalações, etc.) e de gastos com projetos específicos (aplicativos, produtos, etc.). Após sua conclusão os mesmos serão repassados para a Cooperativa Central
+e, posteriormente, para às respectivas Cooperativas filiadas.
+
+a) Outros valores e bens
+
+                                                           Descrição                                                                         30/06/2024                                    31/12/2023
+Ativos não financeiros mantidos para venda - recebidos                                                                                                     24.078                                              16.361
+Imóveis                                                                                                                                                    23.454                                              15.497
+Veículos e afins                                                                                                                                               30                                                 270
+Máquinas e equipamentos                                                                                                                                       594                                                 594
+Provisões para redução ao valor recuperável de ativos                                                                                                        (524)                                               (527)
+Despesas antecipadas                                                                                                                                        2.167                                                 691
+Total                                                                                                                                                      25.721                                              16.525
+
+NOTA 10 – IMOBILIZADO DE USO E INTANGÍVEL
+
+
+                                                                                                             Taxas anuais                                   30/06/2024                                  31/12/2023
+                                               Descrição                                                    de depreciação              Custo        Depreciação/A
+                                                                                                                                                                                 Líquido                 Líquido
+                                                                                                                  %                                   mortização
+Imobilizado de uso                                                                                                                -       147.462          (56.408)                           91.054           91.467
+Imobilizações em curso                                                                                                            -         3.946                 -                            3.946            8.713
+Terrenos                                                                                                                          -         1.065                 -                            1.065            1.065
+Edificações                                                                                                                     4%         11.144           (3.549)                            7.595            7.375
+Instalações                                                                                                                    10%          8.045           (2.969)                            5.076            5.233
+Benfeitorias em imóveis de terceiros                                                                                           10%         44.884          (14.855)                           30.029           28.806
+Móveis e equipamentos                                                                                                          10%         33.909          (10.112)                           23.797           21.848
+Equipamentos de comunicação e segurança                                                                                        10%          5.135           (1.756)                            3.379            3.025
+Equipamentos de processamento de dados                                                                                         20%         37.703          (21.967)                           15.736           14.879
+Veículos                                                                                                                       20%          1.631           (1.200)                              431              523
+
+Intangível                                                                                                                                 68.086          (46.056)                          22.030            24.226
+  Investimentos Confederação                                                                                                   20%         41.202          (33.600)                           7.602             7.740
+  Outros ativos intangíveis                                                                                                    20%         26.884          (12.456)                          14.428            16.486
+
+Os investimentos Confederação são valores transferidos dos "Adiantamentos para Confederação Sicredi" para o intangível e referem-se aos desenvolvimentos de softwares que já estão em uso pela
+Cooperativa, sendo amortizados com base nos benefícios econômicos futuros incorporados aos ativos quando consumidos pela entidade, por meio do seu uso.
+
+NOTA 11 – DEPÓSITOS
+
+Composição dos depósitos por prazos de vencimento:
+                                                                                                                          30/06/2024                                                                    31/12/2023
+                  Depósitos                                   Sem vencimento e                                                         Acima de 12
+                                                                                                    De 3 a 12 meses                                                      Total                             Total
+                                                                 até 3 meses                                                              meses
+Depósitos à vista                                                                1.026.846                                       -                 -                                       1.026.846           817.032
+Depósitos de poupança                                                                2.566                                       -                 -                                           2.566             2.480
+Depósitos interfinanceiros                                                               -                                  20.788            79.340                                         100.128            44.090
+Depósitos a prazo                                                                   68.571                                 295.903         4.731.461                                       5.095.935         4.518.902
+Total                                                                            1.097.983                                 316.691         4.810.801                                       6.225.475         5.382.504
+
+Total circulante                                                                                                                                                                           1.414.674        1.140.677
+Total não circulante                                                                                                                                                                       4.810.801        4.241.827
+
+NOTA 12 – RECURSOS DE ACEITES E EMISSÃO DE TÍTULOS
+
+                                                                                                                          30/06/2024                                                                    31/12/2023
+                   Descrição                                  Sem vencimento e
+                                                                                                    De 3 a 12 meses                      Acima de 12 meses                        Total                    Total
+                                                                 até 3 meses
+ Obrigações por emissão de letras de crédito
+                                                                                        35                                   1.048                          73.160                           74.243            31.435
+imobiliário (LCI) (a)
+Total                                                                                   35                                   1.048                         73.160                            74.243            31.435
+
+Total circulante                                                                                                                                                                              1.083               359
+Total não circulante                                                                                                                                                                         73.160            31.076
+
+(a) A Letra de Crédito Imobiliário é um título de renda fixa criado para financiar o segmento imobiliário. As LCIs são emitidas por instituições financeiras que possuem carteiras de crédito imobiliário dentro
+de seu portfólio de investimentos. A captação em LCI é utilizada pela cooperativa para gerar funding (recurso) para suportar as demandas de crédito.
+
+Estes títulos são remunerados por encargos financeiros calculados com base em percentual do CDI - Certificado de Depósitos Interbancários.
+
+=== página 16 ===
+                                                                                           Notas Explicativas
+                                                                                             (Em milhares de Reais)
+
+
+
+
+NOTA 13 – RELAÇÕES INTERFINANCEIRAS
+
+                                                      Descrição                                                                          30/06/2024                           31/12/2023
+Repasses interfinanceiros                                                                                                                         1.317.908                                       963.701
+Recebimentos e pagamentos a liquidar                                                                                                                 15.412                                             -
+Total                                                                                                                                             1.333.320                                       963.701
+
+a) Repasses Interfinanceiros
+                                                                                                                      30/06/2024                                                           31/12/2023
+                  Descrição                                                                                                        Acima de 12
+                                                    Sem vencimento e até 3 meses                De 3 a 12 meses                                                   Total                       Total
+                                                                                                                                      meses
+Banco Cooperativo Sicredi S.A.                                                   49.967                                 92.448           144.298                                286.713           288.065
+Total - Recursos do Crédito Rural                                                49.967                                 92.448           144.298                                286.713           288.065
+Banco Cooperativo Sicredi S.A.                                                    2.400                                  4.587         1.024.208                              1.031.195           675.636
+Total - Outros Recursos                                                           2.400                                  4.587         1.024.208                              1.031.195           675.636
+
+Total                                                                            52.367                                 97.035         1.168.506                              1.317.908           963.701
+
+Total circulante                                                                                                                                                                149.402           182.370
+Total não circulante                                                                                                                                                          1.168.506           781.331
+
+As obrigações por repasses interfinanceiros provenientes de recursos do crédito rural operam com uma taxa até 12,50 % a.a. com vencimentos até 15/10/2035, e os recursos são repassados pelo Banco
+Cooperativo Sicredi S.A.
+Em maio de 2024 o Banco Central do Brasil emitiu a Resolução BCB nº 379, que zerou a alíquota de compulsório sobre o depósito de poupança do Banco Cooperativo Sicredi, em função do estado de
+calamidade pública no RS. Com isso, o Banco sacou o volume que estava depositado no Banco Central e repassou a maior parte para as cooperativas do RS. Na ocasião a cooperativa recebeu o valor de R$
+334.697, (dezembro de 2023 - R$ 0,00).
+
+NOTA 14 – OUTROS PASSIVOS FINANCEIROS
+
+                                                      Descrição                                                                          30/06/2024                           31/12/2023
+Provisão para garantias financeiras prestadas (a)                                                                                                        2.779                                        1.937
+Recursos em trânsito de terceiros (b)                                                                                                                   17.323                                        4.969
+Total circulante                                                                                                                                        20.102                                        6.906
+
+Provisão para garantias financeiras prestadas (a)                                                                                                        7.406                                        6.942
+Total não circulante                                                                                                                                     7.406                                        6.942
+
+Total                                                                                                                                                   27.508                                     13.848
+
+
+(a) A provisão para garantias financeiras prestadas refere-se às responsabilidades que as Cooperativas assumem ao garantir operações de crédito realizadas por seus cooperados junto ao Banco Sicredi.
+
+(b) Os recursos de terceiros são provenientes de convênios firmados com concessionários de serviços, conforme contrato de prestação de serviços estabelecido. Esses recursos representam os valores que
+estão sob a responsabilidade da cooperativa, aguardando posterior repasse.
+Devido à natureza das atividades da cooperativa e à dinâmica dos convênios estabelecidos, é comum que ocorra um acúmulo de saldo nessa conta. Esse acúmulo é resultado do volume de valores
+movimentados e pode ser influenciado por diversos fatores, como o agendamento de repasses em determinados dias ou períodos sazonais.
+
+NOTA 15 – PROVISÕES PARA RISCOS CÍVEIS, TRIBUTÁRIOS E TRABALHISTAS
+
+A Cooperativa é parte em processos judiciais dos quais seus assessores jurídicos classificam como risco de perda provável, sendo que os valores estimados e suas respectivas movimentações e provisões
+estão demonstrados no quadro a seguir, conforme a natureza dos passivos:
+
+                                 Natureza                                           Probabilidade de perda                               30/06/2024                           31/12/2023
+Trabalhista                                                                                Provável                                                      5.054                                        5.121
+Cível                                                                                      Provável                                                        745                                          734
+Tributária                                                                                 Provável                                                          8                                            8
+Total não circulante                                                                                                                                     5.807                                        5.863
+
+
+                                 Natureza                                              31/12/2023                         Aumento Provisão      Baixa/Reversão de Provisão           30/06/2024
+Trabalhista                                                                                                     5.121                     238                         (305)                           5.054
+Cível                                                                                                             734                     120                         (109)                             745
+Tributária                                                                                                          8                       -                             -                               8
+Total não circulante                                                                                            5.863                     358                         (414)                           5.807
+
+Em 30 junho de 2024, a Cooperativa possuía processos cuja probabilidade de perda é considerada possível, conforme a natureza dos passivos:
+
+                                                                                                     30/06/2024                                                        31/12/2023
+                                 Natureza
+                                                                                Quantidade                                 Total                   Quantidade                    Total
+Trabalhista                                                                                   16                                        2.948               17                                      2.869
+Cível                                                                                        157                                        5.422              131                                      4.040
+Tributária                                                                                    13                                       16.883               13                                     16.348
+Total                                                                                        186                                       25.253              161                                     23.257
+
+=== página 17 ===
+                                                                                           Notas Explicativas
+                                                                                              (Em milhares de Reais)
+
+
+
+
+NOTA 16 – OUTROS PASSIVOS
+
+
+                                                      Descrição                                                                  30/06/2024                               31/12/2023
+Transações com cartões de crédito (a)                                                                                                         391.451                                            395.217
+Provisão para pagamentos a efetuar                                                                                                             18.669                                             14.929
+Provisão para pagamentos a efetuar empresas do grupo                                                                                            2.521                                              3.840
+Cotas de capital a pagar                                                                                                                        8.609                                             10.769
+Provisão para participações nos lucros                                                                                                          6.588                                             17.062
+Fundo de assistência técnica, educacional e social                                                                                              4.617                                              6.331
+Fundos voluntários                                                                                                                              3.606                                              1.242
+Impostos e contribuições a recolher (d)                                                                                                        24.221                                              7.215
+Credores diversos                                                                                                                               2.973                                              3.671
+Credores - empresas do grupo                                                                                                                    2.398                                              2.892
+Credores por recursos a liberar vendedores de imóveis (c)                                                                                       1.892                                              2.669
+Cheques administrativos                                                                                                                              -                                             1.579
+Cobrança e arrecadação de tributos (b)                                                                                                          1.941                                                717
+Provisão doações desastres naturais (Nota 26)                                                                                                     150                                                   -
+Pendências a regularizar                                                                                                                        1.240                                              2.158
+Total Circulante                                                                                                                              471.026                                            470.291
+
+(a) As transações com cartões de crédito referem-se aos valores a pagar relativos as operações, sejam para as bandeiras e credenciadoras (compras autorizadas no processo de emissão) ou para o Banco
+Cooperativo Sicredi S.A. (repasses dos custos sobre a carteira de adquirência).
+
+(b) Cobrança e arrecadação de tributos e assemelhados referem-se aos valores de arrecadações de IOF, GPS, DARF e DAS.
+
+(c) Em 2023 as propostas de crédito imobiliário passaram a ser vinculadas diretamente à carteira das cooperativas ao invés do Banco Sicredi. Na conta são registrados os valores de recursos a liberar aos
+vendedores, referentes aos contratos do imobiliário.
+(d) A variação identificada na linha de Outros Credores é resultado da prorrogação dos prazos de pagamento de tributos federais, conforme estabelecido pela Portaria RFB nº 419 de 10 de maio de 2024.
+Essa medida foi adotada em resposta aos desafios enfrentados pela crise climática nos municípios do Rio Grande do Sul.Os prazos de pagamento dos tributos referentes aos meses de maio e junho foram
+prorrogados para agosto e setembro de 2024, totalizando o valor de R$20.255.
+
+NOTA 17 – PATRIMÔNIO LÍQUIDO
+
+a) Capital social
+
+O capital social é dividido em quotas-partes de valor unitário equivalente a R$ 1,00 (um real), sendo que cada associado tem direito a um voto, independente do número de suas quotas-partes, e está
+assim composto:
+
+                                                              Descrição                                                                          30/06/2023                       30/06/2023
+Capital social inicial                                                                                                                                        326.215                            261.583
+  Integralização de Capital - quotas partes                                                                                                                     16.809                            14.096
+  Integralização de Capital - resultado                                                                                                                         17.010                            24.705
+  Baixa de Capital                                                                                                                                            (15.254)                            (9.856)
+Capital social final                                                                                                                                          344.780                            290.528
+Em 30 de junho de 2024 o total de associados foi de 259.051 (em dezembro de 2023 - 244.202).
+
+NOTA 18 – SICREDI FUNDOS GARANTIDORES
+
+Conforme mencionado no Contexto Operacional, em 2024 a Cooperativa utilizou o recurso da SFG, na forma de doação, no valor de R$ 333 (R$ 0 em dezembro de 2023), registrado no grupo de Outros
+Ingressos e Receitas Operacionais. Os recursos foram doados em 2024, sendo a doação em caráter extraordinário, devido aos desastres naturais que ocorreram no Rio Grande do Sul. Esses recursos foram
+utilizados em assistência e apoio aos atingidos pelas enchentes, tais como, projetos de infraestrutura e segurança, educação e moradia, desenvolvimento econômico, e alguns serviços de mão de obra.
+
+A legislação que rege as cooperativas de crédito prevê expressamente como atividade destas o recebimento, em caráter eventual, de recursos isentos de remuneração ou a taxas favorecidas, de qualquer
+entidade, na forma de doações, empréstimos ou repasses (art. 3, VIII, Res. CMN nº 5.051/22).
+NOTA 19 – DESPESAS COM OPERAÇÕES DE CAPTAÇÕES DE MERCADO
+
+
+                                                              Descrição                                                                          30/06/2024                       30/06/2023
+Depósitos de poupança                                                                                                                                              79                                 80
+Depósitos interfinanceiros                                                                                                                                      3.368                              1.953
+Depósitos de aviso prévio                                                                                                                                         407                                522
+Depósitos a prazo                                                                                                                                             230.110                            230.384
+Letras de crédito imobiliário                                                                                                                                   3.345                                   -
+Fundo Garantidor do Cooperativismo de Crédito (FGCoop)                                                                                                          4.295                              3.414
+Total                                                                                                                                                         241.604                            236.353
+
+=== página 20 ===
+                                                                                             Notas Explicativas
+                                                                                                (Em milhares de Reais)
+
+
+
+
+NOTA 28 – GERENCIAMENTO DE RISCOS E DE CAPITAL
+
+O Sistema Sicredi considera o gerenciamento de riscos prioritário na condução de suas atividades e negócios, adotando práticas em absoluta consonância com os preceitos dos Acordos de Basileia. Dessa
+maneira, possui áreas especializadas para o gerenciamento destes riscos, centralizadas no Banco Cooperativo Sicredi S.A. A estrutura centralizada conta com Comitê de Riscos e de Capital e Comitê de
+Auditoria Estatutário, com a participação de membros independentes nos mesmos, conforme exigências regulatórias e melhores práticas, os quais atuam como órgãos de assessoramento ao Conselho de
+Administração. Entre os principais riscos gerenciados pela instituição, destacam-se a Estrutura de Gerenciamento de Capital, o Risco Operacional, o de continuidade de negócios, de Mercado, de Variações
+de Taxas de Juros, de Liquidez, de Crédito, Riscos Sociais, Ambientais e Climáticos, Risco de Conformidade e Risco de Segurança da Informação, cujos principais aspectos são apresentados a seguir:
+
+I - Estrutura de Gerenciamento de Capital
+
+Para os efeitos da legislação vigente, define-se o Gerenciamento de Capital como o processo contínuo de:
+ Monitoramento e controle do capital mantido pela Instituição;
+ Avaliação da necessidade de capital para fazer face aos riscos que a Instituição está sujeita;
+ Planejamento de metas e de necessidade de capital, considerando os objetivos estratégicos da Instituição.
+
+O gerenciamento de capital das instituições do Sistema Sicredi é centralizado no Banco Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade dos
+produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições do Sistema na gestão
+do capital.
+Os processos e políticas para o gerenciamento de capital são estabelecidos seguindo os critérios mínimos da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas pelas
+alçadas competentes de cada instituição do Sistema.
+
+Os processos para o gerenciamento de capital do Sistema Sicredi incluem:
+ Mecanismos que possibilitem a identificação, avaliação e monitoramento dos riscos relevantes incorridos pela instituição, inclusive dos riscos não cobertos pelos requerimentos mínimos legais de
+capital;
+ Metas de capital em níveis acima dos requerimentos mínimos legais e que reflitam o apetite a risco do sistema, visando manter capital para suportar os riscos incorridos e garantir o crescimento dos
+negócios de forma sustentável e eficiente;
+ Plano de Capital para cada Instituição do Sistema, consistente com o planejamento estratégico, abrangendo o horizonte mínimo de três anos;
+ Testes de estresse e avaliação de seus impactos no capital;
+ Relatórios gerenciais periódicos sobre a adequação do capital para a diretoria e para o conselho de administração;
+ Plano de contingência de capital estabelecendo estratégias e procedimentos, definidos e documentados, para enfrentar situações de estresse.
+
+II - Risco Operacional
+
+O risco operacional é definido como a possibilidade de ocorrência de perdas resultantes de eventos externos ou de falha, deficiência ou inadequação de processos internos, pessoas ou sistemas. A
+definição inclui, ainda, o risco legal associado à inadequação ou deficiência em contratos firmados pela instituição, às sanções em razão de descumprimento de dispositivos legais e às indenizações por
+danos a terceiros decorrentes das atividades desenvolvidas pela instituição. O gerenciamento do risco operacional é realizado de forma conjunta entre o Banco, Centrais e Cooperativas Singulares. Essas
+entidades tem como responsabilidade o cumprimento dos normativos internos e externos, valendo-se de ferramentas, metodologias e processos estabelecidos sistemicamente. Tais processos são
+compostos por um conjunto de ações que visam manter em níveis adequados os riscos a que cada instituição está exposta. São estas:
+
+ Normatização interna contendo regras, papeis e responsabilidades quanto ao gerenciamento do risco operacional disseminados a toda instituição;
+ Identificação e análise, avaliação, resposta, monitoramento e reporte dos riscos operacionais;
+ Identificação, registro e tratamento de eventos de risco operacional;
+ Reportes periódicos e estruturados sobre temas relevantes de risco operacional aos fóruns de governança;
+ Disseminação da cultura de gerenciamento de riscos a toda organização;
+ Testes de estresse periódicos para cenários de risco operacional;
+ Procedimentos que visam assegurar a continuidade das atividades da instituição e limitar perdas decorrentes da interrupção dos processos críticos de negócio, incluindo análises de impacto e testes
+periódicos de planos de continuidade.
+ Gerenciamento do risco operacional decorrente de serviços terceirizados relevantes para o funcionamento regular da instituição.
+III - Risco de Continuidade de Negócios
+
+Gestão de Continuidade de Negócios (GCN) é a capacidade da organização de continuar a entrega de produtos e/ou serviços em nível aceitável previamente definido, após incidentes de interrupção.
+
+O Sicredi possui uma estrutura para responder de forma adequada à recuperação, à restauração e aos níveis acordados de disponibilidade para os processos mais críticos das entidades centralizadoras do
+Sistema, no caso de ocorrência de eventos que provoquem a interrupção dos seus serviços, preservando, assim, os interesses de todas as partes envolvidas.
+
+Através de uma Análise de Impacto ao Negócios (BIA) são identificados os serviços considerado críticos, bem como suas dependências na visão de Serviço de TI e Terceiros que suportam estes serviços. A
+partir desta análise é possível definir as estratégias e respectivos planos de contingência. principais processos de negócios da instituição bem como os serviços de TI que suportam esses processos e, assim,
+são definidas as estratégias de continuidade dos negócios adotadas.
+
+Estão previstos na Política de Gestão Integrada de Riscos e prevista na Norma de Continuidade de Negócios do Sicredi, os princípios básicos e a estrutura necessária para garantir a resposta adequada à
+recuperação, à restauração e aos níveis acordados de disponibilidade para os serviços processos mais críticos das entidades.
+
+O sistema de Gestão de Continuidade de negócios estruturado no Sicredi contempla:
+ Norma de Gestão de Continuidade de negócios;
+ Análise de impacto de negócio - BIAs;
+ Estratégias de recuperação de desastre de TI na visão de negócio;
+ Planos de continuidade operacional;
+ Planos de substituição de empresas terceiras.
+
+Por fim, a estrutura centralizada do Sicredi disponibiliza, através da Norma Sistêmica de Continuidade de Negócios, para todas as suas cooperativas algumas recomendações para aumento da resiliência de
+seus serviços, orientando a criação de Análises de Impacto ao Negócio e Planos de Continuidade.
+
+=== página 21 ===
+                                                                                             Notas Explicativas
+                                                                                               (Em milhares de Reais)
+
+
+
+
+IV - Risco de Mercado
+Define-se risco de mercado como a possibilidade de ocorrência de perdas resultantes da flutuação nos valores de mercado de posições detidas por uma instituição financeira. Incluem-se nessa definição,
+as operações sujeitas aos riscos de variação cambial, das taxas de juros, dos preços de ações e dos preços de mercadorias (commodities).
+O gerenciamento de risco de mercado das instituições do Sistema Sicredi é centralizado no Banco Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade
+dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições do Sistema na
+gestão do risco de mercado.
+Os processos e políticas para o gerenciamento do risco de mercado são estabelecidos seguindo os critérios mínimos da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas
+pelas alçadas competentes de cada instituição do Sistema.
+Os processos para o gerenciamento do risco de mercado do Sistema Sicredi incluem:
+
+ Regras claras de classificação da carteira de negociação que garantam o correto tratamento das operações;
+ Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de mercado em níveis considerados aceitáveis pela Instituição;
+ Processos destinados a monitorar e reportar a aderência ao apetite ao risco de mercado da Instituição em relação ao seu capital;
+ Definição das metodologias de risco de mercado a serem aplicadas;
+ Sistemas para executar o cálculo e medir os riscos, considerando a complexidade dos produtos e a dimensão da exposição ao risco de mercado das instituições do Sistema.
+V - Risco De Variação Das Taxas De Juros Em Instrumentos Classificados Na Carteira Bancária (IRRBB)
+O IRRBB é o risco, atual ou prospectivo, do impacto de movimentos adversos das taxas de juros nos resultados ou no valor econômico da instituição, resultante dos instrumentos classificados na carteira
+bancária.
+O gerenciamento de risco de IRRBB das instituições do Sistema Sicredi é centralizado no Banco Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade
+dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições do Sistema na
+gestão do risco de IRRBB.
+Para a mensuração e controle desse risco no Sicredi, utiliza-se as abordagens de valor econômico (EVE) e de resultado de intermediação financeira (NII). O Sistema Sicredi define as regras para o cálculo do
+risco de variação da taxa de juros das operações em linha com as práticas de mercado e com as exigências da regulamentação vigente.
+
+Os processos para o gerenciamento do risco de IRRBB do Sistema Sicredi incluem:
+ Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de IRRBB em níveis considerados aceitáveis pela Instituição;
+ Processos destinados a monitorar e reportar a aderência ao apetite ao risco de IRRBB da Instituição em relação ao seu capital;
+ Definição das metodologias de risco de IRRBB a serem aplicadas;
+ Sistemas para executar o cálculo e medir os riscos, considerando a complexidade dos produtos e a dimensão da exposição ao risco de IRRBB das instituições do Sistema.
+VI - Risco de Liquidez
+
+O entendimento de Risco de Liquidez é essencial para a sustentabilidade das instituições que atuam no mercado financeiro e de capitais e está associado à capacidade da instituição de financiar os
+compromissos adquiridos a preços de mercado razoáveis e realizar seus planos de negócio com fontes estáveis de financiamento. Para este efeito, define-se risco de liquidez como:
+
+ A possibilidade da instituição não ser capaz de honrar eficientemente suas obrigações esperadas e inesperadas, correntes e futuras, inclusive as decorrentes de vinculação de garantias, sem afetar suas
+operações diárias e sem incorrer em perdas significativas; e
+ A possibilidade da instituição não conseguir negociar a preço de mercado uma posição, devido ao seu tamanho elevado em relação ao volume normalmente transacionado ou em razão de alguma
+descontinuidade no mercado.
+
+O gerenciamento de risco de liquidez das instituições do Sistema Sicredi é centralizado no Banco Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade
+dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as entidades do Sistema na
+gestão do risco de liquidez.
+Os processos e políticas para o gerenciamento do risco de liquidez são estabelecidos seguindo os critérios da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas pelas
+alçadas competentes de cada Instituição do Sistema.
+
+Os processos para o gerenciamento do risco de liquidez do Sistema Sicredi incluem:
+ Definição de processos para identificar, avaliar, monitorar e controlar a exposição ao risco de liquidez em diferentes horizontes de tempo;
+ O estabelecimento de processos de rastreio e reporte da observância ao apetite ao risco de liquidez e em níveis considerados aceitáveis pela instituição;
+ Definição das estratégias de captação que proporcionem diversificação adequada das fontes de recursos e dos prazos de vencimento;
+ Definição de plano de contingência de liquidez, regularmente atualizado, que estabeleça responsabilidades e procedimentos para enfrentar situações de estresse de liquidez;
+ Realização periódica de testes de estresse com cenários de curto e de longo prazo.
+
+VII - Risco de Crédito
+
+A gestão do risco de crédito consiste no processo de identificação, mensuração, controle e mitigação dos riscos decorrentes das operações de crédito realizadas pelas instituições financeiras.
+
+No Sicredi, o gerenciamento do Risco de Crédito é realizado por uma estrutura centralizada e pelas áreas e colegiados locais. Os processos e políticas de riscos de crédito são estabelecidos seguindo os
+critérios da regulamentação em vigor, alinhados às melhores práticas de mercado e ao apetite a risco do sistema, aprovadas pelas alçadas competentes do sistema.
+
+O Banco Cooperativo Sicredi responde pelo conjunto de políticas, estratégias e metodologias voltadas ao controle e gerenciamento das exposições ao risco de crédito das empresas que compõem o
+Sistema, possuindo como principais atribuições: responder pelas políticas corporativas de gestão de risco de crédito; desenvolver e propor metodologias de classificação de risco de crédito, inclusive por
+meio de modelos quantitativos; aferir e controlar as exigibilidades de capital para cobertura de risco de crédito assumido; e realizar o monitoramento constante das exposições sujeitas ao risco de crédito
+de todas as empresas do Sicredi.
+As áreas e colegiados locais são responsáveis pela execução do gerenciamento de risco de crédito, observando as políticas e limites pré-estabelecidos sistemicamente.
+
+=== página 22 ===
+                                                                                            Notas Explicativas
+                                                                                               (Em milhares de Reais)
+
+
+
+
+VIII - Riscos Sociais, Ambientais e Climáticos
+
+Os riscos sociais, ambientais e climáticos são definidos pela possibilidade de ocorrência de perdas para as instituições financeiras decorrentes de danos sociais, ambientais e climáticos. Além disso, está
+envolvido indiretamente com uma série de outros riscos, podendo gerar tanto impactos financeiros, como legais e de reputação. No Sicredi, o gerenciamento é realizado por uma estrutura centralizada e
+pelas áreas e colegiados locais. Os processos e políticas para o gerenciamento dos riscos sociais, ambientais e climáticos são estabelecidos seguindo os critérios da regulamentação em vigor, alinhados às
+melhores práticas de mercado, e aprovadas pelas alçadas competentes de cada instituição do sistema.
+
+Os processos para o gerenciamento dos riscos sociais, ambientais e climáticos do sistema Sicredi incluem:
+ Normatização interna contendo regras, metodologias e responsabilidades quanto ao gerenciamento do tema;
+ Monitoramento de delimitações e vedações de exposições sujeitas aos riscos sociais, ambientais e climáticos, aderentes ao apetite a risco do sistema;
+ Coleta e utilização de dados para mensuração, classificação e avaliação dos riscos sociais, ambientais e climáticos nas operações;
+ Realização periódica de testes de estresse para cenário de riscos sociais, ambientais e climáticos;
+ Interlocução e reporte para órgãos ambientais, federações, parceiros de negócio e fóruns de governança;
+ Evolução constante da estratégia no tema, visando o alinhamento com as técnicas e tecnologias de mercado, bem como as expectativas das partes interessadas.
+
+IX - Risco de conformidade
+O risco de conformidade é definido como a possibilidade de ocorrência de sanções, perdas financeiras, danos de reputação e outros danos, decorrentes de descumprimento ou falhas na observância de
+normativos externos (leis e regulamentações), das recomendações dos órgãos reguladores, dos códigos de autorregulação aplicáveis assim como dos normativos oficiais internos.
+
+A gestão do risco de conformidade, no âmbito do Sicredi está sob responsabilidade da Superintendência de Compliance, estrutura integrante do Banco Cooperativo Sicredi S.A, que, para o
+acompanhamento sistêmico, oferece suporte e informações, tanto às áreas das empresas do Centro Administrativo quanto às Cooperativas Centrais e Singulares, no que tange ao processo de
+conformidade e o gerenciamento do risco de conformidade.
+
+A função de conformidade é desempenhada no desenvolvimento e execução do Programa de Compliance, estruturado nos pilares de: (i) Prevenção, (ii) Detecção e (iii) Correção.
+
+Os processos para gerenciamento do risco de conformidade incluem:
+ Identificação dos riscos de conformidade da instituição;
+ Comunicação, capacitação e treinamento de todos os níveis da Entidade para gerenciar adequadamente os riscos de conformidade e cumprir as exigências legais e (auto)regulatórias;
+ Acompanhamento e monitoramento de processos relevantes, das ações adotadas para mitigar os riscos de conformidade e corrigir deficiências, no intuito de promover a conformidade.
+ Reporte das adequações relevantes e novas medidas para mitigação de riscos, bem como não conformidades identificadas;
+ Identificação de ações e/ou processos associados aos principais riscos, que precisam ser revisados, atualizados ou implementados, buscando a efetividade do Programa de Compliance como um todo;
+ Tratamento para os não cumprimentos identificados bem como desenvolvimento de ações para conscientização, buscando evitar a reincidência.
+
+X - Risco de Segurança da Informação
+O risco de segurança da informação é definido como o risco relacionado a probabilidade de exploração de uma vulnerabilidade, considerando as ameaças vinculadas, e o impacto na confidencialidade,
+integridade, disponibilidade das informações, a governança e os controles implementados. Riscos de segurança cibernética ou cibersegurança fazem parte do contexto de riscos de segurança da
+informação.
+
+No Sicredi, o gerenciamento do risco de segurança da informação é realizado de forma conjunta entre Banco, Centrais e Cooperativas Singulares, os quais possuem responsabilidade pelo cumprimento
+dos normativos internos e externos, contando com ferramentas e metodologias sistêmicas que podem ser complementados por ações locais. Os processos e ações voltados para segurança da informação
+visam a identificação e manutenção dos riscos em níveis aceitáveis, incluindo a utilização de controles adequados e efetivos para a mitigação, frente aos custos, tecnologia e objetivos de negócio.
+
+XI - Informações Adicionais
+
+A descrição da estrutura completa e do processo de gerenciamento de riscos e capital pode ser acessada por meio do sitio www.sicredi.com.br, no caminho: Sobre nós > Relatórios > Gestão de Riscos >
+Publicações Sistêmicas > Gerenciamento de Riscos Pilar 3 - Sistêmico.
+
+Já a Política de Gerenciamento dos Riscos Sociais, Ambientais e Climáticos e o Relatório de Sustentabilidade, documentos com o detalhamento e números dos processos no tema, também podem ser
+acessados por meio do sitio www.sicredi.com.br, no caminho: Sobre nós > Sustentabilidade > Políticas e Relatórios.
+
+NOTA 29 – SEGUROS CONTRATADOS
+
+Em 30 junho de 2024, os seguros contratados são considerados suficientes pela administração para cobrir eventuais sinistros relacionados a garantia de valores e bens de propriedade da Cooperativa.
+
+As premissas de riscos adotadas, dada a sua natureza, não fazem parte do escopo de uma auditoria de demonstrações financeiras, consequentemente não são examinadas pelos nossos auditores
+independentes.
+
+NOTA 30 – OUTRAS INFORMAÇÕES
+
+a) Plano de Implementação da regulamentação contábil estabelecida pela Resolução CMN nº 4.966/2021, e alterações posteriores.
+
+Em 25 de novembro de 2021 foi publicada a Resolução CMN nº 4.966/21 que dispõe sobre os conceitos e os critérios contábeis aplicáveis a instrumentos financeiros, bem como para a designação e o
+reconhecimento das relações de proteção (contabilidade de hedge) pelas instituições financeiras e demais instituições autorizadas a funcionar pelo Banco Central do Brasil, convergindo com os principais
+conceitos da norma internacional IFRS 9 – Instrumentos Financeiros.
+
+A nova regra contábil entra em vigor a partir de 1º de janeiro de 2025, tendo os ajustes decorrentes da aplicação dos critérios contábeis estabelecidos por esta norma registrados em contrapartida à conta
+de lucros ou prejuízos acumulados pelo valor líquido dos efeitos tributários.

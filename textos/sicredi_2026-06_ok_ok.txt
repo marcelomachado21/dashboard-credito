@@ -1,0 +1,1769 @@
+
+=== página 26 ===
+Sistema de Crédito Cooperativo                             - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+Custo Amortizado: o ativo é gerido dentro de modelo de negócios cujo objetivo é manter ativos financeiros
+com o fim de receber os respectivos fluxos de caixa contratuais, constituídos apenas por pagamentos de
+principal e juros.
+
+Valor Justo por meio de Outros Resultados Abrangentes: o ativo financeiro é gerido dentro de modelo de
+negócios cujo objetivo é gerar retorno tanto pelo recebimento dos fluxos de caixa contratuais quanto pela
+venda do ativo financeiro com transferência substancial de riscos e benefícios, constituídos apenas por
+pagamentos de principal e juros, quanto para a venda.
+
+Valor Justo no Resultado: utilizada para ativos financeiros que não atendem os critérios descritos acima.
+
+A classificação contábil em cada uma das categorias de depende da avaliação do modelo de negócios para
+cada ativo financeiro, bem como das características dos seus fluxos de caixa contratuais (Somente
+Pagamento de Principal e Juros – “Teste SPPJ”).
+
+Para determinar o modelo de negócios, a Instituição avalia a estratégia de obtenção de resultados financeiros,
+ou seja, pelo i) recebimento de fluxos de caixa de principal e juros, ii) pela venda, ou por iii) ambos. Para isso,
+leva em consideração, entre outros, as seguintes evidências:
+
+        •        os riscos que afetam o desempenho do modelo de negócio;
+        •        como os gestores do negócio são remunerados; e
+        •        como o desempenho do modelo de negócios é avaliado e reportado à Administração.
+
+A avaliação das características dos fluxos de caixa é feita por meio de aplicação do teste “SPPJ” a fim de
+avaliar se os fluxos de caixa contratuais constituem apenas pagamento de principal e juros. Para atender
+esse conceito os fluxos de caixa devem incluir contraprestação pelo valor do dinheiro no tempo e risco de
+crédito. Se esse conceito não for atendido, o ativo financeiro é classificado ao Valor Justo por meio do
+Resultado.
+
+O Sicredi não faz uso da opção irrevogável, aplicável a ativos financeiros, de mensuração ao valor justo no
+reconhecimento inicial, para os ativos financeiros.
+
+
+II. Mensuração subsequente dos instrumentos financeiros
+
+A mensuração dos ativos e passivos financeiros para cada categoria de classificação contábil, sendo:
+
+Custo amortizado: os ativos e passivos financeiros nesta categoria são inicialmente reconhecidos pelo seu
+valor justo, acrescidos dos custos de transação ou valores recebidos. Subsequentemente são mensurados ao
+custo amortizado, acrescidos das atualizações efetuadas utilizando a taxa efetiva de juros. Os ganhos dos
+ativos financeiros desta categoria são reconhecidos na rubrica “Receitas de juros”, enquanto as despesas de
+juros dos passivos financeiros são reconhecidas na rubrica “Despesas de juros”, ao longo do prazo do
+respectivo contrato.
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+24
+
+=== página 27 ===
+Sistema de Crédito Cooperativo                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+Ao valor justo em outros resultados abrangentes: os ativos financeiros nesta categoria são inicialmente
+reconhecidos pelo seu valor justo, acrescidos dos custos de transação ou valores recebidos.
+Subsequentemente são mensurados pelo valor justo, sendo os ganhos ou perdas provenientes de alterações
+no valor justo reconhecidos diretamente em rubrica específica do patrimônio líquido intitulada "Ajuste de
+avaliação patrimonial", até que o ativo financeiro seja baixado. Quando da realização de baixa do ativo, os
+ganhos ou perdas acumulados na rubrica específica do patrimônio líquido são transferidos para o resultado
+do período. Os juros de ativos financeiros classificados nesta categoria são reconhecidos no resultado do
+exercício na rubrica “Receitas de juros”. Os juros desses ativos financeiros são calculados com base na
+aplicação do método da taxa efetiva de juros.
+
+Mensurados ao valor justo por meio do resultado (VJR): são inicialmente reconhecidos pelo valor justo, sendo
+os respectivos custos de transação reconhecidos diretamente no resultado quando incorridos. Os ganhos e
+as perdas decorrentes de variações no valor justo desses ativos e passivos financeiros são reconhecidos na
+demonstração do resultado, no período em que ocorrem.
+
+Instrumentos designados ao valor justo por meio do resultado no reconhecimento inicial: são reconhecidos
+inicialmente pelo valor justo, sendo os respectivos custos de transação registrados diretamente no resultado.
+Os ganhos e as perdas decorrentes de variações no valor justo também são reconhecidos na demonstração
+do resultado, no período em que ocorrem.
+
+
+III. Hierarquia do valor justo:
+
+A hierarquia do valor justo (“HVJ”) é uma das formas de realizar a precificação dos ativos e passivos conforme
+suas negociações em mercado ou dados observáveis disponíveis, assim mensura-se o valor justo utilizando
+premissas adotadas pelo mercado, considerando seus riscos.
+
+Os tipos de classificação dos inputs utilizados na mensuração do valor justo, baseada na sua confiabilidade
+e disponibilidade.
+
+        •       HVJ1= Nível 1 de hierarquia de valor justo referente a preços cotados em mercados ativos
+        para os instrumentos negociados;
+
+        •        HVJ2 = Nível 2 da hierarquia de valor justo de dados observáveis direta ou indiretamente,
+        distintos de preços cotados incluídos no Nível 1, para ativos ou passivos similares (proxy)
+
+        •      HVJ3 = Nível 3 de hierarquia de valor justo de dados não observáveis, modelos de
+        apreçamento desenvolvidos internamente.
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+25
+
+=== página 28 ===
+Sistema de Crédito Cooperativo                          - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+IV. Baixa dos instrumentos financeiros
+
+Os ativos financeiros são baixados quando os direitos contratuais de recebimento dos fluxos de caixa
+provenientes destes ativos cessam ou se houver uma transferência substancial dos riscos e benefícios de
+propriedade do instrumento e tal transferência se qualifica para baixa.
+
+Passivos financeiros são baixados se a obrigação for extinta contratualmente ou liquidada.
+
+d) Derivativos
+
+A Instituição utiliza derivativos, como swaps e futuros de taxas de juros, swap de moedas, futuros de câmbio
+em moedas estrangeiras com o objetivo de atender às necessidades próprias para administrar a exposição
+global do Sistema e são classificados, na data de sua aquisição, de acordo com a intenção da Administração
+em utilizá-los como instrumento de proteção contra risco (hedge), conforme a Circular nº 3.082, de
+30/01/2002, do BACEN.
+
+Os instrumentos financeiros derivativos são ajustados para ao valor justo em contrapartida ao resultado do
+período.
+
+Operações de futuros: são acordos entre duas partes para comprar ou vender um ativo em uma data futura
+específica, por um preço previamente acordado. As operações de futuro são registradas pelo valor dos ajustes
+diários, apropriados como receita ou despesa.
+
+Operações de Swap: são acordos financeiros entre duas partes para trocar fluxos de caixa futuros com base
+em diferentes critérios, como taxas de juros, moedas ou índices. As operações de "swap" são registradas pelo
+diferencial a receber ou a pagar pelo valor justo, e apropriado como receita ou despesa.
+
+Contratos a termo: são acordos de compra e venda de um ativo em uma data futura, por preço previamente
+estabelecido. Esses acordos são particulares e estabelecidos entre dois agentes financeiros, no qual uma das
+partes assume sua posição de compra no contrato a termo em data específica e por um preço certo e ajustado;
+e a contraparte assume sua posição de venda em iguais condições. As operações a termo são registradas
+pelo valor final contratado deduzido da diferença entre esse valor e o preço à vista do bem ou direito, sendo
+essa diferença reconhecida como receita ou despesa em razão do prazo de fluência dos contratos. Inclui os
+contratos de câmbio que são termos de moeda.
+
+Os contratos de câmbio, anteriormente classificadas sob rubricas específicas de ativos ou passivos
+relacionados à moeda estrangeira, agora devem ser registradas como derivativos, conforme o Art. 2º, inciso
+XI, da Resolução CMN nº 4.966, já que são instrumentos financeiros cujo valor varia em decorrência de
+variáveis como a taxa de câmbio, sendo que sua liquidação ocorre em data futura. Essa transição impacta
+diretamente a forma como essas operações são tratadas contábil e financeiramente, sendo agora mensuradas
+a Valor Justo no Resultado (“VJR”).
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+26
+
+=== página 29 ===
+Sistema de Crédito Cooperativo                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+As operações com instrumentos financeiros derivativos são registradas pelo seu valor justo, considerando as
+metodologias de marcação a mercado adotadas pelo Sicredi. O método de reconhecimento dos ganhos e
+perdas resultantes das operações depende do fato do derivativo ser designado ou não como um instrumento
+de hedge, em casos de adoção da contabilidade de hedge ou hedge accounting.
+
+Os instrumentos designados para fins de hedge accounting podem ser classificados de acordo com sua
+natureza nas seguintes categorias:
+
+        •       Hedge de valor justo: devem ser classificados os instrumentos financeiros derivativos que se
+        destinam a compensar riscos decorrentes da exposição à variação no valor de mercado do item objeto
+        de hedge, sendo que os valores dos ganhos e perdas devem ser registrados em contrapartida ao
+        resultado do exercício da Instituição;
+
+        •       Hedge de fluxo de caixa: devem ser classificados os instrumentos financeiros derivativos que
+        se destinam a compensar variações no fluxo de caixa estimado da Instituição, sendo que os valores
+        dos ganhos e perdas, da parcela efetiva, em contrapartida a conta destacada do patrimônio líquido
+        deduzido os efeitos tributários e demais variações em contrapartida ao resultado do exercício.
+
+Para os derivativos classificados na categoria de hedge accounting existe a identificação documental com as
+informações detalhadas das operações e os riscos envolvidos, a efetividade da estratégia, através de testes
+de efetividade prospectiva e/ou retrospectiva, bem como a marcação a mercado dos instrumentos e dos
+objetos de hedge, conforme determina a Circular nº 3.082/02.
+
+As operações com derivativos no mercado de futuro são custodiadas na B3 S.A. - Brasil, Bolsa e Balcão
+(“B3”). A determinação dos valores de mercado de tais instrumentos financeiros derivativos é baseada nas
+cotações divulgadas pelas bolsas especializadas.
+
+As operações com outros instrumentos financeiros derivativos, são registradas de acordo com as
+características do contrato, ajustado ao valor justo.
+
+e) Método de Taxa Efetiva de Juros
+
+A taxa de juros efetiva é a taxa que desconta a valor presente os pagamentos e recebimentos ao longo do
+prazo contratual do ativo ou passivo financeiro.
+
+A taxa de juros efetiva é estabelecida no reconhecimento inicial do ativo ou passivo financeiro.
+
+O cálculo da taxa efetiva de juros inclui os custos de transação identificados como elegíveis, como:
+
+        •       Receita com tarifas e taxas atreladas a concessão das operações;
+        •       Custos com empresas especializadas (análise documental, cobrança, serviços de vistorias e
+        avaliações); e
+        •       Custos com comissões e portabilidade de operações.
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+27
+
+=== página 30 ===
+Sistema de Crédito Cooperativo                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+Entende-se como custos da transação elegíveis, os custos incrementais diretamente atribuíveis à aquisição,
+emissão ou alienação de um ativo ou passivo financeiro.
+
+Conforme requisitos determinados pela Resolução BCB 352/23, o Banco Cooperativo Sicredi optou em
+utilizar a metodologia diferenciada proporcional para operações de crédito e com características de crédito.
+
+f) Provisão para perdas
+
+     I. Visão Geral
+
+O Banco Cooperativo Sicredi integra o segmento prudencial S2, conforme definido pela Resolução CMN nº
+5.146, de 26 de junho de 2024. Em razão desse enquadramento, todas as instituições financeiras integrantes
+do Sistema Cooperativo Sicredi devem adotar de forma consolidada, a metodologia completa de perdas
+esperadas para mensuração da provisão para perdas sobre ativos financeiros. Essa exigência decorre da
+presença de instituição do sistema nos segmentos 1 (“S1”), 2 (“S2”) ou 3 (“S3”), conforme previsto na referida
+norma, sendo aplicável a todas as entidades que compõem o sistema.
+
+Nessa metodologia, foram desenvolvidos modelos estatísticos de perdas esperadas conforme disposto no
+Art.40. da Resolução CMN nº 4.966/21. A constituição da provisão para perdas esperadas observa ainda o
+disposto no § 1º do Art. 76 da Resolução BCB nº 352/23 (Anexo I), que define níveis mínimos de provisão
+por carteira (C1 a C5 — de acordo com as características da operação de crédito e das garantias prestadas,
+quando existentes) e pelo número de meses de atraso contados a partir do mês do inadimplemento.
+
+A Instituição registra perdas esperadas, para os seguintes instrumentos financeiros:
+
+           •      Aplicações interfinanceiras de liquidez;
+           •      Títulos e valores mobiliários (mensurados a custo amortizado e “VJORA”);
+           •      Operações de créditos;
+           •      Outros ativos financeiros;
+           •      Outros passivos financeiros e
+           •      Exposições “off-balance” (que gerem risco de crédito).
+
+
+     II.   Estágios
+
+O Sicredi aplica a abordagem de três estágios para mensurar a perda de crédito esperada, na qual os ativos
+financeiros migram de um estágio para outro de acordo com as mudanças no risco de crédito.
+
+Estágio 1: refere-se aos instrumentos financeiros sem aumento significativo do risco de crédito em relação à
+data da originação do crédito. Para esses casos, a probabilidade de default (moratória) considerada no
+modelo de perda estimada é calculada para os próximos 12 meses apenas.
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+28
+
+=== página 31 ===
+Sistema de Crédito Cooperativo                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+Estágio 2: refere-se aos instrumentos financeiros com aumento significativo do risco de crédito, mas que
+ainda não são considerados ativos com problemas de risco de recuperação (sem default). Para esses casos,
+a perda esperada é baseada no cálculo da probabilidade de default (“PD”) para o prazo remanescente da
+operação, devendo compor no mínimo a PD12 meses.
+
+Estágio 3: refere-se a instrumentos financeiros em risco de recuperação (em default). Para esses casos, para
+fins de reconhecimento de perdas é reconhecido o maior valor de perda entre:
+         •       A Perda Esperada calculada com base nos dados observados estatísticos; ou
+         •       O piso de Estágio 3 determinado pela Resolução BCB n° 352 de 2023 (anexo 1 da normativa
+         – “Provisão para perdas incorridas aplicável aos ativos financeiros inadimplidos”).
+    III. Aumento significativo no risco de crédito
+
+O conceito de risco de crédito da operação é baseado na probabilidade de default para sua vida toda.
+
+Originalmente, quando a operação é concedida pela Instituição a classificação de risco é registrada em estágio
+1, e posteriormente, a cada data base de fechamento mensal, o Sicredi avalia se o ativo apresentou aumento
+significativo no risco de crédito desde o reconhecimento inicial. Em caso de aumento, esta operação deve
+passar a ser considerada em estágio 2, ou ainda se o ativo, além de apresentar aumento significativo no risco
+de crédito, demonstrar evidência objetiva de risco na recuperação, será alocado em estágio 3. Por fim, se a
+operação, além de apresentar a evidência de risco de recuperação, tiver estimativas insignificantes de
+recuperação, deverá ser baixada para prejuízo.
+
+As definições de aumento significativo e evidência de ativo problemático são baseadas não apenas em
+aspectos qualitativos e prospectivos (projeções de modelos de probabilidade de default), mas também no
+atraso efetivo do ativo financeiro.
+
+Os ativos que devem ser considerados como estágio 2 são aqueles com aumento significativo do risco de
+crédito desde o reconhecimento inicial, ou que apresentem atraso superior a 30 dias (limitado a 60 dias para
+carteiras específicas).
+
+Os ativos que devem ser considerados como estágio 3 são todos os contratos que têm evidência de problema
+de risco de recuperação. Essencialmente, a marcação de ativo problemático é dada quando um contrato
+atinge atraso de pagamento da dívida acima de 90 dias em atraso, marcação de reestruturação ou quando o
+cliente possui características que evidencie dificuldade de pagamento como quando ele está em situação de
+recuperação judicial.
+
+     IV. Cálculo da perda esperada
+
+O cálculo da perda esperada visa gerar a expectativa das perdas em crédito ao longo de um dado horizonte
+de tempo e engloba a avaliação de três parâmetros:
+
+         •      Probabilidade de default – PD: A PD é a probabilidade futura de um ativo entrar em
+         inadimplemento em uma janela de tempo determinada;
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+29
+
+=== página 32 ===
+Sistema de Crédito Cooperativo                            - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+        •       Perda dado o default – LGD: Representa a porcentagem da exposição (EAD) que se espera
+        perder em caso de inadimplência da contraparte ou operação, considerando os recursos possíveis de
+        recuperação. A LGD é estimada de forma a refletir a severidade da perda ao longo do horizonte de
+        tempo da operação, garantindo uma adequada mensuração do impacto financeiro do risco de crédito
+        após a ocorrência do default.
+
+        •        Exposição ao default – EAD: É a exposição na data da inadimplência. Para créditos rotativos
+        com limites é feita a estimativa da exposição no momento do default através de fatores de conversão.
+        Já para créditos parcelados é considerado o saldo contábil da operação no mês do reporte.
+
+Adicionalmente, a Resolução CMN nº 4.966 de 2021, determina que todos os modelos tenham inclusão de
+variáveis preditivas de fatores macroeconômicos para proporcionar uma visão do risco à exposição dos
+fatores exógenos, preparar e antecipar as instituições na avaliação de impactos em eventos extremos
+(cenários sob estresses). Em outras palavras, as variáveis forward looking funcionam como uma calibragem
+dos modelos sob efeitos macroeconômicos ou política de crédito.
+
+g) Ativos financeiros com problema de risco de recuperação
+
+O ativo financeiro é caracterizado como “Ativo Problemático” quando:
+
+        •        Ocorrer atraso superior a 90 (noventa) dias no pagamento de principal e encargos;
+        •        Se houver algum indicativo e que a respectiva obrigação não será integralmente honrada nas
+        condições pactuadas, sem que seja necessário recorrer a garantias ou a colaterais, utiliza-se o
+        conceito qualitativo de antecipação do descumprimento através de características do cliente que
+        indiquem alta probabilidade de sua ocorrência, como exemplo os indicativos de insolvência civil,
+        falência, recuperação judicial e intervenção ou liquidação extrajudicial;
+        •        Todas as operações enquadradas como reestruturadas.
+
+É considerado reestruturação uma renegociação que implique a concessão de vantagens à contraparte em
+decorrência da deterioração da sua qualidade creditícia ou da qualidade creditícia do interveniente ou do
+instrumento mitigador. A combinação de, pelo menos, três informações são observadas no momento da sua
+liberação: (i) dias de atraso nas operações de origem; (ii) percentual de entrada pago pelo associado; e, (iii) o
+percentual de descontos concedidos (valor principal, juros e multas). Exceções de enquadramento em
+reestruturação, por força de norma, são marcadas no Cadoc 3040, quando assim requisitado pelo órgão
+regulador, e monitoradas ao longo do prazo do contrato.
+
+Adicionalmente, para operações processadas no sistema PRC, aplicam-se critérios complementares para
+caracterização de reestruturação. Considera-se renegociação sucessiva a ocorrência de múltiplas
+renegociações de uma mesma operação. Na segunda renegociação, quando não houver pagamento da
+renegociação anterior e não houver valor de entrada na nova renegociação, a operação deve ser classificada
+em Estágio 3 (ativo problemático). A partir da terceira renegociação, a operação é automaticamente
+classificada em Estágio 3, independentemente das demais condições.
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+30
+
+=== página 33 ===
+Sistema de Crédito Cooperativo                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+Também devem ser classificadas em Estágio 3 as operações renegociadas que apresentem taxa de juros
+inferior à taxa Selic vigente na data da contratação, exceto nos casos previstos na regulamentação ou em
+normativos internos, tais como operações com taxas definidas por força normativa, recursos controlados,
+produtos com hedge ou operações cuja estrutura de originação justifique taxas inferiores à Selic, observados
+os critérios estabelecidos pela Instituição.
+
+Para operações registradas no sistema SACG, as renegociações com atraso superior a 30 dias são
+caracterizadas como reestruturações, não se aplicando os critérios complementares definidos para o sistema
+PRC.
+
+Quando um instrumento financeiro é caracterizado como ativo com problema de risco de recuperação, as
+operações de uma mesma contraparte ou de contrapartes conectadas, são arrastados (na data-base do
+balancete relativo ao mês em que ocorreu a caracterização) para Estágio 3.
+
+Poderá não ocorrer o efeito arrasto nas ocasiões em que a Instituição apresentar instrumento financeiro que,
+em virtude de sua natureza ou de sua finalidade, apresente risco de crédito significativamente inferior ao
+instrumento da mesma contraparte caracterizado como ativo com problema de risco de recuperação.
+
+A partir do momento da caracterização como ativo problemático, as receitas ainda não recebidas são
+suspensas, sendo apropriadas no resultado quando do seu efetivo recebimento.
+
+As operações serão baixadas para prejuízo se, além de serem considerados ativos com problemas de risco
+de recuperação, possuam estimativas insignificantes de que vá ocorrer a recuperação.
+
+O Sicredi considera que o ativo financeiro deixará de ser problemático, ou seja, foi curado, quando os
+seguintes aspectos são alcançados: (i) ausência de parcelas vencidas, incluindo encargos; (ii) pagamento
+tempestivo de principal e encargos por um período suficiente para indicar melhoria financeira significativa da
+contraparte; e, (iii) cumprimento de outras obrigações contratuais, caso existam, por um período suficiente
+para demonstrar melhoria financeira significativa da contraparte.
+
+h) Operações de crédito cedidas
+
+As cessões de crédito com retenção substancial de riscos e benefícios passam a ter os seus resultados
+reconhecidos pelo prazo remanescente das operações. Os ativos financeiros objetos da cessão permanecem
+registrados como operações de crédito e o valor recebido como obrigações por operações de venda ou de
+transferência de ativos financeiros.
+
+i) Demais ativos circulantes e realizáveis a longo prazo (não circulantes)
+
+Demonstrados pelos valores de realização, incluindo, quando aplicável, os rendimentos e as variações
+monetárias pro rata die incorridos e as variações cambiais, deduzidos das correspondentes provisões para
+perdas ou ajuste ao valor de mercado e rendas a apropriar.
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+31
+
+=== página 34 ===
+Sistema de Crédito Cooperativo                          - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+j) Investimentos
+
+Estão demonstrados ao custo de aquisição, sendo que os investimentos em controladas estão ajustados por
+avaliação pelo método da equivalência patrimonial. Os outros investimentos estão avaliados ao custo,
+reduzidos ao valor recuperável, quando aplicável.
+
+k) Imobilizado de uso
+
+Corresponde aos direitos que tenham por objeto bens corpóreos destinados à manutenção das atividades ou
+exercidos com essa finalidade. Estão demonstrados ao custo de aquisição ou formação. A depreciação do
+imobilizado de uso é computada pelo método linear ao longo da vida útil do ativo, com base nas taxas anuais
+mencionadas na nota 13, que levam em consideração a vida útil-econômica dos bens, conforme descrito
+abaixo:
+
+Imobilizado                                                  Vida útil
+Instalações                                                 6 a 25 anos
+Móveis e equipamentos de uso                                1 a 12 anos
+Equipamentos de comunicação                                 4 a 12 anos
+Equipamentos processamento de dados                         2 a 12 anos
+Sistema de segurança                                        9 a 11 anos
+Sistema de transporte                                       4 a 11 anos
+
+
+Um item de imobilizado é baixado quando vendido ou quando nenhum benefício econômico futuro for
+esperado do seu uso ou venda. Eventual ganho ou perda resultante da baixa do ativo (calculado como
+sendo a diferença entre o valor líquido da venda e o valor contábil do ativo) são incluídos na demonstração
+do resultado do período em que o ativo foi baixado.
+
+O valor residual e vida útil dos ativos e os métodos de depreciação são revistos no encerramento de cada
+exercício, e ajustado de forma prospectiva, quando for o caso.
+
+l) Intangível
+
+Corresponde a direitos adquiridos que têm por objeto bens incorpóreos destinados à manutenção da
+Instituição ou exercidos com essa finalidade. Está demonstrado aos valores de custo e contempla gastos na
+aquisição e desenvolvimento de software, ajustado por amortizações acumuladas, calculadas a partir do
+momento em que começam a ser usufruídos os benefícios respectivos, na razão de 10% a 20% ao ano, pelo
+método linear.
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+32
+
+=== página 35 ===
+Sistema de Crédito Cooperativo                          - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+m) Redução ao valor recuperável de ativos não financeiros
+
+O imobilizado e outros ativos não circulantes, inclusive o ativo intangível, são revistos anualmente para se
+identificar evidências de perdas não recuperáveis, ou ainda, sempre que eventos ou alterações nas
+circunstâncias indicarem que o valor contábil pode não ser recuperável.
+
+Quando este for o caso, o valor recuperável é calculado para verificar se há perda. Quando houver perda, ela
+é reconhecida no resultado do exercício em questão pelo montante em que o valor contábil do ativo
+ultrapassa seu valor recuperável, que é o maior entre o preço líquido de venda e o valor em uso de um ativo.
+
+n) Ativos e passivos em moeda estrangeira
+
+Os ativos monetários denominados em moedas estrangeiras são convertidos para reais utilizando as taxas
+de câmbio do Banco Central vigentes de acordo com as transações. As diferenças decorrentes de conversão
+de moeda são reconhecidas no resultado do período.
+
+o) Demais passivos circulantes e exigíveis a longo prazo (não circulantes)
+
+Demonstrados pelos valores conhecidos ou calculáveis, incluindo, quando aplicável, os encargos e as
+variações monetárias em base pro rata die incorridos, deduzidos das correspondentes despesas.
+
+p) Operações de arrendamento mercantil - Arrendatário
+
+O Sistema Sicredi possui contratos de arrendamento, principalmente relacionados a imóveis utilizados em
+suas atividades operacionais, garagens de estacionamentos e equipamentos de segurança. Esses contratos
+seguem práticas usuais de mercado, com cláusulas de reajuste anual indexadas à inflação.
+
+Os ativos de direito de uso representam os bens arrendados, enquanto os passivos de arrendamento refletem
+os compromissos futuros de pagamento, calculados com base no valor presente das parcelas futuras,
+descontadas por uma taxa de juros equivalente ao custo de captação do Banco.
+
+As parcelas são projetadas até o fim dos contratos e reajustadas anualmente. Não há restrições contratuais
+quanto a dividendos, dívidas ou novos arrendamentos.
+
+q) Créditos tributários, impostos e contribuições
+
+As provisões para o Imposto de Renda da Pessoa Jurídica (“IRPJ”), a Contribuição Social sobre o Lucro Líquido
+(“CSLL”), o Programa de Integração Social (“PIS”) e a Contribuição para o Financiamento da Seguridade Social
+(“COFINS”) são reconhecidas com base nas alíquotas vigentes na data do encerramento do período,
+observada a legislação tributária aplicável a cada tributo.
+
+Os créditos tributários de IRPJ e CSLL são constituídos sobre as diferenças temporárias entre as bases
+contábeis e fiscais dos ativos e passivos, bem como sobre prejuízos fiscais e bases de cálculo negativas da
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+33
+
+=== página 55 ===
+Sistema de Crédito Cooperativo                                                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+9.           Carteira de Crédito
+a) Composição das operações de créditos por tipo de operação
+
+                                                                                                           30/06/2026                                          31/12/2025
+                                                                                                           A Vencer
+                           Descrição                          Nota
+                                                                     Vencidos a Partir                                    Acima de 12
+                                                                                         Até 3 Meses    De 3 a 12 Meses                  Total da Carteira   Total da Carteira
+                                                                        de 15 Dias                                           Meses
+
+
+Ativos Financeiros ao Custo Amortizado
+ Operações de Crédito                                                       7.932.692      38.051.347       68.916.627     129.566.934       244.467.600         239.044.064
+
+     Empréstimos e Títulos Descontados                                      6.606.443      22.075.121       35.723.526      60.995.993       125.401.083         120.590.830
+     Financiamentos                                                           397.699       4.014.571       10.091.874      18.078.618        32.582.762          31.792.777
+     Financiamentos Rurais e Agroindustriais                                  927.463      11.816.286       22.687.327      46.751.902        82.182.978          82.794.557
+     Financiamentos Imobiliários                                                1.087         145.369          413.900       3.740.421         4.300.777           3.865.900
+
+     Provisão para Perdas Incorridas e Esperadas                                                                                              (18.270.217)        (16.639.463)
+
+ Subtotal - Operações de Crédito, Líquido de Provisão para Perdas de Crédito                                                                 226.197.383         222.404.601
+
+ Outros Ativos Financeiros                                     10           1.549.055      17.879.249       15.245.780      15.159.173        49.833.257           49.989.574
+
+     Adiantamentos sobre Contratos de Câmbio                                       -          357.652          783.734          20.689         1.162.075            1.094.278
+     Avais e Fianças Honrados                                                  643.387         25.442            5.228           1.929           675.986              468.269
+     Títulos com Característica de Concessão de Crédito                        903.392      4.494.855        9.266.424      14.622.981        29.287.652           30.266.225
+     Devedores por Compras de Valores e Bens                                     2.276         22.577           90.672         396.948           512.473              479.737
+     Valores a Receber Relativos a Transações de Pagamento                         -       12.978.723        5.099.722         116.626        18.195.071           17.681.065
+
+     Provisão para Perdas Incorridas e Esperadas                                                                                               (2.434.293)         (2.245.580)
+
+ Subtotal - Outros Ativos Financeiros, Líquido de Provisão para Perdas de Crédito                                                             47.398.964           47.743.994
+
+Total Bruto - 2026                                                          9.481.747      55.930.596       84.162.407     144.726.107       294.300.857         289.033.638
+
+Total Circulante                                                                                                                             149.574.750         151.572.275
+Total Não Circulante                                                                                                                         144.726.107         137.461.363
+
+     Provisão para Perdas Incorridas e Esperadas                                                                                              (20.704.510)        (18.885.043)
+
+ Total Provisão para Perdas Incorridas e Esperadas                                                                                            (20.704.510)        (18.885.043)
+
+ Total da Carteira de Crédito Líquida de Provisão para Perdas de Crédito                                                                     273.596.347         270.148.595
+
+
+
+Em 30 de junho de 2026, o Sicredi mantinha operações de coobrigações por garantias prestadas no montante de
+R$ 408.043 (em dezembro de 2025 - R$ 520.346), e de títulos em cobrança no montante de R$ 363.982 (em
+dezembro de 2025 - R$ 360.773).
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+53
+
+=== página 56 ===
+Sistema de Crédito Cooperativo                                                        - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+b) Composição das operações de crédito por estágios
+
+                                                                                                                   30/06/2026                                        31/12/2025
+                                      Descrição
+                                                                                        Estágio 1          Estágio 2        Estágio 3          Total da carteira   Total da carteira
+
+Ativos Financeiros ao Custo Amortizado
+ Operações de Crédito                                                                   218.295.117          8.333.978          17.838.505        244.467.600          239.044.064
+
+     Empréstimos e Títulos Descontados                                                  103.466.801          6.876.859          15.057.423        125.401.083          120.590.830
+     Financiamentos                                                                      30.181.869            950.751           1.450.142          32.582.762          31.792.777
+     Financiamentos Rurais e Agroindustriais                                             80.397.267            495.599           1.290.112          82.182.978          82.794.557
+     Financiamentos Imobiliários                                                          4.249.180             10.769              40.828           4.300.777           3.865.900
+
+       Provisão para Perdas Incorridas e Esperadas                                        (2.944.401)        (2.216.235)        (13.109.581)       (18.270.217)        (16.639.463)
+
+ Subtotal - Operações de Crédito, Líquido de Provisão para Perdas de Crédito            215.350.716          6.117.743           4.728.924        226.197.383          222.404.601
+
+ Outros Ativos Financeiros                                                               45.901.255          1.781.200           2.150.802          49.833.257          49.989.574
+
+     Adiantamentos Sobre Contratos de Câmbio                                              1.162.075                    -                -            1.162.075           1.094.278
+     Avais e Fianças Honrados                                                               114.573             41.264             520.149             675.986             468.269
+     Títulos com Característica de Concessão de Crédito                                  26.338.615          1.468.204           1.480.833          29.287.652          30.266.225
+     Devedores por Compras de Valores e Bens                                                398.763             39.399              74.311             512.473             479.737
+     Valores a Receber Relativos a Transações de Pagamento                               17.887.229            232.333              75.509          18.195.071          17.681.065
+
+       Provisão para Perdas Incorridas e Esperadas                                          (866.109)          (202.438)         (1.365.746)        (2.434.293)          (2.245.580)
+
+ Subtotal - Outros Ativos Financeiros, Líquido de Provisão para Perdas de Crédito        45.035.146          1.578.762             785.056          47.398.964          47.743.994
+
+Total Bruto                                                                             264.196.372         10.115.178          19.989.307        294.300.857          289.033.638
+
+     Provisão para Perdas Incorridas e Esperadas                                          (3.810.510)        (2.418.673)        (14.475.327)       (20.704.510)        (18.885.043)
+
+ Total Provisão para Perdas Incorridas e Esperadas                                       (3.810.510)         (2.418.673)    (14.475.327)           (20.704.510)        (18.885.043)
+
+
+ Total da Carteira de Crédito Líquida de Provisão para Perdas de Crédito                260.385.862          7.696.505           5.513.980        273.596.347          270.148.595
+
+
+
+c) Movimentação da provisão para perdas esperadas associadas ao risco de crédito
+
+Descrição                                                                           30/06/2026      30/06/2025
+
+Saldo Inicial                                                                       18.885.043        13.048.745
+
+Ajuste de Transição Res. 4.966 - Constituição de Provisão                                   -           1.634.025
+Constituição de Provisão                                                             7.064.451          5.526.211
+
+Subtotal                                                                            25.949.494        20.208.981
+
+  Créditos Baixados para Prejuízo                                                   (5.244.984)         (2.562.498)
+
+Saldo Final                                                                         20.704.510        17.646.483
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+54
+
+=== página 57 ===
+Sistema de Crédito Cooperativo                                     - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+d) Concentração das operações de crédito
+
+     i)       Maiores devedores:
+
+Descrição                             30/06/2026           %        31/12/2025       %
+
+10 Maiores Devedores                       2.119.661       0,7%        1.686.904     0,6%
+50 Maiores Devedores Seguintes             4.164.204       1,5%        4.160.286     1,4%
+100 Maiores Devedores Seguintes            4.500.279       1,5%        3.947.621     1,4%
+Demais                                 283.516.713       96,3%       279.238.826 96,6%
+
+Saldo Final                            294.300.857       100%        289.033.638    100%
+
+
+     ii)      Perfil de atividade
+
+                                                 30/06/2026                                              31/12/2025
+              Vencidas a
+Descrição                                    De 3 a 12         Acima de 12
+              Partir de 15   Até 3 Meses                                            Total       %        Total         %
+                                               Meses               Meses
+                 Dias
+
+PF Agro        4.114.305      21.370.842     39.041.935           74.675.266     139.202.347    47%    142.155.758    49%
+PF Urbano      2.270.147      13.163.737     12.257.114           18.586.502       46.277.501   16%     44.065.316    15%
+PJ             3.097.296      21.376.555     32.833.307           51.513.851     108.821.009    37%    102.812.564    36%
+
+Total           9.481.747     55.911.134      84.132.356       144.775.620       294.300.857    100%   289.033.638    100%
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+55
+
+=== página 58 ===
+Sistema de Crédito Cooperativo                               - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+e) Reconciliação da carteira bruta das operações de crédito, segregadas por estágios:
+
+                                                           Saldo em      Transferência p/    Transferência p/    Transferência do     Transferência do        Aquisição/       Saldo Final em
+                            Estágio 1
+                                                          31/12/2025        Estágio 2           Estágio 3           Estágio 2            Estágio 3            (Liquidação)      30/06/2026
+
+Operações de Crédito                                       216.102.578        (5.521.613)         (4.440.359)          1.929.899              844.152            9.380.460        218.295.117
+  Empréstimos e Títulos Descontados                        101.967.019        (4.412.426)         (3.573.490)          1.278.932              701.810            7.504.956        103.466.801
+  Financiamentos                                            29.675.230          (788.608)           (486.849)            215.544               58.865            1.507.687         30.181.869
+  Financiamentos Rurais e Agroindustriais                   80.647.071          (315.579)           (373.346)            425.722               81.085               (67.686)       80.397.267
+  Financiamentos Imobiliários                                3.813.258             (5.000)             (6.674)             9.701                2.392              435.503          4.249.180
+
+Outros Ativos Financeiros                                   46.694.693        (1.505.535)           (605.048)            317.290               76.807              923.048         45.901.255
+  Adiantamentos Sobre Contratos de Câmbio                    1.094.278                  -                   -                   -                    -               67.797         1.162.075
+  Avais e Fianças Honrados                                      49.561              (962)            (10.200)                   103                      35          76.036           114.573
+  Títulos com Característica de Concessão de Crédito        27.722.466        (1.139.059)           (461.918)            267.014               33.863               (83.751)       26.338.615
+  Devedores por Compras de Valores e Bens                      466.544           (25.767)            (67.313)                   539                  258             24.502           398.763
+  Valores a Receber Relativos a Transações de Pagamento     17.361.844          (339.747)            (65.617)             49.634               42.651              838.464         17.887.229
+
+Total                                                      262.797.271        (7.027.148)         (5.045.407)          2.247.189              920.959           10.303.508        264.196.372
+
+
+
+
+56
+
+=== página 59 ===
+Sistema de Crédito Cooperativo                            - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+                                                           Saldo em     Transferência p/ Transferência p/   Transferência   Transferência   Aquisição/       Saldo Final em
+                             Estágio 2
+                                                          31/12/2025       Estágio 1        Estágio 3       do Estágio 1    do Estágio 3    (Liquidação)      30/06/2026
+
+
+Operações de Crédito                                        6.689.039       (1.929.899)      (2.206.048)       5.521.613         268.502           (9.229)       8.333.978
+  Empréstimos e Títulos Descontados                         4.929.618       (1.278.932)      (1.709.339)       4.412.426         232.913         290.173         6.876.859
+  Financiamentos                                              817.012         (215.544)        (293.271)         788.608          22.859        (168.913)         950.751
+  Financiamentos Rurais e Agroindustriais                     923.765         (425.722)        (198.618)         315.579          12.145        (131.550)         495.599
+  Financiamentos Imobiliários                                  18.644            (9.701)         (4.820)            5.000            585           1.061            10.769
+
+Outros Ativos Financeiros                                   1.136.079         (317.290)        (177.768)       1.505.535          23.522        (388.878)        1.781.200
+  Avais e Fianças Honrados                                     21.124             (103)         (10.077)             962               11         29.347            41.264
+  Títulos com Característica de Concessão de Crédito          920.377         (267.014)        (162.817)       1.139.059            9.631       (171.032)        1.468.204
+  Devedores por Compras de Valores e Bens                       4.815             (539)            (323)          25.767               83          9.596            39.399
+  Valores a Receber Relativos a Transações de Pagamento       189.763          (49.634)          (4.551)         339.747          13.797        (256.789)         232.333
+
+Total                                                       7.825.118       (2.247.189)      (2.383.816)       7.027.148         292.024        (398.107)      10.115.178
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+57
+
+=== página 60 ===
+Sistema de Crédito Cooperativo                              - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+
+                                                           Saldo em     Transferência p/ Transferência p/ Transferência   Transferência   Baixa para     Aquisição/      Saldo Final em
+                             Estágio 3
+                                                          31/12/2025       Estágio 1       Estágio 2       do Estágio 1   do Estágio 2     prejuízo      (Liquidação)     30/06/2026
+
+
+Operações de Crédito                                       16.252.447         (844.152)       (268.502)       4.440.359      2.206.048     (4.598.117)        650.422      17.838.505
+  Empréstimos e Títulos Descontados                        13.694.193         (701.810)       (232.913)       3.573.490      1.709.339     (4.027.588)      1.042.712      15.057.423
+  Financiamentos                                            1.300.535          (58.865)        (22.859)        486.849         293.271       (340.769)       (208.020)       1.450.142
+  Financiamentos Rurais e Agroindustriais                   1.223.721          (81.085)        (12.145)        373.346         198.618       (229.017)       (183.326)       1.290.112
+  Financiamentos Imobiliários                                  33.998           (2.392)           (585)           6.674           4.820          (743)           (944)          40.828
+
+Outros Ativos Financeiros                                   2.158.802          (76.807)        (23.522)        605.048         177.768       (646.867)        (43.620)       2.150.802
+  Avais e Fianças Honrados                                    397.584              (35)             (11)         10.200         10.077       (135.886)        238.220         520.149
+  Títulos com Característica de Concessão de Crédito        1.623.382          (33.863)          (9.631)       461.918         162.817       (508.830)       (214.960)       1.480.833
+  Devedores por Compras de Valores e Bens                       8.378             (258)             (83)         67.313            323         (2.151)            789           74.311
+  Valores a Receber Relativos a Transações de Pagamento       129.458          (42.651)        (13.797)          65.617           4.551           -           (67.669)          75.509
+
+Total                                                      18.411.249        (920.959)        (292.024)       5.045.407      2.383.816     (5.244.984)       606.802       19.989.307
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+58
+
+=== página 61 ===
+Sistema de Crédito Cooperativo                               - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+f)     Reconciliação de perdas esperadas das operações de crédito, segregadas por estágios:
+
+                                                              Saldo em        Transferência p/ Transferência p/   Transferência      Transferência      Constituição/     Saldo Final em
+                                Estágio 1
+                                                             31/12/2025          Estágio 2        Estágio 3       do Estágio 2       do Estágio 3        (Reversão)        30/06/2026
+
+Operações de Crédito                                           2.751.566            (310.909)        (421.855)         331.874            438.505            155.220          2.944.401
+     Empréstimos e Títulos Descontados                         2.402.546            (283.182)        (384.289)         235.498            390.128            158.268          2.518.969
+     Financiamentos                                              223.814             (24.818)         (26.815)          41.735             28.497              (1.532)         240.881
+     Financiamentos Rurais e Agroindustriais                     113.728               (2.722)         (9.903)          53.093             18.434              (3.710)         168.920
+     Financiamentos Imobiliários                                  11.478                (187)            (848)            1.548              1.446              2.194            15.631
+
+Outros Ativos Financeiros                                        644.697             (40.848)         (17.613)          45.583             42.982            191.308           866.109
+     Adiantamentos sobre Contratos de Câmbio                             57              -                -                 -                  -                      3              60
+     Avais e Fianças Honrados                                      3.974                  (22)         (1.628)                  30                 26           3.268             5.648
+     Títulos com Característica de Concessão de Crédito          101.336             (14.278)          (9.576)          30.938               9.531           101.764           219.715
+     Devedores por Compra de Valores e Bens                        9.311               (1.475)           (803)             120                137              (1.514)            5.776
+     Valores a Receber Relativos a Transações de Pagamento       530.019             (25.073)          (5.606)          14.495             33.288             87.787           634.910
+
+Total                                                          3.396.263            (351.757)       (439.468)          377.457            481.487            346.528          3.810.510
+
+
+
+
+59
+
+=== página 62 ===
+Sistema de Crédito Cooperativo                            - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+                                                            Saldo em     Transferência p/ Transferência p/   Transferência   Transferência   Constituição/    Saldo Final em
+                             Estágio 2
+                                                           31/12/2025       Estágio 1        Estágio 3       do Estágio 1    do Estágio 3     (Reversão)       30/06/2026
+
+Operações de Crédito                                         1.835.257         (331.874)        (879.367)         310.909         154.052       1.127.258         2.216.235
+  Empréstimos e Títulos Descontados                          1.489.949         (235.498)        (732.936)         283.182         137.741       1.040.086         1.982.524
+  Financiamentos                                               227.206          (41.735)        (109.832)          24.818          12.781          83.821          197.059
+  Financiamentos Rurais e Agroindustriais                      115.088          (53.093)         (35.529)            2.722           3.194           3.650           36.032
+  Financiamentos Imobiliários                                    3.014            (1.548)         (1.070)             187             336             (299)             620
+
+Outros Ativos Financeiros                                      192.980          (45.583)         (40.747)          40.848          13.341          41.599          202.438
+  Avais e Fianças Honrados                                       3.620               (30)         (1.978)               22               3           4.224            5.861
+  Títulos com Característica de Concessão de Crédito           120.447          (30.938)         (36.902)          14.278            2.765         66.314          135.964
+  Devedores por Compra de Valores e Bens                          460              (120)            (151)            1.475              59           4.361            6.084
+  Valores a Receber Relativos a Transações de Pagamento         68.453          (14.495)          (1.716)          25.073          10.514          (33.300)          54.529
+
+Total                                                        2.028.237         (377.457)       (920.114)          351.757         167.393       1.168.857         2.418.673
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+60
+
+=== página 63 ===
+Sistema de Crédito Cooperativo                                - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+                                                           Saldo em     Transferência p/      Transferência p/      Transferência do   Transferência do   Baixa para     Constituição/    Saldo Final em
+                             Estágio 3
+                                                          31/12/2025       Estágio 1             Estágio 2             Estágio 1          Estágio 2        prejuízo       (Reversão)       30/06/2026
+
+Operações de Crédito                                       12.052.641          (438.505)             (154.052)             421.855             879.367     (4.598.117)      4.946.392        13.109.581
+  Empréstimos e Títulos Descontados                        10.521.103          (390.128)             (137.741)             384.289             732.936     (4.027.588)      4.345.520        11.428.391
+  Financiamentos                                              895.083           (28.497)              (12.781)               26.815            109.832       (340.769)        320.097           969.779
+  Financiamentos Rurais e Agroindustriais                     614.304           (18.434)               (3.194)                9.903             35.529       (229.017)        275.679           684.769
+  Financiamentos Imobiliários                                  22.151            (1.446)                 (336)                  848              1.070           (743)           5.097           26.642
+
+Outros Ativos Financeiros                                   1.407.903           (42.982)              (13.341)               17.613             40.747       (646.867)        602.674          1.365.746
+  Avais e Fianças Honrados                                    314.331                  (26)                   (3)             1.628              1.978       (135.886)        243.804           425.826
+  Títulos com Característica de Concessão de Crédito          985.373            (9.531)               (2.765)                9.576             36.902       (508.830)        336.742           847.467
+  Devedores por Compra de Valores e Bens                        5.377              (137)                     (59)               803                151         (2.151)         28.323            32.307
+  Valores a Receber Relativos a Transações de Pagamento       102.823           (33.288)              (10.514)                5.606              1.716            -             (6.196)          60.147
+
+Total                                                      13.460.543         (481.487)             (167.393)              439.468            920.114      (5.244.984)      5.549.066        14.475.327
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras combinadas.
+
+
+
+61
+
+=== página 64 ===
+Sistema de Crédito Cooperativo                        - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+g) Resultado com operações de crédito
+
+Descrição                                                 30/06/2026      30/06/2025
+
+  Empréstimos e Títulos Descontados                         14.789.252     13.196.395
+  Financiamentos                                             2.522.502       2.278.686
+  Financiamentos Rurais e Agroindustriais                    3.818.021       3.565.025
+  Financiamentos Imobiliários                                   222.454       154.394
+  Outros                                                     2.454.028       2.369.863
+
+Subtotal                                                    23.806.257     21.564.363
+
+  Recuperação de Créditos Baixados como Prejuízo                704.859       514.067
+
+Total                                                       24.511.116     22.078.430
+
+
+
+
+Durante o semestre findo em 30 de junho de 2026, foram realizadas renegociações de operações de
+crédito no montante de R$ 9.724.830 (durante o semestre findo em 30 de junho 2025 – R$
+5.714.138).
+
+Conforme requisitos determinados pela Resolução BCB 352/23, o Sicredi optou em utilizar para fins
+de taxa efetiva de juros a “metodologia diferenciada proporcional” para operações de crédito.
+
+Foram considerados como custos da transação elegíveis os custos incrementais diretamente
+atribuíveis à aquisição, das operações de crédito.
+
+No período findo de 30 de junho de 2026, as recuperações de operações de crédito anteriormente
+baixadas como prejuízo totalizaram o montante de R$ 247.258 (durante o semestre findo em 30 de
+junho 2025 – R$ 221.550) e foram registradas como “Receitas da intermediação financeira -
+Operações de crédito”.
+
+
+
+
+62
+
+=== página 65 ===
+Sistema de Crédito Cooperativo                            - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+10.      Outros Ativos Financeiro s
+Descrição                                                   Nota    30/06/2026        31/12/2025
+
+  Transações de Pagamento                                              6.336.153        6.435.349
+  Avais e Fianças Honrados                                  9.a          674.057          466.951
+  Adiantamento de Contrato de Câmbio                        9.a        1.141.386        1.084.041
+  Títulos com Característica de Concessão de Crédito        9.a       14.664.671       15.655.035
+  Devedores por Compras de Valores e Bens                   9.a          115.525           96.556
+  Devedores por Depósitos em Garantia                       19           240.140          234.192
+  Valores a Receber Relativos a Transações de Pagamento     9.a       18.078.445       17.574.392
+  Outros Ativos Financeiros                                              282.297          291.456
+
+Total Circulante                                                      41.532.674       41.837.972
+
+  Adiantamentos Sobre Contratos de Câmbio                   9.a           20.689           10.237
+  Avais e Fianças Honrados                                  9.a            1.929            1.318
+  Títulos com Característica de Concessão de Crédito        9.a       14.622.981       14.611.190
+  Devedores por Compras de Valores e Bens                   9.a          396.948          383.181
+  Valores a Receber Relativos a Transações de Pagamento     9.a          116.626          106.673
+
+Total Não Circulante                                                  15.159.173       15.112.599
+
+  Provisão para Perdas Incorridas e Esperadas                          (2.451.468)      (2.247.321)
+
+Total Líquido                                                         54.240.379       54.703.250
+
+
+
+
+11.      Outros Ativos
+Descrição                                                   Nota    30/06/2026       31/12/2025
+
+  Adiantamentos e Antecipações Salariais                               173.178           77.251
+  Impostos e Contribuições a Compensar                                 306.952          291.699
+  Pagamentos e Recebimentos a Liquidar - Sem Provisão                  999.733           44.264
+  Adiantamentos para Pagamentos de Nossa Conta                         160.534          158.659
+  Valores a Regularizar                                                334.937          309.085
+  Outros Valores e Bens                                      11.a     2.597.942       2.002.928
+  Outros Créditos Diversos                                             339.879          392.953
+
+Total Circulante                                                      4.913.155       3.276.839
+
+  Outros Valores e Bens                                      11.a     1.298.612       1.128.632
+
+Total Não Circulante                                                  1.298.612       1.128.632
+
+Total                                                                 6.211.767       4.405.471
+
+
+
+
+63
+
+=== página 66 ===
+Sistema de Crédito Cooperativo                                 - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+ a) Outros valores e bens
+
+      Descrição                                                   30/06/2026 31/12/2025
+
+      Ativos não financeiros mantidos para venda                   2.456.852     2.026.245
+        Imóveis                                                    2.323.889     1.894.381
+        Veículos                                                        57.639     62.246
+        Máquinas e equipamentos                                         74.500     69.618
+        Outros                                                             824         -
+
+      Material em estoque                                               13.685       9.046
+      Despesas antecipadas (a)                                       288.303      128.461
+      Provisão para desvalorização de ativos não financeiros
+                                                                    (160.898)     (160.824)
+      mantidos para venda-recebidos (b)
+
+      Total circulante                                             2.597.942     2.002.928
+
+      Ativos não financeiros mantidos para venda                   1.230.809     1.065.966
+        Imóveis                                                    1.230.809     1.065.966
+      Despesas antecipadas (a)                                          67.803     62.666
+
+      Total não circulante                                         1.298.612     1.128.632
+
+      Total                                                        3.896.554     3.131.560
+
+
+     (a) As despesas antecipadas referem-se principalmente a licença de softwares em regime de comodato,
+         manutenção e suporte registrados na Confederação.
+     (b) Movimentação da provisão para desvalorização de ativos não financeiros mantidos para venda.
+
+
+
+b) Movimentação da provisão para desvalorização de ativos não financeiros mantidos para
+   venda
+
+     Descrição                            30/06/2026       30/06/2025
+
+     Saldo inicial                             160.824           63.087
+
+       Constituição de provisão                 30.221           12.771
+       Reversão de provisão                    (30.147)          (4.181)
+
+     Saldo final                               160.898           71.677
+
+
+
+
+64
+
+=== página 67 ===
+Sistema de Crédito Cooperativo                                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+12.         Investimentos em                 Participações em                   Controladas
+Apresentamos abaixo os investimentos do Banco avaliados pelo método da equivalência patrimonial
+junto à Corretora de Seguros, Administradora de Bens e Sicredi Asset Management:
+
+                                                                                          Sicredi Asset
+                                 Corretora de Seguros      Administradora de Bens                                 Total        Total
+Descrição                                                                                Management (a)
+                               30/06/2026   31/12/2025    30/06/2026   31/12/2025    30/06/2026    31/12/2025   30/06/2026   31/12/2025
+
+Número de Quotas Possuídas            400           400       49.276        49.276        5.000           -
+Percentual de Participação %       100,00        100,00        99,98         99,98       100,00           -
+
+Capital Social                        400           400       49.286        49.286        5.000           -
+
+Patrimônio Líquido                 47.171        41.736       53.707        53.674        4.914           -
+Lucro Líquido do Período            5.435         6.426           33           214          (86)          -
+
+Valor do Investimento              47.171        41.736       53.696        53.664        4.914           -        105.781       95.400
+
+                                 Corretora de Seguros      Administradora de Bens         Sicredi Asset           Total        Total
+Descrição
+                               30/06/2026   30/06/2025    30/06/2026   30/06/2025    30/06/2026    30/06/2025   30/06/2026   30/06/2025
+
+Equivalência Patrimonial            5.435         4.359           33            96          (86)          -          5.382        4.455
+
+
+      (a) A Sicredi Asset Management LTDA foi constituída sob a forma de sociedade empresária limitada, nos
+          termos do Contrato Social e em conformidade com a Lei nº 10.406/02 (Código Civil), aplicando-se, de
+          forma supletiva e quando cabível, a Lei nº 6.404/76. A Sociedade tem por objeto a administração e/ou
+          gestão de fundos de investimento e carteiras de ativos, inclusive títulos e valores mobiliários, no Brasil
+          e no exterior. O capital social é de R$ 5.000, totalmente subscrito e integralizado em moeda corrente
+          nacional, dividido em 5.000 quotas, com valor nominal de R$ 1,00 cada, detidas integralmente pelo
+          Banco Cooperativo Sicredi S.A., que possui 100% da participação societária.
+
+
+
+
+65
+
+=== página 71 ===
+Sistema de Crédito Cooperativo                                  - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+b) Dívida Subordinada
+
+ Em conformidade com a Resolução CMN nº 4.955/21, o Banco possui Letras Financeiras
+ Subordinadas (“LFSN”) emitidas no valor de R$ 1.182.500, com vencimento até 2036.
+
+ Em janeiro de 2022, o Banco realizou a emissão de Green Bond Subordinado no valor de US$ 100
+ milhões junto ao BID Invest, membro do Banco Interamericano de Desenvolvimento (“BID”),
+ destinado em sua integralidade para o financiamento de projetos de energia renovável e eficiência
+ energética junto aos associados do Sicredi. O valor captado em reais, equivalente a R$ 549.780,
+ possui vencimento para dez anos (principal) e pagamento de juros semestrais.
+
+ Em 30 de junho de 2026, o valor total atualizado destes instrumentos de dívida subordinada é de
+ R$ 2.179.333.
+
+
+ Descrição                                     31/12/2025       Captação    Accrual de juros   Liquidação    30/06/2026
+
+     Instrumentos de Dívida Subordinada          1.933.365        202.800         129.363         (86.195)    2.179.333
+
+ Total Não Circulante                            1.933.365        202.800         129.363         (86.195)    2.179.333
+
+
+
+18.       Provis ão para Riscos Cíveis, T ributários e T rabalhistas
+ O Sistema é parte em processos judiciais dos quais seus assessores jurídicos classificam como risco
+ de perda provável, sendo que os valores estimados e suas respectivas provisões estão registrados
+ na rubrica “Provisões para riscos cíveis, tributários e trabalhistas” e demonstrados no quadro a
+ seguir, conforme a natureza dos passivos.
+
+     Natureza         Probabilidade de Perda        30/06/2026             31/12/2025
+
+ Trabalhista                  Provável                        80.173             77.625
+ Cível                        Provável                        66.701             54.083
+ Tributária                   Provável                        75.137             75.336
+
+ Total                                                       222.011           207.044
+
+
+ Em 30 de junho de 2026, o Sistema possuía também processos trabalhistas, cíveis e tributários cuja
+ probabilidade de perda é possível no montante de R$ 143.014, R$ 943.049 e R$ 150.506 (em
+ dezembro 2025 - R$ 96.178, R$ 723.755 e R$ 148.647), respectivamente.
+
+
+
+
+69
+
+=== página 72 ===
+Sistema de Crédito Cooperativo                                         - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+ A movimentação da provisão para riscos cíveis, tributários e trabalhistas é como segue:
+
+                                                             Aumento de                Reversão/
+              Natureza               31/12/2025                                                                30/06/2026
+                                                               Provisão         Baixa de Provisão
+
+     Trabalhista                                  77.625               16.970                (14.422)                 80.173
+     Cível                                        54.083               26.526                (13.908)                 66.701
+     Tributária                                   75.336                1.378                 (1.577)                 75.137
+
+  Total Não Circulante                       207.044                   44.874               (29.907)                222.011
+
+
+ Em 30 de junho de 2026, o Sistema Sicredi possuía depósitos judiciais no montante de R$ 240.140
+ (em dezembro 2025 - R$ 234.192), registrados na rubrica de “Outros ativos financeiros ao custo
+ amortizado” (nota explicativa 10), os quais estão relacionados a estes processos judiciais.
+
+19.          Provisões e Outras Obrigações com                              Instrumentos                Financeiro s
+a) Composição da carteira:
+
+                         Descrição                          30/06/2026      31/12/2025
+
+Provisões para Garantias Financeiras Prestadas                  714.241         746.489
+Provisões para Compromissos de Crédito                          214.262         230.490
+
+Total                                                           928.503         976.979
+
+
+b) Movimentação das provisões e outras obrigações com instrumentos financeiros:
+
+                                                                          Aumento de               Reversão/
+                   Descrição                           31/12/2025                                                     30/06/2026
+                                                                            Provisão         Baixa de Provisão
+
+ Provisões para Garantias Financeiras Prestadas              746.489             364.099                (396.347)              714.241
+ Provisões para Compromissos de Crédito                      230.490             157.455                (173.683)              214.262
+
+Total Não Circulante                                         976.979             521.554                (570.030)              928.503
+
+
+
+
+70
+
+=== página 73 ===
+Sistema de Crédito Cooperativo                                - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+20.         Outros Passivos
+
+Descrição                                                        Nota    30/06/2026    31/12/2025
+
+ Cobrança e Arrecadação de Tributos e Assemelhados                          519.290        60.057
+ Cotas de Capital a Pagar                                                    426.051      590.715
+ Fundo de Assistência Técnica, Educacional e Social - FATES                  370.891      530.880
+ Fundos Voluntários                                                          235.185      280.603
+ Provisão para Participações nos Lucros                                      536.809      990.060
+ Demais Obrigações Sociais e Estatutárias                                     26.780       20.716
+ Fiscais e Previdenciárias (Exceto Passivo Fiscal Diferido)                  413.243      558.257
+ Provisão para Pagamentos a Efetuar                              20.a      1.379.705    1.174.369
+ Credores Diversos                                                           441.694      690.987
+ Obrigações com Operações no Exterior                                        243.382      231.710
+ Credores Imobiliários                                                        31.007      146.538
+ Demais Fornecedores                                                         365.669      262.301
+ Outros Passivos                                                             516.605      623.974
+
+Total Circulante                                                           5.506.311    6.161.167
+
+
+(a) Provisão para pagamentos a efetuar
+
+Descrição                                                         30/06/2026      31/12/2025
+
+  Provisão de Férias                                                    436.074         425.381
+  Provisão para Encargos Sociais                                        214.744         151.143
+  Provisão de 13º Salário                                               172.838             -
+  Provisão para Bônus por Produtividade                                 128.495         227.445
+  Provisão de Bônus de Sucessão                                          36.764           7.198
+  Provisão para Resgate de Milhas Cartão                                243.782         217.208
+  Provisão para Fundo Garantidor Cooperativa de Crédito                  40.372          37.686
+  Outras Provisões Administrativas                                      106.636         108.308
+
+Total                                                               1.379.705          1.174.369
+
+
+
+
+71
+
+=== página 74 ===
+Sistema de Crédito Cooperativo                         - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+21.    Patrimônio L íquido
+a) Capital social
+
+ O capital social é dividido em quotas-partes de valor unitário equivalente a R$ 1,00 (um real), no
+ montante de 22.094.166 quotas, sendo que cada associado tem direito a um voto,
+ independentemente do número de suas quotas-partes, e está assim composto:
+
+ Descrição                             30/06/2026          31/12/2025
+ Capital Social                           22.094.166         20.876.192
+ Quantidade de Associados                 10.440.724          9.849.206
+
+ No período findo em 30 de junho de 2026, foram realizadas integralizações de capital no montante
+ de R$ 3.189.187 (em dezembro de 2025 - R$ 5.337.748), sendo R$ 898.258 (em dezembro de
+ 2025 - R$ 2.403.638) mediante capitalização de resultados e R$ 2.290.929 (em dezembro de 2025
+ - R$ 2.934.110) por integralização de quotas-partes. No mesmo período, ocorreram baixas de
+ capital decorrentes do resgate de quotas-partes no montante de R$ 1.971.154 (em dezembro de
+ 2025 - R$ 1.984.246), resultando em aumento líquido de capital social de R$ 1.218.033 (em
+ dezembro de 2025 - R$ 3.342.203).
+
+b) Juros ao capital
+
+ Os juros sobre o capital integralizado podem ser remunerados anualmente à taxa referencial do
+ Sistema Especial de Liquidação e de Custódia - SELIC, a serem propostos pelo Conselho de
+ Administração da cooperativa e o pagamento ocorre em cota capital e/ou conta corrente dos
+ associados.
+
+c) Reversão do capital a pagar para a Reserva Legal
+
+ A partir de dezembro de 2023, as cooperativas passaram a contabilizar a reversão de capital a
+ pagar referente a valores não procurado pelos ex associados há mais de cinco anos, anteriormente
+ destacados do capital para o passivo, conforme o disposto na Lei Complementar nº 196/22.
+
+d) Destinações estatutárias e legais
+
+ De acordo com o estatuto social das cooperativas e com a Lei nº 5.764/71, as sobras líquidas terão
+ a seguinte destinação:
+
+ •    De 10% até 85% para Reserva legal, que tem por objetivo reparar perdas e atender ao
+      desenvolvimento das atividades das cooperativas;
+ •    De 1% até 10% para Reserva de expansão, destinada as ações que possibilitem a expansão
+      das cooperativas em sua área de atuação;
+
+
+
+
+72
+
+=== página 75 ===
+Sistema de Crédito Cooperativo                          - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+ •    No mínimo 5% para o Fundo de Assistência Técnica, Educacional e Social - FATES, destinado
+      a atividades educacionais, à prestação de assistência aos cooperados, seus familiares e
+      empregados da cooperativa.
+      Além dessas destinações, a Lei nº 5.764/71 prevê:
+      (i) que os resultados positivos das operações com não associados serão destinados à conta do
+          FATES; e
+      (ii) que a perda apurada no período será coberta com recursos provenientes da Reserva Legal
+           e, se insuficiente esta, mediante rateio entre os cooperados com as sobras de exercícios
+           futuros, conforme disposição da Lei Complementar n° 130/09.
+ •    O valor total recuperado, referente às operações de créditos baixadas como prejuízos, poderá
+      ser destinado à constituição da Reserva Legal, outras reservas e fundos, a critério do Conselho
+      de Administração da cooperativa; e
+ •    A Assembleia Geral da cooperativa, poderá criar outras reservas (fundos), inclusive rotativos,
+      com recursos destinados para fins específicos fixando o modo de formação, aplicação e
+      liquidação, conforme definido pelo seu Conselho de Administração, a exemplo: reservas de
+      expansão, fundo de equalização e fundos sociais.
+
+
+
+
+73
+
+=== página 76 ===
+Sistema de Crédito Cooperativo                                    - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+22.        Imposto de Renda e Contribuição S ocial
+a) Conciliação do resultado de IRPJ e CSLL
+
+As provisões para CSLL foram constituídas pela aplicação da alíquota de 15% para as Cooperativas
+e 20% para o Banco, e as provisões para Imposto de Renda (IR) pela aplicação de alíquota de 15%,
+acrescida de 10% sobre o lucro tributável que exceder a R$ 240 no período, sobre o lucro tributável.
+Conforme demonstrado abaixo:
+Descrição                                                                30/06/2026      30/06/2025
+Resultado Antes da Participação nos Lucros e Juros ao Capital              4.200.272      3.830.786
+
+Participação nos Lucros e Juros ao Capital                                  (665.911)      (532.016)
+
+Resultado Após a Participação nos Lucros e Antes da Tributação Sobre o
+                                                                           3.534.361      3.298.770
+Lucro e dos Juros Sobre Capital Próprio
+
+IRPJ e CSLL Pelas Alíquotas Fiscais                                        (1.590.462)    (1.484.447)
+
+Adições e Exclusões Permanentes
+
+     Resultado de Participações em Controladas                                 2.443          1.977
+     Resultado com Atos Cooperativos                                       1.160.442      1.140.557
+     Juros Sobre o Capital Próprio                                               -              -
+     Rendas Aplicações TVM no Exterior                                        25.912         14.851
+     Outras Movimentações                                                    187.338         81.109
+
+Subtotal                                                                   1.376.135      1.238.494
+
+ IRPJ e CSLL Correntes                                                      (214.327)      (245.953)
+
+ Constituição de Créditos Tributários                                         82.843         93.366
+
+IRPJ e CSLL Registrados no Resultado                                        (131.484)      (152.587)
+
+
+
+
+74
+
+=== página 77 ===
+Sistema de Crédito Cooperativo                                  - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+b) Tributos diferidos ativos e passivos
+
+        i. Composição dos tributos diferidos
+
+Em 30 de junho de 2026, os saldos de tributos diferidos foram reconhecidos com base nas alíquotas
+fiscais vigentes aplicáveis às respectivas entidades. No Banco, os tributos diferidos foram registrados
+considerando alíquotas de 25% para o Imposto de Renda (IRPJ) e 20% para a Contribuição Social
+sobre o Lucro Líquido (CSLL). Na Consórcios, foram aplicadas alíquotas de 25% para o IRPJ e 9%
+para a CSLL.
+
+Os valores correspondentes foram contabilizados nas contas “Créditos Tributários” (ativo) e
+“Obrigações Fiscais Diferidas” (passivo), conforme demonstrado no quadro a seguir:
+
+Descrição                                                                   30/06/2026     31/12/2025
+
+Diferenças Temporárias - Ativo Fiscal Diferido
+  Provisão para Riscos Cíveis, Tributários e Trabalhistas                         6.489         6.323
+  Provisões de PLR e PPR                                                          9.835        14.532
+  Provisão para Perdas em Ativos                                                 16.174        11.109
+  Marcação a Mercado TVM’s e Instrumentos Financeiros Derivativos               365.234       176.589
+  Outras Provisões                                                               41.339        31.129
+  Prejuízo Fiscal e Base Negativa                                               112.769       185.178
+  Provisão Ajuste BCB 120                                                       215.163       180.748
+
+Total                                                                           767.003       605.608
+
+Diferenças Temporárias - Passivo Fiscal Diferido
+  Marcação a Mercado TVM’s e Instrumentos Financeiros Derivativos              (266.404)     (231.281)
+  Provisão Ajuste BCB 120                                                      (212.048)     (177.667)
+
+Total                                                                          (478.452)     (408.948)
+
+
+O reconhecimento contábil levou em consideração a realização provável desses tributos a partir de
+resultados futuros elaborados com base em premissas internas e em cenários econômicos futuros
+que podem, portanto, sofrer alterações.
+
+Em 30 de junho de 2026, o valor presente dos créditos tributários ativos líquidos, calculados
+considerando a taxa média de 13,73% (dezembro de 2025 - 14,85%), apurada com base na taxa
+média dos títulos públicos e das operações de crédito em carteira, monta a R$ 401.206 (dezembro
+de 2025 - R$ 369.331).
+
+Não existem créditos tributários não constituídos em 30 de junho de 2026.
+
+As adições e exclusões subsequentes consideram os efeitos de outros itens especificados na
+legislação, tais como doações, constituição e reversão de provisões, resultados de equivalência
+patrimonial, entre outros. Em conformidade com as disposições legais, as Cooperativas podem
+registrar prejuízo fiscal e base de cálculo negativa para a CSLL. Esses valores negativos são
+controlados e poderão ser compensados com resultados positivos em exercícios futuros.
+
+
+
+
+75
+
+=== página 78 ===
+Sistema de Crédito Cooperativo                                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+No entanto, as Cooperativas que apresentam saldo de prejuízo fiscal e base negativa de CSLL sem
+expectativa de realização futura não registram crédito tributário correspondente. Isso ocorre quando
+se projeta que o resultado de atos não cooperativos e/ou a base tributável para o IRPJ/CSLL
+permanecerão negativos nos exercícios subsequentes, em grande parte devido à recorrência de
+despesas elevadas com juros sobre o capital. Portanto, esses saldos negativos não são reconhecidos
+como ativos fiscais diferidos nas demonstrações financeiras.
+
+     ii. Período estimado de realização
+
+Os valores dos ativos fiscais diferidos apresentam as seguintes expectativas de realização 30 de
+junho de 2026:
+
+                                                     30/06/2026         31/12/2025
+                                      Ano
+                                                  Valor dos Créditos Valor dos Créditos
+                                     2026                  126.643                115.125
+                                     2027                  124.774                  94.293
+                                     2028                  164.031                  96.140
+                                     2029                  102.589                  82.872
+                                     2030                   50.852                  60.055
+                                     2031                   72.718                  53.837
+                                     2032                   85.119                  59.749
+                                     2033                   18.487                  11.408
+                                     2034                    9.249                   5.177
+                                     2035                    8.271                  26.952
+                                     2036                    4.259                        -
+                                     2037                       11                        -
+
+                                     Total                 767.003               605.608
+
+
+Como a base tributável do imposto de renda e da contribuição social sobre o lucro líquido decorre
+não apenas do lucro que pode ser gerado, mas também da existência de receitas não tributáveis,
+despesas não dedutíveis, incentivos fiscais e outras variáveis, não existe uma correlação imediata
+entre o lucro líquido do Sistema e o resultado de imposto de renda e a contribuição social. Portanto,
+a expectativa da utilização dos créditos fiscais não deve ser tomada como único indicativo de
+resultados futuros do Sistema.
+
+     iii. Movimentação no período
+
+                                                        Diferido Ativo          Diferido Passivo          Patrimônio Líquido
+Descrição
+                                                    30/06/2026 31/12/2025¹ 30/06/2026 31/12/2025 30/06/2026 31/12/2025
+
+Saldo no Início do Período                            605.607     819.536     (408.948)       (677.468)     7.482       (6.161)
+
+  Tributos Diferidos Constituídos/Provisionados       287.922     495.028      69.338         331.146       7.282      14.305
+  Tributos Diferidos Realizados/Revertidos            (126.526)   (708.956)   (138.841)        (62.627)    (1.542)        (662)
+
+Saldo no Final do Período                             767.003     605.608     (478.452)       (408.949)    13.222        7.482
+¹ A movimentação comparativa refere-se a todo exercício de 2025.
+
+
+
+
+76
+
+=== página 79 ===
+Sistema de Crédito Cooperativo                       - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+23.        Participação de Não Controladores
+Em 30 de junho de 2026, o Rabo Partnerships B.V. detém 7,51% de participação nas ações do Banco.
+
+A participação do Rabo Partnerships B.V. dá-se em ações preferenciais classe A (“PNA”). Os
+dividendos a serem pagos a essas ações são calculadas à proporção da participação do Rabo
+Partnerships B.V. e o patrimônio líquido das cooperativas, chamada de QPL (quoeficiente de
+participação nos lucros). Em 30 de junho de 2026 o QPL do Rabo Partnerships B.V. é de 0,80% (em
+dezembro 2025 – 0,90%).
+
+                                                           30/06/2026        31/12/2025
+Descrição
+                                                         Rabo Part.B.V       Rabo Part.B.V
+
+Patrimônio Líquido do Banco                                   5.480.266          5.313.862
+
+Participação (%)                                                 7,51%               7,51%
+Participação (R$)                                               411.568            399.071
+Dividendo Adicional                                              15.079                      0
+
+Participação do Acionista Não Controlador                       426.647            399.071
+
+QPL                                                              0,80%               0,90%
+
+
+24.        Partes Relacionadas
+a)      Instituições relacionadas
+
+As entidades efetuam transações junto a partes relacionadas, incluindo empresas que não fazem
+parte do processo de combinação desta demonstração financeira, sendo elas: Administradora de
+Bens, Corretora de Seguros, SicrediPar, Fundação Sicredi, Sicredi Asset Management e Fundos de
+investimento administrados pelo Banco não combinados nestas demonstrações financeiras.
+
+No quadro a seguir apresentamos as operações realizadas com partes relacionadas, sumariadas por
+grupo contábil:
+
+Descrição                                   30/06/2026       31/12/2025
+
+Passivo                                        7.083.481       7.154.597
+     Depósitos a Prazo                           176.047          88.260
+     Captações no Mercado Aberto               6.908.936       7.064.006
+     Quotas Parte                                    18                 47
+     Lucros (Prejuízos) Acumulados                (1.520)          2.284
+
+
+Descrição                                     30/06/2026      30/06/2025
+
+Despesas                                          502.408        311.180
+     Operações de Captação no Mercado             499.321        308.721
+     Outras Despesas Administrativas                3.087          2.459
+
+
+
+
+77
+
+=== página 86 ===
+Sistema de Crédito Cooperativo                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+Estão previstos na Política de Gestão Integrada de Riscos e prevista na Norma de Continuidade de
+Negócios do Sicredi, os princípios básicos e a estrutura necessária para garantir a resposta adequada
+à recuperação, à restauração e aos níveis acordados de disponibilidade para os serviços processos
+mais críticos das entidades.
+
+O sistema de Gestão de Continuidade de negócios estruturado no Sicredi contempla:
+
+     •   Norma de Gestão de Continuidade de negócios;
+     •   Análise de impacto de negócio - BIAs;
+     •   Estratégias de recuperação de desastre de TI na visão de negócio;
+     •   Planos de continuidade operacional;
+     •   Planos de substituição de empresas terceiras.
+
+Por fim, a estrutura centralizada do Sicredi disponibiliza, através da Norma Sistêmica de Continuidade
+de Negócios, para todas as suas cooperativas algumas recomendações para aumento da resiliência
+de seus serviços, orientando a criação de Análises de Impacto ao Negócio e Planos de Continuidade.
+
+IV - Risco de Mercado
+
+Define-se risco de mercado como a possibilidade de ocorrência de perdas resultantes da flutuação
+nos valores de mercado de posições detidas por uma instituição financeira. Incluem-se nessa
+definição, as operações sujeitas aos riscos de variação cambial, das taxas de juros, dos preços de
+ações e dos preços de mercadorias (commodities).
+
+O gerenciamento de risco de mercado das instituições do Sistema Sicredi é centralizado no Banco
+Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a
+complexidade dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada
+é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições
+do Sistema na gestão do risco de mercado.
+
+Os processos e políticas para o gerenciamento do risco de mercado são estabelecidos seguindo os
+critérios mínimos da regulamentação em vigor, alinhados às melhores práticas de mercado, e
+aprovadas pelas alçadas competentes de cada instituição do Sistema.
+
+Os processos para o gerenciamento do risco de mercado do Sistema Sicredi incluem:
+
+     •   Regras claras de classificação da carteira de negociação que garantam o correto tratamento
+         das operações;
+     •   Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de mercado
+         em níveis considerados aceitáveis pela Instituição;
+     •   Processos destinados a monitorar e reportar a aderência ao apetite ao risco de mercado da
+         Instituição em relação ao seu capital;
+     •   Definição das metodologias de risco de mercado a serem aplicadas;
+
+
+
+
+84
+
+=== página 87 ===
+Sistema de Crédito Cooperativo                           - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+     •   Sistemas para executar o cálculo e medir os riscos, considerando a complexidade dos
+         produtos e a dimensão da exposição ao risco de mercado das instituições do Sistema.
+
+V - Risco De Variação Das Taxas De Juros Em Instrumentos Classificados Na Carteira Bancária
+(IRRBB)
+
+O IRRBB é o risco, atual ou prospectivo, do impacto de movimentos adversos das taxas de juros nos
+resultados ou no valor econômico da instituição, resultante dos instrumentos classificados na carteira
+bancária.
+
+O gerenciamento de risco de IRRBB das instituições do Sistema Sicredi é centralizado no Banco
+Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a
+complexidade dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada
+é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições
+do Sistema na gestão do risco de IRRBB.
+Para a mensuração e controle desse risco no Sicredi, utiliza-se as abordagens de valor econômico
+(EVE) e de resultado de intermediação financeira (NII). O Sistema Sicredi define as regras para o
+cálculo do risco de variação da taxa de juros das operações em linha com as práticas de mercado e
+com as exigências da regulamentação vigente.
+
+Os processos para o gerenciamento do risco de IRRBB do Sistema Sicredi incluem:
+    • Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de IRRBB
+       em níveis considerados aceitáveis pela Instituição;
+    • Processos destinados a monitorar e reportar a aderência ao apetite ao risco de IRRBB da
+       Instituição em relação ao seu capital;
+    • Definição das metodologias de risco de IRRBB a serem aplicadas;
+    • Sistemas para executar o cálculo e medir os riscos, considerando a complexidade dos
+       produtos e a dimensão da exposição ao risco de IRRBB das instituições do Sistema.
+
+VI - Risco de Liquidez
+
+O entendimento de Risco de Liquidez é essencial para a sustentabilidade das instituições que atuam
+no mercado financeiro e de capitais e está associado à capacidade da instituição de financiar os
+compromissos adquiridos a preços de mercado razoáveis e realizar seus planos de negócio com
+fontes estáveis de financiamento. Para este efeito, define-se risco de liquidez como:
+
+     •   A possibilidade da instituição não ser capaz de honrar eficientemente suas obrigações
+         esperadas e inesperadas, correntes e futuras, inclusive as decorrentes de vinculação de
+         garantias, sem afetar suas operações diárias e sem incorrer em perdas significativas; e
+     •   A possibilidade de a instituição não conseguir negociar a preço de mercado uma posição,
+         devido ao seu tamanho elevado em relação ao volume normalmente transacionado ou em
+         razão de alguma descontinuidade no mercado.
+
+
+
+
+85
+
+=== página 88 ===
+Sistema de Crédito Cooperativo                            - Sicredi
+Notas explicativas às demonstrações financeiras combinadas
+30 de junho de 202 6
+(Em milhares de reais, exceto quando indicado de outra forma)
+
+O gerenciamento de risco de liquidez das instituições do Sistema Sicredi é centralizado no Banco
+Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a
+complexidade dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada
+é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as entidades do
+Sistema na gestão do risco de liquidez.
+
+Os processos e políticas para o gerenciamento do risco de liquidez são estabelecidos seguindo os
+critérios da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas pelas
+alçadas competentes de cada Instituição do Sistema.
+
+Os processos para o gerenciamento do risco de liquidez do Sistema Sicredi incluem:
+
+     •   Definição de processos para identificar, avaliar, monitorar e controlar a exposição ao risco de
+         liquidez em diferentes horizontes de tempo;
+     •   O estabelecimento de processos de rastreio e reporte da observância ao apetite ao risco de
+         liquidez e em níveis considerados aceitáveis pela instituição;
+     •   Definição das estratégias de captação que proporcionem diversificação adequada das fontes
+         de recursos e dos prazos de vencimento;
+     •   Definição de plano de contingência de liquidez, regularmente atualizado, que estabeleça
+         responsabilidades e procedimentos para enfrentar situações de estresse de liquidez;
+     •   Realização periódica de testes de estresse com cenários de curto e de longo prazo.
+
+VII - Risco de Crédito
+
+A gestão do risco de crédito consiste no processo de identificação, mensuração, controle e mitigação
+dos riscos decorrentes das operações de crédito realizadas pelas instituições financeiras.
+
+No Sicredi, o gerenciamento do Risco de Crédito é realizado por uma estrutura centralizada e pelos
+colegiados locais. Os processos e políticas de riscos de crédito são estabelecidos seguindo os critérios
+da regulamentação em vigor, alinhados às melhores práticas de mercado e ao apetite a risco do
+sistema, aprovadas pelas alçadas competentes do sistema.
+
+O Banco Cooperativo Sicredi responde pelo conjunto de políticas, estratégias e metodologias
+voltadas ao controle e gerenciamento das exposições ao risco de crédito de cada entidade do
+Sistema, possuindo como principais atribuições: responder pelas políticas corporativas de gestão de
+risco de crédito; desenvolver e propor metodologias de classificação de risco de crédito, inclusive por
+meio de modelos quantitativos; e realizar o monitoramento constante das exposições sujeitas ao risco
+de crédito de contraparte de todas as empresas do Sicredi.
+
+As áreas e colegiados locais são responsáveis pela execução do gerenciamento de risco de crédito,
+observando as políticas e limites pré-estabelecidos sistemicamente.
+
+
+
+
+86

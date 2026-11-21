@@ -1,0 +1,1577 @@
+
+=== página 7 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+
+                   Sistema de Cooperativas de Crédito do Brasil - Sicoob
+
+
+                   •   Obtemos entendimento dos controles internos relevantes para a auditoria para planejarmos
+                       procedimentos de auditoria apropriados às circunstâncias, mas, não, com o objetivo de
+                       expressarmos opinião sobre a eficácia dos controles internos da Instituição.
+
+                   •   Avaliamos a adequação das políticas contábeis utilizadas e a razoabilidade das estimativas
+                       contábeis e respectivas divulgações feitas pela administração.
+
+                   •   Concluímos sobre a adequação do uso, pela administração, da base contábil de continuidade
+                       operacional e, com base nas evidências de auditoria obtidas, se existe incerteza relevante em
+                       relação a eventos ou condições que possam levantar dúvida significativa em relação à capacidade de
+                       continuidade operacional da Instituição. Se concluirmos que existe incerteza relevante, devemos
+                       chamar atenção em nosso relatório de auditoria para as respectivas divulgações nas demonstrações
+                       contábeis combinadas ou incluir modificação em nossa opinião, se as divulgações forem
+                       inadequadas. Nossas conclusões estão fundamentadas nas evidências de auditoria obtidas até a
+                       data de nosso relatório. Todavia, eventos ou condições futuras podem levar a Instituição a não mais
+                       se manter em continuidade operacional.
+
+                   •   Avaliamos a apresentação geral, a estrutura e o conteúdo das demonstrações contábeis
+                       combinadas, inclusive as divulgações e se essas demonstrações contábeis representam as
+                       correspondentes transações e os eventos de maneira compatível com o objetivo de apresentação
+                       adequada.
+
+                   •   Obtemos evidência de auditoria apropriada e suficiente referente às informações financeiras das
+                       entidades ou atividades de negócio incluídas nas demonstrações contábeis combinadas para
+                       expressar uma opinião sobre essas demonstrações contábeis. Somos responsáveis pela direção,
+                       supervisão e desempenho da auditoria do Sistema Sicoob e, consequentemente, pela opinião
+                       de auditoria.
+
+                   Comunicamo-nos com os responsáveis pela governança a respeito, entre outros aspectos, do alcance e
+                   da época dos trabalhos de auditoria planejados e das constatações significativas de auditoria, inclusive
+                   as deficiências significativas nos controles internos que, eventualmente, tenham sido identificadas
+                   durante nossos trabalhos.
+
+                   Dos assuntos que foram objeto de comunicação com os responsáveis pela governança, determinamos
+                   aqueles que foram considerados como mais significativos na auditoria das demonstrações contábeis
+                   combinadas do semestre corrente e que, dessa maneira, constituem os Principais Assuntos de
+                   Auditoria. Descrevemos esses assuntos em nosso relatório de auditoria, a menos que lei ou
+                   regulamento tenha proibido divulgação pública do assunto, ou quando, em circunstâncias
+                   extremamente raras, determinarmos que o assunto não deve ser comunicado em nosso relatório
+                   porque as consequências adversas de tal comunicação podem, dentro de uma perspectiva razoável,
+                   superar os benefícios da comunicação para o interesse público.
+
+                   Brasília, 19 de novembro de 2024
+
+
+
+
+                   PricewaterhouseCoopers
+                   Auditores Independentes Ltda.
+                   CRC 2SP000160/F-5
+
+
+
+
+                   Guilherme Naves Valle
+                   Contador CRC 1MG070614/O-5
+
+
+
+
+                                                                                                                          6
+
+=== página 8 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+
+      N l
+
+
+
+
+      Índice
+      Balanço patrimonial combinado ..................................................................................................................................................... 17
+      Demonstração combinada dos resultados ....................................................................................................................................... 19
+      Demonstração combinada do resultado abrangente ........................................................................................................................ 20
+      Demonstração combinada das mutações do patrimônio líquido ...................................................................................................... 21
+      Demonstração combinada dos fluxos de caixa................................................................................................................................. 23
+      Nota 1 – Contexto operacional ........................................................................................................................................................ 24
+      Nota 2 – Apresentação das demonstrações contábeis combinadas ................................................................................................... 24
+      2.1. Elaboração das demonstrações contábeis combinadas.............................................................................................................. 24
+      2.2. Segregação entre curto e longo prazos (circulante e não circulante) .......................................................................................... 25
+      2.3. Aprovação das demonstrações contábeis combinadas .............................................................................................................. 25
+      2.4. Critérios utilizados na combinação dos saldos .......................................................................................................................... 25
+      2.5. Entidades integrantes do Sicoob consideradas nas demonstrações contábeis combinadas ......................................................... 25
+      2.6. Participação das instituições autorizadas a funcionar pelo Banco Central e fundos de investimento combinados: ...................... 28
+      2.7. Movimentação de cooperativas ................................................................................................................................................ 34
+      2.7.1. Incorporação de cooperativas ............................................................................................................................................... 34
+      2.7.2. Migração de cooperativas ...................................................................................................................................................... 34
+      2.8. Eliminações entre entidades do Sicoob ..................................................................................................................................... 34
+      2.9. Eventos subsequentes.............................................................................................................................................................. 34
+      Nota 3 – Resumo das principais práticas contábeis ......................................................................................................................... 35
+      3.1. Estimativas contábeis e julgamentos ........................................................................................................................................ 35
+      3.2. Apuração do resultado ............................................................................................................................................................. 35
+      3.3. Moeda estrangeira ................................................................................................................................................................... 35
+      3.4. Caixa e equivalentes de caixa ................................................................................................................................................... 35
+      3.5. Aplicações interfinanceiras de liquidez..................................................................................................................................... 35
+      3.6. Títulos e valores mobiliários .................................................................................................................................................... 35
+      3.7. Instrumentos financeiros derivativos ....................................................................................................................................... 36
+      3.8. Provisões associadas ao risco de crédito ................................................................................................................................... 36
+      3.9. Investimentos .......................................................................................................................................................................... 37
+      3.10. Imobilizado ........................................................................................................................................................................... 37
+      3.11. Intangível .............................................................................................................................................................................. 37
+      3.12. Teste de impairment (redução ao valor recuperável de ativos) ................................................................................................ 37
+      3.13. Demais ativos circulantes e não circulantes ............................................................................................................................ 37
+      3.14. Depósitos .............................................................................................................................................................................. 37
+      3.15. Obrigações por operações compromissadas ........................................................................................................................... 38
+      3.16. Obrigações por empréstimos e repasses ................................................................................................................................. 38
+      3.17. Benefícios a Empregados – Previdência Complementar .......................................................................................................... 38
+      3.18. Imposto de renda, contribuição social sobre o lucro líquido, créditos tributários e passivos fiscais diferidos ............................ 38
+      3.19. Ativos e passivos contingentes e obrigações legais.................................................................................................................. 38
+      3.20. Demais passivos circulantes e não circulantes ........................................................................................................................ 39
+      3.21. Pronunciamentos técnicos – CPCs .......................................................................................................................................... 39
+      Nota 4 – Caixa e equivalentes de caixa ............................................................................................................................................ 40
+      Nota 5 – Depósitos compulsórios no Banco Central ......................................................................................................................... 40
+      Nota 6 – Ativos financeiros ............................................................................................................................................................. 40
+      6.1. Títulos e valores mobiliários e instrumentos financeiros derivativos ........................................................................................ 40
+      6.1.1. Composição dos títulos e valores mobiliários e instrumentos financeiros derivativos ............................................................. 41
+      6.1.2. Valor de custo e de mercado dos títulos e valores mobiliários ................................................................................................ 42
+      6.1.3. Resultado de aplicações interfinanceiras e operações com títulos e valores mobiliários .......................................................... 42
+
+=== página 9 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+
+      6.2. Aplicações interfinanceiras de liquidez ..................................................................................................................................... 42
+      6.2.1. Rendas de aplicações interfinanceiras de liquidez .................................................................................................................. 42
+      6.3. Operações de crédito ............................................................................................................................................................... 42
+      6.3.1. Composição das operações de crédito por setor de atividade e prazo de vencimento .............................................................. 43
+      6.3.2. Composição das provisões associadas ao risco de crédito - por níveis de risco ........................................................................ 43
+      6.3.3. Composição das provisões associadas ao risco de crédito - por níveis de risco das operações de crédito concedidas no âmbito do
+      Programa Emergencial de Suporte a Empregos (PESE), nos termos da Resolução 4.846/2020 ......................................................... 43
+      6.3.4. Composição das operações de crédito em curso normal - parcelas vincendas ......................................................................... 44
+      6.3.5. Composição das operações de crédito em curso anormal - parcelas vencidas.......................................................................... 44
+      6.3.6. Concentração das operações de crédito ................................................................................................................................. 44
+      6.3.7. Movimentação das provisões associadas ao risco de crédito ................................................................................................... 44
+      6.3.8. Resultado com operações de crédito ...................................................................................................................................... 44
+      6.3.9. Renegociação de operações de crédito ................................................................................................................................... 45
+      6.4. Transações de pagamentos ...................................................................................................................................................... 45
+      6.5. Carteira de câmbio................................................................................................................................................................... 45
+      6.6. Composição de outros ativos (com característica de concessão de crédito) ............................................................................... 45
+      6.6.1. Composição da provisão para outros ativos de liquidação duvidosa por níveis de risco ........................................................... 45
+      6.6.3. Composição das operações de outros ativos com características de concessão de crédito em curso normal - parcelas vincendas
+             46
+      6.6.4. Composição das operações de outros ativos com características de concessão de crédito em curso anormal - parcelas vencidas
+             46
+      6.6.5. Movimentação das provisões associadas ao risco de crédito - outros ativos ............................................................................ 46
+      Nota 7 - Outros ativos .................................................................................................................................................................... 47
+      Nota 8 - Créditos tributários ........................................................................................................................................................... 47
+      8.1. Composição dos créditos tributários ........................................................................................................................................ 47
+      8.2. Movimentação dos créditos tributários .................................................................................................................................... 48
+      8.3. Expectativa de realização dos créditos tributários .................................................................................................................... 48
+      Nota 9 - Investimentos ................................................................................................................................................................... 49
+      Nota 10 - Imobilizado ..................................................................................................................................................................... 49
+      Nota 11 - Intangível ....................................................................................................................................................................... 49
+      Nota 12 - Passivos financeiros ........................................................................................................................................................ 50
+      12.1. Depósitos por tipo e prazos de vencimento ............................................................................................................................ 50
+      12.1.1. Concentração dos depositantes ........................................................................................................................................... 50
+      12.2. Recursos de aceites cambiais, letras imobiliárias, hipotecárias e debêntures ........................................................................... 50
+      12.3. Obrigações por operações compromissadas ........................................................................................................................... 50
+      12.4. Despesas de operações com captações de mercado ................................................................................................................. 50
+      12.5. Obrigações por empréstimos e repasses ................................................................................................................................. 51
+      12.5.1. Despesas de obrigações por empréstimos e repasses ........................................................................................................... 51
+      12.6. Transações de pagamento ...................................................................................................................................................... 51
+      Nota 13 - Provisões para contingências e obrigações legais ............................................................................................................. 51
+      13.1. Contingências ........................................................................................................................................................................ 51
+      13.1.1 Ações judiciais classificadas como “risco de perda provável” ................................................................................................. 52
+      13.1.2. Depósitos judiciais e provisões para contingências .............................................................................................................. 52
+      13.1.3. Movimentação das provisões para contingências ................................................................................................................. 52
+      13.1.4. Natureza das ações classificadas como “risco de perda provável” ......................................................................................... 52
+      13.1.5. Cronograma esperado de saídas de benefícios econômicos .................................................................................................. 53
+      13.1.6. Contingências classificadas como “risco de perda possível” .................................................................................................. 53
+      13.1.7. Montante das contingências classificadas como “risco de perda possível” ............................................................................. 53
+      13.2. Provisões para garantias prestadas ........................................................................................................................................ 53
+      Nota 14 - Outros passivos............................................................................................................................................................... 54
+      14.1. Obrigações sociais e estatutárias ............................................................................................................................................ 54
+      14.2. Obrigações fiscais e previdenciárias ....................................................................................................................................... 54
+      14.3. Outros ................................................................................................................................................................................... 54
+      Nota 15 - Patrimônio líquido .......................................................................................................................................................... 55
+      15.1. Capital social ......................................................................................................................................................................... 55
+      15.1.1 Aumento de capital .............................................................................................................................................................. 55
+      15.1.2 Devoluções/restituições de capital ....................................................................................................................................... 55
+      15.1.3 Estorno de capital ................................................................................................................................................................ 55
+      15.2. Reservas de capital ................................................................................................................................................................ 55
+      15.3. Reservas de lucros ................................................................................................................................................................. 55
+      15.4. Dividendos ............................................................................................................................................................................ 56
+      15.5. Juros sobre o capital próprio .................................................................................................................................................. 56
+      15.6. FATES - Fundo de assistência técnica, educacional e social ...................................................................................................... 56
+      15.7. Perdas apuradas .................................................................................................................................................................... 56
+
+=== página 10 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+
+      15.8. Sobras apuradas no exercício (após os juros sobre o capital próprio) ...................................................................................... 56
+      15.9. Outros resultados abrangentes .............................................................................................................................................. 57
+      15.10. Aprovação das destinações .................................................................................................................................................. 57
+      15.11. Participação de não controladores ....................................................................................................................................... 57
+      15.12. Saldos de cooperativas incorporadas .................................................................................................................................... 57
+      Nota 16 - Receitas operacionais ...................................................................................................................................................... 58
+      16.1. Receitas de prestação de serviços e rendas de tarifas bancárias .............................................................................................. 58
+      16.2. Outras receitas operacionais .................................................................................................................................................. 58
+      Nota 17 - Despesas operacionais .................................................................................................................................................... 58
+      17.1. Despesas de pessoal............................................................................................................................................................... 58
+      17.2. Despesas administrativas....................................................................................................................................................... 59
+      17.3. Despesas tributárias .............................................................................................................................................................. 59
+      17.4. Outras despesas operacionais ................................................................................................................................................ 59
+      17.5. Resultado não operacional ..................................................................................................................................................... 59
+      Nota 18 - Transações com partes relacionadas................................................................................................................................ 60
+      18.1. Subsidiárias do Banco Sicoob ................................................................................................................................................. 60
+      18.2. Entidades integrantes do Sicoob ............................................................................................................................................ 60
+      18.3. Fundos de investimento combinados ..................................................................................................................................... 61
+      18.4. Remuneração do pessoal-chave da Administração .................................................................................................................. 61
+      18.5. Transações com administradores ........................................................................................................................................... 61
+      Nota 19 - Outras informações ......................................................................................................................................................... 61
+      19.1. Acordos de compensação entre ativos e passivos com mesma instituição financeira ................................................................ 61
+      19.2. Seguros (não auditado) .......................................................................................................................................................... 61
+      19.3. Benefícios a empregados - previdência complementar ............................................................................................................ 62
+      19.4. Participação nos lucros e resultados ....................................................................................................................................... 62
+      19.5. Planos para a implementação da regulamentação contábil nas entidades combinadas estabelecida na Resolução CMN nº
+      4.966/2021, Resolução BCB nº 219/2022 e na Resolução BCB nº 309/2023 e alterações posteriores .............................................. 62
+      19.5.1. Resumo dos Planos de Implementação das entidades integrantes do Sicoob impactadas pela norma .................................... 63
+      Nota 20 - Limites operacionais - Acordo de Basileia ........................................................................................................................ 64
+      Nota 21 - Gerenciamento centralizado de riscos e de capital do Sicoob ............................................................................................ 64
+      21.1. Gerenciamento de riscos ........................................................................................................................................................ 64
+      21.1.1. Risco operacional ................................................................................................................................................................ 65
+      21.1.2. Risco de crédito .................................................................................................................................................................. 65
+      21.1.3. Riscos de mercado e de variação das taxas de juros .............................................................................................................. 66
+      21.1.4. Risco de liquidez ................................................................................................................................................................. 67
+      21.1.5. Riscos Social, Ambiental e Climático .................................................................................................................................... 68
+      21.1.6. Risco Cibernético ................................................................................................................................................................ 69
+      21.2. Gestão de continuidade de negócios ....................................................................................................................................... 69
+      21.3. Gerenciamento de Capital ...................................................................................................................................................... 70
+      Composição dos órgãos da Administração do Centro Cooperativo Sicoob ........................................................................................ 71
+
+=== página 13 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Relatório da Administração
+      30 de junho de 2024
+
+      c. Carteira de crédito ampliada
+      A carteira de crédito ampliada, que considera, ainda, as operações de cartão de crédito, avais e fianças
+      honrados, devedores por compras de valores e bens e outros créditos a receber, totalizou R$ 179,9
+      bilhões, líquida de provisão. O crescimento foi de 4,8% em relação a 31 de dezembro de 2023.
+
+      d. Cartão de crédito
+      O Banco Sicoob, emissor de cartões do Sicoob e de outros sistemas cooperativos, encerrou o primeiro
+      semestre de 2024 com 12,29 milhões de plásticos (30 de junho de 2023 – 11,32 milhões de plástico).
+      A expansão da base de cartões junto aos outros sistemas contribuiu com aproximadamente 23,04%
+      do faturamento total (30 de junho de 2023 – 20%).
+
+      O volume de compras no semestre foi de R$ 55,67 bilhões (30 de junho de 2023 – R$ 49,82 bilhões).,
+      significando um crescimento de 11,73% em relação ao mesmo período do ano anterior.
+      Considerando apenas as transações realizadas na função crédito, o volume foi de R$ 33,62 bilhões
+      (30 de junho de 2023 – R$ 28,32 bilhões).
+
+      e. Adquirência
+      A adquirência, na combinação das bases Sicoob e sistemas parceiros, registrou no primeiro semestre
+      de 2024 uma retração de 21% sobre a base de credenciamentos ativos da maquininha Sipag, na
+      comparação com o mesmo período do ano de 2023 (30 de junho de 2023 – 24,16%).
+
+      Houve aumento no faturamento acumulado, alcançando R$ 27,7 bilhões (30 de junho de 2023 – R$
+      20,29 bilhões), o que representa um aumento de 36,41% em relação ao mesmo período do ano de
+      2023.
+
+      f. Captações – Depósitos, LCA e LCI
+      Com relação às captações, no período, os depósitos totais contabilizaram R$ 213,2 bilhões –
+      crescimento de 16,9% comparados aos R$ 182,3 bilhões registrados no final do exercício anterior.
+      Este resultado evidencia a elevada confiança dos cooperados na gestão do Sistema. No período,
+      destaque para os depósitos a prazo (RDC), com alta de 20,3%, passando de R$ 111,1 bilhões em 31
+      de dezembro de 2023 para R$ 133,7 bilhões em 30 de junho de 2024. Por fim, as captações com letras
+      de crédito do agronegócio e letras de crédito imobiliário apresentaram redução, passando de R$ 39,6
+      bilhões em dezembro de 2023 para R$ 35,1 bilhões em 30 de junho de 2024 (baixa de 11,4%).
+
+      g. Patrimônio líquido
+      O patrimônio líquido em 30 de junho de 2024, encerrou com o total de R$ 49,5 bilhões, 7,5% superior
+      ao valor de 31 de dezembro de 2023. O crescimento foi impactado principalmente pelo aumento do
+      capital social e pela apuração das sobras no semestre.
+
+      h. Sobras (resultado líquido)
+      As sobras, já deduzidas dos juros sobre o capital próprio, totalizaram R$ 3,4 bilhões em 30 de junho
+      de 2024, representando uma redução de 3,3% quando comparadas a R$ 3,5 bilhões registradas em
+      igual período do ano anterior. Essa redução ocorreu principalmente pelo aumento das despesas das
+      provisões associadas ao risco de crédito, devido ao crescimento da carteira de crédito e da
+      implementação de gatilhos para reclassificar o rating do tomador em razão da ocorrência de novos
+      eventos e fatores que impactam a provisão, o que contribuiu também para o aumento no indicador
+
+=== página 14 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Relatório da Administração
+      30 de junho de 2024
+
+      de inadimplência da carteira de crédito que subiu de 2,45% em dezembro de 2023 para 2,56% em
+      junho de 2024, apresentando um aumento de 0,11 pontos percentuais.
+
+      Crescimento de cooperados
+      O quadro associativo cresceu, no primeiro semestre de 2024, aproximadamente 5% com mais de 660
+      mil novos cooperados. Isto denota o interesse da sociedade por alternativas ao sistema bancário
+      tradicional. Os cooperados Pessoas Jurídicas representam 20% do total de cooperados do Sicoob,
+      totalizando 1.631.127.
+
+      O Sicoob disponibiliza aos seus cooperados uma extensa rede de atendimento no País, destacando-
+      se as 4.649 agências disponíveis em 2.405 municípios brasileiros. Cabe mencionar que, em abril de
+      2024, 403 cidades o Sicoob é a única instituição financeira com pleno atendimento ao público em
+      geral (dependências confortáveis, funcionando de segunda a sexta-feira, dispondo de todos os
+      produtos e serviços e com atendimento pessoal). Também, estão disponíveis 7.881 Postos de
+      Atendimento Eletrônico (PAEs) próprios e mais de 24 mil máquinas compartilhadas (Rede
+      Banco24Horas).
+
+      A abertura de novas contas foi simplificada e oferecida em nossos canais digitais. Novas associações
+      contam agora com um mecanismo mais ágil, reduzindo o tempo entre a demonstração de interesse
+      pela abertura de uma conta em uma de nossas cooperativas e o pleno uso da nova conta. No primeiro
+      semestre de 2024 o Sicoob obteve 209 mil associações no canal digital (App Sicoob).
+
+      Tecnologia da Informação e Transformação Digital
+      Os investimentos em inovação são indispensáveis em um mundo cada vez mais conectado e
+      dinâmico, e o Sicoob tem acompanhado atentamente e atuado fortemente em sua transformação
+      digital.
+      O crescimento dos negócios, o aumento da eficiência operacional, a ampliação da segurança
+      cibernética, o gerenciamento de riscos e a oferta de novos produtos e serviços são benefícios
+      constantes trabalhados pelo Sicoob em prol do desenvolvimento de suas cooperativas e atendimento
+      pleno das necessidades dos cooperados. Todo esse planejamento se reflete significativamente nos
+      números apresentados.
+      Analisando apenas os dados apresentados no primeiro semestre de 2024, podemos destacar o
+      enorme volume de transações realizadas pelos cooperados nos canais de atendimento da Plataforma
+      de Serviços Financeiros do Sicoob – Sisbr. Foram mais de 9,9 bilhões de transações, onde 96,80%
+      delas foram concluídas por meio dos canais digitais (Mobile, Internet e Integrações via interfaces de
+      programação - APIs). O movimento no semestre é quase 23% maior que no primeiro semestre de
+      2023. O Super App do Sicoob representa cerca de 74% dessas movimentações financeiras e segue
+      avançando na preferência dos cooperados, dado evidenciado pelas excelentes avaliações das lojas
+      virtuais (4,8 na Apple Store e na PlayStore).
+      Somente neste período, o processamento das autorizações de cartões aumentou de 390 milhões para
+      425 milhões de transações. O Pix alcançou 891 milhões de transações, totalizando cerca de R$ 884
+      bilhões em volume financeiro.
+
+=== página 15 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Relatório da Administração
+      30 de junho de 2024
+
+      Todo esse crescimento nos traz a convicção de que os investimentos em tecnologia, segurança,
+      praticidade e comodidade são valiosos e vantajosos.
+
+      Resiliência Cibernética
+      A infraestrutura que suporta a plataforma Sisbr e possibilita seu expressivo crescimento vive em
+      constante atualização, atendendo padrões internacionais e passando por auditorias internas e
+      externas, o que garante sua robustez, segurança, confiabilidade e resiliência.
+      No primeiro semestre de 2024, alcançamos um marco significativo na qualidade dos nossos serviços,
+      refletido na evolução do indicador de Resiliência Cibernética, que passou de 98,94% em 2023 para
+      99,69% em 2024. Esse avanço foi resultado de uma estratégia focada nos pilares fundamentais de
+      Disponibilidade, Desempenho e Qualidade das soluções de TI. Investimos fortemente na
+      modernização da nossa arquitetura tecnológica, na otimização de processos internos e na
+      implementação de uma monitoração ostensiva, o que permitiu não apenas responder de maneira
+      mais eficaz a incidentes, mas também aumentar a estabilidade e a confiabilidade dos nossos serviços
+      digitais. A melhoria contínua desses indicadores é uma prioridade, pois compreendemos que a
+      experiência do nosso cooperado depende diretamente da capacidade de mantermos nossos sistemas
+      sempre com alta disponibilidade e desempenho.
+      Além disso, a observabilidade aplicada foi essencial para elevar ainda mais a qualidade dos nossos
+      serviços. Ao monitorar e analisar dados em tempo real, conseguimos antecipar problemas e agir
+      rapidamente para solucioná-los, assegurando que o impacto sobre nossos cooperados seja mínimo.
+      Um exemplo claro desse avanço é o Super App do Sicoob, que se tornou três vezes mais rápido que
+      sua versão anterior, tanto no login quanto na navegação e execução de transações, graças aos
+      esforços direcionados a esses pilares. Essa melhoria no tempo de resposta das transações resultou
+      em um aumento significativo na fidelidade e satisfação dos nossos cooperados, demonstrando nosso
+      compromisso contínuo com a inovação e a excelência em tecnologia. Esse desempenho superior não
+      apenas fortalece o indicador de Resiliência Cibernética, mas também aprimora a experiência do
+      cooperado, reforçando nossa preocupação em manter indicadores elevados que reflitam a confiança
+      e a satisfação de todos que utilizam nossos serviços.
+
+      Investimento em Tecnologia
+      Sustentar, modernizar e aprimorar nossa plataforma tecnológica é um desafio fundamental da nossa
+      operação. Somente no primeiro semestre de 2024, aproximadamente R$ 297 milhões de reais foram
+      investidos na manutenção e no aperfeiçoamento de produtos e serviços.
+      O Sisbr foi recentemente adequado para permitir a contratação de operações de crédito com recursos
+      do FINEP (Financiadora de Estudos e Projetos do Governo Federal). Uma parceria que visa financiar
+      projetos de inovação dos associados das cooperativas do Sicoob.
+      A seguir, estão outros importantes avanços disponibilizados neste primeiro semestre de 2024 que
+      merecem destaque:
+          •   Viva Saúde – plataforma de apoio para clínicas e consultórios parceiros do Sicoob onde são
+              disponibilizadas ferramentas para telemedicina, prontuários eletrônicos, marcação de
+              consultas, gestão financeira e muito mais.
+
+=== página 16 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Relatório da Administração
+      30 de junho de 2024
+
+          •   Seguro Vida Mulher – solução com proteção especial para o público feminino, oferecendo
+              cobertura por morte e por doenças graves como câncer de útero, de mama e de ovário.
+          •   Consórcio IPCA + Bens Móveis – recurso que permite a aquisição de uma variedade de bens
+              móveis, como placas solares, equipamentos para geração de energia fotovoltaica, drones,
+              máquinas agrícolas, equipamentos industriais, embarcações, entre outros.
+          •   Coopera Cashback – opção que permite ao cooperado acumular pontos nas compras
+              realizadas em uma variedade de lojas virtuais parceiras como Nike, Amazon, TokStok,
+              Centauro, Netshoes e muitas outras.
+          •   Associação Digital Automática para Crianças e Adolescentes, que permite aos cooperados
+              abrirem contas digitais via SuperApp para seus filhos.
+          •   Upgrade Digital para cartões de crédito – que realiza a indicação do cartão mais adequado ao
+              perfil do cooperado, de forma 100% digital.
+          •   Novas funcionalidades disponíveis na Sipag 2.0 – softwares de gestão de vendas com emissão
+              de nota fiscal direto no terminal, novas bandeiras habilitadas, link de pagamento via pix,
+              vendas parceladas via emissor, entre outras.
+          •   A Plataforma de Atendimento Digital Sicoob também tem sido um marco no relacionamento
+              entre cooperativa e cooperado. Com os objetivos de expandir a utilização e proporcionar mais
+              um canal para atendimento, foram disponibilizados novos canais no WhatsApp e chats nos
+              principais portais, para atendimento aos produtos Coopcerto, Coopera e Sipag.
+
+      Inovação – Novas Oportunidades
+      O Sicoob é, sem dúvidas, um dos maiores agentes de financiamento do agronegócio no país. E nesse
+      sentido, vem implantando novas tecnologias e diretrizes para facilitar a operação de todos os
+      módulos que envolvem o Crédito Rural. São iniciativas que visam preparar as cooperativas para o
+      Plano Safra 2024/2025, buscando o aumento de performance de indicadores de conformidade
+      ambiental e dos números relacionados à concessão de crédito, ao controle de empreendimento,
+      utilização de recursos do BNDES, de Fundos Constitucionais, do programa ProAgro, entre outros.
+      E quando falamos em investimento, não falamos somente em tecnologia. Estamos falando, inclusive,
+      da expansão na oferta de novos fundos, permitindo uma diversificação ainda maior das carteiras dos
+      nossos cooperados. Estamos fortalecendo a fidelização e o engajamento de longo prazo com opções
+      focadas em empresas de menor capitalização, mas com grande potencial de crescimento; em ações
+      para investidores que buscam retornos mais consistentes e seguros; também, para aqueles que
+      preferem alternativas mais sustentáveis, mais estratégicas, mais relevantes e mais atuais no mercado
+      financeiro.
+      Com o lançamento do novo módulo de Renda Fixa, o Sicoob agora oferece uma experiência mais ágil
+      e eficiente na gestão de produtos, permitindo que os operadores definam taxas, carências e opções
+      de intermediação diretamente no sistema, disponibilizando os produtos na plataforma de
+      investimentos, seja no Super APP ou no Sisbr 3.0, trazendo mais flexibilidade para cada cooperativa.
+      Outro lançamento deste primeiro semestre de 2024 foi o Novo Internet Banking Pessoa Física e
+      Pessoa Jurídica. Com um ambiente mais seguro e amigável, melhorando a experiência com nossos
+      produtos financeiros e facilitando o uso das transações de negócio, possibilitamos melhores
+      resultados financeiros para as cooperativas e suas operações digitais. Passamos de 4,7 milhões de
+
+=== página 17 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Relatório da Administração
+      30 de junho de 2024
+
+      transações (janeiro de 2024) para mais de 16,7 milhões (julho de 2024) de operações depois da
+      implantação do novo portal. Números que comprovam que nosso compromisso com a inovação é
+      bastante relevante.
+      A plataforma MOOB (aplicativo móvel e website) também se consolidou nos últimos anos como o
+      principal canal institucional de comunicação digital entre as cooperativas e os cooperados,
+      democratizando a participação nas assembleias. Em apenas 6 meses, foram 214 eventos (entre
+      Assembleias Gerais Ordinárias - AGOs e Assembleias Gerais Extraordinárias - AGEs), com mais de 1
+      milhão de votos computados.
+
+      “O Futuro é agora”
+      O uso de inteligência artificial já é realidade no Sicoob! Temos aplicado grandes esforços nos estudos
+      e na implantação de soluções usando a Inteligência Artificial. Estamos atentos a toda essa
+      transformação digital, investindo em treinamento e capacitação das nossas equipes, aplicando
+      recursos no aprimoramento das ferramentas atuais, promovendo o compartilhamento de
+      conhecimento entre os times e reunindo esforços para o aprimoramento da experiência dos
+      cooperados e empregados na utilização das soluções tecnológicas.
+      Atualmente esta abordagem vem sendo amplamente utilizada nos processos de negócios
+      automatizados pelo Sisbr, a exemplo do processamento de grandes volumes de informações e
+      diversas variáveis para atribuição dos níveis de risco dos cooperados e definição de limites,
+      possibilitando a contratação de crédito pelos cooperados de forma fluída e rápida tanto nas agências
+      quanto no SuperApp; nas validações de prevenção à fraude nos canais digitais, na inteligência de
+      nossa atendente virtual Alice ou nos diversos copilotos que apoiam as nossas soluções.
+      Atualmente contamos com 55 robôs digitais que trabalham ininterruptamente, executando
+      automatizações e garantindo mais de 280 mil horas de trabalho realizadas, gerando ganhos de
+      eficiência, qualidade e redução de custos para o CSC e para as demais áreas do CCS.
+      Confirmando a tendência de uma economia cada vez mais conectada, o Sicoob tem possibilitado a
+      geração de novos negócios digitais por meio de APIs, disponibilizadas para os cooperados, criando
+      uma conexão fluída, rápida, dinâmica e segura para realização de transações financeiras. Somente
+      neste primeiro semestre de 2024, foram realizadas aproximadamente 49 milhões de transações
+      financeiras utilizando este canal, representando 5,5% das movimentações totais.
+      O tema Segurança Cibernética segue como prioridade no Sicoob. Um dos maiores destaques, foi o
+      grande avanço no andamento do Projeto de Gestão Sistêmica de Risco e Segurança Cibernéticos, com
+      a implementação das soluções de segurança em mais de 140 cooperativas e 880 pontos de
+      atendimento e o início da execução dos testes de segurança nas cooperativas.
+      Estabelecendo a estratégia do futuro, aprovamos o novo Plano de TI para o período de 2024 a 2026,
+      alinhado ao Pacto Sistêmico de Estratégia do Sicoob, tendo como premissa tornar a plataforma
+      tecnológica Sisbr cada vez mais instantânea, conectada e inteligente. No total, foram 134 ações
+      concluídas no primeiro semestre deste ano. Em boa parte do primeiro semestre de 2024 estivemos
+      envolvidos na homologação e no lançamento da carteira digital Apple Pay para os cartões Sicoobcard,
+      uma demanda antiga de nossos cooperados que agora no início do segundo semestre se tornou
+      realidade.
+
+=== página 18 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Relatório da Administração
+      30 de junho de 2024
+
+      É o Sicoob investindo cada vez mais em tecnologia e experiência para seguir no propósito de
+      “conectar as pessoas e promover justiça financeira e prosperidade”.
+
+
+      Reconhecimentos
+      No 1º semestre de 2024, sempre alinhado com as principais tendências do setor e em busca de
+      inovações e avanços tecnológicos para gerar maior conforto aos seus cooperados, o Sicoob
+      conquistou grandes prêmios que reforçam o seu destaque em inovação no mercado financeiro
+      nacional. São eles:
+      100+ empresas inovadoras em tecnologia – IT Forum
+          •   O Sicoob foi reconhecido no ranking das 100+ Inovadoras no Uso de TI, em uma análise de
+              ambiente realizada anualmente pela IT Forum, como uma das instituições líderes na utilização
+              da tecnologia para impulsionar projetos inovadores.
+      Premiação do Super App Sicoob no ranking da Agilidade Brasil 2024 – Agile Trends
+          •   O projeto Super App Sicoob foi premiado pelo ranking da Agilidade Brasil 2024, promovido
+              pelo Agile Trends, que reconhece as empresas que praticam agilidade e têm obtido resultados
+              consistentes ao aplicar a metodologia. O Sicoob recebeu o selo digital ‘Cases Mais Ágeis do
+              Brasil’.
+      Certificação de Eficiência Energética (CEEDA) do datacenter CCS - Nível Silver
+          •   O datacenter do CCS foi reconhecido pela Data Center Dynamics (DCD) com a certificação
+              CEEDA, que demonstra a aplicação das melhores práticas mundiais de eficiência energética e
+              sustentabilidade de uma organização. O Sicoob agora passa a ser a única instituição da
+              América Latina com o nível Silver da certificação.
+      Prêmio Digital Growth na Conferência Mundial das Cooperativas de Crédito WCUC
+          •   No World Council of Credit Unions, realizado em Boston, nos Estados Unidos, o Sicoob recebeu
+              mais um reconhecimento internacional por promover justiça financeira e prosperidade.
+              Nosso case Sigag 2.0 provou o quanto que nossos serviços podem mudar a realidade de toda
+              uma comunidade apresentando o impacto gerado no município de Rio Pardo – RO.
+
+      Novos convênios
+      No primeiro semestre de 2024, novos convênios corporativos de arrecadação de faturas/guias com
+      código de barras e débito automático foram firmados, totalizando 940 parcerias. Dentre os novos
+      convênios, destacamos: DETRAN DF, GDF (GNRE), SEFAZ RJ (DARJ), Prefeitura de Maringá PR,
+      Prefeitura de Garça SP, Prefeitura de Viana ES, Prefeitura de Paial SC, Prefeitura de Porteirão GO,
+      SAAE Itabira MG e Águas de Jaru RO
+
+      O portfólio de convênios está à disposição das cooperativas do Sicoob e dos demais sistemas
+      cooperativos, além de instituições bancárias, sendo um dos mais representativos do Sistema
+      Financeiro Nacional (SFN).
+
+      Cidadania e Sustentabilidade
+
+=== página 40 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+                                                                           30/06/2024                                            31/12/2023                   30/06/2023
+       Instituições                            UF    Participação           Ativos            PL    Resultado     Participação        Ativos            PL     Resultado
+       Sicoob Central Unicoob                   PR           100%        6.062.777        269.569        23.112          100%       5.661.619       251.258         18.725
+       Sicoob Cooesa                            PA           100%          116.973         19.483           762          100%         104.834        18.761            253
+       Sicoob Coimppa                           PA           100%          184.118         68.028         3.262          100%         179.982        67.286          2.844
+       Sicoob Metropolitano                     PR           100%        4.739.190        508.970        31.231          100%       4.460.166       456.059         34.306
+       Sicoob Vale Sul                          PR           100%        2.196.300        217.985        14.661          100%       1.933.569       210.849         22.514
+       Sicoob Tres Fronteiras                   PR           100%        1.023.861         98.727         6.749          100%         937.466        91.428          5.757
+       Sicoob Unicoob Meridional                PR           100%        1.759.633        197.013        11.933          100%       1.696.649       179.308         12.018
+       Sicoob Ouro Verde                        PR           100%        2.011.727        191.888        14.351          100%       1.963.750       183.596          5.128
+       Sicoob Sul                               PR           100%        1.924.945        198.130        39.100          100%       1.662.777       187.689         23.503
+       Sicoob Credicapital                      PR           100%        1.423.077        141.032       (1.026)          100%       1.447.754       141.503      (21.482)
+       Sicoob Aliança                           PR           100%          634.792         87.394         2.463          100%         633.988        92.044          6.256
+       Sicoob Arenito                           PR           100%        1.194.147        116.581         6.025          100%       1.139.240       112.718          7.902
+       Sicoob Confiança                         PR           100%          326.953         31.942           582          100%         305.819        31.640          1.053
+       Sicoob Integrado                         PR           100%        1.160.711        112.618         5.861          100%       1.133.673       104.979          6.245
+       Sicoob Horizonte                         PR           100%          246.732         28.231           324          100%         235.980        27.973          1.158
+       Sicoob Médio Oeste                       PR           100%          569.500         75.041         6.159          100%         551.479        72.628          5.751
+       Sistema Regional Uni                                            27.697.774      3.486.063      157.648                     27.194.504     3.420.432       203.532
+       Sicoob Uni                              GO            100%        6.663.527        262.289        12.794         100%        6.858.920       253.220         12.885
+       Sicoob Coopercred                       GO            100%          605.557        144.105         5.829         100%          626.442       145.977          9.335
+       Sicoob Mineiros                         GO            100%          859.738        306.865        12.238         100%          738.396       307.968         32.813
+       Sicoob Credigoiás                       GO            100%          468.105        123.801         6.919         100%          427.193       124.762         15.038
+       Sicoob Credseguro                       GO            100%          743.173        197.904        13.481         100%          673.020       203.208         21.752
+       Sicoob Engecred                         GO            100%        3.103.212        424.333        32.651         100%        3.420.655       421.302         34.437
+       Sicoob Centro-oeste BR                  GO            100%          358.292         42.916         2.096         100%          318.031        38.811            426
+       Sicoob Credi Comigo                     GO            100%           33.840         18.939           853         100%           34.077        18.478            788
+       Sicoob Empresarial                      GO            100%          445.087         72.213         2.574         100%          455.880        68.590          5.823
+       Sicoob Cooprem                          GO            100%          250.844         33.789         1.178         100%          221.652        34.887          3.253
+       Sicoob Unisp                            SP            100%           77.716          9.181           213         100%           82.749         8.777          (149)
+       Sicoob Uni Sul MS                       MS            100%          180.779         45.727         1.579         100%          161.467        44.771          1.157
+       Sicoob Unique Br                        MS            100%          893.005        152.769         (529)         100%          881.040       156.657          7.691
+       Sicoob Unicentro Br                     GO            100%        7.425.097        974.960         8.791         100%        6.991.477       949.370         37.102
+       Sicoob Unicidades                       GO            100%          925.031        156.567         2.728         100%          917.921       148.067         15.256
+       Sicoob Unirondônia                      RO            100%          472.750         45.875     (10.165)          100%          466.305        53.650          (617)
+       Sicoob Unicentro Norte Brasileiro       GO            100%        2.990.976        336.481        50.957         100%        2.830.054       313.416         18.554
+       Sicoob Roraima                          RR            100%          114.874         21.850         1.207         100%          106.842        22.001          1.053
+       Sicoob Uni Acre                         AC            100%          388.014         44.031         4.466         100%          339.626        44.546          2.128
+       Sicoob Medcred                          SP            100%           48.222          3.449           248         100%           43.297         3.538          (173)
+       Sicoob Uni Sudeste                      MG            100%          649.935         68.019         7.540         100%          599.460        58.436      (18.020)
+       Sistema Regional Rio                                             9.500.195      1.040.224        66.714          100%       9.009.422     1.050.943         11.473
+       Sicoob Unimais Rio                       RJ           100%        2.725.571        152.547         7.976         100%        2.729.882       168.107          3.469
+       Sicoob Cecres 2.7.1                      SP           100%                -              -             -         100%          150.430        70.655          (114)
+       Sicoob Servidores                        ES           100%          113.401         36.195       (1.559)         100%          110.161        35.376          (574)
+       Sicoob Cecremef                          RJ           100%          481.225         47.362          (41)         100%          493.571        47.654        (4.135)
+       Sicoob Coopjustiça                       RJ           100%          325.472         87.005         6.867         100%          296.163        86.848          5.478
+       Sicoob Fluminense                        RJ           100%          474.861         62.519         2.542         100%          441.371        59.345          2.089
+       Sicoob Coopvale                          RJ           100%           84.903         13.601         (623)         100%           81.897        13.450        (1.759)
+       Sicoob Circuito das Águas                SP           100%          127.330         13.439       (2.170)         100%          115.306        11.486          (570)
+       Sicoob Empresas RJ                       RJ           100%          208.926         42.586         1.452         100%          238.343        39.648          4.152
+       Sicoob Coomperj                          RJ           100%          426.277         41.334         (570)         100%          357.234        38.424          1.293
+       Sicoob Crediacil                         SP           100%          399.707         38.407         4.056         100%          338.897        35.678          1.403
+       Sicoob Paulista                          SP           100%          981.670         89.800         3.497         100%          887.969        93.028      (21.936)
+       Sicoob Mantiqueira                       SP           100%        1.696.719        226.961        35.439         100%        1.412.681       157.965          2.816
+       Sicoob Unimais Centro Leste Paulista     SP           100%          705.675         83.465         5.777         100%          640.525        81.403          9.129
+       Sicoob Unimais Metropolitana             SP           100%          748.458        105.003         4.071         100%          714.992       111.876         10.732
+       Fundos de Investimento                                          10.019.219      9.514.237      499.809           100%       9.052.694     8.546.404       439.382
+       Minascoop FI - RF - CP                   DF           100%          236.002        215.601        20.360         100%          397.301       371.964         23.094
+       Sicoob Institucional FI - RF - CP        DF           100%        5.034.380      4.768.401      265.602          100%        4.244.100     3.992.306       205.623
+       Sicoob Agências FI - Imobiliário         DF           100%           29.889         28.792         1.047         100%           28.988        27.472          1.384
+       Sicoob Liquidez Master FI - Renda        DF           100%        4.184.882      3.997.660      186.828          100%        4.092.750     3.882.968       192.858
+       Fixa
+       Sicoob Cecresp FI - Renda Fixa           DF           100%          390.031       372.181       17.801            100%        289.555       271.694         16.423
+       Minasverde FI em Direitos                DF           100%          144.035       131.602        8.171            100%              -             -              -
+       Creditórios (a)
+       Total                                                           577.165.88     63.993.605    4.287.930                    524.704.168    59.676.808      4.257.088
+                                                                                4
+
+      (a) O MinasVerde Fundo de Investimento em Direitos Creditórios foi incluído na combinação no primeiro semestre de 2024, devido à identificação de
+          característica de retenção substancial de riscos e benefícios por cooperativa central do Sistema.
+
+=== página 41 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      2.7. Movimentação de cooperativas
+      A seguir, estão apresentadas as movimentações de cooperativas incorporadas no primeiro semestre
+      de 2024:
+      2.7.1. Incorporação de cooperativas
+       Sistema                                Incorporada                               Sistema                              Incorporadora
+       Sicoob NE                              Sicoob Rio Grande do Norte                Sicoob Cecremge                      Sicoob Credimepi
+       Sicoob Crediminas                      Sicoob Mais                               Sicoob Crediminas                    Sicoob Credplus
+       Sicoob Crediminas                      Sicoob Saúde                              Sicoob Cecremge                      Sicoob Credicom
+       Sicoob Unimais Rio                     Sicoob Cecres                             Sicoob Unimais Rio                   Sicoob Mantiqueira
+       Sicoob Norte                           Sicoob Eucred                             Sicoob Norte                         Sicoob Centro
+
+
+      2.7.2. Migração de cooperativas
+       Sistema de origem                      Cooperativa migrada                       Sistema de destino
+       Sicoob Unimais Rio                     Sicoob Cooperemb                          Sicoob Cecresp
+
+
+      2.8. Eliminações entre entidades do Sicoob
+                                                                                                       30/06/2024                                     31/12/2023
+      Balanços Patrimoniais Combinados                             Aglutinado          Eliminações      Combinado       Aglutinado     Eliminações     Combinado
+      Ativo – Circulante e não circulante
+      Disponibilidades                                               1.857.128             (76.434)       1.780.694      1.780.722         (11.805)     1.768.917
+      Depósitos compulsórios no Banco Central                        3.931.124                    -       3.931.124      2.624.905                -     2.624.905
+      Ativos financeiros                                           449.438.893        (132.869.816)     316.569.077    393.850.439    (125.710.149)   268.140.290
+      Outros ativos                                                106.326.594        (101.011.847)       5.314.747    112.110.310     (91.072.757)    21.037.553
+      Créditos tributários                                             340.376                    -         340.376        281.285                -       281.285
+      Investimentos em participações em coligadas e
+                                                                    11.000.970         (10.395.268)          605.702    10.009.416      (9.506.868)       502.548
+      controladas
+      Imobilizado                                                    3.904.302            -               3.904.302       3.764.545            -         3.764.545
+      Intangível                                                       366.385            -                 366.385         282.544            -           282.544
+      Total do Ativo                                              577.165.772 (244.353.365)            332.812.407     524.704.166 (226.301.579)      298.402.587
+
+      Passivo – Circulante e não circulante
+      Passivos financeiros                                         496.108.889        (223.654.969)     272.453.920     438.150.778 (207.752.827)      230.397.951
+      Provisões                                                      1.119.266                    -       1.119.266       1.072.972             -        1.072.972
+      Obrigações fiscais                                               369.925                    -         369.925         339.717             -          339.717
+      Outros passivos                                               11.286.341          (1.946.858)       9.339.483      21.896.636   (1.376.327)       20.520.309
+      Total do passivo                                             508.884.421        (225.601.827)     283.282.594    461.460.103 (209.129.154)      252.330.949
+
+      Patrimônio Líquido                                           68.281.351  (18.751.538)             49.529.813      63.244.063  (17.172.425)       46.071.638
+      Total do passivo e do patrimônio líquido                    577.165.772 (244.353.365)            332.812.407     524.704.166 (226.301.579)      298.402.587
+
+                                                                                                       30/06/2024                                     30/06/2023
+      Demonstrações Combinadas do resultado                        Aglutinado          Eliminações      Combinado       Aglutinado     Eliminações     Combinado
+      Receitas da intermediação financeira                          28.640.474          (6.242.270)      22.398.204      25.760.354     (6.310.576)     19.449.778
+      Despesas da intermediação financeira                        (15.482.681)            5.847.660     (9.635.021)    (14.847.793)       5.924.750    (8.923.043)
+      Provisões para perdas relativas ao risco de crédito          (4.427.435)               22.662     (4.404.773)     (2.942.160)          17.530    (2.924.630)
+      Receitas operacionais                                         10.791.143          (6.379.326)       4.411.817      10.068.221     (6.083.912)      3.984.309
+      Despesas operacionais                                       (14.213.530)            5.819.995     (8.393.535)    (12.658.379)       5.668.987    (6.989.392)
+      Provisões contingenciais                                        (91.012)                    -        (91.012)       (303.554)               -      (303.554)
+      Resultado não operacional                                         47.102                 (48)          47.054          40.673            (69)         40.604
+      Imposto de renda e contribuição social                         (300.663)                    -       (300.663)       (248.495)               -      (248.495)
+      Participação nos lucros                                        (169.646)                    -       (169.646)       (147.465)               -      (147.465)
+      Lucros líquido do semestre                                    4.793.752            (931.327)       3.862.425       4.721.402       (783.290)      3.938.112
+      Juros sobre o capital próprio                                  (506.295)                    -       (506.295)       (466.675)               -      (466.675)
+      Lucros após os juros sobre o capital próprio                  4.287.457            (931.327)       3.356.130       4.254.727       (783.290)      3.471.437
+
+
+      2.9. Eventos subsequentes
+      São eventos ocorridos entre a data-base das demonstrações contábeis e a data de autorização para
+      emissão destas. São compostos por:
+
+           •     Eventos que originam ajustes: são aqueles que evidenciam condições que já existiam na
+                 data-base das demonstrações contábeis; e
+           •     Eventos que não originam ajustes: aqueles que evidenciam condições que não existiam na
+                 data-base das demonstrações contábeis.
+
+=== página 42 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      Nota 3 – Resumo das principais práticas contábeis
+      3.1. Estimativas contábeis e julgamentos
+      As demonstrações contábeis combinadas foram elaboradas de acordo com as práticas contábeis
+      descritas na Nota 3 e requerem que a Administração use de julgamento na determinação e no registro
+      das estimativas contábeis, quando aplicável. Os itens significativos sujeitos ao processo de aplicação
+      de estimativas e premissas incluem a avaliação do valor de recuperação do imobilizado e do
+      intangível, as provisões associadas ao risco de crédito, a estimativa de realização dos créditos
+      tributários, a provisão para desembolso originado do contencioso de natureza fiscal, trabalhista e
+      cível e a valorização de títulos e valores mobiliários e dos instrumentos financeiros derivativos. A
+      liquidação das transações envolvendo essas estimativas poderá resultar em valores diferentes dos
+      apresentados nas demonstrações contábeis combinadas, em decorrência de imprecisões inerentes
+      ao processo de sua determinação. As estimativas e premissas são revisadas semestralmente de modo
+      a refletir a melhor informação disponível.
+
+      3.2. Apuração do resultado
+      O resultado das operações é apurado pelo regime contábil de competência. As receitas da prestação
+      de serviços, típicas ao sistema financeiro, são reconhecidas quando da prestação do serviço ao
+      associado ou a terceiros.
+
+      3.3. Moeda estrangeira
+      Os ativos monetários denominados em moedas estrangeiras foram convertidos para reais pela taxa
+      de câmbio da data de fechamento do balanço e as diferenças decorrentes de conversão de moeda
+      foram reconhecidas no resultado do período.
+
+      3.4. Caixa e equivalentes de caixa
+      Caixa e equivalentes de caixa são representados por disponibilidades em moeda nacional, moeda
+      estrangeira, aplicações interfinanceiras de liquidez cujo vencimento das operações na data da efetiva
+      aplicação seja igual ou inferior a 90 dias, e apresentam risco insignificante de mudança de valor justo.
+      São utilizadas pelo Sicoob para o gerenciamento de seus compromissos de curto prazo, de acordo
+      com a Nota 4.
+
+      3.5. Aplicações interfinanceiras de liquidez
+      As aplicações interfinanceiras de liquidez são registradas pelo valor de aplicação ou aquisição,
+      acrescido dos rendimentos auferidos até a data do balanço. Estão compostos por operações com
+      lastros em títulos públicos federais, conforme Nota 6.2.
+
+      3.6. Títulos e valores mobiliários
+      Quando aplicável, os títulos e valores mobiliários são classificados com base em um conjunto de
+      critérios para registro e avaliação da carteira de títulos, definidos pela Circular 3.068/2001 do Banco
+      Central, de acordo com a intenção da Administração, em três categorias específicas, atendendo aos
+      seguintes critérios de contabilização:
+
+        (a) Títulos para negociação: títulos e valores mobiliários adquiridos com o objetivo de serem
+            negociados frequentemente, de forma ativa, sendo ajustados a valor de mercado em
+            contrapartida ao resultado do período;
+
+=== página 50 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      6.3.1. Composição das operações de crédito por setor de atividade e prazo de vencimento
+                                                                                                                   A vencer
+                                                           A vencer até        3 a 12            1a3            3a5           5 a 15   Mais de 15
+       Setor de atividade         Nota       Vencidas                                                                                                 30/06/2024    31/12/2023
+                                                               3 meses         meses             anos           anos           anos          anos
+       Financiamentos rurais
+                                              562.721        8.459.731     17.410.031     12.706.976        5.277.295     3.985.787          69.383    48.471.924    48.051.766
+       e agroindustriais
+       Pessoas físicas                       1.178.070       4.419.739      7.833.089      7.710.493        2.705.591     1.147.237           8.378    25.002.597    23.089.905
+       Financiamentos
+                                                   2.352        13.024        30.423            80.108        78.907        355.240         318.131       878.185       915.143
+       imobiliários
+       Pessoas jurídicas
+       Serviços                                756.886       4.195.539      7.736.455     12.384.745        4.273.790      1.414.833         38.294    30.800.542    27.785.656
+       Indústria                               645.522       4.200.636      5.335.568      7.830.428        2.642.259        777.433         12.162    21.444.008    19.812.445
+       Comércio                              1.136.285       5.960.932      7.972.282     10.360.121        2.839.250        604.258          3.136    28.876.264    27.377.182
+       Outros                       (a)        719.776       2.516.842      5.280.404      8.419.574        3.648.581      2.124.477         13.636    22.723.290    21.146.811
+                                                                           51.598.25      59.492.44        21.465.67      10.409.26
+       Total                                5.001.612      29.766.443                                                                       463.120   178.196.810   168.178.908
+                                                                                    2              5                3              5
+                                                                           51.598.25
+       Circulante                           5.001.612      29.766.443                                -                -            -              -    86.366.307    83.506.195
+                                                                                    2
+                                                                                           59.492.44       21.465.67      10.409.26
+       Não circulante                                  -               -              -                                                     463.120    91.830.503    84.672.713
+                                                                                                   5               3              5
+
+      (a) Referem-se, preponderantemente, às pessoas jurídicas cujos setores de atividades econômicas são classificados como Comércio e Indústria, e desta forma,
+          não se enquadrariam nas linhas de atividades de indústria ou comércio individualmente.
+
+
+      6.3.2. Composição das provisões associadas ao risco de crédito - por níveis de risco
+                                                      30/06/2024                                                                              31/12/2023
+                                                            Saldo da                                        Valor da            Saldo da                               Valor da
+       Risco                      Percentual                               % da Carteira                                                      % da Carteira
+                                                            Carteira                                       Provisão             Carteira                              Provisão
+       AA                                      -          16.517.350                   9,27                        -          16.846.880               10,02                  -
+       A                                     0,5          59.379.271                  33,32                  296.896          56.537.594               33,62            282.688
+       B                                       1          47.734.780                  26,79                  477.348          45.280.542               26,92            452.805
+       C                                       3          33.750.072                  18,94                1.012.502          32.052.451               19,06            961.574
+       D                                     10            8.437.493                   4,73                  843.748           7.289.728                4,33            728.905
+       E                                     30            3.626.063                   2,03                1.087.819           2.889.353                1,72            866.806
+       F                                     50            2.253.419                   1,26                1.126.710           1.769.435                1,05            884.717
+       G                                     70            1.511.509                   0,85                1.058.056           1.030.063                0,61            721.044
+       H                                    100            4.986.853                   2,80                4.986.852           4.482.862                2,67          4.482.862
+       Total                                            178.196.810                    100               10.889.931         168.178.908               100,00         9.381.401
+
+
+      6.3.3. Composição das provisões associadas ao risco de crédito - por níveis de risco das
+      operações de crédito concedidas no âmbito do Programa Emergencial de Suporte a Empregos
+      (PESE), nos termos da Resolução 4.846/2020
+      Conforme requerido pela Resolução acima mencionada, a seguir estão apresentados por nível de
+      risco, os saldos das operações contratadas com recursos repassados pelo BNDES no âmbito do PESE:
+                                                                             30/06/2024                                                         31/12/2023
+                                                            Saldo da                                       Valor da              Saldo da                             Valor da
+       Risco                      Percentual                                % da Carteira                                                      % da Carteira
+                                                            Carteira                                       Provisão              Carteira                             Provisão
+       AA                                      -                   -                        -                     -                     -                  -                 -
+       A                                    0,50                   -                        -                     -                     -                  -                 -
+       B                                    1,00                   -                        -                     -                     -                  -                 -
+       C                                    3,00                   -                        -                     -                     -                  -                 -
+       D                                   10,00                   -                        -                     -                     -                  -                 -
+       E                                   30,00                   -                        -                     -                     -                  -                 -
+       F                                   50,00                   -                        -                     -                     -                  -                 -
+       G                                   70,00                   -                        -                     -                     4               3,96                 -
+       H                                  100,00                   2                      100                     -                    97              96,04                15
+       Total                                                       2                      100                                        101              100,00                15
+
+=== página 51 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      6.3.4. Composição das operações de crédito em curso normal - parcelas vincendas
+                             Em até 3          De 3 a 12                                                                         Acima de 15
+            Risco                                                 De 1 a 3 anos       De 3 a 5 anos       De 5 a 15 anos                           30/06/2024      31/12/2023
+                              meses             meses                                                                               anos
+       AA                      3.430.545         4.986.321            4.676.798           2.071.701            1.287.650                  7.489      16.460.504       16.770.051
+       A                      10.659.952        17.216.231           18.845.463           7.637.282            4.516.913               216.302       59.092.143       56.251.621
+       B                       7.706.692        14.579.297           17.010.242           5.638.913            2.332.509                40.087       47.307.740       44.908.138
+       C                       5.458.442         9.762.505           12.268.730           3.961.185            1.473.934                30.565       32.955.361       31.395.259
+       D                       1.279.703         2.389.435            2.817.325             873.156              317.444                32.109        7.709.172        6.767.261
+       E                         414.123           900.840            1.196.563             433.120              171.703                39.513        3.155.862        2.490.042
+       F                         239.523           491.570              768.735             245.849               80.530                41.740        1.867.947        1.474.572
+       G                         144.477           312.318              486.452             150.985               35.800                36.764        1.166.796          800.029
+       H                         417.385           931.902            1.403.008             516.044              192.782                18.551        3.479.672        3.175.876
+       Total                 29.750.842        51.570.419           59.473.316          21.528.235           10.409.265               463.120      173.195.197      164.032.849
+       Circulante            29.750.842        51.570.419                     -                   -                    -                      -     81.321.261       79.360.137
+       Não circulante                  -                 -          59.473.315          21.528.235           10.409.266               463.120       91.873.936       84.672.712
+
+
+      6.3.5. Composição das operações de crédito em curso anormal - parcelas vencidas
+                                                                                                                                 Acima de 15
+           Risco         Em até 3 meses De 3 a 12 meses            De 1 a 3 anos       De 3 a 5 anos      De 5 a 15 anos                            30/06/2024 31/12/2023
+                                                                                                                                    anos
+       AA                        56.845                     -                 -                       -                    -                   -         56.845           76.829
+       A                        287.131                     -                 -                       -                    -                   -        287.131          285.973
+       B                        427.040                     -                 -                       -                    -                   -        427.040          372.404
+       C                        793.853                   859                 -                       -                    -                   -        794.712          657.192
+       D                        723.041                 5.279                 -                       -                    -                   -        728.320          522.467
+       E                        338.108               132.092                 -                       -                    -                   -        470.200          399.311
+       F                        216.248               169.223                 -                       -                    -                   -        385.471          294.863
+       G                        146.841               197.873                 -                       -                    -                   -        344.714          230.034
+       H                        386.670             1.070.636            49.874                       -                    -                   -      1.507.180        1.306.986
+       Total                  3.375.777            1.575.962             49.874                       -                    -                   -     5.001.613        4.146.059
+       Circulante             3.375.777            1.575.962                  -                       -                    -                   -     4.951.739        4.114.604
+       Não
+                                         -                    -          49.874                       -                    -                   -        49.874           31.455
+       circulante
+
+
+      6.3.6. Concentração das operações de crédito
+                                                                                            30/06/2024                             %        31/12/2023                     %
+       10 maiores devedores                                                                    1.492.322                         0,84          1.416.507                 0,84
+       50 devedores seguintes                                                                  3.922.191                         2,20          3.872.057                 2,30
+       100 devedores seguintes                                                                 4.310.998                         2,42          4.260.254                 2,53
+       Demais                                                                                168.471.298                        94,54        158.630.090                94,32
+       Total                                                                                178.196.810                        100,00       168.178.908                100,00
+
+
+      6.3.7. Movimentação das provisões associadas ao risco de crédito
+                                                                                                                                           30/06/2024           31/12/2023
+       Saldo no início do semestre                                                                                                             9.381.401            6.958.495
+       Constituição (reversão) de provisões associadas ao risco de crédito                                                                      3.952.033            5.766.426
+       Operações de crédito baixadas para prejuízo                                                                                            (2.443.503)          (3.343.520)
+       Saldo no final do semestre                                                                                                             10.889.931            9.381.401
+
+
+      6.3.8. Resultado com operações de crédito
+       Composição                                                                                                                          30/06/2024           30/06/2023
+       Empréstimos e títulos descontados                                                                                                       10.629.834            9.514.014
+       Financiamentos                                                                                                                           1.990.456            1.838.990
+       Financiamentos rurais e agroindustriais                                                                                                  2.318.132            2.083.931
+       Financiamentos habitacionais                                                                                                                39.900               47.148
+       Outros                                                                                                                                     225.667              342.784
+       Subtotal                                                                                                                               15.203.989           13.826.867
+       Recuperação de créditos baixados como prejuízo                                                                                             577.893              449.837
+       Total                                                                                                                                  15.781.882           14.276.704
+
+
+      O resultado com as provisões para perdas relativas ao risco de crédito, no semestre findo em 30 de
+      junho de 2024 foi de R$ 4.404.773 (30 de junho de 2023 – R$ 2.924.630).
+
+=== página 52 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      6.3.9. Renegociação de operações de crédito
+      Os créditos renegociados no primeiro semestre de 2024 totalizaram R$ 6.829.574 (31 de dezembro
+      de 2023 – R$ 9.568.399) e decorrem de operações de crédito consignado, crédito rural e
+      empréstimos.
+      6.4. Transações de pagamentos
+       Composição                                                                                               Nota          30/06/2024            31/12/2023
+       Transações de pagamento - Cartão de crédito                                                               (a)            12.224.896            12.462.122
+       Transações de pagamento - Adquirência                                                                     (b)             4.714.899             4.272.156
+       Subtotal                                                                                                                16.939.795            16.734.278
+       (-) Provisões associadas ao risco de crédito - Cartão de crédito                                           (c)            (157.818)             (139.768)
+       Total de transações de pagamentos - líquidas de provisão                                                                16.781.977            16.594.510
+       Circulante                                                                                                              16.622.358            16.431.217
+       Não circulante                                                                                                             317.437               303.061
+
+      (a) Refere-se à movimentação de operações de cartão de crédito Cabal, MasterCard e Visa efetuadas pelos portadores de cartões. A operacionalização das
+          transações de cartão de crédito é efetuada no Banco Sicoob.
+      (b) Transações de adquirência cuja operação é mantida no Banco Sicoob.
+      (c) Provisão constituída sobre o saldo de cartão de crédito cuja operacionalização está no Banco Sicoob.
+
+      6.5. Carteira de câmbio
+       Composição                                                                                                             30/06/2024            31/12/2023
+       Câmbio comprado a liquidar                                                                                                 374.846                121.905
+       Direitos sobre vendas de câmbio                                                                                               2.263                    31
+       (-) adiantamento em moeda nacional recebidos                                                                                (2.161)                     -
+       Rendas a receber de adiantamentos concedidos                                                                                  7.827                 2.314
+       Total                                                                                                                      382.775                124.250
+       Circulante                                                                                                                 382.775                124.250
+       Não Circulante                                                                                                                    -                     -
+
+
+      6.6. Composição de outros ativos (com característica de concessão de crédito)
+       Outros ativos – com características de concessão de crédito                                                Nota          30/06/2024            31/12/2023
+       Transações de pagamento - Cartão de crédito                                                                 6.4            12.224.896            12.462.122
+       Devedores por compras de valores e bens                                                                     (a)               430.760               433.104
+       Avais e fianças honrados                                                                                    (b)               723.552               677.789
+       Outros títulos e créditos a receber com características de concessão de crédito                                                25.338                31.561
+       Total da carteira de outros ativos com características de concessão de crédito                                            13.404.546            13.604.576
+       (-) Provisões associadas ao risco de crédito – Transações de pagamento – Cartão de crédito                   6.4            (157.818)             (139.768)
+       (-) Provisões associadas ao risco de crédito – outros                                                        (c)            (614.296)             (555.094)
+       Total das provisões associadas ao risco de crédito                                                         6.6.5           (772.114)             (694.862)
+       Total de outros ativos - líquidos de provisão                                                                             12.632.432            12.909.714
+       Circulante                                                                                                                12.767.913            12.961.810
+       Não circulante                                                                                                               636.633               642.766
+
+      (a) Em Devedores por Compra de Valores e Bens estão registrados os saldos a receber de terceiros pela venda a prazo de bens próprios da Cooperativa ou Ativos
+          não Financeiros Mantidos para Venda.
+      (b) Avais e fianças honrados pelas cooperativas singulares perante seus cooperados em operações de crédito;
+      (c) Refere-se preponderantemente a avais e fianças honrados.
+
+
+      6.6.1. Composição da provisão para outros ativos de liquidação duvidosa por níveis de risco
+                                                                     30/06/2024                                           31/12/2023
+                                                          Saldo da                             Valor da            Saldo da                               Valor da
+       Risco                      Percentual                              % da Carteira                                      % da Carteira
+                                                          Carteira                             Provisão            Carteira                               Provisão
+       AA                                   -               93.296                     0,70           -             188.745            1,39                      -
+       A                                 0,50            8.847.100                    66,00      44.235           9.160.697           67,34                 45.803
+       B                                 1,00            2.151.573                    16,05      21.516           2.146.191           15,78                 21.462
+       C                                 3,00            1.099.219                     8,20      32.977           1.040.250            7,65                 31.208
+       D                                10,00              388.250                     2,90      41.359             315.606            2,32                 32.195
+       E                                30,00              156.892                     1,17      47.067             176.491            1,30                 52.947
+       F                                50,00               85.451                     0,64      42.726              79.360            0,58                 39.680
+       G                                70,00              135.103                     1,01      94.572              85.557            0,63                 59.890
+       H                               100,00              447.662                     3,34     447.662             411.679            3,03                411.677
+       Total                                           13.404.546                      100     772.114          13.604.576          100,00                694.862
+
+=== página 53 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      6.6.2. Concentração das operações de outros ativos (com característica de concessão de
+      crédito)
+                                                          30/06/2024                                  %                    31/12/2023                              %
+       10 maiores devedores                                    103.902                              0,78                        102.376                          0,75
+       50 maiores seguintes                                     97.135                              0,72                         99.660                          0,73
+       100 devedores seguinte                                   73.113                              0,55                         75.923                          0,56
+       Demais                                               13.130.396                             97,95                     13.326.617                         97,96
+       Total                                               13.404.546                             100,00                    13.604.576                         100,00
+
+
+      6.6.3. Composição das operações de outros ativos com características de concessão de crédito
+      em curso normal - parcelas vincendas
+                                Em até 3          De 3 a 12                                                              Acima de 15
+       Risco                                                     De 1 a 3 anos        De 3 a 5 anos    De 5 a 15 anos                     30/06/2024      31/12/2023
+                                  meses              meses                                                                      anos
+       AA                          4.774             44.713            21.123               11.030              11.216           402            93.258         188.647
+       A                         538.304          8.015.538           258.268               15.423              18.913           138         8.846.584       9.160.498
+       B                         148.328          1.863.236            93.322               23.039              22.528           179         2.150.632       2.145.791
+       C                          97.364            893.724            86.975               12.670               7.701            44         1.098.478       1.039.475
+       D                          77.560            282.196            17.493                5.437               4.924             5           387.615         314.435
+       E                          10.053             42.048             5.606                2.081                 977            16            60.781          44.532
+       F                           2.245             10.888               832                  496                  50            13            14.524           9.357
+       G                           1.773              4.736             3.548                2.642               1.474           109            14.282          10.797
+       H                           1.819              5.292             2.565                  458               1.109           278            11.521          10.443
+       Total                    882.220         11.162.371            489.732               73.276              68.892         1.184       12.677.675      12.923.975
+       Circulante               882.220         11.162.371                  -                    -                   -             -       12.044.591      12.284.736
+       Não circulante                  -                  -           489.732               73.276              68.892         1.184          633.084         639.239
+
+
+      6.6.4. Composição das operações de outros ativos com características de concessão de crédito
+      em curso anormal - parcelas vencidas
+                             Em até 3        De 3 a 12          De 1 a 3         De 3 a 5                           Acima de 15
+       Risco                                                                                 De 5 a 15 anos                            30/06/2024        31/12/2023
+                               meses            meses              anos             anos                                   anos
+       AA                         38                 -                 -                -                   -                 -                38                98
+       A                         515                 -                 -                -                   -                 -               515               199
+       B                         941                 -                 -                -                   -                 -               941               400
+       C                         742                 -                 -                -                   -                 -               742               775
+       D                         536                99                 -                -                   -                 -               635             1.172
+       E                      82.653           13.457                  -                -                   -                 -            96.110           131.959
+       F                      40.620           30.307                  -                -                   -                 -            70.927            70.003
+       G                      64.021           56.800                  -                -                   -                 -           120.821            74.760
+       H                      55.691          376.900             3.550                 -                   -                 -           436.141           401.235
+       Total                 245.757          477.563             3.550                 -                   -                 -           726.870           680.601
+       Circulante            245.757          477.563                  -                -                   -                 -           723.320           677.074
+       Não circulante               -                -            3.550                 -                   -                 -             3.550             3.527
+
+
+      6.6.5. Movimentação das provisões associadas ao risco de crédito - outros ativos
+                                                                                               Nota                                     30/06/2024       31/12/2023
+       Saldo no início do semestre/exercício                                                                                               694.862          555.083
+       Constituição (reversão) de provisões associadas ao risco de crédito                                                                   77.252          139.780
+       Saldo no final do semestre/exercício                                                      6.6                                       772.114          694.863
+
+=== página 54 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      Nota 7 - Outros ativos
+       Composição                                                                                                    Nota         30/06/2024             31/12/2023
+       Depósitos em garantias                                                                                 (a) e 13.1.2             457.495                451.572
+       Recebimento doc. enviados para outros participantes sistemas                                                    (b)             806.058                       -
+       Cheques e outros papéis remetidos                                                                               (c)             464.776                     107
+       Tributos a compensar/recuperar                                                                                                  436.808                528.100
+       Títulos e créditos a receber (sem características de concessão de crédito)                                                      348.251                295.325
+       Adiantamentos e antecipações salariais                                                                                          137.576                  37.450
+       Adiantamentos por conta de imobilizações                                                                                          40.180                 47.455
+       Adiantamentos para pagamentos de nossa conta                                                                                      77.892                 82.866
+       Pagamentos a ressarcir                                                                                                            74.332                 71.154
+       Ativos não financeiros mantidos para venda                                                                     (d)            1.654.373              1.354.943
+       Despesas antecipadas                                                                                           (e)              666.446                481.363
+       Valores a receber - Tarifas                                                                                                     131.114                115.638
+       Outros                                                                                                                          323.127                349.494
+       Subtotal                                                                                                                     5.618.428              3.815.467
+       Provisões para outros ativos sem características de concessão de crédito                                                       (18.093)               (17.859)
+       Provisão para desvalorização - ativos não financeiros mantidos para venda – Próprios                                             (1.059)                (1.059)
+       Provisão para desvalorização - ativos não financeiros mantidos para venda – Recebidos                                         (284.529)              (282.778)
+       Total das provisões para outros ativos                                                                                       (303.681)              (301.696)
+       Total                                                                                                           (f)          5.314.747              3.513.771
+
+       Circulante                                                                                                                    4.190.806             4.085.509
+       Não circulante                                                                                                                1.123.941               932.935
+
+      (a) Referem-se aos depósitos judiciais efetuados pelas entidades do Sicoob, por ordem judicial ou estratégia das instituições integrantes do Sistema, sem que
+          haja necessariamente liquidação do passivo contingente.
+      (b) Referem-se a movimentação de cheques recebidos (sua remessa). Ou seja, são as ordens de pagamento a liquidar não compensados até a data-base de
+          30/06/2024.
+      (c) Referem-se a movimentação remetida de cheques (nossa remessa).
+      (d) Bens recebidos em dação de pagamento de dívidas de operações de crédito.
+      (e) Compostas preponderantemente de comissões a pagar sobre operações de crédito, diferidas em razão da fluência dos contratos.
+      (f) Os saldos de transações de pagamento (Nota 6.4), carteira de câmbio (Nota 6.5), rendas a receber, avais e fianças honrados e outros ativos com características
+          de concessão de crédito (Nota 6.6) que compunham o grupo de outros ativos foram reclassificados no Balanço Patrimonial do grupo de Outros Ativos para
+          o grupo de Ativos Financeiros quando comparados com as demonstrações contábeis de 31/12/2023.
+
+
+      Nota 8 - Créditos tributários
+      8.1. Composição dos créditos tributários
+      Os créditos tributários constituídos e apresentados nas demonstrações contábeis combinadas do
+      Sicoob são decorrentes daqueles registrados no Banco Sicoob, no Sicoob DTVM e no Sicoob
+      Consórcios como apresentado a seguir:
+                                                                             30/06/2024                                          31/12/2023
+       Composição                                              Imposto de renda       Contribuição social               Imposto de renda  Contribuição social
+       Perdas para créditos de liquidação duvidosa                      503.832                  503.832                         428.847             428.847
+       Passivos contingentes                                             23.764                   23.764                          20.277              20.277
+       Ajuste a valor de mercado (TVM)                                     2.332                    2.332                           7.692              7.692
+       Participação nos resultados                                       12.467                   12.467                          23.686              23.686
+       Provisões campanha nacional de vendas                             14.781                   14.781                            8.389              8.389
+       Programa de incentivo - crédito                                   75.397                   75.397                            9.618              9.618
+       Taxas de adm. Recebidas antecipadamente                                 -                        -                         10.452              10.452
+       Provisão com fraudes                                              58.513                   58.513                          83.338              83.338
+       Outras provisões                                                  75.482                   75.482                          45.821              45.821
+
+       Montante                                                           766.568                    766.568                      638.120                  638.120
+       Alíquotas                                                             25%                          (a)                        25%                        (a)
+       Créditos tributários constituídos                                  191.642                    148.734                      159.530                  121.755
+
+      (a) Crédito tributário de contribuição social constituído às alíquotas de 20%, 15% e 9% a depender da natureza jurídica das empresas
+                .
+
+=== página 55 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      8.2. Movimentação dos créditos tributários
+                                                                                      30/06/2024                              31/12/2023
+       Movimentação                                                       Imposto de renda Contribuição social    Imposto de renda Contribuição social
+       Saldo em 31 de dezembro de 2023
+       Crédito tributário (ativo)                                                     159.530         121.755              182.997            135.848
+       Imposto diferido (passivo)                                                       (940)           (338)             (18.727)             (6.741)
+       Subtotal                                                                       158.590         121.417             164.270             129.107
+
+       Ajuste em resultado                                                             33.229          27.971              (2.768)             (5.360)
+       Créditos tributários constituídos                                                41.141          31.023              21.563              13.487
+       Créditos tributários baixados                                                   (7.690)         (2.972)            (42.118)            (25.250)
+       Movimentação imposto diferido                                                     (222)            (80)              17.787               6.403
+
+       Ajuste em patrimônio líquido (TVM)                                             (10.408)         (8.326)             (2.912)             (2.330)
+       Créditos tributários constituídos                                                    584             466             20.628              16.502
+       Créditos tributários baixados                                                    (1.923)         (1.538)           (23.540)            (18.832)
+       Movimentação do imposto diferido                                                 (9.069)         (7.254)                  -                   -
+
+       Movimentação                                                                    22.821          19.645              (5.680)             (7.690)
+
+       Saldo em 30 de junho de 2024/ 31 de dezembro de 2023
+       Crédito tributário (ativo)                                                      191.642        148.734             159.530             121.755
+       Imposto diferido (passivo)                                                     (10.231)         (7.672)              (940)               (338)
+                                                                                      181.411         141.062             158.590             121.417
+
+
+      8.3. Expectativa de realização dos créditos tributários
+      Com base em estudo realizado pela Administração, considerando-se a expectativa de geração de
+      resultados tributáveis, a realização créditos tributários se dará em até 10 anos, assim distribuídos:
+       Anos                                                                                                              Valor nominal      Valor presente
+       2024                                                                                                                     69.179              66.331
+       2025                                                                                                                     63.340              55.463
+       2026                                                                                                                     32.913              26.440
+       2027                                                                                                                     36.346              26.849
+       2028                                                                                                                     42.751              29.039
+       2029 a 2033                                                                                                              95.847              59.867
+       Total de créditos tributários                                                                                           340.376            263.989
+
+      O valor presente dos créditos tributários foi apurado considerando-se a taxa Selic projetada para os
+      anos de realização.
+
+=== página 56 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      Nota 9 - Investimentos
+      Os investimentos no Sicoob Pagamentos, no Sicoob PAR, na Minaseg Corretora, Sancor Seguros e
+      demais seguradoras e corretoras são avaliados pelo método de equivalência patrimonial. Os
+      resultados decorrentes dessas participações societárias estão registrados na demonstração do
+      resultado na rubrica “Resultado de Participações em Coligadas e Controladas”.
+                                                                                            30/06/2024       31/12/2023                 30/06/2024         30/06/2023
+       Participações societárias em
+                                                   Nota           % participação               Valor do investimento                       Resultado de equivalência
+       controladas e coligadas
+       Sicoob Pagamentos                             (a)                   99,00                248.516               205.924               42.592               15.225
+       Sicoob PAR                                    (b)                  100,00                179.627               142.267               60.530               61.740
+       Seguradoras e Corretoras                      (c)                  100,00                160.737               128.477               32.767               33.300
+       Outros                                        (d)                       -                  8.457                17.515                    -                    -
+       Subtotal                                                                -                597.337               494.183              135.889              110.265
+
+       Outros investimentos                        Nota           % participação               Valor do investimento                     Resultado do fundo
+       Sicoob Agências FI Imobiliário               (e)                        -                   8.365             8.365                        -                     -
+       Subtotal                                                                -                   8.365             8.365                        -                     -
+
+       Total                                                                       -            605.702               502.548              135.889              110.265
+
+      (a) Operadora de cartões de crédito MasterCard, Visa e Cabal dentro do Sicoob, controlada pelo Banco Sicoob.
+      (b) Investimento na Sicoob Participações em Seguridade S.A. - Sicoob PAR Seguridade, controlada pelo Banco Sicoob e detentora de 50% de participação na
+          Sicoob Seguradora de Vida e Previdência S.A.
+      (c) Investimentos na seguradora Sancor e nas corretoras Minaseg, Cecresp Corretora e Sicoob Uni Corretora, mantidos por quatro cooperativas centrais do
+          Sicoob respectivamente Sicoob Central Unicoob, Sicoob Central Crediminas, Sicoob Central Cecresp e Sicoob Uni.
+      (d) Refere-se principalmente aos investimentos em participações de outras empresas, obras de arte, marcas e patentes. As participações em outras empresas
+          cooperativas estão originalmente registradas no grupo contábil 1.3, conforme determinado pelo BCB. Contudo, para fins de apresentação, foram
+          reclassificadas para a conta de investimento.
+      (e) Refere-se às propriedades para investimento mantida por fundo de investimento imobiliário.
+
+
+
+      Nota 10 - Imobilizado
+                                                                                   30/06/2024                                             31/12/2023
+                                                                                    Depreciação                                            Depreciação
+       Imobilizado de uso                                  Custo corrigido                             Saldo líquido Custo corrigido                          Saldo líquido
+                                                                                     acumulada                                              acumulada
+       Imobilizações em curso                                        361.196                   -            361.196           398.666                 -            398.666
+       Terrenos                                                      322.517                   -            322.517           313.882                 -            313.882
+       Edificações                                                 2.116.159           (681.885)          1.434.274         1.951.275         (596.766)          1.354.509
+       Móveis e utensílios/Equipamentos e                          2.256.077         (1.062.881)          1.193.196
+                                                                                                                            2.093.535          (970.607)         1.122.928
+       instalações
+       Equipamentos de informática                                  1.080.392             (626.066)         454.326          1.023.670         (589.983)           433.687
+       Outros                                                         359.381             (219.606)         139.775            350.461         (208.475)           141.986
+       Subtotal                                                    6.495.722           (2.590.438)        3.905.284         6.131.490       (2.365.831)          3.765.658
+       Redução ao valor recuperável de ativos                               -                     -           (982)                  -                 -            (1.113)
+       Total                                                       6.495.722           (2.590.438)        3.904.302         6.131.490       (2.365.831)          3.764.545
+       Circulante                                                           -                     -               -                  -                 -                  -
+       Não circulante                                              6.495.722           (2.590.438)        3.904.302         6.131.490       (2.365.831)          3.764.545
+
+
+      Nota 11 - Intangível
+                                                                                        30/06/2024                                        31/12/2023
+                                                                          Custo         Amortização                            Custo      Amortização
+       Intangível                                          Nota                                        Saldo líquido                                       Saldo líquido
+                                                                       corrigido         acumulada                          corrigido       acumulada
+       Softwares                                                        370.444            (237.460)        132.984          313.574          (217.598)          95.976
+       Sistemas de informação/segurança                                    8.310                   -          8.310             8.276                 -           8.276
+       Outros ativos intangíveis                            (a)         754.497            (529.390)        225.107          683.431          (501.128)         182.303
+       Subtotal                                                       1.133.251           (766.850)         366.401        1.005.281         (718.726)          286.555
+       Redução ao valor recuperável de                                         -                   -            (16)
+                                                                                                                                    -                 -           (4.011)
+       ativos
+       Total                                                          1.133.251            (766.850)        366.385        1.005.281        (718.726)           282.544
+       Circulante                                                             -                    -              -                -                -                 -
+       Não circulante                                                 1.133.251            (766.850)        366.385        1.005.281        (718.726)           282.544
+
+      (a) Refere-se preponderantemente à ativação aos custos de desenvolvimento diretamente atribuíveis ao sistema de informática do Sicoob (Sisbr) assim como
+          os módulos que o integram e o complementam.
+
+=== página 57 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      Nota 12 - Passivos financeiros
+      12.1. Depósitos por tipo e prazos de vencimento
+                                                                                                   Prazo de vencimento
+                                                                 Sem                              De 3 meses      Acima de
+       Composição                                                                Até 3 meses                                      30/06/2024       31/12/2023
+                                                          vencimento                                  a 1 ano         1 ano
+       À vista                                             48.731.948                      -                -             -          48.731.948      43.826.471
+       De poupança                                         13.977.850                      -                -             -          13.977.850      12.731.460
+       Interfinanceiros/Interfinanceiros                            -             10.248.309         844.821      2.556.447          13.649.577
+                                                                                                                                                     12.002.407
+       rurais
+       Certificados de depósitos bancários                             -                83.444        62.460        757.320            903.224
+                                                                                                                                                           789.227
+       (CDB)
+       Sob aviso                                                    -                        -       234.141                 -         234.141             240.188
+       Recibos de depósitos cooperativos                  135.706.166                        -             -                 -     135.706.166
+                                                                                                                                                    112.726.052
+       (RDC)
+       Outros                                                     26                      -                -              -                26               29
+       Total                                             198.415.990             10.331.753        1.141.422      3.313.767       213.202.932      182.315.834
+       Circulante                                        198.415.990             10.331.753        1.141.422              -       209.889.165      181.454.509
+       Não circulante                                              -                      -                -      3.313.767         3.313.767          861.325
+
+
+      12.1.1. Concentração dos depositantes
+                                                         30/06/2024                                  %                31/12/2023                               %
+       10 maiores depositantes                             11.953.479                              5,61                 10.730.275                           5,89
+       50 depositantes seguintes                            8.521.860                              4,00                  7.725.875                           4,24
+       100 depositantes seguintes                           6.450.327                              3,03                  5.781.509                           3,17
+       Demais                                             186.277.266                             87,37                158.078.175                          86,71
+       Total                                             213.202.932                             100,00               182.315.834                          100,00
+
+
+      12.2. Recursos de aceites cambiais, letras imobiliárias, hipotecárias e debêntures
+                                                                                               Prazo de vencimento
+                                                                                          De 3 meses a 1         Acima de
+       Composição                                                     Até 3 meses                                                30/06/2024        31/12/2023
+                                                                                                     ano             1 ano
+       Letras de Crédito do Agronegócio - pré-fixada                           98.537            335.244            76.747            510.528           577.860
+       Letras de Crédito do Agronegócio - pós-fixada                        2.990.859         11.106.221        13.346.957         27.444.037        25.041.138
+       Letras de Crédito Imobiliário - pré-fixada                              39.033             51.356                45             90.434           196.817
+       Letras de Crédito Imobiliário - pós-fixada                           2.276.890          3.719.377         1.007.819          7.004.086        13.736.776
+       Outros                                                                       -                  -            12.885             12.885             1.978
+       Total                                                               5.405.319         15.212.198        14.444.453         35.061.970        39.554.569
+       Circulante                                                          5.405.319         15.212.198                  -        20.617.517        24.360.942
+       Não circulante                                                               -                  -       14.444.453         14.444.453        15.193.627
+
+
+      12.3. Obrigações por operações compromissadas
+                                                                                               Prazo de vencimento
+                                                                                           De 3 meses a 1        Acima de
+       Composição                                                     Até 3 meses                                                 30/06/2024       31/12/2023
+                                                                                                      ano           1 ano
+       Carteira Própria - LFT                                               193.009                      -              -             193.009          167.496
+       Total                                                                193.009                      -              -             193.009          167.496
+       Circulante                                                           193.009                      -              -             193.009          167.496
+       Não circulante                                                             -                      -              -                   -                -
+
+
+      12.4. Despesas de operações com captações de mercado
+       Composição                                                               Nota                                             30/06/2024        30/06/2023
+       De poupança                                                                                                                    413.112           444.859
+       Interfinanceiros                                                                                                               565.109           197.110
+       A prazo (CDB e RDC)                                                                                                          6.259.856         6.076.565
+       Sob aviso                                                                                                                       12.177            14.636
+       Captações no mercado aberto                                                                                                     19.075            20.486
+       Captações com letras de crédito do agronegócio                                                                               1.340.668         1.227.562
+       Captações com letras de crédito imobiliário                                                                                    556.535           612.616
+       Outros                                                                                                                         169.012           138.622
+       Total                                                                     (a)                                               9.335.544         8.732.456
+
+      (a) A remuneração acompanha o crescimento da carteira e o aumento da taxa de juros Selic, que influencia o CDI que é o índice base da remuneração.
+
+=== página 58 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      12.5. Obrigações por empréstimos e repasses
+      As obrigações por repasses de instituições do País estão representadas por recursos obtidos por meio
+      do BNDES/FINAME, Tesouro Nacional, Banco do Brasil e Funcafé, com vencimento até 2042 e com
+      encargos financeiros de 0,1% até 16,67 % a.a.
+                                                                                                   Prazo de vencimento
+                                                                Sem                     Até 3   De 3 meses a       Acima de
+       Composição                             Nota                                                                               30/06/2024     31/12/2023
+                                                          vencimento                   meses          1 ano            1 ano
+       No País
+       BNDES                                                        -                 235.008       585.178        3.960.014        4.780.200      3.815.061
+       FINEP                                                        -                     134           602            5.241            5.977              -
+       FINAME                                                       -                 188.497       266.699        1.473.663        1.928.859      1.572.562
+       Funcafé                                                678.949                 225.956       366.277          309.486        1.580.668      1.977.063
+       Banco do Brasil                          (a)               472                  43.758        91.688          645.156          781.074        782.228
+       Banco da Amazônia/FNO                                        -                     972        15.565          226.666          243.203        195.040
+       SFH - Pró Cotista                                            -                      49           147            4.864            5.060          1.550
+       Outras instituições financeiras                              4                       -             -            6.316            6.320          5.980
+       No Exterior
+       Instituições no Exterior                                     -                   -            60.440             200           60.640          9.828
+       Total                                                  679.425             694.374         1.386.596       6.631.606        9.392.001      8.359.312
+       Circulante                                             679.425             694.374         1.386.596               -        2.760.395      3.218.785
+       Não circulante                                               -                   -                 -       6.631.606        6.631.606      5.140.527
+
+      (a) Repasses preponderantemente com recursos do Fundo Constitucional do Centro-Oeste – FCO no Banco Sicoob.
+
+
+      12.5.1. Despesas de obrigações por empréstimos e repasses
+       Composição                                                                                                              30/06/2024       30/06/2023
+       BNDES                                                                                                                       122.387           60.169
+       Finep                                                                                                                             6                -
+       Finame                                                                                                                       75.889           46.579
+       Funcafé e instituições financeiras                                                                                           82.914           71.928
+       Banco do Brasil                                                                                                              15.937           11.910
+       Outros                                                                                                                        2.344                -
+       Total                                                                                                                      299.477          190.586
+
+
+      12.6. Transações de pagamento
+       Composição                                                                                               Nota            30/06/2024      31/12/2023
+       Transações de pagamento                                                                                   (a)              11.860.671      11.146.190
+       Obrigações por transações de pagamentos                                                                                     2.699.670       2.583.210
+       Obrigações por serviços de instituidores de arranjo de pagamento                                                                  136             386
+       Total                                                                                                                     14.560.477      13.729.786
+       Circulante                                                                                                                14.560.477      13.729.786
+       Não circulante                                                                                                                      -               -
+
+      (a) Composto preponderantemente das operações de adquirência, operacionalizadas no Banco Sicoob.
+
+
+      Nota 13 - Provisões para contingências e obrigações legais
+      13.1. Contingências
+      As entidades integrantes do Sicoob são partes em ações judiciais e administrativas fiscais. Essas ações
+      são classificadas por advogados externos e internos conforme a probabilidade de êxito em cada uma
+      delas. A opinião desses advogados leva em conta a natureza jurídica da causa, sua especificidade e a
+      jurisprudência dos tribunais superiores.
+      O reconhecimento, a mensuração e a divulgação de provisão das causas judiciais são efetuadas
+      conforme resumido a seguir:
+      A provisão é reconhecida somente quando:
+           (a) as entidades integrantes do Sicoob têm uma obrigação legal ou não formalizada, presente,
+               como consequência de um evento passado;
+           (b) é provável que recursos sejam exigidos para liquidar a obrigação; e
+
+=== página 59 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+           (c) o montante da obrigação é possível de ser estimado com suficiente segurança. Se qualquer
+               uma dessas condições não for atendida, a provisão não é reconhecida.
+      Com base nessas premissas, quando for provável que uma obrigação presente exista na data do
+      balanço, o Sicoob reconhecerá uma provisão e, quando não for provável que uma obrigação presente
+      exista na data do balanço, o Sistema divulgará a contingência passiva, a menos que seja remota a
+      possibilidade de saída de recursos.
+      A Administração entende que a provisão constituída é suficiente para a cobertura de eventuais
+      perdas decorrentes dos respectivos processos judiciais, conforme demonstrado a seguir:
+      13.1.1 Ações judiciais classificadas como “risco de perda provável”
+      As ações classificadas como “risco de perda provável” decorrem basicamente de processos judiciais
+      e administrativos, inerentes ao curso normal dos negócios, movidas por terceiros, ex-funcionários e
+      órgãos públicos, em ações cíveis, trabalhistas e tributárias.
+
+      13.1.2. Depósitos judiciais e provisões para contingências
+                                                                                               30/06/2024                     31/12/2023
+                                                                                           Depósitos                      Depósitos
+       Tipos de ações                                                           Nota                         Provisões                     Provisões
+                                                                                            Judiciais                      Judiciais
+       Fiscais                                                                               384.770          339.623       386.302         326.031
+       Trabalhistas                                                                           20.483           41.464        18.494          41.170
+       Cíveis                                                                                 52.242          177.192        46.776         161.808
+       Total                                                                                457.495           558.279      451.572          529.009
+       Circulante                                                                                   -               -              -              -
+       Não circulante                                                                       457.495           558.279      451.572          529.009
+
+
+      13.1.3. Movimentação das provisões para contingências
+                                                                                                30/06/2024                             31/12/2023
+                                                             Nota               Fiscais   Trabalhistas           Cíveis      Total            Total
+       Saldo no início do exercício                                           326.031          41.170          161.808     529.009         473.032
+       Constituições                                                               903          10.480           37.243      48.626         149.077
+       Reversões                                                               (4.018)         (7.721)         (18.964)    (30.703)        (96.992)
+       Atualizações monetárias                                16.2              13.500             243            1.437      15.180           29.297
+       Depósitos judiciais                                                       6.717             428            1.939       9.084            9.474
+       Pagamentos/Utilizações                                                  (3.521)         (4.683)          (6.271)    (14.475)        (28.513)
+       Saldos de cooperativas incorporadas                                          11           1.547                -       1.558          (6.366)
+       Saldo no final do exercício                                            339.623          41.464          177.192     558.279         529.009
+
+
+      13.1.4. Natureza das ações classificadas como “risco de perda provável”
+      As causas classificadas com risco de perda provável pelos consultores jurídicos têm a seguinte
+      natureza:
+           (a) Fiscais - ações discutidas na esfera administrativa, em razão de autuações da Secretaria da
+               Receita Federal referentes à incidência do Imposto de Renda Pessoa Jurídica - IRPJ, da
+               Contribuição Social sobre Lucro Líquido - CSLL, Programa de Integração Social - PIS e
+               Contribuição para o Financiamento da Seguridade Social - COFINS, sobre os rendimentos
+               financeiros obtidos das aplicações financeiras, e quanto à majoração da alíquota da COFINS.
+           (b) Cíveis - referem-se, basicamente, a cláusulas contratuais, inscrição em cadastro de proteção
+               ao crédito e danos morais.
+           (c) Trabalhista - referem-se, principalmente, a ações movidas por ex-funcionários que
+               questionam verbas trabalhistas.
+
+=== página 60 ===
+Docusign Envelope ID: AC1B2C1A-2D99-497B-A420-2E5A0DCE2E84
+
+
+
+      Notas explicativas das demonstrações contábeis combinadas
+      30 de junho de 2024
+      Valores expressos em milhares de reais, exceto quando indicado de outra forma
+
+
+
+
+      13.1.5. Cronograma esperado de saídas de benefícios econômicos
+      Em virtude da natureza das contingências existentes e a complexidade do ambiente jurídico do Brasil,
+      há incertezas que não permitem uma definição razoável do cronograma de liquidação futura das
+      ações.
+
+      13.1.6. Contingências classificadas como “risco de perda possível”
+      As ações classificadas como risco de perda possível não são reconhecidas contabilmente, sendo
+      apenas divulgadas quando o valor envolvido for relevante. Nesta classificação há ações:
+
+           (a) cíveis que questionam danos morais e materiais cometidos pelas cooperativas;
+           (b) cíveis de cobrança e inscrição indevida em cadastros de proteção ao crédito;
+           (c) cíveis que questionam revisões contratuais de operações de crédito;
+           (d) cíveis que discutem a solidariedade do Banco Sicoob quanto a depósitos feitos em
+               cooperativas;
+           (e) cíveis que discutem a responsabilidade indenizatória do Banco Sicoob por erro cometido por
+               cooperativa;
+           (f) de natureza trabalhista;
+           (g) administrativas fiscais previdenciárias (FAP, Bolsa de Estudos e PIS);
+           (h) anulatória de lançamento fiscal ajuizada pelo Banco. O auto de infração que se pretende
+               desconstituir por meio da ação anulatória, refere-se ao valor deduzido pelo Banco Sicoob em
+               2008 na base de cálculo de tributos. A dedução decorreu da natureza indenizatória do valor
+               pago pelo Banco Sicoob, conforme deliberação da AGE, em decorrência de falha na prestação
+               de serviço de responsabilidade do Banco.
+
+      13.1.7. Montante das contingências classificadas como “risco de perda possível”
+      Segundo as assessorias jurídicas das entidades integrantes do Sicoob os processos judiciais nos quais
+      estas entidades figuram como polo passivo e foram classificados como risco de perda possível, em 30
+      de junho de 2024, totalizam R$ 1.341.633 (31 de dezembro de 2023 – R$ 1.056.320). Estas ações
+      abrangem processos de naturezas trabalhistas, cíveis, administrativos e tributárias.
+       Tipos de ações                                                                 30/06/2024    31/12/2023
+       Tributárias                                                                        234.317       223.113
+       Trabalhistas                                                                       125.222       122.319
+       Cíveis e administrativos                                                           982.093       710.889
+       Total                                                                            1.341.633     1.056.320
+
+
+      13.2. Provisões para garantias prestadas
+      As garantias prestadas pelas entidades integrantes do Sicoob, mediante encargos financeiros,
+      relativas a avais e fianças totalizam R$ 21.378.420, em 30 de junho de 2024 (31 de dezembro de 2023
+      – R$ 19.784.818).
+      No passivo, as provisões somaram em 30 de junho de 2024, R$ 553.307 (31 de dezembro de 2023 R$
+      477.845).
+      As rendas decorrentes das garantias prestadas totalizaram no primeiro semestre de 2024, R$ 1.998
+      (30 de junho de 2023 – R$ 2.240).
+      A constituição das provisões para estas garantias está sujeita aos mesmos critérios mínimos
+      estabelecidos pela Resolução CMN 2.682/1999 para classificação de risco de crédito dos tomadores.
+      Em 30 de junho de 2024, as despesas com provisões para garantias prestadas somaram R$ 351.798
+      (30 de junho de 2023 – R$ 263.050). No mesmo período, foram revertidas provisões no total de R$

@@ -1,0 +1,2320 @@
+
+=== página 25 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               mercados ativos ou de parâmetros observáveis no mercado. Quando preços cotados
+               e dados observáveis em mercados ativos não estão totalmente disponíveis, é
+               necessário julgamento da administração para estimar o valor justo.
+
+               Mudanças nas condições de mercado, como liquidez reduzida no mercado de capitais
+               ou mudanças nas atividades do mercado secundário, podem reduzir a disponibilidade
+               e a confiabilidade dos preços cotados ou dos dados observáveis usados para
+               determinar o valor justo.
+
+               Pode ser necessário julgamento para estabelecer se determinados instrumentos
+               financeiros mensurados pelo valor justo são classificados como Nível 2 ou Nível 3. A
+               Companhia considera todas as informações disponíveis que os participantes do
+               mercado usam para medir o valor justo do instrumento financeiro, incluindo dados
+               observáveis de mercado, indicações de liquidez e ordem do mercado e seu
+               entendimento das técnicas de avaliação e dos principais insumos utilizados. Com
+               base nos fatos e circunstâncias específicos de cada instrumento ou categoria de
+               instrumento, são feitos julgamentos em relação à significância das entradas do Nível
+               3 para a mensuração do valor justo dos instrumentos em sua totalidade.
+
+               O processo para determinar o valor justo utilizando dados não observáveis é
+               geralmente mais subjetivo e envolve um alto grau de julgamento e premissas da
+               administração.
+
+               A Companhia possui controles para garantir que as mensurações do valor justo sejam
+               apropriadas e confiáveis, incluindo revisão e aprovação de novos tipos de transação,
+               verificação de preço e revisão de julgamentos, métodos, modelos, controles de
+               processo e resultados de avaliação.
+
+               e.       Redução ao valor recuperável de ativos financeiros
+
+               Perdas por redução ao valor recuperável dos ativos financeiros não avaliados pelo
+               valor justo são reconhecidas imediatamente quando há evidência objetiva de perda e
+               o valor contábil desses ativos é reduzido com o uso de provisões. Provisões para
+               redução ao valor recuperável de ativos financeiros não avaliados ao valor justo são
+               avaliadas e calculadas individualmente e são reconhecidas na demonstração do
+               resultado.
+
+               A principal provisão para redução ao valor recuperável de ativos financeiros refere-se
+               às perdas esperadas associadas ao risco de crédito, sendo descritas no item a seguir.
+
+               O Bacen divulgou a recepção do CPC 46 - Mensuração do valor justo, através da
+               Resolução BCB n° 120 com vigência a partir de janeiro de 2022, avaliamos e não
+               identificamos impactos que alterassem as divulgações.
+
+
+
+
+                                                                 24
+
+=== página 26 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               f.       Operações de cartão de crédito e provisão para perdas esperadas associadas
+                        ao risco de crédito
+
+               Os juros referentes às operações de cartão de crédito vencidas até o 59o dia são
+               contabilizados no resultado do período e, a partir do 60o dia, os juros ficam represados
+               e somente serão apropriados ao resultado quando forem efetivamente recebidos.
+
+               Aplicável para as operações sujeitas ao risco de crédito, conforme definido em política
+               interna, a provisão é definida como o valor necessário para cobrir os custos relativos
+               ao risco de crédito, sejam eles provenientes do não cumprimento, pela contraparte, de
+               suas obrigações financeiras, desvalorização e/ou redução nas remunerações em
+               detrimento da qualidade creditícia do tomador de crédito.
+
+               A Companhia observa e respeita as diretrizes estabelecidas pela Resolução nº
+               2.682/99 do CMN, dispondo dos critérios necessários para classificação das
+               operações de crédito e de provisão para perdas esperadas associadas ao risco de
+               crédito mínimo requerido. Ainda, para a constituição da provisão complementar à
+               mínima requerida, em seu cálculo deve ser refletida a expectativa de perdas futuras
+               da Companhia, levando em consideração as diretrizes da Resolução nº 4.557/17 do
+               CMN.
+
+               As operações de crédito são classificadas de acordo com os parâmetros
+               estabelecidos pela Resolução nº 2.682/99 do CMN, que requer a análise periódica da
+               carteira e sua classificação em nove níveis de risco, sendo AA (risco mínimo - 0% de
+               provisão mínima) e H (risco máximo - 100% provisionado). As operações classificadas
+               como nível de risco H são transferidas para conta de compensação, com o
+               correspondente débito em provisão, após decorridos seis meses da sua classificação
+               nesse nível de risco. Quanto às operações renegociadas, essas são mantidas, no
+               mínimo, no mesmo nível em que estavam classificadas antes de sua repactuação;
+               aquelas que já haviam sido baixadas contra a provisão e que estavam em contas de
+               compensação, são classificadas como H.
+
+               Metodologia Interna
+
+               A metodologia interna para cálculo da provisão para perdas esperadas associadas ao
+               risco de crédito é baseada na expectativa de perdas da carteira de crédito em nível
+               agregado, de acordo com as diretrizes estabelecidas nas Resoluções nº 2.682/99 e
+               4.557/17 do CMN. Essa expectativa de perda para cada operação de crédito é função
+               da sua faixa de risco, determinada a partir de modelos internos, bem como do seu
+               estágio de atraso, tempo contratual ao qual estará exposto ao risco de crédito, e
+               quando aplicável, o ambiente macroeconômico e alterações previstas no curto e longo
+               prazo. Para o cálculo da perda, são considerados: probabilidade de que a exposição
+               seja caracterizada como ativo problemático, de acordo com as definições da
+               Resolução nº 4.557/17 do CMN, a exposição no momento da inadimplência, bem
+               como a expectativa de recuperações de créditos vencidos. O valor da provisão para
+               créditos de liquidação duvidosa ("PCLD") é contabilizado de acordo com o resultado
+               obtido pelo modelo interno e comparado com o valor da PCLD mínima requerida pela
+
+                                                                 25
+
+=== página 27 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               Resolução nº 2.682/99 do CMN, não podendo, em nível agregado, o valor apurado pelo
+               modelo interno ser inferior ao mínimo requerido pela Resolução nº 2.682/99 do CMN.
+
+               A Companhia conta com fóruns que deliberam a respeito da qualidade dos modelos
+               de perda esperada, bem como sobre as alterações relevantes nas estimativas
+               consideradas no cálculo do modelo interno. Tais modelos estão sujeitos a avaliação
+               técnica independente das áreas de Validação de Modelos, Risco Operacional,
+               Controles Internos e Auditoria Interna.
+
+               g.       Operações de venda ou transferência de ativos financeiros
+
+               As operações são registradas e contabilizadas de acordo com a Resolução nº
+               3.533/08 do CMN, sendo:
+
+               Operação com retenção substancial ou parcial de riscos e benefícios
+
+               São operações em que a instituição vendedora retém substancialmente todos os
+               riscos e benefícios de propriedade do ativo financeiro objeto da operação, isto é,
+               quando sua exposição à variação no valor presente do fluxo de caixa futuro esperado
+               não é alterada significativamente.
+
+               Os valores pagos na operação são registrados no ativo, como direito a receber da
+               instituição vendedora, e as receitas são apropriadas ao resultado pelo prazo
+               remanescente                            da                             operação.
+
+               Operação com transferência substancial dos riscos e benefícios
+
+               São operações em que a instituição vendedora transfere substancialmente todos os
+               riscos e benefícios de propriedade do ativo financeiro objeto da operação, isto é,
+               quando sua exposição à variação no valor presente do fluxo de caixa futuro esperado
+               é reduzida significativamente.
+
+               O ativo financeiro adquirido é registrado pelo valor pago e o resultado da negociação
+               é apropriado à adequada conta de resultado em função do prazo remanescente da
+               operação.
+
+               h.       Outros créditos
+
+               Além de outros valores a receber, a rubrica "Outros créditos" no Balanço Patrimonial é
+               composta substancialmente por:
+
+               Despesas antecipadas
+
+               As despesas pagas antecipadamente estão relacionadas a serviços ou produtos
+               pagos antecipadamente nos quais os direitos e benefícios ou serviços ocorrerão nos
+               períodos futuros e, portanto, o valor é amortizado ao longo do tempo na demonstração
+               do resultado. As despesas antecipadas também compreendem despesas diferidas
+
+                                                                 26
+
+=== página 29 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               quando há indicativos de redução do valor recuperável. Se houver indicativos, esses
+               ativos estão sujeitos a uma revisão do valor recuperável.
+
+               A revisão do valor recuperável compreende uma comparação do valor contábil do
+               ativo ou da unidade geradora de caixa com o seu valor recuperável: o maior entre o
+               valor justo do ativo ou da unidade geradora de caixa menos custos de venda e seu
+               valor em uso. A unidade geradora de caixa representa o nível mais baixo no qual os
+               ativos não financeiros, incluindo o ágio, se existentes, são monitorados para fins de
+               gerenciamento interno e não são maiores que um segmento operacional.
+
+               O valor justo é o preço que seria recebido pela venda de um ativo ou pago para
+               transferir um passivo em uma transação ordenada entre participantes do mercado na
+               data da mensuração. O valor em uso é calculado descontando-se os fluxos de caixa
+               futuros esperados pela administração, obtidos como resultado do uso continuado do
+               ativo, incluindo aqueles resultantes de sua alienação final, a uma taxa de desconto
+               baseada no mercado e antes dos impostos.
+
+               Os valores contábeis do ativo imobilizado, ágio e outros ativos intangíveis devem ser
+               reduzidos pelo valor de qualquer redução ao valor recuperável e a perda é reconhecida
+               na demonstração do resultado no período em que ocorre. Uma perda por redução ao
+               valor recuperável anteriormente reconhecida, relativa ao ativo imobilizado, pode ser
+               revertida parcial ou totalmente quando uma mudança nas circunstâncias leva a uma
+               mudança nas estimativas usadas para determinar o valor recuperável do ativo
+               imobilizado. O valor contábil do imobilizado somente será aumentado até o valor que
+               teria sido se a redução ao valor recuperável original não fosse reconhecida.
+
+               Para o semestre e exercício findos em 31 de dezembro de 2023 e exercício findo em
+               31 de dezembro de 2022, nenhum indício de redução no valor recuperável de ativos
+               não financeiros foi identificado, e portanto, nenhuma provisão foi registrada nas
+               demonstrações contábeis.
+
+               k.       Investimentos
+
+               Os investimentos em empresas controladas no Brasil e no exterior são reconhecidos
+               inicialmente ao custo de aquisição e avaliados subsequentemente pelo método de
+               equivalência patrimonial.
+
+               Os investimentos são desdobrados em valor do patrimônio líquido na época da
+               aquisição e ágio ou deságio na aquisição do investimento, que é a diferença entre o
+               custo de aquisição e o valor patrimonial das ações. O ágio ou deságio é identificado
+               em função do seu fundamento econômico, como (i) diferença entre o valor de
+               mercado dos ativos adquiridos e o valor contábil, (ii) valor de rentabilidade, com base
+               em previsão dos resultados futuros; e (iii) fundo de comércio, intangíveis e outras
+               razões econômicas.
+
+               O ágio ou deságio, com fundamento na diferença entre o valor de mercado e o valor
+               contábil dos ativos adquiridos deve ser amortizado no exercício social em que os bens
+
+                                                                 28
+
+=== página 30 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               que o justificaram forem baixados por alienação ou perecimento, ou nos exercícios
+               sociais em que seu valor for realizado por depreciação, amortização ou exaustão; e
+               ágios com base na expectativa de rentabilidade futura são amortizados em
+               consonância com os prazos de projeções que o justificam ou por sua alienação ou
+               perda. Os investimentos, inclusive os ágios, são submetidos anualmente ao teste de
+               redução ao valor recuperável.
+
+               Os valores de intangíveis originados em combinação de negócio são amortizados
+               com base nos prazos definidos no laudo de alocação de preço de compra, e a vida
+               útil destes ativos é a seguinte:
+
+                 Tecnologia                                                    5 anos
+                 Relacionamento com clientes                                   2 anos
+
+
+               l.       Depósitos
+
+               Correspondem aos valores de depósitos realizados por clientes na Conta do Nubank,
+               que faz parte da modalidade de conta de pagamento pré-paga cuja remuneração é de
+               100% do CDI, a partir do trigésimo primeiro dia, contando também com o recebimento
+               do rendimento retroativo dos trinta dias iniciais sobre o saldo depositado e não
+               movimentado, e é reconhecida pelo método da taxa efetiva de juros.
+
+               m.       Relações interfinanceiras
+
+               Correspondem a valores a pagar, registrados pelo valor de liquidação, à bandeira
+               Mastercard relativos às operações de cartões de crédito e a outros sistemas de
+               liquidação.
+
+               n.       Obrigações por empréstimos
+
+               Correspondem a empréstimos captados com terceiros e/ou com partes relacionadas,
+               reconhecidos inicialmente pelo custo e atualizados de acordo com a taxa efetiva de
+               juros.
+
+               o.       Receita diferida
+
+               Entende-se como receita diferida as receitas correspondentes a um acréscimo no
+               ativo da entidade que ocorreu antes do cumprimento da obrigação contratual
+               (prestação de serviço), cuja apropriação como renda efetiva depende apenas da
+               fluência do prazo.
+
+               A Companhia possui um programa de recompensa para seus clientes de cartão de
+               crédito chamado "Nu Rewards". O plano consiste no acúmulo de pontos de acordo
+               com a utilização do cartão de crédito na proporção de R$1,00 (um Real) igual a 1
+               ponto. O número de pontos gerados pode ser maior para transações com algumas
+               empresas parceiras ou para transações que atendem às pré-condições do Nu. Os
+
+                                                                 29
+
+=== página 31 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               pontos não expiram e não há limite para a quantidade de recompensas que um
+               membro elegível do cartão pode ganhar. O resgate dos pontos é realizado mediante a
+               compensação dos pontos com compras feitas pelo usuário em várias categorias de
+               despesas, como passagens aéreas, hotéis, serviços de transporte e música, ou
+               através de cashback.
+
+               O valor financeiro estimado desses pontos inicialmente reduz a receita de intercâmbio.
+               A estimativa é revisada, no mínimo, a cada data de publicação das Demonstrações
+               Contábeis e/ou em caso de existência de fato relevante que afete o valor estimado
+               inicialmente. Quando do resgate de pontos, a redução inicial da receita de intercâmbio
+               é revertida e é reconhecido no resultado o custo efetivo gerado pelo resgate.
+
+               p.       Ativos e passivos contingentes e provisões
+
+               Ativos e passivos contingentes são direitos e obrigações potenciais decorrentes de
+               eventos passados, cuja ocorrência depende de eventos futuros.
+
+               Ativos contingentes não são reconhecidos nas demonstrações contábeis, exceto
+               quando a Administração da Companhia acredita que sua realização é praticamente
+               certa, o que geralmente corresponde a processos com decisões favoráveis, em
+               julgamentos finais e inapeláveis, finalização de processos em decorrência de
+               liquidação por pagamento ou como resultado de um acordo para compensar um
+               passivo existente.
+
+               As provisões decorrem principalmente de processos administrativos e ações judiciais,
+               inerentes ao curso normal dos negócios. São reconhecidas nas demonstrações
+               contábeis quando for considerado provável o risco de perda de uma ação judicial ou
+               administrativa, com uma provável saída de recursos para a liquidação das obrigações
+               e quando os montantes envolvidos forem mensuráveis com suficiente segurança.
+
+               Os passivos contingentes são classificados de acordo com sua probabilidade de
+               perda como:
+
+               ■ Provável: são reconhecidas provisões para o passivo no balanço patrimonial;
+               ■ Possível: divulgados nas demonstrações contábeis, mas para as quais nenhuma
+                 provisão é reconhecida; e
+               ■ Remoto: não requerem provisão e nem divulgação.
+
+               O valor dos depósitos judiciais é ajustado de acordo com a legislação vigente.
+
+               q.       Pagamentos baseado em ações
+
+               O Grupo mantém um plano de incentivos de longo prazo, estruturado por meio de
+               outorga de opções de ações (“SOPs”), Restricted Stock Units (“RSUs”) e outras
+               transações ("contingent shares awards") com pagamento baseado em ações
+               vinculadas às condições de mercado. O objetivo é proporcionar aos colaboradores do
+               Grupo a oportunidade de se tornarem acionistas da Companhia, criando um maior
+
+                                                                 30
+
+=== página 37 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               para determinar o valor justo. O julgamento significativo da administração pode ser
+               requerido para determinar se certos instrumentos financeiros mensurados ao valor
+               justo são classificados como Nível 2 ou Nível 3. Para essa determinação, o Grupo
+               considera todas as informações disponíveis que os participantes do mercado utilizam
+               para mensurar o valor justo do instrumento financeiro, incluindo dados de mercado
+               observáveis, indicadores de liquidez e nível de atividade do mercado, e a compreensão
+               das técnicas de avaliação e dados significativos usados.
+
+               Com base nos fatos e circunstâncias específicos de cada instrumento ou categoria
+               de instrumento, os julgamentos são feitos em relação à importância das entradas do
+               Nível 3 para a medição do valor justo dos instrumentos em sua totalidade. Se os dados
+               do Nível 3 forem considerados significativos, o instrumento é classificado como Nível
+               3. O processo de determinação do valor justo por meio dos dados não observáveis é
+               geralmente mais subjetivo e envolve um alto grau de julgamento e premissas da
+               administração.
+
+               Mais informações sobre os inputs relevantes não observáveis e outras informações
+               estão divulgadas na nota 25.
+
+               e.       Contabilidade de tokens blockchain
+
+               Atualmente, não há orientação específica fornecida pelas práticas contábeis
+               adotadas no Brasil ou qualquer estrutura contábil alternativa em relação ao
+               tratamento contábil do token blockchain gerado internamente e emitido pela Nu
+               Holdings Ltd. (“Nucoin Network”) associado a um pool de liquidez e rede de fidelidade
+               operacionalizados por suas subsidiárias. Consequentemente, a Administração teve
+               que exercer julgamento significativo na determinação do tratamento contábil
+               apropriado.
+
+               O exercício de julgamento foi relevante na aplicação da estrutura contábil à emissão
+               de tokens para clientes e suas vendas e aquisições do pool de liquidez, levando em
+               consideração o compromisso limitado da Nu Holdings Ltd. de suportar o pool de
+               liquidez e da Companhia em avaliar obrigações presentes e/ou construtivas. Além
+               disso, o julgamento foi crucial para a Companhia determinar quando reconhecer uma
+               obrigação de desempenho devido à entrega e "staking" de tokens aos clientes e avaliar
+               a avaliação da obrigação.
+
+                        5.       Caixa e equivalentes de caixa
+                                                                               31/12/2023      31/12/2022
+
+                Disponibilidades                                                    119.684         364.068
+                Investimentos de curto prazo                                          5.309             237
+                Aplicações interfinanceiras de liquidez (Nota 19)                          -      3.222.997
+
+                Total                                                              124.993        3.587.302
+
+
+
+
+                                                                    36
+
+=== página 38 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               a.       Disponibilidades
+
+                                                                                         31/12/2023            31/12/2022
+
+                Caixa                                                                                -                   32
+                Banco - conta movimento                                                        96.888               330.618
+                Outras reservas livres                                                             50                   706
+                Disponibilidades em moeda estrangeira                                          22.746                32.712
+
+                Total                                                                        119.684               364.068
+
+
+               b.       Investimentos de curto prazo
+
+                                                                                     31/12/2023                 31/12/2022
+                                                                               0 - 30           Total              Total
+
+                Certificados de depósitos bancários                                   282                282           237
+                Fundos de investimento                                               5.027            5.027                  -
+
+
+                Total                                                                5.309            5.309            237
+
+
+               Corresponde a investimentos de curto prazo de alta liquidez com vencimentos
+               originais de três meses ou menos e com um risco irrelevante de mudança de valor.
+
+               c.       Aplicações interfinanceiras de liquidez
+
+                                                                                     31/12/2023                 31/12/2022
+                                                                               0 - 30           Total              Total
+
+                Aplicações no mercado aberto
+                Letras Financeiras do Tesouro - LFT (Nota 19)                    -                -               3.222.997
+
+                Total                                                            -                -               3.222.997
+
+
+               As aplicações interfinanceiras de liquidez realizadas pela Companhia são overnight,
+               ou seja, liquidadas sempre no próximo dia útil, desta forma a Companhia não possui
+               aplicações interfinanceiras de longo prazo.
+
+               A taxa média das aplicações compromissadas em 31 de dezembro de 2022
+               correspondem a aproximadamente 98%, da taxa referencial de juros ("DI").
+
+
+
+
+                                                                 37
+
+=== página 39 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+
+                        6.         Títulos e valores mobiliários
+
+                                                                                               31/12/2023                31/12/2022
+
+                Carteira própria                                                                          199.904            164.307
+                Vinculado a saldos em conta pré paga (i)                                                         -        10.913.914
+                Vinculado a prestação de garantia                                                         469.240            267.441
+                Vinculados a operações compromissadas                                              2.108.679                          -
+
+
+                Total                                                                              2.777.823              11.345.662
+                Circulante                                                                           434.790               8.966.422
+                Não circulante                                                                     2.343.033               2.379.240
+
+               (i) Referem-se aos montantes aplicados em títulos públicos federais detidos pela instituição com base nos saldos
+               de moeda eletrônica mantidos em contas de pagamento pré-pagas.
+
+
+               a.       Concentração por tipo, classificação e prazo de vencimento contratual
+
+
+                                                                               31/12/2023                                31/12/2022
+                                                    Custo       Valor de           Sem       Abaixo         Acima de      Valor de
+                                                  atualizado    Mercado         vencimento   de 365           365         Mercado
+
+                Carteira própria                    199.882      199.904             6.693          -         193.211        164.307
+                Disponível para venda                199.882      199.904            6.693            -       193.211        164.307
+
+                Vinculado a saldos em conta                 -              -             -          -                -    10.913.914
+                pré-paga
+                Disponível para venda                       -              -             -            -              -    10.913.914
+
+                Vinculado a prestação de            469.222      469.240                 -   428.089           41.151        267.441
+                garantias
+                Para negociação                            8            8                -          -               8              7
+                Disponível para venda                469.214      469.232                -   428.089           41.143        267.434
+
+                Vinculado a operações             2.109.077     2.108.679                -          -       2.108.679                 -
+                compromissadas
+                Disponível para venda              2.109.077    2.108.679                -            -     2.108.679                 -
+
+                Total                             2.778.181     2.777.823            6.693   428.089        2.343.041     11.345.662
+
+
+               Não houve reclassificação nos critérios de registro dos títulos e valores mobiliários
+               no exercício findo em 31 de dezembro de 2023 e 2022.
+
+
+
+
+                                                                     38
+
+=== página 40 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               b.       Para negociação
+                                                                               31/12/2023                                    31/12/2022
+                                                       Custo        Valor de         Sem          Abaixo       Acima          Valor de
+                                                     atualizado     Mercado      vencimento       de 365       de 365         Mercado
+
+                Vinculados a prestação de                     8             8               -             -          8                7
+                garantias
+                Títulos privados                              8             8               -             -          8                7
+                Recibos de depósitos bancários                8             8               -             -          8                7
+
+                Total                                         8             8               -             -          8                7
+
+
+
+               c.       Disponíveis para venda
+
+                                                                            31/12/2023                                       31/12/2022
+                                                   Custo      Valor de          Sem         Abaixo de         Acima de        Valor de
+                                                 atualizado   Mercado       vencimento        365               365           Mercado
+
+                Carteira própria                   199.882        199.904          6.693              -        193.211          164.307
+                Títulos públicos - Brasil          193.189        193.211              -              -        193.211                -
+                Letras Financeiras do Tesouro      193.189        193.211               -             -        193.211                 -
+
+                Cotas de fundos de                   6.693          6.693          6.693              -                  -      164.307
+                investimento
+                Cotas de fundos de                   6.693          6.693          6.693              -                  -      164.307
+                investimento (i)
+
+                Vinculados a saldos em conta              -             -               -             -                  -   10.913.914
+                pré-paga
+                Títulos públicos - Brasil                 -             -               -             -                  -   10.913.914
+                Letras Financeiras do Tesouro             -             -               -             -                  -   10.913.914
+
+                Vinculados a prestação de          469.214        469.232               -       428.089         41.143          267.434
+                garantias
+                Títulos públicos - Brasil          469.214        469.232               -       428.089         41.143          267.434
+                Letras Financeiras do Tesouro      469.214        469.232               -       428.089         41.143          267.434
+
+
+                Vinculados a operações           2.109.077    2.108.679                 -             -       2.108.679                -
+                compromissadas
+                Títulos públicos - Brasil        2.109.077    2.108.679                 -             -       2.108.679                -
+
+                Letras Financeiras do Tesouro    2.109.077    2.108.679                 -             -       2.108.679                   -
+
+
+
+                Total                            2.778.173    2.777.815            6.693        428.089       2.343.033      11.345.655
+
+
+               (i) Refere-se à aplicação em cotas de fundos de investimento (diversos fundos), não exclusivos, em 31 de dezembro
+               de 2023 e 2022.
+
+
+
+               Os resultados dos ajustes ao valor de mercado não realizados dos títulos disponíveis
+               para venda que se encontram em outros resultados abrangentes no patrimônio líquido
+                                                                      39
+
+=== página 41 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               são uma perda de R$434 e R$1.481 no semestre e exercício findos em 31 de
+               dezembro de 2023, respectivamente, e um ganho de R$3.176 no exercício findo em
+               31 de dezembro de 2022.
+
+                        7.      Instrumentos financeiros derivativos
+
+               A Companhia está autorizada a executar transações com instrumentos financeiros
+               derivativos, que se destinam a atender às suas próprias necessidades, a fim de reduzir
+               sua exposição a riscos de mercado, moeda e juros. A administração desses riscos é
+               realizada através da determinação de limites e estabelecimento de estratégias
+               operacionais.
+
+               a.       Valores de referência por indexador e prazo de vencimento
+
+                                                                               31/12/2023                         31/12/2022
+                                                             Até 3        De 3 a 12   Acima de      Total            Total
+                                                             meses         meses      12 meses
+
+                Contratos de futuros
+                Compromissos de compra                       5.641.317     827.932      22.706     6.491.955        3.379.826
+                Taxa de juros                                2.698.820     827.932      22.706     3.549.458        2.142.694
+                Moeda estrangeira                            2.942.497            -           -    2.942.497        1.237.132
+
+                Total                                        5.641.317     827.932      22.706     6.491.955        3.379.826
+
+
+               b.       Valores a receber e a pagar de contratos de futuros por indexador
+                                                                                        31/12/2023
+                                                                Valor de referência    Valores a receber       Valores a pagar
+
+                Taxa de juros                                             3.549.458                    2                     16
+                Futuro - DI                                               3.549.458                    2                     16
+
+                Moeda estrangeira                                         2.942.497               14.499                       -
+                Futuro - Dólar                                            2.888.552               14.432                       -
+                Futuro - Euro                                                53.945                   67                       -
+
+                Total                                                     6.491.955               14.501                     16
+
+                                                                                       31/12/2022
+                                                                 Valor de referência   Valores a receber       Valores a pagar
+
+                Taxa de juros                                             2.142.694                        -                  1
+                Futuro - DI                                               2.142.694                        -                  1
+
+                Moeda estrangeira                                         1.237.132               10.623                     831
+                Futuro - Dólar                                            1.207.209               10.161                     807
+                Futuro - Euro                                                29.923                  462                      24
+
+                Total                                                     3.379.826               10.623                     832
+
+
+
+                                                                     40
+
+=== página 42 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               Os contratos de futuros são negociados na bolsa de valores, tendo como contraparte
+               a própria B3.
+
+               A Companhia mantém contratos de futuro dólar e futuro euro com valor de referência
+               de R$857.436 e R$46.123, respectivamente, designados como hedge accounting
+               (R$649.790 em dezembro de 2022 referente a futuro dólar), vide letra c. com maiores
+               detalhes da operação.
+
+               Em 31 de dezembro de 2023 o valor total das margens dadas em garantia pela
+               Companhia em operações em bolsa era de R$469.232 (R$267.346 em 31 de
+               dezembro de 2022) e são compostas em sua totalidade por títulos públicos.
+
+               c.       Análise dos derivativos designados como hedge de fluxo de caixa
+
+               Hedge de risco cambial
+
+               A Companhia está exposta ao risco de moeda estrangeira em transações previstas,
+               principalmente despesas de infraestrutura, processamento de dados contratados e
+               despesas intercompanhia.
+
+               A Companhia administra sua exposição à variabilidade nos fluxos de caixa de
+               transações previstas em moeda estrangeira em relação a movimentos em moeda
+               estrangeira, entrando em contratos de câmbio (futuros de câmbio). Esses
+               instrumentos são celebrados de acordo com o perfil de fluxo de caixa da transação
+               estimada.
+
+               A eficácia é avaliada mensalmente, analisando os termos críticos. Os termos críticos
+               do instrumento de cobertura e o montante da transação prevista coberta podem ser
+               considerados os mesmos, porque os valores nocionais e subjacentes do instrumento
+               de cobertura e da transação prevista coberta são significativamente os mesmos e as
+               despesas previstas deverão ocorrer no mesmo mês que a data de vencimento do
+               instrumento de hedge. Portanto, espera-se que a cobertura seja perfeitamente eficaz.
+               Avaliações subsequentes da efetividade são realizadas verificando e documentando
+               se os termos críticos do instrumento de hedge e a transação prevista coberta
+               mudaram durante o período em análise e se continua provável. Se não houver tais
+               mudanças em termos críticos, a Companhia continuará a concluir que a relação de
+               cobertura é perfeitamente eficaz.
+
+               Inefetividade pode ocorrer quando houver diferenças em relação ao valor e período
+               em que as transações previstas ocorrem e os derivativos contratados.
+
+
+
+
+                                                                 41
+
+=== página 43 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+                                                                                              31/12/2023            31/12/2022
+
+                Saldo inicial dos instrumentos de Hedge de fluxo de caixa reconhecidos em                 (8.001)         8.991
+                Outros Resultados Abrangentes
+
+                Alterações no valor do instrumento de cobertura reconhecido em Outros                   (147.379)       (96.360)
+                resultados abrangentes
+                Valor total reclassificado de reserva de hedge de fluxo de caixa para a                  102.058         67.650
+                demonstração do resultado durante o período
+                Impostos reconhecidos em outros resultados abrangentes                                     18.130         11.718
+                Saldo final                                                                              (35.192)        (8.001)
+
+
+               Principais transações e compromissos futuros do objeto de hedge
+
+                                                                                 31/12/2023                         31/12/2022
+                                                               Até 3      De 3 a 12    Acima de           Total         Total
+                                                               meses       meses       12 meses
+
+                Principais transações
+                Transações previstas em moeda                  323.927      572.689                       896.616       649.738
+                estrangeira                                                                       -
+
+                Total                                          323.927      572.689           -           896.616       649.738
+
+
+
+                        8.       Operações de cartão de crédito
+
+               a.       Composição das operações de cartão de crédito
+
+                                                                        31/12/2023                           31/12/2022
+                                                                  Carteira      Provisão              Carteira       Provisão
+
+                Valores a receber de cartão de crédito           47.223.106     (2.655.336)       35.932.240         (1.385.860)
+
+                Total                                           47.223.106      (2.655.336)       35.932.240         (1.385.860)
+                Circulante                                      47.218.739      (2.654.744)       35.928.582         (1.385.719)
+                Não circulante                                       4.367            (592)            3.658               (141)
+
+
+               A partir de maio de 2021, a Companhia passou a oferecer o produto de cartão de
+               crédito para pessoas jurídicas, predominantemente microempreendedores
+               individuais. Em 31 de dezembro de 2023, os saldos registrados como carteira de
+               crédito e provisão para esta modalidade eram de R$587.695 e R$40.721,
+               respectivamente (R$144.515 e R$8.868 em dezembro de 2022).
+
+
+
+
+                                                                     42
+
+=== página 44 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               b.           Composição das operações de cartão de crédito por vencimento
+
+                                                                                         31/12/2023          31/12/2022
+                Curso normal                                                               47.219.768          35.912.739
+                Parcelas vencidas                                                                  44                  87
+                Até 14 dias                                                                        44                  87
+                Parcelas a vencer                                                          47.219.724          35.912.652
+                até 3 meses                                                                36.253.619          27.649.983
+                3 a 6 meses                                                                 7.561.337           5.673.613
+                6 a 12 meses                                                                3.400.401           2.585.587
+                acima de 12 meses                                                               4.367               3.469
+
+                Curso Anormal                                                                   3.338             19.501
+                Parcelas vencidas                                                               1.943             14.424
+                Acima de 14 dias                                                                1.943             14.424
+                Parcelas a vencer                                                               1.395              5.077
+                até 3 meses                                                                     1.044              2.785
+                3 a 6 meses                                                                       233                893
+                6 a 12 meses                                                                      118              1.210
+                acima de 12 meses                                                                    -               189
+
+                Total                                                                       47.223.106        35.932.240
+
+
+               c.           Classificação das operações de cartão de crédito por níveis de risco -
+                            Resolução no 2.682/99 do CMN
+
+               A tabela abaixo apresenta o saldo total das operações de acordo com a classificação
+               de risco atribuída para tal operação.
+
+                                               31/12/2023                                     31/12/2022
+                    Nível           Curso       Curso            Total          Curso            Curso           Total
+                                    Normal     Anormal                          Normal          Anormal
+
+                        A         46.362.530             -     46.362.530      35.867.340                -     35.867.340
+                        B            429.009           12         429.021          11.829           1.183          13.012
+                        C            268.017            2         268.019           8.952             423           9.375
+                        D             75.477           13          75.490           3.931             299           4.230
+                        E             28.466            1          28.467             716             215             931
+                        F             16.611            6          16.617             584             259             843
+                        G             10.449            1          10.450             820             303           1.123
+                        H             29.209        3.303          32.512          18.567          16.819          35.386
+
+                    Total         47.219.768        3.338     47.223.106       35.912.739          19.501     35.932.240
+
+
+
+
+                                                                 43
+
+=== página 45 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               d.         Classificação das operações de cartão de crédito e respectivas provisões para
+                          perda por níveis de risco de acordo com modelos internos de avaliação
+
+                                                                31/12/2023
+                Nível de Risco    Curso Normal    Curso Anormal              Total        Provisão Total    Índice de
+                                                                                                           cobertura %
+
+                      1              21.342.576                   5          21.342.581        (240.437)           1,1%
+                      2              10.101.532                   4          10.101.536        (328.072)           3,2%
+                      3              11.732.163                  19          11.732.182        (929.872)           7,9%
+                      4               2.489.777                  21           2.489.798        (464.809)          18,7%
+                      5               1.553.720               3.289           1.557.009        (692.146)          44,5%
+
+                    Total            47.219.768               3.338        47.223.106       (2.655.336)            5,6%
+
+
+                                                                31/12/2022
+                Nível de Risco    Curso Normal    Curso Anormal              Total        Provisão Total    Índice de
+                                                                                                           cobertura %
+
+                      1              21.687.946                  10          21.687.956        (247.634)           1,1%
+                      2               7.051.400                  35           7.051.435        (243.910)           3,5%
+                      3               5.096.097                  67           5.096.164        (384.497)           7,5%
+                      4                 993.909                  40             993.949        (166.358)          16,7%
+                      5               1.083.387              19.349           1.102.736        (343.461)          31,1%
+
+                    Total            35.912.739              19.501        35.932.240       (1.385.860)            3,9%
+
+
+               No seu processo de gestão do risco de crédito, a Companhia utiliza modelos internos,
+               considerando a situação econômico-financeira dos clientes e a pontualidade desses
+               no cumprimento com suas obrigações financeiras passadas. O cálculo da provisão
+               pelo modelo interno leva em consideração tais informações para estimar a perda
+               esperada de crédito, bem como a probabilidade de que a exposição seja caracterizada
+               como ativo problemático.
+
+               Durante o ciclo, as estimativas dos parâmetros usados dentro do modelo interno de
+               provisão sofreram atualizações que incluem a calibragem dos parâmetros, refletindo
+               as mudanças nas políticas de concessão da Companhia e estratégias de cobrança,
+               bem como a inclusão de dados mais recentes de risco e recuperações.
+
+               As movimentações do índice de cobertura estão associadas majoritariamente à
+               expansão da carteira de crédito em diferentes níveis de risco no período.
+
+               Os grupos de risco discriminados na tabela acima são classificados de acordo com a
+               probabilidade de inadimplência atribuída às operações de crédito por modelo interno.
+               Além da probabilidade de inadimplência, o nível de provisionamento leva em
+               consideração o valor esperado da exposição no momento da inadimplência e o valor
+               esperado da recuperação dado o evento de inadimplência. Abaixo está o
+               detalhamento dos níveis de risco de cada um dos grupos mencionados:
+
+
+                                                                      44
+
+=== página 46 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+
+                Nível de risco                                                             Probabilidade de inadimplência
+                1                                                                                                  < 1.0%
+                2                                                                                             1.0% a 5.0%
+                3                                                                                            5.0% a 20.0%
+                4                                                                                           20.0% a 35.0%
+                5                                                                                                 > 35.0%
+
+               e.       Movimentação da provisão para perdas esperadas associadas ao risco de
+                        crédito
+                                                                                       31/12/2023             31/12/2022
+                                                                                2º Semestre    Exercício       Exercício
+                Saldo no início do semestre/exercício                            (1.840.008) (1.385.860)         (797.162)
+
+                (Constituição)/Reversão de provisão                              (1.461.068)   (2.390.733)     (1.394.058)
+                Créditos baixados para prejuízo                                       25.341        63.010          26.806
+                Baixa devido a cessão de operações                                   620.399     1.058.247         778.554
+
+                Saldo no final do semestre/exercício                            (2.655.336)    (2.655.336)     (1.385.860)
+
+
+               f.       Despesa de provisão para perdas esperadas associadas ao risco de crédito e
+                        recuperação de créditos
+
+                                                                                        31/12/2023            31/12/2022
+                                                                                 2º Semestre     Exercício      Exercício
+                Constituição/Reversão de provisão                                 (1.461.068)   (2.390.733)    (1.394.058)
+                Recuperação de créditos baixados como prejuízo                        168.508       241.181         61.986
+                Provisão para perdas esperadas associadas ao risco de crédito     (1.292.560)  (2.149.552)    (1.332.072)
+
+
+               g.       Operações renegociadas
+
+               O saldo de operações renegociadas foi de R$5.481 e R$10.555 em 31 de dezembro
+               de 2023 e 2022, respectivamente.
+
+               As operações de cartão de crédito objeto de renegociação, em sua maioria, passaram
+               a ser emitidas por sua controlada Nu Financeira.
+
+
+               h.       Operações cedidas
+
+               A Companhia realizou a cessão de recebíveis de transações de pagamento com
+               retenção substancial de risco no montante de R$530.563 e R$10.592.361 durante o
+               semestre e exercício findos em 31 de dezembro de 2023, respectivamente, e
+               R$18.801.860 no exercício findo em 31 de dezembro de 2022.
+
+               Em março de 2020, a Nu Financeira passou a emitir operações com incidência de juros
+               (Cédula de Crédito - CCB) referentes aos recebíveis das operações de cartão de
+               crédito dos clientes da Companhia. O volume de emissões aumentou gradualmente e,
+               a partir de outubro de 2020, todas as novas operações passaram a ser emitidas pela
+
+
+
+                                                                    45
+
+=== página 47 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               Nu Financeira para aqueles clientes que não possuíam qualquer outra CCB de
+               transações de cartão de crédito em aberto.
+
+               No caso de clientes que já possuem CCBs ativas, ou seja, que já se encontram com
+               algum tipo de financiamento em aberto (rotativo, atraso de pagamento de fatura,
+               acordos e etc.), a Companhia passou a realizar cessão para a Nu Financeira, com
+               transferência substancial dos riscos e benefícios, pelo seu valor justo, visto que esses
+               clientes apresentam uma maior deterioração do risco de crédito.
+
+               Essas operações de cessão a valor justo, são integralmente baixadas da carteira de
+               cartão de crédito da Companhia. O valor do desconto na cessão é apresentado na
+               rubrica de "Prejuízos em operações de venda ou transferência com desconto", na data
+               em que ocorre a cessão, e compõe a divulgação de transações com partes
+               relacionadas (Nota 19).
+
+                        9.       Outros créditos
+                                                                                            31/12/2023          31/12/2022
+
+                Valores pendentes de liquidação (i) - Partes relacionadas (Nota 19)            15.427.248           6.879.880
+                Despesas antecipadas (ii)                                                       1.218.960           1.017.756
+                Valores pendentes de liquidação                                                   211.433              14.102
+                Depósitos judiciais (Nota 18)                                                       1.687              86.536
+                Impostos e contribuições a compensar                                                     -              1.500
+                Rendas a receber - Partes relacionadas (Nota 19)                                    6.715              35.985
+                Dividendos a receber - Partes relacionadas (Nota 19)                              500.000                    -
+                Valores a receber - Partes relacionadas (Nota 19)                                 161.551             105.359
+                Diversos (iii)                                                                    585.487             240.562
+
+                Total                                                                          18.113.081           8.381.680
+                Circulante                                                                     17.634.920           8.081.664
+
+                Não circulante                                                                    478.161             300.016
+
+               (i) Refere-se a valores a liquidar entre a Companhia e sua controlada Nu Financeira, decorrentes de empréstimos
+               concedidos a clientes e de depósitos a prazo emitidos originados por transações efetuadas pelos clientes do
+               Grupo.
+               (ii) Refere-se substancialmente às despesas diferidas referentes a custos para originação de operações de cartão
+               de crédito, sendo os mais relevantes os custos de emissão de cartões.
+               (iii) Corresponde majoritariamente a adiantamentos realizados por parceiros de pagamentos.
+
+
+
+
+                                                                      46
+
+=== página 48 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               10.       Investimentos em participações em controladas
+                                                                                                                     31/12/2023
+                                                                                                                                      Resultado     Resultado        Valor
+                                      Participação       Ativo         Ativo não          Passivo          Capital       Patrimônio   líquido do   abrangente     contábil do   Ágio         Total
+                                         direta       circulante       circulante        circulante        social          líquido     exercício    líquido do   investimento
+                                                                                                                                                     exercício
+
+                No exterior                                  221                    -                 -       5.137            221           (3)          (17)           221           -         221
+                Nu Payments (i)          100%                221                    -                 -       5.137            221           (3)          (17)           221           -         221
+
+                No país                              102.838.857       37.325.286       129.967.861       5.447.432      10.196.282   4.979.992        14.920     10.196.282    36.992     10.233.274
+                Nu Asset                  0%                       -                -                 -              -            -      (2.986)             -              -          -             -
+                Management (ii)
+                Nu Financeira (iii)      100%        102.564.252       37.176.026       129.733.148       5.303.748      10.007.130   4.962.717        14.901     10.007.130           -   10.007.130
+                Nu Canais (iv)           100%            105.583           36.031            93.918          30.000          47.696     (11.619)             -        47.696           -       47.696
+                NuPay for                100%            169.022         113.229            140.795        113.684          141.456      31.880            19        141.456    36.992       178.448
+                Business (v)
+
+                Total geral                          102.839.078       37.325.286       129.967.861       5.452.569      10.196.503   4.979.989        14.903     10.196.503    36.992     10.233.495
+
+               (i) Nu Payments, LLC: Sociedade limitada, subsidiária direta da Companhia, constituída de acordo com a Lei das Sociedades Limitadas de Delaware nos Estados Unidos da
+               América. Possui como atividade principal a prestação de serviços de natureza financeira;
+               (ii) Nu Asset Management Ltda.: Sociedade limitada, subsidiária direta da Companhia, constituída em 3 de janeiro de 2018, de acordo com a Lei n 12.375/2010 que trata das
+               Sociedades Limitadas. Possui como atividade principal a prestação de serviços de gestão de fundos de investimentos. Em 27 de dezembro de 2022 com o intuito de concentrar
+               todas as atividades relacionadas a investimentos e gestão de ativos em uma única estrutura organizacional, a Companhia alienou 100% do controle da Nu Asset Management
+               Ltda. para sua controlada indireta Nu Distribuidora de Títulos e Valores Mobiliários LTDA ("Nu DTVM"). A transação foi aprovada pelo BACEN em 23 de junho de 2023, e a
+               transferência efetiva do controle ocorreu no dia 06 de julho de 2023, quando todas as cláusulas de fechamento se cumpriram;
+               (iii) Nu Financeira S.A. – SCFI: Instituição financeira autorizada pelo BACEN, subsidiária direta da Companhia, constituída em 28 de fevereiro de 2018, de acordo com as diretrizes
+               estabelecidas pelo BACEN. Possui como atividade principal a prestação de serviços de natureza financeira; e
+               (iv) Nu Canais Ltda.: Sociedade limitada, subsidiária direta da Companhia, constituída em 27 de agosto de 2020, de acordo com a Lei n 12.375/2010 que trata das Sociedades
+               Limitadas. Possui como atividades principais a prestação de atividades auxiliares de seguro e previdência complementar.
+               (v) NuPay For Business Instituição de Pagamento Ltda.: Sociedade limitada, subsidiária direta da Companhia, constituída de acordo com a Lei n 12.375/2010 que trata das
+               Sociedades Limitadas em 10 de dezembro de 2018. Possui como atividade principal a prestação de serviços de pagamentos.
+
+
+
+
+                                                                                                            47
+
+=== página 49 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+                                                                                                                           31/12/2022
+
+                                                                                                                                         Resultado          Resultado          Valor contábil
+                                   Participação        Ativo         Ativo não         Passivo             Capital        Patrimônio     líquido do        abrangente                do               Ágio         Total
+                                      direta        circulante       circulante       circulante           social           líquido       exercício         líquido do         investimento
+                                                                                                                                                             exercício
+
+                No exterior                                   241                 -                -          5.137              241                (20)                 -               241                 -              241
+                Nu Payments           100%                    241                 -                -          5.137              241                (20)                 -               241                 -              241
+
+                No país                              91.867.681      4.777.661        90.985.420           4.156.834       5.659.922      1.388.704             21.583              5.659.922          51.543       5.711.465
+                Nu Asset              100%                  18.515                -         1.115            24.740            17.400               243                  -            17.400                 -            17.400
+                Management
+                Nu Financeira         100%           91.622.099      4.759.207        90.878.014           4.008.410       5.503.292       1.377.292            21.583              5.503.292                -      5.503.292
+                Nu Canais             100%               84.356         16.779            69.739              10.000          31.396           9.052                  -                31.396                -         31.396
+                NuPay for             100%              142.711           1.675           36.552            113.684           107.834          2.117                     -           107.834           51.543            159.377
+                Business
+
+                Total geral                          91.867.922      4.777.661        90.985.420           4.161.971       5.660.163      1.388.684             21.583              5.660.163          51.543       5.711.706
+
+
+                    a. Movimentação dos investimentos
+                                                                              Nu Asset                       Nu Financeira         Nu Canais               Nu Payments                  NuPay for                Total
+                                                                                                                                                                                        Business
+
+                Saldo em 31/12/2022                                                         17.400               5.503.292               31.396                              241                159.377            5.711.706
+
+                Amortização de ágio                                                                -                      -                     -                               -               (14.551)             (14.551)
+                Aumento de capital                                                                 -                      -               20.000                                -                       -              20.000
+                Resultado de participações em controladas                                   (2.986)              4.962.717              (11.619)                              (3)                 31.880           4.979.989
+                Plano de ações                                                                1.593                 26.220                 7.919                                -                  1.723               37.455
+                Alienação de investimentos                                                 (16.007)                       -                     -                               -                       -            (16.007)
+                Dividendos a receber                                                               -             (500.000)                      -                               -                       -          (500.000)
+                Outros resultados abrangentes                                                      -                14.901                      -                            (17)                     19               14.903
+
+                Saldo em 31/12/2023                                                                    -       10.007.130                47.696                              221                178.448           10.233.495
+
+
+
+
+                                                                                                                     48
+
+=== página 50 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+                   b. Análise de impairment do ágio
+
+               O ágio da aquisição da NuPay está relacionado à (a) propriedade intelectual, pois o
+               software oferece à empresa um diferencial competitivo e será utilizado para atender
+               as demandas particulares do mercado de pagamentos instantâneos e (b)
+               relacionamento com clientes, pois a carteira de clientes e sua geração de receita ao
+               longo dos anos mostrou que existe recorrência, desta forma o vínculo com os clientes
+               gera um ativo para a empresa.
+
+               Para efeitos de teste de impairment, a Business Unit NuPay formou a unidade geradora
+               de caixa (“UGC”), para a qual foi alocado o ágio. O teste de impairment foi realizado na
+               data base de 30 de setembro de 2023 e nenhum ajuste ao valor recuperável foi
+               registrado nas demonstrações contábeis, porque o valor recuperável desta UGC foi
+               considerado superior ao seu valor contábil.
+
+               Principais áreas de julgamento
+
+               Os valores atribuídos às principais premissas representam a avaliação da
+               administração das tendências futuras no setor relevante e foram baseados em dados
+               históricos de fontes externas e internas.
+
+               A taxa de desconto utilizada foi o custo de capital próprio para negócios no Brasil,
+               onde as atividades da entidade estão concentradas. As projeções de fluxo de caixa
+               por 5 anos para a UGC NuPay foram incluídas no modelo de fluxo de caixa
+               descontado. Uma taxa de crescimento de longo prazo foi usada para extrapolar os
+               fluxos de caixa para além desses períodos. A taxa de crescimento na perpetuidade foi
+               determinada como a taxa de inflação de longo prazo atualmente esperada para o
+               Brasil.
+
+               O crescimento da receita foi projetado levando em consideração os níveis médios de
+               crescimento experimentados nos últimos cinco anos e o crescimento estimado para
+               os próximos cinco anos. O lucro orçado antes de impostos, depreciação e
+               amortização foi baseado nas expectativas de resultados futuros levando em
+               consideração a experiência passada, ajustado para o crescimento previsto da receita.
+               As principais premissas descritas acima podem mudar à medida que as condições
+               econômicas e de mercado mudam.
+
+               O valor recuperável estimado para a UGC NuPay excedeu seu valor contábil, em 30 de
+               setembro de 2023. O valor contábil e as principais premissas utilizadas na
+               determinação do valor recuperável são:
+
+                    Unidades
+                  geradoras de                                                   Taxa de            Taxa de
+                      caixa            Valor contábil          Ágio            desconto (%)     crescimento (%)
+
+                NuPay                          91.442              40.405                15,5                 3
+
+
+
+
+                                                                 49
+
+=== página 51 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               11.      Imobilizado e intangível
+                                                                                             31/12/2023                                                  31/12/2022
+                                                                                           Depreciação /                                                 Depreciação /      Valor
+                                                                               Custo       amortização            Valor líquido           Custo           amortização      líquido
+                                                                                            acumulada                                                      acumulada
+
+                Imobilizado em uso                                              158.978          (89.126)                 69.852           148.751            (60.010)        88.741
+                Equipamentos de informática                                      71.634          (44.600)                 27.034            61.383            (32.122)        29.261
+                Móveis e utensílios                                              10.058            (4.492)                 5.566             9.744              (3.478)        6.266
+                Benfeitorias em imóveis de terceiros                             77.286          (40.034)                 37.252            77.624            (24.410)        53.214
+
+                Intangível                                                      728.940       (131.128)                 597.812            357.007            (70.639)       286.368
+                Softwares adquiridos                                             81.991         (66.241)                 15.750             79.870            (56.202)        23.668
+                Sistemas de processamentos de dados                             646.833         (64.887)                581.946            277.137            (14.437)       262.700
+                Outros                                                              116                -                    116                   -                  -              -
+
+                Total                                                           887.918       (220.254)                 667.664            505.758           (130.649)       375.109
+               Movimentação
+                                                                                                                  31/12/2023                                              31/12/2022
+                                                                                                               Ativos intangíveis
+
+                                                                           Imobilizado     Softwares               Sistemas de             Outros            Total          Total
+                                                                             em uso        adquiridos        processamentos de dados
+
+                Saldo Inicial período/ano                                        88.741          23.668                        262.700               -        375.109        108.352
+
+
+                Aquisições                                                        17.405         2.121                         455.641            116         475.283        318.889
+                Amortização/Depreciação                                         (29.117)      (10.039)                         (50.816)              -        (89.972)       (46.143)
+                Baixas                                                           (7.177)              -                        (85.579)              -        (92.756)        (5.989)
+
+
+
+                Saldo Final período/ano                                          69.852          15.750                        581.946            116         667.664        375.109
+
+
+
+                                                                                            50
+
+=== página 52 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               12.      Depósitos
+
+               O montante de R$5.394.923 em 31 de dezembro de 2023 (R$7.202.956 em 31 de
+               dezembro de 2022) corresponde a depósitos na conta de pagamento pré-paga da Nu
+               Pagamentos, dos quais R$137.991 (nota 19) referem-se a depósitos de empresas do
+               Grupo e R$5.256.932 (R$40.683 e R$7.162.273 em 31 de dezembro de 2022) referem-
+               se a depósitos de clientes. Os depósitos da conta de pagamento pré-paga são
+               mantidos aplicados no Banco Central do Brasil, na Conta Correspondente a Moeda
+               Eletrônica (CCME), conforme requerimento da Resolução BCB n° 80 do BACEN,
+               possuem liquidez imediata e remuneração diária de 100% do CDI, a partir do trigésimo
+               primeiro dia, contando também com o recebimento do rendimento retroativo dos
+               trinta dias iniciais sobre o saldo depositado e não movimentado. Todos os depósitos
+               são classificados no passivo circulante.
+
+               13.      Relações Interfinanceiras
+                                                                                              31/12/2023             31/12/2022
+
+                Ativo
+                Valores vinculados ao Banco Central (i)                                           18.608.786              3.968.235
+                Valores pendentes de liquidação - Outros sistemas de liquidação (iii)              6.325.367              2.247.085
+
+                Total                                                                            24.934.153              6.215.320
+                Circulante                                                                       24.934.153              6.215.320
+                Não circulante                                                                             -                      -
+
+                Passivo
+                Valores a liquidar - Bandeira                                                     48.108.189            37.162.367
+                Valores a liquidar - Partes relacionadas (ii) (Nota 19)                            9.788.778             6.464.299
+                Valores a liquidar - Partes relacionadas (Nota 19)                                   110.093                      -
+                Valores pendentes de liquidação - Outros sistemas de liquidação (iIi)              5.033.492             1.684.371
+
+                Total                                                                            63.040.552             45.311.037
+                Circulante                                                                       63.029.010             45.304.845
+                Não circulante                                                                       11.542                  6.192
+
+               (i) Destina-se ao registro dos valores recolhidos ao BACEN, realizados pela Companhia, titular de Conta
+               Pagamentos Instantâneos (Conta PI) no BACEN, para operações de pagamentos instantâneos (PIX) e ao registro
+               dos valores alocados na Conta Correspondente a Moeda Eletrônica (CCME), mantida no BACEN, destinada
+               exclusivamente à manutenção dos recursos em espécie correspondentes ao valor do saldo das moedas
+               eletrônicas mantidas em conta de pagamento pré-paga e remuneração calculada com base na Taxa Selic
+               (ii) Refere-se a valores a liquidar de transações realizadas por clientes portadores do cartão de crédito, e que foram
+               objeto de antecipação de recebíveis pela Nu Financeira, controlada direta da Companhia.
+               (iii) Destina-se ao registro dos valores a receber/pagar de instituições autorizadas a funcionar pelo Banco Central
+               do Brasil e de instituições de pagamento não titulares de Conta Pagamentos Instantâneos (Conta PI) no BACEN,
+               relativos a transações de pagamentos instantâneos.
+
+
+
+
+                                                                        51
+
+=== página 53 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               Abertura de prazo de vencimento - Valores a Liquidar - Bandeira
+
+               Para a linha de Valores a liquidar - Bandeira, as transações locais realizadas na função
+               crédito seguem, aproximadamente, um prazo de liquidação de D+27, contados da data
+               de processamento das parcelas das compras; já as transações internacionais,
+               observam o prazo de D+1, também considerando a data de processamento.
+
+               As transações realizadas na função débito seguem um prazo de liquidação de D+1
+               com relação da data do processamento.
+
+                                                                               31/12/2023                              31/12/2022
+                                                     0 - 30 dias       30-90 dias   Acima de 90           Total           Total
+                                                                                        dias
+
+                Valores a liquidar - Bandeira        25.729.724        12.000.005     10.378.460        48.108.189      37.162.367
+                Valores a liquidar - Bandeira -        4.930.351        2.968.899      1.889.528         9.788.778       6.464.299
+                Partes relacionadas (Nota 19)
+
+                Total                                30.660.075        14.968.904     12.267.988        57.896.967      43.626.666
+
+
+
+               14.       Obrigações por empréstimos
+
+                    a.   Composição de obrigações por empréstimos
+
+                                                                                                  31/12/2023          31/12/2022
+
+                No exterior - Partes relacionadas (Nota 19)                                            1.783.878          279.829
+
+                Total                                                                                  1.783.878          279.829
+                Circulante                                                                             1.783.878                 -
+                Não circulante                                                                                  -         279.829
+
+
+
+               b.        Abertura por vencimento
+
+
+                                                                                31/12/2023                             31/12/2022
+                                                         Até 3           De 3 a 12     Acima de
+                                                         meses            meses        12 meses            Total          Total
+
+                Obrigação por empréstimos
+                No exterior                                        -      1.783.878                -      1.783.878        279.829
+
+                Total                                              -     1.783.878                 -      1.783.878       279.829
+
+
+
+
+                                                                         52
+
+=== página 54 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               c.        Movimentações dos empréstimos
+
+                                       31/12/2022                                              Pagamentos            31/12/2023
+                                       Saldo inicial   Captação     Juros    Variação       Principal    Juros        Saldo final
+                                                                             Cambial
+
+                Obrigação por
+                empréstimos
+                No país                           -      250.000       127            -     (250.000)       (127)               -
+                No exterior                279.829     1.471.890    67.622     (35.463)             -           -      1.783.878
+
+                Total                      279.829     1.721.890    67.749     (35.463)     (250.000)       (127)      1.783.878
+
+
+
+                                       31/12/2021                                             Pagamentos              31/12/2022
+                                       Saldo inicial   Captação     Juros    Variação      Principal     Juros         Saldo final
+                                                                             Cambial
+
+                Obrigação por
+                empréstimos
+                No país                           -    2.000.000     1.017          -     (2.000.000)    (1.017)                 -
+                No exterior                286.414              -   11.850   (18.435)               -          -          279.829
+
+                Total                      286.414     2.000.000    12.867   (18.435)     (2.000.000)    (1.017)          279.829
+
+
+               As obrigações por empréstimos no exterior, possuem como contraparte a Nu
+               Holdings, e foram realizadas em condições usuais de mercado, na moeda dólar. O
+               empréstimo adquirido em 2019 possui taxa pré-fixada de 5,00% ao ano. O empréstimo
+               adquirido no exercício findo em 31 de dezembro de 2023 possui atualização pela taxa
+               Secured Overnight Financing Rate (SOFR) + 4,25% ao ano.
+
+               15.       Obrigações             por          operações           vinculadas                 a         cessão
+
+                    a.   Composição das obrigações por operações vinculadas a cessão
+
+                                                                                            31/12/2023              31/12/2022
+
+                Operação vinculada a cessão - Nu Financeira (Nota 19)                           3.568.127              6.003.249
+
+                Total                                                                           3.568.127             6.003.249
+                Circulante                                                                      2.968.123             2.436.514
+                Não circulante                                                                    600.004             3.566.735
+
+
+
+
+                                                                    53
+
+=== página 55 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+                  b. Abertura por vencimento
+
+                                                                                    31/12/2023                             31/12/2022
+                                                                Até 3         De 3 a 12   Acima de             Total          Total
+                                                                meses          meses      12 meses
+
+                Operação vinculada a cessão - Nu
+                Financeira                                        934.824        2.033.299     600.004        3.568.127      6.003.249
+
+                Total                                           934.824       2.033.299        600.004       3.568.127       6.003.249
+
+
+                  c.    Movimentação das operações vinculadas a cessão
+
+                                                  31/12/2022                                        Pagamentos             31/12/2023
+                                                  Saldo inicial     Captação         Juros      Principal   Juros          Saldo final
+
+                Operação vinculada a cessão -
+                Nu Financeira                       6.003.249                    -   664.535   (2.433.268)     (666.389)     3.568.127
+
+                Total                               6.003.249                 -      664.535   (2.433.268)    (666.389)      3.568.127
+
+
+
+                                                31/12/2021                                          Pagamentos             31/12/2022
+                                                Saldo inicial      Captação          Juros     Principal    Juros          Saldo final
+
+                Operação vinculada a
+                cessão - FIDC Nu                      58.104                 -          355      (55.575)        (2.884)                -
+                Operação vinculada a
+                cessão - Nu Financeira             5.001.402       1.800.000         696.303    (799.998)      (694.458)     6.003.249
+
+                Total                              5.059.506       1.800.000         696.658    (855.573)     (697.342)      6.003.249
+
+
+               As obrigações por operações vinculadas à cessão de ativos financeiros referem-se ao
+               valor presente das obrigações das captações realizadas através da securitização de
+               recebíveis de cartão de crédito para o FIDC Nu e da venda de transações de
+               pagamento para a Nu Financeira.
+
+               16.      Obrigações por operações compromissadas
+
+                                                                                                31/12/2023                 31/12/2022
+                                                                                        1 - 30 dias        Total              Total
+
+                Recompras a liquidar - Carteira de livre
+                movimentação
+                Letras Financeiras do Tesouro Nacional - LFT -                            2.100.906         2.100.906                   -
+                Partes relacionadas (Nota 19)
+
+                Total                                                                     2.100.906         2.100.906                   -
+
+
+
+
+                                                                            54
+
+=== página 56 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               17.      Outras obrigações
+                                                                                  31/12/2023      31/12/2022
+
+                Valores pendentes de liquidação - Partes relacionadas (Nota 19)     14.135.521       6.454.184
+                Valores a pagar - Fornecedores diversos                                670.202         546.286
+                Provisões com folha de pagamento                                       274.753         154.891
+                Valores pendentes de liquidação                                        998.782         368.110
+                Fiscais e previdenciárias                                               52.562         185.439
+                Valores a pagar aquisição NuPay                                               -          1.235
+                Valores a pagar - Partes relacionadas (Nota 19)                        175.524         100.718
+                Obrigações contingentes em combinação de negócios                             -         17.999
+                Cobrança e arrecadação de tributos e assemelhados                          460                -
+                Diversos                                                                 1.210                -
+
+                Total                                                              16.309.014        7.828.862
+
+                Circulante                                                          16.295.295       7.828.862
+
+                Não circulante                                                          13.719                  -
+
+
+               18.      Provisões legais e contingências passivas
+                                                                                  31/12/2023      31/12/2022
+
+                Cível                                                                   33.223         10.462
+                Tributário                                                                    -        83.150
+                Trabalhista                                                              2.039            546
+
+                Total                                                                   35.262         94.158
+
+
+               A Companhia e suas controladas são parte em ações judiciais e processos
+               administrativos, decorrentes do curso normal das operações, envolvendo aspectos
+               tributários, cíveis e trabalhistas. Esses assuntos são discutidos nas esferas
+               administrativa e judicial, os quais, quando aplicável, são suportados por depósitos
+               judiciais.
+
+               As provisões para perdas prováveis decorrentes desses assuntos são estimadas e
+               ajustadas periodicamente pela administração, suportadas pela opinião de seus
+               assessores jurídicos externos.
+
+               As provisões para contingências passivas da Companhia não possuem expectativa
+               de conclusão dos processos no curto prazo, devido à imprevisibilidade do tempo de
+               duração dos processos no sistema judiciário brasileiro, razão pela qual não foi
+               divulgada a estimativa com relação ao ano específico em que essas ações judiciais
+               serão encerradas.
+
+
+
+
+                                                                     55
+
+=== página 57 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               a.       Provisões para obrigações legais
+
+               A administração, com base em informações de seus assessores jurídicos, possui
+               registrada provisão em 31 de dezembro de 2023 no montante de R$35.262 e R$11.008
+               em 31 de dezembro de 2022, respectivamente, considerados suficientes para cobrir
+               as perdas estimadas com as ações cíveis, de relação de consumo em curso e ações
+               trabalhistas.
+
+               A título de obrigação legal, a Companhia registrou o montante de R$83.150 em 31 de
+               dezembro de 2022, referente à majoração da alíquota do PIS e da COFINS (4,65%)
+               incidente sobre a receita financeira estabelecida pelo Decreto 8.426/15. O Nu
+               depositou judicialmente o valor referente a essa causa e registrou na linha de Outros
+               Créditos (conforme demonstrado a seguir no item "d"). Em julho de 2019, a Companhia
+               desistiu do processo e solicitou a liberação para conversão dos depósitos judiciais
+               em renda da União, o que ocorreu em maio de 2023, consequentemente baixando a
+               provisão anteriormente constituída.
+
+               b.       Movimentação das provisões
+
+                                                                                     31/12/2023
+                                                               Cíveis          Tributárias       Trabalhistas    Total
+
+
+                Saldo inicial                                    10.462              83.150              546      94.158
+
+                Constituição                                      57.968                  -            2.476       60.444
+                (Baixa/reversão)                                (35.207)           (83.150)            (983)    (119.340)
+
+                Saldo final                                      33.223                      -         2.039      35.262
+
+
+                                                                                     31/12/2022
+                                                               Cíveis          Tributárias    Trabalhistas       Total
+
+                Saldo inicial                                     5.119              83.150              121      88.390
+
+                Constituição                                      23.531                     -           425       23.956
+                (Baixa/reversão)                                (18.188)                     -              -    (18.188)
+
+                Saldo final                                      10.462              83.150              546      94.158
+
+
+               c.       Contingências possíveis
+
+               Existem processos cíveis de relação de consumo e trabalhistas classificados como
+               risco de perda possível pelos nossos assessores jurídicos no montante de R$63.642
+               e R$30.219 em 31 de dezembro de 2023, respectivamente, e R$34.038 e R$7.105 em
+               31 de dezembro de 2022, respectivamente.
+
+
+
+
+                                                                 56
+
+=== página 58 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               d.       Depósitos judiciais
+
+               Quando requerido pela Justiça, são efetuados depósitos judiciais, apresentados na
+               rubrica Outros créditos. O montante total de depósitos judiciais é de R$1.687, em 31
+               de dezembro de 2023, e R$86.536 em 31 de dezembro de 2022. A diminuição no valor
+               dos depósitos judiciais corresponde a conversão em renda para a União do valor de
+               R$83.150, referente ao processo majoração da alíquota do PIS e da COFINS (4,65%)
+               incidente sobre a receita financeira estabelecida pelo Decreto 8.426/15.
+
+               19.      Partes relacionadas
+
+               Partes relacionadas são as entidades pertencentes ao Grupo a qual a Companhia faz
+               parte, os acionistas com participação relevante, empresas a eles ligadas, seus
+               administradores, conselheiros, demais membros do pessoal-chave da administração
+               e                                 seus                                 familiares.
+
+               As principais transações da Companhia com partes relacionadas resumem-se a
+               aplicações interfinanceiras de liquidez, compartilhamento de despesas e prestação
+               de serviços entre empresas do Nu, operações de venda ou transferência de ativos
+               financeiros e, por fim, captações realizadas através de outras empresas do Grupo.
+               Durante o ano de 2022, em função do crescimento das atividades da Companhia e
+               alocação de recursos no Grupo, a Companhia absorveu um volume maior de despesas
+               operacionais. Adicionalmente, em novembro de 2022, em função de novas empresas
+               no Grupo, houve a transferência de funcionários da Companhia para outras empresas
+               do                                                                         Grupo.
+
+               No curso normal dos negócios, a Companhia emite cartões de crédito e recebe
+               depósitos de diretores e acionistas do Nu. Essas transações ocorrem em termos
+               semelhantes, inclusive taxas de juros e limites, aos vigentes à época para transações
+               comparáveis com partes não relacionadas e não envolvem mais do que o risco normal
+               de recebimento. Desta forma, essas operações entre partes relacionadas são
+               realizadas dentro das condições normais de mercado.
+
+               A Companhia, junto a sua controladora Nu Holdings, possui acordos de prestação de
+               garantia em determinadas operações de crédito realizadas por partes relacionadas,
+               localizadas no México no valor de R$48.407 (R$211.216 em dezembro de 2022). Não
+               há provisões registradas para tais garantias devido a expectativa de perda ser
+               considerada remota.
+
+               A Companhia não possui benefícios pós-emprego tais como pensões e outros
+               benefícios de aposentadoria.
+
+               As operações realizadas entre partes relacionadas são efetuadas a valores, prazos e
+               taxas médias usuais de mercado, vigentes nas respectivas datas, e em condições de
+               comutatividade.
+
+
+
+                                                                 57
+
+=== página 68 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+                                                                                        31/12/2023             31/12/2022
+                                                                                  2º semestre   Exercício       Exercício
+
+                Resultado com futuro dólar (i)                                      (107.946)      (245.211)     (159.419)
+                Resultado com futuro euro                                             (1.326)        (8.759)      (17.600)
+
+                Total                                                             (1.137.949)    (2.273.477)   (2.785.196)
+
+               (i) Os instrumentos do hedge de fluxo de caixa afetaram o resultado nos montantes de R$49.203 e R$102.058 no
+               semestre e exercício findos em 31 de dezembro de 2023, respectivamente, e R$67.650 no exercício findo em 31
+               de dezembro de 2022, referentes às despesas de infraestrutura e processamento de dados.
+
+
+               23.      Outras receitas e despesas operacionais
+                                                                                        31/12/2023             31/12/2022
+                                                                               2º semestre      Exercício       Exercício
+                Outras despesas relacionadas a crédito                            (262.549)      (477.737)       (409.848)
+                Despesas com análise de crédito e cobrança                          (60.687)     (114.148)        (133.596)
+                Emissão de cartões                                                (201.862)      (363.589)        (276.252)
+
+                Despesas de infraestrutura e processamento de dados               (778.364)     (1.592.438)    (1.369.210)
+
+                Despesas de pessoal                                               (433.920)      (951.231)     (1.264.643)
+                Proventos                                                         (145.377)      (301.703)       (682.571)
+                Encargos sociais                                                    (31.991)       (95.839)      (237.008)
+                Participações dos empregados no lucro                                (6.881)       (19.459)              -
+                Plano de ações                                                    (189.546)      (420.188)       (220.823)
+                Outras despesas de pessoal                                          (60.125)     (114.042)       (124.241)
+
+                Despesas tributárias                                              (667.777)     (1.345.729)    (1.230.271)
+                PIS e COFINS                                                      (624.775)     (1.189.314)    (1.025.439)
+                ISS                                                                 (72.298)      (138.616)      (123.920)
+                Outras despesas tributárias                                           29.296        (17.799)       (80.912)
+
+                Despesa de provisões legais                                        (15.834)        (24.254)         (5.768)
+
+                Outras despesas administrativas                                   (892.614)     (1.402.640)    (1.057.298)
+                Despesas de marketing                                               (81.339)      (115.721)        (53.156)
+                Despesas de tecnologia                                              (44.815)        (72.709)     (133.980)
+                Despesas de escritório                                              (17.995)        (35.985)       (55.763)
+                Despesas de serviços especializados (i)                           (616.335)       (984.541)      (708.107)
+                Despesas de viagem                                                   (6.408)        (11.394)       (19.397)
+                Depreciação e amortização                                           (42.990)        (89.972)       (44.820)
+                Baixa de ativo imobilizado e intangível                             (66.672)        (66.672)              -
+                Outras despesas administrativas                                     (16.060)        (25.646)       (42.075)
+
+                Resultado de participações em controladas                        3.281.008       4.979.989       1.388.684
+
+                Amortização de ágio na aquisição de investimentos                   (7.126)        (14.551)       (12.677)
+
+                Outras receitas operacionais                                         46.474        132.013         243.017
+
+                Outras despesas operacionais                                      (152.480)      (233.674)       (161.544)
+
+                                                                    67
+
+=== página 69 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+                Perdas com riscos operacionais                                        (123.229)       (177.875)           (91.464)
+                Outras despesas operacionais                                           (29.251)        (55.799)           (70.080)
+
+
+                Total                                                                  116.818        (930.252)     (3.879.558)
+
+               (i) Correspondem majoritariamente a despesas com serviços prestados por empresas do grupo.
+
+
+               24.      Tributos
+
+               a.       Demonstrativo do cálculo dos valores de imposto de renda e contribuição
+                        social
+                                                                                            31/12/2023              31/12/2022
+                                                                                   2º semestre       Exercício       Exercício
+                Resultado antes do imposto de renda e contribuição social            2.577.316        4.248.306         864.719
+                Encargo total do imposto de renda e contribuição social             (1.030.926)     (1.699.322)       (354.535)
+                Adições/exclusões permanentes                                           108.790         105.307         (52.771)
+                Efeito de participação em controladas                                 1.312.403       1.991.996         569.360
+                Outros (i)                                                               51.799          52.782           13.308
+                Total de Imposto de renda e contribuição social                         442.066         450.763         175.362
+
+                Imposto de renda e contribuição social corrente                         36.536         (83.259)           (57.249)
+                Tributos diferidos                                                     405.530         534.022            232.611
+                Tributos na demonstração do resultado                                  442.066         450.763            175.362
+
+                Tributos diferidos reconhecidos em outros resultados
+                abrangentes                                                             (8.414)         19.118             10.885
+
+               (i) Correspondente substancialmente ao efeito fiscal diferido de ajuste de 2022 referente à Lei do Bem.
+
+
+               b.       Saldo e movimentação de créditos tributários
+
+               O ativo e passivo fiscais diferidos, demonstrados no quadro acima, foram constituídos
+               sobre prejuízo fiscal / base negativa da contribuição social sobre lucro líquido e
+               diferenças temporárias conforme demonstrado abaixo na nota explicativa.
+
+                                                                                          Movimentação
+                                                                     Saldo em         Resultado                      Saldo em
+                                                                    31/12/2022       abrangente       Resultado     31/12/2023
+
+
+                Provisão para perdas esperadas associadas ao            565.415                   -     461.673          1.027.088
+                risco de crédito
+                Outras provisões passivas                               164.772                  -        84.983          249.755
+                Provisões fiscais                                        33.260                  -      (33.260)                 -
+                Provisão para Fornecedores                              136.390                  -        20.827          157.217
+                Provisão para programa de pontos                         72.967                  -        28.547          101.514
+                Marcação a mercado de instrumentos financeiros                 -              144               -             144
+                Total dos créditos tributários sobre diferenças         972.804               144       562.770          1.535.718
+                temporárias
+
+                Prejuízo fiscal e base negativa da contribuição         264.231                   -     (36.785)          227.446
+
+                                                                       68
+
+=== página 70 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+                social
+                Imposto de renda e contribuição social diferidos    1.237.035           144      525.985     1.763.164
+                ativo
+
+
+                Marcação a mercado - Títulos disponíveis para a          (847)           844        (103)         (106)
+                venda
+                Outras                                               (26.270)              -      26.270              -
+                Imposto de renda e contribuição social diferidos     (27.117)           844       26.167         (106)
+                passivo
+
+                Marcação a mercado - Hedge de fluxo de caixa             5.400        18.130     (18.130)       23.530
+                Refletido no Patrimônio líquido                          5.400        18.130     (18.130)       23.530
+
+                Total de movimentação                                                 19.118     534.022
+
+
+                                                                                       Movimentação
+                                                                    Saldo em       Resultado                 Saldo em
+                                                                   31/12/2021     abrangente   Resultado    31/12/2022
+
+                Provisão para perdas esperadas associadas ao
+                risco de crédito                                        322.029             -    243.386       565.415
+                Outras provisões passivas                               174.748             -     (9.976)      164.772
+                Provisões fiscais                                        33.260             -           -       33.260
+                Provisão para Fornecedores                              110.280             -     26.110       136.390
+                Provisão para programa de pontos                         56.788             -     16.179        72.967
+                Marcação a mercado de instrumentos
+                financeiros                                                888              -       (888)             -
+                Total dos créditos tributários sobre diferenças
+                temporárias                                           697.993               -    274.811       972.804
+
+                Prejuízo fiscal e base negativa da contribuição
+                social                                                  269.267             -     (5.036)      264.231
+                Imposto de renda e contribuição social
+                diferidos ativo                                       967.260               -    269.775     1.237.035
+
+                Marcação a mercado - Títulos para negociação              (827)             -        827              -
+                Marcação a mercado - Títulos disponíveis para
+                a venda                                                    (11)         (833)         (3)         (847)
+                Outras provisões                                              -             -    (26.270)      (26.270)
+                Imposto de renda e contribuição social
+                diferidos passivo                                         (838)         (833)    (25.446)      (27.117)
+
+                Marcação a mercado - Hedge de fluxo de caixa              6.318       11.718     (11.718)       (5.400)
+                Refletido no Patrimônio líquido                           6.318       11.718     (11.718)       (5.400)
+
+                Total de movimentação                                                 10.885     232.611
+
+
+               O ativo fiscal diferido demonstrado no quadro acima contabilizado em 31 de
+               dezembro de 2023, no montante de R$1.763.164 (R$1.237.035 em 31 de dezembro
+               de 2022), foi constituído sobre prejuízo fiscal e base negativa da contribuição social
+               sobre o lucro líquido e diferenças temporárias.
+
+               O ativo fiscal corrente foi constituído substancialmente sobre IR retido na fonte sobre
+               aplicações financeiras do período corrente, saldo negativo de imposto de renda e base
+
+
+                                                                   69
+
+=== página 71 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               negativa de contribuição social sobre o lucro líquido de períodos anteriores a serem
+               compensados.
+
+               c.         Realização do crédito tributário
+
+                                                                               Imposto de       Contribuição
+                Período                                                          renda             social       Total
+
+                2024                                                                  369.955       222.901      592.856
+                2025                                                                  686.438       411.863    1.098.301
+                2026                                                                   44.508        26.705       71.213
+                2027                                                                      478           287          765
+                Após 2027                                                                  18            11           29
+
+
+
+                Total                                                            1.101.397          661.767    1.763.164
+
+
+               O valor presente dos créditos tributários contabilizados em 31 de dezembro de 2023
+               é de R$1.528.649.
+
+               25.        Valor justo dos instrumentos financeiros
+
+               A tabela a seguir mostra um resumo do valor justo, em 31 de dezembro de 2023 e 31
+               de dezembro de 2022, dos ativos e passivos financeiros indicados abaixo,
+               classificados com base nos vários métodos de mensuração utilizados pela
+               Companhia para determinar seu valor justo.
+
+                                                                                      31/12/2023
+                                                             Nível 1        Nível 2            Nível 3         Total
+                Ativo
+                Títulos e valores mobiliários                2.771.122          6.701                    -     2.777.823
+                Para negociação                                      -              8                    -             8
+                Títulos privados                                     -              8                    -             8
+                Recibos de depósitos bancários                        -             8                    -             8
+
+                Disponíveis para venda                       2.771.122          6.693                    -     2.777.815
+                Títulos públicos                             2.771.122              -                    -     2.771.122
+                Letras Financeiras do Tesouro                2.771.122               -                   -     2.771.122
+
+                Cotas de fundos de investimento                         -       6.693                    -         6.693
+                Cotas de fundos de investimento                         -       6.693                    -         6.693
+
+                Instrumentos financeiros derivativos            14.501                 -                 -       14.501
+                Contratos de Futuro                             14.501                 -                 -       14.501
+
+                Total ativo                                  2.785.623          6.701                    -     2.792.324
+
+                Passivo
+                Instrumentos financeiros derivativos                   16              -                 -              16
+                Contratos de Futuro                                    16              -                 -              16
+
+
+
+                                                                       70
+
+=== página 76 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+                   ● Risco de Crédito
+
+               O risco de crédito é definido como a possibilidade de perdas associadas a: falha de
+               clientes ou contrapartes no pagamento de suas obrigações contratuais; a depreciação
+               ou redução dos ganhos esperados dos instrumentos financeiros devido à deterioração
+               da qualidade de crédito de clientes ou contrapartes; os custos de recuperação da
+               exposição deteriorada; e a qualquer vantagem dada a clientes ou contrapartes devido
+               à deterioração de sua qualidade de crédito.
+
+               A estrutura de controle e gerenciamento de risco de crédito é independente das
+               unidades de negócios, sendo responsável pelos processos e ferramentas para
+               mensurar, monitorar, controlar e reportar o risco de crédito dos produtos e demais
+               operações financeiras, verificando continuamente a aderência às políticas e estrutura
+               de limites aprovadas. Há também uma avaliação dos possíveis impactos decorrentes
+               de mudanças no ambiente econômico, a fim de garantir que a carteira de crédito seja
+               resiliente a crises econômicas.
+
+               O gerenciamento de risco de crédito é realizado pelo squad de Risco de Crédito com
+               papel centralizado e independente das unidades de negócio, sendo responsável por:
+
+                   ● Estabelecer governança, políticas e procedimentos destinados a manter a
+                     exposição aos riscos de crédito em conformidade com os níveis fixados na
+                     RAS;
+                   ● Monitorar e notificar diretoria sobre os níveis de risco (conformidade com
+                     apetite) do portfólio de crédito, incluindo recomendações de aprimoramento,
+                     quando aplicáveis;
+                   ● Identificação e avaliação dos riscos inerentes e respectivos mitigadores no
+                     lançamento de novos produtos e mudanças significativas em processos
+                     existentes;
+                   ● Estimação da perda esperada de acordo com critérios consistentes e passíveis
+                     de verificação;
+
+
+                   ● Risco de Liquidez
+
+               Risco de Liquidez é definido como:
+
+                   ● Possibilidade de não sermos capazes de honrar eficientemente nossas
+                     obrigações esperadas e inesperadas, correntes e futuras, incluindo as
+                     decorrentes de vinculação de garantias, sem afetar nossas operações diárias e
+                     sem incorrer em perdas significativas; e
+
+                   ● A possibilidade de não conseguirmos negociar a preço de mercado uma
+                     posição, devido ao tamanho elevado em relação ao volume normalmente
+                     transacionado ou em razão de alguma descontinuidade no mercado.
+
+
+
+                                                                 75
+
+=== página 77 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               A estrutura de gerenciamento de risco de liquidez utiliza os dados de fluxos de caixa
+               futuros, aplicando sobre estes fluxos de caixa um cenário de estresse severo, de forma
+               a garantir que o volume de ativos líquidos de alta qualidade que possuímos é
+               suficiente para garantir nossa resiliência mesmo em situações bastante adversas. Os
+               indicadores de liquidez são monitorados diariamente.
+
+               Possuímos um Plano de Contingência de Liquidez para as entidades no Brasil que
+               descreve as possíveis ações a serem tomadas para recomposição da liquidez no caso
+               de deterioração dos indicadores.
+
+                   ● Risco de Mercado e Risco de Taxas de Juros na Carteira Bancária (IRRBB)
+
+               Risco de mercado é a possibilidade de ocorrência de perdas resultantes da flutuação
+               nos valores de mercado de instrumentos detidos por nós, incluindo o risco da variação
+               das taxas de juros, dos preços de ações, variação cambial e preço de commodities. O
+               IRRBB é o risco, atual ou prospectivo, do impacto de movimentos adversos das taxas
+               de juros no nosso capital e resultados, para os instrumentos classificados na carteira
+               bancária.
+
+               Existe uma estrutura de gerenciamento e controle de risco de mercado e IRRBB,
+               independente das unidades de negócio, que é responsável pelos processos e
+               ferramentas de medição, monitorização, controle e reporte do risco de mercado e
+               IRRBB, verificando continuamente a aderência às políticas e limites aprovados.
+
+               A gestão do risco de mercado e do IRRBB é baseada em métricas que são reportadas
+               ao Fórum Técnico ALM e ao Comitê de Riscos. A Administração está autorizada a usar
+               instrumentos financeiros, conforme descrito nas políticas internas do Grupo para
+               proteção de risco de mercado e exposições ao IRRBB.
+
+               A gestão do risco de mercado e do IRRBB é baseada nas seguintes métricas:
+
+                   ● Sensibilidade da Taxa de Juros (DV01): impacto no valor de mercado dos fluxos
+                     de caixa, quando submetidos a aumento de um ponto-base no corrente anual
+                     taxas de juros ou taxa de índice;
+                   ● Value at Risk (VaR): perda máxima do valor de mercado para um período de
+                     detenção com um nível de confiança; e
+                   ● Exposições cambiais: considerando todas as posições financeiras que trazem
+                     risco cambial e despesas operacionais em outras moedas.
+
+               O BACEN exige uma avaliação da suficiência de capital para o risco de taxa de juros
+               da carteira bancária (IRRBB) com base nas métricas Delta EVE e Delta NII. O Grupo
+               calcula essas métricas no Brasil de acordo com o padrão regulatório para
+               gerenciamento dessa exigência de capital. Delta EVE é a variação do valor econômico
+               do capital do Grupo nos cenários prescritos pelo BACEN. Delta NII é a variação do
+               resultado de intermediação financeira do Grupo nos mesmos cenários padrão
+               prescritos.
+
+
+                                                                 76
+
+=== página 78 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               A análise a seguir é a sensibilidade da Companhia da marcação a valor justo de
+               mercado a um aumento de 1 ponto base ("bp") (DV01) nas taxas de juros do mercado
+               brasileiro, assumindo uma mudança paralela e uma posição financeira constante:
+
+                Risco de taxa de juros
+                Curva                                                   Curva livre de riscos brasileira
+
+                DV01                                               31/12/2023                              31/12/2022
+
+                Nu Pagamentos                                                             48                            36
+
+                Total                                                                     48                            36
+
+
+               Para manter as sensibilidades DV01 dentro de limites definidos, os derivativos são
+               usados para proteger o risco da taxa de juros. Atualmente, os futuros de taxas de juros
+               negociados na B3 e os swaps são usados para fins de hedge.
+
+                   ● Risco Cambial
+
+               Em 31 de dezembro de 2023 e 31 de dezembro de 2022, nenhuma das entidades do
+               Grupo possuía instrumentos financeiros significativos em moeda diferente de suas
+               respectivas moedas funcionais.
+
+               A moeda funcional das empresas sediadas no Brasil é o real. O Grupo tem custos
+               operacionais em reais, dólares americanos e em euros. Determinados custos em
+               dólares americanos e euros, ou empréstimos entre empresas em dólares americanos,
+               são protegidos com contratos futuros, negociados na bolsa B3, com base nas
+               projeções então existentes desses custos, ou quando há uma nova exposição. As
+               transações de hedge são desfeitas à medida que os custos e empréstimos são pagos,
+               e calibradas quando nossas projeções internas de custos mudam. Como resultado, as
+               demonstrações contábeis têm pequenas exposições às taxas de câmbio após a
+               entrada em vigor das transações de hedge.
+
+                   ● Risco Operacional
+
+               O risco operacional é definido como a possibilidade da ocorrência de perdas
+               resultantes de eventos externos ou de falha, deficiência ou inadequação de processos
+               internos, pessoas ou sistemas. Neste contexto, também deve ser considerado o risco
+               legal associado à inadequação ou deficiência em contratos firmados pela
+               Organização, às sanções em razão de descumprimento de dispositivos legais e às
+               indenizações por danos a terceiros decorrentes das atividades desenvolvidas pela
+               Organização.
+
+               A estrutura de controle e gerenciamento do risco operacional e controles internos é
+               independente das unidades de negócios e suporte, sendo responsável pela
+               identificação e avaliação dos riscos operacionais, bem como pela avaliação do
+               desenho e da eficácia de controles internos, cobrindo riscos como interrupção de
+               sistemas e serviços e fraude externa. Essa estrutura também é responsável pela
+
+                                                                 77
+
+=== página 81 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               O Programa é estruturado em três níveis - estratégico, tático, operacional e é
+               composto por 7 pilares (nível estratégico): Avaliação de Riscos; Políticas e
+               Procedimentos; Comunicação e Treinamento; Conheça Seu Cliente (KYC); Due
+               Diligence (KYE, KYS, KYP e KYB); MSAC - Monitoramento, Seleção, Análise e
+               Comunicação (SAR); e Programa de Avaliação de Efetividade.
+
+                   ● Risco Reputacional
+
+               O Nu entende que a materialização de outros riscos podem impactar negativamente
+               a sua reputação, uma vez que estão intrinsecamente ligados. Eventos indesejáveis em
+               diferentes dimensões de risco, como continuidade de negócios, segurança
+               cibernética, ética e integridade, menções negativas em mídias sociais, entre outros,
+               podem trazer danos à reputação do Nu.
+
+               Portanto, o Grupo possui equipes e processos dedicados à supervisão da
+               comunicação externa e à gestão de crises, que são elementos-chave para identificar
+               e mitigar eventos de reputação, bem como para obter uma visão de longo prazo para
+               melhor prevenir ou responder a eventos futuros.
+
+                   Testes de Estresse
+
+               O programa de testes de estresse considera choques nos principais produtos do Nu,
+               tais como cartões de crédito, empréstimos pessoais e instrumentos de captação,
+               além dos seus respectivos subprodutos. São considerados cenários em que o
+               estresse é aplicado isoladamente, em diferentes níveis de intensidade e probabilidade,
+               e também cenários em que ações gerenciais são consideradas para aumentar a
+               resiliência da empresa e preservar seus indicadores de capital e liquidez.
+
+               Os cenários propostos são apresentados ao Fórum Técnico de Teste de Estresse. São
+               discutidos os cenários a serem abordados, duração e severidade e plausibilidade de
+               cada choque, assim como as formas pelas quais serão modelados e o nível de
+               detalhamento necessário. Após o trabalho de modelagem e execução dos testes, os
+               resultados são submetidos aos comitês e fóruns técnicos apropriados, parte
+               integrante da estrutura de gerenciamento de riscos do Nu. São discutidas e aprovadas
+               as ações propostas que visam garantir a resiliência da Organização. O Programa de
+               Testes de Estresse é atualizado anualmente e define quais testes o time deverá
+               realizar nos próximos 12 meses.
+
+               Em linha com os princípios da Resolução 265, de 25 de fevereiro de 2022 do CMN, a
+               descrição da estrutura de gerenciamento de riscos e da estrutura de gerenciamento
+               de     capital   estão     disponíveis    para   acesso      público    no   site:
+               https://nubank.com.br/relatorios-financeiros.
+
+
+
+
+                                                                 80
+
+=== página 82 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+               27.      Gestão de capital
+
+               O objetivo do gerenciamento de capital é assegurar a adequação de capital do grupo
+               através do controle e monitoramento da posição de capital, da avaliação da
+               necessidade de capital tendo em vista os riscos incorridos e os objetivos estratégicos
+               do grupo; e do planejamento de capital para atender a futuros requerimentos de
+               capital regulatório com base nas projeções de crescimento do grupo, exposição ao
+               risco, movimentos de mercado e outras informações relevantes. Além disso, a
+               estrutura de gerenciamento de capital é responsável pela identificação das fontes de
+               capital, pela redação e submissão do plano de capital para aprovação, bem como pelo
+               acompanhamento do atual nível dos índices de capital regulatório.
+
+               No nível executivo, o Fórum Técnico de Asset and Liability Management (ALM Fórum)
+               é responsável por aprovar as metodologias de avaliação de risco e cálculo de capital,
+               bem como revisar, monitorar e recomendar planos de ação ao Comitê de Riscos.
+
+               Em Julho de 2023 entraram em vigor novas regras do BACEN estabelecendo a
+               classificação de conglomerados que são liderados por instituições de pagamento, e
+               o Nu, por ser liderado pela Nu Pagamentos, passa, então, a ser classificado como
+               Conglomerado Prudencial do Tipo 3.
+
+               O conglomerado Nu Pagamentos está sujeito a novos requisitos prudenciais,
+               substituindo os anteriores requisitos de capital aplicáveis ao conglomerado
+               financeiro, então liderado pela Nu Financeira. Dada esta diferença, os requerimentos
+               de capital para ambos os conglomerados, Financeiro e Prudencial, não são
+               comparáveis.
+
+               No item Composição do Capital, abaixo, serão apresentados os requerimentos de
+               capital para dezembro de 2023, considerando as exigências do Conglomerado
+               Prudencial do Tipo 3.
+
+               Composição do capital
+
+               O capital regulatório do Conglomerado Prudencial, aplicado pelo BACEN, consiste em
+               três componentes principais:
+
+                   ● Capital de Nível I: composto pelo capital integralizado, reservas e lucros
+                     acumulados, após a contabilização das deduções e ajustes prudenciais.
+
+                   ● Adicional de Nível I: corresponde aos instrumentos de dívida subordinada sem
+                     vencimento definido (perpétuas) que atendam aos requisitos de exigibilidade
+                     definidos pelo BACEN.
+
+                   ● Capital de Nível II: consiste dos instrumentos de dívida subordinada com data
+                     de vencimento definida que atendam aos requisitos de elegibilidade. Somado
+                     ao Capital de Nível I e ao Adicional de Nível I, compõem o Capital Total, ou
+                     Patrimônio de Referência.
+
+                                                                 81
+
+=== página 83 ===
+DocuSign Envelope ID: E9CFD2B8-DBC0-40D2-AF77-4ED306A7368C
+
+
+
+               NU PAGAMENTOS S.A. - INSTITUIÇÃO DE PAGAMENTO
+               Demonstrações contábeis individuais em 31 de dezembro de 2023
+
+
+
+
+               De acordo com o arcabouço regulatório em vigor, é aplicável aos conglomerados
+               prudenciais do Tipo 3, como disposição transitória, o ajuste progressivo dos
+               requerimentos mínimos de capital e dos ajustes prudenciais (Phase-in). O
+               escalonamento estabelecido é ilustrado na tabela a seguir:
+
+                                                             A partir de julho          Ano completo
+                Regra de transição                                2023           2024                  2025
+
+                Ajustes Prudenciais                                      30,0%          60,0%             100,0%
+                Capital de Nível I                                        5,5%           6,0%               6,0%
+                Requerimento Mínimo                                       6,8%           7,5%               8,0%
+                ACPconservação                                            0,0%           1,3%               2,5%
+
+                Requerimento Total                                      6,75%           8,75%             10,50%
+
+
+               A tabela a seguir apresenta os valores dos índices de capital, bem como sua exigência
+               mínima, para o Conglomerado Prudencial, de acordo com a regulamentação em vigor
+               no Brasil.
+
+                                                                                                       31/12/2023
+
+                Patrimônio de Referência (PR)                                                            12.770.895
+                Nível I                                                                                  11.637.888
+                Capital Principal                                                                        10.672.168
+                Capital Complementar                                                                        965.720
+                Nível II                                                                                  1.133.007
+
+                Ativos Ponderados ao Risco (RWA)                                                         93.557.039
+                Risco de Crédito (RWA CPAD)                                                              66.904.075
+                Risco de Mercado (RWA MPAD)                                                                 704.895
+                Risco Operacional (RWA OPAD)                                                             19.605.042
+                Risco de Serviços de Pagamento (RWA SP)                                                   6.343.027
+
+                PR Mínimo Requerido                                                                       6.315.100
+
+                Margem PR                                                                                 6.455.795
+
+                Índice de Capital Principal                                                                   11,4%
+                Índice de Nível I                                                                             12,4%
+                Índice de Basiléia                                                                            13,7%
+
+
+               Em 29 de dezembro de 2023, o Banco Central do Brasil concedeu à Nu Pagamentos
+               aprovação para a implementação da Abordagem Padronizada Alternativa (“ASA”) para
+               cálculo de seus requisitos de capital para risco operacional. Os RWA OPAD a partir de
+               dezembro de 2023 são calculados de acordo com esta metodologia.
+
+
+
+
+                                                                   82

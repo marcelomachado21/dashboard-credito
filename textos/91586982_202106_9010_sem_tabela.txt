@@ -1,0 +1,560 @@
+
+=== página 9 ===
+                                                                       NOTAS EXPLICATIVAS ÀS DEMONSTRAÇÕES FINANCEIRAS
+                                                                                              (EM MILHARES DE REAIS)
+
+NOTA 01 – CONTEXTO OPERACIONAL
+
+
+A Cooperativa de Crédito, Poupança e Investimento Sicredi Pioneira RS - Sicredi Pioneira RS ("Cooperativa"), é uma instituição financeira cooperativa, filiada à Cooperativa Central de Crédito, Poupança e
+Investimento do Sul e Sudeste - Central Sicredi Sul/Sudeste ("Central") e integrante do Sistema Cooperativo Sicredi (“Sicredi”). Instituição financeira não bancária, autorizada a funcionar pelo Banco Central do
+Brasil ("Bacen") com início das atividades em 28/12/1902 e sede situada na R. Sete de Setembro, 374, na cidade de Nova Petrópolis - Rio Grande do Sul . A Cooperativa tem por objetivos principais:
+
+i) Desenvolver programas de poupança, de uso adequado do crédito e de prestação de serviços, praticando todas as operações ativas, passivas e acessórias próprias de cooperativas de crédito;
+
+ii) Prestar, através da mutualidade, a assistência financeira aos associados em suas atividades específicas;
+iii) Atuar na formação educacional de seus associados, no sentido de fomentar o cooperativismo.
+
+A execução das atividades obedece ao disposto na legislação pertinente, assim como aos atos regulamentares oficiais, ao estatuto social, e às normas internas do Sicredi.
+
+O Sicredi, em 30 de junho de 2021, está organizado por 108 Cooperativas de Crédito filiadas, que operam com uma rede de atendimento com mais de 2.000 pontos, dos quais a Cooperativa opera em 41
+pontos de atendimentos. A estrutura conta ainda com cinco Centrais Regionais – acionistas da Sicredi Participações S.A. (“SicrediPar”) – a Confederação das Cooperativas do Sicredi (“Confederação Sicredi”),
+uma Fundação juntamente com o Banco Cooperativo Sicredi S.A (“Banco”).
+
+A Cooperativa é parte integrante do Fundo Garantidor do Cooperativismo de Crédito (FGCoop), associação civil sem fins lucrativos, com personalidade jurídica de direito privado de abrangência nacional,
+conforme anexo I à resolução do Conselho Monetário Nacional ("CMN") nº 4.284, de 5 de novembro de 2013.
+
+O FGCoop tem por objeto prestar garantia de créditos nos casos de decretação de intervenção ou de liquidação extrajudicial de instituição associada, até o limite de R$ 250 por associado (CPF/CNPJ), bem
+como contratar operações de assistência, de suporte financeiro e de liquidez com essas instituições.
+
+A Cooperativa também é parte integrante da Sicredi Fundos Garantidores, empresa sem fins lucrativos cuja formação de reservas advém de contribuições mensais e extraordinárias de cooperativas associadas
+ao fundo o qual tem por objeto assegurar a credibilidade e a solvabilidade das suas associadas. Conforme regras estabelecidas nos Regulamentos dos Fundos Garantidores, as contribuições mensais são
+apuradas pelo somatório de duas parcelas: parcela fixa, relacionada ao objetivo de cada Fundo; e parcela variável, relativa ao risco imputado ao Sistema (considera níveis de liquidez, de margem de capital e de
+utilização de dispositivos de segurança).
+
+
+NOTA 02 – APRESENTAÇÃO DAS DEMONSTRAÇÕES FINANCEIRAS
+
+
+As demonstrações financeiras foram preparadas de acordo com as práticas contábeis adotadas no Brasil, observando as diretrizes contábeis emanadas pela Lei nº 6.404/76, alterações introduzidas pelas Leis nº
+11.638/07 e nº 11.941/09 e em consonância com as diretrizes estabelecidas pelo Bacen e CMN, consubstanciadas no Plano Contábil das Instituições do Sistema Financeiro Nacional - COSIF e os novos
+pronunciamentos, orientações e as interpretações emitidas pelo Comitê de Pronunciamentos Contábeis - CPC, aprovados pelo Bacen (CPC 01, 03, 04, 05, 10, 23, 24, 25, 27, 33 e 46), especificamente aquelas
+aplicáveis a entidades cooperativas e a Lei do Cooperativismo n° 5.764 de 16 de dezembro de 1971 e Lei Complementar 130 de 17 de abril de 2009.
+
+
+Adicionalmente, a partir de janeiro de 2021, as alterações da Resolução CMN nº 4.818/2020 e da Resolução Bacen nº 2/20 foram incluídas na apresentação das demonstrações financeiras. O objetivo principal
+dessas alterações é trazer similaridade com as diretrizes de apresentação das demonstrações de acordo com as normas internacionais de contabilidade, Internacional Financial Reporting Standards (IFRS). As
+principais alterações implementadas foram: as contas do Balanço Patrimonial estão apresentadas por ordem de liquidez e exigibilidade e não mais segregadas em Circulante e Não Circulante, sendo a
+segregação apresentada apenas em Nota Explicativa; os saldos do Balanço Patrimonial do período estão apresentados comparativamente com o final do exercício social imediatamente anterior e as demais
+demonstrações estão comparadas com os mesmos períodos do exercício anterior.
+
+Reclassificação das cifras comparativas
+
+(a) Ingressos de depósitos intercooperativos
+
+Em 2021, foi efetuada reclassificação dos ingressos de depósitos intercooperativos, registrado em 30 de junho de 2020 como outros ingressos e receitas operacionais. A cooperativa entende que os valores
+aplicados nas Centrais via Centralização Financeira não se caracterizam como outros ingressos e receitas operacionais, conforme entendimento anteriormente adotado, devendo estes ser classificados como
+ingressos e receitas da intermediação financeira.
+
+(b) Caixa e equivalente de caixa inicial das demonstrações dos fluxos de caixa
+
+Adicionalmente, foram identificados ajustes relacionados a alteração no modelo de centralização onde as Cooperativas passaram a aplicar parte de seus recursos de curto prazo em fundos de renda fixa e
+multimercados classificados como caixa e equivalente de caixa. A referida correção afetou o caixa e equivalente de caixa inicial das demonstrações dos fluxos de caixa do semestre findo em 30 de junho de
+2021.
+Os valores reclassificados estão demonstrados no quadro abaixo:
+                                                                                                                                                                                      Reclassificação Jun/20
+DEMONSTRAÇÕES DE SOBRAS E PERDAS
+INGRESSOS E RECEITAS DA INTERMEDIAÇÃO FINANCEIRA                                                                                                                                                            3.469
+  Ingressos Depósitos Intercooperativos                                                                                                                                                                     3.469
+OUTROS INGRESSOS E RECEITAS/DISPÊNDIOS E DESPESAS OPERACIONAIS                                                                                                                                            (3.469)
+    Outros ingressos e receitas operacionais (Nota 18)                                                                                                                                                    (3.469)
+
+DEMONSTRAÇÕES DOS FLUXOS DE CAIXA                                                                                                                                                     Reclassificação Dez/20
+   Caixa e equivalente de caixa no início do período       (Nota 04)                                                                                                                                     775.542
+
+
+A autorização para a conclusão destas demonstrações financeiras foi concedida pela Diretoria em 16 de agosto de 2021.
+
+=== página 10 ===
+NOTA 03 – RESUMO DAS PRINCIPAIS PRÁTICAS
+
+As principais práticas contábeis adotadas para a elaboração das demonstrações financeiras foram:
+
+a) Apuração do resultado
+
+Os ingressos e os dispêndios, assim como as receitas e as despesas, são registrados mensalmente de acordo com o regime de competência, que estabelece que os ingressos e os dispêndios e as receitas e
+despesas devem ser incluídas na apuração dos resultados dos períodos em que ocorrerem, sempre simultaneamente quando se correlacionarem, independentemente de recebimento ou pagamento, alocados
+de forma proporcional de acordo com os montantes do ingresso bruto de ato cooperativo e da receita bruta de ato não-cooperativo, quando não identificados com cada atividade.
+
+
+De acordo com a Lei nº 5.764/71, o resultado é segregado em atos cooperativos, aqueles praticados entre as cooperativas e seus associados ou pelas cooperativas entre si, para a consecução de seus objetivos
+estatutários, e atos não cooperativos, aqueles que importam em operações com terceiros não associados.
+
+
+No semestre findo em 30 de junho de 2021 a Cooperativa apresentou um resultado líquido de R$ 2.080 (2020 - R$ 4.762) referente a Atos Não Cooperativos.
+
+
+b) Caixa e equivalentes de caixa
+Caixa e equivalentes de caixa são representados pelas disponibilidades, pelos valores aplicados pelas Cooperativas nas Centrais via Centralização Financeira e pelas cotas de fundos de renda fixa e
+multimercado, cujo vencimento das operações na data da efetiva aplicação seja igual ou inferior a 90 dias e apresentam risco insignificante de mudança de valor justo.
+
+
+c) Aplicações interfinanceiras de liquidez
+Representam operações a preços fixos referentes às compras de títulos com compromisso de revenda e aplicações em depósitos interfinanceiros e estão demonstradas pelo valor de resgate, líquidas dos
+rendimentos a apropriar correspondentes a períodos futuros.
+
+
+d) Títulos e valores mobiliários
+A carteira está composta por títulos de renda fixa e renda variável, os quais são apresentados pelo custo acrescido dos rendimentos auferidos até a data do Balanço, ajustados aos respectivos valores de
+mercado, conforme aplicável.
+
+
+e) Relações interfinanceiras – Centralização financeira
+
+Os recursos captados pela Cooperativa não investidos em suas atividades são centralizados através de repasses interfinanceiros para a Cooperativa Central, os quais são por ela utilizados para aplicações
+financeiras. Essas operações são caracterizadas como atos cooperativos, pela Lei nº 5.764/71 que define a política nacional do cooperativismo.
+
+
+f) Operações de crédito
+
+Estão demonstradas ao custo acrescido dos rendimentos auferidos. As operações de crédito estão classificadas de acordo com análise da Administração quanto ao nível de risco, considerando a conjuntura
+econômica e os riscos específicos em relação às operações, aos devedores e aos garantidores, observando os parâmetros estabelecidos nas Resoluções nº 2.682/99 e nº 2.697/00 do CMN.
+
+A atualização (“accrual”) das operações de crédito vencidas em até 59 dias é contabilizada em receitas de operações de crédito, e a partir do 60º dia, em rendas a apropriar. As operações classificadas como
+nível “H” permanecem nessa classificação por seis meses, quando então são baixadas contra a provisão existente e controladas, por no mínimo cinco anos, em contas de compensação, não mais figurando no
+balanço patrimonial.
+
+
+g) Provisão para perdas esperadas associadas ao risco de crédito
+A provisão para perdas esperadas associadas ao risco de crédito é fundamentada na análise das operações e leva em consideração a conjuntura econômica, a experiência passada, os riscos específicos e globais
+das carteiras, considerando os critérios de provisionamento, definidos nas Resoluções nº 2.682/99 e nº 2.697/00 do CMN, associados às avaliações procedidas pela Administração, na determinação dos riscos
+de crédito.
+
+
+h) Demais ativos circulantes e realizáveis a longo prazo (não circulantes)
+Demonstrados pelo custo de aquisição, incluindo, quando aplicável, os rendimentos auferidos e as variações monetárias pro-rata dia incorridos e as variações cambiais, deduzidos das correspondentes
+provisões para perdas ou ajuste ao valor de mercado e rendas a apropriar.
+i) Ativos não financeiros mantidos para venda
+
+A partir de 01 de janeiro de 2021 entraram em vigor as Resoluções CMN nº. 4.747 e nº 4.748 de agosto de 2019 e a Carta-Circular BACEN nº 3.994, que estabelecem critérios para reconhecimento e
+mensuração de ativos não financeiros mantidos para venda pelas Instituições Financeiras. A Resolução CMN nº 4.747, entre outros requisitos, estabelece que a depender da origem dos ativos não financeiros
+mantidos para venda, as instituições financeiras devem os classificar como: a) próprios; b) recebidos em liquidação de instrumento financeiro de difícil ou duvidosa como forma de pagamento de instrumentos
+financeiros de duvidosa solução não destinados ao uso próprio. A Resolução CMN nº 4.748, estabelece que as instituições financeiras e demais instituições autorizadas a funcionar pelo Banco Central do Brasil
+devem observar o Pronunciamento Técnico CPC 46 – Mensuração do Valor Justo (CPC46) na mensuração de elementos patrimoniais e de resultado, nas situações em que a mensuração pelo valor justo de tais
+elementos esteja prevista em regulamentação específica.
+
+
+j) Investimentos
+
+Estão demonstrados ao custo de aquisição, referem-se a participação em empresas do Sistema Sicredi, ajustados por provisão para perdas quando aplicável.
+
+
+k) Imobilizado de uso
+
+Corresponde aos direitos que tenham por objeto bens corpóreos destinados à manutenção das atividades ou exercidos com essa finalidade. Está demonstrado ao custo de aquisição. A depreciação do
+imobilizado de uso é computada pelo método linear, com base nas taxas anuais mencionadas na Nota "Imobilizado de uso e intangível", que levam em consideração a vida útil-econômica dos ativos.
+
+
+l) Intangível
+Corresponde a direitos adquiridos que têm por objeto bens incorpóreos destinados à manutenção do Sistema ou exercidos com essa finalidade. Está demonstrado aos valores de custo e contempla gastos na
+aquisição e desenvolvimento de software, ajustado por amortizações acumuladas, calculadas a partir do momento em que começam a serem usufruídos os benefícios respectivos, com base em taxas anuais
+que levam em consideração a vida útil-econômica dos bens, conforme mencionado na Nota "Imobilizado de uso e intangível".
+
+=== página 11 ===
+m) Redução ao valor recuperável de ativos
+
+Os ativos são revistos anualmente para se identificar evidências de perdas não recuperáveis, ou ainda, sempre que eventos ou alterações nas circunstâncias indicarem que o valor contábil pode não ser
+recuperável. Quando este for o caso, o valor recuperável é calculado para verificar se há perda. Quando houver perda, ela é reconhecida pelo montante em que o valor contábil do ativo ultrapassa seu valor
+recuperável, que é o maior entre o preço líquido de venda e o valor em uso de um ativo.
+
+
+n) Depósitos e repasses interfinanceiros
+Os depósitos à vista são compostos de valores cuja disponibilidade é imediata aos associados, portanto sem prazo determinado para movimentá-lo, ficando a critério do portador dos recursos fazê-lo conforme
+sua necessidade.
+
+Os depósitos a prazo são compostos por valores pactuados para disponibilidade em prazos pré-estabelecidos, os quais recebem atualizações por encargos financeiros remuneratórios conforme a sua
+contratação em pós-fixada e estão demonstrados pelo seu valor de resgate, líquidos das despesas financeiras a decorrer.
+
+Os repasses interfinanceiros estão demonstrados pelos valores das exigibilidades, considerados os encargos, variações cambiais e monetárias até a data das demonstrações financeiras, reconhecidos em base
+pro rata dia.
+
+
+o) Demais passivos circulantes e exigíveis a longo prazo (não circulantes)
+Demonstrados pelos valores conhecidos ou calculáveis, incluindo, quando aplicável, os encargos e as variações monetárias em base pro-rata dia incorridos, deduzidos das correspondentes despesas a
+apropriar.
+
+
+p) Impostos e contribuições
+
+O Imposto de Renda (IRPJ) e a Contribuição Social sobre o Lucro Líquido (CSLL) incidem sobre o resultado positivo em atos não cooperativos; neste caso, a provisão corresponde às alíquotas vigentes para o IRPJ
+(15%, acrescida de adicional de 10%) e a CSLL (15%), aplicadas sobre o lucro auferido, após os ajustes de base de cálculo previstos na legislação e a compensação de prejuízos fiscais e base de cálculo negativa
+de CSLL de anos anteriores, sendo essa dedução limitada à 30% do lucro tributável.
+
+
+Ainda no âmbito federal, as cooperativas estão sujeitas às contribuições para o Programa de Integração Social (PIS – 0,65%) e Contribuição para o Financiamento da Seguridade Social (COFINS – 4%) sobre as
+receitas auferidas nas operações com não associados, após a dedução de itens específicos previstos pela legislação, como as sobras apuradas nas Demonstrações de Sobras ou Perdas (DSP).
+
+
+Na esfera municipal, a cooperativa está sujeita à incidência do Imposto sobre Serviços de Qualquer Natureza (ISSQN), apurado a partir da receita com atos não cooperativos, ou seja, em decorrência da
+prestação de serviços a não associados; as alíquotas variam entre 2% e 5% e são determinadas pela legislação vigente em cada município.
+
+
+Os ingressos decorrentes de operações realizadas com cooperados não possuem incidência de tributos.
+
+
+q) Provisão para riscos cíveis, tributários e trabalhistas
+
+As práticas contábeis para registro, mensuração e divulgação de ativos e passivos contingentes e, também, das obrigações legais, são aplicadas de acordo com os critérios definidos pelo Pronunciamento
+Técnico CPC 25, emitido pelo Comitê de Pronunciamentos Contábeis (CPC), o qual foi aprovado pela Resolução nº 3.823/09, a saber:
+
+• Ativos contingentes são reconhecidos somente quando há garantias reais ou decisões judiciais favoráveis, transitadas em julgado. Os ativos contingentes com êxitos prováveis são apenas divulgados em nota
+explicativa;
+
+• Passivos contingentes são provisionados quando as perdas forem avaliadas como prováveis e os montantes envolvidos forem mensuráveis com suficiente segurança. Os passivos contingentes avaliados como
+de perdas possíveis são divulgados, e aqueles não mensuráveis com suficiente segurança e como de perdas remotas não são provisionados e/ou divulgados;
+
+• As obrigações legais são registradas como exigíveis, independentemente da avaliação sobre as probabilidades de êxito.
+
+
+r) Principais julgamentos e estimativas contábeis
+
+Na elaboração da Demonstração Financeira são exigidas aplicações de certas premissas e julgamentos relevantes que envolvem alto grau de incerteza e que podem produzir impacto relevante sobre essas
+demonstrações. As estimativas contábeis são determinadas pela Administração, considerando fatores e premissas estabelecidos com base em julgamento, que são revisados a cada semestre.
+As estimativas e julgamentos considerados mais relevantes pela Administração são detalhadas abaixo:
+
+I - Provisão para perdas esperadas associadas ao risco de crédito: Além de observar os requisitos para constituição de provisão em função do atraso no pagamento de parcela de principal ou encargos das
+operações, a provisão é calculada com base no julgamento da Administração quanto ao nível de risco, considerando a conjuntura econômica, os riscos específicos em relação à operação, aos devedores e
+garantidores, aos períodos de atraso e ao grupo econômico, observando os parâmetros estabelecidos nas Resoluções nº 2.682/99 e nº 2.697/00 do CMN.
+O detalhamento da provisão para perdas está apresentado na NOTA 07 ;
+
+II - Provisão para riscos cíveis, tributários e trabalhistas: Com base em prognósticos de perda avaliados pela Administração, constituindo provisão para as demandas de natureza fiscal, cível, tributários e
+trabalhistas através de avaliações jurídicas. A avaliação do prognósticos de perda leva em conta a probabilidade de desembolsos da entidade para cada elemento processual e pode incorrer em alto grau de
+julgamento quanto maior for a incerteza existente.
+O detalhamento das provisões e passivos contingentes está apresentado na NOTA 14 ;
+
+III - Redução ao valor recuperável de ativos intangíveis e outros ativos: o teste de perda por redução ao valor recuperável desses ativos é realizado, no mínimo anualmente, de forma a apurar se há algum
+indicativo de que uma ativo possa ter sofrido desvalorização. Quando o valor recuperável destes ativos não puder ser obtido por meio de fontes externas, a avaliação do valor recuperável desses ativos pode
+incorrer em consideráveis julgamentos, principalmente na mensuração dos potenciais benefícios econômicos futuros associados;
+
+IV - Mensuração dos efeitos decorrentes da covid-19 nas Demonstração Financeiras e impactos na Cooperativa: A Administração acompanha a evolução das suas operações que inclui o monitoramento dos
+níveis de capital e liquidez, do comportamento do risco de crédito dos ativos, dos riscos de mercado e seus instrumentos financeiros, da produção de novas operações de crédito e da evolução das captações.
+Os principais efeitos e impactos decorrentes da covid-19 sobre as Demonstrações Financeiras deste período estão descritos, quando aplicável, nas notas correspondentes às linhas do Balanço que foram
+afetadas.
+
+
+s) Moeda funcional
+As demonstrações financeiras são apresentadas na moeda funcional que é o real (R$), e as informações, exceto quando indicado de outra forma, em milhares de reais (R$ mil).
+
+=== página 12 ===
+NOTA 04 – CAIXA E EQUIVALENTES DE CAIXA
+
+Na elaboração das demontrações dos fluxos de caixa, foram classificados como caixa e equivalentes de caixa os seguintes montantes:
+
+                                                                                                                             30/06/2021                                       31/12/2020
+   Disponibilidades                                                                                                                             17.132                                                 15.362
+   Cotas de fundos de renda fixa e multimercado (centralização financeira) Nota 06                                                             736.069                                                775.542
+   Centralização financeira                                                                                                                    497.354                                                425.533
+Total                                                                                                                                        1.250.555                                              1.216.437
+A centralização financeira é composta pela transferência das sobras de caixa das Cooperativas filiadas, sem prazo de resgate, e remunerados de acordo com as taxas praticadas no mercado, que na média de
+2021 equivale a 98% do CDI (dezembro de 2020 - 99%).
+
+
+NOTA 05 - APLICAÇÕES INTERFINANCEIRAS DE LIQUIDEZ
+
+                                                                                                                                 30/06/2021                                                   31/12/2020
+                                                                                                                                  A vencer
+
+                                                                                          Até 3 meses         3 a 12 meses       Acima de 12 meses                  Total                        Total
+   DI entre Cooperativas                                                                            39.049           75.398                    10.091                           124.538                  183.397
+   DI entre Banco e Cooperativa                                                                           -            2.901                   18.590                            21.491                   16.791
+Total                                                                                               39.049           78.299                    28.681                           146.029                  200.188
+
+Total circulante                                                                                                                                                                 117.348                 132.789
+Total não circulante                                                                                                                                                              28.681                  67.399
+
+
+As aplicações de DI entre Cooperativas são realizadas com a finalidade de fornecer liquidez, com taxa de remuneração de até 130% do CDI.
+
+As aplicações de DI entre o Banco Sicredi e a Cooperativa são realizadas para cobrir as antecipações de recebíveis na adquirência e as operações de consignado INSS, ambas efetuadas pelos associados, com
+taxa de remuneração de 105% e 100% do CDI, respectivamente.
+
+NOTA 06 – TÍTULOS E VALORES MOBILIÁRIOS
+
+                                                                                                                                 30/06/2021                                                   31/12/2020
+                                                                                                                                  A vencer
+                            Mantidos até o vencimento
+                                                                                          Até 3 meses         3 a 12 meses       Acima de 12 meses                  Total                        Total
+   Letras financeiras subordinadas entre Cooperativas                                                     -                  -                  8.110                             8.110                      -
+   Títulos de renda fixa - outros                                                                   95.092                   -                      -                            95.092               172.045
+   Cotas de fundos de renda fixa - centralização financeira                                        142.392                   -                      -                           142.392               142.603
+   Cotas de fundos multimercado - centralização financeira                                         593.677                   -                      -                           593.677               632.939
+Total                                                                                              831.161                   -                  8.110                           839.271               947.587
+
+Total circulante                                                                                                                                                                 831.161                 947.587
+Total não circulante                                                                                                                                                               8.110                       -
+
+
+As letras financeiras subordinadas entre Cooperativas são aplicações emitidas com cláusula de subordinação e foram firmadas em fevereiro de 2021 com vencimento em fevereiro de 2028 .
+
+Os títulos de renda fixa - outros referem-se as cédulas do produtor rural (CPR), cujo valor de mercado é obtido a partir da curva de juros baseada nas taxas negociadas no mercado futuro de DI de um dia da B3
+e nos spreads de crédito obtidos através do prêmio de risco estabelecido para a contraparte da operação. As operações de CPRs são realizadas com os associado desde que garantidas pela cooperativa via
+instrumento de carta fiança, considera-se a garantia solidária e a natureza do sistema cooperativo Sicredi para definir um único spread para todas as contrapartes.
+
+As cotas de fundos, registradas como carteira própria são valorizadas diariamente, através do valor da cota, divulgada pelo administrador do fundo no site da CVM e ANBIMA.
+
+O valor de mercado dos títulos públicos federais, integrantes da carteira dos fundos de investimentos, foi apurado com base na cotação obtida na Associação Brasileira das Entidades de Mercado Financeiro e
+de Capital - ANBIMA.
+
+NOTA 07 – OPERAÇÕES DE CRÉDITO
+
+A carteira de créditos está assim composta e classificada:
+
+a) Composição da carteira de créditos por tipo de operação e prazos:
+                                                                                                                       30/06/2021                                                             31/12/2020
+                                                                       Vencidas a                                A vencer
+              Operações de crédito e Outros créditos
+                                                                        partir de                                                                             Total da carteira            Total da carteira
+                                                                                          Até 3 meses         3 a 12 meses       Acima de 12 meses
+                                                                         15 dias
+    Empréstimos e títulos descontados                                      9.668               165.960           338.560                    971.099                         1.485.287            1.232.301
+    Financiamentos                                                         1.052                43.447           124.788                    317.136                           486.423              434.598
+    Financiamentos rurais e agroindustriais                                  611                40.212            61.407                     99.213                           201.443              208.118
+    Financiamentos habitacionais                                                -                    4                 9                        343                               356                    -
+Total das operações de crédito                                            11.331               249.623           524.764                  1.387.791                         2.173.509            1.874.917
+    Avais e fianças honrados                                                  49                    15               276                         79                               419                  436
+    Títulos e créditos a receber                                                -               94.157            34.170                        110                           128.437              113.544
+Total de outros créditos                                                      49                94.172            34.446                        189                           128.856              113.980
+Carteira total                                                            11.380               343.795           559.210                  1.387.980                         2.302.365            1.988.897
+
+Total circulante                                                                                                                                                                 914.385              831.518
+Total não circulante                                                                                                                                                           1.387.980            1.157.379
+
+Os títulos e créditos a receber referem-se aos valores a receber de associados relativos a transações de cartões efetuadas na modalidade crédito sem juros.
+
+=== página 14 ===
+NOTA 10 – INVESTIMENTOS
+
+                                    Registrados ao custo de aquisição                                                    30/06/2021                                           31/12/2020
+Cooperativa Central Sicredi Sul/Sudeste                                                                                                     24.166                                                    24.166
+Sicredi Participações S.A.                                                                                                                  18.423                                                    18.423
+Outras participações e investimentos                                                                                                             2                                                         2
+    Sicredi Fundos Garantidores                                                                                                                  2                                                         2
+Total                                                                                                                                       42.591                                                    42.591
+
+NOTA 11 – IMOBILIZADO DE USO E INTANGÍVEL
+
+
+                                                                                       Taxas anuais                                      30/06/2021                                        31/12/2020
+                                                                                                                                Depreciação/
+                                                                                      de depreciação           Custo
+                                                                                                                                amortização                        Líquido                  Líquido
+                                                                                            %
+                                                                                                                                 acumulada
+Imobilizado de uso                                                                                  -          71.099                 (28.738)                                42.361            42.288
+   Imobilizações em curso                                                                           -           3.502                        -                                 3.502             6.191
+   Terrenos                                                                                         -              75                        -                                    75                75
+   Edificações                                                                                    4%            8.141                  (2.590)                                 5.551             5.726
+   Instalações                                                                                   10%            4.525                  (3.103)                                 1.422             1.157
+   Benfeitorias em imóveis de terceiros                                                          10%           17.641                  (5.136)                                12.505             9.601
+   Móveis e equipamentos                                                                         10%           15.000                  (5.316)                                 9.684             8.897
+   Equipamentos de comunicação e segurança                                                       10%            2.444                    (879)                                 1.565             1.526
+   Equipamentos de processamento de dados                                                        20%           18.869                 (10.978)                                 7.891             8.880
+   Veículos                                                                                      20%              902                    (736)                                   166               235
+
+Intangível                                                                                                     43.104                  (25.975)                                  17.129               18.331
+  Investimentos Confederação                                                                                   32.842                  (22.235)                                  10.607               10.941
+  Outros ativos intangíveis                                                                                    10.262                   (3.740)                                   6.522                7.390
+
+NOTA 12 – RELAÇÕES INTERFINANCEIRAS
+
+                                                                                                                         30/06/2021                                           31/12/2020
+   Repasses interfinanceiros                                                                                                               246.562                                                235.072
+   Recebimentos e pagamentos a liquidar                                                                                                     21.890                                                      4
+Total                                                                                                                                      268.452                                                235.076
+
+a) Repasses Interfinanceiros
+                                                                                                           30/06/2021                                                                      31/12/2020
+                                                   Sem vencimento e
+                                                                                  De 3 a 12 meses             Acima de 12 meses                            Total                              Total
+                                                      até 3 meses
+   Banco Cooperativo Sicredi S.A.                              38.906                         61.344                      94.038                                             194.288           225.003
+Total - Recursos do Crédito Rural                              38.906                         61.344                      94.038                                             194.288           225.003
+   Banco Cooperativo Sicredi S.A.                                 175                              -                      52.099                                              52.274            10.069
+Total - Outros Recursos                                           175                              -                      52.099                                              52.274            10.069
+
+Total                                                          39.081                         61.344                     146.137                                             246.562           235.072
+
+Total circulante                                                                                                                                                                100.425           115.697
+Total não circulante                                                                                                                                                            146.137           119.375
+
+
+As obrigações por repasses interfinanceiros provenientes de recursos do crédito rural operam com uma taxa até 8% a.a. com vencimentos até 15/05/2031, e os recursos são repassados pelo Banco Cooperativo
+Sicredi S.A.
+
+As obrigações por repasses interfinanceiros provenientes de outros recursos operam com uma taxa de 124,5% do CDI com vencimentos até 15/03/2027 e com CDI + 2,24% a.a. com vencimentos até
+15/03/2028. Os recursos são repassados pelo Banco Cooperativo Sicredi S.A.,sendo que para os recursos advindos do compulsório da poupança a taxa praticada é 84,5% do CDI e vencimento em 01/06/2023.
+
+
+
+NOTA 13 – OUTROS PASSIVOS FINANCEIROS
+
+                                                                                                                         30/06/2021                                          31/12/2020
+   Provisão para garantias financeiras prestadas                                                                                             4.598                                                     4.323
+   Recursos em trânsito de terceiros                                                                                                         3.529                                                     5.130
+   Recursos vinculados a operações de crédito                                                                                                    2                                                         -
+Total circulante                                                                                                                             8.129                                                     9.453
+A provisão para garantias financeiras prestadas refere-se a coobrigações assumidas pelas Cooperativas na realização de operações de seus cooperados junto ao Banco.
+
+=== página 15 ===
+NOTA 14 – PROVISÕES PARA RISCOS CÍVEIS, TRIBUTÁRIOS E TRABALHISTAS
+
+
+A Cooperativa possui provisão para riscos cíveis, tributários e trabalhistas em andamento, sendo que os valores estimados e suas respectivas movimentações e provisões estão demonstrados no quadro a
+seguir, conforme a natureza dos passivos.
+                            Natureza                                       Probabilidade de perda                       30/06/2021                                        31/12/2020
+   Trabalhista                                                                    Provável                                                   7.609                                                    7.201
+   Cível                                                                          Provável                                                     217                                                      257
+   Tributária                                                                     Provável                                                       6                                                         -
+Total não circulante                                                                                                                         7.832                                                    7.458
+
+
+Em 30 de junho de 2021, a Cooperativa possuía também processos de natureza Trabalhista, Cível e Tributária, cuja probabilidade de perda é possível no montante estimado de R$ 7.561, R$ 986 e R$ 5.269
+(dezembro de 2020 - R$ 7.977, R$ 936 e R$ 5.242), respectivamente.
+
+
+NOTA 15 – OUTROS PASSIVOS
+
+                                                                                                                        30/06/2021                                        31/12/2020
+   Operações com cartões                                                                                                                   126.580                                                  112.389
+   Provisão para pagamentos a efetuar                                                                                                        9.429                                                    8.075
+   Cotas de capital a pagar                                                                                                                  8.600                                                    7.100
+   Provisão para participações nos lucros                                                                                                    4.450                                                    7.091
+   Fundo de assistência técnica, educacional e social                                                                                        3.549                                                    4.180
+   Demais fundos constituídos                                                                                                                1.388                                                    1.691
+   Impostos e contribuições a recolher                                                                                                       3.113                                                    3.413
+   Credores diversos                                                                                                                         3.883                                                    3.153
+   Cheques administrativos                                                                                                                     101                                                      151
+   Cobrança e arrecadação de tributos                                                                                                        2.304                                                        2
+   Pendências a regularizar                                                                                                                    740                                                    2.072
+Total circulante                                                                                                                           164.137                                                  149.317
+
+As operações com cartões referem-se a agenda financeira de cartão e parcelado lojista.
+
+NOTA 16 – PATRIMÔNIO LÍQUIDO
+
+
+a) Capital social
+O capital social é dividido em quotas-partes de valor unitário equivalente a R$ 1,00 (um real), sendo que cada associado tem direito a um voto, independente do número de suas quotas-partes, e está assim
+composto:
+
+                                                                                                                         30/06/2021                                       31/12/2020
+   Capital social                                                                                                                          206.528                                                  203.634
+   Total de associados                                                                                                                     175.697                                                  167.830
+
+
+No primeiro semestre de 2021, a cooperativa aumentou seu capital social no montante de R$ 2.894 (junho de 2020 – R$ 4.653), sendo R$ 3.874 (junho de 2020 – R$ 5.220) via integralização de resultados e R$
+8.560 (junho de 2020 – R$ 7.904), via integralização de quotas-partes. No mesmo período houve baixas de capital, através do resgate de quotas-partes, no montante de R$ 9.540 (junho de 2020 – R$ 8.471).
+
+
+NOTA 17 – DISPÊNDIOS E DESPESAS DE PESSOAL
+
+                                                                                                                                             30/06/2021                                30/06/2020
+   Remuneração                                                                                                                                                      21.905                           20.800
+   Benefícios                                                                                                                                                        6.392                            6.143
+   Encargos sociais                                                                                                                                                  8.124                            7.657
+   Treinamentos                                                                                                                                                        654                              713
+Total                                                                                                                                                               37.075                           35.313
+
+NOTA 18 – OUTROS INGRESSOS E RECEITAS OPERACIONAIS
+
+                                                                                                                                             30/06/2021                                30/06/2020
+   Absorção de dispêndios - FATES                                                                                                                                      631                            1.701
+   Utilização de fundo social                                                                                                                                        2.396                            2.095
+   Recuperação de encargos e despesas                                                                                                                                  790                              568
+   Reversão de provisões operacionais                                                                                                                                2.606                            2.168
+   Reversão de provisões para garantias financeiras prestadas                                                                                                        1.001                            1.147
+   Reversão de provisões para passivos contingentes                                                                                                                    185                              157
+   Aluguel de máquina - Cartões Sicredi                                                                                                                                707                                -
+   Outras rendas operacionais                                                                                                                                          848                              638
+Total                                                                                                                                                                9.164                            8.474
+
+=== página 16 ===
+NOTA 19 – OUTROS DISPÊNDIOS E DESPESAS OPERACIONAIS
+
+                                                                                                                                                30/06/2021                                30/06/2020
+   Descontos concedidos em renegociação e crédito                                                                                                                       2.025                            2.771
+   Contribuições Cooperativistas                                                                                                                                           73                               72
+   Contribuição Sicredi Fundos Garantidores                                                                                                                               223                              819
+   Contribuição Confederação Sicredi                                                                                                                                    8.631                            8.636
+   Cooperativa Central Sicredi Sul/Sudeste                                                                                                                                759                              737
+   Encargos da administração financeira                                                                                                                                     1                                3
+   Repasse Administradora de Cartões                                                                                                                                        -                              280
+   Provisões para garantias financeiras prestadas                                                                                                                       1.276                            1.026
+   Provisões para passivos contingentes                                                                                                                                   558                              849
+   Outras provisões operacionais                                                                                                                                        2.560                            2.378
+   Operação com cartões (emissão, postagem, processamento, demais )                                                                                                     3.740                            2.573
+   Risco operacional                                                                                                                                                      622                              214
+   Juros e comissões                                                                                                                                                      538                              283
+   Outras despesas operacionais                                                                                                                                         1.561                              899
+Total                                                                                                                                                                  22.567                           21.540
+
+NOTA 20 – COOBRIGAÇÕES EM GARANTIAS PRESTADAS
+
+As garantias prestadas pela Cooperativa sob a forma de aval, fiança ou outras coobrigações estão assim compostas:
+                                                                                                                           30/06/2021                                        31/12/2020
+   Beneficiários de garantias prestadas                                                                                                       301.381                                                  261.113
+   Coobrigações em cessões de crédito                                                                                                              89                                                       88
+Total                                                                                                                                         301.470                                                  261.201
+
+
+Nas garantias prestadas estão inclusas as operações com recursos recebidos de instituições financeiras e repassados aos associados via Banco Cooperativo Sicredi S.A., em que a Cooperativa é intermediária e
+garantidora solidária por força de contrato firmado entre as partes. Os valores são compostos, em sua maioria, pelos programas do Finame e BNDES.
+
+
+NOTA 21 – GERENCIAMENTO DE RISCOS E DE CAPITAL
+
+
+O Sistema Sicredi considera o gerenciamento de riscos prioritário na condução de suas atividades e negócios, adotando práticas em absoluta consonância com os preceitos dos Acordos de Basileia. Dessa
+maneira, possui áreas especializadas para o gerenciamento destes riscos, centralizadas no Banco Cooperativo Sicredi S.A. Entre os principais riscos gerenciados pela instituição, destacam-se a Estrutura de
+Gerenciamento de Capital, o Risco Operacional, de Mercado, de Liquidez, e o de Crédito, cujas estruturas são apresentadas a seguir:
+
+I - Estrutura de Gerenciamento de Capital
+Para os efeitos da legislação vigente, define-se o Gerenciamento de Capital como o processo contínuo de:
+
+• Monitoramento e controle do capital mantido pela Instituição;
+• Avaliação da necessidade de capital para fazer face aos riscos a que a Instituição está sujeita;
+• Planejamento de metas e de necessidade de capital, considerando os objetivos estratégicos da Instituição.
+
+O gerenciamento de capital das instituições do Sistema Sicredi é centralizado no Banco Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a complexidade dos produtos e
+a dimensão da exposição ao risco do Sistema. A estrutura centralizada é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições do Sistema na gestão do capital.
+
+Os processos e políticas para o gerenciamento de capital são estabelecidos seguindo os critérios mínimos da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas pelas alçadas
+competentes de cada instituição do Sistema.
+
+Os processos para o gerenciamento de capital do Sistema Sicredi incluem:
+
+• Mecanismos que possibilitem a identificação, avaliação e monitoramento dos riscos relevantes incorridos pela instituição, inclusive dos riscos não cobertos pelos requerimentos mínimos legais de capital;
+• Metas de capital em níveis acima dos requerimentos mínimos legais e que reflitam o apetite a risco do sistema, visando manter capital para suportar os riscos incorridos e garantir o crescimento dos negócios
+de forma sustentável e eficiente;
+• Plano de Capital para cada Instituição do Sistema, consistente com o planejamento estratégico, abrangendo o horizonte mínimo de três anos;
+• Testes de estresse e avaliação de seus impactos no capital;
+• Relatórios gerenciais periódicos sobre a adequação do capital para a diretoria e para o conselho de administração;
+
+
+II - Risco Operacional
+O risco operacional é definido como a possibilidade de ocorrência de perdas resultantes de eventos externos ou de falha, deficiência ou inadequação de processos internos, pessoas ou sistemas. A definição
+inclui, ainda, o risco legal associado à inadequação ou deficiência em contratos firmados pela instituição, às sanções em razão de descumprimento de dispositivos legais e às indenizações por danos a terceiros
+decorrentes das atividades desenvolvidas pela instituição. O gerenciamento do risco operacional é realizado de forma conjunta entre o Banco, Centrais e Cooperativas Singulares. Essas entidades tem como
+responsabilidade o cumprimento dos normativos internos e externos, valendo-se de ferramentas, metodologias e processos estabelecidos sistemicamente. Tais processos são compostos por um conjunto de
+ações que visam manter em níveis adequados os riscos a que cada instituição está exposta. São estas:
+• Normatização interna contendo regras, papeis e responsabilidades quanto ao gerenciamento do risco operacional disseminados ao pessoal da instituição;
+• Identificação, avaliação, tratamento e monitoramento dos riscos operacionais;
+• Armazenamento, monitoramento e investigação de perdas operacionais, visando mantê-las em níveis considerados aceitáveis pela instituição;
+• Reportes periódicos e estruturados sobre temas relevantes de risco operacional e controles internos aos fóruns de governança;
+• Implementação e manutenção de programas de capacitação sobre a cultura de riscos e controles na Instituição;
+• Testes de estresse periódicos para cenários de risco operacional;
+• Procedimentos que visam assegurar a continuidade das atividades da instituição e limitar perdas decorrentes da interrupção dos processos críticos de negócio, incluindo análises de impacto e testes
+periódicos de planos de continuidade.
+
+Ainda, um conjunto de procedimentos vem sendo implementados para avaliar, gerenciar e monitorar o risco operacional decorrente de serviços terceirizados relevantes para o funcionamento regular da
+instituição.

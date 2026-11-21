@@ -1,0 +1,1316 @@
+
+=== página 11 ===
+Banco Cooperativo Sicredi S.A.
+Demonstrações consolidadas do resultado
+Exercícios findos em 31 de dezembro de 2022 e 2021
+(Em milhares de reais, exceto lucro por ação)
+
+
+                                                               Nota          2022              2021
+
+ Receita de juros                                                20           11.569.888         4.115.684
+ Despesa de juros                                                20          (10.435.584)      (3.137.907)
+ Receita líquida com juros                                                     1.134.304           977.777
+
+ Receita de tarifas, taxas e comissões                           21           1.092.889           961.737
+ Despesa de tarifas, taxas e comissões                           21            (471.209)        (405.142)
+ Receita líquida de tarifas, taxas e comissões                                  621.680           556.595
+
+
+ Ganho / (perda) líquido de ativos e passivos financeiros
+                                                                 22            (146.186)         189.607
+ mensurados pelo valor justo no resultado
+
+ Outras receitas operacionias                                    23            1.597.075          684.190
+ Despesas de pessoal                                             24             (125.175)        (117.358)
+ Outras despesas administrativas                                 25           (2.044.056)      (1.728.491)
+ Depreciação e amortização                                   11, 12 e 13          (3.997)          (4.774)
+ Outras despesas operacionais                                    26             (685.693)        (312.738)
+ Provisão para perdas de créditos esperadas                   9 e 10a            (74.641)         (56.577)
+ Lucro operacional antes da tributação                                           273.311          188.231
+ Tributos sobre o lucro                                          27             (110.928)         (81.314)
+ Lucro líquido do exercício                                                      162.383          106.917
+ Lucro líquido atribuível aos acionistas controladores                          162.068          106.875
+ Lucro líquido atribuível aos acionistas não controladores                          315               42
+Lucro básico/diluído por ação (em Reais - R$)
+ Ações preferenciais classe A                                                       0,28              0,28
+ Ações preferenciais classe B                                                       0,02              0,15
+ Ações ordinárias                                                                   0,04              0,02
+Quantidade
+ Ações preferenciais classe A                                    19          249.548.540      249.548.540
+ Ações preferenciais classe B                                    19           32.782.343       32.782.343
+ Ações ordinárias                                                19        2.695.360.433    1.780.876.640
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras consolidadas.
+
+
+
+
+8
+
+=== página 12 ===
+Banco Cooperativo Sicredi S.A.
+Demonstrações consolidadas do resultado abrangente
+Exercícios findos em 31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+                                                                2022         2021
+
+
+Lucro líquido do exercício                                       162.383      106.917
+
+Ativos financeiros ao valor justo por meio dos resultados
+abrangentes
+Movimento líquido no valor justo                                   (402)       2.340
+Efeito de imposto de renda                                          181       (1.053)
+Total do resultado abrangente                                   162.162      108.204
+Resultado abrangente atribuível a participação dos acionistas
+                                                                       315          42
+não controladores
+Resultado abrangente atribuível ao acionista controlador        161.847      108.162
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras consolidadas.
+
+
+
+
+9
+
+=== página 13 ===
+Banco Cooperativo Sicredi S.A.
+Demonstrações consolidadas das mutações do patrimônio líquido
+Exercícios findos em 31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+                                                     Capital Social
+
+                                                                      Instrumento Híbrido de                                          Ajuste          Total do patrimônio   Participação de        Total do
+                                                                      Capital e Dívida/Dívida     Lucros         Reservas de        Marcação a     líquido dos acionistas   acionistas não        patrimônio
+                                                      Subscrito            Subordinada          acumulados         Lucros          Mercado TVM          controladores        controladores          líquido
+Saldos em 1° de janeiro de 2021                          1.458.974                   224.469                 -          56.728           (1.066)               1.739.105                  96         1.739.201
+
+  Lucro líquido do exercício                                      -                         -       106.875                    -              -                  106.875                  42          106.917
+  Outros resultados abrangentes
+    Ativos financeiros ao valor justo por meio dos
+    resultados abrangentes                                        -                         -              -                  -          1.287                     1.287                      -         1.287
+  Reserva Legal                                                   -                         -         (5.400)             5.400              -                         -                      -             -
+  Reserva especial de lucro                                       -                         -          1.126             (1.189)             -                       (63)                     -           (63)
+  Dividendos                                                      -                         -       (102.601)                 -              -                  (102.601)                     -      (102.601)
+  Juros ao capital próprio                                        -                         -              -                  -              -                         -                                    -
+  Atualização do instrumento hibrido de capital e
+  dívida/dívida subordinada
+                                                                 -                         -                 -                 -              -                        -                      -             -
+  Aumento de capital                                       930.000                    47.048                 -                 -              -                  977.048                      -       977.048
+
+Saldos em 31 de dezembro de 2021                         2.388.974                   271.517                 -          60.939             221                 2.721.651                 138         2.721.789
+
+  Lucro líquido do exercício                                      -                         -       162.068                    -              -                  162.068                (315)         161.753
+  Outros resultados abrangentes
+    Ativos financeiros ao valor justo por meio dos
+    resultados abrangentes                                       -                         -               -                 -            (221)                     (221)                     -           (221)
+  Reserva Legal                                                  -                         -          (8.972)            8.972               -                         -                      -              -
+  Reserva especial de lucro                                      -                         -          17.442           (16.740)              -                       702                      -            702
+  Dividendos                                                     -                         -        (170.538)                -               -                  (170.538)                     -       (170.538)
+  Aumento de capital                                     1.100.000                 1.274.347               -                 -               -                 2.374.347                      -      2.374.347
+
+Saldos em 31 de dezembro de 2022                         3.488.974                 1.545.864                 -          53.171                -                5.088.009                (177)        5.087.832
+
+
+
+
+As notas explicativas são parte integrante das demonstrações financeiras consolidadas.
+
+
+
+
+10
+
+=== página 14 ===
+Banco Cooperativo Sicredi S.A.
+Demonstrações consolidadas dos fluxos de caixa
+Exercícios findos em 31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+                                                                                                2022            2021
+Fluxo de caixa das atividades operacionais
+Lucro líquido consolidado antes da tributação e participação dos acionistas não controladores      273.311         188.231
+Ajustes ao lucro:
+Itens não monetários incluídos no lucro líquido consolidado
+Depreciação e amortização                                                                            3.997           4.774
+Provisões para perdas de créditos es peradas                                                        74.641          56.577
+Aumento/(Redução) em instrumentos híbridos de capital e dívida                                         466             937
+Provisão para passivos em litígios                                                                   5.034             298
+Custo da alienação de imobilizado                                                                    1.160             160
+Ajuste ao valor de mercado - TVM e derivativos                                                    (200.241)        (34.563)
+                                                                                                  (114.943)          28.183
+
+(Aumento) redução líquido nos ativos operacionais
+Ativos financeiros ao custo amortizado                                                          (31.086.247)   (22.965.268)
+Ativos financeiros ao valor justo por meio do resultado                                             360.386         93.778
+Ativos financeiros ao valor justo por meio de outros resultados abrangentes                     (16.896.151)     6.335.600
+Outros ativos                                                                                      (466.932)       (47.497)
+                                                                                                (48.088.944)   (16.583.387)
+Aumento (redução) líquido nos passivos operacionais
+Passivos financeiros ao cus to amortizado                                                       61.996.405     11.982.970
+Passivos financeiros ao valor justo por meio do resultado                                          339.143        (18.863)
+Outros passivos                                                                                  3.826.154      2.655.925
+Impostos sobre lucros pagos                                                                       (265.213)       (44.120)
+                                                                                                65.896.489     14.575.912
+
+
+Total de fluxo de caixa líquido (aplicado nas) proveniente das atividades operacionais          17.965.913      (1.791.061)
+
+
+Fluxos de caixa das atividades de investimento
+Ativos financeiros ao custo amortizado                                                          (12.592.459)      412.597
+Aquisição de imobilizado                                                                             (5.878)       (3.537)
+Total de fluxo de caixa proveniente das (aplicado nas) atividades de investimento               (12.598.337)      409.060
+
+Fluxos de caixa das atividades de financiamento
+Dívida subordinada                                                                                     -         (106.920)
+Aumento Capital                                                                                    (40.000)       930.000
+Juros ao capital                                                                                 1.100.000        (10.000)
+Pagamento de dividendos                                                                            (92.602)       (70.139)
+Caixa líquido preveniente das atividades de investimento                                           967.398        742.941
+
+Movimento líquido em caixa e equivalentes de caixa                                               6.334.974       (639.060)
+
+Caixa e equivalentes de caixa no início do exercício                                             2.151.978      2.791.038
+Caixa e equivalentes de caixa no final do exercício                                              8.486.952      2.151.978
+
+Transações não monetárias                                                                          164.600        101.126
+Dividendos                                                                                         164.600        101.126
+
+
+As notas explicativas são parte integrante das demonstrações financeiras consolidadas.
+
+
+
+
+11
+
+=== página 15 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+1. Contexto Operacional
+O Banco Cooperativo Sicredi S.A. (“Banco” ou “Instituição”), instituição financeira privada nacional,
+constituído de acordo com a Resolução nº 2.193, de 31 de agosto de 1995, do Conselho Monetário
+Nacional - CMN, teve seu funcionamento autorizado pelo Banco Central do Brasil – BACEN em 20 de
+março de 1996 e iniciou suas atividades em 3 de junho de 1996. A Instituição tem por objeto social e
+atividade preponderante o exercício de operações bancárias de caráter comercial, inclusive de
+operações de câmbio, operando na forma de banco múltiplo, através de sua carteira comercial e de
+investimentos. Por decisão estratégica do Sistema de Crédito Cooperativo (“Sicredi” ou “Sistema”), atua
+como instrumento das Cooperativas de Crédito, possibilitando a estas, através de convênios, operar
+nos diversos mercados disponíveis e praticar operações complementares às de sua natureza,
+oportunizando aos seus associados o acesso a um balcão de serviços completo.
+
+Em 31 de dezembro de 2022, o Sistema está organizado por 105 Cooperativas de Crédito filiadas, que
+operam com uma rede de atendimento com 2.454 pontos. A estrutura conta ainda com as cinco
+Centrais Regionais (“Centrais”) – acionistas da Sicredi Participações S.A. – a Confederação
+Interestadual das Cooperativas Ligadas ao Sicredi (“Confederação Sicredi”), a Fundação Sicredi e o
+Banco, que controla a Corretora de Seguros Sicredi Ltda, a Administradora de Consórcios Sicredi Ltda
+e a Administradora de Bens Sicredi Ltda.
+
+As operações são conduzidas no contexto do conjunto das empresas integrantes do Sicredi, atuando
+no mercado de forma integrada. Os benefícios dos serviços prestados entre as empresas do Sistema
+e os custos das estruturas operacional e administrativa são absorvidos, em conjunto ou
+individualmente, por essas empresas.
+
+O Banco e o Rabo Partnerships B.V., braço de desenvolvimento do grupo holandês Rabobank,
+firmaram acordo de investimento em 07 de junho de 2011. A parceria proporciona o intercâmbio de
+informações e de conhecimentos técnicos entre o Sistema Sicredi e o Sistema Rabobank, podendo
+ampliar o portfólio de produtos do Sicredi nos segmentos nos quais o Rabobank tem expertise. O
+processo, formalizado através de acordo de investimento, foi aprovado pelo BACEN em 27 de janeiro
+de 2011 e também pelo governo federal, através do Decreto presidencial de 18 de maio de 2011,
+publicado no Diário Oficial da União em 19 de maio de 2011.
+
+
+
+
+12
+
+=== página 19 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+(iv) Ativos e passivos financeiros ao valor justo por meio do resultado
+
+O Banco designa ativos financeiros, irrevogavelmente, ao valor justo por meio do resultado no
+reconhecimento inicial (opção de valor justo), quando a opção reduz ou elimina significativamente
+inconsistências de mensuração ou de reconhecimento que, de outro modo, poderia resultar da
+mensuração de ativos ou passivos ou do reconhecimento de ganhos e perdas nesses ativos e passivos
+em bases diferentes.
+
+(v) Ativos financeiros ao valor justo por meio de outros resultados abrangentes
+
+Ativos financeiros designados ao valor justo por meio de outros resultados abrangentes incluem ações
+e instrumentos de dívida.
+
+Instrumentos de dívida podem ser classificados como ativos financeiros designados ao valor justo por
+meio de outros resultados abrangentes se: o ativo financeiro é mantido dentro de um modelo de negócio
+cujo objetivo é atingido através do recolhimento de fluxos de caixa contratuais e da venda de ativos
+financeiros; e os termos contratuais do ativo financeiro conduzem a fluxos de caixas em datas
+especificas, que são compostos apenas por pagamentos de principal e juros. Os ganhos ou perdas não
+realizadas são reconhecidos como outros resultados abrangentes. No vencimento do instrumento de
+dívida, os ganhos ou perdas não realizadas, previamente reconhecidos nos outros resultados
+abrangentes, são reclassificados no resultado, como “Ganho/(perda) de valor justo por meio de outros
+resultados abrangentes”.
+
+(vi) Ativos financeiros ao custo amortizado
+
+Um ativo financeiro deve ser mensurado ao custo amortizado se ele apresenta ambas as características
+abaixo:
+
+• Se o ativo financeiro é mantido dentro de um modelo de negócio cujo objetivo é de manter ativos
+financeiros para recolher fluxos de caixa contratuais e;
+
+• Os termos contratuais do ativo financeiro conduzem a fluxos de caixas em datas especificas, que são
+compostos apenas por pagamentos de principal e juros. Após a mensuração inicial, os montantes dos
+ativos financeiros serão mensurados ao custo amortizado utilizando o método da taxa de juros efetiva.
+Mesmo que o Banco não planeje vender ativos classificados nessa categoria, pois está esperado que
+ela mantenha esses ativos até o vencimento para recolher fluxos de caixa contratuais, o Banco não é
+obrigado a manter esses instrumentos até o vencimento e um evento de venda pode ocorrer.
+
+(vii) Passivos financeiros ao custo amortizado
+
+Os passivos financeiros ao custo amortizado são mensurados ao custo amortizado, usando o método
+da taxa de juros efetiva e levando em consideração qualquer desconto ou prêmio na emissão e custos
+relevantes que passem a constituir parte integrante da taxa de juros efetiva.
+
+
+
+16
+
+=== página 20 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+a) Baixa de ativos e passivos financeiros
+
+(i) Ativos financeiros
+
+Um ativo financeiro (ou parte aplicável de um ativo financeiro ou um grupo de ativos semelhantes) é
+baixado quando o direito de receber o fluxo de caixa do ativo estiver vencido ou houver transferência
+do direito de receber o fluxo de caixa do ativo ou assunção da obrigação de pagar o fluxo de caixa
+recebido, no montante total, sem demora material, a um terceiro devido a um contrato de repasse e se:
+(i) houver transferência substancial de todos os riscos e benefícios do ativo; ou (ii) não houver
+transferência substancial ou retenção substancial de todos os riscos e benefícios do ativo, mas houver
+transferência do controle sobre o ativo.
+
+Quando o Banco e suas subsidiárias transferem o direito de receber o fluxo de caixa de um ativo ou
+tenha entrado em um contrato de repasse, e não tenha transferido ou retido substancialmente todos os
+riscos e benefícios do ativo, ou também não tenha transferido o controle sobre o ativo, é reconhecido
+na medida do envolvimento contínuo do Banco e suas subsidiárias no ativo. Nesse caso, o Banco
+também reconhece um passivo relacionado.
+
+O ativo transferido e o passivo relacionado são mensurados com base a refletir os direitos e obrigações
+retidas pelo Banco e suas subsidiárias.
+
+(ii) Passivos financeiros
+
+Um passivo financeiro é baixado quando a obrigação a respeito do passivo é eliminada, cancelada ou
+vencida. Quando um passivo financeiro existente é substituído por outro do mesmo credor em termos
+substancialmente diferentes, ou os termos do passivo existente são substancialmente modificados, a
+troca ou modificação é tratada como uma baixa do passivo original e o reconhecimento de um novo
+passivo, e a diferença para o valor contábil é reconhecida no resultado do exercício.
+
+b) Redução ao valor recuperável de ativos financeiros
+
+Conforme o IFRS 9, no reconhecimento inicial de um instrumento de dívida, o Banco deve realizar as
+projeções das eventuais perdas esperadas num período de 12 meses e reconhecer essas mesmas
+como provisão.
+
+A norma introduziu o conceito de perda esperada (incluindo o uso de informações prospectivas) e
+classificação em três estágios. Um ativo sofre alteração de estágio de perdas de crédito esperadas à
+medida que o risco de crédito se deteriora. Se, em um período subsequente, a qualidade de um ativo
+financeiro melhorar ou o aumento significativo no risco de crédito anteriormente identificado se reverter,
+o ativo financeiro poderá voltar para o estágio anterior, a menos que seja um ativo financeiro originado
+com problemas de recuperação de crédito.
+
+O modelo de perda de crédito esperada inclui o uso de informações prospectivas e classificação do
+ativo financeiro em três estágios, conforme abaixo:
+
+
+17
+
+=== página 21 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+• Estágio 1 - Perdas de crédito esperadas para 12 meses: representa os eventos de
+inadimplência possíveis dentro de 12 meses. Aplicável aos ativos financeiros sem aumento significativo
+no risco de crédito e sem problemas de recuperação de crédito na originação;
+
+• Estágio 2 - Perdas permanentes de crédito esperadas ao longo da vida do instrumento
+financeiro: Aplicável aos ativos financeiros com um aumento significativo no risco de crédito, mas que
+não foram originados com problemas de recuperação.
+
+• Estágio 3 - Perdas permanentes de crédito esperadas para ativos com problemas de
+recuperação de crédito: Aplicável aos ativos financeiros considerados com problemas de
+recuperação de crédito devido à ocorrência de um ou mais eventos que tenham um impacto prejudicial
+nos fluxos de caixa futuros estimados desse ativo. Para ativos financeiros que não são originados com
+problemas de recuperação, mas que posteriormente se tornaram com problemas de recuperação,
+difere do estágio 2 pelo reconhecimento da receita de juros aplicando-se a taxa de juros efetiva ao
+custo amortizado (líquido de provisão) em vez do valor contábil bruto.
+
+Um ativo migrará de estágio à medida que seu risco de crédito aumentar ou diminuir. Dessa forma, um
+ativo financeiro que migrou para os estágios 2 e 3 poderá voltar para o estágio 1, a menos que tenha
+sido originado ou comprado com problemas de recuperação de crédito.
+
+c) Mensuração
+
+Os ativos financeiros são inicialmente reconhecidos ao valor justo de mercado.
+
+Diferenças entre o valor justo e a consideração paga pela Instituição para a aquisição do ativo
+(amplamente conhecida como “day-one profit/loss”) são reconhecidas no resultado do período somente
+quando a Instituição possui a capacidade de observação direta no mercado de fatores ou premissas
+de precificação dos ativos.
+
+A Instituição utiliza como critério de reconhecimento inicial de um instrumento financeiro (para todas as
+categorias de ativos ou passivos financeiros) o método de compra e venda regular pela data de
+negociação, ou seja, o reconhecimento de um ativo financeiro a ser recebido e um passivo financeiro
+a ser pago na data da negociação (data em que a Instituição se torna parte de um contrato) e a baixa
+de um ativo financeiro e reconhecimento de ganho ou perda no dia em que a negociação ocorre.
+
+A administração determina a classificação apropriada dos seus investimentos nas suas datas de
+aquisição.
+
+3.2.1 Operações compromissadas
+
+Os ativos financeiros que são vendidos e estão sujeitos a acordos de venda e recompra estão incluídos
+nas demonstrações financeiras em “ativos financeiros disponíveis para venda”. O passivo para a
+contraparte é incluído em “depósitos de instituições financeiras” e “depósitos de clientes”, dependendo
+da aplicadora.
+
+
+18
+
+=== página 22 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+Ativos financeiros adquiridos sob acordos de revenda e recompra são reconhecidos dependendo do
+prazo e da aplicadora como:
+
+    Caixa e equivalentes de caixa;
+
+    Valores a receber de instituições financeiras, ou;
+
+    Obrigações por títulos e valores mobiliários.
+
+A diferença entre o preço de venda e preço de recompra é reconhecida como receita de juros ou
+despesa de juros no decorrer do prazo do acordo, com base no método de juros efetivos.
+
+3.2.2 Empréstimos e recebíveis de clientes e valores a receber de instituições financeiras
+
+Empréstimos a clientes e valores a receber de instituições financeiras são instrumentos financeiros não
+derivativos com pagamentos fixos ou definidos, não cotados em um mercado ativo. Esses empréstimos
+e valores a receber são mensurados pelo custo amortizado, incluindo custos da transação. Os
+empréstimos estão sujeitos a análises de redução ao valor recuperável individuais ou coletivas. Um
+ajuste de valor, uma provisão para perdas em empréstimos, é reconhecida se houver evidência objetiva
+de que o Banco não é capaz de receber os valores devidos com base nos termos originais do contrato.
+
+O tamanho da provisão é a diferença entre o valor contábil e o valor recuperável, que é o valor presente
+dos fluxos de caixa esperados, incluindo valores recuperáveis com base em avais, fianças e outras
+garantias, descontados pela taxa de juros efetiva original dos empréstimos.
+
+A provisão para empréstimos inclui prejuízos se houver evidência objetiva de que as perdas são
+atribuíveis a algumas parcelas da carteira de empréstimos na data do balanço. Exemplos de evidência
+objetiva para ajustes de valor são:
+
+    Problemas financeiros significativos por parte do tomador;
+
+    Atraso no pagamento de juros e/ou do principal por parte do tomador;
+
+    Renegociações de empréstimos;
+
+    Possibilidade de falência ou reorganização financeira do tomador;
+
+    Mudanças na situação de pagamento do tomador;
+
+    Mudanças nas circunstâncias econômicas que poderão levar o tomador a não honrar seus
+     compromissos financeiros.
+
+
+
+
+19
+
+=== página 23 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+O valor contábil dos empréstimos é reduzido por meio do uso de uma conta de provisão e o prejuízo é
+lançado na conta de resultado. Caso o empréstimo não for passível de recebimento, ele é baixado da
+provisão relacionada de perdas em empréstimos.
+
+Quaisquer valores recebidos subsequentemente são incluídos sob o item “provisão para perdas de
+créditos esperadas” na conta de resultado.
+
+3.2.3 Depósitos de instituições financeiras, depósitos de clientes e obrigações por títulos e valores
+mobiliários
+
+Essas obrigações por empréstimos são inicialmente reconhecidas pelo custo, ou seja, os valores
+recebidos menos os custos de transação diretamente atribuíveis e não recorrentes. Os empréstimos
+são incluídos subsequentemente ao custo amortizado. Qualquer diferença entre os valores líquidos e
+o valor de resgate é reconhecida no decorrer do prazo do empréstimo, utilizando o método de juros
+efetivos.
+
+3.3     Caixa e equivalentes de caixa
+
+Os equivalentes de caixa são mantidos com a finalidade de atender a compromissos de caixa de curto
+prazo, e não para investimento ou outros fins. Considera equivalentes de caixa uma aplicação
+financeira de conversibilidade imediata em um montante conhecido de caixa e estando sujeita a um
+insignificante risco de mudança de valor. Por conseguinte, um investimento, normalmente, se qualifica
+como equivalente de caixa quando tem vencimento de curto prazo; por exemplo, três meses ou menos,
+a contar da data da contratação.
+
+3.4     Moedas estrangeiras
+
+3.4.1   Moeda funcional
+
+As demonstrações financeiras consolidadas são expressas em reais, que é a moeda funcional de todas
+as entidades controladas pelo Banco.
+
+3.4.2   Transações em moedas estrangeiras
+
+As transações em moedas estrangeiras são convertidas para a moeda funcional pela taxa de câmbio
+vigente nas datas das transações. Diferenças de conversão surgidas na liquidação de tais transações
+ou na conversão de ativos e passivos monetários denominados em moedas estrangeiras são
+reconhecidas no resultado.
+Diferenças de conversão em títulos de dívida e outros ativos financeiros monetários registrados pelo
+valor justo são incluídas em ganhos e perdas cambiais.
+Diferenças na conversão de itens não monetários tais como instrumentos acionários para negociação
+são reconhecidas como parte dos ganhos e perdas ao valor justo.
+
+
+
+
+20
+
+=== página 24 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+3.5     Receitas e despesas de juros
+
+Receitas e despesas de juros para todos os instrumentos remunerados são reconhecidas no resultado
+pelo regime de competência, com a aplicação do método dos juros efetivos. A receita de juros inclui
+cupons relacionados a ativos financeiros com juros fixos e ativos financeiros para negociação, bem
+como prêmios e descontos acumulados nos títulos do tesouro e outros instrumentos altamente líquidos.
+
+Se quaisquer empréstimos sofrerem perdas por redução ao valor recuperável, eles são baixados para
+os seus valores recuperáveis e a receita de juros reconhecida a partir de então é baseada na taxa de
+desconto para se calcular o valor presente dos fluxos de caixa futuros utilizados para determinar os
+valores recuperáveis.
+
+3.6     Tarifas, taxas e comissões
+
+A receita das atividades de administração de ativos consiste principalmente de taxa de administração
+de fundos e clubes de investimentos.
+
+A receita de administração de ativos e corretagem de seguros é reconhecida conforme auferida uma
+vez que os serviços tenham sido prestados. Taxas, comissões e receita de outros serviços prestados
+são geralmente reconhecidas pelo regime da competência.
+
+3.7     Ativo intangível
+
+3.7.1   Outros ativos intangíveis
+
+Outros ativos intangíveis incluem o valor de software de computadores.
+
+Um ativo intangível e reconhecido somente quando seu custo possa ser mensurado confiavelmente e
+é provável que os benefícios econômicos futuro esperados que seja a eles atribuído serão transferidos
+para o Banco.
+
+Os gastos que melhoram o desempenho do software em relação às suas especificações originais são
+adicionados ao custo original do software.
+Depois do reconhecimento inicial, ativos intangíveis são contabilizados ao custo menos qualquer
+amortização acumulada e qualquer perda com redução ao valor recuperável.
+
+3.8     Imobilizado
+
+Os equipamentos para uso próprio são reconhecidos pelo custo histórico, líquido da depreciação
+acumulada e reduções ao valor recuperável, caso aplicável.
+As propriedades para uso próprio representam principalmente escritórios e também são reconhecidas
+ao custo menos a depreciação acumulada e reduções ao valor recuperável, caso aplicável.
+
+
+
+
+21
+
+=== página 25 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+A depreciação pelo método linear é aplicada a esses ativos de acordo com o esquema abaixo.
+Cada ativo é depreciado até o seu valor residual ao longo da sua vida útil estimada:
+
+     Terrenos: não são depreciados
+     Edifícios: 55 anos
+     Equipamentos de computação e veículos: 5 anos
+     Outros equipamentos: 10 anos
+
+Anualmente, o Banco avalia se há indicadores de redução ao valor recuperável do imobilizado.
+
+Se o valor contábil de um ativo supera o seu valor recuperável estimado, o valor contábil é reduzido
+imediatamente para o valor recuperável.
+
+Os ganhos e perdas na alienação dos itens do imobilizado são determinados na razão direta dos seus
+valores contábeis e levados em conta na determinação do resultado operacional. Os reparos e trabalho
+de manutenção são debitados do resultado no momento que os custos relevantes são incorridos. Os
+gastos para estender ou aumentar os benefícios de terrenos e edificações em comparação com seus
+benefícios originais são capitalizados e depreciados subsequentemente.
+
+3.9     Propriedades para investimento
+
+Propriedades para investimento, principalmente edifícios comerciais, são mantidas para receita de
+locação de longo prazo e não são utilizadas pelo Banco ou suas controladas. As propriedades para
+investimento são reconhecidas como investimentos de longo prazo e incluídas no balanço pelo custo,
+líquido da depreciação acumulada e redução ao valor recuperável, caso aplicável.
+
+As propriedades para investimento são depreciadas de acordo com os termos dos contratos de
+arrendamento subjacentes.
+
+3.10    Provisões
+
+As provisões são reconhecidas se o Banco ou as empresas Controladas, possuírem uma obrigação
+presente (legal ou implícita) como resultado de um evento passado, se for provável que um desembolso
+de recursos que possui benefícios econômicos será necessário para liquidar a obrigação, e se uma
+estimativa confiável puder ser feita do valor da obrigação.
+
+Se o Banco espera que uma provisão seja reembolsada, por exemplo, sob um contrato de seguro, o
+reembolso é reconhecido como um ativo separado, mas somente se for praticamente certo. As
+provisões são lançadas pelo custo descontado dos fluxos de caixa futuros esperados.
+
+
+
+
+22
+
+=== página 26 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+3.11   Benefícios a pessoal
+
+Um plano de contribuição definida é aquele no qual o Banco paga contribuições fixas para uma entidade
+separada (um fundo de pensão) e não adquire nenhuma obrigação legal ou implícita.
+
+Com base nos planos de contribuição definida, o Banco paga contribuições para planos de pensão
+segurados gerenciados por entidades públicas ou privadas em uma base compulsória, contratual ou
+voluntária. Uma vez que as contribuições tenham sido feitas, o Banco não tem obrigações posteriores
+de pagamento. As contribuições regulares são o total do custo para o exercício no qual elas são devidas
+e estão incluídas nessa base no item “despesas de pessoal”.
+
+3.12   Impostos
+
+Os impostos a receber e a pagar e os ativos e passivos fiscais diferidos são compensados caso estejam
+relacionados ao mesmo grupo tributário e à mesma autoridade tributária. Eles também são
+compensados se houver um direito garantido por lei para a compensação dos itens fiscais e o
+tratamento simultâneo, ou a liquidação for esperado.
+
+Provisões são integralmente constituídas para passivos fiscais diferidos, utilizando o método do
+passivo, decorrentes de diferenças temporárias no balanço entre as bases fiscais dos ativos e passivos
+e seus valores contábeis para fins de relatórios financeiros.
+
+Os ativos fiscais diferidos são reconhecidos à medida que for provável que lucros tributáveis futuros
+estarão disponíveis, com relação a quais diferenças temporárias podem ser utilizadas.
+
+Os impostos sobre o lucro são calculados de acordo com a legislação tributária no Brasil e reconhecidos
+no período no qual o lucro é realizado.
+
+Os efeitos fiscais da compensação de perdas tributárias não utilizadas são reconhecidos como um ativo
+se for provável que lucros tributáveis futuros estarão disponíveis, com relação a quais perdas podem
+ser utilizadas.
+
+Ativos ou passivos fiscais diferidos são incluídos para a reavaliação de ativos financeiros disponíveis
+para venda que são debitados ou transferidos para o patrimônio e reconhecidos na realização,
+juntamente com o respectivo ganho ou perda.
+
+3.13   Garantias financeiras
+
+As garantias financeiras são mensuradas inicialmente pelo valor justo e subsequentemente pelo maior
+valor entre:
+
+    O valor que o Banco teria de pagar razoavelmente na data do balanço para liquidar a obrigação ou
+     transferi-la para um terceiro; ou
+    O valor contábil inicial menos a amortização.
+
+
+
+23
+
+=== página 27 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+3.14   Demonstração dos fluxos de caixa
+
+As disponibilidades abrangem recursos em caixa, depósitos no mercado financeiro e depósitos em
+bancos centrais. A demonstração de fluxo de caixa é preparada de acordo com o método de cálculo
+indireto e fornece detalhes da origem das disponibilidades que se tornaram acessíveis durante o
+exercício e sua aplicação durante o ano.
+
+O lucro operacional antes de impostos no fluxo de caixa líquido das atividades operacionais é ajustado
+para os itens no resultado e movimentações nos itens do balanço que efetivamente não geram fluxos
+de caixa durante o ano.
+
+Os fluxos de caixa de atividades operacionais, de investimento e financiamento são apresentados
+separadamente. Movimentos nos empréstimos e recebíveis e depósitos interfinanceiros são
+contabilizados nos fluxos de caixa de atividades operacionais. As atividades de investimento referem-
+se a aquisições e alienações e repagamentos de investimentos financeiros, bem como a aquisição e
+alienação de controladas e imobilizado.
+Os valores da emissão e pagamentos de empréstimos subordinados se qualificam como atividades de
+financiamentos.
+
+3.15   Lucro por ação
+
+O lucro por ação é calculado pela divisão do lucro líquido pelo número de ações ordinárias e
+preferenciais em circulação em cada exercício.
+
+O lucro por ação é apresentado com base nas duas classes de ações emitidas pelo Banco. Ambas as
+classes, ordinárias e preferenciais, participam nos dividendos praticamente na mesma base, exceto
+pelo fato de as ações preferenciais classe A terem direito sobre o recebimento de dividendos com base
+no lucro do Sistema Sicredi (que inclui as cooperativas de crédito), conforme previsto no acordo de
+acionistas do Banco. Estes dividendos são calculados com base em um coeficiente (QPL) aplicado
+sobre o resultado do Sistema Sicredi (que inclui as cooperativas de crédito) gerando, desta forma, uma
+desproporcionalidade na distribuição dos dividendos em relação à participação percentual sobre o
+capital do Banco.
+
+3.16   Adoção de novas normas e interpretações
+
+- IFRS 17 – Contratos de Seguro: O pronunciamento substitui a IFRS 4 – Contratos de Seguro. Esta
+norma tem a objetivo de demonstrar maior transparência e informações úteis nas demonstrações
+financeiras, sendo uma das principais mudanças o reconhecimento dos lucros a medida da entrega
+dos serviços de seguros, a fim de avaliar o desempenho das seguradoras ao longo do tempo e
+apresenta três abordagens para avaliação:
+
+- Modelo padrão: aplicável a todos os contratos de seguro sem participação direta;
+- Premium Allocation Approach (PAA): aplicável aos contratos com duração de até 12 meses ou quando
+produza resultados semelhantes ao que seriam obtidos se fosse utilizado o modelo padrão. É mais
+simplificado que o modelo padrão;
+
+
+24
+
+=== página 28 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+- Variable Fee Approach: aplicável a contratos de seguros com participação direta. Contratos de
+seguros que são substancialmente contratos de serviço relacionados a investimentos de acordo com
+os quais uma entidade promete um retorno de investimento com base nos itens subjacentes.
+
+Os contratos de seguro devem ser reconhecidos por meio da análise de quatro componentes:
+- Fluxos de caixa futuros esperados: estimativa de todos os componentes do fluxo de caixa do contrato,
+considerando entradas e saídas de recursos;
+- Ajuste ao risco: estimativa da compensação requerida pelos desvios que podem ocorrer entre os
+fluxos de caixa;
+- Margem contratual: diferença entre quaisquer valores recebidos antes do início de cobertura do
+contrato e o valor presente dos fluxos de caixa estimados no início do contrato;
+- Desconto: fluxos de caixa projetados devem ser descontados a valor presente, de modo a refletir o
+valor do dinheiro no tempo, por taxas que reflitam as características dos respectivos fluxos.
+
+Esta norma é efetiva para exercícios iniciados em 1º de janeiro de 202, ela foi avaliada e não terá
+impacto às demonstrações contábeis consolidadas do Banco Sicredi.
+
+3.17    Normas emitidas aplicáveis em períodos futuros
+
+• IAS 8 – Políticas contábeis, mudanças de estimativa e retificação de erros: O IASB promoveu
+melhorias no pronunciamento de modo a facilitar a distinção entre políticas contábeis e estimativas
+contábeis por parte das entidades. Tais alterações serão efetivas para períodos iniciados em 1º de
+janeiro de 2023.
+
+• IAS 1 – Apresentação das demonstrações contábeis: O IASB divulgou alterações no
+pronunciamento de modo que inclui exemplos para auxiliar as entidades a aplicar o julgamento de
+materialidade para divulgação de políticas contábeis. O objetivo é ajudar as entidades a divulgarem as
+políticas contábeis que são mais úteis às informações constantes para avaliação dos usuários das
+demonstrações financeiras. As alterações serão efetivas para períodos iniciados em 1º de janeiro de
+2023.
+
+
+4. Conciliação entre IFRS e BRGAAP
+4.1 Descrição das principais diferenças entre BRGAAP e IFRS
+
+Os principais ajustes que impactaram o resultado e o patrimônio líquido do Banco são:
+
+4.1.1   Conversão de moeda estrangeira
+
+Para BRGAAP as operações denominadas em moedas estrangeiras são convertidas para a moeda
+funcional da entidade por meio da utilização da cotação “PTAX800” (média praticada no dia), conforme
+determinam as regras do BACEN. De acordo com o IAS 21, as operações em moeda estrangeira devem
+
+
+
+
+25
+
+=== página 33 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+•Identificação, coleta e tratamento de perdas operacionais, visando mantê-las em níveis considerados
+aceitáveis pela instituição;
+• Reportes periódicos e estruturados sobre temas relevantes de risco operacional e controles internos
+aos fóruns de governança;
+• Disseminação da cultura de gerenciamento de riscos a toda organização; • Testes de estresse
+periódicos para cenários de risco operacional;
+• Procedimentos que visam assegurar a continuidade das atividades da instituição e limitar perdas
+decorrentes da interrupção dos processos críticos de negócio, incluindo análises de impacto e testes
+periódicos de planos de continuidade.
+
+Ainda, um conjunto de procedimentos vem sendo implementados para avaliar, gerenciar e monitorar o
+risco operacional decorrente de serviços terceirizados relevantes para o funcionamento regular da
+instituição.
+
+6.3 Risco de continuidade de negócios
+
+Gestão de Continuidade de Negócios (GCN) é a capacidade da organização de continuar a entrega de
+produtos e/ou serviços em nível aceitável previamente definido, após incidentes de interrupção.
+
+O Sicredi possui uma estrutura para responder de forma adequada à recuperação, à restauração e aos
+níveis acordados de disponibilidade para os processos mais críticos das entidades centralizadoras do
+Sistema, no caso de ocorrência de eventos que provoquem a interrupção dos seus serviços,
+preservando, assim, os interesses de todas as partes envolvidas.
+
+Através de uma Análise de Impacto de Negócios (BIA) são identificados os principais processos de
+negócios da instituição bem como os serviços de TI que suportam esses processos e, assim, são
+definidas as estratégias de continuidade dos negócios adotadas.
+
+Estão previstos na Política de Gestão Integrada de Riscos e na Norma de Continuidade de Negócios
+do Sicredi, os princípios básicos e a estrutura necessária para garantir a resposta adequada à
+recuperação, à restauração e aos níveis acordados de disponibilidade para os processos mais críticos
+das entidades.
+O sistema de Gestão de Continuidade de negócios estruturado no Sicredi contempla:
+
+        Norma de Gestão de Continuidade de negócios;
+        Análise de impacto de negócio - BIAs;
+        Estratégias de recuperação de desastre de negócio e de TI;
+        Planos de continuidade operacional e de TI.
+
+Por fim, o Sicredi disponibiliza para todas as suas agências um modelo de manual de continuidade de
+atividades das agências, que possibilita a elaboração de um documento customizado, a fim de atender
+os principais cenários de interrupção das atividades.
+
+
+
+
+30
+
+=== página 34 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+6.4 Risco de mercado
+
+Define-se risco de mercado como a possibilidade de ocorrência de perdas resultantes da flutuação nos
+valores de mercado de posições detidas por uma instituição financeira. Incluem-se nessa definição, as
+operações sujeitas aos riscos de variação cambial, das taxas de juros, dos preços de ações e dos
+preços de mercadorias (commodities).
+
+O gerenciamento de risco de mercado das instituições do Sistema Sicredi é centralizado no Banco
+Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a
+complexidade dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada
+é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições do
+Sistema na gestão do risco de mercado.
+
+Os processos e políticas para o gerenciamento do risco de mercado são estabelecidos seguindo os
+critérios mínimos da regulamentação em vigor, alinhados às melhores práticas de mercado, e
+aprovadas pelas alçadas competentes de cada instituição do Sistema.
+
+Os processos para o gerenciamento do risco de mercado do Sistema Sicredi incluem:
+
+        Regras claras de classificação das carteiras de negociação, que garantam o correto tratamento
+         das operações;
+        Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de mercado
+         em níveis considerados aceitáveis pela Instituição;
+        Processos destinados a monitorar e reportar a aderência ao apetite ao risco de mercado da
+         Instituição em relação ao seu capital;
+        Definição das metodologias de risco de mercado a serem aplicadas;
+        Sistemas para executar o cálculo e medir os riscos, considerado a complexidade dos produtos
+         e a dimensão da exposição ao risco de mercado das instituições do Sistema.
+
+6.5 Risco de variação das taxas de juros em instrumentos classificados na carteira bancária
+    (IRRBB)
+
+O IRRBB é o risco, atual ou prospectivo, do impacto de movimentos adversos das taxas de juros nos
+resultados ou no valor econômico da instituição, resultante dos instrumentos classificados na carteira
+bancária.
+
+O gerenciamento de risco de IRRBB das instituições do Sistema Sicredi é centralizado no Banco
+Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a
+complexidade dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada
+é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as instituições do
+Sistema na gestão do risco de IRRBB.
+
+Para a mensuração e controle desse risco no Sicredi, utiliza-se as abordagens de valor econômico
+(EVE) e de resultado de intermediação financeira (NII). O Sistema Sicredi define as regras para o
+
+
+
+31
+
+=== página 35 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+cálculo do risco de variação da taxa de juros das operações em linha com as práticas de mercado e
+com as exigências da regulamentação vigente.
+
+Os processos para o gerenciamento do risco de IRRBB do Sistema Sicredi incluem:
+
+        Procedimentos destinados a mensurar, monitorar e manter a exposição ao risco de IRRBB em
+         níveis considerados aceitáveis pela Instituição;
+        Processos destinados a monitorar e reportar a aderência ao apetite ao risco de IRRBB da
+         Instituição em relação ao seu capital;
+        Definição das metodologias de risco de IRRBB a serem aplicadas;
+        Sistemas para executar o cálculo e medir os riscos, considerando a complexidade dos produtos
+         e a dimensão da exposição ao risco de IRRBB das instituições do Sistema.
+
+6.6 Risco de liquidez
+
+O entendimento de Risco de Liquidez é essencial para a sustentabilidade das instituições que atuam
+no mercado financeiro e de capitais e está associado à capacidade da instituição de financiar os
+compromissos adquiridos a preços de mercado razoáveis e realizar seus planos de negócio com fontes
+estáveis de financiamento. Para este efeito, define-se risco de liquidez como:
+
+        A possibilidade da instituição não ser capaz de honrar eficientemente suas obrigações
+         esperadas e inesperadas, correntes e futuras, inclusive as decorrentes de vinculação de
+         garantias, sem afetar suas operações diárias e sem incorrer em perdas significativas; e
+        A possibilidade da instituição não conseguir negociar a preço de mercado uma posição, devido
+         ao seu tamanho elevado em relação ao volume normalmente transacionado ou em razão de
+         alguma descontinuidade no mercado.
+
+O gerenciamento de risco de liquidez das instituições do Sistema Sicredi é centralizado no Banco
+Cooperativo Sicredi, através de uma estrutura compatível com a natureza das operações, a
+complexidade dos produtos e a dimensão da exposição ao risco do Sistema. A estrutura centralizada
+é responsável pelo estabelecimento dos processos, políticas e sistemas que apoiam as entidades do
+Sistema na gestão do risco de liquidez.
+
+Os processos e políticas para o gerenciamento do risco de liquidez são estabelecidos seguindo os
+critérios da regulamentação em vigor, alinhados às melhores práticas de mercado, e aprovadas pelas
+alçadas competentes de cada Instituição do Sistema.
+
+Os processos para o gerenciamento do risco de liquidez do Sistema Sicredi incluem:
+
+        Definição de processos para identificar, avaliar, monitorar e controlar a exposição ao risco de
+         liquidez em diferentes horizontes de tempo;
+        O estabelecimento de processos de rastreio e reporte da observância ao apetite ao risco de
+         liquidez e em níveis considerados aceitáveis pela Instituição;
+
+
+
+
+32
+
+=== página 48 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+14. Outros ativos
+                                                       2022          2021
+Recebíveis e pagamentos antecipados                     131.309        67.493
+Pagamentos Instantâneos - Pix                           155.220        33.255
+Devedores por convênios                                   7.380         4.478
+Devedores por depósitos em garantia                      31.117        26.409
+Adiantamentos e antecipações salariais                    3.657         3.100
+Valores a regularizar                                     3.774           675
+Valores a regularizar - Cartões Sicredi                 461.678       206.343
+Despesas Antecipadas                                     53.075        29.211
+Portabilidade de crédito ativa                              816           782
+Outros ativos                                             7.794        17.142
+Total de outros ativos                                  855.820       388.888
+
+Pagamentos Instantâneos – Pix referem-se aos valores recolhidos ao Banco Central para operações de pagamentos instantâneos.
+
+Valores a regularizar referem-se aos saldos da agenda financeira para repasse as credenciadoras e bandeiras.
+
+Despesas antecipadas classificadas no ativo não circulante referem-se aos valores da apropriação dos custos de transação das operações
+de captações internacionais.
+
+
+
+15. Passivos Financeiros ao custo amortizado
+     a)   Depósitos de instituições financeiras
+
+                                                                      2022              2021
+Outros empréstimos                                                    24.631.860       18.818.239
+Outros depósitos                                                      15.407.755       12.045.633
+Total de depósitos de instituições financeiras                        40.039.615       30.863.872
+
+
+
+
+     b)   Depósitos de clientes
+                                                                       2022              2021
+Depósito à vista                                                          107.797           81.693
+Depósito à prazo                                                       31.844.670       29.033.731
+Total de depósitos de clientes                                         31.952.467       29.115.424
+
+
+
+     c)   Obrigações por títulos e valores mobiliários
+
+                                                                       2022              2021
+Captações no mercado - Carteira própria                                23.163.818        2.467.640
+Captações no mercado - Carteira de terceiros                            7.851.326        1.281.758
+Obrigações por emissão de letras financeiras                           31.787.556        9.069.683
+Total de obrigações de títulos e valores mobiliários                   62.802.700       12.819.081
+
+
+
+
+45
+
+=== página 49 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+16. Provisões
+A Instituição possui passivos contingentes em andamento, sendo que os valores estimados e suas
+respectivas provisões estão demonstrados no quadro a seguir, conforme a natureza dos passivos.
+
+
+ Natureza          Probabilidade de
+                                                2022                 2021
+                        perda
+
+Trabalhista      Provável                             21.765            21.648
+Cível            Provável                             11.695             6.778
+
+Total                                                 33.460            28.426
+
+
+
+Em 31 de dezembro de 2022, o Banco possuía também processos cíveis, trabalhistas e tributários cuja
+probabilidade de perda é possível na Controladora no montante de R$ 56.755 (em dezembro de 2021
+– R$ 46.131) e no Consolidado no montante de R$ 57.863 (em dezembro de 2021 – R$ 53.255).
+
+Nas ações avaliadas como risco possível, destacamos a ação cível de indenização de danos morais
+no valor de R$ 49.509 movida contra o Banco Sicredi referentes ao Programa Minha Casa Minha
+Vida, do Governo Federal, que não teriam sido adequadamente cumpridos.
+
+A movimentação da provisão para contingências é como segue:
+
+                                                       Consolidado
+                                              Aumento          Baixa/Reversão
+        Natureza            31/12/2021                                           31/12/2022
+                                              Provisão          de Provisão
+
+Trabalhista                     21.648                1.209            (1.093)       21.764
+Cível                            6.778                5.021              (103)       11.696
+
+Total não circulante            28.426                6.230            (1.196)       33.460
+
+
+
+Vencimento estimado das provisões do Banco (excluindo provisões para benefícios a funcionários e
+para devedores duvidosos):
+
+                                         1-5 anos        Total
+Em 31 de dezembro de 2022                    33.460       33.460
+Em 31 de dezembro de 2021                    28.426       28.426
+
+
+
+
+46
+
+=== página 50 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+17. Impostos diferidos
+Ativos e passivos fiscais diferidos são mensurados para todas as diferenças temporárias utilizando o
+método do ‘passivo’ com base em uma alíquota de impostos vigente de 46% (2021 - 50%) no Brasil.
+As mudanças no imposto de renda diferido podem ser detalhadas conforme segue:
+
+                                                         2022           2021
+Ativo fiscal diferido - conciliação
+Saldo inicial                                              62.602        41.825
+- Reconhecido no resultado:
+   - outras diferenças temporárias                         26.073        26.863
+- Ativos financeiros ao valor justo por meio de outros
+resultados abrangentes:
+   - remensuração do valor justo                          105.147        (6.086)
+Saldo Final                                               193.822        62.602
+
+Passivo fiscal diferido - conciliação
+Saldo inicial                                              59.695         2.080
+- Reconhecido no resultado:
+   - outras diferenças temporárias                              (167)          78
+- Outros resultados abrangentes:
+   - remensuração do valor justo                          (25.138)       55.060
+- Diferenças cambiais                                         541         2.477
+Saldo Final                                                34.931        59.695
+
+Total do diferido - conciliação                           158.891         2.907
+
+Ativo fiscal diferido - por tipo
+Reduções ao valor recuperável (impairment )                60.188        36.000
+Outras provisões                                           16.344        14.902
+Provisão para PPR e Bônus                                  11.673        11.230
+Marcação a Mercado TVM                                    105.617           470
+Total do ativo fiscal diferido                            193.822        62.602
+
+Passivo fiscal diferido - por tipo
+Imobilizado                                                 1.414         1.581
+Diferenças Cambiais                                         3.595         3.054
+Marcação a Mercado TVM                                     29.922        55.060
+Total do passivo fiscal diferido                           34.931        59.695
+
+Total do diferido - por tipo                              158.891         2.907
+
+
+
+Ativos e passivos fiscais diferidos são compensados caso existir um direito legal de compensar ativo
+fiscal corrente contra o passivo fiscal corrente e os itens do imposto diferido relacionar-se à mesma
+autoridade tributária.
+
+Os valores dos ativos, fiscais diferidos, apresentam as seguintes expectativas de realização em 31 de
+dezembro de 2022 e 2021:
+
+
+
+
+47
+
+=== página 56 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+25. Outras despesas administrativas
+                                                             2022               2021
+
+Despesas de viagem                                               (1.478)        (1.698)
+Materiais de escritório                                            (463)           (86)
+Despesas de TI                                                  (17.947)       (17.530)
+Despesas de publicidade                                         (11.151)       (29.866)
+Manutenção de edifícios                                             (33)           (41)
+Honorários profissionais                                        (59.747)       (66.767)
+Despesas tributárias                                           (228.090)      (165.520)
+Despesas serviços prestados SFN                              (1.351.215)    (1.193.836)
+Despesas serviços técnicos especializados                      (344.084)      (230.796)
+Outras despesas                                                 (29.848)       (22.351)
+
+Total de outras despesas administrativas                     (2.044.056)    (1.728.491)
+
+
+As despesas dos Serviços do Sistema Financeiro são compostas substancialmente por despesas de prestação de serviços pelas
+Cooperativas integrantes do Sicredi de alocação de recursos provenientes das linhas de crédito do BNDES e equalização de custos dos
+programas PRONAF.
+
+
+
+26. Outras despesas operacionais
+                                                                    2022               2021
+
+Despesa com carteira de câmbio                                      (170.549)           (38.706)
+Convênio - Instituto Nacional do Seguro Social - INSS                (34.980)           (14.449)
+Convênio - Secretária Receita Federal - SEFAZ                         (9.514)            (7.392)
+Despesa variação monetária                                            (6.722)            (2.827)
+Ressarcimento RCO                                                     (3.213)           (96.632)
+Provisão para passivos contingentes                                   (6.230)              (961)
+LTN - Letras Tesouro Nacional                                       (307.851)          (130.062)
+NTN - Notas Tesouro Nacional                                        (124.811)               -
+Outras despesas operacionais                                         (21.823)           (21.709)
+
+Total de outras despesas operacionais                               (685.693)          (312.738)
+
+
+
+
+53
+
+=== página 57 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+27. Tributação sobre o lucro
+A tributação sobre o lucro operacional do Banco difere do valor nominal baseado nas alíquotas de
+imposto padrão brasileiras. A reconciliação entre os dois valores é mostrada abaixo:
+                                                                     2022          2021
+
+Lucro operacional antes da tributação, juros ao capital e antes da
+participação dos acionistas minoritários                             273.311       188.231
+
+IRPJ e CSLL pelas alíquotas fiscais de 46% (2021 - 50%)              (125.723)     (94.116)
+
+Exclusões / (Adições)
+
+  Permanentes
+   Incentivos fiscais                                                    5.580        1.680
+   Constituição PPR pessoal                                            (1.472)      (1.412)
+   Honorários diretores                                                  (241)        (129)
+   Reversão IR e CSLL exercício anterior                                     -            -
+   Brindes, doações e patrocínios                                      (2.335)      (1.077)
+   Juros sobre o capital próprio                                       18.400         5.000
+   Efeito da alteração de alíquota de CSLL                               3.124        1.522
+   Efeito da majoração de alíquota de CSLL                               1.649        3.175
+   Outras movimentações permanentes                                        867        (562)
+   Adicional IR                                                             67           55
+   Outros, líquidos                                                        215          618
+
+Subtotal                                                               25.854        8.870
+
+  Temporárias
+    Provisão/ Reversão de PPR Pessoal                                     (170)       (503)
+    (Provisão) de PPR diretores                                           (636)       (164)
+    Provisão/Reversão para perdas esperadas                            (33.739)    (28.113)
+    Reversão/Provisão para passivos contingentes                        (2.654)         (36)
+    Outras provisões                                                        701       (228)
+    Reversão de títulos baixados para prejuízo                                 -           -
+    Ajuste de títulos marcados a mercado                             (132.993)       66.769
+    Depreciação                                                             (42)        (82)
+    Diferenças cambiais                                                       28          11
+    Efeito da alteração de alíquota de CSLL                                    -           -
+    Outros, líquidos                                                      2.708       1.967
+
+Subtotal                                                             (166.797)      39.621
+
+  IRPJ e CSLL correntes                                              (266.666)     (45.625)
+
+  Constituição de créditos tributários                                155.738      (35.689)
+
+IRPJ e CSSL registrados no resultado                                 (110.928)     (81.314)
+
+Aliquota efetiva                                                         -41%         -43%
+
+
+O efeito da majoração da alíquota é referente ao diferencial de alíquota para as demais empresas não financeiras, nas quais a alíquota de
+Contribuição Social é de 9%.
+
+
+
+
+54
+
+=== página 58 ===
+Banco Cooperativo Sicredi S.A.
+Notas explicativas às demonstrações financeiras consolidadas--Continuação
+31 de dezembro de 2022 e 2021
+(Em milhares de reais)
+
+
+28. Transações com partes relacionadas
+Duas partes são consideradas relacionadas caso uma parte exerça controle ou tenha influência
+significativa sobre a outra parte (no que tange a decisões financeiras ou operacionais). No curso normal
+dos negócios, o Banco e empresas Controladas realizam uma ampla gama de transações com
+entidades relacionadas envolvendo diferentes tipos de empréstimos, depósitos e transações em
+moedas estrangeiras. As transações entre partes relacionadas também incluem transações com
+controladas, acionistas e alta administração, bem como transações entre controladas.
+
+28.1 Instituições relacionadas/Sistema de Crédito Cooperativo – (Sicredi)
+
+Conforme detalhado no contexto operacional (nota 1), o Banco foi criado para atendimento as
+necessidades das Cooperativas de Crédito no acesso ao mercado financeiro em sua totalidade.
+
+Abaixo apresentamos as principais operações realizadas pelo Banco com as entidades do Sicredi:
+
+                                                                    Consolidado
+                                                                2022            2021
+
+Ativo                                                          75.439.811      48.571.551
+ Aplicações em depósitos interfinanceiros                             -             4.109
+ Repasses interfinanceiros                                     11.954.520       3.880.057
+ Operações de crédito                                          55.443.135      38.688.782
+ Rendas a receber                                                 374.935         463.953
+ Títulos e créditos a receber                                      25.287          19.308
+ Outros créditos - diversos                                     7.735.818       5.565.325
+ Provisão Perdas Esperadas Associadas ao Risco de Crédito         (93.884)        (49.983)
+
+Passivo                                                        49.121.036        9.999.511
+ Depósitos à vista                                                 65.327           30.940
+ Depósitos à prazo                                              4.922.332        2.840.667
+ Depósitos interfinanceiros                                    14.574.101        4.488.186
+ Captações no mercado aberto - carteira própria                21.216.894          961.680
+ Captações no mercado aberto - carteira de terceiros            7.851.326        1.281.758
+ Sociais e estatutárias                                           161.310          101.308
+ Outras obrigações - diversas                                     103.874           69.566
+ Instrumentos híbridos de capital e dívida                        225.872          225.406
+
+Receitas                                                        5.497.940        1.968.419
+ Operações de crédito                                           3.610.631        1.492.474
+ Resultado de operações com títulos e valores mobiliários       1.499.543          244.982
+ Receitas de prestação de serviços                                 23.072           19.844
+ Outras receitas operacionais                                     364.694          211.119
+
+Despesas                                                        5.503.968        2.900.152
+ Operações de captação no mercado                               4.113.604        1.671.873
+ Outras despesas administrativas                                1.344.853        1.188.905
+ Outras despesas operacionais                                       1.834            1.918
+ Provisão para perdas esperadas associadas ao risco de
+                                                                   43.677          37.456
+ crédito
+
+
+
+
+55

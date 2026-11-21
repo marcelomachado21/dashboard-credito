@@ -1,0 +1,1224 @@
+
+=== página 30 ===
+                                Relatório dos Auditores          Demonstrações                Notas Explicativas           Declarações dos
+Relatório da Administração
+                                Independentes                    Financeiras                                               Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+Os principais impactos estimados (antes dos efeitos fiscais) da adoção inicial desta Resolução e correlatas são:
+
+1. Efeitos da alteração de categorias - refletem os impactos da remensuração decorrentes de reclassificação entre as categorias, conforme art.
+4º da Resolução CMN nº 4.966/2021:
+
+I - De "Disponíveis para Venda" para "Custo Amortizado": O Banco Santander estima uma redução de R$ 216.137 no valor dos ativos em
+contrapartida do Patrimônio Líquido oriundo da reversão dos ajustes de marcações a mercado sobre os títulos reclassificados.
+
+2. Efeitos esperados da adoção do modelo para perdas esperadas associadas ao risco de crédito (art. 40 da Resolução CMN nº 4.966/2021) -
+O Banco Santander estima um incremento da provisão de aproximadamente R$ 4.362 milhões (equivalente a um aumento de,
+aproximadamente, 11% sobre o saldo da provisão existente em 31 de dezembro de 2024), que inclui provisão mínima requerida, provisão
+adicional, além das provisões para títulos e garantias financeiras prestadas. Para fins de mensuração, foram considerados os seguintes
+parâmetros:
+
+I - A probabilidade de o instrumento ser caracterizado como ativo com problema de recuperação de crédito, considerando o prazo esperado do
+instrumento financeiro, bem como a situação econômica corrente e previsões razoáveis e justificáveis de eventuais alterações nas condições
+econômicas e de mercado que afetem o risco de crédito do instrumento, durante o seu prazo esperado, inclusive em virtude da existência de
+eventuais garantias ou colaterais vinculados ao instrumento financeiro;
+
+II - A expectativa de recuperação do instrumento financeiro, considerando os custos de recuperação do instrumento, as características de
+eventuais garantias ou colaterais, tais como modalidade, liquidez e valor presente provável de realização, as taxas históricas de recuperação em
+instrumentos financeiros com características e risco de crédito similares, dentre outros.
+
+III - Provisão para perdas incorridas associadas ao risco de créditos para os ativos financeiros inadimplidos, conforme art.76 da Resolução BCB
+nº 352/2023, aplicando-se os percentuais definidos no Anexo II desta Resolução, observando o período de atraso.
+
+O efeito da adoção inicial do modelo para perdas esperadas associadas ao risco de crédito será reconhecido no patrimônio líquido pelo valor de
+R$ 2.521 milhões, após os efeitos tributários.
+
+
+3. Quanto aos aspectos fiscais relacionados à aplicação dos critérios contábeis estabelecidos na Resolução CMN nº 4.966/2021, a Lei nº
+14.467/2022 (com as alterações da Lei nº 15.078/2024) estabeleceu o tratamento tributário no recebimento de créditos decorrentes das
+atividades das instituições financeiras e demais autorizadas a funcionar pelo BACEN. A partir de 1º de janeiro de 2025, as instituições poderão
+deduzir, na determinação do lucro real e da base de cálculo da Contribuição Social sobre o Lucro Líquido (CSLL), as perdas incorridas no
+recebimento de créditos decorrentes de atividades relativas a operações inadimplidas, independentemente da data da sua contratação e
+operações com pessoa jurídica em processo falimentar ou em recuperação judicial, a partir da data da decretação da falência ou da concessão
+da recuperação judicial. A dedução fiscal estabelecida deverá observar a perda incorrida segundo os percentuais estabelecidos com base no
+período de inadimplemento.
+
+ A partir do mês de janeiro de 2026, as perdas apuradas sobre os créditos que se encontravam inadimplidos em 31 de dezembro de 2024, ainda
+não deduzidas fiscalmente até essa data, poderão ser excluídas do lucro líquido, na determinação do lucro real e da base de cálculo da CSLL, à
+razão de 1/84 (um oitenta e quatro avos) para cada mês do período de apuração, sendo permitido ainda que as instituições optem, até 31 de
+dezembro de 2025, de forma irrevogável e irretratável, por fazer as deduções à razão de 1/120 ao mês.
+
+Os efeitos decorrentes da aplicação da Lei nº 14.467/2022 estão refletidos na expectativa de realização dos créditos tributários e passivos
+fiscais diferidos, demonstrados na Nota 10.b.2.
+
+4. Demais mudanças na adoção inicial como a aplicação da taxa efetiva de juros e a remensuração de ativos financeiros que estavam em stop
+accrual em 31 de dezembro de 2024 não terão impactos, pois sua aplicação será prospectiva.
+
+
+
+
+II - Resolução CMN n° 4.975/2021 e atualizações trazidas pela Resolução CMN n° 5.101/2023
+
+Estabelece a observância ao Pronunciamento Técnico do Comitê de Pronunciamentos Contábeis (CPC) 06 (R2) - Arrendamentos, no
+reconhecimento, mensuração, apresentação e divulgação de operações de arrendamento mercantil a partir de 1° de janeiro de 2025.
+
+O Banco Santander adotará de forma prospectiva a aplicação da referida norma, conforme § 5º da referida Resolução, para os contratos a
+serem celebrados a partir de janeiro de 2025.
+
+
+
+
+                                                                   Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 30
+
+=== página 31 ===
+                                    Relatório dos Auditores       Demonstrações               Notas Explicativas           Declarações dos
+    Relatório da Administração
+                                    Independentes                 Financeiras                                              Diretores
+    *Valores expressos em milhares, exceto quando indicado.
+
+
+   III - Resolução CMN nº 5.185/2024
+   Adoção pela Resolução CMN nº 5.185/2024 do Comitê de Pronunciamento de Sustentabilidade – CBPS quanto a divulgação como parte
+   integrante das demonstrações financeiras consolidadas o relatório de informações financeiras relacionadas à Sustentabilidade – CBPS 01 e CBPS
+   02, sendo a obrigatoriedade de divulgação a partir do exercício de 2026. O Banco Santander está avaliando os impactos para atendimento desta
+   norma.
+
+
+   c) Moeda Funcional e de Apresentação
+
+   As demonstrações financeiras estão apresentadas em Reais, moeda funcional, incluindo o Banco Santander e suas controladas, e suas agências
+   no exterior.
+
+   As transações em moeda estrangeira, no seu reconhecimento inicial, são convertidas utilizando a taxa de câmbio na data da transação.
+
+   As variações cambiais sobre estas transações e sobre a conversão dos ativos e passivos em moeda estrangeira para a moeda funcional, são
+   reconhecidas na Demonstração do Resultado. As variações cambiais relacionadas a Hedge de Fluxo de Caixa são reconhecidas no Patrimônio
+   Líquido.
+
+3. Principais Políticas Contábeis
+
+   a) Caixa e Equivalentes de Caixa
+
+   Para fins da demonstração dos fluxos de caixa, equivalentes de caixa correspondem aos saldos de aplicações interfinanceiras de liquidez com
+   conversibilidade imediata, sujeito a um insignificante risco de mudança de valor e com prazo original igual ou inferior a noventa dias.
+
+   b) Aplicações Interfinanceiras de Liquidez e Créditos Remunerados Vinculados ao Bacen
+
+   São demonstradas pelos valores de realização e/ou exigibilidade, incluindo os rendimentos, encargos e variações monetárias ou cambiais
+   auferidos e/ou incorridos até a data do balanço, calculados pro rata dia.
+
+   b.1) Operações Compromissadas
+
+   Venda com Compromisso de Recompra
+
+   Os títulos de renda fixa próprios utilizados para lastrear as operações compromissadas são destacados em contas específicas do ativo (títulos
+   vinculados) na data da operação, pelo valor médio contábil atualizado, por tipo e vencimento do papel. A diferença entre os valores de
+   recompra e o de venda representa a despesa da operação.
+
+   O Banco também utiliza lastros de terceiros para realizar captações em operações de venda com compromisso de recompra, tais captações são
+   registradas como posição financiada.
+
+   Compra com Compromisso de Revenda
+
+   Os financiamentos concedidos mediante lastro com títulos de renda fixa (de terceiros) são registrados na posição bancada pelo valor de
+   liquidação. A diferença entre os valores de revenda e de compra representa a renda da operação. Os títulos adquiridos com compromisso de
+   revenda são transferidos para a posição financiada quando utilizados para lastrear operações de venda com compromisso de recompra.
+
+   Operações Compromissadas Realizadas com Acordo de Livre Movimentação
+
+   Para operações com cláusula de livre movimentação, no momento da venda definitiva dos títulos adquiridos com compromisso de revenda, o
+   passivo referente à obrigação de devolução do título deve ser avaliado pelo valor de mercado do título.
+
+
+   c) Títulos e Valores Mobiliários
+
+   Conforme Circular Bacen n° 3.068/2001, a carteira de títulos e valores mobiliários é classificada nas seguintes categorias:
+   I - Títulos para negociação, onde são registrados os títulos e valores mobiliários adquiridos com o propósito de serem ativa e frequentemente
+   negociados. São registrados pelo custo de aquisição acrescido dos rendimentos auferidos, ajustados ao valor de mercado (valor justo) em
+   contrapartida ao resultado do período;
+
+   II - Títulos disponíveis para venda, onde são registrados os títulos e valores mobiliários que podem ser negociados, mas não foram adquiridos
+   com o propósito de serem ativa e frequentemente negociados. São registrados pelo custo de aquisição acrescido dos rendimentos auferidos,
+
+
+
+                                                                   Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 31
+
+=== página 32 ===
+                                Relatório dos Auditores          Demonstrações               Notas Explicativas           Declarações dos
+Relatório da Administração
+                                Independentes                    Financeiras                                              Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+ajustados ao valor de mercado (valor justo) em contrapartida a conta destacada do patrimônio líquido. Os ajustes ao valor de mercado, quando
+realizados, são transferidos para o resultado do período; e
+
+III - Títulos mantidos até o vencimento, onde são registrados os títulos e valores mobiliários para os quais existe intenção e capacidade
+financeira do Banco de mantê-los em carteira até o vencimento. São registrados pelo custo de aquisição acrescido dos rendimentos auferidos.
+
+As perdas de caráter permanente no valor de realização dos títulos e valores mobiliários classificados nas categorias títulos disponíveis para
+venda e títulos mantidos até o vencimento são reconhecidas no resultado do período.
+
+d) Instrumentos Financeiros Derivativos
+
+Os instrumentos financeiros derivativos são classificados de acordo com a intenção da Administração em utilizá-los como instrumentos
+destinados a hedge ou não, conforme Circular Bacen n° 3.082/2002. As operações efetuadas por solicitação de clientes, por conta própria, ou
+que não atendam aos critérios de hedge contábil, principalmente derivativos utilizados na administração da exposição global de risco, são
+contabilizadas pelo valor de mercado, com os ganhos e as perdas realizados e não realizados, reconhecidos no resultado do período.
+
+Os instrumentos financeiros derivativos designados como parte de uma estrutura de proteção contra riscos (hedge) podem ser classificados
+como:
+
+I - Hedge de risco de mercado, onde a valorização ou a desvalorização é registrada em contrapartida à adequada conta de receita ou despesa,
+líquida dos efeitos tributários, no resultado do período; e
+
+II - Hedge de fluxo de caixa, onde a valorização ou desvalorização da parcela efetiva é registrada em contrapartida à conta destacada do
+patrimônio líquido, líquida dos efeitos tributários.
+
+Alguns instrumentos financeiros híbridos são compostos por um instrumento financeiro derivativo e um ativo ou passivo não derivativo. Nestes
+casos, o instrumento financeiro derivativo representa um derivativo embutido. Os derivativos embutidos são registrados separadamente em
+relação ao contrato a que estejam vinculados.
+
+
+e) Carteira de Créditos e Provisão para Perdas Esperadas Associadas ao Risco de Crédito
+
+A carteira de créditos inclui as operações de crédito, operações de arrendamento mercantil, adiantamentos sobre contratos de câmbio e outros
+créditos com características de concessão de crédito. É demonstrada pelo seu valor presente, considerando os indexadores, taxa de juros e
+encargos pactuados, calculados pro rata dia até a data do balanço. Para operações vencidas a partir de 60 dias, o reconhecimento em receitas
+só ocorrerá quando do seu efetivo recebimento.
+
+Normalmente, o Banco efetua a baixa de créditos para prejuízo quando estes apresentam atraso superior a 360 dias. No caso de operações de
+crédito de longo prazo (acima de 3 anos) são baixadas quando completam 540 dias de atraso. A operação de crédito baixada para prejuízo é
+registrada em conta de compensação pelo prazo mínimo de 5 anos e enquanto não esgotados todos os procedimentos para cobrança.
+
+As cessões de crédito sem retenção de riscos resultam na baixa dos ativos financeiros objeto da operação, que passam a ser mantidos em conta
+de compensação. O resultado da cessão é reconhecido integralmente, quando de sua realização.
+
+As cessões de crédito com retenção substancial de riscos passam a ter seus resultados reconhecidos pelos prazos remanescentes das
+operações, e os ativos financeiros objetos da cessão permanecem registrados como operações de crédito e o valor recebido como obrigações
+por operações de venda ou de transferência de ativos financeiros.
+
+As provisões para operações de crédito são fundamentadas nas análises das operações de crédito em aberto (vencidas e vincendas), na
+experiência passada, expectativas futuras e riscos específicos das carteiras e na política de avaliação de risco da Administração na constituição
+das provisões, conforme estabelecido pela Resolução CMN nº 2.682/1999.
+
+f) Ativos Não Financeiros Mantidos para Venda e Outros Valores e Bens
+
+Ativos não financeiros mantidos para venda incluem o valor contábil de itens individuais, grupos de alienação ou itens que façam parte de uma
+unidade de negócios destinada à alienação (operações descontinuadas), cuja venda em sua condição atual seja altamente provável e cuja
+ocorrência é esperada para dentro de um ano.
+
+Outros valores e bens referem-se principalmente a ativos não financeiros, compostos basicamente por imóveis e veículos recebidos em
+liquidação de instrumentos financeiros de difícil ou duvidosa solução não destinados ao próprio uso.
+
+
+
+
+                                                                  Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 32
+
+=== página 33 ===
+                                Relatório dos Auditores          Demonstrações               Notas Explicativas           Declarações dos
+Relatório da Administração
+                                Independentes                    Financeiras                                              Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+Ativos não financeiros mantidos para venda e outros valores e bens são registrados e avaliados pelo menor valor entre; o valor contábil líquido
+e o valor justo líquido de despesa de vendas, na data em que forem classificados nessa categoria e não são depreciados.
+
+g) Outras Receitas Operacionais
+
+Representadas substancialmente por receitas de prestação de serviços e tarifas bancárias, são reconhecidas quando o Banco presta o serviço
+aos clientes. Para o reconhecimento destas receitas, o Banco aplica o modelo de 5 passos atendendo ao Pronunciamento Técnico CPC 47 -
+Receita de Contrato com Cliente, emitido pelo Comitê de Pronunciamentos Contábeis, conforme determinado pela Resolução CMN n°
+4.924/2021: I) Identificar o(s) contrato(s) com um cliente; II) Identificar as obrigações de desempenho; III) Determinar o preço da transação; IV)
+Alocar o preço de transação às obrigações de desempenho no contrato; e V) Reconhecer a receita quando, ou à medida que, a entidade
+satisfazer uma obrigação de desempenho.
+
+h) Despesas Antecipadas
+
+São contabilizadas as aplicações de recursos em pagamentos antecipados, cujos benefícios ou prestação de serviços ocorrerão em exercícios
+seguintes e são apropriadas ao resultado, de acordo com a vigência dos respectivos contratos.
+
+h.1) Comissões Pagas a Correspondentes Bancários
+
+Conforme Resolução CMN nº 4.935/2021 e Circular Bacen nº 3.693/2013, as comissões pagas aos agentes intermediadores da originação de
+novas operações de crédito ficam limitadas aos percentuais máximos de (i) 6% do valor da nova operação originada e (ii) 3% do valor da
+operação objeto de portabilidade.
+
+As referidas comissões devem ser integralmente reconhecidas como despesa quando incorridas.
+
+i) Investimentos
+
+Os investimentos em sociedades coligadas e controladas são inicialmente reconhecidos pelo seu valor de aquisição, e posteriormente avaliados
+pelo método de equivalência patrimonial e os resultados apurados são reconhecidos em resultado de participações em coligadas e controladas.
+Os outros investimentos estão avaliados ao custo, reduzidos ao valor recuperável, quando aplicável.
+
+Mudança no Escopo de Consolidação – Consiste na alienação, aquisição ou mudança de controle de determinado investimento.
+
+j) Imobilizado de Uso
+
+É demonstrado ao custo de aquisição, líquido das respectivas depreciações acumuladas e está sujeito à avaliação do valor recuperável em
+períodos anuais.
+
+A depreciação do imobilizado é feita pelo método linear, com base nas seguintes taxas anuais: edificações - 4%, instalações, móveis,
+equipamentos de uso e sistemas de segurança e comunicações - 10%, sistemas de processamento de dados e veículos - 20% e benfeitorias em
+imóveis de terceiros - 10% ou até o vencimento do contrato de locação.
+
+k) Intangível
+
+O ágio na aquisição de sociedades controladas e coligadas é amortizado em até 10 anos, observada a expectativa de resultados futuros e está
+sujeito à avaliação do valor recuperável em períodos anuais ou em maior frequência se as condições ou circunstâncias indicarem a possibilidade
+de perda de seu valor.
+
+Os direitos por aquisição de folhas de pagamento são contabilizados pelos valores pagos na aquisição de direitos de prestação de serviços de
+pagamento de salários, proventos, soldos, vencimentos, aposentadorias, pensões e similares, de entidades públicas ou privadas, e amortizados
+de acordo com a vigência dos respectivos contratos.
+
+Os gastos de aquisição e desenvolvimento de software são amortizados pelo prazo máximo de 5 anos.
+
+l) Provisões Técnicas Relacionadas às Atividades de Previdência e de Capitalização
+
+As provisões técnicas são constituídas e calculadas de acordo com as determinações e critérios estabelecidos na regulamentação do Conselho
+Nacional de Seguros Privados (CNSP) e da Superintendência de Seguros Privados (Susep).
+
+
+
+
+                                                                  Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 33
+
+=== página 60 ===
+Relatório da                            Relatório dos Auditores                                       Demonstrações                                      Notas Explicativas                                  Declarações dos
+Administração                           Independentes                                                 Financeiras                                                                                            Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+(3) No Banco e no Consolidado o total da carteira de créditos inclui o valor de R$ 108 milhões (31/12/2023- R$ 241 milhões), referente ao ajuste a valor de mercado das operações de crédito que são objeto de proteção, registrados de acordo com Instrução Normativa
+BCB nº 276/2022 e que não estão contemplados na nota dos níveis de riscos.
+
+
+
+
+                                                                                                                                                                              Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 60
+
+=== página 61 ===
+Relatório da                            Relatório dos Auditores                                              Demonstrações                                  Notas Explicativas
+Administração                           Independentes                                                        Financeiras
+*Valores expressos em milhares, exceto quando indicado.
+
+Programa Emergencial de Suporte a Empregos (PESE)
+Conforme a Resolução CMN nº 4.846/2020, demonstramos a seguir, as operações relacionadas ao Programa Emergencial de Suporte a
+Empregos (PESE), classificadas por nível de risco e juntamente com o montante da provisão constituída para cada nível de risco:
+
+                                                                                                                                                                       Banco/Consoli
+                                                                                                                                                                               dado
+                                                                                                                                       31/12/2024                        31/12/2023
+
+                                                                                                     % Provisão
+                                                                                                                              Ativo       Provisão             Ativo       Provisão
+Nível de Risco                                                                                          Mínima
+                                                                                                                                      Requerida (1)                    Requerida (1)
+                                                                                                     Requerida
+D                                                                                                             10,0%              -                -             79                1
+E                                                                                                             30,0%              -                -            213               10
+F                                                                                                             50,0%              -                -            344               26
+G                                                                                                             70,0%              -                -            357               37
+H                                                                                                            100,0%           230                34           8.467           1.394
+Total                                                                                                                         230                34           9.460           1.468
+(1) Saldo de provisão constituída sobre a parcela do crédito cujo risco é do Banco Santander (Brasil) S.A.
+
+
+e) Movimentação da Provisão para Perdas Esperadas Associadas ao Risco de Crédito
+
+                                                                                                                                      Banco                              Consolidado
+                                                                                                                    01/01 a          01/01 a               01/01 a            01/01 a
+                                                                                                                31/12/2024       31/12/2023            31/12/2024         31/12/2023
+Saldo Inicial                                                                                                   31.163.480       30.316.513            35.375.068        34.453.117
+Constituições Líquidas das Reversões                                                                            19.331.289       24.684.276            22.427.776        28.317.357
+Baixas                                                                                                         (19.731.359)     (23.837.309)          (23.170.742)      (27.395.406)
+Saldo Final                                                                                                     30.763.410       31.163.480            34.632.102        35.375.068
+Créditos Recuperados                                                                                             2.567.893        3.143.136             3.121.452          3.804.787
+
+
+f) Créditos Renegociados
+
+                                                                                                                                       Banco                              Consolidado
+                                                                                                                 31/12/2024       31/12/2023         31/12/2024            31/12/2023
+Créditos Renegociados (1)                                                                                      25.258.733        28.034.135         29.301.596           32.761.140
+Provisão para Perdas Esperadas Associadas ao Risco de Crédito                                                 (14.048.511)     (16.032.317)       (15.272.791)         (17.628.394)
+Percentual de Cobertura sobre a Carteira de Renegociação                                                             55,6 %           57,2 %             52,1 %                53,8 %
+ (1) Foram consideradas operações para as quais ocorreram contratações de acordos, em atraso a partir de 30 dias.
+
+g) Concentração de Crédito
+
+                                                                                                                                                                         Consolidado
+                                                                                                                                 31/12/2024                              31/12/2023
+Carteira de Crédito com Avais e Fianças (1), Títulos e Valores Mobiliários (2) e
+Instrumentos Financeiros Derivativos (3)                                                                              Risco                 %                Risco                 %
+Maior Devedor                                                                                                   12.874.023                1,6%          9.055.658               1,3%
+10 Maiores                                                                                                      77.964.475                9,7%         53.202.978               7,6%
+20 Maiores                                                                                                     106.563.839               13,3%         82.601.115              11,7%
+50 Maiores                                                                                                     154.914.156               19,4%        134.058.263              19,0%
+100 Maiores                                                                                                    192.858.180               24,1%        174.946.657              24,8%
+(1) Inclui as parcelas de crédito a liberar para construtoras/incorporadoras.
+(2) Refere-se à posição de debêntures, notas promissórias e certificados de recebíveis imobiliários - CRI.
+(3) Refere-se ao risco de crédito de derivativos.
+
+
+
+
+                                                                                     Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 61
+
+=== página 62 ===
+   Relatório da                            Relatório dos Auditores                    Demonstrações                               Notas Explicativas
+   Administração                           Independentes                              Financeiras
+   *Valores expressos em milhares, exceto quando indicado.
+
+
+8. Carteira de Câmbio
+
+
+
+                                                                                                                                  Banco/Consolidado
+                                                                                                                   31/12/2024              31/12/2023
+  Ativo
+  Direitos sobre Venda de Câmbio                                                                                  80.518.010              24.590.136
+  Câmbio Comprado a Liquidar                                                                                      55.142.228              43.427.082
+  Adiantamentos em Moeda Nacional Recebidos                                                                          (226.965)              (516.110)
+  Rendas a Receber de Adiantamentos Concedidos e Importações Financiadas
+  (Nota 7.a)                                                                                                          254.984                 157.593
+   Cambiais e Documentos a Prazo em Moedas Estrangeiras                                                                     —                     571
+   Total                                                                                                         135.688.257              67.659.272
+  Passivo
+  Câmbio Vendido a Liquidar                                                                                       93.549.590              40.391.634
+   Obrigações por Compra de Câmbio                                                                                44.470.630              27.663.172
+   Adiantamentos sobre Contratos de Câmbio (Nota 7.a)                                                              (6.893.789)            (4.301.307)
+   Outros                                                                                                                 152                     121
+   Total                                                                                                         131.126.583              63.753.620
+
+
+   Contas de Compensação
+   Créditos Abertos para Importação                                                                                 1.504.007               1.582.289
+
+   Créditos de Exportação Confirmados                                                                                  30.968                 193.368
+
+
+
+
+                                                                     Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 62
+
+=== página 70 ===
+Relatório da Administração              Relatório dos Auditores Independentes   Demonstrações Financeiras   Notas Explicativas                          Declarações dos Diretores
+
+*Valores expressos em milhares, exceto quando indicado.
+
+Ano                                                                                                                      IRPJ                    CSLL             PIS/COFINS             Registrados
+2025                                                                                                               1.020.907                548.347                 132.421               1.701.675
+2026                                                                                                                 960.745                510.283                 124.264               1.595.292
+2027                                                                                                                 726.648                499.334                 121.595               1.347.577
+2028                                                                                                                 715.437                493.343                 121.279               1.330.059
+2029                                                                                                                 715.437                493.343                 121.279               1.330.059
+2030 a 2034                                                                                                          108.774                  77.762                       -                186.536
+Após 2035                                                                                                            176.400                141.120                        -                317.520
+Total                                                                                                              4.424.348               2.763.532                620.838               7.808.718
+
+
+d) Imposto de Renda e Contribuição Social
+
+
+
+
+                                                                                                                Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 70
+
+=== página 71 ===
+Relatório da Administração                              Relatório dos Auditores Independentes               Demonstrações Financeiras      Notas Explicativas                          Declarações dos Diretores
+
+*Valores expressos em milhares, exceto quando indicado.
+
+                                                                                                                                                                                 Banco                                 Consolidado
+                                                                                                                                                          01/01 a               01/01 a              01/01 a                01/01 a
+                                                                                                                                                      31/12/2024            31/12/2023           31/12/2024             31/12/2023
+Resultado antes da Tributação sobre o Lucro e Participações                                                                                            13.662.515             4.128.868           19.111.436             9.866.735
+Participações no Lucro (1)                                                                                                                             (1.843.316)           (1.507.458)          (2.623.232)           (2.098.640)
+Resultado não Realizado                                                                                                                                          -                     -                (176)                 (176)
+Resultado antes dos Impostos                                                                                                                           11.819.199             2.621.410           16.488.028             7.767.919
+
+Encargo Total do Imposto de Renda e Contribuição Social às Alíquotas de 25% e 20%, Respectivamente (3)                                                 (5.318.640)           (1.179.635)           (7.419.612)          (3.495.564)
+Resultado de Participações em Coligadas e Controladas (2)                                                                                               3.494.331             3.740.805                97.874                77.853
+Despesas Indedutíveis Líquidas de Receitas não Tributáveis                                                                                              1.160.552               932.836            1.348.158             1.022.142
+Juros sobre o Capital Próprio                                                                                                                           2.166.757             2.619.000            2.628.593             2.660.040
+IRPJ e CSLL sobre as Diferenças Temporárias e Prejuízo Fiscal de Exercícios Anteriores                                                                      30.057              107.773             (224.038)              121.726
+Efeito da Diferença da Alíquota de CSLL (3)                                                                                                                      -                      -          1.441.329               874.860
+Demais Ajustes, Incluindo Lucros Disponibilizados no Exterior                                                                                            (316.804)                22.041            (692.907)                87.999
+Imposto de Renda e Contribuição Social                                                                                                                  1.216.253             6.242.820           (2.820.603)            1.349.056
+Impostos Correntes                                                                                                                                       (179.848)             (195.291)          (3.534.051)           (4.195.566)
+Imposto de renda e contribuição social do período                                                                                                        (179.848)             (195.291)          (3.534.051)           (4.195.566)
+Impostos Diferidos                                                                                                                                      1.413.638             6.498.898              745.118             5.591.989
+Constituição/realização no período sobre adições e exclusões temporárias - Resultado                                                                    1.413.638             6.498.898              745.118             5.591.989
+Movimentação do Período:                                                                                                                                   (59.084)              (60.787)             (73.216)              (49.045)
+Base Negativa de Contribuição Social                                                                                                                      (38.428)              (56.140)             (44.775)              (59.890)
+Prejuízo Fiscal                                                                                                                                           (20.656)                (4.647)            (28.441)                10.845
+Constituição no período sobre:                                                                                                                              41.547                      -              41.546                 1.678
+Base Negativa de Contribuição Social                                                                                                                        18.300                      -              18.300                 1.678
+Prejuízo Fiscal                                                                                                                                             23.247                      -              23.246                     -
+Total dos impostos diferidos                                                                                                                            1.396.101             6.438.111              713.448             5.544.622
+Imposto de Renda e Contribuição Social                                                                                                                  1.216.253             6.242.820            (2.820.603)           1.349.056
+(1) A base de cálculo é o lucro líquido, após o IR e CSLL.
+(2) No resultado de participações em coligadas e controladas não estão incluídos os juros sobre o capital próprio recebidos e a receber.
+(3) Efeito da diferença da alíquota para as empresas que estão sujeitas à alíquota de contribuição social de 9% e 15%
+
+
+
+
+e) Despesas Tributárias
+
+
+
+
+                                                                                                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 71
+
+=== página 72 ===
+Relatório da Administração              Relatório dos Auditores Independentes   Demonstrações Financeiras   Notas Explicativas                          Declarações dos Diretores
+
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+                                                                                                                                           Banco                                 Consolidado
+                                                                                                                     01/01 a              01/01 a               01/01 a               01/01 a
+                                                                                                                 31/12/2024           31/12/2023            31/12/2024            31/12/2023
+Despesa com Cofins                                                                                                1.691.869             2.012.512             3.081.685            3.290.018
+Despesa com ISS                                                                                                     716.523               648.497             1.008.545              891.115
+Despesa com PIS                                                                                                     274.929               327.033               563.864              589.265
+Outras                                                                                                              253.692               293.405               279.919              324.423
+Total                                                                                                             2.937.013             3.281.447             4.934.013            5.094.821
+
+
+
+
+                                                                                                                Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 72
+
+=== página 79 ===
+   Relatório da              Relatório dos Auditores         Demonstrações            Notas Explicativas          Declarações dos
+   Administração             Independentes                   Financeiras                                          Diretores
+   *Valores expressos em milhares, exceto quando indicado.
+
+
+
+15. Intangível
+                                                                                                                                             Banco
+                                                                                                                31/12/2024              31/12/2023
+                                                                                       Amortização
+                                                                      Custo             Acumulada                    Líquido                Líquido
+   Ágio na Aquisição de Sociedades Controladas                   27.220.515            (27.117.154)                 103.361                303.073
+   Outros Ativos Intangíveis                                     15.710.323              (8.493.707)              7.216.616               6.779.882
+   Aquisição e Desenvolvimento de Logiciais                       10.762.538             (6.217.694)              4.544.844               4.104.278
+   Direitos por Aquisição de Folhas de Pagamento                   4.774.406             (2.104.285)              2.670.121               2.654.124
+   Outros                                                           173.379                (171.728)                  1.651                  21.480
+   Total                                                         42.930.838             (35.610.861)              7.319.977               7.082.955
+
+
+
+                                                                                                                                       Consolidado
+                                                                                                                31/12/2024              31/12/2023
+                                                                                       Amortização
+                                                                      Custo             Acumulada                    Líquido                Líquido
+   Ágio na Aquisição de Sociedades Controladas                   28.274.123            (27.672.403)                 601.720                887.252
+   Outros Ativos Intangíveis                                     16.371.895              (8.852.009)              7.519.886               7.074.300
+   Aquisição e Desenvolvimento de Logiciais                       11.423.730             (6.575.994)              4.847.736               4.398.186
+   Direitos por Aquisição de Folhas de Pagamento                   4.774.406             (2.104.285)              2.670.121               2.654.124
+   Outros                                                           173.759                (171.730)                  2.029                  21.990
+   Total                                                         44.646.018             (36.524.412)              8.121.606               7.961.552
+   Para o exercício findo em 31 de dezembro de 2024, não houve impairment de Direitos por Aquisição de Folha de Pagamento e
+   Desenvolvimento de Logiciais.
+
+
+
+
+                                                                  Demonstrações Financeiras Individuais e Consolidadas |31 de dezembro de 2024 | 79
+
+=== página 80 ===
+                                            Relatório dos Auditores         Demonstrações                   Notas Explicativas                         Declarações dos
+   Relatório da Administração               Independentes                   Financeiras                                                                Diretores
+   *Valores expressos em milhares, exceto quando indicado.
+
+
+16. Captações
+    a) Abertura de contas Patrimoniais
+                                                                                                                                                                                              Banco
+                                                                                                                                                                 31/12/2024              31/12/2023
+                                                                            Sem Vencimento    Até 3 Meses      De 3 a 12 Meses    Acima de 12 Meses                     Total                  Total
+    Depósitos                                                                   99.711.716   120.980.459         124.150.675            150.465.502             495.308.353            475.535.132
+    Depósitos à Vista                                                           42.113.904             -                    -                      -             42.113.904             41.280.250
+    Depósitos de Poupança                                                       57.452.664             -                    -                      -             57.452.664             58.111.966
+    Depósitos Interfinanceiros                                                           -      365.876                     -              5.146.147              5.512.023               4.111.360
+    Depósitos a Prazo (1)                                                          145.149   120.614.583          124.150.675           145.319.356             390.229.762            372.031.556
+    Captações no Mercado Aberto                                                          -   124.632.374           12.091.543            26.181.317             162.905.234            141.939.228
+    Carteira Própria                                                                     -    84.087.309              28.202                    421              84.115.932             61.343.482
+      Títulos Públicos                                                                   -    70.427.419                    -                      -             70.427.419             39.730.093
+      Outros                                                                             -    13.659.890              28.202                    421              13.688.513             21.613.389
+    Carteira de Terceiros                                                                -    40.545.065                    -                      -             40.545.065             62.025.098
+    Carteira de Livre Movimentação                                                       -             -           12.063.341            26.180.896              38.244.237             18.570.648
+    Recursos de Aceites e Emissão de Títulos                                             -    28.376.720           56.937.444            94.265.640             179.579.804            167.198.665
+    Recursos de Letras Imobiliárias, Hipotecárias, de Crédito e Similares                -    13.474.034           47.641.388            58.711.380             119.826.802            116.770.927
+      Letras de Crédito Imobiliário - LCI (2)                                            -     3.648.695           15.252.317            22.263.991              41.165.003             41.677.823
+      Letras de Crédito do Agronegócio - LCA                                             -     4.220.536           15.268.170            17.591.988              37.080.694             36.422.804
+      Letras Financeiras - LF (3)                                                        -     2.888.398           12.770.271              8.857.135             24.515.804             22.729.058
+      Letras Imobiliárias Garantidas - LIG (4)                                           -     2.716.405            4.350.630              9.998.266             17.065.301             15.941.242
+    Obrigações por Títulos e Valores Mobiliários no Exterior                             -    14.169.249            5.044.416            23.639.285              42.852.950             38.257.726
+    Certificados de Operações Estruturadas                                               -      733.437             4.251.640            11.914.975              16.900.052             12.170.012
+    Obrigações por Empréstimos e Repasses                                                -    51.113.487           55.137.327            12.470.988             118.721.802             89.571.840
+    Obrigações por Empréstimos no Exterior                                               -    50.263.859           52.807.692              6.714.514            109.786.065             77.239.162
+      Linhas de Financiamento à Exportação e Importação                                  -    29.277.886           41.882.187                      -             71.160.073             50.490.555
+      Outras Linhas de Crédito                                                           -    20.985.973           10.925.505              6.714.514             38.625.992             26.748.607
+    Obrigações por Repasses do País                                                      -      849.628             2.329.635              5.756.474              8.935.737             12.332.678
+    Total                                                                       99.711.716   325.103.040         248.316.989            283.383.448             956.515.193            874.244.865
+
+
+    Circulante                                                                  99.711.716   325.103.040         248.316.989                      -             673.131.746            599.568.298
+    Não Circulante                                                                       -             -                   -            283.383.448             283.383.448            274.676.567
+
+
+
+
+                                                                                                                 Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 80
+
+=== página 81 ===
+                                         Relatório dos Auditores                                         Demonstrações                                        Notas Explicativas                                   Declarações dos
+Relatório da Administração               Independentes                                                   Financeiras                                                                                               Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+                                                                                                                                                                                                                                                         Consolidado
+                                                                                                                                                                                                                              31/12/2024                  31/12/2023
+                                                                                                          Sem Vencimento                  Até 3 Meses            De 3 a 12 Meses         Acima de 12 Meses                          Total                       Total
+Depósitos                                                                                                      99.168.569                 109.447.333               100.881.499                185.830.814                   495.328.215                475.701.951
+Depósitos à Vista                                                                                              41.354.662                            -                          -                        -                    41.354.662                 40.967.118
+Depósitos de Poupança                                                                                          57.452.664                            -                          -                        -                    57.452.664                 58.111.966
+Depósitos Interfinanceiros                                                                                              -                 (11.263.486)               (23.240.131)               40.578.413                     6.074.796                   4.263.954
+Depósitos a Prazo (1)                                                                                             145.149                 120.710.819               124.121.630                145.252.401                   390.229.999                372.200.427
+Outros Depósitos                                                                                                  216.094                            -                          -                        -                       216.094                     158.486
+Captações no Mercado Aberto                                                                                             -                 112.205.119                 12.091.543                26.181.317                   150.477.979                134.793.745
+Carteira Própria                                                                                                        -                  78.518.983                     28.202                       421                    78.547.606                 55.967.171
+    Títulos Públicos                                                                                                    -                  64.862.951                           -                        -                    64.862.951                 34.353.782
+    Outros                                                                                                              -                  13.656.032                     28.202                       421                    13.684.655                 21.613.389
+Carteira de Terceiros                                                                                                   -                  33.686.136                           -                        -                    33.686.136                 60.255.925
+Carteira de Livre Movimentação                                                                                          -                            -                12.063.341                26.180.896                    38.244.237                 18.570.649
+Recursos de Aceites e Emissão de Títulos                                                                                -                  20.026.206                 57.540.188                86.697.568                   164.263.962                149.203.270
+Recursos de Aceites Cambiais                                                                                            -                     124.082                    395.257                 1.092.961                     1.612.300                   1.339.088
+Recursos de Letras Imobiliárias, Hipotecárias, de Crédito e Similares                                                   -                  14.264.132                 48.912.571                62.723.584                   125.900.287                122.082.082
+  Letras de Crédito Imobiliário - LCI (2)                                                                               -                   3.648.695                 15.252.317                22.263.992                    41.165.004                 41.677.823
+  Letras de Crédito do Agronegócio - LCA                                                                                -                   4.220.536                 15.268.170                17.591.988                    37.080.694                 36.422.804
+  Letras Financeiras - LF (3)                                                                                           -                   3.678.495                 14.041.454                12.869.338                    30.589.287                 28.040.213
+  Letras Imobiliárias Garantidas - LIG (4)                                                                              -                   2.716.406                  4.350.630                 9.998.266                    17.065.302                 15.941.242
+Obrigações por Títulos e Valores Mobiliários no Exterior                                                                -                   4.904.555                  3.980.720                10.966.051                    19.851.326                 13.612.088
+Certificados de Operações Estruturadas                                                                                  -                     733.437                  4.251.640                11.914.972                    16.900.049                 12.170.012
+Obrigações por Empréstimos e Repasses                                                                                   -                  51.118.867                 55.137.327                12.470.988                   118.727.182                 89.635.879
+Obrigações por Empréstimos no País                                                                                      -                       5.380                           -                        -                         5.380                      64.039
+Obrigações por Empréstimos no Exterior                                                                                  -                  50.263.859                 52.807.692                 6.714.514                   109.786.065                 77.239.162
+  Linhas de Financiamento à Exportação e Importação                                                                     -                  29.277.886                 41.882.187                         -                    71.160.073                 50.490.555
+  Outras Linhas de Crédito                                                                                              -                  20.985.973                 10.925.505                 6.714.514                    38.625.992                 26.748.607
+Obrigações por Repasses do País                                                                                         -                     849.628                  2.329.635                 5.756.474                     8.935.737                 12.332.678
+Total                                                                                                          99.168.569                 292.797.525               225.650.557                311.180.687                   928.797.338                849.334.845
+
+Circulante                                                                                                      99.168.569                292.797.525                 225.650.557                          -                 617.616.651                581.902.229
+Não Circulante                                                                                                           -                          -                           -                311.180.687                 311.180.687                267.432.616
+(1) Consideram os vencimentos estabelecidos nas respectivas aplicações, existindo a possibilidade de saque imediato, de forma antecipada ao seu vencimento.
+(2) Letras de crédito imobiliário são títulos de renda fixa lastreados por créditos imobiliários e garantidos por hipoteca ou por alienação fiduciária de bem imóvel. Em 31 de dezembro de 2024 possuem prazo de vencimento entre 2025 e 2034.
+(3) As principais características das letras financeiras são prazo mínimo de dois anos, valor nominal mínimo de R$ 50 e permissão de resgate antecipado de apenas 5% do montante emitido. Em 31 de dezembro de 2024 possuem prazo de vencimento entre 2025 e 2034.
+(4) Letras Imobiliárias Garantidas são títulos de renda fixa lastreados por créditos Imobiliários garantidos pelo emissor e por um pool de créditos imobiliários apartados dos demais ativos do emissor. Em 31 de dezembro de 2024, possuem prazo de vencimento entre
+2025 e 2035 (31/12/2023 - com prazo de vencimento entre 2024 e 2035).
+
+
+
+
+                                                                                                                                                                      Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 81
+
+=== página 82 ===
+                                         Relatório dos Auditores                                              Demonstrações                                          Notas Explicativas                             Declarações dos
+Relatório da Administração               Independentes                                                        Financeiras                                                                                           Diretores
+*Valores expressos em milhares, exceto quando indicado.
+
+
+No Banco e no Consolidado, as linhas de financiamento à exportação e importação são recursos captados junto a instituições financeiras no exterior, destinados à aplicação em operações comerciais de câmbio,
+relativas a desconto de letras de exportação e pré-financiamento à exportação e importação, cujos vencimentos vão até o ano de 2026 (31/12/2023 - até o ano de 2030) e estão sujeitas a encargos financeiros,
+correspondentes à variação cambial acrescida de juros que variam de 0,09% a 0,91% a.a. (31/12/2023 - de 0,04% a.a. a 3,02% a.a.).
+As obrigações por repasses do país - instituições oficiais têm incidência de encargos financeiros correspondentes a TJLP, variação cambial da cesta de moedas do BNDES ou a variação cambial do Dólar americano,
+acrescidos de juros, de acordo com as políticas operacionais do Sistema BNDES.
+
+b) Obrigações por Títulos e Valores Mobiliários no Exterior
+                                                                                                                                                                                                                          Banco                     Consolidado
+                                                                                                                                                                                                     31/12/2024      31/12/2023      31/12/2024      31/12/2023
+Emissão                                                          Vencimento até                                                                                               Taxa de Juros (a.a.)          Total         Total            Total          Total
+2018                                                             2025                                                                                                               Até 6,4% + CDI             -       207.098                -              -
+2019                                                             2027                                                                                                                 Até 9% + CDI      660.286      1.115.221                -              -
+2020                                                             2027                                                                                                                 Até 9% + CDI       76.703        464.379                -              -
+2021                                                             2031                                                                                                                 Até 9% + CDI    5.141.417      7.584.269        4.195.534      3.337.315
+2022                                                             2035                                                                                                                 Até 9% + CDI    1.941.482      4.950.983        1.459.607      1.918.929
+2023                                                             2033                                                                                                                 Até 9% + CDI    9.464.352     23.935.776        3.102.939      8.355.844
+2024                                                             2035                                                                                                                 Até 9% + CDI   25.568.710              -       11.093.246              -
+Total                                                                                                                                                                                                42.852.950     38.257.726       19.851.326     13.612.088
+
+c) Abertura de contas de resultado
+
+                                                                                                                                                                                                           Banco                                    Consolidado
+                                                                                                                                                                                    01/01 a               01/01 a                 01/01 a                01/01 a
+                                                                                                                                                                               31/12/2024             31/12/2023             31/12/2024              31/12/2023
+Depósitos a Prazo (1) (2)                                                                                                                                                      41.511.815             31.989.743             36.290.976             27.331.083
+Depósitos de Poupança                                                                                                                                                           3.735.413              4.295.177              3.735.413               4.295.178
+Depósitos Interfinanceiros                                                                                                                                                        496.986                670.027                479.718                544.764
+Captação no Mercado Aberto (2)                                                                                                                                                 24.603.606             15.277.516             23.592.702             14.283.764
+Atualização e Juros de Provisões de Previdência e de Capitalização                                                                                                                         -                    -               273.241                314.936
+Recursos de Aceites e Emissão de Títulos (2)                                                                                                                                   45.880.407             19.254.941             46.681.789             20.034.911
+Outras (3)                                                                                                                                                                     5.188.270              (1.615.769)             5.221.381             (1.740.691)
+ Total                                                                                                                                                                       121.416.497              69.871.635            116.275.220             65.063.945
+(1) No Banco e no Consolidado, inclui o registro de juros no valor de R$ 2.523.206 (2023 - R$ 713.975), referente a emissão de Instrumento de Dívida Elegível a Capital Nível I e II (Nota 17.b).
+(2) Inclui despesa de variação cambial no valor de R$ 42.216.182 no Banco e no Consolidado e efeitos contrários em variação cambial com TVM nota 6.a.V (2023 - R$ 6.460.243).
+(3) Em 31 de dezembro de 2024 refere-se principalmente a despesa de variação cambial no Banco e no Consolidado.
+
+
+
+
+                                                                                                                                                                             Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 82
+
+=== página 84 ===
+   Relatório da               Relatório dos Auditores      Demonstrações                                      Notas Explicativas                 Declarações dos Diretores
+   Administração              Independentes                Financeiras
+   *Valores expressos em milhares, exceto quando indicado.
+
+18. Outros Passivos
+                                                                                                                                        Banco                          Consolidado
+                                                                                                             31/12/2024            31/12/2023       31/12/2024         31/12/2023
+   Provisão Técnica para Operações de Capitalização                                                                   -                     -        4.361.282          4.382.123
+   Obrigações com Cartões de Crédito                                                                         52.172.654            44.790.626       52.172.676         45.143.460
+   Provisão para Riscos Fiscais e Obrigações Legais (Nota 19.b)                                                2.824.081            2.326.237        3.032.613           2.521.560
+   Provisão para Processos Judiciais e Administrativos - Ações Trabalhistas e Cíveis (Nota
+   19.b)                                                                                                       5.623.701            5.734.590        6.309.615          6.188.861
+     Ações Trabalhistas                                                                                        2.609.381            3.051.424        2.968.667           3.291.702
+      Ações Cíveis                                                                                             3.014.320            2.683.166        3.340.948           2.897.159
+   Provisão para Garantias Financeiras Prestadas                                                                 605.207             550.374              605.207          550.374
+   Plano de Benefícios a Funcionários (Nota 27) (1)                                                            1.347.111            2.508.983        1.364.437           2.543.504
+   Obrigações por Aquisição de Bens e Direitos                                                                      4.223               5.376               4.223            5.376
+   Provisão para Pagamentos a Efetuar
+     Despesas de Pessoal                                                                                       1.977.507            1.807.154        2.611.016           2.338.857
+     Despesas Administrativas                                                                                    267.205             260.989              716.105          623.225
+     Outros Pagamentos                                                                                            51.019              48.466              147.862          159.725
+   Credores por Recursos a Liberar                                                                             1.252.660            1.053.873        1.252.660           1.053.873
+   Obrigações por Prestação de Serviço de Pagamento                                                              548.677             591.592              548.677          591.592
+   Fornecedores                                                                                                  902.658             802.212              886.377        1.304.360
+   Sociais e Estatutárias                                                                                        515.056             523.514              575.628          585.339
+   Obrigações com Operações TVM Exterior                                                                       4.489.514            3.510.605        4.489.514           3.510.605
+   Débitos com Operações de Seguros                                                                                      -                  -        1.605.532           1.696.572
+   Outras (2)                                                                                                17.121.739            10.137.747       20.740.116         13.989.982
+   Total                                                                                                     89.703.012            74.652.338      101.423.540         87.189.388
+
+
+   Circulante                                                                                                16.821.944            12.525.591       27.368.487         23.902.138
+   Não Circulante                                                                                            72.881.068            62.126.747       74.055.053         63.287.250
+    (1) O montante inclui os efeitos da obrigação constituída em função da transação firmada entre o Banco Santander, BANESPREV, AFABESP e assessores jurídicos em 27 de junho de
+    2024. Vide detalhes na nota 27, item a.
+    (2) Composto majoritariamente por variações cambiais referentes a Notes, saldos oriundos de programa de recompensa e outros compromissos por recursos a serem liquidados.
+
+
+   a) Provisão para Garantias Financeiras Prestadas
+   A classificação das operações de garantias prestadas para constituição de provisionamento é baseada na estimativa do risco envolvido. Decorre
+   do processo de avaliação da qualidade dos clientes e operações, por modelo estatístico baseado em informações quantitativas e qualitativas ou
+   por um analista de crédito especializado, que permite classificá-las em função de sua probabilidade de default, baseado em variáveis objetivas
+   internas e de mercado (bureaus), previamente identificadas como preditivas da probabilidade de default. Após essa avaliação, as operações são
+   classificadas de acordo com os ratings de provisionamento, tendo como referência a Resolução CMN nº 2.682/1999. Através desta análise, são
+   registrados os valores de provisão para a cobertura de cada operação, considerando o tipo da garantia prestada, de acordo com o requerido na
+   Resolução CMN nº 4.512/2016.
+                                                                                                                                                               Banco/Consolidado
+                                                                                                                   31/12/2024                                         31/12/2023
+                                                                                         Saldo Garantias                               Saldo Garantias
+   Tipo de Garantia Financeira                                                                 Prestadas               Provisão              Prestadas                     Provisão
+   Vinculadas ao Comércio Internacional de Mercadorias                                        3.995.743                119.000             5.094.679                       100.147
+   Vinculadas a Licitações, Leilões, Prestação de Serviços ou Execução de
+   Obras                                                                                     17.137.870                 14.374             7.020.490                         8.909
+   Vinculadas ao Fornecimento de Mercadorias                                                  2.373.486                   1.660            2.768.318                         1.985
+   Vinculadas à Distribuição de Títulos e Valores Mobiliários por Oferta
+   Pública                                                                                      380.000                        -                      -                             -
+   Aval ou Fiança em Processos Judiciais e Administrativos de Natureza
+   Fiscal                                                                                    12.362.581                350.925            13.688.909                       327.298
+   Outros Avais                                                                                  61.923                  1.858                90.386                        1.840
+   Outras Fianças Bancárias                                                                  20.172.826                102.907            31.184.916                       60.216
+   Outras Garantias Financeiras Prestadas                                                     6.260.832                 14.483             2.062.860                       49.979
+   Total                                                                                     62.745.261                605.207            61.910.558                      550.374
+
+
+
+
+                                                                                    Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 |84
+
+=== página 85 ===
+   Relatório da               Relatório dos Auditores      Demonstrações                                       Notas Explicativas                    Declarações dos Diretores
+   Administração              Independentes                Financeiras
+   *Valores expressos em milhares, exceto quando indicado.
+
+   Movimentação da Provisão para Garantias Financeiras Prestadas
+
+                                                                                                                                                               Banco/Consolidado
+                                                                                                                                          01/01 a                            01/01 a
+                                                                                                                                     31/12/2024                       31/12/2023
+   Saldo Inicial                                                                                                                         550.374                         413.437
+   Constituição                                                                                                                          118.513                         215.953
+   Reversão (1)                                                                                                                          (63.680)                        (79.016)
+   Saldo Final                                                                                                                           605.207                         550.374
+    (1) Corresponde a fianças honradas, mudança de rating ou provisão constituída na linha de Provisão para Perdas Esperadas Associadas ao Risco de Crédito.
+
+
+19. Provisões, Passivos Contingentes, Ativos Contingentes e Obrigações Legais - Fiscais e Previdenciárias
+
+   a) Ativos Contingentes
+
+   No Banco e no Consolidado, em 31 de dezembro de 2024 e 31 de dezembro de 2023, não foram reconhecidos contabilmente ativos
+   contingentes.
+
+   b) Saldos Patrimoniais das Provisões para Processos Judiciais e Administrativos e Obrigações Legais por Natureza
+
+                                                                                                                                 Banco                           Consolidado
+                                                                                                     31/12/2024            31/12/2023           31/12/2024        31/12/2023
+   Provisão para Riscos Fiscais e Obrigações Legais (Nota 18)                                         2.824.081             2.326.237            3.032.613         2.521.560
+   Provisão para Processos Judiciais e Administrativos - Ações Trabalhistas e
+   Cíveis (Nota 18)                                                                                   5.623.701             5.734.590            6.309.615         6.188.861
+   Ações Trabalhistas                                                                                 2.609.381             3.051.424            2.968.667         3.291.702
+   Ações Cíveis                                                                                       3.014.320             2.683.166            3.340.948         2.897.159
+   Total                                                                                              8.447.782             8.060.827            9.342.228         8.710.421
+
+
+   c) Movimentação das Provisões para Processos Judiciais e Administrativos e Obrigações Legais
+
+                                                                                                                                                                     Banco
+                                                                                                            01/01 a                                                 01/01 a
+                                                                                                        31/12/2024                                              31/12/2023
+                                                               Fiscais (1)       Trabalhistas           Cíveis             Fiscais          Trabalhistas        Cíveis
+   Saldo Inicial                                                  2.326.237           3.051.424          2.683.166          4.141.393           1.532.949        2.724.425
+   Constituição Líquida de Reversão (2)                             524.166           2.251.457          1.051.254         (1.839.160)          2.767.138         622.454
+   Atualização Monetária                                            138.323             108.733            227.380             146.335               55.322       232.733
+   Baixas por Pagamento                                            (164.645)        (2.802.233)           (947.480)          (122.331)         (1.303.985)       (896.446)
+   Saldo Final                                                    2.824.081           2.609.381          3.014.320          2.326.237           3.051.424       2.683.166
+   Depósitos em Garantia - Outros Créditos                        1.916.446             521.162            263.533          1.813.686               666.387       305.127
+   Depósitos em Garantia - Títulos e Valores
+   Mobiliários                                                         3.589                 820                727              2.898               58.462              8
+   Total dos Depósitos em Garantia (3)                            1.920.035             521.982            264.260          1.816.584               724.849       305.135
+
+
+                                                                                                                                                               Consolidado
+                                                                                                            01/01 a                                                 01/01 a
+                                                                                                        31/12/2024                                              31/12/2023
+                                                               Fiscais (1)       Trabalhistas           Cíveis             Fiscais          Trabalhistas        Cíveis
+   Saldo Inicial                                                  2.521.560           3.291.702          2.897.159          6.722.249           1.711.146        2.883.056
+   Constituição Líquida de Reversão (2)                             545.642           2.503.441          1.348.231         (4.054.636)          2.908.910         870.947
+   Atualização Monetária                                            145.688             114.600            232.508             161.312               60.970       237.399
+   Baixas por Pagamento                                            (180.277)        (2.941.076)         (1.136.950)          (307.365)         (1.389.324)      (1.094.243)
+   Saldo Final                                                    3.032.613           2.968.667          3.340.948          2.521.560           3.291.702       2.897.159
+   Depósitos em Garantia - Outros Créditos                        3.282.428             543.570            271.002          3.111.132               700.987       320.687
+   Depósitos em Garantia - Títulos e Valores
+   Mobiliários                                                         4.869                 820                727              4.079               58.462              8
+   Total dos Depósitos em Garantia (3)                            3.287.297             544.390            271.729          3.115.211               759.449       320.695
+
+
+
+
+                                                                                     Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 |85
+
+=== página 86 ===
+Relatório da               Relatório dos Auditores      Demonstrações                                      Notas Explicativas                  Declarações dos Diretores
+Administração              Independentes                Financeiras
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+(1) Riscos fiscais contemplam as constituições de provisões para impostos relacionados a processos judiciais e administrativo s e obrigações legais, contabilizados em despesas
+tributárias.
+(2) Em 2023, inclui a reversão da provisão para processos de PIS e COFINS referentes ao questionamento da Lei nº 9.718/98 (Vide Nota 25).
+(3) Referem-se aos valores de depósitos em garantias, limitados ao valor da provisão das contingências classificadas como prováveis. O valor dos depósitos das demais contingências
+classificadas como possíveis ou remotas, no Banco é R$ 5.648 milhões e no Consolidado é R$ 6.737 milhões.
+
+
+d) Provisões Fiscais, Previdenciárias, Trabalhistas e Cíveis
+
+O Banco Santander e suas controladas são parte integrante em processos judiciais e administrativos de natureza fiscal e previdenciária,
+trabalhista e cível, decorrentes do curso normal de suas atividades.
+
+As provisões foram constituídas com base na natureza, complexidade e histórico das ações e na avaliação de perda das ações das empresas
+com base nas opiniões dos assessores jurídicos internos e externos. O Banco Santander tem por política provisionar integralmente o valor em
+risco das ações cuja avaliação é de perda provável.
+
+A Administração entende que as provisões constituídas são suficientes para atender as eventuais perdas decorrentes de processos judiciais e
+administrativos conforme segue:
+
+d.1) Processos Judiciais e Administrativos de Natureza Fiscais e Previdenciárias
+
+Principais processos judiciais e administrativos com risco de perda provável
+
+O Banco Santander e suas empresas controladas são partes em processos judiciais e administrativos relacionados a discussões fiscais e
+previdenciárias, que são classificados com base na opinião dos assessores jurídicos, como risco de perda provável.
+
+Contribuição Provisória sobre a Movimentação Financeira (CPMF) em Operações de Clientes - R$ 1.167 milhões (31/12/2023 - R$ 1.099
+milhões) no Banco e Consolidado: em maio de 2003, a Receita Federal do Brasil lavrou um auto de infração na Santander Distribuidora de
+Títulos e Valores Mobiliários Ltda. (Santander DTVM) e outro auto no Banco Santander (Brasil) S.A. O objeto dos autos foi a cobrança de CPMF
+sobre operações efetuadas pela Santander DTVM na administração de recursos de seus clientes e serviços de compensação prestados pelo
+Banco para a Santander DTVM, ocorridos durante os anos de 2000, 2001 e 2002. O processo administrativo se encerrou desfavorável para
+ambas as Companhias. Em 3 de julho de 2015, Banco e Santander Brasil Tecnologia S.A. (atual denominação da Produban Serviços de
+Informática S.A. e Santander DTVM) impetraram ação judicial visando anular ambos os débitos fiscais. Referida ação teve sentença e acórdão
+improcedentes, o que ensejou as interposições de Recurso Especial ao STJ e Recurso Extraordinário ao STF, que aguardam julgamento. Com
+base na avaliação dos assessores jurídicos, foi constituída provisão para fazer face à perda considerada provável na ação judicial.
+
+Instituto Nacional do Seguro Social (INSS) - R$ 140 milhões no Banco e R$ 142 milhões no Consolidado (31/12/2023 - R$ 137 milhões no
+Banco e R$ 138 milhões no Consolidado): o Banco Santander e as empresas controladas discutem administrativa e judicialmente a cobrança da
+contribuição previdenciária e do salário-educação sobre diversas verbas que, segundo avaliação dos assessores jurídicos, não possuem natureza
+salarial.
+
+Imposto sobre Serviços (ISS) - Instituições Financeiras – R$ 350 milhões no Banco e R$ 366 milhões no Consolidado (31/12/2023 - R$ 365
+milhões no Banco e R$ 379 milhões no Consolidado): o Banco Santander e as empresas controladas discutem administrativa e judicialmente a
+exigência, por vários municípios, do pagamento de ISS sobre diversas receitas decorrentes de operações que usualmente não se classificam
+como prestação de serviços. Além disso, outras ações envolvendo ISS, classificados como risco de perda possível, estão descritos na Nota 19.e.
+
+d.2) Processos Judiciais e Administrativos de Natureza Trabalhista
+
+São ações movidas pelos Sindicatos, Associações, Ministério Público do Trabalho e ex-empregados pleiteando direitos trabalhistas que
+entendem devidos, em especial ao pagamento de “horas extras” e outros direitos trabalhistas, incluindo processos relacionados a benefícios de
+aposentadoria.
+
+Para ações consideradas comuns e semelhantes em natureza, as provisões são registradas com base na média histórica dos processos
+encerrados. As ações que não se enquadram no critério anterior são provisionadas de acordo com avaliação individual realizada, sendo as
+provisões constituídas com base no risco provável de perda, na lei e na jurisprudência de acordo com a avaliação de perda efetuada pelos
+assessores jurídicos.
+
+
+
+
+                                                                                 Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 |86
+
+=== página 87 ===
+Relatório da               Relatório dos Auditores      Demonstrações                   Notas Explicativas             Declarações dos Diretores
+Administração              Independentes                Financeiras
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+d.3) Processos Judiciais e Administrativos de Natureza Cível
+
+Estas provisões são em geral decorrentes de: (1) ações com pedido de revisão de termos e condições contratuais ou pedidos de ajustes
+monetários, incluindo supostos efeitos da implementação de vários planos econômicos do governo, (2) ações decorrentes de contratos de
+financiamento, (3) ações de execução; e (4) ações de indenização por perdas e danos. Para ações cíveis consideradas comuns e semelhantes em
+natureza, as provisões são registradas com base na média histórica dos processos encerrados. As ações que não se enquadram no critério
+anterior são provisionadas de acordo com avaliação individual realizada, sendo as provisões constituídas com base no risco provável de perda,
+na lei e na jurisprudência de acordo com a avaliação de perda efetuada pelos assessores jurídicos.
+
+Os principais processos classificados como risco de perda provável estão descritos a seguir:
+
+Ações de Caráter Indenizatório - Referem-se à indenização por dano material e/ou moral, referentes à relação de consumo, versando,
+principalmente, sobre questões atinentes a cartões de crédito, crédito direto ao consumidor, contas correntes, cobrança e empréstimos e
+outros assuntos. Nas ações relativas a causas consideradas semelhantes e usuais para o negócio, no curso normal das atividades do Banco, a
+provisão é constituída com base na média histórica dos processos encerrados. As ações que não se enquadram no critério anterior são
+provisionadas de acordo com avaliação individual realizada, sendo as provisões constituídas com base no risco provável de perda, na lei e na
+jurisprudência de acordo com a avaliação de perda efetuada pelos assessores jurídicos.
+
+Planos Econômicos - Referem-se a discussões judiciais, que pleiteiam supostos expurgos inflacionários decorrentes de Planos Econômicos
+(Bresser, Verão, Collor I e II), por entenderem que tais planos violaram direitos adquiridos relativos à aplicação de índices inflacionários
+supostamente devidos a Cadernetas de Poupança, Depósitos Judiciais e Depósitos a Prazo (CDBs). As ações são provisionadas com base na
+avaliação individualizada de perda efetuada pelos assessores jurídicos.
+
+O Banco Santander também é parte em ações civis públicas, sobre a mesma matéria, ajuizadas por entidades de defesa do consumidor, pelo
+Ministério Público ou por Defensorias Públicas. A constituição de provisão é feita somente para casos com risco provável, tendo como base os
+pedidos de execuções individuais. A questão está ainda sob análise no STF. Existe jurisprudência no STF favorável aos Bancos com relação a
+fenômeno econômico semelhante ao da poupança, como no caso da correção de depósitos a prazo (CDBs) e das correções aplicadas aos
+contratos (tablita).
+
+Contudo, a jurisprudência do STF ainda não se consolidou sobre a constitucionalidade das normas que modificaram o padrão monetário do
+Brasil. Em 14 de abril de 2010, o Supremo Tribunal de Justiça (STJ) decidiu que o prazo para a propositura de ações civis públicas que discutem
+os expurgos é de 5 anos a partir da data dos planos, mas essa decisão ainda não transitou em julgado. Desta forma, com essa decisão, grande
+parte das ações, como foram propostas após o prazo de 5 anos, provavelmente, serão julgadas improcedentes, diminuindo os valores
+envolvidos. O STJ também decidiu que o prazo para os poupadores individuais se habilitarem nas Ações Civis Públicas, também é de 5 anos,
+contados do trânsito em julgado da respectiva sentença. O Banco Santander acredita no sucesso das teses defendidas perante esses tribunais
+por seu conteúdo e fundamento.
+
+Ao final de 2017, a Advocacia Geral da União (AGU), o Bacen, o Instituto de Defesa do Consumidor (Idec), a Frente Brasileira dos Poupadores
+(Febrapo) e a Federação Brasileira dos Bancos (Febraban) firmaram acordo que busca encerrar as disputas judiciais sobre os Planos Econômicos.
+
+As discussões se concentraram em definir a quantia que seria paga a cada autor, conforme o saldo na caderneta na data do plano. O valor total
+dos pagamentos, dependerá da quantidade de adesões, e também do número de poupadores que tenham comprovado em juízo a existência
+da conta e o saldo na data de aniversário de alteração dos índices. O termo de acordo negociado entre as partes foi homologado pelo STF.
+
+Em decisão proferida pelo STF, ocorreu suspensão nacional de todos os processos que versem sobre a questão pelo período de vigência do
+acordo, com exceção aos casos em cumprimento definitivo de sentença.
+
+Em 11 de março de 2020, houve a prorrogação do acordo por meio de aditivo, com a inclusão das ações que envolvem somente a discussão do
+Plano Collor I. Tal prorrogação tem prazo de 5 anos e a homologação dos termos do aditivo ocorreu no dia 03 de junho de 2020.
+
+A Administração considera que as provisões constituídas são suficientes para cobrir os riscos envolvidos com os planos econômicos,
+considerando o acordo homologado.
+
+e) Passivos Contingentes Fiscais e Previdenciárias, Trabalhistas e Cíveis Classificados como Risco de Perda Possível
+
+São processos judiciais e administrativos de natureza fiscal e previdenciária, trabalhista e cível classificados, com base na opinião dos assessores
+jurídicos, como risco de perda possível, não sendo, portanto, provisionados.
+
+
+
+                                                                   Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 |87
+
+=== página 97 ===
+   Relatório da                                                                     Demonstrações      Notas Explicativas                          Declarações dos
+                                            Relatório dos Auditores Independentes   Financeiras                                                    Diretores
+   Administração
+   *Valores expressos em milhares, exceto quando indicado.
+
+24. Outras Despesas Administrativas
+                                                                                                                                   Banco                                           Consolidado
+                                                                                                        01/01 a                  01/01 a                    01/01 a                    01/01 a
+                                                                                                    31/12/2024               31/12/2023                 31/12/2024                 31/12/2023
+   Depreciações e Amortizações                                                                       3.225.626                 3.085.308                  3.475.694                  3.334.064
+   Serviços de terceiros, Transportes, Segurança e Sistema Financeiro                                4.557.689                 4.463.496                  3.838.228                  3.896.943
+   Comunicações                                                                                        276.139                   298.187                    293.011                    332.165
+   Processamento de Dados                                                                            3.418.388                 3.134.820                  2.882.167                  2.665.108
+   Propaganda, Promoções e Publicidade                                                                 520.938                   628.492                    680.990                    783.940
+   Aluguéis                                                                                            709.843                   855.421                    728.994                    875.268
+   Manutenção e Conservação de Bens                                                                    270.516                   297.533                    299.396                    320.762
+   Água, Energia e Gás                                                                                 169.035                   170.629                    180.435                    179.948
+   Material                                                                                            110.579                   114.399                    118.210                    120.406
+   Outras                                                                                            1.496.305                 1.454.891                  1.014.848                  1.049.318
+    Total                                                                                           14.755.058                14.503.176                 13.511.973                 13.557.922
+
+
+
+
+                                                                                                             Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 97
+
+=== página 98 ===
+   Relatório da                                                                                  Demonstrações                                  Notas Explicativas                           Declarações dos
+                                            Relatório dos Auditores Independentes                Financeiras                                                                                 Diretores
+   Administração
+   *Valores expressos em milhares, exceto quando indicado.
+
+25. Outras Receitas e Despesas Operacionais
+                                                                                                                                                                    Banco                                                     Consolidado
+                                                                                                                                 01/01 a                           01/01 a                        01/01 a                          01/01 a
+                                                                                                                             31/12/2024                        31/12/2023                     31/12/2024                       31/12/2023
+   Atualizações monetárias (1)                                                                                                 429.321                           869.425                        555.152                          994.017
+   Comissões                                                                                                                  (2.294.097)                      (2.436.825)                    (4.433.170)                      (3.950.729)
+   Corretagens e Emolumentos                                                                                                     (84.602)                         (88.833)                       (85.970)                         (88.978)
+   Despesas com Cartórios                                                                                                         (7.419)                          (9.690)                      (368.827)                       (288.937)
+   Despesa com Formalização de Negócios                                                                                        (167.049)                         (158.247)                      (167.049)                       (158.247)
+   Despesas Judiciais e Custas                                                                                                 (281.717)                         (224.589)                      (283.379)                       (227.937)
+   Despesas com Serasa e Serviço de Proteção ao Crédito (SPC)                                                                  (131.026)                         (116.355)                      (133.530)                       (120.073)
+   Perdas Atuariais - Planos de Aposentadoria                                                                                  (179.422)                         (161.340)                      (187.119)                       (166.730)
+   PIS e COFINS (Lei nº 9.718/98) (2)                                                                                                   -                       1.373.463                               -                       1.550.412
+   Fiscais (2)                                                                                                                 (122.135)                         (146.025)                      (143.612)                       (180.992)
+   Trabalhistas                                                                                                               (2.251.457)                      (2.767.139)                    (2.503.441)                      (2.908.910)
+   Cíveis                                                                                                                     (1.051.254)                        (622.454)                    (1.348.230)                       (870.946)
+   Receita Líquida de Rendas de Previdência e de Capitalização                                                                          -                                -                       706.652                         596.549
+   Resultado com Cartões                                                                                                      (4.089.802)                      (3.928.634)                    (2.177.603)                      (2.691.103)
+   Recuperação de Encargos e Despesas                                                                                           576.753                           839.431                        788.276                         709.973
+   Outras (3)                                                                                                                 (2.704.809)                      (1.551.510)                    (3.535.906)                      (2.787.824)
+    Total                                                                                                                   (12.358.715)                       (9.129.322)                   (13.317.756)                     (10.590.455)
+    (1) Nos exercícios findos em 31 de Dezembro de 2024 e 2023, inclui, principalmente, atualização monetária sobre provisões para processos judiciais e obrigações legais.
+    (2) Em 2023 refere-se aos efeitos das movimentações oriundas das ações do PIS e COFINS referentes ao questionamento da Lei nº 9.718/1998 descritas nas notas 18 e 10.
+    (3) Nos exercícios findos em 31 de Dezembro de 2024 e 2023, inclui, principalmente, provisões para o fundo garantidor de benefícios, variação cambial e outras provisões
+
+
+
+
+                                                                                                                                                       Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 98
+
+=== página 99 ===
+   Relatório da                                                                               Demonstrações                                 Notas Explicativas                            Declarações dos
+                                            Relatório dos Auditores Independentes             Financeiras                                                                                 Diretores
+   Administração
+   *Valores expressos em milhares, exceto quando indicado.
+
+
+
+26. Resultado Não Operacional
+                                                                                                                                                                         Banco                                           Consolidado
+                                                                                                                                             01/01 a                    01/01 a                    01/01 a                   01/01 a
+                                                                                                                                         31/12/2024                 31/12/2023                  31/12/2024               31/12/2023
+   Resultado na Alienação de Investimentos (1)                                                                                             1.929.980                           -                 1.929.751                 1.104.645
+   Resultado na Alienação de Valores e Bens                                                                                                 146.343                      86.130                     91.046                    87.509
+   Reversão (Constituição) de Provisão para Perdas em Outros Valores e Bens                                                                   25.795                      1.518                     79.181                    18.564
+   Despesas com Bens não de Uso                                                                                                              (65.192)                   (49.688)                   (69.827)                  (49.807)
+   Ganhos (Perdas) de Capital                                                                                                                (21.618)                    (1.643)                     7.851                     9.118
+   Outras Receitas (Despesas)                                                                                                                 34.103                   109.507                      33.368                   111.578
+   Total                                                                                                                                  2.049.411                    145.824                   2.071.370                 1.281.607
+   (1) Em 2024, efeitos dos resultados provenientes da aquisição da Pluxee, conforme descrito na Nota 29.d. Em 2023, resultados provenientes da venda de 40% da Webmotors conforme Nota 29.l.
+
+
+
+
+                                                                                                                                                   Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 99
+
+=== página 116 ===
+Relatório da               Relatório dos Auditores      Demonstrações                                     Notas Explicativas            Declarações dos Diretores
+Administração              Independentes                Financeiras
+*Valores expressos em milhares, exceto quando indicado.
+
+                                    Exposições Sujeitas à Variação da Taxa de Cupons de Indices
+Inflação                            de Preços                                                                         (19.327)       (328.089)        (617.049)
+Cupom de Dolar                      Exposições Sujeitas à Variação da Taxa do Cupom de Dólar                              (6.453)    (225.401)        (415.722)
+                                    Exposições sujeitas à Variação das Taxas dos Cupons de
+Cupom de Outras Moedas              Moedas Estrangeiras                                                                    (567)       (6.601)         (13.150)
+                                    Exposição Sujeitas à Variação da taxa de juros de papeis
+Taxa de juros Mercado Internacional negociados no mercado internacional                                               (37.222)       (663.043)       (1.404.832)
+Moeda Estrangeira                   Exposição sujeitas à Variação Cambial                                                   893        22.318           44.637
+Total (1)                                                                                                            (186.512)      (6.023.064)     (11.799.821)
+(1) Valores líquidos de efeitos tributários.
+Cenário 1: choque de +10bps nas curvas de juros e 1% para variação de preços (moedas);
+Cenário 2: choque de +25% e -25% em todos os fatores de risco, sendo consideradas as maiores perdas por fator de risco.
+Cenário 3: choque de +50% e -50% em todos os fatores de risco, sendo consideradas as maiores perdas por fator de risco.
+
+
+
+
+                                                                               Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 116
+
+=== página 117 ===
+   Relatório da               Relatório dos Auditores      Demonstrações                  Notas Explicativas            Declarações dos Diretores
+   Administração              Independentes                Financeiras
+   *Valores expressos em milhares, exceto quando indicado.
+
+
+29. Reestruturações Societárias
+
+   Até o exercício findo em 31 de dezembro de 2024 e exercício findo em 31 de dezembro de 2023, foram implementados diversos movimentos
+   societários com o intuito de reorganizar as operações e atividades das entidades de acordo com o plano de negócios do Banco Santander:
+
+    a) Incorporação da Return Capital S.A. pela Return Capital Gestão de Ativos e Participações S.A.
+
+   Em 30 de setembro de 2024 foi realizada a incorporação total da Return Capital S.A. (“Return Capital”) pela Return Capital Gestão de Ativos e
+   Participações S.A. (nova denominação de Gira, Gestão Integrada de Recebíveis do Agronegócio S.A.) (“Return Participações”). A incorporação
+   resultou em um aumento no capital social da Return Participações, no valor de R$ 8.540.942.366,72 (oito bilhões, quinhentos e quarenta
+   milhões, novecentos e quarenta e dois mil, trezentos e sessenta e seis reais e setenta e dois centavos), mediante a emissão de 439.224.359
+   (quatrocentos e trinta e nove milhões, duzentas e vinte e quatro mil, trezentas e cinquenta e nove) novas ações ordinárias. Como efeito da
+   incorporação ocorreu a extinção da Return Capital, de pleno direito, sendo essa sucedida pela Return Participações em todos os seus direitos e
+   obrigações.
+
+    b) Incorporação da Mobills Labs Soluções Em Tecnologia Ltda. pela Toro Investimentos S.A.
+
+   Em 30 de junho de 2024, a Mobills Labs Soluções em Tecnologia Ltda. (“Mobills Labs”) foi incorporada totalmente tendo seu patrimônio
+   absorvido por sua controladora direta, a Toro Investimentos S.A. (“Toro Investimentos”), de acordo com as condições estabelecidas no
+   Protocolo e Justificação da operação. A implementação da incorporação total da Mobills Labs não implicou um aumento de capital social da
+   Toro Investimentos, uma vez que a totalidade das quotas de emissão da Mobills Labs era detida pela Toro Investimentos e, portanto, já refletida
+   em conta de investimento por equivalência.
+
+    c) Incorporação da Apê11 Tecnologia e Negócios Imobiliários S.A. pela Santander Holding Imobiliária S.A.
+
+   Em 28 de junho de 2024, a Apê11 Tecnologia e Negócios Imobiliários S.A. (“Apê11”) foi incorporada totalmente, tendo seu patrimônio
+   absorvido por sua controladora direta, a Santander Holding Imobiliária S.A. (“SHI”), de acordo com as condições estabelecidas no Protocolo e
+   Justificação da operação. A implementação da incorporação total da Apê11 não implicou em um aumento de capital social da SHI, uma vez que
+   a totalidade das ações de emissão da Apê11 eram detidas pela SHI e, portanto, já estavam refletidas em sua conta de investimento por
+   equivalência.
+
+   Em 22 de dezembro de 2023, a Santander Holding Imobiliária S.A. (“SHI”), subsidiária integral do Banco Santander (Brasil) S.A., celebrou, junto
+   aos sócios da Apê11 Tecnologia e Negócios Imobiliários S.A. (“Apê11”), determinado Contrato de Compra e Venda de Ações para adquirir os
+   10% remanescentes do capital social da Apê11 (“Operação”). Como resultado da Operação, a SHI passou a deter 100% do capital social da
+   Apê11.
+
+   d) Joint-Venture entre Banco Santander (Brasil) S.A. e Pluxee International e Pluxee Pay Brasil Ltda.
+
+   Em 27 de junho de 2024, após a conclusão das condições precedentes da operação anunciada em 24 de julho de 2023, o Banco Santander
+   (Brasil) S.A. concluiu a constituição de uma Joint Venture com o Grupo Pluxee (anteriormente denominado Sodexo).
+
+   O racional econômico da operação está fundamentado essencialmente: (i) nas sinergias decorrentes da combinação dos negócios da Pluxee
+   Instituição de Pagamento Brasil S.A. (atual denominação da ”Ben Benefícios e Serviços Instituição de Pagamentos S.A”) com o Grupo Pluxee no
+   Brasil e (ii) na capacidade da empresa de explorar a base de clientes do Santander para a oferta dos seus produtos e serviços (i.e. na
+   capilaridade do balcão do Santander).
+
+   Para a formação da Joint Venture, o Banco Santander aportou o valor equivalente a R$ 2.044 milhões atribuído: (i) ao seu investimento na sua
+   controlada de benefícios, a Pluxee Instituição de Pagamento Brasil S.A. (atual denominação da ”Ben Benefícios e Serviços Instituição de
+   Pagamentos S.A”); (ii) a uma parcela de recursos em dinheiro; (iii) ao contrato de exclusividade para exploração de sua base de clientes.
+
+   Como resultado da operação, o Banco Santander e o Grupo Pluxee, passaram a deter 20% e 80% de participação, respectivamente, no capital
+   social da Pluxee Benefícios Brasil S.A. (“Pluxee”), veículo de investimento da Joint-Venture.
+
+    e) Incorporação da Mobills Corretora de Seguros Ltda. pela Toro Asset Management S.A.
+
+   Em 31 de maio de 2024, a Mobills Corretora de Seguros Ltda. (“Mobills Corretora”) foi incorporada totalmente tendo seu patrimônio absorvido
+   por sua controladora direta, a Toro Asset Management S.A. (“Toro Asset”), de acordo com as condições estabelecidas no Protocolo e
+   Justificação da operação. A implementação da incorporação total da Mobills Corretora não implicou um aumento de capital social da Toro
+   Asset, uma vez que a totalidade das quotas de emissão da Mobills Corretora era detida pela Toro Asset e, portanto, já refletida em conta de
+   investimento por equivalência.
+
+
+
+
+                                                                   Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 117
+
+=== página 118 ===
+Relatório da               Relatório dos Auditores      Demonstrações                  Notas Explicativas            Declarações dos Diretores
+Administração              Independentes                Financeiras
+*Valores expressos em milhares, exceto quando indicado.
+
+
+
+
+ f) Aquisição da parcela remanescente da Return Capital Gestão de Ativos e Participações S.A. (nova denominação da Gira, Gestão
+    Integrada de Recebíveis do Agronegócio S.A.) pela Return Capital S.A.
+
+Em 17 de maio de 2024, a Return Capital S.A. (“Return”), subsidiária integral do Banco Santander (Brasil) S.A., celebrou, junto aos sócios
+minoritários da Return Capital Gestão de Ativos e Participações S.A. (nova denominação de Gira, Gestão Integrada de Recebíveis do
+Agronegócio S.A.) (“Gira”), determinado Contrato de Compra e Venda de Ações para adquirir os 20% do capital social da Gira detidos pelos
+minoritários (“Operação”). Como resultado da Operação, o Banco Santander (Brasil) S.A. passou a deter, indiretamente, 100% do capital social
+da Gira.
+
+
+ g) Aquisição de participação e Investimento na América Gestão Serviços em Energia S.A.
+
+Em 12 de março de 2024, a Santander Corretora de Seguros, Investimentos e Serviços S.A. (“Santander Corretora”) formalizou, em conjunto
+com os acionistas da América Gestão Serviços em Energia S.A. (“América Energia”), Contrato de Compra e Venda de Ações e Outras Avenças
+com vistas a aquisição de 70% do capital social total e votante da América Energia ("Operação”). A conclusão da Operação estava sujeita ao
+cumprimento de determinadas condições suspensivas usuais em transações similares, incluindo a obtenção das autorizações regulatórias
+pertinentes. Em 04 de julho de 2024, com a conclusão da Operação, a Santander Corretora passou a deter 70% da participação acionária da
+América Energia.
+
+ h) Aquisição de participação e Investimento na Fit Economia de Energia S.A.
+
+Em 06 de março de 2024, a Santander Corretora de Seguros, Investimentos e Serviços S.A. concluiu, diante do cumprimento das condições
+precedentes aplicáveis, a operação para aquisição e investimento na Fit Economia de Energia S.A. (“Companhia”), de forma que passou a deter
+65% do capital social da Companhia (“Operação”).
+
+ i)   Aquisição da totalidade da participação acionária na Toro Participações S.A. e incorporação pela Toro Corretora de Títulos e Valores
+      Mobiliários S.A.
+
+Em 03 de janeiro de 2024, após o cumprimento das condições precedentes, o Banco Santander concluiu a operação para aquisição da
+totalidade das ações da Toro Participações, de forma que, passou a deter, indiretamente, a titularidade de 100% do capital social da Toro
+Corretora de Títulos e Valores Mobiliários S.A. e da Toro Investimentos S.A. Em 29 de fevereiro de 2024, foi aprovada a incorporação da Toro
+Participações S.A. pela Toro Corretora de Títulos e Valores Mobiliários S.A.
+
+
+ j)   Incorporação Total da Mob Soluções em Tecnologia Ltda pela Mobills Labs Soluções em Tecnologia Ltda.
+
+Em 31 de outubro de 2023, a Mob Soluções em Tecnologia Ltda. (“Mob”) foi incorporada totalmente tendo seu patrimônio absorvido por sua
+controladora direta, a Mobills Labs Soluções em Tecnologia Ltda. (“Mobills”), de acordo com as condições estabelecidas no Protocolo e
+Justificação da operação. A implementação da incorporação total da Mob não implicou um aumento de capital social da Mobills, uma vez que a
+totalidade das quotas de emissão da Mob era detida pela Mobills e, portanto, já refletida em conta de investimento por equivalência.
+
+ k) Venda da totalidade da participação detida no Banco PSA Finance Brasil S.A. e na Stellantis Corretora de Seguros e Serviços Ltda.
+
+Em 31 de agosto de 2023, a Aymoré Crédito, Financiamento e Investimento S.A. (“Aymoré”) e a Santander Corretora de Seguros, Investimentos
+e Serviços S.A. (“Santander Corretora de Seguros”) concluíram a operação de venda de participações societárias detida (a) pela Aymoré,
+representando 50% (cinquenta por cento) do capital social do Banco PSA Finance Brasil S.A. (“Banco PSA”), para o Stellantis Financial Service,
+S.A. e (b) pela Santander Corretora de Seguros, representando 50% (cinquenta por cento) do capital social da Stellantis Corretora de Seguros e
+Serviços Ltda. (“Stellantis Corretora”), para a Stellantis Services Ltd. (“Operação”).
+
+Com a conclusão da Operação, a Aymoré deixou de deter participação societária no Banco PSA e a Santander Corretora de Seguros deixa de
+deter participação societária na Stellantis Corretora.
+
+ l)   Venda de parcela da participação acionária da Santander Corretora na Webmotors S.A. para a Carsales.com Investments PTY LTD.
+
+Em 28 de abril de 2023, a Santander Corretora de Seguros, Investimentos e Serviços S.A. (“Santander Corretora”) concluiu a operação de venda
+de ações representativas de 40% do capital social da Webmotors S.A. (“Webmotors”) para a Carsales.com Investments PTY LTD (“Carsales”)
+(“Operação”). Com a conclusão da Operação, a Santander Corretora passou a ser titular de 30% e a Carsales de 70% do capital social da
+Webmotors.
+
+
+
+
+                                                                Demonstrações Financeiras Individuais e Consolidadas | 31 de dezembro de 2024 | 118

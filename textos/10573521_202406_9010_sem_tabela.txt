@@ -1,0 +1,780 @@
+
+=== página 19 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+      A metodologia de precificação para a apuração do valor de mercado do instrumento derivativo de contrato a termo de
+      moeda (Non Deliverable Forward – NDF), se baseia na utilização do fluxo de caixa futuro descontado a valor presente
+      pelas curvas de juros futuros. Segregação por tipo de contrato, contraparte e notional:
+
+
+                                                                    30/06/2024                                    31/12/2023
+       Tipo de contrato                                          Ativo                  Passivo                  Ativo                Passivo
+       NDF (non-deliverable foward)                             39.364                         -                    89                (16.817)
+       Total                                                    39.364                         -                    89                (16.817)
+
+
+                                                                                              30/06/2024
+
+                                                                            Valor de Referência
+                                                           Contraparte                           Diferencial a Receber     Diferencial a Pagar
+      Contratos                                                                       (Notional)
+
+      Termo de Moeda - Hedge Fluxo de Caixa          Mercado de Balcão                   505.133                39.364                       -
+      Total                                                                              505.133                39.364                       -
+
+                                                                                              31/12/2023
+                                                                            Valor de Referência
+                                                           Contraparte                           Diferencial a Receber     Diferencial a Pagar
+       Contratos                                                                      (Notional)
+       Termo de Moeda - Hedge Fluxo de Caixa          Mercado de Balcão                  466.312                      89              (16.817)
+       Total                                                                             466.312                      89              (16.817)
+
+
+      Os contratos de instrumentos financeiros derivativos de termo de moeda classificados como Hedge de fluxo de
+      caixa (Non Deliverable Forward – NDF) possuem vencimento entre 01 de julho de 2024 e 02 de junho de 2025.
+
+
+      Hedge de Fluxo de Caixa
+
+      As estratégias de hedge de fluxo de caixa do Mercado Pago consistem em: hedge de exposição à variação nos fluxos
+      de caixa da empresa com exposição à taxa de câmbio, que são atribuíveis as alterações nas taxas relativos a
+      compra de dispositivos MPOS expressos em dólares americanos convertidos em reais. O Mercado Pago aplica o hedge
+      de fluxo de caixa como segue: Contrata moeda futura através de NDF's (Non-Deliverable Foward) indexados a Dólar
+      futuro e os designa como instrumento derivativo em uma estrutura de Hedge de Fluxo de Caixa, tendo como
+      objeto operações de compra de máquinas MPOS indexados em dólares flutuante e negociados através de um plano
+      anual de aquisição. Os mesmos derivativos serão adquiridos gradualmente, com o objetivo de cobrir o plano
+      mensal de compras estipulados inicialmente no plano anual de aquisições de MPOS para os próximos 12 meses.
+
+
+       Estratégias                                                               30/06/2024                                        31/12/2023
+       Contratos de NDF                                        Instrumentos de Hedge                   Objeto                          Objeto
+                                                                Valor de
+                                                                                   Marcação a Valor de Referência          Valor de Referência
+                                                              Referência
+                                                                                     Mercado           (Notional)                   (Notional)
+                                                              (Notional)
+
+      Hedge Compra Futura de Ativo - USD x BRL (i)               505.133                39.364              475.381                   425.250
+
+
+      (i) O valor do Ativo é referente ao montante do objeto de Hedge coberto na aquisição futura de máquinas MPOS. Os contratos
+      de NDF ( Non-Deliverable Forward) são adquiridos para cobrir o plano mensal dos próximos 12 meses com metodologia de cobertura de
+      80% para os 3 primeiros meses, 60% do 4º mês até o 6º mês, 40% do 7º mês até o 9º mês e 20% do 10º mês até o 12º mês. Em
+      30 de junho de 2024, o plano total de aquisição de ativos - MPOS corresponde a um valor de R$ 953.196 (31 de dezembro de 2023
+      R$ 882.011).
+
+=== página 20 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+
+      5.c.      Outros ativos a receber
+
+                                                                                                             30/06/2024           31/12/2023
+      Outros ativos a receber
+        Valores a receber – Adquirentes (i)                                                                  12.456.219           11.771.408
+         Valores a receber – Ligadas (ii)                                                                       692.360              479.002
+         Valores a receber – Transações de pagamentos (iii)                                                   5.968.774             3.830.446
+         Outros ativos a receber (iv)                                                                           660.000              251.160
+         Devedores por depósitos em garantia (v) (vi)                                                           874.261              737.763
+         Conta de pagamento Instantâneo - PIX                                                                 3.668.400             1.949.628
+
+         Despesas Antecipadas                                                                                    61.430                35.381
+       Total                                                                                                 24.381.444           19.054.788
+
+
+
+       Outros ativos a receber - Curto Prazo                                                                23.357.996           18.217.462
+
+       Outros ativos a Receber - Longo Prazo (vii)                                                           1.023.448              837.326
+
+
+      (i) São constituídos pelos valores a receber das adquirentes oriundas das transações de cartões de crédito a vista e parcelado,
+      dentro da plataforma Mercado Livre e outras plataformas de e-commerce e máquinas (MPOs) de Mercado Pago.
+      (ii) São transações a receber que o Mercado Pago possui com suas empresas coligadas - nota 21.
+      (iii) Correspondem substancialmente aos valores a receber de usuários finais e incentivos de performance Visa, relativos a transações de
+      pagamento utilizando os cartões de crédito e débito do Mercado Pago como emissor pendente de liquidação.
+      (iv) Valores representados substancialmente por valores a receber de títulos e créditos a receber, outras comissões diversas de serviços
+      de transações de pagamento e caixa a compensar. Em 30 de junho de 2024, o Mercado Pago possuí R$2.374 com empresas
+      ligadas.
+      (v) Correspondem substancialmente aos saldos depositados judicialmente referente ao processo judicial relacionado ao não recolhimento
+      do Imposto de Renda Retido na Fonte (“IRRF”) de remessas para a matriz MercadoLibre Argentina. Em 30 de junho de 2024, o total
+      destes depósitos e demais em juízo totalizavam R$865.296 (Em 2023 - R$726.909) - nota 12.a (i).
+      (vi) Corresponde a depósito para prestação de garantia solicitado pela empresa Visa International Service para cobertura de eventuais
+      riscos, com valor fixo e sem remuneração. Em 30 de junho de 2024, corresponde a um valor de R$8.965 (Em 2023 -
+      R$10.854).
+      (vii) Corresponde aos montantes dos itens (v) e (vi) e aos valores a receber de usuários finais (iii) em estoque acima de 12 meses de
+      R$149.187 (Em 2023- R$99.563).
+
+
+      6. PROVISÃO PARACRÉDITOS DE LIQUIDAÇÃO DUVIDOSAE CHARGEBACK
+
+      O Mercado Pago realiza a provisão para fazer face às perdas prováveis em valores a receber de usuários finais,
+      relativos às transações de pagamento. A movimentação do semestre findo em 30 de junho de 2024 e do exercício findo de
+      31 de dezembro 2023 está detalhada a seguir:
+
+                                                                                                         30/06/2024               31/12/2023
+       Saldo inicial                                                                                      (249.070)                (145.929)
+        Reversão                                                                                               8.671                  41.436
+        Constituição                                                                                        (64.048)               (144.577)
+       Saldo final                                                                                        (304.447)                (249.070)
+
+
+
+
+      7.       INTANGÍVEL
+      7.a.      Composição do intangível
+                                                                            30/06/2024                                           31/12/2023
+                                                 Taxa Anual de                        Amortização                 Saldo                Saldo
+                                                                       Custo
+                                                 Amortização                           Acumulada               Residual            Residual
+       Software                                         33%        1.162.013             (792.931)             369.082               371.180
+       Software em desenvolvimento (i)                    -           78.875                   -                78.875                86.654
+       Total                                                       1.240.888             (792.931)             447.957               457.834
+
+
+      (i) Correspondem às horas de serviços de TI necessárias para o desenvolvimento de novos softwares / sistemas.
+
+=== página 21 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+      7.b.      Movimentação do intangível
+                                                                                                      Desenvolvimento de
+                                                                                       Software              Software               Total
+      Saldos em 31/12/2022                                                               364.755               57.628             422.383
+      Adições / transferências                                                           244.292               29.026             273.318
+      Amortização                                                                      (237.867)                     -          (237.867)
+      Saldos em 31/12/2023                                                               371.180                86.654            457.834
+      Adições / transferências                                                           135.872                (7.779)           128.093
+      Amortização                                                                      (137.970)                      -         (137.970)
+      Saldos em 30/06/2024                                                               369.082                78.875            447.957
+
+
+      8. DEPÓSITOS
+      Referem-se aos saldos em moeda eletrônica mantidos em contas de pagamento pré-pagas, inclusive os saldos
+      em trânsito entre contas de pagamento da mesma instituição. Estão apresentados conforme a tabela abaixo:
+                                                                                                          30/06/2024             31/12/2023
+       Depósitos
+
+         Saldos de livre movimentação (i)                                                                 14.391.636              11.103.210
+         Obrigações por transação de Pagamentos (ii)                                                       3.190.505               2.302.624
+         Saldos bloqueados (iii)                                                                           1.806.021               1.368.995
+       Total                                                                                              19.388.162              14.774.829
+
+
+      (i) Em 30 de junho de 2024, a Companhia possuí saldo de R$282.508 (em 31 de dezembro de 2023 R$ 389.084) depositado em
+      saldos de livre movimentação com partes relacionadas.
+      (ii) Referem-se aos montantes que ainda não foram convertidos em moeda eletrônica tendo em vista que não foram cumpridos
+      os requisitos previstos no arranjo de pagamento para que estes se tornem disponíveis para livre utilização. (iii) Referem-se aos saldos
+      em trânsito entre contas de pagamento da mesma instituição e os valores a pagar a instituições participantes de arranjo de pagamento,
+      relativos a transações de pagamento originadas de titular de conta de pagamento.
+
+
+      9. RELAÇÕES INTERFINANCEIRAS
+      O saldo da rubrica relações interfinanceiras é composto de valores a pagar a instituições financeiras, demais instituições
+      autorizadas a funcionar pelo Banco Central do Brasil e instituições de pagamento participantes de arranjo de
+      pagamento, relativos a transações de pagamento. No semestre findo de 30 de junho de 2024, os saldos são
+      compostos pelas obrigações de liquidação junto as bandeiras de cartões de débito e crédito de curto prazo no valor de
+      R$ 6.751.027 (em 31 de dezembro de 2023 - R$4.364.574). O valor classificado em longo prazo das obrigações com
+      relações interfinanceiras no semestre findo em 30 de junho de 2024 corresponde a R$ 147.117 (em 31 de dezembro de
+      2023 - R$ 98.207).
+
+      10. OBRIGAÇÕES POREMPRÉSTIMOS
+
+      10.a.        Composição de obrigações por Empréstimos
+                                                                                                                30/06/2024       31/12/2023
+      Obrigações por empréstimos
+        Em moeda nacional
+                                                                                                                  600.772              205
+      Total                                                                                                       600.772              205
+
+
+
+      10.b.        Movimentação dos Empréstimos
+                                      31/12/2023                  Captações                         Pagamentos                30/06/2024
+                                                                      Juros apropriados e                    Juros pagos e
+                                            Saldo Final     Principal   variação cambial      Principal   variação cambial     Saldo Final
+      Empréstimos                                  205       600.517                1.517             -             (1.467)       600.772
+                                                   205      600.517                1.517             -             (1.467)       600.772
+
+=== página 22 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+      Em 31 de dezembro de 2023 e em 30 de junho de 2024, a Companhia não possuí contrato de obrigações por
+      empréstimos ativos. A Mercado Pago possui limite de crédito com bancos parceiros no periodo findo em 30 de
+      junho de 2024 que totalizam valor de R$ 600.772 (em 2023 - R$ 205).
+
+
+      11. OUTROS PASSIVOS DIVERSOS E OUTRAS OBRIGAÇÕES
+
+      11.a.       Sociais e estatutárias
+
+                                                                                                  30/06/2024                 31/12/2023
+
+
+       Gratificações e participações a pagar                                                         45.839                     55.619
+       Total                                                                                         45.839                     55.619
+
+
+
+
+      11.b.        Diversos
+
+                                                                                                   30/06/2024                31/12/2023
+
+
+       Valores a pagar de sociedades ligadas (i)                                                   11.185.666                 9.535.604
+       Total                                                                                       11.185.666                 9.535.604
+       Credores diversos - país (ii)                                                                  681.371                 1.151.706
+       Total                                                                                          681.371                 1.151.706
+       Provisão para pagamentos a efetuar                                                              32.001                   21.348
+       Total                                                                                           32.001                   21.348
+       Total Outros passivos diversos                                                              11.899.038                10.708.658
+
+
+
+      (i) São constituídos substancialmente pelos valores que devem ser repassados para empresas coligadas nas operações executadas
+      em nossa plataforma, corresponde ao montante que é cobrado do usuário final por transação nas plataformas, líquido da parcela da
+      receita de processamento do Mercado Pago, por valores referente ao recolhimento do Imposto de Renda Retido na Fonte (“IRRF”)
+      sobre as remessas efetuadas para controladora na Argentina e das operações com cédula de crédito bancário emitido a favor da
+      empresa coligada Mercado Crédito SCFI. Vide nota 21. O restante dos valores inclui: rateio pelo uso da plataforma, rateio pelo
+      processamento e utilização dos servidores de internet da matriz, reembolso de gastos, imagem corporativa e etc.
+      (ii) São constituídos substancialmente por valores a pagar para fornecedores e valores a pagar em processamento para sociedades
+      ligadas no valor de R$246.089 (Em 2023 R$318.474).
+
+
+      11.c.       Impostos e contribuições a recolher
+
+                                                                                                                30/06/2024     31/12/2023
+
+
+      Impostos e contribuições a recolher                                                                          339.552        256.216
+       Total                                                                                                       339.552        256.216
+       Impostos e contribuições sobre lucro a pagar                                                                997.252        581.723
+       Total                                                                                                       997.252        581.723
+
+
+      Total                                                                                                      1.336.804        837.939
+
+
+      11.d.        Total de outros passivos diversos e outras obrigações
+
+                                                                                                                30/06/2024    31/12/2023
+       Outros passivos e Outras obrigações Curto Prazo                                                          10.425.865    11.041.849
+       Outros passivos e Outras obrigações Longo Prazo                                                           2.855.816       560.367
+       Total                                                                                                    13.281.681    11.602.216
+
+
+      A nota 11.d representa as aberturas de curto e longo prazo das notas 11.a, 11.b, 11.c.
+
+=== página 23 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+      12. PROVISÕES
+      O Mercado Pago, no curso normal de suas operações, é parte em processos judiciais de natureza fiscal, cível e
+      trabalhista em diversas instâncias, ajuizados. A Administração da Companhia adotou como procedimento a constituição
+      de provisão com base em vários fatores, incluindo a opinião de seus assessores jurídicos externos, a análise das
+      demandas judiciais pendentes e o histórico de perdas efetivas.
+
+
+      12.a.        Composição das provisões
+
+      Em 30 de junho de 2024 e 31 de dezembro de 2023, o saldo das provisões para ações judiciais é composto da
+      seguinte forma:
+
+
+                                                                                           30/06/2024                 31/12/2023
+
+
+       Provisão para ações judiciais (i)                                                    1.014.735                   917.926
+       Total                                                                                1.014.735                   917.926
+
+
+      (i) Correspondem às provisões representadas por ações de natureza cível de relação de consumo e fiscais. O valor
+      provisionado para as contingências cíveis de relação de consumo no período findo de 30 de junho de 2024 é de R$ 99.464 (Em
+      31 de dezembro de 2023 é de R$96.535).
+
+
+                Mandado de Segurança para aplicação do Tratado Brasil-Argentina e afastamento do
+                 IRRF
+
+      Em novembro de 2014, a sociedade Mercado Pago Instituição de Pagamento Ltda. ingressou com mandado de
+      segurança no qual pleiteia judicialmente a não retenção do Imposto de Renda Retido na Fonte (“IRRF”) sobre remessas
+      efetuadas para a sociedade argentina MercadoLibre S.R.L., relativas à prestação de serviços de assistência de
+      suporte, de assistência para manutenção e de atualização de websites, sem transferência de tecnologia. A
+      avaliação da Administração, suportada pelos seus assessores jurídicos externos e internos, é de que as chances
+      de perda são prováveis (25%) e, por essa razão, a Companhia no semestre findo de 30 de junho de 2024
+      provisionou um montante de R$880.154 (Em 31 de dezembro de 2023 é de R$813.063).
+
+
+                 Mandado de Segurança referente à observância da anterioridade na cobrança do
+                  ICMS-DIFAL
+
+      Mercado Pago Instituição de Pagamento Ltda. ajuizou mandados de segurança contra as 27 Unidades da
+      Federação, visando assegurar a aplicação da anterioridade e impedir a exigência do ICMS-DIFAL no mesmo
+      exercício em que a Lei Complementarnº 190/22 foi editada. Nesse sentido, o Supremo Tribunal Federal (“STF”)
+      decidiu que o ICMS-DIFAL é devido a partir de 5 de abril de 2022, devido ao lapso de noventa dias a partir da
+      promulgação da lei. A decisão ainda não transitou em julgado e cabem embargos de declaração ainda a serem
+      apresentados. A avaliação da Administração, suportada pelos seus assessores jurídicos externos e internos, é a de
+      que o risco envolvido nas ações propostas pela sociedade Mercado Pago é remota no que se refere ao período
+      compreendido entre 1 de Janeiro de 2022 e 04 de abril de 2022, e provável no que se refere ao período
+      compreendido a partir de 05 de abril de 2022. A sociedade Mercado Pago provisionou os montantes
+      relacionados ao período com prognóstico de perda provável, no montante de R$34.282. Os valores em discussão
+      estão depositados em juízo. Os valores depositados em juízo de tais valores e demais processos judiciais atualizados
+      em 30 de junho de 2024 é de R$865.296 (2023 - R$726.909) - nota 5.c (v). Para as demais ações de perda
+      possível, o risco estimado em 30 de junho de 2024 totaliza R$ 271.473 (em 2023 - R$224.677), classificadas em
+      natureza cível (R$ 129.198), natureza tributária (R$ 4.115) e trabalhista (R$ 138.160).
+
+=== página 24 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+
+      12.b.       Movimentação das provisões
+                                                                                          30/06/2024                        31/12/2023
+       Saldo inicial                                                                        917.926                             40.885
+       Constituição/atualização/reversão                                                    105.470                           937.085
+       Pagamentos                                                                            (8.661)                          (60.044)
+       Saldo final                                                                         1.014.735                           917.926
+
+
+      12.c.      Abertura de prazo das provisões
+
+                                                                                          30/06/2024                        31/12/2023
+       Provisões Longo Prazo                                                               1.014.735                           917.926
+       Total                                                                               1.014.735                           917.926
+
+
+      13. PATRIMÔNIO LÍQUIDO
+
+      13.a.       Capital social
+
+      O capital social da Companhia, totalmente subscrito e integralizado, é de R$ 1.247.340 representados no valor
+      por 1.247.340 cotas no valor nominal de R$ 1,00 cada uma. A quantidade de ações estão assim distribuídas:
+                                                                   %     30/06/2024            %               31/12/2023
+
+
+       Mercado Crédito Holding Financeira Ltda.                   100%    1.247.339.985      100%                   982.339.985
+       Total (em reais)                                           100%    1.247.339.985      100%                   982.339.985
+
+
+      Em AGE de 31 de janeiro de 2022, foi aprovada pelos sócios representantes da totalidade do capitali social do
+      MercadoPago, o aumento de Capital Social por meio de recursos próprios no montante de R$395.000 mediante a
+      emissão de 395.000.000 de cotas. O referido aumento foi aprovado pelo BACEN em 17 de março de 2022. Em
+      AGE de 01 de dezembro de 2023, foi aprovada pelos sócios representantes da totalidade do capital social do
+      MercadoPago, o aumento de Capital Social por meio de recursos próprios no montante de R$275.000 mediante a
+      emissão de 275.000.000 de ações sendo totalmente subscrito nesta data. Deste montante, foram totalmente
+      integralizados R$10.000 e 265.000 deverão ser realizados no prazo de até 1 ano. O referido aumento foi
+      aprovado pelo BACEN em 23 de fevereiro de 2024. Em AGE de 20 de março de 2024, foi aprovada pelo sócio
+      representante da totalidade do capital social do MercadoPago, o aporte de R$132.500 pendentes a realizar em até 1
+      ano. Ficam remanescentes o valor de R$132.500 a ser realizado prazo de até 1 ano.
+
+
+      13.b.       Outros Resultados Abrangentes
+
+      Representam os ajustes cumulativos de valorização ou desvalorização do valor de mercado dos títulos e valores
+      mobiliários e instrumentos financeiros derivativos líquidos de impostos, sendo estes reclassificados para o
+      resultado quando da efetiva realização dos saldos.
+
+
+      14. RESULTADO BRUTO DAINTERMEDIAÇÃO FINANCEIRA
+                                                                                                       30/06/2024           30/06/2023
+
+
+       Resultado de operações com títulos e valores mobiliários                                          345.221               421.388
+       Obrigações por empréstimos                                                                         (1.517)                 35.536
+       Resultado com instrumentos financeiros derivativos                                                       -              (65.826)
+       Resultado de variação cambial                                                                     (98.699)                 51.734
+
+
+       Total                                                                                             245.005               442.832
+
+=== página 25 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+
+      15. RECEITAS DE PRESTAÇÃO DE SERVIÇOS E OPERACIONAIS
+
+                                                                                                          30/06/2024            30/06/2023
+
+
+       Receitas de prestação de serviços e operacionais (i)                                                8.245.118             7.106.524
+
+       Total                                                                                               8.245.118             7.106.524
+
+
+      (i) Correspondem às receitas de prestação de serviços de transações de pagamentos, adquirência e comissões cobradas de operações
+      realizadas dentro da plataforma do Mercado Livre (processamento das operações à vista e parceladas) ou de outras plataformas de
+      e-commerce, pagamentos de compras, antecipações de recebíveis aos estabelecimentos credenciados e tarifa de retiradas.
+      Refere-se também à outras receitas operacionais pelos serviços de intermediação no qual o Mercado Pago atua como correspondente
+      bancário na originação de operações de crédito de bancos parceiros, receita de intermediação como emissor de cartão e vendas de MPOs.
+
+
+
+      16. DESPESAS DE PESSOAL
+                                                                                                        30/06/2024              30/06/2023
+
+      Despesas de pessoal
+        Proventos                                                                                         (286.755)              (266.728)
+                                                                                                                                  (32.313)
+        Encargos sociais                                                                                   (40.651)
+                                                                                                                                  (12.833)
+        Benefícios                                                                                         (13.626)
+                                                                                                                                      (20)
+        Treinamento                                                                                           (348)
+
+      Total                                                                                               (341.380)              (311.894)
+
+
+      17. OUTRAS DESPESAS ADMINISTRATIVAS
+                                                                                                         30/06/2024             30/06/2023
+      Despesas administrativas
+
+         Despesa com processamento de dados                                                                (187.338)             (155.668)
+         Despesa com promoções e relações públicas                                                         (124.557)             (132.527)
+         Despesa com propaganda e publicidade                                                              (163.362)              (97.417)
+         Despesa com depreciação e amortização                                                             (141.122)             (117.357)
+         Despesa com serviços técnicos especializados                                                       (18.485)              (11.547)
+         Outras despesas administrativas                                                                    (24.827)              (19.022)
+       Total                                                                                               (659.691)             (533.538)
+
+
+      18. DESPESAS TRIBUTÁRIAS
+
+                                                                                                         30/06/2024            30/06/2023
+
+
+       Despesas tributárias
+         Despesa de contribuição ao COFINS                                                                 (670.467)             (545.695)
+         Despesa de ISS                                                                                    (163.121)             (138.138)
+         Despesa de contribuição ao PIS/PASEP                                                              (137.190)             (118.473)
+         Outras despesas tributárias (i)                                                                   (128.002)             (150.010)
+       Total                                                                                             (1.098.780)             (952.316)
+
+
+      (i) Correspondem substancialmente às despesas tributárias relacionadas a contribuições de intervenção no domínio econômico
+      (CIDE) e ao imposto sobre circulação de mercadorias e serviços (ICMS).
+
+=== página 26 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+
+      19. OUTRAS DESPESAS OPERACIONAIS
+
+                                                                                                       30/06/2024     30/06/2023
+
+
+       Despesa direta por transações de pagamentos (i)                                                (1.364.793)     (1.408.998)
+       Despesa com serviços ligados a transações de pagamento (ii)                                    (2.375.217)     (1.700.206)
+
+       Outras despesas operacionais (iii)                                                             (1.639.898)     (1.997.978)
+       Total                                                                                           (5.379.908)    (5.107.182)
+      (i) Referem-se substancialmente às despesas e custos diretos por transação relacionadas à meios de pagamentos.
+      (ii) Referem-se basicamente a despesas e custos com serviços associados a transações de pagamentos, como por exemplo:
+      comissões a empresas de arranjo de pagamentos, emissões de boletos, custos associados a novas tecnologias, comissões com
+      revendedores, prevenção a fraude e chargeback.
+      (iii) Correspondem substancialmente às despesas relacionadas à comercialização de equipamentos (MPOS) e rateio de despesas e
+      custos operacionais com partes relacionadas.
+
+
+      20. IMPOSTO DE RENDAE CONTRIBUIÇÃO SOCIAL
+
+      20.a Reconciliação do Imposto de Renda de Pessoa Jurídica – IRPJ e da Contribuição Social
+      sobre o Lucro Líquido
+                                                                                      30/06/2024                     30/06/2023
+
+
+      Resultado antes do IRPJ e da CSLL                                                1.010.122                        644.425
+      Alíquota vigente                                                                      34%                            34%
+      IRPJ e CSLL de acordo com alíquota vigente                                       (343.441)                      (219.105)
+      Efeito de itens permanentes:
+       Incentivos fiscais (Doações Incent.)                                                  1.200                            -
+       Outros gastos não dedutíveis                                                        (3.449)                        (986)
+      Despesa de IRPJ e CSLL                                                           (345.690)                      (220.091)
+
+
+      20.b. Movimentação e composição do saldo do IRPJ e da CSLL diferidos:
+      Impostos diferidos
+                                                                                                     Constituição
+       Impostos diferidos ativos sobre:                                       31/12/2023             e Realização     30/06/2024
+       PDD e Chargeback                                                               89.674              17.092        106.766
+       Provisões para contingências e outras provis                                  370.144              61.829        431.973
+       Provisão para bônus                                                            18.910              (3.074)        15.836
+       Derivativos                                                                     5.837             (18.985)       (13.148)
+       Total                                                                         484.565              56.862        541.427
+
+       Ativo Fiscal Diferido Ativo                                                   484.565              70.010        554.575
+       Passivo Fiscal Diferido Passivo                                                      -            (13.148)       (13.148)
+       Total                                                                         484.565              56.862        541.427
+
+
+
+
+      20.c.      Prazo de realização do crédito tributário
+
+                                                                                     Em 1 ano          Em 5 anos         Saldo
+      Saldo do IRPJ e da CSLL diferidos                                               109.454           431.973        541.427
+
+
+      O valor presente dos créditos tributários em 30 de junho de 2024 é de R$425.991(31 de dezembro de 2023 - R$425.991).
+
+=== página 27 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+
+      21. PARTES RELACIONADAS
+      Em 30 de junho de 2024 e 31 de dezembro e 2023, o Mercado Pago manteve transações com partes relacionadas
+      conforme detalhado a seguir:
+
+                                                                                                   30/06/2024
+                                                                                                    Valores
+                                                                            Valores a receber                   Receita     Despesa
+                                                                                                    apagar
+       Deremate.Com De Uruguay S.R.L.                                                      -         (9.552)         -      (66.132)
+       Ebazar.Com.Br Ltda.                                                           126.701     (2.978.667)         -       (6.944)
+       Global Selling Llc (Previously Mercadopago International Llc)                  27.722                -        -            -
+       Kangu Transportes LTDA                                                          3.660                -        -            -
+       Meli Developers Brasil Ltda.                                                    6.585        (34.944)         -      (46.953)
+       Meli Uruguay S.R.L.                                                                 -        (16.672)         -      (68.607)
+       Mercado Credito FIDC Nao Padronizados                                           3.378        (24.685)      7.106           -
+       Mercado Credito I FIDC Nao Padronizados                                         7.859       (139.841)     26.462           -
+       Mercado Credito II Brasil FIDC Nao Padronizados                                12.845       (126.707)     27.610           -
+       Mercado Credito Merchant FIDC Nao Padronizados                                      3             (13)        20           -
+       Mercado Crédito Sociedade De Crédito, Financiamento E Investimento            482.541     (5.169.489)    177.055    (212.528)
+       S.A
+       Mercado Livre FIM Crédito Privado I                                               144               -         -             -
+       Mercado Pago Corretora De Seguros Ltda.                                           168        (18.143)         -             -
+       Mercado Pago Lending Limitada                                                       1               -         -             -
+       Mercado Pago Operadora S.A.                                                        45               -        347            -
+       Mercadolending, S.A. de C.V.                                                    1.412               -      1.837            -
+       Mercadolibre Chile Ltda.                                                            -         (5.153)         -       (28.036)
+       Mercadolibre Colombia Ltda.                                                         -        (28.171)         -      (193.789)
+       Mercadolibre Inc.                                                                   -           (239)         -        (1.546)
+       Mercadolibre S.R.L                                                             11.577       (404.253)     20.490     (466.524)
+       Mercadolivre.Com Atividades De Internet Ltda.                                   8.895        (86.211)         -      (189.605)
+       Mercadopago Colombia Ltda.                                                          -               -        120            -
+       Mercadopago Uruguay S.R.L.                                                          4               -         56            -
+       Mp Agregador, S. De R.L. De C.V.                                                1.194               -      2.218            -
+       Psgac S. De R.L. De C.V.                                                            -         (6.409)         -       (33.570)
+       Seller Fundo De Investimento Em Direitos Creditórios                                -     (2.665.114)         -             -
+       Total                                                                         694.734    (11.714.263)    263.321   (1.314.234)
+
+                                                                                                   31/12/2023
+                                                                                                     Valores
+                                                                            Valores a receber                   Receita     Despesa
+                                                                                                     apagar
+       Deremate .com de Mexico S. de R.L. de C.V.                                           -               -         -            -
+       Meli Developers Brasil Ltda.                                                    5.708        (32.897)          -    (277.148)
+       Deremate.Com De Uruguay S.R.L.                                                     (8)        (9.366)          -    (112.794)
+       Ebazar.Com.Br Ltda.                                                           128.512     (2.731.868)          -            -
+       Mercado Crédito Sociedade De Crédito, Financiamento E Investimento            304.118     (4.592.977)    129.980    (610.173)
+       S.A
+       Mercado Crédito Holding Financeira Ltda.                                             -               -         -             -
+       Mercadolibre Colombia Ltda.                                                        (1)       (25.503)          -     (260.974)
+       Mercadolibre S.R.L                                                              3.477       (531.401)          -   (1.269.448)
+       Mercadolivre.Com Atividades De Internet Ltda.                                   4.230        (24.046)          -             -
+       Mercadolibre Chile Ltda.                                                          (22)        (6.338)          -      (75.494)
+       Mercado Pago Operadora S.A.                                                         45               -       825             -
+       Global Selling Llc (Previously Mercadopago International Llc)                  23.495                -         -             -
+       Mercadopago Colombia Ltda.                                                          27               -       375             -
+       Mercadopago Uruguay S.R.L.                                                          14               -        40             -
+       Meli Uruguay S.R.L.                                                                  -       (11.419)          -     (161.687)
+       Psgac S. De R.L. De C.V.                                                             -       (10.585)          -      (77.363)
+       Mercado Pago Corretora De Seguros Ltda.                                           205        (15.290)          -             -
+       Mercadolibre Inc.                                                                    -              35         -       (3.202)
+       Mp Agregador, S. De R.L. De C.V.                                                  441                -     4.949             -
+       Mercado Credito FIDC Nao Padronizados                                             930         (2.908)     10.962             -
+       Mercado Credito I FIDC Nao Padronizados                                         3.770       (256.517)     45.302             -
+       Mercado Credito II Brasil FIDC Nao Padronizados                                 3.912       (135.893)     40.159             -
+       Mercado Credito Merchant FIDC Nao Padronizados                                       5            (21)        54             -
+       Mercado Livre FIM Crédito Privado I                                               144                -         -             -
+       Seller Fundo De Investimento Em Direitos Creditórios                                 -    (1.856.169)          -             -
+       Total                                                                         479.002    (10.243.163)    232.646   (2.848.283)
+
+=== página 28 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+      A remuneração total dos administradores em 30 de junho de 2024 foi de R$ 3.539 (Em 31 de dezembro de 2023 -
+      R$5.868). As operações com partes relacionadas são realizadas no curso normal dos negócios e em condições de
+      comutatividade, incluindo taxas de juros, prazos e garantias, e não envolvem riscos maiores que os normais ou
+      apresentam outras desvantagens.
+
+
+      22. VALOR JUSTO DOS INSTRUMENTOS FINANCEIROS
+      Conforme quadro abaixo, os instrumentos financeiros foram classificados em 30 de junho de 2024 e em 31 de dezembro
+      de 2023 através de hierarquia utilizando o método de mensuração dos ativos:
+
+
+                                                                                     30/06/2024
+                                                                         Nível 1    Nível 2           Nível 3        Total
+      Ativo
+
+
+      Títulos e Valores Mobiliários                                16.465.996       582.736            -        17.048.732
+      Títulos privados                                                      -       582.736            -           582.736
+      Certificados de depósitos bancários – CDB                             -       559.486            -           559.486
+      Cotas de fundos de investimento                                       -        23.250            -            23.250
+      Títulos públicos                                             16.465.996             -            -        16.465.996
+      LFT - vinculados à prestação de garantias                    16.465.996             -            -        16.465.996
+                                                                                    39.364                           39.364
+      InstrumentosFinanceiros
+      Derivativos Ativo
+      Termode Moeda- NDF - Hedge                                            -       39.364             -             39.364
+
+                                                                                    31/12/2023
+                                                                       Nível 1      Nível 2       Nível 3            Total
+      Ativo
+      Títulos e Valores Mobiliários                                12.538.850        22.314            -        12.561.164
+      Títulos privados                                                      -        22.314            -            22.314
+      Certificados de depósitos bancários – CDB                             -            12            -                12
+      Cotas de fundos de investimento                                       -        22.302            -            22.302
+      Títulos públicos                                             12.538.850             -            -        12.538.850
+      LFT - vinculados à prestação de garantias                    12.538.850             -            -        12.538.850
+      Passivo
+      Instrumentos Financeiros Derivativos                                  -       (16.728)           -          (16.728)
+      Ativo
+      Termo de Moeda- NDF - Hedge                                           -            89            -                89
+      Passivo
+      Termo de Moeda- NDF - Hedge                                           -       (16.817)           -          (16.817)
+
+
+      23. ESTRUTURA DE GERENCIAMENTO DE CAPITAL E DE RISCOS
+
+      Gerenciamento da estrutura de capital e riscos
+
+      Visando o atendimento à Resolução BCB n° 265/22, o Mercado Pago, adotou uma estrutura de gerenciamento de
+      capital e riscos que é compatível com a natureza das atividades da instituição e com a complexidade dos serviços
+      que são oferecidos, permitindo que os riscos (operacional, de liquidez e de crédito) sejam identificados, mensurados,
+      monitorados, controlados e mitigados. O Mercado Pago possui e segue a política de gerenciamento de riscos que orienta
+      em relação à natureza e a posição geral dos riscos financeiros que deverão ser regularmente monitoradas e
+      gerenciadas a fim de avaliar os resultados e o impacto financeiro no fluxo de caixa. O Grupo Mercado Livre
+      instaurou um Comitê de Crise, composto pela Alta Administração das empresas/unidades de negócios do Grupo, entre
+      elas o MercadoPago. Este Comitê se reúne periodicamente onde são discutidas e definidas as principais diretrizes e
+      medidas a serem seguidas pelas empresas do grupo, seguindo inclusive as diretrizes governamentais e legislativas
+      relacionadas a pandemia do Covid-19. Dentre estas discussões e medidas estão os temas relacionados aos Riscos
+      Operacional, de Liquidez, de Crédito, de Tecnologia e de Segurança da Informação.
+
+=== página 29 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+
+      Esse Comitê também monitora os principais processos e controles da Companhia os quais estão operando
+      normalmente. Mais informações podem ser encontradas no Relatório de Gerenciamento de Risco, publicado em
+      nosso site (https://www.mercadopago.com.br/informacoes-adicionais).
+
+
+      Risco Operacional
+
+      É a possibilidade de ocorrência de perdas resultantes de eventos relacionados a: i) falhas na proteção e na
+      segurança de dados relacionados aos usuários finais ou transações de pagamento, ii) falhas de identificação e
+      autenticação do usuário final, iii) falhas na autenticação das transações de pagamento,
+      iv) fraudes internas e externas, v) práticas inadequadas relativas a usuários finaise serviços de pagamento etc.
+      Foram desenvolvidas ações visando à implementação de estrutura de gerenciamento de risco operacional, em
+      conformidade com a Resolução BCB n° 265/22, que alcançam o modelo de gestão, o conceito, as categorias e a
+      política de risco operacional, os procedimentos de documentação e armazenamento de informações, os relatórios
+      de gerenciamento do risco operacional e o processo de disclosure.
+
+
+      Risco de liquidez
+
+      É o risco de a Companhia não ser capaz de: i) honrar eficientemente suas obrigações esperadas e inesperadas,
+      correntes e futuras sem afetar suas operações diárias e sem incorrer em perdas significativas e ii) não ser capaz
+      de converter moeda eletrônica em moeda física ou escritural no momento da solicitação do usuário. Para
+      administrar a liquidez do caixa, são estabelecidas premissas de desembolsos e recebimentos futuros, monitoradas
+      diariamente pela área de Riscos Financeiros. Como parte dos controles diários, são estabelecidos limites de caixa
+      mínimos, limites mínimos de cobertura de saldo de moeda eletrônica de terceiros e de concentração de ativos. É feito
+      também controle de antecipação de recebíveis junto às adquirentes que permitem que ações prévias sejam tomadas
+      para garantir um caixa confortável e rentável. Em caso de necessidade, a Companhia também pode recorrer à
+      linhas de crédito pré-aprovadas em instituições parceiras, assim como a sua Matriz para obtenção de empréstimo de
+      longo prazo. A instituição possui dentro da estrutura de risco de mercado uma gestão específica para controle e
+      gerenciamento do IRRBB (Interest Rate Risk of Banking Book) verificando continuamente a aderência às políticas e
+      limites preestabelecidos e dentre as métricas autorizadas pelo Banco Central do Brasil para o gerenciamento do IRRBB
+      e risco de taxa, a instituição utiliza como principais metodologias para gestão do risco as sensibilidades do
+      DeltaEve e o Var Paramétrico. A Instituição busca proteção utilizando os mesmos índices para seus contratos de ativos
+      e passivos mitigando os riscos inerentes da volatilidade das taxas. Os depósitos de clientes e os empréstimos
+      que estão fixados em taxa CDI são protegidos pelas aplicações em títulos e valores mobiliários atrelados à mesma
+      taxa variável de juros (CDI). Os resultados são apresentados mensalmente pela área de riscos financeiros
+      através de dashboard reportado para a alta gestão local e corporativa e as principais variações e limites de
+      controles são discutidos em reuniões sempre com viés de proteção a instituição da volatilidade do mercado que
+      possam afetar sua exposição ao IRRBB.
+
+
+      Risco de crédito
+
+
+      É a possibilidade de ocorrência de perdas associadas ao não cumprimento pela contraparte de suas respectivas
+      obrigações financeiras nos termos pactuados, à redução de ganhos ou remunerações, às vantagens concedidas na
+      renegociação e aos custos de recuperação, incluindo inadimplementos. O risco primário da atividade resume-se à
+      possibilidade de inadimplênciados emissores de cartões e das adquirentes, os quais têm a obrigação de efetuar o
+      pagamento dos valores relativos às transações realizadas pelos portadores dos cartões por eles emitidos.
+
+=== página 30 ===
+Docusign Envelope ID: 45F108AB-F6F5-4003-A48C-EF367806B923
+
+
+
+
+      A Companhia possui uma estrutura de gerenciamento de riscos prevê limites para a realização de operações sujeita
+      ao risco de crédito, procedimentos destinados a identificar, avaliar, monitorar e controlar a exposição ao risco de
+      crédito e procedimentos para a recuperação de créditos.
+
+
+      24. LIMITES OPERACIONAIS
+      O Bacen determina às instituições financeiras reguladas a manutenção de um Patrimônio de Referência (PR), PR
+      Nível I e Capital Principal compatíveis com os riscos de suas atividades, superior ao requerimento mínimo de
+      Patrimônio Exigido, representado pela soma das parcelas de risco de crédito, risco de mercado e risco
+      operacional. Segundo as regras estabelecidas pelas Resoluções BCB 197/2022 até BCB 202/2022 entradas em
+      vigência em 01 de julho de 2023, a apuração dos índices de capital é calculada de forma consolidada com base nas
+      informações do Conglomerado Prudencial. No caso da Mercado Pago Instituição de Pagamento Ltda., o conglomerado é
+      classificado como Tipo 3, quando a companhia regulada que lidera o conglomerado se trata de uma Instituição de
+      Pagamento com uma instituição financeira integrante (Mercado Crédito Sociedade de Crédito, Financiamento e
+      Investimento S.A). A partir de 01 de julho de 2023 e em 30 de junho de 2024, o patrimônio de referência do
+      conglomerado prudencial é de R$ 2.626.620. Este valor é superior ao patrimônio mínimo requerido de
+      R$ 1.357.861. Nosso índice de capital observando o novo arcabouço de regras prudenciais em 30 de junho de 2024 é de
+      14,51%.
+
+
+      25. RESULTADOS NÃO RECORRENTES E RECORRENTES
+
+      A Resolução BCB nº 2, de 27 de novembro de 2020, em seu artigo 34º, passou a determinar a divulgação de
+      forma segregada dos resultados recorrentes e não recorrentes. Define-se então como resultado não corrente do
+      semestre aquele que: I - não esteja relacionado ou esteja relacionado incidentalmente com as atividades típicas
+      da instituição; e II - não esteja previsto para ocorrer com frequência nos exercícios futuros. Em 30 de junho de 2024,
+      o Mercado Pago não possui valores de resultados não recorrentes.
+
+
+      26. EVENTOS SUBSEQUENTES
+
+      A Companhia não possui eventos subsequentes.
+
+
+
+      27. OUTROS ASSUNTOS
+
+      A companhia está estudando os impactos previstos pela implementação da regulamentação estabelecida pelas
+      Resoluções BCB nº 197 até a nº 202 de 11/03/22. A referida Resolução estabelece os conceitos e critérios
+      contábeis aplicáveis a instrumentos financeiros, bem como para a designação e o reconhecimento das relações
+      de proteção (contabilidade de hedge), harmonizando os critérios contábeis do COSIF para os requerimentos da
+      norma internacional IFRS 9 a partir de 1° de janeiro de 2025. Dentre as principais mudanças estão a classificação de
+      instrumentos financeiros, reconhecimento de juros em caso de atraso, cálculo da taxa efetiva contratual, baixa a
+      prejuízo e reconhecimento da provisão e classificação das operações com problemas de crédito.
