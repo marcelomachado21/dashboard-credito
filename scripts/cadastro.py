@@ -4,13 +4,17 @@ O cadastro decide quem é filiada a qual central (Crediminas, Cecremge, Sicoob, 
 filiação vazia por falha, todo o painel muda de grupo de uma vez. Por isso:
   - a última versão boa fica salva em site/data/cadastro_coop.json (versionada no repositório);
   - resposta com menos de 90% das cooperativas da versão salva é descartada inteira;
-  - filiação que some (preenchida -> vazia) só é aceita se continuar vazia por 6 dias ou mais (a rotina é semanal,
-    então a mudança precisa aparecer em duas rodadas); até lá vale a filiação anterior;
+  - filiação que some (preenchida -> vazia) com a central anterior ainda no cadastro é falha da base, não saída do
+    sistema: vale a filiação anterior, sem prazo, com alerta na tela, até o BC trazer uma filiação preenchida.
+    Caso de nov/26: 31 cooperativas de 7 centrais (e a própria Central Crediminas) vieram vazias por mais de 10 dias,
+    com as centrais funcionando; aceitar a vazia mudou o histórico de Sicoob e solteiras e travou safra e resultados;
+  - filiação que some porque a central anterior saiu do cadastro (dissolvida ou incorporada) é aceita depois de
+    6 dias vazia (duas rodadas da rotina);
   - mais de 15% das filiações sumindo de uma vez é tratado como falha da base: vale a versão salva inteira;
   - troca de uma central para outra e cooperativa nova entram direto.
 Uso: from cadastro import sedes_coop; coop = sedes_coop(fetch)  ->  {cnpj: registro}
 """
-import json, os, sys, datetime
+import json, os, re, sys, datetime, unicodedata
 
 AQUI = os.path.dirname(os.path.abspath(__file__))
 SNAP = os.path.join(AQUI, "..", "site", "data", "cadastro_coop.json")
@@ -49,19 +53,42 @@ def sedes_coop(fetch):
         msg = f"{len(sumiu)} cooperativas vieram sem central de filiação no cadastro do BC em {_br(hoje)}; mantida a versão de {_br(snap['data'])}"
         print("aviso: " + msg, file=sys.stderr); _salva(velho, pend, datetime.date.fromisoformat(snap["data"]), msg)
         return velho
-    out, pend2 = {}, {}
+    centrais = {_nome(x) for x in novo.values() if _classe(x) in ("central", "confederacao")}
+    out, pend2, falha = {}, {}, 0
     for c, x in novo.items():
         if c in sumiu:
             desde = pend.get(c, hoje.isoformat())
-            if (hoje - datetime.date.fromisoformat(desde)).days >= DIAS:
-                out[c] = x                                   # vazio confirmado em duas rodadas: aceita
+            # central que perde a filiação (à confederação, que nem sempre está nesta base) também é tratada como falha
+            ativa = _nome_fil(velho[c]) in centrais or _classe(x) in ("central", "confederacao")
+            if not ativa and (hoje - datetime.date.fromisoformat(desde)).days >= DIAS:
+                out[c] = x                                   # central anterior saiu do cadastro e a vazia se confirmou: aceita
             else:
-                out[c] = dict(x, FILIACAO=velho[c]["FILIACAO"]); pend2[c] = desde
+                out[c] = dict(x, FILIACAO=velho[c]["FILIACAO"]); pend2[c] = desde; falha += ativa
         else:
             out[c] = x
-    if pend2: print(f"aviso: {len(pend2)} filiações vazias no BC mantidas pela versão anterior até confirmar", file=sys.stderr)
-    _salva(out, pend2, hoje, f"{len(pend2)} filiações vazias aguardando confirmação" if pend2 else "")
+    msg = ""
+    if pend2:
+        d0 = min(pend2.values())
+        msg = (f"{len(pend2)} cooperativas vieram sem central de filiação no cadastro do BC desde {_br(d0)}"
+               + (f", {falha} delas com a central anterior em funcionamento" if falha and falha < len(pend2) else ", com a central anterior em funcionamento" if falha else "")
+               + "; vale a filiação anterior")
+        print("aviso: " + msg, file=sys.stderr)
+    _salva(out, pend2, hoje, msg)
     return out
+
+
+def _norm(t):
+    t = unicodedata.normalize("NFKD", t or "").encode("ascii", "ignore").decode().upper()
+    return " ".join(re.sub(r"[^A-Z0-9 ]", " ", t).split())
+
+
+def _nome(x): return _norm(x.get("NOME_INSTITUICAO"))
+
+
+def _nome_fil(x): return _norm(_fil(x))
+
+
+def _classe(x): return _norm(x.get("CLASSE")).lower()
 
 
 def _salva(coop, pend, hoje, alerta=""):
