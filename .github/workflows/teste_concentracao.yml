@@ -7,30 +7,19 @@ permissions:
 jobs:
   amostra:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
-      - run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
-      - name: Trazer os dados publicados (posição e cadastro)
-        run: |
-          mkdir -p out
-          git fetch -q --depth 1 origin dados
-          git archive FETCH_HEAD posicao.json cadastro_coop.json | tar -x -C out
-      - name: Rotina de concentração com universo reduzido
-        env:
-          CONC_MINUTOS: "40"
-          CONC_TEXTOS: "out/textos"
-          CONC_TEXTOS_OK: "1"
-          CONC_SO: "C0080329,C0080075,C0080099,C0080738,C0080185,C0080996,C0084693,C0084844,C0084813,C0084820,C0080336,C0080154,C0080879,C0080745,38588174,25798596,01604998,35571249,02833202,91586982"
-        run: python3 -I scripts/atualiza_concentracao.py raw out
+      - name: Sonda do histórico anual (IF.data) e de cooperados
+        run: python3 -I scripts/sonda_historico.py out
       - name: Gravar a saída no ramo teste-concentracao-saida
         if: always()
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd out && rm -f posicao.json cadastro_coop.json
+          cd out
           git init -q -b saida
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A && git commit -qm "Teste: saída da rotina de concentração"
+          git add -A && git commit -qm "Teste: sonda do histórico anual"
           git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" saida:refs/heads/teste-concentracao-saida
