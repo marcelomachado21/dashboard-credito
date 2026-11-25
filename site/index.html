@@ -171,6 +171,18 @@ h3 { font-family: var(--f-display); font-stretch: 88%; font-weight: 700; font-si
 .instbox h3 { margin: 2px 0 0; font-size: 1.05rem; } .instbox h3 small { font-weight: 400; color: var(--muted); font-size: .78rem; margin-left: 8px; }
 .instbox .kpis { border-top: 1px solid var(--line); } .instbox .kpi { border-bottom: 0; } .instbox > .meta { margin: 0 0 8px; }
 tr.selp td small { font-weight: 400; } tr.pino td { border-bottom: 2px solid var(--line); }
+/* Ficha: evolução anual (cartões por indicador) */
+.anual { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 12px; }
+.acard { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px 8px; display: grid; gap: 3px; min-width: 0; align-content: start; }
+.acard-h { display: flex; justify-content: space-between; gap: 10px; align-items: flex-start; }
+.acard .lbl { font-size: .76rem; color: var(--muted); font-weight: 600; } .acard .src { font-size: .7rem; color: var(--faint); }
+.acard-r { font-size: .72rem; color: var(--muted); text-align: right; line-height: 1.4; white-space: nowrap; } .acard-r b { color: var(--ink); font-weight: 600; font-family: var(--f-data); }
+.acard .val { font-family: var(--f-display); font-stretch: 78%; font-weight: 700; font-size: 1.75rem; line-height: 1.1; font-variant-numeric: tabular-nums; }
+.acard .chg { font-family: var(--f-data); font-size: .74rem; }
+.acard svg { width: 100%; height: auto; display: block; margin-top: 2px; }
+.acard-f { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; font-size: .78rem; color: var(--muted); border-top: 1px solid var(--line); padding-top: 6px; margin-top: 2px; }
+.acard-f span { display: grid; gap: 1px; } .acard-f span:nth-child(2) { text-align: center; } .acard-f span:last-child { text-align: right; }
+.acard-f small { font-size: .68rem; color: var(--faint); } .acard-f b { font-family: var(--f-data); font-weight: 600; white-space: nowrap; }
 .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 22px 28px; }
 .rosca { display: flex; flex-direction: column; gap: 8px; }
 .rosca h4 { margin: 0; font-size: 13px; font-weight: 600; color: var(--ink); }
@@ -1686,6 +1698,89 @@ function safraDaInst(i) {             // soma as linhas do SICOR da instituiçã
     membros.forEach(m => { const v = m[g]?.[s]; if (!v) return; v.a.forEach((x, k) => t.a[k] += x); t.p += v.p; t.q += v.q; }); z[g][s] = t; }); });
   return { z, membros, S0 };
 }
+/* ---------- Ficha: evolução anual (IF.data, junho e dezembro de cada ano desde dez/20) ----------
+   historico.json: por instituição e por recorte, valores de cada semestre em R$ mi (ativo, carteira, captações, PL, lucro do
+   semestre, PR e RWA) e a rede (agências e postos). Na tela: dezembro de cada ano e o último semestre; variações em 1, 3 e 5
+   anos sempre entre o mesmo mês (junho contra junho). Lucro de 12 meses = os dois últimos semestres. */
+let H = null, Herr = "", carregandoH = false;
+function carregaH() { if (carregandoH) return; carregandoH = true; carregar("historico").then(d => { H = d; render(); }).catch(e => { Herr = e.message; render(); }); }
+const HIND = [["at", "Ativo total", "val", "alto"], ["cart", "Carteira de crédito", "val", "alto"], ["capt", "Captações", "val", "alto"], ["pl", "Patrimônio líquido", "val", "alto"],
+  ["lucro", "Lucro ou sobras em 12 meses", "res", "alto"], ["roe", "ROE em 12 meses", "pct", "alto"], ["roa", "ROA em 12 meses", "pct", "alto"], ["solidez", "Índice de solidez (PL / ativo)", "pct", "alto"],
+  ["basil", "Índice de Basileia", "pct", "alto"], ["credcapt", "Carteira sobre captações", "pct", "neutro"]];
+function hSerie(o, k) {                  // série do indicador, alinhada com H.meta.datas (null onde falta dado)
+  const n = H.meta.datas.length, g = (c, j) => o?.[c]?.[j] ?? null;
+  return Array.from({ length: n }, (_, j) => {
+    const at = g("at", j), pl = g("pl", j), l12 = j >= 1 && g("luc", j) != null && g("luc", j - 1) != null ? g("luc", j) + g("luc", j - 1) : null;
+    const med = (c) => { const a = g(c, j), b = j >= 2 ? g(c, j - 2) : null; return a != null && b != null ? (a + b) / 2 : a; };
+    if (k === "lucro") return l12;
+    if (k === "roe") { const m = med("pl"); return l12 != null && m > 0 ? l12 / m * 100 : null; }
+    if (k === "roa") { const m = med("at"); return l12 != null && m > 0 ? l12 / m * 100 : null; }
+    if (k === "solidez") return at > 0 && pl != null ? pl / at * 100 : null;
+    if (k === "basil") { if (o?.bas) return g("bas", j); const pr = g("pr", j), rw = g("rwa", j); return pr != null && rw > 0 ? pr / rw * 100 : null; }
+    if (k === "credcapt") { const c = g("cart", j), p = g("capt", j); return c != null && p > 0 ? c / p * 100 : null; }
+    return g(k, j);
+  });
+}
+const hFmt = (u, v, k) => v == null || !isFinite(v) ? "—" : u === "pct" ? nf(v, k === "roa" ? 2 : 1) + "%" : u === "num" ? nf(v, 0)
+  : Math.abs(v) >= 1e6 ? `R$ ${nf(v / 1e6, 2)} tri` : Math.abs(v) >= 1000 ? `R$ ${nf(v / 1000, 2)} bi` : `R$ ${nf(v, 1)} mi`;
+const hCurto = (u, v, k) => v == null || !isFinite(v) ? "" : u === "pct" ? nf(v, k === "roa" ? 2 : 1) + "%" : u === "num" ? nf(v, 0)
+  : Math.abs(v) >= 1e6 ? nf(v / 1e6, 2) + " tri" : Math.abs(v) >= 1000 ? nf(v / 1000, Math.abs(v) >= 1e5 ? 0 : Math.abs(v) >= 1e4 ? 1 : 2) + " bi" : nf(v, Math.abs(v) >= 100 ? 0 : 1) + " mi";
+function cartaoAnual([k, nome, u, melhor], sI, refs, c) {
+  const Dt = H.meta.datas, last = Dt.length - 1, v = sI[last], qb = H.meta.quebra_carteira || "2025-01";
+  const quebra = ["cart", "credcapt"].includes(k), mesmaBase = (a, b) => !quebra || (Dt[a] >= qb) === (Dt[b] >= qb);
+  const vari = (anos) => { const j = last - anos * 2; if (j < 0 || sI[j] == null || v == null || !mesmaBase(j, last)) return null;
+    if (u === "pct" || u === "num") return { d: v - sI[j], t: u };
+    if (sI[j] > 0 && v > 0) return { d: (v / sI[j] - 1) * 100, t: "%" };
+    return u === "res" ? { d: v - sI[j], t: "R$" } : null; };          // resultado com prejuízo num dos lados: diferença em reais
+  const cagr = u === "val" ? (() => { const j = last - 10; return j >= 0 && sI[j] > 0 && v > 0 && mesmaBase(j, last) ? (Math.pow(v / sI[j], 1 / 5) - 1) * 100 : null; })() : null;
+  const fv = (x) => x == null ? (quebra ? "<span title=\"o conceito de carteira mudou em jan/25\">—</span>" : "—") : x.t === "pct" ? sgn(x.d, k === "roa" ? 2 : 1, " p.p.") : x.t === "num" ? sgn(x.d, 0, "")
+    : x.t === "R$" ? `${x.d > 0 ? "+" : "−"}R$ ${hCurto("val", Math.abs(x.d))}` : sgn(x.d, 0);
+  const corV = (x) => x == null || melhor === "neutro" ? "flat" : cls(x.d);
+  // mini gráfico: dezembro de cada ano e o último semestre
+  const idx = Dt.map((d, j) => j).filter(j => (Dt[j].endsWith("-12") && Dt[j] >= "2021-12" && j < last) || j === last).filter(j => sI[j] != null);
+  let svg = `<p class="empty" style="margin:8px 0">Sem série.</p>`;
+  if (idx.length >= 2) {
+    const W = 320, Hh = 92, L = 14, R = 14, T = 20, B = 18, vs = idx.map(j => sI[j]), mn = Math.min(...vs), mx = Math.max(...vs), pad = (mx - mn) * 0.12 || Math.abs(mx) * 0.1 || 1;
+    const X = (n) => L + (W - L - R) * n / (idx.length - 1), Y = (y) => T + (Hh - T - B) * (1 - (y - (mn - pad)) / ((mx + pad) - (mn - pad)));
+    let g = mn < 0 && mx > 0 ? `<line x1="${L}" x2="${W - R}" y1="${Y(0).toFixed(1)}" y2="${Y(0).toFixed(1)}" class="grid"/>` : "";
+    idx.forEach((j, n) => { if (!n) return; const a = idx[n - 1], tr = !mesmaBase(a, j);
+      g += `<line x1="${X(n - 1).toFixed(1)}" y1="${Y(sI[a]).toFixed(1)}" x2="${X(n).toFixed(1)}" y2="${Y(sI[j]).toFixed(1)}" stroke="${c}" stroke-width="2.2"${tr ? ' stroke-dasharray="3 3"' : ""} stroke-linecap="round"/>`; });
+    idx.forEach((j, n) => { const x = X(n), y = Y(sI[j]), ult = j === last, neg = sI[j] < 0;
+      g += `<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${ult ? 3.6 : 2.6}" fill="${neg ? "var(--down)" : c}" stroke="var(--bg)" stroke-width="1.5"><title>${Dt[j] === Dt[last] ? ym(Dt[j]) : Dt[j].slice(0, 4)}: ${hFmt(u, sI[j], k)}</title></circle>
+        <text x="${x.toFixed(1)}" y="${(y - 7).toFixed(1)}" text-anchor="${n === 0 ? "start" : ult ? "end" : "middle"}" class="${ult ? "lbl-strong" : ""}" style="font-size:10.5px${neg ? ";fill:var(--down)" : ""}">${hCurto(u, sI[j], k)}</text>
+        <text x="${x.toFixed(1)}" y="${Hh - 4}" text-anchor="${n === 0 ? "start" : ult ? "end" : "middle"}" style="font-size:10px">${ult ? ym(Dt[j]) : Dt[j].slice(0, 4)}</text>`; });
+    svg = `<svg viewBox="0 0 ${W} ${Hh}" role="img" aria-label="${esc(nome)} por ano">${g}</svg>`;
+  }
+  const refH = refs.map(r => { const x = r.s[last]; if (u === "val" || u === "res" || u === "num") { const j = last - 2, y = r.s[j];
+      const d = x != null && y != null ? (u === "num" ? x - y : y > 0 && x > 0 ? (x / y - 1) * 100 : null) : null; return `${esc(r.nome)} <b>${d == null ? "—" : u === "num" ? sgn(d, 0, "") : sgn(d, 0)}</b>`; }
+    return `${esc(r.nome)} <b>${hFmt(u, x, k)}</b>`; }).join("<br>");
+  return `<div class="acard"><div class="acard-h"><div><div class="lbl">${esc(nome)}</div><div class="src">ref. ${ym(Dt[last])}${melhor === "alto" ? " · quanto maior, melhor" : ""}</div></div>${refH ? `<div class="acard-r">${u === "pct" ? "" : "em 1 ano<br>"}${refH}</div>` : ""}</div>
+    <div class="val"${v < 0 ? ' style="color:var(--down)"' : ""}>${hFmt(u, v, k)}</div>${cagr != null ? `<div class="chg ${cls(cagr)}">${arrow(cagr)}${sgn(cagr, 1, "% ao ano")} · média de 5 anos</div>` : `<div class="chg flat">&nbsp;</div>`}
+    ${svg}<div class="acard-f">${[1, 3, 5].map(a => { const x = vari(a); return `<span><small>em ${a} ${a === 1 ? "ano" : "anos"}</small><b class="${corV(x)}">${fv(x)}</b></span>`; }).join("")}</div></div>`;
+}
+function blocoAnual(i, peer, peerNome, cI) {
+  if (!H) { if (!Herr) carregaH(); return block("Evolução anual", "IF.data · dezembro de cada ano e o último semestre", `<p class="empty">${Herr ? (/HTTP 404/.test(Herr) ? "Sem atualização: o histórico anual entra na próxima rodada da rotina." : `O histórico não carregou (${esc(Herr)}).`) : "Carregando o histórico…"}</p>`); }
+  const o = H.inst[i.id];
+  if (!o) return block("Evolução anual", "IF.data", `<p class="empty">Sem atualização: ${esc(i.curto)} não aparece no histórico do IF.data (instituição nova ou sem envio nos semestres do painel).</p>`);
+  const grande = i.tipo === "coop" ? "coop" : "bancos", refs = [[peer, peerNome], [grande, grande === "coop" ? "Cooperativas" : "Bancos"]].filter(([g], n, a) => H.agg[g] && a.findIndex(z => z[0] === g) === n);
+  const cards = HIND.map(ind => { const sI = hSerie(o, ind[0]); if (sI.every(x => x == null)) return "";
+    return cartaoAnual(ind, sI, refs.map(([g, nm]) => ({ nome: nm, s: hSerie(H.agg[g], ind[0]) })), cI); }).join("");
+  return block(`Evolução anual · ${esc(i.curto)}`, `IF.data · dezembro de cada ano e ${ym(H.meta.ref)}${tagNovo(H.meta.novo_desde)}`, `<div class="anual">${cards}</div>`,
+    `Valores do IF.data (relatório Resumo; Basileia: patrimônio de referência sobre ativos ponderados pelo risco, relatório de capital). Variações entre o mesmo mês: 1 ano = ${ym(H.meta.datas[H.meta.datas.length - 3])} a ${ym(H.meta.ref)}; 5 anos desde ${ym(H.meta.datas[H.meta.datas.length - 11] || H.meta.datas[0])}. Média de 5 anos: taxa anual composta. Lucro de 12 meses: soma dos dois últimos semestres; ROE e ROA sobre o PL e o ativo médios do início e do fim dos 12 meses. À direita de cada cartão: o mesmo indicador do grupo de comparação e de todas as ${grande === "coop" ? "cooperativas singulares" : "instituições bancárias"}, somadas; nos valores em reais, o crescimento em 1 ano. Carteira: o conceito mudou em jan/25 (Res. CMN 4.966), por isso a linha fica tracejada e as variações que cruzam a mudança não aparecem. Quantidade de cooperados: sem fonte pública por cooperativa localizada; fica fora. <a href="${esc(H.meta.url_ifd || "https://www3.bcb.gov.br/ifdata/")}" target="_blank" rel="noopener">IF.data, Banco Central</a>.`);
+}
+function blocoPosicoes(i) {          // posição no Brasil, no estado, no sistema e na central, no último semestre
+  if (!H || !H.inst[i.id]) return "";
+  const last = H.meta.datas.length - 1, coop = i.tipo === "coop";
+  const univ = P.inst.filter(x => x.tipo === i.tipo && H.inst[x.id] && (coop || !/cooperativa|central|confedera/i.test(x.nome)));
+  const SISN = Object.fromEntries(SIS.map(z => [z[0], z[1]]));
+  const G = coop ? [["Brasil", () => true], [UFN[i.uf] || i.uf, x => x.uf === i.uf], [SISN[i.sistema] || null, x => x.sistema === i.sistema], [i.central ? rNome(i.central) : null, x => x.central === i.central]].filter(g => g[0]) : [["Bancos (conglomerados)", () => true]];
+  const IND = [["at", "Ativo total"], ["cart", "Carteira de crédito"], ["capt", "Captações"], ["pl", "Patrimônio líquido"], ["lucro", "Lucro ou sobras em 12 meses"]];
+  const val = new Map(IND.map(([k]) => [k, new Map(univ.map(x => [x.id, hSerie(H.inst[x.id], k)[last]]))]));
+  const pos = (k, f) => { const M = val.get(k), v = M.get(i.id); if (v == null) return "—"; const l = univ.filter(f).map(x => M.get(x.id)).filter(x => x != null); return `<b>${l.filter(x => x > v).length + 1}ª</b> <small>de ${l.length}</small>`; };
+  return block(`Posições · ${esc(i.curto)}`, `${ym(H.meta.ref)} · ${coop ? "entre as cooperativas singulares" : "entre os conglomerados bancários"} · 1ª = maior`,
+    `<div class="tbl-wrap"><table><thead><tr><th>Indicador</th>${G.map(([n]) => `<th class="num">${esc(n)}</th>`).join("")}</tr></thead><tbody>${IND.map(([k, n]) => `<tr><td>${n}</td>${G.map(([, f]) => `<td class="num">${pos(k, f)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`,
+    `Posição pelo valor no IF.data, com as cooperativas incorporadas somadas à incorporadora. Sistema e central pelo cadastro do BC.`);
+}
 function renderFicha() {
   if (!fichaPronta()) {
     $("#filters").innerHTML = ""; $("#view").innerHTML = `<p class="empty">Carregando os dados da ficha (posição, resultados, risco e safra)…</p>`;
@@ -1773,7 +1868,7 @@ function renderFicha() {
     } else safraB = block("Crédito rural", "SICOR", `<p class="empty">Sem operações de crédito rural registradas no SICOR nas safras do painel.</p>`);
     const ident = `<div><div class="eyebrow">${i.tipo === "coop" ? `Cooperativa singular · ${esc(({ sicoob: "Sicoob", sicredi: "Sicredi", cresol: "Cresol", unicred: "Unicred" })[i.sistema] || "Independente ou outro sistema")}${i.central ? " · filiada à Central " + (i.central === "crediminas" ? "Crediminas" : "Cecremge") : ""} · ${esc(i.uf || "")}` : "Conglomerado prudencial"}</div>
       <h2>${esc(i.curto)}</h2><p class="lede">${esc(i.nome)}${i.tipo === "coop" ? ` · CNPJ ${i.id.replace(/^(\d{2})(\d{3})(\d{3})$/, "$1.$2.$3")}` : ` · código ${esc(i.id)}`}. Grupo de comparação: ${esc(peerNome)} (${uni.length} instituições).</p></div>`;
-    $("#view").innerHTML = `${ident}${kp}<div class="grid2">${percentis}<div class="block">${safraB}${riscoB}</div></div>${evol}${resB}
+    $("#view").innerHTML = `${ident}${kp}${blocoAnual(i, peer, peerNome, cI)}<div class="grid2">${percentis}<div class="block">${blocoPosicoes(i)}${safraB}${riscoB}</div></div>${evol}${resB}
       <section class="block"><header><div class="eyebrow">Fontes e método</div><h3>Como ler a ficha</h3></header><div class="methods">
         <p>A ficha junta as bases das outras abas: IF.data (trimestral, até ${ym(P.meta.ref)}), balancetes Cosif (mensal, até ${ym(Q.meta.ref)}) e SICOR (até ${dmy(D.meta.ref)}). Os métodos de cada indicador estão nas abas Qualidade e risco, Resultados, Mapa de posicionamento e Safra.</p>
         <p><b>Dois ROEs.</b> No topo e na tabela de posição, o ROE do IF.data: lucro do último período (semestre em junho e dezembro, trimestre em março e setembro) anualizado, sobre o PL do fim do período. Na seção de resultados, o ROE dos balancetes: lucro dos últimos 12 meses sobre o PL médio. Os dois diferem quando os semestres têm resultados diferentes.</p>
@@ -3047,7 +3142,7 @@ function renderFontes() {
       <tr><td><b>Fonte de recursos do rural</b></td><td>Contas 1630500003 (livres), 1631500002 (à vista), 1632500001 (poupança rural), 1633500000 (LCA) e 1634500009 (fontes públicas) sobre a conta 1630.</td><td>—</td></tr></tbody></table></div>`)}
     ${block("Arquivos do projeto", "Scripts e tabelas que geram os dados", `<div class="tbl-wrap"><table><tbody>
       <tr><td><code>atualiza_sicor.py</code></td><td>Safra (SICOR) → data/safra.json</td></tr><tr><td><code>atualiza_risco.py</code></td><td>SCR.data e IF.data → data/risco.json</td></tr>
-      <tr><td><code>atualiza_posicao.py</code></td><td>IF.data e Cosif por trimestre → data/posicao.json</td></tr><tr><td><code>atualiza_resultados.py</code></td><td>Balancetes, resultado em 12 meses → data/resultados.json</td></tr>
+      <tr><td><code>atualiza_posicao.py</code></td><td>IF.data e Cosif por trimestre → data/posicao.json</td></tr><tr><td><code>atualiza_historico.py</code></td><td>IF.data por semestre desde dez/20 (evolução anual da Ficha) → data/historico.json</td></tr><tr><td><code>atualiza_resultados.py</code></td><td>Balancetes, resultado em 12 meses → data/resultados.json</td></tr>
       <tr><td><code>atualiza_carteira.py</code></td><td>SGS e Cosif (composição e rural) → data/carteira.json</td></tr><tr><td><code>de_para_cooperativas.csv</code></td><td>CNPJ, número, nome curto, sistema e central (${esc(D.meta.depara ? "em uso" : "—")})</td></tr>
       <tr><td><code>incorporacoes.csv</code></td><td>Incorporada, incorporadora, mês e fonte (${D.meta.incorporacoes_aplicadas} aplicadas na base do SICOR)</td></tr></tbody></table></div>`, `Arquivos no <a href="https://github.com/marcelomachado21/dashboard-credito" target="_blank" rel="noopener">repositório do painel no GitHub</a>, pasta scripts. O histórico de cada versão dos dados fica nos commits.`)}
     <div id="stbox"></div>`;
@@ -3055,7 +3150,7 @@ function renderFontes() {
 }
 function blocoStatus(st) {
   const el = $("#stbox"); if (!el || !st || !st.bases) return;
-  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, por estado e município)", cadastro: "Cadastro de cooperativas (filiação)" , reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)" };
+  const nm = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)", focus: "Expectativas (Focus)", territorio: "Território (SICOR, por estado e município)", cadastro: "Cadastro de cooperativas (filiação)" , reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)", historico: "Histórico anual da Ficha (IF.data)" };
   const rf = (r) => r == null ? "—" : typeof r === "object" ? Object.entries(r).map(([k, v]) => `${k} ${String(v).length === 7 ? ym(v) : dmy(v)}`).join(" · ") : String(r).length === 7 ? ym(r) : dmy(r);
   const cl = { "atualizado": "up", "sem mudança": "flat", "ok": "flat", "falhou": "down", "reprovado": "down", "alerta": "down" };
   const quando = new Date(st.verificado_em).toLocaleString("pt-BR", { dateStyle: "short", timeStyle: "short", timeZone: "America/Sao_Paulo" });
@@ -3409,10 +3504,10 @@ let STATUS = null, STATUS_ERR = false;
 const BASES_ABA_REC = ["risco", "resultados", "posicao", "concentracao", "cadastro"];
 const BASES_ABA = { visao: ["carteira", "risco", "focus"], ruralsfn: ["safra", "carteira", "risco"], safra: ["safra", "cadastro"], carteira: ["carteira", "cadastro"],
   risco: ["risco", "cadastro"], resultados: ["resultados", "cadastro"], rural: ["carteira", "cadastro"], quadro: ["posicao", "resultados", "cadastro"],
-  rankings: ["posicao", "safra", "cadastro"], posicao: ["posicao", "cadastro"], ficha: ["posicao", "resultados", "risco", "carteira", "safra"],
+  rankings: ["posicao", "safra", "cadastro"], posicao: ["posicao", "cadastro"], ficha: ["posicao", "resultados", "risco", "carteira", "safra", "historico"],
   consignado: ["risco"], expectativas: ["focus"], territorio: ["territorio"], reneg: ["reneg", "cadastro"], concentracao: ["concentracao"], recuperacao: BASES_ABA_REC, fontes: [] };
 const NOME_BASE = { safra: "Safra (SICOR)", risco: "Qualidade e risco", posicao: "Posicionamento (IF.data)", resultados: "Resultados (balancetes)", carteira: "Carteira (SGS e Cosif)",
-  focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC", reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)" };
+  focus: "Expectativas (Focus)", territorio: "Território (SICOR por município)", cadastro: "Cadastro de cooperativas do BC", reneg: "Renegociações (SICOR)", concentracao: "Concentração (demonstrações financeiras)", historico: "Histórico anual (IF.data)" };
 function alertas() {
   const el = $("#alertas"); if (!el) return;
   const L = [];

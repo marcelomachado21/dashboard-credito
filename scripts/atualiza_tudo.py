@@ -26,6 +26,7 @@ BASES = [  # (arquivo, script, pasta de brutos)
     ("reneg", "atualiza_reneg.py", os.path.join(RAW, "sicor")),      # depois da safra: usa os recortes dela
     ("risco", "atualiza_risco.py", os.path.join(RAW, "bcb")),
     ("posicao", "atualiza_posicao.py", os.path.join(RAW, "bcb")),
+    ("historico", "atualiza_historico.py", os.path.join(RAW, "bcb")),   # depois da posição: usa a lista de instituições, os recortes e a carteira dela
     ("resultados", "atualiza_resultados.py", os.path.join(RAW, "bcb")),
     ("carteira", "atualiza_carteira.py", os.path.join(RAW, "bcb")),
     ("focus", "atualiza_focus.py", os.path.join(RAW, "bcb")),
@@ -102,6 +103,20 @@ def chk_posicao(n, a):
         if not lo <= k <= hi: raise AssertionError(f"{k} filiadas na {g}, esperado entre {lo} e {hi}")
 
 
+def chk_historico(n, a):
+    m = n["meta"]; nao_recua(m["ref"], (a or {}).get("meta", {}).get("ref"), "referência do histórico (IF.data)")
+    d = m["datas"]
+    if d[0] != "2020-12": raise AssertionError(f"histórico começa em {d[0]}, esperado dez/20")
+    for x, y in zip(d, d[1:]):
+        if (int(y[:4]) * 12 + int(y[5:])) - (int(x[:4]) * 12 + int(x[5:])) != 6: raise AssertionError(f"semestre faltando entre {x} e {y}")
+    if len(n["inst"]) < 800: raise AssertionError(f"só {len(n['inst'])} instituições no histórico")
+    at = n["agg"]["coop"]["at"][-1]; faixa(at / 1e6 if at else None, 0.4, 4.0, "ativo das cooperativas (R$ tri)")
+    b = n["agg"]["sfn"]; faixa(b["pr"][-1] / b["rwa"][-1] * 100 if b["pr"][-1] and b["rwa"][-1] else None, 12, 25, "Basileia do SFN no histórico")
+    for g, lo, hi in (("crediminas", 55, 80), ("cecremge", 40, 65)):
+        k = sum(1 for x in n["agg"][g]["at"] if x is not None)
+        if k < len(d) - 1: raise AssertionError(f"{g}: ativo em {k} de {len(d)} semestres")
+
+
 def chk_resultados(n, a):
     nao_recua(n["meta"]["ref"], (a or {}).get("meta", {}).get("ref"), "referência dos balancetes")
     for g in ("sfn", "coop"): faixa(n["agg"][g]["r12"][-1]["roe"], 5, 30, f"ROE 12 meses ({g})")
@@ -168,7 +183,7 @@ def chk_concentracao(n, a):
         raise AssertionError("menos pontos publicados que na versão anterior")
 
 
-CHK = {"concentracao": chk_concentracao, "reneg": chk_reneg, "focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
+CHK = {"historico": chk_historico, "concentracao": chk_concentracao, "reneg": chk_reneg, "focus": chk_focus, "territorio": chk_territorio, "safra": chk_safra, "risco": chk_risco, "posicao": chk_posicao, "resultados": chk_resultados, "carteira": chk_carteira}
 
 # ---------------- estabilidade: um dado já publicado não pode mudar muito de uma rodada para outra ----------------
 # Pega pontos que já existiam na versão publicada (meses passados, contagem de filiadas por grupo) e compara com a
@@ -198,6 +213,12 @@ def pontos(nome, d):
     elif nome == "posicao":
         for g in GRUPOS:
             for t, v in sorted(d.get("agg", {}).get(g, {}).items())[:-1]: P[("carteira IF.data", g, t)] = v.get("cart")
+    elif nome == "historico":
+        dts = d.get("meta", {}).get("datas", [])
+        for g in GRUPOS:
+            at = d.get("agg", {}).get(g, {}).get("at") or []
+            for j, t in enumerate(dts[:-1]):
+                if j < len(at): P[("ativo IF.data", g, t)] = at[j]
     elif nome == "resultados":
         for g in GRUPOS:
             a = d.get("agg", {}).get(g)
