@@ -1,0 +1,91 @@
+{
+ "verificado_em": "2026-11-25T17:08:02+00:00",
+ "forcado": false,
+ "segundos": 63,
+ "bases": {
+  "safra": {
+   "segundos": 379,
+   "saida": "{\"safra\": \"2026-10-30\", \"instituicoes\": 448, \"kb\": 2013, \"digitais\": [\"BTG Pactual\", \"C6\", \"Inter\"], \"sem_empreendimento\": 0}",
+   "verificado": "2026-11-25",
+   "situacao": "atualizado",
+   "ref": "2026-10-30"
+  },
+  "reneg": {
+   "segundos": 9,
+   "saida": "{\"reneg\": \"sem mudan\\u00e7a\", \"ref\": \"2026-10-30\"}",
+   "verificado": "2026-11-23",
+   "situacao": "sem mudança",
+   "ref": "2026-10-30"
+  },
+  "risco": {
+   "segundos": 313,
+   "saida": "{\"risco\": \"sem mudan\\u00e7a\", \"refs\": {\"scr\": \"2026-09\", \"cosif\": \"2026-06\", \"ifd\": \"2026-06\"}}",
+   "verificado": "2026-11-23",
+   "situacao": "sem mudança",
+   "ref": {
+    "scr": "2026-09",
+    "cosif": "2026-06",
+    "ifd": "2026-06"
+   }
+  },
+  "posicao": {
+   "segundos": 189,
+   "saida": "{\"posicao\": \"sem mudan\\u00e7a\", \"ref\": \"2026-06\"}",
+   "verificado": "2026-11-23",
+   "situacao": "sem mudança",
+   "ref": "2026-06"
+  },
+  "historico": {
+   "segundos": 63,
+   "saida": "{\"historico\": \"2026-06\", \"semestres\": 12, \"instituicoes\": 1077, \"kb\": 573}",
+   "verificado": "2026-11-25",
+   "situacao": "atualizado",
+   "ref": "2026-06"
+  },
+  "resultados": {
+   "segundos": 95,
+   "saida": "{\"resultados\": \"2026-06\", \"meses\": 18, \"instituicoes\": 899, \"kb\": 4569}",
+   "verificado": "2026-11-25",
+   "situacao": "atualizado",
+   "ref": "2026-06"
+  },
+  "carteira": {
+   "segundos": 33,
+   "saida": "{\"carteira\": \"sem mudan\\u00e7a\", \"refs\": {\"sgs\": \"2026-09\", \"cosif\": \"2026-06\"}}",
+   "verificado": "2026-11-23",
+   "situacao": "sem mudança",
+   "ref": {
+    "sgs": "2026-09",
+    "cosif": "2026-06"
+   }
+  },
+  "focus": {
+   "segundos": 4,
+   "saida": "{\"focus\": \"sem mudan\\u00e7a\", \"ref\": \"2026-11-13\"}",
+   "verificado": "2026-11-23",
+   "situacao": "sem mudança",
+   "ref": "2026-11-13"
+  },
+  "territorio": {
+   "segundos": 3380,
+   "saida": "",
+   "verificado": "2026-11-24",
+   "situacao": "falhou",
+   "motivo": "urllib.error.HTTPError: HTTP Error 500: Internal Server Error",
+   "ref": "2026-09"
+  },
+  "concentracao": {
+   "segundos": 3510,
+   "saida": "concentração: 2217 documentos nesta rodada (0 com erro), 0 pendentes, ref 2026-06, 58 min · {'2025-12': {'ok': 482, 'sem_tabela': 100, 'conferir': 55, 'sem_texto': 87, 'sem_doc': 15, 'pendente': 319}, '2026-06': {'conferir': 70, 'ok': 516, 'sem_tabela': 116, 'sem_texto': 15, 'sem_doc': 22, 'pendente",
+   "verificado": "2026-11-21",
+   "situacao": "sem mudança",
+   "ref": "2026-06"
+  },
+  "cadastro": {
+   "situacao": "alerta",
+   "ref": "2026-11-25",
+   "motivo": "31 cooperativas vieram sem central de filiação no cadastro do BC desde 13/11/2026, com a central anterior em funcionamento; vale a filiação anterior"
+  }
+ },
+ "ultima_atualizacao": "2026-11-25"
+}
