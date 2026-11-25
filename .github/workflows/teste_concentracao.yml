@@ -7,19 +7,24 @@ permissions:
 jobs:
   amostra:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
-      - name: Sonda do histórico anual (IF.data) e de cooperados
-        run: python3 -I scripts/sonda_historico.py out
+      - name: Trazer a base de posição publicada
+        run: |
+          mkdir -p out
+          git fetch -q --depth 1 origin dados
+          git archive FETCH_HEAD posicao.json | tar -x -C out
+      - name: Histórico anual (IF.data, semestres desde dez/20)
+        run: python3 -I scripts/atualiza_historico.py raw out
       - name: Gravar a saída no ramo teste-concentracao-saida
         if: always()
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          cd out
+          cd out && rm -f posicao.json
           git init -q -b saida
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A && git commit -qm "Teste: sonda do histórico anual"
+          git add -A && git commit -qm "Teste: histórico anual"
           git push -q -f "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" saida:refs/heads/teste-concentracao-saida
