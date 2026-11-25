@@ -162,6 +162,15 @@ h3 { font-family: var(--f-display); font-stretch: 88%; font-weight: 700; font-si
 .aviso details { margin-top: 4px; } .aviso summary { cursor: pointer; color: var(--muted); font-size: .78rem; }
 .recsel { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; }
 @media (max-width: 640px) { .recsel { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); width: 100%; } .recsel .fgroup { min-width: 0; } .recsel .sel { width: 100%; min-width: 0; } .recsel .fgroup:has([data-central]) { grid-column: 1 / -1; } }
+/* instituição: filtro opcional, comum às abas do grupo 2 */
+.instsel { flex-wrap: nowrap; } .instsel .sel { min-width: 15rem; } .instsel .chip { padding: 2px 9px; font-size: .76rem; }
+.instsel .sel:not(:placeholder-shown) { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+@media (max-width: 640px) { .instsel { width: 100%; } .instsel .flabel { width: auto; } .instsel .sel { flex: 1 1 0; width: 0; min-width: 0; } }
+.instbox { border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 10px; padding: 12px 14px 4px; margin: 14px 0 4px; background: color-mix(in srgb, var(--accent) 5%, var(--bg)); display: grid; gap: 8px; min-width: 0; }
+.instbox-h { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 16px; align-items: baseline; font-size: .84rem; }
+.instbox h3 { margin: 2px 0 0; font-size: 1.05rem; } .instbox h3 small { font-weight: 400; color: var(--muted); font-size: .78rem; margin-left: 8px; }
+.instbox .kpis { border-top: 1px solid var(--line); } .instbox .kpi { border-bottom: 0; } .instbox > .meta { margin: 0 0 8px; }
+tr.selp td small { font-weight: 400; } tr.pino td { border-bottom: 2px solid var(--line); }
 .grid3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 22px 28px; }
 .rosca { display: flex; flex-direction: column; gap: 8px; }
 .rosca h4 { margin: 0; font-size: 13px; font-weight: 600; color: var(--ink); }
@@ -363,6 +372,72 @@ document.addEventListener("change", (ev) => {
 });
 // estado mostrado no filtro: define a opção de local da operação ao lado de "Brasil"
 const ufLocal = () => RSET?.uf || "BR";
+/* ---------- Instituição: filtro opcional, comum às abas do grupo "Sistemas, centrais e instituições" ----------
+   Vazio = análise combinada do recorte, como sempre. Com uma instituição, cada aba mostra os números dela no topo, a
+   destaca nos gráficos e tabelas e usa o recorte como base de comparação. Identificador: o do IF.data (CNPJ de 8 dígitos
+   para cooperativas e instituições fora de conglomerado; código do conglomerado prudencial para bancos). Links para a
+   ficha só navegam: quem escolhe a instituição é o campo do filtro (ou um clique no mapa de posicionamento). */
+let INSTG = (() => { try { return localStorage.getItem("inst-comum") || ""; } catch (e) { return ""; } })();
+let INOME = (() => { try { return localStorage.getItem("inst-comum-nome") || ""; } catch (e) { return ""; } })();
+let ILIST = [];
+function salvaINSTG(id, nome) {
+  INSTG = id || ""; INOME = INSTG ? (nome || INOME) : "";
+  try { localStorage.setItem("inst-comum", INSTG); localStorage.setItem("inst-comum-nome", INOME); } catch (e) {}
+}
+function achaInst(txt, L) {
+  const v = String(txt || "").trim().toLowerCase(), d = v.replace(/\D/g, ""); if (!v) return null;
+  return L.find(i => i.curto.toLowerCase() === v) || L.find(i => d.length >= 8 && String(i.id).startsWith(d.slice(0, 8))) ||
+    L.find(i => i.numero && (v === String(i.numero) || v.startsWith(i.numero + " "))) || L.find(i => (i.curto + " " + (i.nome || "")).toLowerCase().includes(v)) || null;
+}
+// lista: [{ id, curto, nome, uf, numero }] das instituições com dado na aba. o.valor: texto do campo (Ficha); o.ph: dica do campo vazio
+function seletorInst(lista, o = {}) {
+  ILIST = lista;
+  const atual = INSTG ? lista.find(x => x.id === INSTG) : null, valor = o.valor ?? (atual ? atual.curto : INSTG ? INOME : "");
+  const opts = lista.slice().sort((a, b) => a.curto.localeCompare(b.curto, "pt-BR")).map(x => `<option value="${esc(x.curto)}">${esc((x.nome || "").slice(0, 60))}${x.uf ? " · " + esc(x.uf) : ""}</option>`).join("");
+  return `<label class="fgroup instsel"><span class="flabel">Instituição</span><input id="instg" class="sel" list="instg-l" autocomplete="off" placeholder="${esc(o.ph || "Todas · análise combinada")}" value="${esc(valor)}" aria-label="Instituição, opcional: nome, número ou CNPJ"><datalist id="instg-l">${opts}</datalist>${INSTG ? `<button type="button" class="chip" data-instg-limpa title="Voltar à análise combinada">limpar</button>` : ""}</label>`;
+}
+document.addEventListener("change", (ev) => {
+  if (ev.target.id !== "instg") return;
+  const v = ev.target.value.trim();     // redesenha depois do evento: o "change" pode vir do blur, e trocar o campo dentro dele dá erro no Chrome
+  if (!v) { if (aba() !== "ficha") { salvaINSTG(""); setTimeout(render, 0); } return; }
+  const x = achaInst(v, ILIST);
+  if (x) { salvaINSTG(x.id, x.curto); if (aba() === "ficha") { abreFicha(x.id); return; } setTimeout(render, 0); }
+  else { ev.target.value = ""; ev.target.placeholder = `“${v}” não está nesta aba`; }
+});
+document.addEventListener("click", (ev) => {
+  const b = ev.target.closest("[data-instg-limpa],[data-instg]"); if (!b) return;
+  ev.preventDefault();
+  if (b.dataset.instg) salvaINSTG(b.dataset.instg, b.dataset.instgNome || ""); else salvaINSTG("");
+  const y = window.scrollY; render(); window.scrollTo(0, y);
+});
+// faixa da instituição escolhida, no topo da aba. o.i: registro da base da aba (null = sem dado aqui); o.falta: motivo; o.contra: nome do recorte
+function faixaInst(o) {
+  if (!INSTG) return "";
+  const i = o.i, nome = i?.curto || INOME || INSTG;
+  const acoes = `<span>${linkFicha(INSTG, "Abrir a ficha")} · <button type="button" class="linkbtn" data-instg-limpa>Voltar à análise combinada</button></span>`;
+  if (!i || o.falta) return `<div class="aviso"><b>${esc(nome)}:</b> ${esc(o.falta || "sem dado nesta aba")}. A aba mostra ${o.mostra ? esc(o.mostra) : o.contra ? "o recorte " + esc(o.contra) : "o recorte escolhido"}. ${acoes}</div>`;
+  return `<section class="instbox" aria-label="Instituição escolhida"><div class="instbox-h"><div><div class="eyebrow">Instituição escolhida${o.contra ? ` · comparada com ${esc(o.contra)}` : ""}</div>
+    <h3>${esc(nome)}<small>${esc([(i.nome || "").slice(0, 70), i.uf].filter(Boolean).join(" · "))}</small></h3></div>${acoes}</div>${o.kpis || ""}${o.meta ? `<div class="meta">${o.meta}</div>` : ""}</section>`;
+}
+// SICOR (safra e renegociação): cooperativa pelo CNPJ; banco pelo conglomerado prudencial do IF.data, quando há
+const idSicor = (tipo, cnpj, cong) => tipo !== "coop" && /^C0/.test(String(cong || "")) ? cong : cnpj;
+const congSicor = () => { if (congSicor.d !== D) { congSicor.d = D; congSicor.m = new Map((D?.inst || []).map(i => [i.cnpj, i.cong])); } return congSicor.m; };
+const idRN = (r) => idSicor(r.tipo, r.cnpj, congSicor().get(r.cnpj));     // renegociação: conglomerado do banco pela base da safra
+function listaUnica(rows, idf, peso) {      // uma entrada por identificador; o nome vem da linha de maior peso (ex.: Bradesco no conglomerado)
+  const M = new Map();
+  rows.forEach(x => { const id = idf(x), w = peso(x) || 0, o = M.get(id); if (!o || w > o.w) M.set(id, { id, curto: x.curto || x.nome, nome: x.nome, uf: x.uf, numero: x.numero, w }); });
+  return [...M.values()];
+}
+// cor da instituição pela marca (bancos) ou pelo sistema e central (cooperativas), mesmo quando a base não traz sistema e central
+const corDe = (i) => { const e = i.escopos || []; if (i.tipo === "coop" || (!i.tipo && e.includes("coop"))) return instCor2({ tipo: "coop", central: i.central || (e.includes("crediminas") ? "crediminas" : e.includes("cecremge") ? "cecremge" : ""), sistema: i.sistema || ["sicoob", "sicredi", "cresol", "unicred"].find(k => e.includes(k)) }); return instCorR(i); };
+// instituição e recorte com a mesma cor (ex.: filiada Crediminas e Central Crediminas): a linha do recorte fica tracejada
+const tracoSe = (a, b) => String(a).toLowerCase() === String(b).toLowerCase() ? "5 4" : undefined;
+// tabela com a linha da instituição: destaca e, se ficou fora das linhas mostradas, repete no topo com a posição
+function pinaLinha(todas, mostradas, eh, linha) {
+  if (!INSTG) return mostradas.map((x, k) => linha(x, k, "")).join("");
+  const k = todas.findIndex(eh), fora = k >= 0 && !mostradas.includes(todas[k]);
+  return (fora ? linha(todas[k], k, "selp pino") : "") + mostradas.map((x, j) => linha(x, j, eh(x) ? "selp" : "")).join("");
+}
 // arquivos por UF (safra_uf/SP.json, risco_uf/SP.json): carregados uma vez e fundidos no objeto da base
 const UFCACHE = {};
 function fundir(a, b) { for (const k in b) { if (b[k] && typeof b[k] === "object" && !Array.isArray(b[k]) && a[k] && typeof a[k] === "object") fundir(a[k], b[k]); else a[k] = b[k]; } return a; }
@@ -552,10 +627,10 @@ function scatter(pts, o = {}) {                 // tamanho x variação
   let g = ty.map(t => `<line class="${t === 0 ? "axis" : "grid"}" x1="${L}" x2="${W - R}" y1="${Y(t)}" y2="${Y(t)}"/><text x="${L - 6}" y="${Y(t) + 4}" text-anchor="end">${t > 0 ? "+" : ""}${nf(t, 0)}%</text>`).join("");
   g += tx.map(t => `<line class="grid" x1="${X(t)}" x2="${X(t)}" y1="${T}" y2="${H - B}"/><text x="${X(t)}" y="${H - 16}" text-anchor="middle">${o.fx ? o.fx(t) : nf(t, 0)}</text>`).join("");
   g += `<text x="${(L + W - R) / 2}" y="${H - 2}" text-anchor="middle">${esc(o.xlab || "")}</text>`;
-  pts.forEach(p => {
-    g += `<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="${p.lbl ? 5.5 : 4.5}" fill="${p.c}" fill-opacity="${p.lbl ? 0.95 : 0.55}" stroke="var(--bg)" stroke-width="2"><title>${esc(p.name)}: ${o.fx ? o.fx(p.x) : nf(p.x)} · ${sgn(p.y)}</title></circle>`;
+  pts.slice().sort((a, b) => !!a.sel - !!b.sel).forEach(p => {
+    g += `<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="${p.sel ? 7.5 : p.lbl ? 5.5 : 4.5}" fill="${p.c}" fill-opacity="${p.sel || p.lbl ? 0.95 : 0.55}" stroke="${p.sel ? "var(--ink)" : "var(--bg)"}" stroke-width="${p.sel ? 2.5 : 2}"><title>${esc(p.name)}: ${o.fx ? o.fx(p.x) : nf(p.x)} · ${sgn(p.y)}</title></circle>`;
   });
-  pts.filter(p => p.lbl).forEach(p => { g += `<text x="${X(p.x) + 8}" y="${Y(p.y) + 4}" class="lbl-strong">${esc(p.name)}</text>`; });
+  pts.filter(p => p.lbl || p.sel).forEach(p => { g += `<text x="${X(p.x) + (p.sel ? 11 : 8)}" y="${Y(p.y) + 4}" class="lbl-strong">${esc(p.name)}</text>`; });
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "dispersão")}">${g}</svg>`;
 }
 const legend = (items) => `<div class="legend">${items.map(i => `<span><i class="${i.dash ? "dash" : ""} ${i.box ? "box" : ""}" style="--c:${i.c};background:${i.bg || i.c}"></i>${esc(i.name)}</span>`).join("")}</div>`;
@@ -569,7 +644,7 @@ function filtros() {
     { onUF: (u) => { st.geo = u !== "BR" && (D.meta.ufs_operacao || ["MG"]).includes(u) ? u : "BR"; salvaSafra(); } });
   const uf = ufLocal(), ufOk = (D.meta.ufs_operacao || ["MG"]).includes(uf);
   if (st.geo !== "BR" && st.geo !== uf) st.geo = ufOk ? uf : "BR";
-  $("#filters").innerHTML = `<div class="frow">${rec}</div>
+  $("#filters").innerHTML = `<div class="frow">${rec}${seletorInst(listaUnica(D.inst, x => idSicor(x.tipo, x.cnpj, x.cong), x => sum4(x.BR?.[SA()]?.a || [0, 0, 0, 0])))}</div>
     <div class="frow"><div class="fgroup"><span class="flabel">Local da operação</span><div class="seg">${[["BR", "Brasil"]].concat(ufOk ? [[uf, UFN[uf]]] : []).map(([k, n]) => `<button type="button" data-geo="${k}" aria-pressed="${st.geo === k}">${n}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Safra</span><div class="seg">${D.meta.safras_sel.slice().reverse().map(s => `<button type="button" data-safra="${s}" aria-pressed="${S() === s}">${safraLbl(s)}${s === SA() ? " (corrente)" : ""}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Período da safra</span><div class="seg">${PER.map(([k, n, a, b]) => `<button type="button" data-per="${k}" aria-pressed="${st.per === k}"${perOn(k) ? (k === "safra" ? "" : ` title="${MES[a]}–${MES[b]}"`) : ` disabled title="Período ainda não começou na safra ${safraLbl(S())}"`}>${n}</button>`).join("")}</div></div>
@@ -732,11 +807,33 @@ function participacao() {
   return block(`Participação de ${e.nome} no SFN`, `${geoNome()} · acumulado da safra · ${finNome().toLowerCase()}`,
     legend(L.filter(l => l.v).map(l => ({ name: `Safra ${l.name}`, c: l.c, dash: !!l.dash }))) + lineChart(L.filter(l => l.v), { fmt: v => nf(v, 1) + "%", h: 220, label: "Participação no SFN" }), `% do valor contratado no SFN, acumulado desde julho · ${fonteLink()}`);
 }
+const ehInstS = (i) => !!INSTG && (i.grupo ? i.cong === INSTG : idSicor(i.tipo, i.cnpj, i.cong) === INSTG);   // linha do SICOR da instituição do filtro
+function faixaSafra() {
+  if (!INSTG) return "";
+  const geo = st.geo, rows = D.inst.filter(x => idSicor(x.tipo, x.cnpj, x.cong) === INSTG), z = { a: [0, 0, 0, 0], p: 0, t: 0, q: 0 };
+  rows.forEach(x => { const v = IG(x, geo); if (!v) return; v.a.forEach((y, j) => z.a[j] += y); z.p += v.p; z.t += v.t; z.q += v.q; });
+  const e = escopo(st.esc), nE = esc(e.nome), i0 = rows.length ? listaUnica(rows, () => INSTG, x => sum4(x.BR?.[SA()]?.a || [0, 0, 0, 0]))[0] : null;
+  const vv = (o) => st.fin === "all" ? sum4(o.a) : o.a[FIDX[st.fin]], a = vv(z), v = st.fin === "all" && z.p >= 1 ? pct(sum4(z.a), z.p) : null;
+  const c = comp(), cS = comp("sfn"), vR = c && st.fin === "all" ? pct(val(c.a), val(c.p)) : null;
+  const membro = st.esc !== "sfn" && rows.some(x => instEscopos(x).includes(st.esc));
+  // posição pelo valor entre as instituições do recorte (bancos somados pelo conglomerado, como a instituição escolhida)
+  const outros = D.inst.filter(i => IG(i, geo) && !ehInstS(i) && (st.esc === "sfn" || instEscopos(i).includes(st.esc))), G = new Map();
+  outros.forEach(i => { const k = idSicor(i.tipo, i.cnpj, i.cong); G.set(k, (G.get(k) || 0) + vv(IG(i, geo))); });
+  const vals = [...G.values()].filter(x => x > 0), pos = a > 0 ? vals.filter(x => x > a).length + 1 : null;
+  const falta = !rows.length ? "sem operação de crédito rural no SICOR nas safras do painel" : !(a > 0 || z.p > 0) ? `sem operação ${perNo()} ${safraLbl(S())} ${emUF(geo)}${st.fin === "all" ? "" : " nesta finalidade"}` : "";
+  return faixaInst({ i: i0, contra: `${e.nome} ${emUF(geo)}`, falta, meta: membro || st.esc === "sfn" ? "" : `Fora do recorte ${nE}: participação calculada sobre o SFN.`, kpis: `<div class="kpis">
+    ${kpiBox(`Contratado ${perNo()} ${safraLbl(S())}${st.fin === "all" ? "" : " · " + esc(finNome().toLowerCase())}`, brl(a, 1).replace("R$ ", ""), "", v == null ? "" : `${arrow(v)}${sgn(v)} contra ${pontoTxt()}`, cls(v), `${vR == null ? "" : `${nE}: ${sgn(vR)} · `}${refTxt()} · SICOR`)}
+    ${kpiBox("Operações", nf(z.q, 0), "", z.q ? `R$ ${nf(sum4(z.a) / z.q * 1000, 0)} mil por operação` : "", "flat", "todas as finalidades")}
+    ${kpiBox(membro ? `Participação em ${nE}` : `Participação no SFN ${emUF(geo)}`, nf(a / val(membro ? c.a : cS.a) * 100, 2), "%", membro ? `${nf(a / val(cS.a) * 100, 2)}% do SFN ${emUF(geo)}` : "", "flat", `valor contratado · ${refTxt()}`)}
+    ${kpiBox(`Posição ${membro || st.esc === "sfn" ? "no recorte" : "contra o recorte"}`, pos == null ? "—" : `${pos}ª`, "", pos == null ? "" : `entre ${vals.length + 1} instituições com operação`, "flat", "pelo valor contratado no período")}
+    ${kpiBox(st.per === "safra" ? `Safra ${safraLbl(S() - 1)}` : `${perI()[1]} de ${safraLbl(S() - 1)}`, brl(z.t, 1).replace("R$ ", ""), "", cur() ? "período inteiro" : "fechada", "flat", "todas as finalidades · SICOR")}
+  </div>` });
+}
 function mapaInst() {
   const geo = st.geo, tot = val(comp("sfn", geo).a);
-  const pts = D.inst.filter(i => IG(i, geo) && IG(i, geo).p >= 30 && (st.fin === "all" ? sum4(IG(i, geo).a) : IG(i, geo).a[FIDX[st.fin]]) > 0)
-    .map(i => ({ i, a: sum4(IG(i, geo).a), p: IG(i, geo).p })).filter(x => x.a >= (geo === "BR" ? 300 : 40))
-    .map(x => ({ name: x.i.curto, x: x.a, y: Math.max(-90, Math.min(150, pct(x.a, x.p))), c: instCor(x.i), lbl: false, sc: instEscopos(x.i) }));
+  const pts = D.inst.filter(i => IG(i, geo) && (IG(i, geo).p >= 30 || ehInstS(i)) && (st.fin === "all" ? sum4(IG(i, geo).a) : IG(i, geo).a[FIDX[st.fin]]) > 0)
+    .map(i => ({ i, a: sum4(IG(i, geo).a), p: IG(i, geo).p })).filter(x => x.a >= (geo === "BR" ? 300 : 40) || (ehInstS(x.i) && x.p > 0))
+    .map(x => ({ name: x.i.curto, x: x.a, y: Math.max(-90, Math.min(150, pct(x.a, x.p))), c: instCor(x.i), lbl: false, sc: instEscopos(x.i), sel: ehInstS(x.i) }));
   pts.sort((a, b) => b.x - a.x);
   const sel = pts.filter(p => p.sc.includes(st.esc) && st.esc !== "sfn");
   (sel.length ? sel.slice(0, 4) : pts.slice(0, 5)).forEach(p => p.lbl = true);
@@ -786,11 +883,11 @@ function renderRanking() {
   const shown = list.filter(x => !q || x.i.curto.toLowerCase().includes(q) || x.i.nome.toLowerCase().includes(q) || x.i.cnpj.includes(q));
   const lim = st.rkAll || q ? shown : shown.slice(0, 25);
   const mx = Math.max(...list.map(x => Math.max(x.a, st.fin === "all" ? x.p : 0)), 1);
-  const rows = lim.map(x => { const i = x.i, c = i.grupo ? (SIST.includes(i.cong) ? cor((escopo("cong_" + i.cong) || escopo(i.cong)).cor) : instCor(i.grupo[0])) : instCor(i);
+  const rows = pinaLinha(shown, lim, x => ehInstS(x.i), (x, _k, cl) => { const i = x.i, c = i.grupo ? (SIST.includes(i.cong) ? cor((escopo("cong_" + i.cong) || escopo(i.cong)).cor) : instCor(i.grupo[0])) : instCor(i);
     const tag = i.grupo ? `<span class="tag">conglomerado</span>` : i.tipo === "coop" ? (i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : "") : (i.curto.startsWith("Banco Sic") ? `<span class="tag">banco coop.</span>` : "");
-    return `<tr><td class="num">${rkPos.get(i.cnpj)}</td><td><div class="inst-name"><span class="dot" style="background:${c}"></span><span>${(() => { const fid = i.grupo ? (String(i.cong || "").startsWith("C0") ? i.cong : null) : i.tipo === "coop" ? i.cnpj : (i.cong && String(i.cong).startsWith("C0") ? i.cong : null); return fid ? linkFicha(fid, esc(i.curto)) : esc(i.curto); })()}${tag}<small title="${esc(i.nome)}">${esc(i.nome.length > 64 ? i.nome.slice(0, 62) + "…" : i.nome)}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
+    return `<tr${cl ? ` class="${cl}"` : ""}><td class="num">${rkPos.get(i.cnpj)}</td><td><div class="inst-name"><span class="dot" style="background:${c}"></span><span>${(() => { const fid = i.grupo ? (String(i.cong || "").startsWith("C0") ? i.cong : null) : i.tipo === "coop" ? i.cnpj : (i.cong && String(i.cong).startsWith("C0") ? i.cong : null); return fid ? linkFicha(fid, esc(i.curto)) : esc(i.curto); })()}${tag}<small title="${esc(i.nome)}">${esc(i.nome.length > 64 ? i.nome.slice(0, 62) + "…" : i.nome)}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
       <td class="num">${brl(x.a, 1)}</td><td class="bar-cell"><span class="b" style="width:calc(${x.a / mx * 100}% - 8px);background:${c}"></span>${st.fin === "all" ? `<span class="b prev" style="width:calc(${x.p / mx * 100}% - 8px)"></span>` : ""}</td>
-      <td class="num ${cls(x.g)}">${x.g == null ? "—" : x.p < 10 ? `<span class="flat">${x.p ? sgn(x.g, 0) : "novo"}</span>` : sgn(x.g)}</td><td class="num">${nf(x.a / tot * 100, 2)}%</td><td class="num">${nf(x.q, 0)}</td><td class="num">${brl(x.t, 1)}</td></tr>`; }).join("");
+      <td class="num ${cls(x.g)}">${x.g == null ? "—" : x.p < 10 ? `<span class="flat">${x.p ? sgn(x.g, 0) : "novo"}</span>` : sgn(x.g)}</td><td class="num">${nf(x.a / tot * 100, 2)}%</td><td class="num">${nf(x.q, 0)}</td><td class="num">${brl(x.t, 1)}</td></tr>`; });
   const seg = (k, n) => `<button type="button" data-rk="${k}" aria-pressed="${st.rkTipo === k}">${n}</button>`;
   const ord = (k, n) => `<button type="button" data-ord="${k}" aria-pressed="${st.rkOrd === k}">${n}</button>`;
   const ver = (k, n) => `<button type="button" data-ver="${k}" aria-pressed="${st.rkVer === k}">${n}</button>`;
@@ -835,7 +932,7 @@ function renderSafra() {
       <h2>Contratação de crédito rural · ${esc(e.nome)} ${emUF(st.geo)}</h2>
       <p class="lede">${st.per !== "safra" ? `Valor contratado ${perNo()} ${safraLbl(s)}${perParcial() ? `, até ${dmy(D.meta.ref)},` : ""} contra ${pontoTxt()}. Gráficos de linha seguem com a safra inteira, para dar contexto` : cur() ? "Valor contratado na safra corrente contra o mesmo ponto da safra anterior" : `Safra ${safraLbl(s)} fechada contra a safra ${safraLbl(s - 1)} fechada`}, com cortes por trimestre, semestre, finalidade, programa, fonte e instituição.</p></div>
       ${cur() ? "" : "<!--"}<div class="note">Os meses mais recentes ainda recebem registros atrasados no SICOR. Os números de ${consolida().slice().reverse().map(k => MESF[k]).join(" e ")} devem subir nas próximas atualizações, o que reduz a queda medida hoje.</div>${cur() ? "" : "-->"}
-      ${kpis()}${curva()}
+      ${faixaSafra()}${kpis()}${curva()}
       ${perfil()}
       <div class="grid2">${cortes()}${finalidades()}</div>
       <div class="grid2">${escopos()}${participacao() || mapaInst()}</div>
@@ -907,14 +1004,27 @@ function scatterLin(pts, o = {}) {
   g += tx.map(t => `<line class="grid" x1="${X(t)}" x2="${X(t)}" y1="${T}" y2="${H - B}"/><text x="${X(t)}" y="${H - 16}" text-anchor="middle">${nf(t, 0)}%</text>`).join("");
   g += `<text x="${(L + W - R2) / 2}" y="${H - 2}" text-anchor="middle">${esc(o.xlab || "")}</text>`;
   if (o.yref) g += `<line x1="${L}" x2="${W - R2}" y1="${Y(o.yref)}" y2="${Y(o.yref)}" stroke="var(--down)" stroke-dasharray="4 4"/><text x="${W - R2}" y="${Y(o.yref) - 5}" text-anchor="end" style="fill:var(--down)">${esc(o.yrefLabel || "")}</text>`;
-  pts.forEach(p => { g += `<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="${p.lbl ? 5.5 : 4}" fill="${p.c}" fill-opacity="${p.lbl ? 0.95 : 0.5}" stroke="var(--bg)" stroke-width="1.5"><title>${esc(p.name)}: ${esc(o.xn || "x")} ${nf(p.x, 2)}% · ${esc(o.yn || "y")} ${nf(p.y, 1)}%</title></circle>`; });
-  pts.filter(p => p.lbl).forEach(p => { g += `<text x="${X(p.x) + 8}" y="${Y(p.y) + 4}" class="lbl-strong">${esc(p.name)}</text>`; });
+  pts.slice().sort((a, b) => !!a.sel - !!b.sel).forEach(p => { g += `<circle cx="${X(p.x)}" cy="${Y(p.y)}" r="${p.sel ? 7.5 : p.lbl ? 5.5 : 4}" fill="${p.c}" fill-opacity="${p.sel || p.lbl ? 0.95 : 0.5}" stroke="${p.sel ? "var(--ink)" : "var(--bg)"}" stroke-width="${p.sel ? 2.5 : 1.5}"><title>${esc(p.name)}: ${esc(o.xn || "x")} ${nf(p.x, 2)}% · ${esc(o.yn || "y")} ${nf(p.y, 1)}%</title></circle>`; });
+  pts.filter(p => p.lbl || p.sel).forEach(p => { g += `<text x="${X(p.x) + (p.sel ? 11 : 8)}" y="${Y(p.y) + 4}" class="lbl-strong">${esc(p.name)}</text>`; });
   return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.label || "dispersão")}">${g}</svg>`;
 }
 
 function filtrosRisco() {
   $("#filters").innerHTML = `<div class="frow">${seletorRecorte(R.escopos.map(e => e.id), rs.esc, (id) => { rs.esc = id; rs.all = false;
-    try { localStorage.setItem("risco-filtros", JSON.stringify({ esc: rs.esc, geo: rs.geo, corte: rs.corte })); } catch (e) {} })}</div>`;
+    try { localStorage.setItem("risco-filtros", JSON.stringify({ esc: rs.esc, geo: rs.geo, corte: rs.corte })); } catch (e) {} })}${seletorInst(juntaInst().filter(i => (i.cart || i.cartc || 0) > 0).map(i => ({ id: i.id, curto: i.curto, nome: i.nome, uf: i.uf })))}</div>`;
+}
+// instituição escolhida no filtro (opcional): IF.data da data mais recente; variação em 12 meses pela base de posição, quando carregada
+function faixaRisco() {
+  if (!INSTG) return "";
+  const ji = juntaInst().find(i => i.id === INSTG), F = lastOf(R.ifd.serie[rs.esc] || []), nE = esc(rEsc(rs.esc).nome), t = R.ifd.ref;
+  const pi = P ? P.inst.find(i => i.id === INSTG) : null, a = pi?.s?.[t], b = pi?.s?.[backM(t, 12)];
+  const dl = (k) => a && b && a[k] != null && b[k] != null ? a[k] - b[k] : null;
+  const k = (lbl, key, dec, upBad, sub) => { const v = ji?.[key], d = dl(key), c = d == null ? "flat" : Math.abs(d) <= 0.005 ? "flat" : (d > 0) === upBad ? "down" : "up";
+    return kpiBox(lbl, v == null ? "sem dado" : nf(v, dec), v == null ? "" : "%", d == null ? (sub || "") : `${arrow(d)}${sgn(d, 2, " p.p.")} em 12 meses`, c, `${nE}: ${F?.[key] == null ? "—" : nf(F[key], dec) + "%"} · ${ym(t)} · IF.data`); };
+  return faixaInst({ i: ji, contra: rEsc(rs.esc).nome, falta: ji ? "" : "fora do IF.data nesta data", kpis: ji ? `<div class="kpis">
+    ${kpiBox("Carteira de crédito", biCart(ji.cart ?? ji.cartc), "", "", "flat", `${ym(t)} · IF.data`)}
+    ${k("Inadimplência > 90 dias", "inad", 2, true)}${k("Ativos problemáticos (estágio 3)", "ap", 2, true)}
+    ${k("Provisão sobre a carteira", "prov", 2, false, ji.cob == null ? "" : `cobertura ${nf(ji.cob, 0)}%`)}${k("Índice de Basileia", "basil", 1, false)}</div>` : "" });
 }
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-resc],[data-rgeo],[data-rcorte],[data-rord],#rmore"); if (!b) return;
@@ -977,11 +1087,16 @@ function tabelaEscopos() {
 }
 function blocoIFD() {
   const ids = ["sfn", "coop", "bancos", rs.esc].filter((v, i, a) => a.indexOf(v) === i);
-  const lines = ids.map(id => ({ name: rEsc(id).nome, pts: (R.ifd.serie[id] || []).map(p => ({ d: p.d, v: p.ap })), c: cor(rEsc(id).cor), w: id === rs.esc ? 3 : 1.6 }));
-  const linesI = ids.map(id => ({ name: rEsc(id).nome, pts: (R.ifd.serie[id] || []).map(p => ({ d: p.d, v: p.inad })), c: cor(rEsc(id).cor), w: id === rs.esc ? 3 : 1.6 }));
+  const pi = INSTG && P ? P.inst.find(i => i.id === INSTG) : null;     // instituição escolhida: série trimestral da base de posição (mesmo IF.data)
+  const linhaI = (k) => pi ? [{ name: pi.curto, pts: P.meta.trimestres.filter(q => pi.s[q]?.[k] != null).map(q => ({ d: q, v: pi.s[q][k] })), c: corDe(pi), w: 3 }] : [];
+  const tr = (id) => pi && id === rs.esc ? tracoSe(corDe(pi), cor(rEsc(id).cor)) : undefined;
+  const lines = ids.map(id => ({ name: rEsc(id).nome, pts: (R.ifd.serie[id] || []).map(p => ({ d: p.d, v: p.ap })), c: cor(rEsc(id).cor), w: id === rs.esc ? (pi ? 2.2 : 3) : 1.6, dash: tr(id) })).concat(linhaI("ap"));
+  const linesI = ids.map(id => ({ name: rEsc(id).nome, pts: (R.ifd.serie[id] || []).map(p => ({ d: p.d, v: p.inad })), c: cor(rEsc(id).cor), w: id === rs.esc ? (pi ? 2.2 : 3) : 1.6, dash: tr(id) })).concat(linhaI("inad"));
   const inst = juntaInst().filter(i => i.escopos.includes(rs.esc) || rs.esc === "sfn").filter(i => i.ap != null && i.basil != null && i.cart >= (i.tipo === "coop" ? 0.05 : 1));
   inst.sort((a, b) => b.cart - a.cart);
-  const pts = inst.slice(0, 120).map((i, k) => ({ name: i.curto, x: i.ap, y: Math.min(i.basil, 40), c: i.tipo === "coop" ? cor(rEsc(i.sistema || "outras")?.cor || "#A3ACA8") : instCorR(i), lbl: k < 5 }));
+  const top = inst.slice(0, 120), iSel = INSTG ? juntaInst().find(i => i.id === INSTG && i.ap != null && i.basil != null) : null;
+  if (iSel && !top.includes(iSel)) top.push(iSel);
+  const pts = top.map((i, k) => ({ name: i.curto, x: i.ap, y: Math.min(i.basil, 40), c: i.tipo === "coop" ? cor(rEsc(i.sistema || "outras")?.cor || "#A3ACA8") : instCorR(i), lbl: k < 5, sel: i.id === INSTG }));
   return `<div class="grid2">` +
     block("Inadimplência acima de 90 dias", "% da carteira · trimestral", tsChart(linesI, { unit: "%", fmt: v => nf(v, 1), dots: true, label: "Inadimplência" }), linkR("ifd")) +
     block("Ativos problemáticos (estágio 3)", "% da carteira · trimestral", tsChart(lines, { unit: "%", fmt: v => nf(v, 1), dots: true, label: "Ativos problemáticos" }), `Inclui inadimplência e operações reestruturadas ou com sinais de deterioração. É a medida do estágio 3 do crédito neste painel · ${linkR("ifd")}`) +
@@ -1005,7 +1120,7 @@ function blocoBasilDist() {
       <text x="${x0 + w / 2}" y="${Y(v) - 6}" text-anchor="middle" class="lbl-strong">${nf(v, 0)}%</text><text x="${x0 + w / 2}" y="${H - 22}" text-anchor="middle">${f.n}</text><text x="${x0 + w / 2}" y="${H - 6}" text-anchor="middle">${f.l.length} inst.</text>`; });
   const baixo = fx[0].l.concat(fx[1].l).sort((a, b) => a.s[t].basil - b.s[t].basil);
   return block(`Basileia por faixa · ${nm}`, `% do ativo do escopo em cada faixa · ${ym(t)}`, `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Distribuição da Basileia">${g}</svg>
-    <p class="lede" style="font-size:.86rem">${ins.length} instituições. Mediana: ${nf(median(ins.map(i => i.s[t].basil)), 1)}%.${baixo.length ? ` Abaixo de 13%: ${baixo.slice(0, 8).map(i => `${linkFicha(i.id, esc(i.curto))} (${nf(i.s[t].basil, 1)}%)`).join(", ")}${baixo.length > 8 ? ` e mais ${baixo.length - 8}` : ""}.` : ""}</p>`,
+    <p class="lede" style="font-size:.86rem">${ins.length} instituições. Mediana: ${nf(median(ins.map(i => i.s[t].basil)), 1)}%.${(() => { const x = INSTG ? P.inst.find(i => i.id === INSTG && i.s[t]?.basil != null) : null; if (!x) return ""; const f = F.find(([, a, b]) => x.s[t].basil >= a && x.s[t].basil < b); return ` <b>${esc(x.curto)}: ${nf(x.s[t].basil, 1)}%</b>${f ? `, faixa ${f[0].toLowerCase()}` : ""}.`; })()}${baixo.length ? ` Abaixo de 13%: ${baixo.slice(0, 8).map(i => `${linkFicha(i.id, esc(i.curto))} (${nf(i.s[t].basil, 1)}%)`).join(", ")}${baixo.length > 8 ? ` e mais ${baixo.length - 8}` : ""}.` : ""}</p>`,
     `Barras: participação no ativo total do escopo; abaixo, o número de instituições. 10,5% = mínimo de 8% mais o adicional de conservação de 2,5%. Cooperativas no regime prudencial simplificado têm exigências próprias, por isso a faixa serve de referência, não de enquadramento (REF, gráfico 1.2.4.3, que usa o índice de adequação do PR, não público). <a href="${esc(P.meta.url_ifd)}" target="_blank" rel="noopener">IF.data</a>.`);
 }
 function instCorR(i) {
@@ -1037,8 +1152,8 @@ function renderRiscoRank() {
     <div class="rank-tools"><div class="fgroup"><span class="flabel">Ordenar por</span><div class="seg">${ord("ap", "Ativo probl. (E3)")}${ord("inad", "Inadimplência")}${ord("prov", "Provisão")}${ord("cob", "Cobertura")}${ord("basil", "Basileia")}${ord("cart", "Carteira")}</div></div>
     <input id="rbusca" type="search" placeholder="Buscar instituição ou CNPJ" value="${esc(rs.busca)}" aria-label="Buscar instituição"></div>
     <div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th class="num">Inad. > 90d</th><th class="num">Ativo probl. (E3)</th><th class="num">Provisão / cart.</th><th class="num">Cobertura</th><th class="num">Basileia</th></tr></thead><tbody>
-    ${shown.map(i => `<tr><td><div class="inst-name"><span class="dot" style="background:${i.tipo === "coop" ? cor(rEsc(i.sistema || "outras")?.cor || "#A3ACA8") : instCorR(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 60))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
-      <td class="num">${(i.cart ?? i.cartc) >= 1 ? "R$ " + nf(i.cart ?? i.cartc, 1) + " bi" : "R$ " + nf((i.cart ?? i.cartc) * 1000, 0) + " mi"}</td>${td(i.inad)}${td(i.ap)}${td(i.prov)}${td(i.cob, 0)}${td(i.basil, 1)}</tr>`).join("") || `<tr><td colspan="7" class="empty">Nenhuma instituição encontrada.</td></tr>`}
+    ${pinaLinha(list, shown, i => i.id === INSTG, (i, k, c) => `<tr${c ? ` class="${c}"` : ""}><td><div class="inst-name"><span class="dot" style="background:${i.tipo === "coop" ? cor(rEsc(i.sistema || "outras")?.cor || "#A3ACA8") : instCorR(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${c.includes("pino") ? `<span class="tag">${k + 1}ª</span>` : ""}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 60))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
+      <td class="num">${(i.cart ?? i.cartc) >= 1 ? "R$ " + nf(i.cart ?? i.cartc, 1) + " bi" : "R$ " + nf((i.cart ?? i.cartc) * 1000, 0) + " mi"}</td>${td(i.inad)}${td(i.ap)}${td(i.prov)}${td(i.cob, 0)}${td(i.basil, 1)}</tr>`) || `<tr><td colspan="7" class="empty">Nenhuma instituição encontrada.</td></tr>`}
     </tbody></table></div>
     ${list.length > 25 && !q ? `<button class="linkbtn" id="rmore" type="button">${rs.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
     <div class="meta">Carteira, inadimplência, ativos problemáticos (estágio 3), provisão, cobertura e Basileia do IF.data (trimestral). Bancos aparecem por conglomerado prudencial. ${linkR("ifd")}</div>`;
@@ -1062,7 +1177,7 @@ function renderRisco() {
     $("#view").innerHTML = `<div><div class="eyebrow">IF.data ${ym(R.ifd.ref)}</div>
       <h2>Qualidade e risco da carteira · ${esc(rEsc(rs.esc).nome)}</h2>
       <p class="lede">Inadimplência, ativos problemáticos (estágio 3 da Res. CMN 4.966), provisão, cobertura e Basileia de ${esc(rEsc(rs.esc).nome)}, com o SFN como referência. O atraso de 15 a 90 dias e a inadimplência por modalidade só existem por segmento e estão na <a href="#visao">Visão geral do SFN</a>.</p></div>
-      ${kpisRisco()}${blocoIFD()}${rankingRisco()}${notasRisco()}`;
+      ${faixaRisco()}${kpisRisco()}${blocoIFD()}${rankingRisco()}${notasRisco()}`;
     renderRiscoRank();
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
 }
@@ -1101,7 +1216,7 @@ function filtrosPos() {
     <div class="frow"><label class="fgroup"><span class="flabel">Eixo X</span><select id="px" class="sel">${opt(ps.x)}</select></label>
     <label class="fgroup"><span class="flabel">Eixo Y</span><select id="py" class="sel">${opt(ps.y)}</select></label>
     <label class="fgroup"><span class="flabel">Trimestre</span><select id="ptri" class="sel">${P.meta.trimestres.slice().reverse().map(t => `<option value="${t}"${t === pTri() ? " selected" : ""}>${ym(t)}</option>`).join("")}</select></label>
-    <label class="fgroup"><span class="flabel">Destacar</span><input id="pdest" class="sel" list="plist" placeholder="Nome, número ou CNPJ" value="${esc(ps.dest)}"><datalist id="plist">${P.inst.filter(noUni).map(i => `<option value="${esc(i.curto)}"></option>`).join("")}</datalist></label></div>`;
+    ${seletorInst(listaP())}</div>`;
 }
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-puni],[data-pxy],[data-pdest]"); if (!b) return;
@@ -1149,7 +1264,7 @@ function mapaPos(pts, ref, o) {
   }
   pts.slice().sort((a, b) => b.r - a.r).forEach(p => {
     const out = p.x < tx[0] || p.x > tx[tx.length - 1] || p.y < ty[0] || p.y > ty[ty.length - 1];
-    g += `<circle cx="${X(p.x).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="${(p.dest ? Math.max(7, rad(p.r)) : rad(p.r)).toFixed(1)}" fill="${p.c}" fill-opacity="${p.dest ? 0.95 : 0.55}" stroke="${p.dest ? "var(--ink)" : "var(--bg)"}" stroke-width="${p.dest ? 2.5 : 1}"${out ? ' stroke-dasharray="2 2"' : ""} data-pdest="${esc(p.name)}" style="cursor:pointer"><title>${esc(p.name)} · ${esc(o.xn)}: ${pFmt(o.xid, p.x)} · ${esc(o.yn)}: ${pFmt(o.yid, p.y)} · carteira ${pFmt("cart", p.r)}${out ? " · fora da escala, desenhado na borda" : ""}</title></circle>`;
+    g += `<circle cx="${X(p.x).toFixed(1)}" cy="${Y(p.y).toFixed(1)}" r="${(p.dest ? Math.max(7, rad(p.r)) : rad(p.r)).toFixed(1)}" fill="${p.c}" fill-opacity="${p.dest ? 0.95 : 0.55}" stroke="${p.dest ? "var(--ink)" : "var(--bg)"}" stroke-width="${p.dest ? 2.5 : 1}"${out ? ' stroke-dasharray="2 2"' : ""} data-instg="${esc(p.i.id)}" data-instg-nome="${esc(p.name)}" style="cursor:pointer"><title>${esc(p.name)} · ${esc(o.xn)}: ${pFmt(o.xid, p.x)} · ${esc(o.yn)}: ${pFmt(o.yid, p.y)} · carteira ${pFmt("cart", p.r)}${out ? " · fora da escala, desenhado na borda" : ""}</title></circle>`;
   });
   const dd = (o.diam || []).filter(d => d.x != null && d.y != null).map(d => ({ ...d, px: X(d.x), py: Y(d.y) })).sort((a, b) => a.py - b.py);
   dd.forEach((d, k) => { d.ly = k && d.py - dd[k - 1].ly < 15 ? dd[k - 1].ly + 15 : d.py; });
@@ -1177,10 +1292,10 @@ function renderPos() {
   try {
     const t = pTri(), xm = pm(ps.x), ymm = pm(ps.y);
     const uni = P.inst.filter(noUni).filter(i => i.s[t]);
-    const pts = uni.filter(i => i.s[t][ps.x] != null && i.s[t][ps.y] != null).map(i => ({ i, name: i.curto, x: i.s[t][ps.x], y: i.s[t][ps.y], r: i.s[t].cart || 0, c: pCor(i), dest: ps.dest && (i.curto === ps.dest) }));
+    const pts = uni.filter(i => i.s[t][ps.x] != null && i.s[t][ps.y] != null).map(i => ({ i, name: i.curto, x: i.s[t][ps.x], y: i.s[t][ps.y], r: i.s[t].cart || 0, c: pCor(i), dest: !!INSTG && i.id === INSTG }));
     const big = pts.slice().sort((a, b) => b.r - a.r); big.slice(0, uni.length > 40 ? 5 : 8).forEach(p => p.lbl = true);
     const ref = { mx: median(pts.map(p => p.x)), my: median(pts.map(p => p.y)) };
-    const destI = uni.find(i => i.curto === ps.dest) || P.inst.find(i => i.curto === ps.dest);
+    const destI = INSTG ? P.inst.find(i => i.id === INSTG) : null;     // instituição do filtro comum (clique num círculo também escolhe)
     const rastro = destI ? P.meta.trimestres.filter(q => q <= t && destI.s[q]?.[ps.x] != null && destI.s[q]?.[ps.y] != null).map(q => ({ t: q, x: destI.s[q][ps.x], y: destI.s[q][ps.y] })) : [];
     const aggUni = ps.uni === "top5d" ? null : ps.uni;
     const diam = [["coop", "Cooperativas"], ["bancos", "Bancos"], [aggUni, null]].filter(([k], n, a) => k && a.findIndex(z => z[0] === k) === n)
@@ -1188,16 +1303,16 @@ function renderPos() {
     const sem = uni.length - pts.length;
     const quad = (p) => quadNome(xm, ymm, p.x >= ref.mx ? 1 : -1, p.y >= ref.my ? 1 : -1);
     const cont = {}; pts.forEach(p => { const q = quad(p); cont[q] = (cont[q] || 0) + 1; });
-    const rows = pts.slice().sort((a, b) => (b.dest - a.dest) || b.r - a.r).map(p => `<tr${p.dest ? ' style="background:var(--panel)"' : ""}><td><div class="inst-name"><span class="dot" style="background:${p.c}"></span><span><button class="linkbtn" type="button" data-pdest="${esc(p.name)}" style="padding:0;color:var(--ink);font-weight:${p.dest ? 700 : 500}">${esc(p.name)}</button><small title="${esc(p.i.nome || "")}">${esc((p.i.nome || "").slice(0, 34))}…${p.i.uf ? " · " + p.i.uf : ""}</small></span></div></td>
+    const rows = pts.slice().sort((a, b) => (b.dest - a.dest) || b.r - a.r).map(p => `<tr${p.dest ? ' class="selp"' : ""}><td><div class="inst-name"><span class="dot" style="background:${p.c}"></span><span><button class="linkbtn" type="button" data-instg="${esc(p.i.id)}" data-instg-nome="${esc(p.name)}" style="padding:0;color:var(--ink);font-weight:${p.dest ? 700 : 500}">${esc(p.name)}</button><small title="${esc(p.i.nome || "")}">${esc((p.i.nome || "").slice(0, 34))}…${p.i.uf ? " · " + p.i.uf : ""}</small></span></div></td>
       <td class="num">${pFmt("cart", p.r)}</td><td class="num">${pFmt(ps.x, p.x)}</td><td class="num">${pFmt(ps.y, p.y)}</td><td>${esc(quad(p))}</td></tr>`).join("");
     $("#view").innerHTML = `<div><div class="eyebrow">${ym(t)} · ${pts.length} instituições · IF.data e Cosif ${(Date.now() - new Date(P.meta.novo_desde + "T12:00:00")) / 864e5 <= 7 ? '<span class="badge-new">novo</span>' : ""}</div>
       <h2>Mapa de posicionamento · ${esc(rNome(ps.uni))}</h2>
-      <p class="lede">${esc(xm.nome)} contra ${esc(ymm.nome.toLowerCase())}. Linhas tracejadas: mediana do grupo. Tamanho do círculo: carteira de crédito. Losangos: agregados de referência. Clique numa instituição para destacar e ver o rastro dos trimestres.</p></div>
+      <p class="lede">${esc(xm.nome)} contra ${esc(ymm.nome.toLowerCase())}. Linhas tracejadas: mediana do grupo. Tamanho do círculo: carteira de crédito. Losangos: agregados de referência. Clique numa instituição para escolhê-la no filtro e ver o rastro dos trimestres.</p></div>
       ${ps.x === "cresc" || ps.y === "cresc" || ps.x === "capt_cresc" || ps.y === "capt_cresc" ? `<div class="note">Crescimento em 12 meses só existe a partir de mar/26: o IF.data mudou o conceito de carteira com a Res. CMN 4.966 em jan/25, e a comparação com 2024 misturaria critérios.</div>` : ""}
       <section class="block">${mapaPos(pts, ref, { xn: xm.nome, yn: ymm.nome, xid: ps.x, yid: ps.y, xm, ym: ymm, rastro, diam })}
         <div class="legend">${Object.entries(cont).map(([q, n]) => `<span>${esc(q)}: <b>${n}</b></span>`).join("")}${sem ? `<span>${sem} sem dado em algum dos eixos</span>` : ""}</div>
         <div class="meta">${esc(xm.desc)} ${esc(ymm.desc)} Mediana do grupo: ${pFmt(ps.x, ref.mx)} e ${pFmt(ps.y, ref.my)}. Escala cortada entre os percentis 2 e 98; pontos de fora aparecem na borda, com contorno tracejado. <a href="${esc(P.meta.url_ifd)}" target="_blank" rel="noopener">IF.data</a> · <a href="${esc(P.meta.url_cosif)}" target="_blank" rel="noopener">Cosif</a>, Banco Central.</div></section>
-      <div class="grid2">${destI && destI.s[t] ? fichaRapida(destI, uni.length ? uni : [destI], t) : block("Ficha rápida", "Escolha uma instituição", `<p class="empty">Clique num círculo ou use o campo Destacar para ver a posição da instituição em todos os indicadores.</p>`)}
+      <div class="grid2">${destI && destI.s[t] ? fichaRapida(destI, uni.length ? uni : [destI], t) : block("Ficha rápida", "Escolha uma instituição", `<p class="empty">Clique num círculo ou use o campo Instituição para ver a posição da instituição em todos os indicadores.</p>`)}
       ${block("Instituições do grupo", `${ym(t)} · ordenadas pela carteira`, `<div class="tbl-wrap" style="max-height:560px;overflow-y:auto"><table><thead><tr><th>Instituição</th><th class="num">Carteira</th><th class="num">${esc(xm.nome)}</th><th class="num">${esc(ymm.nome)}</th><th>Quadrante</th></tr></thead><tbody>${rows}</tbody></table></div>`)}</div>
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler o mapa</h3></header><div class="methods">
         <p><b>Bases.</b> IF.data (trimestral): carteira, inadimplência, ativos problemáticos (estágio 3), provisão, cobertura, Basileia, lucro, patrimônio líquido, ativo, captações, receitas e despesas. Balancetes Cosif do último mês do trimestre: participação do crédito rural. Cooperativas são singulares; bancos, conglomerados prudenciais. Cooperativas incorporadas entram na incorporadora em todos os trimestres.</p>
@@ -1299,7 +1414,7 @@ function filtrosRes() {
   const sel = per === "r12" ? `<label class="fgroup"><span class="flabel">12 meses até</span><select id="qate" class="sel">${Q.agg.coop.r12.map(x => x.d).reverse().map(d => `<option value="${d}"${d === qAte() ? " selected" : ""}>${ym(d)}</option>`).join("")}</select></label>`
     : per === "ytd" ? `<label class="fgroup"><span class="flabel">Exercício</span><select id="qano" class="sel">${qAnos().map(a => { const ms = qMeses().filter(d => d.startsWith(a)); return `<option value="${a}"${a === qAno() ? " selected" : ""}>${a}${ms.length < 12 ? ` (até ${ym(ms[ms.length - 1])})` : ""}</option>`; }).join("")}</select></label>`
     : `<label class="fgroup"><span class="flabel">Mês</span><select id="qmes" class="sel">${qMeses().slice().reverse().map(d => `<option value="${d}"${d === qMes() ? " selected" : ""}>${ym(d)}</option>`).join("")}</select></label>`;
-  $("#filters").innerHTML = `<div class="frow">${chips}</div><div class="frow">${segP}${sel}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${chips}${seletorInst(Q.inst.map(i => ({ id: i.id, curto: i.curto, nome: i.nome, uf: i.uf })))}</div><div class="frow">${segP}${sel}</div>`;
 }
 document.addEventListener("click", (ev) => {
   const b = ev.target.closest("[data-qesc],[data-qord],[data-qper],#qmore"); if (!b) return;
@@ -1447,23 +1562,37 @@ function renderRes() {
       ${k("Captação / receita", nf(x.d_capt, 1), "%", cmp(x.d_capt, c0?.d_capt), "despesa de captação e repasses", x.d_capt <= c0?.d_capt ? "up" : "down")}
       ${k("Provisão / receita", nf(x.d_prov, 1), "%", cmp(x.d_prov, c0?.d_prov), "provisão líquida de reversões e recuperações", x.d_prov <= c0?.d_prov ? "up" : "down")}
     </div>`;
-    const rowsC = CMP.filter(id => qR12(id)).concat(CMP.includes(qs.esc) ? [] : [qs.esc]).map(id => ({ name: qEsc(id).nome, v: qR12(id), sel: id === qs.esc }));
-    const sb = (() => { const W = 640, H = 200, L = 52, R2 = 10, T = 18, B = 26, v = sem.map(s => s.lucro), tk = ticks(Math.min(0, ...v), Math.max(0, ...v)), mn = tk[0], mx = tk[tk.length - 1];
-      const Y = (z) => T + (H - T - B) * (1 - (z - mn) / (mx - mn || 1)), bw = (W - L - R2) / sem.length;
+    // instituição escolhida no filtro (opcional): mesmos indicadores, contra o recorte; cascata e lucro por semestre passam a ser os dela
+    const qi = INSTG ? Q.inst.find(i => i.id === INSTG) : null, xi = qi ? qInstPer(qi) : null, xi0 = qi?.m ? qCalc(qi.m, qJanela(-12)) : null, nE = esc(e.nome), cQ = qi ? corDe(qi) : null;
+    const vsR = (a, b, d = 1) => a == null || b == null ? "" : `${sgn(a - b, d, " p.p.")} contra ${nE}`, mlh = (a, b, alto = true) => a == null || b == null ? "flat" : (alto ? a >= b : a <= b) ? "up" : "down";
+    const vI = xi && xi0 && xi0.lucro > 0 ? pct(xi.lucro, xi0.lucro) : null;
+    const fx = faixaInst({ i: qi, contra: e.nome, falta: INSTG && !qi ? "sem balancete Cosif na base de resultados" : INSTG && !xi ? `sem resultado de ${PT} nos balancetes` : "", kpis: xi ? `<div class="kpis">
+      ${k("Lucro ou sobras", Math.abs(xi.lucro) >= 1000 ? nf(xi.lucro / 1000, 2) : nf(xi.lucro, 1), Math.abs(xi.lucro) >= 1000 ? " bi" : " mi", vI == null ? "" : `${arrow(vI)}${sgn(vI)} contra o mesmo período do ano anterior`, `${esc(PT)} · Cosif`, cls(vI))}
+      ${k("ROE", nf(xi.roe, 1), "%", vsR(xi.roe, x.roe), `lucro / PL médio${qAnual()}`, mlh(xi.roe, x.roe))}
+      ${k("ROA", nf(xi.roa, 2), "%", vsR(xi.roa, x.roa, 2), `lucro / ativo médio${qAnual()}`, mlh(xi.roa, x.roa))}
+      ${k("Eficiência", nf(xi.efic, 1), "%", vsR(xi.efic, x.efic), "pessoal, adm. e depreciação / margem e serviços", mlh(xi.efic, x.efic, false))}
+      ${k("Captação / receita", nf(xi.d_capt, 1), "%", vsR(xi.d_capt, x.d_capt), "despesa de captação e repasses", mlh(xi.d_capt, x.d_capt, false))}
+      ${k("Provisão / receita", nf(xi.d_prov, 1), "%", vsR(xi.d_prov, x.d_prov), "provisão líquida de reversões e recuperações", mlh(xi.d_prov, x.d_prov, false))}
+    </div>` : "" });
+    const xv = xi || x, nV = xi ? qi.curto : e.nome, semV = xi ? qi.sem : sem, corV = xi ? cQ : cor(e.cor);
+    const rowsC = CMP.filter(id => qR12(id)).concat(CMP.includes(qs.esc) ? [] : [qs.esc]).map(id => ({ name: qEsc(id).nome, v: qR12(id), sel: id === qs.esc })).concat(xi ? [{ name: qi.curto, v: xi, sel: true }] : []);
+    const sb = (() => { const W = 640, H = 200, L = 52, R2 = 10, T = 18, B = 26, v = semV.map(s => s.lucro), tk = ticks(Math.min(0, ...v), Math.max(0, ...v)), mn = tk[0], mx = tk[tk.length - 1];
+      const Y = (z) => T + (H - T - B) * (1 - (z - mn) / (mx - mn || 1)), bw = (W - L - R2) / semV.length;
       let g = tk.map(t => `<line class="grid" x1="${L}" x2="${W - R2}" y1="${Y(t)}" y2="${Y(t)}"/><text x="${L - 6}" y="${Y(t) + 4}" text-anchor="end">${brlMi(t).replace("R$ ", "")}</text>`).join("");
-      sem.forEach((s, i) => { const x0 = L + i * bw + bw * 0.25, w = bw * 0.5, y0 = Y(Math.max(0, s.lucro)), y1 = Y(Math.min(0, s.lucro));
-        g += `<rect x="${x0}" y="${y0}" width="${w}" height="${Math.max(1, y1 - y0)}" fill="${s.lucro >= 0 ? cor(e.cor) : "var(--down)"}" rx="3"/><text x="${x0 + w / 2}" y="${y0 - 5}" text-anchor="middle" class="lbl-strong">${brlMi(s.lucro)}</text><text x="${x0 + w / 2}" y="${H - 6}" text-anchor="middle">${s.s.replace("S", "º sem/")}</text>`; });
+      semV.forEach((s, i) => { const x0 = L + i * bw + bw * 0.25, w = bw * 0.5, y0 = Y(Math.max(0, s.lucro)), y1 = Y(Math.min(0, s.lucro));
+        g += `<rect x="${x0}" y="${y0}" width="${w}" height="${Math.max(1, y1 - y0)}" fill="${s.lucro >= 0 ? corV : "var(--down)"}" rx="3"/><text x="${x0 + w / 2}" y="${y0 - 5}" text-anchor="middle" class="lbl-strong">${brlMi(s.lucro)}</text><text x="${x0 + w / 2}" y="${H - 6}" text-anchor="middle">${s.s.replace("S", "º sem/")}</text>`; });
       return `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Lucro por semestre">${g}</svg>`; })();
-    const roeL = [{ name: e.nome, pts: A.r12.map(z => ({ d: z.d, v: z.roe })), c: cor(e.cor), w: 3 }, { name: "Cooperativas", pts: Q.agg.coop.r12.map(z => ({ d: z.d, v: z.roe })), c: css("--grafite-2"), w: 1.6 }, { name: "Bancos", pts: Q.agg.bancos.r12.map(z => ({ d: z.d, v: z.roe })), c: css("--faint"), w: 1.6, dash: "4 3" }];
+    const ms12 = qMeses(), roeI = qi?.m ? ms12.map((d, j) => j < 11 ? null : { d, v: qCalc(qi.m, ms12.slice(j - 11, j + 1).map((_, z) => j - 11 + z))?.roe }).filter(p => p && p.v != null) : [];
+    const roeL = (roeI.length ? [{ name: qi.curto, pts: roeI, c: cQ, w: 3 }] : []).concat([{ name: e.nome, pts: A.r12.map(z => ({ d: z.d, v: z.roe })), c: cor(e.cor), w: roeI.length ? 2.2 : 3, dash: roeI.length ? tracoSe(cQ, cor(e.cor)) : undefined }, { name: "Cooperativas", pts: Q.agg.coop.r12.map(z => ({ d: z.d, v: z.roe })), c: css("--grafite-2"), w: 1.6 }, { name: "Bancos", pts: Q.agg.bancos.r12.map(z => ({ d: z.d, v: z.roe })), c: css("--faint"), w: 1.6, dash: "4 3" }]);
     const tab = CMP.filter(id => qR12(id)).map(id => { const z = qR12(id), ee = qEsc(id);
       return `<tr${id === qs.esc ? ' style="background:var(--panel)"' : ""}><td><span class="dot" style="background:${cor(ee.cor)}"></span>${esc(ee.nome)}</td><td class="num">${brlMi(z.lucro)}</td><td class="num"><b>${nf(z.roe, 1)}%</b></td><td class="num">${nf(z.roa, 2)}%</td><td class="num">${nf(z.efic, 1)}%</td>
         ${["r_cred", "r_tes", "r_serv"].map(p => `<td class="num">${nf(z[p], 1)}%</td>`).join("")}${["d_capt", "d_prov", "d_pess", "d_adm", "d_depr"].map(p => `<td class="num">${nf(z[p], 1)}%</td>`).join("")}</tr>`; }).join("");
     const link = `<a href="${esc(Q.meta.url)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>`;
     $("#view").innerHTML = `<div><div class="eyebrow">${esc(PT)} · ${A.n} instituições no escopo</div><h2>Resultados · ${esc(e.nome)}</h2>
       <p class="lede">Lucro ou sobras, rentabilidade, eficiência, de onde vem a receita e para onde ela vai, no período escolhido: ${esc(PT)}. Base mensal dos balancetes. No acumulado do exercício e no mensal, ROE e ROA aparecem anualizados.</p></div>
-      ${kp}
-      <div class="grid2">${block(`Da receita ao resultado · ${esc(e.nome)}`, `% da receita total · ${esc(PT)}`, waterfall(x), `Receita total = crédito + tesouraria líquida + serviços e tarifas + outras receitas (R$ ${brlMi(x.rec).replace("R$ ", "")}). ${link}`)}
-        ${block("Lucro ou sobras por semestre", esc(e.nome), sb + tsChart(roeL, { unit: "%", fmt: v => nf(v, 1), h: 170, label: "ROE 12 meses" }), `ROE em 12 meses (linhas): lucro dos últimos 12 meses sobre o PL médio. Juros ao capital das cooperativas somados de volta ao resultado, como no IF.data. ${link}`)}</div>
+      ${fx}${kp}
+      <div class="grid2">${block(`Da receita ao resultado · ${esc(nV)}`, `% da receita total · ${esc(PT)}`, waterfall(xv), `Receita total = crédito + tesouraria líquida + serviços e tarifas + outras receitas (R$ ${brlMi(xv.rec).replace("R$ ", "")}). ${link}`)}
+        ${block("Lucro ou sobras por semestre", esc(nV), sb + tsChart(roeL, { unit: "%", fmt: v => nf(v, 1), h: 170, label: "ROE 12 meses" }), `ROE em 12 meses (linhas): lucro dos últimos 12 meses sobre o PL médio. Juros ao capital das cooperativas somados de volta ao resultado, como no IF.data. ${link}`)}</div>
       <div class="grid2">${block("De onde vem a receita", `% da receita total · ${esc(PT)}`, stack100(rowsC, REC, { label: "Composição da receita" }), `Tesouraria inclui, nas cooperativas, a remuneração da centralização financeira (ingressos de depósitos intercooperativos). ${link}`)}
         ${block("Para onde vai a receita", `% da receita total · ${esc(PT)}`, stack100(rowsC, DESP, { label: "Despesas e resultado" }), `Provisão líquida de reversões e recuperações de créditos baixados. ${link}`)}</div>
       ${blocosCredRes(e, x, PT, link)}
@@ -1498,9 +1627,9 @@ function renderResRank() {
     <div class="rank-tools"><div class="fgroup"><span class="flabel">Ordenar por</span><div class="seg">${ord("lucro", "Lucro")}${ord("roe", "ROE")}${ord("roa", "ROA")}${ord("efic", "Eficiência")}${ord("vs", "Lucro semestre a/a")}${ord("d_capt", "Captação")}${ord("d_prov", "Provisão")}${ord("d_pess", "Pessoal")}${ord("d_adm", "Adm.")}</div></div>
     <input id="qbusca" type="search" placeholder="Buscar instituição ou CNPJ" value="${esc(qs.busca)}" aria-label="Buscar instituição"></div>
     <div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Lucro</th><th class="num">Semestre a/a</th><th class="num">ROE</th><th class="num">ROA</th><th class="num">Eficiência</th><th class="num">Rec. crédito</th><th class="num">Captação</th><th class="num">Provisão</th><th class="num">Pessoal</th><th class="num">Adm.</th><th class="num">Deprec.</th></tr></thead><tbody>
-    ${shown.map(i => { const z = cache.get(i.id) || {}, v = vs(i); return `<tr><td><div class="inst-name"><span class="dot" style="background:${colI(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 50))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
+    ${pinaLinha(list, shown, i => i.id === INSTG, (i, k, c) => { const z = cache.get(i.id) || {}, v = vs(i); return `<tr${c ? ` class="${c}"` : ""}><td><div class="inst-name"><span class="dot" style="background:${colI(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${c.includes("pino") ? `<span class="tag">${k + 1}ª</span>` : ""}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small title="${esc(i.nome)}">${esc((i.nome || "").slice(0, 50))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
       <td class="num ${z.lucro < 0 ? "down" : ""}">${brlMi(z.lucro)}</td><td class="num ${cls(v)}">${v == null ? "—" : sgn(v)}</td><td class="num"><b>${z.roe == null ? "—" : nf(z.roe, 1) + "%"}</b></td><td class="num">${z.roa == null ? "—" : nf(z.roa, 2) + "%"}</td><td class="num">${z.efic == null ? "—" : nf(z.efic, 1) + "%"}</td>
-      ${["r_cred", "d_capt", "d_prov", "d_pess", "d_adm", "d_depr"].map(p => `<td class="num">${z[p] == null ? "—" : nf(z[p], 1) + "%"}</td>`).join("")}</tr>`; }).join("") || `<tr><td colspan="12" class="empty">Nenhuma instituição encontrada.</td></tr>`}
+      ${["r_cred", "d_capt", "d_prov", "d_pess", "d_adm", "d_depr"].map(p => `<td class="num">${z[p] == null ? "—" : nf(z[p], 1) + "%"}</td>`).join("")}</tr>`; }) || `<tr><td colspan="12" class="empty">Nenhuma instituição encontrada.</td></tr>`}
     </tbody></table></div>
     ${list.length > 25 && !q ? `<button class="linkbtn" id="qmore" type="button">${qs.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
     <div class="meta">Lucro e indicadores: ${esc(qPerTxt())}${qAnual() ? " (ROE e ROA anualizados)" : ""}. "Semestre a/a": lucro do semestre ${sAt.replace("S", "º sem/")} contra o mesmo semestre do ano anterior (só quando o anterior foi positivo). Receitas e despesas em % da receita total. <a href="${esc(Q.meta.url)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>.</div>`;
@@ -1520,8 +1649,7 @@ function fichaPeer(i) {
   return i.central || (i.escopos.includes("sicoob_mg") ? "sicoob_mg" : i.tipo === "coop" ? (["sicoob", "sicredi", "cresol"].includes(i.sistema) ? i.sistema : "coop") : "bancos");
 }
 function filtrosFicha(i, peer) {
-  const opts = P.inst.slice().sort((a, b) => a.curto.localeCompare(b.curto, "pt-BR")).map(x => `<option value="${esc(x.curto)}">${esc(x.nome.slice(0, 60))}</option>`).join("");
-  $("#filters").innerHTML = `<div class="frow">${segModo()}</div><div class="frow"><label class="fgroup"><span class="flabel">Instituição</span><input id="fbusca" class="sel" list="flist" placeholder="Nome, número ou CNPJ" value="${esc(i.curto)}" style="min-width:16rem"><datalist id="flist">${opts}</datalist></label>
+  $("#filters").innerHTML = `<div class="frow">${segModo()}</div><div class="frow">${seletorInst(listaP(), { valor: i.curto, ph: "Nome, número ou CNPJ" })}
     <div class="fgroup"><span class="flabel">Comparar com</span>${PEERS.filter(([k]) => i.escopos.includes(k)).map(([k, n]) => `<button class="chip" type="button" data-fpeer="${k}" aria-pressed="${peer === k}">${n}</button>`).join("")}</div></div>`;
 }
 function abreFicha(id) { fsel.id = id; fsel.peer = ""; fsel.modo = "inst"; try { localStorage.setItem("ficha", JSON.stringify(fsel)); } catch (e) {} location.hash = "ficha-" + id; }
@@ -1544,6 +1672,12 @@ document.addEventListener("change", (ev) => {
   if (x) abreFicha(x.id);
 });
 const linkFicha = (id, txt) => `<a href="#ficha-${esc(id)}" data-ficha="${esc(id)}" class="ficha-link">${txt}</a>`;
+function safraDe(id) {                // contratado na safra corrente (Brasil) contra o mesmo ponto, pelo identificador do filtro de instituição
+  if (!D) return null;
+  const S0 = D.meta.safra_atual, rows = D.inst.filter(x => idSicor(x.tipo, x.cnpj, x.cong) === id); if (!rows.length) return null;
+  let a = 0, p = 0, q = 0; rows.forEach(x => { const v = x.BR?.[S0]; if (v) { a += sum4(v.a); p += v.p; q += v.q; } });
+  return { a, p, q, v: p ? pct(a, p) : null };
+}
 function safraDaInst(i) {             // soma as linhas do SICOR da instituição (bancos: membros do conglomerado prudencial)
   const membros = D.inst.filter(x => i.tipo === "coop" ? x.cnpj === i.id : x.cong === i.id);
   if (!membros.length) return null;
@@ -1560,6 +1694,7 @@ function renderFicha() {
   const hid = location.hash.slice(1).replace(/^ficha-?/, "");
   if (hid.startsWith("g-") && FGRUPOS.some(g => g[0] === hid.slice(2))) { fsel.modo = "grupo"; fsel.grupo = hid.slice(2); }
   else if (hid && P.inst.some(i => i.id === hid)) { fsel.id = hid; fsel.modo = "inst"; }
+  else if (!hid && INSTG && fsel.modo === "inst" && P.inst.some(i => i.id === INSTG)) fsel.id = INSTG;     // aba aberta sem instituição no endereço: a do filtro comum
   if (fsel.modo === "grupo") { if (!precisa(["carteira"])) { esperando("Carregando a carteira do grupo…"); return; } return renderFichaGrupo(); }
   cid = 0;
   try {
@@ -1868,7 +2003,7 @@ function blocoShare(co, e, lC) {          // participação de mercado ao longo 
 function renderCarteira() {
   if (!precisa(["carteira", "safra"])) { esperando(Cerr ? `Os dados não carregaram (${esc(Cerr)}). Recarregue a página.` : "Carregando a composição da carteira…"); return; }
   cid = 0;
-  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(C.escopos.map(e => e.id), cs.esc, (id) => { cs.esc = id; try { localStorage.setItem("cart-filtros", JSON.stringify(cs)); } catch (e) {} })}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(C.escopos.map(e => e.id), cs.esc, (id) => { cs.esc = id; try { localStorage.setItem("cart-filtros", JSON.stringify(cs)); } catch (e) {} })}${seletorInst(C.inst.map(i => ({ id: i.id, curto: i.curto, nome: i.nome })))}</div>`;
   $("#stamp").textContent = `Cosif até ${ym(C.meta.refs.cosif)} · SICOR até ${dmy(D.meta.ref)}`;
   try {
     const co = C.cosif, e = C.escopos.find(x => x.id === cs.esc), A = co[cs.esc] || [], S = co.sfn || [], l = lastP(A), ls = lastP(S), sfn = cs.esc === "sfn";
@@ -1886,19 +2021,30 @@ function renderCarteira() {
       ${kpiBox("Empréstimos e financiamentos", nf(l.p_emp + l.p_fin, 1), "%", `empréstimos ${nf(l.p_emp, 0)}% · financiamentos ${nf(l.p_fin, 0)}%`, "flat", `${ref(nf(ls.p_emp + ls.p_fin, 1) + "%")}${ym(l.d)} · Cosif`)}
       ${kpiBox(`Safra ${safraLbl(D.meta.safra_atual)} contratada`, sf ? brl(sf.a, 1).replace("R$ ", "") : "sem dado", "", sf ? `${arrow(sf.v)}${sgn(sf.v)} contra o mesmo ponto` : "recorte fora do SICOR", sf ? cls(sf.v) : "flat", `${sf && !sfn ? `SFN: ${sgn(sfS?.v)} · ` : ""}até ${dmy(D.meta.ref)} · SICOR${tagNovo(D.meta.novo_desde)}`)}
     </div>`;
+    // instituição escolhida no filtro (opcional): carteira e composição dos balancetes, safra do SICOR
+    const ci = INSTG ? C.inst.find(i => i.id === INSTG) : null, cI = ci ? corDe(ci) : null, membro = ci && !sfn && ci.escopos.includes(cs.esc), sfI = ci ? safraDe(INSTG) : null, nE = esc(e.nome);
+    const fx = faixaInst({ i: ci, contra: e.nome, falta: INSTG && !ci ? "sem balancete Cosif publicado nesta data (a aba usa a carteira dos balancetes)" : "",
+      meta: ci && !membro && !sfn ? `Fora do recorte ${nE}: os números do recorte servem só de referência.` : "", kpis: ci ? `<div class="kpis">
+      ${kpiBox("Carteira de crédito", biCart(ci.tot), "", `${arrow(ci.cresc)}${sgn(ci.cresc)} em 12 meses`, cls(ci.cresc), `${nE}: ${sgn(g)} · ${ym(l.d)} · Cosif`)}
+      ${kpiBox(membro ? `Participação em ${nE}` : "Participação no SFN", nf(ci.tot / (membro ? l.tot : ls.tot) * 100, 2), "%", membro ? `${nf(ci.tot / ls.tot * 100, 3)}% do SFN` : "", "flat", `saldo da conta 1600 · ${ym(l.d)} · Cosif`)}
+      ${kpiBox("Rural na carteira", nf(ci.p_rur, 1), "%", `carteira rural ${biCart(ci.rur)}`, "flat", `${nE}: ${nf(l.p_rur, 1)}% · Cosif`)}
+      ${kpiBox("Carteira rural · 12 meses", sgn(ci.cresc_rur).replace("%", ""), ci.cresc_rur == null ? "" : "%", "", cls(ci.cresc_rur), `${nE}: ${sgn(gr)} · Cosif`)}
+      ${kpiBox("Empréstimos e financiamentos", nf(ci.p_emp + ci.p_fin, 1), "%", `empréstimos ${nf(ci.p_emp, 0)}% · financiamentos ${nf(ci.p_fin, 0)}%`, "flat", `${nE}: ${nf(l.p_emp + l.p_fin, 1)}% · Cosif`)}
+      ${kpiBox(`Safra ${safraLbl(D.meta.safra_atual)} contratada`, sfI ? brl(sfI.a, 1).replace("R$ ", "") : "sem dado", "", sfI && sfI.v != null ? `${arrow(sfI.v)}${sgn(sfI.v)} contra o mesmo ponto` : sfI ? "" : "sem operação no SICOR", sfI ? cls(sfI.v) : "flat", `${sf ? `${nE}: ${sgn(sf.v)} · ` : ""}até ${dmy(D.meta.ref)} · SICOR`)}
+    </div>` : "" });
     const pai = paiDe(cs.esc), idsL = ["sfn", pai, cs.esc].filter((v, i, a) => v && a.indexOf(v) === i);
     const evL = idsL.map(id => { const x = C.escopos.find(z => z.id === id); return { name: x.nome, pts: indexa(co[id]), c: cor(x.cor), w: id === cs.esc ? 3 : 1.6 }; });
     const PARTS = [["p_emp", "Empréstimos", "#2B6F8A"], ["p_fin", "Financiamentos", "#7A9CB0"], ["p_rur", "Rural", "#4E8A3E"], ["p_imo", "Imobiliário", "#C08A2E"], ["p_out", "Outros", "#B9BFC4"]];
     const ids = CMP2.filter(id => co[id]?.length).concat(CMP2.includes(cs.esc) ? [] : [cs.esc]);
-    const rows = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: lastP(co[id]), sel: id === cs.esc }));
-    const gI = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: crescSerie(co[id]), c: cor(C.escopos.find(x => x.id === id).cor), sel: id === cs.esc }));
+    const rows = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: lastP(co[id]), sel: id === cs.esc })).concat(ci ? [{ name: ci.curto, v: ci, sel: true }] : []);
+    const gI = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: crescSerie(co[id]), c: cor(C.escopos.find(x => x.id === id).cor), sel: id === cs.esc })).concat(ci ? [{ name: ci.curto, v: ci.cresc, c: cI, sel: true }] : []);
     const inst = C.inst.filter(i => sfn || i.escopos.includes(cs.esc)).filter(i => i.cresc != null);
-    const top = inst.slice().sort((a, b) => b.tot - a.tot).slice(0, 15), totE = inst.reduce((s_, i) => s_ + i.tot, 0);
-    const instRows = top.map(i => `<tr><td><div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}<small>${esc(i.nome.slice(0, 44))}${i.uf ? " · " + i.uf : ""}</small></span></div></td><td class="num">${biCart(i.tot)}</td><td class="num">${totE ? nf(i.tot / totE * 100, 1) + "%" : "—"}</td><td class="num ${cls(i.cresc)}">${sgn(i.cresc)}</td>${PARTS.slice(0, 4).map(([k]) => `<td class="num">${nf(i[k], 0)}%</td>`).join("")}</tr>`).join("");
+    const ordI = inst.slice().sort((a, b) => b.tot - a.tot), top = ordI.slice(0, 15), totE = inst.reduce((s_, i) => s_ + i.tot, 0);
+    const instRows = pinaLinha(ordI, top, i => i.id === INSTG, (i, k, c) => `<tr${c ? ` class="${c}"` : ""}><td><div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${c.includes("pino") ? `<span class="tag">${k + 1}ª maior</span>` : ""}<small>${esc(i.nome.slice(0, 44))}${i.uf ? " · " + i.uf : ""}</small></span></div></td><td class="num">${biCart(i.tot)}</td><td class="num">${totE ? nf(i.tot / totE * 100, 1) + "%" : "—"}</td><td class="num ${cls(i.cresc)}">${sgn(i.cresc)}</td>${PARTS.slice(0, 4).map(([k]) => `<td class="num">${nf(i[k], 0)}%</td>`).join("")}</tr>`);
     const lC = `<a href="${esc(C.meta.url_cosif)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>`;
     $("#view").innerHTML = `<div><div class="eyebrow">Cosif ${ym(C.meta.refs.cosif)} · SICOR até ${dmy(D.meta.ref)}</div><h2>Perfil da carteira · ${esc(e.nome)}</h2>
       <p class="lede">Tamanho, crescimento e composição da carteira de ${esc(e.nome)}, com o SFN como referência. Saldo, concessões e modalidades do sistema estão na <a href="#visao">Visão geral do SFN</a>.</p></div>
-      ${kp}
+      ${fx}${kp}
       <div class="grid2">${block("Evolução da carteira", `Índice, ${ym(S[0]?.d || l.d)} = 100 · mensal`, tsChart(evL, { fmt: v => nf(v, 0), label: "Carteira indexada" }), `Conta 1600 (operações de crédito) dos balancetes · ${lC}`)}
         ${block("Crescimento da carteira em 12 meses", `${ym(C.meta.refs.cosif)} contra ${ym(C.meta.ant)} · operações de crédito`, divergingBars(gI, { label: "Crescimento por escopo" }), `Conta 1600 dos balancetes. ${lC}`)}</div>
       ${blocoShare(co, e, lC)}
@@ -1919,7 +2065,7 @@ const FONTES = [["f_livres", "Recursos livres", "#7A9CB0"], ["f_avista", "Exigib
 function renderRural() {
   if (!precisa(["carteira"])) { esperando(Cerr ? `Os dados não carregaram (${esc(Cerr)}). Recarregue a página.` : "Carregando a carteira rural…"); return; }
   cid = 0;
-  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(C.escopos.map(e => e.id), rus.esc, (id) => { rus.esc = id; try { localStorage.setItem("rural-filtros", JSON.stringify({ esc: rus.esc })); } catch (e) {} })}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(C.escopos.map(e => e.id), rus.esc, (id) => { rus.esc = id; try { localStorage.setItem("rural-filtros", JSON.stringify({ esc: rus.esc })); } catch (e) {} })}${seletorInst(C.inst.map(i => ({ id: i.id, curto: i.curto, nome: i.nome })))}</div>`;
   $("#stamp").textContent = `Cosif até ${ym(C.meta.refs.cosif)}`;
   try {
     const co = C.cosif, e = C.escopos.find(x => x.id === rus.esc), A = co[rus.esc] || [], S = co.sfn || [], l = lastP(A), ls = lastP(S), sfn = rus.esc === "sfn";
@@ -1936,20 +2082,32 @@ function renderRural() {
       ${kpiBox("Recursos livres", nf(l.f_livres, 1), "%", "da carteira rural", "flat", `${ref(nf(ls.f_livres, 1) + "%")}${ym(l.d)} · Cosif`)}
       ${kpiBox("Fontes públicas e repasses", nf(l.f_pub, 1), "%", "da carteira rural", "flat", `${ref(nf(ls.f_pub, 1) + "%")}${ym(l.d)} · Cosif`)}
     </div>`;
+    // instituição escolhida no filtro (opcional)
+    const ci = INSTG ? C.inst.find(i => i.id === INSTG) : null, cI = ci ? corDe(ci) : null, membro = ci && !sfn && ci.escopos.includes(rus.esc), nE = esc(e.nome);
+    const fzI = ci ? FONTES.map(([k, n]) => [n, ci[k]]).filter(x => x[1] != null).sort((a, b) => b[1] - a[1])[0] : null;
+    const fx = faixaInst({ i: ci, contra: e.nome, falta: INSTG && !ci ? "sem balancete Cosif publicado nesta data" : ci && !(ci.rur > 0) ? "sem carteira rural no balancete" : "",
+      meta: ci && !membro && !sfn ? `Fora do recorte ${nE}: os números do recorte servem só de referência.` : "", kpis: ci ? `<div class="kpis">
+      ${kpiBox("Carteira rural", biCart(ci.rur), "", `${arrow(ci.cresc_rur)}${sgn(ci.cresc_rur)} em 12 meses`, cls(ci.cresc_rur), `${nE}: ${sgn(gr)} · ${ym(l.d)} · Cosif`)}
+      ${kpiBox(membro ? `Participação no rural de ${nE}` : "Participação no rural do SFN", nf(ci.rur / (membro ? l.rur : ls.rur) * 100, 2), "%", membro ? `${nf(ci.rur / ls.rur * 100, 3)}% do rural do SFN` : "", "flat", `conta 1630 · ${ym(l.d)} · Cosif`)}
+      ${kpiBox("Rural na carteira", nf(ci.p_rur, 1), "%", `carteira total ${biCart(ci.tot)}`, "flat", `${nE}: ${nf(l.p_rur, 1)}% · Cosif`)}
+      ${kpiBox("Principal fonte de recursos", fzI ? nf(fzI[1], 0) : "—", "%", fzI ? fzI[0] : "", "flat", `% da carteira rural · ${ym(l.d)} · Cosif`)}
+      ${kpiBox("Recursos livres", nf(ci.f_livres, 1), "%", "da carteira rural", "flat", `${nE}: ${nf(l.f_livres, 1)}% · Cosif`)}
+      ${kpiBox("Fontes públicas e repasses", nf(ci.f_pub, 1), "%", "da carteira rural", "flat", `${nE}: ${nf(l.f_pub, 1)}% · Cosif`)}
+    </div>` : "" });
     const pai = paiDe(rus.esc), idsL = ["sfn", pai, rus.esc].filter((v, i, a) => v && a.indexOf(v) === i);
     const evL = idsL.map(id => { const x = C.escopos.find(z => z.id === id); return { name: x.nome, pts: indexa(co[id], "rur"), c: cor(x.cor), w: id === rus.esc ? 3 : 1.6 }; });
-    const ids = CMP2.filter(id => co[id]?.length).concat(CMP2.includes(rus.esc) ? [] : [rus.esc]);
-    const rowsF = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: lastP(co[id]), sel: id === rus.esc }));
-    const shareB = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: crescSerie(co[id], "rur"), c: cor(C.escopos.find(x => x.id === id).cor), sel: id === rus.esc }));
+    const ids = CMP2.filter(id => co[id]?.length).concat(CMP2.includes(rus.esc) ? [] : [rus.esc]), cRur = ci && ci.rur > 0;
+    const rowsF = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: lastP(co[id]), sel: id === rus.esc })).concat(cRur ? [{ name: ci.curto, v: ci, sel: true }] : []);
+    const shareB = ids.map(id => ({ name: C.escopos.find(x => x.id === id).nome, v: crescSerie(co[id], "rur"), c: cor(C.escopos.find(x => x.id === id).cor), sel: id === rus.esc })).concat(cRur ? [{ name: ci.curto, v: ci.cresc_rur, c: cI, sel: true }] : []);
     let inst = C.inst.filter(i => sfn || i.escopos.includes(rus.esc)).filter(i => i.rur > 0);
     inst.sort((a, b) => ((b[rus.ord] ?? -1e9) - (a[rus.ord] ?? -1e9)));
     const ord = (k, n) => `<button type="button" data-uord="${k}" aria-pressed="${rus.ord === k}">${n}</button>`;
-    const instRows = inst.slice(0, 30).map((i, k) => `<tr><td class="num">${k + 1}</td><td><div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small>${esc(i.nome.slice(0, 44))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
-      <td class="num">${biCart(i.rur)}</td><td class="num ${cls(i.cresc_rur)}">${sgn(i.cresc_rur)}</td><td class="num">${nf(i.p_rur, 1)}%</td>${FONTES.map(([k2]) => `<td class="num">${i[k2] == null ? "—" : nf(i[k2], 0) + "%"}</td>`).join("")}</tr>`).join("");
+    const instRows = pinaLinha(inst, inst.slice(0, 30), i => i.id === INSTG, (i, k, c) => `<tr${c ? ` class="${c}"` : ""}><td class="num">${k + 1}</td><td><div class="inst-name"><span class="dot" style="background:${instCor2(i)}"></span><span>${linkFicha(i.id, esc(i.curto))}${i.central ? `<span class="tag">${i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small>${esc(i.nome.slice(0, 44))}${i.uf ? " · " + i.uf : ""}</small></span></div></td>
+      <td class="num">${biCart(i.rur)}</td><td class="num ${cls(i.cresc_rur)}">${sgn(i.cresc_rur)}</td><td class="num">${nf(i.p_rur, 1)}%</td>${FONTES.map(([k2]) => `<td class="num">${i[k2] == null ? "—" : nf(i[k2], 0) + "%"}</td>`).join("")}</tr>`);
     const lC = `<a href="${esc(C.meta.url_cosif)}" target="_blank" rel="noopener">Balancetes Cosif, Banco Central</a>`;
     $("#view").innerHTML = `<div><div class="eyebrow">Cosif ${ym(C.meta.refs.cosif)}</div><h2>Carteira rural: estoque · ${esc(e.nome)}</h2>
       <p class="lede">Estoque da carteira rural de ${esc(e.nome)}: saldo, crescimento e fonte de recursos, com o SFN como referência. Tudo aqui é estoque, dos balancetes Cosif. O que foi contratado na safra está na aba <a href="#safra">Safra de crédito rural / contratações</a>; inadimplência rural e carteira por finalidade do sistema, na aba <a href="#ruralsfn">Crédito rural no SFN</a>.</p></div>
-      ${kp}
+      ${fx}${kp}
       <div class="grid2">${block("Evolução da carteira rural", `Índice, ${ym(S[0]?.d || l.d)} = 100 · mensal`, tsChart(evL, { fmt: v => nf(v, 0), label: "Carteira rural indexada" }), `Conta 1630 (financiamentos rurais) dos balancetes · ${lC}`)}
         ${block("Crescimento da carteira rural em 12 meses", `${ym(C.meta.refs.cosif)} contra ${ym(C.meta.ant)}`, divergingBars(shareB, { label: "Crescimento rural" }), `Conta 1630 dos balancetes. ${lC}`)}</div>
       ${block("Carteira rural por fonte de recursos", `% da carteira rural · ${ym(C.meta.refs.cosif)}`, stack100(rowsF, FONTES, { label: "Fonte de recursos" }), `Contas 1630500003 (livres), 1631500002 (exigibilidade à vista), 1632500001 (poupança rural), 1633500000 (LCA) e 1634500009 (fontes públicas, inclui repasses oficiais). ${lC}`)}
@@ -2006,7 +2164,7 @@ function renderRankings() {
   $("#filters").innerHTML = `<div class="frow">${seletorRecorte(uniIds(), rks.uni, (id) => { rks.uni = id; try { localStorage.setItem("rank-filtros", JSON.stringify(rks)); } catch (e) {} }, { label: "Grupo" })}</div>
     <div class="frow"><label class="fgroup"><span class="flabel">Indicador</span><select id="kind" class="sel">${IND.map(([g, l]) => `<optgroup label="${esc(g)}">${l.map(([k, n]) => `<option value="${k}"${k === rks.ind ? " selected" : ""}>${esc(n)}</option>`).join("")}</optgroup>`).join("")}</select></label>
     <div class="fgroup"><span class="flabel">Ordem</span><div class="seg"><button type="button" data-kdir="desc" aria-pressed="${rks.dir === "desc"}">Maior primeiro</button><button type="button" data-kdir="asc" aria-pressed="${rks.dir === "asc"}">Menor primeiro</button></div></div>
-    <div class="fgroup"><span class="flabel">Mostrar</span><div class="seg">${[10, 25, 50, 999].map(n => `<button type="button" data-kn="${n}" aria-pressed="${rks.n === n}">${n === 999 ? "Todas" : n}</button>`).join("")}</div></div></div>`;
+    <div class="fgroup"><span class="flabel">Mostrar</span><div class="seg">${[10, 25, 50, 999].map(n => `<button type="button" data-kn="${n}" aria-pressed="${rks.n === n}">${n === 999 ? "Todas" : n}</button>`).join("")}</div></div>${seletorInst(listaP())}</div>`;
   $("#stamp").textContent = `IF.data ${ym(P.meta.ref)} · Cosif ${ym(Q.meta.ref)} · SICOR ${dmy(D.meta.ref)}`;
   try {
     const cache = { res: new Map(Q.inst.map(i => [i.id, i])), cart: new Map(C.inst.map(i => [i.id, i])), saf: new Map() };
@@ -2016,20 +2174,31 @@ function renderRankings() {
     lst.sort((a, b) => rks.dir === "asc" ? a.v - b.v : b.v - a.v);
     const isPct = PCT_IND.includes(rks.ind), fmtV = (v) => isPct ? nf(v, Math.abs(v) >= 100 ? 0 : 1) + "%" : rks.ind === "lucro" ? brlMi(v) : rks.ind === "safra" ? brl(v, 1) : biCart(v);
     const md = median(lst.map(x => x.v)), shown = lst.slice(0, rks.n);
-    const W = 640, rowH = 22, L = 170, R2 = 80, T = 4, H = T + shown.length * rowH + 6;
-    const mn = Math.min(0, ...shown.map(x => x.v)), mx = Math.max(0, ...shown.map(x => x.v)) || 1;
+    // instituição escolhida no filtro: barra destacada; fora das mostradas, aparece no fim com a posição real
+    const kI = INSTG ? lst.findIndex(x => x.i.id === INSTG) : -1, extra = kI >= shown.length ? lst[kI] : null, barras = shown.concat(extra ? [extra] : []);
+    const W = 640, rowH = 22, L = 170, R2 = 80, T = 4, H = T + barras.length * rowH + 6 + (extra ? 10 : 0);
+    const mn = Math.min(0, ...barras.map(x => x.v)), mx = Math.max(0, ...barras.map(x => x.v)) || 1;
     const X = (v) => L + (W - L - R2) * (v - mn) / (mx - mn || 1);
     let g = `<line x1="${X(0)}" x2="${X(0)}" y1="${T}" y2="${H - 4}" class="axis"/>`;
     if (md != null) g += `<line x1="${X(md)}" x2="${X(md)}" y1="${T}" y2="${H - 4}" stroke="var(--grafite-2)" stroke-dasharray="4 3"/>`;
-    shown.forEach((x, k) => { const y = T + k * rowH + 3, h = rowH - 7, x0 = Math.min(X(0), X(x.v)), w = Math.max(1.5, Math.abs(X(x.v) - X(0)));
-      g += `<text x="${L - 8}" y="${y + h / 2 + 4}" text-anchor="end">${k + 1}. ${esc(x.i.curto.slice(0, 24))}</text><rect x="${x0}" y="${y}" width="${w}" height="${h}" rx="2" fill="${instCor2(x.i)}"><title>${esc(x.i.curto)}: ${fmtV(x.v)}</title></rect><text x="${Math.max(X(0), X(x.v)) + 5}" y="${y + h / 2 + 4}" class="lbl-strong">${fmtV(x.v)}</text>`; });
+    barras.forEach((x, k) => { const y = T + k * rowH + 3 + (x === extra ? 10 : 0), h = rowH - 7, x0 = Math.min(X(0), X(x.v)), w = Math.max(1.5, Math.abs(X(x.v) - X(0))), sel = x.i.id === INSTG;
+      g += `<text x="${L - 8}" y="${y + h / 2 + 4}" text-anchor="end"${sel ? ' class="lbl-strong"' : ""}>${x === extra ? kI + 1 : k + 1}. ${esc(x.i.curto.slice(0, 24))}</text><rect x="${x0}" y="${y}" width="${w}" height="${h}" rx="2" fill="${instCor2(x.i)}"${sel ? ' stroke="var(--ink)" stroke-width="2"' : ""}><title>${esc(x.i.curto)}: ${fmtV(x.v)}</title></rect><text x="${Math.max(X(0), X(x.v)) + 5}" y="${y + h / 2 + 4}" class="lbl-strong">${fmtV(x.v)}</text>`; });
     const chart = `<svg class="chart" viewBox="0 0 ${W} ${H}" role="img" aria-label="Ranking">${g}</svg>`;
+    let fx = "";
+    if (INSTG) { const pI = P.inst.find(i => i.id === INSTG), noG = pI && uni.includes(pI);
+      if (pI && !noG && ["safra", "safra_var"].includes(rks.ind)) { const sf = safraDaInst(pI); if (sf) cache.saf.set(pI.id, sf); }
+      const vI = pI ? valorRank(pI, rks.ind, cache) : null, ok = vI != null && isFinite(vI), pos = ok ? (noG ? kI + 1 : lst.filter(x => rks.dir === "asc" ? x.v < vI : x.v > vI).length + 1) : null;
+      fx = faixaInst({ i: pI, contra: rNome(rks.uni), falta: !pI ? "fora do IF.data nesta data" : !ok ? `sem dado de ${INDN[rks.ind].toLowerCase()}` : "", meta: noG ? "" : `Fora do grupo ${esc(rNome(rks.uni))}: a posição mostra onde a instituição ficaria.`, kpis: ok ? `<div class="kpis">
+        ${kpiBox(noG ? "Posição no grupo" : "Posição contra o grupo", `${pos}ª`, "", `de ${lst.length + (noG ? 0 : 1)} · ${rks.dir === "asc" ? "menor primeiro" : "maior primeiro"}`, "flat", esc(INDN[rks.ind]))}
+        ${kpiBox(esc(INDN[rks.ind]), fmtV(vI), "", md == null ? "" : `${vI >= md ? "acima" : "abaixo"} da mediana`, "flat", `mediana do grupo: ${md == null ? "—" : fmtV(md)}`)}
+        ${kpiBox("Carteira", pFmt("cart", pI.s[P.meta.ref]?.cart), "", "", "flat", `${ym(P.meta.ref)} · IF.data`)}</div>` : "" }); }
     const fonte = { safra: "SICOR", safra_var: "SICOR", rur: "Cosif", cresc_rur: "Cosif", p_rur: "Cosif", lucro: "Cosif (12 meses)", roe12: "Cosif (12 meses)", d_capt: "Cosif (12 meses)", d_prov: "Cosif (12 meses)" }[rks.ind] || "IF.data";
     const refF = fonte === "SICOR" ? `até ${dmy(D.meta.ref)}` : fonte.startsWith("Cosif") ? ym(fonte.includes("12") ? Q.meta.ref : C.meta.refs.cosif) : ym(P.meta.ref);
-    const rows = lst.map((x, k) => `<tr><td class="num">${k + 1}</td><td><div class="inst-name"><span class="dot" style="background:${instCor2(x.i)}"></span><span>${linkFicha(x.i.id, esc(x.i.curto))}${x.i.central ? `<span class="tag">${x.i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small>${esc(x.i.nome.slice(0, 50))}${x.i.uf ? " · " + x.i.uf : ""}</small></span></div></td><td class="num"><b>${fmtV(x.v)}</b></td><td class="num">${md == null ? "—" : (x.v >= md ? "acima" : "abaixo")}</td><td class="num">${pFmt("cart", x.i.s[P.meta.ref]?.cart)}</td></tr>`).join("");
+    const linhaR = (x, k, c) => `<tr${c ? ` class="${c}"` : ""}><td class="num">${k + 1}</td><td><div class="inst-name"><span class="dot" style="background:${instCor2(x.i)}"></span><span>${linkFicha(x.i.id, esc(x.i.curto))}${x.i.central ? `<span class="tag">${x.i.central === "crediminas" ? "Crediminas" : "Cecremge"}</span>` : ""}<small>${esc(x.i.nome.slice(0, 50))}${x.i.uf ? " · " + x.i.uf : ""}</small></span></div></td><td class="num"><b>${fmtV(x.v)}</b></td><td class="num">${md == null ? "—" : (x.v >= md ? "acima" : "abaixo")}</td><td class="num">${pFmt("cart", x.i.s[P.meta.ref]?.cart)}</td></tr>`;
+    const rows = (kI >= 0 ? linhaR(lst[kI], kI, "selp pino") : "") + lst.map((x, k) => linhaR(x, k, x.i.id === INSTG ? "selp" : "")).join("");
     $("#view").innerHTML = `<div><div class="eyebrow">${esc(rNome(rks.uni))} · ${lst.length} instituições com dado · ${fonte}, ${refF}</div><h2>Ranking · ${esc(INDN[rks.ind])}</h2>
       <p class="lede">Escolha o grupo e o indicador. A linha tracejada marca a mediana do grupo (${md == null ? "—" : fmtV(md)}). Clique no nome para abrir a ficha.</p></div>
-      ${block(`${esc(INDN[rks.ind])}`, `${rks.dir === "asc" ? "Menor primeiro" : "Maior primeiro"} · ${shown.length} de ${lst.length}`, chart, `${fonte}, ${refF}. Métodos na aba Fontes e metodologia.`)}
+      ${fx}${block(`${esc(INDN[rks.ind])}`, `${rks.dir === "asc" ? "Menor primeiro" : "Maior primeiro"} · ${shown.length} de ${lst.length}`, chart, `${fonte}, ${refF}. Métodos na aba Fontes e metodologia.`)}
       ${pontosAtencao(uni)}
       ${block("Tabela completa", `${lst.length} instituições`, `<div class="tbl-wrap" style="max-height:640px;overflow-y:auto"><table><thead><tr><th class="num">#</th><th>Instituição</th><th class="num">${esc(INDN[rks.ind])}</th><th class="num">Mediana</th><th class="num">Carteira</th></tr></thead><tbody>${rows}</tbody></table></div>`)}`;
   } catch (err) { $("#view").innerHTML = `<p class="empty">Não foi possível montar a aba: ${esc(err.message)}</p>`; console.error(err); }
@@ -2475,7 +2644,7 @@ function renderReneg() {
   if (!rns.bl) rns.bl = "todas";
   else if (rns.bl !== "todas" && !nasBases.some(r => r.b.cod === rns.bl)) rns.bl = nasBases[0]?.b.cod || "todas";
   const opts = [["todas", "Todas as bases legais"], ...nasBases.map(r => [r.b.cod, rnBase(r.b.cod)])];
-  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(ids, rns.esc, (id) => { rns.esc = id; rns.all = false; salvaRN(); })}
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(ids, rns.esc, (id) => { rns.esc = id; rns.all = false; salvaRN(); })}${seletorInst(listaUnica(RN.inst, idRN, r => Object.values(r.bl || {}).flat().reduce((a, z) => a + (z[1] || 0), 0)))}
     <label class="fgroup"><span class="flabel">Programa de renegociação</span><select class="sel" data-rnbl aria-label="Base legal da renegociação">${opts.map(([k, n]) => `<option value="${k}"${k === rns.bl ? " selected" : ""}>${esc(n)}</option>`).join("")}</select></label></div>
     <div class="frow"><div class="fgroup"><span class="flabel">Safra</span><div class="seg">${SAFRAS.map(s => `<button type="button" data-rnsafra="${s}" aria-pressed="${s === Sx}">${safraLbl(s)}${s === SAr ? " (corrente)" : ""}</button>`).join("")}</div></div>
     <div class="fgroup"><span class="flabel">Período da safra</span><div class="seg">${PER.map(p => `<button type="button" data-rnper="${p[0]}" aria-pressed="${rns.per === p[0]}"${pOn(p) ? (p[0] === "safra" ? "" : ` title="${MES[p[2]]}–${MES[p[3]]}"`) : ` disabled title="Período ainda não começou na safra ${safraLbl(Sx)}"`}>${p[1]}</button>`).join("")}</div></div></div>`;
@@ -2535,18 +2704,36 @@ function renderReneg() {
       const coops = m.filter(r => r.i.tipo === "coop").length, bancos = m.length - coops;
       const nome = SISN[k] ? `Conglomerado ${SISN[k]}` : `${(D.meta.cong_nomes || {})[k] || m.slice().sort((a, b) => b.d[0] - a.d[0])[0].i.curto} (conglomerado)`;
       const det = SISN[k] ? `${coops} cooperativa${coops > 1 ? "s" : ""}${bancos ? " + banco cooperativo" : ""}` : m.map(r => r.i.curto || r.i.nome).join(", ");
-      return { i: { nome: det, curto: nome, grupo: true }, d: sm("d"), a: sm("a") }; }); };
+      return { i: { nome: det, curto: nome, grupo: true, cong: k }, d: sm("d"), a: sm("a") }; }); };
   const lst = (rns.ver === "cong" ? porCong() : base).sort((a, b) => b.d[0] - a.d[0]);
-  const shown = rns.all ? lst : lst.slice(0, 25), nomeI = (i) => i.numero ? `${i.numero} ${i.curto || i.nome}` : (i.curto || i.nome);
+  const shown = rns.all ? lst : lst.slice(0, 25), nomeI = (i) => i.numero && !String(i.curto || "").startsWith(i.numero) ? `${i.numero} ${i.curto || i.nome}` : (i.curto || i.nome);
+  // instituição escolhida no filtro (opcional): soma das linhas do SICOR dela (bancos: conglomerado prudencial)
+  let fx = "";
+  if (INSTG) {
+    const rI = RN.inst.filter(r => idRN(r) === INSTG), sm2 = (set) => rI.reduce((acc, r) => { const v = dI(r, set); return acc.map((z, j) => z + v[j]); }, [0, 0, 0]);
+    const d = sm2(mesesA), a = sm2(mesesB), membro = rns.esc !== "sfn" && rI.some(r => (r.escopos || []).includes(rns.esc)), nE = esc(nmE);
+    const vI = temAnt && a[0] ? (d[0] / a[0] - 1) * 100 : null, G = new Map();
+    RN.inst.filter(r => idRN(r) !== INSTG && (rns.esc === "sfn" || (r.escopos || []).includes(rns.esc))).forEach(r => { const k = idRN(r); G.set(k, (G.get(k) || 0) + dI(r, mesesA)[0]); });
+    const vals = [...G.values()].filter(v => v > 0), pos = d[0] > 0 ? vals.filter(v => v > d[0]).length + 1 : null;
+    const i0 = rI.length ? listaUnica(rI, () => INSTG, r => dI(r, mesesA)[0])[0] : null;
+    fx = faixaInst({ i: i0, contra: nmE, falta: !rI.length ? `sem renegociação de dívida rural no SICOR desde ${mesAno(RN.meta.desde.slice(0, 7))}` : !d[0] ? `sem renegociação ${rns.bl === "todas" ? "" : "nesta base legal "}em ${janela}` : "",
+      meta: membro || rns.esc === "sfn" ? "" : `Fora do recorte ${nE}: participação calculada sobre o SFN.`, kpis: `<div class="kpis">
+      ${kpiBox("Valor renegociado", brlMi(d[0]).replace("R$ ", ""), "", vI == null ? (temAnt ? `sem renegociação em ${safraLbl(Sx - 1)}` : "") : `${arrow(vI)}${sgn(vI)} contra ${ptoAnt}`, "flat", `${perTxt} ${safraLbl(Sx)} · SICOR`)}
+      ${kpiBox(membro ? `Participação em ${nE}` : "Participação no SFN", nf(d[0] / (membro ? x[0] : sf[0]) * 100, 1), "%", membro && sf[0] ? `${nf(d[0] / sf[0] * 100, 2)}% do SFN` : "", "flat", esc(rnBase(rns.bl)))}
+      ${kpiBox("Operações novas", nf(d[1], 0), "", d[1] ? `R$ ${nf(d[0] / d[1] * 1000, 0)} mil por operação` : "", "flat", "geradas pela renegociação")}
+      ${kpiBox("Prazo médio", d[0] && d[2] ? nf(d[2] / d[0], 1) : "—", d[0] && d[2] ? " anos" : "", "", "flat", "da emissão ao vencimento, ponderado pelo valor")}
+      ${kpiBox(membro || rns.esc === "sfn" ? "Posição no recorte" : "Posição contra o recorte", pos == null ? "—" : `${pos}ª`, "", pos == null ? "" : `entre ${vals.length + 1} instituições`, "flat", "pelo valor renegociado no período")}
+    </div>` });
+  }
   const verRN = `<div class="frow" style="margin-bottom:10px"><div class="fgroup"><span class="flabel">Ver por</span><div class="seg"><button type="button" data-rnver="cong" aria-pressed="${rns.ver === "cong"}">Conglomerado</button><button type="button" data-rnver="inst" aria-pressed="${rns.ver !== "cong"}">Instituição (CNPJ)</button></div></div></div>`;
   const tab = `${verRN}<div class="tbl-wrap"><table><thead><tr><th>#</th><th>${rns.ver === "cong" ? "Conglomerado ou instituição" : "Instituição"}</th><th class="num">Valor</th>${temAnt ? `<th class="num">${esc(safraLbl(Sx - 1))}</th>` : ""}<th class="num">Operações</th><th class="num">% de ${esc(nmE)}</th><th class="num">Valor médio</th><th class="num">Prazo médio</th></tr></thead><tbody>
-    ${shown.map((r, k) => `<tr><td class="num">${k + 1}</td><td>${r.i.grupo ? `<b>${esc(r.i.curto)}</b><small title="${esc(r.i.nome)}">${esc(r.i.nome.length > 80 ? r.i.nome.slice(0, 78) + "…" : r.i.nome)}</small>` : `${esc(nomeI(r.i))}${r.i.uf ? `<small>${esc(r.i.uf)}</small>` : ""}`}</td><td class="num"><b>${brlMi(r.d[0])}</b></td>${temAnt ? `<td class="num">${r.a[0] ? brlMi(r.a[0]) : "—"}</td>` : ""}<td class="num">${nf(r.d[1], 0)}</td><td class="num">${nf(r.d[0] / x[0] * 100, 1)}%</td><td class="num">R$ ${nf(r.d[0] / r.d[1] * 1000, 0)} mil</td><td class="num">${r.d[2] ? nf(r.d[2] / r.d[0], 1) + " anos" : "—"}</td></tr>`).join("")}</tbody></table></div>
+    ${pinaLinha(lst, shown, r => r.i.grupo ? r.i.cong === INSTG : idRN(r.i) === INSTG, (r, k, cl) => `<tr${cl ? ` class="${cl}"` : ""}><td class="num">${k + 1}</td><td>${r.i.grupo ? `<b>${esc(r.i.curto)}</b><small title="${esc(r.i.nome)}">${esc(r.i.nome.length > 80 ? r.i.nome.slice(0, 78) + "…" : r.i.nome)}</small>` : `${esc(nomeI(r.i))}${r.i.uf ? `<small>${esc(r.i.uf)}</small>` : ""}`}</td><td class="num"><b>${brlMi(r.d[0])}</b></td>${temAnt ? `<td class="num">${r.a[0] ? brlMi(r.a[0]) : "—"}</td>` : ""}<td class="num">${nf(r.d[1], 0)}</td><td class="num">${nf(r.d[0] / x[0] * 100, 1)}%</td><td class="num">R$ ${nf(r.d[0] / r.d[1] * 1000, 0)} mil</td><td class="num">${r.d[2] ? nf(r.d[2] / r.d[0], 1) + " anos" : "—"}</td></tr>`)}</tbody></table></div>
     ${lst.length > 25 ? `<button class="linkbtn" id="rnmore" type="button">${rns.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${lst.length}`}</button>` : ""}`;
   // bases legais do recorte no período
   const bt = RN.bases.map(b => ({ b, s: tot(rns.esc, b.cod, mesesA), a: tot(rns.esc, b.cod, mesesB), f: tot("sfn", b.cod, mesesA) })).filter(r => r.s[0] > 0).sort((p, q) => q.s[0] - p.s[0]);
   const tabB = `<div class="tbl-wrap"><table><thead><tr><th>Base legal</th><th>Ativa em</th><th class="num">Valor</th>${temAnt ? `<th class="num">${esc(safraLbl(Sx - 1))}</th>` : ""}<th class="num">Contratos</th><th class="num">Prazo</th>${rns.esc !== "sfn" ? '<th class="num">% do SFN</th>' : ""}</tr></thead><tbody>${bt.map(({ b, s, a, f }) => `<tr${b.cod === rns.bl ? ' class="selp"' : ""}><td><b>${esc(b.cod)}</b><small title="${esc((b.oficial || []).join(" | "))}">${esc(rnCods(b))} no SICOR${b.nota ? " · " + esc(b.nota) : ""}</small></td><td>${mesAno(b.ini)}${b.fim !== b.ini ? " a " + mesAno(b.fim) : ""}</td><td class="num">${brlMi(s[0])}</td>${temAnt ? `<td class="num">${a[0] ? brlMi(a[0]) : "—"}</td>` : ""}<td class="num">${nf(s[2], 0)}</td><td class="num">${nf(s[3] / s[0], 1)} anos</td>${rns.esc !== "sfn" ? `<td class="num">${f[0] ? nf(s[0] / f[0] * 100, 1) + "%" : "—"}</td>` : ""}</tr>`).join("")}</tbody></table></div>`;
   const perSub = `${perTxt} ${safraLbl(Sx)} · ${janela}`;
-  $("#view").innerHTML = `${head}${kp}
+  $("#view").innerHTML = `${head}${fx}${kp}
     <div class="grid2">${block("Valor renegociado por mês", `${esc(nmE)} · ${esc(rnBase(rns.bl))} · safra ${safraLbl(Sx)}${temAnt ? ` (cinza: ${safraLbl(Sx - 1)})` : ""}`, mes, `Valor nominal das operações novas, pela data de emissão, nos meses da safra (jul a jun). ${rns.per !== "safra" ? "Meses fora do período escolhido aparecem esmaecidos. " : ""}${lk}`)}
       ${block("Peso da renegociação", `Renegociado no mês sobre o crédito rural contratado no mês, % · ${safraLbl(Sx)}${temAnt ? " e " + safraLbl(Sx - 1) : ""}`, peso, `${pesoTxt} Fluxo contra fluxo: o valor renegociado no mês dividido pelas contratações de crédito rural do mesmo recorte no mesmo mês (todas as finalidades, aba Safra). As renegociações ficam numa tabela própria do SICOR e não estão somadas nas contratações. Não é a participação no estoque da carteira. ${lk}`)}</div>
     <div class="grid2">
@@ -2657,6 +2844,7 @@ function renderRuralSFN() {
 
 /* ===================== Aba Quadro de indicadores por instituição ===================== */
 const qd = { grp: "crediminas", base: "", ord: "cart", dir: "desc", busca: "", all: false };
+const listaP = () => P.inst.map(i => ({ id: i.id, curto: i.curto, nome: i.nome, uf: i.uf, numero: i.numero }));   // filtro de instituição nas abas do IF.data
 // grupos do quadro: todos os recortes do IF.data (posição), mais os 5 maiores bancos; nomes pelo catálogo único
 const qIds = () => [...P.escopos.map(e => e.id), "top5"].filter(id => RECORTES.has(id));
 const QNOME = new Proxy({}, { get: (_, id) => typeof id === "string" && P && qIds().includes(id) ? (id === "sfn" ? "SFN (todas)" : rNome(id)) : undefined });
@@ -2732,7 +2920,7 @@ function renderQuadro() {
   if (!precisa(["posicao", "resultados"])) { esperando(Perr || Qerr ? `Os dados não carregaram. Recarregue a página.` : "Carregando os indicadores do IF.data e os balancetes…"); return; }
   cid = 0;
   if (!QNOME[qd.grp]) qd.grp = "crediminas";
-  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(qIds(), qd.grp, (id) => { qd.grp = id; qd.all = false; try { localStorage.setItem("quadro-filtros", JSON.stringify({ grp: qd.grp, base: qd.base, ord: qd.ord, dir: qd.dir })); } catch (e) {} }, { label: "Grupo" })}</div>`;
+  $("#filters").innerHTML = `<div class="frow">${seletorRecorte(qIds(), qd.grp, (id) => { qd.grp = id; qd.all = false; try { localStorage.setItem("quadro-filtros", JSON.stringify({ grp: qd.grp, base: qd.base, ord: qd.ord, dir: qd.dir })); } catch (e) {} }, { label: "Grupo" })}${seletorInst(listaP())}</div>`;
   $("#stamp").textContent = `IF.data até ${ym(P.meta.ref)} · balancetes até ${ym(Q.meta.ref)}`;
   $("#view").innerHTML = `<div id="qdview"></div>`;
   renderQuadroTab();
@@ -2802,7 +2990,9 @@ function renderQuadroTab() {
       <div class="tbl-wrap qtab"><table><thead><tr><th class="num">#</th><th class="qinst">Instituição</th>${th}</tr></thead><tbody>
         ${!baseIgual && B ? linha(`<b>${esc(QNOME[bk])}</b><small>base de comparação</small>`, B, B12, "qbase", "", false) : ""}
         ${A ? linha(`<b>${esc(QNOME[qd.grp])}</b><small>combinado · ${list.length} instituições${baseIgual ? " · base de comparação" : ""}</small>`, A, A12, "qagg", "", !baseIgual) : ""}
-        ${shown.map((i, k) => { const [x, y] = comR(i.s[t], t12 ? i.s[t12] : null, i.id); return linha(nomeI(i), x, y, "", k + 1); }).join("") || `<tr><td colspan="${QC().length + 2}" class="empty">Nenhuma instituição encontrada.</td></tr>`}
+        ${(() => { const pI = INSTG ? P.inst.find(i => i.id === INSTG && i.s[t]) : null; if (!pI) return ""; const kI = list.indexOf(pI), [x, y] = comR(pI.s[t], t12 ? pI.s[t12] : null, pI.id);
+          return linha(`${nomeI(pI)}<small>instituição escolhida · ${kI >= 0 ? `${kI + 1}ª na ordem atual` : "fora do grupo"}</small>`, x, y, "selp pino", kI >= 0 ? kI + 1 : ""); })()}
+        ${shown.map((i, k) => { const [x, y] = comR(i.s[t], t12 ? i.s[t12] : null, i.id); return linha(nomeI(i), x, y, i.id === INSTG ? "selp" : "", k + 1); }).join("") || `<tr><td colspan="${QC().length + 2}" class="empty">Nenhuma instituição encontrada.</td></tr>`}
       </tbody></table></div>
       ${list.length > 50 && !qd.busca ? `<button class="linkbtn" id="qdmore" type="button">${qd.all ? "Mostrar só as 50 primeiras" : `Mostrar todas as ${list.length}`}</button>` : ""}
       ${qd.busca ? "" : blocoDesenq(list, t, B, bk, RS)}
@@ -2838,7 +3028,7 @@ function renderFontes() {
     ["Cooperativas solteiras", "Singulares sem central de filiação no cadastro do BC."],
     ["Filtro Estado → Recorte → Central", "Estado: Brasil (todos) ou uma UF. Com uma UF, os recortes de cooperativas passam a ser os da UF da sede (ex.: Sicoob SP = singulares Sicoob com sede em SP). Central: cada central de filiação do cadastro do BC, com todas as suas filiadas, de qualquer estado; a lista mostra as centrais do sistema com filiadas no estado escolhido. Na Safra, o local da operação é outra coisa: a UF do empreendimento, de qualquer instituição."],
     ["5 maiores bancos", "Itaú, BB, Bradesco, Caixa e Santander, por conglomerado prudencial."], ["Bancos digitais", "Lista fixa: Nubank, Inter, C6, PagBank, Mercado Pago e BTG, quando presentes na base."]];
-  const RG = [["Organização das abas", "Dois grupos. Grandes números do SFN (Visão geral e Crédito rural no SFN): séries que só existem para o sistema inteiro ou por segmento (SGS e SCR.data), sem filtro de instituição. Sistemas, centrais e instituições (da Safra à Ficha): o recorte escolhido no filtro, com o SFN como referência."], ["Nunca estimar", "Número que deveria vir de uma fonte e não foi encontrado aparece como “—” ou “sem dado”, com o motivo."],
+  const RG = [["Organização das abas", "Dois grupos. Grandes números do SFN (Visão geral e Crédito rural no SFN): séries que só existem para o sistema inteiro ou por segmento (SGS e SCR.data), sem filtro de instituição. Sistemas, centrais e instituições (da Safra à Ficha): o recorte escolhido no filtro, com o SFN como referência. O campo Instituição é opcional e vale para todas essas abas: vazio, a análise é do recorte; com uma instituição, a aba mostra os números dela no topo, a destaca nos gráficos e tabelas e a compara com o recorte. Links para a ficha só navegam e não mudam o filtro."], ["Nunca estimar", "Número que deveria vir de uma fonte e não foi encontrado aparece como “—” ou “sem dado”, com o motivo."],
     ["Data e fonte", "Todo número leva a data de referência e a fonte, com link. Dado novo nos últimos 7 dias recebe o selo “novo”."],
     ["Nomes", "Cooperativas Sicoob aparecem com o número do sistema (ex.: 3047 Credicope), pela lista oficial do Sicoob cruzada com o BC. Demais, pelo nome da razão social. Razão social completa aparece como detalhe."],
     ["Incorporações", "Operações e saldos de instituição incorporada entram na incorporadora em todo o histórico, para comparar bases iguais. Fonte: quadro de alterações societárias do BC; para casos recentes, atos das próprias cooperativas."],
@@ -2877,7 +3067,7 @@ function blocoStatus(st) {
 /* ===================== Aba Concentração da carteira ===================== */
 // Maiores devedores (10, 50 e 100) nas notas explicativas das demonstrações financeiras (Central de Demonstrações Financeiras do SFN).
 // Só faixas exatas: tabela em faixas "seguintes" (10, +50, +100 = 60 e 160 maiores) fica fora dos gráficos de 50 e 100.
-// A instituição escolhida é a mesma da Ficha (fsel.id), nos dois sentidos.
+// A instituição vem do filtro comum às abas do grupo (INSTG); sem instituição, só os 5 maiores bancos e os sistemas.
 let CO = null, COerr = "", carregandoCO = false;
 function carregaCO() { if (carregandoCO) return; carregandoCO = true; carregar("concentracao").then(d => { CO = d; render(); }).catch(e => { COerr = e.message; render(); }); }
 const CC_REF = [["itau", "Itaú", "#EC7000"], ["bb", "BB", "#465EFF"], ["bradesco", "Bradesco", "#CC092F"], ["caixa", "Caixa", "#005CA9"], ["santander", "Santander", "#EC0000"]];
@@ -2919,9 +3109,8 @@ function ccMotivo(i, N) {
 function renderConc() {
   if (!precisa(["concentracao"])) { esperando(/HTTP 404/.test(COerr) ? "Carga inicial em andamento: a rotina está lendo as demonstrações financeiras dos últimos cinco anos na Central do BC. Os gráficos aparecem aqui quando a primeira parte for publicada." : COerr ? `A base de concentração não carregou (${esc(COerr)}). Recarregue a página.` : "Carregando a concentração dos maiores devedores…"); return; }
   cid = 0;
-  const M = CO.meta, S = M.semestres, byId = new Map(CO.inst.map(i => [i.id, i])), sel = byId.get(fsel.id) || null;
-  const opts = CO.inst.slice().sort((a, b) => ccNome(a).localeCompare(ccNome(b), "pt-BR")).map(x => `<option value="${esc(ccNome(x))}">${esc(x.nome.slice(0, 60))}</option>`).join("");
-  $("#filters").innerHTML = `<div class="frow"><label class="fgroup"><span class="flabel">Instituição</span><input id="ccbusca" class="sel" list="cclist" placeholder="Nome, número ou CNPJ" value="${sel ? esc(ccNome(sel)) : ""}" style="min-width:16rem"><datalist id="cclist">${opts}</datalist></label></div>`;
+  const M = CO.meta, S = M.semestres, byId = new Map(CO.inst.map(i => [i.id, i])), sel = INSTG ? byId.get(INSTG) || null : null;
+  $("#filters").innerHTML = `<div class="frow">${seletorInst(CO.inst.map(i => ({ id: i.id, curto: ccNome(i), nome: i.nome, uf: i.uf, numero: i.numero })))}</div>`;
   $("#stamp").textContent = `Demonstrações financeiras até ${M.ref ? semLbl(M.ref) : "—"} · atualizado em ${dmy(M.atualizado)}`;
   const refs = CC_REF.map(([k, n, c]) => ({ k, n, c: cor(c), i: CO.inst.find(x => x.tipo === "banco" && x.escopos.includes(k)) })).filter(r => r.i);
   const sis = CC_SIS.map(([k, n, c]) => ({ k, n, c: cor(c), d: CO.sistemas?.[k] })).filter(x => x.d);
@@ -2978,7 +3167,7 @@ function renderConc() {
       return b.rev ? `base revista em ${semLbl(x)}` : ""; }).filter(Boolean);
     return t.length ? `${r.n}, ${t.join("; ")}` : ""; }).filter(Boolean).map(esc).join("; ");
   const nota = (N) => `% da carteira, como publicado (ou calculado sobre o total da carteira da mesma nota, quando a tabela traz só valores). Linha interrompida: a base da tabela mudou (documento, definição ou revisão). ${falta(N)} Fonte: notas explicativas, ${lk}.`;
-  $("#view").innerHTML = `${head}${kp}${semDado}
+  $("#view").innerHTML = `${head}${INSTG && !sel ? faixaInst({ i: null, falta: "fora da base de concentração (entram só instituições com demonstrações na Central do BC)", mostra: "os 5 maiores bancos e os sistemas Sicoob e Sicredi" }) : ""}${kp}${semDado}
     ${block("10 maiores devedores", "Participação na carteira de crédito · semestre a semestre", grafico("10"), nota("10"))}
     <div class="grid2">${block("50 maiores devedores", "Participação na carteira de crédito · semestre a semestre", grafico("50"), nota("50"))}
       ${block("100 maiores devedores", "Participação na carteira de crédito · semestre a semestre", grafico("100"), nota("100"))}</div>
@@ -3072,26 +3261,30 @@ function rcCusto(e) {
   </div>`;
   const ids = CMP.filter(id => rcAgg(id)?.cart > 0).concat(CMP.includes(qs.esc) ? [] : [qs.esc]);
   const td = (v, d = 2, suf = "%") => `<td class="num">${v == null ? "—" : nf(v, d) + suf}</td>`;
+  const qi = INSTG ? Q.inst.find(i => i.id === INSTG) : null, zi = qi?.m ? rcCalc(qi.m, qJanela()) : null, fi = INSTG ? ifI.get(INSTG) : null;     // instituição escolhida no filtro
   const rowsT = ids.map(id => { const z = rcAgg(id), ee = qEsc(id), f = ifdU(id); if (!z) return "";
-    return `<tr${id === qs.esc ? ' style="background:var(--panel)"' : ""}><td style="white-space:nowrap"><span class="dot" style="background:${cor(ee.cor)}"></span>${esc(ee.nome)}</td><td class="num"><b>${nf(z.custo, 2)}%</b></td>${td(z.bruta)}${td(z.rev_p, 1)}${td(z.rec_p, 1)}${td(z.rec_c)}${td(z.dren_c)}${td(f?.inad)}${td(f?.cob, 0)}</tr>`; }).join("");
+    return `<tr${id === qs.esc ? ' style="background:var(--panel)"' : ""}><td style="white-space:nowrap"><span class="dot" style="background:${cor(ee.cor)}"></span>${esc(ee.nome)}</td><td class="num"><b>${nf(z.custo, 2)}%</b></td>${td(z.bruta)}${td(z.rev_p, 1)}${td(z.rec_p, 1)}${td(z.rec_c)}${td(z.dren_c)}${td(f?.inad)}${td(f?.cob, 0)}</tr>`; }).join("")
+    + (zi?.cart > 0 ? `<tr class="selp"><td style="white-space:nowrap"><span class="dot" style="background:${corDe(qi)}"></span>${esc(qi.curto)}</td><td class="num"><b>${nf(zi.custo, 2)}%</b></td>${td(zi.bruta)}${td(zi.rev_p, 1)}${td(zi.rec_p, 1)}${td(zi.rec_c)}${td(zi.dren_c)}${td(fi?.inad)}${td(fi?.cob, 0)}</tr>` : "");
   const tabE = `<div class="tbl-wrap"><table><thead><tr><th>Escopo</th><th class="num">Custo do risco</th><th class="num">Desp. bruta</th><th class="num">Reversão / desp.</th><th class="num">Recup. / desp.</th><th class="num">Recup. / cart.</th><th class="num">Descontos / cart.</th><th class="num">Inad. &gt; 90</th><th class="num">Cobertura</th></tr></thead><tbody>${rowsT}</tbody></table></div>`;
   const ms = qMeses(), k12 = x.novo ? "rec_p" : "rec_c";
   const ser = (id) => ms.map((d, i) => i < 11 ? null : { d, v: rcCalc(Q.agg[id]?.m, ms.slice(i - 11, i + 1).map((_, j) => i - 11 + j))?.[k12] }).filter(p => p && p.v != null);
-  const linhas = [{ name: e.nome, pts: ser(qs.esc), c: cor(e.cor), w: 3 }].concat(qs.esc !== "coop" ? [{ name: "Cooperativas", pts: ser("coop"), c: css("--grafite-2"), w: 1.6 }] : [])
+  const serI = () => qi?.m ? ms.map((d, i) => i < 11 ? null : { d, v: rcCalc(qi.m, ms.slice(i - 11, i + 1).map((_, j) => i - 11 + j))?.[k12] }).filter(p => p && p.v != null) : [];
+  const linhas = (zi ? [{ name: qi.curto, pts: serI(), c: corDe(qi), w: 3 }] : []).concat([{ name: e.nome, pts: ser(qs.esc), c: cor(e.cor), w: zi ? 2.2 : 3, dash: zi ? tracoSe(corDe(qi), cor(e.cor)) : undefined }]).concat(qs.esc !== "coop" ? [{ name: "Cooperativas", pts: ser("coop"), c: css("--grafite-2"), w: 1.6 }] : [])
     .concat(qs.esc !== "bancos" ? [{ name: "Bancos", pts: ser("bancos"), c: css("--faint"), w: 1.6, dash: "4 3" }] : []);
-  // dispersão: custo do risco x inadimplência acima de 90 dias, instituições do escopo
+  // dispersão: custo do risco x inadimplência acima de 90 dias, instituições do escopo (e a escolhida no filtro, mesmo fora dele)
   const lista = Q.inst.filter(i => qs.esc === "sfn" || (i.escopos || []).includes(qs.esc)).map(i => ({ i, z: rcCalc(i.m, qJanela()), f: ifI.get(i.id) }))
     .filter(o => o.z && o.z.custo != null && o.z.cart > 0);
-  const disp = lista.filter(o => o.f && o.f.inad != null), fora = disp.filter(o => o.z.custo < 0 || o.z.custo > 25), dentro = disp.filter(o => o.z.custo >= 0 && o.z.custo <= 25);
+  const disp = lista.filter(o => o.f && o.f.inad != null).concat(zi?.custo != null && zi.cart > 0 && fi?.inad != null && !lista.some(o => o.i.id === INSTG) ? [{ i: qi, z: zi, f: fi }] : []);
+  const fora = disp.filter(o => o.z.custo < 0 || o.z.custo > 25), dentro = disp.filter(o => o.z.custo >= 0 && o.z.custo <= 25);
   const grandes = new Set(dentro.slice().sort((a, b) => b.z.cart - a.z.cart).slice(0, 5).map(o => o.i.id));
-  const pts = dentro.map(o => ({ x: o.z.custo, y: o.f.inad, c: rcCorI(o.i), name: o.i.curto || o.i.nome, lbl: grandes.has(o.i.id) }));
+  const pts = dentro.map(o => ({ x: o.z.custo, y: o.f.inad, c: rcCorI(o.i), name: o.i.curto || o.i.nome, lbl: grandes.has(o.i.id), sel: o.i.id === INSTG }));
   const uI = ifdU(qs.esc);
   const disper = pts.length >= 3 ? block(`Custo do risco e inadimplência · ${esc(e.nome)}`, `${esc(PT)} · inadimplência do IF.data em ${ym(R.ifd.ref)}`,
     scatterLin(pts, { xlab: "Custo do risco, % da carteira média", xn: "custo do risco", yn: "inadimplência > 90", yref: uI?.inad, yrefLabel: uI?.inad != null ? `${e.nome}: ${nf(uI.inad, 2)}%` : "", label: "Custo do risco e inadimplência por instituição" }),
     `Cada ponto é uma instituição do escopo; nomes nas 5 maiores carteiras. À direita e acima: custo e inadimplência altos. ${fora.length ? `${fora.length} fora do gráfico (custo negativo, quando a reversão supera a despesa, ou acima de 25%). ` : ""}${link}; ${linkR("ifd")}`) : "";
   // ranking
   const ord = lista.slice().sort((a, b) => b.z.custo - a.z.custo), shown = rcs.all ? ord : ord.slice(0, 25);
-  const rowsI = shown.map(o => `<tr><td style="white-space:nowrap"><span class="dot" style="background:${rcCorI(o.i)}"></span>${linkFicha(o.i.id, esc(o.i.curto || o.i.nome))}</td><td class="num">${brlMi(o.z.cart)}</td><td class="num"><b>${nf(o.z.custo, 2)}%</b></td>${td(o.z.bruta)}${td(o.z.rec_p, 1)}${td(o.z.rec_c)}${td(o.z.dren_c)}${td(o.f?.inad)}${td(o.f?.ap)}</tr>`).join("");
+  const rowsI = pinaLinha(ord, shown, o => o.i.id === INSTG, (o, k, c) => `<tr${c ? ` class="${c}"` : ""}><td style="white-space:nowrap"><span class="dot" style="background:${rcCorI(o.i)}"></span>${linkFicha(o.i.id, esc(o.i.curto || o.i.nome))}${c.includes("pino") ? `<span class="tag">${k + 1}ª</span>` : ""}</td><td class="num">${brlMi(o.z.cart)}</td><td class="num"><b>${nf(o.z.custo, 2)}%</b></td>${td(o.z.bruta)}${td(o.z.rec_p, 1)}${td(o.z.rec_c)}${td(o.z.dren_c)}${td(o.f?.inad)}${td(o.f?.ap)}</tr>`);
   const rank = block(`Instituições por custo do risco · ${esc(e.nome)}`, `${esc(PT)} · ${lista.length} instituições`,
     `<div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Carteira média</th><th class="num">Custo do risco</th><th class="num">Desp. bruta</th><th class="num">Recup. / desp.</th><th class="num">Recup. / cart.</th><th class="num">Descontos / cart.</th><th class="num">Inad. &gt; 90</th><th class="num">Ativo probl.</th></tr></thead><tbody>${rowsI}</tbody></table></div>
     ${ord.length > 25 ? `<button class="linkbtn" id="rcmore" type="button">${rcs.all ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${ord.length}`}</button>` : ""}`,
@@ -3151,19 +3344,42 @@ function rcPerda(e) {
     .map(o => ({ ...o, form: o.x.n0 != null && o.x.n1 != null && o.x.c0 ? (o.x.n1 - o.x.n0 + o.x.b) / o.x.c0 * 100 : null, taxa: o.x.b / o.x.cm * 200, recb: o.x.rec != null && o.x.b > 0 ? o.x.rec / o.x.b * 100 : null }))
     .sort((a, b) => (b.form ?? -1e9) - (a.form ?? -1e9));
   const shown = rcs.allB ? lista : lista.slice(0, 25), nome = (i) => i.curto || i.nome;
-  const fonteI = (o) => { const p = o.x.p; const url = p.url || BX.meta.url_pdf.replace(/\{am\}/g, (p.de || ult.s).replace("-", "")).replace(/\{doc\}/g, p.doc || 9010).replace(/\{cnpj\}/g, p.c || o.i.id);
+  const fonteI = (o, s = ult.s) => { const p = o.x.p; const url = p.url || BX.meta.url_pdf.replace(/\{am\}/g, (p.de || s).replace("-", "")).replace(/\{doc\}/g, p.doc || 9010).replace(/\{cnpj\}/g, p.c || o.i.id);
     return `<a href="${esc(url)}" target="_blank" rel="noopener">PDF${p.pag ? ", p. " + p.pag : ""}</a>${p.deriv ? "<small>exercício menos o 1º semestre</small>" : ""}${p.de ? `<small>comparativo de ${rcSemLbl(p.de)}</small>` : ""}`; };
-  const rowsI = shown.map(o => `<tr><td style="white-space:nowrap"><span class="dot" style="background:${rcCorI(o.i)}"></span>${linkFicha(o.i.id, esc(nome(o.i)))}</td><td class="num">${brlMi(o.x.b)}</td><td class="num">${o.x.n0 != null && o.x.n1 != null ? brlMi(o.x.n1 - o.x.n0) : "—"}</td><td class="num"><b>${o.form == null ? "—" : nf(o.form, 2) + "%"}</b></td><td class="num">${nf(o.taxa, 2)}%</td><td class="num">${o.recb == null ? "—" : nf(o.recb, 1) + "%"}</td><td>${fonteI(o)}</td></tr>`).join("");
+  const rowsI = pinaLinha(lista, shown, o => o.i.id === INSTG, (o, k, c) => `<tr${c ? ` class="${c}"` : ""}><td style="white-space:nowrap"><span class="dot" style="background:${rcCorI(o.i)}"></span>${linkFicha(o.i.id, esc(nome(o.i)))}${c.includes("pino") ? `<span class="tag">${k + 1}ª</span>` : ""}</td><td class="num">${brlMi(o.x.b)}</td><td class="num">${o.x.n0 != null && o.x.n1 != null ? brlMi(o.x.n1 - o.x.n0) : "—"}</td><td class="num"><b>${o.form == null ? "—" : nf(o.form, 2) + "%"}</b></td><td class="num">${nf(o.taxa, 2)}%</td><td class="num">${o.recb == null ? "—" : nf(o.recb, 1) + "%"}</td><td>${fonteI(o)}</td></tr>`);
+  // instituição escolhida no filtro: todos os semestres com baixa lida
+  const piB = INSTG ? P.inst.find(i => i.id === INSTG) : null, LI = piB ? S.map(s => ({ s, x: rcPerdaInst(piB, s, bxI.get(INSTG), qI.get(INSTG)) })).filter(o => o.x) : [];
+  const tabI = !INSTG ? "" : LI.length ? `<div class="eyebrow" style="margin:10px 0 2px">${esc(piB.curto)}</div><div class="tbl-wrap"><table><thead><tr><th>Semestre</th><th class="num">Baixas</th><th class="num">Taxa de baixa</th><th class="num">Formação de inad.</th><th class="num">Recup. / baixas</th><th>Fonte</th></tr></thead><tbody>${LI.map(o => { const f = o.x.n0 != null && o.x.n1 != null && o.x.c0 ? (o.x.n1 - o.x.n0 + o.x.b) / o.x.c0 * 100 : null, r = o.x.rec != null && o.x.b > 0 ? o.x.rec / o.x.b * 100 : null;
+      return `<tr class="selp"><td>${rcSemLbl(o.s)}</td><td class="num">${brlMi(o.x.b)}</td><td class="num">${nf(o.x.b / o.x.cm * 200, 2)}%</td><td class="num">${f == null ? "—" : nf(f, 2) + "%"}</td><td class="num">${r == null ? "—" : nf(r, 1) + "%"}</td><td>${fonteI({ i: piB, x: o.x }, o.s)}</td></tr>`; }).join("")}</tbody></table></div>`
+    : `<p class="empty">${esc(piB?.curto || INOME || "A instituição escolhida")}: sem quadro de baixas lido nas notas explicativas.</p>`;
   const rank = block(`Instituições por formação de inadimplência · ${esc(e.nome)}`, `${rcSemLbl(ult.s)} · ${lista.length} instituições com baixas lidas`,
     `<div class="tbl-wrap"><table><thead><tr><th>Instituição</th><th class="num">Baixas</th><th class="num">Variação do vencido &gt; 90</th><th class="num">Formação de inad.</th><th class="num">Taxa de baixa</th><th class="num">Recup. / baixas</th><th>Fonte</th></tr></thead><tbody>${rowsI}</tbody></table></div>
     ${lista.length > 25 ? `<button class="linkbtn" id="rcmoreb" type="button">${rcs.allB ? "Mostrar só as 25 primeiras" : `Mostrar todas as ${lista.length}`}</button>` : ""}`,
     `Formação de inadimplência no semestre = (vencido acima de 90 dias no fim do semestre − no início + baixas para prejuízo do semestre) / carteira no início do semestre. Vencido e carteira do IF.data; baixas das notas explicativas (link). ${fonteB}; ${linkR("ifd")}`);
   return `${tit}${kp}
-    ${block(`Baixas e formação de inadimplência por semestre · ${esc(e.nome)}`, "soma das instituições do escopo com baixas lidas", tabS,
+    ${block(`Baixas e formação de inadimplência por semestre · ${esc(e.nome)}`, "soma das instituições do escopo com baixas lidas", tabS + tabI,
       `Taxa de baixa: baixas do semestre ×2 sobre a carteira média do semestre (IF.data). Formação de inadimplência: não anualizada, em % da carteira do início do semestre; mede o crédito que entrou em atraso acima de 90 dias, inclusive o que já foi baixado, e por isso não depende do prazo da baixa. Recuperação sobre baixas: recuperação de créditos baixados (balancetes, conta 7192) sobre as baixas do mesmo semestre; a recuperação vem, em geral, de baixas de anos anteriores. ${fonteB}`)}
     ${rank}`;
 }
 document.addEventListener("click", (ev) => { const b = ev.target.closest("#rcmoreb"); if (!b) return; rcs.allB = !rcs.allB; render(); });
+// instituição escolhida no filtro (opcional): custo do risco e recuperação (balancetes), inadimplência (IF.data) e perda efetiva (notas)
+function faixaRec(e) {
+  if (!INSTG) return "";
+  const qi = Q.inst.find(i => i.id === INSTG), x = qi?.m ? rcCalc(qi.m, qJanela()) : null, r = rcAgg(qs.esc), f = R.ifd.inst.find(i => i.id === INSTG), fE = lastOf(R.ifd.serie[qs.esc] || []), nE = esc(e.nome);
+  let bx = null;
+  if (BX && P) { const pi = P.inst.find(i => i.id === INSTG), b = BX.inst.find(z => z.id === INSTG);
+    if (pi && b) for (const s of [...(BX.meta.semestres || [])].reverse()) { const z = rcPerdaInst(pi, s, b, qi); if (z) { bx = { s, ...z }; break; } } }
+  const form = bx && bx.n0 != null && bx.n1 != null && bx.c0 ? (bx.n1 - bx.n0 + bx.b) / bx.c0 * 100 : null;
+  const cmp = (a, b2) => a == null || b2 == null ? "" : `${sgn(a - b2, 2, " p.p.")} contra ${nE}`, pior = (a, b2) => a == null || b2 == null ? "flat" : a > b2 + 0.05 ? "down" : a < b2 - 0.05 ? "up" : "flat";
+  const i0 = qi || (f ? { curto: f.curto, nome: f.nome } : null);
+  return faixaInst({ i: i0, contra: e.nome, falta: i0 ? "" : "sem balancete Cosif nem IF.data nesta data", kpis: `<div class="kpis">
+    ${kpiBox("Custo do risco", x?.custo == null ? "sem dado" : nf(x.custo, 2), x?.custo == null ? "" : "%", cmp(x?.custo, r?.custo), pior(x?.custo, r?.custo), `provisão líquida / carteira média${qAnual()} · ${esc(qPerTxt())}`)}
+    ${kpiBox("Recuperação de baixados", x?.novo ? nf(x.rec_p, 1) : x?.rec_c == null ? "sem dado" : nf(x.rec_c, 2), x?.novo || x?.rec_c != null ? "%" : "", x?.novo ? `da despesa bruta · ${nf(x.rec_c, 2)} p.p. da carteira` : x ? "da carteira média" : "", "flat", "conta 7192000007 · Cosif")}
+    ${kpiBox("Inadimplência > 90 dias", f?.inad == null ? "sem dado" : nf(f.inad, 2), f?.inad == null ? "" : "%", cmp(f?.inad, fE?.inad), pior(f?.inad, fE?.inad), `${ym(R.ifd.ref)} · IF.data`)}
+    ${kpiBox(bx ? `Baixas para prejuízo · ${rcSemLbl(bx.s)}` : "Baixas para prejuízo", bx ? brlMi(bx.b).replace("R$ ", "") : "sem dado", "", bx ? `taxa de baixa ${nf(bx.b / bx.cm * 200, 2)}% ao ano` : !BX || !P ? "carregando as notas…" : "sem quadro de baixas lido", "flat", "notas explicativas")}
+    ${kpiBox("Formação de inadimplência", form == null ? "—" : nf(form, 2), form == null ? "" : "%", bx ? rcSemLbl(bx.s) : "", "flat", "no semestre, sobre a carteira do início")}
+  </div>` });
+}
 function renderRec() {
   if (!precisa(["risco", "resultados"])) { esperando(Rerr || Qerr ? `Os dados não carregaram (${esc(Rerr || Qerr)}). Recarregue a página.` : "Carregando os dados de risco e de resultados…"); return; }
   cid = 0; filtrosRes();
@@ -3172,7 +3388,7 @@ function renderRec() {
     const e = qEsc(qs.esc), seg = rcSeg();
     $("#view").innerHTML = `<div><div class="eyebrow">SCR.data, balancetes Cosif e IF.data · mensal e trimestral${tagNovo(Q.meta.novo_desde)}</div><h2>Recuperação e perda de crédito · ${esc(e.nome)}</h2>
       <p class="lede">Sinais de piora ou de melhora do mercado e o custo do risco de cada instituição: quanto a provisão consome da carteira, quanto volta por reversão e por recuperação de créditos já baixados, e quanto sai em descontos de renegociação.</p></div>
-      ${rcMercado(seg)}
+      ${faixaRec(e)}${rcMercado(seg)}
       ${rcCusto(e)}
       ${rcPerda(e)}
       <section class="block"><header><div class="eyebrow">Fontes e método desta aba</div><h3>Como ler</h3></header><div class="methods">
@@ -3217,7 +3433,7 @@ function alertas() {
 }
 /* ===================== Roteador ===================== */
 const ABA_ID = { 0: "visao", 1: "ruralsfn", 2: "safra", 3: "carteira", 4: "risco", 5: "resultados", 6: "rural", 7: "quadro", 8: "rankings", 9: "posicao", 10: "ficha", 11: "fontes", 12: "consignado", 13: "expectativas", 14: "territorio", 15: "reneg", 16: "concentracao", 17: "recuperacao" };
-const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 17, 5, 2, 6, 15, 7, 8, 9, 16, 10], "Sistemas, centrais e instituições", "use o filtro de cada aba"], [[11], "", ""]];
+const GRUPOS_ABAS = [[[0, 1, 14, 12, 13], "Grandes números do SFN", "sem filtro de instituição"], [[3, 4, 17, 5, 2, 6, 15, 7, 8, 9, 16, 10], "Sistemas, centrais e instituições", "recorte e, se quiser, uma instituição no filtro"], [[11], "", ""]];
 const aba = () => { const h = location.hash.slice(1); return h.startsWith("ficha") ? "ficha" : Object.values(ABA_ID).includes(h) ? h : "visao"; };
 document.addEventListener("click", (ev) => { const b = ev.target.closest("[data-tarr]"); if (!b) return; const row = b.parentElement.querySelector(".trow"); row.scrollBy({ left: +b.dataset.tarr * row.clientWidth * 0.7 }); });
 function render() {
